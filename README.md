@@ -1,6 +1,6 @@
 # The Rack Report
 
-U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed twice a day by a GitHub Actions job. No server, no API keys, no build step.
+U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed every hour by a GitHub Actions job. No server, no API keys, no build step.
 
 Live site: https://awigaikwad02.github.io/datacenter-watch/
 
@@ -23,7 +23,7 @@ Brand files: `assets/mark.svg`, `assets/logo.svg`, `assets/favicon.svg`, `assets
 ## How the data runs
 
 ```
-GitHub Actions (06:17 and 18:17 UTC)
+GitHub Actions (every hour at :17)
   -> scripts/fetch_news.py
      reads  data/feeds.json             Google News RSS searches and Google Alerts feeds
      reads  scripts/gazetteer.json      place names -> coordinates (U.S. and foreign)

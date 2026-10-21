@@ -30,7 +30,7 @@
 
   function major(items) {
     const pick = items.find((i) => (i.category === "New Announcement" || i.category === "Construction") && i.state && (i.capacity_mw || i.investment_usd_b)) || items[0];
-    if (!pick) { $("#major").innerHTML = '<div class="card empty">' + R.icon("news") + "<b>No headlines yet</b>The feed refreshes twice a day.</div>"; return; }
+    if (!pick) { $("#major").innerHTML = '<div class="card empty">' + R.icon("news") + "<b>No headlines yet</b>The feed refreshes every hour.</div>"; return; }
     const c = R.cat(pick.category);
     // Other recent stories that name a place or a company, newest first.
     const also = items.filter((i) => i !== pick && i.category !== "General" && i.category !== "Policy / Permits" && (i.state || i.companies.length)).slice(0, 4);

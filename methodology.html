@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=rr5">
+  <link rel="stylesheet" href="assets/style.css?v=rr6">
   <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
 <body>
@@ -55,7 +55,7 @@
 
         <article class="prose">
           <h2 id="sources">Sources and refresh schedule</h2>
-          <p>A GitHub Actions workflow runs twice a day, at 06:17 and 18:17 UTC. It runs <code>scripts/fetch_news.py</code>, which reads the searches listed in <code>data/feeds.json</code>: Google News RSS queries for data center announcements, construction, power, policy and regional news, all using the U.S. edition of Google News. Any Google Alerts RSS feeds added to that file are read too.</p>
+          <p>A GitHub Actions workflow runs every hour, at 17 minutes past the hour (GitHub can delay scheduled runs by a few minutes when it is busy). It runs <code>scripts/fetch_news.py</code>, which reads the searches listed in <code>data/feeds.json</code>: Google News RSS queries for data center announcements, construction, power, policy and regional news, all using the U.S. edition of Google News. Any Google Alerts RSS feeds added to that file are read too.</p>
           <p>We store only the headline, the publisher name, the publication time and the link. Article text is never copied; every headline links to the original publisher through Google News. Headlines are kept for 60 days and project candidates for 180 days.</p>
 
           <h2 id="us-only">U.S. only</h2>
@@ -96,8 +96,8 @@
     <footer class="site-footer" id="footer"></footer>
   </div>
   <nav class="tabbar" id="tabbar"></nav>
-  <script src="assets/companies.js?v=rr5"></script>
-  <script src="assets/app.js?v=rr5"></script>
-  <script src="assets/methodology.js?v=rr5"></script>
+  <script src="assets/companies.js?v=rr6"></script>
+  <script src="assets/app.js?v=rr6"></script>
+  <script src="assets/methodology.js?v=rr6"></script>
 </body>
 </html>
