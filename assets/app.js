@@ -283,7 +283,7 @@ window.RR = (function () {
       foot.innerHTML = '<div class="page"><div><a class="brand" href="/">' + wordmark() + "</a>" +
         "<p>Independent tracking of the U.S. data center buildout: headlines, projects, companies and the infrastructure behind them. Headlines link to the original publishers; tags and locations are detected automatically and can be wrong.</p></div>" +
         '<div><h2>Explore</h2><ul>' + NAV.map((n) => '<li><a href="' + n[0] + '">' + n[1] + "</a></li>").join("") + "</ul></div>" +
-        '<div><h2>Sources</h2><ul><li>Google News RSS (U.S. edition)</li><li>Google Alerts RSS</li><li>Map data and tiles © OpenStreetMap contributors</li><li><a href="' + REPO + '" rel="noopener">GitHub repository</a></li></ul><h2 style="margin-top:16px">Contact</h2>' + contact() + "</div></div>";
+        '<div><h2>Sources</h2><ul><li>Google News RSS (U.S. edition)</li><li>Google Alerts RSS</li><li>Map data and tiles © OpenStreetMap contributors</li></ul><h2 style="margin-top:16px">Contact</h2>' + contact() + "</div></div>";
     }
   }
 
