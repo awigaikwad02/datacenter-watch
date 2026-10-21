@@ -48,6 +48,7 @@ DATA = ROOT / "data"
 FEEDS_FILE = DATA / "feeds.json"
 NEWS_FILE = DATA / "news.json"
 CAND_FILE = DATA / "project_candidates.json"
+STATUS_FILE = DATA / "status.json"
 GAZ_FILE = Path(__file__).resolve().parent / "gazetteer.json"
 ARCHIVE_DIR = DATA / "archive"
 MONTH_RE = re.compile(r"^\d{4}-\d{2}$")
@@ -714,6 +715,7 @@ def main():
     no_fetch = args.no_fetch
     news_out = Path(args.out) / NEWS_FILE.name if args.out else NEWS_FILE
     cand_out = Path(args.out) / CAND_FILE.name if args.out else CAND_FILE
+    status_out = Path(args.out) / STATUS_FILE.name if args.out else STATUS_FILE
     archive_out = Path(args.out) / "archive" if args.out else ARCHIVE_DIR
     if args.out:
         Path(args.out).mkdir(parents=True, exist_ok=True)
@@ -739,11 +741,13 @@ def main():
     log(f"Fetching {len(sources)} feeds")
     fresh = {}
     raw_total = 0
+    feeds_ok = 0
     for label, url in sources:
         parsed = feedparser.parse(Path(url).read_bytes()) if args.sample else fetch_feed(url)
         if not parsed:
             continue
         raw_total += len(parsed.entries)
+        feeds_ok += bool(parsed.entries)
         n = 0
         for e in parsed.entries:
             raw_title = clean_text(e.get("title", ""))
@@ -815,10 +819,12 @@ def main():
 
     items = [it for it in kept if datetime.fromisoformat(it["published"]) >= cutoff][:NEWS_MAX_ITEMS]
 
+    known = {it["id"] for it in existing}
+    new_this_run = len([k for k in fresh if k not in known])
     news_out.write_text(json.dumps({
         "updated": now.isoformat(timespec="seconds"),
         "count": len(items),
-        "new_this_run": len([k for k in fresh if k not in {it["id"] for it in existing}]),
+        "new_this_run": new_this_run,
         "items": items,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Wrote {news_out}: {len(items)} items")
@@ -874,6 +880,16 @@ def main():
         "projects": cand_list,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Wrote {cand_out}: {len(cand_list)} candidates")
+
+    # A small run report for the Methodology page.
+    status_out.write_text(json.dumps({
+        "updated": now.isoformat(timespec="seconds"),
+        "feeds_total": len(sources),
+        "feeds_ok": feeds_ok,
+        "items_total": len(items),
+        "items_new": new_this_run,
+    }, indent=1) + "\n", encoding="utf-8")
+    log(f"Wrote {status_out}: {feeds_ok} of {len(sources)} feeds returned data, {new_this_run} new headlines")
     return 0
 
 
