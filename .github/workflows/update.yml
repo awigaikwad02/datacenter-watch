@@ -2,8 +2,8 @@ name: Update data center news
 
 on:
   schedule:
-    # Every hour at 17 minutes past (off the top of the hour, when GitHub is busiest)
-    - cron: "17 * * * *"
+    # Every three hours at 17 minutes past (off the top of the hour, when GitHub is busiest)
+    - cron: "17 */3 * * *"
   workflow_dispatch:
 
 permissions:
