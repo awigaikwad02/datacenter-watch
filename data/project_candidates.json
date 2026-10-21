@@ -1,7 +1,54 @@
 {
- "updated": "2026-10-21T12:03:55+00:00",
- "count": 55,
+ "updated": "2026-10-21T12:10:04+00:00",
+ "count": 65,
  "projects": [
+  {
+   "id": "bdc391b5deaaffe7",
+   "name": "A planned Texas AI data center is expected to draw power from wind and the grid",
+   "status": "Announced",
+   "location": "Texas, US",
+   "lat": 31.5,
+   "lon": -99.3,
+   "state": "TX",
+   "companies": [],
+   "precision": "state",
+   "source": "Stock Titan",
+   "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTWc1VEp0MG5JZGdZemhsRzV6NHo1U1FYLWpQUmdvM1VhQnk0NGxpejdJTnN6bHMwRmlHcTdLd1VQWTRZeWZfZGxBMDVjNFowUTU0OHRzWWFnWTJxWVVRNlZua0x2eXRhSHJfZnNORGRORHJaQjI3eDFzMXIzUmdvQUgzTUJpZmR0cXNFVE9KOHZNSURuVFQyaU5RLS1wYWZOb1FOR0pzZklyYUt2X3hZWEpXTGl0UWQtdWVoZEVUMA?oc=5",
+   "published": "2026-10-21T11:30:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "4ee541d6545df147",
+   "name": "Amazon drops data center plan on former George Washington University campus in Ashburn",
+   "status": "Announced",
+   "location": "Ashburn, Virginia, US",
+   "lat": 39.04,
+   "lon": -77.49,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "precision": "city",
+   "source": "FOX 5 DC",
+   "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRUFVSMFA1dlE3eEZ3bTRTQVQwYlpGT1A2eHpRbTRCLWU0ajlQNEV2YTJ0NXpqeE9xdVF5aVZsT2JFSUpfbnljUFlBQlFxTFhwbDJJT2txQ3RpVllWUUHSAWNBVV95cUxPNi02bzJlQjQ5NGxabVltMzdKX2pkY3pZZUx4Sml1b2I0NkhCc3dTTnREU0R2TVU4ZXhOTHhpV18zaW8tRGxCeDVNT3BVY28yaWNHXzZNWEJJbG9oZHVjTWFKNDg?oc=5",
+   "published": "2026-10-21T09:44:17+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "fa0894610085300a",
+   "name": "Colorado utility regulators to decide whether Xcel's data center tariff proposal protects customers",
+   "status": "Announced",
+   "location": "Colorado, US",
+   "lat": 39.0,
+   "lon": -105.5,
+   "state": "CO",
+   "companies": [],
+   "precision": "state",
+   "source": "The Colorado Sun",
+   "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAxZ28wcld1ZVBXTy1hTXIzNWpFbWN2cnJudlRlZnNhMm9RVkdqY0U5THFFSW12b1BYNFk1VDVwNWNOWXFTRjJIcDhoV2dIY0VSdHlXeW1vNUR5RHl0QXhLXzBkRkVJSjByMk04RWlHeWpFelZjTUk0U3l1MHFrQQ?oc=5",
+   "published": "2026-10-21T09:44:00+00:00",
+   "detected": "auto"
+  },
   {
    "id": "5ee9df2bf905ccd8",
    "name": "$427M Virginia Science and Technology Campus: Amazon Drops 800,000 Square Foot Data Center Plan",
@@ -35,6 +82,23 @@
    "source": "The GW Hatchet",
    "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWU41Y25oNm16ckE5MXlXWGhCRGR2N0ZRdkV2OTVocXktbUFCTWtZRzJ4N0kwQjk2V25GcGZWQXZqUkpUSTQxbE9sek1TbkZ2WXc2eHMwZ085T25zTC1pSm92ZTgyc2lOSzZIcm5PRnRuQkNMUVRBRHY0MmVyVF82cUhkY2VzcDAzZjNjZDlPTnBLaE1rdW9PUWQ1Qkw1ZFI2R0xDUktCM3NGQzQ3RFZBeHdrMk5vQUFuaUNRWWdTRE1CVWVIbXBV?oc=5",
    "published": "2026-10-21T04:08:40+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "06d24bd03e2f3d88",
+   "name": "Proposal to pause new data centers in Michigan City sparks protests over Google exemption",
+   "status": "Announced",
+   "location": "Michigan, US",
+   "lat": 44.3,
+   "lon": -85.4,
+   "state": "MI",
+   "companies": [
+    "Google"
+   ],
+   "precision": "state",
+   "source": "WSBT",
+   "source_url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOOW1xWmRoVHlpNF9BMXMxallNc1JRU0pTYzJvb2dEeWZrZ1hNRHREaFZzNXQyS1pQR1czSE90ZWE0YkJUY0x1RUxnMjc5eTRNOFhqbVRGc19teWtVSk5ZUjgtWnlxNDRoLVZJb0dmUGxQdjdLZWItaUMzU2t1b3dLaTk5MndLUFdBU3U2NklRQzNwNlpia19QT1hkRk5hZ2RUY1ZVUm9jT0Q0RjBzazFpNnBxTXl3UlV3OWJoN25RMkZQU09Tc2c2VnNib0JkeUhGUkpaS1FRU0xVYUlOVGR6UVh0ZWwxd3VQNWV6dC1YTFd1cXRKejFMU096MlF0Y0F2T0k4N0ZnRl9Nb0JKM2VNQW82YlRRVjNoQmNtWEt3?oc=5",
+   "published": "2026-10-21T03:46:33+00:00",
    "detected": "auto"
   },
   {
@@ -113,6 +177,23 @@
    "published": "2026-10-20T22:54:49+00:00",
    "detected": "auto",
    "companies": []
+  },
+  {
+   "id": "ed18adfbe69a6b24",
+   "name": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers",
+   "status": "Announced",
+   "location": "Loudoun County, Virginia, US",
+   "lat": 39.09,
+   "lon": -77.64,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "precision": "city",
+   "source": "LoudounNow.com",
+   "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxONEpodlRFRzN4WldlV2lQbzlYYnYxa3VXU1BJbVgwN3pnQ1dTSDhIc1BsY2x6SXJSaHVPakZwdXNjY0pOX1ZRWmpoM1A3UUJ0MDA4V1hKWnlRaWZtVGNrM3hLem1mNVZNaVh4OXhzZ0VOTmRETjZrcXM1M3BVcFJKNnR3Z0tHeV9Hb1VJVzJUQjlsem9BMnpLVENISUpVcWc1WDg0RDU0cElHQ1VITXFqeTFnc0FSVURsd1ZOV0dkc0JNa1d2Nl9CaGNNaUo0NVlnWkY2THV4Ymxmek40OGpWdWFOYTF4MWlRUHc?oc=5",
+   "published": "2026-10-20T22:50:00+00:00",
+   "detected": "auto"
   },
   {
    "id": "24372e18716b7cef",
@@ -579,6 +660,21 @@
    "companies": []
   },
   {
+   "id": "36236c76ecba9e2e",
+   "name": "Three Data Centers Could Undo the Millions El Paso and New Mexico Spent on their Climate Plans",
+   "status": "Announced",
+   "location": "El Paso, Texas, US",
+   "lat": 31.76,
+   "lon": -106.49,
+   "state": "TX",
+   "companies": [],
+   "precision": "city",
+   "source": "deceleration.news",
+   "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWWVDNkhvT3lrV1BreTdLR0pxY3R4NEd2UkdWc1JiY1Q2QjFISk81U2tRb3djM1k5cm92cTZsMzdXQXBsUDBqamVJSEYzeWxCQTB2aG1LOXBPMnY0cVZjekhLbnd0SGJhUVpzLVdvaVB3Qk82WlA2QUFDSzdTUS1BLXEzb2NvMm01cGtrWmxR?oc=5",
+   "published": "2026-10-16T20:50:40+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "66bc0298b73cfda7",
    "name": "In Texas and New Mexico, AI data centers threaten to undo multimillion-dollar climate plans",
    "status": "Announced",
@@ -750,6 +846,21 @@
    "companies": []
   },
   {
+   "id": "9219c37b46b7a05a",
+   "name": "When the Backup Runs: Virginia Outage Exposes Loophole in Proposed Page Data Center Rules",
+   "status": "Announced",
+   "location": "Virginia, US",
+   "lat": 37.5,
+   "lon": -78.9,
+   "state": "VA",
+   "companies": [],
+   "precision": "state",
+   "source": "Lake Powell Chronicle",
+   "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVXlCRHNycWNyZ0FSOXY0dV9aSWdKYVJyX01VVGZKaVhxWFRLRE9yS2NWWkZydkp6blExMnV1MktBQlRBeHR1RGgzLWRMaVVDOVdiVHFCR1lXUXVhaEpqZlhMWEgtVVg3TzdKblVkWjRSUlJSR1BsRVpQakVNakdlbkZaMUV3c3ZsSHg2aEtockFvT0hjMEozYm8yVUpDR3VXYzFmZG84YXdKTWR0VTZLdU0tOHBpcWVXbk9MWUlUdXE1ZkhyeWUwUjhnVmhfMVgw?oc=5",
+   "published": "2026-10-15T19:13:23+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "0da8e97e64283e69",
    "name": "What's next? Indiana County officials approve Amazon application for proposed data center",
    "status": "Announced",
@@ -782,6 +893,38 @@
    "companies": []
   },
   {
+   "id": "6887b428b4b30e63",
+   "name": "PowerHouse & Big Watt secure approval for 1GW behind-the-meter campus in Taylor, Texas",
+   "status": "Announced",
+   "location": "Texas, US",
+   "lat": 31.5,
+   "lon": -99.3,
+   "state": "TX",
+   "companies": [],
+   "precision": "state",
+   "source": "Data Center Dynamics",
+   "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMVNQXzRCY0FubFpCd0x5MmVYbFRuSnlZZWJ5clVIRzM4T3Mtd01XeHBsVHBheWJNMXRXcnFITWRmX2tpNU5rNmdXdVVndko3bDVoWThNbUxVQWpjd1BiazB2Yl96c1c2bFlKSFdPeEV3T1BETEZzQUk0bEcwdGJhLVA3M0dydFZ6NndhTUt5MWRiUG5kVExmcDN5LW1PZnNmaURTdUhZb2x1R0R2UW9yc1ZZQ0Q4UFJxTGhwUFk3dFR2Z0pZcUE?oc=5",
+   "published": "2026-10-15T08:38:27+00:00",
+   "detected": "auto",
+   "capacity_mw": 1000
+  },
+  {
+   "id": "e966f985992c2854",
+   "name": "US DoD seeks partner to build $4bn \"mission critical facility\" and data center in Alabama",
+   "status": "Announced",
+   "location": "Alabama, US",
+   "lat": 32.8,
+   "lon": -86.8,
+   "state": "AL",
+   "companies": [],
+   "precision": "state",
+   "source": "Data Center Dynamics",
+   "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV3RtVjJqMTNVSmd1cENrVzBkb0pEUUJkaHRKQmt3b2FCb2F3X2Y2YlYyRS15bm8xTUdmM3MyZDZLcS1jWmRPaVNzNzA2dFhrb2d5OWJvYWRxaHlySDFfMjVfV3BzWUVKMUhpQkZOOVZVeUN6MzNrdS01RTl6djc4NHZBdFlUU3JFT19SN3QwMkYtZHVlNG1HZ1d5cWVTTlIyRlhHMmwxZzlLa0duNlpycmM2cTdDX3paRjgxZXFtRjJOY0Ficm95NThR?oc=5",
+   "published": "2026-10-15T08:36:09+00:00",
+   "detected": "auto",
+   "investment_usd_b": 4.0
+  },
+  {
    "id": "68586c3e95b98230",
    "name": "Virginia’s New Data Center Bargain: Power, Permits and the Right to Build",
    "status": "Announced",
@@ -795,6 +938,21 @@
    "detected": "auto",
    "state": "VA",
    "companies": []
+  },
+  {
+   "id": "980df30d0eb58250",
+   "name": "Kansas Data Center Offers $1,000 a Year to Its Neighbors to Win Approval",
+   "status": "Announced",
+   "location": "Kansas, US",
+   "lat": 38.5,
+   "lon": -98.4,
+   "state": "KS",
+   "companies": [],
+   "precision": "state",
+   "source": "Bloomberg.com",
+   "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT1VtUlNaUU9jcmVNQ3B6Q2FJR3NMM3dRM0RZVzVNYTZfMGVrNDlSZjdfdGRTLXZiNjlrVDM1bC1vbDFjZ2stQ29kS0xjNzFZQk00MnRfQWRfeU5GUUIxUFVxUHpMdy1fUVdsSGZYNkZvbzkyd0FXc3RBbUEwWm1IM3U0WmRfNDNZY2tQSUpjUzBsY2daLWNWZnhzend4aTlVMkxmX1hhY2dTRTgwbFZYS21GNA?oc=5",
+   "published": "2026-10-14T16:01:47+00:00",
+   "detected": "auto"
   },
   {
    "id": "ad4e04847e882d16",
