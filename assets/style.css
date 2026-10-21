@@ -525,6 +525,8 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 @media (max-width: 1023px) { .atlas .legend { top: 60px; bottom: auto; grid-template-columns: repeat(2, auto); gap: 4px 12px; padding: 8px 10px; font-size: 11px; } }
 
 html .leaflet-container { font-family: var(--font); background: #1a1a1d; }
+/* Dark map: invert OpenStreetMap tiles so they sit on the matte black theme. */
+.rr-tiles { filter: invert(1) hue-rotate(180deg) brightness(.82) contrast(.88) saturate(.45); }
 .leaflet-bar { border: 1px solid var(--border-strong) !important; border-radius: 10px !important; overflow: hidden; box-shadow: var(--shadow) !important; }
 .leaflet-bar a { background: var(--surface) !important; color: var(--text) !important; border-color: var(--border) !important; }
 .leaflet-bar a:hover { background: var(--surface-2) !important; }

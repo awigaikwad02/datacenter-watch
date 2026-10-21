@@ -411,9 +411,9 @@ window.RR = (function () {
   function baseMap(el, opts) {
     const L = window.L;
     const map = L.map(el, Object.assign({ zoomControl: false, minZoom: 3, maxZoom: 13, zoomSnap: 0.25, maxBounds: US.max, maxBoundsViscosity: 1, worldCopyJump: false }, opts || {}));
-    // OpenStreetMap's standard tiles need no API key.
+    // OpenStreetMap's standard tiles need no API key; the .rr-tiles CSS filter turns them dark.
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19, bounds: US.max,
+      maxZoom: 19, bounds: US.max, className: "rr-tiles",
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
     map.attributionControl.setPrefix(false);
