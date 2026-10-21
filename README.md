@@ -16,7 +16,7 @@ Live site: https://awigaikwad02.github.io/datacenter-watch/
 | `methodology.html` | Methodology | Sources, tagging, detection, limitations, how to report an error |
 | `projects.html` | Redirect | Sends old map links to the Atlas |
 
-Shared code: `assets/style.css` (all design tokens and components), `assets/app.js` (shell, loader, data loading, helpers), `assets/companies.js` (one-line company descriptions). Each page has its own script in `assets/`. Leaflet and Leaflet.markercluster load from unpkg with subresource integrity; map tiles are OpenStreetMap's standard tiles, darkened with a CSS filter (no API key needed).
+Shared code: `assets/style.css` (all design tokens and components), `assets/app.js` (shell, loader, data loading, helpers), `assets/companies.js` (one-line company descriptions). Each page has its own script in `assets/`. Leaflet and Leaflet.markercluster load from unpkg with subresource integrity; map tiles are OpenStreetMap's standard tiles (no API key needed).
 
 Brand files: `assets/mark.svg`, `assets/logo.svg`, `assets/favicon.svg`, `assets/favicon-32.png`, `assets/apple-touch-icon.png` and `assets/og.png`. The PNGs are rendered from the SVGs by `scripts/brand/render.mjs` (optional, needs Node and Playwright).
 
