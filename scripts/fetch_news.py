@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Data Center Watch: feed updater.
+The Rack Report: feed updater.
 
 Pulls the Google News RSS searches and Google Alerts RSS feeds listed in
 data/feeds.json, cleans and dedupes the headlines, tags each one with a
@@ -16,7 +16,9 @@ category, detects place names, and writes:
 
 The site covers the United States only: stories that are clearly about
 another country are dropped, and every kept story is tagged with the U.S.
-states it mentions.
+states it mentions. Headlines must be about data centers (see is_on_topic),
+sources in data/feeds.json "blocked_sources" are dropped, and related
+headlines are grouped with a shared cluster_id.
 
 Run locally:  python scripts/fetch_news.py
 Re-tag the existing files without fetching:  python scripts/fetch_news.py --no-fetch
@@ -28,6 +30,7 @@ GitHub Actions runs it on a schedule (see .github/workflows/update.yml).
 import argparse
 import calendar
 import shutil
+import time
 import hashlib
 import html
 import json
@@ -54,14 +57,48 @@ NEWS_MAX_ITEMS = 3000
 # Capacity figures above this are grid-wide totals ("474 GW of requests"), not one project.
 MAX_PROJECT_MW = 20000
 CAND_MAX_AGE_DAYS = 180
-CAND_MAX_ITEMS = 400
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; DataCenterWatch/1.0; +https://github.com)"}
+CAND_MAX_ITEMS = 800
+HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; TheRackReport/1.0; +https://therackreport.org)"}
 TIMEOUT = 25
+FETCH_TRIES = 3          # retry 429 and 5xx responses with exponential backoff
+CLUSTER_DAYS = 7         # related headlines must be this close in time
+CLUSTER_OVERLAP = 0.4    # share of title words in common (of the shorter title)
 
 # ---------------------------------------------------------------------------
 # Classification rules. Order matters: the first rule that matches a headline
 # becomes its primary category. Every matching rule is also kept as a tag.
 # ---------------------------------------------------------------------------
+# Cancellations and blocks are checked before everything else, so "Amazon drops
+# data center plan" is never read as an announcement. CANCEL_NOT catches the
+# opposite case: a vote against a moratorium or ban is not a blocked project.
+CANCEL_PAT = (
+    r"\b(drops|dropped|withdraw|withdraws|withdrew|withdrawn|scraps|scrapped|cancels|cancell?ed|abandons|abandoned|"
+    r"(?:pulls|pulled) (?:out|back|the plug|plans?|its|application|proposal|request)|rejects|rejected|"
+    r"denies|denied|blocks|blocked|halts|halted|pauses|paused|votes? down|voted down|votes? against|"
+    r"voted against|court rules against|rules against|(?:puts?|putting|placed?) a pause|"
+    r"moratorium (?:passed|passes|approved|adopted|enacted|extended|imposed)|"
+    r"(?:pass|passes|passed|approve|approves|approved|adopts|adopted|enacts|enacted|extends|extended|extending|"
+    r"expands|expanded|imposes|imposed|signs|signed|finalizes|finalized|starts|started) "
+    r"(?:a |an |the )?(?:[\w$-]+ ){0,4}(?:moratoriums?|pause))\b")
+CANCEL_RE = re.compile(CANCEL_PAT, re.I)
+# Not a cancellation: proposals and calls for one, or a vote against a restriction rather than a project.
+CANCEL_HEDGE = re.compile(
+    r"\b(calls? for|called for|considers?|considering|weighs?|weighing|to debate|debates?|would|could|should|"
+    r"to vote|vote on whether|set to|seeks?|urges?|pushes? for|proposal to|proposes?|wants?|won['’]t)\b", re.I)
+CANCEL_NOT = re.compile(
+    r"\b(?:votes? down|voted down|rejects?|rejected|denies|denied|blocks?|blocked|drops?|dropped|withdraws?|withdrew|"
+    r"withdrawn|halts?|halted|pauses?|paused|votes? against|voted against|scraps?|scrapped|cancels?|cancell?ed)"
+    r" (?:[\w$’'.,-]+ ){0,6}?(?:moratorium|ban|freeze|pause|restrictions?|ordinance|regulations?|rules|guardrails|"
+    r"limits|lawsuit|suit|challenge|appeal|petition|referendum|opposition|tax|bill|plan to|plan that|meeting|"
+    r"hearing|session|vote)\b|\b(?:blocks?|blocked) \w+ from\b|\b(?:rejects?|rejected) \$\d|"
+    r"\b(?:shares|stocks?|prices?|demand|revenue|profits?) (?:drops?|dropped)\b", re.I)
+CANCELLED = "Cancelled / Blocked"
+
+
+def is_cancelled(title):
+    return bool(CANCEL_RE.search(title)) and not CANCEL_HEDGE.search(title) and not CANCEL_NOT.search(title)
+
+
 CATEGORY_RULES = [
     ("Policy / Permits",
      r"\b(zoning|rezon\w*|city council|county council|council|commission(ers?)?|board of supervisors|supervisors|"
@@ -120,12 +157,12 @@ STATUS_RULES = [
 # whole words. A pattern can map to several companies (Stargate).
 COMPANIES = [
     ("Google", r"Google|Alphabet"),
-    ("Microsoft", r"Microsoft|Azure"),
-    ("Meta", r"Meta|Facebook"),
-    ("Amazon", r"Amazon|AWS"),
+    ("Microsoft", r"Microsoft|Azure|Fairwater"),
+    ("Meta", r"Meta|Facebook|Hyperion|Prometheus"),
+    ("Amazon", r"Amazon Web Services|Amazon|AWS|Project Rainier"),
     ("Oracle", r"Oracle|OCI"),
     ("OpenAI", r"OpenAI|ChatGPT"),
-    ("xAI", r"xAI"),
+    ("xAI", r"xAI|Colossus"),
     ("Anthropic", r"Anthropic"),
     ("CoreWeave", r"CoreWeave"),
     ("Crusoe", r"Crusoe"),
@@ -150,11 +187,47 @@ COMPANIES = [
     ("Apple", r"Apple"),
     ("Related Digital", r"Related Digital"),
     ("Tallgrass", r"Tallgrass"),
+    # Developers
+    ("Tract", r"Tract(?=('s| (Inc|Capital|data|Data|plans|Plans|buys|Buys|acquires|Acquires|proposes|Proposes|files|Files|campus|Campus|park|Park)\b))"),
+    ("Hillwood", r"Hillwood"),
+    ("PowerHouse", r"PowerHouse Data Centers|PowerHouse"),
+    ("Sabey", r"Sabey Data Centers|Sabey"),
+    ("T5", r"T5 Data Centers|T5"),
+    ("Stream", r"Stream Data Centers"),
+    ("Prime Data Centers", r"Prime Data Centers"),
+    ("Skybox", r"Skybox Datacenters|Skybox Data Centers|Skybox"),
+    ("Novva", r"Novva Data Centers|Novva"),
 ]
 ALIASES = [("Stargate", ["OpenAI", "Oracle", "SoftBank"])]
 COMPANY_RULES = [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in COMPANIES]
 COMPANY_RULES += [(names, re.compile(r"(?<![\w-])" + a + r"(?![\w-])")) for a, names in ALIASES]
 COMPANY_ORDER = {name: i for i, (name, _) in enumerate(COMPANIES)}
+
+# Utilities and grid operators, written to a separate "utilities" field.
+UTILITIES = [
+    ("Entergy", r"Entergy"),
+    ("Dominion Energy", r"Dominion Energy|Dominion"),
+    ("Georgia Power", r"Georgia Power"),
+    ("Duke Energy", r"Duke Energy|Duke's"),
+    ("AEP", r"AEP|American Electric Power"),
+    ("Xcel Energy", r"Xcel Energy|Xcel"),
+    ("Oncor", r"Oncor"),
+    ("PG&E", r"PG&E|Pacific Gas and Electric"),
+    ("APS", r"APS|Arizona Public Service"),
+    ("SRP", r"SRP|Salt River Project"),
+    ("Ameren", r"Ameren"),
+    ("Evergy", r"Evergy"),
+    ("TVA", r"TVA|Tennessee Valley Authority"),
+    ("PJM", r"PJM"),
+    ("ERCOT", r"ERCOT"),
+    ("MISO", r"MISO"),
+]
+UTILITY_RULES = [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in UTILITIES]
+
+# A headline is on topic when it names data centers, or a tracked company together with a site word.
+ON_TOPIC_RE = re.compile(r"\b(data[\s-]?cent(er|re)s?|datacent(er|re)s?|hyperscal\w*|colocation|ai factor(y|ies)|supercomputers?|server farms?|data halls?|computing (site|campus|facility|facilities))\b", re.I)
+SITE_RE = re.compile(r"\b(campus(es)?|facilit(y|ies)|sites?|megawatts?|gigawatts?|\d[\d,.]*\s?[MG]W)\b", re.I)
+
 
 MW_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s?(?:MW|megawatts?)\b", re.I)
 GW_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s?(?:GW|gigawatts?)\b", re.I)
@@ -252,44 +325,101 @@ def google_news_url(query):
 
 
 def fetch_feed(url):
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        r.raise_for_status()
-        return feedparser.parse(r.content)
-    except Exception as e:
-        log(f"  warning: fetch failed for {url[:90]}... ({e})")
-        return None
+    """Fetch one feed, retrying 429 and 5xx responses (and network errors) with exponential backoff."""
+    for attempt in range(1, FETCH_TRIES + 1):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+            if r.status_code == 429 or r.status_code >= 500:
+                raise requests.HTTPError(f"HTTP {r.status_code}", response=r)
+            r.raise_for_status()
+            return feedparser.parse(r.content)
+        except requests.RequestException as e:
+            status = getattr(getattr(e, "response", None), "status_code", None)
+            retryable = status is None or status == 429 or status >= 500
+            if attempt < FETCH_TRIES and retryable:
+                wait = 2 ** attempt
+                log(f"  retry {attempt}/{FETCH_TRIES - 1} in {wait}s for {url[:70]}... ({e})")
+                time.sleep(wait)
+                continue
+            log(f"  warning: fetch failed for {url[:90]}... ({e})")
+            return None
 
 
 # ---------------------------------------------------------------------------
 # Gazetteer / location detection
 # ---------------------------------------------------------------------------
+class Geo:
+    """Everything location and source handling needs, loaded once per run."""
+
+    def __init__(self, patterns, areas, source_states, blocked):
+        self.patterns = patterns            # [(name, regex)] for cities, states, countries
+        self.areas = areas                  # "Mason County" -> [candidates]
+        self.source_states = source_states  # outlet name -> two-letter state
+        self.blocked = blocked              # outlet names (lowercase) that are dropped
+
+
+# "Mason County", "St. Louis County", "Van Buren Township", "Richland Parish"
+AREA_RE = re.compile(r"((?:(?:St\.|Saint|[A-Z][a-zA-Z'’-]+) )+)(County|Parish|Township)\b")
+PRECISION_RANK = {"city": 4, "county": 3, "state": 2, "source": 1}
+
+
+def entry_candidates(value):
+    """A gazetteer value is one [lat, lon, level, display] entry or a list of them."""
+    return value if value and isinstance(value[0], list) else [value]
+
+
 def load_gazetteer():
-    gaz = {k: v for k, v in load_json(GAZ_FILE, {}).items() if not k.startswith("_")}
-    names = sorted(gaz.keys(), key=len, reverse=True)
+    raw = {k: v for k, v in load_json(GAZ_FILE, {}).items() if not k.startswith("_")}
+    areas, gaz = {}, {}
+    for k, v in raw.items():
+        if re.search(r" (County|Parish|Township)$", k):
+            areas[k] = entry_candidates(v)
+        else:
+            gaz[k] = entry_candidates(v)[0]
     patterns = []
-    for n in names:
+    for n in sorted(gaz.keys(), key=len, reverse=True):
         if re.fullmatch(r"[A-Z]{2}", n):
             # Two-letter codes only count after a comma: "Abilene, TX"
             pat = re.compile(r"(?<=, )" + re.escape(n) + r"(?![A-Za-z])")
         else:
             pat = re.compile(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])")
         patterns.append((n, pat))
-    return gaz, patterns
+    cfg = load_json(FEEDS_FILE, {})
+    source_states = {k: v for k, v in cfg.get("source_states", {}).items() if not k.startswith("_")}
+    blocked = {s.strip().lower() for s in cfg.get("blocked_sources", []) if isinstance(s, str) and not s.startswith("#")}
+    return gaz, Geo(patterns, areas, source_states, blocked)
 
 
-def find_locations(text, gaz, patterns):
+def loc_from(entry, precision):
+    lat, lon, level, display = entry
+    return {"name": display, "lat": lat, "lon": lon, "level": level, "precision": precision}
+
+
+def find_locations(text, gaz, geo, context_states=()):
+    """Places named in the text, most precise first. Ambiguous county names are
+    resolved with the states found elsewhere in the text or the outlet's state."""
     found = []
     work = text
-    for name, pat in patterns:
+    for name, pat in geo.patterns:
         m = pat.search(work)
         if not m:
             continue
-        lat, lon, level, display = gaz[name]
-        found.append({"name": display, "lat": lat, "lon": lon, "level": level})
+        entry = gaz[name]
+        found.append(loc_from(entry, "city" if entry[2] >= 3 else "state" if entry[2] == 2 else "country"))
         # blank out the match so shorter names inside it do not re-match
         work = work[:m.start()] + (" " * (m.end() - m.start())) + work[m.end():]
-    found.sort(key=lambda f: -f["level"])
+    known_states = {state_of(f) for f in found} | set(context_states)
+    for m in AREA_RE.finditer(text):
+        words, kind = m.group(1).split(), m.group(2)
+        for k in range(len(words), 0, -1):  # "Proposed Mason County" -> "Mason County"
+            key = " ".join(words[-k:]) + " " + kind
+            if key in geo.areas:
+                cands = geo.areas[key]
+                pick = cands[0] if len(cands) == 1 else next((c for c in cands if state_of({"name": c[3]}) in known_states), None)
+                if pick:
+                    found.append(loc_from(pick, "city" if kind == "Township" else "county"))
+                break
+    found.sort(key=lambda f: (-PRECISION_RANK.get(f["precision"], 0), -f["level"]))
     seen, out = set(), []
     for f in found:
         if f["name"] in seen:
@@ -319,6 +449,14 @@ def find_companies(text):
     return sorted(found, key=lambda n: COMPANY_ORDER.get(n, 99))
 
 
+def find_utilities(text):
+    return [name for name, rx in UTILITY_RULES if rx.search(text)]
+
+
+def is_on_topic(text, companies):
+    return bool(ON_TOPIC_RE.search(text) or (companies and SITE_RE.search(text)))
+
+
 def state_of(loc):
     """'Abilene, Texas, US' -> 'TX'; 'Washington, D.C., US' -> 'DC'."""
     parts = [p.strip() for p in loc["name"].split(",")]
@@ -344,27 +482,98 @@ def us_filter(item, all_locs):
     return True
 
 
-def tag_item(item, gaz, patterns):
-    """(Re)compute category, tags, locations and states. Returns False to drop."""
-    text = item["title"] + " " + item.get("snippet", "")
-    locs = find_locations(text, gaz, patterns)
+def tag_item(item, gaz, geo):
+    """(Re)compute topic, places, companies and figures. Returns False to drop the headline."""
+    if item.get("source", "").strip().lower() in geo.blocked:
+        return False
+    text = item["title"] + " " + item.get("snippet", "") + " " + item.get("_desc", "")
+    companies = find_companies(text)
+    if not is_on_topic(text, companies):
+        return False
+    source_state = geo.source_states.get(item.get("source", ""))
+    locs = find_locations(text, gaz, geo, [source_state] if source_state else ())
     if not us_filter(item, locs):
         return False
     us_locs = [l for l in locs if is_us(l)]
+    if not us_locs and source_state:
+        # A local outlet with no place in the headline: use its home state, flagged as such
+        name = next((n for n, c in STATE_CODES.items() if c == source_state), None)
+        if name in gaz:
+            us_locs = [loc_from(gaz[name], "source")]
     item["category"], item["tags"] = classify(item["title"])
     item["locations"] = us_locs[:3]
     states = [s for s in (state_of(l) for l in us_locs) if s]
     item["states"] = sorted(set(states))
     item["state"] = states[0] if states else None
-    item["companies"] = find_companies(text)
+    item["county"] = next((l["name"] for l in us_locs if l["precision"] == "county"), None)
+    item["location_precision"] = us_locs[0]["precision"] if us_locs else None
+    item["companies"] = companies
+    item["utilities"] = find_utilities(text)
     item.pop("capacity_mw", None)
     item.pop("investment_usd_b", None)
     item.update(extract_numbers(item["title"]))
     return True
 
 
+# ---------------------------------------------------------------------------
+# Clustering: one story told by several outlets
+# ---------------------------------------------------------------------------
+STOP = set("""a an and the of in on at to for by with from as is are be was were will has have had it its this that
+these those new data center centers centre centres datacenter datacenters plan plans says say said could would
+after over into about amid more than up out not no but or if he she they we you their our his her who what why how
+county city state township parish us u.s""".split())
+
+
+def title_words(title):
+    return {w for w in re.findall(r"[a-z0-9$][a-z0-9$'.-]*", title.lower()) if len(w) > 2 and w not in STOP}
+
+
+def cluster_items(items):
+    """Set cluster_id on every item. Two headlines join a cluster when they are
+    within CLUSTER_DAYS, share a company, sit in the same county (when both are
+    known) or else the same state, and share CLUSTER_OVERLAP of their title words."""
+    parent = {it["id"]: it["id"] for it in items}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    info = {it["id"]: (datetime.fromisoformat(it["published"]), title_words(it["title"])) for it in items}
+    buckets = {}
+    for it in items:
+        for c in it.get("companies", []):
+            for st in it.get("states", []):
+                buckets.setdefault((c, st), []).append(it)
+    for group in buckets.values():
+        group.sort(key=lambda x: x["published"])
+        for i, a in enumerate(group):
+            ta, wa = info[a["id"]]
+            for b in group[i + 1:]:
+                tb, wb = info[b["id"]]
+                if tb - ta > timedelta(days=CLUSTER_DAYS):
+                    break
+                if a.get("county") and b.get("county") and a["county"] != b["county"]:
+                    continue
+                if not wa or not wb or len(wa & wb) / min(len(wa), len(wb)) < CLUSTER_OVERLAP:
+                    continue
+                ra, rb = find(a["id"]), find(b["id"])
+                if ra != rb:
+                    parent[max(ra, rb)] = min(ra, rb)
+    # Name each cluster after its earliest headline so the id stays stable as stories join
+    first = {}
+    for it in sorted(items, key=lambda x: x["published"]):
+        first.setdefault(find(it["id"]), it["id"])
+    for it in items:
+        it["cluster_id"] = first[find(it["id"])]
+    return len(first)
+
+
 def classify(title):
     tags = [name for name, rx in COMPILED_RULES if rx.search(title)]
+    if is_cancelled(title):
+        tags.insert(0, CANCELLED)
     primary = tags[0] if tags else "General"
     return primary, tags
 
@@ -389,6 +598,8 @@ def extract_numbers(title):
 
 
 def guess_status(title):
+    if is_cancelled(title):
+        return CANCELLED
     for status, rx in STATUS_RULES:
         if rx.search(title):
             return status
@@ -482,7 +693,7 @@ def main():
             shutil.copytree(ARCHIVE_DIR, archive_out, dirs_exist_ok=True)
     now = datetime.now(timezone.utc)
     cfg = load_json(FEEDS_FILE, {})
-    gaz, patterns = load_gazetteer()
+    gaz, geo = load_gazetteer()
 
     sources = []
     for f in cfg.get("google_news", []):
@@ -498,10 +709,12 @@ def main():
 
     log(f"Fetching {len(sources)} feeds")
     fresh = {}
+    raw_total = 0
     for label, url in sources:
         parsed = feedparser.parse(Path(url).read_bytes()) if args.sample else fetch_feed(url)
         if not parsed:
             continue
+        raw_total += len(parsed.entries)
         n = 0
         for e in parsed.entries:
             raw_title = clean_text(e.get("title", ""))
@@ -525,7 +738,9 @@ def main():
             key = make_id(title)
             if key in fresh:
                 continue
-            snippet = clean_text(e.get("summary", ""))[:300] if label == "Google Alerts" else ""
+            # Google News descriptions repeat the title and outlet; Alerts carry a real snippet.
+            desc = clean_text(e.get("summary", "") or e.get("description", ""))
+            snippet = desc[:300] if desc and not desc.startswith(title[:40]) else ""
             item = {
                 "id": key,
                 "title": title,
@@ -536,11 +751,17 @@ def main():
             }
             if snippet:
                 item["snippet"] = snippet
-            if not tag_item(item, gaz, patterns):
+            item["_desc"] = desc  # scanned for places and companies, never stored
+            ok = tag_item(item, gaz, geo)
+            item.pop("_desc", None)
+            if not ok:
                 continue
             fresh[key] = item
             n += 1
         log(f"  {label}: {n} items")
+    if sources and raw_total == 0:
+        log("ERROR: every feed returned zero items; leaving the data files unchanged")
+        return 1
 
     # Merge with the existing news file so stories stay for NEWS_MAX_AGE_DAYS
     existing = load_json(NEWS_FILE, {}).get("items", [])
@@ -554,8 +775,10 @@ def main():
                     merged[it["id"]] = dict(it)
     merged.update(fresh)
     # Re-tag stored stories too, so rule and gazetteer edits apply to old items
-    kept = [it for it in merged.values() if tag_item(it, gaz, patterns)]
+    kept = [it for it in merged.values() if tag_item(it, gaz, geo)]
     kept.sort(key=lambda it: it["published"], reverse=True)
+    clusters = cluster_items(kept)
+    log(f"Clusters: {len(kept)} headlines in {clusters} stories")
 
     # Every kept headline goes into the permanent archive before the recent file is trimmed
     added = archive_items(kept, archive_out)
@@ -571,17 +794,20 @@ def main():
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Wrote {news_out}: {len(items)} items")
 
-    # Project candidates: site + stage + place
-    cand_existing = load_json(CAND_FILE, {}).get("projects", [])
-    cands = {c["id"]: c for c in cand_existing if "id" in c and c.get("location", "").endswith(", US")}
-    for c in cands.values():
-        c["state"] = c.get("state") or state_of({"name": c["location"]})
-        c["companies"] = find_companies(c["name"])
-        if c.get("capacity_mw", 0) > MAX_PROJECT_MW:
-            del c["capacity_mw"]
-    for it in items:
-        if it["id"] in cands:
-            continue
+    # Project candidates: site + stage + place, rebuilt every run from re-tagged
+    # headlines so rule changes (cancellations, places) apply to every pin.
+    cutoff_c = now - timedelta(days=CAND_MAX_AGE_DAYS)
+    pool = {it["id"]: it for it in kept}
+    for path in sorted(archive_out.glob("*.json")):
+        if MONTH_RE.match(path.stem) and path.stem >= cutoff_c.strftime("%Y-%m"):
+            for it in load_json(path, {}).get("items", []):
+                if it["id"] not in pool and datetime.fromisoformat(it["published"]) >= cutoff_c:
+                    it = dict(it)
+                    if tag_item(it, gaz, geo):
+                        it.setdefault("cluster_id", it["id"])
+                        pool[it["id"]] = it
+    cands = {}
+    for it in pool.values():
         if not it["locations"] or not PROJECT_WORDS.search(it["title"]):
             continue
         status = guess_status(it["title"])
@@ -597,7 +823,9 @@ def main():
             "lon": loc["lon"],
             "state": state_of(loc),
             "companies": it.get("companies", []),
-            "precision": {3: "city", 2: "state", 1: "country"}.get(loc["level"], "unknown"),
+            "utilities": it.get("utilities", []),
+            "precision": loc.get("precision", "city"),
+            "cluster_id": it.get("cluster_id", it["id"]),
             "source": it["source"],
             "source_url": it["link"],
             "published": it["published"],
@@ -607,7 +835,6 @@ def main():
             if k in it:
                 c[k] = it[k]
         cands[it["id"]] = c
-    cutoff_c = now - timedelta(days=CAND_MAX_AGE_DAYS)
     cand_list = [c for c in cands.values()
                  if datetime.fromisoformat(c["published"]) >= cutoff_c]
     cand_list.sort(key=lambda c: c["published"], reverse=True)
