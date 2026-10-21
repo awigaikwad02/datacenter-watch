@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=20261021b">
   <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="assets/app.js"></script>
+  <script src="assets/app.js?v=20261021b"></script>
 </head>
 <body class="is-loading">
   <div id="loader" role="status" aria-live="polite">
@@ -146,7 +146,7 @@
             <li><strong>Megawatt-hour (MWh)</strong>: energy, not power. 1 MW running for one hour is 1 MWh. Your electric bill counts kWh.</li>
           </ul>
           <div class="tool" id="scaleTool">
-            <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14a1 1 0 0 1-.8-1.6l9.9-10.2a.5.5 0 0 1 .9.5l-1.9 6A1 1 0 0 0 13 10h7a1 1 0 0 1 .8 1.6l-9.9 10.2a.5.5 0 0 1-.9-.5l1.9-6A1 1 0 0 0 11 14z"/></svg>Try it: how big is that campus?</b>
+            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14a1 1 0 0 1-.8-1.6l9.9-10.2a.5.5 0 0 1 .9.5l-1.9 6A1 1 0 0 0 13 10h7a1 1 0 0 1 .8 1.6l-9.9 10.2a.5.5 0 0 1-.9-.5l1.9-6A1 1 0 0 0 11 14z"/></svg>Try it: how big is that campus?</b>
             <div class="tool-grid">
               <div>
                 <label><span class="lab">IT capacity <span class="val" id="scMWv">100 MW</span></span><input type="range" id="scMW" min="0" max="100" value="50"></label>
@@ -170,7 +170,7 @@
           <h2>The power chain</h2>
           <p class="lede">Electricity takes a long path from the grid to a chip, and every step is built so that a single failure never turns the servers off.</p>
           <div class="tool">
-            <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>Follow the electricity</b>
+            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>Follow the electricity</b>
             <div class="chain" id="chain"></div>
             <div class="chain-info" id="chainInfo"></div>
             <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
@@ -216,7 +216,7 @@
           <h3>From air to liquid</h3>
           <p>Air works well up to about 20 to 30 kW per rack. Beyond that, fans cannot move enough air, so dense AI racks bring liquid right to the chips. <strong>Direct-to-chip</strong> cooling pumps coolant through cold plates mounted on GPUs. <strong>Immersion</strong> dunks whole servers in a non-conductive fluid. The heat then goes to chillers, cooling towers or dry coolers outside.</p>
           <div class="tool">
-            <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg>Try it: rack density explorer</b>
+            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg>Try it: rack density explorer</b>
             <label><span class="lab">Power per rack <span class="val" id="dnV">10 kW</span></span><input type="range" id="dn" min="2" max="200" value="10"></label>
             <div class="density-scale" id="dnScale">
               <span style="width:12.5%;background:#0ea5e9">Air</span><span style="width:12.5%;background:#0891b2">Air + containment</span><span style="width:50%;background:#7c3aed">Direct-to-chip liquid</span><span style="width:25%;background:#db2777">Immersion</span>
@@ -279,7 +279,7 @@
             <li><strong>2N</strong>: two complete, independent systems. An entire path can fail.</li>
           </ul>
           <div class="tool">
-            <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.7 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.5 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/></svg>Try it: break things</b>
+            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.7 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.5 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/></svg>Try it: break things</b>
             <p style="font-size:14px;margin:0 0 10px">The load needs <strong>3 units</strong> of cooling or power. Pick a design, then click units to fail them.</p>
             <div class="seg" id="redMode" role="group" aria-label="Redundancy design"><button data-m="N" aria-pressed="false">N</button><button data-m="N+1" aria-pressed="true">N+1</button><button data-m="2N" aria-pressed="false">2N</button></div>
             <div class="paths" id="redUnits" style="margin-top:12px"></div>
@@ -312,7 +312,7 @@
             <li><strong>CUE (carbon usage effectiveness)</strong> = kg of CO₂ ÷ kWh of IT energy, driven mostly by how clean the local grid is.</li>
           </ul>
           <div class="tool">
-            <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 14 4-4M3.3 19a10 10 0 1 1 17.4 0"/></svg>Try it: efficiency calculator</b>
+            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 14 4-4M3.3 19a10 10 0 1 1 17.4 0"/></svg>Try it: efficiency calculator</b>
             <div class="tool-grid">
               <div>
                 <label><span class="lab">IT load <span class="val" id="peITv"></span></span><input type="range" id="peIT" min="10" max="2000" step="10" value="300"></label>
@@ -343,7 +343,7 @@
             <li><strong>Training vs. inference:</strong> training builds a model and can sit in remote places with cheap power. Inference answers users' questions and benefits from being closer to population centers.</li>
           </ul>
           <div class="tool">
-            <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg>Try it: size an AI cluster</b>
+            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg>Try it: size an AI cluster</b>
             <div class="tool-grid">
               <div>
                 <label><span class="lab">Number of GPUs <span class="val" id="aiNv"></span></span><input type="range" id="aiN" min="0" max="100" value="55"></label>
@@ -407,7 +407,7 @@
             <li><strong>Incentives and permitting:</strong> sales tax exemptions on equipment, property tax abatements, and a predictable local approval process.</li>
           </ul>
           <div class="tool">
-            <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Typical project timeline (months from site search)</b>
+            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Typical project timeline (months from site search)</b>
             <div class="timeline" id="timeline"></div>
             <p style="font-size:12.5px;color:var(--muted);margin:6px 0 0">Ranges vary widely. Power can be the longest pole; fast-track AI builds have compressed construction to under a year.</p>
           </div>
@@ -449,7 +449,7 @@
           <p class="lede">Terms you'll see in data center news.</p>
           <label class="search" style="display:block;max-width:420px">
             <span class="sr-only">Search the glossary</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <input id="glq" class="input" type="search" placeholder="Search terms…" autocomplete="off">
           </label>
           <div class="glossary-grid" id="glossaryGrid"></div>
@@ -459,6 +459,6 @@
   </main>
 
   <footer id="site-footer"></footer>
-  <script src="assets/learn.js"></script>
+  <script src="assets/learn.js?v=20261021b"></script>
 </body>
 </html>
