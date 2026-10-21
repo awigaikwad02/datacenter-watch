@@ -45,6 +45,8 @@ GAZ_FILE = Path(__file__).resolve().parent / "gazetteer.json"
 
 NEWS_MAX_AGE_DAYS = 60
 NEWS_MAX_ITEMS = 600
+# Capacity figures above this are grid-wide totals ("474 GW of requests"), not one project.
+MAX_PROJECT_MW = 20000
 CAND_MAX_AGE_DAYS = 180
 CAND_MAX_ITEMS = 400
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; DataCenterWatch/1.0; +https://github.com)"}
@@ -129,7 +131,7 @@ COMPANIES = [
     ("Compass Datacenters", r"Compass Data ?[Cc]enters"),
     ("Vantage", r"Vantage"),
     ("Aligned", r"Aligned Data Centers|Aligned(?= (Data|data))"),
-    ("STACK", r"STACK Infrastructure|STACK"),
+    ("STACK", r"STACK Infrastructure|STACK|Stack(?= (Infrastructure|data cent))"),
     ("EdgeCore", r"EdgeCore"),
     ("NTT", r"NTT"),
     ("Iron Mountain", r"Iron Mountain"),
@@ -349,6 +351,8 @@ def tag_item(item, gaz, patterns):
     item["states"] = sorted(set(states))
     item["state"] = states[0] if states else None
     item["companies"] = find_companies(text)
+    item.pop("capacity_mw", None)
+    item.pop("investment_usd_b", None)
     item.update(extract_numbers(item["title"]))
     return True
 
@@ -373,6 +377,8 @@ def extract_numbers(title):
         val = float(m.group(1).replace(",", ""))
         unit = m.group(2).lower()
         out["investment_usd_b"] = round(val if unit in ("billion", "bn", "b") else val / 1000, 3)
+    if out.get("capacity_mw", 0) > MAX_PROJECT_MW:
+        del out["capacity_mw"]
     return out
 
 
@@ -488,6 +494,8 @@ def main():
     for c in cands.values():
         c["state"] = c.get("state") or state_of({"name": c["location"]})
         c["companies"] = find_companies(c["name"])
+        if c.get("capacity_mw", 0) > MAX_PROJECT_MW:
+            del c["capacity_mw"]
     for it in items:
         if it["id"] in cands:
             continue

@@ -2,88 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Center Watch</title>
-  <meta name="description" content="Live feed of U.S. data center news: new announcements, construction, power and grid deals, local policy fights and the AI build-out, refreshed twice a day.">
-  <meta name="theme-color" content="#0ea5e9">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Rack Report · U.S. data center intelligence</title>
+  <meta name="description" content="The U.S. data center buildout, tracked in one place: new projects, construction, power deals, companies and a map of every site, refreshed twice a day.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://awigaikwad02.github.io/datacenter-watch/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Rack Report">
+  <meta property="og:title" content="The Rack Report · U.S. data center intelligence">
+  <meta property="og:description" content="The U.S. data center buildout, tracked in one place: new projects, construction, power deals, companies and a map of every site, refreshed twice a day.">
+  <meta property="og:url" content="https://awigaikwad02.github.io/datacenter-watch/">
+  <meta property="og:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Rack Report: the U.S. data center buildout, tracked in one place.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Rack Report · U.S. data center intelligence">
+  <meta name="twitter:description" content="The U.S. data center buildout, tracked in one place: new projects, construction, power deals, companies and a map of every site, refreshed twice a day.">
+  <meta name="twitter:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=20261021b">
-  <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="assets/app.js?v=20261021b"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css?v=rr1">
+  <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
-<body class="is-loading">
-  <div id="loader" role="status" aria-live="polite">
-    <div class="loader-inner">
-      <script>document.write(DCW.logo("loader-logo"))</script>
-      <div class="loader-title">Data Center Watch</div>
-      <div class="loader-bar"><i></i></div>
-      <div class="loader-sub">Loading the latest U.S. data center news…</div>
-    </div>
-  </div>
-
-  <header id="site-header"></header>
-
-  <main class="wrap">
-    <section class="hero">
-      <span class="eyebrow"><span class="live-dot"></span><span id="updated">Live feed</span></span>
-      <h1>America's data center boom, <span class="grad">as it happens.</span></h1>
-      <p class="lede">New campuses, groundbreakings, power deals and local votes from across the United States. Pulled from hundreds of outlets and refreshed twice a day.</p>
-      <div class="stats" id="stats"></div>
-    </section>
-
-    <div class="news-layout">
-      <div>
-        <div id="featured"></div>
-
-        <div class="toolbar" id="toolbar">
-          <div class="toolbar-row">
-            <label class="search">
-              <span class="sr-only">Search headlines</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-              <input id="q" class="input" type="search" placeholder="Search headlines, companies, towns…" autocomplete="off">
-              <kbd>/</kbd>
-            </label>
-            <select id="state" class="select" aria-label="State"></select>
-            <select id="company" class="select" aria-label="Company"></select>
-            <select id="range" class="select" aria-label="Time range">
-              <option value="1">Last 24 hours</option>
-              <option value="7">Last 7 days</option>
-              <option value="30" selected>Last 30 days</option>
-              <option value="60">Last 60 days</option>
-            </select>
-            <div class="seg" id="view" role="group" aria-label="Layout"></div>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="loader" aria-hidden="true"><div class="ld">
+    <svg class="ld-mark" viewBox="0 0 48 48"><rect class="ld-outline" x="8" y="3.75" width="32" height="40.5" rx="7" fill="none" stroke="currentColor" stroke-width="3.5" pathLength="150"/><rect class="ld-bar b1" x="14" y="11" width="20" height="4.5" rx="2.25" fill="#B9F542"/><rect class="ld-bar b2" x="14" y="18.5" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b3" x="14" y="26" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b4" x="14" y="33.5" width="20" height="4.5" rx="2.25" fill="currentColor"/></svg>
+    <p class="ld-text">Initializing The Rack Report…</p>
+  </div></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site"></aside>
+  <div class="shell-main">
+    <header class="topbar" id="topbar"></header>
+    <main id="main" tabindex="-1">
+      <div class="page">
+        <section class="hero" aria-labelledby="heroTitle">
+          <span class="eyebrow"><span class="live-dot" aria-hidden="true"></span>U.S. data center intelligence</span>
+          <h1 id="heroTitle">The U.S. data center buildout, <em>tracked in one place.</em></h1>
+          <p class="lede">New campuses, construction, power deals, land buys and local votes across the United States, pulled from public news twice a day and mapped as they happen.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="atlas.html" data-icon="map">Explore the map</a>
+            <a class="btn" href="newsroom.html" data-icon="news">Read latest news</a>
+            <a class="btn" href="companies.html" data-icon="building">View companies</a>
+            <a class="btn" href="learn.html" data-icon="learn">Start learning</a>
           </div>
-          <div class="toolbar-row"><div class="chips scroll" id="chips" role="group" aria-label="Categories"></div></div>
-          <div class="active-filters" id="active" hidden></div>
-        </div>
+          <div class="stats" id="stats" aria-live="polite">
+            <div class="skel tile"></div><div class="skel tile"></div><div class="skel tile"></div><div class="skel tile"></div>
+          </div>
+          <div class="ticker" id="ticker" role="region" aria-label="Newest headlines, scrolling"></div>
+        </section>
 
-        <div id="feed"></div>
-        <div class="load-more"><button class="btn" id="more" hidden>Show more stories</button></div>
+        <section class="section" aria-labelledby="todayTitle">
+          <div class="section-head"><div><h2 id="todayTitle">What's new</h2><p>The latest major story and the newest headlines from across the country.</p></div><a class="link-arrow" href="newsroom.html">Open the Newsroom →</a></div>
+          <div class="two-col">
+            <div id="major"><div class="skel" style="height:260px"></div></div>
+            <div class="card card-pad">
+              <h3 class="sub-h">Latest headlines</h3>
+              <div class="headline-mini" id="latest"><div class="skel news"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" aria-labelledby="pulseTitle">
+          <div class="section-head"><div><h2 id="pulseTitle">U.S. project pulse</h2><p>Curated projects plus sites detected in headlines over the last 90 days. Select a pin to open it in the Project Atlas.</p></div><a class="link-arrow" href="atlas.html">Open the Project Atlas →</a></div>
+          <div class="pulse-map">
+            <div class="map" id="pulseMap" role="region" aria-label="Map of recent U.S. data center projects"></div>
+            <div class="map-placeholder" id="pulsePh">Loading map…</div>
+            <div class="overlay"><div class="legend" id="pulseLegend"></div><span class="live-pill" id="pulseCount" style="margin:0"></span></div>
+          </div>
+        </section>
+
+        <section class="section reveal" aria-labelledby="coTitle">
+          <div class="two-col">
+            <div class="card card-pad">
+              <div class="section-head" style="margin-bottom:10px"><div><h2 id="coTitle">Most active companies</h2><p>Headline mentions in the last 30 days.</p></div><a class="link-arrow" href="companies.html">All companies →</a></div>
+              <div id="topCos"></div>
+            </div>
+            <div class="card card-pad">
+              <div class="section-head" style="margin-bottom:10px"><div><h2>This week by topic</h2><p>How the last 7 days of headlines break down.</p></div></div>
+              <div id="topics"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" aria-labelledby="learnTitle">
+          <div class="card explainer">
+            <div>
+              <span class="eyebrow">Learn data centers</span>
+              <h3 id="learnTitle">What actually happens inside a gigawatt campus?</h3>
+              <p>A ten-module track that starts with what a data center is and ends with GPU pods, liquid cooling and how projects get built. Every module has a beginner and an advanced view.</p>
+              <a class="btn primary" href="learn.html">Start learning</a>
+            </div>
+            <ol>
+              <li>Power: from the grid to the chip</li>
+              <li>Cooling: from air to liquid</li>
+              <li>AI and GPU infrastructure</li>
+              <li>How a project gets built</li>
+            </ol>
+          </div>
+        </section>
       </div>
-
-      <aside class="news-side">
-        <section class="panel reveal">
-          <h3>Where it's happening <span class="sub">stories by state</span></h3>
-          <div class="tilemap" id="tiles"></div>
-          <div class="scale">fewer <i></i> more</div>
-        </section>
-        <section class="panel reveal">
-          <h3>Story volume <span class="sub">last 30 days</span></h3>
-          <div class="spark" id="spark"></div>
-          <div class="spark-axis" id="sparkAxis"></div>
-        </section>
-        <section class="panel reveal">
-          <h3>Companies in the news <a class="sub" href="companies.html">All companies →</a></h3>
-          <div class="bars" id="cos"></div>
-        </section>
-      </aside>
-    </div>
-  </main>
-
-  <footer id="site-footer"></footer>
-  <script src="assets/news.js?v=20261021b"></script>
+    </main>
+    <footer class="site-footer" id="footer"></footer>
+  </div>
+  <nav class="tabbar" id="tabbar"></nav>
+  <script src="assets/companies.js?v=rr1"></script>
+  <script src="assets/app.js?v=rr1"></script>
+  <script src="assets/overview.js?v=rr1"></script>
 </body>
 </html>

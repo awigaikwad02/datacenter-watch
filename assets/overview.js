@@ -1,0 +1,113 @@
+// Overview: metrics, major story, ticker, latest headlines, project pulse map, active companies and topics.
+(function () {
+  "use strict";
+  const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY;
+  R.shell("index.html", "Overview");
+  document.querySelectorAll("[data-icon]").forEach((a) => a.insertAdjacentHTML("afterbegin", R.icon(a.dataset.icon)));
+
+  function stats(items, projects) {
+    const now = Date.now(), d = new Date();
+    const week = items.filter((i) => now - i.t <= 7 * DAY);
+    const monthStart = new Date(d.getFullYear(), d.getMonth(), 1).getTime();
+    const announced = projects.filter((p) => (p.status === "Announced" || p.status === "Planned") && p.t >= monthStart).length;
+    const states = new Set(items.filter((i) => now - i.t <= 30 * DAY && i.state).map((i) => i.state)
+      .concat(projects.filter((p) => !p.curated && now - p.t <= 30 * DAY).map((p) => p.state))).size;
+    const mw = week.reduce((a, i) => a + (i.capacity_mw || 0), 0);
+    const tiles = [
+      ["news", "Headlines this week", week.length, "", "var(--cyan)", "from " + new Set(week.map((i) => i.source)).size + " outlets"],
+      ["spark", "Projects announced this month", announced, "", "var(--st-announced)", "curated and detected, since " + new Date(monthStart).toLocaleDateString("en-US", { month: "short", day: "numeric" })],
+      ["pin", "States with activity", states, "", "var(--accent)", "in headlines or projects, last 30 days"],
+      ["zap", "MW mentioned this week", mw, "MW", "var(--c-power)", "capacity figures in headlines"],
+    ];
+    $("#stats").innerHTML = tiles.map((t) =>
+      '<div class="card stat" style="--tone:' + t[4] + ";--glow:color-mix(in srgb," + t[4] + ' 22%,transparent)"><div class="stat-label">' + R.icon(t[0]) + t[1] +
+      '</div><div class="stat-value" data-v="' + t[2] + '" data-u="' + t[3] + '">0</div><div class="stat-hint">' + t[5] + "</div></div>").join("");
+    $("#stats").querySelectorAll(".stat-value").forEach((el) => {
+      const v = Number(el.dataset.v), u = el.dataset.u;
+      R.countUp(el, v, (x) => (u && v >= 1000 ? (x / 1000).toFixed(1) + "<small>GW</small>" : R.fmtN(x) + (u ? "<small>" + u + "</small>" : "")));
+    });
+  }
+
+  function major(items) {
+    const pick = items.find((i) => (i.category === "New Announcement" || i.category === "Construction") && i.state && (i.capacity_mw || i.investment_usd_b)) || items[0];
+    if (!pick) { $("#major").innerHTML = '<div class="card empty">' + R.icon("news") + "<b>No headlines yet</b>The feed refreshes twice a day.</div>"; return; }
+    const c = R.cat(pick.category);
+    // Other recent stories that name a place or a company, newest first.
+    const also = items.filter((i) => i !== pick && i.category !== "General" && i.category !== "Policy / Permits" && (i.state || i.companies.length)).slice(0, 4);
+    const figs = [];
+    if (pick.capacity_mw) figs.push(["Capacity", R.fmtMW(pick.capacity_mw)]);
+    if (pick.investment_usd_b) figs.push(["Investment", R.fmtMoney(pick.investment_usd_b)]);
+    if (pick.state) figs.push(["State", R.STATES[pick.state]]);
+    $("#major").innerHTML = '<article class="card lift feature" style="--tone:' + c.tone + ';height:100%">' +
+      '<span class="eyebrow">' + R.icon(c.icon) + "Latest major story · " + R.esc(pick.category) + "</span>" +
+      '<h3><a href="' + R.esc(pick.link) + '" target="_blank" rel="noopener">' + R.esc(pick.title) + "</a></h3>" +
+      '<div class="news-meta"><span class="src">' + R.esc(pick.source) + "</span><span>·</span><span>" + R.ago(pick.published) + "</span></div>" +
+      '<div class="news-tags" style="margin-top:12px">' + R.newsTags(pick) + "</div>" +
+      (figs.length ? '<div class="figures">' + figs.map((f) => "<div><span>" + f[0] + "</span><b>" + R.esc(f[1]) + "</b></div>").join("") + "</div>" : "") +
+      (also.length ? '<h4 class="sub-h" style="margin-top:26px">Also moving</h4><div class="headline-mini">' + also.map((i) =>
+        '<a href="' + R.esc(i.link) + '" target="_blank" rel="noopener" style="--tone:' + R.cat(i.category).tone + '"><span class="k"><i></i>' + R.esc(i.category) + " · " + R.esc(i.source) + " · " + R.ago(i.published) + "</span>" + R.esc(i.title) + "</a>").join("") + "</div>" : "") +
+      "</article>";
+  }
+
+  function latest(items) {
+    $("#latest").innerHTML = items.slice(0, 8).map((i) =>
+      '<a href="' + R.esc(i.link) + '" target="_blank" rel="noopener" style="--tone:' + R.cat(i.category).tone + '"><span class="k"><i></i>' + R.esc(i.source) + " · " + R.ago(i.published) + (i.state ? " · " + R.esc(i.state) : "") + "</span>" + R.esc(i.title) + "</a>").join("") ||
+      '<p class="muted">No headlines yet.</p>';
+  }
+
+  function companies(items) {
+    const now = Date.now(), counts = {};
+    items.filter((i) => now - i.t <= 30 * DAY).forEach((i) => i.companies.forEach((c) => { counts[c] = (counts[c] || 0) + 1; }));
+    const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    $("#topCos").innerHTML = top.length ? R.miniBars(top.map(([c, n], i) => ({ label: c, value: n, hi: i === 0 })), { label: "Company headline mentions, last 30 days" })
+      : '<p class="co-empty">No tracked companies were named in headlines in the last 30 days.</p>';
+  }
+  function topics(items) {
+    const now = Date.now(), counts = {};
+    items.filter((i) => now - i.t <= 7 * DAY).forEach((i) => { counts[i.category] = (counts[i.category] || 0) + 1; });
+    const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    $("#topics").innerHTML = rows.length ? R.miniBars(rows.map(([c, n], i) => ({ label: c, value: n, hi: i === 0 })), { label: "Headlines by topic, last 7 days", labelW: 132 })
+      : '<p class="co-empty">No headlines in the last 7 days.</p>';
+  }
+
+  // The pulse map loads Leaflet only when it scrolls near the viewport.
+  function pulse(projects) {
+    const now = Date.now();
+    const list = projects.filter((p) => p.curated || now - p.t <= 90 * DAY);
+    $("#pulseLegend").innerHTML = R.legendHTML();
+    $("#pulseCount").innerHTML = '<span class="live-dot" aria-hidden="true"></span>' + list.length + " sites on the map";
+    const el = $("#pulseMap");
+    const start = () => R.loadLeaflet().then(() => {
+      const map = R.baseMap(el, { scrollWheelZoom: false });
+      window.L.control.zoom({ position: "topright" }).addTo(map);
+      const cl = R.clusterGroup();
+      list.forEach((p) => {
+        const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p), title: p.curated ? p.name : p.place, keyboard: true });
+        m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(p.status) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
+        m.on("click", () => { location.href = "atlas.html#project=" + encodeURIComponent(p.id); });
+        cl.addLayer(m);
+      });
+      map.addLayer(cl);
+      $("#pulsePh").remove();
+    }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open the Project Atlas instead."; });
+    if (!("IntersectionObserver" in window)) return start();
+    const io = new IntersectionObserver((e) => { if (e[0].isIntersecting) { io.disconnect(); start(); } }, { rootMargin: "300px" });
+    io.observe(el);
+  }
+
+  Promise.all([R.news(), R.projects()]).then(([n, projects]) => {
+    const items = n.items;
+    stats(items, projects);
+    R.ticker($("#ticker"), items.slice(0, 10));
+    major(items);
+    latest(items);
+    companies(items);
+    topics(items);
+    pulse(projects);
+    R.ready();
+  }).catch((err) => {
+    console.error(err);
+    $("#stats").innerHTML = '<div class="card empty" style="grid-column:1/-1">' + R.icon("alert") + "<b>Couldn't load the data</b>Try reloading in a minute.</div>";
+    R.ready();
+  });
+})();
