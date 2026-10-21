@@ -1,6 +1,6 @@
 # The Rack Report
 
-U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed every three hours by a GitHub Actions job. No server, no API keys, no build step.
+U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed every hour by a GitHub Actions job. No server, no API keys, no build step.
 
 Live site: https://therackreport.org/ (custom domain on GitHub Pages; the root `CNAME` file holds the domain and must not be removed or edited)
 
@@ -27,15 +27,17 @@ Brand files: `assets/mark.svg`, `assets/logo.svg`, `assets/favicon.svg`, `assets
 ## How the data runs
 
 ```
-GitHub Actions (every 3 hours at :17)
+GitHub Actions (every hour at :17)
   -> scripts/fetch_news.py
      reads  data/feeds.json             Google News RSS searches and Google Alerts feeds
      reads  scripts/gazetteer.json      place names -> coordinates (U.S. and foreign)
      writes data/news.json              headlines with category, state(s), companies, MW/$ figures
      writes data/project_candidates.json projects detected in headlines (U.S. only)
+     writes data/status.json            last run: feeds_total, feeds_ok, items_total, items_new
      writes data/archive/YYYY-MM.json   permanent archive by published month, append-only
      writes data/archive/index.json     months available, item counts, earliest/latest dates
-  -> commits the JSON files and the archive (never touches CNAME)
+  -> commits the JSON files and the archive, only when item or cluster ids changed
+     (scripts/data_changed.py; never touches CNAME)
 GitHub Pages serves the HTML; the pages fetch the JSON in the browser
 ```
 
