@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=rr8">
+  <link rel="stylesheet" href="assets/style.css?v=rr9">
   <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
 <body>
@@ -62,27 +62,27 @@
           <p>A headline is kept only if its title or description says data center (or data centre, datacenter), hyperscale or colocation, or names a tracked company together with a campus, facility, site, megawatt or gigawatt. Stock-market outlets that write about data center companies without reporting on projects (for example Simply Wall St, Yahoo Finance, The Motley Fool, Seeking Alpha, MarketBeat, Benzinga and Zacks) are on a blocklist in <code>data/feeds.json</code>.</p>
 
           <h2 id="us-only">U.S. only</h2>
-          <p>A story is dropped when every place it names is outside the United States. Because many foreign stories name no place we recognize, the script also drops stories with clear foreign markers (for example "data centre" spelling, foreign currencies or country names) and stories from a short list of non-U.S. outlets. Stories that name no place at all are kept. This means a few foreign stories can slip through and a few U.S. ones can be dropped.</p>
+          <p>Every gazetteer place carries a country code. A story is dropped when every place it names is outside the United States. Stories from a short list of non-U.S. outlets (BBC, The Guardian, The Telegraph, The Irish Times, ABC Australia, CBC, The Globe and Mail, The Times of India, The Economic Times, The Straits Times, South China Morning Post and others) are dropped unless the title itself names a U.S. place or state. Because many foreign stories name no place we recognize, the script also drops stories with clear foreign markers (for example "data centre" spelling, foreign currencies or country names) and stories from a short list of non-U.S. outlets. Stories that name no place at all are kept. This means a few foreign stories can slip through and a few U.S. ones can be dropped.</p>
 
           <h2 id="tagging">Topics, places and companies</h2>
           <ul>
-            <li><strong>Topics</strong> come from keyword rules in the script, checked in this order: Cancelled / Blocked, Policy / Permits, Land Acquisition, Expansion, Construction, Operations, New Announcement, Deals / Investment, Power / Utility, AI Infrastructure. The first match becomes the headline's topic; anything else is General. <b>Cancelled / Blocked</b> covers projects that are withdrawn, scrapped, denied, voted down, halted or paused, and moratoriums that pass; headlines that only call for or debate a pause are not counted. Cancelled or blocked sites are grey on the map, never count as announced projects and are never picked as the Overview's major story.</li>
+            <li><strong>Topics</strong> come from keyword rules in the script, checked in this order: Cancelled / Blocked, New Announcement, Construction, Expansion, Land Acquisition, Operations, Deals / Investment, Power / Utility, AI Infrastructure, Policy / Permits. Policy / Permits comes last and needs a governance phrase such as zoning, rezoning, moratorium, ordinance, permit, planning commission, board of supervisors, city council, public hearing, lawsuit, referendum, tax break or abatement, opposition, a ban or pause, regulation, legislation or an election; a vote, an approval, residents or a county name alone is not enough. The first match becomes the headline's topic; anything else is General. <b>Cancelled / Blocked</b> covers projects that are withdrawn, scrapped, denied, voted down, halted or paused, and moratoriums that pass; headlines that only call for or debate a pause are not counted. Cancelled or blocked sites are grey on the map, never count as announced projects and are never picked as the Overview's major story.</li>
             <li><strong>Places</strong> come from a gazetteer (<code>scripts/gazetteer.json</code>) of U.S. states, counties and cities plus foreign places used only for filtering. Each U.S. place carries coordinates and a state, which becomes the headline's two-letter state code. The title and the feed's description are both scanned. Every U.S. county and parish is in the gazetteer at its Census centroid, plus the townships that appear in the news; a county name shared by several states is resolved from the other places in the story or the outlet's home state. When a story names no place, a local outlet's home state (listed in <code>data/feeds.json</code>) is used. Each headline records its <code>location_precision</code>: city, county, state or source (the outlet's home state).</li>
             <li><strong>Companies</strong> are matched by name and common aliases (for example AWS for Amazon). "Stargate" counts toward OpenAI, Oracle and SoftBank; named campuses such as Hyperion, Prometheus, Fairwater, Colossus and Project Rainier count toward their owners. Utilities and grid operators (for example Entergy, Dominion, Georgia Power, Duke, AEP, TVA, PJM and ERCOT) are tagged separately and can be filtered in the Newsroom.</li>
-            <li><strong>Stories</strong> group headlines about the same event: published within 7 days of each other, naming at least one company in common, in the same state (or the same county when both give one) and sharing at least 40% of their title words. The Newsroom shows one card per story with its other sources behind an "N sources" button, the Atlas shows one site per story at the most precise place any of its headlines gave, and company counts are stories, not headlines.</li>
+            <li><strong>Stories</strong> group headlines about the same event. Two headlines published within 5 days of each other join when their titles share at least half of their words (Jaccard similarity of the title words, ignoring common words and the outlet's name), or at least 30% when they also name the same city or county, or the same company in the same state. Groups chain through shared headlines, but two groups that name different states or places never merge. Each story is shown with its headline that gives the most precise place, else the earliest. The Newsroom shows one card per story with its other sources behind an "N sources" button, the Atlas shows one site per story at the most precise place any of its headlines gave, and company counts are stories, not headlines.</li>
             <li><strong>Figures</strong> such as "1.2 GW" or "$10 billion" are read from the headline. Capacity figures above 20 GW are ignored because they describe grid-wide totals, not single projects.</li>
           </ul>
 
           <h2 id="projects">Curated and detected projects</h2>
           <p><strong>Curated projects</strong> (rack-shaped pins on the Atlas) are entered by hand in <code>data/projects.json</code> from public reporting, with exact coordinates where known. Each one has a <code>verified</code> flag that stays false until it has been checked against current sources.</p>
-          <p><strong>Detected projects</strong> (ring pins) are created automatically when a headline mentions a data center or campus, a stage (announced, under construction, operational or expansion) and a U.S. place. The pin is placed at the city or county named. Sites known only to the state are not pinned: they are added up in one translucent bubble per state, labelled with the number of stories and marked as approximate. Detected projects are leads to check, not confirmed facts.</p>
+          <p><strong>Detected projects</strong> (ring pins) are created automatically when a headline mentions a data center or campus, a stage (announced, under construction, operational or expansion) and a U.S. place. The pin is placed at the city or county named. Sites known only to the state are not pinned: from zoom level 5 in they are added up in one translucent bubble per state, labelled with the number of stories and marked as approximate. Zoomed out to the whole country, those counts are folded into the nearest cluster circle as a small "~N" figure. Detected projects are leads to check, not confirmed facts.</p>
 
           <h2 id="limitations">Known limitations</h2>
           <ul>
             <li>Keyword tagging misses context. A headline about a vote against a project can still be tagged as an announcement.</li>
             <li>Places can be ambiguous (Georgia, Washington, Aurora). The gazetteer favors the U.S. meaning.</li>
-            <li>Story grouping needs a shared company, so coverage of the same project that names no company, or different companies, can still appear as separate stories.</li>
-            <li>The archive is append-only, so headlines archived before a rule change keep the tags they had then.</li>
+            <li>Story grouping compares title words, so coverage of one event written in very different words can still appear as separate stories.</li>
+            <li>The archive is append-only. It was re-tagged once with the current rules; headlines those rules reject stay in the archive files marked <code>filtered</code> and are hidden on the site.</li>
             <li>Google News results vary, and paywalled or regional outlets may be missing.</li>
             <li>Counts and charts describe headlines, not the industry as a whole.</li>
           </ul>
@@ -101,8 +101,8 @@
     <footer class="site-footer" id="footer"></footer>
   </div>
   <nav class="tabbar" id="tabbar"></nav>
-  <script src="assets/companies.js?v=rr8"></script>
-  <script src="assets/app.js?v=rr8"></script>
-  <script src="assets/methodology.js?v=rr8"></script>
+  <script src="assets/companies.js?v=rr9"></script>
+  <script src="assets/app.js?v=rr9"></script>
+  <script src="assets/methodology.js?v=rr9"></script>
 </body>
 </html>

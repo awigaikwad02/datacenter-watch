@@ -42,7 +42,7 @@ GitHub Pages serves the HTML; the pages fetch the JSON in the browser
 
 `data/news.json` is the recent file: 90 days, up to 3,000 headlines. Every headline that passes the U.S. filter is also appended to `data/archive/YYYY-MM.json` for the month it was published; archive files are never trimmed and existing entries are never rewritten. `scripts/seed_archive.py` rebuilt the archive from every version of `data/news.json` in git history and is safe to re-run.
 
-Fields written on each headline: `id, title, link, source, published, feed, category, tags, locations, states, state, county, location_precision, companies, utilities, cluster_id` and, when present, `snippet, capacity_mw, investment_usd_b`. Candidates (rebuilt every run from recent and archived headlines) add `status, location, lat, lon, state, companies, utilities, precision, cluster_id, source, source_url, published`.
+Fields written on each headline: `id, title, link, source, published, feed, category, tags, locations, states, state, county, location_precision, companies, utilities, cluster_id, cluster_title` and, when present, `snippet, capacity_mw, investment_usd_b`. Candidates (rebuilt every run from recent and archived headlines) add `status, location, lat, lon, state, companies, utilities, precision, cluster_id, source, source_url, published`.
 
 Categories: Cancelled / Blocked, New Announcement, Expansion, Construction, Power / Utility, Land Acquisition, Policy / Permits, Deals / Investment, Operations, AI Infrastructure, General.
 Statuses: Announced, Planned (curated only), Under construction, Operational, Expansion, Cancelled / Blocked.
@@ -50,9 +50,12 @@ Statuses: Announced, Planned (curated only), Under construction, Operational, Ex
 ### Data quality rules
 
 - **On topic:** the title or description must say data center / data centre / datacenter / hyperscale / colocation, or name a tracked company plus campus / facility / site / megawatt / gigawatt. `blocked_sources` in `data/feeds.json` drops stock-market outlets.
+- **Topic order:** Cancelled / Blocked, New Announcement, Construction, Expansion, Land Acquisition, Operations, Deals / Investment, Power / Utility, AI Infrastructure, Policy / Permits (last, and only with a governance phrase).
 - **Cancelled / Blocked** is checked before every other topic and status (withdrawn, scrapped, denied, voted down, halted, paused, moratorium passed; "calls for" and "considers" do not count).
 - **Locations:** title and RSS description are scanned against `scripts/gazetteer.json` (every U.S. county and parish at its Census centroid, plus townships in the news). `source_states` in `data/feeds.json` maps local outlets to their home state as a last resort. `location_precision` is `city`, `county`, `state` or `source`.
-- **Stories:** headlines within 7 days that share a company, a state (or county) and at least 40% of their title words get the same `cluster_id`. The Newsroom shows one card per story, the Atlas one site per story (state-level ones as an approximate bubble per state), and company counts are stories.
+- **Stories:** headlines within 5 days cluster when title-word Jaccard is >= 0.5, or >= 0.3 with the same city/county, or >= 0.3 with the same company and state (union-find; clusters naming different states or places never merge). Each item gets `cluster_id` (earliest member) and `cluster_title` (most precise place, else earliest). The Newsroom shows one card per story, the Atlas one site per story (state-level ones as an approximate bubble per state from zoom 5, folded into cluster circles below), and company counts are stories.
+- **U.S. filter:** every gazetteer entry has a country code; headlines whose only places are non-U.S. are dropped, and `FOREIGN_SOURCES` outlets need a U.S. place or state in the title.
+- **Archive re-tag:** `scripts/retag_archive.py` re-applies the current rules to `data/archive/*.json`, keeping ids; rejected headlines stay, marked `"filtered": true`, and the site hides them.
 - **Fetching:** 429 and 5xx responses are retried 3 times with exponential backoff; the script exits non-zero if every feed returned nothing.
 
 ## Set up
@@ -68,8 +71,8 @@ Statuses: Announced, Planned (curated only), Under construction, Operational, Ex
 - Topics: `CATEGORY_RULES` in `scripts/fetch_news.py` (first match wins).
 - Companies: `COMPANIES` and `ALIASES` in the script, plus a description in `assets/companies.js` with the same name.
 - U.S. filter: `FOREIGN_RE` and `FOREIGN_SOURCES` in the script.
-- Places: `scripts/gazetteer.json`, `name: [lat, lon, level, display]` (or a list of those for a county name shared by several states); U.S. displays end in `, US`.
-- Retention: `NEWS_MAX_AGE_DAYS` (90), `NEWS_MAX_ITEMS` (3000), `CAND_MAX_AGE_DAYS` (180) and `CAND_MAX_ITEMS` (800). Story grouping: `CLUSTER_DAYS` (7) and `CLUSTER_OVERLAP` (0.4).
+- Places: `scripts/gazetteer.json`, `name: [lat, lon, level, display, country]` (or a list of those for a county name shared by several states); U.S. displays end in `, US`.
+- Retention: `NEWS_MAX_AGE_DAYS` (90), `NEWS_MAX_ITEMS` (3000), `CAND_MAX_AGE_DAYS` (180) and `CAND_MAX_ITEMS` (800). Story grouping: `CLUSTER_DAYS` (5), `CLUSTER_STRONG` (0.5) and `CLUSTER_WEAK` (0.3).
 
 ## Run and test locally
 
