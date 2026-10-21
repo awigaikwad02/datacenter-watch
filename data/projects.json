@@ -1,14 +1,14 @@
 {
- "_readme": "Curated U.S. project list shown on the map. Required: id, name, lat, lon, state (two-letter), status (Announced | Under construction | Operational). companies lists slugs from data/companies.json. Optional: company (display text), location, capacity_mw, investment_usd_b, announced (YYYY-MM), notes, source_url. Entries come from public reporting and are flagged verified: false until checked against current sources.",
+ "_readme": "Curated U.S. project list shown on the Project Atlas as solid pins. Required: id, name, lat, lon, state (two-letter), status (Announced | Planned | Under construction | Operational | Expansion). company is display text; companies lists tracked company names as used by scripts/fetch_news.py (COMPANIES). Optional: location, capacity_mw, investment_usd_b, announced (YYYY-MM), notes, source_url. Entries come from public reporting and are flagged verified: false until checked against current sources.",
  "projects": [
   {
    "id": "stargate-abilene",
    "name": "Stargate Abilene",
    "company": "OpenAI, Oracle, Crusoe",
    "companies": [
-    "openai",
-    "oracle",
-    "crusoe"
+    "OpenAI",
+    "Oracle",
+    "Crusoe"
    ],
    "location": "Abilene, Texas, US",
    "state": "TX",
@@ -25,7 +25,7 @@
    "name": "Hyperion",
    "company": "Meta",
    "companies": [
-    "meta"
+    "Meta"
    ],
    "location": "Richland Parish, Louisiana, US",
    "state": "LA",
@@ -43,7 +43,7 @@
    "name": "Prometheus",
    "company": "Meta",
    "companies": [
-    "meta"
+    "Meta"
    ],
    "location": "New Albany, Ohio, US",
    "state": "OH",
@@ -60,7 +60,7 @@
    "name": "Colossus",
    "company": "xAI",
    "companies": [
-    "xai"
+    "xAI"
    ],
    "location": "Memphis, Tennessee, US",
    "state": "TN",
@@ -76,7 +76,7 @@
    "name": "Fairwater",
    "company": "Microsoft",
    "companies": [
-    "microsoft"
+    "Microsoft"
    ],
    "location": "Mount Pleasant, Wisconsin, US",
    "state": "WI",
@@ -93,7 +93,7 @@
    "name": "Project Rainier",
    "company": "Amazon Web Services",
    "companies": [
-    "amazon"
+    "Amazon"
    ],
    "location": "New Carlisle, Indiana, US",
    "state": "IN",
@@ -110,7 +110,7 @@
    "name": "Frontier",
    "company": "Vantage Data Centers",
    "companies": [
-    "vantage"
+    "Vantage"
    ],
    "location": "Shackelford County, Texas, US",
    "state": "TX",
@@ -128,8 +128,8 @@
    "name": "Stargate Doña Ana County",
    "company": "OpenAI, Oracle",
    "companies": [
-    "openai",
-    "oracle"
+    "OpenAI",
+    "Oracle"
    ],
    "location": "Doña Ana County, New Mexico, US",
    "state": "NM",
@@ -145,8 +145,8 @@
    "name": "Stargate Lordstown",
    "company": "SoftBank, OpenAI",
    "companies": [
-    "softbank",
-    "openai"
+    "SoftBank",
+    "OpenAI"
    ],
    "location": "Lordstown, Ohio, US",
    "state": "OH",
@@ -162,8 +162,8 @@
    "name": "Stargate Milam County",
    "company": "SoftBank, OpenAI",
    "companies": [
-    "softbank",
-    "openai"
+    "SoftBank",
+    "OpenAI"
    ],
    "location": "Milam County, Texas, US",
    "state": "TX",
@@ -178,8 +178,8 @@
    "name": "Stargate Michigan",
    "company": "Oracle, Related Digital",
    "companies": [
-    "oracle",
-    "related-digital"
+    "Oracle",
+    "Related Digital"
    ],
    "location": "Saline Township, Michigan, US",
    "state": "MI",
@@ -195,7 +195,7 @@
    "name": "AWS Richmond County",
    "company": "Amazon Web Services",
    "companies": [
-    "amazon"
+    "Amazon"
    ],
    "location": "Richmond County, North Carolina, US",
    "state": "NC",
@@ -211,7 +211,7 @@
    "name": "AWS Pennsylvania",
    "company": "Amazon Web Services",
    "companies": [
-    "amazon"
+    "Amazon"
    ],
    "location": "Luzerne County, Pennsylvania, US",
    "state": "PA",
@@ -228,7 +228,7 @@
    "name": "AWS Mississippi",
    "company": "Amazon Web Services",
    "companies": [
-    "amazon"
+    "Amazon"
    ],
    "location": "Madison County, Mississippi, US",
    "state": "MS",
@@ -244,7 +244,7 @@
    "name": "Google Oklahoma",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Pryor, Oklahoma, US",
    "state": "OK",
@@ -261,7 +261,7 @@
    "name": "Google Fort Wayne",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Fort Wayne, Indiana, US",
    "state": "IN",
@@ -277,7 +277,7 @@
    "name": "Google Kansas City",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Kansas City, Missouri, US",
    "state": "MO",
@@ -293,8 +293,8 @@
    "name": "Crusoe Cheyenne",
    "company": "Crusoe, Tallgrass",
    "companies": [
-    "crusoe",
-    "tallgrass"
+    "Crusoe",
+    "Tallgrass"
    ],
    "location": "Cheyenne, Wyoming, US",
    "state": "WY",
@@ -311,7 +311,7 @@
    "name": "Project Matador",
    "company": "Fermi America",
    "companies": [
-    "fermi"
+    "Fermi America"
    ],
    "location": "Amarillo, Texas, US",
    "state": "TX",
@@ -328,7 +328,7 @@
    "name": "QTS Fayetteville",
    "company": "QTS",
    "companies": [
-    "qts"
+    "QTS"
    ],
    "location": "Fayetteville, Georgia, US",
    "state": "GA",
@@ -344,11 +344,11 @@
    "name": "Data Center Alley",
    "company": "Equinix, Digital Realty, AWS, Microsoft, Google and others",
    "companies": [
-    "equinix",
-    "digital-realty",
-    "amazon",
-    "microsoft",
-    "google"
+    "Equinix",
+    "Digital Realty",
+    "Amazon",
+    "Microsoft",
+    "Google"
    ],
    "location": "Ashburn, Virginia, US",
    "state": "VA",
@@ -363,7 +363,7 @@
    "name": "Google The Dalles",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "The Dalles, Oregon, US",
    "state": "OR",
@@ -378,7 +378,7 @@
    "name": "Microsoft Quincy",
    "company": "Microsoft",
    "companies": [
-    "microsoft"
+    "Microsoft"
    ],
    "location": "Quincy, Washington, US",
    "state": "WA",
@@ -393,7 +393,7 @@
    "name": "Meta Prineville",
    "company": "Meta",
    "companies": [
-    "meta"
+    "Meta"
    ],
    "location": "Prineville, Oregon, US",
    "state": "OR",
@@ -408,7 +408,7 @@
    "name": "Google Council Bluffs",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Council Bluffs, Iowa, US",
    "state": "IA",
@@ -423,7 +423,7 @@
    "name": "Colossus 2",
    "company": "xAI",
    "companies": [
-    "xai"
+    "xAI"
    ],
    "location": "Memphis, Tennessee, US",
    "state": "TN",
@@ -440,9 +440,9 @@
    "name": "Stargate Port Washington (Lighthouse)",
    "company": "Vantage Data Centers, OpenAI, Oracle",
    "companies": [
-    "vantage",
-    "openai",
-    "oracle"
+    "Vantage",
+    "OpenAI",
+    "Oracle"
    ],
    "location": "Port Washington, Wisconsin, US",
    "state": "WI",
@@ -459,7 +459,7 @@
    "name": "Meta El Paso",
    "company": "Meta",
    "companies": [
-    "meta"
+    "Meta"
    ],
    "location": "El Paso, Texas, US",
    "state": "TX",
@@ -476,7 +476,7 @@
    "name": "Fairwater Atlanta",
    "company": "Microsoft",
    "companies": [
-    "microsoft"
+    "Microsoft"
    ],
    "location": "Atlanta, Georgia, US",
    "state": "GA",
@@ -492,7 +492,7 @@
    "name": "CoreWeave Lancaster",
    "company": "CoreWeave",
    "companies": [
-    "coreweave"
+    "CoreWeave"
    ],
    "location": "Lancaster, Pennsylvania, US",
    "state": "PA",
@@ -510,8 +510,8 @@
    "name": "Polaris Forge 1",
    "company": "Applied Digital, CoreWeave",
    "companies": [
-    "applied-digital",
-    "coreweave"
+    "Applied Digital",
+    "CoreWeave"
    ],
    "location": "Ellendale, North Dakota, US",
    "state": "ND",
@@ -528,7 +528,7 @@
    "name": "Google West Memphis",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "West Memphis, Arkansas, US",
    "state": "AR",
@@ -545,7 +545,7 @@
    "name": "Amazon Georgia",
    "company": "Amazon Web Services",
    "companies": [
-    "amazon"
+    "Amazon"
    ],
    "location": "Butts County, Georgia, US",
    "state": "GA",
@@ -562,7 +562,7 @@
    "name": "Switch Citadel Campus",
    "company": "Switch",
    "companies": [
-    "switch"
+    "Switch"
    ],
    "location": "Storey County, Nevada, US",
    "state": "NV",
@@ -577,7 +577,7 @@
    "name": "Switch Las Vegas Core Campus",
    "company": "Switch",
    "companies": [
-    "switch"
+    "Switch"
    ],
    "location": "Las Vegas, Nevada, US",
    "state": "NV",
@@ -592,7 +592,7 @@
    "name": "Meta Altoona",
    "company": "Meta",
    "companies": [
-    "meta"
+    "Meta"
    ],
    "location": "Altoona, Iowa, US",
    "state": "IA",
@@ -607,7 +607,7 @@
    "name": "Meta Los Lunas",
    "company": "Meta",
    "companies": [
-    "meta"
+    "Meta"
    ],
    "location": "Los Lunas, New Mexico, US",
    "state": "NM",
@@ -622,7 +622,7 @@
    "name": "Meta Fort Worth",
    "company": "Meta",
    "companies": [
-    "meta"
+    "Meta"
    ],
    "location": "Fort Worth, Texas, US",
    "state": "TX",
@@ -637,7 +637,7 @@
    "name": "Apple Maiden",
    "company": "Apple",
    "companies": [
-    "apple"
+    "Apple"
    ],
    "location": "Maiden, North Carolina, US",
    "state": "NC",
@@ -652,7 +652,7 @@
    "name": "Apple Mesa",
    "company": "Apple",
    "companies": [
-    "apple"
+    "Apple"
    ],
    "location": "Mesa, Arizona, US",
    "state": "AZ",
@@ -667,7 +667,7 @@
    "name": "Microsoft San Antonio",
    "company": "Microsoft",
    "companies": [
-    "microsoft"
+    "Microsoft"
    ],
    "location": "San Antonio, Texas, US",
    "state": "TX",
@@ -682,7 +682,7 @@
    "name": "Microsoft West Des Moines",
    "company": "Microsoft",
    "companies": [
-    "microsoft"
+    "Microsoft"
    ],
    "location": "West Des Moines, Iowa, US",
    "state": "IA",
@@ -697,7 +697,7 @@
    "name": "Google Midlothian",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Midlothian, Texas, US",
    "state": "TX",
@@ -712,7 +712,7 @@
    "name": "Google Papillion",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Papillion, Nebraska, US",
    "state": "NE",
@@ -727,7 +727,7 @@
    "name": "Google Berkeley County",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Moncks Corner, South Carolina, US",
    "state": "SC",
@@ -742,7 +742,7 @@
    "name": "Google Henderson",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Henderson, Nevada, US",
    "state": "NV",
@@ -757,7 +757,7 @@
    "name": "Google Douglas County",
    "company": "Google",
    "companies": [
-    "google"
+    "Google"
    ],
    "location": "Lithia Springs, Georgia, US",
    "state": "GA",
@@ -772,7 +772,7 @@
    "name": "AWS Central Ohio",
    "company": "Amazon Web Services",
    "companies": [
-    "amazon"
+    "Amazon"
    ],
    "location": "Hilliard, Ohio, US",
    "state": "OH",
@@ -787,7 +787,7 @@
    "name": "AWS Boardman",
    "company": "Amazon Web Services",
    "companies": [
-    "amazon"
+    "Amazon"
    ],
    "location": "Boardman, Oregon, US",
    "state": "OR",

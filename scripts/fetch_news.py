@@ -17,9 +17,12 @@ states it mentions.
 
 Run locally:  python scripts/fetch_news.py
 Re-tag the existing files without fetching:  python scripts/fetch_news.py --no-fetch
+Test offline against a saved RSS file, writing somewhere else:
+  python scripts/fetch_news.py --sample scripts/sample_feed.xml --out /tmp/rack-test
 GitHub Actions runs it on a schedule (see .github/workflows/update.yml).
 """
 
+import argparse
 import calendar
 import hashlib
 import html
@@ -52,27 +55,35 @@ TIMEOUT = 25
 # becomes its primary category. Every matching rule is also kept as a tag.
 # ---------------------------------------------------------------------------
 CATEGORY_RULES = [
-    ("Policy & Community",
+    ("Policy / Permits",
      r"\b(zoning|rezon\w*|city council|county council|council|commission(ers?)?|board of supervisors|supervisors|"
      r"moratorium|ordinance|permits?|permitting|lawsuit|sue[sd]?|residents?|neighbou?rs?|opposition|oppose[sd]?|"
      r"protest\w*|pushback|tax (break|incentive|abatement|exemption)s?|incentives?|regulat\w*|legislat\w*|"
      r"senate|governor|lawmakers?|approv\w*|reject\w*|denie[sd]|deny|vote[sd]?|hearing|referendum|noise|"
-     r"environmental|water use|backlash)\b"),
+     r"environmental|water use|backlash|bans?|banned)\b"),
+    ("Land Acquisition",
+     r"(\b\d[\d,]*[- ]acres?\b|\bacres\b|\bparcels?\b|\bland (purchase|deal|sale|buy)\b|\b(buys?|bought|purchases?|"
+     r"purchased|acquires?|acquired) (\w+ ){0,2}(land|site|property|acreage|farmland)\b|\bsite acquisition\b)"),
+    ("Expansion",
+     r"\b(expands?|expanding|expanded|expansion|adds|second phase|phase (2|ii|two)|"
+     r"additional buildings?|more buildings)\b"),
     ("Construction",
      r"\b(break(s|ing)? ground|groundbreaking|ground-breaking|under construction|construction|"
-     r"opens|opened|officially open|now open|grand opening|completes?|completed|completion|"
-     r"goes live|comes online|now online|commissioned|topping out|contractor|crews|build-?out)\b"),
-    ("Announcements",
+     r"topping out|contractor|crews|build-?out|begins? building|starts? building)\b"),
+    ("Operations",
+     r"\b(opens|opened|officially open|now open|grand opening|goes live|went live|comes online|now online|"
+     r"online|commissioned|energized|outages?|downtime|hiring|job fair|jobs fair|ribbon)\b"),
+    ("New Announcement",
      r"\b(announc\w*|plans?|planned|planning|propos\w*|unveil\w*|to build|will build|eyes|eyeing|"
-     r"selects?|chooses?|picks?|lands|secures?|launch\w*|expan\w*|new campus|campus|mega|project)\b"),
-    ("Deals & Investment",
+     r"selects?|chooses?|picks?|lands|secures?|launch\w*|new campus|campus|mega|project)\b"),
+    ("Deals / Investment",
      r"\b(acqui\w*|merger|buys?|bought|purchase\w*|invest\w*|funding|raises?|raised|financing|loan|debt|"
      r"bonds?|lease[sd]?|leasing|joint venture|partnership|stake|ipo|valuation|billion|million|\$\s?\d)\b"),
-    ("Power & Energy",
+    ("Power / Utility",
      r"\b(power|grid|utilit(y|ies)|electric\w*|energy|megawatts?|gigawatts?|\d+\s?[MG]W|nuclear|reactors?|"
      r"smrs?|natural gas|gas turbines?|turbines?|solar|wind|batter(y|ies)|transmission|substation|"
-     r"demand|load|rates?|ratepayers?|outage|blackout|cooling|water)\b"),
-    ("AI & Hyperscale",
+     r"demand|load|rates?|ratepayers?|blackout|cooling|water)\b"),
+    ("AI Infrastructure",
      r"\b(ai|a\.i\.|artificial intelligence|gpus?|nvidia|hyperscal\w*|openai|microsoft|amazon|aws|google|"
      r"alphabet|meta|oracle|xai|anthropic|stargate|crusoe|coreweave|supercomputer|cloud)\b"),
 ]
@@ -88,11 +99,54 @@ STATUS_RULES = [
     ("Operational",
      re.compile(r"\b(opens|opened|officially open|now open|grand opening|goes live|comes online|now online|"
                 r"completes?|completed|completion|commissioned|energized|ribbon)\b", re.I)),
+    ("Expansion",
+     re.compile(r"\b(expands?|expanding|expanded|expansion|adds|second phase|phase (2|ii|two)|"
+                r"additional buildings?)\b", re.I)),
     ("Announced",
      re.compile(r"\b(announc\w*|plans?|planned|planning|propos\w*|unveil\w*|to build|will build|eyes|eyeing|"
-                r"selects?|chooses?|picks?|lands|secures?|approv\w*|expan\w*|acquires? (land|site)|"
+                r"selects?|chooses?|picks?|lands|secures?|approv\w*|acquires? (land|site)|"
                 r"buys? (land|site|acres)|\d[\d,]* acres)\b", re.I)),
 ]
+
+# Companies tracked across news and projects. Patterns are case sensitive
+# whole words. A pattern can map to several companies (Stargate).
+COMPANIES = [
+    ("Google", r"Google|Alphabet"),
+    ("Microsoft", r"Microsoft|Azure"),
+    ("Meta", r"Meta|Facebook"),
+    ("Amazon", r"Amazon|AWS"),
+    ("Oracle", r"Oracle|OCI"),
+    ("OpenAI", r"OpenAI|ChatGPT"),
+    ("xAI", r"xAI"),
+    ("Anthropic", r"Anthropic"),
+    ("CoreWeave", r"CoreWeave"),
+    ("Crusoe", r"Crusoe"),
+    ("QTS", r"QTS"),
+    ("Equinix", r"Equinix"),
+    ("Digital Realty", r"Digital Realty"),
+    ("Switch", r"Switch(?= (Inc|data cent|campus|Citadel))|Switch's"),
+    ("CyrusOne", r"CyrusOne"),
+    ("Compass Datacenters", r"Compass Data ?[Cc]enters"),
+    ("Vantage", r"Vantage"),
+    ("Aligned", r"Aligned Data Centers|Aligned(?= (Data|data))"),
+    ("STACK", r"STACK Infrastructure|STACK"),
+    ("EdgeCore", r"EdgeCore"),
+    ("NTT", r"NTT"),
+    ("Iron Mountain", r"Iron Mountain"),
+    ("DataBank", r"DataBank"),
+    ("Flexential", r"Flexential"),
+    ("Applied Digital", r"Applied Digital"),
+    ("Core Scientific", r"Core Scientific"),
+    ("Fermi America", r"Fermi America|Fermi|Project Matador"),
+    ("SoftBank", r"SoftBank"),
+    ("Apple", r"Apple"),
+    ("Related Digital", r"Related Digital"),
+    ("Tallgrass", r"Tallgrass"),
+]
+ALIASES = [("Stargate", ["OpenAI", "Oracle", "SoftBank"])]
+COMPANY_RULES = [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in COMPANIES]
+COMPANY_RULES += [(names, re.compile(r"(?<![\w-])" + a + r"(?![\w-])")) for a, names in ALIASES]
+COMPANY_ORDER = {name: i for i, (name, _) in enumerate(COMPANIES)}
 
 MW_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s?(?:MW|megawatts?)\b", re.I)
 GW_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s?(?:GW|gigawatts?)\b", re.I)
@@ -240,8 +294,21 @@ def find_locations(text, gaz, patterns):
 # ---------------------------------------------------------------------------
 # Classification
 # ---------------------------------------------------------------------------
+def country_of(loc):
+    """Gazetteer display strings end in ', US' for U.S. places; anything else is foreign."""
+    return "US" if loc["name"].endswith(", US") else loc["name"].split(",")[-1].strip()
+
+
 def is_us(loc):
-    return loc["name"].endswith(", US")
+    return country_of(loc) == "US"
+
+
+def find_companies(text):
+    found = set()
+    for names, rx in COMPANY_RULES:
+        if rx.search(text):
+            found.update([names] if isinstance(names, str) else names)
+    return sorted(found, key=lambda n: COMPANY_ORDER.get(n, 99))
 
 
 def state_of(loc):
@@ -278,7 +345,10 @@ def tag_item(item, gaz, patterns):
     us_locs = [l for l in locs if is_us(l)]
     item["category"], item["tags"] = classify(item["title"])
     item["locations"] = us_locs[:3]
-    item["states"] = sorted({s for s in (state_of(l) for l in us_locs) if s})
+    states = [s for s in (state_of(l) for l in us_locs) if s]
+    item["states"] = sorted(set(states))
+    item["state"] = states[0] if states else None
+    item["companies"] = find_companies(text)
     item.update(extract_numbers(item["title"]))
     return True
 
@@ -316,8 +386,21 @@ def guess_status(title):
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+def parse_args():
+    ap = argparse.ArgumentParser(description="Refresh data/news.json and data/project_candidates.json")
+    ap.add_argument("--no-fetch", action="store_true", help="re-tag the stored items without fetching feeds")
+    ap.add_argument("--sample", metavar="RSS_FILE", help="read this local RSS file instead of the network")
+    ap.add_argument("--out", metavar="DIR", help="write the JSON files here instead of data/ (existing data/ files are read as the starting point)")
+    return ap.parse_args()
+
+
 def main():
-    no_fetch = "--no-fetch" in sys.argv
+    args = parse_args()
+    no_fetch = args.no_fetch
+    news_out = Path(args.out) / NEWS_FILE.name if args.out else NEWS_FILE
+    cand_out = Path(args.out) / CAND_FILE.name if args.out else CAND_FILE
+    if args.out:
+        Path(args.out).mkdir(parents=True, exist_ok=True)
     now = datetime.now(timezone.utc)
     cfg = load_json(FEEDS_FILE, {})
     gaz, patterns = load_gazetteer()
@@ -331,11 +414,13 @@ def main():
             sources.append(("Google Alerts", url))
     if no_fetch:
         sources = []
+    if args.sample:
+        sources = [("Sample: " + Path(args.sample).name, args.sample)]
 
     log(f"Fetching {len(sources)} feeds")
     fresh = {}
     for label, url in sources:
-        parsed = fetch_feed(url)
+        parsed = feedparser.parse(Path(url).read_bytes()) if args.sample else fetch_feed(url)
         if not parsed:
             continue
         n = 0
@@ -389,19 +474,20 @@ def main():
     items.sort(key=lambda it: it["published"], reverse=True)
     items = items[:NEWS_MAX_ITEMS]
 
-    NEWS_FILE.write_text(json.dumps({
+    news_out.write_text(json.dumps({
         "updated": now.isoformat(timespec="seconds"),
         "count": len(items),
         "new_this_run": len([k for k in fresh if k not in {it["id"] for it in existing}]),
         "items": items,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"Wrote {NEWS_FILE.name}: {len(items)} items")
+    log(f"Wrote {news_out}: {len(items)} items")
 
     # Project candidates: site + stage + place
     cand_existing = load_json(CAND_FILE, {}).get("projects", [])
     cands = {c["id"]: c for c in cand_existing if "id" in c and c.get("location", "").endswith(", US")}
     for c in cands.values():
-        c.setdefault("state", state_of({"name": c["location"]}))
+        c["state"] = c.get("state") or state_of({"name": c["location"]})
+        c["companies"] = find_companies(c["name"])
     for it in items:
         if it["id"] in cands:
             continue
@@ -419,6 +505,7 @@ def main():
             "lat": loc["lat"],
             "lon": loc["lon"],
             "state": state_of(loc),
+            "companies": it.get("companies", []),
             "precision": {3: "city", 2: "state", 1: "country"}.get(loc["level"], "unknown"),
             "source": it["source"],
             "source_url": it["link"],
@@ -434,12 +521,12 @@ def main():
                  if datetime.fromisoformat(c["published"]) >= cutoff_c]
     cand_list.sort(key=lambda c: c["published"], reverse=True)
     cand_list = cand_list[:CAND_MAX_ITEMS]
-    CAND_FILE.write_text(json.dumps({
+    cand_out.write_text(json.dumps({
         "updated": now.isoformat(timespec="seconds"),
         "count": len(cand_list),
         "projects": cand_list,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"Wrote {CAND_FILE.name}: {len(cand_list)} candidates")
+    log(f"Wrote {cand_out}: {len(cand_list)} candidates")
     return 0
 
 
