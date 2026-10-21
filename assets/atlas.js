@@ -48,7 +48,7 @@
     $("#mw").value = f.mw;
     $("#usd").value = f.usd;
     const n = activeCount();
-    $("#filtersBtn").innerHTML = R.icon("filter") + "Filters" + (n ? " · " + n : "");
+    document.querySelectorAll(".js-filters").forEach((b) => { b.innerHTML = R.icon("filter") + "Filters" + (n ? " · " + n : ""); });
   }
   function activeCount() {
     return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd].filter(Boolean).length + (f.statuses.size < STATUSES.length ? 1 : 0);
@@ -182,7 +182,8 @@
   // ---------- Mobile: list/map toggle and filter sheet ----------
   function setMode(mode) {
     $("#atlas").classList.toggle("list-view", mode === "list");
-    document.querySelectorAll("#viewToggle button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
+    document.querySelectorAll("[data-mode]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
+    if (mode === "list") { f.inView = false; $("#inView").checked = false; renderList(); }
     if (mode === "map") setTimeout(() => map.invalidateSize(), 50);
   }
   function openSheet() {
@@ -198,6 +199,7 @@
     sheet.classList.remove("open");
     $("#sheetBack").classList.remove("open");
     $("#panelHome").appendChild($("#filterPanel"));
+    if ($("#atlas").classList.contains("list-view")) renderList();
     if (releaseSheet) { releaseSheet(); releaseSheet = null; }
     setTimeout(() => { sheet.hidden = true; }, 350);
   }
@@ -237,12 +239,12 @@
     });
     $("#list").addEventListener("click", (e) => { const b = e.target.closest(".proj-card"); if (b) select(b.dataset.id, "list"); });
     $("#fitBtn").addEventListener("click", () => { close(); map.flyToBounds(R.US.view, { duration: R.reducedMotion() ? 0 : 0.8 }); });
-    $("#filtersBtn").addEventListener("click", openSheet);
+    document.querySelectorAll(".js-filters").forEach((b) => b.addEventListener("click", openSheet));
     $("#sheetClose").addEventListener("click", closeSheet);
     $("#sheetApply").addEventListener("click", closeSheet);
     $("#sheetReset").addEventListener("click", reset);
     $("#sheetBack").addEventListener("click", closeSheet);
-    $("#viewToggle").addEventListener("click", (e) => { const b = e.target.closest("[data-mode]"); if (b) setMode(b.dataset.mode); });
+    document.addEventListener("click", (e) => { const b = e.target.closest("[data-mode]"); if (b) setMode(b.dataset.mode); });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("#sheet").classList.contains("open")) close(); });
     map.on("moveend", R.debounce(renderList, 80));
     window.addEventListener("hashchange", readHash);

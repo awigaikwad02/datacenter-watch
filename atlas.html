@@ -41,6 +41,10 @@
     <main id="main" tabindex="-1">
       <div class="atlas" id="atlas">
         <aside class="atlas-side" id="side" aria-label="Project filters and list">
+          <div class="side-tools">
+            <button class="btn sm js-filters" aria-haspopup="dialog" aria-controls="sheet"></button>
+            <div class="seg" role="group" aria-label="View"><button data-mode="map" aria-pressed="false">Map</button><button data-mode="list" aria-pressed="true">List</button></div>
+          </div>
           <div class="atlas-head">
             <span class="eyebrow">Project Atlas</span>
             <h1>U.S. data center projects</h1>
@@ -73,7 +77,7 @@
         <section class="atlas-map" aria-label="Map">
           <div id="map" role="region" aria-label="Interactive map of U.S. data center projects. Use the list for keyboard access to every project."></div>
           <div class="map-tools">
-            <button class="btn sm mobile-only" id="filtersBtn" aria-haspopup="dialog" aria-controls="sheet"></button>
+            <button class="btn sm mobile-only js-filters" id="filtersBtn" aria-haspopup="dialog" aria-controls="sheet"></button>
             <div class="seg mobile-only" id="viewToggle" role="group" aria-label="View"><button data-mode="map" aria-pressed="true">Map</button><button data-mode="list" aria-pressed="false">List</button></div>
             <span class="spacer"></span>
             <button class="icon-btn" id="fitBtn" aria-label="Show the whole United States" data-tip="Show the whole U.S."></button>

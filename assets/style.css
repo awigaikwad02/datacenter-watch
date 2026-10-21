@@ -83,7 +83,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .skip:focus { top: 12px; }
 
 /* ---------- 3. Shell ---------- */
-.shell-main { min-width: 0; padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 24px); }
+.shell-main { min-width: 0; overflow-x: clip; padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 24px); }
 .page { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 @media (min-width: 720px) { .page { padding: 0 28px; } }
 @media (min-width: 1024px) {
@@ -526,7 +526,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .legend .lg i.auto { border-radius: 50%; background: transparent; border: 2px solid var(--tone); }
 @media (max-width: 1023px) { .atlas .legend { top: 60px; bottom: auto; grid-template-columns: repeat(2, auto); gap: 4px 12px; padding: 8px 10px; font-size: 11px; } }
 
-.leaflet-container { font-family: var(--font); background: #0b111d; }
+html .leaflet-container { font-family: var(--font); background: #0b111d; }
 .leaflet-bar { border: 1px solid var(--border-strong) !important; border-radius: 10px !important; overflow: hidden; box-shadow: var(--shadow) !important; }
 .leaflet-bar a { background: var(--surface) !important; color: var(--text) !important; border-color: var(--border) !important; }
 .leaflet-bar a:hover { background: var(--surface-2) !important; }
@@ -734,3 +734,13 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .tl-track i { position: absolute; top: 0; bottom: 0; border-radius: 6px; background: var(--tone); display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; font-style: normal; color: #0a1020; white-space: nowrap; overflow: hidden; }
 @media (max-width: 600px) { .tl-row { grid-template-columns: 1fr; gap: 4px; } }
 .track-dots a { position: relative; }
+
+/* Atlas list view on phones: its own toolbar, filters live in the sheet, the panel scrolls as a whole */
+.side-tools { display: none; }
+@media (max-width: 1023px) {
+  .atlas.list-view .side-tools { display: flex; gap: 8px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 2; background: var(--bg-2); }
+  .atlas.list-view .atlas-side { overflow: auto; }
+  .atlas.list-view #panelHome { display: none; }
+  .atlas.list-view .proj-list { flex: none; overflow: visible; }
+  .atlas.list-view .atlas-head p { display: none; }
+}

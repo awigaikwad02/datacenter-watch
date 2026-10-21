@@ -325,18 +325,22 @@ window.RR = (function () {
       const f = [...el.querySelectorAll(sel)].filter((x) => x.offsetParent !== null || x === document.activeElement);
       if (!f.length) return;
       const first = f[0], last = f[f.length - 1];
+      if (!el.contains(document.activeElement)) { e.preventDefault(); (e.shiftKey ? last : first).focus(); return; }
       if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
       else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     }
     document.addEventListener("keydown", key);
-    setTimeout(() => { const f = el.querySelector("[data-autofocus]") || el.querySelector(sel); if (f) f.focus(); }, 30);
+    // The dialog may still be fading in (visibility: hidden), so retry until focus lands.
+    const focusFirst = () => { const f = el.querySelector("[data-autofocus]") || el.querySelector(sel); if (f) f.focus(); return el.contains(document.activeElement); };
+    [30, 120, 360].forEach((ms) => setTimeout(() => { if (!el.contains(document.activeElement)) focusFirst(); }, ms));
     return () => { document.removeEventListener("keydown", key); if (prev && prev.focus) prev.focus(); };
   }
 
   // Horizontal bar chart as inline SVG. rows: [{label, value, hi}]
   function miniBars(rows, opts) {
     opts = opts || {};
-    const W = 360, rowH = 30, labelW = opts.labelW || 118, valW = 40, barW = W - labelW - valW - 8;
+    // Draw at the container's real width so text stays at its natural size.
+    const W = Math.max(280, Math.round(opts.width || 360)), rowH = 30, labelW = opts.labelW || 128, valW = 40, barW = W - labelW - valW - 8;
     const max = Math.max(1, ...rows.map((r) => r.value));
     const H = rows.length * rowH;
     let s = '<svg class="minibars" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc((opts.label || "Bar chart") + ": " + rows.map((r) => r.label + " " + r.value).join(", ")) + '">';

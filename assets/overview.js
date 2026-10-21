@@ -59,14 +59,14 @@
     const now = Date.now(), counts = {};
     items.filter((i) => now - i.t <= 30 * DAY).forEach((i) => i.companies.forEach((c) => { counts[c] = (counts[c] || 0) + 1; }));
     const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
-    $("#topCos").innerHTML = top.length ? R.miniBars(top.map(([c, n], i) => ({ label: c, value: n, hi: i === 0 })), { label: "Company headline mentions, last 30 days" })
+    $("#topCos").innerHTML = top.length ? R.miniBars(top.map(([c, n], i) => ({ label: c, value: n, hi: i === 0 })), { label: "Company headline mentions, last 30 days", width: $("#topCos").clientWidth })
       : '<p class="co-empty">No tracked companies were named in headlines in the last 30 days.</p>';
   }
   function topics(items) {
     const now = Date.now(), counts = {};
     items.filter((i) => now - i.t <= 7 * DAY).forEach((i) => { counts[i.category] = (counts[i.category] || 0) + 1; });
     const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
-    $("#topics").innerHTML = rows.length ? R.miniBars(rows.map(([c, n], i) => ({ label: c, value: n, hi: i === 0 })), { label: "Headlines by topic, last 7 days", labelW: 132 })
+    $("#topics").innerHTML = rows.length ? R.miniBars(rows.map(([c, n], i) => ({ label: c, value: n, hi: i === 0 })), { label: "Headlines by topic, last 7 days", labelW: 140, width: $("#topics").clientWidth })
       : '<p class="co-empty">No headlines in the last 7 days.</p>';
   }
 
