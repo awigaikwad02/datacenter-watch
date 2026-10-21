@@ -228,7 +228,7 @@ window.RR = (function () {
       foot.innerHTML = '<div class="page"><div><a class="brand" href="index.html">' + wordmark() + "</a>" +
         "<p>Independent tracking of the U.S. data center buildout: headlines, projects, companies and the infrastructure behind them. Headlines link to the original publishers; tags and locations are detected automatically and can be wrong.</p></div>" +
         '<div><h2>Explore</h2><ul>' + NAV.map((n) => '<li><a href="' + n[0] + '">' + n[1] + "</a></li>").join("") + "</ul></div>" +
-        '<div><h2>Sources</h2><ul><li>Google News RSS (U.S. edition)</li><li>Google Alerts RSS</li><li>Map tiles © OpenStreetMap, © CARTO</li><li><a href="' + REPO + '" rel="noopener">GitHub repository</a></li></ul></div></div>';
+        '<div><h2>Sources</h2><ul><li>Google News RSS (U.S. edition)</li><li>Google Alerts RSS</li><li>Map data and tiles © OpenStreetMap contributors</li><li><a href="' + REPO + '" rel="noopener">GitHub repository</a></li></ul></div></div>';
     }
   }
 
@@ -409,9 +409,10 @@ window.RR = (function () {
   function baseMap(el, opts) {
     const L = window.L;
     const map = L.map(el, Object.assign({ zoomControl: false, minZoom: 3, maxZoom: 13, zoomSnap: 0.25, maxBounds: US.max, maxBoundsViscosity: 1, worldCopyJump: false }, opts || {}));
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-      subdomains: "abcd", maxZoom: 19, bounds: US.max,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    // OpenStreetMap's standard tiles need no API key; the .rr-tiles CSS filter turns them dark.
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, bounds: US.max, className: "rr-tiles",
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
     map.attributionControl.setPrefix(false);
     map.fitBounds(US.view, { padding: [8, 8] });
