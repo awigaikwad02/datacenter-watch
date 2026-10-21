@@ -742,3 +742,8 @@ html .leaflet-container { font-family: var(--font); background: #1a1a1d; }
   .atlas.list-view .proj-list { flex: none; overflow: visible; }
   .atlas.list-view .atlas-head p { display: none; }
 }
+
+/* Contact link with initials badge */
+.contact { display: inline-flex; align-items: center; gap: 9px; color: var(--text-2); font-size: 13px; font-weight: 600; }
+.contact:hover { color: var(--text); text-decoration: none; }
+.contact .initials { width: 28px; height: 28px; flex: none; display: grid; place-items: center; border-radius: 8px; font-size: 11.5px; font-weight: 800; letter-spacing: .02em; color: var(--accent-ink); background: var(--accent); }
