@@ -10,6 +10,9 @@ category, detects place names, and writes:
   data/project_candidates.json  announced / under construction / opened
                                 projects detected from headlines, shown on
                                 the map next to the curated projects.json
+  data/archive/YYYY-MM.json     permanent monthly archive; headlines are only
+                                ever appended, never trimmed or deleted
+  data/archive/index.json       months available and item counts
 
 The site covers the United States only: stories that are clearly about
 another country are dropped, and every kept story is tagged with the U.S.
@@ -24,6 +27,7 @@ GitHub Actions runs it on a schedule (see .github/workflows/update.yml).
 
 import argparse
 import calendar
+import shutil
 import hashlib
 import html
 import json
@@ -42,9 +46,11 @@ FEEDS_FILE = DATA / "feeds.json"
 NEWS_FILE = DATA / "news.json"
 CAND_FILE = DATA / "project_candidates.json"
 GAZ_FILE = Path(__file__).resolve().parent / "gazetteer.json"
+ARCHIVE_DIR = DATA / "archive"
+MONTH_RE = re.compile(r"^\d{4}-\d{2}$")
 
-NEWS_MAX_AGE_DAYS = 60
-NEWS_MAX_ITEMS = 600
+NEWS_MAX_AGE_DAYS = 90
+NEWS_MAX_ITEMS = 3000
 # Capacity figures above this are grid-wide totals ("474 GW of requests"), not one project.
 MAX_PROJECT_MW = 20000
 CAND_MAX_AGE_DAYS = 180
@@ -392,6 +398,69 @@ def guess_status(title):
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# Permanent archive
+# ---------------------------------------------------------------------------
+def archive_items(new_items, archive_dir):
+    """Append headlines to data/archive/YYYY-MM.json by published month.
+
+    Entries already in a month file are left exactly as they are; nothing is
+    ever trimmed or deleted. Returns the number of headlines added.
+    """
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    by_month = {}
+    for it in new_items:
+        month = it.get("published", "")[:7]
+        if MONTH_RE.match(month):
+            by_month.setdefault(month, []).append(it)
+    added = 0
+    for month, its in sorted(by_month.items()):
+        path = archive_dir / (month + ".json")
+        current = load_json(path, {}).get("items", [])
+        known = {x["id"] for x in current}
+        fresh = []
+        for it in its:
+            if it["id"] not in known:
+                known.add(it["id"])
+                fresh.append(it)
+        if not fresh:
+            continue
+        items = current + fresh
+        items.sort(key=lambda x: x["published"], reverse=True)
+        path.write_text(json.dumps({"month": month, "count": len(items), "items": items},
+                                   ensure_ascii=False, indent=1), encoding="utf-8")
+        added += len(fresh)
+    write_archive_index(archive_dir)
+    return added
+
+
+def write_archive_index(archive_dir):
+    months = []
+    for path in sorted(archive_dir.glob("*.json"), reverse=True):
+        if not MONTH_RE.match(path.stem):
+            continue
+        items = load_json(path, {}).get("items", [])
+        if not items:
+            continue
+        months.append({
+            "month": path.stem, "count": len(items), "file": "data/archive/" + path.name,
+            "earliest": min(x["published"] for x in items), "latest": max(x["published"] for x in items),
+        })
+    index = {
+        "total": sum(m["count"] for m in months),
+        "earliest": min((m["earliest"] for m in months), default=None),
+        "latest": max((m["latest"] for m in months), default=None),
+        "months": months,
+    }
+    path = archive_dir / "index.json"
+    old = load_json(path, {})
+    old.pop("updated", None)
+    if old == index:
+        return  # nothing changed; keep the file (and git) quiet
+    path.write_text(json.dumps(dict({"updated": datetime.now(timezone.utc).isoformat(timespec="seconds")}, **index),
+                               ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def parse_args():
     ap = argparse.ArgumentParser(description="Refresh data/news.json and data/project_candidates.json")
     ap.add_argument("--no-fetch", action="store_true", help="re-tag the stored items without fetching feeds")
@@ -405,8 +474,12 @@ def main():
     no_fetch = args.no_fetch
     news_out = Path(args.out) / NEWS_FILE.name if args.out else NEWS_FILE
     cand_out = Path(args.out) / CAND_FILE.name if args.out else CAND_FILE
+    archive_out = Path(args.out) / "archive" if args.out else ARCHIVE_DIR
     if args.out:
         Path(args.out).mkdir(parents=True, exist_ok=True)
+        # Test runs start from a copy of the real archive and never touch it.
+        if ARCHIVE_DIR.exists():
+            shutil.copytree(ARCHIVE_DIR, archive_out, dirs_exist_ok=True)
     now = datetime.now(timezone.utc)
     cfg = load_json(FEEDS_FILE, {})
     gaz, patterns = load_gazetteer()
@@ -472,13 +545,23 @@ def main():
     # Merge with the existing news file so stories stay for NEWS_MAX_AGE_DAYS
     existing = load_json(NEWS_FILE, {}).get("items", [])
     merged = {it["id"]: it for it in existing if "id" in it}
-    merged.update(fresh)
     cutoff = now - timedelta(days=NEWS_MAX_AGE_DAYS)
+    # Refill from the archive, so stories trimmed by an older, smaller limit come back
+    for path in sorted(archive_out.glob("*.json")):
+        if MONTH_RE.match(path.stem) and path.stem >= cutoff.strftime("%Y-%m"):
+            for it in load_json(path, {}).get("items", []):
+                if it["id"] not in merged and datetime.fromisoformat(it["published"]) >= cutoff:
+                    merged[it["id"]] = dict(it)
+    merged.update(fresh)
     # Re-tag stored stories too, so rule and gazetteer edits apply to old items
-    items = [it for it in merged.values()
-             if datetime.fromisoformat(it["published"]) >= cutoff and tag_item(it, gaz, patterns)]
-    items.sort(key=lambda it: it["published"], reverse=True)
-    items = items[:NEWS_MAX_ITEMS]
+    kept = [it for it in merged.values() if tag_item(it, gaz, patterns)]
+    kept.sort(key=lambda it: it["published"], reverse=True)
+
+    # Every kept headline goes into the permanent archive before the recent file is trimmed
+    added = archive_items(kept, archive_out)
+    log(f"Archive: {added} new headlines added under {archive_out}")
+
+    items = [it for it in kept if datetime.fromisoformat(it["published"]) >= cutoff][:NEWS_MAX_ITEMS]
 
     news_out.write_text(json.dumps({
         "updated": now.isoformat(timespec="seconds"),
