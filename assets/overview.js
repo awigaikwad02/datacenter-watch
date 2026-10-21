@@ -32,7 +32,7 @@
   function major(items) {
     const live = items.filter((i) => i.category !== R.CANCELLED);
     const pick = live.find((i) => (i.category === "New Announcement" || i.category === "Construction") && i.state && (i.capacity_mw || i.investment_usd_b)) || live[0];
-    if (!pick) { $("#major").innerHTML = '<div class="card empty">' + R.icon("news") + "<b>No headlines yet</b>The feed refreshes every three hours.</div>"; return; }
+    if (!pick) { $("#major").innerHTML = '<div class="card empty">' + R.icon("news") + "<b>No headlines yet</b>The feed refreshes every hour.</div>"; return; }
     const c = R.cat(pick.category);
     // Other recent stories that name a place or a company, newest first.
     const also = live.filter((i) => i !== pick && i.category !== "General" && i.category !== "Policy / Permits" && (i.state || i.companies.length)).slice(0, 4);
@@ -72,26 +72,38 @@
       : '<p class="co-empty">No headlines in the last 7 days.</p>';
   }
 
-  // The pulse map loads Leaflet only when it scrolls near the viewport.
-  function pulse(projects) {
+  // The pulse map loads Leaflet only when it scrolls near the viewport. Live refreshes
+  // call pulse() again, which only swaps the markers once the map exists.
+  let pulseProjects = [], pulseLayers = null;
+  function drawPulse() {
     const now = Date.now();
-    const recent = projects.filter((p) => p.curated || now - p.t <= 90 * DAY);
-    const list = recent.filter((p) => p.curated || !p.approx);
-    $("#pulseLegend").innerHTML = R.legendHTML();
+    const recent = pulseProjects.filter((p) => p.curated || now - p.t <= 90 * DAY);
     $("#pulseCount").innerHTML = '<span class="live-dot" aria-hidden="true"></span>' + recent.length + " sites on the map";
+    if (!pulseLayers) return;
+    const { cl, approx } = pulseLayers;
+    cl.clearLayers();
+    cl.addLayers(recent.filter((p) => p.curated || !p.approx).map((p) => {
+      const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p), title: p.curated ? p.name : p.place, keyboard: true });
+      m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(p.status) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
+      m.on("click", () => { location.href = "/atlas#project=" + encodeURIComponent(p.id); });
+      return m;
+    }));
+    approx.set(recent);
+  }
+  function pulse(projects) {
+    const first = !pulseProjects.length;
+    pulseProjects = projects;
+    drawPulse();
+    if (!first) return;
+    $("#pulseLegend").innerHTML = R.legendHTML();
     const el = $("#pulseMap");
     const start = () => R.loadLeaflet().then(() => {
       const map = R.baseMap(el, { scrollWheelZoom: false });
       window.L.control.zoom({ position: "topright" }).addTo(map);
       const cl = R.clusterGroup();
-      list.forEach((p) => {
-        const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p), title: p.curated ? p.name : p.place, keyboard: true });
-        m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(p.status) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
-        m.on("click", () => { location.href = "/atlas#project=" + encodeURIComponent(p.id); });
-        cl.addLayer(m);
-      });
       map.addLayer(cl);
-      R.approxLayer(map, cl, (st) => { location.href = "/atlas#state=" + st; }).set(recent);
+      pulseLayers = { cl, approx: R.approxLayer(map, cl, (st) => { location.href = "/atlas#state=" + st; }) };
+      drawPulse();
       $("#pulsePh").remove();
     }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open the Project Atlas instead."; });
     if (!("IntersectionObserver" in window)) return start();
@@ -99,8 +111,8 @@
     io.observe(el);
   }
 
-  Promise.all([R.news(), R.projects()]).then(([n, projects]) => {
-    // One entry per story: duplicate coverage of the same event is folded into its newest headline.
+  function render(n, projects) {
+    // One entry per story: duplicate coverage of the same event is folded into one card.
     const items = R.stories(n.items);
     stats(n.items, items, projects);
     R.ticker($("#ticker"), items.slice(0, 10));
@@ -109,6 +121,10 @@
     companies(items);
     topics(items);
     pulse(projects);
+  }
+  Promise.all([R.news(), R.projects()]).then(([n, projects]) => {
+    render(n, projects);
+    R.live(render);
     R.ready();
   }).catch((err) => {
     console.error(err);

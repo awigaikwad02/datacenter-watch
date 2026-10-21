@@ -299,6 +299,14 @@
     bind();
     update();
     readHash();
+    // New data: redraw pins and list with the same filters, zoom and open panel. Markers are
+    // rebuilt so status changes show, except the selected one, which keeps its highlight.
+    R.live((n, projects) => {
+      all = projects;
+      news = n.items;
+      markers = sel && markers[sel] ? { [sel]: markers[sel] } : {};
+      update();
+    });
     R.ready();
   }).catch((err) => {
     console.error(err);

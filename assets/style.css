@@ -132,6 +132,13 @@ body.app-page .shell-main { padding-bottom: 0; }
   margin-left: auto; display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 12px;
   border-radius: 999px; border: 1px solid var(--border); background: var(--surface); font-size: 12.5px; color: var(--text-2); white-space: nowrap;
 }
+.live-pill.stale { border-color: rgba(251, 191, 36, .45); background: rgba(251, 191, 36, .1); color: #fcd34d; }
+.live-pill.stale .live-dot { background: #fbbf24; animation: none; }
+.update-pill { position: fixed; top: calc(var(--topbar-h) + 10px); left: 50%; z-index: 2500; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border-strong); background: rgba(17, 17, 19, .94); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: var(--text); font-size: 13px; font-weight: 600; box-shadow: var(--shadow); white-space: nowrap; max-width: calc(100vw - 32px); overflow: hidden; text-overflow: ellipsis; opacity: 0; transform: translate(-50%, -8px); transition: opacity .3s var(--ease), transform .3s var(--ease); pointer-events: none; }
+@media (min-width: 1024px) { .update-pill { left: calc(50% + var(--sidebar-w) / 2); } }
+.update-pill.show { opacity: 1; transform: translate(-50%, 0); }
+.status-line { font-size: 13.5px; color: var(--text-2); padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.status-line b { color: var(--text); font-weight: 600; }
 .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 var(--accent-glow); animation: live 2.2s infinite; flex: none; }
 @keyframes live { 0% { box-shadow: 0 0 0 0 var(--accent-glow); } 70%, 100% { box-shadow: 0 0 0 7px transparent; } }
 

@@ -126,6 +126,7 @@
     grid();
     bind();
     openFromHash();
+    R.live((n, projects) => { cos = build(projects, R.stories(n.items)); stats(projects); types(); grid(); });
     R.ready();
   }).catch((err) => {
     console.error(err);

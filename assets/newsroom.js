@@ -187,6 +187,8 @@
     bind();
     render(true);
     loadArchive();
+    // New data: keep every filter, the view and how far the reader has scrolled the list.
+    R.live((n) => { items = n.items; featured(); render(false); });
     R.ready();
   }).catch((err) => {
     console.error(err);

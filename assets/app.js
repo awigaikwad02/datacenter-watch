@@ -151,9 +151,12 @@ window.RR = (function () {
 
   // ---------- Data ----------
   const cache = {};
+  // Every data fetch bypasses both the browser cache and GitHub Pages' CDN cache (~10 minutes):
+  // a unique query string plus cache: "no-store".
+  const fresh = (path) => fetch(path + "?t=" + Date.now(), { cache: "no-store" });
   function json(path) {
     if (!cache[path]) {
-      cache[path] = fetch(path + "?v=" + Math.floor(Date.now() / 3e5)).then((r) => {
+      cache[path] = fresh(path).then((r) => {
         if (!r.ok) throw new Error(path + " returned " + r.status);
         return r.json();
       });
@@ -256,10 +259,66 @@ window.RR = (function () {
     ["/methodology", "Methodology", "method", "Method"],
   ];
   let updatedIso = null;
+  // The header badge shows the age of data/news.json's "updated" time, re-rendered every minute,
+  // and turns amber when the data is more than 3 hours old.
+  const STALE_MS = 3 * 36e5;
   function setUpdated(iso) {
     updatedIso = iso;
     const el = document.getElementById("livePill");
-    if (el) el.innerHTML = '<span class="live-dot" aria-hidden="true"></span><span>Updated ' + esc(ago(iso)) + "</span>";
+    if (!el || !iso) return;
+    const stale = Date.now() - new Date(iso).getTime() > STALE_MS;
+    el.classList.toggle("stale", stale);
+    el.title = stale ? "The data has not changed for more than 3 hours (last update " + fmtDate(iso) + ")" : "Data last updated " + fmtDate(iso);
+    el.innerHTML = '<span class="live-dot" aria-hidden="true"></span><span>Updated ' + esc(ago(iso)) + "</span>";
+  }
+  setInterval(() => { if (updatedIso) setUpdated(updatedIso); }, 60e3);
+  // Pages that don't load the headlines read the same timestamp from the small run report.
+  function freshness() {
+    return json("data/status.json").then((st) => { if (!updatedIso && st.updated) setUpdated(st.updated); return st; });
+  }
+
+  // ---------- Live refresh ----------
+  // Every 10 minutes (and as soon as a hidden tab becomes visible) check data/news.json; when its
+  // "updated" time has moved, reload the data and hand it to the page's callback without a reload.
+  const POLL_MS = 10 * 60e3;
+  let liveCb = null, pollTimer = null, polling = false, pillEl = null, pillTimer = null;
+  function live(onUpdate) {
+    liveCb = onUpdate;
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") poll(); else clearTimeout(pollTimer);
+    });
+    schedule();
+  }
+  function schedule() {
+    clearTimeout(pollTimer);
+    if (document.visibilityState !== "hidden") pollTimer = setTimeout(poll, POLL_MS);
+  }
+  function poll() {
+    if (polling || !liveCb || document.visibilityState === "hidden") return;
+    polling = true;
+    fresh("data/news.json").then((r) => (r.ok ? r.json() : null)).then((d) => {
+      if (!d || !d.updated || d.updated === updatedIso || !newsP) return;
+      return newsP.then((old) => {
+        const known = new Set(old.items.map((i) => i.id));
+        delete cache["data/project_candidates.json"];
+        cache["data/news.json"] = Promise.resolve(d);
+        newsP = projP = archP = null;
+        Object.keys(cache).forEach((k) => { if (k.startsWith("data/archive")) delete cache[k]; });
+        return Promise.all([news(), projects()]).then(([n, p]) => {
+          const added = n.items.filter((i) => !known.has(i.id)).length;
+          liveCb(n, p, added);
+          updatePill(d.updated, added);
+        });
+      });
+    }).catch((err) => console.warn("Live refresh skipped:", err)).then(() => { polling = false; schedule(); });
+  }
+  function updatePill(iso, added) {
+    if (!pillEl) { pillEl = document.createElement("div"); pillEl.className = "update-pill"; pillEl.setAttribute("role", "status"); document.body.appendChild(pillEl); }
+    pillEl.innerHTML = '<span class="live-dot" aria-hidden="true"></span>Updated ' + esc(ago(iso)) + " · " +
+      (added ? fmtN(added) + " new headline" + (added === 1 ? "" : "s") : "headlines refreshed");
+    pillEl.classList.add("show");
+    clearTimeout(pillTimer);
+    pillTimer = setTimeout(() => pillEl.classList.remove("show"), 6000);
   }
   function shell(active, title) {
     document.body.classList.add("has-shell");
@@ -273,7 +332,7 @@ window.RR = (function () {
     const top = document.getElementById("topbar");
     if (top) {
       top.innerHTML = '<div class="page"><a class="brand" href="/" aria-label="The Rack Report home">' + wordmark() + "</a>" +
-        '<span class="topbar-title">' + esc(title) + '</span><span class="live-pill" id="livePill"><span class="live-dot" aria-hidden="true"></span><span>Refreshed every 3 hours</span></span></div>';
+        '<span class="topbar-title">' + esc(title) + '</span><span class="live-pill" id="livePill"><span class="live-dot" aria-hidden="true"></span><span>Refreshed hourly</span></span></div>';
       if (updatedIso) setUpdated(updatedIso);
     }
     const tab = document.getElementById("tabbar");
@@ -560,7 +619,7 @@ window.RR = (function () {
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
     STATES, CATS, STATUS, CANCELLED, PRECISION, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
-    news, archive, projects, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
+    news, archive, projects, freshness, live, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };
 })();
