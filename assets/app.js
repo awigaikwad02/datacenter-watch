@@ -125,6 +125,7 @@ window.RR = (function () {
     "Deals / Investment": { tone: "var(--c-deals)", icon: "dollar" },
     "Operations": { tone: "var(--c-ops)", icon: "activity" },
     "AI Infrastructure": { tone: "var(--c-ai)", icon: "cpu" },
+    "Cancelled / Blocked": { tone: "var(--c-cancel)", icon: "x" },
     "General": { tone: "var(--c-general)", icon: "news" },
   };
   const STATUS = {
@@ -133,7 +134,9 @@ window.RR = (function () {
     "Under construction": { tone: "var(--st-construction)", hex: "#fbbf24", step: 2 },
     "Operational": { tone: "var(--st-operational)", hex: "#34d399", step: 3 },
     "Expansion": { tone: "var(--st-expansion)", hex: "#f472b6", step: 3 },
+    "Cancelled / Blocked": { tone: "var(--st-cancelled)", hex: "#6b7280", step: 0 },
   };
+  const CANCELLED = "Cancelled / Blocked";
   const cat = (c) => CATS[c] || CATS.General;
   const status = (s) => STATUS[s] || STATUS.Announced;
   const companyInfo = (name) => (window.RR_COMPANIES && window.RR_COMPANIES[name]) || { type: "Company", desc: "" };
@@ -163,6 +166,7 @@ window.RR = (function () {
       t, day: dayKey(t),
       category: it.category || "General",
       companies: it.companies || [],
+      utilities: it.utilities || [],
       states: it.states || (it.state ? [it.state] : []),
       state: it.state || (it.states && it.states[0]) || null,
     });
@@ -199,9 +203,43 @@ window.RR = (function () {
         curated: false, companies: p.companies || [], place: placeName(p.location),
         date: p.published, t: new Date(p.published).getTime(), year: new Date(p.published).getFullYear(),
       }));
-      return a.concat(b);
+      return a.concat(collapse(b));
     });
     return projP;
+  }
+
+  // Detected sites: one per story cluster, placed at the most precise location any of its headlines gave.
+  const PRECISION = { city: 4, county: 3, state: 2, source: 1 };
+  function collapse(list) {
+    const groups = new Map();
+    list.forEach((p) => { const k = p.cluster_id || p.id; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(p); });
+    return [...groups.values()].map((g) => {
+      g.sort((x, y) => (PRECISION[y.precision] || 0) - (PRECISION[x.precision] || 0) || x.t - y.t);
+      const lead = g[0], first = g.reduce((m, p) => (p.t < m.t ? p : m), lead);
+      return Object.assign({}, lead, {
+        companies: [...new Set(g.flatMap((p) => p.companies))],
+        stories: g.length, sources: g.map((p) => ({ source: p.source, url: p.source_url, published: p.published, name: p.name })),
+        date: first.published, t: first.t, year: new Date(first.t).getFullYear(),
+        approx: !PRECISION[lead.precision] || PRECISION[lead.precision] <= 2,
+        capacity_mw: lead.capacity_mw || Math.max(0, ...g.map((p) => p.capacity_mw || 0)) || undefined,
+        investment_usd_b: lead.investment_usd_b || Math.max(0, ...g.map((p) => p.investment_usd_b || 0)) || undefined,
+      });
+    });
+  }
+  // Headlines: one lead per story cluster (the newest), with every matching headline kept as .members.
+  function stories(list) {
+    const groups = new Map(), out = [];
+    list.forEach((it) => {
+      const k = it.cluster_id || it.id;
+      if (!groups.has(k)) { const lead = Object.assign({}, it, { members: [] }); groups.set(k, lead); out.push(lead); }
+      const lead = groups.get(k);
+      lead.members.push(it);
+      if (lead.members.length > 1) {
+        lead.companies = [...new Set(lead.companies.concat(it.companies || []))];
+        lead.utilities = [...new Set((lead.utilities || []).concat(it.utilities || []))];
+      }
+    });
+    return out;
   }
 
   // ---------- Shell ----------
@@ -232,7 +270,7 @@ window.RR = (function () {
     const top = document.getElementById("topbar");
     if (top) {
       top.innerHTML = '<div class="page"><a class="brand" href="index.html" aria-label="The Rack Report home">' + wordmark() + "</a>" +
-        '<span class="topbar-title">' + esc(title) + '</span><span class="live-pill" id="livePill"><span class="live-dot" aria-hidden="true"></span><span>Refreshed hourly</span></span></div>';
+        '<span class="topbar-title">' + esc(title) + '</span><span class="live-pill" id="livePill"><span class="live-dot" aria-hidden="true"></span><span>Refreshed every 3 hours</span></span></div>';
       if (updatedIso) setUpdated(updatedIso);
     }
     const tab = document.getElementById("tabbar");
@@ -257,6 +295,14 @@ window.RR = (function () {
     loaderTimer = setInterval(() => { i = (i + 1) % msgs.length; if (txt) txt.textContent = msgs[i]; }, 380);
     setTimeout(hideLoader, 1150);
   }
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-sources]");
+    if (!b) return;
+    const ul = document.getElementById("srcs-" + b.dataset.sources);
+    if (!ul) return;
+    ul.hidden = !ul.hidden;
+    b.setAttribute("aria-expanded", String(!ul.hidden));
+  });
   function hideLoader() {
     clearInterval(loaderTimer);
     if (!loaderEl || loaderEl.classList.contains("done")) return;
@@ -384,8 +430,10 @@ window.RR = (function () {
       '<div class="news-meta"><span class="src">' + esc(it.source || "Unknown source") + '</span><span aria-hidden="true">·</span><time datetime="' + esc(it.published) + '" title="' + esc(fmtDate(it.published)) + '">' + esc(ago(it.published)) + "</time>" + (isNew ? '<span class="new">NEW</span>' : "") + "</div>" +
       '<h3><a href="' + esc(it.link) + '" target="_blank" rel="noopener">' + esc(it.title) + "</a></h3>" +
       '<div class="news-foot"><div class="news-tags">' + newsTags(it, { buttons: true }) + "</div>" +
-      '<div class="news-actions"><button class="icon-btn" data-save="' + esc(it.id) + '" aria-pressed="' + saved.has(it.id) + '" aria-label="Save headline" data-tip="Save">' + icon("bookmark") + "</button>" +
-      '<button class="icon-btn" data-share="' + esc(it.id) + '" aria-label="Share headline" data-tip="Share">' + icon("share") + "</button></div></div></article>";
+      '<div class="news-actions">' + (it.members && it.members.length > 1 ? '<button class="link-btn srcs-btn" aria-expanded="false" data-sources="' + esc(it.id) + '">' + it.members.length + " sources</button>" : "") + '<button class="icon-btn" data-save="' + esc(it.id) + '" aria-pressed="' + saved.has(it.id) + '" aria-label="Save headline" data-tip="Save">' + icon("bookmark") + "</button>" +
+      '<button class="icon-btn" data-share="' + esc(it.id) + '" aria-label="Share headline" data-tip="Share">' + icon("share") + "</button></div></div>" +
+      (it.members && it.members.length > 1 ? '<ul class="srcs" id="srcs-' + esc(it.id) + '" hidden>' + it.members.map((m) =>
+        '<li><a href="' + esc(m.link) + '" target="_blank" rel="noopener">' + esc(m.title) + "</a><small>" + esc(m.source || "Unknown source") + " · " + esc(ago(m.published)) + "</small></li>").join("") + "</ul>" : "") + "</article>";
   }
 
   // ---------- Ticker ----------
@@ -450,23 +498,41 @@ window.RR = (function () {
   }
   function legendHTML() {
     return Object.keys(STATUS).map((s) => '<span class="lg"><i style="--tone:' + STATUS[s].tone + '"></i>' + s + "</span>").join("") +
-      '<span class="lg"><i class="auto" style="--tone:var(--faint)"></i>Detected from news</span>';
+      '<span class="lg"><i class="auto" style="--tone:var(--faint)"></i>Detected from news</span>' +
+      '<span class="lg"><i class="bub"></i>State level only, location approximate</span>';
+  }
+  // Detected sites known only to the state go into one translucent bubble per state, not pins.
+  function approxBubbles(list, onClick) {
+    const L = window.L, by = {};
+    list.filter((p) => !p.curated && p.approx).forEach((p) => {
+      const b = by[p.state] || (by[p.state] = { state: p.state, lat: p.lat, lon: p.lon, n: 0 });
+      if (p.precision === "state") { b.lat = p.lat; b.lon = p.lon; }
+      b.n += p.stories || 1;
+    });
+    return Object.values(by).map((b) => {
+      const s = Math.round(Math.min(64, 30 + Math.sqrt(b.n) * 7)), label = b.n + (b.n === 1 ? " story" : " stories") + ", location approximate";
+      const m = L.marker([b.lat, b.lon], { icon: L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble">' + b.n + "</div>" }), title: (STATES[b.state] || b.state) + ": " + label, keyboard: true, zIndexOffset: -500 });
+      m.bindTooltip("<b>" + esc(STATES[b.state] || b.state) + "</b><small>" + esc(label) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -s / 2] });
+      if (onClick) m.on("click", () => onClick(b.state));
+      return m;
+    });
   }
   // One sentence built only from the record's own fields.
   function summary(p) {
     const names = p.companies.length ? p.companies : p.company ? [p.company] : [];
     const who = names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names[names.length - 1] : names[0] || "An unnamed developer";
     const many = names.length > 1;
-    const what = { "Announced": "announced", "Planned": many ? "are planning" : "is planning", "Under construction": many ? "are building" : "is building", "Operational": many ? "operate" : "operates", "Expansion": many ? "are expanding" : "is expanding" }[p.status] || "are tied to";
+    const what = { [CANCELLED]: many ? "were tied to" : "was tied to", "Announced": "announced", "Planned": many ? "are planning" : "is planning", "Under construction": many ? "are building" : "is building", "Operational": many ? "operate" : "operates", "Expansion": many ? "are expanding" : "is expanding" }[p.status] || "are tied to";
     const size = [p.capacity_mw ? fmtMW(p.capacity_mw) : "", p.investment_usd_b ? fmtMoney(p.investment_usd_b) : ""].filter(Boolean).join(", ");
     return p.curated
       ? who + " " + what + " this " + (size ? size + " " : "") + "data center project in " + p.place + "."
-      : "Detected from a " + (p.source || "news") + " headline on " + fmtDate(p.published) + ": a " + p.status.toLowerCase() + " data center project in " + p.place + (size ? " (" + size + " mentioned)" : "") + ".";
+      : "Detected from a " + (p.source || "news") + " headline on " + fmtDate(p.published) + ": " + (p.status === CANCELLED ? "a data center project reported cancelled, blocked or paused" : "a " + p.status.toLowerCase() + " data center project") + " in " + p.place + (size ? " (" + size + " mentioned)" : "") + "." +
+        (p.stories > 1 ? " " + p.stories + " headlines cover this story." : "");
   }
 
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
-    STATES, CATS, STATUS, cat, status, companyInfo, companyTone, letters,
+    STATES, CATS, STATUS, CANCELLED, PRECISION, stories, approxBubbles, cat, status, companyInfo, companyTone, letters,
     news, archive, projects, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };

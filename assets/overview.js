@@ -5,14 +5,15 @@
   R.shell("index.html", "Overview");
   document.querySelectorAll("[data-icon]").forEach((a) => a.insertAdjacentHTML("afterbegin", R.icon(a.dataset.icon)));
 
-  function stats(items, projects) {
+  function stats(raw, items, projects) {
     const now = Date.now(), d = new Date();
-    const week = items.filter((i) => now - i.t <= 7 * DAY);
+    const week = raw.filter((i) => now - i.t <= 7 * DAY);
     const monthStart = new Date(d.getFullYear(), d.getMonth(), 1).getTime();
-    const announced = projects.filter((p) => (p.status === "Announced" || p.status === "Planned") && p.t >= monthStart).length;
+    // Projects are already one per story cluster; cancelled or blocked sites never count as announced.
+    const announced = projects.filter((p) => (p.status === "Announced" || p.status === "Planned") && p.status !== R.CANCELLED && p.t >= monthStart).length;
     const states = new Set(items.filter((i) => now - i.t <= 30 * DAY && i.state).map((i) => i.state)
       .concat(projects.filter((p) => !p.curated && now - p.t <= 30 * DAY).map((p) => p.state))).size;
-    const mw = week.reduce((a, i) => a + (i.capacity_mw || 0), 0);
+    const mw = items.filter((i) => now - i.t <= 7 * DAY && i.category !== R.CANCELLED).reduce((a, i) => a + (i.capacity_mw || 0), 0);
     const tiles = [
       ["news", "Headlines this week", week.length, "", "var(--cyan)", "from " + new Set(week.map((i) => i.source)).size + " outlets"],
       ["spark", "Projects announced this month", announced, "", "var(--st-announced)", "curated and detected, since " + new Date(monthStart).toLocaleDateString("en-US", { month: "short", day: "numeric" })],
@@ -29,11 +30,12 @@
   }
 
   function major(items) {
-    const pick = items.find((i) => (i.category === "New Announcement" || i.category === "Construction") && i.state && (i.capacity_mw || i.investment_usd_b)) || items[0];
-    if (!pick) { $("#major").innerHTML = '<div class="card empty">' + R.icon("news") + "<b>No headlines yet</b>The feed refreshes every hour.</div>"; return; }
+    const live = items.filter((i) => i.category !== R.CANCELLED);
+    const pick = live.find((i) => (i.category === "New Announcement" || i.category === "Construction") && i.state && (i.capacity_mw || i.investment_usd_b)) || live[0];
+    if (!pick) { $("#major").innerHTML = '<div class="card empty">' + R.icon("news") + "<b>No headlines yet</b>The feed refreshes every three hours.</div>"; return; }
     const c = R.cat(pick.category);
     // Other recent stories that name a place or a company, newest first.
-    const also = items.filter((i) => i !== pick && i.category !== "General" && i.category !== "Policy / Permits" && (i.state || i.companies.length)).slice(0, 4);
+    const also = live.filter((i) => i !== pick && i.category !== "General" && i.category !== "Policy / Permits" && (i.state || i.companies.length)).slice(0, 4);
     const figs = [];
     if (pick.capacity_mw) figs.push(["Capacity", R.fmtMW(pick.capacity_mw)]);
     if (pick.investment_usd_b) figs.push(["Investment", R.fmtMoney(pick.investment_usd_b)]);
@@ -73,9 +75,10 @@
   // The pulse map loads Leaflet only when it scrolls near the viewport.
   function pulse(projects) {
     const now = Date.now();
-    const list = projects.filter((p) => p.curated || now - p.t <= 90 * DAY);
+    const recent = projects.filter((p) => p.curated || now - p.t <= 90 * DAY);
+    const list = recent.filter((p) => p.curated || !p.approx);
     $("#pulseLegend").innerHTML = R.legendHTML();
-    $("#pulseCount").innerHTML = '<span class="live-dot" aria-hidden="true"></span>' + list.length + " sites on the map";
+    $("#pulseCount").innerHTML = '<span class="live-dot" aria-hidden="true"></span>' + recent.length + " sites on the map";
     const el = $("#pulseMap");
     const start = () => R.loadLeaflet().then(() => {
       const map = R.baseMap(el, { scrollWheelZoom: false });
@@ -88,6 +91,7 @@
         cl.addLayer(m);
       });
       map.addLayer(cl);
+      R.approxBubbles(recent, (st) => { location.href = "atlas.html#state=" + st; }).forEach((b) => b.addTo(map));
       $("#pulsePh").remove();
     }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open the Project Atlas instead."; });
     if (!("IntersectionObserver" in window)) return start();
@@ -96,8 +100,9 @@
   }
 
   Promise.all([R.news(), R.projects()]).then(([n, projects]) => {
-    const items = n.items;
-    stats(items, projects);
+    // One entry per story: duplicate coverage of the same event is folded into its newest headline.
+    const items = R.stories(n.items);
+    stats(n.items, items, projects);
     R.ticker($("#ticker"), items.slice(0, 10));
     major(items);
     latest(items);
