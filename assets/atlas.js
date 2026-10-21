@@ -5,7 +5,7 @@
   const R = RR, $ = (s) => document.querySelector(s);
   const STATUSES = Object.keys(R.STATUS);
   const f = { q: "", statuses: new Set(STATUSES), company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
-  let all = [], news = [], map, cluster, bubbles = null, markers = {}, sel = null, releaseSheet = null;
+  let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
   R.shell("atlas.html", "Project Atlas");
   $("#fitBtn").innerHTML = R.icon("focus");
   $("#sheetClose").innerHTML = R.icon("x");
@@ -66,8 +66,7 @@
   function drawMarkers(list) {
     cluster.clearLayers();
     cluster.addLayers(list.filter((p) => p.curated || !p.approx).map((p) => (markers[p.id] = markers[p.id] || marker(p))));
-    bubbles.clearLayers();
-    R.approxBubbles(list, (st) => { f.state = st; changed(); fitTo(filtered()); }).forEach((b) => bubbles.addLayer(b));
+    approx.set(list);
   }
 
   // ---------- List and stats ----------
@@ -294,9 +293,9 @@
     news = n.items;
     map = R.baseMap($("#map"));
     window.L.control.zoom({ position: "bottomright" }).addTo(map);
-    bubbles = window.L.layerGroup().addTo(map);
     cluster = R.clusterGroup();
     map.addLayer(cluster);
+    approx = R.approxLayer(map, cluster, (st) => { f.state = st; changed(); fitTo(filtered()); });
     bind();
     update();
     readHash();

@@ -91,7 +91,7 @@
         cl.addLayer(m);
       });
       map.addLayer(cl);
-      R.approxBubbles(recent, (st) => { location.href = "atlas.html#state=" + st; }).forEach((b) => b.addTo(map));
+      R.approxLayer(map, cl, (st) => { location.href = "atlas.html#state=" + st; }).set(recent);
       $("#pulsePh").remove();
     }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open the Project Atlas instead."; });
     if (!("IntersectionObserver" in window)) return start();

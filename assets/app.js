@@ -185,7 +185,8 @@ window.RR = (function () {
     archP = archP || json("data/archive/index.json").then((idx) =>
       Promise.all((idx.months || []).map((m) => json(m.file).catch(() => ({ items: [] })))).then((files) => {
         const seen = new Set(), items = [];
-        files.forEach((f) => (f.items || []).forEach((it) => { if (!seen.has(it.id)) { seen.add(it.id); items.push(prepNews(it)); } }));
+        // "filtered" marks archived headlines that today's rules reject (off topic or outside the U.S.).
+        files.forEach((f) => (f.items || []).forEach((it) => { if (!it.filtered && !seen.has(it.id)) { seen.add(it.id); items.push(prepNews(it)); } }));
         items.sort((a, b) => b.t - a.t);
         return { index: idx, items, earliest: idx.earliest || (items.length ? items[items.length - 1].published : null) };
       }));
@@ -226,20 +227,23 @@ window.RR = (function () {
       });
     });
   }
-  // Headlines: one lead per story cluster (the newest), with every matching headline kept as .members.
+  // Headlines: one card per story cluster, with every matching headline kept as .members. The card shows
+  // the cluster's display headline (most precise place, else earliest) when it is among the matches.
   function stories(list) {
-    const groups = new Map(), out = [];
+    const groups = new Map();
     list.forEach((it) => {
       const k = it.cluster_id || it.id;
-      if (!groups.has(k)) { const lead = Object.assign({}, it, { members: [] }); groups.set(k, lead); out.push(lead); }
-      const lead = groups.get(k);
-      lead.members.push(it);
-      if (lead.members.length > 1) {
-        lead.companies = [...new Set(lead.companies.concat(it.companies || []))];
-        lead.utilities = [...new Set((lead.utilities || []).concat(it.utilities || []))];
-      }
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(it);
     });
-    return out;
+    return [...groups.values()].map((members) => {
+      const lead = members.find((m) => m.cluster_title && m.title === m.cluster_title) || members[0];
+      return Object.assign({}, lead, {
+        members,
+        companies: [...new Set(members.flatMap((m) => m.companies || []))],
+        utilities: [...new Set(members.flatMap((m) => m.utilities || []))],
+      });
+    }).sort((a, b) => b.t - a.t);
   }
 
   // ---------- Shell ----------
@@ -493,16 +497,24 @@ window.RR = (function () {
   function clusterGroup() {
     return window.L.markerClusterGroup({
       showCoverageOnHover: false, maxClusterRadius: 44, spiderfyOnMaxZoom: true, disableClusteringAtZoom: 8,
-      iconCreateFunction: (c) => { const n = c.getChildCount(), s = n < 10 ? 34 : n < 30 ? 40 : 46; return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="cluster">' + n + "</div>" }); },
+      // Approximate (state-level) markers carry options.approx; their stories are shown as a small "~N" line.
+      iconCreateFunction: (c) => {
+        let n = 0, a = 0;
+        c.getAllChildMarkers().forEach((m) => { if (m.options.approx) a += m.options.approx; else n++; });
+        if (!n) { const s = Math.round(Math.min(56, 28 + Math.sqrt(a) * 5)); return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble" title="' + a + ' stories, location approximate">~' + a + "</div>" }); }
+        const s = (n < 10 ? 34 : n < 30 ? 40 : 46) + (a ? 8 : 0);
+        return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="cluster' + (a ? " has-apx" : "") + '"' + (a ? ' title="' + n + " sites, plus " + a + ' stories with approximate location"' : "") + ">" + n + (a ? '<small class="apx" aria-label="plus ' + a + ' approximate">~' + a + "</small>" : "") + "</div>" });
+      },
     });
   }
   function legendHTML() {
     return Object.keys(STATUS).map((s) => '<span class="lg"><i style="--tone:' + STATUS[s].tone + '"></i>' + s + "</span>").join("") +
       '<span class="lg"><i class="auto" style="--tone:var(--faint)"></i>Detected from news</span>' +
-      '<span class="lg"><i class="bub"></i>State level only, location approximate</span>';
+      '<span class="lg"><i class="bub"></i>~N: state level only, location approximate</span>';
   }
   // Detected sites known only to the state go into one translucent bubble per state, not pins.
-  function approxBubbles(list, onClick) {
+  // With ghost true the markers are small and carry options.approx, for folding into cluster circles.
+  function approxBubbles(list, onClick, ghost) {
     const L = window.L, by = {};
     list.filter((p) => !p.curated && p.approx).forEach((p) => {
       const b = by[p.state] || (by[p.state] = { state: p.state, lat: p.lat, lon: p.lon, n: 0 });
@@ -510,12 +522,28 @@ window.RR = (function () {
       b.n += p.stories || 1;
     });
     return Object.values(by).map((b) => {
-      const s = Math.round(Math.min(64, 30 + Math.sqrt(b.n) * 7)), label = b.n + (b.n === 1 ? " story" : " stories") + ", location approximate";
-      const m = L.marker([b.lat, b.lon], { icon: L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble">' + b.n + "</div>" }), title: (STATES[b.state] || b.state) + ": " + label, keyboard: true, zIndexOffset: -500 });
+      const s = ghost ? Math.round(Math.min(40, 24 + Math.sqrt(b.n) * 4)) : Math.round(Math.min(64, 30 + Math.sqrt(b.n) * 7)), label = b.n + (b.n === 1 ? " story" : " stories") + ", location approximate";
+      const m = L.marker([b.lat, b.lon], { icon: L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble">' + (ghost ? "~" : "") + b.n + "</div>" }), title: (STATES[b.state] || b.state) + ": " + label, keyboard: true, zIndexOffset: -500, approx: ghost ? b.n : 0 });
       m.bindTooltip("<b>" + esc(STATES[b.state] || b.state) + "</b><small>" + esc(label) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -s / 2] });
       if (onClick) m.on("click", () => onClick(b.state));
       return m;
     });
+  }
+  // Approximate bubbles show from zoom 5 in; at country zoom (<= 4) they fold into the cluster circles.
+  const APPROX_ZOOM = 4;
+  function approxLayer(map, cl, onClick) {
+    const layer = window.L.layerGroup().addTo(map);
+    let list = [], ghosts = [], low = null;
+    function draw() {
+      low = map.getZoom() <= APPROX_ZOOM;
+      layer.clearLayers();
+      if (ghosts.length) cl.removeLayers(ghosts);
+      ghosts = [];
+      const ms = approxBubbles(list, onClick, low);
+      if (low) { ghosts = ms; cl.addLayers(ghosts); } else ms.forEach((m) => layer.addLayer(m));
+    }
+    map.on("zoomend", () => { if ((map.getZoom() <= APPROX_ZOOM) !== low) draw(); });
+    return { set(l) { list = l; draw(); }, refresh: draw };
   }
   // One sentence built only from the record's own fields.
   function summary(p) {
@@ -532,7 +560,7 @@ window.RR = (function () {
 
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
-    STATES, CATS, STATUS, CANCELLED, PRECISION, stories, approxBubbles, cat, status, companyInfo, companyTone, letters,
+    STATES, CATS, STATUS, CANCELLED, PRECISION, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
     news, archive, projects, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };
