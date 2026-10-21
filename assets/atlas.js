@@ -5,7 +5,7 @@
   const R = RR, $ = (s) => document.querySelector(s);
   const STATUSES = Object.keys(R.STATUS);
   const f = { q: "", statuses: new Set(STATUSES), company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
-  let all = [], news = [], map, cluster, markers = {}, sel = null, releaseSheet = null;
+  let all = [], news = [], map, cluster, bubbles = null, markers = {}, sel = null, releaseSheet = null;
   R.shell("atlas.html", "Project Atlas");
   $("#fitBtn").innerHTML = R.icon("focus");
   $("#sheetClose").innerHTML = R.icon("x");
@@ -62,9 +62,12 @@
     return m;
   }
   const short = (t) => (t.length > 80 ? t.slice(0, 78) + "…" : t);
+  // City- and county-level sites are pins; state-level ones are summed into one approximate bubble per state.
   function drawMarkers(list) {
     cluster.clearLayers();
-    cluster.addLayers(list.map((p) => (markers[p.id] = markers[p.id] || marker(p))));
+    cluster.addLayers(list.filter((p) => p.curated || !p.approx).map((p) => (markers[p.id] = markers[p.id] || marker(p))));
+    bubbles.clearLayers();
+    R.approxBubbles(list, (st) => { f.state = st; changed(); fitTo(filtered()); }).forEach((b) => bubbles.addLayer(b));
   }
 
   // ---------- List and stats ----------
@@ -83,7 +86,7 @@
     $("#list").innerHTML = shown.map((p) => {
       const who = p.curated ? p.company : (p.source || "News") + " · " + R.ago(p.published);
       return '<button class="proj-card" data-id="' + R.esc(p.id) + '"' + (sel === p.id ? ' aria-current="true"' : "") + ' style="--tone:' + R.status(p.status).tone + '">' +
-        '<span class="sdot' + (p.curated ? "" : " auto") + '" aria-hidden="true"></span><span><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.place) + " · " + R.esc(p.status) + "</small><small>" + R.esc(who || "") + "</small></span>" +
+        '<span class="sdot' + (p.curated ? "" : " auto") + '" aria-hidden="true"></span><span><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.place) + (p.approx ? " (approximate)" : "") + " · " + R.esc(p.status) + "</small><small>" + R.esc(who || "") + (p.stories > 1 ? " · " + p.stories + " sources" : "") + "</small></span>" +
         '<span class="cap">' + (p.capacity_mw ? R.fmtMW(p.capacity_mw) : p.investment_usd_b ? R.fmtMoney(p.investment_usd_b) : "") + "</span></button>";
     }).join("");
   }
@@ -99,7 +102,9 @@
     const town = p.place.split(",")[0].toLowerCase();
     return (source || news).map((n) => {
       let s = 0;
-      if (!p.curated && n.id === p.id) s += 100;
+      const member = !p.curated && (n.id === p.id || (n.cluster_id && n.cluster_id === p.cluster_id));
+      if (member && p.stories > 1) return [0, n]; // already listed under "Coverage of this story"
+      if (member) s += 100;
       const sameState = n.state === p.state || (n.states || []).includes(p.state);
       if (sameState && p.companies.some((c) => n.companies.includes(c))) s += 6;
       if (town.length > 3 && n.title.toLowerCase().includes(town)) s += 5;
@@ -113,8 +118,9 @@
       ["Under construction", !p.curated && p.status === "Under construction" ? p.published : null],
       ["Operational", !p.curated && p.status === "Operational" ? p.published : null]];
     if (p.status === "Expansion") steps.push(["Expansion", !p.curated ? p.published : null]);
+    if (p.status === R.CANCELLED) steps.push([R.CANCELLED, p.published]);
     return '<ol class="timeline" style="--tone:' + R.status(p.status).tone + '">' + steps.map(([name, date], i) => {
-      const on = i < st || (p.status === "Expansion" && i === 3) || (p.status === "Planned" && i === 0);
+      const on = i < st || (p.status === "Expansion" && i === 3) || (p.status === "Planned" && i === 0) || (p.status === R.CANCELLED && i === 3);
       return '<li class="' + (on ? "on" : "") + '"><span>' + name + "</span><span>" + (date ? R.fmtDate(date, date.length === 7 ? { month: "short", year: "numeric" } : undefined) : on ? "Date not reported" : "—") + "</span></li>";
     }).join("") + "</ol>";
   }
@@ -124,7 +130,7 @@
     const kv = [["Capacity", p.capacity_mw ? R.fmtMW(p.capacity_mw) : "Not reported"], ["Investment", p.investment_usd_b ? R.fmtMoney(p.investment_usd_b) : "Not reported"],
       [p.curated ? "Announced" : "First reported", p.date ? R.fmtDate(p.date, p.curated ? { month: "short", year: "numeric" } : undefined) : "Not reported"], ["State", R.STATES[p.state] || p.state]];
     return '<div class="detail-head" style="--tone:' + tone + '"><span class="tag" style="--tone:' + tone + '"><span class="dot"></span>' + R.esc(p.status) + (p.curated ? " · Curated" : " · Detected") + "</span>" +
-      '<h2 id="detailTitle">' + R.esc(p.name) + '</h2><div class="loc">' + R.icon("pin") + R.esc(p.place) + (!p.curated && p.precision && p.precision !== "city" ? " (approximate, " + R.esc(p.precision) + " level)" : "") + "</div>" +
+      '<h2 id="detailTitle">' + R.esc(p.name) + '</h2><div class="loc">' + R.icon("pin") + R.esc(p.place) + (!p.curated && p.precision && p.precision !== "city" ? " (approximate, " + R.esc(p.precision === "source" ? "outlet's home state" : p.precision + " level") + ")" : "") + "</div>" +
       '<button class="icon-btn close" id="closeDetail" aria-label="Close project details">' + R.icon("x") + "</button></div>" +
       '<div class="detail-body"><p>' + R.esc(R.summary(p)) + "</p>" +
       '<div class="kv">' + kv.map((k) => "<div><span>" + k[0] + "</span><b>" + R.esc(k[1]) + "</b></div>").join("") + "</div>" +
@@ -134,11 +140,12 @@
         (m.url ? '<br><a href="' + R.esc(m.url) + '" target="_blank" rel="noopener">' + R.esc(new URL(m.url).hostname.replace(/^www\./, "")) + " →</a>" : "") + "</div></li>").join("") + "</ol></div>" : "") +
       '<div><h3 class="sub-h">Stage</h3>' + timeline(p) + "</div>" +
       (p.notes ? '<div><h3 class="sub-h">Notes</h3><p>' + R.esc(p.notes) + "</p></div>" : "") +
+      (p.stories > 1 ? '<div><h3 class="sub-h">Coverage of this story</h3><div class="headlines">' + p.sources.map((s) => '<a href="' + R.esc(s.url) + '" target="_blank" rel="noopener">' + R.esc(s.name) + "<small>" + R.esc(s.source || "News") + " · " + R.ago(s.published) + "</small></a>").join("") + "</div></div>" : "") +
       '<div id="archiveRel" hidden></div>' +
       '<div><h3 class="sub-h">Related headlines</h3>' + (rel.length ? '<div class="headlines">' + rel.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>" : '<p class="co-empty">No matching headlines in the last 90 days.</p>') + "</div>" +
       '<div class="detail-actions">' + (source ? '<a class="btn sm" href="' + R.esc(source) + '" target="_blank" rel="noopener">' + R.icon("external") + "Latest source</a>" : "") +
       '<button class="btn sm" id="shareProject">' + R.icon("share") + "Share</button></div>" +
-      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : "Detected automatically from a headline. The pin sits at the place named, which can be off.") + ' <a href="methodology.html#report">Report a wrong pin</a>.</div></div>';
+      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from a headline that names only a state, so it is counted in the state's approximate bubble rather than pinned." : "Detected automatically from a headline. The pin sits at the place named, which can be off.")) + ' <a href="methodology.html#report">Report a wrong pin</a>.</div></div>';
   }
   function setPin(id, on) {
     const p = all.find((x) => x.id === id), m = markers[id];
@@ -287,6 +294,7 @@
     news = n.items;
     map = R.baseMap($("#map"));
     window.L.control.zoom({ position: "bottomright" }).addTo(map);
+    bubbles = window.L.layerGroup().addTo(map);
     cluster = R.clusterGroup();
     map.addLayer(cluster);
     bind();
