@@ -1,10 +1,46 @@
 {
- "updated": "2026-10-21T16:20:05+00:00",
- "count": 146,
+ "updated": "2026-10-21T16:26:13+00:00",
+ "count": 154,
  "projects": [
   {
-   "id": "0fcd1c21c9d29a28",
-   "name": "Memphis fails to pass 1-year data center moratorium, instead opting for a shorter-term ban",
+   "id": "cf561fb964153015",
+   "name": "Amazon withdraws proposal to build data centers on GW campus in Loudoun County",
+   "status": "Announced",
+   "location": "Loudoun County, Virginia, US",
+   "lat": 39.09,
+   "lon": -77.64,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "ed18adfbe69a6b24",
+   "source": "WTOP News",
+   "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaE1HUXRJUGlRQjhoMTlHQkIwd1JIMnoyZWJYWlVYeW1iSnRnNnV2bkJiMXl2Q1BPNE94Yy0wT09ydGh0N3lUVEJWcVh6WDZxdExWMXh4bHV3QkdVU0Q3c2lURWptaWVjZG9HTjFCZUpySFpJaExvNlBUNndNTzBVbVNnZ3p2WnpTdnN4X0NaalFEcnhVNzliVVE3eTNidDZkUEF6ag?oc=5",
+   "published": "2026-10-21T15:48:52+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "c3f8f11c89c9596e",
+   "name": "Wisconsin Rapids rejects permit for proposed data center",
+   "status": "Cancelled / Blocked",
+   "location": "Wisconsin, US",
+   "lat": 44.6,
+   "lon": -89.9,
+   "state": "WI",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "c3f8f11c89c9596e",
+   "source": "WXOW",
+   "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSGZJQmZSTHlBLWszWUotN1Bibmk2MzVMcFFLRVl4UkotYVpLd3g1RFZ5RnpOVERXYWNveWhmWW9lSnotQzJpTm1YcGZ5WEZEVUhuRDBudXgycm1RTkQ4WTgtVVlpcnpKS3dnMjc1UHdvanBzRzhYTTlPU1p5ZTNUSzhuczNGZENibEIzMEgxRUxRVzltNWk2eUxabDdGS3dxYnVvWWV3VklVQWxxa1duSncxSDZQQTl5Q2g2aTU3ODlDalVaTlJvZ0ZJaENsaUVwb3FIdzVWU0hTSWpoRGV3NQ?oc=5",
+   "published": "2026-10-21T14:30:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "ff519b8790a85f48",
+   "name": "Memphis fails to pass 1-year data center moratorium, opts for shorter-term ban",
    "status": "Cancelled / Blocked",
    "location": "Memphis, Tennessee, US",
    "lat": 35.15,
@@ -14,8 +50,8 @@
    "utilities": [],
    "precision": "city",
    "cluster_id": "7c79287665342b13",
-   "source": "CBS News",
-   "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSUUyT2lleXhFU09XQWQxbFhranQ3UV93WmpkLU56YUg1UWtJM2lERHMwaDNHWnlVd1VvR1lIdHpaOU5hVUM5REdJaHZ2YUdtc29VUzlsYTlQZnZlcGU5YTl3Um5PUlR1TGlXZnZiQ1BtQng1LW9EaDZWbTRtYVVuSmx2dmM?oc=5",
+   "source": "Yahoo",
+   "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdElqZ0p1LWljaEhiSDEyYTJjcFNrNkIzS2ZHX1U2dFY0SUJDNkJRVzloeGNyYl9tMFV4UU5qLVlScjVzd08zRGw5QTdrS0x3M19lZ2hKME96d3BxWXhHT1pKT3A1dXpGQVg4X3RXNk1yVmZyaVp3RnhhZ1FQbXNvWXo2OWVEQQ?oc=5",
    "published": "2026-10-21T14:01:52+00:00",
    "detected": "auto"
   },
@@ -53,6 +89,25 @@
    "source": "Data Center Dynamics",
    "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWnN2X0QwNGloU2FfQk5pbmhmcGRha3FIYkRoZ1JyTVphejZTZzF5R0NWNWM4azN3bllGR1NjSk9wTC0yNGxJc0RMaGR4djhHZmI1aUxBMDFlWkpQZk9FY2ttMjdpZFZVYTJfU1d2c2JaRWE2RDBhelBzVVdFd2UyNmpvYmhfZk50aHNtMDA4bVNwRjZCRjQxMExzZE1pSGhBYVZBX05FTjZZS0F5QnFTOHQtNGNmMEpaYkNmMWRzaUw4aWROaHc?oc=5",
    "published": "2026-10-21T13:30:05+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "178501a396f9869e",
+   "name": "Breakfast links: Amazon drops data center plan at former George Washington University site",
+   "status": "Cancelled / Blocked",
+   "location": "Washington, US",
+   "lat": 47.4,
+   "lon": -120.5,
+   "state": "WA",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "4ee541d6545df147",
+   "source": "Greater Greater Washington",
+   "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE8zdWNlenJ5Z2gtNWQ2QVJoLUxOY3c2cE4zSEptNHBUR2M2MmR1WjlMYU9BY25LanpzZnVzc0RKTEUxWW9oeTdsTm530gFKQVVfeXFMTzN1Y2V6cnlnaC01ZDZBUmgtTE5jdzZwTjNISm00cFRHYzYyZHVaOUxhT0FjbktqenNmdXNzREpMRTFZb2h5N2xObnc?oc=5",
+   "published": "2026-10-21T13:02:00+00:00",
    "detected": "auto"
   },
   {
@@ -288,6 +343,23 @@
    "detected": "auto"
   },
   {
+   "id": "0fcd1c21c9d29a28",
+   "name": "Memphis fails to pass 1-year data center moratorium, instead opting for a shorter-term ban",
+   "status": "Cancelled / Blocked",
+   "location": "Memphis, Tennessee, US",
+   "lat": 35.15,
+   "lon": -90.05,
+   "state": "TN",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "7c79287665342b13",
+   "source": "CBS News",
+   "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSUUyT2lleXhFU09XQWQxbFhranQ3UV93WmpkLU56YUg1UWtJM2lERHMwaDNHWnlVd1VvR1lIdHpaOU5hVUM5REdJaHZ2YUdtc29VUzlsYTlQZnZlcGU5YTl3Um5PUlR1TGlXZnZiQ1BtQng1LW9EaDZWbTRtYVVuSmx2dmM?oc=5",
+   "published": "2026-10-21T03:48:00+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "06d24bd03e2f3d88",
    "name": "Proposal to pause new data centers in Michigan City sparks protests over Google exemption",
    "status": "Announced",
@@ -404,7 +476,7 @@
    ],
    "utilities": [],
    "precision": "city",
-   "cluster_id": "4637ddd4aead3c77",
+   "cluster_id": "ed18adfbe69a6b24",
    "source": "WUSA9",
    "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNa05fcUVNOTRrQzhSUlM4RnB1ejlVWGhFYzJoUFB6YlVFVEFtSERneUNCSXpvdC1aU3VhNWxqRzNGallQdTl4d0xua1JDcnhZWkRuSWplQWxCYW5iRnZMM0NNQ19jeDBUWUNrM0tkdTdoRFVURWpHZ3IteXYtam80MTZuSjdLRl9HT1djZ0NNQl9MbFJWaV9JVXpOb000NnltTlg3Y3E1VUJJektsUloyeFVwSkg0NnNqOW9oMWtsNVAzaG1fTXdJdkVpcHhwTmJrRnhQVlpwRkd4ZGNFNXJvWl93?oc=5",
    "published": "2026-10-21T02:19:00+00:00",
@@ -442,23 +514,6 @@
    "source": "WJAC",
    "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYVRna2o5cThEUUk0ZjM5Q0JYYWI4aDE5SW9FUV81djVPaUFFdmFhN2dCMmdRMURjSW1WbjFpaFZYM3J2MkhzMllMMGEyR0FQR3RoNU9YU1hJWkdvem1RbmdyVElCSFhlS3hhdmp2enZSSUx0S0ltZzRhVk1oTzhrLVdiVFZHMzJSeUQ4S3lzZzlmc3REbElUTk10S1VlLUJjNHVNSi1ZVVo?oc=5",
    "published": "2026-10-21T01:19:42+00:00",
-   "detected": "auto"
-  },
-  {
-   "id": "c3f8f11c89c9596e",
-   "name": "Wisconsin Rapids rejects permit for proposed data center",
-   "status": "Cancelled / Blocked",
-   "location": "Wisconsin, US",
-   "lat": 44.6,
-   "lon": -89.9,
-   "state": "WI",
-   "companies": [],
-   "utilities": [],
-   "precision": "state",
-   "cluster_id": "c3f8f11c89c9596e",
-   "source": "WAOW",
-   "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM2JZbFZ2ZkdOc3ZkSXJyakpuYmIzMm1sQmhheFI0eDFxSXBNU2JrSmc0NEs2YWJwV0NQTHowNXZLSUx0OW53QTR3YXM0eWFzMVhReW11cEpDclduRms0WFRmSWVNbG1OcDJJbFZUZWlyUjdUbFp1WV9pRmwyT2k2N0J3WHpCWFh4b2wyMlBXRXRIcjZTbEN3UWJKTjhmZXVfQmRCc3gxRmdKRkp0Tnp3Z0FRcFkzYjNqWlkxNmpONFNvRjZQdGVYNlZXX2M?oc=5",
-   "published": "2026-10-21T00:55:00+00:00",
    "detected": "auto"
   },
   {
@@ -547,6 +602,23 @@
    "detected": "auto"
   },
   {
+   "id": "114f01fca634e92f",
+   "name": "San Jose’s proposed data center rules draw criticism over environmental protections",
+   "status": "Announced",
+   "location": "San Jose, California, US",
+   "lat": 37.34,
+   "lon": -121.89,
+   "state": "CA",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "114f01fca634e92f",
+   "source": "Local News Matters",
+   "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVXo0M2FZSkY5MXlVTGZMRWNXVGlqZXFCWnc0clJLR3drc1RiSnRiMDYwakx3bjh5LUV6NldDWHI5bkJnSTJuS1hYRDFOQ2xMYVdFWFRRRGdya3hKZ2dXX3padjJPdktzQkpudjMtQ1RudWNFbW5SSTlHY2d6N2J4aGN1aVFIQW9oRzFaTkpRb21SYzR5cm8zTkxtNGRNNTNRTWd3dzBLNHZfeEIwOGlHWFZFajJtbTVlaWs4VXNiRi0?oc=5",
+   "published": "2026-10-20T23:00:00+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "9513c6041d3a6436",
    "name": "BLM to Revisit Approval of Controversial Data Center in Nevada",
    "status": "Announced",
@@ -560,7 +632,7 @@
    "cluster_id": "9513c6041d3a6436",
    "source": "RTO Insider",
    "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLUo3RGpMZTkxaVNTR1B2UEw3dlhpS2VFX1BqSlNRaF9uVjVhcE1mT2p4VURyX1ViY0FySXh6NzVMMW9XN1QyX1Zjazlpd2tXY1ZFWTBNUFg3VWJPSUU2ZXFBWXlzcDBBdkxMekhmSUNZNjlTaUJjTjY2ZGJieW05c0ZJWEpobjVIcW1mWU02eC1qSHc5OXBJ?oc=5",
-   "published": "2026-10-20T22:54:49+00:00",
+   "published": "2026-10-20T22:54:30+00:00",
    "detected": "auto"
   },
   {
@@ -809,6 +881,23 @@
    "source": "The Hillsboro Herald",
    "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVGY3Q1IyU2hUdUFCRHdKZTdyVHBmWDZ1UGdVTG1mWkxRZ0JLcEd1S0Rsc0lmQVgyX0RUN3F1OTBGZy1pMmNScXNnZTBmZ3BjSnMtdllFc3lHbHdjS2R1M3RpRkpZbmFUdEtFbjlpSlRYVWVyYUc1UHhiU1Z0TThJWkFHeFpZLUVXRGRtSExUamI3dmFhNjJsNlVlT2dXalhvaWo1cHJZWmRuU0JxcjB1bzlnNmdOY0dIWGJwZw?oc=5",
    "published": "2026-10-20T17:32:08+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "5a22ce5f1fb7a62e",
+   "name": "Ohio Justices Say Moratorium Ends Data Center Site Plan",
+   "status": "Announced",
+   "location": "Ohio, US",
+   "lat": 40.3,
+   "lon": -82.8,
+   "state": "OH",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "5a22ce5f1fb7a62e",
+   "source": "Law360",
+   "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVXZjMnBBTml1QWk0UVlFSmlfQk9qN2xvOTdySzJLY2J1a21YMkNtM2pySk9aVWEwTjlaMjRyMW9wMnpRTVNISmtWcTBJa0J3aF9PSnp0cW1zbWdHMUpTekZ6TzdpZ182NmpVaVI1eWtCS1gzUy1KNlRUSGNkTDRhbzZOSDFMQzBHQ1hoZkppMk93cmNGb0tuaGpGNmlMQzhxVGtKS9IBVkFVX3lxTE1IZjlsSHdxallyLWRha2pvM2dUUkk5T3RRZ1NWRlkxUkdpYWcwWDBHLXN6R3JXR0Q2cjFLREdYZkUyQVFGczNfTXFlSEZiY1JiVmNYQmRR?oc=5",
+   "published": "2026-10-20T17:20:22+00:00",
    "detected": "auto"
   },
   {
@@ -1426,6 +1515,23 @@
    "detected": "auto"
   },
   {
+   "id": "878ba28a00640918",
+   "name": "Wisconsin Rapids common council to take final vote on data center proposal",
+   "status": "Announced",
+   "location": "Wisconsin, US",
+   "lat": 44.6,
+   "lon": -89.9,
+   "state": "WI",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "878ba28a00640918",
+   "source": "WAOW",
+   "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOUXlwYTN4TVB3U0ZFdkpJWTNTai1xcDFlNU5XeFQwdzFwVU5RVlY0Umxza3AwU2dkTk9OaENhQVByMVpiTlpHNHBGdFZ2Q1ppU3NmRUlLbGxRX0ZHeXpqcnlkaVBDZ01xZVdkbU5IR2ZxYVNxS3VvZUVJZTZuU09LTmVmbk05d0g0d0pHN0w0ZXJ5Y09qTTFvRTN6c3hJakg2cElGeTRMZFNUNmtyaUFoY1B5R3hFSEhWcURDa0ZRZkhUZm40M3FGQUhUUGo4dWZDeXJWcVIyZWItdFN2UGd5ZEp3elg?oc=5",
+   "published": "2026-10-19T13:06:00+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "8a4a361ab5c2e8e9",
    "name": "Carrier Connect secures customer for 4MW data center outside Atlanta, Georgia",
    "status": "Announced",
@@ -1530,6 +1636,23 @@
    "source": "Civic Media",
    "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQXVWUjBzcXRMaDE0UkJpWU9SV2FmMzFfLXJHanZRMlBldDMtdllUYVVvWFBjMkJLX2xBZEF6LTctZzd0cmZrY0hwS254YmxYZTJFTXp0WnRyMmFXdVZKVlVGSHJYMXVxX0pWaFdqc19VU09tVmlVTDhhb2tfZkowN3Joa2VxeFVyaUo2Q2tSbzF5STh4SzdrWlZxR3NLdElCZnpKTEVLZnMzX0NreXI0bXQwa21FUHExYk1XbFFfa0tKV1lRcmpWUGZGU0htZV93cThqM3Y5N3hMTUxsbC1jbDE0M3ZDOW8?oc=5",
    "published": "2026-10-18T23:43:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "c282415cf0d35172",
+   "name": "City Council rejects data center moratorium, chooses shorter pause",
+   "status": "Announced",
+   "location": "Tennessee, US",
+   "lat": 35.9,
+   "lon": -86.4,
+   "state": "TN",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "c282415cf0d35172",
+   "source": "WREG.com",
+   "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWFZYUW81ZXZtN3BxbTg3dnJTeUtsbUtkb0ZTa3dZZFFXNF9YcWh4ZG1naDJYbkNjV1J4VVVMZjNSbUN3dzU2Q25XZ0JNTF9jazF6VVV5bFUwT0ZiaG9lVHZza3lRUEFORXBBNy1rdGRfNno2S3pwMmJXbHBzaDdSd050OHdfREtNMVRn0gGQAUFVX3lxTE9pemJtNTZHdjRJZXdTazA2cmFVMTFtU2xYZ3dzem5Pb1JzYm1PUDhxMlNTVmExZ0x4RWdHVVMxa2JUZUtlZGJuNldxQnY0V0pKZjVZbkdvcXh1NDBVZjdYWVpHdzRwak5qS3J6NktOYUV0M1hMUEROeVJjdHR4UlB2WlV5bmRwaDczZ2g2cXdtSw?oc=5",
+   "published": "2026-10-18T20:05:31+00:00",
    "detected": "auto"
   },
   {
@@ -2268,6 +2391,25 @@
    "cluster_id": "29cf7f77537134e3",
    "source": "Spotlight Delaware",
    "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdWNaLUFKdG5zYkRCRVFjNUh2aXNvajU0aFVCajI1WklZc29WVjVGOXdTM19PN2w3aWlSWS0tdEhzbUkzVEY1alRPYkNPTWVMd19QSmlBZFh5UW5yZUpVSjE0cl9oSjVjcmN2dWxPa3lUdkFaWU5wX1NmRkdGaGNnNVo4aDRRZFliaHh0YVhOMEUwMkhRS2NzTzFxeFBkUlpzMDRFZ2JEMGV6enY1eXVwb013aVRoazd5aXhGOU0yTQ?oc=5",
+   "published": "2026-10-15T10:00:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "e3304b184be1ba9d",
+   "name": "Microsoft planning to build fewer data centers at sprawling Mount Pleasant campus",
+   "status": "Announced",
+   "location": "Mount Pleasant, Wisconsin, US",
+   "lat": 42.7,
+   "lon": -87.89,
+   "state": "WI",
+   "companies": [
+    "Microsoft"
+   ],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "e3304b184be1ba9d",
+   "source": "WPR",
+   "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSjRqWE43V3pHQ0s5U3FfMi05TEp5TEphUE9xODFySW55V0xBQllMUm44NUZmTHlhczlOUzA0WWpuZnVrMzdCc25kcHdyNmJ2aDRjeTNwOEJDNC1jV2VLZWdzbGtjUGlOemF0MUVYUk9adjNrN2dNN0Jaa3doSXl4X1hFaVdXVmFKMzJtc0hn?oc=5",
    "published": "2026-10-15T10:00:00+00:00",
    "detected": "auto"
   },
