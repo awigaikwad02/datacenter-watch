@@ -2,7 +2,7 @@
 
 U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed every hour by a GitHub Actions job. No server, no API keys, no build step.
 
-Live site: https://awigaikwad02.github.io/datacenter-watch/
+Live site: https://therackreport.org/ (custom domain on GitHub Pages; the root `CNAME` file holds the domain and must not be removed or edited)
 
 ## Pages
 
@@ -15,6 +15,7 @@ Live site: https://awigaikwad02.github.io/datacenter-watch/
 | `learn.html` | Learn | Ten modules from beginner to advanced with diagrams, calculators, quizzes and saved progress |
 | `methodology.html` | Methodology | Sources, tagging, detection, limitations, how to report an error |
 | `projects.html` | Redirect | Sends old map links to the Atlas |
+| `robots.txt`, `sitemap.xml` | SEO | Crawl rules and the six pages on https://therackreport.org |
 
 Shared code: `assets/style.css` (all design tokens and components), `assets/app.js` (shell, loader, data loading, helpers), `assets/companies.js` (one-line company descriptions). Each page has its own script in `assets/`. Leaflet and Leaflet.markercluster load from unpkg with subresource integrity; map tiles are OpenStreetMap's standard tiles, darkened with a CSS filter (no API key needed).
 
@@ -49,7 +50,7 @@ Statuses: Announced, Planned (curated only), Under construction, Operational, Ex
 ## Set up
 
 1. Push this repo to GitHub as a public repository.
-2. Settings → Pages → Source: Deploy from a branch, branch `main`, folder `/ (root)`.
+2. Settings → Pages → Source: Deploy from a branch, branch `main`, folder `/ (root)`. Custom domain: `therackreport.org` (DNS: four A records to 185.199.108–111.153 and a `www` CNAME to `awigaikwad02.github.io`).
 3. Settings → Actions → General → Workflow permissions: Read and write permissions.
 4. Actions → "Update data center news" → Run workflow once.
 
