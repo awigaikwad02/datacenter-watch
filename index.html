@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Center Watch: latest data center news</title>
+  <meta name="description" content="A daily feed of data center news: announcements, construction, power and grid, policy, deals and AI hyperscale projects, with a live map of new data centers.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Data Center Watch</a>
+      <nav>
+        <a href="index.html" class="active">News</a>
+        <a href="projects.html">Projects map</a>
+        <a href="learn.html">How it works</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <h1>Latest data center news</h1>
+      <p class="lede">Headlines on new data centers, construction, power and grid, local policy fights, deals and the AI build-out. Pulled from Google News and Google Alerts, refreshed twice a day.</p>
+      <p class="meta" id="updated">Loading…</p>
+    </section>
+
+    <section class="stats" id="stats" hidden></section>
+
+    <section class="controls">
+      <input id="q" type="search" placeholder="Search headlines, companies, places" autocomplete="off">
+      <div class="chips" id="chips"></div>
+      <div class="row">
+        <select id="loc"><option value="">All locations</option></select>
+        <select id="range">
+          <option value="7">Last 7 days</option>
+          <option value="14">Last 14 days</option>
+          <option value="30">Last 30 days</option>
+          <option value="60">Last 60 days</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="feed"></section>
+    <p class="empty" id="empty" hidden></p>
+    <button class="more" id="more" hidden>Show more</button>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Data Center Watch is a personal project. Headlines link to the original publishers. Categories and locations are detected automatically from headlines and can be wrong.</p>
+      <p>Sources: Google News RSS and Google Alerts. Map data from OpenStreetMap contributors.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script src="assets/news.js"></script>
+</body>
+</html>

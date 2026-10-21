@@ -1,0 +1,40 @@
+name: Update data center news
+
+on:
+  schedule:
+    # Twice a day, 06:17 and 18:17 UTC (about 2am and 2pm Eastern)
+    - cron: "17 6,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch feeds and rebuild data files
+        run: python scripts/fetch_news.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news.json data/project_candidates.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update news data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

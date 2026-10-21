@@ -1,0 +1,16 @@
+{
+  "_readme": "Edit this file to change what the site pulls. google_news entries are Google News RSS searches (query syntax = Google News search). google_alerts entries are RSS URLs from google.com/alerts (create an alert, Show options, Deliver to: RSS feed, then copy the feed link). Lines starting with # are ignored.",
+  "google_news": [
+    { "name": "Data center",              "query": "\"data center\" when:7d" },
+    { "name": "Data center announced",    "query": "\"data center\" (announces OR announced OR plans OR proposed OR unveils) when:7d" },
+    { "name": "Data center construction", "query": "\"data center\" (construction OR \"breaks ground\" OR groundbreaking OR opens) when:7d" },
+    { "name": "AI and hyperscale",        "query": "(\"AI data center\" OR \"hyperscale data center\" OR \"data center campus\") when:7d" },
+    { "name": "Data center power",        "query": "\"data center\" (power OR grid OR megawatt OR gigawatt OR nuclear OR utility) when:7d" },
+    { "name": "Data center policy",       "query": "\"data center\" (zoning OR council OR moratorium OR residents OR \"tax breaks\") when:7d" },
+    { "name": "Data centre (international)", "query": "\"data centre\" when:7d" }
+  ],
+  "google_alerts": [
+    "# Paste Google Alerts RSS feed URLs here, one per line, like:",
+    "# https://www.google.com/alerts/feeds/00000000000000000000/0000000000000000000"
+  ]
+}

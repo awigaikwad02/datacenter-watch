@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Center Watch: how a data center works</title>
+  <meta name="description" content="A plain-language guide to how data centers work: power chain, cooling, racks, networking, redundancy, PUE, site selection and the project lifecycle, with diagrams.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Data Center Watch</a>
+      <nav>
+        <a href="index.html">News</a>
+        <a href="projects.html">Projects map</a>
+        <a href="learn.html" class="active">How it works</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <h1>How a data center works</h1>
+      <p class="lede">The building, the power, the cooling, the racks, the network, and the numbers people argue about. Each section has a diagram and a short explanation.</p>
+    </section>
+
+    <nav class="toc">
+      <b>Contents</b>
+      <ol>
+        <li><a href="#overview">What a data center is</a></li>
+        <li><a href="#power">The power chain</a></li>
+        <li><a href="#cooling">Cooling</a></li>
+        <li><a href="#rack">Inside a rack</a></li>
+        <li><a href="#network">The network</a></li>
+        <li><a href="#redundancy">Redundancy and tiers</a></li>
+        <li><a href="#metrics">The numbers: MW, PUE, WUE</a></li>
+        <li><a href="#site">Why they get built where they do</a></li>
+        <li><a href="#lifecycle">From announcement to switch-on</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. OVERVIEW -->
+    <section class="lesson" id="overview">
+      <div class="kicker">1 of 9</div>
+      <h2>What a data center is</h2>
+      <p>A data center is a building whose only job is to keep computers running: fed with reliable power, kept cool, and connected to the internet. Everything in the building exists to serve the rows of racks in the data halls.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 320" role="img" aria-label="Overview of a data center: utility power and backup generators feed an electrical room, a cooling plant and network room serve the data hall, fiber carriers connect from outside">
+          <defs><marker id="arr1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+          <rect x="160" y="50" width="460" height="240" rx="6" class="box2"/>
+          <text x="390" y="40" text-anchor="middle" class="h">Data center building</text>
+
+          <rect x="330" y="68" width="200" height="44" rx="4" class="box"/>
+          <text x="430" y="86" text-anchor="middle" class="t">Cooling plant</text>
+          <text x="430" y="102" text-anchor="middle" class="s">chillers, cooling towers, pumps</text>
+
+          <rect x="330" y="135" width="200" height="120" rx="4" class="acc"/>
+          <text x="430" y="155" text-anchor="middle" class="t">Data hall</text>
+          <g>
+            <rect x="350" y="170" width="160" height="12" fill="#fff" stroke="#1f3a93"/>
+            <rect x="350" y="190" width="160" height="12" fill="#fff" stroke="#1f3a93"/>
+            <rect x="350" y="210" width="160" height="12" fill="#fff" stroke="#1f3a93"/>
+          </g>
+          <text x="430" y="243" text-anchor="middle" class="s">rows of racks: servers, storage, switches</text>
+
+          <rect x="180" y="135" width="130" height="120" rx="4" class="box"/>
+          <text x="245" y="175" text-anchor="middle" class="t">Electrical room</text>
+          <text x="245" y="193" text-anchor="middle" class="s">switchgear, UPS,</text>
+          <text x="245" y="207" text-anchor="middle" class="s">batteries, PDUs</text>
+
+          <rect x="550" y="135" width="52" height="120" rx="4" class="box"/>
+          <text x="576" y="183" text-anchor="middle" class="s">Network</text>
+          <text x="576" y="197" text-anchor="middle" class="s">room</text>
+
+          <rect x="20" y="130" width="120" height="50" rx="4" class="box"/>
+          <text x="80" y="151" text-anchor="middle" class="t">Utility substation</text>
+          <text x="80" y="167" text-anchor="middle" class="s">grid power</text>
+          <rect x="20" y="215" width="120" height="50" rx="4" class="box"/>
+          <text x="80" y="236" text-anchor="middle" class="t">Backup generators</text>
+          <text x="80" y="252" text-anchor="middle" class="s">diesel or gas</text>
+
+          <rect x="630" y="160" width="110" height="60" rx="4" class="box"/>
+          <text x="685" y="183" text-anchor="middle" class="t">Fiber carriers</text>
+          <text x="685" y="200" text-anchor="middle" class="s">internet, cloud links</text>
+
+          <path d="M140 155 L178 170" class="line" marker-end="url(#arr1)"/>
+          <path d="M140 240 L178 222" class="line" marker-end="url(#arr1)"/>
+          <path d="M310 195 L328 195" class="line" marker-end="url(#arr1)"/>
+          <path d="M400 112 L400 133" class="cold" marker-end="url(#arr1)"/>
+          <path d="M460 133 L460 112" class="hot" marker-end="url(#arr1)"/>
+          <path d="M630 190 L604 190" class="line" marker-end="url(#arr1)"/>
+          <path d="M550 195 L532 195" class="line" marker-end="url(#arr1)"/>
+          <text x="245" y="275" text-anchor="middle" class="s">power</text>
+          <text x="430" y="275" text-anchor="middle" class="s">cold air or water in, heat out</text>
+          <text x="576" y="275" text-anchor="middle" class="s">data</text>
+        </svg>
+        <div class="cap">The three flows every data center manages: power in, heat out, data in and out.</div>
+      </div>
+      <p>Sizes vary enormously. A small enterprise room might hold a few dozen racks and draw a few hundred kilowatts. A hyperscale campus built for AI training can cover hundreds of acres, hold tens of thousands of racks, and draw more than a gigawatt, as much as a large city.</p>
+      <div class="kv">
+        <div><b>Enterprise</b>One company's own servers, often inside an office building. Tens to hundreds of racks.</div>
+        <div><b>Colocation</b>A landlord rents space, power and cooling to many tenants who bring their own gear. Equinix and Digital Realty are the big names.</div>
+        <div><b>Hyperscale</b>Built and run by one cloud or AI company for its own workloads. Amazon, Microsoft, Google, Meta, Oracle, OpenAI's Stargate partners.</div>
+      </div>
+    </section>
+
+    <!-- 2. POWER -->
+    <section class="lesson" id="power">
+      <div class="kicker">2 of 9</div>
+      <h2>The power chain</h2>
+      <p>Electricity arrives from the grid at high voltage and gets stepped down several times before it reaches a server. Along the way it passes through equipment whose only purpose is to make sure the power never stops.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 240" role="img" aria-label="Power chain from utility grid through substation, switchgear, UPS, PDU and rack PDU to servers, with generators and batteries as backups">
+          <defs><marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+          <g class="t">
+            <rect x="15" y="60" width="90" height="60" rx="4" class="box"/>
+            <text x="60" y="85" text-anchor="middle">Utility grid</text>
+            <text x="60" y="101" text-anchor="middle" class="s">high voltage</text>
+
+            <rect x="122" y="60" width="90" height="60" rx="4" class="box"/>
+            <text x="167" y="85" text-anchor="middle">Substation</text>
+            <text x="167" y="101" text-anchor="middle" class="s">transformers</text>
+
+            <rect x="229" y="60" width="90" height="60" rx="4" class="box"/>
+            <text x="274" y="85" text-anchor="middle">Switchgear</text>
+            <text x="274" y="101" text-anchor="middle" class="s">breakers, ATS</text>
+
+            <rect x="336" y="60" width="90" height="60" rx="4" class="acc"/>
+            <text x="381" y="85" text-anchor="middle">UPS</text>
+            <text x="381" y="101" text-anchor="middle" class="s">clean, no gaps</text>
+
+            <rect x="443" y="60" width="90" height="60" rx="4" class="box"/>
+            <text x="488" y="85" text-anchor="middle">PDU</text>
+            <text x="488" y="101" text-anchor="middle" class="s">splits to rows</text>
+
+            <rect x="550" y="60" width="90" height="60" rx="4" class="box"/>
+            <text x="595" y="85" text-anchor="middle">Rack PDU</text>
+            <text x="595" y="101" text-anchor="middle" class="s">power strip</text>
+
+            <rect x="657" y="60" width="90" height="60" rx="4" class="box2"/>
+            <text x="702" y="85" text-anchor="middle">Servers</text>
+            <text x="702" y="101" text-anchor="middle" class="s">the load</text>
+          </g>
+          <path d="M105 90 L120 90" class="line" marker-end="url(#arr2)"/>
+          <path d="M212 90 L227 90" class="line" marker-end="url(#arr2)"/>
+          <path d="M319 90 L334 90" class="line" marker-end="url(#arr2)"/>
+          <path d="M426 90 L441 90" class="line" marker-end="url(#arr2)"/>
+          <path d="M533 90 L548 90" class="line" marker-end="url(#arr2)"/>
+          <path d="M640 90 L655 90" class="line" marker-end="url(#arr2)"/>
+
+          <rect x="229" y="160" width="90" height="56" rx="4" class="box"/>
+          <text x="274" y="183" text-anchor="middle" class="t">Generators</text>
+          <text x="274" y="199" text-anchor="middle" class="s">start in seconds</text>
+          <path d="M274 160 L274 122" class="line dash" marker-end="url(#arr2)"/>
+
+          <rect x="336" y="160" width="90" height="56" rx="4" class="box"/>
+          <text x="381" y="183" text-anchor="middle" class="t">Batteries</text>
+          <text x="381" y="199" text-anchor="middle" class="s">a few minutes</text>
+          <path d="M381 160 L381 122" class="line dash" marker-end="url(#arr2)"/>
+
+          <text x="60" y="40" text-anchor="middle" class="s">69 to 345 kV</text>
+          <text x="167" y="40" text-anchor="middle" class="s">to 12 to 35 kV</text>
+          <text x="274" y="40" text-anchor="middle" class="s">to 480 V</text>
+          <text x="595" y="40" text-anchor="middle" class="s">208 or 415 V</text>
+          <text x="702" y="40" text-anchor="middle" class="s">12 V inside</text>
+        </svg>
+        <div class="cap">Dashed arrows are the backup paths. If the grid drops, batteries carry the load for the seconds it takes generators to start.</div>
+      </div>
+      <ul>
+        <li><b>Substation and transformers.</b> Large sites get their own substation on site. Waiting for the utility to build one is now the single biggest schedule risk for new projects, often three to seven years in busy markets.</li>
+        <li><b>Switchgear.</b> Big breakers that let operators isolate equipment and automatically switch between grid and generator.</li>
+        <li><b>UPS (uninterruptible power supply).</b> Sits between the grid and the servers, smoothing out dips and covering the gap until generators take over. Batteries are usually lithium-ion now, sized for a few minutes.</li>
+        <li><b>Generators.</b> Diesel is standard. Enough fuel is stored on site for a day or more. Some new AI sites run gas turbines as their main supply because the grid cannot deliver in time.</li>
+        <li><b>PDUs.</b> Power distribution units take 480 V and split it into circuits for each row, then each rack has its own strip. Critical racks get two independent feeds, A and B.</li>
+      </ul>
+      <p>Why the grid is the story of the decade: a conventional rack draws 5 to 10 kW, an AI training rack full of GPUs draws 40 to 130 kW, and whole campuses are being planned at 1 to 5 GW. Utilities have to build new generation and transmission to keep up, which is why data center headlines now sit next to nuclear restarts, gas turbine shortages and fights over who pays for the upgrades.</p>
+    </section>
+
+    <!-- 3. COOLING -->
+    <section class="lesson" id="cooling">
+      <div class="kicker">3 of 9</div>
+      <h2>Cooling</h2>
+      <p>Almost every watt of electricity a server uses turns into heat, so a 100 MW data center is also a 100 MW heater. The classic approach is air: keep cold air and hot air strictly separated and move a lot of it.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 300" role="img" aria-label="Cross-section of a data hall showing hot aisle and cold aisle containment with air flowing from a CRAH unit under a raised floor, up through cold aisles, through racks, and back through a ceiling return plenum">
+          <defs>
+            <marker id="arrc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f3a93"/></marker>
+            <marker id="arrh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a33"/></marker>
+          </defs>
+          <!-- ceiling return plenum -->
+          <rect x="20" y="30" width="720" height="34" fill="#f3f3f3" stroke="#333"/>
+          <text x="440" y="60" text-anchor="middle" class="s">Return air plenum: hot air travels back to the cooling units</text>
+          <!-- raised floor plenum -->
+          <rect x="20" y="236" width="720" height="34" fill="#f3f3f3" stroke="#333"/>
+          <text x="380" y="251" text-anchor="middle" class="s">Raised floor supply plenum: cold air comes up through perforated tiles</text>
+          <line x1="20" y1="236" x2="740" y2="236" stroke="#333"/>
+          <!-- CRAH -->
+          <rect x="30" y="100" width="80" height="136" rx="3" class="box"/>
+          <text x="70" y="160" text-anchor="middle" class="t">CRAH</text>
+          <text x="70" y="176" text-anchor="middle" class="s">cooling coil</text>
+          <text x="70" y="190" text-anchor="middle" class="s">and fans</text>
+          <!-- racks -->
+          <g>
+            <rect x="180" y="96" width="70" height="140" class="box2"/>
+            <rect x="330" y="96" width="70" height="140" class="box2"/>
+            <rect x="480" y="96" width="70" height="140" class="box2"/>
+            <rect x="630" y="96" width="70" height="140" class="box2"/>
+            <text x="215" y="170" text-anchor="middle" class="s">rack</text>
+            <text x="365" y="170" text-anchor="middle" class="s">rack</text>
+            <text x="515" y="170" text-anchor="middle" class="s">rack</text>
+            <text x="665" y="170" text-anchor="middle" class="s">rack</text>
+          </g>
+          <!-- containment lines over aisles -->
+          <line x1="250" y1="96" x2="330" y2="96" class="line dash"/>
+          <line x1="550" y1="96" x2="630" y2="96" class="line dash"/>
+          <text x="290" y="130" text-anchor="middle" class="s">Cold aisle</text>
+          <text x="590" y="130" text-anchor="middle" class="s">Cold aisle</text>
+          <text x="440" y="212" text-anchor="middle" class="s">Hot aisle</text>
+          <text x="145" y="212" text-anchor="middle" class="s">Hot aisle</text>
+          <!-- perforated tiles -->
+          <line x1="258" y1="236" x2="322" y2="236" stroke="#1f3a93" stroke-width="4"/>
+          <line x1="558" y1="236" x2="622" y2="236" stroke="#1f3a93" stroke-width="4"/>
+          <!-- cold air flow -->
+          <path d="M70 236 L70 263 L270 263 L270 236" class="cold" fill="none"/>
+          <path d="M290 230 L290 190" class="cold" marker-end="url(#arrc)"/>
+          <path d="M590 230 L590 190" class="cold" marker-end="url(#arrc)"/>
+          <path d="M270 263 L580 263 L580 236" class="cold" fill="none"/>
+          <!-- through racks -->
+          <path d="M255 150 L180 150" class="cold" marker-end="url(#arrc)"/>
+          <path d="M325 150 L400 150" class="cold" marker-end="url(#arrc)"/>
+          <path d="M555 150 L480 150" class="cold" marker-end="url(#arrc)"/>
+          <path d="M625 150 L700 150" class="cold" marker-end="url(#arrc)"/>
+          <!-- hot rise -->
+          <path d="M440 196 L440 66" class="hot" marker-end="url(#arrh)"/>
+          <path d="M145 196 L145 66" class="hot" marker-end="url(#arrh)"/>
+          <path d="M720 196 L720 66" class="hot" marker-end="url(#arrh)"/>
+          <path d="M440 40 L70 40 L70 98" class="hot" fill="none" marker-end="url(#arrh)"/>
+          <text x="380" y="290" text-anchor="middle" class="s">blue: cold supply air · red: hot return air</text>
+        </svg>
+        <div class="cap">Hot aisle / cold aisle containment. Racks face each other across a cold aisle; their backs exhaust into a hot aisle that is walled off so the two never mix.</div>
+      </div>
+      <ul>
+        <li><b>CRAH / CRAC units.</b> Big fan-coil cabinets at the edge of the hall. CRAH units use chilled water from the plant; CRAC units have their own refrigerant compressors.</li>
+        <li><b>Chillers and cooling towers.</b> Outside, the heat has to go somewhere. Chillers cool the water loop; cooling towers reject heat to the air by evaporation, which is where most water use comes from. Dry coolers and "free cooling" in cold climates avoid evaporation.</li>
+        <li><b>Containment.</b> Doors and roof panels over an aisle. Cheap, and one of the biggest efficiency wins.</li>
+      </ul>
+      <p>AI racks changed the math. Air cannot carry away 100 kW from a single rack, so GPU halls use liquid cooling: water or coolant piped straight to cold plates sitting on the chips.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 170" role="img" aria-label="Liquid cooling loop: heat rejection outside, chillers, coolant distribution unit, cold plates on GPUs, and the warm return line">
+          <defs>
+            <marker id="arrc2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f3a93"/></marker>
+            <marker id="arrh2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a33"/></marker>
+          </defs>
+          <rect x="20" y="50" width="150" height="64" rx="4" class="box"/>
+          <text x="95" y="76" text-anchor="middle" class="t">Heat rejection</text>
+          <text x="95" y="92" text-anchor="middle" class="s">towers or dry coolers</text>
+          <rect x="205" y="50" width="120" height="64" rx="4" class="box"/>
+          <text x="265" y="76" text-anchor="middle" class="t">Chillers</text>
+          <text x="265" y="92" text-anchor="middle" class="s">or heat exchangers</text>
+          <rect x="360" y="50" width="130" height="64" rx="4" class="box"/>
+          <text x="425" y="76" text-anchor="middle" class="t">CDU</text>
+          <text x="425" y="92" text-anchor="middle" class="s">coolant distribution unit</text>
+          <rect x="525" y="50" width="215" height="64" rx="4" class="acc"/>
+          <text x="632" y="76" text-anchor="middle" class="t">Cold plates on GPUs and CPUs</text>
+          <text x="632" y="92" text-anchor="middle" class="s">or rear-door heat exchangers</text>
+          <path d="M170 70 L203 70" class="cold" marker-end="url(#arrc2)"/>
+          <path d="M325 70 L358 70" class="cold" marker-end="url(#arrc2)"/>
+          <path d="M490 70 L523 70" class="cold" marker-end="url(#arrc2)"/>
+          <path d="M523 95 L492 95" class="hot" marker-end="url(#arrh2)"/>
+          <path d="M358 95 L327 95" class="hot" marker-end="url(#arrh2)"/>
+          <path d="M203 95 L172 95" class="hot" marker-end="url(#arrh2)"/>
+          <text x="95" y="140" text-anchor="middle" class="s">outside the building</text>
+          <text x="425" y="140" text-anchor="middle" class="s">in the hall</text>
+          <text x="632" y="140" text-anchor="middle" class="s">inside the rack</text>
+        </svg>
+        <div class="cap">Direct-to-chip liquid cooling. The facility water loop never touches the servers; a CDU separates it from the clean loop that runs to the chips.</div>
+      </div>
+    </section>
+
+    <!-- 4. RACK -->
+    <section class="lesson" id="rack">
+      <div class="kicker">4 of 9</div>
+      <h2>Inside a rack</h2>
+      <p>The rack is the unit everything is measured in. A standard rack is 19 inches wide and 42 rack units (U) tall; a 1U server is 1.75 inches high. What goes in the slots decides how much power and cooling the row needs.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 340" role="img" aria-label="A 42U rack with top-of-rack switches, servers, GPU servers, storage shelves, blanking panels and two rack PDUs, with labels">
+          <rect x="270" y="20" width="220" height="300" rx="4" class="box2"/>
+          <rect x="286" y="40" width="160" height="12" class="acc"/>
+          <rect x="286" y="54" width="160" height="12" class="acc"/>
+          <rect x="286" y="68" width="160" height="6" class="box"/>
+          <g class="box">
+            <rect x="286" y="78" width="160" height="6"/><rect x="286" y="86" width="160" height="6"/>
+            <rect x="286" y="94" width="160" height="6"/><rect x="286" y="102" width="160" height="6"/>
+            <rect x="286" y="110" width="160" height="6"/><rect x="286" y="118" width="160" height="6"/>
+          </g>
+          <g class="box">
+            <rect x="286" y="130" width="160" height="22"/><rect x="286" y="156" width="160" height="22"/>
+            <rect x="286" y="182" width="160" height="22"/><rect x="286" y="208" width="160" height="22"/>
+          </g>
+          <rect x="286" y="236" width="160" height="26" class="box"/>
+          <rect x="286" y="268" width="160" height="40" fill="#fff" stroke="#999" stroke-dasharray="3 2"/>
+          <rect x="456" y="36" width="8" height="276" fill="#333"/>
+          <rect x="468" y="36" width="8" height="276" fill="#333"/>
+
+          <g class="s">
+            <line x1="446" y1="48" x2="520" y2="48" class="line"/><text x="526" y="46">Top-of-rack switches:</text><text x="526" y="60">every server plugs in here</text>
+            <line x1="446" y1="71" x2="520" y2="71" class="line"/><text x="526" y="78">Patch panel</text>
+            <line x1="446" y1="100" x2="520" y2="100" class="line"/><text x="526" y="104">1U servers: CPUs, memory, local disks</text>
+            <line x1="446" y1="170" x2="520" y2="170" class="line"/><text x="526" y="166">GPU servers: 8 accelerators each,</text><text x="526" y="180">5 to 10 kW or more per box</text>
+            <line x1="446" y1="249" x2="520" y2="249" class="line"/><text x="526" y="253">Storage shelf</text>
+            <line x1="446" y1="288" x2="520" y2="288" class="line"/><text x="526" y="292">Blanking panels stop cold air bypassing</text>
+            <line x1="476" y1="312" x2="520" y2="312" class="line"/><text x="526" y="316">Rack PDUs, A feed and B feed</text>
+          </g>
+          <g class="s" text-anchor="end">
+            <text x="256" y="46">42U tall</text>
+            <text x="256" y="60">19 in wide</text>
+            <text x="256" y="100">cold air enters</text>
+            <text x="256" y="114">the front</text>
+            <text x="256" y="200">hot air leaves</text>
+            <text x="256" y="214">the back</text>
+            <text x="256" y="290">typical draw:</text>
+            <text x="256" y="304">5 to 130 kW</text>
+          </g>
+        </svg>
+        <div class="cap">A mixed rack. A real AI training rack is often nothing but GPU servers plus the switches and liquid cooling manifolds that feed them.</div>
+      </div>
+      <ul>
+        <li><b>Servers.</b> Industry-standard boxes with CPUs, memory and NVMe drives. Hyperscalers design their own.</li>
+        <li><b>GPU servers.</b> The reason for the current boom. One box of eight accelerators can draw more than an entire old rack. Racks of them are wired together into a single machine for training.</li>
+        <li><b>Storage.</b> Shelves of drives and flash, usually in their own racks.</li>
+        <li><b>Switches.</b> Top-of-rack switches connect the servers up to the hall's spine network.</li>
+        <li><b>Rack PDUs.</b> Two vertical power strips, each on a different upstream path, so a failure on one side does not take the rack down.</li>
+      </ul>
+    </section>
+
+    <!-- 5. NETWORK -->
+    <section class="lesson" id="network">
+      <div class="kicker">5 of 9</div>
+      <h2>The network</h2>
+      <p>A data center is only useful if data can get in and out. Fiber from several carriers enters the building, ideally through different physical routes so one backhoe cannot cut everything. Inside, the network fans out in layers so that any server can reach any other with the same short hop count.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 270" role="img" aria-label="Network layers: carriers and internet connect to the meet-me room, then core routers, spine switches, leaf switches and racks in a spine-leaf mesh">
+          <defs><marker id="arr5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+          <rect x="20" y="200" width="150" height="40" rx="4" class="box"/>
+          <text x="95" y="218" text-anchor="middle" class="t">Carriers, internet</text>
+          <text x="95" y="233" text-anchor="middle" class="s">several, via different routes</text>
+          <rect x="20" y="115" width="150" height="40" rx="4" class="box"/>
+          <text x="95" y="133" text-anchor="middle" class="t">Meet-me room</text>
+          <text x="95" y="148" text-anchor="middle" class="s">where carriers hand off</text>
+          <rect x="20" y="30" width="150" height="40" rx="4" class="box"/>
+          <text x="95" y="48" text-anchor="middle" class="t">Core routers</text>
+          <text x="95" y="63" text-anchor="middle" class="s">the building's front door</text>
+          <path d="M95 200 L95 157" class="line" marker-end="url(#arr5)"/>
+          <path d="M95 115 L95 72" class="line" marker-end="url(#arr5)"/>
+          <path d="M170 45 L328 45" class="line" marker-end="url(#arr5)"/>
+
+          <g>
+            <rect x="330" y="30" width="80" height="30" rx="4" class="acc"/><text x="370" y="50" text-anchor="middle" class="t">Spine</text>
+            <rect x="460" y="30" width="80" height="30" rx="4" class="acc"/><text x="500" y="50" text-anchor="middle" class="t">Spine</text>
+            <rect x="590" y="30" width="80" height="30" rx="4" class="acc"/><text x="630" y="50" text-anchor="middle" class="t">Spine</text>
+          </g>
+          <g>
+            <rect x="240" y="150" width="70" height="30" rx="4" class="box"/><text x="275" y="170" text-anchor="middle" class="s">Leaf</text>
+            <rect x="340" y="150" width="70" height="30" rx="4" class="box"/><text x="375" y="170" text-anchor="middle" class="s">Leaf</text>
+            <rect x="440" y="150" width="70" height="30" rx="4" class="box"/><text x="475" y="170" text-anchor="middle" class="s">Leaf</text>
+            <rect x="540" y="150" width="70" height="30" rx="4" class="box"/><text x="575" y="170" text-anchor="middle" class="s">Leaf</text>
+            <rect x="640" y="150" width="70" height="30" rx="4" class="box"/><text x="675" y="170" text-anchor="middle" class="s">Leaf</text>
+          </g>
+          <g class="line" stroke-width="1">
+            <line x1="370" y1="60" x2="275" y2="150"/><line x1="370" y1="60" x2="375" y2="150"/><line x1="370" y1="60" x2="475" y2="150"/><line x1="370" y1="60" x2="575" y2="150"/><line x1="370" y1="60" x2="675" y2="150"/>
+            <line x1="500" y1="60" x2="275" y2="150"/><line x1="500" y1="60" x2="375" y2="150"/><line x1="500" y1="60" x2="475" y2="150"/><line x1="500" y1="60" x2="575" y2="150"/><line x1="500" y1="60" x2="675" y2="150"/>
+            <line x1="630" y1="60" x2="275" y2="150"/><line x1="630" y1="60" x2="375" y2="150"/><line x1="630" y1="60" x2="475" y2="150"/><line x1="630" y1="60" x2="575" y2="150"/><line x1="630" y1="60" x2="675" y2="150"/>
+          </g>
+          <g>
+            <rect x="240" y="210" width="70" height="30" class="box2"/><rect x="340" y="210" width="70" height="30" class="box2"/><rect x="440" y="210" width="70" height="30" class="box2"/><rect x="540" y="210" width="70" height="30" class="box2"/><rect x="640" y="210" width="70" height="30" class="box2"/>
+            <text x="475" y="260" text-anchor="middle" class="s">racks of servers (the leaf is the top-of-rack switch)</text>
+            <line x1="275" y1="180" x2="275" y2="210" class="line"/><line x1="375" y1="180" x2="375" y2="210" class="line"/><line x1="475" y1="180" x2="475" y2="210" class="line"/><line x1="575" y1="180" x2="575" y2="210" class="line"/><line x1="675" y1="180" x2="675" y2="210" class="line"/>
+          </g>
+        </svg>
+        <div class="cap">Spine-leaf. Every rack switch (leaf) links to every spine switch, so traffic between any two racks always crosses exactly one spine.</div>
+      </div>
+      <ul>
+        <li><b>Meet-me room.</b> The neutral space where outside carriers terminate their fiber and tenants cross-connect to them.</li>
+        <li><b>Spine-leaf fabric.</b> Replaced the old three-tier design because modern traffic is mostly server to server (east-west), not server to internet.</li>
+        <li><b>AI back-end networks.</b> GPU clusters add a second, separate network (InfiniBand or high-speed Ethernet) just for the GPUs to talk to each other during training. It can cost as much as the switches for the rest of the building.</li>
+        <li><b>Latency.</b> Light in fiber covers about 200 km per millisecond. That is why trading firms cluster near exchanges, why "availability zones" are tens of kilometers apart, and why AI training clusters are built as one giant site rather than spread out.</li>
+      </ul>
+    </section>
+
+    <!-- 6. REDUNDANCY -->
+    <section class="lesson" id="redundancy">
+      <div class="kicker">6 of 9</div>
+      <h2>Redundancy and tiers</h2>
+      <p>"N" is the amount of equipment needed to carry the load. Redundancy means having more than N, so maintenance or a failure does not cause an outage. The shorthand turns up in every design document and sales sheet.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 210" role="img" aria-label="Three redundancy patterns: N with one unit, N+1 with a spare unit, and 2N with two complete independent paths">
+          <defs><marker id="arr6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+          <g>
+            <text x="120" y="30" text-anchor="middle" class="h">N</text>
+            <rect x="40" y="60" width="60" height="40" rx="4" class="box"/><text x="70" y="85" text-anchor="middle" class="s">UPS</text>
+            <rect x="140" y="60" width="60" height="40" rx="4" class="box"/><text x="170" y="85" text-anchor="middle" class="s">UPS</text>
+            <rect x="60" y="140" width="120" height="36" rx="4" class="box2"/><text x="120" y="163" text-anchor="middle" class="s">Load needs 2 units</text>
+            <path d="M70 100 L100 138" class="line" marker-end="url(#arr6)"/><path d="M170 100 L140 138" class="line" marker-end="url(#arr6)"/>
+            <text x="120" y="200" text-anchor="middle" class="s">one failure = outage</text>
+          </g>
+          <g>
+            <text x="380" y="30" text-anchor="middle" class="h">N+1</text>
+            <rect x="270" y="60" width="60" height="40" rx="4" class="box"/><text x="300" y="85" text-anchor="middle" class="s">UPS</text>
+            <rect x="350" y="60" width="60" height="40" rx="4" class="box"/><text x="380" y="85" text-anchor="middle" class="s">UPS</text>
+            <rect x="430" y="60" width="60" height="40" rx="4" class="acc"/><text x="460" y="85" text-anchor="middle" class="s">spare</text>
+            <rect x="320" y="140" width="120" height="36" rx="4" class="box2"/><text x="380" y="163" text-anchor="middle" class="s">Load needs 2 units</text>
+            <path d="M300 100 L350 138" class="line" marker-end="url(#arr6)"/><path d="M380 100 L380 138" class="line" marker-end="url(#arr6)"/><path d="M460 100 L410 138" class="line" marker-end="url(#arr6)"/>
+            <text x="380" y="200" text-anchor="middle" class="s">one failure is fine</text>
+          </g>
+          <g>
+            <text x="640" y="30" text-anchor="middle" class="h">2N</text>
+            <rect x="540" y="60" width="80" height="40" rx="4" class="box"/><text x="580" y="80" text-anchor="middle" class="s">Path A</text><text x="580" y="93" text-anchor="middle" class="s">full capacity</text>
+            <rect x="660" y="60" width="80" height="40" rx="4" class="box"/><text x="700" y="80" text-anchor="middle" class="s">Path B</text><text x="700" y="93" text-anchor="middle" class="s">full capacity</text>
+            <rect x="580" y="140" width="120" height="36" rx="4" class="box2"/><text x="640" y="163" text-anchor="middle" class="s">Load, dual-fed</text>
+            <path d="M580 100 L610 138" class="line" marker-end="url(#arr6)"/><path d="M700 100 L670 138" class="line" marker-end="url(#arr6)"/>
+            <text x="640" y="200" text-anchor="middle" class="s">a whole path can fail</text>
+          </g>
+        </svg>
+        <div class="cap">The same idea applies to generators, chillers, pumps and network links. 2N costs roughly twice as much as N.</div>
+      </div>
+      <div class="kv">
+        <div><b>Tier I and II</b>Single power and cooling path. Planned maintenance means downtime. Small enterprise rooms.</div>
+        <div><b>Tier III</b>Concurrently maintainable: any component can be serviced without shutting down. The common target for colocation, around 99.98% expected availability.</div>
+        <div><b>Tier IV</b>Fault tolerant: any single unplanned failure is absorbed. Fully 2N. Banks, critical government, some healthcare.</div>
+      </div>
+      <p>The tier system is published by the Uptime Institute. Hyperscalers mostly do not bother certifying; they get resilience by running the same workload in several buildings or regions and letting software route around a failed site.</p>
+    </section>
+
+    <!-- 7. METRICS -->
+    <section class="lesson" id="metrics">
+      <div class="kicker">7 of 9</div>
+      <h2>The numbers: MW, PUE, WUE</h2>
+      <p>Headlines describe data centers in megawatts, not square feet, because power is the real constraint. "A 500 MW campus" means 500 MW of IT load the site can deliver to racks, not the building's total draw.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 170" role="img" aria-label="Bar showing total facility power split into IT equipment, cooling, electrical losses and other, used to illustrate PUE of 1.4">
+          <rect x="40" y="50" width="400" height="44" fill="#1f3a93" stroke="#333"/>
+          <rect x="440" y="50" width="130" height="44" fill="#ccc" stroke="#333"/>
+          <rect x="570" y="50" width="100" height="44" fill="#e5e5e5" stroke="#333"/>
+          <rect x="670" y="50" width="50" height="44" fill="#f5f5f5" stroke="#333"/>
+          <text x="240" y="77" text-anchor="middle" class="t" fill="#fff" style="fill:#fff">IT equipment 100 MW</text>
+          <text x="505" y="77" text-anchor="middle" class="s">cooling 25</text>
+          <text x="620" y="77" text-anchor="middle" class="s">losses 10</text>
+          <text x="695" y="77" text-anchor="middle" class="s">other</text>
+          <text x="40" y="36" class="s">Total facility power = 140 MW</text>
+          <text x="380" y="130" text-anchor="middle" class="h">PUE = total facility power ÷ IT power = 140 ÷ 100 = 1.4</text>
+          <text x="380" y="155" text-anchor="middle" class="s">1.0 would be perfect. Old rooms run near 2.0, the best hyperscale sites close to 1.1.</text>
+        </svg>
+        <div class="cap">Power usage effectiveness. The gap between the blue bar and the total is overhead: cooling, transformer and UPS losses, lighting.</div>
+      </div>
+      <div class="kv">
+        <div><b>MW (IT load)</b>The capacity sold or planned. 1 GW = 1,000 MW. For scale, a typical US nuclear reactor produces about 1 GW.</div>
+        <div><b>PUE</b>Total power ÷ IT power. Lower is better. Driven by climate, cooling design and how hard the site is loaded.</div>
+        <div><b>WUE</b>Litres of water consumed per kilowatt-hour of IT energy. Evaporative cooling pushes it up; dry or liquid cooling pulls it down.</div>
+        <div><b>Rack density</b>kW per rack. 5 to 10 for ordinary cloud, 40 to 130 for AI training.</div>
+        <div><b>Cost</b>Roughly $10 to $15 million per MW for the building and infrastructure, before any servers. GPUs can double or triple that.</div>
+        <div><b>Carbon</b>Mostly from the electricity used, so it depends on the grid mix and on power purchase agreements with wind, solar and nuclear.</div>
+      </div>
+    </section>
+
+    <!-- 8. SITE -->
+    <section class="lesson" id="site">
+      <div class="kicker">8 of 9</div>
+      <h2>Why they get built where they do</h2>
+      <p>Developers run the same checklist on every candidate site. Power now dominates everything else, which is why the map is filling in across rural Texas, Louisiana, Ohio, Indiana, Wisconsin and Wyoming rather than only Northern Virginia and Silicon Valley.</p>
+      <div class="kv">
+        <div><b>Power, and when</b>Is there spare capacity on the grid, and can the utility deliver hundreds of megawatts in two years rather than seven? Sites next to power plants, retired coal plants or gas pipelines get a head start.</div>
+        <div><b>Land</b>Hundreds of flat acres, zoned industrial, away from flood plains and airports, with room to expand.</div>
+        <div><b>Fiber</b>Long-haul fiber routes nearby, ideally from more than one carrier on different paths.</div>
+        <div><b>Water and climate</b>Cooler, drier climates cut cooling cost. Water rights matter where evaporative cooling is used.</div>
+        <div><b>Tax incentives</b>Most US states exempt data center equipment from sales tax. The deals are large and increasingly contested in state legislatures.</div>
+        <div><b>Community and permitting</b>Zoning approval, noise, truck traffic, and local opposition can add a year or kill a project. This is a growing share of the headlines.</div>
+      </div>
+      <p>Established hubs still matter for connectivity and low latency: Northern Virginia (the largest market in the world), Dallas, Phoenix, Chicago, Atlanta, Columbus, Portland, Silicon Valley; abroad, Frankfurt, London, Amsterdam, Paris, Dublin, Singapore, Tokyo, Sydney and Mumbai.</p>
+    </section>
+
+    <!-- 9. LIFECYCLE -->
+    <section class="lesson" id="lifecycle">
+      <div class="kicker">9 of 9</div>
+      <h2>From announcement to switch-on</h2>
+      <p>The news feed on this site tracks projects through these stages. The gap between "announced" and "operational" is typically two to four years, and the power agreement is usually the long pole.</p>
+      <div class="fig">
+        <svg class="dg" viewBox="0 0 760 170" role="img" aria-label="Timeline of a data center project: site search, power agreement, permits and zoning, design, construction, commissioning, operations and expansion">
+          <line x1="40" y1="70" x2="720" y2="70" class="line"/>
+          <g>
+            <circle cx="60" cy="70" r="7" fill="#fff" stroke="#333" stroke-width="1.5"/>
+            <circle cx="170" cy="70" r="7" fill="#fff" stroke="#333" stroke-width="1.5"/>
+            <circle cx="280" cy="70" r="7" fill="#fff" stroke="#333" stroke-width="1.5"/>
+            <circle cx="390" cy="70" r="7" fill="#fff" stroke="#333" stroke-width="1.5"/>
+            <circle cx="500" cy="70" r="7" fill="#1f3a93" stroke="#1f3a93" stroke-width="1.5"/>
+            <circle cx="610" cy="70" r="7" fill="#fff" stroke="#333" stroke-width="1.5"/>
+            <circle cx="700" cy="70" r="7" fill="#1f3a93" stroke="#1f3a93" stroke-width="1.5"/>
+          </g>
+          <g class="s" text-anchor="middle">
+            <text x="60" y="44">Site search</text><text x="60" y="100">land options,</text><text x="60" y="114">quiet deals</text>
+            <text x="170" y="44">Power deal</text><text x="170" y="100">utility study,</text><text x="170" y="114">substation</text>
+            <text x="280" y="44">Permits</text><text x="280" y="100">zoning, hearings,</text><text x="280" y="114">incentives</text>
+            <text x="390" y="44">Design</text><text x="390" y="100">MW, density,</text><text x="390" y="114">cooling type</text>
+            <text x="500" y="44">Construction</text><text x="500" y="100">12 to 24 months</text><text x="500" y="114">per building</text>
+            <text x="610" y="44">Commissioning</text><text x="610" y="100">load bank tests,</text><text x="610" y="114">failure drills</text>
+            <text x="700" y="44">Operations</text><text x="700" y="100">then expand,</text><text x="700" y="114">phase 2, 3...</text>
+          </g>
+          <text x="380" y="150" text-anchor="middle" class="s">Public announcements usually happen between the power deal and the permits, when the company needs local approval.</text>
+        </svg>
+        <div class="cap">Blue dots are where the money is spent. Campuses are built in phases, so one site can stay "under construction" for a decade.</div>
+      </div>
+      <ul>
+        <li><b>Announced.</b> A company, a county and a dollar figure. Watch for code names (Stargate, Hyperion, Fairwater) and for shell companies buying land before the real name appears.</li>
+        <li><b>Under construction.</b> Groundbreaking, earthworks, then structural steel; a data hall shell can go up in a year, with the electrical and mechanical fit-out taking longer than the building itself.</li>
+        <li><b>Commissioning.</b> Weeks of pulling the plug on purpose: generators, UPS and chillers are tested at full load before any customer equipment arrives.</li>
+        <li><b>Operational.</b> Racks move in, often in waves over years. The first customer switch-on is the milestone that matters.</li>
+      </ul>
+    </section>
+
+    <section class="lesson" id="glossary">
+      <div class="kicker">Reference</div>
+      <h2>Glossary</h2>
+      <div class="kv">
+        <div><b>Colocation (colo)</b>Renting space and power in someone else's data center.</div>
+        <div><b>Hyperscaler</b>A cloud or AI company running data centers at huge scale for its own services.</div>
+        <div><b>CRAH / CRAC</b>Computer room air handler / air conditioner. The cooling cabinets in a data hall.</div>
+        <div><b>CDU</b>Coolant distribution unit. Pumps and heat exchanger that feed liquid cooling to racks.</div>
+        <div><b>UPS</b>Uninterruptible power supply. Batteries and electronics that bridge grid and generator.</div>
+        <div><b>PDU</b>Power distribution unit, at row level or inside the rack.</div>
+        <div><b>ATS</b>Automatic transfer switch. Flips the load from grid to generator.</div>
+        <div><b>PUE</b>Power usage effectiveness. Total facility power divided by IT power.</div>
+        <div><b>WUE</b>Water usage effectiveness. Water consumed per unit of IT energy.</div>
+        <div><b>Rack unit (U)</b>1.75 inches of vertical rack space. Standard rack is 42U.</div>
+        <div><b>Meet-me room</b>Where outside carriers' fiber terminates and tenants cross-connect.</div>
+        <div><b>Spine-leaf</b>Two-layer network design where every rack switch connects to every spine switch.</div>
+        <div><b>PPA</b>Power purchase agreement. Long-term contract to buy electricity, often from a new wind, solar or nuclear plant.</div>
+        <div><b>Behind the meter</b>Generation built on site for the data center, bypassing the public grid.</div>
+        <div><b>Availability zone</b>A cluster of data centers close enough for fast links but far enough apart to fail independently.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Data Center Watch is a personal project. Figures in this guide are typical ranges, not specifications for any particular site.</p>
+      <p>Diagrams are original and free to reuse with attribution.</p>
+    </div>
+  </footer>
+</body>
+</html>

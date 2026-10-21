@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Center Watch: projects map</title>
+  <meta name="description" content="A live map of new and planned data centers, curated projects plus sites detected automatically from the news.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Data Center Watch</a>
+      <nav>
+        <a href="index.html">News</a>
+        <a href="projects.html" class="active">Projects map</a>
+        <a href="learn.html">How it works</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <h1>Data center projects map</h1>
+      <p class="lede">Where new data centers are being announced, built and switched on. Filled markers are curated projects; hollow markers were picked up automatically from headlines and placed at the city or state mentioned.</p>
+      <p class="meta" id="updated">Loading…</p>
+    </section>
+
+    <div id="map"></div>
+    <div class="legend">
+      <span><i class="dot"></i>Curated project</span>
+      <span><i class="dot auto"></i>Detected from news</span>
+      <span id="counts"></span>
+    </div>
+
+    <section class="controls">
+      <input id="q" type="search" placeholder="Search projects, companies, places" autocomplete="off">
+      <div class="row">
+        <select id="status">
+          <option value="">All stages</option>
+          <option value="Announced">Announced</option>
+          <option value="Under construction">Under construction</option>
+          <option value="Operational">Operational</option>
+        </select>
+        <select id="kind">
+          <option value="">Curated and detected</option>
+          <option value="curated">Curated only</option>
+          <option value="auto">Detected from news only</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="list"></section>
+    <p class="empty" id="empty" hidden></p>
+
+    <p class="callout">Detected projects come from headline keywords and a place-name lookup, so a pin can land on the wrong town or state. To promote one to the curated list, copy it into <code>data/projects.json</code> with exact coordinates.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Data Center Watch is a personal project. Project details come from public reporting and may be out of date.</p>
+      <p>Map tiles and data from OpenStreetMap contributors.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/projects.js"></script>
+</body>
+</html>
