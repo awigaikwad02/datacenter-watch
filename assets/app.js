@@ -268,8 +268,7 @@ window.RR = (function () {
     if (side) {
       side.innerHTML = '<a class="brand" href="/" aria-label="The Rack Report home">' + wordmark() + "</a>" +
         '<nav class="side-nav" aria-label="Main">' + navLinks(1) + "</nav>" +
-        '<div class="side-foot">' + contact() +
-        '<a href="' + REPO + '" rel="noopener">' + icon("github") + " Source on GitHub</a></div>";
+        '<div class="side-foot">' + contact() + "</div>";
     }
     const top = document.getElementById("topbar");
     if (top) {
