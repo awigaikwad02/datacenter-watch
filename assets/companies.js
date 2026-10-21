@@ -33,4 +33,13 @@ window.RR_COMPANIES = {
   "SoftBank": { type: "Investor", mark: "SB", desc: "Investor and lead financial partner in the Stargate venture." },
   "Related Digital": { type: "Developer", mark: "RD", desc: "Digital infrastructure arm of Related Companies." },
   "Tallgrass": { type: "Energy", mark: "TG", desc: "Energy infrastructure company partnering on a Wyoming AI campus." },
+  "Tract": { type: "Developer", mark: "TR", desc: "Develops master-planned land parks zoned and powered for data centers." },
+  "Hillwood": { type: "Developer", mark: "HW", desc: "Perot family real estate developer with data center campus projects." },
+  "PowerHouse": { type: "Developer", mark: "PH", desc: "PowerHouse Data Centers, a developer of large powered data center campuses." },
+  "Sabey": { type: "Developer", mark: "SB", desc: "Sabey Data Centers, a developer and operator of multi-tenant campuses." },
+  "T5": { type: "Developer", mark: "T5", desc: "T5 Data Centers, a developer and operator of hyperscale facilities." },
+  "Stream": { type: "Developer", mark: "SD", desc: "Stream Data Centers, a developer of wholesale and build-to-suit campuses." },
+  "Prime Data Centers": { type: "Developer", mark: "PD", desc: "Developer of wholesale and hyperscale data center campuses." },
+  "Skybox": { type: "Developer", mark: "SK", desc: "Skybox Datacenters, a developer of large data center campuses." },
+  "Novva": { type: "Developer", mark: "NV", desc: "Novva Data Centers, a developer of hyperscale campuses in the Mountain West." },
 };
