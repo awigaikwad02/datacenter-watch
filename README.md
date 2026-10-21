@@ -1,6 +1,6 @@
 # The Rack Report
 
-U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed every hour by a GitHub Actions job. No server, no API keys, no build step.
+U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed every three hours by a GitHub Actions job. No server, no API keys, no build step.
 
 Live site: https://therackreport.org/ (custom domain on GitHub Pages; the root `CNAME` file holds the domain and must not be removed or edited)
 
@@ -24,7 +24,7 @@ Brand files: `assets/mark.svg`, `assets/logo.svg`, `assets/favicon.svg`, `assets
 ## How the data runs
 
 ```
-GitHub Actions (every hour at :17)
+GitHub Actions (every 3 hours at :17)
   -> scripts/fetch_news.py
      reads  data/feeds.json             Google News RSS searches and Google Alerts feeds
      reads  scripts/gazetteer.json      place names -> coordinates (U.S. and foreign)
@@ -32,7 +32,7 @@ GitHub Actions (every hour at :17)
      writes data/project_candidates.json projects detected in headlines (U.S. only)
      writes data/archive/YYYY-MM.json   permanent archive by published month, append-only
      writes data/archive/index.json     months available, item counts, earliest/latest dates
-  -> commits the two JSON files
+  -> commits the JSON files and the archive (never touches CNAME)
 GitHub Pages serves the HTML; the pages fetch the JSON in the browser
 ```
 
@@ -42,10 +42,18 @@ GitHub Pages serves the HTML; the pages fetch the JSON in the browser
 
 `data/news.json` is the recent file: 90 days, up to 3,000 headlines. Every headline that passes the U.S. filter is also appended to `data/archive/YYYY-MM.json` for the month it was published; archive files are never trimmed and existing entries are never rewritten. `scripts/seed_archive.py` rebuilt the archive from every version of `data/news.json` in git history and is safe to re-run.
 
-Fields written on each headline: `id, title, link, source, published, feed, category, tags, locations, states, state, companies` and, when present, `capacity_mw, investment_usd_b`. Candidates add `status, location, lat, lon, state, companies, precision, source, source_url, published`.
+Fields written on each headline: `id, title, link, source, published, feed, category, tags, locations, states, state, county, location_precision, companies, utilities, cluster_id` and, when present, `snippet, capacity_mw, investment_usd_b`. Candidates (rebuilt every run from recent and archived headlines) add `status, location, lat, lon, state, companies, utilities, precision, cluster_id, source, source_url, published`.
 
-Categories: New Announcement, Expansion, Construction, Power / Utility, Land Acquisition, Policy / Permits, Deals / Investment, Operations, AI Infrastructure, General.
-Statuses: Announced, Planned (curated only), Under construction, Operational, Expansion.
+Categories: Cancelled / Blocked, New Announcement, Expansion, Construction, Power / Utility, Land Acquisition, Policy / Permits, Deals / Investment, Operations, AI Infrastructure, General.
+Statuses: Announced, Planned (curated only), Under construction, Operational, Expansion, Cancelled / Blocked.
+
+### Data quality rules
+
+- **On topic:** the title or description must say data center / data centre / datacenter / hyperscale / colocation, or name a tracked company plus campus / facility / site / megawatt / gigawatt. `blocked_sources` in `data/feeds.json` drops stock-market outlets.
+- **Cancelled / Blocked** is checked before every other topic and status (withdrawn, scrapped, denied, voted down, halted, paused, moratorium passed; "calls for" and "considers" do not count).
+- **Locations:** title and RSS description are scanned against `scripts/gazetteer.json` (every U.S. county and parish at its Census centroid, plus townships in the news). `source_states` in `data/feeds.json` maps local outlets to their home state as a last resort. `location_precision` is `city`, `county`, `state` or `source`.
+- **Stories:** headlines within 7 days that share a company, a state (or county) and at least 40% of their title words get the same `cluster_id`. The Newsroom shows one card per story, the Atlas one site per story (state-level ones as an approximate bubble per state), and company counts are stories.
+- **Fetching:** 429 and 5xx responses are retried 3 times with exponential backoff; the script exits non-zero if every feed returned nothing.
 
 ## Set up
 
@@ -60,8 +68,8 @@ Statuses: Announced, Planned (curated only), Under construction, Operational, Ex
 - Topics: `CATEGORY_RULES` in `scripts/fetch_news.py` (first match wins).
 - Companies: `COMPANIES` and `ALIASES` in the script, plus a description in `assets/companies.js` with the same name.
 - U.S. filter: `FOREIGN_RE` and `FOREIGN_SOURCES` in the script.
-- Places: `scripts/gazetteer.json`, `name: [lat, lon, level, display]`; U.S. displays end in `, US`.
-- Retention: `NEWS_MAX_AGE_DAYS` (90), `NEWS_MAX_ITEMS` (3000) and `CAND_MAX_AGE_DAYS` (180).
+- Places: `scripts/gazetteer.json`, `name: [lat, lon, level, display]` (or a list of those for a county name shared by several states); U.S. displays end in `, US`.
+- Retention: `NEWS_MAX_AGE_DAYS` (90), `NEWS_MAX_ITEMS` (3000), `CAND_MAX_AGE_DAYS` (180) and `CAND_MAX_ITEMS` (800). Story grouping: `CLUSTER_DAYS` (7) and `CLUSTER_OVERLAP` (0.4).
 
 ## Run and test locally
 
