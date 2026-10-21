@@ -1,5 +1,5 @@
 {
- "_readme": "Curated U.S. project list shown on the Project Atlas as solid pins. Required: id, name, lat, lon, state (two-letter), status (Announced | Planned | Under construction | Operational | Expansion). company is display text; companies lists tracked company names as used by scripts/fetch_news.py (COMPANIES). Optional: location, capacity_mw, investment_usd_b, announced (YYYY-MM), notes, source_url. Entries come from public reporting and are flagged verified: false until checked against current sources.",
+ "_readme": "Curated U.S. project list shown on the Project Atlas as solid pins. Required: id, name, lat, lon, state (two-letter), status (Announced | Planned | Under construction | Operational | Expansion). company is display text; companies lists tracked company names as used by scripts/fetch_news.py (COMPANIES). Optional: location, capacity_mw, investment_usd_b, announced (YYYY-MM), notes, source_url. timeline (optional) is a list of {date: YYYY-MM or YYYY-MM-DD, event, url} milestones, each with its source. Entries come from public reporting and are flagged verified: false until checked against current sources.",
  "projects": [
   {
    "id": "stargate-abilene",
@@ -18,7 +18,29 @@
    "capacity_mw": 1200,
    "announced": "2025-01",
    "notes": "Flagship Stargate campus, first buildings energized in 2025 with more under way.",
-   "verified": false
+   "verified": false,
+   "timeline": [
+    {
+     "date": "2024-06",
+     "event": "Construction of phase 1 begins: two buildings, 980,000 sq ft, 200+ MW",
+     "url": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts"
+    },
+    {
+     "date": "2025-03-18",
+     "event": "Phase 2 announced: six more buildings take the campus to 1.2 GW",
+     "url": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts"
+    },
+    {
+     "date": "2025-09-30",
+     "event": "First two buildings go live on Oracle Cloud Infrastructure",
+     "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live"
+    },
+    {
+     "date": "2025-11-18",
+     "event": "Eighth and final building topped out",
+     "url": "https://w.media/crusoe-tops-off-final-ai-data-center-in-abilene-texas/"
+    }
+   ]
   },
   {
    "id": "hyperion",
@@ -36,7 +58,24 @@
    "investment_usd_b": 10,
    "announced": "2024-12",
    "notes": "Planned to scale toward 5 GW over time, served by new gas generation from the local utility.",
-   "verified": false
+   "verified": false,
+   "timeline": [
+    {
+     "date": "2024-12-04",
+     "event": "Gov. Jeff Landry announces Meta's Richland Parish data center, its largest investment yet",
+     "url": "https://www.wafb.com/2024/12/04/gov-jeff-landry-announces-meta-will-make-largest-investment-yet-louisiana"
+    },
+    {
+     "date": "2025-08-20",
+     "event": "Louisiana PSC approves, 4-1, three Entergy gas plants to power the campus",
+     "url": "https://www.kplctv.com/2025/08/21/entergy-la-gets-green-light-plant-power-metas-ai-data-center"
+    },
+    {
+     "date": "2026-07-13",
+     "event": "Meta announces an expansion that more than doubles the campus",
+     "url": "https://www.wlox.com/2026/07/13/meta-more-than-doubles-size-louisiana-ai-data-center-massive-50-billion-expansion/"
+    }
+   ]
   },
   {
    "id": "prometheus",
@@ -86,7 +125,24 @@
    "investment_usd_b": 7,
    "announced": "2024-05",
    "notes": "AI datacenter on the former Foxconn site, first phase due online in 2026 with a second phase announced.",
-   "verified": false
+   "verified": false,
+   "timeline": [
+    {
+     "date": "2024-05-08",
+     "event": "Microsoft announces a $3.3 billion AI datacenter campus in Mount Pleasant",
+     "url": "https://www.datacenterdynamics.com/en/news/microsoft-to-invest-33bn-in-wisconsin-ai-data-center/"
+    },
+    {
+     "date": "2025-09-18",
+     "event": "Fairwater unveiled; Microsoft adds a second $4 billion datacenter, over $7 billion in Wisconsin",
+     "url": "https://w.media/microsoft-unveils-its-largest-ai-data-center-yet-to-spend-us-7-billion-on-wisconsin-facility/"
+    },
+    {
+     "date": "2026-06-23",
+     "event": "First Fairwater datacenter fully operational, ahead of schedule",
+     "url": "https://spectrumnews1.com/wi/milwaukee/news/2026/06/23/construction-data-center-facility-microsoft-mount-pleasant-.html"
+    }
+   ]
   },
   {
    "id": "project-rainier",

@@ -175,6 +175,18 @@ window.RR = (function () {
     });
     return newsP;
   }
+  // The permanent archive: every month file listed in data/archive/index.json, merged and de-duplicated.
+  let archP;
+  function archive() {
+    archP = archP || json("data/archive/index.json").then((idx) =>
+      Promise.all((idx.months || []).map((m) => json(m.file).catch(() => ({ items: [] })))).then((files) => {
+        const seen = new Set(), items = [];
+        files.forEach((f) => (f.items || []).forEach((it) => { if (!seen.has(it.id)) { seen.add(it.id); items.push(prepNews(it)); } }));
+        items.sort((a, b) => b.t - a.t);
+        return { index: idx, items, earliest: idx.earliest || (items.length ? items[items.length - 1].published : null) };
+      }));
+    return archP;
+  }
   function placeName(loc) { return (loc || "").replace(/, US$/, ""); }
   function projects() {
     projP = projP || Promise.all([json("data/projects.json"), json("data/project_candidates.json").catch(() => ({ projects: [] }))]).then(([cur, cand]) => {
@@ -455,7 +467,7 @@ window.RR = (function () {
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
     STATES, CATS, STATUS, cat, status, companyInfo, companyTone, letters,
-    news, projects, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
+    news, archive, projects, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };
 })();

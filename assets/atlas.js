@@ -95,9 +95,9 @@
   }
 
   // ---------- Detail panel ----------
-  function related(p) {
+  function related(p, source) {
     const town = p.place.split(",")[0].toLowerCase();
-    return news.map((n) => {
+    return (source || news).map((n) => {
       let s = 0;
       if (!p.curated && n.id === p.id) s += 100;
       const sameState = n.state === p.state || (n.states || []).includes(p.state);
@@ -105,7 +105,7 @@
       if (town.length > 3 && n.title.toLowerCase().includes(town)) s += 5;
       if (p.curated && p.name.length > 6 && n.title.toLowerCase().includes(p.name.toLowerCase())) s += 8;
       return [s, n];
-    }).filter((x) => x[0] >= 5).sort((a, b) => b[0] - a[0] || b[1].t - a[1].t).slice(0, 6).map((x) => x[1]);
+    }).filter((x) => x[0] >= 5).sort((a, b) => b[0] - a[0] || b[1].t - a[1].t).slice(0, source ? 8 : 6).map((x) => x[1]);
   }
   function timeline(p) {
     const st = R.status(p.status).step;
@@ -129,9 +129,13 @@
       '<div class="detail-body"><p>' + R.esc(R.summary(p)) + "</p>" +
       '<div class="kv">' + kv.map((k) => "<div><span>" + k[0] + "</span><b>" + R.esc(k[1]) + "</b></div>").join("") + "</div>" +
       (p.companies.length ? '<div><h3 class="sub-h">Companies</h3><div class="news-tags">' + p.companies.map((c) => '<a class="tag plain" href="companies.html#' + encodeURIComponent(c) + '">' + R.icon("building") + R.esc(c) + "</a>").join("") + "</div></div>" : "") +
-      '<div><h3 class="sub-h">Timeline</h3>' + timeline(p) + "</div>" +
+      (p.timeline && p.timeline.length ? '<div><h3 class="sub-h">Milestones</h3><ol class="milestones">' + p.timeline.slice().sort((a, b) => String(a.date).localeCompare(String(b.date))).map((m) =>
+        '<li><time datetime="' + R.esc(m.date) + '">' + R.esc(R.fmtDate(m.date, m.date.length === 7 ? { month: "short", year: "numeric" } : undefined)) + "</time><div><span>" + R.esc(m.event) + "</span>" +
+        (m.url ? '<br><a href="' + R.esc(m.url) + '" target="_blank" rel="noopener">' + R.esc(new URL(m.url).hostname.replace(/^www\./, "")) + " →</a>" : "") + "</div></li>").join("") + "</ol></div>" : "") +
+      '<div><h3 class="sub-h">Stage</h3>' + timeline(p) + "</div>" +
       (p.notes ? '<div><h3 class="sub-h">Notes</h3><p>' + R.esc(p.notes) + "</p></div>" : "") +
-      '<div><h3 class="sub-h">Related headlines</h3>' + (rel.length ? '<div class="headlines">' + rel.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>" : '<p class="co-empty">No matching headlines in the last 60 days.</p>') + "</div>" +
+      '<div id="archiveRel" hidden></div>' +
+      '<div><h3 class="sub-h">Related headlines</h3>' + (rel.length ? '<div class="headlines">' + rel.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>" : '<p class="co-empty">No matching headlines in the last 90 days.</p>') + "</div>" +
       '<div class="detail-actions">' + (source ? '<a class="btn sm" href="' + R.esc(source) + '" target="_blank" rel="noopener">' + R.icon("external") + "Latest source</a>" : "") +
       '<button class="btn sm" id="shareProject">' + R.icon("share") + "Share</button></div>" +
       '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : "Detected automatically from a headline. The pin sits at the place named, which can be off.") + ' <a href="methodology.html#report">Report a wrong pin</a>.</div></div>';
@@ -151,6 +155,7 @@
     $("#closeDetail").addEventListener("click", close);
     $("#shareProject").addEventListener("click", () => R.share(p.name + " · The Rack Report", location.href.split("#")[0] + "#project=" + encodeURIComponent(id)));
     history.replaceState(null, "", "#project=" + encodeURIComponent(id));
+    archiveRelated(p);
     if (from !== "map") setTimeout(() => $("#closeDetail").focus(), 50);
     if ($("#atlas").classList.contains("list-view")) setMode("map");
     const m = markers[id];
@@ -165,6 +170,19 @@
     document.querySelectorAll(".proj-card[aria-current]").forEach((e) => e.removeAttribute("aria-current"));
     const row = document.querySelector('.proj-card[data-id="' + CSS.escape(id) + '"]');
     if (row) row.setAttribute("aria-current", "true");
+  }
+  function archiveRelated(p) {
+    R.archive().then((a) => {
+      if (sel !== p.id) return;
+      const shown = new Set(news.map((n) => n.id));
+      const rel = related(p, a.items.filter((n) => !shown.has(n.id)));
+      const box = document.getElementById("archiveRel");
+      if (!box || !rel.length) return;
+      box.innerHTML = '<h3 class="sub-h">From the archive</h3><div class="headlines">' + rel.map((n) =>
+        '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.esc(R.fmtDate(n.published)) + "</small></a>").join("") + "</div>";
+      box.hidden = false;
+      box.parentNode.insertBefore(box, box.nextElementSibling.nextElementSibling);
+    }).catch(() => {});
   }
   function close() {
     const d = $("#detail");

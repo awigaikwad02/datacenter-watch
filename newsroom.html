@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=rr6">
+  <link rel="stylesheet" href="assets/style.css?v=rr7">
   <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
 <body>
@@ -58,10 +58,12 @@
           </div>
           <div class="filter-row2">
             <div class="seg" id="range" role="group" aria-label="Time range">
-              <button data-range="1" aria-pressed="false">Today</button><button data-range="7" aria-pressed="true">This week</button><button data-range="31" aria-pressed="false">This month</button><button data-range="60" aria-pressed="false">60 days</button>
+              <button data-range="1" aria-pressed="false">Today</button><button data-range="7" aria-pressed="true">This week</button><button data-range="31" aria-pressed="false">This month</button><button data-range="90" aria-pressed="false">90 days</button>
             </div>
             <div class="chips scroll" id="topics" role="group" aria-label="Topic"></div>
+            <button class="switch" id="archiveBtn" role="switch" aria-checked="false"><span class="track" aria-hidden="true"></span>Include archive</button>
           </div>
+          <p class="archive-note" id="archiveNote" aria-live="polite" hidden></p>
         </section>
 
         <div class="filter-meta">
@@ -79,8 +81,8 @@
     <footer class="site-footer" id="footer"></footer>
   </div>
   <nav class="tabbar" id="tabbar"></nav>
-  <script src="assets/companies.js?v=rr6"></script>
-  <script src="assets/app.js?v=rr6"></script>
-  <script src="assets/newsroom.js?v=rr6"></script>
+  <script src="assets/companies.js?v=rr7"></script>
+  <script src="assets/app.js?v=rr7"></script>
+  <script src="assets/newsroom.js?v=rr7"></script>
 </body>
 </html>

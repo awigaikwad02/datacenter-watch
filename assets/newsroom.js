@@ -2,32 +2,39 @@
 (function () {
   "use strict";
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY, PAGE = 30;
-  const f = { q: "", company: "", state: "", source: "", topic: "", range: 7, saved: false, view: R.store("view") || "list", shown: PAGE };
-  let items = [];
+  const f = { q: "", company: "", state: "", source: "", topic: "", range: 7, saved: false, archive: false, view: R.store("view") || "list", shown: PAGE };
+  let items = [], archived = null;
   R.shell("newsroom.html", "Newsroom");
 
   // ---------- URL hash <-> filters, so a filtered view can be shared ----------
-  const KEYS = ["q", "company", "state", "source", "topic", "range", "saved"];
+  const KEYS = ["q", "company", "state", "source", "topic", "range", "saved", "archive"];
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
-    KEYS.forEach((k) => { if (h.has(k)) f[k] = k === "range" ? Number(h.get(k)) || 7 : k === "saved" ? h.get(k) === "1" : h.get(k); });
+    KEYS.forEach((k) => { if (h.has(k)) f[k] = k === "range" ? Number(h.get(k)) || 7 : k === "saved" || k === "archive" ? h.get(k) === "1" : h.get(k); });
   }
   function writeHash() {
     const h = new URLSearchParams();
-    KEYS.forEach((k) => { const v = f[k]; if (v && !(k === "range" && v === 7)) h.set(k, k === "saved" ? "1" : v); });
+    KEYS.forEach((k) => { const v = f[k]; if (v && !(k === "range" && v === 7)) h.set(k, k === "saved" || k === "archive" ? "1" : v); });
     const s = h.toString();
     history.replaceState(null, "", s ? "#" + s : location.pathname);
   }
 
   // ---------- Filtering ----------
+  // Recent headlines, plus every archived headline when "Include archive" is on.
+  function base() {
+    if (!f.archive || !archived) return items;
+    const ids = new Set(items.map((i) => i.id));
+    return items.concat(archived.items.filter((i) => !ids.has(i.id)));
+  }
   function pool() {
+    const items = base();
     if (!f.saved) return items;
     const s = R.saved.all(), ids = new Set(items.map((i) => i.id));
     const gone = Object.values(s).filter((x) => !ids.has(x.id)).map((x) => Object.assign({}, x, { t: new Date(x.published).getTime(), companies: x.companies || [], states: x.states || [], category: x.category || "General" }));
     return items.filter((i) => s[i.id]).concat(gone);
   }
   function match(it, skip) {
-    if (skip !== "range" && !f.saved && Date.now() - it.t > f.range * DAY) return false;
+    if (skip !== "range" && !f.saved && !f.archive && Date.now() - it.t > f.range * DAY) return false;
     if (skip !== "company" && f.company && !it.companies.includes(f.company)) return false;
     if (skip !== "state" && f.state && it.state !== f.state && !(it.states || []).includes(f.state)) return false;
     if (skip !== "source" && f.source && it.source !== f.source) return false;
@@ -67,7 +74,13 @@
     const src = counts("source", (i) => i.source), top = Object.fromEntries(Object.entries(src).sort((a, b) => b[1] - a[1]).slice(0, 40));
     options($("#source"), top, "All sources", f.source);
     $("#saved").value = f.saved ? "1" : "";
-    document.querySelectorAll("#range button").forEach((b) => { b.setAttribute("aria-pressed", String(Number(b.dataset.range) === f.range && !f.saved)); b.disabled = f.saved; });
+    document.querySelectorAll("#range button").forEach((b) => { b.setAttribute("aria-pressed", String(Number(b.dataset.range) === f.range && !f.saved && !f.archive)); b.disabled = f.saved || f.archive; });
+    $("#archiveBtn").setAttribute("aria-checked", String(f.archive));
+    const note = $("#archiveNote");
+    note.hidden = !f.archive;
+    if (f.archive) note.innerHTML = R.icon("layers") + (archived
+      ? "<span>Searching the full archive: <b>" + base().length.toLocaleString("en-US") + "</b> headlines going back to <b>" + R.esc(R.fmtDate(archived.earliest, { month: "long", day: "numeric", year: "numeric" })) + "</b>. Time range filters are off while the archive is included.</span>"
+      : "<span>Loading the archive…</span>");
     const tc = counts("topic", (i) => i.category), all = filtered("topic").length;
     $("#topics").innerHTML = '<button class="chip" data-topic="" aria-pressed="' + !f.topic + '">All topics <span class="n">' + all + "</span></button>" +
       Object.keys(R.CATS).filter((k) => tc[k] || f.topic === k).map((k) => '<button class="chip" data-topic="' + R.esc(k) + '" style="--tone:' + R.CATS[k].tone + '" aria-pressed="' + (f.topic === k) + '"><span class="dot"></span>' + k + ' <span class="n">' + (tc[k] || 0) + "</span></button>").join("");
@@ -83,7 +96,7 @@
   }
   function feed() {
     const list = filtered();
-    const rangeLabel = f.saved ? "saved" : { 1: "today", 7: "this week", 31: "this month", 60: "in the last 60 days" }[f.range];
+    const rangeLabel = f.saved ? "saved" : f.archive ? "in the archive" : { 1: "today", 7: "this week", 31: "this month", 90: "in the last 90 days" }[f.range];
     $("#count").textContent = list.length.toLocaleString("en-US") + " headline" + (list.length === 1 ? "" : "s") + " " + rangeLabel;
     if (!list.length) {
       $("#feed").innerHTML = '<div class="card empty" style="margin-top:20px">' + R.icon(f.saved ? "bookmark" : "search") + "<b>" + (f.saved ? "Nothing saved yet" : "No headlines match these filters") + "</b>" +
@@ -120,6 +133,7 @@
     q.addEventListener("input", R.debounce(() => { f.q = q.value.trim(); render(true); }, 150));
     ["company", "state", "source"].forEach((k) => $("#" + k).addEventListener("change", (e) => { f[k] = e.target.value; render(true); }));
     $("#saved").addEventListener("change", (e) => { f.saved = e.target.value === "1"; render(true); });
+    $("#archiveBtn").addEventListener("click", () => { f.archive = !f.archive; loadArchive(); render(true); });
     $("#more").addEventListener("click", () => { f.shown += PAGE; feed(); });
     document.addEventListener("keydown", (e) => {
       if (e.key === "/" && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); q.focus(); }
@@ -153,12 +167,23 @@
     window.addEventListener("hashchange", () => { readHash(); q.value = f.q; render(true); });
   }
 
+  function loadArchive() {
+    if (!f.archive || archived) return;
+    R.archive().then((a) => { archived = a; render(false); }).catch((err) => {
+      console.error(err);
+      f.archive = false;
+      R.toast("Couldn't load the archive");
+      render(true);
+    });
+  }
+
   readHash();
   R.news().then((n) => {
     items = n.items;
     featured();
     bind();
     render(true);
+    loadArchive();
     R.ready();
   }).catch((err) => {
     console.error(err);
