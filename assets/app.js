@@ -248,12 +248,12 @@ window.RR = (function () {
 
   // ---------- Shell ----------
   const NAV = [
-    ["index.html", "Overview", "overview", "Overview"],
-    ["newsroom.html", "Newsroom", "news", "News"],
-    ["atlas.html", "Project Atlas", "map", "Atlas"],
-    ["companies.html", "Companies", "building", "Companies"],
-    ["learn.html", "Learn", "learn", "Learn"],
-    ["methodology.html", "Methodology", "method", "Method"],
+    ["/", "Overview", "overview", "Overview"],
+    ["/newsroom", "Newsroom", "news", "News"],
+    ["/atlas", "Project Atlas", "map", "Atlas"],
+    ["/companies", "Companies", "building", "Companies"],
+    ["/learn", "Learn", "learn", "Learn"],
+    ["/methodology", "Methodology", "method", "Method"],
   ];
   let updatedIso = null;
   function setUpdated(iso) {
@@ -266,14 +266,14 @@ window.RR = (function () {
     const navLinks = (labelIdx) => NAV.map((n) => '<a href="' + n[0] + '"' + (n[0] === active ? ' aria-current="page"' : "") + ">" + icon(n[2]) + "<span>" + n[labelIdx] + "</span></a>").join("");
     const side = document.getElementById("sidebar");
     if (side) {
-      side.innerHTML = '<a class="brand" href="index.html" aria-label="The Rack Report home">' + wordmark() + "</a>" +
+      side.innerHTML = '<a class="brand" href="/" aria-label="The Rack Report home">' + wordmark() + "</a>" +
         '<nav class="side-nav" aria-label="Main">' + navLinks(1) + "</nav>" +
         '<div class="side-foot">' + contact() +
         '<a href="' + REPO + '" rel="noopener">' + icon("github") + " Source on GitHub</a></div>";
     }
     const top = document.getElementById("topbar");
     if (top) {
-      top.innerHTML = '<div class="page"><a class="brand" href="index.html" aria-label="The Rack Report home">' + wordmark() + "</a>" +
+      top.innerHTML = '<div class="page"><a class="brand" href="/" aria-label="The Rack Report home">' + wordmark() + "</a>" +
         '<span class="topbar-title">' + esc(title) + '</span><span class="live-pill" id="livePill"><span class="live-dot" aria-hidden="true"></span><span>Refreshed every 3 hours</span></span></div>';
       if (updatedIso) setUpdated(updatedIso);
     }
@@ -281,7 +281,7 @@ window.RR = (function () {
     if (tab) { tab.setAttribute("aria-label", "Main"); tab.innerHTML = navLinks(3); }
     const foot = document.getElementById("footer");
     if (foot) {
-      foot.innerHTML = '<div class="page"><div><a class="brand" href="index.html">' + wordmark() + "</a>" +
+      foot.innerHTML = '<div class="page"><div><a class="brand" href="/">' + wordmark() + "</a>" +
         "<p>Independent tracking of the U.S. data center buildout: headlines, projects, companies and the infrastructure behind them. Headlines link to the original publishers; tags and locations are detected automatically and can be wrong.</p></div>" +
         '<div><h2>Explore</h2><ul>' + NAV.map((n) => '<li><a href="' + n[0] + '">' + n[1] + "</a></li>").join("") + "</ul></div>" +
         '<div><h2>Sources</h2><ul><li>Google News RSS (U.S. edition)</li><li>Google Alerts RSS</li><li>Map data and tiles © OpenStreetMap contributors</li><li><a href="' + REPO + '" rel="noopener">GitHub repository</a></li></ul><h2 style="margin-top:16px">Contact</h2>' + contact() + "</div></div>";

@@ -4,7 +4,7 @@
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY;
   const f = { q: "", type: "", sort: "projects" };
   let cos = [], release = null;
-  R.shell("companies.html", "Companies");
+  R.shell("/companies", "Companies");
 
   function build(projects, items) {
     return Object.keys(window.RR_COMPANIES).map((name) => {
@@ -75,10 +75,10 @@
       '<div class="modal-body"><p style="margin:0;color:var(--text-2)">' + R.esc(c.info.desc) + "</p>" +
       '<div class="kv four">' + [["Tracked projects", c.projects.length], ["Curated", c.projects.filter((p) => p.curated).length], ["Active states", c.states.length], ["Stories (90 days)", c.news.length]].map((k) => "<div><span>" + k[0] + "</span><b>" + k[1] + "</b></div>").join("") + "</div>" +
       (c.states.length ? '<div><h3 class="sub-h">Active states</h3><div class="news-tags">' + c.states.map((s) => '<span class="tag plain">' + R.esc(R.STATES[s] || s) + "</span>").join("") + "</div></div>" : "") +
-      '<div style="display:flex;gap:8px;flex-wrap:wrap">' + (c.projects.length ? '<a class="btn sm primary" href="atlas.html#company=' + encodeURIComponent(c.name) + '">' + R.icon("map") + "View on the Atlas</a>" : "") +
-      '<a class="btn sm" href="newsroom.html#company=' + encodeURIComponent(c.name) + '&range=90">' + R.icon("news") + "All headlines</a></div>" +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap">' + (c.projects.length ? '<a class="btn sm primary" href="/atlas#company=' + encodeURIComponent(c.name) + '">' + R.icon("map") + "View on the Atlas</a>" : "") +
+      '<a class="btn sm" href="/newsroom#company=' + encodeURIComponent(c.name) + '&range=90">' + R.icon("news") + "All headlines</a></div>" +
       '<div><h3 class="sub-h">Projects</h3>' + (projects.length ? '<table class="ptable"><thead><tr><th scope="col">Project</th><th scope="col">Status</th><th scope="col">Capacity</th></tr></thead><tbody>' +
-        projects.map((p) => '<tr><td><a href="atlas.html#project=' + encodeURIComponent(p.id) + '">' + R.esc(p.curated ? p.name : p.name.length > 70 ? p.name.slice(0, 68) + "…" : p.name) + "</a><small>" + R.esc(p.place) + (p.curated ? " · curated" : " · detected") + "</small></td>" +
+        projects.map((p) => '<tr><td><a href="/atlas#project=' + encodeURIComponent(p.id) + '">' + R.esc(p.curated ? p.name : p.name.length > 70 ? p.name.slice(0, 68) + "…" : p.name) + "</a><small>" + R.esc(p.place) + (p.curated ? " · curated" : " · detected") + "</small></td>" +
           '<td><span class="tag" style="--tone:' + R.status(p.status).tone + '"><span class="dot"></span>' + R.esc(p.status) + "</span></td><td>" + (p.capacity_mw ? R.fmtMW(p.capacity_mw) : "—") + "</td></tr>").join("") + "</tbody></table>"
         : '<p class="co-empty">No projects tracked for ' + R.esc(c.name) + " yet.</p>") + "</div>" +
       '<div><h3 class="sub-h">Latest headlines</h3>' + (c.news.length ? '<div class="headlines">' + c.news.slice(0, 10).map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>"

@@ -4,7 +4,7 @@
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY, PAGE = 30;
   const f = { q: "", company: "", utility: "", state: "", source: "", topic: "", range: 7, saved: false, archive: false, view: R.store("view") || "list", shown: PAGE };
   let items = [], archived = null;
-  R.shell("newsroom.html", "Newsroom");
+  R.shell("/newsroom", "Newsroom");
 
   // ---------- URL hash <-> filters, so a filtered view can be shared ----------
   const KEYS = ["q", "company", "utility", "state", "source", "topic", "range", "saved", "archive"];

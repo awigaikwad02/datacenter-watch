@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY;
-  R.shell("index.html", "Overview");
+  R.shell("/", "Overview");
   document.querySelectorAll("[data-icon]").forEach((a) => a.insertAdjacentHTML("afterbegin", R.icon(a.dataset.icon)));
 
   function stats(raw, items, projects) {
@@ -87,11 +87,11 @@
       list.forEach((p) => {
         const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p), title: p.curated ? p.name : p.place, keyboard: true });
         m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(p.status) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
-        m.on("click", () => { location.href = "atlas.html#project=" + encodeURIComponent(p.id); });
+        m.on("click", () => { location.href = "/atlas#project=" + encodeURIComponent(p.id); });
         cl.addLayer(m);
       });
       map.addLayer(cl);
-      R.approxLayer(map, cl, (st) => { location.href = "atlas.html#state=" + st; }).set(recent);
+      R.approxLayer(map, cl, (st) => { location.href = "/atlas#state=" + st; }).set(recent);
       $("#pulsePh").remove();
     }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open the Project Atlas instead."; });
     if (!("IntersectionObserver" in window)) return start();

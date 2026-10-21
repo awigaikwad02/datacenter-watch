@@ -6,7 +6,7 @@
   const STATUSES = Object.keys(R.STATUS);
   const f = { q: "", statuses: new Set(STATUSES), company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
   let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
-  R.shell("atlas.html", "Project Atlas");
+  R.shell("/atlas", "Project Atlas");
   $("#fitBtn").innerHTML = R.icon("focus");
   $("#sheetClose").innerHTML = R.icon("x");
 
@@ -133,7 +133,7 @@
       '<button class="icon-btn close" id="closeDetail" aria-label="Close project details">' + R.icon("x") + "</button></div>" +
       '<div class="detail-body"><p>' + R.esc(R.summary(p)) + "</p>" +
       '<div class="kv">' + kv.map((k) => "<div><span>" + k[0] + "</span><b>" + R.esc(k[1]) + "</b></div>").join("") + "</div>" +
-      (p.companies.length ? '<div><h3 class="sub-h">Companies</h3><div class="news-tags">' + p.companies.map((c) => '<a class="tag plain" href="companies.html#' + encodeURIComponent(c) + '">' + R.icon("building") + R.esc(c) + "</a>").join("") + "</div></div>" : "") +
+      (p.companies.length ? '<div><h3 class="sub-h">Companies</h3><div class="news-tags">' + p.companies.map((c) => '<a class="tag plain" href="/companies#' + encodeURIComponent(c) + '">' + R.icon("building") + R.esc(c) + "</a>").join("") + "</div></div>" : "") +
       (p.timeline && p.timeline.length ? '<div><h3 class="sub-h">Milestones</h3><ol class="milestones">' + p.timeline.slice().sort((a, b) => String(a.date).localeCompare(String(b.date))).map((m) =>
         '<li><time datetime="' + R.esc(m.date) + '">' + R.esc(R.fmtDate(m.date, m.date.length === 7 ? { month: "short", year: "numeric" } : undefined)) + "</time><div><span>" + R.esc(m.event) + "</span>" +
         (m.url ? '<br><a href="' + R.esc(m.url) + '" target="_blank" rel="noopener">' + R.esc(new URL(m.url).hostname.replace(/^www\./, "")) + " →</a>" : "") + "</div></li>").join("") + "</ol></div>" : "") +
@@ -144,7 +144,7 @@
       '<div><h3 class="sub-h">Related headlines</h3>' + (rel.length ? '<div class="headlines">' + rel.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>" : '<p class="co-empty">No matching headlines in the last 90 days.</p>') + "</div>" +
       '<div class="detail-actions">' + (source ? '<a class="btn sm" href="' + R.esc(source) + '" target="_blank" rel="noopener">' + R.icon("external") + "Latest source</a>" : "") +
       '<button class="btn sm" id="shareProject">' + R.icon("share") + "Share</button></div>" +
-      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from a headline that names only a state, so it is counted in the state's approximate bubble rather than pinned." : "Detected automatically from a headline. The pin sits at the place named, which can be off.")) + ' <a href="methodology.html#report">Report a wrong pin</a>.</div></div>';
+      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from a headline that names only a state, so it is counted in the state's approximate bubble rather than pinned." : "Detected automatically from a headline. The pin sits at the place named, which can be off.")) + ' <a href="/methodology#report">Report a wrong pin</a>.</div></div>';
   }
   function setPin(id, on) {
     const p = all.find((x) => x.id === id), m = markers[id];

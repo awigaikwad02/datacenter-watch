@@ -5,7 +5,7 @@
   const D = RR, R = RR, $ = (s) => document.querySelector(s);
   const HOME_KWH = 10800; // average U.S. household electricity use per year
   const fmt = (n, d) => Number(n).toLocaleString("en-US", { maximumFractionDigits: d || 0 });
-  R.shell("learn.html", "Learn");
+  R.shell("/learn", "Learn");
 
   // ---------- Modules: accordion, depth toggle, progress, navigation ----------
   const mods = [...document.querySelectorAll(".module")];

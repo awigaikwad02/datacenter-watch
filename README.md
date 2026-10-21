@@ -15,6 +15,9 @@ Live site: https://therackreport.org/ (custom domain on GitHub Pages; the root `
 | `learn.html` | Learn | Ten modules from beginner to advanced with diagrams, calculators, quizzes and saved progress |
 | `methodology.html` | Methodology | Sources, tagging, detection, limitations, how to report an error |
 | `projects.html` | Redirect | Sends old map links to the Atlas |
+| `404.html` | Not found | Served by Pages for any missing path; links to the six pages |
+
+Links use clean, root-relative URLs (`/newsroom`, `/atlas`, `/` for the Overview); GitHub Pages serves `newsroom.html` for `/newsroom`. The `.html` files keep their names.
 | `robots.txt`, `sitemap.xml` | SEO | Crawl rules and the six pages on https://therackreport.org |
 
 Shared code: `assets/style.css` (all design tokens and components), `assets/app.js` (shell, loader, data loading, helpers), `assets/companies.js` (one-line company descriptions). Each page has its own script in `assets/`. Leaflet and Leaflet.markercluster load from unpkg with subresource integrity; map tiles are OpenStreetMap's standard tiles, darkened with a CSS filter (no API key needed).
