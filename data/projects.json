@@ -1,261 +1,801 @@
 {
-  "_readme": "Curated project list shown on the map with filled markers. Add or edit entries by hand. Required: name, lat, lon, status (Announced | Under construction | Operational). Optional: company, location, capacity_mw, investment_usd_b, announced (YYYY-MM), notes, source_url. The entries below are starting points from widely reported public news as of 2025 and should be checked against current sources; set verified to true once you have.",
-  "projects": [
-    {
-      "name": "Stargate Abilene",
-      "company": "OpenAI, Oracle, Crusoe",
-      "location": "Abilene, Texas, US",
-      "lat": 32.45, "lon": -99.73,
-      "status": "Under construction",
-      "capacity_mw": 1200,
-      "announced": "2025-01",
-      "notes": "Flagship Stargate campus, first buildings energized in 2025 with more under way.",
-      "verified": false
-    },
-    {
-      "name": "Hyperion",
-      "company": "Meta",
-      "location": "Richland Parish, Louisiana, US",
-      "lat": 32.40, "lon": -91.60,
-      "status": "Under construction",
-      "capacity_mw": 2000,
-      "investment_usd_b": 10,
-      "announced": "2024-12",
-      "notes": "Planned to scale toward 5 GW over time, served by new gas generation from the local utility.",
-      "verified": false
-    },
-    {
-      "name": "Prometheus",
-      "company": "Meta",
-      "location": "New Albany, Ohio, US",
-      "lat": 40.08, "lon": -82.81,
-      "status": "Under construction",
-      "capacity_mw": 1000,
-      "announced": "2025-07",
-      "notes": "Roughly 1 GW AI cluster expected online in 2026.",
-      "verified": false
-    },
-    {
-      "name": "Colossus",
-      "company": "xAI",
-      "location": "Memphis, Tennessee, US",
-      "lat": 35.05, "lon": -90.15,
-      "status": "Operational",
-      "announced": "2024-06",
-      "notes": "Converted factory brought online in months; a second site in the area is being built out.",
-      "verified": false
-    },
-    {
-      "name": "Fairwater",
-      "company": "Microsoft",
-      "location": "Mount Pleasant, Wisconsin, US",
-      "lat": 42.70, "lon": -87.89,
-      "status": "Under construction",
-      "investment_usd_b": 7,
-      "announced": "2024-05",
-      "notes": "AI datacenter on the former Foxconn site, first phase due online in 2026 with a second phase announced.",
-      "verified": false
-    },
-    {
-      "name": "Project Rainier",
-      "company": "Amazon Web Services",
-      "location": "New Carlisle, Indiana, US",
-      "lat": 41.70, "lon": -86.17,
-      "status": "Under construction",
-      "investment_usd_b": 11,
-      "announced": "2024-04",
-      "notes": "Large campus tied to AI training capacity; first buildings in service in 2025.",
-      "verified": false
-    },
-    {
-      "name": "Frontier",
-      "company": "Vantage Data Centers",
-      "location": "Shackelford County, Texas, US",
-      "lat": 32.74, "lon": -99.35,
-      "status": "Under construction",
-      "capacity_mw": 1400,
-      "investment_usd_b": 25,
-      "announced": "2025-07",
-      "notes": "Named as one of the Stargate expansion sites with Oracle.",
-      "verified": false
-    },
-    {
-      "name": "Stargate Doña Ana County",
-      "company": "OpenAI, Oracle",
-      "location": "Doña Ana County, New Mexico, US",
-      "lat": 32.35, "lon": -106.83,
-      "status": "Announced",
-      "announced": "2025-09",
-      "notes": "One of the five Stargate sites announced in September 2025.",
-      "verified": false
-    },
-    {
-      "name": "Stargate Lordstown",
-      "company": "SoftBank, OpenAI",
-      "location": "Lordstown, Ohio, US",
-      "lat": 41.16, "lon": -80.86,
-      "status": "Under construction",
-      "announced": "2025-09",
-      "notes": "Former auto plant site being converted for AI compute.",
-      "verified": false
-    },
-    {
-      "name": "Stargate Milam County",
-      "company": "SoftBank, OpenAI",
-      "location": "Milam County, Texas, US",
-      "lat": 30.79, "lon": -96.98,
-      "status": "Announced",
-      "announced": "2025-09",
-      "verified": false
-    },
-    {
-      "name": "Stargate Michigan",
-      "company": "Oracle, Related Digital",
-      "location": "Saline Township, Michigan, US",
-      "lat": 42.14, "lon": -83.84,
-      "status": "Announced",
-      "capacity_mw": 1400,
-      "announced": "2025-10",
-      "verified": false
-    },
-    {
-      "name": "AWS Richmond County",
-      "company": "Amazon Web Services",
-      "location": "Richmond County, North Carolina, US",
-      "lat": 35.00, "lon": -79.75,
-      "status": "Announced",
-      "investment_usd_b": 10,
-      "announced": "2025-06",
-      "verified": false
-    },
-    {
-      "name": "AWS Pennsylvania",
-      "company": "Amazon Web Services",
-      "location": "Luzerne County, Pennsylvania, US",
-      "lat": 41.18, "lon": -75.99,
-      "status": "Announced",
-      "investment_usd_b": 20,
-      "announced": "2025-06",
-      "notes": "Two campuses, Salem Township and Falls Township; the Salem site sits next to a nuclear plant.",
-      "verified": false
-    },
-    {
-      "name": "AWS Mississippi",
-      "company": "Amazon Web Services",
-      "location": "Madison County, Mississippi, US",
-      "lat": 32.62, "lon": -90.03,
-      "status": "Under construction",
-      "investment_usd_b": 10,
-      "announced": "2024-01",
-      "verified": false
-    },
-    {
-      "name": "Google Oklahoma",
-      "company": "Google",
-      "location": "Pryor, Oklahoma, US",
-      "lat": 36.31, "lon": -95.32,
-      "status": "Under construction",
-      "investment_usd_b": 9,
-      "announced": "2025-08",
-      "notes": "Expansion of the existing Pryor campus plus a new Stillwater site.",
-      "verified": false
-    },
-    {
-      "name": "Google Fort Wayne",
-      "company": "Google",
-      "location": "Fort Wayne, Indiana, US",
-      "lat": 41.08, "lon": -85.14,
-      "status": "Under construction",
-      "investment_usd_b": 2,
-      "announced": "2024-04",
-      "verified": false
-    },
-    {
-      "name": "Google Kansas City",
-      "company": "Google",
-      "location": "Kansas City, Missouri, US",
-      "lat": 39.10, "lon": -94.58,
-      "status": "Under construction",
-      "investment_usd_b": 1,
-      "announced": "2024-06",
-      "verified": false
-    },
-    {
-      "name": "Crusoe Cheyenne",
-      "company": "Crusoe, Tallgrass",
-      "location": "Cheyenne, Wyoming, US",
-      "lat": 41.14, "lon": -104.82,
-      "status": "Announced",
-      "capacity_mw": 1800,
-      "announced": "2025-07",
-      "notes": "Powered by on-site gas generation with plans for added renewables.",
-      "verified": false
-    },
-    {
-      "name": "Project Matador",
-      "company": "Fermi America",
-      "location": "Amarillo, Texas, US",
-      "lat": 35.22, "lon": -101.83,
-      "status": "Announced",
-      "capacity_mw": 11000,
-      "announced": "2025-06",
-      "notes": "Very large planned campus combining gas, solar and proposed nuclear; early stage.",
-      "verified": false
-    },
-    {
-      "name": "QTS Fayetteville",
-      "company": "QTS",
-      "location": "Fayetteville, Georgia, US",
-      "lat": 33.45, "lon": -84.46,
-      "status": "Under construction",
-      "announced": "2022-06",
-      "notes": "Multi-building hyperscale campus south of Atlanta.",
-      "verified": false
-    },
-    {
-      "name": "Data Center Alley",
-      "company": "Equinix, Digital Realty, AWS, Microsoft, Google and others",
-      "location": "Ashburn, Virginia, US",
-      "lat": 39.04, "lon": -77.49,
-      "status": "Operational",
-      "notes": "Loudoun County, Virginia: the largest concentration of data centers in the world, still expanding.",
-      "verified": true
-    },
-    {
-      "name": "Google The Dalles",
-      "company": "Google",
-      "location": "The Dalles, Oregon, US",
-      "lat": 45.59, "lon": -121.18,
-      "status": "Operational",
-      "notes": "One of Google's first large data centers, opened in 2006, expanded many times since.",
-      "verified": true
-    },
-    {
-      "name": "Microsoft Quincy",
-      "company": "Microsoft",
-      "location": "Quincy, Washington, US",
-      "lat": 47.23, "lon": -119.85,
-      "status": "Operational",
-      "notes": "Hydropower-fed campus on the Columbia River, operating since 2007.",
-      "verified": true
-    },
-    {
-      "name": "Meta Prineville",
-      "company": "Meta",
-      "location": "Prineville, Oregon, US",
-      "lat": 44.30, "lon": -120.83,
-      "status": "Operational",
-      "notes": "Meta's first owned data center, opened in 2011 and expanded many times.",
-      "verified": true
-    },
-    {
-      "name": "Google Council Bluffs",
-      "company": "Google",
-      "location": "Council Bluffs, Iowa, US",
-      "lat": 41.26, "lon": -95.86,
-      "status": "Operational",
-      "notes": "Long-running Google campus with multi-billion dollar expansions.",
-      "verified": true
-    }
-  ]
+ "_readme": "Curated U.S. project list shown on the map. Required: id, name, lat, lon, state (two-letter), status (Announced | Under construction | Operational). companies lists slugs from data/companies.json. Optional: company (display text), location, capacity_mw, investment_usd_b, announced (YYYY-MM), notes, source_url. Entries come from public reporting and are flagged verified: false until checked against current sources.",
+ "projects": [
+  {
+   "id": "stargate-abilene",
+   "name": "Stargate Abilene",
+   "company": "OpenAI, Oracle, Crusoe",
+   "companies": [
+    "openai",
+    "oracle",
+    "crusoe"
+   ],
+   "location": "Abilene, Texas, US",
+   "state": "TX",
+   "lat": 32.45,
+   "lon": -99.73,
+   "status": "Under construction",
+   "capacity_mw": 1200,
+   "announced": "2025-01",
+   "notes": "Flagship Stargate campus, first buildings energized in 2025 with more under way.",
+   "verified": false
+  },
+  {
+   "id": "hyperion",
+   "name": "Hyperion",
+   "company": "Meta",
+   "companies": [
+    "meta"
+   ],
+   "location": "Richland Parish, Louisiana, US",
+   "state": "LA",
+   "lat": 32.4,
+   "lon": -91.6,
+   "status": "Under construction",
+   "capacity_mw": 2000,
+   "investment_usd_b": 10,
+   "announced": "2024-12",
+   "notes": "Planned to scale toward 5 GW over time, served by new gas generation from the local utility.",
+   "verified": false
+  },
+  {
+   "id": "prometheus",
+   "name": "Prometheus",
+   "company": "Meta",
+   "companies": [
+    "meta"
+   ],
+   "location": "New Albany, Ohio, US",
+   "state": "OH",
+   "lat": 40.08,
+   "lon": -82.81,
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "announced": "2025-07",
+   "notes": "Roughly 1 GW AI cluster expected online in 2026.",
+   "verified": false
+  },
+  {
+   "id": "colossus",
+   "name": "Colossus",
+   "company": "xAI",
+   "companies": [
+    "xai"
+   ],
+   "location": "Memphis, Tennessee, US",
+   "state": "TN",
+   "lat": 35.05,
+   "lon": -90.15,
+   "status": "Operational",
+   "announced": "2024-06",
+   "notes": "Converted factory brought online in months; a second site in the area is being built out.",
+   "verified": false
+  },
+  {
+   "id": "fairwater",
+   "name": "Fairwater",
+   "company": "Microsoft",
+   "companies": [
+    "microsoft"
+   ],
+   "location": "Mount Pleasant, Wisconsin, US",
+   "state": "WI",
+   "lat": 42.7,
+   "lon": -87.89,
+   "status": "Under construction",
+   "investment_usd_b": 7,
+   "announced": "2024-05",
+   "notes": "AI datacenter on the former Foxconn site, first phase due online in 2026 with a second phase announced.",
+   "verified": false
+  },
+  {
+   "id": "project-rainier",
+   "name": "Project Rainier",
+   "company": "Amazon Web Services",
+   "companies": [
+    "amazon"
+   ],
+   "location": "New Carlisle, Indiana, US",
+   "state": "IN",
+   "lat": 41.7,
+   "lon": -86.17,
+   "status": "Under construction",
+   "investment_usd_b": 11,
+   "announced": "2024-04",
+   "notes": "Large campus tied to AI training capacity; first buildings in service in 2025.",
+   "verified": false
+  },
+  {
+   "id": "frontier",
+   "name": "Frontier",
+   "company": "Vantage Data Centers",
+   "companies": [
+    "vantage"
+   ],
+   "location": "Shackelford County, Texas, US",
+   "state": "TX",
+   "lat": 32.74,
+   "lon": -99.35,
+   "status": "Under construction",
+   "capacity_mw": 1400,
+   "investment_usd_b": 25,
+   "announced": "2025-07",
+   "notes": "Named as one of the Stargate expansion sites with Oracle. Reported as a Stargate site for OpenAI and Oracle.",
+   "verified": false
+  },
+  {
+   "id": "stargate-do-a-ana-county",
+   "name": "Stargate Doña Ana County",
+   "company": "OpenAI, Oracle",
+   "companies": [
+    "openai",
+    "oracle"
+   ],
+   "location": "Doña Ana County, New Mexico, US",
+   "state": "NM",
+   "lat": 32.35,
+   "lon": -106.83,
+   "status": "Announced",
+   "announced": "2025-09",
+   "notes": "One of the five Stargate sites announced in September 2025.",
+   "verified": false
+  },
+  {
+   "id": "stargate-lordstown",
+   "name": "Stargate Lordstown",
+   "company": "SoftBank, OpenAI",
+   "companies": [
+    "softbank",
+    "openai"
+   ],
+   "location": "Lordstown, Ohio, US",
+   "state": "OH",
+   "lat": 41.16,
+   "lon": -80.86,
+   "status": "Under construction",
+   "announced": "2025-09",
+   "notes": "Former auto plant site being converted for AI compute.",
+   "verified": false
+  },
+  {
+   "id": "stargate-milam-county",
+   "name": "Stargate Milam County",
+   "company": "SoftBank, OpenAI",
+   "companies": [
+    "softbank",
+    "openai"
+   ],
+   "location": "Milam County, Texas, US",
+   "state": "TX",
+   "lat": 30.79,
+   "lon": -96.98,
+   "status": "Announced",
+   "announced": "2025-09",
+   "verified": false
+  },
+  {
+   "id": "stargate-michigan",
+   "name": "Stargate Michigan",
+   "company": "Oracle, Related Digital",
+   "companies": [
+    "oracle",
+    "related-digital"
+   ],
+   "location": "Saline Township, Michigan, US",
+   "state": "MI",
+   "lat": 42.14,
+   "lon": -83.84,
+   "status": "Announced",
+   "capacity_mw": 1400,
+   "announced": "2025-10",
+   "verified": false
+  },
+  {
+   "id": "aws-richmond-county",
+   "name": "AWS Richmond County",
+   "company": "Amazon Web Services",
+   "companies": [
+    "amazon"
+   ],
+   "location": "Richmond County, North Carolina, US",
+   "state": "NC",
+   "lat": 35.0,
+   "lon": -79.75,
+   "status": "Announced",
+   "investment_usd_b": 10,
+   "announced": "2025-06",
+   "verified": false
+  },
+  {
+   "id": "aws-pennsylvania",
+   "name": "AWS Pennsylvania",
+   "company": "Amazon Web Services",
+   "companies": [
+    "amazon"
+   ],
+   "location": "Luzerne County, Pennsylvania, US",
+   "state": "PA",
+   "lat": 41.18,
+   "lon": -75.99,
+   "status": "Announced",
+   "investment_usd_b": 20,
+   "announced": "2025-06",
+   "notes": "Two campuses, Salem Township and Falls Township; the Salem site sits next to a nuclear plant.",
+   "verified": false
+  },
+  {
+   "id": "aws-mississippi",
+   "name": "AWS Mississippi",
+   "company": "Amazon Web Services",
+   "companies": [
+    "amazon"
+   ],
+   "location": "Madison County, Mississippi, US",
+   "state": "MS",
+   "lat": 32.62,
+   "lon": -90.03,
+   "status": "Under construction",
+   "investment_usd_b": 10,
+   "announced": "2024-01",
+   "verified": false
+  },
+  {
+   "id": "google-oklahoma",
+   "name": "Google Oklahoma",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Pryor, Oklahoma, US",
+   "state": "OK",
+   "lat": 36.31,
+   "lon": -95.32,
+   "status": "Under construction",
+   "investment_usd_b": 9,
+   "announced": "2025-08",
+   "notes": "Expansion of the existing Pryor campus plus a new Stillwater site.",
+   "verified": false
+  },
+  {
+   "id": "google-fort-wayne",
+   "name": "Google Fort Wayne",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Fort Wayne, Indiana, US",
+   "state": "IN",
+   "lat": 41.08,
+   "lon": -85.14,
+   "status": "Under construction",
+   "investment_usd_b": 2,
+   "announced": "2024-04",
+   "verified": false
+  },
+  {
+   "id": "google-kansas-city",
+   "name": "Google Kansas City",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Kansas City, Missouri, US",
+   "state": "MO",
+   "lat": 39.1,
+   "lon": -94.58,
+   "status": "Under construction",
+   "investment_usd_b": 1,
+   "announced": "2024-06",
+   "verified": false
+  },
+  {
+   "id": "crusoe-cheyenne",
+   "name": "Crusoe Cheyenne",
+   "company": "Crusoe, Tallgrass",
+   "companies": [
+    "crusoe",
+    "tallgrass"
+   ],
+   "location": "Cheyenne, Wyoming, US",
+   "state": "WY",
+   "lat": 41.14,
+   "lon": -104.82,
+   "status": "Announced",
+   "capacity_mw": 1800,
+   "announced": "2025-07",
+   "notes": "Powered by on-site gas generation with plans for added renewables.",
+   "verified": false
+  },
+  {
+   "id": "project-matador",
+   "name": "Project Matador",
+   "company": "Fermi America",
+   "companies": [
+    "fermi"
+   ],
+   "location": "Amarillo, Texas, US",
+   "state": "TX",
+   "lat": 35.22,
+   "lon": -101.83,
+   "status": "Announced",
+   "capacity_mw": 11000,
+   "announced": "2025-06",
+   "notes": "Very large planned campus combining gas, solar and proposed nuclear; early stage.",
+   "verified": false
+  },
+  {
+   "id": "qts-fayetteville",
+   "name": "QTS Fayetteville",
+   "company": "QTS",
+   "companies": [
+    "qts"
+   ],
+   "location": "Fayetteville, Georgia, US",
+   "state": "GA",
+   "lat": 33.45,
+   "lon": -84.46,
+   "status": "Under construction",
+   "announced": "2022-06",
+   "notes": "Multi-building hyperscale campus south of Atlanta.",
+   "verified": false
+  },
+  {
+   "id": "data-center-alley",
+   "name": "Data Center Alley",
+   "company": "Equinix, Digital Realty, AWS, Microsoft, Google and others",
+   "companies": [
+    "equinix",
+    "digital-realty",
+    "amazon",
+    "microsoft",
+    "google"
+   ],
+   "location": "Ashburn, Virginia, US",
+   "state": "VA",
+   "lat": 39.04,
+   "lon": -77.49,
+   "status": "Operational",
+   "notes": "Loudoun County, Virginia: the largest concentration of data centers in the world, still expanding.",
+   "verified": true
+  },
+  {
+   "id": "google-the-dalles",
+   "name": "Google The Dalles",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "The Dalles, Oregon, US",
+   "state": "OR",
+   "lat": 45.59,
+   "lon": -121.18,
+   "status": "Operational",
+   "notes": "One of Google's first large data centers, opened in 2006, expanded many times since.",
+   "verified": true
+  },
+  {
+   "id": "microsoft-quincy",
+   "name": "Microsoft Quincy",
+   "company": "Microsoft",
+   "companies": [
+    "microsoft"
+   ],
+   "location": "Quincy, Washington, US",
+   "state": "WA",
+   "lat": 47.23,
+   "lon": -119.85,
+   "status": "Operational",
+   "notes": "Hydropower-fed campus on the Columbia River, operating since 2007.",
+   "verified": true
+  },
+  {
+   "id": "meta-prineville",
+   "name": "Meta Prineville",
+   "company": "Meta",
+   "companies": [
+    "meta"
+   ],
+   "location": "Prineville, Oregon, US",
+   "state": "OR",
+   "lat": 44.3,
+   "lon": -120.83,
+   "status": "Operational",
+   "notes": "Meta's first owned data center, opened in 2011 and expanded many times.",
+   "verified": true
+  },
+  {
+   "id": "google-council-bluffs",
+   "name": "Google Council Bluffs",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Council Bluffs, Iowa, US",
+   "state": "IA",
+   "lat": 41.26,
+   "lon": -95.86,
+   "status": "Operational",
+   "notes": "Long-running Google campus with multi-billion dollar expansions.",
+   "verified": true
+  },
+  {
+   "id": "colossus-2",
+   "name": "Colossus 2",
+   "company": "xAI",
+   "companies": [
+    "xai"
+   ],
+   "location": "Memphis, Tennessee, US",
+   "state": "TN",
+   "lat": 35.01,
+   "lon": -89.98,
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "announced": "2025-03",
+   "notes": "Second xAI supercomputer campus in south Memphis, with power plant work across the state line in Southaven, Mississippi. Capacity is the reported target.",
+   "verified": false
+  },
+  {
+   "id": "stargate-port-washington-lighthouse",
+   "name": "Stargate Port Washington (Lighthouse)",
+   "company": "Vantage Data Centers, OpenAI, Oracle",
+   "companies": [
+    "vantage",
+    "openai",
+    "oracle"
+   ],
+   "location": "Port Washington, Wisconsin, US",
+   "state": "WI",
+   "lat": 43.39,
+   "lon": -87.88,
+   "status": "Announced",
+   "capacity_mw": 1000,
+   "announced": "2025-10",
+   "notes": "Stargate site developed by Vantage for OpenAI and Oracle, reported at close to a gigawatt.",
+   "verified": false
+  },
+  {
+   "id": "meta-el-paso",
+   "name": "Meta El Paso",
+   "company": "Meta",
+   "companies": [
+    "meta"
+   ],
+   "location": "El Paso, Texas, US",
+   "state": "TX",
+   "lat": 31.76,
+   "lon": -106.3,
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "announced": "2025-10",
+   "notes": "AI-optimized campus reported to scale to about 1 GW.",
+   "verified": false
+  },
+  {
+   "id": "fairwater-atlanta",
+   "name": "Fairwater Atlanta",
+   "company": "Microsoft",
+   "companies": [
+    "microsoft"
+   ],
+   "location": "Atlanta, Georgia, US",
+   "state": "GA",
+   "lat": 33.75,
+   "lon": -84.39,
+   "status": "Operational",
+   "announced": "2025-11",
+   "notes": "Second site in Microsoft's Fairwater AI datacenter family, linked to the Wisconsin site over a dedicated AI WAN.",
+   "verified": false
+  },
+  {
+   "id": "coreweave-lancaster",
+   "name": "CoreWeave Lancaster",
+   "company": "CoreWeave",
+   "companies": [
+    "coreweave"
+   ],
+   "location": "Lancaster, Pennsylvania, US",
+   "state": "PA",
+   "lat": 40.04,
+   "lon": -76.31,
+   "status": "Announced",
+   "capacity_mw": 100,
+   "investment_usd_b": 6,
+   "announced": "2025-07",
+   "notes": "Initial 100 MW with room to expand toward 300 MW.",
+   "verified": false
+  },
+  {
+   "id": "polaris-forge-1",
+   "name": "Polaris Forge 1",
+   "company": "Applied Digital, CoreWeave",
+   "companies": [
+    "applied-digital",
+    "coreweave"
+   ],
+   "location": "Ellendale, North Dakota, US",
+   "state": "ND",
+   "lat": 46.0,
+   "lon": -98.53,
+   "status": "Under construction",
+   "capacity_mw": 400,
+   "announced": "2024-11",
+   "notes": "AI factory campus leased to CoreWeave; first buildings energized in 2025.",
+   "verified": false
+  },
+  {
+   "id": "google-west-memphis",
+   "name": "Google West Memphis",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "West Memphis, Arkansas, US",
+   "state": "AR",
+   "lat": 35.15,
+   "lon": -90.18,
+   "status": "Announced",
+   "investment_usd_b": 4,
+   "announced": "2025-10",
+   "notes": "Google's first data center in Arkansas.",
+   "verified": false
+  },
+  {
+   "id": "amazon-georgia",
+   "name": "Amazon Georgia",
+   "company": "Amazon Web Services",
+   "companies": [
+    "amazon"
+   ],
+   "location": "Butts County, Georgia, US",
+   "state": "GA",
+   "lat": 33.29,
+   "lon": -83.97,
+   "status": "Announced",
+   "investment_usd_b": 11,
+   "announced": "2025-01",
+   "notes": "Campuses planned in Butts and Douglas counties.",
+   "verified": false
+  },
+  {
+   "id": "switch-citadel-campus",
+   "name": "Switch Citadel Campus",
+   "company": "Switch",
+   "companies": [
+    "switch"
+   ],
+   "location": "Storey County, Nevada, US",
+   "state": "NV",
+   "lat": 39.53,
+   "lon": -119.47,
+   "status": "Operational",
+   "notes": "Large colocation campus at the Tahoe-Reno Industrial Center.",
+   "verified": false
+  },
+  {
+   "id": "switch-las-vegas-core-campus",
+   "name": "Switch Las Vegas Core Campus",
+   "company": "Switch",
+   "companies": [
+    "switch"
+   ],
+   "location": "Las Vegas, Nevada, US",
+   "state": "NV",
+   "lat": 36.07,
+   "lon": -115.17,
+   "status": "Operational",
+   "notes": "Switch's original multi-building campus.",
+   "verified": false
+  },
+  {
+   "id": "meta-altoona",
+   "name": "Meta Altoona",
+   "company": "Meta",
+   "companies": [
+    "meta"
+   ],
+   "location": "Altoona, Iowa, US",
+   "state": "IA",
+   "lat": 41.65,
+   "lon": -93.47,
+   "status": "Operational",
+   "notes": "Multi-building Meta campus outside Des Moines.",
+   "verified": false
+  },
+  {
+   "id": "meta-los-lunas",
+   "name": "Meta Los Lunas",
+   "company": "Meta",
+   "companies": [
+    "meta"
+   ],
+   "location": "Los Lunas, New Mexico, US",
+   "state": "NM",
+   "lat": 34.81,
+   "lon": -106.73,
+   "status": "Operational",
+   "notes": "Meta campus south of Albuquerque.",
+   "verified": false
+  },
+  {
+   "id": "meta-fort-worth",
+   "name": "Meta Fort Worth",
+   "company": "Meta",
+   "companies": [
+    "meta"
+   ],
+   "location": "Fort Worth, Texas, US",
+   "state": "TX",
+   "lat": 32.96,
+   "lon": -97.32,
+   "status": "Operational",
+   "notes": "Meta campus in north Fort Worth.",
+   "verified": false
+  },
+  {
+   "id": "apple-maiden",
+   "name": "Apple Maiden",
+   "company": "Apple",
+   "companies": [
+    "apple"
+   ],
+   "location": "Maiden, North Carolina, US",
+   "state": "NC",
+   "lat": 35.58,
+   "lon": -81.21,
+   "status": "Operational",
+   "notes": "Apple's North Carolina data center, paired with large solar arrays.",
+   "verified": false
+  },
+  {
+   "id": "apple-mesa",
+   "name": "Apple Mesa",
+   "company": "Apple",
+   "companies": [
+    "apple"
+   ],
+   "location": "Mesa, Arizona, US",
+   "state": "AZ",
+   "lat": 33.41,
+   "lon": -111.62,
+   "status": "Operational",
+   "notes": "Global command center and data center in a former manufacturing plant.",
+   "verified": false
+  },
+  {
+   "id": "microsoft-san-antonio",
+   "name": "Microsoft San Antonio",
+   "company": "Microsoft",
+   "companies": [
+    "microsoft"
+   ],
+   "location": "San Antonio, Texas, US",
+   "state": "TX",
+   "lat": 29.36,
+   "lon": -98.68,
+   "status": "Operational",
+   "notes": "Azure South Central US region campuses.",
+   "verified": false
+  },
+  {
+   "id": "microsoft-west-des-moines",
+   "name": "Microsoft West Des Moines",
+   "company": "Microsoft",
+   "companies": [
+    "microsoft"
+   ],
+   "location": "West Des Moines, Iowa, US",
+   "state": "IA",
+   "lat": 41.55,
+   "lon": -93.8,
+   "status": "Operational",
+   "notes": "Azure Central US region campuses.",
+   "verified": false
+  },
+  {
+   "id": "google-midlothian",
+   "name": "Google Midlothian",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Midlothian, Texas, US",
+   "state": "TX",
+   "lat": 32.48,
+   "lon": -96.99,
+   "status": "Operational",
+   "notes": "Google data center south of Dallas.",
+   "verified": false
+  },
+  {
+   "id": "google-papillion",
+   "name": "Google Papillion",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Papillion, Nebraska, US",
+   "state": "NE",
+   "lat": 41.15,
+   "lon": -96.04,
+   "status": "Operational",
+   "notes": "Google data center near Omaha.",
+   "verified": false
+  },
+  {
+   "id": "google-berkeley-county",
+   "name": "Google Berkeley County",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Moncks Corner, South Carolina, US",
+   "state": "SC",
+   "lat": 33.07,
+   "lon": -80.01,
+   "status": "Operational",
+   "notes": "Long-running Google campus in Berkeley County.",
+   "verified": false
+  },
+  {
+   "id": "google-henderson",
+   "name": "Google Henderson",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Henderson, Nevada, US",
+   "state": "NV",
+   "lat": 36.03,
+   "lon": -114.98,
+   "status": "Operational",
+   "notes": "Google data center near Las Vegas.",
+   "verified": false
+  },
+  {
+   "id": "google-douglas-county",
+   "name": "Google Douglas County",
+   "company": "Google",
+   "companies": [
+    "google"
+   ],
+   "location": "Lithia Springs, Georgia, US",
+   "state": "GA",
+   "lat": 33.78,
+   "lon": -84.66,
+   "status": "Operational",
+   "notes": "Google campus west of Atlanta.",
+   "verified": false
+  },
+  {
+   "id": "aws-central-ohio",
+   "name": "AWS Central Ohio",
+   "company": "Amazon Web Services",
+   "companies": [
+    "amazon"
+   ],
+   "location": "Hilliard, Ohio, US",
+   "state": "OH",
+   "lat": 40.03,
+   "lon": -83.16,
+   "status": "Operational",
+   "notes": "Part of the AWS US East (Ohio) region around Columbus.",
+   "verified": false
+  },
+  {
+   "id": "aws-boardman",
+   "name": "AWS Boardman",
+   "company": "Amazon Web Services",
+   "companies": [
+    "amazon"
+   ],
+   "location": "Boardman, Oregon, US",
+   "state": "OR",
+   "lat": 45.84,
+   "lon": -119.7,
+   "status": "Operational",
+   "notes": "Part of the AWS US West (Oregon) region.",
+   "verified": false
+  }
+ ]
 }

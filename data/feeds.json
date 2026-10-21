@@ -1,5 +1,5 @@
 {
-  "_readme": "Edit this file to change what the site pulls. google_news entries are Google News RSS searches (query syntax = Google News search). google_alerts entries are RSS URLs from google.com/alerts (create an alert, Show options, Deliver to: RSS feed, then copy the feed link). Lines starting with # are ignored.",
+  "_readme": "Edit this file to change what the site pulls. google_news entries are Google News RSS searches (query syntax = Google News search), always run with the U.S. edition (gl=US). google_alerts entries are RSS URLs from google.com/alerts (create an alert, Show options, Deliver to: RSS feed, then copy the feed link). Lines starting with # are ignored. Stories about other countries are filtered out by scripts/fetch_news.py.",
   "google_news": [
     { "name": "Data center",              "query": "\"data center\" when:7d" },
     { "name": "Data center announced",    "query": "\"data center\" (announces OR announced OR plans OR proposed OR unveils) when:7d" },
@@ -7,7 +7,12 @@
     { "name": "AI and hyperscale",        "query": "(\"AI data center\" OR \"hyperscale data center\" OR \"data center campus\") when:7d" },
     { "name": "Data center power",        "query": "\"data center\" (power OR grid OR megawatt OR gigawatt OR nuclear OR utility) when:7d" },
     { "name": "Data center policy",       "query": "\"data center\" (zoning OR council OR moratorium OR residents OR \"tax breaks\") when:7d" },
-    { "name": "Data centre (international)", "query": "\"data centre\" when:7d" }
+    { "name": "U.S. grid operators",      "query": "\"data center\" (ERCOT OR PJM OR MISO OR FERC OR \"Southwest Power Pool\") when:7d" },
+    { "name": "Local approvals",          "query": "\"data center\" (county OR township OR \"planning commission\" OR rezoning) when:7d" },
+    { "name": "South and Texas",          "query": "\"data center\" (Texas OR Georgia OR Louisiana OR Mississippi OR Tennessee OR Alabama OR Arkansas OR Oklahoma) when:7d" },
+    { "name": "Mid-Atlantic and Southeast","query": "\"data center\" (Virginia OR \"North Carolina\" OR \"South Carolina\" OR Pennsylvania OR Maryland OR \"New Jersey\") when:7d" },
+    { "name": "Midwest",                  "query": "\"data center\" (Ohio OR Indiana OR Illinois OR Wisconsin OR Michigan OR Minnesota OR Iowa OR Missouri OR Nebraska OR Kansas) when:7d" },
+    { "name": "West",                     "query": "\"data center\" (Arizona OR Nevada OR Utah OR Oregon OR Washington OR Wyoming OR \"New Mexico\" OR Idaho OR Colorado OR \"North Dakota\") when:7d" }
   ],
   "google_alerts": [
     "# Paste Google Alerts RSS feed URLs here, one per line, like:",

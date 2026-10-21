@@ -1,337 +1,2121 @@
 {
-  "_readme": "name: [lat, lon, level, display]. level 3 = city/county, 2 = state/province, 1 = country/region. Matching is case sensitive on whole words. Two-letter state codes only match after a comma, e.g. 'Abilene, TX'. Add places freely.",
-
-  "Alabama": [32.8, -86.8, 2, "Alabama, US"],
-  "Alaska": [64.2, -152.5, 2, "Alaska, US"],
-  "Arizona": [34.3, -111.7, 2, "Arizona, US"],
-  "Arkansas": [34.9, -92.4, 2, "Arkansas, US"],
-  "California": [37.2, -119.5, 2, "California, US"],
-  "Colorado": [39.0, -105.5, 2, "Colorado, US"],
-  "Connecticut": [41.6, -72.7, 2, "Connecticut, US"],
-  "Delaware": [39.0, -75.5, 2, "Delaware, US"],
-  "Florida": [28.6, -82.4, 2, "Florida, US"],
-  "Georgia": [32.7, -83.4, 2, "Georgia, US"],
-  "Hawaii": [20.8, -156.3, 2, "Hawaii, US"],
-  "Idaho": [44.4, -114.6, 2, "Idaho, US"],
-  "Illinois": [40.0, -89.2, 2, "Illinois, US"],
-  "Indiana": [39.9, -86.3, 2, "Indiana, US"],
-  "Iowa": [42.1, -93.5, 2, "Iowa, US"],
-  "Kansas": [38.5, -98.4, 2, "Kansas, US"],
-  "Kentucky": [37.5, -85.3, 2, "Kentucky, US"],
-  "Louisiana": [31.1, -92.0, 2, "Louisiana, US"],
-  "Maine": [45.4, -69.2, 2, "Maine, US"],
-  "Maryland": [39.0, -76.8, 2, "Maryland, US"],
-  "Massachusetts": [42.3, -71.8, 2, "Massachusetts, US"],
-  "Michigan": [44.3, -85.4, 2, "Michigan, US"],
-  "Minnesota": [46.3, -94.3, 2, "Minnesota, US"],
-  "Mississippi": [32.7, -89.7, 2, "Mississippi, US"],
-  "Missouri": [38.4, -92.5, 2, "Missouri, US"],
-  "Montana": [47.0, -109.6, 2, "Montana, US"],
-  "Nebraska": [41.5, -99.8, 2, "Nebraska, US"],
-  "Nevada": [39.3, -116.6, 2, "Nevada, US"],
-  "New Hampshire": [43.7, -71.6, 2, "New Hampshire, US"],
-  "New Jersey": [40.1, -74.5, 2, "New Jersey, US"],
-  "New Mexico": [34.4, -106.1, 2, "New Mexico, US"],
-  "New York": [42.9, -75.5, 2, "New York, US"],
-  "North Carolina": [35.6, -79.4, 2, "North Carolina, US"],
-  "North Dakota": [47.5, -100.5, 2, "North Dakota, US"],
-  "Ohio": [40.3, -82.8, 2, "Ohio, US"],
-  "Oklahoma": [35.6, -97.5, 2, "Oklahoma, US"],
-  "Oregon": [43.9, -120.6, 2, "Oregon, US"],
-  "Pennsylvania": [40.9, -77.8, 2, "Pennsylvania, US"],
-  "Rhode Island": [41.7, -71.6, 2, "Rhode Island, US"],
-  "South Carolina": [33.9, -80.9, 2, "South Carolina, US"],
-  "South Dakota": [44.4, -100.2, 2, "South Dakota, US"],
-  "Tennessee": [35.9, -86.4, 2, "Tennessee, US"],
-  "Texas": [31.5, -99.3, 2, "Texas, US"],
-  "Utah": [39.3, -111.7, 2, "Utah, US"],
-  "Vermont": [44.1, -72.7, 2, "Vermont, US"],
-  "Virginia": [37.5, -78.9, 2, "Virginia, US"],
-  "Washington": [47.4, -120.5, 2, "Washington, US"],
-  "West Virginia": [38.6, -80.6, 2, "West Virginia, US"],
-  "Wisconsin": [44.6, -89.9, 2, "Wisconsin, US"],
-  "Wyoming": [43.0, -107.5, 2, "Wyoming, US"],
-  "Washington, D.C.": [38.9, -77.0, 3, "Washington, D.C., US"],
-  "Washington DC": [38.9, -77.0, 3, "Washington, D.C., US"],
-
-  "AL": [32.8, -86.8, 2, "Alabama, US"],
-  "AK": [64.2, -152.5, 2, "Alaska, US"],
-  "AZ": [34.3, -111.7, 2, "Arizona, US"],
-  "AR": [34.9, -92.4, 2, "Arkansas, US"],
-  "CA": [37.2, -119.5, 2, "California, US"],
-  "CO": [39.0, -105.5, 2, "Colorado, US"],
-  "CT": [41.6, -72.7, 2, "Connecticut, US"],
-  "DE": [39.0, -75.5, 2, "Delaware, US"],
-  "FL": [28.6, -82.4, 2, "Florida, US"],
-  "GA": [32.7, -83.4, 2, "Georgia, US"],
-  "HI": [20.8, -156.3, 2, "Hawaii, US"],
-  "ID": [44.4, -114.6, 2, "Idaho, US"],
-  "IL": [40.0, -89.2, 2, "Illinois, US"],
-  "IN": [39.9, -86.3, 2, "Indiana, US"],
-  "IA": [42.1, -93.5, 2, "Iowa, US"],
-  "KS": [38.5, -98.4, 2, "Kansas, US"],
-  "KY": [37.5, -85.3, 2, "Kentucky, US"],
-  "LA": [31.1, -92.0, 2, "Louisiana, US"],
-  "ME": [45.4, -69.2, 2, "Maine, US"],
-  "MD": [39.0, -76.8, 2, "Maryland, US"],
-  "MA": [42.3, -71.8, 2, "Massachusetts, US"],
-  "MI": [44.3, -85.4, 2, "Michigan, US"],
-  "MN": [46.3, -94.3, 2, "Minnesota, US"],
-  "MS": [32.7, -89.7, 2, "Mississippi, US"],
-  "MO": [38.4, -92.5, 2, "Missouri, US"],
-  "MT": [47.0, -109.6, 2, "Montana, US"],
-  "NE": [41.5, -99.8, 2, "Nebraska, US"],
-  "NV": [39.3, -116.6, 2, "Nevada, US"],
-  "NH": [43.7, -71.6, 2, "New Hampshire, US"],
-  "NJ": [40.1, -74.5, 2, "New Jersey, US"],
-  "NM": [34.4, -106.1, 2, "New Mexico, US"],
-  "NY": [42.9, -75.5, 2, "New York, US"],
-  "NC": [35.6, -79.4, 2, "North Carolina, US"],
-  "ND": [47.5, -100.5, 2, "North Dakota, US"],
-  "OH": [40.3, -82.8, 2, "Ohio, US"],
-  "OK": [35.6, -97.5, 2, "Oklahoma, US"],
-  "OR": [43.9, -120.6, 2, "Oregon, US"],
-  "PA": [40.9, -77.8, 2, "Pennsylvania, US"],
-  "RI": [41.7, -71.6, 2, "Rhode Island, US"],
-  "SC": [33.9, -80.9, 2, "South Carolina, US"],
-  "SD": [44.4, -100.2, 2, "South Dakota, US"],
-  "TN": [35.9, -86.4, 2, "Tennessee, US"],
-  "TX": [31.5, -99.3, 2, "Texas, US"],
-  "UT": [39.3, -111.7, 2, "Utah, US"],
-  "VT": [44.1, -72.7, 2, "Vermont, US"],
-  "VA": [37.5, -78.9, 2, "Virginia, US"],
-  "WA": [47.4, -120.5, 2, "Washington, US"],
-  "WV": [38.6, -80.6, 2, "West Virginia, US"],
-  "WI": [44.6, -89.9, 2, "Wisconsin, US"],
-  "WY": [43.0, -107.5, 2, "Wyoming, US"],
-  "DC": [38.9, -77.0, 3, "Washington, D.C., US"],
-
-  "Ashburn": [39.04, -77.49, 3, "Ashburn, Virginia, US"],
-  "Loudoun County": [39.09, -77.64, 3, "Loudoun County, Virginia, US"],
-  "Loudoun": [39.09, -77.64, 3, "Loudoun County, Virginia, US"],
-  "Northern Virginia": [39.0, -77.5, 3, "Northern Virginia, US"],
-  "Prince William County": [38.70, -77.48, 3, "Prince William County, Virginia, US"],
-  "Prince William": [38.70, -77.48, 3, "Prince William County, Virginia, US"],
-  "Manassas": [38.75, -77.48, 3, "Manassas, Virginia, US"],
-  "Leesburg": [39.12, -77.56, 3, "Leesburg, Virginia, US"],
-  "Culpeper": [38.47, -77.99, 3, "Culpeper, Virginia, US"],
-  "Fauquier County": [38.72, -77.81, 3, "Fauquier County, Virginia, US"],
-  "Stafford County": [38.42, -77.46, 3, "Stafford County, Virginia, US"],
-  "Spotsylvania": [38.20, -77.66, 3, "Spotsylvania County, Virginia, US"],
-  "Henrico": [37.56, -77.40, 3, "Henrico County, Virginia, US"],
-  "Chesterfield County": [37.38, -77.59, 3, "Chesterfield County, Virginia, US"],
-  "Richmond": [37.54, -77.44, 3, "Richmond, Virginia, US"],
-  "Phoenix": [33.45, -112.07, 3, "Phoenix, Arizona, US"],
-  "Mesa": [33.42, -111.83, 3, "Mesa, Arizona, US"],
-  "Chandler": [33.31, -111.84, 3, "Chandler, Arizona, US"],
-  "Goodyear": [33.44, -112.36, 3, "Goodyear, Arizona, US"],
-  "Buckeye": [33.37, -112.58, 3, "Buckeye, Arizona, US"],
-  "Tucson": [32.22, -110.97, 3, "Tucson, Arizona, US"],
-  "Dallas": [32.78, -96.80, 3, "Dallas, Texas, US"],
-  "Fort Worth": [32.75, -97.33, 3, "Fort Worth, Texas, US"],
-  "Plano": [33.02, -96.70, 3, "Plano, Texas, US"],
-  "Garland": [32.91, -96.64, 3, "Garland, Texas, US"],
-  "Irving": [32.81, -96.95, 3, "Irving, Texas, US"],
-  "Austin": [30.27, -97.74, 3, "Austin, Texas, US"],
-  "San Antonio": [29.42, -98.49, 3, "San Antonio, Texas, US"],
-  "Houston": [29.76, -95.37, 3, "Houston, Texas, US"],
-  "Abilene": [32.45, -99.73, 3, "Abilene, Texas, US"],
-  "Amarillo": [35.22, -101.83, 3, "Amarillo, Texas, US"],
-  "Lubbock": [33.58, -101.86, 3, "Lubbock, Texas, US"],
-  "El Paso": [31.76, -106.49, 3, "El Paso, Texas, US"],
-  "Shackelford County": [32.74, -99.35, 3, "Shackelford County, Texas, US"],
-  "Milam County": [30.79, -96.98, 3, "Milam County, Texas, US"],
-  "Atlanta": [33.75, -84.39, 3, "Atlanta, Georgia, US"],
-  "Douglas County": [33.70, -84.77, 3, "Douglas County, Georgia, US"],
-  "Coweta County": [33.35, -84.76, 3, "Coweta County, Georgia, US"],
-  "Chicago": [41.88, -87.63, 3, "Chicago, Illinois, US"],
-  "Elk Grove Village": [42.00, -87.97, 3, "Elk Grove Village, Illinois, US"],
-  "DeKalb": [41.93, -88.75, 3, "DeKalb, Illinois, US"],
-  "Columbus": [39.96, -83.00, 3, "Columbus, Ohio, US"],
-  "New Albany": [40.08, -82.81, 3, "New Albany, Ohio, US"],
-  "Hilliard": [40.03, -83.16, 3, "Hilliard, Ohio, US"],
-  "Lordstown": [41.16, -80.86, 3, "Lordstown, Ohio, US"],
-  "Cleveland": [41.50, -81.69, 3, "Cleveland, Ohio, US"],
-  "Cincinnati": [39.10, -84.51, 3, "Cincinnati, Ohio, US"],
-  "Hillsboro": [45.52, -122.99, 3, "Hillsboro, Oregon, US"],
-  "Prineville": [44.30, -120.83, 3, "Prineville, Oregon, US"],
-  "The Dalles": [45.59, -121.18, 3, "The Dalles, Oregon, US"],
-  "Portland": [45.52, -122.68, 3, "Portland, Oregon, US"],
-  "Quincy": [47.23, -119.85, 3, "Quincy, Washington, US"],
-  "Seattle": [47.61, -122.33, 3, "Seattle, Washington, US"],
-  "Spokane": [47.66, -117.43, 3, "Spokane, Washington, US"],
-  "Santa Clara": [37.35, -121.95, 3, "Santa Clara, California, US"],
-  "San Jose": [37.34, -121.89, 3, "San Jose, California, US"],
-  "Silicon Valley": [37.39, -122.03, 3, "Silicon Valley, California, US"],
-  "San Francisco": [37.77, -122.42, 3, "San Francisco, California, US"],
-  "Los Angeles": [34.05, -118.24, 3, "Los Angeles, California, US"],
-  "Sacramento": [38.58, -121.49, 3, "Sacramento, California, US"],
-  "Reno": [39.53, -119.81, 3, "Reno, Nevada, US"],
-  "Las Vegas": [36.17, -115.14, 3, "Las Vegas, Nevada, US"],
-  "Salt Lake City": [40.76, -111.89, 3, "Salt Lake City, Utah, US"],
-  "Denver": [39.74, -104.99, 3, "Denver, Colorado, US"],
-  "Omaha": [41.26, -95.94, 3, "Omaha, Nebraska, US"],
-  "Council Bluffs": [41.26, -95.86, 3, "Council Bluffs, Iowa, US"],
-  "Des Moines": [41.59, -93.62, 3, "Des Moines, Iowa, US"],
-  "Altoona": [41.65, -93.47, 3, "Altoona, Iowa, US"],
-  "Cedar Rapids": [41.98, -91.67, 3, "Cedar Rapids, Iowa, US"],
-  "Kansas City": [39.10, -94.58, 3, "Kansas City, Missouri, US"],
-  "St. Louis": [38.63, -90.20, 3, "St. Louis, Missouri, US"],
-  "Minneapolis": [44.98, -93.27, 3, "Minneapolis, Minnesota, US"],
-  "Rosemount": [44.74, -93.13, 3, "Rosemount, Minnesota, US"],
-  "Milwaukee": [43.04, -87.91, 3, "Milwaukee, Wisconsin, US"],
-  "Mount Pleasant": [42.70, -87.89, 3, "Mount Pleasant, Wisconsin, US"],
-  "Kenosha": [42.58, -87.82, 3, "Kenosha, Wisconsin, US"],
-  "Racine": [42.73, -87.78, 3, "Racine, Wisconsin, US"],
-  "Port Washington": [43.39, -87.88, 3, "Port Washington, Wisconsin, US"],
-  "Detroit": [42.33, -83.05, 3, "Detroit, Michigan, US"],
-  "Saline Township": [42.14, -83.84, 3, "Saline Township, Michigan, US"],
-  "Indianapolis": [39.77, -86.16, 3, "Indianapolis, Indiana, US"],
-  "New Carlisle": [41.70, -86.17, 3, "New Carlisle, Indiana, US"],
-  "Fort Wayne": [41.08, -85.14, 3, "Fort Wayne, Indiana, US"],
-  "Memphis": [35.15, -90.05, 3, "Memphis, Tennessee, US"],
-  "Nashville": [36.16, -86.78, 3, "Nashville, Tennessee, US"],
-  "Chattanooga": [35.05, -85.31, 3, "Chattanooga, Tennessee, US"],
-  "Charlotte": [35.23, -80.84, 3, "Charlotte, North Carolina, US"],
-  "Raleigh": [35.78, -78.64, 3, "Raleigh, North Carolina, US"],
-  "Lenoir": [35.91, -81.54, 3, "Lenoir, North Carolina, US"],
-  "Richmond County": [35.00, -79.75, 3, "Richmond County, North Carolina, US"],
-  "Miami": [25.76, -80.19, 3, "Miami, Florida, US"],
-  "Tampa": [27.95, -82.46, 3, "Tampa, Florida, US"],
-  "Jacksonville": [30.33, -81.66, 3, "Jacksonville, Florida, US"],
-  "Orlando": [28.54, -81.38, 3, "Orlando, Florida, US"],
-  "New York City": [40.71, -74.01, 3, "New York City, US"],
-  "Newark": [40.74, -74.17, 3, "Newark, New Jersey, US"],
-  "Secaucus": [40.79, -74.06, 3, "Secaucus, New Jersey, US"],
-  "Piscataway": [40.55, -74.46, 3, "Piscataway, New Jersey, US"],
-  "Philadelphia": [39.95, -75.17, 3, "Philadelphia, Pennsylvania, US"],
-  "Pittsburgh": [40.44, -79.99, 3, "Pittsburgh, Pennsylvania, US"],
-  "Bucks County": [40.34, -75.11, 3, "Bucks County, Pennsylvania, US"],
-  "Luzerne County": [41.18, -75.99, 3, "Luzerne County, Pennsylvania, US"],
-  "Boston": [42.36, -71.06, 3, "Boston, Massachusetts, US"],
-  "Baltimore": [39.29, -76.61, 3, "Baltimore, Maryland, US"],
-  "Frederick": [39.41, -77.41, 3, "Frederick, Maryland, US"],
-  "Pryor": [36.31, -95.32, 3, "Pryor, Oklahoma, US"],
-  "Tulsa": [36.15, -95.99, 3, "Tulsa, Oklahoma, US"],
-  "Oklahoma City": [35.47, -97.52, 3, "Oklahoma City, Oklahoma, US"],
-  "Cheyenne": [41.14, -104.82, 3, "Cheyenne, Wyoming, US"],
-  "Boise": [43.62, -116.21, 3, "Boise, Idaho, US"],
-  "Albuquerque": [35.08, -106.65, 3, "Albuquerque, New Mexico, US"],
-  "Doña Ana County": [32.35, -106.83, 3, "Doña Ana County, New Mexico, US"],
-  "Dona Ana County": [32.35, -106.83, 3, "Doña Ana County, New Mexico, US"],
-  "Richland Parish": [32.40, -91.60, 3, "Richland Parish, Louisiana, US"],
-  "Huntsville": [34.73, -86.59, 3, "Huntsville, Alabama, US"],
-  "Bessemer": [33.40, -86.95, 3, "Bessemer, Alabama, US"],
-  "Louisville": [38.25, -85.76, 3, "Louisville, Kentucky, US"],
-  "Ellendale": [46.00, -98.53, 3, "Ellendale, North Dakota, US"],
-
-  "Canada": [56.1, -106.3, 1, "Canada"],
-  "Toronto": [43.65, -79.38, 3, "Toronto, Canada"],
-  "Montreal": [45.50, -73.57, 3, "Montreal, Canada"],
-  "Quebec": [52.9, -73.5, 2, "Quebec, Canada"],
-  "Vancouver": [49.28, -123.12, 3, "Vancouver, Canada"],
-  "Calgary": [51.05, -114.07, 3, "Calgary, Canada"],
-  "Alberta": [53.9, -116.6, 2, "Alberta, Canada"],
-  "Ontario": [51.3, -85.3, 2, "Ontario, Canada"],
-  "Mexico": [23.6, -102.5, 1, "Mexico"],
-  "Querétaro": [20.59, -100.39, 3, "Querétaro, Mexico"],
-  "Queretaro": [20.59, -100.39, 3, "Querétaro, Mexico"],
-  "Monterrey": [25.69, -100.32, 3, "Monterrey, Mexico"],
-  "Brazil": [-14.2, -51.9, 1, "Brazil"],
-  "São Paulo": [-23.55, -46.63, 3, "São Paulo, Brazil"],
-  "Sao Paulo": [-23.55, -46.63, 3, "São Paulo, Brazil"],
-  "Rio de Janeiro": [-22.91, -43.17, 3, "Rio de Janeiro, Brazil"],
-  "Chile": [-35.7, -71.5, 1, "Chile"],
-  "Santiago": [-33.45, -70.67, 3, "Santiago, Chile"],
-  "Colombia": [4.6, -74.1, 1, "Colombia"],
-  "Argentina": [-38.4, -63.6, 1, "Argentina"],
-
-  "Ireland": [53.4, -8.0, 1, "Ireland"],
-  "Dublin": [53.35, -6.26, 3, "Dublin, Ireland"],
-  "United Kingdom": [54.0, -2.0, 1, "United Kingdom"],
-  "Britain": [54.0, -2.0, 1, "United Kingdom"],
-  "London": [51.51, -0.13, 3, "London, UK"],
-  "Slough": [51.51, -0.59, 3, "Slough, UK"],
-  "Wales": [52.3, -3.6, 2, "Wales, UK"],
-  "Scotland": [56.5, -4.2, 2, "Scotland, UK"],
-  "Germany": [51.2, 10.4, 1, "Germany"],
-  "Frankfurt": [50.11, 8.68, 3, "Frankfurt, Germany"],
-  "Berlin": [52.52, 13.40, 3, "Berlin, Germany"],
-  "Netherlands": [52.3, 5.5, 1, "Netherlands"],
-  "Amsterdam": [52.37, 4.90, 3, "Amsterdam, Netherlands"],
-  "France": [46.6, 2.2, 1, "France"],
-  "Paris": [48.86, 2.35, 3, "Paris, France"],
-  "Marseille": [43.30, 5.37, 3, "Marseille, France"],
-  "Spain": [40.4, -3.7, 1, "Spain"],
-  "Madrid": [40.42, -3.70, 3, "Madrid, Spain"],
-  "Aragon": [41.6, -0.9, 2, "Aragon, Spain"],
-  "Barcelona": [41.39, 2.17, 3, "Barcelona, Spain"],
-  "Portugal": [39.5, -8.0, 1, "Portugal"],
-  "Lisbon": [38.72, -9.14, 3, "Lisbon, Portugal"],
-  "Sines": [37.96, -8.87, 3, "Sines, Portugal"],
-  "Italy": [42.5, 12.5, 1, "Italy"],
-  "Milan": [45.46, 9.19, 3, "Milan, Italy"],
-  "Sweden": [62.0, 15.0, 1, "Sweden"],
-  "Stockholm": [59.33, 18.07, 3, "Stockholm, Sweden"],
-  "Norway": [61.0, 9.0, 1, "Norway"],
-  "Finland": [64.0, 26.0, 1, "Finland"],
-  "Denmark": [56.0, 10.0, 1, "Denmark"],
-  "Poland": [52.0, 19.0, 1, "Poland"],
-  "Warsaw": [52.23, 21.01, 3, "Warsaw, Poland"],
-  "Switzerland": [46.8, 8.2, 1, "Switzerland"],
-  "Zurich": [47.38, 8.54, 3, "Zurich, Switzerland"],
-  "Belgium": [50.5, 4.5, 1, "Belgium"],
-  "Austria": [47.5, 14.5, 1, "Austria"],
-  "Greece": [39.0, 22.0, 1, "Greece"],
-
-  "Singapore": [1.35, 103.82, 3, "Singapore"],
-  "Malaysia": [4.0, 102.0, 1, "Malaysia"],
-  "Johor": [1.49, 103.74, 3, "Johor, Malaysia"],
-  "Indonesia": [-2.5, 118.0, 1, "Indonesia"],
-  "Jakarta": [-6.21, 106.85, 3, "Jakarta, Indonesia"],
-  "Batam": [1.08, 104.03, 3, "Batam, Indonesia"],
-  "Thailand": [15.0, 101.0, 1, "Thailand"],
-  "Bangkok": [13.76, 100.50, 3, "Bangkok, Thailand"],
-  "Vietnam": [16.0, 108.0, 1, "Vietnam"],
-  "Philippines": [12.9, 121.8, 1, "Philippines"],
-  "Japan": [36.2, 138.3, 1, "Japan"],
-  "Tokyo": [35.68, 139.69, 3, "Tokyo, Japan"],
-  "Osaka": [34.69, 135.50, 3, "Osaka, Japan"],
-  "South Korea": [36.5, 127.9, 1, "South Korea"],
-  "Seoul": [37.57, 126.98, 3, "Seoul, South Korea"],
-  "Taiwan": [23.7, 121.0, 1, "Taiwan"],
-  "Hong Kong": [22.32, 114.17, 3, "Hong Kong"],
-  "China": [35.9, 104.2, 1, "China"],
-  "India": [21.0, 78.0, 1, "India"],
-  "Mumbai": [19.08, 72.88, 3, "Mumbai, India"],
-  "Navi Mumbai": [19.03, 73.03, 3, "Navi Mumbai, India"],
-  "Chennai": [13.08, 80.27, 3, "Chennai, India"],
-  "Hyderabad": [17.39, 78.49, 3, "Hyderabad, India"],
-  "Bengaluru": [12.97, 77.59, 3, "Bengaluru, India"],
-  "Bangalore": [12.97, 77.59, 3, "Bengaluru, India"],
-  "Pune": [18.52, 73.86, 3, "Pune, India"],
-  "Noida": [28.54, 77.39, 3, "Noida, India"],
-  "Visakhapatnam": [17.69, 83.22, 3, "Visakhapatnam, India"],
-  "Maharashtra": [19.7, 75.7, 2, "Maharashtra, India"],
-  "Australia": [-25.3, 133.8, 1, "Australia"],
-  "Sydney": [-33.87, 151.21, 3, "Sydney, Australia"],
-  "Melbourne": [-37.81, 144.96, 3, "Melbourne, Australia"],
-  "New Zealand": [-41.0, 174.0, 1, "New Zealand"],
-
-  "UAE": [24.0, 54.0, 1, "United Arab Emirates"],
-  "United Arab Emirates": [24.0, 54.0, 1, "United Arab Emirates"],
-  "Dubai": [25.20, 55.27, 3, "Dubai, UAE"],
-  "Abu Dhabi": [24.45, 54.38, 3, "Abu Dhabi, UAE"],
-  "Saudi Arabia": [24.0, 45.0, 1, "Saudi Arabia"],
-  "Riyadh": [24.71, 46.68, 3, "Riyadh, Saudi Arabia"],
-  "Qatar": [25.3, 51.2, 1, "Qatar"],
-  "Israel": [31.0, 35.0, 1, "Israel"],
-  "South Africa": [-29.0, 25.0, 1, "South Africa"],
-  "Johannesburg": [-26.20, 28.05, 3, "Johannesburg, South Africa"],
-  "Cape Town": [-33.93, 18.42, 3, "Cape Town, South Africa"],
-  "Kenya": [-0.02, 37.9, 1, "Kenya"],
-  "Nairobi": [-1.29, 36.82, 3, "Nairobi, Kenya"],
-  "Nigeria": [9.1, 8.7, 1, "Nigeria"],
-  "Lagos": [6.52, 3.38, 3, "Lagos, Nigeria"],
-  "Egypt": [26.8, 30.8, 1, "Egypt"]
+ "_readme": "name: [lat, lon, level, display]. level 3 = city/county, 2 = state/province, 1 = country/region. Matching is case sensitive on whole words. Two-letter state codes only match after a comma, e.g. 'Abilene, TX'. Add places freely.",
+ "Alabama": [
+  32.8,
+  -86.8,
+  2,
+  "Alabama, US"
+ ],
+ "Alaska": [
+  64.2,
+  -152.5,
+  2,
+  "Alaska, US"
+ ],
+ "Arizona": [
+  34.3,
+  -111.7,
+  2,
+  "Arizona, US"
+ ],
+ "Arkansas": [
+  34.9,
+  -92.4,
+  2,
+  "Arkansas, US"
+ ],
+ "California": [
+  37.2,
+  -119.5,
+  2,
+  "California, US"
+ ],
+ "Colorado": [
+  39.0,
+  -105.5,
+  2,
+  "Colorado, US"
+ ],
+ "Connecticut": [
+  41.6,
+  -72.7,
+  2,
+  "Connecticut, US"
+ ],
+ "Delaware": [
+  39.0,
+  -75.5,
+  2,
+  "Delaware, US"
+ ],
+ "Florida": [
+  28.6,
+  -82.4,
+  2,
+  "Florida, US"
+ ],
+ "Georgia": [
+  32.7,
+  -83.4,
+  2,
+  "Georgia, US"
+ ],
+ "Hawaii": [
+  20.8,
+  -156.3,
+  2,
+  "Hawaii, US"
+ ],
+ "Idaho": [
+  44.4,
+  -114.6,
+  2,
+  "Idaho, US"
+ ],
+ "Illinois": [
+  40.0,
+  -89.2,
+  2,
+  "Illinois, US"
+ ],
+ "Indiana": [
+  39.9,
+  -86.3,
+  2,
+  "Indiana, US"
+ ],
+ "Iowa": [
+  42.1,
+  -93.5,
+  2,
+  "Iowa, US"
+ ],
+ "Kansas": [
+  38.5,
+  -98.4,
+  2,
+  "Kansas, US"
+ ],
+ "Kentucky": [
+  37.5,
+  -85.3,
+  2,
+  "Kentucky, US"
+ ],
+ "Louisiana": [
+  31.1,
+  -92.0,
+  2,
+  "Louisiana, US"
+ ],
+ "Maine": [
+  45.4,
+  -69.2,
+  2,
+  "Maine, US"
+ ],
+ "Maryland": [
+  39.0,
+  -76.8,
+  2,
+  "Maryland, US"
+ ],
+ "Massachusetts": [
+  42.3,
+  -71.8,
+  2,
+  "Massachusetts, US"
+ ],
+ "Michigan": [
+  44.3,
+  -85.4,
+  2,
+  "Michigan, US"
+ ],
+ "Minnesota": [
+  46.3,
+  -94.3,
+  2,
+  "Minnesota, US"
+ ],
+ "Mississippi": [
+  32.7,
+  -89.7,
+  2,
+  "Mississippi, US"
+ ],
+ "Missouri": [
+  38.4,
+  -92.5,
+  2,
+  "Missouri, US"
+ ],
+ "Montana": [
+  47.0,
+  -109.6,
+  2,
+  "Montana, US"
+ ],
+ "Nebraska": [
+  41.5,
+  -99.8,
+  2,
+  "Nebraska, US"
+ ],
+ "Nevada": [
+  39.3,
+  -116.6,
+  2,
+  "Nevada, US"
+ ],
+ "New Hampshire": [
+  43.7,
+  -71.6,
+  2,
+  "New Hampshire, US"
+ ],
+ "New Jersey": [
+  40.1,
+  -74.5,
+  2,
+  "New Jersey, US"
+ ],
+ "New Mexico": [
+  34.4,
+  -106.1,
+  2,
+  "New Mexico, US"
+ ],
+ "New York": [
+  42.9,
+  -75.5,
+  2,
+  "New York, US"
+ ],
+ "North Carolina": [
+  35.6,
+  -79.4,
+  2,
+  "North Carolina, US"
+ ],
+ "North Dakota": [
+  47.5,
+  -100.5,
+  2,
+  "North Dakota, US"
+ ],
+ "Ohio": [
+  40.3,
+  -82.8,
+  2,
+  "Ohio, US"
+ ],
+ "Oklahoma": [
+  35.6,
+  -97.5,
+  2,
+  "Oklahoma, US"
+ ],
+ "Oregon": [
+  43.9,
+  -120.6,
+  2,
+  "Oregon, US"
+ ],
+ "Pennsylvania": [
+  40.9,
+  -77.8,
+  2,
+  "Pennsylvania, US"
+ ],
+ "Rhode Island": [
+  41.7,
+  -71.6,
+  2,
+  "Rhode Island, US"
+ ],
+ "South Carolina": [
+  33.9,
+  -80.9,
+  2,
+  "South Carolina, US"
+ ],
+ "South Dakota": [
+  44.4,
+  -100.2,
+  2,
+  "South Dakota, US"
+ ],
+ "Tennessee": [
+  35.9,
+  -86.4,
+  2,
+  "Tennessee, US"
+ ],
+ "Texas": [
+  31.5,
+  -99.3,
+  2,
+  "Texas, US"
+ ],
+ "Utah": [
+  39.3,
+  -111.7,
+  2,
+  "Utah, US"
+ ],
+ "Vermont": [
+  44.1,
+  -72.7,
+  2,
+  "Vermont, US"
+ ],
+ "Virginia": [
+  37.5,
+  -78.9,
+  2,
+  "Virginia, US"
+ ],
+ "Washington": [
+  47.4,
+  -120.5,
+  2,
+  "Washington, US"
+ ],
+ "West Virginia": [
+  38.6,
+  -80.6,
+  2,
+  "West Virginia, US"
+ ],
+ "Wisconsin": [
+  44.6,
+  -89.9,
+  2,
+  "Wisconsin, US"
+ ],
+ "Wyoming": [
+  43.0,
+  -107.5,
+  2,
+  "Wyoming, US"
+ ],
+ "Washington, D.C.": [
+  38.9,
+  -77.0,
+  3,
+  "Washington, D.C., US"
+ ],
+ "Washington DC": [
+  38.9,
+  -77.0,
+  3,
+  "Washington, D.C., US"
+ ],
+ "AL": [
+  32.8,
+  -86.8,
+  2,
+  "Alabama, US"
+ ],
+ "AK": [
+  64.2,
+  -152.5,
+  2,
+  "Alaska, US"
+ ],
+ "AZ": [
+  34.3,
+  -111.7,
+  2,
+  "Arizona, US"
+ ],
+ "AR": [
+  34.9,
+  -92.4,
+  2,
+  "Arkansas, US"
+ ],
+ "CA": [
+  37.2,
+  -119.5,
+  2,
+  "California, US"
+ ],
+ "CO": [
+  39.0,
+  -105.5,
+  2,
+  "Colorado, US"
+ ],
+ "CT": [
+  41.6,
+  -72.7,
+  2,
+  "Connecticut, US"
+ ],
+ "DE": [
+  39.0,
+  -75.5,
+  2,
+  "Delaware, US"
+ ],
+ "FL": [
+  28.6,
+  -82.4,
+  2,
+  "Florida, US"
+ ],
+ "GA": [
+  32.7,
+  -83.4,
+  2,
+  "Georgia, US"
+ ],
+ "HI": [
+  20.8,
+  -156.3,
+  2,
+  "Hawaii, US"
+ ],
+ "ID": [
+  44.4,
+  -114.6,
+  2,
+  "Idaho, US"
+ ],
+ "IL": [
+  40.0,
+  -89.2,
+  2,
+  "Illinois, US"
+ ],
+ "IN": [
+  39.9,
+  -86.3,
+  2,
+  "Indiana, US"
+ ],
+ "IA": [
+  42.1,
+  -93.5,
+  2,
+  "Iowa, US"
+ ],
+ "KS": [
+  38.5,
+  -98.4,
+  2,
+  "Kansas, US"
+ ],
+ "KY": [
+  37.5,
+  -85.3,
+  2,
+  "Kentucky, US"
+ ],
+ "LA": [
+  31.1,
+  -92.0,
+  2,
+  "Louisiana, US"
+ ],
+ "ME": [
+  45.4,
+  -69.2,
+  2,
+  "Maine, US"
+ ],
+ "MD": [
+  39.0,
+  -76.8,
+  2,
+  "Maryland, US"
+ ],
+ "MA": [
+  42.3,
+  -71.8,
+  2,
+  "Massachusetts, US"
+ ],
+ "MI": [
+  44.3,
+  -85.4,
+  2,
+  "Michigan, US"
+ ],
+ "MN": [
+  46.3,
+  -94.3,
+  2,
+  "Minnesota, US"
+ ],
+ "MS": [
+  32.7,
+  -89.7,
+  2,
+  "Mississippi, US"
+ ],
+ "MO": [
+  38.4,
+  -92.5,
+  2,
+  "Missouri, US"
+ ],
+ "MT": [
+  47.0,
+  -109.6,
+  2,
+  "Montana, US"
+ ],
+ "NE": [
+  41.5,
+  -99.8,
+  2,
+  "Nebraska, US"
+ ],
+ "NV": [
+  39.3,
+  -116.6,
+  2,
+  "Nevada, US"
+ ],
+ "NH": [
+  43.7,
+  -71.6,
+  2,
+  "New Hampshire, US"
+ ],
+ "NJ": [
+  40.1,
+  -74.5,
+  2,
+  "New Jersey, US"
+ ],
+ "NM": [
+  34.4,
+  -106.1,
+  2,
+  "New Mexico, US"
+ ],
+ "NY": [
+  42.9,
+  -75.5,
+  2,
+  "New York, US"
+ ],
+ "NC": [
+  35.6,
+  -79.4,
+  2,
+  "North Carolina, US"
+ ],
+ "ND": [
+  47.5,
+  -100.5,
+  2,
+  "North Dakota, US"
+ ],
+ "OH": [
+  40.3,
+  -82.8,
+  2,
+  "Ohio, US"
+ ],
+ "OK": [
+  35.6,
+  -97.5,
+  2,
+  "Oklahoma, US"
+ ],
+ "OR": [
+  43.9,
+  -120.6,
+  2,
+  "Oregon, US"
+ ],
+ "PA": [
+  40.9,
+  -77.8,
+  2,
+  "Pennsylvania, US"
+ ],
+ "RI": [
+  41.7,
+  -71.6,
+  2,
+  "Rhode Island, US"
+ ],
+ "SC": [
+  33.9,
+  -80.9,
+  2,
+  "South Carolina, US"
+ ],
+ "SD": [
+  44.4,
+  -100.2,
+  2,
+  "South Dakota, US"
+ ],
+ "TN": [
+  35.9,
+  -86.4,
+  2,
+  "Tennessee, US"
+ ],
+ "TX": [
+  31.5,
+  -99.3,
+  2,
+  "Texas, US"
+ ],
+ "UT": [
+  39.3,
+  -111.7,
+  2,
+  "Utah, US"
+ ],
+ "VT": [
+  44.1,
+  -72.7,
+  2,
+  "Vermont, US"
+ ],
+ "VA": [
+  37.5,
+  -78.9,
+  2,
+  "Virginia, US"
+ ],
+ "WA": [
+  47.4,
+  -120.5,
+  2,
+  "Washington, US"
+ ],
+ "WV": [
+  38.6,
+  -80.6,
+  2,
+  "West Virginia, US"
+ ],
+ "WI": [
+  44.6,
+  -89.9,
+  2,
+  "Wisconsin, US"
+ ],
+ "WY": [
+  43.0,
+  -107.5,
+  2,
+  "Wyoming, US"
+ ],
+ "DC": [
+  38.9,
+  -77.0,
+  3,
+  "Washington, D.C., US"
+ ],
+ "Ashburn": [
+  39.04,
+  -77.49,
+  3,
+  "Ashburn, Virginia, US"
+ ],
+ "Loudoun County": [
+  39.09,
+  -77.64,
+  3,
+  "Loudoun County, Virginia, US"
+ ],
+ "Loudoun": [
+  39.09,
+  -77.64,
+  3,
+  "Loudoun County, Virginia, US"
+ ],
+ "Northern Virginia": [
+  39.0,
+  -77.5,
+  3,
+  "Northern Virginia, US"
+ ],
+ "Prince William County": [
+  38.7,
+  -77.48,
+  3,
+  "Prince William County, Virginia, US"
+ ],
+ "Prince William": [
+  38.7,
+  -77.48,
+  3,
+  "Prince William County, Virginia, US"
+ ],
+ "Manassas": [
+  38.75,
+  -77.48,
+  3,
+  "Manassas, Virginia, US"
+ ],
+ "Leesburg": [
+  39.12,
+  -77.56,
+  3,
+  "Leesburg, Virginia, US"
+ ],
+ "Culpeper": [
+  38.47,
+  -77.99,
+  3,
+  "Culpeper, Virginia, US"
+ ],
+ "Fauquier County": [
+  38.72,
+  -77.81,
+  3,
+  "Fauquier County, Virginia, US"
+ ],
+ "Stafford County": [
+  38.42,
+  -77.46,
+  3,
+  "Stafford County, Virginia, US"
+ ],
+ "Spotsylvania": [
+  38.2,
+  -77.66,
+  3,
+  "Spotsylvania County, Virginia, US"
+ ],
+ "Henrico": [
+  37.56,
+  -77.4,
+  3,
+  "Henrico County, Virginia, US"
+ ],
+ "Chesterfield County": [
+  37.38,
+  -77.59,
+  3,
+  "Chesterfield County, Virginia, US"
+ ],
+ "Richmond": [
+  37.54,
+  -77.44,
+  3,
+  "Richmond, Virginia, US"
+ ],
+ "Phoenix": [
+  33.45,
+  -112.07,
+  3,
+  "Phoenix, Arizona, US"
+ ],
+ "Mesa": [
+  33.42,
+  -111.83,
+  3,
+  "Mesa, Arizona, US"
+ ],
+ "Chandler": [
+  33.31,
+  -111.84,
+  3,
+  "Chandler, Arizona, US"
+ ],
+ "Goodyear": [
+  33.44,
+  -112.36,
+  3,
+  "Goodyear, Arizona, US"
+ ],
+ "Buckeye": [
+  33.37,
+  -112.58,
+  3,
+  "Buckeye, Arizona, US"
+ ],
+ "Tucson": [
+  32.22,
+  -110.97,
+  3,
+  "Tucson, Arizona, US"
+ ],
+ "Dallas": [
+  32.78,
+  -96.8,
+  3,
+  "Dallas, Texas, US"
+ ],
+ "Fort Worth": [
+  32.75,
+  -97.33,
+  3,
+  "Fort Worth, Texas, US"
+ ],
+ "Plano": [
+  33.02,
+  -96.7,
+  3,
+  "Plano, Texas, US"
+ ],
+ "Garland": [
+  32.91,
+  -96.64,
+  3,
+  "Garland, Texas, US"
+ ],
+ "Irving": [
+  32.81,
+  -96.95,
+  3,
+  "Irving, Texas, US"
+ ],
+ "Austin": [
+  30.27,
+  -97.74,
+  3,
+  "Austin, Texas, US"
+ ],
+ "San Antonio": [
+  29.42,
+  -98.49,
+  3,
+  "San Antonio, Texas, US"
+ ],
+ "Houston": [
+  29.76,
+  -95.37,
+  3,
+  "Houston, Texas, US"
+ ],
+ "Abilene": [
+  32.45,
+  -99.73,
+  3,
+  "Abilene, Texas, US"
+ ],
+ "Amarillo": [
+  35.22,
+  -101.83,
+  3,
+  "Amarillo, Texas, US"
+ ],
+ "Lubbock": [
+  33.58,
+  -101.86,
+  3,
+  "Lubbock, Texas, US"
+ ],
+ "El Paso": [
+  31.76,
+  -106.49,
+  3,
+  "El Paso, Texas, US"
+ ],
+ "Shackelford County": [
+  32.74,
+  -99.35,
+  3,
+  "Shackelford County, Texas, US"
+ ],
+ "Milam County": [
+  30.79,
+  -96.98,
+  3,
+  "Milam County, Texas, US"
+ ],
+ "Atlanta": [
+  33.75,
+  -84.39,
+  3,
+  "Atlanta, Georgia, US"
+ ],
+ "Douglas County": [
+  33.7,
+  -84.77,
+  3,
+  "Douglas County, Georgia, US"
+ ],
+ "Coweta County": [
+  33.35,
+  -84.76,
+  3,
+  "Coweta County, Georgia, US"
+ ],
+ "Chicago": [
+  41.88,
+  -87.63,
+  3,
+  "Chicago, Illinois, US"
+ ],
+ "Elk Grove Village": [
+  42.0,
+  -87.97,
+  3,
+  "Elk Grove Village, Illinois, US"
+ ],
+ "DeKalb": [
+  41.93,
+  -88.75,
+  3,
+  "DeKalb, Illinois, US"
+ ],
+ "Columbus": [
+  39.96,
+  -83.0,
+  3,
+  "Columbus, Ohio, US"
+ ],
+ "New Albany": [
+  40.08,
+  -82.81,
+  3,
+  "New Albany, Ohio, US"
+ ],
+ "Hilliard": [
+  40.03,
+  -83.16,
+  3,
+  "Hilliard, Ohio, US"
+ ],
+ "Lordstown": [
+  41.16,
+  -80.86,
+  3,
+  "Lordstown, Ohio, US"
+ ],
+ "Cleveland": [
+  41.5,
+  -81.69,
+  3,
+  "Cleveland, Ohio, US"
+ ],
+ "Cincinnati": [
+  39.1,
+  -84.51,
+  3,
+  "Cincinnati, Ohio, US"
+ ],
+ "Hillsboro": [
+  45.52,
+  -122.99,
+  3,
+  "Hillsboro, Oregon, US"
+ ],
+ "Prineville": [
+  44.3,
+  -120.83,
+  3,
+  "Prineville, Oregon, US"
+ ],
+ "The Dalles": [
+  45.59,
+  -121.18,
+  3,
+  "The Dalles, Oregon, US"
+ ],
+ "Portland": [
+  45.52,
+  -122.68,
+  3,
+  "Portland, Oregon, US"
+ ],
+ "Quincy": [
+  47.23,
+  -119.85,
+  3,
+  "Quincy, Washington, US"
+ ],
+ "Seattle": [
+  47.61,
+  -122.33,
+  3,
+  "Seattle, Washington, US"
+ ],
+ "Spokane": [
+  47.66,
+  -117.43,
+  3,
+  "Spokane, Washington, US"
+ ],
+ "Santa Clara": [
+  37.35,
+  -121.95,
+  3,
+  "Santa Clara, California, US"
+ ],
+ "San Jose": [
+  37.34,
+  -121.89,
+  3,
+  "San Jose, California, US"
+ ],
+ "Silicon Valley": [
+  37.39,
+  -122.03,
+  3,
+  "Silicon Valley, California, US"
+ ],
+ "San Francisco": [
+  37.77,
+  -122.42,
+  3,
+  "San Francisco, California, US"
+ ],
+ "Los Angeles": [
+  34.05,
+  -118.24,
+  3,
+  "Los Angeles, California, US"
+ ],
+ "Sacramento": [
+  38.58,
+  -121.49,
+  3,
+  "Sacramento, California, US"
+ ],
+ "Reno": [
+  39.53,
+  -119.81,
+  3,
+  "Reno, Nevada, US"
+ ],
+ "Las Vegas": [
+  36.17,
+  -115.14,
+  3,
+  "Las Vegas, Nevada, US"
+ ],
+ "Salt Lake City": [
+  40.76,
+  -111.89,
+  3,
+  "Salt Lake City, Utah, US"
+ ],
+ "Denver": [
+  39.74,
+  -104.99,
+  3,
+  "Denver, Colorado, US"
+ ],
+ "Omaha": [
+  41.26,
+  -95.94,
+  3,
+  "Omaha, Nebraska, US"
+ ],
+ "Council Bluffs": [
+  41.26,
+  -95.86,
+  3,
+  "Council Bluffs, Iowa, US"
+ ],
+ "Des Moines": [
+  41.59,
+  -93.62,
+  3,
+  "Des Moines, Iowa, US"
+ ],
+ "Altoona": [
+  41.65,
+  -93.47,
+  3,
+  "Altoona, Iowa, US"
+ ],
+ "Cedar Rapids": [
+  41.98,
+  -91.67,
+  3,
+  "Cedar Rapids, Iowa, US"
+ ],
+ "Kansas City": [
+  39.1,
+  -94.58,
+  3,
+  "Kansas City, Missouri, US"
+ ],
+ "St. Louis": [
+  38.63,
+  -90.2,
+  3,
+  "St. Louis, Missouri, US"
+ ],
+ "Minneapolis": [
+  44.98,
+  -93.27,
+  3,
+  "Minneapolis, Minnesota, US"
+ ],
+ "Rosemount": [
+  44.74,
+  -93.13,
+  3,
+  "Rosemount, Minnesota, US"
+ ],
+ "Milwaukee": [
+  43.04,
+  -87.91,
+  3,
+  "Milwaukee, Wisconsin, US"
+ ],
+ "Mount Pleasant": [
+  42.7,
+  -87.89,
+  3,
+  "Mount Pleasant, Wisconsin, US"
+ ],
+ "Kenosha": [
+  42.58,
+  -87.82,
+  3,
+  "Kenosha, Wisconsin, US"
+ ],
+ "Racine": [
+  42.73,
+  -87.78,
+  3,
+  "Racine, Wisconsin, US"
+ ],
+ "Port Washington": [
+  43.39,
+  -87.88,
+  3,
+  "Port Washington, Wisconsin, US"
+ ],
+ "Detroit": [
+  42.33,
+  -83.05,
+  3,
+  "Detroit, Michigan, US"
+ ],
+ "Saline Township": [
+  42.14,
+  -83.84,
+  3,
+  "Saline Township, Michigan, US"
+ ],
+ "Indianapolis": [
+  39.77,
+  -86.16,
+  3,
+  "Indianapolis, Indiana, US"
+ ],
+ "New Carlisle": [
+  41.7,
+  -86.17,
+  3,
+  "New Carlisle, Indiana, US"
+ ],
+ "Fort Wayne": [
+  41.08,
+  -85.14,
+  3,
+  "Fort Wayne, Indiana, US"
+ ],
+ "Memphis": [
+  35.15,
+  -90.05,
+  3,
+  "Memphis, Tennessee, US"
+ ],
+ "Nashville": [
+  36.16,
+  -86.78,
+  3,
+  "Nashville, Tennessee, US"
+ ],
+ "Chattanooga": [
+  35.05,
+  -85.31,
+  3,
+  "Chattanooga, Tennessee, US"
+ ],
+ "Charlotte": [
+  35.23,
+  -80.84,
+  3,
+  "Charlotte, North Carolina, US"
+ ],
+ "Raleigh": [
+  35.78,
+  -78.64,
+  3,
+  "Raleigh, North Carolina, US"
+ ],
+ "Lenoir": [
+  35.91,
+  -81.54,
+  3,
+  "Lenoir, North Carolina, US"
+ ],
+ "Richmond County": [
+  35.0,
+  -79.75,
+  3,
+  "Richmond County, North Carolina, US"
+ ],
+ "Miami": [
+  25.76,
+  -80.19,
+  3,
+  "Miami, Florida, US"
+ ],
+ "Tampa": [
+  27.95,
+  -82.46,
+  3,
+  "Tampa, Florida, US"
+ ],
+ "Jacksonville": [
+  30.33,
+  -81.66,
+  3,
+  "Jacksonville, Florida, US"
+ ],
+ "Orlando": [
+  28.54,
+  -81.38,
+  3,
+  "Orlando, Florida, US"
+ ],
+ "New York City": [
+  40.71,
+  -74.01,
+  3,
+  "New York City, US"
+ ],
+ "Newark": [
+  40.74,
+  -74.17,
+  3,
+  "Newark, New Jersey, US"
+ ],
+ "Secaucus": [
+  40.79,
+  -74.06,
+  3,
+  "Secaucus, New Jersey, US"
+ ],
+ "Piscataway": [
+  40.55,
+  -74.46,
+  3,
+  "Piscataway, New Jersey, US"
+ ],
+ "Philadelphia": [
+  39.95,
+  -75.17,
+  3,
+  "Philadelphia, Pennsylvania, US"
+ ],
+ "Pittsburgh": [
+  40.44,
+  -79.99,
+  3,
+  "Pittsburgh, Pennsylvania, US"
+ ],
+ "Bucks County": [
+  40.34,
+  -75.11,
+  3,
+  "Bucks County, Pennsylvania, US"
+ ],
+ "Luzerne County": [
+  41.18,
+  -75.99,
+  3,
+  "Luzerne County, Pennsylvania, US"
+ ],
+ "Boston": [
+  42.36,
+  -71.06,
+  3,
+  "Boston, Massachusetts, US"
+ ],
+ "Baltimore": [
+  39.29,
+  -76.61,
+  3,
+  "Baltimore, Maryland, US"
+ ],
+ "Frederick": [
+  39.41,
+  -77.41,
+  3,
+  "Frederick, Maryland, US"
+ ],
+ "Pryor": [
+  36.31,
+  -95.32,
+  3,
+  "Pryor, Oklahoma, US"
+ ],
+ "Tulsa": [
+  36.15,
+  -95.99,
+  3,
+  "Tulsa, Oklahoma, US"
+ ],
+ "Oklahoma City": [
+  35.47,
+  -97.52,
+  3,
+  "Oklahoma City, Oklahoma, US"
+ ],
+ "Cheyenne": [
+  41.14,
+  -104.82,
+  3,
+  "Cheyenne, Wyoming, US"
+ ],
+ "Boise": [
+  43.62,
+  -116.21,
+  3,
+  "Boise, Idaho, US"
+ ],
+ "Albuquerque": [
+  35.08,
+  -106.65,
+  3,
+  "Albuquerque, New Mexico, US"
+ ],
+ "Doña Ana County": [
+  32.35,
+  -106.83,
+  3,
+  "Doña Ana County, New Mexico, US"
+ ],
+ "Dona Ana County": [
+  32.35,
+  -106.83,
+  3,
+  "Doña Ana County, New Mexico, US"
+ ],
+ "Richland Parish": [
+  32.4,
+  -91.6,
+  3,
+  "Richland Parish, Louisiana, US"
+ ],
+ "Huntsville": [
+  34.73,
+  -86.59,
+  3,
+  "Huntsville, Alabama, US"
+ ],
+ "Bessemer": [
+  33.4,
+  -86.95,
+  3,
+  "Bessemer, Alabama, US"
+ ],
+ "Louisville": [
+  38.25,
+  -85.76,
+  3,
+  "Louisville, Kentucky, US"
+ ],
+ "Ellendale": [
+  46.0,
+  -98.53,
+  3,
+  "Ellendale, North Dakota, US"
+ ],
+ "Canada": [
+  56.1,
+  -106.3,
+  1,
+  "Canada"
+ ],
+ "Toronto": [
+  43.65,
+  -79.38,
+  3,
+  "Toronto, Canada"
+ ],
+ "Montreal": [
+  45.5,
+  -73.57,
+  3,
+  "Montreal, Canada"
+ ],
+ "Quebec": [
+  52.9,
+  -73.5,
+  2,
+  "Quebec, Canada"
+ ],
+ "Vancouver": [
+  49.28,
+  -123.12,
+  3,
+  "Vancouver, Canada"
+ ],
+ "Calgary": [
+  51.05,
+  -114.07,
+  3,
+  "Calgary, Canada"
+ ],
+ "Alberta": [
+  53.9,
+  -116.6,
+  2,
+  "Alberta, Canada"
+ ],
+ "Ontario": [
+  51.3,
+  -85.3,
+  2,
+  "Ontario, Canada"
+ ],
+ "Mexico": [
+  23.6,
+  -102.5,
+  1,
+  "Mexico"
+ ],
+ "Querétaro": [
+  20.59,
+  -100.39,
+  3,
+  "Querétaro, Mexico"
+ ],
+ "Queretaro": [
+  20.59,
+  -100.39,
+  3,
+  "Querétaro, Mexico"
+ ],
+ "Monterrey": [
+  25.69,
+  -100.32,
+  3,
+  "Monterrey, Mexico"
+ ],
+ "Brazil": [
+  -14.2,
+  -51.9,
+  1,
+  "Brazil"
+ ],
+ "São Paulo": [
+  -23.55,
+  -46.63,
+  3,
+  "São Paulo, Brazil"
+ ],
+ "Sao Paulo": [
+  -23.55,
+  -46.63,
+  3,
+  "São Paulo, Brazil"
+ ],
+ "Rio de Janeiro": [
+  -22.91,
+  -43.17,
+  3,
+  "Rio de Janeiro, Brazil"
+ ],
+ "Chile": [
+  -35.7,
+  -71.5,
+  1,
+  "Chile"
+ ],
+ "Santiago": [
+  -33.45,
+  -70.67,
+  3,
+  "Santiago, Chile"
+ ],
+ "Colombia": [
+  4.6,
+  -74.1,
+  1,
+  "Colombia"
+ ],
+ "Argentina": [
+  -38.4,
+  -63.6,
+  1,
+  "Argentina"
+ ],
+ "Ireland": [
+  53.4,
+  -8.0,
+  1,
+  "Ireland"
+ ],
+ "Dublin": [
+  53.35,
+  -6.26,
+  3,
+  "Dublin, Ireland"
+ ],
+ "United Kingdom": [
+  54.0,
+  -2.0,
+  1,
+  "United Kingdom"
+ ],
+ "Britain": [
+  54.0,
+  -2.0,
+  1,
+  "United Kingdom"
+ ],
+ "London": [
+  51.51,
+  -0.13,
+  3,
+  "London, UK"
+ ],
+ "Slough": [
+  51.51,
+  -0.59,
+  3,
+  "Slough, UK"
+ ],
+ "Wales": [
+  52.3,
+  -3.6,
+  2,
+  "Wales, UK"
+ ],
+ "Scotland": [
+  56.5,
+  -4.2,
+  2,
+  "Scotland, UK"
+ ],
+ "Germany": [
+  51.2,
+  10.4,
+  1,
+  "Germany"
+ ],
+ "Frankfurt": [
+  50.11,
+  8.68,
+  3,
+  "Frankfurt, Germany"
+ ],
+ "Berlin": [
+  52.52,
+  13.4,
+  3,
+  "Berlin, Germany"
+ ],
+ "Netherlands": [
+  52.3,
+  5.5,
+  1,
+  "Netherlands"
+ ],
+ "Amsterdam": [
+  52.37,
+  4.9,
+  3,
+  "Amsterdam, Netherlands"
+ ],
+ "France": [
+  46.6,
+  2.2,
+  1,
+  "France"
+ ],
+ "Paris": [
+  48.86,
+  2.35,
+  3,
+  "Paris, France"
+ ],
+ "Marseille": [
+  43.3,
+  5.37,
+  3,
+  "Marseille, France"
+ ],
+ "Spain": [
+  40.4,
+  -3.7,
+  1,
+  "Spain"
+ ],
+ "Madrid": [
+  40.42,
+  -3.7,
+  3,
+  "Madrid, Spain"
+ ],
+ "Aragon": [
+  41.6,
+  -0.9,
+  2,
+  "Aragon, Spain"
+ ],
+ "Barcelona": [
+  41.39,
+  2.17,
+  3,
+  "Barcelona, Spain"
+ ],
+ "Portugal": [
+  39.5,
+  -8.0,
+  1,
+  "Portugal"
+ ],
+ "Lisbon": [
+  38.72,
+  -9.14,
+  3,
+  "Lisbon, Portugal"
+ ],
+ "Sines": [
+  37.96,
+  -8.87,
+  3,
+  "Sines, Portugal"
+ ],
+ "Italy": [
+  42.5,
+  12.5,
+  1,
+  "Italy"
+ ],
+ "Milan": [
+  45.46,
+  9.19,
+  3,
+  "Milan, Italy"
+ ],
+ "Sweden": [
+  62.0,
+  15.0,
+  1,
+  "Sweden"
+ ],
+ "Stockholm": [
+  59.33,
+  18.07,
+  3,
+  "Stockholm, Sweden"
+ ],
+ "Norway": [
+  61.0,
+  9.0,
+  1,
+  "Norway"
+ ],
+ "Finland": [
+  64.0,
+  26.0,
+  1,
+  "Finland"
+ ],
+ "Denmark": [
+  56.0,
+  10.0,
+  1,
+  "Denmark"
+ ],
+ "Poland": [
+  52.0,
+  19.0,
+  1,
+  "Poland"
+ ],
+ "Warsaw": [
+  52.23,
+  21.01,
+  3,
+  "Warsaw, Poland"
+ ],
+ "Switzerland": [
+  46.8,
+  8.2,
+  1,
+  "Switzerland"
+ ],
+ "Zurich": [
+  47.38,
+  8.54,
+  3,
+  "Zurich, Switzerland"
+ ],
+ "Belgium": [
+  50.5,
+  4.5,
+  1,
+  "Belgium"
+ ],
+ "Austria": [
+  47.5,
+  14.5,
+  1,
+  "Austria"
+ ],
+ "Greece": [
+  39.0,
+  22.0,
+  1,
+  "Greece"
+ ],
+ "Singapore": [
+  1.35,
+  103.82,
+  3,
+  "Singapore"
+ ],
+ "Malaysia": [
+  4.0,
+  102.0,
+  1,
+  "Malaysia"
+ ],
+ "Johor": [
+  1.49,
+  103.74,
+  3,
+  "Johor, Malaysia"
+ ],
+ "Indonesia": [
+  -2.5,
+  118.0,
+  1,
+  "Indonesia"
+ ],
+ "Jakarta": [
+  -6.21,
+  106.85,
+  3,
+  "Jakarta, Indonesia"
+ ],
+ "Batam": [
+  1.08,
+  104.03,
+  3,
+  "Batam, Indonesia"
+ ],
+ "Thailand": [
+  15.0,
+  101.0,
+  1,
+  "Thailand"
+ ],
+ "Bangkok": [
+  13.76,
+  100.5,
+  3,
+  "Bangkok, Thailand"
+ ],
+ "Vietnam": [
+  16.0,
+  108.0,
+  1,
+  "Vietnam"
+ ],
+ "Philippines": [
+  12.9,
+  121.8,
+  1,
+  "Philippines"
+ ],
+ "Japan": [
+  36.2,
+  138.3,
+  1,
+  "Japan"
+ ],
+ "Tokyo": [
+  35.68,
+  139.69,
+  3,
+  "Tokyo, Japan"
+ ],
+ "Osaka": [
+  34.69,
+  135.5,
+  3,
+  "Osaka, Japan"
+ ],
+ "South Korea": [
+  36.5,
+  127.9,
+  1,
+  "South Korea"
+ ],
+ "Seoul": [
+  37.57,
+  126.98,
+  3,
+  "Seoul, South Korea"
+ ],
+ "Taiwan": [
+  23.7,
+  121.0,
+  1,
+  "Taiwan"
+ ],
+ "Hong Kong": [
+  22.32,
+  114.17,
+  3,
+  "Hong Kong"
+ ],
+ "China": [
+  35.9,
+  104.2,
+  1,
+  "China"
+ ],
+ "India": [
+  21.0,
+  78.0,
+  1,
+  "India"
+ ],
+ "Mumbai": [
+  19.08,
+  72.88,
+  3,
+  "Mumbai, India"
+ ],
+ "Navi Mumbai": [
+  19.03,
+  73.03,
+  3,
+  "Navi Mumbai, India"
+ ],
+ "Chennai": [
+  13.08,
+  80.27,
+  3,
+  "Chennai, India"
+ ],
+ "Hyderabad": [
+  17.39,
+  78.49,
+  3,
+  "Hyderabad, India"
+ ],
+ "Bengaluru": [
+  12.97,
+  77.59,
+  3,
+  "Bengaluru, India"
+ ],
+ "Bangalore": [
+  12.97,
+  77.59,
+  3,
+  "Bengaluru, India"
+ ],
+ "Pune": [
+  18.52,
+  73.86,
+  3,
+  "Pune, India"
+ ],
+ "Noida": [
+  28.54,
+  77.39,
+  3,
+  "Noida, India"
+ ],
+ "Visakhapatnam": [
+  17.69,
+  83.22,
+  3,
+  "Visakhapatnam, India"
+ ],
+ "Maharashtra": [
+  19.7,
+  75.7,
+  2,
+  "Maharashtra, India"
+ ],
+ "Australia": [
+  -25.3,
+  133.8,
+  1,
+  "Australia"
+ ],
+ "Sydney": [
+  -33.87,
+  151.21,
+  3,
+  "Sydney, Australia"
+ ],
+ "Melbourne": [
+  -37.81,
+  144.96,
+  3,
+  "Melbourne, Australia"
+ ],
+ "New Zealand": [
+  -41.0,
+  174.0,
+  1,
+  "New Zealand"
+ ],
+ "UAE": [
+  24.0,
+  54.0,
+  1,
+  "United Arab Emirates"
+ ],
+ "United Arab Emirates": [
+  24.0,
+  54.0,
+  1,
+  "United Arab Emirates"
+ ],
+ "Dubai": [
+  25.2,
+  55.27,
+  3,
+  "Dubai, UAE"
+ ],
+ "Abu Dhabi": [
+  24.45,
+  54.38,
+  3,
+  "Abu Dhabi, UAE"
+ ],
+ "Saudi Arabia": [
+  24.0,
+  45.0,
+  1,
+  "Saudi Arabia"
+ ],
+ "Riyadh": [
+  24.71,
+  46.68,
+  3,
+  "Riyadh, Saudi Arabia"
+ ],
+ "Qatar": [
+  25.3,
+  51.2,
+  1,
+  "Qatar"
+ ],
+ "Israel": [
+  31.0,
+  35.0,
+  1,
+  "Israel"
+ ],
+ "South Africa": [
+  -29.0,
+  25.0,
+  1,
+  "South Africa"
+ ],
+ "Johannesburg": [
+  -26.2,
+  28.05,
+  3,
+  "Johannesburg, South Africa"
+ ],
+ "Cape Town": [
+  -33.93,
+  18.42,
+  3,
+  "Cape Town, South Africa"
+ ],
+ "Kenya": [
+  -0.02,
+  37.9,
+  1,
+  "Kenya"
+ ],
+ "Nairobi": [
+  -1.29,
+  36.82,
+  3,
+  "Nairobi, Kenya"
+ ],
+ "Nigeria": [
+  9.1,
+  8.7,
+  1,
+  "Nigeria"
+ ],
+ "Lagos": [
+  6.52,
+  3.38,
+  3,
+  "Lagos, Nigeria"
+ ],
+ "Egypt": [
+  26.8,
+  30.8,
+  1,
+  "Egypt"
+ ],
+ "West Memphis": [
+  35.15,
+  -90.18,
+  3,
+  "West Memphis, Arkansas, US"
+ ],
+ "Southaven": [
+  34.99,
+  -90.01,
+  3,
+  "Southaven, Mississippi, US"
+ ],
+ "Storey County": [
+  39.44,
+  -119.53,
+  3,
+  "Storey County, Nevada, US"
+ ],
+ "Papillion": [
+  41.15,
+  -96.04,
+  3,
+  "Papillion, Nebraska, US"
+ ],
+ "Midlothian": [
+  32.48,
+  -96.99,
+  3,
+  "Midlothian, Texas, US"
+ ],
+ "Moncks Corner": [
+  33.2,
+  -80.01,
+  3,
+  "Moncks Corner, South Carolina, US"
+ ],
+ "Los Lunas": [
+  34.81,
+  -106.73,
+  3,
+  "Los Lunas, New Mexico, US"
+ ],
+ "Boardman": [
+  45.84,
+  -119.7,
+  3,
+  "Boardman, Oregon, US"
+ ],
+ "Hermiston": [
+  45.84,
+  -119.29,
+  3,
+  "Hermiston, Oregon, US"
+ ],
+ "Temple, Texas": [
+  31.1,
+  -97.34,
+  3,
+  "Temple, Texas, US"
+ ],
+ "Round Rock": [
+  30.51,
+  -97.68,
+  3,
+  "Round Rock, Texas, US"
+ ],
+ "Red Oak": [
+  32.52,
+  -96.8,
+  3,
+  "Red Oak, Texas, US"
+ ],
+ "New Braunfels": [
+  29.7,
+  -98.12,
+  3,
+  "New Braunfels, Texas, US"
+ ],
+ "Statesville": [
+  35.78,
+  -80.89,
+  3,
+  "Statesville, North Carolina, US"
+ ],
+ "Fargo": [
+  46.88,
+  -96.79,
+  3,
+  "Fargo, North Dakota, US"
+ ],
+ "Bismarck": [
+  46.81,
+  -100.78,
+  3,
+  "Bismarck, North Dakota, US"
+ ],
+ "Sioux Falls": [
+  43.55,
+  -96.73,
+  3,
+  "Sioux Falls, South Dakota, US"
+ ],
+ "Little Rock": [
+  34.75,
+  -92.29,
+  3,
+  "Little Rock, Arkansas, US"
+ ],
+ "Baton Rouge": [
+  30.45,
+  -91.19,
+  3,
+  "Baton Rouge, Louisiana, US"
+ ],
+ "Shreveport": [
+  32.53,
+  -93.75,
+  3,
+  "Shreveport, Louisiana, US"
+ ],
+ "Lancaster, Pennsylvania": [
+  40.04,
+  -76.31,
+  3,
+  "Lancaster, Pennsylvania, US"
+ ],
+ "Lancaster, PA": [
+  40.04,
+  -76.31,
+  3,
+  "Lancaster, Pennsylvania, US"
+ ],
+ "Wilmington, Ohio": [
+  39.45,
+  -83.83,
+  3,
+  "Wilmington, Ohio, US"
+ ],
+ "San Marcos": [
+  29.88,
+  -97.94,
+  3,
+  "San Marcos, Texas, US"
+ ],
+ "Mount Pleasant, Wisconsin": [
+  42.71,
+  -87.88,
+  3,
+  "Mount Pleasant, Wisconsin, US"
+ ],
+ "Abilene, Texas": [
+  32.45,
+  -99.73,
+  3,
+  "Abilene, Texas, US"
+ ]
 }

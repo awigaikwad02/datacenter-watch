@@ -11,7 +11,12 @@ category, detects place names, and writes:
                                 projects detected from headlines, shown on
                                 the map next to the curated projects.json
 
+The site covers the United States only: stories that are clearly about
+another country are dropped, and every kept story is tagged with the U.S.
+states it mentions.
+
 Run locally:  python scripts/fetch_news.py
+Re-tag the existing files without fetching:  python scripts/fetch_news.py --no-fetch
 GitHub Actions runs it on a schedule (see .github/workflows/update.yml).
 """
 
@@ -92,6 +97,47 @@ STATUS_RULES = [
 MW_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s?(?:MW|megawatts?)\b", re.I)
 GW_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s?(?:GW|gigawatts?)\b", re.I)
 MONEY_RE = re.compile(r"\$\s?(\d[\d,]*(?:\.\d+)?)\s?(billion|million|bn|b|m)\b", re.I)
+# U.S.-only filter. A story is dropped when it names a non-U.S. place and no
+# U.S. place, uses a foreign marker below, or comes from a foreign outlet.
+FOREIGN_RE = re.compile(
+    r"\b(data centres?|UK|U\.K\.|Britain|British|England|Europe|European|EU|India|Indian|China|Chinese|"
+    r"Japan|Japanese|Korea|Korean|Australia|Australian|Canada|Canadian|Mexico|Mexican|Brazil|Brazilian|"
+    r"Saudi|Emirati|Gulf|Africa|African|Asia|Asian|APAC|EMEA|LATAM|Indonesia|Malaysia|Malaysian|Thailand|"
+    r"Vietnam|Philippines|Singapore|Ireland|Irish|Germany|German|France|French|Spain|Spanish|Italy|Italian|"
+    r"Nordic|Norway|Sweden|Finland|Denmark|Dutch|Netherlands|Poland|Polish|Israel|Israeli|Pakistan|"
+    r"Bangladesh|Sri Lanka|Nepal|Kenya|Nigeria|Egypt|Morocco|Turkey|Russia|Russian|Ukraine|Kazakhstan|"
+    r"Chile|Colombia|Argentina|Peru|New Zealand|Taiwan|Taiwanese|Hong Kong|Scotland|Scottish|Welsh|Wales|"
+    r"Türkiye|Turkiye|Ankara|Istanbul|Lagos|Nairobi|Seoul|Tokyo|Mumbai|Jakarta|Bangkok|Manila|Hanoi|"
+    r"Qatar|Kuwait|Oman|Bahrain|UAE|Abu Dhabi|Dubai|Telangana|Maharashtra|Tamil Nadu|Karnataka|Gujarat|"
+    r"Uttar Pradesh|Andhra|Odisha|Kerala|Johor|Ontario|Quebec|Alberta|British Columbia|Nova Scotia|"
+    r"New Brunswick|Saskatchewan|Manitoba|Cape Breton|Melbourne|Rs|crore|lakh|"
+    r"[£€₹¥])(?![\w])", re.I)
+FOREIGN_SOURCES = {
+    "cbc", "cbc.ca", "global news", "ctv news", "the globe and mail", "toronto star", "financial post",
+    "data centre magazine", "data centre solutions", "data centre review", "datacentre solutions",
+    "computer weekly", "uktn", "the times", "the telegraph", "the independent", "bbc", "sky news",
+    "the irish times", "silicon republic", "rte", "times of india", "the economic times", "economic times",
+    "the hindu", "business standard", "moneycontrol", "mint", "livemint", "hindustan times", "ndtv",
+    "the financial express", "financial express", "the new indian express", "deccan herald", "business today",
+    "the straits times", "south china morning post", "the edge malaysia", "the star", "bernama",
+    "the sydney morning herald", "the australian", "abc (australia)", "itnews", "the japan times",
+    "nikkei asia", "the korea herald", "the korea times", "gulf news", "khaleej times", "arab news",
+    "the national", "zawya", "techcentral", "businesstech", "mybroadband", "techcabal", "lusa",
+    "nz herald", "rnz", "stuff", "beinsure", "capacity media", "w.media", "dcd asia", "datacenter forum",
+}
+STATE_CODES = {
+    "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO",
+    "Connecticut": "CT", "Delaware": "DE", "District of Columbia": "DC", "Florida": "FL", "Georgia": "GA",
+    "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA", "Kansas": "KS",
+    "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD", "Massachusetts": "MA",
+    "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS", "Missouri": "MO", "Montana": "MT",
+    "Nebraska": "NE", "Nevada": "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM",
+    "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK",
+    "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD",
+    "Tennessee": "TN", "Texas": "TX", "Utah": "UT", "Vermont": "VT", "Virginia": "VA", "Washington": "WA",
+    "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY",
+}
+
 TAG_RE = re.compile(r"<[^>]+>")
 WS_RE = re.compile(r"\s+")
 
@@ -194,6 +240,49 @@ def find_locations(text, gaz, patterns):
 # ---------------------------------------------------------------------------
 # Classification
 # ---------------------------------------------------------------------------
+def is_us(loc):
+    return loc["name"].endswith(", US")
+
+
+def state_of(loc):
+    """'Abilene, Texas, US' -> 'TX'; 'Washington, D.C., US' -> 'DC'."""
+    parts = [p.strip() for p in loc["name"].split(",")]
+    if "D.C." in parts or "DC" in parts:
+        return "DC"
+    for p in reversed(parts[:-1]):
+        if p in STATE_CODES:
+            return STATE_CODES[p]
+    return None
+
+
+def us_filter(item, all_locs):
+    """Return True when the story belongs on a U.S. site."""
+    us_locs = [l for l in all_locs if is_us(l)]
+    if us_locs:
+        return True
+    if any(not is_us(l) for l in all_locs):
+        return False
+    if item.get("source", "").strip().lower() in FOREIGN_SOURCES:
+        return False
+    if FOREIGN_RE.search(item["title"]):
+        return False
+    return True
+
+
+def tag_item(item, gaz, patterns):
+    """(Re)compute category, tags, locations and states. Returns False to drop."""
+    text = item["title"] + " " + item.get("snippet", "")
+    locs = find_locations(text, gaz, patterns)
+    if not us_filter(item, locs):
+        return False
+    us_locs = [l for l in locs if is_us(l)]
+    item["category"], item["tags"] = classify(item["title"])
+    item["locations"] = us_locs[:3]
+    item["states"] = sorted({s for s in (state_of(l) for l in us_locs) if s})
+    item.update(extract_numbers(item["title"]))
+    return True
+
+
 def classify(title):
     tags = [name for name, rx in COMPILED_RULES if rx.search(title)]
     primary = tags[0] if tags else "General"
@@ -228,6 +317,7 @@ def guess_status(title):
 # Main
 # ---------------------------------------------------------------------------
 def main():
+    no_fetch = "--no-fetch" in sys.argv
     now = datetime.now(timezone.utc)
     cfg = load_json(FEEDS_FILE, {})
     gaz, patterns = load_gazetteer()
@@ -239,6 +329,8 @@ def main():
     for url in cfg.get("google_alerts", []):
         if isinstance(url, str) and url.startswith("http"):
             sources.append(("Google Alerts", url))
+    if no_fetch:
+        sources = []
 
     log(f"Fetching {len(sources)} feeds")
     fresh = {}
@@ -270,20 +362,18 @@ def main():
             if key in fresh:
                 continue
             snippet = clean_text(e.get("summary", ""))[:300] if label == "Google Alerts" else ""
-            primary, tags = classify(title)
-            locs = find_locations(title + " " + snippet, gaz, patterns)
             item = {
                 "id": key,
                 "title": title,
                 "link": link,
                 "source": source,
                 "published": dt.isoformat(timespec="seconds"),
-                "category": primary,
-                "tags": tags,
-                "locations": locs[:3],
                 "feed": label,
             }
-            item.update(extract_numbers(title))
+            if snippet:
+                item["snippet"] = snippet
+            if not tag_item(item, gaz, patterns):
+                continue
             fresh[key] = item
             n += 1
         log(f"  {label}: {n} items")
@@ -293,8 +383,9 @@ def main():
     merged = {it["id"]: it for it in existing if "id" in it}
     merged.update(fresh)
     cutoff = now - timedelta(days=NEWS_MAX_AGE_DAYS)
+    # Re-tag stored stories too, so rule and gazetteer edits apply to old items
     items = [it for it in merged.values()
-             if datetime.fromisoformat(it["published"]) >= cutoff]
+             if datetime.fromisoformat(it["published"]) >= cutoff and tag_item(it, gaz, patterns)]
     items.sort(key=lambda it: it["published"], reverse=True)
     items = items[:NEWS_MAX_ITEMS]
 
@@ -308,7 +399,9 @@ def main():
 
     # Project candidates: site + stage + place
     cand_existing = load_json(CAND_FILE, {}).get("projects", [])
-    cands = {c["id"]: c for c in cand_existing if "id" in c}
+    cands = {c["id"]: c for c in cand_existing if "id" in c and c.get("location", "").endswith(", US")}
+    for c in cands.values():
+        c.setdefault("state", state_of({"name": c["location"]}))
     for it in items:
         if it["id"] in cands:
             continue
@@ -325,6 +418,7 @@ def main():
             "location": loc["name"],
             "lat": loc["lat"],
             "lon": loc["lon"],
+            "state": state_of(loc),
             "precision": {3: "city", 2: "state", 1: "country"}.get(loc["level"], "unknown"),
             "source": it["source"],
             "source_url": it["link"],

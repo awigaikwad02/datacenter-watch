@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-21T02:25:22+00:00",
- "count": 497,
- "new_this_run": 497,
+ "updated": "2026-10-21T02:46:33+00:00",
+ "count": 366,
+ "new_this_run": 0,
  "items": [
   {
    "id": "5147d416051a640a",
@@ -15,7 +15,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "034fd85837a1c95a",
@@ -35,18 +36,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "1616b14e330a51ce",
-   "title": "Australian data centre group falls 44% on profit warning",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSlg4bXNQVHdTWWlhREl3eU5MTmEtZG5LTjdaZmVReVg3VUZUZmpEZlhkc094VUVfYmVaU0t6VXlDR0V1bHVhYXpzWnBpM1huRGIwZlNiSGl3Z0RXOEpjTDV3cm4tcWgyZklkeGtMLUQ2dExTbDFSUV9wQzJ4WlZJVWFhb3A?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-21T02:00:40+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "AZ"
+   ]
   },
   {
    "id": "356d6000e4467f33",
@@ -60,7 +53,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "68a42bde0f074fe5",
@@ -73,7 +67,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "1325a569486b390d",
@@ -88,20 +83,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "fc587e4afb6d0adb",
-   "title": "Australian AI data centre operator NextDC shares shed 44% on revenue delay",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYVNNNW1uWTQ5RkR2b2NnZ2NRQ2pXRzRVUFQ0S2pvNEhpTGVvTG44cG4tU1dLbkhRN0pWR1otU1Bqc0NVX3BYXy0zTGt0Nm1JRFhFSWV2YVRyVVc4a2hVRmNzWTZ3eDQwelRsQlMxeVlBZ0o4M0huWkdBNUVmWDlIaHJKcnAtWkVnZm1NSkJfQ2paSm5RaHoxaHVqVTV4WnV3TEdjVA?oc=5",
-   "source": "WHTC",
-   "published": "2026-10-21T01:39:41+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "8cb3e31cb5daba26",
@@ -121,7 +104,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "490046751389fc09",
@@ -136,7 +122,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "71d8732c7cc467f6",
@@ -149,7 +136,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "e304b18bbd504260",
@@ -163,7 +151,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "d9ebf30d76f95c64",
@@ -177,7 +166,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "e03f622ae2ebbde6",
@@ -191,7 +181,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "c5ff76e691c59233",
@@ -205,13 +196,22 @@
    ],
    "locations": [
     {
+     "name": "Southaven, Mississippi, US",
+     "lat": 34.99,
+     "lon": -90.01,
+     "level": 3
+    },
+    {
      "name": "Mississippi, US",
      "lat": 32.7,
      "lon": -89.7,
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "MS"
+   ]
   },
   {
    "id": "a2296f951bc161bd",
@@ -231,7 +231,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "TN"
+   ]
   },
   {
    "id": "f08328bbd35f6dda",
@@ -244,7 +247,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "63530d96ebdd7906",
@@ -257,7 +261,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "06a3f05f94624a74",
@@ -271,7 +276,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "ecccd44ca74e694e",
@@ -284,7 +290,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "468452e7c9e56798",
@@ -298,21 +305,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "251911a18ba40754",
-   "title": "Elice IPO: Korean AI cloud firm falls 32% on its first trading day",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeGNMaEdVNEl5cmNINFdWYlh6ZUEtSHBBcFhPZTdOWUR4cjd0MEpVS0N0ZTNzLVMwVXJnU2xaSncwdkVZWTB2bFdCbTlhYlhFbEtRTWhCbVdScHVfV19CRHNBS21uRkZzRWQ5YkZaQXlDTk1HazBsTlQtbm1tUzJEcTVOZWdqNjdjVndJbg?oc=5",
-   "source": "The Next Web",
-   "published": "2026-10-20T22:25:03+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "272eeb9babff3973",
@@ -326,7 +320,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "40535762ee2984de",
@@ -337,7 +332,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "297124022fd4543b",
@@ -350,7 +346,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "4ad9a58e58f8a80a",
@@ -363,7 +360,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "5a84846ce00757f2",
@@ -377,7 +375,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "dbd1cd5e24019503",
@@ -399,7 +398,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "CA"
+   ]
   },
   {
    "id": "73a91ee7f2d2ea46",
@@ -412,7 +414,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "6bc280d26a6f6bbb",
@@ -432,7 +435,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "0c8e541f0c80fbbe",
@@ -452,7 +458,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "AL"
+   ]
   },
   {
    "id": "4315e2ad43d45502",
@@ -473,7 +482,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "KS"
+   ]
   },
   {
    "id": "dd517be5508fe652",
@@ -487,7 +499,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "a3a1c4ef439f3e83",
@@ -501,7 +514,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "b07f5394e26be469",
@@ -514,7 +528,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "9cce71ee9c02cbd6",
@@ -528,7 +543,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "05828345660a0d94",
@@ -541,7 +557,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "eafe104d50cec0e0",
@@ -554,21 +571,8 @@
     "Deals & Investment"
    ],
    "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "62429c5cd1a93892",
-   "title": "Microsoft (MSFT) Withdraws From UK AI Data Center Project",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbmc1UG1NV1F0RG40Y0lrXzJYZUVocEx2UWR5UVdCOWJqbFVJZ1NWSi1sMVpkM1VXUTh5ZWtORThsYjFWS1k0Qkt0andNTmpSQ1BPWE9LOWNuTHNYam9zVjFjalF3LXEzRzRINUNRLXdLTUhoT1k3MFlNVGNDeVRNVExEMTIxWGtxUlJsN2RXWTJIWDUtZ25ydjln?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-20T20:09:25+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: Data centre (international)",
+   "states": []
   },
   {
    "id": "fe475e3948684247",
@@ -581,7 +585,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "0da1e1c32bf1ce5f",
@@ -594,7 +599,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "efe59e700f9ffabe",
@@ -607,7 +613,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "d8f7b7235fc7ed44",
@@ -618,7 +625,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "4810ff691addfa16",
@@ -632,7 +640,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "2c0b530a817dbfeb",
@@ -647,22 +656,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "124bf9d983c0aec2",
-   "title": "EverWind’s $10B AI Data Centre Draws Public Backlash, Call for Debate",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVzlSd2ZCb21fTlZJU0pDcE5VUWJLV2tYTmMybDZnT0c3SXo0dFNybTNyQW8zc2xtMGtrWG4zQ016NlpfX0NiNGJRci1QR0dxc0xBOUdkU1JrNTNtRHRIMGhyYlBtT3VhNWdOUjdIdkdoNElhRHduQWRaQ1RxU3JOVXdqVjR3dXlpOWRhS25aQlRnTlZJaXFRUmEyNEQ?oc=5",
-   "source": "The Energy Mix",
-   "published": "2026-10-20T19:01:22+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)",
-   "investment_usd_b": 10.0
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "ba22d4717a32540f",
@@ -675,7 +670,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "6456f24cb3f0b97e",
@@ -689,7 +685,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "91dc2a33f7e7359d",
@@ -702,7 +699,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "6a3760952be673d3",
@@ -712,8 +710,18 @@
    "published": "2026-10-20T18:21:00+00:00",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "feed": "Google News: Data center policy"
+   "locations": [
+    {
+     "name": "New Braunfels, Texas, US",
+     "lat": 29.7,
+     "lon": -98.12,
+     "level": 3
+    }
+   ],
+   "feed": "Google News: Data center policy",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "4d418bf21ffdbeb6",
@@ -726,21 +734,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "e96053cd71487c81",
-   "title": "3 US AI Infrastructure Stocks Riding The Data Centre Buildout",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTmhfZm5yaEowb256N2FKUmtHZ1hLWWRHd3Zuc3F1SEdHQ1FLZEQ3VjVVUnpUTGYxNGhlN3d4cHlxUXE0YWtETEsxY2ZfdlV3WFcwSldqbjVBaFdORXdmdnQ4ZlRoMlRRVGRCVEN6OVFKaFA3VVhSRlNKZ0s0d1lIMVpPUXkxWFY3MHBlVGpUUlBaZFRxanJhRQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-20T18:15:02+00:00",
-   "category": "Construction",
-   "tags": [
-    "Construction",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "12335f1456ca29a6",
@@ -761,7 +756,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "OR"
+   ]
   },
   {
    "id": "ff57ca1dc4d44e43",
@@ -772,7 +770,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "46ebdf63fe77a74d",
@@ -793,7 +792,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "CA"
+   ]
   },
   {
    "id": "f9eaaab5e634f91e",
@@ -807,20 +809,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "8c58aa44fb5c7584",
-   "title": "The data centre industry has a trust rather than a water problem…",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOXlTTGx4MXgxaXN0dmt5OU9EaFJnMkc1TEVlY0hIWHU2SVdZZEtUU0VDYmtIVFBvWTBIXzBVM1JWOHZkLUlGREZwMzd4dFJya21la0VMMmZvZ1ZzTnRYekpUMU44dmlEVkhIeU9nR0g2ejVCTlZlR2E1Y1l4QjQ0SVMxNVJzYnZPMW9WMWt3R2JQM3EydzR2cXl5anEwN2JrLUF5QVFMVWU?oc=5",
-   "source": "Data Centre Solutions",
-   "published": "2026-10-20T17:01:25+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "fd31ce8c5d288072",
@@ -833,21 +823,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "2857b9a0120f37c7",
-   "title": "AI’s New Battleground is Power",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hd0FZMHA3aE9BQzN2TkI0S0pJOXI5ZXZ3Nk1kNk0ybllOSjJ3NnpUTGNQeE5zZUotdjZkTnQ2WGk2NldXSGJyU2Flbjd3MGNDT29ZVXJEc1hoWGJWckRxUk9uNjgtZGd2OU1lVWVjSllKUW94UXd4MV9n?oc=5",
-   "source": "Data Centre Solutions",
-   "published": "2026-10-20T16:48:55+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "117334442c48940c",
@@ -858,7 +835,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "c4b725818495e3b7",
@@ -878,7 +856,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "e943e4697d517056",
@@ -905,18 +886,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "6e899d1dc28dc675",
-   "title": "“FAIL TO PREPARE, PREPARE TO FAIL” - WHY WEATHER RISK MANAGEMENT NEEDS TO BE TAKEN MORE SERIOUSLY",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdS1lbXpaN2dqbVh2ZUh2b3RrVXdXdnBfMExEVUhoWUVjRnZGZDlTS2d0cFVXbWo0NXB5RGIzek5KemFiSWUxSzJMSm9fSVAzWi1hdVRJWWdVMnA0R0hPV3BaN0wyM3VoZm9fN0l5cThod0kxZ0UxTlhOcldsZ2M4WDcwSDFvSmZfOUhYNkxPZVotS29lVk16RE5zYkFjdUxmOU9PaV8zQWdzZUNuRGtFaDlGUk5xcWhWSXB4cW1UYXloRmtoVHRNdUJhQnpFZw?oc=5",
-   "source": "Data Centre Solutions",
-   "published": "2026-10-20T16:37:28+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "53ff54c414deb4d8",
@@ -930,31 +903,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "e1acec94cf34caf0",
-   "title": "Duos Technologies Wins Best Data Centre / Edge Service Innovation Award at 2026 Global Connectivity Awards",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdjdrWDdQb2g1RHpuUURHaGk1bXF3RnJZRTBRRkRZdXZZRWF1cUZTdUZGWVI4bFpUb0FtZVZIaDhaeG1Qb0lJM3A4Wl8tWG94eWk5X1JBYS0tTUFyRV91X1Z0U3NTUHIwMjV6aTBUOGJIYTRiVTkyYndEZDZXQ2Q4em9nUTBLdnhHWVhCSWcyODNHa1I3bVlwVTUtZGhDWGRLNFNQNG5iQlI4a3RVdzQxa1RrQ2JNVm5CZnRtTFdJVzREWk5Qdml1SlludFlKWTFZQmdwTm5abXJWSGs?oc=5",
-   "source": "citybiz",
-   "published": "2026-10-20T16:16:14+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "88d0bfe99957eb74",
-   "title": "Marvell, Microsoft & Oracle: Why Servers Need Built-In HSMs",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeWhvZy03Uy1SejJmLWMxeE5YXzJMWWtsZS1uR2g0aWZ1RXItcUxGZVJFZHg3eDNBSnpsMXVfcFdobkFhcFFhTVR4a0pHNS13VDFfemVSbGU0eThndzNMR0xaR3lKZTJKVTFsVWI4b0tXcUZWVjVXaDV3MFdEYXlxTmtHTXNUN05rZ2ZScjNMWkVha1Y0ZkE?oc=5",
-   "source": "Data Centre Magazine",
-   "published": "2026-10-20T16:14:55+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "a5a684f9dcaf1102",
@@ -967,7 +917,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "1dec769744777bfa",
@@ -981,7 +932,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "58eea332e998cef2",
@@ -1001,7 +953,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "d3c979902fe5a9e6",
@@ -1012,7 +967,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "c4a9d770897dd913",
@@ -1033,7 +989,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "UT"
+   ]
   },
   {
    "id": "8c4b9e8433c12826",
@@ -1053,7 +1012,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "AZ"
+   ]
   },
   {
    "id": "8928d777b2bab2b4",
@@ -1066,29 +1028,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "3d48b81fc5c59d68",
-   "title": "Chief Telecom breaks ground on 16MW data center in Taiwan",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTDFZVGdUY1V6dEl6MGtXRmVLa1RXZ29hbk9jTjZKMlFLSHcxVWFtNl9hd19fTlhaTVJieHlpQWF1eUxxZzNGbFF4NlBlekp4SFNxZ1Rxc19lLWdkZlNkdXBReXdpY1NGWVFXMHRDdU1qbVdoS1ZDMTYtdjBMUmYzRF8tM1ZXZlZNN3BWb090T29TRmtuMkV4Z2hod1hYa3VkZWdZ?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-20T15:16:53+00:00",
-   "category": "Construction",
-   "tags": [
-    "Construction",
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "Taiwan",
-     "lat": 23.7,
-     "lon": 121.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data center construction",
-   "capacity_mw": 16
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "2cb52374c6c81082",
@@ -1102,21 +1043,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "df2314df65a7151e",
-   "title": "Submer Group launches Corenix for modular AI data centres",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdTQ2NHR3OEtuZ254d2szdi1qRC1aRnlsd1lLdldscWdqMDhNSmdMVVFXU3ZRRXRhTHM4V1BSNTFSbjd1VUhqTzROZklTWE1zbVdfaDFpb0t3akZQaFp3TWVjOFowbFRWWC0weUJ6a3lYT2hSSkJQWUszbUkyMFF5ZVRFNFN5OU1Uc0dBbV9OdV9rQVVzVUlTWExKWTNIdw?oc=5",
-   "source": "Data Centre Solutions",
-   "published": "2026-10-20T15:05:26+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "8eda93f178433eed",
@@ -1129,7 +1057,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "60988f9744472912",
@@ -1144,18 +1073,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "56defb67bbc9cf27",
-   "title": "DCX Adds Coolant Control to Facility Distribution Unit",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMElWRVd6VFlaZmxGbk5aWXZoQmJScm1XZ3FRM0dwTXFuQ1kzWXlmOGRRSmVvVG5iT216a0lINk0zVXRjWXBjWXcxQno4bmJyTU9hb0dfbkRWenBIU3RTaV9BOXdjZkppODBKd2ltNmZmTEZPdDBrbDUwZ2V3YnNsallBa1Z3dXozSGx2M1JoNklLbUJE?oc=5",
-   "source": "Data Centre Magazine",
-   "published": "2026-10-20T14:44:55+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "90e8ccd092e78faa",
@@ -1168,7 +1087,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "a94df3c5e284ba6b",
@@ -1195,7 +1115,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "02c55e951b123aca",
@@ -1209,7 +1132,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "ba378319e64d4c05",
@@ -1229,7 +1153,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "ce19d14cfcd9edea",
@@ -1242,7 +1169,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "e371f1932db5d15c",
@@ -1255,38 +1183,8 @@
     "Deals & Investment"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "8758a8c670aebf2b",
-   "title": "News | CBRE to buy data centre specialist in deal worth up to £760 million",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMWdiZ3VSZ0ZNdlZJeFp6bFpVLTI4d0lYdkM1Z19ZSlBxRHlJSGFfYjNqV1d2LVFpVnp3SlE1WWJod0hNZEV5TzBrV1g0ZU9lTmc2NzVWZkhaa2NMdlo1RGNyRXdDQ3dZMk15anJuVjIwS1NHdGJYNUg3bTZHM0tMdElWc2hId0k1WW9HNDZPNnl3WktkMGVMcFY0RzVJb2U5WmllWXRSLW1aZUZ5?oc=5",
-   "source": "CoStar",
-   "published": "2026-10-20T13:50:51+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "2cfe5baa549fc667",
-   "title": "Bitzero Holdings signs Norway data centre development agreement",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQkFWV21jZlZTbVV0OUJBZ1JldEluTWVFbVB1R0FBMTYzVHJQc0k3bG1KMnhUUFVZbEdkRzNabHpIVjAzVV9aLTFQMHE1NHlvMFJKVnZLSUdydnV5ZndsSF9xdVZWV0xBNFdkWm9BQ1JhNlNoa3BLLVY1eGFOOFlYVE04b1p3V0hn?oc=5",
-   "source": "Mugglehead Investment Magazine",
-   "published": "2026-10-20T13:41:31+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [
-    {
-     "name": "Norway",
-     "lat": 61.0,
-     "lon": 9.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "b01bdbbe7cc4ce16",
@@ -1300,7 +1198,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "71ca40e9a7350c4e",
@@ -1313,45 +1212,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "0a2a7e7b4080dc2d",
-   "title": "3M (MMM) shares jump 5.4% as Amazon expands $6 bn AI data center partnership",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOWZaQjltSGtENlFYazJhbWw3a2dzX0ZlZVlHeTc1Zk9pOWkwT0RObENHMU9Ga3RId1FyNmw5LVpubUZfZmM5RURzZnZWcktlaG0yR1lQcEhHc203MUNxbWp5eURiVTAtckFac0lCNm1hdVFJSjB1aGVZcnFMcDlSeW5DUm1MbVAtSzR4eVd2TWk?oc=5",
-   "source": "Beinsure",
-   "published": "2026-10-20T13:22:08+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale",
-   "investment_usd_b": 6.0
-  },
-  {
-   "id": "0df5bc9d745d82a2",
-   "title": "DataVault plans 3MW data center in Auckland, New Zealand",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVGdoM3ozOHNoeEVCOXlET3BNblBDZHZUUjgxTnNkdGFfUVlHYzlJZjR5MWNmQlZlWF9ENVVZWnNpU0pKNkVIOU5jYk9rc2tjTDdoV1UwblVEQ0NwRDh3VjM2MEc5cW5fRy0xcTMwVWdCVmRIbFFpeEN3ZEkwMEhVY3lCOHlKNGZYWjlkX0c5NU1tRWtKZzE1bkFVeDdUc1p4?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-20T13:21:43+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "New Zealand",
-     "lat": -41.0,
-     "lon": 174.0,
-     "level": 1
-    }
-   ],
    "feed": "Google News: Data center announced",
-   "capacity_mw": 3
+   "states": []
   },
   {
    "id": "a3ebe6b6e26a81ff",
@@ -1365,7 +1227,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "46abfa47bd59ff88",
@@ -1379,21 +1242,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "8e34bcfeb0460d66",
-   "title": "Power outage hits Google Cloud services disrupting UK banks",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVlRCYUcyTVRyUTFUUWRiamFVeW1qTlhfNlF6VVNhal9vdE1RZUp1dTRSb05lNkFtbzUybVJoNmRITVVvbDN6M1h6c1NETmxjd2Nzb2k4VHhnbElidHFXeEp3ckZ1UU9rWmJ6bEw5djRXVEZPOFhmWVNicE5TNXRIOFRJRkc5SHZNSFdtam13TXgzYnM4ZS1VNUwtcw?oc=5",
-   "source": "Euronews",
-   "published": "2026-10-20T12:56:28+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "269b58322e87c2be",
@@ -1406,69 +1256,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "649c799dc1cc83a2",
-   "title": "How energy autonomy solves the data centre capacity question",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOGczTmFCMVYzc2Y2d0IxeXV3STBQUFRCVHB6elhGZ0VyX2ZhVko4U1UwUGs1dm5sNUZZbDNyMDFmcUNHYkg1WFUyLURvRjlxMldoMTdLNEI1R182Sjc2QWxfSUNfYUgwY2xZZ1BBdmFhTkN6ODRZOWZGZ25nVkFiZjcxY1B6QVpkUERCdlVKRG0tMmFkeUhj?oc=5",
-   "source": "Enlit World",
-   "published": "2026-10-20T12:38:15+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "ea2ccb1363630e27",
-   "title": "Data center stocks remain under pressure after Korea IPO plunges 30%",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTDNTb1VtS1EwN01MVno1T19zRkJOQWZxZ1B4Q2VnalhzWTFYVUZHR183cDJXT3BhMFZkNUpWb1A3b25ZUkdZWE14Z25oT3E3RFFhNVVzQjFnMTA4dkMyaVJCV0dRSDVXaG44ZlRzX1c3eGZQei13OV9ZNXFjMU5tZXMyamdVYUtMZW1uUkV0QWt2Mnc5dTRlc3JoVlBnMVctdG1QVU9TSTlwenNBN3N4ZVBTUnV1MldkV0HSAb8BQVVfeXFMTmNDNWN4eEZtWlJPUWVaRWZCX1lVT2h3RmJ1VGpGSDlwWlJ4TUZmTFMxTmUxWVRmVFBwWlhUVVFmRFk3OHdKQ2xHaUgxR3JHaFMzYVNndWZReE43WXBQdTdQN282b3g2X2VQWU52RmtXUm9ldkJudnhFQW1yMjlraDlNbHlFa0Q4aWwzS01MbFNCNS1oTGZnZE52cVhsMzVoWVNTVGxET0F1ajNnNkhZUG5aOXE1NUdXcGxTRkV1VEk?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-20T12:36:51+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "ed3d9609346a44ba",
-   "title": "Fund Business Outcomes, Not Technology Projects",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVlktd3BQUmdubUNUZjhGVk40WXhwSnE0X250a3o4bUJOX3c4M0t3MG5kMWFVMUM1OUxEbkpybVZFUkY1UVNQZW94dktrMFdhcEVWaEhtSEVpUXZ5UUxtd3N1UDJzSDNlLTNtM2FUdGFLV01pVl9uMDQxOHVVNUw2NlFRa1p0aENWR0RCOE1ITzQ?oc=5",
-   "source": "Data Centre Solutions",
-   "published": "2026-10-20T12:29:56+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "ea9e58872334df53",
-   "title": "Data centre copper demand nears 1 million tonnes, tin price doubles: LME Week metals debate",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQzg3YnZuQ3piWlgwT0M1eEd5Zm1xZ3c2SHdIRHZBb0JwWmt1cmFyMDFBbEhyZGNpRFFBZUxpcWdYWHZITGt3eVF5OTdEU0s5dmlZR0RfcVljZ2poTWxvRk9GS0lWX0xsLWtzTnF4OVpDSTVZTEh0TjAyT3EySlB1VzVaMWhSS25fMWVDWENFS2RKeVRPTjZBSFl4enhpX25xbEdZTS1MWWZFejhWUzZkMTZkeFh0VU5VSGRfZVNlNzNlUlA3TGc?oc=5",
-   "source": "Fastmarkets",
-   "published": "2026-10-20T12:25:18+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "a3437f118e1b66a4",
-   "title": "Questions over £12m data centre bid under hotel",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1wS1pJMEc4ZUJKNy1QMlB1ZEplY3d0YU5vTUJSdFdxVVRxRWRDQVlESm5uQWM0NUxvejVKSEJSSVVEUFZmektsbWhZb1NnZ0Q1RHNWRjhSRUdfaEJJbEt2b2U3dWhLbVgwSjgzQk9OZlN1c2IwMVowSlRrSEpuNkk?oc=5",
-   "source": "AOL.com",
-   "published": "2026-10-20T12:21:29+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "aaf9716a8237d9d7",
@@ -1482,7 +1271,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "803d92ca86cef7b4",
@@ -1503,7 +1293,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "81bea6afc6b522e0",
@@ -1517,7 +1310,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "5493e5110a584e68",
@@ -1528,7 +1322,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "becb4b4cedceafc1",
@@ -1541,7 +1336,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "1a377fe4b94184e1",
@@ -1554,20 +1350,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "d4170f352aac4ba2",
-   "title": "CBRE buys data centre infrastructure services firm Onnec for up to £760m",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObFlZUDN0eURWVTEtQ2tPZ3ZXNmtxaWFieEl3WTlvaVhIdF9yTTBGbzUtWnpzVGdsS19VY3M2SVlqd2pNaDFXTlhRUnE4Mjg2SEZoaGIyZ29IeHBXZ0VZeUlvdHBJcWNnQTBwM0JJN3dydU9BUG5BcDdHYUNIYmRDT0Y5UjhwQ1VyQkgzdXN6cXU0MENuX0E3UU5wQW92N3hmZ1p4RjVvRl8tMEZkMFltdy1Hb1VHVDVOYmVTRA?oc=5",
-   "source": "IPE Real Assets",
-   "published": "2026-10-20T11:51:29+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "7a871daaa805771f",
@@ -1581,7 +1365,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "b88fc6232617d8f7",
@@ -1601,7 +1386,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "TN"
+   ]
   },
   {
    "id": "808f91224997af43",
@@ -1612,7 +1400,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "7c79287665342b13",
@@ -1632,20 +1421,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "d05652aeda222a3b",
-   "title": "The A.I. Data Center Backlash Has Reached a Quiet Corner of Rural England",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZUR0R1VXTFp5U29rM0VBTnlVY09MSUU3amd3a09NZVFjeDJISUpCVzBDNjExVHJFdVFYQTlqZXotek1MU3BHS3ZGcWEzTTh0RDV6aEtWUS1MSXVjSnFtYzdIb1BZWUFwaEVUczg5dFlHaWZWMDVFbUpOQkNMVTN1SVpSYVRlM1JKWEQ3Qw?oc=5",
-   "source": "The New York Times",
-   "published": "2026-10-20T11:06:36+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "TN"
+   ]
   },
   {
    "id": "e483c164052a3504",
@@ -1658,7 +1437,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "73bc1778da9d9acb",
@@ -1676,22 +1456,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center power"
-  },
-  {
-   "id": "8567351e6815aae0",
-   "title": "Digital Realty breaks ground on 22MW data center in Ankara, Türkiye",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOT01iYmFsSWpERmIxLW9vM3lBNUhURHRFNGRYVGpKZlpBd2s0bEVhdjNOVGFmSGl3czl6d095ek1acUhTTDZRVU9TaFAybGUyX21aakg1V3dRLWRSQVdwbmZ2VVFjaGtGMU5qSmhoYjdTNmlKWTRXYTJURERWUUY0N2ttRXIxWmJjYVNBMW5fdlZPd0NIX2QyN2llTEs2bEttSUJndDFydlFvVnItVUoyY1dtNjdhUQ?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-20T10:59:51+00:00",
-   "category": "Construction",
-   "tags": [
-    "Construction",
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center construction",
-   "capacity_mw": 22
+   "feed": "Google News: Data center power",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "e44c331b8674a6b9",
@@ -1702,7 +1470,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "be4c00729dfeb84e",
@@ -1728,20 +1497,11 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "8aa341b1da3c9af1",
-   "title": "Delta VP3000-E Drives Target Data Centre Cooling in EMEA",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQU09xdU9RMExiVUFsaDdLckxQam9zLUNCb2FOM3RYaWJ5M1NCVmtUWVlNd0Jxa2h5UXBFcTdIakZPNGhhRFk2dVl0QXdzX3ZqcTFLSm9fVGNaZVFBRDFlT2doVktzRlpKaGxYc3FDeDNTMzRpY0U1eUVOTDBrV3A0cWQyZDdjTksxYTFDOXhxaGtWYWlzZVJn?oc=5",
-   "source": "Data Centre Magazine",
-   "published": "2026-10-20T10:49:55+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "GA",
+    "VA"
+   ]
   },
   {
    "id": "a8048163c030cbc5",
@@ -1754,34 +1514,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "f5d8081ee81aaeba",
-   "title": "ABB Announces JV with Mitsubishi Electric and Q3 Results",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdW8zdVd4X2x6QWF2ci11R0FGTkRCTmczZ1F4VWUtb2lmSFh5VzUxSFZ3aENFSTJ3VVFCNWYzQzRneDdGRjMtRVJjdEdvbm12RlM0bmo3dVREMTNzVWxuUmJ0UVBlUmR1SWVEUFdjZkZRMnhkdUxBY00zQXBtdjNKSE9GMEdfYldxenZVREdNTVFya1BObFA4?oc=5",
-   "source": "Data Centre Magazine",
-   "published": "2026-10-20T10:44:55+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "8b13d10b2f110aa5",
-   "title": "AI data centre giant plunges 38pc in stock market debut",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbmVCWGVOUVRsU29vUGZGeDBNaHF5WG9pYWxiaFBkWm5ST0NEUXQ0LUxUNUF6N3JnR0ROanpIME1BVDZsTDBSWGlTdUs2Q3oyZGlGRjFWVkdwekk3SXF4aldfcmNSYmllRGE2bXRZZmhkeUthbzZLNldndndoZklUS3E5dFJpLXRwbHBETG9MVVlCaWlDZXQ4TWZncGhickMyelBYdE53aw?oc=5",
-   "source": "The Telegraph",
-   "published": "2026-10-20T10:43:00+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "4ad107adb441e39d",
@@ -1794,20 +1528,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "a1ec5d6ab6c2adf6",
-   "title": "European banks, websites hit as Google Cloud data centre goes offline for hours",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZFl3Um9nSExwbXBBZVBETWVHWUpMRDc1NzZvNG1rZnV3dTgwUS00VkV4OUlBbDg1VW9PNUdaLVFOdnZ4eE1DS3FqWVpzLWl4OW9rNXUtMXR3NGktWlJsa3lscXRXU29udUNqQmUtbjlITGFGMzNGZEdtWmJmck1ybl84blIzQlZjM1E?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "published": "2026-10-20T10:36:07+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "94227132351f93f4",
@@ -1820,31 +1542,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
-  },
-  {
-   "id": "4292d71e4d42f2cf",
-   "title": "VK confirms drone strike on Russian data centre",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JdTM5ZjVmZElIME9SUjdkY2NGWmdsd01UMUZOa2dGTHhzeEZYdTd0MVlyQUg3ZS1ucEFFMmhJQ0lYNnh1TzBTREN2M0NCdTVUeHB6X1dDWWxwdmwxRVZLa3pDNF9rYkpDZUwwcEZ0bC0ybFBVRHJhM3RCVWVNZw?oc=5",
-   "source": "Digital Watch Observatory",
-   "published": "2026-10-20T10:24:00+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "72b806e210275dcb",
-   "title": "Luna Innovations pinpoints optical faults in AI data centre testing as connector density rises",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT1lHRDlJZ3p4ZWtUMnhFeEpvRk9XQUVIeFBqSjZzZTNDZDI2Sk9NTDdqbUxydzFiUy1zZnBLNlJPb0RaVmlRWWx3QmV0YVdYTU9JbHBvdkdOZmEyU1Bic2pDYzF2X2xLbEJBVE9PcVdvejRoNGtKbTZKbnkxb25IeGIza0o0VGVTMHc2eU9IVnJaa01WZ3g2Q0lNQ1A1VVR6Ung4elBoc0g3MnpNVHVzUHBkMFVBYVRWZTROb0RQb0lCY2gw?oc=5",
-   "source": "Fibre Systems",
-   "published": "2026-10-20T10:11:58+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "3d7e206c184d66ef",
@@ -1867,7 +1566,10 @@
     }
    ],
    "feed": "Google News: Data center announced",
-   "investment_usd_b": 66.0
+   "investment_usd_b": 66.0,
+   "states": [
+    "WY"
+   ]
   },
   {
    "id": "1e7e3d2f1ab1094e",
@@ -1881,7 +1583,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "860e9e9968c29433",
@@ -1901,7 +1604,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "KS"
+   ]
   },
   {
    "id": "07f60e96d376f8a8",
@@ -1915,7 +1621,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "3a8fe3dcb8ba9cba",
@@ -1933,7 +1640,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "6292d904b15f5229",
@@ -1951,7 +1661,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "CO"
+   ]
   },
   {
    "id": "4882a10912d41ec6",
@@ -1966,7 +1679,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "ce498550128cc579",
@@ -1983,9 +1697,9 @@
    ],
    "locations": [
     {
-     "name": "Memphis, Tennessee, US",
+     "name": "West Memphis, Arkansas, US",
      "lat": 35.15,
-     "lon": -90.05,
+     "lon": -90.18,
      "level": 3
     },
     {
@@ -1995,7 +1709,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": [
+    "AR"
+   ]
   },
   {
    "id": "24b4cb2fac02d20a",
@@ -2008,7 +1725,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "d70eeef7faae3783",
@@ -2021,33 +1739,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
-  },
-  {
-   "id": "15a5bdc7f8a04ff5",
-   "title": "Amazon’s $1bn pledge will not buy data centre consent",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9tSjZkbWI4bEp6MkY3aE85d0ptTTdOSU9NLTV1RFl1c0RNanhUdjZ6VnphZ3JJcUFoWEVSMmlGOGcxVXpjUmNHeHctODRaaTZJc2VpV3phc0FfbTVYeGVwdWowMGJDXzNKa1l6bEdMZkhNOC1XcTBOUC1NQkc?oc=5",
-   "source": "Tech Monitor",
-   "published": "2026-10-20T09:00:22+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)",
-   "investment_usd_b": 1.0
-  },
-  {
-   "id": "99d323492b4fcd11",
-   "title": "In New England, towns are using a very old approach to take on data centers",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY3dVYW5TMG9QQnBNcmVWMl9PZ09GOGhqUlE2bVY0V0pOMFY4ejJfZ096MHlRUDM5N0pkR0lwNUtKelE0RmhsR20zZ0l6UlhJZzdqMEpQYkpCTVpVbmJWSl9ISksteTI0YWROWUI0WVlXQ0hBOUtKQ0pqaXVnTkN5alpmNC1PVFVRYXlWS003cENaU2Q5a1NOd3NKSnlBSHZVZEcyZWJzZkZqQWRKQjJuS3d1c1U?oc=5",
-   "source": "New Hampshire Public Radio",
-   "published": "2026-10-20T09:00:00+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "984b911fb234f04f",
@@ -2065,7 +1758,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "NC"
+   ]
   },
   {
    "id": "53bb67e7c4ece1e4",
@@ -2079,48 +1775,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "27268ac0da7f7aa1",
-   "title": "Microsoft (MSFT) Pulls Out Of UK AI Data Center Project After Power Delays",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbjNRSDMyMFAzaDVwTXNOSUN4YVRfSmwxbDFtMUZpcmRrTVJSMUFrZUtoTUxGSWxfNkRNaEtRT0wtcFFOZEtnbUlpTjhELTNTU3Q0MG1hVzVNMmJ0alAxZUppV0ZCY2hnOERNT3hNRVZFam5OYlVnNEYySVhZY2RBbXBXcHV6d044Q3FIQllkd1J1VnRUTUFYN3lhZDhNWEdTZVpRV19JdFY1OU54SlBJV2tlWmx3dWstTTZveW5hUHRxM0JFcGfSAcsBQVVfeXFMUFZWa0hxdU1aeHBESzk5eUJKQkJaS2JOMVlCYWpoTVBfWFk2T1lOaEJIYURDb29MOE9MMzRjZXVzbTU3MEJobU9nWldPdkJiNWYxWmppVlF6eXVkeDZyWUswcHZVWHM5X1JaOTRCWDhtOHZqbEhwOWtheFczQmpaQUZxRjk1cTlnSFphSVpMcWFyS054eDU5RFhWYlBXRnI0dGFTVkJIM19ybGRGUHZkR1lnZ3BSM3hPOVZsUXBhZEd0cmM0Y3o3V0xsbzA?oc=5",
-   "source": "Simply Wall Street",
-   "published": "2026-10-20T08:25:49+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "118bfddcc5eefdec",
-   "title": "technotrans continues data centre growth with multi-million-euro follow-up order",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWjdfR3RTdUIwbzdBZFlBN0kxLVlJN2VGTk5sVHdVdGp3ZWZsQ1dmRElYSjNmdXhSWTQ4cno4ZXdXWVlOSFJuRTRuQlNDLXRpRUxuWTFTYmlIY2NnUzd1ZUJrdl9oT0lvSnJhQ3c4dVRVZzBaajNMQzlEbl9lMjZ5VG9JUjVYTmpKTV9iRnJldnl1VVQwSUFoWWNoSFd1eTBXMlA2Z0gyenR1Vm1sWXEtTTViZUZEQXJKSkVrdE5wR0lVODQ3aXR3Uno3Y2xzRUdKN1FkaWJUakN1dWlj?oc=5",
-   "source": "finchannel",
-   "published": "2026-10-20T08:23:05+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "33ce98936e3e47cc",
-   "title": "Why Has BDC Developed its Own AI-based Operations Platform?",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMHVZcmdoa25HT0xoWnlyNFhfOXBoTlExOVk4X2JkSHN4bDVrZkNFYXJzdU1SR1RkSnRCZWJLYjlQMnptNVRsaE1rVGktMXZzRGRObERpUmY4Z0QwQ1gzNUNaSVMwUGVaUU0zMGtVay1Xa1RacjJPclRmNTVDT0pXcVBmMDhQUjVkQzVmOWI2aE9PUnY4eGdQblJn?oc=5",
-   "source": "Data Centre Magazine",
-   "published": "2026-10-20T08:12:05+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "999174f3cc6f3135",
@@ -2134,7 +1790,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "1303f9889ddc63bc",
@@ -2155,7 +1812,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "TN"
+   ]
   },
   {
    "id": "89be0dff931dd7a6",
@@ -2168,20 +1828,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "9dde44fafdaf91e4",
-   "title": "ABB: Where there is electricity, there will be data centre build out",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQmJ0MG0tVk1EblVhU3VwbjhaRWpyVVAtd1NORkdfbnNFYm44QUZfaWhFLW1LODNzY3VPVE5mODJfMDdXR0VJVzBSQ0JTV09qTTJTNTdMLXJtdDRZdmNvWERpN2NVMGQwOEVmVjFVV0JXdGNOcnRhVGlvMmFLbFdMaUNBZ04tejNGZjhxcndjM2ZjMFJNTjlfSGJOT2diWGp5ZlhpYzVEM2ZSQ0hDeEE?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-20T06:58:43+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "523b8cb75acba73b",
@@ -2194,32 +1842,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "c4218ee0fd26253c",
-   "title": "AI data center stock Elice plunges in South Korean IPO",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1yOHdNeHByVFFiZ1U5SGctZ1BxVVRucjZDZmt4eGt1ak1IZlFUZ2xQLXl1TDRYbm84ZkFDeHZZelBhOGlWNWdnTkJwOFhPRmp4ZEo5UXllb1ViTEhCR2NNQTB5TjViUWtreEN2TzNmZGw2ODhNZmQ2WXRR?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-20T06:42:03+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "89b8a5a237b5c1c7",
-   "title": "Willis Re's Boonstra: Concentrating on data centres",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSnZVRV92X1BrNE1yaERPRmVLak9pWTdDVWtEYW8zWWZwVzF3Q0VXWEVZbXlEY25Fc3pHNXZVcXRpQzluR2xLc2Q3N1haU210dmt0cWtFMDk5ZURkWTVvUTFrMXhZVGJ1Q3VFVXNwYm5XbTlrdXZpUzE2U3N5OENCSm9zbVhOWXNxcEJIZ1plblhrMFphdW9PZ3FBY2c0bnIwdDVN?oc=5",
-   "source": "theinsurer.com",
-   "published": "2026-10-20T06:12:32+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "e0a08d94ce74f116",
@@ -2232,7 +1856,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "933475472e2ebe27",
@@ -2245,7 +1870,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "b8f562e50be1b881",
@@ -2258,18 +1884,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "50a336d62696d1cf",
-   "title": "ABB says data centre business booming, Q3 figures in line with forecasts",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZEowazhoZ3VQZVBRcnlNY0U0NlVzY1Q0Tl9lNWpYMktzNng2TkVIejYxN21fUVprdXNYMkZGNGp5aFRtUEw1S19ZeDlMYnpscFZQWFdYVS1pd1JSUWJSYU9yRi16cVRpdjF0SUJwclFwVUNnWHZyczV6UE12YkQyY19zczBnWHU4eDVyQkZLUldqXzdVdWUyMnZHTXBMYXRhRTVBMDdZV1hYVjVIblpucmtfOG9HM3BzMU11TXlXbE4zTEZXOWJRb0dYT1ZRNTY0aGU4MDV5N1Q?oc=5",
-   "source": "TradingView",
-   "published": "2026-10-20T05:02:00+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data centre (international)",
+   "states": []
   },
   {
    "id": "4fe00a0751a5ca48",
@@ -2283,7 +1899,8 @@
     "Deals & Investment"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "5cd91d2c06998f5a",
@@ -2304,21 +1921,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "536d1f02b3d77666",
-   "title": "Microsoft gives data centre hopefuls a pre-IPO reality check",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPV1FWWHhpQ1hITW1wT1lEaU4tUURnZG1hWWdkZHBOWWZpTlpsU3R6SlJ6YlRTeTg1WVBWdjJCazN1VExueUhzdmtKbC1iWTZxMlNFdGN2cVRPaWhxa25YWnVsejZSdDAycWZTZ3AxX3RRNkNBTHhJUlNpVHh6ZDVYbkJJTzc?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-20T04:00:30+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "c6a962c1a6f6d8e9",
@@ -2338,7 +1944,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "OR"
+   ]
   },
   {
    "id": "e1ff5919d227e7c2",
@@ -2349,7 +1958,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "f4a81cf0fbdace93",
@@ -2363,7 +1973,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "8ce1b736a50e9dc8",
@@ -2384,7 +1995,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "b1e0e283eb7a636e",
@@ -2395,7 +2009,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "48cc00f55c96e51a",
@@ -2409,7 +2024,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "cfda138d44b37138",
@@ -2422,7 +2038,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "4d6bdc98eb0bc34f",
@@ -2435,18 +2052,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "da588ac1dd01970d",
-   "title": "South Korean data centre builder tumbles 32% on trading debut",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcUcxTXJtVUswMzU2dlgzMmFMTHRScGZzZjVsUlQwWG9iZFFLcl9IOFZrUEwwM1BWWnN6b0I3WDcwWG1yVEZNNnY1OGM4V1NfR1M0bUgxMEd3TmRFcHRRWERyci1jcFk5V1BaanhVUk5FVUZFVG9ld3MyckdfRFJmc2xzQzI?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-20T02:23:45+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "0f6f4d1d92cdd457",
@@ -2459,7 +2066,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "1396b29de19d7f39",
@@ -2480,7 +2088,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": [
+    "MO"
+   ]
   },
   {
    "id": "ed84049f818fa196",
@@ -2500,7 +2111,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "CA"
+   ]
   },
   {
    "id": "d7347f612f0a3a43",
@@ -2514,7 +2128,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "8413d3863a1c9f34",
@@ -2534,21 +2149,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "99650ca3761ea50d",
-   "title": "Trump’s Russian diesel deal opens the door to nuclear-powered data centers",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVjVTLVZ0X0M5bEM2ZXZONEUyTHA5cENOZTUyX1gxdFcyWjdnajg1ajdxX0VNVjNYQ25qYzRINmZsQTB3eEEtdGppVEJpUFV1R0FiVUZHaVYxdDZOWjBkejY2Uk5ld1pVam5KNWxaMzlsQ0EyeTc0d3AxMGQ1OFRabU1fc2oxYW1qbnpTWWo3cFBacUw2NE5pZm8tS0dmUUZ2LTVWTC1NVzBaVDFqeUJKZlJsUFlMR1A3VmRYcVA4SHdVTlZLUTVnSS1ydzluUlY3VURfaGdRTWc?oc=5",
-   "source": "TechRadar",
-   "published": "2026-10-20T01:05:00+00:00",
-   "category": "Construction",
-   "tags": [
-    "Construction",
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "9a2d688b85488d8b",
@@ -2568,7 +2172,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "8a73db702f23fcc5",
@@ -2588,21 +2195,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "b76f26507e0f2778",
-   "title": "South Korean firm's debut plunge adds to investor concerns about AI spending",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU1JYM3hYdDlsc1JuLWVCVHlKcld3Skc0Y1M0WWgzbk1JNFVJbzhsNU13eVVmSUNTX0hPX1ZGUXotNzVkV3UxTi1yMTlhNm04S2lzODk4NlRhOXFDMUFfb1cxbXd3TzZoZVl3QS00aldHcmNieDZSZ0x1eDlEYjZ5NmRCbWVEeTQwQ2RreWdkb2ljUXB5cDlKalhpTWZ3SnN5ek5pVzlBRWNEQ0d1SVdOREpqMUE1LUZf?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-20T00:17:00+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "CO"
+   ]
   },
   {
    "id": "00acfd976121cc36",
@@ -2613,7 +2209,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "c3bb5fcd7616acc6",
@@ -2626,7 +2223,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "e3e0ab51a8d3d3ee",
@@ -2639,20 +2237,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "1d10685090a688b7",
-   "title": "Vodafone Launches Express Capacity for Rapid Data Centre Connectivity",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaUJVNVNaU19TTGtMZmpSZzFmRUMtRmdyOHYzSXhlZ1phQllrT3I2cFlTNk1oOU5lRVR5MEwyNy0wMTNnWllRODE5UGk1VU02ZHk0N19rdkhwUl82RTNBUWNNUkI1SG9nd2RHdEVsclFXSndDaF9MZ0E0R3B3bTlTY3gwSl83STlWdVU2VUJuWlVzRlVZOEVfVlhfalpVdS0wMmNueHVRSE5ib3ZhOFJvOXFvRzZqQkR2dlA4bVowUnpJQQ?oc=5",
-   "source": "The Fast Mode",
-   "published": "2026-10-19T23:33:19+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "a92c81cc2021523a",
@@ -2665,7 +2251,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "1f92057e7d3bedc8",
@@ -2679,7 +2266,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "70ec104cf5fbf114",
@@ -2699,7 +2287,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "f59e677d0b220d28",
@@ -2710,7 +2301,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "b06c9344fb2f96b9",
@@ -2722,8 +2314,18 @@
    "tags": [
     "Policy & Community"
    ],
-   "locations": [],
-   "feed": "Google News: Data center policy"
+   "locations": [
+    {
+     "name": "Little Rock, Arkansas, US",
+     "lat": 34.75,
+     "lon": -92.29,
+     "level": 3
+    }
+   ],
+   "feed": "Google News: Data center policy",
+   "states": [
+    "AR"
+   ]
   },
   {
    "id": "edf6729cda85c8b6",
@@ -2738,7 +2340,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "1d445f1585982c73",
@@ -2751,7 +2354,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "fdf0829ef44542d5",
@@ -2764,7 +2368,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "aaf07fa528cdf740",
@@ -2777,7 +2382,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "71f8db8449164574",
@@ -2797,7 +2403,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "f0c5b30777f6b18c",
@@ -2808,7 +2417,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "b8a9c095f296da09",
@@ -2822,7 +2432,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "af68d8dd6d4a5181",
@@ -2836,7 +2447,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "ca3e78362b71dda6",
@@ -2856,7 +2468,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "MA"
+   ]
   },
   {
    "id": "64930f37d3c76a50",
@@ -2877,7 +2492,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "94eae8a40fa17ceb",
@@ -2897,7 +2515,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "PA"
+   ]
   },
   {
    "id": "fded04414cf97150",
@@ -2911,7 +2532,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "cdb04e805487dc2d",
@@ -2922,7 +2544,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "a30a86260a93de63",
@@ -2936,7 +2559,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "c5a69786879b732b",
@@ -2956,22 +2580,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "825ac443f3c42825",
-   "title": "Proposed Cape Breton AI data centre project faces pushback",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQN09NMUhoeG04dDRHUmx0MXZMRjlEMmdPQUJyOWhBWUdwbEM1N2J2X29tNngzWWlhWmFpeUpKc0lRQ2l3ckV0c3FxM3lWXzd1aHZTZm56Wjl6ZDBXdWJ6RXRVWWEtNWJsUVVUMUk1czZoR0RsZXdWc2FaZjVuZnFadS03UmhnMzNqZ1paNE4xblRWVVFTTUxtSnZ6bm1IY1NudWlyTWp0TXh0YW1ydlkwNHQwN2RyMFJNVldOSExqem8?oc=5",
-   "source": "CBC",
-   "published": "2026-10-19T20:34:20+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community",
-    "Announcements",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "WY"
+   ]
   },
   {
    "id": "25c1ef3eb00a6745",
@@ -2987,9 +2599,9 @@
    ],
    "locations": [
     {
-     "name": "Memphis, Tennessee, US",
+     "name": "West Memphis, Arkansas, US",
      "lat": 35.15,
-     "lon": -90.05,
+     "lon": -90.18,
      "level": 3
     },
     {
@@ -3000,7 +2612,10 @@
     }
    ],
    "feed": "Google News: Data center announced",
-   "investment_usd_b": 0.5
+   "investment_usd_b": 0.5,
+   "states": [
+    "AR"
+   ]
   },
   {
    "id": "fddc1c0aed1e9549",
@@ -3021,35 +2636,10 @@
     }
    ],
    "feed": "Google News: Data center announced",
-   "investment_usd_b": 100.0
-  },
-  {
-   "id": "8be2504f6cc4bc55",
-   "title": "Türkiye launches massive data centre project in digital hub push",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE42eERITG9xTV8xVE1QZmhCS1FRbVJCd1RLMkd0cGhlNGtDeXI1NzBlb0JtWDhWd3drVmJ4NTh3MDZRTVFLcEJoemFoN3NEZERiVWo2dkxDT3k?oc=5",
-   "source": "TRT World",
-   "published": "2026-10-19T20:15:18+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "9067417e10bbceec",
-   "title": "‘Just not acceptable’: Backlash grows over Nova Scotia AI data centre project",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd3ZCZmt2T0NyRWdQZTUyZ21qSVQ0WDR6UHE4M1p0MnhkN3BNX0JKSl9oWllNSlowWExZMzdBWndtZmZEaDZjcnJGbG9FSW9jRFFtc0JScHBNR1MxRUhDTTNhV0ZBWERyUnhwS0pGWWhTZWYwSEtNZkttd3RBNERjSV9kcWEwajJtQUpQOHB3?oc=5",
-   "source": "Global News",
-   "published": "2026-10-19T20:13:17+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community",
-    "Announcements",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "investment_usd_b": 100.0,
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "6334298359fe850c",
@@ -3063,7 +2653,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "7d047167b38d375b",
@@ -3085,7 +2676,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "MN"
+   ]
   },
   {
    "id": "c51f6a7a5f3b6617",
@@ -3098,21 +2692,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "e25b23ed76f50727",
-   "title": "Where does all the hardware go? The hidden environmental footprint of AI data centres",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVVJUdGNMaF9mWGNrVDFCRkxhazZyUTlwOGpiYzMxa2Y0UnFBYVcwUjVOTnpkelVaQjhINlhyVE9UNzE3TGFRSXoxQ2RFellpSmZLTm53b1UzODl3MGtSMEFkZVVwZlZmamtMRE5aSHgzNVBDTDJvWFMzd2tFbktzaERKbDVmektQazJpNmFJWjBrR21sYXZKamZHLUFfamVreU16UlBuYklSRVUyQUdveWlRSVdtcmlXa1pv?oc=5",
-   "source": "The Conversation",
-   "published": "2026-10-19T18:59:17+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "c3df956df08b8f6e",
@@ -3132,7 +2713,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "KY"
+   ]
   },
   {
    "id": "5276c8c874decc34",
@@ -3146,7 +2730,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "e6e3a06363ade071",
@@ -3159,20 +2744,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "c4c41a692f81da24",
-   "title": "Data centre giants sound alarm as building backlash, headwinds grow",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWHI4djFEYkhVMmR3UzFZVHVyWEpZbWJwcU52azdGN201Zl8yZmJiZkN4SEpFQzBOTjNxMjFmYVQ5RjEwTHFrS2p4M3Q0UzlrRkI5NzdSa2ZjRjhLX3pHVlBEQUpFSFhFZjhKdUgtdTQ4U3ZBRWNrb2JWWEg3ODM0bkZ1a0Fldk13bkVuN3U5S2tBUVlaYllVR2pOVUxvUGdRdzJrV1lpM2tHYXZrNW1YejhRaUdRS3VycktKcnBpb2FjWGJSaVE?oc=5",
-   "source": "AFR",
-   "published": "2026-10-19T18:00:00+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "ffaa39dbea4c5daa",
@@ -3194,7 +2767,10 @@
     }
    ],
    "feed": "Google News: Data center announced",
-   "investment_usd_b": 0.575
+   "investment_usd_b": 0.575,
+   "states": [
+    "TN"
+   ]
   },
   {
    "id": "a0df8a34640b2dbc",
@@ -3215,7 +2791,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "2aa558de8fc2e895",
@@ -3228,7 +2807,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "89895253698bae84",
@@ -3243,21 +2823,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "7cb5721181a02c98",
-   "title": "Türkiye breaks ground on $4.1B Ankara data center complex | Daily Sabah",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPY1J5cUQ1cVJaU19GV21MeDBfZ1ltTTVMMml3cTVXZmNybnRWODlFTGtNcFFFckVNU3RnY0xFWjFpaHh3RDlvcUp1NGEzQzdqemt0VjFBX0xDQnVidUFLWTdfMUhCU2tnT1dYZHBDaHBtQkl1Zml2T1V0SUZmXzhvV2FJY0RoeDQ0WFJucEFrSFZDOU9QMFhoelN2TkTSAaIBQVVfeXFMTklkcUQ1Uzh1SGFuRkVnbmZNTVlSUVlrM2pzMllmWGJSRHdWa2Nvcmc1eVpTc09mSTBOSUZVRE1iVXVtbWZIWU9TTERPRXZ0MWtsNEJOTTJDaTNqTnFxaFJwZHNxNW1sdFk3T0FXbWdPUEFreDE5Vk9MQ0lLU29SaDZZVkFoVURGZVlxQ2RSam8zTmdsS1ZWb2FQSld1LVdTTG1B?oc=5",
-   "source": "Daily Sabah",
-   "published": "2026-10-19T17:16:00+00:00",
-   "category": "Construction",
-   "tags": [
-    "Construction"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center construction",
-   "investment_usd_b": 4.1
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "9da3723c741670e4",
@@ -3271,7 +2838,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "6c7b64df8d859ea3",
@@ -3291,7 +2859,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "d2c96200342d52c7",
@@ -3305,7 +2876,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "6ccfd88b985b0e62",
@@ -3319,7 +2891,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "3f7054a840bb7cc6",
@@ -3333,7 +2906,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "6f1e775bbad6bf62",
@@ -3344,7 +2918,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "d40b9e460e0d5612",
@@ -3355,7 +2930,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "d963a9b605d63c6e",
@@ -3369,7 +2945,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "9dab64ad4bdda5b6",
@@ -3383,7 +2960,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "87dbc1733bae3386",
@@ -3397,20 +2975,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "e754dc699f4cb729",
-   "title": "When an AI data center changes, what should its insurer verify?",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOV2x2WVRjbUREUFlyYk1Cd2d3eEp1cW51Tl83TDZ4QkFIZjJubkpuVGt2cGhrc0ZXLWRqV283NUpYQVY3a3lMVFRjOFlOdVhUYzdwd09vY1FodmpubGxrdUtlcm5EbzBucGg0bG5NbnVTT25MZ3QzTEtnSzFCZjUtb0JKMmQ1MnRqY0psWTBKcjJvdw?oc=5",
-   "source": "Beinsure",
-   "published": "2026-10-19T15:50:32+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "2fc5a48043748750",
@@ -3423,7 +2989,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "48f71b397c10fc27",
@@ -3437,7 +3004,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "b13fd3402dd0bb40",
@@ -3457,7 +3025,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "CA"
+   ]
   },
   {
    "id": "d3126f4a134f0213",
@@ -3471,7 +3042,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "c0f0f9b8783aad2f",
@@ -3491,7 +3063,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "3dcd6182a677fbef",
@@ -3504,7 +3079,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "e28382ee1863208f",
@@ -3515,7 +3091,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "05625f19738d8306",
@@ -3529,7 +3106,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "0416292aae70c545",
@@ -3547,40 +3125,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "fc1485050d745fbb",
-   "title": "Data centres need protection from drone warfare",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uSzV6eDlTSHQxSTJWeC10N29HZlBKT1BHOHJqMC1ya3dyT2MtU3RSa2llczVEYTFZMjhsbVFtSHFJMERxZlhtTTRucjVROVBFak1KbjFST1Z2SnMya285eHF1UW9PQkpSRnRmZ2pvRWw?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-19T14:31:32+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "bd9930e5e08a998c",
-   "title": "CloudHQ raises Mexico data centre investment to US$6 billion as power capacity quadruples",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcUJ6LWJCSmZxNGJkTXBUWEFPSUxyejU3RXRBS3RaU2poMF8wOWhWX2h6d3ctNHh5dE0ta2NTZnBrWlk0U2xvMjh0MnI4eVVBYU5wR29vVU5UN1FINjhkS2JuUzBfc1VUdEQ3N0JWZUlEWk92TmdXWk9odXRudVZMNWxpdXN6d0VKYkRqOEpfRmI0V29UMU1kNFlBMW9Jems0ZGgxdnpkejhfQ2FULTZuUnE3WV9ESzZpemFNbmRySmtzOGxBMVZZT3o4WWNLLUpabER3?oc=5",
-   "source": "Intelligent CIO",
-   "published": "2026-10-19T14:26:53+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "Mexico",
-     "lat": 23.6,
-     "lon": -102.5,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data centre (international)",
-   "investment_usd_b": 6.0
+   "feed": "Google News: Data center announced",
+   "states": [
+    "NM"
+   ]
   },
   {
    "id": "dc81d0bf6c231064",
@@ -3593,21 +3141,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "6d3ff8f826ccc3e8",
-   "title": "Microsoft pulls out of UK Nscale data centre deal over power delay By Reuters",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRXNRZjRrcTFRVGVmVDZPS05VNlRDbXZPT1I4M2dzRDhXOURuX1U1YlN0YWwxbXJhSW55MmhjV2dET20ydVAzN0hFc1ZFVkYtczgtSXFfWVYyZElkdEE2Q014bFRBRDZFNW16b1NxUDVfSHVndElQdHJiQ1Z0bnRFVTZKclJ6SGRsVXFDMVZHZUlKYzMwcWxKQkZ4SmlfR2ViVEthRFpnUTNrbEh6c0hnOEVGQ0NsNm1yNHBPMUhBU0E?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-19T13:58:55+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "26d236920d388e39",
@@ -3627,18 +3162,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "68746d73d8a62775",
-   "title": "CLS Migrates to New Data Centre Environment",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5TRWw1RGRkWE5aUGoyRmNoUDNjbWowODlsY2dDWGozaFo2cEE5TEg0Q0ExMXZBY05mNC1UMUZzOGpzTEc0M1hKSDFHbFVnZ0d5SjFDNWFkQkY5UHd0bXcteUF5dW9OUjZDWUlQUW1uQVdCNTln?oc=5",
-   "source": "The Full FX",
-   "published": "2026-10-19T13:52:14+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "MI"
+   ]
   },
   {
    "id": "0636d02cd9201c15",
@@ -3651,34 +3178,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "6948d9f049906dc0",
-   "title": "Microsoft Walks Away From Essex AI Data Center as UK Power Fails It Again",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORFQzVjZpOU8wUTRPb3U2eDZIdEVYZldtMmNKVG1xY0RKbDlwSG1Fb2Nudms2MWFiTElWVnJkNmFweUdKMzNrQVJEMzRxNEVGbGJiaXpMYXFqRVBKWWd4amF2bW1RVUpwQ3Y1bkN1MllJUkhlRW8xU1FWcEdnSV85VkJwaUVWR3FfeDRyVGFieDlVN3V5UzRXZHFNVkJXbXpiT3J3?oc=5",
-   "source": "Startup Fortune",
-   "published": "2026-10-19T13:25:52+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "2d020dce0a3bc683",
-   "title": "Arelion looks to the Baltics as data centre demand goes north",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONW5SemJNQWUxeDBjblJSbEFZa1E5djlTemI4Y2pscmFwMFFGWlIxWUlpcGoyM0doQ2xHdlBQeUlhaHQ0eW5FUkNaRW9qRG9qWkx4LTVjbHRqYlhibUhfa2dXQUFxR3laNksxU3dXemVTTUFWekZRTVBfQWV0cU55NnVrUnhvT200VFhMcHhiUnNfMDZtQzhhYzl3?oc=5",
-   "source": "Capacity Media",
-   "published": "2026-10-19T13:24:52+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "2a00e3bd987ed346",
@@ -3692,21 +3193,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "78a3278632efee96",
-   "title": "Zendesk launches AI agents to automate multi-step employee requests",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNN203SVVyc21KZ084eUw5c2NoSkhkNDEwUGRBRmhKSVZuRmZkaFJGczZTNUtsOGxxVHJkczVrT29DUjZBRmVRSmpJNFh3RE1uaEEyYVlCdks4VUN0TldQaXZsVzlCcFBMNXcxX0VsTk9fVDFveExDamF3ek01YnpEQWt6aXZNc1ZWaVcyY0tKR2hSSGtIVXhxc21pTF8za1dsTDEtYkFnbW9rUmc?oc=5",
-   "source": "Data Centre Solutions",
-   "published": "2026-10-19T13:05:40+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "fea0e9a043d6dc3a",
@@ -3719,21 +3207,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
-  },
-  {
-   "id": "a5ec80006e28982f",
-   "title": "News | Microsoft exits major UK data centre project with Nvidia-backed developer",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY2dDeTJnMS1xWVVNVFM3WUhNM1lBY25UbHBWWmtBdW1LNDZjSnR2Qi1EbFg0XzdET2VOZUpUTGJ6cExzbFotUUhTalZhcmFYd0Jrc2Z1eUpYeGtIdFc0cnlrZXV1X1FsekpNUlVubFVJVXNTLVhxVVRaNDhNbEhTSEJ5RFZtbEpOOVNzZDh3UVRCVk9WZmpqWDlKQTBMTC1Belc3QUpYaGd4cUQ1dmNuVWpSeDE2QQ?oc=5",
-   "source": "CoStar",
-   "published": "2026-10-19T12:58:30+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "66e1330171918b86",
@@ -3746,7 +3221,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "8678ac8b77757f10",
@@ -3757,7 +3233,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "c3058c52926bd775",
@@ -3771,7 +3248,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "f977d5ff98e52edd",
@@ -3793,28 +3271,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "ecc26b58798fb7cd",
-   "title": "Israel to cap capacity of new data centers at 200MW - report",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcW1pSlVjcWxIRU9xQUVqZ1JIdVIwaUFfYW54ZWFhSzdqLXV1U1E3WDlXTDdCQldYdHg2dEY1V1B3Qmt3M3haNmt2dUJYZi1yZk96amlVNi1ReW9xd19CcW43NHNSTjFLYVlMdTlyWDRiWDFUblNJQWxnNnpWZFkxNDZBakNlRmFFaGllbG5KQkFLbk5vM29JNWRfODVNV0RVem1pTw?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-19T12:26:56+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "Israel",
-     "lat": 31.0,
-     "lon": 35.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data center power",
-   "capacity_mw": 200
+   "feed": "Google News: Data centre (international)",
+   "states": [
+    "CA"
+   ]
   },
   {
    "id": "e481a60108f203d9",
@@ -3836,7 +3296,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "IN"
+   ]
   },
   {
    "id": "ed6855e3a84b912b",
@@ -3850,7 +3313,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "74c51d3ceb1293b8",
@@ -3861,7 +3325,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "530f34228a1457fc",
@@ -3875,48 +3340,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
-  },
-  {
-   "id": "d726ada033fab1c1",
-   "title": "Microsoft exits data centre deal in blow to UK AI ambitions",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTGdYbkdId3ItZGlpQks5eUltVkd5VVNzQXlHQld4WUN5MzkwR0trbnZHZDVPTU45MUk3NVQ2dFpncUR0MFdMcy1RdGNZU3BJbGRvNDdNbXZ0TmtlXzVRd0tNUjdhTXMyNGxyMW55eDFKT3g3YXhWNUNOZ0hCa285RDBlTmdiSDdWaWpKY0s3M2tPU3JfZkdxU3EyNVg?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-19T11:36:08+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "40db817c119f7092",
-   "title": "Anthropic’s 1st Canadian Data Centre Lease is With EverWind",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObjFWaVZBVng3UWpsSy1sMGVQcEpnbTBtb1YzLUduczc5NTdEeTU4QnlqeXBBdzRmYmtaVkN6b0JKb2JlRlh3SjhuTWdlMGRTVTFNdF80TGkyX1ZfYVBycXVDcUNGZ2Roa2lnOVV6VG9BYjl2RkYxMkJZRU9PNGdWQnBaNUdGTzZyWU5mb0ttRkZMaTljcldZSGs3NXM?oc=5",
-   "source": "Data Centre Magazine",
-   "published": "2026-10-19T11:29:51+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "0f5e4fbfc74418a9",
-   "title": "Microsoft Pulls out of Nscale U.K. Data-Center Deal Over Power-Supply Issues",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOFBSano2YWNRY1dzTTFvSmc4NjZ0NEtuRVZDa2ZDMGFmYzVFekJMVzR2aTd5aWZmVEFvLWFKQ052cFJYU3NfUGFpMGhla0c3VUYzR1VfUEQ4bHlfdDFCTnZuN2pvUzJNTDd2UWN0MmlqbVhYQ0V4dmdiT1VkUmUzb2preEF0ZHpnRlc2dGJwTnhTYm5zSTljbzZGMC1EdXF4OFRTUjBHa2E4Q2t5eHc?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-19T11:29:00+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "2b6bdbe986956862",
@@ -3930,7 +3355,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "97e41fcf5fc5df96",
@@ -3943,47 +3369,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "756df8a3388385cc",
-   "title": "Bell denies consultation request as Standing Buffalo Dakota Nation seeks more details about AI data centre",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNldyUGl0VW1uTDBMYlZLRVJVb3VvcmMzQkpjNnZSQXBIakotTlV0c2JtMDZBcGkyR0hqZnB3RjhtbFVLbWk1TVF6ZVZ5U2lmdjk0YklDOUsxSjlwZGJWS3NzMi1acEZhd05RdlFIS2x6RjZueURFV1E1R1c2ekxGZ2pqNG9HanBtck00WEJxM1NuRkxjTnRvUGR4SUw1dUcydXJxRWlseFpNOWtXUzdwQlp3cDRXekZFa3RkZm93Zw?oc=5",
-   "source": "CBC",
-   "published": "2026-10-19T11:00:00+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "b9e2ce3e19361685",
-   "title": "GreenSquare launches first phase of data center campus in Sydney, Australia",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRzFYYTlJb0NkQzdSYWpTbHVfWTBmRWJCcERub0xSMk9tYllodzVmb1gwbmcwbWx0NDNGanpDZTdTR2VUb3NIaGVoUHdvbWFVYzlhbGYySVkwNHcxeEdCUWVtSVduSFNGNWo5OVFVUENmRXBId29UWkY1R1h2YW1rb2xzNmtKRm5xY0tzMlNwTWtCMUxZVWk4eGl5b01nMXRxc2oyeEc0bmJQMTk3UnVhNWxDR0ZGWXlUc0E?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-19T10:56:48+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements"
-   ],
-   "locations": [
-    {
-     "name": "Sydney, Australia",
-     "lat": -33.87,
-     "lon": 151.21,
-     "level": 3
-    },
-    {
-     "name": "Australia",
-     "lat": -25.3,
-     "lon": 133.8,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "99d9d62e30d7a045",
@@ -4001,7 +3388,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "FL"
+   ]
   },
   {
    "id": "4ec284ebf7a87141",
@@ -4019,7 +3409,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "MI"
+   ]
   },
   {
    "id": "cb31ec78a4a0940a",
@@ -4037,7 +3430,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "2850dad025da0c46",
@@ -4052,28 +3448,8 @@
    ],
    "locations": [],
    "feed": "Google News: Data center",
-   "investment_usd_b": 0.009
-  },
-  {
-   "id": "d945f68fb9a367e2",
-   "title": "Israel caps new data centers at 200 megawatts as demand overwhelms power grid",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBobEk1djUyX09KUmtPelRRX0FjaERjem96Q1JyTkJXQWtielBhMTlnTUsyZGVKeVEzZHFvLV82bE41Tm5TcHJJMlU5MWRGcG83cXBJMllRWWIwc3E1QzY5czREcm9zdUF3?oc=5",
-   "source": "CTech",
-   "published": "2026-10-19T09:57:00+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "Israel",
-     "lat": 31.0,
-     "lon": 35.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data center power",
-   "capacity_mw": 200
+   "investment_usd_b": 0.009,
+   "states": []
   },
   {
    "id": "db44daa25ec68629",
@@ -4095,7 +3471,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "IN"
+   ]
   },
   {
    "id": "925b5ba2b8f0a23a",
@@ -4109,7 +3488,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "f5c7a62e4ad870d9",
@@ -4122,7 +3502,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "fd4184bf3d90855b",
@@ -4135,7 +3516,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "556e63f1c683e2fd",
@@ -4148,7 +3530,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "aef28446b96cef2c",
@@ -4161,7 +3544,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "b23015c5d1694632",
@@ -4179,22 +3563,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "bf9a1c79a77fa51e",
-   "title": "Siemens invests in Skeleton Technologies to tame AI data centre power swings",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRFhVdVBVek1McHMySG5PTE5YeHF6V201bFBJVHVBMlZiTGZfcU8wWWowUWZUbVEzTWRVTW8weTltcWlfTEk1aTRCY1ZpRjRnaXhGTXFZbG9sX2dia1JOS0ROTWFaTmc3QTlDQk5NbktUdXhBd2xIOHRhTGFURV9Dd0podG04MDFzRFl6VUNLVkJobnZrNWE3eWE5alFKOERtRk5wa0NtSEFWRjJuTDZLMFhBaXZHREZ5VjY1eg?oc=5",
-   "source": "Data Centre Solutions",
-   "published": "2026-10-19T08:30:46+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data centre (international)",
+   "states": [
+    "MO"
+   ]
   },
   {
    "id": "58ee1013f0f0d114",
@@ -4212,76 +3584,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "8c5ef08f4dc68e5e",
-   "title": "Is Finland’s data center boom getting out of hand?",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbGhEUGU1SmFUT0J1cGt0SlR2NFpTQlI2eGw5Z1FhTnE3WVU4Nk9BSVM1OUJFaG9OQzNXWlFlSzJUWFZmcm55enFjc2lsOXlxcWpKZEIxSzQ4YzNFaE5mYW9uSW84dmExTVA1b3lEaTRwQTBZYXZQVDlKM3FiVTB1MXNEQQ?oc=5",
-   "source": "Arctic Today",
-   "published": "2026-10-19T07:52:45+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [
-    {
-     "name": "Finland",
-     "lat": 64.0,
-     "lon": 26.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "bf5c797da4eacf2e",
-   "title": "Microsoft pulls out of UK data centre deal with Nscale, Telegraph reports",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUERYUkhmekpQVW5jYjhOd0NhSHY1RmFMU0FpUXBlU1E0eHFmVGUzcHZ5c0VhSElCY015MXdqelFBbkJlN2VTUnZNaXVnWi1ORnRFZ1J5djZSWVJZUjU2QzgtbTBBSFlFTzluTFAydUJfNVBQeUsyV2JzUVQyVE1sQjU3RUdFWUNyb0ZtcmxNYkFKRWlGbmZoOU15OTFzWHUxeklmdWJ5REJmX09taFdMaEotbWNmSHNEX2tGeC1UV0N6dw?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-19T06:37:11+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "eea600c76f697a37",
-   "title": "This empty lot near London goes to the heart of data centre jitters",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXRraEQ2NkpwbE1sU2lXMGthWlJnLU80ZUJRRDdFMTh0aUdpdml3TzhmSGVKeGJPVjRVUDZ5dGtydFJfRE5wNW9RZ1YxZ1l4ZkdkRW90ZmNSRWlJbkdxWW5wanNsWUdab3Fyemx0YTZHeS1LOWdkanpEeVUzWmZQSWxUaEMxbjJTSVNLdWQ3WjdtZVhCcEdsSVJCSWlqck03VnJseG1nUHF0VHJKdVRYRnBkX3A?oc=5",
-   "source": "AFR",
-   "published": "2026-10-19T06:28:00+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [
-    {
-     "name": "London, UK",
-     "lat": 51.51,
-     "lon": -0.13,
-     "level": 3
-    }
-   ],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "8bdd971514182c32",
-   "title": "Nextdc Flags Earnings Risk on Melbourne Data Center Power Delay",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQkFGNWJNbXJOaVJkd2FDcFZMbGRSc2l3andidHFUY2JNZWlzb09jSzVKRGhQcUJ5Z1BISUZjTGd2aG9jM19uMlVRUTlFWTBGQ3ZaVEMxQnJpU3pENmVYSUV2T25SR05lYVNrY3FacTJYWXp0a2g5R0FzanBEcm5DSkp0dDV5N0tJbmxxVUY0T0J0S1htQl9JaUlEd3E4blBtbG5ndG1scUtobVQwTHVPNG9UVE8?oc=5",
-   "source": "Bloomberg.com",
-   "published": "2026-10-19T06:07:00+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "Melbourne, Australia",
-     "lat": -37.81,
-     "lon": 144.96,
-     "level": 3
-    }
-   ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "GA"
+   ]
   },
   {
    "id": "3de13616d743f8a4",
@@ -4295,60 +3601,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "00689c5c00e3fcad",
-   "title": "Is this Indian city ready for a hyperscale data center?",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcUZvLVRsamQxOFY4bk90dUlQeUVmMlRERGx2Sl85bFlYcmY1RS1oR3BUbEQtTnh2aEVvb3NobjhxR0N6SklrYUQ1NGZra2VIVWZNcUMzSE5YQm9yUmQxWnJCUjRpalF6dnFBdEtqVThjNFpEVDZJc3JDWFoxUGJELWNQNkh2RHNPOWV3VUQ0WW13RkNocmVTblBJdzBwbVlXaWY0M3JNbw?oc=5",
-   "source": "The Christian Science Monitor",
-   "published": "2026-10-19T04:00:00+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "e084b71f7e3d9dae",
-   "title": "A Data Center Deal Lurks Behind Trump’s Russian Diesel Debacle",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNGszTVB0MXFiUTktdDJqSU80X2NHVWpia09aMG95RGNKSnE1ZTlMYkRyOXc1YmZDdXV5MnhLa0MyYmtaWWVOSG9LdExRRkE0ckVoNVc5XzdjU1FiVFBjLWN5WXhLR05UbkhhVHJncFV0RUhWQmlldVo1UkR4YmRhTDF4Q1RSeEZTUlZhOHhZNkN0M1U?oc=5",
-   "source": "CleanTechnica",
-   "published": "2026-10-19T03:42:48+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "c8843795d4bab344",
-   "title": "The data centre and water question",
-   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE56WVZCU3F0RVVJWmFIajdsQ3psaG03ZmRSWWtENk0xUG1XeW1jSUo3amVUVy1CZ1FoMEVtdjMwbHF1RmVrYUpLRg?oc=5",
-   "source": "Dawn",
-   "published": "2026-10-19T01:47:44+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "5e6dc530d90d64e5",
-   "title": "Microsoft quits Nscale UK data centre deal ahead of planned $3 billion IPO",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzJGeExULVJwb0ZkSHRON3doYVlGel9sNGkzZW5LbFQ1TW4xUE9CRHpUU1BRRGdqWFp4MHQ5Ri1LTFRWRjBjN0IxWnhiTlhpLUxPMkdENFYzZkpfcGFWX3BiaU5QcXBHUmhPVUo0TGpFRVNqY3FlOWF5U2w0THJpMU1DbG1pM240TWJ2S1Q5cmxvV20zSHo4RDFOUm1MS0pIaTRhejZqbjJST3c?oc=5",
-   "source": "investingLive",
-   "published": "2026-10-18T23:49:42+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)",
-   "investment_usd_b": 3.0
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "c3cf379aee82357f",
@@ -4368,21 +3622,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "0258e162019beedf",
-   "title": "Only a third of the US data centre pipeline looks credible as AI financing strains build",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVWFaZDV4N1h2clZWekctblF2SU5zeTdnT0dfRkhRT0g0cHNZQWZQV3BpQmMxdE51N0ZCWjhweHk5V21sNThHaUJGcDBWUFc4cjJ3bUMtQU5SdUlvRkRBTGVUWW8tSHdrWi1ITzF0TmJtcGZFYnFfZjJDdktEY1RjWW5IOVdvMnprdnk0M1pQTGhyeXR0VjhSSXpCWGFJV3dZNURqTHV5Y2dlQ0VjclFQc2pOZWUxeTFkTjZKMw?oc=5",
-   "source": "investingLive",
-   "published": "2026-10-18T23:24:42+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "340ff15acd55403c",
@@ -4396,7 +3639,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "837f01779ff8ef91",
@@ -4412,7 +3656,8 @@
    ],
    "locations": [],
    "feed": "Google News: Data center construction",
-   "capacity_mw": 500
+   "capacity_mw": 500,
+   "states": []
   },
   {
    "id": "e57873d4799bbd5c",
@@ -4425,7 +3670,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "41a963f6b5c1ef30",
@@ -4446,7 +3692,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "OR"
+   ]
   },
   {
    "id": "e108b8ecbd27d0e7",
@@ -4457,7 +3706,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "f560656e9ce5004c",
@@ -4470,7 +3720,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "bef5cef9f77c5f90",
@@ -4484,21 +3735,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "a60de39981a44290",
-   "title": "America's $10 trillion AI data centre boom faces delays, rising costs and investor concerns | Hindustan Times",
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPdUpjWW82RnplUEQ3RlR0TVZCd3NISHJDT0xfc1RCS3BXSGJQdTZNcjE1eEE4Vmw1UUdJUmc2Yng4Qmw2QjZteDU5dFNQVUhXSno0UF93aGozZER1aEZWR2ZtRWhxWlFZX0RfRUpMUlpLczl1Z2JMbTJrUlVVQWJ0WWdwWU1aQ0ZoMEpDeXItQUJBSmVXc2ZnOGtBenZ3cGRBYlpaNTBMNjFrWWVoU1pPUmp5X1NlMlZkTjROUEhrUEh2Yy1EUHJiZzE1UXFkQ3J0blJqRmFfSFR2LTktdU44WEt2clVTekUwY3FUeER6ZmfSAfYBQVVfeXFMTk1JOGh0QUZlV1BUSmZzTE1lcVNXei1TS1FhX3dYMlh1dUhMMEU5aUc0aHJ5OWUxZWRFTXdIRER6N1NMVEIxT3ZDcy1hV3N3TXliM002a0tYSzZGOWI3VE5yS2VZelg5Sml6bjM5N1BCZkJZR1J0cGV0RHFiaWN1Yjdqa2ppRlROVTVzN0dOaXVLaXlsNmw0OWI5Y19vamRYcVdSbnY4ZXRVOVF3dm1fY29UTHUtaVJ6MVZpSFhCUHZLdDg0eElFamxqNWU5MjVuMFZISmZDVjJnMnFKWjRFMmJGMVNHaE1NdldLeUh5eEpTR3hBM1B3?oc=5",
-   "source": "Hindustan Times",
-   "published": "2026-10-18T17:21:05+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "1f799a0391f6c6e8",
@@ -4513,20 +3751,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "b819523e0cf4c700",
-   "title": "Microsoft pulls out of Nscale data centre deal",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMmhQNkZhODVvaEItMmpsUHQzS1FFanZuWUVwUDJrV3huM05pdWp0UEx2T1pNZnY1TmwtbzJJR01sdHJHTEI2VGxFS214LTNkakhZNUZhTW1HblRTSWprbG16SEpxWnAwT3ozV3c4WjlFSlVSUy1mdy1oc0kzdnNPcXFtVW9YZ0NiZ2VJODlVdjRwQ3NNMTQzTURBWlhMNTJWbmZYZTVsdWhUZzQ1ZDZ3?oc=5",
-   "source": "The Times",
-   "published": "2026-10-18T15:36:23+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "8a8d59c79f201556",
@@ -4552,48 +3778,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "06cc7748263ec872",
-   "title": "2026 Global InsurTech Funding Update and AI Data Center Insurance Risks",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9WY1FuRkY3elp6dkNvNGw1N3Jvc0NJY0g0YUxuSnhrdGs5Q0szNFJwbDJnOHIzMlpFQ3p5akN0aFZtazZlOGZvSmdaTHlEWmxKU01UajI4LUNOYzl2alJhSFY0R0ZjS2Y2N1R4VFV5N3FTQjZXY1E?oc=5",
-   "source": "Beinsure",
-   "published": "2026-10-18T14:42:58+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "8345e2779beb2ebc",
-   "title": "AI data center boom creates new insurance risks as investment hits $6.7 tn",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hcFZCMUVReHJvalZWSmFDV2JKTURtcmNPVWpFeUNoY2Fmd1F5OG53dVFtcHlROHRsVmJZem9oVHp2YV9mNklpTW9uOEhTMm94VEpsVzdneXBzZWZTamdNNXNBR05qTW4tV0c1NHhMdTJHWTNZNG8yanZsUVJfYm8?oc=5",
-   "source": "Beinsure",
-   "published": "2026-10-18T13:36:56+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "cf299abf0fce2826",
-   "title": "Microsoft pulls plug on Nscale data centre deal",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPc2tKTy15UEJzWmJFTzV1WVFLb1VURGtPYzYzbi14T1ZXZlpudjBTR1AybllYQ3V0dk9VNDFXUHY2ZzRLd3dtNzdEbmd3cTNSbFJoaER5d25sSlRubjhpOFVBNHVGTjliNUJKcEZtNHRiQmNTZGVfS1F4ZEFOMF9uQTJpR1c?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-18T13:36:43+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "047a97821aa82363",
@@ -4607,68 +3795,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "a018e0f995612a70",
-   "title": "Israel wants an AI data center boom. Its power grid may not be ready",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1RjVaWDVuc2lhVkRIYXRkMS1RNGZJb1BBOXloS18xNUxCR0dqQ184RWNMTENaQlZRYVdkLUtRbW44WXBtOTlvRUpNNTVHOF9qLTdJamVqTmY2alU4Vk1QbTY2OHQxQVhz?oc=5",
-   "source": "CTech",
-   "published": "2026-10-18T12:24:00+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [
-    {
-     "name": "Israel",
-     "lat": 31.0,
-     "lon": 35.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "5fe591c491bedd83",
-   "title": "Data centres: Opposing them and developing them are not the only two choices",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbHZmVXk3ZW4yYnBHS040OUlfaGFfX01ocktpWGE0QVZDcHRnUDNxczl6U1pBOVpxeXoyOEdXZFR1Z0djZHUwQkR6N1ZMX21pX0gtemIwX2s1UExxZ0JJQXdIWlRPcy1tMmVseFZtOGgxSzdwVVNWRDVvUzNlTHI4VFcxVWRhVmNRTkZ0eDlmMDdzSFg2ZGh2V1c5bnZKczFvVDhSYjlEYWE5TlA4bTY4?oc=5",
-   "source": "The Conversation",
-   "published": "2026-10-18T12:23:10+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "e0a0fd90c880985c",
-   "title": "3 UK Grid Stocks Retail Investors Are Watching for AI Data Centre Power",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOVMwYzlSSmRaWGxaaENLMFlVTEZGMEZ1Nnl3blZMRk04elRBdlAtOHo4LXBHa05SNU9uckgyUEVWLXc1WkdEaHlzRlQyT2tZS3F5Y29uMk01VTNxeUJ6bFVIMVRtanJDRDk4akIyLW56OUN3eVN0dkMtem1CT1E2ZU9pU21tbk0?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-18T10:11:25+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "b432be7245a79a37",
-   "title": "Microsoft pulls out of UK Nscale data centre deal over power delay",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMmVDUVQyZjhnbFN2MHQ1MHVPMHVpLVVsUFE1aU44Y2QzMUx2a25MRXR5OWtkTGd5RkViaG9fM3lZcnFHblYyT2xMeGZ3MHI3NkFjQ0FhdWFVRWlmdHlPRDRFRVRsclFpbUExakpiN3Z4aGMtODdDb09Mb0xXbnIxdU04ZmQ3UTEyTkhQd2EyMFhDNzQzYVgzZG9FeDlNYTJTanNOOThVSGRTb2RnRWdCajBVXzFMcDB4MWZpbXR1STMzZ1JaOXRr?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-18T10:01:00+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "282977b6a4e12f9e",
@@ -4681,7 +3809,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "f332993717ea4b99",
@@ -4702,7 +3831,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "LA"
+   ]
   },
   {
    "id": "cfda28980af192ff",
@@ -4715,33 +3847,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "f090acf30b6b9b52",
-   "title": "Microsoft Scraps UK Data Center Deal With Nscale, Telegraph Says",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc3VHa3ZPcEtfVHctcjhlR2M4eUFUd29rS0p3ZkVYYXdCMnhtN2xuM1JGQXgwOG9HSS1GWFNGWEVWUlIxeThHZ213QlVNT3JoUzJTd3pmeFJMYUZFTWtCS2ZJMWx1SFBlMENqb1NtNzFCUGF3cFA5STZCT1RNeHp6NHdlZVFFOE9sUHNqazZwMEYzZU1HX1VwQ0h0dw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-18T08:31:10+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "54e989e402acb9fc",
-   "title": "Microsoft axes AI deal in setback for UK data centre pioneer",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSFdYVTNWOGFOMl9DYTBBWmhZM3NiRGk1aUtKVWFhVnkyb2VGMU5UTDZBTndmTGpBcHRnb3RjelNlNU9JY182aXFGOE5BcWlJMGFqZnhKYmlXTjdvRGlyUUlUZUtXWFpjcXJ6UWxRYkhiWExoZVBWc3JmY2x3WFR4Mm45ZW5KZ0wtVXBMRmNleXViT0huREtRUU9zNUdnWDEzUDAycA?oc=5",
-   "source": "The Telegraph",
-   "published": "2026-10-18T05:30:00+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "9f3b2f5b7018674a",
@@ -4754,20 +3861,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "a4f8ab7634218ddd",
-   "title": "‘They shouldn’t be surprised’: Nova Scotians take stand against major data centre project - Halifax",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZ1I3d0xwWklpeFlQb1N6RERVSEZJd3Ftbzc4ckV6TTRnTUN5c3kzMWdtUDlPSnlhQTdYNVNZYTRlT1lhWmIzNUREOFpadGItcHpEUF9GMXVJNTVhQTlkUGdoQ0g4bEdLNEV0Z2NmaTNVQmdXUGxfMFZYWEZiYV85M3dR?oc=5",
-   "source": "Global News",
-   "published": "2026-10-17T19:56:27+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data centre (international)",
+   "states": []
   },
   {
    "id": "becf81fe2ad974d4",
@@ -4780,7 +3875,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "69f07a35eacd2ca2",
@@ -4793,7 +3889,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "5c802f10abe7ddd8",
@@ -4808,7 +3905,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "9e0cec26019d4820",
@@ -4830,20 +3928,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "5baeded4b527706d",
-   "title": "Putin envoy says US and Russia are discussing joint AI data center deals",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUEN4RnFTaWFISm0zNm5nb1hFbF8xLVZCQThJRDYwUEllaFZkd1lCRXpTUUVrY3dpZVRmLVhub0NaNC12SUxRNWVzdl9FOUdMM1RzWU9hclF1NmFhdThUeUt6WElzaUx6RmszTXl6RGk1T3UxR09ONEdaRTRvbkZZaDdWbTRXVEg3VEZ5aDhPNl8tUFJic3diQ3FaSk9IbnF3SGc?oc=5",
-   "source": "Startup Fortune",
-   "published": "2026-10-17T11:55:06+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": [
+    "IN"
+   ]
   },
   {
    "id": "80cb9c628c86db51",
@@ -4856,7 +3944,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "b4d8b643f08e4393",
@@ -4867,7 +3956,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "47f8916b74ab5534",
@@ -4881,40 +3971,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
-  },
-  {
-   "id": "771949330f89d233",
-   "title": "Gallagher Re's Drane: Data centres – the next great accumulation challenge",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYk5RQ3YxYlVSVFdWX1FIaXNEUE93VG1wb2ZjOHpjcnZteVNHUEdOeUd3aTE5Y1Y5aWNSaElXOGV1NWRzTTllOEhKendueW5hcERadC1xY2JKSDN6ZkgzMEd6alp6eVlldU1kQnI4QU16OENwQmpMNFhBWm42S09WN1JOSnBENE5QODRpRWhKWG5HQkc1cTFtZkZuUThJM0F6VWM1STZYLVpDOTVqTlhGOURvbXdSRGR2eFhOeV9WMA?oc=5",
-   "source": "theinsurer.com",
-   "published": "2026-10-17T07:00:00+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "12c5da5b04e46433",
-   "title": "The village fighting a data centre: ‘The country has been sold out to big tech’",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZ285eGpuMWJoNXB1TmYtWEltYTNBdDJMOUs5MlhiSXFaa1JMTWE5VUlOOUp5aFBxaDNRdDB3Vks0bkxYQXR3UVhhcFhBeTBXNDNVa1FrTlVoLWc0Ml9jZ0V5N3BQa3J2U2N3UktXLVFET2R3RjZyNk5TYU0yYmVPc2twamFxUm4yU1JGMU9ZTzJSSUNlZ2JtdlhiU280aUFsVUZET0NDYmljbFAydXRxVzI5cmlYaWNfNDFTbm1XSG1oMTQ?oc=5",
-   "source": "The Irish Times",
-   "published": "2026-10-17T05:01:17+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "018b04aadb59001b",
-   "title": "Why are data centres becoming military targets?",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ190OG91STBkV2JoN2hjLVJ6TXhSVnZ6YVNPcjVGNFhVd3Zmb2NZamZzTkFsYU9nd2ptMHRtNUpMRWdEdC1vS05mNGphZ1FNYXJhLUlwdkY0SndjVEhkbVpVY3M4ekwtLU1YZXVFOFltZDlaTFRaZTBkTnFudzZIMFVIT01TTkdBSlpkNGw4TjhWeGZQMndmeElJLU5sQ2V3WTVtNUk2WXJyT2wzX1hJTEVmVTdXMjNtZ2NiaFZ2T1N6RnFH?oc=5",
-   "source": "Euronews.com",
-   "published": "2026-10-17T05:00:22+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "d75d187ab6d28a98",
@@ -4929,7 +3987,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "0937ed74654dc163",
@@ -4943,7 +4002,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "09c6b3ff8150f210",
@@ -4957,51 +4017,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "6ea3636a1dfc3257",
-   "title": "Anthropic signs lease for first Canadian data center",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNmcyRDdMUmlLNHlsNWhYbVRfTFE1WkJIODRiQmxfOHpzM09lYS1Na0JGNG5YdXlIV09fUVZDWkpRRDFIcUlXb2VYaHhZTjM5Q1AwMnRZZjFkSjRKTTM3RHdUaDhEaEdUWnZTZmVrTUtNaHdTWnM3NVJ3WnFma1VTb09hcURCME10UmFMWXdabmxwNXk1ZUZ6emFoYmRCanEzM3FR?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-16T23:05:57+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "e4d16ea4cf282002",
-   "title": "EverWind building $10-billion Cape Breton data centre and wind farm for Anthropic's AI assistant Claude",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOE5Mb3FZZ0E1WXQwNW9SbzZjX0o1aFBLZlRaZ1BNZ0lTREc2bmxPMVdva3ZDSGRWZDdrVmVjUXdydGF4T0JLbHBuczN4MzFzeFh4ZjQ5aXYtMXJIMUtCSzhzWU9aTGczMWxxejhDLTR5OGZGdzRQaWtHcUFkNDR6YUxnNUpHVnhZWE1JU0lIUVBobUpiU2dLUGJldVg3SU5nZWZqNXo4MVJsaktCZnRhV1ZYNTZubnl3LVp0OU5ibm50VHhaVkFqa0pRZ0VuYThUbzZlcVMzOFdpUnlSb1dB?oc=5",
-   "source": "PNI Atlantic News",
-   "published": "2026-10-16T22:31:59+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "36137320a92f4500",
-   "title": "Anthropic signs onto $10-billion Nova Scotia data centre project",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSlN3ZWpRODFCMm9abzVPUXE2VWxiWDFEWk54MHNWeDVEN0VTZEY5ZXROSjhuQnJMcHNfT2RuLWkyY3NaU3lhQ1RnTlRHNlEybzBKMW5fYXBHRGU0WW04WnIxMjhNY2JnQnhjdDlLNGl5Q1dCS3JJTElJQ3liU1hsc29nVjRwQllCT1Z6bV9icDVtMlY3Nld2RmFLYUU0elc5M3pXT0VGdU1DQTkyWDB1MndSZw?oc=5",
-   "source": "The Globe and Mail",
-   "published": "2026-10-16T22:13:12+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "8b031db24ec934ca",
@@ -5014,7 +4031,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "bbbd03e4ba5675f6",
@@ -5029,33 +4047,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "e34ea96c8c39474b",
-   "title": "Ukraine’s Attacks on Russian Data Centers Lay Bare a Global Risk to AI",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNN005dVJpNmNzRWtTVHp6eXhfZElHZG9wYW50Q1FoXzg5aFRib3UzcWQ0SjZiQ0Vabm5RcldPZzhGWHRfejA4ZXB1cUFLVDNkOFhsQm9QYnhWbUF0NHd4X2wySE1zOGpBVHFqWjlfS0pUVm5ON2l2bkFBS2lkUF9SOHFSeHVkdE5QSUtXYzUzXzFTZWEzTFkzWGRFNU53MVk?oc=5",
-   "source": "Council on Foreign Relations",
-   "published": "2026-10-16T21:31:50+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "f18ce5a72275348c",
-   "title": "Russia and US May Announce Joint Data Center Projects, Kremlin Envoy Says",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcTRiNmthaTNCR3lZZGNEQWdmcWhmR2ZqRGlfNnJMUWpKUEx4YWdSM2MyYWFRdW5pR1NzQzJwRXFrNDNmSVppZTZKbVF2dmxoTUVTczhQSG83YWt2cTdNTHVrN3FQeU5vZHpWcXZVVmtTeXBUb2dtbzdlbEE5dlllSlBoejNZWC02WXgtVzJHZ0Z4bHh0eGZESk1yY2tsTFdqbWQ5cHZNVU1HVHhWdGlz?oc=5",
-   "source": "UNITED24 Media",
-   "published": "2026-10-16T21:06:41+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "6a4d1c832c408db8",
@@ -5069,7 +4062,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "8fdbe9fa3f270106",
@@ -5089,7 +4083,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "809ee13efac17dd5",
@@ -5102,7 +4099,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "97fe6ca95af5d2af",
@@ -5115,7 +4113,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "c7377652687a6fbf",
@@ -5128,7 +4127,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "edd2a5956454435e",
@@ -5141,7 +4141,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "16924c5e4363ae14",
@@ -5156,7 +4157,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "7e073b0832273218",
@@ -5170,20 +4172,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "c43edda14e3b7467",
-   "title": "Awaiting Data: Why there’s no AI data center boom in New England (at least not yet)",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNclFjdFJyN1N4eHhfSVlaUm9JSWw5ZFV5VW15TWRHUGhpekRwMUJJYzBidzR2UGswWkQ4OW9SMEpqdy1TTU1WT3F1bV9lOS1zcjRxMTNFSnRSejVZT0ltc2lRVWxOSjZOcmxvaHNyd09qN3E2NHdGVWtBN0NfRG40c2ZvZDZTRzJPTFBPVEIwZ3ZlQm1VN1dxekVoZHpDNmM0b19hdE5lUQ?oc=5",
-   "source": "www.capeandislands.org",
-   "published": "2026-10-16T17:31:36+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "60a08b221be35202",
@@ -5194,7 +4184,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "c7143962b08389f5",
@@ -5205,7 +4196,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "fc55f2dc0e3a6d83",
@@ -5218,7 +4210,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "0f6eb846a7b5f808",
@@ -5231,22 +4224,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
-  },
-  {
-   "id": "2296517e14065a95",
-   "title": "Nova Scotia’s EverWind proposes $10-billion AI data centre in Cape Breton",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTGcwWTdFN1NEVXJmajFOMGlocFNoTGw0NlFvMkFQVU53dTFIZW81OTkzSEN5QWFkZHNqb1lVb1JlYnU5cDY5TmNLRHRxc0oyUmlRQlQtUE1waERSTV9TMVFsNlczbS1OUElfelA5cGM2LWY1VEluSFVUVl9HeHkxbFZDdFI5cHdOc0psWEhNdWdqU09CanZBV2RNcjB6NW0wdWsyZWdXOEg?oc=5",
-   "source": "The Globe and Mail",
-   "published": "2026-10-16T17:12:54+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "1e651dc2659177a0",
@@ -5260,21 +4239,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "e0023149e0a819e0",
-   "title": "EverWind’s large-scale data centre in N.S. will power Anthropic’s Claude AI",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tcjRqUERvZWx2cmI3RWRaUGZsSEpBQmZEbU5uRXZ6c0dDS2JnRGU0OTZyams5ZDMwMnFUNEcyZFlxaUJlaGlNaERKd2l0eWYxU1FNSmV1dTdBdTg4cGR2RGRGZWR4X0twdVYxLWhWbHlJY1pTbGYzQQ?oc=5",
-   "source": "Global News",
-   "published": "2026-10-16T15:57:09+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "0ef4053f79fbd349",
@@ -5289,7 +4255,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "8784278554290f7c",
@@ -5303,7 +4270,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "45d162b9ba2de254",
@@ -5316,7 +4284,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "410f917ceab5903f",
@@ -5336,7 +4305,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "MN"
+   ]
   },
   {
    "id": "7743d05f18028856",
@@ -5363,21 +4335,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "5761c64561ae9f4b",
-   "title": "Nova Scotia to host massive data centre to power Anthropic's AI assistant Claude",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWnVIOG51MWpiWDNTOTl0Zk5BNXVPV2dQdmJpVFp0SEZIOFZBOGhyMnpYZGFETkdYUWxNdWlXbVpXZ0ltcTJteU56bE5OM1JjZFAwOWQyQ2RiZ2dGR3JmYThGY3oyNGI0QUpWc1RHSGFjYThvQ3ZLYW01NEdsbEY4U0xQMm42d2xLN3U4TnI0VGhKcUtFYnR0dlRWZmlKZk5DcURDdTlLU2YyYTJnOXRkM2stY2pMRmdTQ0FNYUVIc2JUa1NwazhSWTRsZHNoUQ?oc=5",
-   "source": "CBC",
-   "published": "2026-10-16T14:00:00+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "IN"
+   ]
   },
   {
    "id": "82c6ab677b952b49",
@@ -5391,20 +4352,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "c7df9f1e990f7b4c",
-   "title": "N.B. Power says 10 data centre projects have applications to connect to electrical system",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX21qODdSdm5CdC14cjVQVWZYYTAtUWZrUFJVTUY0T0lsNmVobTFxQ3FwT0hUMnRCMVNpRlJjTjRVYjhxLWhWc2c1RjdDWG83UUZiQXBYUnF6Smd0QWRUMjRsWWNVcVpvd1BCMU5vajNhd25BTmtUN0FsbnlKWHdnUFZKN2ZwUnlXUXY2eW9TaGlmUGpz?oc=5",
-   "source": "CBC",
-   "published": "2026-10-16T13:41:59+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "e12f48658155a40c",
@@ -5422,7 +4371,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "GA"
+   ]
   },
   {
    "id": "c384353350d61f19",
@@ -5435,41 +4387,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "dd01cc075fa9d78c",
-   "title": "Schneider Electric raises 2026 targets again on booming data centre demand",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVEZLQW16bU1UV1ZPTjFUNzZkOWp4bkw2QkRkRGVxZktlU1NpbWpEaXBWT0c0cmROS3FKUlh1dk9FZk9PN3kyRElfQ0hKeDR2cW1WcEpaUWkzZ24yOV9kTmYxMDZFdjYxd1pZcHVUVGZ3VkFsbWI5dFFPQ2NQbjZUWVFTaHJSSGIzdnNWc2ljTFlScFFBNDJha2dlLWNPYm4wc0FwRW94X2c2Mk1QLUY4LUc1RklFTjg?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-16T13:12:16+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "d482f13e2bf7380a",
-   "title": "How Malaysia AI Data Center Deals At Bitdeer Technologies Group Stock Change The Story",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWEc4aGYwbWxfMnQ4NHQ2TnRZUjdtMGFSZDBFMEZHd1RwMU5PYThGYUpPRVlkQVBFa2QxSl9YZWR0NjZFc2lDMi0tVVAxMVJjbm1sUXVnWEpTMWtKTnc1WUhIWGRzS3diX05ENWRnWW1ObmFNWWVaUFpESW1oelVmUEVkUW41VWtmY0VvclZDdTJMX0F5V2VrbDRWX0FPSlJRMVYtZmY3aThZMGwyYU9ySHljMTRqYmVmR1N3THJmbUI4UElVSmFtZS1zOFNtTUsxM1lsb1R3QmFNQ0x5WlHSAeMBQVVfeXFMUFNBMEpsYkJIamdiaFQxcGdjZGxoOXlXYVhxVUEyUFAzOWpnTkZJa2RmTlktWHlORHQ1UEIwcllnZ2plNE0xWEltUFpxdl9aSG51TUp4dV9HbEVFNWwxaTRhYndzVHF3b1QzR3gtbU1DU2FPc3FyVF9PWUF3eDNVZ1BzTTdqeXhKX2Vnc1EyenQ2RWM2elNRUF8tVVN0U1F4YmlUM3o4WS1HWWdmQ0gxNlJCSzNEYm1ISVplOUNpUHBHLXp6RzhWQjNJU3NCWktXV25rWWFLTVlLQUszNEtjeFdtRzQ?oc=5",
-   "source": "Simply Wall Street",
-   "published": "2026-10-16T13:09:17+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [
-    {
-     "name": "Malaysia",
-     "lat": 4.0,
-     "lon": 102.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "62d1c7f802cb592e",
@@ -5483,7 +4402,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "590f67bf9598fd8d",
@@ -5504,7 +4424,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "NV"
+   ]
   },
   {
    "id": "b260f8681bc19060",
@@ -5517,18 +4440,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "791e2a1a1c202419",
-   "title": "Jake Humphrey and a very British attitude to data centers",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUzJkcGM5ck1GNWp2RHNsbTNlUUUzOHlLNWVETm1uenotZTV5VHU5cW9jY3piUFlsc2l6TjJGTGw2a0FIREJ3eU9rcHlXZXpxN09qSUdwNUlrcHVmQ2JoNjVQanU3Y1pBVzdfQmthd09sU3ZfTmFrbld4WVI3V2tZNDVpb1RfY3o0NGEwVFlyVHUzeDYyN1Myd041TzliZzlOTm5HeVBlSVk?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-16T11:45:15+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "b65c284108613e14",
@@ -5548,7 +4461,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "ME"
+   ]
   },
   {
    "id": "6a91695a88bf41c8",
@@ -5566,20 +4482,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "5070c3804d635144",
-   "title": "A First Nation says Bell's new Sask. AI data centre is on traditional land. Will the claim stand in court?",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZTFkVEZDYndCVXBtajNkbl9Cdi1ETkVIT2RnV2ZMOTFvdk41WXVnb2staU4xZ1hZYjlZMHZYODQ2MGp2YmsyVXBPN1NuYUtud0JBdlBjUk1Na1UydWxoZFIwZXhBeDlqcEQ1WEl2Y0NCaGhOSGF2M2QycktITVBMQjV0TW1zNGJjdE9yaGJKc2EyNFNiR1JEcWdpcGtBRXpQa19WVHFqZw?oc=5",
-   "source": "CBC",
-   "published": "2026-10-16T11:00:00+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "254649b3a6e251a5",
@@ -5592,7 +4498,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "4f03f1b63b399e4c",
@@ -5605,21 +4512,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "42f7ebe40bb169dc",
-   "title": "Market selloff, rising rates test AI data centre deal boom",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUkF0Z0d5VTdCU1hISVI0eXNTUnpGOFlXc1BwM0dHWEJ6SWs2REc1TEdFdUtQRlRYTUM4TXRqcnFYZWlldDdjQnhLQ3ZQVmdrYXVvTWhwSGRnejRLLXBjbms5Z2pRMEJVWlp5Yks5WG5Tck9ZYXJaVDk5ZGZyanhEQVJUOXJMM0hBTzRTNnVheFlkcmpUSzdadi12VmZlbGFEWjA3SXEzcnJ2TTRXMkZv?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-16T09:33:44+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "bb71e5894db66eac",
@@ -5639,7 +4533,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "9328ff31d38b1888",
@@ -5650,7 +4547,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "347eb921ff5e32f7",
@@ -5661,7 +4559,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "f756e8eb5acf5fdb",
@@ -5681,7 +4580,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "IN"
+   ]
   },
   {
    "id": "5cf86be5353c353e",
@@ -5692,7 +4594,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "f498aca512d9a941",
@@ -5703,7 +4606,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "51495d89737e92f6",
@@ -5718,7 +4622,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "756c18c4b7228559",
@@ -5731,7 +4636,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "612b195d6e0b5e9d",
@@ -5742,7 +4648,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "189f03efcf54b3b4",
@@ -5755,7 +4662,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "da73baa9c6cf60fb",
@@ -5768,20 +4676,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "1370e191fa9bf047",
-   "title": "The data centre IPO debacle that sparked a market meltdown",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSmk5ejd0SFBvajRsVWlCUWR2OFpiT0dfLUtrQ0NlOFo3MlJZR2IxM2JCZ3I1V2tMNUk5OGpGOWJ0VllLR1Bycm5GZmJhOHlCTVVTcTJRSGx6STlObHJmN3RrcmZ2cUFKaW4zR2kySHZERFBLQzRuQmdjN19MbF80bWw2WFM?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-16T04:56:58+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "f3a7b4caab9f5075",
@@ -5801,7 +4697,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "c004902f65fe4ec2",
@@ -5812,7 +4711,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "ca29fddbf024ced8",
@@ -5825,7 +4725,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "3df46913e4d4eecb",
@@ -5839,22 +4740,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "864d065268814be3",
-   "title": "Investor doubts over data centre buildout hit AI stocks, bonds",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQV3JmczVDVWtOQ0M4S2wwMWFadmlMMzhCSHo5NS1PSVkxdzFaTGVLbFBDaXliTVE5ZnFyOVVRUHBsazJkbjdiLVF1b1l1dm9NcWNOSnNVaHJnWVdPVno1am41OXNfQVM5U21aZjhGSmJTSEpPUDNaU2F4VTZNMy1QejRvQm5JckhtMFpLTGZzTzN1dHg3V1RPVDNzNkQyZzNTazZsZ19kWXZlNHRLaXc?oc=5",
-   "source": "The Globe and Mail",
-   "published": "2026-10-15T23:45:35+00:00",
-   "category": "Construction",
-   "tags": [
-    "Construction",
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "307ee0dc0aa2c6e9",
@@ -5875,20 +4762,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "6f2edd946217f1c7",
-   "title": "Readers Write: Data center regulation, Flock cameras, Russia diesel deal",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbmVaRmdVQ19jdjNoY3NJSkZpcGw4TnNzSlI1aldQTDdMb1U0Wkxwbmd6TnVfSW0tdDBpaVYwNWJPMDViZm50M01EV3NKQW0tcVhEZzJtRzdJMEYxYUJwejlUTDhsS2FjdXM0R0Y1R2drd2VGZzZTNjBvNy1KNnFtZUlzWWtLMHJlWVlyVHJxWlA5ZnhzeDJ2NlBXVzZoM2JYLWVoY0FTaElGSlk?oc=5",
-   "source": "Star Tribune",
-   "published": "2026-10-15T23:00:00+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "MI"
+   ]
   },
   {
    "id": "b4fa3d05589eedfe",
@@ -5908,7 +4785,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "5053b41a8fe7fff4",
@@ -5921,7 +4801,8 @@
     "Deals & Investment"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "278c636748f6640b",
@@ -5942,7 +4823,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "WY"
+   ]
   },
   {
    "id": "bc9b13e01fcc784c",
@@ -5953,7 +4837,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "a25ace00d8648dd7",
@@ -5967,7 +4852,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "1f8cc71a5ac2952b",
@@ -5978,7 +4864,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "4d9eb479b94e712e",
@@ -5991,20 +4878,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
-  },
-  {
-   "id": "cdb532c0a247c45c",
-   "title": "Nova Scotia premier defends changing his stance on welcoming data centre proposals",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmWlVVSHgxSEJaZmx1NEdkaWE0UjRWN3B2VWhIazVhRlFMcHdZVFFnLUhSNEstSlM5Uk5VUGJTc1FtUmZ6WEtibkctSS1jUndIbG54V3diT3dQU2pmSFEtQUFRSXpxMkVkUFVGVXExb0VjZXlxbTNhbg?oc=5",
-   "source": "Global News",
-   "published": "2026-10-15T18:08:28+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "dca87452501fe6e4",
@@ -6017,7 +4892,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "5c4479ee6abf0415",
@@ -6030,7 +4906,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "e2217d54450af7b2",
@@ -6050,7 +4927,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "MN"
+   ]
   },
   {
    "id": "6edb1cf112d16a88",
@@ -6063,7 +4943,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "3b00d8267ab3226c",
@@ -6077,7 +4958,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "3c7d044f30d659cb",
@@ -6090,7 +4972,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "0bcc069ec2a4f85b",
@@ -6103,7 +4986,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "64a217ff39828908",
@@ -6121,7 +5005,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "GA"
+   ]
   },
   {
    "id": "0ba67c064a5428b2",
@@ -6139,18 +5026,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "0b91fd02dfb5b2f6",
-   "title": "To Inflict Economic Pain, Russia and Ukraine Strike at Data Centers",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNRlpDLTVtVnNLSWRxTlRjcE9UWTE4LW1aeFgxNE1OdkFEc3hDcHFYUVFNTXA3SFA0SzR4b1pnX3FQOUNwX2lxM3FrRUkyVW5UVFF6MEYzZWRybVYwVlFtVzcyekdleENQdUxQMTExTUlDX1RSVGkzcEpMeWhXVldRbXZCcmV5ams?oc=5",
-   "source": "The New York Times",
-   "published": "2026-10-15T15:24:57+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "MI"
+   ]
   },
   {
    "id": "a57d122c9e12ebf8",
@@ -6163,7 +5042,8 @@
     "Construction"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "088824628b3d8d50",
@@ -6184,7 +5064,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "KY"
+   ]
   },
   {
    "id": "b930c0e5bcd8ab38",
@@ -6198,7 +5081,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "fcd00f7b6f226fca",
@@ -6212,7 +5096,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "845905d8f5c53379",
@@ -6223,28 +5108,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "56c239411857a745",
-   "title": "Greece drafts legislation requiring data centers source 60% of power from renewables",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORmRiTHlhQWRnWmJNcmFKU0g5WVcwMC1odGVXV29ydmx6ODNhT3RzMmdBdUFnS3lERTBSZTRUaUkyWTBoRjRPUkZxRnJtelNrME1UNU5tQlUzNHdGVXFuZlRNTHo2M2o4N1dUOXFfTDhaWXhTME5ldk45M2tITDQwQThRZVQ1cnFsRUlrekRIOHRvRkg2VG9SUnh2LVdxYTc3U0I2VFdVVUJ0R0JfSk16QWZqX3ZJTWFqZFJiQS1wRjN4c3VNT3c?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-15T14:46:04+00:00",
-   "category": "Policy & Community",
-   "tags": [
-    "Policy & Community",
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "Greece",
-     "lat": 39.0,
-     "lon": 22.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "3b68ae2390b2b723",
@@ -6258,7 +5123,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "4ed47cdb95d67764",
@@ -6271,21 +5137,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "936c05442df8eee5",
-   "title": "Investors dump data centre bonds as AI borrowers face ‘Darwin moment’",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeHNjZE1aMG8wWVBHLW9UeG15T3RSZzdSOFR4WGN5SEtyWTI2Y1g1MWtSUFZkYUFKc2QtS01JN2lHSW82bjdqVWNjV0w1WVNMU1B2U1BLZlB6QkpLc1ZSTUE4Ry1EMzVRa3RUT1J3azFYRjZnNVpTY0c5WERPV2thSlp4MkE?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-15T13:26:08+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "92b7f20f5323c0a0",
@@ -6296,7 +5149,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data centre (international)",
+   "states": []
   },
   {
    "id": "458a8e9c31266371",
@@ -6316,7 +5170,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": [
+    "CA"
+   ]
   },
   {
    "id": "8d05fe7339bbf7da",
@@ -6327,7 +5184,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "367b87675e5cbc2e",
@@ -6348,7 +5206,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "8645ce8673bb6ba5",
@@ -6363,7 +5224,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "107adc190a1d0573",
@@ -6377,7 +5239,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "44c767a323e372b7",
@@ -6396,7 +5259,10 @@
     }
    ],
    "feed": "Google News: Data center policy",
-   "investment_usd_b": 0.3
+   "investment_usd_b": 0.3,
+   "states": [
+    "GA"
+   ]
   },
   {
    "id": "50c0f7c17e31a828",
@@ -6411,7 +5277,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "29cf7f77537134e3",
@@ -6424,7 +5291,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "7bce9541cc1887f1",
@@ -6437,7 +5305,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "d37da35a7517e88a",
@@ -6450,65 +5319,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "d6aff1dc591c16ee",
-   "title": "Italy's Lombardy to revise data centre law next week after application surge",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORXRTcUliSUM2cVJLcUFzQU9qUTYzSDlRXzhYTEU4RUdLZkNMbndSWXVCYk1fdlNvMkpTS2FSNjVhekhpdDNmOFB6UFpZUmVpVGlrUElXbEZyb1ZfSGtTVGpwR1BwS3ZJZHRLR1V1SXk2cURDQkotTVZYOXhhYW5WQnpvWTFKNjEyYzZXcXAxbWhmTFE3Q0lXT24xMWlJV1JwZm9wd0NTUVNodWFoUmNhWnFoZzhwdTVXb1BYOHdlZTRRdm8?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-15T08:55:43+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [
-    {
-     "name": "Italy",
-     "lat": 42.5,
-     "lon": 12.5,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "92af9820b3ffa451",
-   "title": "Sam Heughan joins battle against Chapelcross data centre",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwLXg2NWk4MUpKV19VSHFvS3Jhckh5c1UzcFplZ01ENzlQR1pXSjJyQ2NFUF9sdjNqZzZBdmhoS0NvWWo1MzNTeXFFd3NndWdFNElzYnlEczlhd2JzZ2c?oc=5",
-   "source": "BBC",
-   "published": "2026-10-15T08:55:20+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "91416d7b3d054403",
-   "title": "Government planning 'hyperscale' $1.5B data centre for National Capital Region",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOenVwaGRMZ0Q4Qi15V3ppOElPLV9DdkFqcWljRXJnN0RiTUUyUVI1RkRrYTNBd2hJQndqbGRMekQxY1RmRy1NazQxY0p5eDFCdkZCRzZjVHYwRXpldnVsV3VVRFN2QXVxd3k3OFZQMnFRVWMtU2FlUndkODNnc2pXejV5azhld2FNdkk1NWlsbXk?oc=5",
-   "source": "Ottawa Citizen",
-   "published": "2026-10-15T08:00:50+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)",
-   "investment_usd_b": 1.5
-  },
-  {
-   "id": "b90d54a102d4204c",
-   "title": "Data centre expansion could push up energy bills, energy chiefs warn",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPT2d4bmpydERTcnVtR0M2eUdJNEpHZUZYZjdPQTl2cmtySVhqdjdaYVcyYjJ2YTU4UXBMQzRsbFpCQTNzR2t2ZjV2dExmT0NlOWpDNVBpdy1HTTJ1N2YzZldQdUdGbnBGU3J2ak9Qc1dDeVNhX2xIZm0zMVl0ZUhoN1RRenBjTlZ0bmFhWVlnTTQzRHBRUzkxRGlKYlA5SXFKS2lJUnBFcDRKS0tGRmdGZkxNTnBhMG1wbXB5M3NlQzJwVkk?oc=5",
-   "source": "The Times",
-   "published": "2026-10-15T07:21:11+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "7b17b853fec6c7a2",
@@ -6519,35 +5331,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "d61a1827136b67d1",
-   "title": "Collapse of a £20bn data centre deal unnerves AI investors",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMU82T05XOVkwVVdWckhKNHlRZkZZYi16MFZveHVWZWVZdGR1OFRTczA2MjVHcmhXTEppTmNPZGhMVjNocDhReWFwR1pWMlEwRkJVWGR5U2Roa3FDWTAxeFZySWxNSWhJSHBaNEZmdjk0aW5uR3N3cmltT0k1amtxS24tYjBnRjdxMm9vbHFiQUp1alZRdXlaVkFYcVRHOU5Gby1F?oc=5",
-   "source": "The Telegraph",
-   "published": "2026-10-15T05:30:00+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment",
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "d8f177460a89ea07",
-   "title": "Huge data centre and solar farm plans revealed",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1VdkM0OENCVmRUd0NyLUI5bGVldm1jUENPcHhWTG1iWXVKTHJXMHI3QVE5RlhCclU4eGpDZ09FaUswdHVUZ1JSZldhc1VxMmE0cVBlTmdPcHlMX2c?oc=5",
-   "source": "BBC",
-   "published": "2026-10-15T05:20:27+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Power & Energy"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "f00a91179d7b8fbe",
@@ -6561,20 +5346,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
-  },
-  {
-   "id": "abeb45b518ba172d",
-   "title": "Investor appetite for data centre IPOs is reaching its limit",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbUx1YTRWM1pQbi1yaTN5SWVDWnRfYVg4MDI0bUVkby1VbkZNRTk0VmRjWnE5cWFxblRfRXZzRlFjR2IyeVZWS0JzV0p2bHEtd0ItWVNCV2RVeFh3d1RWQ0RWbThhdFVXSHR5a2ZYRC03UURDLXV1bWllVm1JcmZMMTRUX1I?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-15T04:01:04+00:00",
-   "category": "Deals & Investment",
-   "tags": [
-    "Deals & Investment"
-   ],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "3a49529a9d418649",
@@ -6587,7 +5360,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "f8e7ca958d187953",
@@ -6601,7 +5375,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "5e77184bc536678f",
@@ -6614,7 +5389,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "07ea80134bbd1bcb",
@@ -6629,7 +5405,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "470817002414a4ba",
@@ -6650,7 +5427,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "MI"
+   ]
   },
   {
    "id": "3d2e33a17bd71df5",
@@ -6665,20 +5445,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
-  },
-  {
-   "id": "2666eac4ee028499",
-   "title": "Ukrainian drones hit Russia's top data center in attack on AI ambitions",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOVlfRExJY3RhWG9kY05idWUtMU4weHhnazlhSVNoRk9VenFsTXZnN2hHamQtNXlJTGJxWGFmSzJXSkc2Q0FnXzM4RVJkMjJ2bDhUMlBBczE4bVNRZnZOTkYtRnJSMlJwRHMzWHUwT1VWc094SVdaMWE1eTdrMFZiVk5fdzVEcGcxTkR2Q1NUT3FpUU1oaldPdnVDNFhMUjZtY0dCMHlwS2pYNGs?oc=5",
-   "source": "KSL News",
-   "published": "2026-10-14T23:36:21+00:00",
-   "category": "AI & Hyperscale",
-   "tags": [
-    "AI & Hyperscale"
-   ],
-   "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "8d3d7310fe7070fc",
@@ -6698,7 +5466,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "KS"
+   ]
   },
   {
    "id": "4a55f7faf082790e",
@@ -6718,7 +5489,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "70afbd8e3e424586",
@@ -6738,7 +5512,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "KS"
+   ]
   },
   {
    "id": "694a924b489460eb",
@@ -6752,7 +5529,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "92d261a8674a0798",
@@ -6766,7 +5544,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "8abfb8c2fdb1363c",
@@ -6779,7 +5558,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "f0dd658b8af23255",
@@ -6790,7 +5570,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "3fa8bfebb0a93695",
@@ -6804,7 +5585,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "0a4a1b58f51abf61",
@@ -6818,7 +5600,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "91bf17ecb67fc38b",
@@ -6831,7 +5614,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "4607fd999892d2f7",
@@ -6845,7 +5629,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "4e3154cb32bda7fd",
@@ -6856,7 +5641,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "c89806e5f696ed88",
@@ -6867,7 +5653,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "68586c3e95b98230",
@@ -6889,7 +5676,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": [
+    "VA"
+   ]
   },
   {
    "id": "e759c3323a0d8cb6",
@@ -6902,7 +5692,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "b64af2c8b42f669b",
@@ -6916,7 +5707,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "d8e0fd67083cba98",
@@ -6929,7 +5721,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "7baf94ad26aaaeda",
@@ -6950,7 +5743,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": [
+    "OH"
+   ]
   },
   {
    "id": "8d5075824b1a53b9",
@@ -6963,7 +5759,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "10bb07cf8700bbbc",
@@ -6979,7 +5776,8 @@
    ],
    "locations": [],
    "feed": "Google News: Data center announced",
-   "investment_usd_b": 0.05
+   "investment_usd_b": 0.05,
+   "states": []
   },
   {
    "id": "0956300cb2edee6c",
@@ -6992,7 +5790,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "69320bb3140196dd",
@@ -7005,7 +5804,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "35e0f1481e6111a4",
@@ -7028,40 +5828,10 @@
     }
    ],
    "feed": "Google News: Data center",
-   "capacity_mw": 702
-  },
-  {
-   "id": "1bbf624c83820b5c",
-   "title": "Iren targets 900MW data center campus in Wagga Wagga, Australia",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNklyNlFGQXdSWlh5QkRCZjNmWnBDSktwemtRc0txdng5U0lhbjZCSEQzay1scTNuSkxoZzJlWGwwSWpTTVY1dmdwUDc1ejFDZ3lVNS1jM201c2Z6ZDJjS1ZQZG5lcHJaZjJOcnBFekJtdkVXdnlsb3N0SU9Yek80LU9HY2JURWpEYTRQd1pzWkZFbjg5M3hHV1pPM1BsQW9IakR3NlZRNDg1UQ?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-14T13:50:15+00:00",
-   "category": "Announcements",
-   "tags": [
-    "Announcements",
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "Australia",
-     "lat": -25.3,
-     "lon": 133.8,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data center announced",
-   "capacity_mw": 900
-  },
-  {
-   "id": "c57f5c80cbf60962",
-   "title": "Ukrainian drones strike data center of Russia's biggest bank",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTXZTdDE2YlpaLURmWHRnSTA2QUFfOUdYN2hSN2N0VUlxRlZIQTRNenAzM21TWU5Jem1GMEI3WnpwdFhXbmk3Q3JOUHBESEhpekFSTXRIVXJJdGNOVDRIMXlsR0NORWZOeXU5MUFLN0MxWGo1MU9MY0hldlp0SS1KTF9WeUJlbHlVaGZYWmhMNFppYWhDcGk5Qw?oc=5",
-   "source": "Politico",
-   "published": "2026-10-14T13:33:00+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data center"
+   "capacity_mw": 702,
+   "states": [
+    "WY"
+   ]
   },
   {
    "id": "df829411a502a87f",
@@ -7072,7 +5842,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "e2e4757b385887c5",
@@ -7085,7 +5856,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "f90449fad45df5c3",
@@ -7098,7 +5870,8 @@
     "Policy & Community"
    ],
    "locations": [],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": []
   },
   {
    "id": "3adfd32a895ee0f2",
@@ -7111,7 +5884,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: AI and hyperscale"
+   "feed": "Google News: AI and hyperscale",
+   "states": []
   },
   {
    "id": "16872afce0fd5b41",
@@ -7128,7 +5902,8 @@
     "AI & Hyperscale"
    ],
    "locations": [],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": []
   },
   {
    "id": "4555b79248e73ce3",
@@ -7142,7 +5917,8 @@
     "Deals & Investment"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "cd56ea593c3c1030",
@@ -7160,7 +5936,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "ad4e04847e882d16",
@@ -7186,7 +5965,11 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "NM",
+    "TX"
+   ]
   },
   {
    "id": "8920814fd34d7435",
@@ -7212,7 +5995,11 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center power"
+   "feed": "Google News: Data center power",
+   "states": [
+    "NM",
+    "TX"
+   ]
   },
   {
    "id": "8649e1fb985b7c7b",
@@ -7230,29 +6017,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "e7d5e2d41295c390",
-   "title": "Israel to cap new data centers at 200 megawatts amid AI power crunch",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04b1ZyRzVrWEhhRFBXZTBobFVhcU9iMXJaYm95QUNuSFlEZjFWd1Q0aGhIQlNVLUpLOWJOS1Z5UjFHLUFsQXBPZTZEbHViWTB1OWJPRFdZQmRPakVnOGNWSVhvdEVKaWs?oc=5",
-   "source": "CTech",
-   "published": "2026-10-14T08:50:00+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy",
-    "AI & Hyperscale"
-   ],
-   "locations": [
-    {
-     "name": "Israel",
-     "lat": 31.0,
-     "lon": 35.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data center power",
-   "capacity_mw": 200
+   "feed": "Google News: Data center",
+   "states": [
+    "MN"
+   ]
   },
   {
    "id": "124e22c81e432a7d",
@@ -7263,7 +6031,8 @@
    "category": "General",
    "tags": [],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "c56f4a6d1347086d",
@@ -7276,38 +6045,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
-  },
-  {
-   "id": "9b3c58e3fdd707e6",
-   "title": "Top 10: Containerised Data Centre Solution Providers",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb09BQVVHUFNubzMwcDJ6eVh6N01PQ2JsVlJNXzZVTTR5c1B1cmFYZ2RLNmpodG52QUdmeWlCVktmSDlaWlhwUXJ4aW10dmQzUTZSWk9EU1dDWklmX01UQnlZRHNibVpXRFFYLXgtdjM3aWljYVlvSDNjNXBqQXM1WjFHeVVaYjF1OGt1QU96eEMxamc?oc=5",
-   "source": "Data Centre Magazine",
-   "published": "2026-10-14T07:33:42+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
-  },
-  {
-   "id": "29062d98fbdbeade",
-   "title": "India to roll out data centre policy as concerns grow over power use",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSXNZTGdUNmQ2d2J6WklxaEN3cmU5U0tINFdKTUhDRlR5SDloYUU4NEwzaTdxUGJpTVFIUkpxY19ndWRNWjNwenFncmtpazJ5S3l1X1RYbU1Rd0VIbzVBRFc1V0RWWVQwQW5GTU1GVnU0TTFEZ01LRWF0RW1RMklOeFFFUDhzd25OOGQwNmZNZGlTeVowZVJjektrOUtzTVpydmF1YVlrMGh3M2tIUHh3?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-14T07:16:09+00:00",
-   "category": "Power & Energy",
-   "tags": [
-    "Power & Energy"
-   ],
-   "locations": [
-    {
-     "name": "India",
-     "lat": 21.0,
-     "lon": 78.0,
-     "level": 1
-    }
-   ],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "9d51ddcb5dffb364",
@@ -7327,7 +6066,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center construction"
+   "feed": "Google News: Data center construction",
+   "states": [
+    "AZ"
+   ]
   },
   {
    "id": "b0fc7f20ad38b7af",
@@ -7340,7 +6082,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": []
   },
   {
    "id": "2de70fe750dd3eb1",
@@ -7358,7 +6101,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center announced"
+   "feed": "Google News: Data center announced",
+   "states": [
+    "TX"
+   ]
   },
   {
    "id": "755f6988b95703a8",
@@ -7372,18 +6118,8 @@
     "Announcements"
    ],
    "locations": [],
-   "feed": "Google News: Data center construction"
-  },
-  {
-   "id": "c08154410df5a8f8",
-   "title": "How Ukraine’s data centre strikes have thrown Russia into turmoil",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZk5wTjBOM3BrWWFGbUxuNmlkUzl5T2RuTUp6M1IzaE1VM01GNnBqSXZRenZINGVOY1BFX1Nidm14QksyNW5GajRtQVNDNnlPUndtWWYxUFU3cVpTMnpkd21NYV9QcWtGVS0wbGxZUDNmNTZXNlNQS3lZQV85SV82eTBNMDI?oc=5",
-   "source": "Financial Times",
-   "published": "2026-10-14T04:01:02+00:00",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "feed": "Google News: Data centre (international)"
+   "feed": "Google News: Data center construction",
+   "states": []
   },
   {
    "id": "b2bb610256b4b411",
@@ -7398,7 +6134,8 @@
     "Power & Energy"
    ],
    "locations": [],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": []
   },
   {
    "id": "31d1e3c51c323c72",
@@ -7416,7 +6153,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "WI"
+   ]
   },
   {
    "id": "c2be0c91d7729364",
@@ -7437,7 +6177,10 @@
      "level": 3
     }
    ],
-   "feed": "Google News: Data center policy"
+   "feed": "Google News: Data center policy",
+   "states": [
+    "MN"
+   ]
   },
   {
    "id": "220a246d3aac3dd4",
@@ -7458,7 +6201,10 @@
      "level": 2
     }
    ],
-   "feed": "Google News: Data center"
+   "feed": "Google News: Data center",
+   "states": [
+    "OR"
+   ]
   }
  ]
 }

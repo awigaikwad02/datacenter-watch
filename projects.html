@@ -3,69 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Center Watch: projects map</title>
-  <meta name="description" content="A live map of new and planned data centers, curated projects plus sites detected automatically from the news.">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <title>Projects Map · Data Center Watch</title>
+  <meta name="description" content="Interactive map of U.S. data center projects: announced, under construction and operating campuses, plus sites detected from the news, with capacity, companies and related headlines.">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/vendor/leaflet/MarkerCluster.css">
   <link rel="stylesheet" href="assets/style.css">
+  <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script src="assets/app.js"></script>
 </head>
-<body>
-  <header class="top">
-    <div class="wrap">
-      <a class="brand" href="index.html">Data Center Watch</a>
-      <nav>
-        <a href="index.html">News</a>
-        <a href="projects.html" class="active">Projects map</a>
-        <a href="learn.html">How it works</a>
-      </nav>
+<body class="is-loading">
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <script>document.write(DCW.logo("loader-logo"))</script>
+      <div class="loader-title">Data Center Watch</div>
+      <div class="loader-bar"><i></i></div>
+      <div class="loader-sub">Plotting U.S. data center projects…</div>
     </div>
-  </header>
+  </div>
 
-  <main class="wrap">
-    <section class="intro">
-      <h1>Data center projects map</h1>
-      <p class="lede">Where new data centers are being announced, built and switched on. Filled markers are curated projects; hollow markers were picked up automatically from headlines and placed at the city or state mentioned.</p>
-      <p class="meta" id="updated">Loading…</p>
-    </section>
+  <header id="site-header"></header>
 
-    <div id="map"></div>
-    <div class="legend">
-      <span><i class="dot"></i>Curated project</span>
-      <span><i class="dot auto"></i>Detected from news</span>
-      <span id="counts"></span>
-    </div>
+  <main class="map-page">
+    <aside class="map-side">
+      <div class="map-side-head">
+        <h1>U.S. projects map</h1>
+        <p>Campuses being announced, built and switched on. Filled pins are curated projects; ringed pins were picked up from headlines.</p>
+        <div class="mini-stats" id="miniStats"></div>
+      </div>
 
-    <section class="controls">
-      <input id="q" type="search" placeholder="Search projects, companies, places" autocomplete="off">
-      <div class="row">
-        <select id="status">
-          <option value="">All stages</option>
-          <option value="Announced">Announced</option>
-          <option value="Under construction">Under construction</option>
-          <option value="Operational">Operational</option>
-        </select>
-        <select id="kind">
-          <option value="">Curated and detected</option>
-          <option value="curated">Curated only</option>
-          <option value="auto">Detected from news only</option>
+      <div class="map-filters">
+        <label class="search">
+          <span class="sr-only">Search projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="q" class="input" type="search" placeholder="Search projects, companies, towns…" autocomplete="off">
+        </label>
+        <div class="chips status-chips" id="statusChips" role="group" aria-label="Project stage"></div>
+        <div class="row">
+          <select id="company" class="select" aria-label="Company"></select>
+          <select id="stateSel" class="select" aria-label="State"></select>
+        </div>
+        <details>
+          <summary>Capacity and layers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div style="margin-top:10px">
+            <div class="range-row">
+              <span>Minimum capacity: <span class="val" id="mwVal">Any</span></span>
+              <input id="mw" type="range" min="0" max="2000" step="100" value="0" aria-label="Minimum capacity in megawatts">
+            </div>
+            <label class="toggle"><span class="sw"><i style="background:var(--accent)"></i>Curated projects</span><input type="checkbox" id="lyCurated" checked></label>
+            <label class="toggle"><span class="sw"><i style="border:2px solid var(--st-detected)"></i>Detected from news</span><input type="checkbox" id="lyAuto" checked></label>
+            <label class="toggle"><span class="sw"><i style="background:linear-gradient(90deg,var(--map-land),var(--accent))"></i>Shade states</span><input type="checkbox" id="lyShade" checked></label>
+            <label class="toggle"><span class="sw"><i style="background:var(--faint)"></i>Street labels</span><input type="checkbox" id="lyLabels" checked></label>
+          </div>
+        </details>
+      </div>
+
+      <div class="list-head">
+        <span id="listCount">Loading…</span>
+        <select id="sort" class="select" aria-label="Sort">
+          <option value="mw">Largest first</option>
+          <option value="new">Newest first</option>
+          <option value="name">A to Z</option>
+          <option value="state">By state</option>
         </select>
       </div>
+      <div class="proj-list" id="list"></div>
+    </aside>
+
+    <section class="map-wrap">
+      <div id="map" aria-label="Map of U.S. data center projects"></div>
+      <div class="map-tools">
+        <div class="seg" id="shadeMode" role="group" aria-label="Shade states by"></div>
+        <button class="icon-btn" id="fit" title="Show all of the U.S." aria-label="Show all of the U.S."></button>
+      </div>
+      <div class="map-legend" id="legend"></div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
     </section>
-
-    <section id="list"></section>
-    <p class="empty" id="empty" hidden></p>
-
-    <p class="callout">Detected projects come from headline keywords and a place-name lookup, so a pin can land on the wrong town or state. To promote one to the curated list, copy it into <code>data/projects.json</code> with exact coordinates.</p>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <p>Data Center Watch is a personal project. Project details come from public reporting and may be out of date.</p>
-      <p>Map tiles and data from OpenStreetMap contributors.</p>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="assets/app.js"></script>
+  <script src="assets/vendor/leaflet/leaflet.js"></script>
+  <script src="assets/vendor/leaflet/leaflet.markercluster.js"></script>
+  <script src="assets/vendor/topojson-client.min.js"></script>
   <script src="assets/projects.js"></script>
 </body>
 </html>

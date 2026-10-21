@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Companies · Data Center Watch</title>
+  <meta name="description" content="The companies building America's data centers: hyperscalers, AI labs, GPU clouds, developers, colocation providers, investors and energy partners, with their projects, capacity and latest news.">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script src="assets/app.js"></script>
+</head>
+<body class="is-loading">
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <script>document.write(DCW.logo("loader-logo"))</script>
+      <div class="loader-title">Data Center Watch</div>
+      <div class="loader-bar"><i></i></div>
+      <div class="loader-sub">Loading the companies behind the build-out…</div>
+    </div>
+  </div>
+
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow"><span class="live-dot"></span><span id="eyebrow">Company tracker</span></span>
+      <h1>Who's building <span class="grad">America's data centers.</span></h1>
+      <p class="lede">The cloud giants, AI labs, GPU clouds, developers, landlords, investors and power companies behind the build-out, with the projects they're tied to and how often they're in the news.</p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <div class="section-title">
+      <div><h2>How the industry fits together</h2><p>Tap a role to filter the list.</p></div>
+    </div>
+    <div class="roles" id="roles"></div>
+
+    <div class="section-title">
+      <div><h2>All companies</h2><p id="countLine"></p></div>
+    </div>
+    <div class="toolbar" id="toolbar">
+      <div class="toolbar-row">
+        <label class="search inline">
+          <span class="sr-only">Search companies</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="q" class="input" type="search" placeholder="Search companies, headquarters, states…" autocomplete="off">
+        </label>
+        <select id="sort" class="select" aria-label="Sort">
+          <option value="projects">Most projects</option>
+          <option value="mw">Most capacity</option>
+          <option value="news">Most in the news</option>
+          <option value="name">A to Z</option>
+        </select>
+      </div>
+      <div class="toolbar-row"><div class="chips scroll" id="types" role="group" aria-label="Company type"></div></div>
+    </div>
+    <div class="co-grid" id="grid"></div>
+  </main>
+
+  <div class="modal-back" id="back"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"></aside>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/companies.js"></script>
+</body>
+</html>

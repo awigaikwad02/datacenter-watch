@@ -3,58 +3,87 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Center Watch: latest data center news</title>
-  <meta name="description" content="A daily feed of data center news: announcements, construction, power and grid, policy, deals and AI hyperscale projects, with a live map of new data centers.">
+  <title>Data Center Watch</title>
+  <meta name="description" content="Live feed of U.S. data center news: new announcements, construction, power and grid deals, local policy fights and the AI build-out, refreshed twice a day.">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
+  <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script src="assets/app.js"></script>
 </head>
-<body>
-  <header class="top">
-    <div class="wrap">
-      <a class="brand" href="index.html">Data Center Watch</a>
-      <nav>
-        <a href="index.html" class="active">News</a>
-        <a href="projects.html">Projects map</a>
-        <a href="learn.html">How it works</a>
-      </nav>
+<body class="is-loading">
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <script>document.write(DCW.logo("loader-logo"))</script>
+      <div class="loader-title">Data Center Watch</div>
+      <div class="loader-bar"><i></i></div>
+      <div class="loader-sub">Loading the latest U.S. data center news…</div>
     </div>
-  </header>
+  </div>
+
+  <header id="site-header"></header>
 
   <main class="wrap">
-    <section class="intro">
-      <h1>Latest data center news</h1>
-      <p class="lede">Headlines on new data centers, construction, power and grid, local policy fights, deals and the AI build-out. Pulled from Google News and Google Alerts, refreshed twice a day.</p>
-      <p class="meta" id="updated">Loading…</p>
+    <section class="hero">
+      <span class="eyebrow"><span class="live-dot"></span><span id="updated">Live feed</span></span>
+      <h1>America's data center boom, <span class="grad">as it happens.</span></h1>
+      <p class="lede">New campuses, groundbreakings, power deals and local votes from across the United States. Pulled from hundreds of outlets and refreshed twice a day.</p>
+      <div class="stats" id="stats"></div>
     </section>
 
-    <section class="stats" id="stats" hidden></section>
+    <div class="news-layout">
+      <div>
+        <div id="featured"></div>
 
-    <section class="controls">
-      <input id="q" type="search" placeholder="Search headlines, companies, places" autocomplete="off">
-      <div class="chips" id="chips"></div>
-      <div class="row">
-        <select id="loc"><option value="">All locations</option></select>
-        <select id="range">
-          <option value="7">Last 7 days</option>
-          <option value="14">Last 14 days</option>
-          <option value="30">Last 30 days</option>
-          <option value="60">Last 60 days</option>
-        </select>
+        <div class="toolbar" id="toolbar">
+          <div class="toolbar-row">
+            <label class="search">
+              <span class="sr-only">Search headlines</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input id="q" class="input" type="search" placeholder="Search headlines, companies, towns…" autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+            <select id="state" class="select" aria-label="State"></select>
+            <select id="company" class="select" aria-label="Company"></select>
+            <select id="range" class="select" aria-label="Time range">
+              <option value="1">Last 24 hours</option>
+              <option value="7">Last 7 days</option>
+              <option value="30" selected>Last 30 days</option>
+              <option value="60">Last 60 days</option>
+            </select>
+            <div class="seg" id="view" role="group" aria-label="Layout"></div>
+          </div>
+          <div class="toolbar-row"><div class="chips scroll" id="chips" role="group" aria-label="Categories"></div></div>
+          <div class="active-filters" id="active" hidden></div>
+        </div>
+
+        <div id="feed"></div>
+        <div class="load-more"><button class="btn" id="more" hidden>Show more stories</button></div>
       </div>
-    </section>
 
-    <section id="feed"></section>
-    <p class="empty" id="empty" hidden></p>
-    <button class="more" id="more" hidden>Show more</button>
+      <aside class="news-side">
+        <section class="panel reveal">
+          <h3>Where it's happening <span class="sub">stories by state</span></h3>
+          <div class="tilemap" id="tiles"></div>
+          <div class="scale">fewer <i></i> more</div>
+        </section>
+        <section class="panel reveal">
+          <h3>Story volume <span class="sub">last 30 days</span></h3>
+          <div class="spark" id="spark"></div>
+          <div class="spark-axis" id="sparkAxis"></div>
+        </section>
+        <section class="panel reveal">
+          <h3>Companies in the news <a class="sub" href="companies.html">All companies →</a></h3>
+          <div class="bars" id="cos"></div>
+        </section>
+      </aside>
+    </div>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <p>Data Center Watch is a personal project. Headlines link to the original publishers. Categories and locations are detected automatically from headlines and can be wrong.</p>
-      <p>Sources: Google News RSS and Google Alerts. Map data from OpenStreetMap contributors.</p>
-    </div>
-  </footer>
-
-  <script src="assets/app.js"></script>
+  <footer id="site-footer"></footer>
   <script src="assets/news.js"></script>
 </body>
 </html>
