@@ -61,8 +61,9 @@ CAND_MAX_ITEMS = 800
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; TheRackReport/1.0; +https://therackreport.org)"}
 TIMEOUT = 25
 FETCH_TRIES = 3          # retry 429 and 5xx responses with exponential backoff
-CLUSTER_DAYS = 7         # related headlines must be this close in time
-CLUSTER_OVERLAP = 0.4    # share of title words in common (of the shorter title)
+CLUSTER_DAYS = 5         # related headlines must be this close in time
+CLUSTER_STRONG = 0.5     # title-word Jaccard that clusters on its own
+CLUSTER_WEAK = 0.3       # Jaccard that clusters with a shared city/county, or a shared company and state
 
 # ---------------------------------------------------------------------------
 # Classification rules. Order matters: the first rule that matches a headline
@@ -99,38 +100,42 @@ def is_cancelled(title):
     return bool(CANCEL_RE.search(title)) and not CANCEL_HEDGE.search(title) and not CANCEL_NOT.search(title)
 
 
+# Checked in this order after Cancelled / Blocked; the first match wins. Policy / Permits is
+# last and needs a governance phrase, so a vote or a county name alone does not make a story policy.
 CATEGORY_RULES = [
-    ("Policy / Permits",
-     r"\b(zoning|rezon\w*|city council|county council|council|commission(ers?)?|board of supervisors|supervisors|"
-     r"moratorium|ordinance|permits?|permitting|lawsuit|sue[sd]?|residents?|neighbou?rs?|opposition|oppose[sd]?|"
-     r"protest\w*|pushback|tax (break|incentive|abatement|exemption)s?|incentives?|regulat\w*|legislat\w*|"
-     r"senate|governor|lawmakers?|approv\w*|reject\w*|denie[sd]|deny|vote[sd]?|hearing|referendum|noise|"
-     r"environmental|water use|backlash|bans?|banned)\b"),
-    ("Land Acquisition",
-     r"(\b\d[\d,]*[- ]acres?\b|\bacres\b|\bparcels?\b|\bland (purchase|deal|sale|buy)\b|\b(buys?|bought|purchases?|"
-     r"purchased|acquires?|acquired) (\w+ ){0,2}(land|site|property|acreage|farmland)\b|\bsite acquisition\b)"),
-    ("Expansion",
-     r"\b(expands?|expanding|expanded|expansion|adds|second phase|phase (2|ii|two)|"
-     r"additional buildings?|more buildings)\b"),
+    ("New Announcement",
+     r"\b(announc\w*|plans?|planned|propos\w*|unveil\w*|to build|will build|eyes|eyeing|"
+     r"selects?|chooses?|picks?|lands|secures?|launch\w*|new campus|mega)\b"),
     ("Construction",
      r"\b(break(s|ing)? ground|groundbreaking|ground-breaking|under construction|construction|"
      r"topping out|contractor|crews|build-?out|begins? building|starts? building)\b"),
+    ("Expansion",
+     r"\b(expands?|expanding|expanded|expansion|adds|second phase|phase (2|ii|two)|"
+     r"additional buildings?|more buildings)\b"),
+    ("Land Acquisition",
+     r"(\b\d[\d,]*[- ]acres?\b|\bacres\b|\bparcels?\b|\bland (purchase|deal|sale|buy)\b|\b(buys?|bought|purchases?|"
+     r"purchased|acquires?|acquired) (\w+ ){0,2}(land|site|property|acreage|farmland)\b|\bsite acquisition\b)"),
     ("Operations",
      r"\b(opens|opened|officially open|now open|grand opening|goes live|went live|comes online|now online|"
      r"online|commissioned|energized|outages?|downtime|hiring|job fair|jobs fair|ribbon)\b"),
-    ("New Announcement",
-     r"\b(announc\w*|plans?|planned|planning|propos\w*|unveil\w*|to build|will build|eyes|eyeing|"
-     r"selects?|chooses?|picks?|lands|secures?|launch\w*|new campus|campus|mega|project)\b"),
     ("Deals / Investment",
-     r"\b(acqui\w*|merger|buys?|bought|purchase\w*|invest\w*|funding|raises?|raised|financing|loan|debt|"
-     r"bonds?|lease[sd]?|leasing|joint venture|partnership|stake|ipo|valuation|billion|million|\$\s?\d)\b"),
+     r"\b(acqui\w*|merger|buys?|bought|purchase\w*|invest\w*|funding|raises?|raised|financing|financed|loan|debt|"
+     r"bonds?|reits?|lease[sd]?|leasing|joint venture|partnership|stake|ipo|valuation|billion|million|\$\s?\d)\b"),
     ("Power / Utility",
-     r"\b(power|grid|utilit(y|ies)|electric\w*|energy|megawatts?|gigawatts?|\d+\s?[MG]W|nuclear|reactors?|"
-     r"smrs?|natural gas|gas turbines?|turbines?|solar|wind|batter(y|ies)|transmission|substation|"
-     r"demand|load|rates?|ratepayers?|blackout|cooling|water)\b"),
+     r"\b(power|grid|utilit(y|ies)|utility bills?|electric\w*|electricity rates?|energy|megawatts?|gigawatts?|\d+\s?[MG]W|"
+     r"nuclear|reactors?|smrs?|natural gas|gas plants?|gas-fired|power plants?|gas turbines?|turbines?|solar|wind|"
+     r"batter(y|ies)|transmission|substations?|demand|load|rates?|ratepayers?|blackout|cooling|water)\b"),
     ("AI Infrastructure",
-     r"\b(ai|a\.i\.|artificial intelligence|gpus?|nvidia|hyperscal\w*|openai|microsoft|amazon|aws|google|"
-     r"alphabet|meta|oracle|xai|anthropic|stargate|crusoe|coreweave|supercomputer|cloud)\b"),
+     r"\b(ai|a\.i\.|artificial intelligence|gpus?|nvidia|compute|computing|ai factor(y|ies)|supercomputers?|"
+     r"hyperscal\w*|openai|microsoft|amazon|aws|google|alphabet|meta|oracle|xai|anthropic|stargate|crusoe|coreweave|cloud)\b"),
+    ("Policy / Permits",
+     r"\b(zoning|rezon(e|es|ed|ing)|moratoriums?|ordinances?|permits?|permitting|planning (commission|board)|"
+     r"board of supervisors|city council|county commission(ers?)?|public hearings?|lawsuits?|referendums?|"
+     r"tax (breaks?|incentives?)|abatements?|opposition|residents? oppose[sd]?|pushback|"
+     # Also governance, though not a vote or a county name on its own:
+     r"bans?|banned|banning|pauses?|regulat\w*|restrictions?|crackdown|lawmakers?|legislat\w*|legislature|"
+     r"senate|governor|ballots?|elections?|midterms?|voters|town hall|council|commissioners?|ndas?|"
+     r"(public|community) (input|forum|meeting)s?|transparency)\b"),
 ]
 COMPILED_RULES = [(name, re.compile(pat, re.I)) for name, pat in CATEGORY_RULES]
 
@@ -248,6 +253,9 @@ FOREIGN_RE = re.compile(
     r"New Brunswick|Saskatchewan|Manitoba|Cape Breton|Melbourne|Rs|crore|lakh|"
     r"[£€₹¥])(?![\w])", re.I)
 FOREIGN_SOURCES = {
+    "bbc news", "the guardian", "guardian", "telegraph", "irish times", "abc australia", "abc news (australia)",
+    "abc news australia", "cbc news", "globe and mail", "the economic times", "the times of india", "straits times",
+    "scmp", "south china morning post",
     "cbc", "cbc.ca", "global news", "ctv news", "the globe and mail", "toronto star", "financial post",
     "data centre magazine", "data centre solutions", "data centre review", "datacentre solutions",
     "computer weekly", "uktn", "the times", "the telegraph", "the independent", "bbc", "sky news",
@@ -391,8 +399,9 @@ def load_gazetteer():
 
 
 def loc_from(entry, precision):
-    lat, lon, level, display = entry
-    return {"name": display, "lat": lat, "lon": lon, "level": level, "precision": precision}
+    lat, lon, level, display = entry[:4]
+    country = entry[4] if len(entry) > 4 else ("US" if display.endswith(", US") else display.split(",")[-1].strip())
+    return {"name": display, "lat": lat, "lon": lon, "level": level, "precision": precision, "country": country}
 
 
 def find_locations(text, gaz, geo, context_states=()):
@@ -433,8 +442,8 @@ def find_locations(text, gaz, geo, context_states=()):
 # Classification
 # ---------------------------------------------------------------------------
 def country_of(loc):
-    """Gazetteer display strings end in ', US' for U.S. places; anything else is foreign."""
-    return "US" if loc["name"].endswith(", US") else loc["name"].split(",")[-1].strip()
+    """The gazetteer's country code; older entries fall back to the display string."""
+    return loc.get("country") or ("US" if loc["name"].endswith(", US") else loc["name"].split(",")[-1].strip())
 
 
 def is_us(loc):
@@ -468,14 +477,15 @@ def state_of(loc):
     return None
 
 
-def us_filter(item, all_locs):
-    """Return True when the story belongs on a U.S. site."""
+def us_filter(item, all_locs, title_locs=()):
+    """Return True when the story belongs on a U.S. site. A non-U.S. outlet needs
+    a U.S. place or state in the title itself, not just in the description."""
+    if item.get("source", "").strip().lower() in FOREIGN_SOURCES:
+        return any(is_us(l) for l in title_locs)
     us_locs = [l for l in all_locs if is_us(l)]
     if us_locs:
         return True
     if any(not is_us(l) for l in all_locs):
-        return False
-    if item.get("source", "").strip().lower() in FOREIGN_SOURCES:
         return False
     if FOREIGN_RE.search(item["title"]):
         return False
@@ -492,7 +502,8 @@ def tag_item(item, gaz, geo):
         return False
     source_state = geo.source_states.get(item.get("source", ""))
     locs = find_locations(text, gaz, geo, [source_state] if source_state else ())
-    if not us_filter(item, locs):
+    title_locs = find_locations(item["title"], gaz, geo) if item.get("source", "").strip().lower() in FOREIGN_SOURCES else ()
+    if not us_filter(item, locs, title_locs):
         return False
     us_locs = [l for l in locs if is_us(l)]
     if not us_locs and source_state:
@@ -524,14 +535,21 @@ after over into about amid more than up out not no but or if he she they we you 
 county city state township parish us u.s""".split())
 
 
-def title_words(title):
-    return {w for w in re.findall(r"[a-z0-9$][a-z0-9$'.-]*", title.lower()) if len(w) > 2 and w not in STOP}
+def title_words(title, source=""):
+    """Title tokens without stopwords or the outlet's own name ("... - Reuters")."""
+    drop = set(re.findall(r"[a-z0-9]+", source.lower()))
+    return {w for w in re.findall(r"[a-z0-9$][a-z0-9$'.-]*", title.lower()) if len(w) > 2 and w not in STOP and w not in drop}
+
+
+def jaccard(a, b):
+    return len(a & b) / len(a | b) if a and b else 0.0
 
 
 def cluster_items(items):
-    """Set cluster_id on every item. Two headlines join a cluster when they are
-    within CLUSTER_DAYS, share a company, sit in the same county (when both are
-    known) or else the same state, and share CLUSTER_OVERLAP of their title words."""
+    """Set cluster_id and cluster_title on every item. Two headlines published within
+    CLUSTER_DAYS join when their title-word Jaccard is >= CLUSTER_STRONG, or >= CLUSTER_WEAK
+    and they share a city or county, or >= CLUSTER_WEAK and they share a company and a
+    state. Union-find lets clusters chain through intermediate headlines."""
     parent = {it["id"]: it["id"] for it in items}
 
     def find(x):
@@ -540,34 +558,45 @@ def cluster_items(items):
             x = parent[x]
         return x
 
-    info = {it["id"]: (datetime.fromisoformat(it["published"]), title_words(it["title"])) for it in items}
-    buckets = {}
-    for it in items:
-        for c in it.get("companies", []):
-            for st in it.get("states", []):
-                buckets.setdefault((c, st), []).append(it)
-    for group in buckets.values():
-        group.sort(key=lambda x: x["published"])
-        for i, a in enumerate(group):
-            ta, wa = info[a["id"]]
-            for b in group[i + 1:]:
-                tb, wb = info[b["id"]]
-                if tb - ta > timedelta(days=CLUSTER_DAYS):
-                    break
-                if a.get("county") and b.get("county") and a["county"] != b["county"]:
-                    continue
-                if not wa or not wb or len(wa & wb) / min(len(wa), len(wb)) < CLUSTER_OVERLAP:
-                    continue
+    def places(it):
+        return {l["name"] for l in it.get("locations", []) if l.get("precision") in ("city", "county")}
+
+    rows = sorted(({"id": it["id"], "t": datetime.fromisoformat(it["published"]),
+                    "w": title_words(it["title"], it.get("source", "")), "p": places(it),
+                    "c": set(it.get("companies", [])), "s": set(it.get("states", []))} for it in items),
+                  key=lambda r: r["t"])
+    # Each root carries its cluster's states and places: two clusters that both name
+    # places but none in common never merge, so a placeless headline cannot bridge them.
+    geo = {r["id"]: (set(r["s"]), set(r["p"])) for r in rows}
+
+    def conflict(ra, rb):
+        (sa, pa), (sb, pb) = geo[ra], geo[rb]
+        return bool((sa and sb and not sa & sb) or (pa and pb and not pa & pb))
+
+    window = timedelta(days=CLUSTER_DAYS)
+    for i, a in enumerate(rows):
+        for b in rows[i + 1:]:
+            if b["t"] - a["t"] > window:
+                break
+            j = jaccard(a["w"], b["w"])
+            if j < CLUSTER_WEAK:
+                continue
+            if j >= CLUSTER_STRONG or (a["p"] & b["p"]) or ((a["c"] & b["c"]) and (a["s"] & b["s"])):
                 ra, rb = find(a["id"]), find(b["id"])
-                if ra != rb:
-                    parent[max(ra, rb)] = min(ra, rb)
-    # Name each cluster after its earliest headline so the id stays stable as stories join
-    first = {}
+                if ra != rb and not conflict(ra, rb):
+                    parent[rb] = ra
+                    geo[ra] = (geo[ra][0] | geo[rb][0], geo[ra][1] | geo[rb][1])
+    groups = {}
     for it in sorted(items, key=lambda x: x["published"]):
-        first.setdefault(find(it["id"]), it["id"])
-    for it in items:
-        it["cluster_id"] = first[find(it["id"])]
-    return len(first)
+        groups.setdefault(find(it["id"]), []).append(it)
+    for members in groups.values():
+        # Named after the earliest headline so the id stays stable as stories join;
+        # shown with the headline that has the most precise place, else the earliest.
+        best = max(members, key=lambda m: PRECISION_RANK.get(m.get("location_precision"), 0))
+        for it in members:
+            it["cluster_id"] = members[0]["id"]
+            it["cluster_title"] = best["title"]
+    return len(groups)
 
 
 def classify(title):
