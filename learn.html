@@ -2,54 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Learn · Data Center Watch</title>
-  <meta name="description" content="A free course on how data centers work, from scratch to advanced: the building, power, cooling, racks, networking, redundancy, PUE, AI clusters, the grid, building one, and community impact. Interactive tools and quizzes.">
-  <meta name="theme-color" content="#0ea5e9">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Learn Data Centers · The Rack Report</title>
+  <meta name="description" content="A free ten-module track on how data centers work, from the basics to GPU pods, liquid cooling, the grid and how projects get built. Beginner and advanced views, diagrams and calculators.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://awigaikwad02.github.io/datacenter-watch/learn.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Rack Report">
+  <meta property="og:title" content="Learn Data Centers · The Rack Report">
+  <meta property="og:description" content="A free ten-module track on how data centers work, from the basics to GPU pods, liquid cooling, the grid and how projects get built. Beginner and advanced views, diagrams and calculators.">
+  <meta property="og:url" content="https://awigaikwad02.github.io/datacenter-watch/learn.html">
+  <meta property="og:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Rack Report: the U.S. data center buildout, tracked in one place.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Learn Data Centers · The Rack Report">
+  <meta name="twitter:description" content="A free ten-module track on how data centers work, from the basics to GPU pods, liquid cooling, the grid and how projects get built. Beginner and advanced views, diagrams and calculators.">
+  <meta name="twitter:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=20261021b">
-  <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="assets/app.js?v=20261021b"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css?v=rr1">
+  <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
-<body class="is-loading">
-  <div id="loader" role="status" aria-live="polite">
-    <div class="loader-inner">
-      <script>document.write(DCW.logo("loader-logo"))</script>
-      <div class="loader-title">Data Center Watch</div>
-      <div class="loader-bar"><i></i></div>
-      <div class="loader-sub">Opening the data center course…</div>
-    </div>
-  </div>
-
-  <header id="site-header"></header>
-
-  <main class="wrap">
-    <section class="hero">
-      <span class="eyebrow"><span class="live-dot"></span>Free course · 14 lessons · about 75 minutes</span>
-      <h1>How a data center works, <span class="grad">from scratch to advanced.</span></h1>
-      <p class="lede">Start with what a data center is and finish able to read a gigawatt AI campus announcement and know what it means for power, water, jobs and your town. Each lesson has a diagram, an interactive tool or a quick check. Your progress is saved in this browser.</p>
-      <div class="level-tabs" id="levelCards"></div>
-    </section>
-
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs></svg>
-
-    <div class="learn-layout">
-      <nav class="course-nav" aria-label="Course outline">
-        <div class="panel progress-card">
-          <svg class="ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="bg" cx="32" cy="32" r="26"/><circle class="fg" id="ringFg" cx="32" cy="32" r="26" stroke-dasharray="163.4" stroke-dashoffset="163.4"/><text x="32" y="37" text-anchor="middle" id="ringText">0%</text></svg>
-          <div><b id="progTitle">Start learning</b><span id="progSub">0 of 14 lessons complete</span><br><button class="link-btn" id="resetProg" style="padding:0;margin-top:4px">Reset progress</button></div>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="loader" aria-hidden="true"><div class="ld">
+    <svg class="ld-mark" viewBox="0 0 48 48"><rect class="ld-outline" x="8" y="3.75" width="32" height="40.5" rx="7" fill="none" stroke="currentColor" stroke-width="3.5" pathLength="150"/><rect class="ld-bar b1" x="14" y="11" width="20" height="4.5" rx="2.25" fill="#B9F542"/><rect class="ld-bar b2" x="14" y="18.5" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b3" x="14" y="26" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b4" x="14" y="33.5" width="20" height="4.5" rx="2.25" fill="currentColor"/></svg>
+    <p class="ld-text">Initializing The Rack Report…</p>
+  </div></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site"></aside>
+  <div class="shell-main">
+    <header class="topbar" id="topbar"></header>
+    <main id="main" tabindex="-1">
+      <div class="page">
+        <section class="page-hero">
+          <span class="eyebrow">Learn data centers</span>
+          <h1>From what a data center is to how a gigawatt campus gets built.</h1>
+          <p class="lede">Ten modules, beginner to advanced. Open a module, read the Beginner view, then switch to Advanced when you want the detail. Diagrams and calculators are interactive, and your progress is saved in this browser.</p>
+        </section>
+        <div class="card track-progress" aria-label="Your progress">
+          <div class="track-top"><b id="progText">0 of 10 modules complete</b><div class="track-bar" role="progressbar" aria-labelledby="progText" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="progBar"><i></i></div><button class="link-btn" id="resetProg">Reset</button></div>
+          <nav class="track-dots" id="dots" aria-label="Jump to module"></nav>
         </div>
-        <div id="outline"></div>
-      </nav>
+        <div class="modules" id="modules">
+          <article class="card module reveal" id="what" data-n="1">
+            <h2 class="acc-h"><button class="acc-btn" id="what-btn" aria-expanded="false" aria-controls="what-panel"><span class="num">1</span><span><span class="mt">What is a data center</span><small>The building, why it exists, the main types and the units of scale</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="what-panel" role="region" aria-labelledby="what-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for What is a data center"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
 
-      <div id="lessons">
-
-        <!-- ================= LEVEL 1 ================= -->
-        <article class="lesson" id="what-is" data-level="1" data-mins="4">
-          <h2>What is a data center?</h2>
           <p class="lede">A data center is a building whose whole job is to keep computers running around the clock: fed with power, kept cool, kept secure and connected to the internet.</p>
           <p>Every time you stream a show, send a message, search the web or ask an AI chatbot a question, your request travels to a data center. "The cloud" is not in the sky. It is millions of computers called <strong>servers</strong>, stacked in metal cabinets called <strong>racks</strong>, inside buildings like these all over the country.</p>
           <figure class="fig">
@@ -80,10 +86,63 @@
             <div class="q">What happens to most of the electricity a server uses?</div>
             <div class="opts"><button class="opt">It is stored in the server's battery</button><button class="opt">It is sent back to the grid</button><button class="opt">It turns into heat that must be removed</button></div>
           </div>
-        </article>
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
 
-        <article class="lesson" id="tour" data-level="1" data-mins="5">
-          <h2>A walk through the building</h2>
+          <p class="lede">Not all data centers are the same. Who owns it, who uses it and how big it is change everything from the design to the headlines.</p>
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr><th>Type</th><th>Who uses it</th><th>Typical size</th><th>Example in the news</th></tr></thead>
+            <tbody>
+              <tr><td>Enterprise</td><td>One company runs its own IT, like a bank or hospital</td><td>Under 5 MW</td><td>Older corporate facilities being retired as companies move to the cloud</td></tr>
+              <tr><td>Colocation ("colo")</td><td>Many customers rent racks, cages or rooms; the landlord supplies power, cooling and security</td><td>5 to 100 MW</td><td>Equinix and Digital Realty in Ashburn, Virginia</td></tr>
+              <tr><td>Wholesale / build-to-suit</td><td>One big tenant leases a whole building or campus from a developer</td><td>30 to 1,000+ MW</td><td>Vantage, QTS or Aligned campuses leased to hyperscalers</td></tr>
+              <tr><td>Hyperscale</td><td>A cloud giant designs and runs its own campus</td><td>100 MW to several GW</td><td>Google in Iowa, Meta in Ohio and Louisiana, AWS in Indiana</td></tr>
+              <tr><td>AI factory</td><td>Built for dense GPU clusters that train and run AI models</td><td>100 MW to 5+ GW</td><td>Stargate in Abilene, Texas; xAI Colossus in Memphis</td></tr>
+              <tr><td>Edge</td><td>Small sites close to users for low delay, like 5G and streaming caches</td><td>Under 1 MW</td><td>Containers at cell towers and in city buildings</td></tr>
+            </tbody></table></div>
+          <div class="callout"><b>Reading a headline:</b> when an article says a developer "lands a hyperscale tenant", it usually means a wholesale campus has signed a cloud company or AI lab to a long lease. The developer builds it, the tenant fills it with servers.</div>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>Size is measured in megawatts of power, not square feet.</li><li>Colocation rents space to many; hyperscale serves one giant owner.</li><li>AI factories are the newest and largest type.</li></ul></div>
+          <div class="quiz" data-answer="0" data-why="Colocation providers rent space, power and cooling to many customers in a shared building.">
+            <b>Quick check</b>
+            <div class="q">A company rents a cage of racks in a building run by someone else. What kind of data center is that?</div>
+            <div class="opts"><button class="opt">Colocation</button><button class="opt">Hyperscale</button><button class="opt">Edge</button></div>
+          </div>
+
+          <p class="lede">Data centers are measured by how much power they can deliver to computers, not by floor space. Getting a feel for the units makes every announcement easier to read.</p>
+          <ul>
+            <li><strong>Kilowatt (kW)</strong>: 1,000 watts. A home's average draw is about 1.2 kW. A traditional server rack draws 5 to 15 kW.</li>
+            <li><strong>Megawatt (MW)</strong>: 1,000 kW. Running all year, 1 MW uses about as much electricity as 800 U.S. homes.</li>
+            <li><strong>Gigawatt (GW)</strong>: 1,000 MW, roughly the output of one large nuclear reactor. Several U.S. AI campuses now plan for 1 to 5 GW.</li>
+            <li><strong>Megawatt-hour (MWh)</strong>: energy, not power. 1 MW running for one hour is 1 MWh. Your electric bill counts kWh.</li>
+          </ul>
+          <div class="tool" id="scaleTool">
+            <b>Try it: how big is that campus?</b>
+            <div class="tool-grid">
+              <div>
+                <label><span class="lab">IT capacity <span class="val" id="scMWv">100 MW</span></span><input type="range" id="scMW" min="0" max="100" value="50"></label>
+                <div class="chips" style="gap:6px">
+                  <button class="chip" data-mw="5">Colo hall · 5 MW</button><button class="chip" data-mw="100">Hyperscale · 100 MW</button><button class="chip" data-mw="1200">Stargate Abilene · 1.2 GW</button><button class="chip" data-mw="5000">5 GW campus</button>
+                </div>
+              </div>
+              <div class="out" id="scOut"></div>
+            </div>
+          </div>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>MW measures power (a rate). MWh measures energy (an amount).</li><li>1 MW running all year is roughly 800 homes' worth of electricity.</li><li>A gigawatt campus uses about as much as a mid-sized city.</li></ul></div>
+          <div class="quiz" data-answer="1" data-why="A gigawatt is 1,000 megawatts.">
+            <b>Quick check</b>
+            <div class="q">A headline says a campus will grow from 300 MW to 1.2 GW. How many megawatts is 1.2 GW?</div>
+            <div class="opts"><button class="opt">120 MW</button><button class="opt">1,200 MW</button><button class="opt">12,000 MW</button></div>
+          </div>
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="components" data-n="2">
+            <h2 class="acc-h"><button class="acc-btn" id="components-btn" aria-expanded="false" aria-controls="components-panel"><span class="num">2</span><span><span class="mt">Core components</span><small>A walk through the building, white space and gray space</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="components-panel" role="region" aria-labelledby="components-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for Core components"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
+
           <p class="lede">From the outside, most data centers look like big, windowless warehouses. Inside, every room supports the data hall where the servers live.</p>
           <p>Tap or hover over each part of this cutaway to see what it does.</p>
           <figure class="fig">
@@ -112,65 +171,42 @@
             <div class="q">Where do different internet carriers connect to each other inside a data center?</div>
             <div class="opts"><button class="opt">The electrical room</button><button class="opt">The meet-me room</button><button class="opt">The loading dock</button></div>
           </div>
-        </article>
-
-        <article class="lesson" id="types" data-level="1" data-mins="5">
-          <h2>Types of data centers</h2>
-          <p class="lede">Not all data centers are the same. Who owns it, who uses it and how big it is change everything from the design to the headlines.</p>
-          <div class="tbl-wrap"><table class="tbl">
-            <thead><tr><th>Type</th><th>Who uses it</th><th>Typical size</th><th>Example in the news</th></tr></thead>
-            <tbody>
-              <tr><td>Enterprise</td><td>One company runs its own IT, like a bank or hospital</td><td>Under 5 MW</td><td>Older corporate facilities being retired as companies move to the cloud</td></tr>
-              <tr><td>Colocation ("colo")</td><td>Many customers rent racks, cages or rooms; the landlord supplies power, cooling and security</td><td>5 to 100 MW</td><td>Equinix and Digital Realty in Ashburn, Virginia</td></tr>
-              <tr><td>Wholesale / build-to-suit</td><td>One big tenant leases a whole building or campus from a developer</td><td>30 to 1,000+ MW</td><td>Vantage, QTS or Aligned campuses leased to hyperscalers</td></tr>
-              <tr><td>Hyperscale</td><td>A cloud giant designs and runs its own campus</td><td>100 MW to several GW</td><td>Google in Iowa, Meta in Ohio and Louisiana, AWS in Indiana</td></tr>
-              <tr><td>AI factory</td><td>Built for dense GPU clusters that train and run AI models</td><td>100 MW to 5+ GW</td><td>Stargate in Abilene, Texas; xAI Colossus in Memphis</td></tr>
-              <tr><td>Edge</td><td>Small sites close to users for low delay, like 5G and streaming caches</td><td>Under 1 MW</td><td>Containers at cell towers and in city buildings</td></tr>
-            </tbody></table></div>
-          <div class="callout"><b>Reading a headline:</b> when an article says a developer "lands a hyperscale tenant", it usually means a wholesale campus has signed a cloud company or AI lab to a long lease. The developer builds it, the tenant fills it with servers.</div>
-          <div class="takeaways"><b>Key takeaways</b><ul><li>Size is measured in megawatts of power, not square feet.</li><li>Colocation rents space to many; hyperscale serves one giant owner.</li><li>AI factories are the newest and largest type.</li></ul></div>
-          <div class="quiz" data-answer="0" data-why="Colocation providers rent space, power and cooling to many customers in a shared building.">
-            <b>Quick check</b>
-            <div class="q">A company rents a cage of racks in a building run by someone else. What kind of data center is that?</div>
-            <div class="opts"><button class="opt">Colocation</button><button class="opt">Hyperscale</button><button class="opt">Edge</button></div>
-          </div>
-        </article>
-
-        <article class="lesson" id="scale" data-level="1" data-mins="5">
-          <h2>Units and scale: kW, MW and GW</h2>
-          <p class="lede">Data centers are measured by how much power they can deliver to computers, not by floor space. Getting a feel for the units makes every announcement easier to read.</p>
-          <ul>
-            <li><strong>Kilowatt (kW)</strong>: 1,000 watts. A home's average draw is about 1.2 kW. A traditional server rack draws 5 to 15 kW.</li>
-            <li><strong>Megawatt (MW)</strong>: 1,000 kW. Running all year, 1 MW uses about as much electricity as 800 U.S. homes.</li>
-            <li><strong>Gigawatt (GW)</strong>: 1,000 MW, roughly the output of one large nuclear reactor. Several U.S. AI campuses now plan for 1 to 5 GW.</li>
-            <li><strong>Megawatt-hour (MWh)</strong>: energy, not power. 1 MW running for one hour is 1 MWh. Your electric bill counts kWh.</li>
-          </ul>
-          <div class="tool" id="scaleTool">
-            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14a1 1 0 0 1-.8-1.6l9.9-10.2a.5.5 0 0 1 .9.5l-1.9 6A1 1 0 0 0 13 10h7a1 1 0 0 1 .8 1.6l-9.9 10.2a.5.5 0 0 1-.9-.5l1.9-6A1 1 0 0 0 11 14z"/></svg>Try it: how big is that campus?</b>
-            <div class="tool-grid">
-              <div>
-                <label><span class="lab">IT capacity <span class="val" id="scMWv">100 MW</span></span><input type="range" id="scMW" min="0" max="100" value="50"></label>
-                <div class="chips" style="gap:6px">
-                  <button class="chip" data-mw="5">Colo hall · 5 MW</button><button class="chip" data-mw="100">Hyperscale · 100 MW</button><button class="chip" data-mw="1200">Stargate Abilene · 1.2 GW</button><button class="chip" data-mw="5000">5 GW campus</button>
-                </div>
               </div>
-              <div class="out" id="scOut"></div>
-            </div>
-          </div>
-          <div class="takeaways"><b>Key takeaways</b><ul><li>MW measures power (a rate). MWh measures energy (an amount).</li><li>1 MW running all year is roughly 800 homes' worth of electricity.</li><li>A gigawatt campus uses about as much as a mid-sized city.</li></ul></div>
-          <div class="quiz" data-answer="1" data-why="A gigawatt is 1,000 megawatts.">
-            <b>Quick check</b>
-            <div class="q">A headline says a campus will grow from 300 MW to 1.2 GW. How many megawatts is 1.2 GW?</div>
-            <div class="opts"><button class="opt">120 MW</button><button class="opt">1,200 MW</button><button class="opt">12,000 MW</button></div>
-          </div>
-        </article>
+              <div class="lvl-pane" data-pane="a" hidden>
 
-        <!-- ================= LEVEL 2 ================= -->
-        <article class="lesson" id="power" data-level="2" data-mins="7">
-          <h2>The power chain</h2>
+          <p class="lede">Read a data center spec sheet and you'll see the building split into "white space" and "gray space". Knowing the difference explains why campuses are so big.</p>
+          <ul>
+            <li><strong>White space</strong> is the data hall floor where racks stand. It's what tenants lease and what capacity in MW ultimately serves.</li>
+            <li><strong>Gray space</strong> is everything that supports it: electrical rooms, UPS and battery rooms, mechanical plant, generator yards, meet-me rooms, loading docks and offices. In modern facilities gray space is often as large as, or larger than, the white space.</li>
+            <li><strong>Critical IT load</strong> is the power available to the racks, the number in most announcements. The utility connection is bigger, because cooling and losses come on top.</li>
+            <li><strong>Powered shell vs. turnkey:</strong> a developer can deliver a "powered shell" (building, power and fiber) for the tenant to fit out, or a turnkey hall with cooling and electrical gear already installed.</li>
+          </ul>
+          <h3>Anatomy of a campus</h3>
+          <p>A campus is several buildings on one site sharing a substation, fiber routes, roads, water connections and security. Each building is usually built in phases, so a "1 GW campus" may open its first 100 to 200 MW years before the last building is finished.</p>
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr><th>Spec sheet term</th><th>What it tells you</th></tr></thead>
+            <tbody>
+              <tr><td>Critical IT load (MW)</td><td>Power available to servers, before cooling and losses</td></tr>
+              <tr><td>Design PUE</td><td>Expected overhead for cooling and electrical losses</td></tr>
+              <tr><td>Rack density (kW/rack)</td><td>Whether the hall is built for traditional IT or AI</td></tr>
+              <tr><td>Redundancy (N+1, 2N)</td><td>How much spare equipment protects uptime</td></tr>
+              <tr><td>Floor loading</td><td>How much weight per square foot the floor can carry; liquid-cooled AI racks are heavy</td></tr>
+            </tbody></table></div>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>White space holds racks; gray space powers, cools and connects them.</li><li>Announced MW usually means critical IT load.</li><li>Campuses open in phases, often over several years.</li></ul></div>
+
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="power" data-n="3">
+            <h2 class="acc-h"><button class="acc-btn" id="power-btn" aria-expanded="false" aria-controls="power-panel"><span class="num">3</span><span><span class="mt">Power systems</span><small>From the grid to the chip, outages, and the grid itself</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="power-panel" role="region" aria-labelledby="power-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for Power systems"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
+
           <p class="lede">Electricity takes a long path from the grid to a chip, and every step is built so that a single failure never turns the servers off.</p>
           <div class="tool">
-            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>Follow the electricity</b>
+            <b>Follow the electricity</b>
             <div class="chain" id="chain"></div>
             <div class="chain-info" id="chainInfo"></div>
             <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
@@ -192,10 +228,43 @@
             <div class="q">The grid fails. What keeps servers running for the first few seconds?</div>
             <div class="opts"><button class="opt">UPS batteries</button><button class="opt">The diesel generators</button><button class="opt">The cooling towers</button></div>
           </div>
-        </article>
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
 
-        <article class="lesson" id="cooling" data-level="2" data-mins="7">
-          <h2>Keeping it cool</h2>
+          <p class="lede">The biggest constraint on new data centers in America is not money or land. It is getting enough electricity, fast enough.</p>
+          <h3>How a campus gets power</h3>
+          <ul>
+            <li><strong>Grid interconnection:</strong> the developer applies to the utility and regional grid operator (such as PJM in the Mid-Atlantic, ERCOT in Texas or MISO in the Midwest). Studies can take years, and big loads may need new transmission lines and substations.</li>
+            <li><strong>Behind-the-meter generation:</strong> building gas turbines, fuel cells or solar plus batteries on site to start sooner or avoid grid limits. Several Texas and Wyoming projects take this route.</li>
+            <li><strong>Long-term power deals:</strong> hyperscalers sign power purchase agreements for new wind, solar, geothermal and nuclear, including restarts of retired reactors and future small modular reactors (SMRs).</li>
+            <li><strong>Flexibility:</strong> some campuses agree to cut load during grid emergencies in exchange for a faster connection.</li>
+          </ul>
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr><th>Grid region</th><th>Covers</th><th>Why it matters</th></tr></thead>
+            <tbody>
+              <tr><td>PJM</td><td>13 states from Illinois to Virginia, plus D.C.</td><td>Home to Northern Virginia, the world's largest data center market; capacity prices have jumped</td></tr>
+              <tr><td>ERCOT</td><td>Most of Texas</td><td>Fast to build and connect, now home to many gigawatt-scale AI proposals</td></tr>
+              <tr><td>MISO</td><td>Midwest and parts of the South</td><td>Big new campuses in Indiana, Louisiana and Mississippi</td></tr>
+              <tr><td>SPP</td><td>Central plains</td><td>Wind-rich, with growing interest in Oklahoma and Kansas</td></tr>
+              <tr><td>Western utilities</td><td>Arizona, Nevada, Oregon and more</td><td>Hot, dry climates raise cooling and water questions</td></tr>
+            </tbody></table></div>
+          <div class="callout"><b>Who pays?</b> When a utility builds new plants and lines for data centers, regulators decide how those costs are split between the data centers and everyone else. Many states are now writing special rates and minimum-payment rules for very large loads. Follow it in the <a href="newsroom.html#topic=Power%20%2F%20Utility&amp;range=60">Power / Utility headlines</a>.</div>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>Interconnection timelines often decide when a campus can open.</li><li>On-site gas and nuclear deals are workarounds for grid limits.</li><li>Rate design decides whether households share the cost.</li></ul></div>
+          <div class="quiz" data-answer="2" data-why="ERCOT runs most of the Texas grid, which is largely separate from the rest of the country.">
+            <b>Quick check</b>
+            <div class="q">A gigawatt AI campus is proposed near Abilene, Texas. Which grid operator is it most likely dealing with?</div>
+            <div class="opts"><button class="opt">PJM</button><button class="opt">MISO</button><button class="opt">ERCOT</button></div>
+          </div>
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="cooling" data-n="4">
+            <h2 class="acc-h"><button class="acc-btn" id="cooling-btn" aria-expanded="false" aria-controls="cooling-panel"><span class="num">4</span><span><span class="mt">Cooling systems</span><small>Air, liquid, water use and efficiency metrics</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="cooling-panel" role="region" aria-labelledby="cooling-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for Cooling systems"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
+
           <p class="lede">Every watt that goes into a server comes out as heat. Cooling is about moving that heat out of the building as efficiently as possible.</p>
           <figure class="fig">
             <svg class="dg" viewBox="0 0 760 300" role="img" aria-label="Cross-section of a data hall with a cold aisle between two rows of racks and a contained hot aisle; cooling units push cold air in and pull hot air back">
@@ -216,9 +285,9 @@
           <h3>From air to liquid</h3>
           <p>Air works well up to about 20 to 30 kW per rack. Beyond that, fans cannot move enough air, so dense AI racks bring liquid right to the chips. <strong>Direct-to-chip</strong> cooling pumps coolant through cold plates mounted on GPUs. <strong>Immersion</strong> dunks whole servers in a non-conductive fluid. The heat then goes to chillers, cooling towers or dry coolers outside.</p>
           <div class="tool">
-            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg>Try it: rack density explorer</b>
+            <b>Try it: rack density explorer</b>
             <label><span class="lab">Power per rack <span class="val" id="dnV">10 kW</span></span><input type="range" id="dn" min="2" max="200" value="10"></label>
-            <div class="density-scale" id="dnScale">
+            <div class="density" id="dnScale">
               <span style="width:12.5%;background:#0ea5e9">Air</span><span style="width:12.5%;background:#0891b2">Air + containment</span><span style="width:50%;background:#7c3aed">Direct-to-chip liquid</span><span style="width:25%;background:#db2777">Immersion</span>
               <i class="needle" id="dnNeedle"></i>
             </div>
@@ -231,80 +300,9 @@
             <div class="q">A rack of the newest AI servers draws about 130 kW. What cooling does it need?</div>
             <div class="opts"><button class="opt">Ordinary room air conditioning</button><button class="opt">Air with hot-aisle containment</button><button class="opt">Direct-to-chip liquid cooling</button></div>
           </div>
-        </article>
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
 
-        <article class="lesson" id="rack" data-level="2" data-mins="5">
-          <h2>Inside a rack</h2>
-          <p class="lede">A rack is a standard steel cabinet about 2 feet wide and 7 feet tall. Its height is measured in <strong>rack units (U)</strong>, each 1.75 inches. Most racks are 42U to 48U.</p>
-          <figure class="fig"><svg class="dg" id="rackSvg" viewBox="0 0 760 400" role="img" aria-label="Diagram of a 42U rack with a top-of-rack switch, patch panel, servers, GPU servers, storage, blanking panels and two power strips"></svg></figure>
-          <ul>
-            <li><strong>Top-of-rack (ToR) switch</strong>: connects every server in the rack to the data center network.</li>
-            <li><strong>Servers</strong>: CPUs, memory and local drives. A common 1U or 2U server draws 300 to 1,000 W.</li>
-            <li><strong>GPU servers</strong>: 4U to 8U boxes with 8 accelerators each, drawing 6 to 12 kW apiece.</li>
-            <li><strong>Rack PDUs</strong>: the power strips, usually two (A and B feeds) so either can fail.</li>
-            <li><strong>Blanking panels</strong>: cover empty slots so hot air cannot loop back to the front.</li>
-          </ul>
-          <div class="takeaways"><b>Key takeaways</b><ul><li>Racks are measured in U (1.75 in) and in kW.</li><li>Dual A/B power feeds are standard.</li><li>GPU servers pack 10 times the power of a regular server into the same rack.</li></ul></div>
-          <div class="quiz" data-answer="1" data-why="Two independent power strips (A and B), fed from separate paths, let the rack survive the loss of one side.">
-            <b>Quick check</b>
-            <div class="q">Why do racks usually have two power strips?</div>
-            <div class="opts"><button class="opt">To double the available power</button><button class="opt">So the rack stays up if one power path fails</button><button class="opt">One is for servers, one for cooling fans</button></div>
-          </div>
-        </article>
-
-        <article class="lesson" id="network" data-level="2" data-mins="5">
-          <h2>The network</h2>
-          <p class="lede">Data has to move between servers inside the building and out to the internet. Modern data centers use a <strong>spine-leaf</strong> design so any server can reach any other in a few hops.</p>
-          <figure class="fig"><svg class="dg" id="netSvg" viewBox="0 0 760 330" role="img" aria-label="Network layers: internet carriers connect to the meet-me room and core routers, which feed spine switches; every spine connects to every leaf switch; leaf switches connect to racks"></svg>
-            <figcaption>Every leaf connects to every spine, so traffic between any two racks crosses at most one spine.</figcaption></figure>
-          <ul>
-            <li><strong>Carriers and the meet-me room:</strong> fiber from several providers enters through separate routes so a backhoe cannot cut the building off.</li>
-            <li><strong>North-south traffic</strong> flows between users and the data center. <strong>East-west traffic</strong> flows between servers inside it, and it is now the larger share.</li>
-            <li><strong>AI clusters</strong> add a separate, very fast "back-end" network (400 to 800 Gb/s per GPU) so thousands of GPUs can work as one machine.</li>
-          </ul>
-          <div class="takeaways"><b>Key takeaways</b><ul><li>Spine-leaf gives predictable, short paths.</li><li>Diverse fiber routes are as important as backup power.</li><li>AI training needs its own ultra-fast GPU network.</li></ul></div>
-          <div class="quiz" data-answer="2" data-why="East-west traffic is server-to-server communication inside the data center.">
-            <b>Quick check</b>
-            <div class="q">Two servers in different racks exchange data. What is that traffic called?</div>
-            <div class="opts"><button class="opt">North-south</button><button class="opt">Backhaul</button><button class="opt">East-west</button></div>
-          </div>
-        </article>
-
-        <article class="lesson" id="redundancy" data-level="2" data-mins="6">
-          <h2>Redundancy and uptime tiers</h2>
-          <p class="lede">Data centers are designed around a simple question: what happens when a part fails, or needs maintenance? The answer is spare capacity, described with N notation.</p>
-          <ul>
-            <li><strong>N</strong>: exactly enough equipment for the load. Any failure means an outage.</li>
-            <li><strong>N+1</strong>: one spare unit. One failure is fine.</li>
-            <li><strong>2N</strong>: two complete, independent systems. An entire path can fail.</li>
-          </ul>
-          <div class="tool">
-            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.7 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.5 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/></svg>Try it: break things</b>
-            <p style="font-size:14px;margin:0 0 10px">The load needs <strong>3 units</strong> of cooling or power. Pick a design, then click units to fail them.</p>
-            <div class="seg" id="redMode" role="group" aria-label="Redundancy design"><button data-m="N" aria-pressed="false">N</button><button data-m="N+1" aria-pressed="true">N+1</button><button data-m="2N" aria-pressed="false">2N</button></div>
-            <div class="paths" id="redUnits" style="margin-top:12px"></div>
-            <div class="load-status" id="redStatus" style="margin-top:12px"></div>
-          </div>
-          <h3>Uptime Institute tiers</h3>
-          <div class="tbl-wrap"><table class="tbl">
-            <thead><tr><th>Tier</th><th>Design</th><th>Availability</th><th>Downtime per year</th></tr></thead>
-            <tbody>
-              <tr><td>Tier I</td><td>Basic capacity, no redundancy</td><td>99.671%</td><td>about 28.8 hours</td></tr>
-              <tr><td>Tier II</td><td>Redundant components (N+1)</td><td>99.741%</td><td>about 22 hours</td></tr>
-              <tr><td>Tier III</td><td>Concurrently maintainable: any part can be serviced without shutdown</td><td>99.982%</td><td>about 1.6 hours</td></tr>
-              <tr><td>Tier IV</td><td>Fault tolerant: survives any single failure (2N style)</td><td>99.995%</td><td>about 26 minutes</td></tr>
-            </tbody></table></div>
-          <div class="takeaways"><b>Key takeaways</b><ul><li>More redundancy means more cost and more equipment.</li><li>Most commercial facilities target Tier III.</li><li>Hyperscalers often rely on software spreading work across sites, so a single building can be simpler.</li></ul></div>
-          <div class="quiz" data-answer="1" data-why="With N+1 there is exactly one spare. A second failure drops below the 3 units the load needs.">
-            <b>Quick check</b>
-            <div class="q">An N+1 system loses two units at the same time. What happens?</div>
-            <div class="opts"><button class="opt">Nothing, it has plenty of spares</button><button class="opt">It no longer has enough capacity for the load</button><button class="opt">It automatically switches to 2N</button></div>
-          </div>
-        </article>
-
-        <!-- ================= LEVEL 3 ================= -->
-        <article class="lesson" id="metrics" data-level="3" data-mins="6">
-          <h2>Efficiency metrics: PUE and WUE</h2>
           <p class="lede">Two numbers come up in nearly every sustainability claim and local debate. Here is how to read them.</p>
           <ul>
             <li><strong>PUE (power usage effectiveness)</strong> = total facility power ÷ IT power. A PUE of 1.0 would mean every watt goes to computing. The industry average is around 1.5 to 1.6; the best hyperscale sites report about 1.1.</li>
@@ -312,7 +310,7 @@
             <li><strong>CUE (carbon usage effectiveness)</strong> = kg of CO₂ ÷ kWh of IT energy, driven mostly by how clean the local grid is.</li>
           </ul>
           <div class="tool">
-            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 14 4-4M3.3 19a10 10 0 1 1 17.4 0"/></svg>Try it: efficiency calculator</b>
+            <b>Try it: efficiency calculator</b>
             <div class="tool-grid">
               <div>
                 <label><span class="lab">IT load <span class="val" id="peITv"></span></span><input type="range" id="peIT" min="10" max="2000" step="10" value="300"></label>
@@ -331,10 +329,250 @@
             <div class="q">A site draws 130 MW in total to run 100 MW of IT. What is its PUE?</div>
             <div class="opts"><button class="opt">1.3</button><button class="opt">0.77</button><button class="opt">30</button></div>
           </div>
-        </article>
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="network" data-n="5">
+            <h2 class="acc-h"><button class="acc-btn" id="network-btn" aria-expanded="false" aria-controls="network-panel"><span class="num">5</span><span><span class="mt">Network systems</span><small>Spine-leaf, carriers, interconnection and latency</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="network-panel" role="region" aria-labelledby="network-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for Network systems"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
 
-        <article class="lesson" id="ai" data-level="3" data-mins="7">
-          <h2>AI data centers</h2>
+          <p class="lede">Data has to move between servers inside the building and out to the internet. Modern data centers use a <strong>spine-leaf</strong> design so any server can reach any other in a few hops.</p>
+          <figure class="fig"><svg class="dg" id="netSvg" viewBox="0 0 760 330" role="img" aria-label="Network layers: internet carriers connect to the meet-me room and core routers, which feed spine switches; every spine connects to every leaf switch; leaf switches connect to racks"></svg>
+            <figcaption>Every leaf connects to every spine, so traffic between any two racks crosses at most one spine.</figcaption></figure>
+          <ul>
+            <li><strong>Carriers and the meet-me room:</strong> fiber from several providers enters through separate routes so a backhoe cannot cut the building off.</li>
+            <li><strong>North-south traffic</strong> flows between users and the data center. <strong>East-west traffic</strong> flows between servers inside it, and it is now the larger share.</li>
+            <li><strong>AI clusters</strong> add a separate, very fast "back-end" network (400 to 800 Gb/s per GPU) so thousands of GPUs can work as one machine.</li>
+          </ul>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>Spine-leaf gives predictable, short paths.</li><li>Diverse fiber routes are as important as backup power.</li><li>AI training needs its own ultra-fast GPU network.</li></ul></div>
+          <div class="quiz" data-answer="2" data-why="East-west traffic is server-to-server communication inside the data center.">
+            <b>Quick check</b>
+            <div class="q">Two servers in different racks exchange data. What is that traffic called?</div>
+            <div class="opts"><button class="opt">North-south</button><button class="opt">Backhaul</button><button class="opt">East-west</button></div>
+          </div>
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
+
+          <h3>Getting data in and out fast</h3>
+          <ul>
+            <li><strong>Interconnection:</strong> networks, clouds and enterprises connect to each other inside colocation buildings through cross-connects and internet exchange points. Places like Ashburn, Virginia grew because so many networks already meet there.</li>
+            <li><strong>Latency follows distance:</strong> light in fiber travels roughly 200 km per millisecond, so every 100 km adds about 1 ms of round-trip time. That is why inference and trading workloads want to be near users and exchanges, while training can go wherever power is cheap.</li>
+            <li><strong>Diverse routes:</strong> at least two physically separate fiber paths enter a well-built site, so a single cut never isolates it.</li>
+            <li><strong>Optics:</strong> modern switches connect with pluggable optical transceivers running 400 to 800 Gb/s per port; an AI cluster can need tens of thousands of them.</li>
+          </ul>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>Interconnection density is why some markets attract more data centers.</li><li>About 1 ms of round trip per 100 km of fiber.</li><li>AI clusters multiply the amount of networking per server.</li></ul></div>
+
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="racks" data-n="6">
+            <h2 class="acc-h"><button class="acc-btn" id="racks-btn" aria-expanded="false" aria-controls="racks-panel"><span class="num">6</span><span><span class="mt">Server racks and compute</span><small>Rack units, servers, GPUs and power density</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="racks-panel" role="region" aria-labelledby="racks-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for Server racks and compute"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
+
+          <p class="lede">A rack is a standard steel cabinet about 2 feet wide and 7 feet tall. Its height is measured in <strong>rack units (U)</strong>, each 1.75 inches. Most racks are 42U to 48U.</p>
+          <figure class="fig"><svg class="dg" id="rackSvg" viewBox="0 0 760 400" role="img" aria-label="Diagram of a 42U rack with a top-of-rack switch, patch panel, servers, GPU servers, storage, blanking panels and two power strips"></svg></figure>
+          <ul>
+            <li><strong>Top-of-rack (ToR) switch</strong>: connects every server in the rack to the data center network.</li>
+            <li><strong>Servers</strong>: CPUs, memory and local drives. A common 1U or 2U server draws 300 to 1,000 W.</li>
+            <li><strong>GPU servers</strong>: 4U to 8U boxes with 8 accelerators each, drawing 6 to 12 kW apiece.</li>
+            <li><strong>Rack PDUs</strong>: the power strips, usually two (A and B feeds) so either can fail.</li>
+            <li><strong>Blanking panels</strong>: cover empty slots so hot air cannot loop back to the front.</li>
+          </ul>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>Racks are measured in U (1.75 in) and in kW.</li><li>Dual A/B power feeds are standard.</li><li>GPU servers pack 10 times the power of a regular server into the same rack.</li></ul></div>
+          <div class="quiz" data-answer="1" data-why="Two independent power strips (A and B), fed from separate paths, let the rack survive the loss of one side.">
+            <b>Quick check</b>
+            <div class="q">Why do racks usually have two power strips?</div>
+            <div class="opts"><button class="opt">To double the available power</button><button class="opt">So the rack stays up if one power path fails</button><button class="opt">One is for servers, one for cooling fans</button></div>
+          </div>
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
+
+          <h3>Three kinds of compute in a hall</h3>
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr><th>Equipment</th><th>Typical power</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td>CPU servers</td><td>0.3 to 1 kW each; 5 to 15 kW per rack</td><td>Web apps, databases, business software</td></tr>
+              <tr><td>Storage</td><td>Lower per rack, very heavy</td><td>Disks and flash holding data, backups and AI training sets</td></tr>
+              <tr><td>GPU servers</td><td>6 to 12 kW per 8-GPU server</td><td>AI training and inference, simulation</td></tr>
+              <tr><td>Rack-scale AI systems</td><td>About 120 to 140 kW per rack</td><td>Dozens of GPUs wired together as one unit, liquid cooled</td></tr>
+            </tbody></table></div>
+          <p>Because density jumps so sharply with AI, operators now plan halls by power per rack first and floor area second. A building designed around 10 kW racks can't simply take 130 kW racks without new power distribution, liquid cooling and stronger floors.</p>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>Plan by kW per rack, not square feet.</li><li>AI racks need new power, cooling and floor designs.</li><li>Storage is light on power but heavy on weight.</li></ul></div>
+
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="redundancy" data-n="7">
+            <h2 class="acc-h"><button class="acc-btn" id="redundancy-btn" aria-expanded="false" aria-controls="redundancy-panel"><span class="num">7</span><span><span class="mt">Redundancy and uptime</span><small>N, N+1, 2N and the uptime tiers</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="redundancy-panel" role="region" aria-labelledby="redundancy-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for Redundancy and uptime"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
+
+          <p class="lede">Data centers are designed around a simple question: what happens when a part fails, or needs maintenance? The answer is spare capacity, described with N notation.</p>
+          <ul>
+            <li><strong>N</strong>: exactly enough equipment for the load. Any failure means an outage.</li>
+            <li><strong>N+1</strong>: one spare unit. One failure is fine.</li>
+            <li><strong>2N</strong>: two complete, independent systems. An entire path can fail.</li>
+          </ul>
+          <div class="tool">
+            <b>Try it: break things</b>
+            <p style="font-size:14px;margin:0 0 10px">The load needs <strong>3 units</strong> of cooling or power. Pick a design, then click units to fail them.</p>
+            <div class="seg" id="redMode" role="group" aria-label="Redundancy design"><button data-m="N" aria-pressed="false">N</button><button data-m="N+1" aria-pressed="true">N+1</button><button data-m="2N" aria-pressed="false">2N</button></div>
+            <div class="paths" id="redUnits" style="margin-top:12px"></div>
+            <div class="load-status" id="redStatus" style="margin-top:12px"></div>
+          </div>
+          <div class="quiz" data-answer="1" data-why="With N+1 there is exactly one spare. A second failure drops below the 3 units the load needs.">
+            <b>Quick check</b>
+            <div class="q">An N+1 system loses two units at the same time. What happens?</div>
+            <div class="opts"><button class="opt">Nothing, it has plenty of spares</button><button class="opt">It no longer has enough capacity for the load</button><button class="opt">It automatically switches to 2N</button></div>
+          </div>
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
+<h3>Uptime Institute tiers</h3>
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr><th>Tier</th><th>Design</th><th>Availability</th><th>Downtime per year</th></tr></thead>
+            <tbody>
+              <tr><td>Tier I</td><td>Basic capacity, no redundancy</td><td>99.671%</td><td>about 28.8 hours</td></tr>
+              <tr><td>Tier II</td><td>Redundant components (N+1)</td><td>99.741%</td><td>about 22 hours</td></tr>
+              <tr><td>Tier III</td><td>Concurrently maintainable: any part can be serviced without shutdown</td><td>99.982%</td><td>about 1.6 hours</td></tr>
+              <tr><td>Tier IV</td><td>Fault tolerant: survives any single failure (2N style)</td><td>99.995%</td><td>about 26 minutes</td></tr>
+            </tbody></table></div>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>More redundancy means more cost and more equipment.</li><li>Most commercial facilities target Tier III.</li><li>Hyperscalers often rely on software spreading work across sites, so a single building can be simpler.</li></ul></div>
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="security" data-n="8">
+            <h2 class="acc-h"><button class="acc-btn" id="security-btn" aria-expanded="false" aria-controls="security-panel"><span class="num">8</span><span><span class="mt">Security and monitoring</span><small>Layers of protection and the systems operators watch</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="security-panel" role="region" aria-labelledby="security-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for Security and monitoring"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
+
+          <p class="lede">A data center protects what's inside with layers: every layer someone passes through has its own check, so one mistake never opens the whole site.</p>
+          <figure class="fig">
+            <svg class="dg" viewBox="0 0 760 330" role="img" aria-label="Layers of physical security drawn as nested rectangles: site perimeter, building entry, data hall, cage and rack">
+              <rect x="20" y="16" width="720" height="298" rx="18" class="bx2"/>
+              <text x="40" y="44" class="h">Site perimeter</text><text x="40" y="62" class="s">fences, vehicle barriers, gate guards, cameras</text>
+              <rect x="120" y="78" width="520" height="222" rx="14" class="bx"/>
+              <text x="140" y="104" class="h">Building entry</text><text x="140" y="122" class="s">lobby security, mantrap, badge + biometric</text>
+              <rect x="220" y="138" width="320" height="148" rx="12" class="acc"/>
+              <text x="240" y="162" class="h">Data hall</text><text x="240" y="180" class="s">separate access list, logged entry</text>
+              <rect x="300" y="196" width="160" height="78" rx="10" class="lime"/>
+              <text x="380" y="224" text-anchor="middle" class="h">Cage / rack</text><text x="380" y="242" text-anchor="middle" class="s">locked cabinets,</text><text x="380" y="256" text-anchor="middle" class="s">per-tenant keys</text>
+            </svg>
+            <figcaption>Each ring has its own access check and camera coverage. Visitors are escorted, and every badge swipe is logged.</figcaption>
+          </figure>
+          <h3>Protecting against fire and leaks</h3>
+          <ul>
+            <li><strong>Very early smoke detection</strong> (VESDA) samples the air continuously and can spot overheating gear long before visible smoke.</li>
+            <li><strong>Pre-action sprinklers</strong> keep pipes dry until two separate signals confirm a fire, so a damaged pipe can't flood the hall. Some rooms use clean-agent gas instead of water.</li>
+            <li><strong>Leak detection</strong> cables run under floors and along liquid-cooling pipes.</li>
+          </ul>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>Security works in nested layers: site, building, hall, rack.</li><li>Fire systems are designed to avoid water damage.</li><li>Every entry is logged.</li></ul></div>
+          <div class="quiz" data-answer="1" data-why="A mantrap is a small two-door vestibule: the second door only opens once the first has closed and the person has been verified, so nobody can tailgate in.">
+            <b>Quick check</b>
+            <div class="q">What is a mantrap at a data center entrance?</div>
+            <div class="opts"><button class="opt">A camera that tracks visitors</button><button class="opt">A two-door vestibule that lets one verified person through at a time</button><button class="opt">A locked rack for network gear</button></div>
+          </div>
+
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
+
+          <h3>The monitoring stack</h3>
+          <p>Thousands of sensors report into software that operators watch around the clock. Each system has a specific job:</p>
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr><th>System</th><th>Watches</th></tr></thead>
+            <tbody>
+              <tr><td>BMS (building management)</td><td>Cooling units, chillers, pumps, airflow, temperature and humidity</td></tr>
+              <tr><td>EPMS (electrical power monitoring)</td><td>Switchgear, UPS, generators, breakers and power quality</td></tr>
+              <tr><td>DCIM (infrastructure management)</td><td>Assets, rack power, capacity planning and cable records</td></tr>
+              <tr><td>NOC / SOC</td><td>People on shift 24/7 responding to network, facility and security alarms</td></tr>
+            </tbody></table></div>
+          <ul>
+            <li><strong>Environmental limits:</strong> many operators follow ASHRAE guidance, which recommends server inlet air of about 18 to 27 °C.</li>
+            <li><strong>Operational technology security:</strong> the networks that run cooling and power are kept separate from customer and office networks, because a cyberattack on them could cause a physical outage.</li>
+            <li><strong>Change control:</strong> work follows written procedures: methods of procedure (MOPs) for planned work, standard procedures (SOPs) for routine tasks and emergency procedures (EOPs) for failures. Mistakes during maintenance and changes are among the most common causes of outages.</li>
+            <li><strong>Testing:</strong> generators are run under load, infrared scans look for hot electrical connections, and failover is rehearsed.</li>
+            <li><strong>Audits:</strong> customers ask for third-party reports such as SOC 2 and ISO 27001 before moving in.</li>
+          </ul>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>BMS, EPMS and DCIM cover cooling, power and capacity.</li><li>Facility control networks are isolated from everything else.</li><li>Written procedures prevent most human-caused outages.</li></ul></div>
+
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="ai" data-n="9">
+            <h2 class="acc-h"><button class="acc-btn" id="ai-btn" aria-expanded="false" aria-controls="ai-panel"><span class="num">9</span><span><span class="mt">AI and GPU infrastructure</span><small>GPU pods, liquid cooling, back-end networks and sizing</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="ai-panel" role="region" aria-labelledby="ai-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for AI and GPU infrastructure"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
+
+          <p class="lede">A GPU is a chip with thousands of small cores that do math in parallel, which is exactly what training and running AI models needs. Thousands of them are wired together to act as one machine.</p>
+          <figure class="fig">
+            <svg class="dg" viewBox="0 0 760 400" role="img" aria-label="Diagram of a GPU pod: a power busway above a row of liquid-cooled GPU racks, a back-end GPU network of spine switches linking every rack, a front-end network, storage racks, and a coolant distribution unit piping cold liquid to the racks and warm liquid to outdoor heat rejection">
+              <rect x="40" y="18" width="560" height="22" rx="6" class="lime"/><text x="320" y="34" text-anchor="middle" class="t">Overhead power busway (high-capacity feeds to every rack)</text>
+              <rect x="40" y="62" width="560" height="44" rx="8" class="acc"/><text x="320" y="82" text-anchor="middle" class="t">Back-end GPU network</text><text x="320" y="98" text-anchor="middle" class="s">spine switches; every GPU can reach every other at 400–800 Gb/s</text>
+              <rect x="630" y="62" width="110" height="44" rx="8" class="bx"/><text x="685" y="82" text-anchor="middle" class="t">Front-end</text><text x="685" y="98" text-anchor="middle" class="s">users, storage</text>
+              <path d="M600 84 H630" class="ln"/>
+              <path d="M92 40 V62" class="ln-lime" style="opacity:.6"/><path d="M92 106 V136" class="ln-acc"/><rect x="60" y="136" width="64" height="140" rx="6" class="gpu"/>
+              <rect x="70" y="150" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="70" y="180" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="70" y="210" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="70" y="240" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <path d="M80 276 V304" class="ln-cold"/><path d="M104 276 V326" class="ln-hot"/>
+              <path d="M178 40 V62" class="ln-lime" style="opacity:.6"/><path d="M178 106 V136" class="ln-acc"/><rect x="146" y="136" width="64" height="140" rx="6" class="gpu"/>
+              <rect x="156" y="150" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="156" y="180" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="156" y="210" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="156" y="240" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <path d="M166 276 V304" class="ln-cold"/><path d="M190 276 V326" class="ln-hot"/>
+              <path d="M264 40 V62" class="ln-lime" style="opacity:.6"/><path d="M264 106 V136" class="ln-acc"/><rect x="232" y="136" width="64" height="140" rx="6" class="gpu"/>
+              <rect x="242" y="150" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="242" y="180" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="242" y="210" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="242" y="240" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <path d="M252 276 V304" class="ln-cold"/><path d="M276 276 V326" class="ln-hot"/>
+              <path d="M350 40 V62" class="ln-lime" style="opacity:.6"/><path d="M350 106 V136" class="ln-acc"/><rect x="318" y="136" width="64" height="140" rx="6" class="gpu"/>
+              <rect x="328" y="150" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="328" y="180" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="328" y="210" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="328" y="240" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <path d="M338 276 V304" class="ln-cold"/><path d="M362 276 V326" class="ln-hot"/>
+              <path d="M436 40 V62" class="ln-lime" style="opacity:.6"/><path d="M436 106 V136" class="ln-acc"/><rect x="404" y="136" width="64" height="140" rx="6" class="gpu"/>
+              <rect x="414" y="150" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="414" y="180" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="414" y="210" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <rect x="414" y="240" width="44" height="18" rx="3" style="fill:var(--c-ai);opacity:.35"/>
+              <path d="M424 276 V304" class="ln-cold"/><path d="M448 276 V326" class="ln-hot"/>
+              <rect x="494" y="136" width="48" height="140" rx="6" class="srv"/><rect x="552" y="136" width="48" height="140" rx="6" class="srv"/>
+              <text x="547" y="292" text-anchor="middle" class="s">storage</text>
+              <path d="M80 304 H630" class="ln-cold flow"/>
+              <path d="M630 326 H104" class="ln-hot flow"/>
+              <rect x="630" y="286" width="110" height="58" rx="8" class="bx"/><text x="685" y="310" text-anchor="middle" class="t">CDU</text><text x="685" y="326" text-anchor="middle" class="s">coolant distribution</text>
+              <path d="M685 344 V362" class="ln-hot"/>
+              <rect x="560" y="362" width="180" height="32" rx="8" class="bx"/><text x="650" y="383" text-anchor="middle" class="t">Heat rejection outdoors</text>
+              <text x="40" y="360" class="s">Blue: cold coolant to cold plates on every GPU · Red: warm return to the CDU</text>
+              <text x="40" y="380" class="s">GPU racks draw about 120–140 kW each</text>
+            </svg>
+            <figcaption>A GPU pod: liquid carries heat from cold plates on each GPU to the CDU, then to outdoor heat rejection. A dedicated back-end network ties every GPU together; a separate front-end network handles users and storage.</figcaption>
+          </figure>
+          <h3>Training vs. inference</h3>
+          <ul>
+            <li><strong>Training</strong> builds a model by running huge datasets through tens of thousands of GPUs for weeks. It wants one giant, tightly networked cluster and lots of cheap, steady power, so it can sit far from cities.</li>
+            <li><strong>Inference</strong> runs the finished model to answer questions. Each request is small, but there are billions of them, and users notice delay, so inference sits closer to people.</li>
+          </ul>
+          <div class="takeaways"><b>Key takeaways</b><ul><li>AI hardware is organized in pods of liquid-cooled GPU racks.</li><li>Two networks: a fast back-end GPU fabric and a front-end for users.</li><li>Training chases power; inference chases users.</li></ul></div>
+
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
+
           <p class="lede">Training and running large AI models changed data center design more in three years than the previous fifteen. The reason is the GPU.</p>
           <ul>
             <li><strong>Density:</strong> a classic rack draws 8 to 15 kW. A rack-scale AI system holding 72 GPUs draws about 120 to 140 kW, roughly ten times more in the same footprint.</li>
@@ -343,7 +581,7 @@
             <li><strong>Training vs. inference:</strong> training builds a model and can sit in remote places with cheap power. Inference answers users' questions and benefits from being closer to population centers.</li>
           </ul>
           <div class="tool">
-            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg>Try it: size an AI cluster</b>
+            <b>Try it: size an AI cluster</b>
             <div class="tool-grid">
               <div>
                 <label><span class="lab">Number of GPUs <span class="val" id="aiNv"></span></span><input type="range" id="aiN" min="0" max="100" value="55"></label>
@@ -365,38 +603,16 @@
             <div class="q">Which AI workload benefits most from being close to users?</div>
             <div class="opts"><button class="opt">Training a new model</button><button class="opt">Inference (answering requests)</button><button class="opt">Neither; location never matters</button></div>
           </div>
-        </article>
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+          <article class="card module reveal" id="build" data-n="10">
+            <h2 class="acc-h"><button class="acc-btn" id="build-btn" aria-expanded="false" aria-controls="build-panel"><span class="num">10</span><span><span class="mt">How a data center project gets built</span><small>Site selection, timelines, money and communities</small></span><svg class="ic chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></h2>
+            <div class="acc-panel" id="build-panel" role="region" aria-labelledby="build-btn" hidden><div><div class="module-body">
+              <div class="level-toggle"><div class="seg" role="group" aria-label="Depth for How a data center project gets built"><button data-level="b" aria-pressed="true">Beginner</button><button data-level="a" aria-pressed="false">Advanced</button></div><span class="lvl-hint">Start simple, then switch to Advanced for the detail.</span></div>
+              <div class="lvl-pane" data-pane="b">
 
-        <article class="lesson" id="grid" data-level="3" data-mins="7">
-          <h2>Power and the grid</h2>
-          <p class="lede">The biggest constraint on new data centers in America is not money or land. It is getting enough electricity, fast enough.</p>
-          <h3>How a campus gets power</h3>
-          <ul>
-            <li><strong>Grid interconnection:</strong> the developer applies to the utility and regional grid operator (such as PJM in the Mid-Atlantic, ERCOT in Texas or MISO in the Midwest). Studies can take years, and big loads may need new transmission lines and substations.</li>
-            <li><strong>Behind-the-meter generation:</strong> building gas turbines, fuel cells or solar plus batteries on site to start sooner or avoid grid limits. Several Texas and Wyoming projects take this route.</li>
-            <li><strong>Long-term power deals:</strong> hyperscalers sign power purchase agreements for new wind, solar, geothermal and nuclear, including restarts of retired reactors and future small modular reactors (SMRs).</li>
-            <li><strong>Flexibility:</strong> some campuses agree to cut load during grid emergencies in exchange for a faster connection.</li>
-          </ul>
-          <div class="tbl-wrap"><table class="tbl">
-            <thead><tr><th>Grid region</th><th>Covers</th><th>Why it matters</th></tr></thead>
-            <tbody>
-              <tr><td>PJM</td><td>13 states from Illinois to Virginia, plus D.C.</td><td>Home to Northern Virginia, the world's largest data center market; capacity prices have jumped</td></tr>
-              <tr><td>ERCOT</td><td>Most of Texas</td><td>Fast to build and connect, now home to many gigawatt-scale AI proposals</td></tr>
-              <tr><td>MISO</td><td>Midwest and parts of the South</td><td>Big new campuses in Indiana, Louisiana and Mississippi</td></tr>
-              <tr><td>SPP</td><td>Central plains</td><td>Wind-rich, with growing interest in Oklahoma and Kansas</td></tr>
-              <tr><td>Western utilities</td><td>Arizona, Nevada, Oregon and more</td><td>Hot, dry climates raise cooling and water questions</td></tr>
-            </tbody></table></div>
-          <div class="callout"><b>Who pays?</b> When a utility builds new plants and lines for data centers, regulators decide how those costs are split between the data centers and everyone else. Many states are now writing special rates and minimum-payment rules for very large loads. Follow it in the <a href="index.html#cat=Power%20%26%20Energy">Power &amp; Energy news</a>.</div>
-          <div class="takeaways"><b>Key takeaways</b><ul><li>Interconnection timelines often decide when a campus can open.</li><li>On-site gas and nuclear deals are workarounds for grid limits.</li><li>Rate design decides whether households share the cost.</li></ul></div>
-          <div class="quiz" data-answer="2" data-why="ERCOT runs most of the Texas grid, which is largely separate from the rest of the country.">
-            <b>Quick check</b>
-            <div class="q">A gigawatt AI campus is proposed near Abilene, Texas. Which grid operator is it most likely dealing with?</div>
-            <div class="opts"><button class="opt">PJM</button><button class="opt">MISO</button><button class="opt">ERCOT</button></div>
-          </div>
-        </article>
-
-        <article class="lesson" id="build" data-level="3" data-mins="7">
-          <h2>From site to switch-on</h2>
           <p class="lede">An announcement is the start, not the finish. Here is what happens between a press release and servers running, and how long each part typically takes.</p>
           <h3>What developers look for in a site</h3>
           <ul>
@@ -407,23 +623,22 @@
             <li><strong>Incentives and permitting:</strong> sales tax exemptions on equipment, property tax abatements, and a predictable local approval process.</li>
           </ul>
           <div class="tool">
-            <b><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Typical project timeline (months from site search)</b>
-            <div class="timeline" id="timeline"></div>
+            <b>Typical project timeline (months from site search)</b>
+            <div class="gantt" id="timeline"></div>
             <p style="font-size:12.5px;color:var(--muted);margin:6px 0 0">Ranges vary widely. Power can be the longest pole; fast-track AI builds have compressed construction to under a year.</p>
           </div>
           <h3>The money</h3>
           <p>Building costs commonly run around $10 million or more per megawatt for the shell, power and cooling, before servers. AI hardware can cost several times that again. That is why gigawatt campuses come with headlines quoting tens of billions of dollars.</p>
-          <div class="callout"><b>Reading project news:</b> "announced" usually means land and a plan; "approved" means zoning or incentives passed; "broke ground" means construction began; "energized" or "online" means the first buildings have power. The <a href="projects.html">projects map</a> tracks these stages.</div>
+          <div class="callout"><b>Reading project news:</b> "announced" usually means land and a plan; "approved" means zoning or incentives passed; "broke ground" means construction began; "energized" or "online" means the first buildings have power. The <a href="atlas.html">Project Atlas</a> tracks these stages.</div>
           <div class="takeaways"><b>Key takeaways</b><ul><li>Power, land, fiber, water and permits decide where campuses go.</li><li>Projects take 2 to 5 years end to end, and power often sets the pace.</li><li>Big dollar figures usually include phases over many years.</li></ul></div>
           <div class="quiz" data-answer="0" data-why="Groundbreaking marks the start of construction. Energizing comes later, once buildings and electrical systems are finished.">
             <b>Quick check</b>
             <div class="q">A headline says a campus "broke ground". What stage is it in?</div>
             <div class="opts"><button class="opt">Construction has started</button><button class="opt">Servers are running</button><button class="opt">The site has only been proposed</button></div>
           </div>
-        </article>
+              </div>
+              <div class="lvl-pane" data-pane="a" hidden>
 
-        <article class="lesson" id="community" data-level="3" data-mins="6">
-          <h2>Communities and policy</h2>
           <p class="lede">Data centers bring tax revenue and construction jobs, and they also raise real questions about power bills, water, noise and land. Most of the fights in the news are about balancing these.</p>
           <div class="tbl-wrap"><table class="tbl">
             <thead><tr><th>Issue</th><th>What supporters say</th><th>What critics say</th></tr></thead>
@@ -435,19 +650,23 @@
               <tr><td>Noise and land</td><td>Modern designs add buffers and walls</td><td>Constant hum from cooling equipment and generators; loss of farmland</td></tr>
             </tbody></table></div>
           <p>Local governments respond with zoning rules, setback and noise limits, special electricity rates, water agreements and, in some places, temporary moratoriums while they write new rules.</p>
-          <div class="callout"><b>Follow it:</b> the <a href="index.html#cat=Policy%20%26%20Community">Policy &amp; Community</a> category on the news page collects council votes, moratoriums, lawsuits and incentive debates as they happen.</div>
+          <div class="callout"><b>Follow it:</b> the <a href="newsroom.html#topic=Policy%20%2F%20Permits&amp;range=60">Policy / Permits</a> topic in the Newsroom collects council votes, moratoriums, lawsuits and incentive debates as they happen.</div>
           <div class="takeaways"><b>Key takeaways</b><ul><li>The trade-offs are real on both sides.</li><li>Power rates and water are the most contested issues today.</li><li>Local zoning decisions shape where the build-out happens.</li></ul></div>
           <div class="quiz" data-answer="2" data-why="A moratorium is a temporary pause on approvals while officials study impacts and write new rules.">
             <b>Quick check</b>
             <div class="q">A county passes a "data center moratorium". What does that usually mean?</div>
             <div class="opts"><button class="opt">All existing data centers must shut down</button><button class="opt">Data centers get a tax break</button><button class="opt">New applications are paused while rules are written</button></div>
           </div>
-        </article>
+              </div>
+              <div class="module-nav"></div>
+            </div></div></div>
+          </article>
+        </div>
+        <section class="section reveal" id="glossary" aria-labelledby="glTitle">
+          <div class="section-head"><div><h2 id="glTitle">Glossary</h2><p>Terms you'll see in data center news.</p></div></div>
 
-        <section class="lesson" id="glossary">
-          <h2>Glossary</h2>
           <p class="lede">Terms you'll see in data center news.</p>
-          <label class="search" style="display:block;max-width:420px">
+          <label class="search" style="max-width:420px">
             <span class="sr-only">Search the glossary</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <input id="glq" class="input" type="search" placeholder="Search terms…" autocomplete="off">
@@ -455,10 +674,12 @@
           <div class="glossary-grid" id="glossaryGrid"></div>
         </section>
       </div>
-    </div>
-  </main>
-
-  <footer id="site-footer"></footer>
-  <script src="assets/learn.js?v=20261021b"></script>
+    </main>
+    <footer class="site-footer" id="footer"></footer>
+  </div>
+  <nav class="tabbar" id="tabbar"></nav>
+  <script src="assets/companies.js?v=rr1"></script>
+  <script src="assets/app.js?v=rr1"></script>
+  <script src="assets/learn.js?v=rr1"></script>
 </body>
 </html>

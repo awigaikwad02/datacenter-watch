@@ -218,7 +218,7 @@ window.RR = (function () {
     const top = document.getElementById("topbar");
     if (top) {
       top.innerHTML = '<div class="page"><a class="brand" href="index.html" aria-label="The Rack Report home">' + wordmark() + "</a>" +
-        '<span class="topbar-title">' + esc(title) + '</span><span class="live-pill" id="livePill"><span class="live-dot" aria-hidden="true"></span><span>Live</span></span></div>';
+        '<span class="topbar-title">' + esc(title) + '</span><span class="live-pill" id="livePill"><span class="live-dot" aria-hidden="true"></span><span>Refreshed twice daily</span></span></div>';
       if (updatedIso) setUpdated(updatedIso);
     }
     const tab = document.getElementById("tabbar");
