@@ -2,69 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Companies · Data Center Watch</title>
-  <meta name="description" content="The companies building America's data centers: hyperscalers, AI labs, GPU clouds, developers, colocation providers, investors and energy partners, with their projects, capacity and latest news.">
-  <meta name="theme-color" content="#0ea5e9">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Companies · The Rack Report</title>
+  <meta name="description" content="The companies building U.S. data centers, with tracked projects, active states and the latest headlines for each, computed from public news.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://awigaikwad02.github.io/datacenter-watch/companies.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Rack Report">
+  <meta property="og:title" content="Companies · The Rack Report">
+  <meta property="og:description" content="The companies building U.S. data centers, with tracked projects, active states and the latest headlines for each, computed from public news.">
+  <meta property="og:url" content="https://awigaikwad02.github.io/datacenter-watch/companies.html">
+  <meta property="og:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Rack Report: the U.S. data center buildout, tracked in one place.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Companies · The Rack Report">
+  <meta name="twitter:description" content="The companies building U.S. data centers, with tracked projects, active states and the latest headlines for each, computed from public news.">
+  <meta name="twitter:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=20261021b">
-  <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="assets/app.js?v=20261021b"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css?v=rr1">
+  <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
-<body class="is-loading">
-  <div id="loader" role="status" aria-live="polite">
-    <div class="loader-inner">
-      <script>document.write(DCW.logo("loader-logo"))</script>
-      <div class="loader-title">Data Center Watch</div>
-      <div class="loader-bar"><i></i></div>
-      <div class="loader-sub">Loading the companies behind the build-out…</div>
-    </div>
-  </div>
-
-  <header id="site-header"></header>
-
-  <main class="wrap">
-    <section class="hero">
-      <span class="eyebrow"><span class="live-dot"></span><span id="eyebrow">Company tracker</span></span>
-      <h1>Who's building <span class="grad">America's data centers.</span></h1>
-      <p class="lede">The cloud giants, AI labs, GPU clouds, developers, landlords, investors and power companies behind the build-out, with the projects they're tied to and how often they're in the news.</p>
-      <div class="stats" id="stats"></div>
-    </section>
-
-    <div class="section-title">
-      <div><h2>How the industry fits together</h2><p>Tap a role to filter the list.</p></div>
-    </div>
-    <div class="roles" id="roles"></div>
-
-    <div class="section-title">
-      <div><h2>All companies</h2><p id="countLine"></p></div>
-    </div>
-    <div class="toolbar" id="toolbar">
-      <div class="toolbar-row">
-        <label class="search inline">
-          <span class="sr-only">Search companies</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <input id="q" class="input" type="search" placeholder="Search companies, headquarters, states…" autocomplete="off">
-        </label>
-        <select id="sort" class="select" aria-label="Sort">
-          <option value="projects">Most projects</option>
-          <option value="mw">Most capacity</option>
-          <option value="news">Most in the news</option>
-          <option value="name">A to Z</option>
-        </select>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="loader" aria-hidden="true"><div class="ld">
+    <svg class="ld-mark" viewBox="0 0 48 48"><rect class="ld-outline" x="8" y="3.75" width="32" height="40.5" rx="7" fill="none" stroke="currentColor" stroke-width="3.5" pathLength="150"/><rect class="ld-bar b1" x="14" y="11" width="20" height="4.5" rx="2.25" fill="#B9F542"/><rect class="ld-bar b2" x="14" y="18.5" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b3" x="14" y="26" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b4" x="14" y="33.5" width="20" height="4.5" rx="2.25" fill="currentColor"/></svg>
+    <p class="ld-text">Initializing The Rack Report…</p>
+  </div></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site"></aside>
+  <div class="shell-main">
+    <header class="topbar" id="topbar"></header>
+    <main id="main" tabindex="-1">
+      <div class="page">
+        <section class="page-hero">
+          <span class="eyebrow">Companies</span>
+          <h1>Who is building America's data centers.</h1>
+          <p class="lede">Hyperscalers, AI labs, GPU clouds, developers, colocation providers, investors and energy partners. Every count here is computed from tracked headlines and projects; a company with no activity yet shows zero.</p>
+        </section>
+        <div class="stats" id="stats"><div class="skel tile"></div><div class="skel tile"></div><div class="skel tile"></div><div class="skel tile"></div></div>
+        <div class="toolbar">
+          <label class="search"><span class="sr-only">Search companies</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="q" class="input" type="search" placeholder="Search companies or states…" autocomplete="off"></label>
+          <label class="field" style="flex:0 0 auto"><span class="sr-only">Sort companies</span><select id="sort" class="select"><option value="projects">Most projects</option><option value="latest">Latest activity</option><option value="news">Most headlines</option><option value="name">A to Z</option></select></label>
+        </div>
+        <div class="chips scroll" id="types" role="group" aria-label="Company type" style="margin-top:12px"></div>
+        <p class="result-count" id="count" style="margin:16px 0 0" aria-live="polite"></p>
+        <div class="co-grid" id="grid"><div class="skel co"></div><div class="skel co"></div><div class="skel co"></div></div>
       </div>
-      <div class="toolbar-row"><div class="chips scroll" id="types" role="group" aria-label="Company type"></div></div>
-    </div>
-    <div class="co-grid" id="grid"></div>
-  </main>
-
-  <div class="modal-back" id="back"></div>
-  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"></aside>
-
-  <footer id="site-footer"></footer>
-  <script src="assets/companies.js?v=20261021b"></script>
+      <div class="backdrop" id="back"></div>
+      <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden></section>
+    </main>
+    <footer class="site-footer" id="footer"></footer>
+  </div>
+  <nav class="tabbar" id="tabbar"></nav>
+  <script src="assets/companies.js?v=rr1"></script>
+  <script src="assets/app.js?v=rr1"></script>
+  <script src="assets/company-directory.js?v=rr1"></script>
 </body>
 </html>

@@ -435,8 +435,10 @@ window.RR = (function () {
   }
   // One sentence built only from the record's own fields.
   function summary(p) {
-    const who = p.companies.length ? p.companies.join(", ") : p.company || "An unnamed developer";
-    const what = { "Announced": "announced", "Planned": "is planning", "Under construction": "is building", "Operational": "operates", "Expansion": "is expanding" }[p.status] || "is tied to";
+    const names = p.companies.length ? p.companies : p.company ? [p.company] : [];
+    const who = names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names[names.length - 1] : names[0] || "An unnamed developer";
+    const many = names.length > 1;
+    const what = { "Announced": "announced", "Planned": many ? "are planning" : "is planning", "Under construction": many ? "are building" : "is building", "Operational": many ? "operate" : "operates", "Expansion": many ? "are expanding" : "is expanding" }[p.status] || "are tied to";
     const size = [p.capacity_mw ? fmtMW(p.capacity_mw) : "", p.investment_usd_b ? fmtMoney(p.investment_usd_b) : ""].filter(Boolean).join(", ");
     return p.curated
       ? who + " " + what + " this " + (size ? size + " " : "") + "data center project in " + p.place + "."
