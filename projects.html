@@ -3,91 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects Map · Data Center Watch</title>
-  <meta name="description" content="Interactive map of U.S. data center projects: announced, under construction and operating campuses, plus sites detected from the news, with capacity, companies and related headlines.">
-  <meta name="theme-color" content="#0ea5e9">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=20261021b">
-  <link rel="stylesheet" href="assets/vendor/leaflet/MarkerCluster.css?v=20261021b">
-  <link rel="stylesheet" href="assets/style.css?v=20261021b">
-  <script>try{var t=JSON.parse(localStorage.getItem("dcw-theme"));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="assets/app.js?v=20261021b"></script>
+  <title>Project Atlas · The Rack Report</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://awigaikwad02.github.io/datacenter-watch/atlas.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta http-equiv="refresh" content="0; url=atlas.html">
+  <script>
+    // Old links used #p=ID; the Atlas uses #project=ID.
+    var h = location.hash.replace(/^#p=/, "#project=").replace(/^#co=/, "#company=");
+    location.replace("atlas.html" + h);
+  </script>
 </head>
-<body class="is-loading">
-  <div id="loader" role="status" aria-live="polite">
-    <div class="loader-inner">
-      <script>document.write(DCW.logo("loader-logo"))</script>
-      <div class="loader-title">Data Center Watch</div>
-      <div class="loader-bar"><i></i></div>
-      <div class="loader-sub">Plotting U.S. data center projects…</div>
-    </div>
-  </div>
-
-  <header id="site-header"></header>
-
-  <main class="map-page">
-    <aside class="map-side">
-      <div class="map-side-head">
-        <h1>U.S. projects map</h1>
-        <p>Campuses being announced, built and switched on. Filled pins are curated projects; ringed pins were picked up from headlines.</p>
-        <div class="mini-stats" id="miniStats"></div>
-      </div>
-
-      <div class="map-filters">
-        <label class="search">
-          <span class="sr-only">Search projects</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <input id="q" class="input" type="search" placeholder="Search projects, companies, towns…" autocomplete="off">
-        </label>
-        <div class="chips status-chips" id="statusChips" role="group" aria-label="Project stage"></div>
-        <div class="row">
-          <select id="company" class="select" aria-label="Company"></select>
-          <select id="stateSel" class="select" aria-label="State"></select>
-        </div>
-        <details>
-          <summary>Capacity and layers <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></summary>
-          <div style="margin-top:10px">
-            <div class="range-row">
-              <span>Minimum capacity: <span class="val" id="mwVal">Any</span></span>
-              <input id="mw" type="range" min="0" max="2000" step="100" value="0" aria-label="Minimum capacity in megawatts">
-            </div>
-            <label class="toggle"><span class="sw"><i style="background:var(--accent)"></i>Curated projects</span><input type="checkbox" id="lyCurated" checked></label>
-            <label class="toggle"><span class="sw"><i style="border:2px solid var(--st-detected)"></i>Detected from news</span><input type="checkbox" id="lyAuto" checked></label>
-            <label class="toggle"><span class="sw"><i style="background:linear-gradient(90deg,var(--map-land),var(--accent))"></i>Shade states</span><input type="checkbox" id="lyShade" checked></label>
-            <label class="toggle"><span class="sw"><i style="background:var(--faint)"></i>Street labels</span><input type="checkbox" id="lyLabels" checked></label>
-          </div>
-        </details>
-      </div>
-
-      <div class="list-head">
-        <span id="listCount">Loading…</span>
-        <select id="sort" class="select" aria-label="Sort">
-          <option value="mw">Largest first</option>
-          <option value="new">Newest first</option>
-          <option value="name">A to Z</option>
-          <option value="state">By state</option>
-        </select>
-      </div>
-      <div class="proj-list" id="list"></div>
-    </aside>
-
-    <section class="map-wrap">
-      <div id="map" aria-label="Map of U.S. data center projects"></div>
-      <div class="map-tools">
-        <div class="seg" id="shadeMode" role="group" aria-label="Shade states by"></div>
-        <button class="icon-btn" id="fit" title="Show all of the U.S." aria-label="Show all of the U.S."></button>
-      </div>
-      <div class="map-legend" id="legend"></div>
-      <aside class="detail" id="detail" aria-live="polite"></aside>
-    </section>
-  </main>
-
-  <script src="assets/vendor/leaflet/leaflet.js?v=20261021b"></script>
-  <script src="assets/vendor/leaflet/leaflet.markercluster.js?v=20261021b"></script>
-  <script src="assets/vendor/topojson-client.min.js?v=20261021b"></script>
-  <script src="assets/projects.js?v=20261021b"></script>
+<body style="background:#070b14;color:#eef2f8;font-family:system-ui,sans-serif">
+  <p>The projects map moved to the <a href="atlas.html" style="color:#b9f542">Project Atlas</a>.</p>
 </body>
 </html>

@@ -253,7 +253,11 @@
   }
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
-    if (h.get("company")) { f.company = h.get("company"); changed(); fitTo(filtered()); }
+    if (h.get("company")) {
+      const want = h.get("company").toLowerCase().replace(/-/g, " ");
+      f.company = Object.keys(window.RR_COMPANIES).find((n) => n.toLowerCase() === want) || h.get("company");
+      changed(); fitTo(filtered());
+    }
     if (h.get("state")) { f.state = h.get("state").toUpperCase(); changed(); fitTo(filtered()); }
     if (h.get("project")) setTimeout(() => select(h.get("project"), "hash"), 250);
   }

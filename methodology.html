@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Methodology and Sources · The Rack Report</title>
+  <meta name="description" content="How The Rack Report collects, tags and maps U.S. data center news: sources, refresh schedule, location and company detection, curated vs. detected projects, limitations and how to report errors.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://awigaikwad02.github.io/datacenter-watch/methodology.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Rack Report">
+  <meta property="og:title" content="Methodology and Sources · The Rack Report">
+  <meta property="og:description" content="How The Rack Report collects, tags and maps U.S. data center news: sources, refresh schedule, location and company detection, curated vs. detected projects, limitations and how to report errors.">
+  <meta property="og:url" content="https://awigaikwad02.github.io/datacenter-watch/methodology.html">
+  <meta property="og:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Rack Report: the U.S. data center buildout, tracked in one place.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Methodology and Sources · The Rack Report">
+  <meta name="twitter:description" content="How The Rack Report collects, tags and maps U.S. data center news: sources, refresh schedule, location and company detection, curated vs. detected projects, limitations and how to report errors.">
+  <meta name="twitter:image" content="https://awigaikwad02.github.io/datacenter-watch/assets/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css?v=rr1">
+  <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="loader" aria-hidden="true"><div class="ld">
+    <svg class="ld-mark" viewBox="0 0 48 48"><rect class="ld-outline" x="8" y="3.75" width="32" height="40.5" rx="7" fill="none" stroke="currentColor" stroke-width="3.5" pathLength="150"/><rect class="ld-bar b1" x="14" y="11" width="20" height="4.5" rx="2.25" fill="#B9F542"/><rect class="ld-bar b2" x="14" y="18.5" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b3" x="14" y="26" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b4" x="14" y="33.5" width="20" height="4.5" rx="2.25" fill="currentColor"/></svg>
+    <p class="ld-text">Initializing The Rack Report…</p>
+  </div></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site"></aside>
+  <div class="shell-main">
+    <header class="topbar" id="topbar"></header>
+    <main id="main" tabindex="-1">
+      <div class="page">
+        <section class="page-hero">
+          <span class="eyebrow">Methodology and sources</span>
+          <h1>How The Rack Report is built.</h1>
+          <p class="lede">Everything on this site comes from public news feeds and a small hand-checked project list, processed by an open script you can read. Here is exactly what happens, and where it can go wrong.</p>
+        </section>
+
+        <div class="pipeline reveal" role="list" aria-label="Data pipeline">
+          <div role="listitem"><b><span>1</span>Collect</b><p>Google News RSS searches (U.S. edition) and optional Google Alerts feeds.</p></div>
+          <div role="listitem"><b><span>2</span>Tag</b><p>Keyword rules assign a topic, places, states and companies to each headline.</p></div>
+          <div role="listitem"><b><span>3</span>Detect</b><p>Headlines naming a site, a stage and a U.S. place become project candidates.</p></div>
+          <div role="listitem"><b><span>4</span>Publish</b><p>JSON files are committed to GitHub and served by GitHub Pages.</p></div>
+        </div>
+
+        <article class="prose">
+          <h2 id="sources">Sources and refresh schedule</h2>
+          <p>A GitHub Actions workflow runs twice a day, at 06:17 and 18:17 UTC. It runs <code>scripts/fetch_news.py</code>, which reads the searches listed in <code>data/feeds.json</code>: Google News RSS queries for data center announcements, construction, power, policy and regional news, all using the U.S. edition of Google News. Any Google Alerts RSS feeds added to that file are read too.</p>
+          <p>We store only the headline, the publisher name, the publication time and the link. Article text is never copied; every headline links to the original publisher through Google News. Headlines are kept for 60 days and project candidates for 180 days.</p>
+
+          <h2 id="us-only">U.S. only</h2>
+          <p>A story is dropped when every place it names is outside the United States. Because many foreign stories name no place we recognize, the script also drops stories with clear foreign markers (for example "data centre" spelling, foreign currencies or country names) and stories from a short list of non-U.S. outlets. Stories that name no place at all are kept. This means a few foreign stories can slip through and a few U.S. ones can be dropped.</p>
+
+          <h2 id="tagging">Topics, places and companies</h2>
+          <ul>
+            <li><strong>Topics</strong> come from keyword rules in the script, checked in this order: Policy / Permits, Land Acquisition, Expansion, Construction, Operations, New Announcement, Deals / Investment, Power / Utility, AI Infrastructure. The first match becomes the headline's topic; anything else is General.</li>
+            <li><strong>Places</strong> come from a gazetteer (<code>scripts/gazetteer.json</code>) of U.S. states, counties and cities plus foreign places used only for filtering. Each U.S. place carries coordinates and a state, which becomes the headline's two-letter state code.</li>
+            <li><strong>Companies</strong> are matched by name and common aliases (for example AWS for Amazon). "Stargate" counts toward OpenAI, Oracle and SoftBank.</li>
+            <li><strong>Figures</strong> such as "1.2 GW" or "$10 billion" are read from the headline. Capacity figures above 20 GW are ignored because they describe grid-wide totals, not single projects.</li>
+          </ul>
+
+          <h2 id="projects">Curated and detected projects</h2>
+          <p><strong>Curated projects</strong> (rack-shaped pins on the Atlas) are entered by hand in <code>data/projects.json</code> from public reporting, with exact coordinates where known. Each one has a <code>verified</code> flag that stays false until it has been checked against current sources.</p>
+          <p><strong>Detected projects</strong> (ring pins) are created automatically when a headline mentions a data center or campus, a stage (announced, under construction, operational or expansion) and a U.S. place. The pin is placed at the city, county or state named, so state-level pins are approximate. Detected projects are leads to check, not confirmed facts.</p>
+
+          <h2 id="limitations">Known limitations</h2>
+          <ul>
+            <li>Keyword tagging misses context. A headline about a vote against a project can still be tagged as an announcement.</li>
+            <li>Places can be ambiguous (Georgia, Washington, Aurora). The gazetteer favors the U.S. meaning.</li>
+            <li>The same project often appears under several headlines, so detected pins can duplicate each other.</li>
+            <li>Google News results vary, and paywalled or regional outlets may be missing.</li>
+            <li>Counts and charts describe headlines, not the industry as a whole.</li>
+          </ul>
+
+          <h2 id="report">Report a wrong pin or headline</h2>
+          <p>Open an issue on <a href="https://github.com/awigaikwad02/datacenter-watch/issues" rel="noopener">GitHub</a> with the project name or headline, what is wrong and a source link. Corrections to curated projects go straight into <code>data/projects.json</code>; recurring tagging mistakes are fixed in the rules so they stay fixed on the next refresh.</p>
+
+          <h2 id="code">Code</h2>
+          <p>The whole site is static HTML, CSS and JavaScript with no build step. The map uses Leaflet and Leaflet.markercluster from unpkg and map tiles from CARTO and OpenStreetMap. Source: <a href="https://github.com/awigaikwad02/datacenter-watch" rel="noopener">github.com/awigaikwad02/datacenter-watch</a>.</p>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer" id="footer"></footer>
+  </div>
+  <nav class="tabbar" id="tabbar"></nav>
+  <script src="assets/companies.js?v=rr1"></script>
+  <script src="assets/app.js?v=rr1"></script>
+  <script src="assets/methodology.js?v=rr1"></script>
+</body>
+</html>

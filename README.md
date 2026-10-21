@@ -1,62 +1,72 @@
-# Data Center Watch
+# The Rack Report
 
-A self-updating news board, map and course about U.S. data centers. Static site on GitHub Pages, data refreshed by a GitHub Actions job. No server, no API keys, no cost.
+U.S. data center intelligence: the buildout, tracked in one place. A static site on GitHub Pages whose data is refreshed twice a day by a GitHub Actions job. No server, no API keys, no build step.
 
-- **index.html**: U.S. data center news from Google News RSS and Google Alerts, tagged by category, state and company. Featured story, state tile map, 30-day volume chart, filters, search, saved stories.
-- **projects.html**: interactive Leaflet map of U.S. projects on a vector state map with shading by project count or GW, clustered pins sized by capacity, filters, and a detail panel with related headlines. Sites detected from headlines appear as ringed pins.
-- **companies.html**: the hyperscalers, AI labs, GPU clouds, developers, investors and energy partners behind the build-out, with their projects, capacity, states and news mentions.
-- **learn.html**: a 14-lesson course from scratch to advanced with diagrams, quizzes, saved progress and interactive tools (campus scale, power chain and outage simulation, rack density, redundancy, PUE/WUE calculator, AI cluster sizing, project timeline).
+Live site: https://awigaikwad02.github.io/datacenter-watch/
 
-The site covers the United States only. `scripts/fetch_news.py` drops stories about other countries and tags each story with the states it mentions. Light and dark themes follow the system setting and can be toggled.
+## Pages
 
-## How it runs
+| File | Page | What it does |
+|---|---|---|
+| `index.html` | Overview | Hero, live metrics, latest major story, headline ticker, project pulse map (lazy-loaded), most active companies, topic mix |
+| `newsroom.html` | Newsroom | Every headline with instant filters (company, state, topic, source, today/week/month), search, save and share |
+| `atlas.html` | Project Atlas | Clustered map of curated and detected U.S. projects, filters, list synced with the map, detail panel with timeline and related headlines; deep links with `#project=ID`, `#company=Name`, `#state=TX` |
+| `companies.html` | Companies | Company cards and profiles computed from the data; deep links with `#Name` |
+| `learn.html` | Learn | Ten modules from beginner to advanced with diagrams, calculators, quizzes and saved progress |
+| `methodology.html` | Methodology | Sources, tagging, detection, limitations, how to report an error |
+| `projects.html` | Redirect | Sends old map links to the Atlas |
+
+Shared code: `assets/style.css` (all design tokens and components), `assets/app.js` (shell, loader, data loading, helpers), `assets/companies.js` (one-line company descriptions). Each page has its own script in `assets/`. Leaflet and Leaflet.markercluster load from unpkg with subresource integrity; map tiles come from CARTO's dark basemap.
+
+Brand files: `assets/mark.svg`, `assets/logo.svg`, `assets/favicon.svg`, `assets/favicon-32.png`, `assets/apple-touch-icon.png` and `assets/og.png`. The PNGs are rendered from the SVGs by `scripts/brand/render.mjs` (optional, needs Node and Playwright).
+
+## How the data runs
 
 ```
-GitHub Actions (twice daily)
+GitHub Actions (06:17 and 18:17 UTC)
   -> scripts/fetch_news.py
-     reads  data/feeds.json          (which feeds to pull)
-     reads  scripts/gazetteer.json   (place names -> coordinates)
-     writes data/news.json           (the feed, U.S. only, tagged with states)
-     writes data/project_candidates.json (projects found in headlines)
+     reads  data/feeds.json             Google News RSS searches and Google Alerts feeds
+     reads  scripts/gazetteer.json      place names -> coordinates (U.S. and foreign)
+     writes data/news.json              headlines with category, state(s), companies, MW/$ figures
+     writes data/project_candidates.json projects detected in headlines (U.S. only)
   -> commits the two JSON files
-GitHub Pages serves the HTML, which fetches the JSON in the browser
+GitHub Pages serves the HTML; the pages fetch the JSON in the browser
 ```
 
-## Set up (about 10 minutes)
+`data/projects.json` holds curated projects and is edited by hand.
 
-1. **Create the repo and push.** Public repo, so GitHub Pages is free.
-   ```bash
-   cd datacenter-watch
-   git init
-   git add .
-   git commit -m "Data Center Watch: initial site"
-   gh repo create datacenter-watch --public --source=. --push
-   ```
-2. **Turn on Pages.** Repo Settings, Pages, Source: Deploy from a branch, Branch: `main`, folder `/ (root)`, Save. The site appears at `https://<your-user>.github.io/datacenter-watch/` after a minute.
-3. **Let the workflow commit.** Repo Settings, Actions, General, Workflow permissions: choose "Read and write permissions", Save.
-4. **Run it once by hand.** Actions tab, "Update data center news", Run workflow. Reload the site when it finishes; the feed fills in.
-5. **Add Google Alerts (optional).** At google.com/alerts create an alert (for example `"data center" announced`), click Show options, set Deliver to: RSS feed, create it, then copy the RSS link from the orange icon next to the alert. Paste the URL into the `google_alerts` list in `data/feeds.json` and commit. Add as many alerts as you like.
-6. **Curate the map and companies.** Edit `data/projects.json` to add, correct or remove projects (each needs an `id`, a two-letter `state`, and `companies` slugs from `data/companies.json`). Edit `data/companies.json` to add companies; `aliases` are the names matched in headlines. The seed entries are from public reporting and are flagged `verified: false` until you check them.
+Fields written on each headline: `id, title, link, source, published, feed, category, tags, locations, states, state, companies` and, when present, `capacity_mw, investment_usd_b`. Candidates add `status, location, lat, lon, state, companies, precision, source, source_url, published`.
+
+Categories: New Announcement, Expansion, Construction, Power / Utility, Land Acquisition, Policy / Permits, Deals / Investment, Operations, AI Infrastructure, General.
+Statuses: Announced, Planned (curated only), Under construction, Operational, Expansion.
+
+## Set up
+
+1. Push this repo to GitHub as a public repository.
+2. Settings → Pages → Source: Deploy from a branch, branch `main`, folder `/ (root)`.
+3. Settings → Actions → General → Workflow permissions: Read and write permissions.
+4. Actions → "Update data center news" → Run workflow once.
 
 ## Tuning
 
-- Schedule: edit the cron line in `.github/workflows/update.yml` (default 06:17 and 18:17 UTC).
-- Searches: edit `google_news` in `data/feeds.json`. Google News search syntax works (`OR`, quotes, `when:7d`).
-- Categories: edit `CATEGORY_RULES` in `scripts/fetch_news.py`. First matching rule wins.
-- Places: add any city, county or country to `scripts/gazetteer.json` with `[lat, lon, level, display]`. U.S. entries end in `, US`; foreign entries are used to filter stories out.
-- U.S. filter: `FOREIGN_RE` and `FOREIGN_SOURCES` in the script. Run `python scripts/fetch_news.py --no-fetch` to re-tag the existing data after editing rules.
-- Retention: `NEWS_MAX_AGE_DAYS` (60) and `CAND_MAX_AGE_DAYS` (180) in the script.
+- Searches: `google_news` in `data/feeds.json`. Add Google Alerts RSS URLs to `google_alerts`.
+- Topics: `CATEGORY_RULES` in `scripts/fetch_news.py` (first match wins).
+- Companies: `COMPANIES` and `ALIASES` in the script, plus a description in `assets/companies.js` with the same name.
+- U.S. filter: `FOREIGN_RE` and `FOREIGN_SOURCES` in the script.
+- Places: `scripts/gazetteer.json`, `name: [lat, lon, level, display]`; U.S. displays end in `, US`.
+- Retention: `NEWS_MAX_AGE_DAYS` (60) and `CAND_MAX_AGE_DAYS` (180).
 
-## Run locally
+## Run and test locally
 
 ```bash
 pip install -r scripts/requirements.txt
-python scripts/fetch_news.py
-python -m http.server 8000   # then open http://localhost:8000
+python scripts/fetch_news.py                       # fetch and rebuild the data files
+python scripts/fetch_news.py --no-fetch            # re-tag stored data after changing rules
+python scripts/fetch_news.py --sample scripts/sample_feed.xml --out /tmp/rack-test   # offline test
+python -m http.server 8000                         # then open http://localhost:8000
 ```
 
 ## Notes
 
-- Google News RSS links go through news.google.com redirects to the publisher; that is normal.
-- Category and location tagging is keyword based. Expect some misses; fix the rules rather than the data files, which get rewritten on every run.
-- Leaflet, the marker cluster plugin, topojson-client and the U.S. state boundaries (us-atlas) are vendored in `assets/vendor/` and `data/us-states.json`. Street labels load from CARTO's public basemap tiles; there is no map API key to manage.
+- Only headlines and short machine-generated summaries are shown; article text is never copied.
+- Tags and pins are automatic and can be wrong. See `methodology.html` for limitations and how to report errors.
