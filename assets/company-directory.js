@@ -28,7 +28,7 @@
     const tiles = [["building", "Companies tracked", cos.length, "var(--cyan)", "across " + new Set(cos.map((c) => c.info.type)).size + " roles"],
       ["activity", "Active in the data", active, "var(--accent)", "with projects or headlines"],
       ["map", "Projects linked", linked, "var(--st-announced)", "curated and detected"],
-      ["news", "Headline mentions", mentions, "var(--c-deals)", "in the last 90 days"]];
+      ["news", "Story mentions", mentions, "var(--c-deals)", "news stories in the last 90 days"]];
     $("#stats").innerHTML = tiles.map((t) => '<div class="card stat" style="--tone:' + t[3] + ";--glow:color-mix(in srgb," + t[3] + ' 22%,transparent)"><div class="stat-label">' + R.icon(t[0]) + t[1] + '</div><div class="stat-value" data-v="' + t[2] + '">0</div><div class="stat-hint">' + t[4] + "</div></div>").join("");
     $("#stats").querySelectorAll(".stat-value").forEach((el) => R.countUp(el, Number(el.dataset.v)));
   }
@@ -59,7 +59,7 @@
         '<p class="co-desc">' + R.esc(c.info.desc) + "</p>" +
         (c.major.length ? '<p class="co-latest"><b>Major projects:</b> ' + c.major.map((p) => R.esc(p.name)).join(", ") + "</p>" : "") +
         (last ? '<p class="co-latest"><b>Latest:</b> ' + R.esc(last.title) + "</p>" : '<p class="co-latest co-empty">No tracked headlines yet.</p>') +
-        '<span class="co-metrics"><span><b>' + c.projects.length + "</b><span>projects</span></span><span><b>" + c.states.length + "</b><span>states</span></span><span><b>" + c.news.length + "</b><span>headlines</span></span></span></article>";
+        '<span class="co-metrics"><span><b>' + c.projects.length + "</b><span>projects</span></span><span><b>" + c.states.length + "</b><span>states</span></span><span><b>" + c.news.length + "</b><span>stories</span></span></span></article>";
     }).join("");
     R.reveal($("#grid"));
   }
@@ -73,7 +73,7 @@
     m.innerHTML = '<div class="modal-head"><div class="co-head"><span class="lettermark lg" aria-hidden="true">' + R.esc(R.letters(c.name)) + '</span><span><h2 id="modalTitle" style="font-size:24px">' + R.esc(c.name) + "</h2><small>" + R.esc(c.info.type) + "</small></span></div>" +
       '<button class="icon-btn close" id="modalClose" aria-label="Close company profile">' + R.icon("x") + "</button></div>" +
       '<div class="modal-body"><p style="margin:0;color:var(--text-2)">' + R.esc(c.info.desc) + "</p>" +
-      '<div class="kv four">' + [["Tracked projects", c.projects.length], ["Curated", c.projects.filter((p) => p.curated).length], ["Active states", c.states.length], ["Headlines (90 days)", c.news.length]].map((k) => "<div><span>" + k[0] + "</span><b>" + k[1] + "</b></div>").join("") + "</div>" +
+      '<div class="kv four">' + [["Tracked projects", c.projects.length], ["Curated", c.projects.filter((p) => p.curated).length], ["Active states", c.states.length], ["Stories (90 days)", c.news.length]].map((k) => "<div><span>" + k[0] + "</span><b>" + k[1] + "</b></div>").join("") + "</div>" +
       (c.states.length ? '<div><h3 class="sub-h">Active states</h3><div class="news-tags">' + c.states.map((s) => '<span class="tag plain">' + R.esc(R.STATES[s] || s) + "</span>").join("") + "</div></div>" : "") +
       '<div style="display:flex;gap:8px;flex-wrap:wrap">' + (c.projects.length ? '<a class="btn sm primary" href="atlas.html#company=' + encodeURIComponent(c.name) + '">' + R.icon("map") + "View on the Atlas</a>" : "") +
       '<a class="btn sm" href="newsroom.html#company=' + encodeURIComponent(c.name) + '&range=90">' + R.icon("news") + "All headlines</a></div>" +
@@ -119,7 +119,8 @@
   function openFromHash() { const n = decodeURIComponent(location.hash.slice(1)); if (n && window.RR_COMPANIES[n]) profile(n); }
 
   Promise.all([R.projects(), R.news()]).then(([projects, n]) => {
-    cos = build(projects, n.items);
+    // Count stories, not headlines: several outlets covering one event count once.
+    cos = build(projects, R.stories(n.items));
     stats(projects);
     types();
     grid();
