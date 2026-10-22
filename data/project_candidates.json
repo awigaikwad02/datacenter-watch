@@ -1,24 +1,7 @@
 {
- "updated": "2026-10-22T17:15:30+00:00",
- "count": 197,
+ "updated": "2026-10-22T20:36:48+00:00",
+ "count": 198,
  "projects": [
-  {
-   "id": "b9f68291781fddb2",
-   "name": "Tuolumne County Planning Commission Hears Opposition To Data Centers",
-   "status": "Announced",
-   "location": "Tuolumne County, California, US",
-   "lat": 38.028,
-   "lon": -119.955,
-   "state": "CA",
-   "companies": [],
-   "utilities": [],
-   "precision": "county",
-   "cluster_id": "5bd1f4f4389cd33f",
-   "source": "myMotherLode.com",
-   "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUVR0ektKMS1LOTJEY2w1X1ZzM0dTQWY2S2c4b09Wdll4bF8zYmJydUhLMk42UjRBUFlYOXpPY29QeEtLbWpMcEZObUJKeGZnZlVFYVJqcWpCdlZOM3QxZTlZQmZUTnkyM0I2RkxQVmc0MkdXdUdkWTVEOGVqYmhwTHRRQndGXzVST3g3YmZfRjN1SWNueE9ob0FNcTVSaVMwVk1aR1dPQWNKSkFIRGl6UVNlSDlRQjVHNURFSmE5TdIBvwFBVV95cUxQUVR0ektKMS1LOTJEY2w1X1ZzM0dTQWY2S2c4b09Wdll4bF8zYmJydUhLMk42UjRBUFlYOXpPY29QeEtLbWpMcEZObUJKeGZnZlVFYVJqcWpCdlZOM3QxZTlZQmZUTnkyM0I2RkxQVmc0MkdXdUdkWTVEOGVqYmhwTHRRQndGXzVST3g3YmZfRjN1SWNueE9ob0FNcTVSaVMwVk1aR1dPQWNKSkFIRGl6UVNlSDlRQjVHNURFSmE5TQ?oc=5",
-   "published": "2026-10-22T16:06:11+00:00",
-   "detected": "auto"
-  },
   {
    "id": "e352141024c40ff6",
    "name": "Amazon cancels plan for data centers in Loudoun County, donates land",
@@ -35,7 +18,7 @@
    "cluster_id": "ed18adfbe69a6b24",
    "source": "The Washington Post",
    "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNXzBsaFpHTHYtSTd1RWVXS0pPSHB6amo2NUhOWkNNUHlTMlRJTTR5aUhKSGRKZm1JcjFkSWdwbWlmYy1vTlBfb0hwS1NVSlFhZFhURU1LQ0Y0dC1PeWNMZFdQYWNFYzQyWmRrR0txNFRjbHFvOHllc0RiVzJWdFF0X2ZZcVBISU5OWmNIdEFwUzlWOWlqdlV5YjBCdW40cHBoYUNGbmY3OGdiWUd5dWtSSGVRT3lzVFVvZ1ZsR3FB?oc=5",
-   "published": "2026-10-22T15:55:39+00:00",
+   "published": "2026-10-22T20:25:39+00:00",
    "detected": "auto"
   },
   {
@@ -53,6 +36,40 @@
    "source": "The Palm Beach Post",
    "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcDc5ZVlrQWFMS0UtVVg2aW9VQWJWTThZYlBwal9VLS03ajhlXzU5SmdUckxkT0k4b2ozNWtKdThocEJrOGdWZ1hqMm1CNW5kNTJ1ZF9JanMydXZLS1BaaWNwQWZ6Z0tVTTFhWTBqdW9abGNxQXRvMmhFVExhS3B1d3ZBdl9jc1RjU0JNZ1Z5Q0JSYXZ2ZDVpcHZURUh2Q2dvTVA2V2MwSi1qTnJKcVBLZUYyczI4U1BqQ1BjQjFpQmxaYUZqNUNBWk5UT1ppVVhwdGJKRE1hUXo3MGtJSFFLeVZQbHA4bUlubnc?oc=5",
    "published": "2026-10-22T15:42:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "0fcd1c21c9d29a28",
+   "name": "Memphis fails to pass 1-year data center moratorium, instead opting for a shorter-term ban",
+   "status": "Cancelled / Blocked",
+   "location": "Memphis, Tennessee, US",
+   "lat": 35.15,
+   "lon": -90.05,
+   "state": "TN",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "7c79287665342b13",
+   "source": "CBS News",
+   "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSUUyT2lleXhFU09XQWQxbFhranQ3UV93WmpkLU56YUg1UWtJM2lERHMwaDNHWnlVd1VvR1lIdHpaOU5hVUM5REdJaHZ2YUdtc29VUzlsYTlQZnZlcGU5YTl3Um5PUlR1TGlXZnZiQ1BtQng1LW9EaDZWbTRtYVVuSmx2dmM?oc=5",
+   "published": "2026-10-22T15:38:30+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "b9f68291781fddb2",
+   "name": "Tuolumne County Planning Commission Hears Opposition To Data Centers",
+   "status": "Announced",
+   "location": "Tuolumne County, California, US",
+   "lat": 38.028,
+   "lon": -119.955,
+   "state": "CA",
+   "companies": [],
+   "utilities": [],
+   "precision": "county",
+   "cluster_id": "5bd1f4f4389cd33f",
+   "source": "myMotherLode.com",
+   "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVDNyWGtrY19IV3pudUF0RHd4OU1mOS05SVlUNXlDbUM3cUl1UkpjRWt3M3RCNDZJTUFENkxEUUhQVlJDSzJSZUp3aS1tXzE3VFhaZjVfUkFHUUwxX0NrSFFKSGV0djB5djFIalJ0dG5PalFuQzMzSEZ1TGdDOVQtTVl3cWU4V09UOGJpNjFRSmc1TFdUcVlQMU1ZcDlZQVdjaF9fV1E5V21MRC1YWmlRQnY5eE81YnpkaEHSAb8BQVVfeXFMUFFUdHpLSjEtSzkyRGNsNV9WczNHU0FmNktnOG9PVnZZeGxfM2JicnVISzJONlI0QVBZWDl6T2NvUHhLS21qTHBGTm1CSnhmZ2ZVRWFSanFqQnZWTjN0MWU5WUJmVE55MjNCNkZMUFZnNDJHV3VHZFk1RDhlamJocEx0UUJ3Rl81Uk94N2JmX0YzdUljbnhPaG9BTXE1UmlTMFZNWkdXT0FjSkpBSERpelFTZUg5UUI1RzVERUphOU0?oc=5",
+   "published": "2026-10-22T15:37:34+00:00",
    "detected": "auto"
   },
   {
@@ -76,6 +93,23 @@
    "id": "54830f419c7e4b5e",
    "name": "Pa. borough denies new data center proposal in unanimous voite",
    "status": "Cancelled / Blocked",
+   "location": "Pennsylvania, US",
+   "lat": 40.9,
+   "lon": -77.8,
+   "state": "PA",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "54830f419c7e4b5e",
+   "source": "PennLive.com",
+   "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcDR2VlVEekQ4YThhRVRoYmM2MzZMLVVGNXZRT24yb043NXdmbFZjR2hjQWZSQktvczVlUzk5QmxXdmdNZjZ3cUh0WFg4bFRwZEdGYTJFeEEwS0FLVnZvdy1WNTBtZTRtLThxQUVCRzR6dDJ6cDhBVHFER3BnWFlwd1c0a0xGbFdJOThvVlN2M19jel9VQ3hfTUxKdnJXeFZYZTIwSmxoNNIBuwFBVV95cUxNSkFjVFFNMjIybUpNbnk0QVVkNE9jZVBRLTJUOXpmQUd2RHlFQllrQTQ2ZkJvNEM2dFE1V1hwWGp4ajJCTXdmN1c4YVkyXzNPYV9ncjRxWHFQdmxhalJ3QVJOWjlvZThXYnRCazBJajQ4TjBPVDZBRURPOENpWk1RS0x0YjVGTXZIUUNJY3Q3YkdtMTdIekZTSkgycGZBUG85Qk8wYnVOaWY3R3YyZE9ocWh1WmVmODdVMFg0?oc=5",
+   "published": "2026-10-22T14:50:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "267781fa091b7299",
+   "name": "Pa. borough denies new data center proposal in unanimous vote",
+   "status": "Announced",
    "location": "Pennsylvania, US",
    "lat": 40.9,
    "lon": -77.8,
@@ -915,23 +949,6 @@
    "source": "Northern News Now",
    "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNR3U5RXFPRmllSkl3MDJ4dlVGOTVWZmNXcTNIQ1lrQXNTUFRjc1p4aDEzaVo0NEpRakpOd04wTUhydEtMN1dFekZqOXZYdFlkMmZGN05ZOFNGMTZGaWxGSENHdG9zYlhaTGNESm1DVGVPbGFwenpGdm8wcnVudVZPWEd6a2RDcnVmRHNTNG5TdDFidDJkdDU4ZU9IX3lVdDlhMmF6cnVwYlhEQS1wYVVsRk9GU2pfT1JrQ3lr0gHPAUFVX3lxTE5SQ3dSclZnWDRHN1RjY1BqbFhDOVc1ZWFZajZ3eUxTaGp1Z0ZUVlo4ay1sQmZnbEI1OHV0QnE1Z1dINXJjeTM4ektoOUtMZVN0dXVlSXllVExlaURVZ0tHV2xkdjNjam5aVGlrOW81c1VCel9QYmhzMjBHZWJ2VEI5aFB3c1lJUlluaDRiN25LZng3SlgwbktpektjTEVEZExyUHlOVGRGZlgzdGhzU2NnQkJEbS1XdU8yWW42UDByc3dmamZjUmZ3MlNnVTZzMA?oc=5",
    "published": "2026-10-21T04:18:00+00:00",
-   "detected": "auto"
-  },
-  {
-   "id": "0fcd1c21c9d29a28",
-   "name": "Memphis fails to pass 1-year data center moratorium, instead opting for a shorter-term ban",
-   "status": "Cancelled / Blocked",
-   "location": "Memphis, Tennessee, US",
-   "lat": 35.15,
-   "lon": -90.05,
-   "state": "TN",
-   "companies": [],
-   "utilities": [],
-   "precision": "city",
-   "cluster_id": "7c79287665342b13",
-   "source": "CBS News",
-   "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSUUyT2lleXhFU09XQWQxbFhranQ3UV93WmpkLU56YUg1UWtJM2lERHMwaDNHWnlVd1VvR1lIdHpaOU5hVUM5REdJaHZ2YUdtc29VUzlsYTlQZnZlcGU5YTl3Um5PUlR1TGlXZnZiQ1BtQng1LW9EaDZWbTRtYVVuSmx2dmM?oc=5",
-   "published": "2026-10-21T03:48:00+00:00",
    "detected": "auto"
   },
   {
@@ -2473,23 +2490,6 @@
    "detected": "auto"
   },
   {
-   "id": "a348bf41c23c0474",
-   "name": "Virginia bill would pause data center approvals",
-   "status": "Announced",
-   "location": "Virginia, US",
-   "lat": 37.5,
-   "lon": -78.9,
-   "state": "VA",
-   "companies": [],
-   "utilities": [],
-   "precision": "state",
-   "cluster_id": "a348bf41c23c0474",
-   "source": "The Black Chronicle",
-   "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQ1A4VkdsOEZORDVRc05lQThLZmstenVjUkdPdHhFcW5BZmRnRlNRZjVWQWd6N1pDb2tseEhUc09IbVp1QVAzeW9Iek9ORkJvWWxVRjF6Z3NWa3NmQUlxTVFsZEhkNHB1aXhmWHlYMzk5dE9NOXJ1MEswVzFKc2tFTFJUY05SamtGSXNiOEVsbmRyd0FyRld2b2xBc0EwZw?oc=5",
-   "published": "2026-10-16T21:46:00+00:00",
-   "detected": "auto"
-  },
-  {
    "id": "3e15b68fc960c926",
    "name": "Google confirmed as company behind proposed Roanoke County data center",
    "status": "Announced",
@@ -2644,6 +2644,23 @@
    "source": "Data Center Dynamics",
    "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTXcyUjVyQWV6YWFLeU5ObGJ1T2JnaWdERThTT3lrdFFHNHdYVzl4ZUI0aDJuSDNDWW03VjZlOGJxdFNFdVoybEFFdWxsRW1Td3o0dldXLXdyTXN0bVVLTDBwdUdHaHNoMmRYSmpRR0loMjNJUk03OEpRczJfbS0xZlRHYnpDWWkyY01VSFRaRm5TUzFYa2hFclZIM2JHUUM1cWlTZW5aSWpvSTJaSmtJMUl3YmtVcWJxTTRLVXRXR2FrZw?oc=5",
    "published": "2026-10-16T14:06:42+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "a348bf41c23c0474",
+   "name": "Virginia bill would pause data center approvals",
+   "status": "Announced",
+   "location": "Virginia, US",
+   "lat": 37.5,
+   "lon": -78.9,
+   "state": "VA",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "a348bf41c23c0474",
+   "source": "The Center Square",
+   "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSDI0TzZpd0I3ZXdmR25UUDktRjhBVzcwS1ExQ3h2a01wb1lTLThnMWtpdE4xSm13endDcV9RcnB3c3dISXIxeF9mZkxLLWc3SEQ2VU5qY3AyRGpHOVlaZnkzVjFNaC04cUdoN096OVFQNXlhbWp4NVFVMlliTjVNZkhnSF9zNU5aVG5lNjJrWTZjbi010gGaAUFVX3lxTE40ZUZ0U1RMUjVWbmwxd1A0QW1IRlhfd1JHZ2lCd010aENSSWVRZnpqTTlTZmxqU25CNEl2N3VYYUhUUmRQTXRxdFhmdUY2c2dyejBKMENOTmU4c3VjX2Vfb09oM0w1c2R1bTBHY2hMSXZIQ0hSckRoV29Ecjd3dFNETERJeTVNYm44MzQ0NEpMZEJZM2h3a0dOLXc?oc=5",
+   "published": "2026-10-16T13:51:00+00:00",
    "detected": "auto"
   },
   {
