@@ -1,7 +1,41 @@
 {
- "updated": "2026-10-22T00:42:41+00:00",
- "count": 174,
+ "updated": "2026-10-22T06:09:22+00:00",
+ "count": 181,
  "projects": [
+  {
+   "id": "e0bc785afc30be87",
+   "name": "Full story: Archbald council unanimously denies Wildcat Ridge Data Center Campus",
+   "status": "Cancelled / Blocked",
+   "location": "Pennsylvania, US",
+   "lat": 40.9,
+   "lon": -77.8,
+   "state": "PA",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "fded04414cf97150",
+   "source": "Scranton Times-Tribune",
+   "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRVBHQ1d4SE5jSkxHZnRXQy10dmNpRFVYa0pQRUM0VklqNmVUUU0zb2xQREdWRERhQXVfMFFvblpxOW4wTXVRaHFYOW95LWtXeW1PMHVmdnBVSDd3RWU4UWJrSGc3dHhUYlNkRW1FYUF4ZmVvakM1S1FvUER0ZjZOWF80UF9NQ0dDLXNtS0lJUHB4bnFIQXpPMWNGUGRUakFZVF9BbmFtMldhSU9vQ0JtSm9WYw?oc=5",
+   "published": "2026-10-22T05:15:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "d2bffb3b6300ba4e",
+   "name": "FOX13 Investigates 135-day data center moratorium passed by City Council",
+   "status": "Cancelled / Blocked",
+   "location": "Tennessee, US",
+   "lat": 35.9,
+   "lon": -86.4,
+   "state": "TN",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "d2bffb3b6300ba4e",
+   "source": "FOX13 Memphis",
+   "source_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNMWtYZjRMVFJSejJNUDNJb2lYUEpxOXJhYk9uU0JPeF9qbGItVjZycGZVc0VmVVNualpSamppS0U5Q2ttRHVYU0M2N0loT0diZ3BDSlBYMVB6dUdPTDNIZ1VRaXdWcVdiUFZJbm1nNldvRVZiaXE4Z0U4RjZna1VyY3VkRUdBVExsWGdBdTRlMl9jdFQ5cFpYM0p5QmJHRUhIR2EwZnN1Tk5iMjZtQzdKUldVZTFDSUFkcHVydmJwcl91ckM4VUlqTGJadkdCUFEtOU1iUTRrbUgxb0stcmp3d1pGdnFWZXBMV3NwYg?oc=5",
+   "published": "2026-10-22T01:42:00+00:00",
+   "detected": "auto"
+  },
   {
    "id": "d669f2877b3f68c6",
    "name": "Lawmakers question head of MIDA over controversial Box Elder County data center proposal",
@@ -57,6 +91,23 @@
    "investment_usd_b": 0.427
   },
   {
+   "id": "69344f0c70323916",
+   "name": "'It's a slap in the face': Palm Beach County zoning staff approve more data center space for Project Tango",
+   "status": "Announced",
+   "location": "Palm Beach County, Florida, US",
+   "lat": 26.647,
+   "lon": -80.466,
+   "state": "FL",
+   "companies": [],
+   "utilities": [],
+   "precision": "county",
+   "cluster_id": "89dbf7b8a3434442",
+   "source": "WPBF",
+   "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOHNGYzdzTy1lNHI1cDg3VFlISDc5RHBPaFQ3LUNBUXFrcUF3eDVyNDVwNFR0Qk9HYzBXZ1doV3hGREw4R2dUeHhMQlpOcDVEUlduQmtDbFNLV3VFcGtUZ3hjMzQ1U2RaT0djNWxLZzQwVDRHemJXVGk2QzJsdE8zY2ZTbk5nSDFKRHdvcXIyTHZhUQ?oc=5",
+   "published": "2026-10-21T23:00:00+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "c7e3f30b07af9885",
    "name": "Amazon cancels data centers for GW Ashburn campus",
    "status": "Cancelled / Blocked",
@@ -72,7 +123,7 @@
    "cluster_id": "ed18adfbe69a6b24",
    "source": "Virginia Business",
    "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMVZyUTFEUTNXN2ZSTDh1bFR4VnZXaGVESXJSbl9OamoxWU5pSkE0OGg2Z051Y1c0YTVrNWtPbzlBVE9neE9iSEhZZjU5U3FhZFdPUmVWTDg2aUdzYXQtTlV4dmNKejJ2Qy0zeHVjNHpVS0kyN2N0ekNzU3VXRzE0WnI3OVZJUQ?oc=5",
-   "published": "2026-10-21T22:18:45+00:00",
+   "published": "2026-10-21T22:28:50+00:00",
    "detected": "auto"
   },
   {
@@ -128,6 +179,26 @@
    "investment_usd_b": 3.6
   },
   {
+   "id": "8ae11f5bfc5da64b",
+   "name": "Soluna and Applied Digital to build 50 MW wind-powered AI data center in Texas",
+   "status": "Announced",
+   "location": "Texas, US",
+   "lat": 31.5,
+   "lon": -99.3,
+   "state": "TX",
+   "companies": [
+    "Applied Digital"
+   ],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "05e3bbc8f824f676",
+   "source": "Blockspace Media",
+   "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Ld093NEFDUVhvcW4tamtvTTkzMlhwT2lrRG5hREF1TTZKZU1keXIyVUVNc19pZkFyUmYxWDRDangwdmhFMVA2TUlGR1NKQkJfVXFkYXVxdUJfR01iRGFaT2tUcEVaNUdYbVpSb29fekp5aEM5SmlV?oc=5",
+   "published": "2026-10-21T20:06:58+00:00",
+   "detected": "auto",
+   "capacity_mw": 50
+  },
+  {
    "id": "68cf50ba23d55c73",
    "name": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana",
    "status": "Announced",
@@ -144,6 +215,23 @@
    "published": "2026-10-21T19:08:34+00:00",
    "detected": "auto",
    "capacity_mw": 10
+  },
+  {
+   "id": "3749531349a05f65",
+   "name": "Is Data Center Expansion in Utah a Concern?",
+   "status": "Expansion",
+   "location": "Utah, US",
+   "lat": 39.3,
+   "lon": -111.7,
+   "state": "UT",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "3749531349a05f65",
+   "source": "uvu review",
+   "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5uSGxHQ1gxOURSTVdoYnJfVTlFUmZsUjdDMHo0Y3RqbVhMOXZoSGdmS1NPcmxfb201aGVoMll1RTNfWmkwd1NKWDdZdVR4NURxNWRfZURvLUVxd1JIeWE3c0NEUHcyN3N2WFA3bjFkVjhTem1hZlcybA?oc=5",
+   "published": "2026-10-21T18:56:00+00:00",
+   "detected": "auto"
   },
   {
    "id": "36d94139ab821e00",
@@ -163,6 +251,28 @@
    "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTQxT1JSSkhhZFJHamQwb1JyVEdKYkZBUm9sbXVOdFpEZlAybWJITDd1aUo4cWxLZGxnbU44MHhmeFpSb3gzdFhrNm1vUXg5S2RYWE91M29EQlZfTklxaEdGZkIzcm10RWp3VS1rcGEwLWpFWnhraEJhQ3hoVVdwclBLdlpmWllRdFFV?oc=5",
    "published": "2026-10-21T18:49:38+00:00",
    "detected": "auto"
+  },
+  {
+   "id": "7915b37c7de43180",
+   "name": "Entergy plans $600 million power upgrades for Google's West Memphis data center",
+   "status": "Announced",
+   "location": "West Memphis, Arkansas, US",
+   "lat": 35.15,
+   "lon": -90.18,
+   "state": "AR",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [
+    "Entergy"
+   ],
+   "precision": "city",
+   "cluster_id": "7915b37c7de43180",
+   "source": "kjnbtv.com",
+   "source_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRjRQSUppeGlUT0dzSWdGdnNkUkY1bDFNb3FMc3JadVJaUHVHUHMweG1LallwRUVUR1kxd1EtaW5vcjZHcW0tUHBsWGFYdUhQS3lZejZESDhqaFR4TUlhMktLdGIwQmNzU2Y2VkpVRm1CTE1NQk5femNNTEdhbkFjN3BiUjM3T0N4dHVpZVZ3LXJlYl84M296WVNPRU1tSUtFMkZkLWNTTTE2b0FQZ2Z1ZkJCTVZmS2U3dDBFeV8xcWQ4U3BQZFpwSTZHOFdETnRPbmcwdnVaandvcjJhZV9UdWNpMEJ5YVZJSHphYmtoakQxQnc?oc=5",
+   "published": "2026-10-21T18:38:00+00:00",
+   "detected": "auto",
+   "investment_usd_b": 0.6
   },
   {
    "id": "2ded3f5850a23b14",
@@ -235,26 +345,6 @@
    "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWU41Y25oNm16ckE5MXlXWGhCRGR2N0ZRdkV2OTVocXktbUFCTWtZRzJ4N0kwQjk2V25GcGZWQXZqUkpUSTQxbE9sek1TbkZ2WXc2eHMwZ085T25zTC1pSm92ZTgyc2lOSzZIcm5PRnRuQkNMUVRBRHY0MmVyVF82cUhkY2VzcDAzZjNjZDlPTnBLaE1rdW9PUWQ1Qkw1ZFI2R0xDUktCM3NGQzQ3RFZBeHdrMk5vQUFuaUNRWWdTRE1CVWVIbXBV?oc=5",
    "published": "2026-10-21T16:05:33+00:00",
    "detected": "auto"
-  },
-  {
-   "id": "8ae11f5bfc5da64b",
-   "name": "Soluna and Applied Digital to build 50 MW wind-powered AI data center in Texas",
-   "status": "Announced",
-   "location": "Texas, US",
-   "lat": 31.5,
-   "lon": -99.3,
-   "state": "TX",
-   "companies": [
-    "Applied Digital"
-   ],
-   "utilities": [],
-   "precision": "state",
-   "cluster_id": "05e3bbc8f824f676",
-   "source": "Blockspace Media",
-   "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Ld093NEFDUVhvcW4tamtvTTkzMlhwT2lrRG5hREF1TTZKZU1keXIyVUVNc19pZkFyUmYxWDRDangwdmhFMVA2TUlGR1NKQkJfVXFkYXVxdUJfR01iRGFaT2tUcEVaNUdYbVpSb29fekp5aEM5SmlV?oc=5",
-   "published": "2026-10-21T14:35:53+00:00",
-   "detected": "auto",
-   "capacity_mw": 50
   },
   {
    "id": "c3f8f11c89c9596e",
@@ -384,6 +474,25 @@
    "detected": "auto"
   },
   {
+   "id": "33abecd9d7f15be0",
+   "name": "Soluna, Applied Digital Plan 50-Megawatt AI Data Center in Texas",
+   "status": "Announced",
+   "location": "Texas, US",
+   "lat": 31.5,
+   "lon": -99.3,
+   "state": "TX",
+   "companies": [
+    "Applied Digital"
+   ],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "05e3bbc8f824f676",
+   "source": "TheEnergyMag",
+   "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT1lFajk1SFlNY1VBZ2JCczdOZTJUQ1MwRWJObHFtVXFUbTgyVUhxS1RDSWVwWGE0bFlDQjNER2t3RmN1RHJQbUoyWTFnV1FKSWlaSzkxeU11ZkJtOTdtMUR4NzdpR3lzR1VyM2xXRW1sZGYzU2VIMnBDNnIwT3hROTA5LTAxU2ZJeTZabkNkZUJfNDltNVdRUQ?oc=5",
+   "published": "2026-10-21T12:01:02+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "d2ff3d52e9211a07",
    "name": "‘Trying to get this right.’ Cleveland extends data center moratorium through January",
    "status": "Cancelled / Blocked",
@@ -483,7 +592,7 @@
    "companies": [],
    "utilities": [],
    "precision": "county",
-   "cluster_id": "c17a77b60c861332",
+   "cluster_id": "6edc47c8d9198b9f",
    "source": "Alabama Reflector",
    "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMUlnY2JfZ1FHZEpDaXY3SzQyd191emZSMHBpaHVoMmJjVXdRNmtrby1sZmM2cEFmRTBJUXNvZWd2ajdyR2VlMUJJc0NTdWdmZk9fYW0tZE9nMU1tb1NBVDRIUUYwMUtWWTlBRHBJTDlNLWx2Ny05SnhCY01jMjV5bUluSUVqamMza0h6ZUhrZkdrc21wNXdTWERtT2o2RjJ4Vlg3anVHd0xHYjQyeFlEdg?oc=5",
    "published": "2026-10-21T10:04:54+00:00",
@@ -538,8 +647,8 @@
    "precision": "source",
    "cluster_id": "ff3f6c79efa80eb9",
    "source": "NBC4 WCMH-TV",
-   "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbW12ckFXM2pPdVpORmJxcFdTVjdyZ2VNeDI3by1MQmdJUTViM0RzdXdwU0VMSEJHZG13THZBS1lEcXlrT3A5YWtLeGE1dElDTTlpS3V3UUV0cHVCbkN4TmR2NG1Gd29JUHVJSUdiQXRpQXpDMF9ZLUNhTXdFdERRbkJGdVJhOHZYZkJPX2VweGl4WFN2c2VCVnFRdUl5d3k2em1CcUl4U1hlQ2oxbW9ITUhGeGNrMnR2WDVPeFZTbjg0ZjTSAcMBQVVfeXFMTW1tdnJBVzNqT3VaTkZicXBXU1Y3cmdlTXgyN28tTEJnSVE1YjNEc3V3cFNFTEhCR2Rtd0x2QUtZRHF5a09wOWFrS3hhNXRJQ005aUt1d1FFdHB1Qm5DeE5kdjRtRndvSVB1SUlHYkF0aUF6QzBfWS1DYU13RXREUW5CRnVSYTh2WGZCT19lcHhpeFhTdnNlQlZxUXVJeXd5NnptQnFJeFNYZUNqMW1vSE1IRnhjazJ0dlg1T3hWU244NGY0?oc=5",
-   "published": "2026-10-21T05:30:00+00:00",
+   "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQzc1d05nYkVEQU5DV1VsdjV1RmJEa1NseXJhbUlrejJ5NjRNNThXUXpheFlZNnU4VjQ4YVFNcW1hc2dxMUZnd3BfVXVmVm1uM0o2WVNJRkI0YzFLZ1EzM205LWlKRlIyTTJWR0dBdkNVUU53ekF1WTl5RG50NlRqUG5ZME1mbjEzN01UTjZhcmVMdXF3aUhydWM5S0twdnprTzBObTdidUtzR2RPVWpxZlZkT2F1WXI1OWtWWllB0gHDAUFVX3lxTE1tbXZyQVczak91Wk5GYnFwV1NWN3JnZU14MjdvLUxCZ0lRNWIzRHN1d3BTRUxIQkdkbXdMdkFLWURxeWtPcDlha0t4YTV0SUNNOWlLdXdRRXRwdUJuQ3hOZHY0bUZ3b0lQdUlJR2JBdGlBekMwX1ktQ2FNd0V0RFFuQkZ1UmE4dlhmQk9fZXB4aXhYU3ZzZUJWcVF1SXl3eTZ6bUJxSXhTWGVDajFtb0hNSEZ4Y2sydHZYNU94VlNuODRmNA?oc=5",
+   "published": "2026-10-21T09:30:00+00:00",
    "detected": "auto"
   },
   {
@@ -1079,7 +1188,7 @@
    "cluster_id": "4315e2ad43d45502",
    "source": "WSJ",
    "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRzBfNExYZG9PekNvTUpWeXZ4aExTY3hDeFVQZjVtTDlkR1IzcG9MRzVqSkVleXRJa05hRVBFallGSUw4U0xrMm5JYzFtWFAyeTJDdkh6RkpKUWxNWjBQbFV6aUd5ajZ0WTQ4cnZmS05uNTBzb1Y0LVlWelMxQTRfNG9fdjZheml4dU4tdksxSTJWUjBXeVREcHg4NzFudE5NSDFRSmdR?oc=5",
-   "published": "2026-10-20T21:24:00+00:00",
+   "published": "2026-10-20T21:28:18+00:00",
    "detected": "auto"
   },
   {
@@ -1237,7 +1346,7 @@
    "precision": "state",
    "cluster_id": "5a22ce5f1fb7a62e",
    "source": "Law360",
-   "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVXZjMnBBTml1QWk0UVlFSmlfQk9qN2xvOTdySzJLY2J1a21YMkNtM2pySk9aVWEwTjlaMjRyMW9wMnpRTVNISmtWcTBJa0J3aF9PSnp0cW1zbWdHMUpTekZ6TzdpZ182NmpVaVI1eWtCS1gzUy1KNlRUSGNkTDRhbzZOSDFMQzBHQ1hoZkppMk93cmNGb0tuaGpGNmlMQzhxVGtKS9IBVkFVX3lxTE1IZjlsSHdxallyLWRha2pvM2dUUkk5T3RRZ1NWRlkxUkdpYWcwWDBHLXN6R3JXR0Q2cjFLREdYZkUyQVFGczNfTXFlSEZiY1JiVmNYQmRR?oc=5",
+   "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeEFsMkdSZlJTaFBxZ1NzbThVNFp5R0Z4T0diVDZzR2M3QkhzdzF5b0ctNlVsQy1pY2xWXzZlTFYtc2FjVmNwQ1REcFQtTEtzdnh0RlFQaGZQdjU2Um1FVkpzU0R2OEJDdzY0RFp1SVNDeUU3OUdBYnRJYWVZNEZtMXNrNlgxYmZkc1lKSW1fNU1vRnJVUnltTGY2cHUxejN4Qi1nVElMZFJDQjhLVDVfREFYZ3hlay1G0gFzQVVfeXFMTk1lWGZzLUh2NmFrc3gxbUJKRVBSOXFvSVQ1aFdKSV8tS04zNGppS2p3bTAtdXJPSEx3bncxYkNxQ2hvRDgyeThVOU1mNGV2VldZWHV4S1JHZWlrbjNUenZkbzQ1Q3lwVDdHUURkbXF1VjdHZw?oc=5",
    "published": "2026-10-20T17:20:22+00:00",
    "detected": "auto"
   },
@@ -1534,6 +1643,23 @@
    "source": "WCPO 9 News",
    "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOXUwQmxPSTNhczYwNnc4N2UtaENJQmFOdldGbjdObThsNUdmd3E5M0s1azU5MTlVUmtXQVF3S01kcjdET182RThHcjNOcUlMYmhVZ3JPWG9QdXVnNFdNWGV3MHliTWMtcHpwTm5BVzllaDNJUG5BY2VMVlIwbzZWTmFfa19KaVZJWi1yVi04UHFxNUR3a3JOU2p3YjNCWkVBd2EzdHM1dTdjb3hzX0FBN2UtTDZRZTlwLWw4b1VpcWExRUJEQWxhQ2N3aVZkTndLU3c?oc=5",
    "published": "2026-10-20T04:16:03+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "36c7d3f791fafaa9",
+   "name": "Glendale Planning Commission recommends approval of Project Eagle data center and natural gas power plant",
+   "status": "Announced",
+   "location": "Arizona, US",
+   "lat": 34.3,
+   "lon": -111.7,
+   "state": "AZ",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "36c7d3f791fafaa9",
+   "source": "ABC15 Arizona",
+   "source_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTzNzZldfRzRQRGpJUUR3dXRCUnhaN3Z6SlZUVUZXejFnWjdSWGYzWng4ZG1yU05ZeWhMSFJoS2Qxek1XNFMyTGVvV0laSzgxVjg2amZoc0tTazZRS1BucW90VFNHM1d1TFp6M3laUk9URE9meXF3WXBrUFptR3htZmJ3Q0hXb0hWWUx1TWlUNS1yUGRvQkZUQmlKT1JtV2xtSjJRQ3RiUzNBRUhPVGJwb2Q5SzBsNVZwQ052OWJjUjA4MUhTLW43b1diTldCRnVTTG1VZC1hUEVqWUpsbk9rS0IyR1Y2b082R0lVenZoRTVEUQ?oc=5",
+   "published": "2026-10-20T03:41:00+00:00",
    "detected": "auto"
   },
   {
