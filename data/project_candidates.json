@@ -1,7 +1,97 @@
 {
- "updated": "2026-10-21T21:22:57+00:00",
- "count": 164,
+ "updated": "2026-10-22T00:42:41+00:00",
+ "count": 174,
  "projects": [
+  {
+   "id": "d669f2877b3f68c6",
+   "name": "Lawmakers question head of MIDA over controversial Box Elder County data center proposal",
+   "status": "Announced",
+   "location": "Box Elder County, Utah, US",
+   "lat": 41.522,
+   "lon": -113.082,
+   "state": "UT",
+   "companies": [],
+   "utilities": [],
+   "precision": "county",
+   "cluster_id": "d669f2877b3f68c6",
+   "source": "KSL",
+   "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQY2Z6dkRtOW5TWWlTZ2pnOEltOVdEdWR1UUdESmZIOXBUWTFuNWMxYUktM0plRF9TMWVYc2NRbjM5eS1MNk5tdUNaZ3dqdjdJYWttTGh1RVJfY2U1d3o4M29wYkt5OTd2UjVSY0pfLUdmVzkyTktmazBhdVA3NUVGS3ZwcFRKME9SOWFDVlVNdENQTy1hS0VSbWlZaDBYT3VHa0xiUWRtcmN5cjNUQWs4RWJaVmFJdW02ZlZJRkFfZUFHT1U?oc=5",
+   "published": "2026-10-22T00:03:51+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "4ed9628f51652d57",
+   "name": "Pa. county tells developer to stop work on data center, as utility reveals power line plan",
+   "status": "Announced",
+   "location": "Pennsylvania, US",
+   "lat": 40.9,
+   "lon": -77.8,
+   "state": "PA",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "4ed9628f51652d57",
+   "source": "PennLive.com",
+   "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNeWdHUHgxdmVnQU9HNlFURGRUWVBTTy0tTnIwT1A0QjVtNzZZT3l4WDdqc0JudHlpa3c2dWh5ZjEyRDU2Zl9lajBYUUlubUEyN2Z5SE0zaEdnNDl1VkZNWnRmRTdSd3p0UlNpb2NjYUNNYWVkeFNrTFNjXzFLR3MzYkJBVmtnb1UybzZ3dU5kdTlVUTZGREJLcWNfLThoNHpvODdvLUZpdk5xMTRNRlIzbmpSWFBpSXhCS3Y4c3Y0S2NuaEcyVmVlanYtTdIB3wFBVV95cUxObUdqSmlLcjI5My1ObURTdWFaYVBlZk53R0FnbTgySXB2Uld5MzNuUzhpcHN0T3BjeWJrZ0o0Y1pFalB1dnVhVkdYSzREak13bngyV3Jka3BuQi1nck14dDg2UnpHVWJOZUdjRjdmWEgyTnpYLTBRRTF1Z3JWTHNhbFZhVEZhdnd0NWtaeHo2ZlV5SjR4NnVJdHJYNm1fYUNlZUoweHMzMWdaTC1obEJRdmRaQ3k5RHVWS1ZxdDNQYkJDTVZDZmdPT0JwTzBzM2tLdUVhbkM2ZEg0S0VQNnJJ?oc=5",
+   "published": "2026-10-21T23:50:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "2635defb38db468c",
+   "name": "Amazon Scraps $427 Million Data Center Plan at GW's Virginia Campus, Hands 25 Acres to Loudoun County",
+   "status": "Cancelled / Blocked",
+   "location": "Loudoun County, Virginia, US",
+   "lat": 39.09,
+   "lon": -77.64,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "ed18adfbe69a6b24",
+   "source": "BigGo Finance",
+   "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9sREFNRnViMjM0dDBOR1BmUTJKYzREMTZqSVZETXJKOHRNdnJJZzV0SUg1WnJfZWRKLVBDODg3clIyZkw4TTBqODB5V0k1MlJZOWp2ME9uVVRhNGNPZ3VZcWM2V2lOLThSWVVEWkVLT1dYcXZxTWc?oc=5",
+   "published": "2026-10-21T23:25:00+00:00",
+   "detected": "auto",
+   "investment_usd_b": 0.427
+  },
+  {
+   "id": "c7e3f30b07af9885",
+   "name": "Amazon cancels data centers for GW Ashburn campus",
+   "status": "Cancelled / Blocked",
+   "location": "Ashburn, Virginia, US",
+   "lat": 39.04,
+   "lon": -77.49,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "ed18adfbe69a6b24",
+   "source": "Virginia Business",
+   "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMVZyUTFEUTNXN2ZSTDh1bFR4VnZXaGVESXJSbl9OamoxWU5pSkE0OGg2Z051Y1c0YTVrNWtPbzlBVE9neE9iSEhZZjU5U3FhZFdPUmVWTDg2aUdzYXQtTlV4dmNKejJ2Qy0zeHVjNHpVS0kyN2N0ekNzU3VXRzE0WnI3OVZJUQ?oc=5",
+   "published": "2026-10-21T22:18:45+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "b331f10b7153c16a",
+   "name": "Proposed data center in San Jose building used by Nvidia gets final city approval",
+   "status": "Announced",
+   "location": "San Jose, California, US",
+   "lat": 37.34,
+   "lon": -121.89,
+   "state": "CA",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "b331f10b7153c16a",
+   "source": "The Mercury News",
+   "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcTlHVG9DZkRxTEFVUHdDSDNsczVxeldTbHBYTGxrRWlPeW0yQ2g0RHA0OVFpa2pUT3Z4bno2S3dLTnI3RE5NUDJ2eHdub1ZHRjNIcGU3YndXQ3EtaktHNkpDVUFqay1xS2dLOWt1MGszWWl5RkN3ZW0wX3ZIakd3dHUxa2JSeWtWbHhGVkxBdmI1b0dySVZETHVZQTUySWNVMEdYZlM3ODRZdkFPODhn?oc=5",
+   "published": "2026-10-21T21:35:41+00:00",
+   "detected": "auto"
+  },
   {
    "id": "2eae4584f4bd7eb6",
    "name": "Starke County approves data center ban",
@@ -20,6 +110,24 @@
    "detected": "auto"
   },
   {
+   "id": "1af03a3ffba51fe1",
+   "name": "Ohio High Court Keeps Proposed $3.6B Data Center on Ice",
+   "status": "Announced",
+   "location": "Ohio, US",
+   "lat": 40.3,
+   "lon": -82.8,
+   "state": "OH",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "1af03a3ffba51fe1",
+   "source": "Engineering News-Record",
+   "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVzUybEliN2M5UG9mb2hxWGlLRkxEWXV1VEk1Q3RjNEdIbF9QNWxWVzgzY2x5b29yUnppUGFEU0tYdWIxM0JZS25naVRFdWFBbGtycVhqQnlZSXhkdDJla3llc0kzV1RiUU1lUjdPQ2laU09VOVk4VEJkYUZwZXNfUGxOOTFCZ2RaWHJRQ21IZ2NFQQ?oc=5",
+   "published": "2026-10-21T20:23:00+00:00",
+   "detected": "auto",
+   "investment_usd_b": 3.6
+  },
+  {
    "id": "68cf50ba23d55c73",
    "name": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana",
    "status": "Announced",
@@ -36,6 +144,25 @@
    "published": "2026-10-21T19:08:34+00:00",
    "detected": "auto",
    "capacity_mw": 10
+  },
+  {
+   "id": "36d94139ab821e00",
+   "name": "Amazon abandons Virginia data center — Fortune",
+   "status": "Cancelled / Blocked",
+   "location": "Virginia, US",
+   "lat": 37.5,
+   "lon": -78.9,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "36d94139ab821e00",
+   "source": "UA.NEWS",
+   "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTQxT1JSSkhhZFJHamQwb1JyVEdKYkZBUm9sbXVOdFpEZlAybWJITDd1aUo4cWxLZGxnbU44MHhmeFpSb3gzdFhrNm1vUXg5S2RYWE91M29EQlZfTklxaEdGZkIzcm10RWp3VS1rcGEwLWpFWnhraEJhQ3hoVVdwclBLdlpmWllRdFFV?oc=5",
+   "published": "2026-10-21T18:49:38+00:00",
+   "detected": "auto"
   },
   {
    "id": "2ded3f5850a23b14",
@@ -72,12 +199,12 @@
    "detected": "auto"
   },
   {
-   "id": "c7e3f30b07af9885",
-   "name": "Amazon cancels data centers for GW Ashburn campus",
+   "id": "0ab0ed0c421e37e0",
+   "name": "Loudoun County scraps plans for new Amazon data center amid community pushback",
    "status": "Cancelled / Blocked",
-   "location": "Ashburn, Virginia, US",
-   "lat": 39.04,
-   "lon": -77.49,
+   "location": "Loudoun County, Virginia, US",
+   "lat": 39.09,
+   "lon": -77.64,
    "state": "VA",
    "companies": [
     "Amazon"
@@ -85,9 +212,9 @@
    "utilities": [],
    "precision": "city",
    "cluster_id": "ed18adfbe69a6b24",
-   "source": "Virginia Business",
-   "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMVZyUTFEUTNXN2ZSTDh1bFR4VnZXaGVESXJSbl9OamoxWU5pSkE0OGg2Z051Y1c0YTVrNWtPbzlBVE9neE9iSEhZZjU5U3FhZFdPUmVWTDg2aUdzYXQtTlV4dmNKejJ2Qy0zeHVjNHpVS0kyN2N0ekNzU3VXRzE0WnI3OVZJUQ?oc=5",
-   "published": "2026-10-21T16:29:09+00:00",
+   "source": "Washington Examiner",
+   "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQY0I2RmNGMWtiNUxrT3NEb0ZYLUkyWGtHcFJFeTAydHVOc1JDOGFHaGZ5WGtCQUNINFdvV3dPOHE1Umc2aDdiYjFmVllFQkd0ZTNmc2NvdG5vbFpFUjRPN182YW1HeHZaTVNIenRvNFhDcjQ4NFVRcjlHSGJqOHlRU3NiV2JPSVBOa1dFbkMxMGxkSHY4dTNSLTFxS1NOUzRidFVlZDE4SjA2UQ?oc=5",
+   "published": "2026-10-21T17:44:24+00:00",
    "detected": "auto"
   },
   {
@@ -140,7 +267,7 @@
    "companies": [],
    "utilities": [],
    "precision": "state",
-   "cluster_id": "c3f8f11c89c9596e",
+   "cluster_id": "c45f7298491e6328",
    "source": "WXOW",
    "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSGZJQmZSTHlBLWszWUotN1Bibmk2MzVMcFFLRVl4UkotYVpLd3g1RFZ5RnpOVERXYWNveWhmWW9lSnotQzJpTm1YcGZ5WEZEVUhuRDBudXgycm1RTkQ4WTgtVVlpcnpKS3dnMjc1UHdvanBzRzhYTTlPU1p5ZTNUSzhuczNGZENibEIzMEgxRUxRVzltNWk2eUxabDdGS3dxYnVvWWV3VklVQWxxa1duSncxSDZQQTl5Q2g2aTU3ODlDalVaTlJvZ0ZJaENsaUVwb3FIdzVWU0hTSWpoRGV3NQ?oc=5",
    "published": "2026-10-21T14:30:00+00:00",
@@ -674,7 +801,24 @@
    "cluster_id": "89dbf7b8a3434442",
    "source": "WPTV",
    "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbF9ySjRuSDBtVTdWSEhWaFFIdC14OU9VVW9oREE1TzhQV3JhQUNkbkR4UHFkT0pJYzlWX3F6aVd0T0t4Y3RjU0E0dXhVSDBhblhBYVFxWGtvRDlaYy1sT25ncVptaW1iQzNGWk5ma200bGxYeWNRdm04OWdka3FDemhHYkVIV2lONnJWeXpsLWduc0NwLW9FSjFhM3l2X0Nmd2lqZWFNNXAyc1dQSWdJRUdLdlI4Mk41V3o4d0YxSGh5RFNSdUN1eVl1RXg?oc=5",
-   "published": "2026-10-21T01:11:26+00:00",
+   "published": "2026-10-21T01:09:05+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "449fd88af3f2df13",
+   "name": "Wisconsin Rapids Common Council denies permit for proposed data center",
+   "status": "Cancelled / Blocked",
+   "location": "Wisconsin, US",
+   "lat": 44.6,
+   "lon": -89.9,
+   "state": "WI",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "c45f7298491e6328",
+   "source": "Daily Tribune Media",
+   "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNVZ6bGU1NWRZYkN5QkRFMkwtd2p2Q2JVMXNmWmR5V1FFU1UwemlJMEliTzdsVlhBQXhqQ2hPdjFVczc0YUQzclI5Mi12S0s3N1RHUjdvX0NBckJGeDZDR01GSEZDeEkxRTVfTlVuSUw2MGlwZTNHbk5MSEFuQ2RXV0Ytc1JiaElvT2dWaXp6bjdBNFZmcE9uN2k3MWlxNF8wZVNzczdxZ09HMHNoT3dveFZ0cFVzVVlzZkE3U0FfenBRNGJkeVBMcmRZRW5KVERSMXVIZmVObkJnSkZkNWw4QmE5ZkQ?oc=5",
+   "published": "2026-10-21T00:44:31+00:00",
    "detected": "auto"
   },
   {
@@ -1495,6 +1639,23 @@
    "detected": "auto"
   },
   {
+   "id": "c95797910e7920b5",
+   "name": "Wisconsin Rapids Common Council to decide on PNK Group's data center proposal",
+   "status": "Announced",
+   "location": "Wisconsin, US",
+   "lat": 44.6,
+   "lon": -89.9,
+   "state": "WI",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "c95797910e7920b5",
+   "source": "wjfw.com",
+   "source_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZXlXZXFJWWR3dG1DdUhmU216d2d4a1FmQVBGRUVBbUVRZi13Yld4WjJ6U3d5Y1ZLa2tRM2FFbFlTSWlzQmhYYUNfVnVzUUZ1MmJ5MUlKQ2JrZVg4eFdKMG53bnNlREJEd0Z6LWNOdnMtcXFnMmVhVzZkWkQzUFJpdEt6TnZ0VGVZb0s3UTBQVlRwMVRvSlY3VnBpVW0wNUFGWFNGcE1rajlDV0xaaF9NS2xheXBTd1VEaTlDWVQ4QS1TR0JMV015WUR3MmUtTDhPMzM5RGNFRUpwX2RzbWpibGQtNG01UkpTQy0yd2ZtYw?oc=5",
+   "published": "2026-10-19T22:40:00+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "70ec104cf5fbf114",
    "name": "Southside Virginia residents call for statewide pause on new data center approvals",
    "status": "Announced",
@@ -1868,6 +2029,24 @@
    "source_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNOGRDbUdiazZUSk1tVFhzTFlDeXg1NG1XaThCWlZKYzNxcXM3eXlFTDA1TlNFNzN1aDZVUThiVFlDYXFKZWNzaWxSUHAtVUlPb2VEajFpN0h5QlJGdFRFMnk5RFJGeERWRFZZOW5ZUGo5d1pxb0dsZXJYZktLZzlWdDJfdkNQQXg2RWlRMnNYdmF3bDMzMktvZ2UzbkM5SGRueU9hNE9obUpsNmpncVNPVEo0MmN3WENCRENZQ3Y5VVRpbTdnUlZYYjktSzBPNWdTSUtUM0lxeEhVYVQzY1hRdTFWcHR2ZEhDemhRdGtFUjI0VnZXdnhSWWk2OUpxbVBuYlBIWUZFeTFSc1M4UDI4dVUwTWxVQWM?oc=5",
    "published": "2026-10-17T20:45:00+00:00",
    "detected": "auto"
+  },
+  {
+   "id": "45d685364786de21",
+   "name": "St. Louis wants to build a $3 billion tech hub — but the data center anchoring it is sparking backlash",
+   "status": "Announced",
+   "location": "St. Louis, Missouri, US",
+   "lat": 38.63,
+   "lon": -90.2,
+   "state": "MO",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "45d685364786de21",
+   "source": "New York Post",
+   "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNeEJxRlgyclBGWnVob0R5WHh6WGh3aVJQRXZfTXpKRFpiWFVkbEUtMGpzdWFranlKMFZCS0NyelRidzNza3FjM0gteWg4d2JheXZBZHkzUTFjdkxYSGRXSDNpQWVuRm45SlZic1V6Xzc1R3JUcV85QkZicGNkbV9COWNWTWhNbmd6WDQtU0hGY2tWcjhCNjJ4VWRLajBwY3E1VVpTU1V3dGRlSHRTbWxjemxsZ0dPY280Y0RkNGZFYmFnNV9FRFBYQ1N4a1FiSkFmOTdVYUI0NEs?oc=5",
+   "published": "2026-10-17T17:52:00+00:00",
+   "detected": "auto",
+   "investment_usd_b": 3.0
   },
   {
    "id": "f83356cbf33cac6d",
