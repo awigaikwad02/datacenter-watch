@@ -1,7 +1,41 @@
 {
- "updated": "2026-10-24T07:21:56+00:00",
- "count": 229,
+ "updated": "2026-10-24T12:44:03+00:00",
+ "count": 231,
  "projects": [
+  {
+   "id": "83fd529defebbc0a",
+   "name": "Texas has suspended 17 data center construction permits and shut down automated portal that rubber-stamped projects — site was left running for a month after Greg Abbott called for a pause on approvals",
+   "status": "Announced",
+   "location": "Texas, US",
+   "lat": 31.5,
+   "lon": -99.3,
+   "state": "TX",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "83fd529defebbc0a",
+   "source": "Tom's Hardware",
+   "source_url": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxOYnpkN0VrZkpVVG8xLTlibHpEdXB3eTgwZk05SnNwOHRmY2dfbEs3dU11UEV5YTg0Q09hclRuZVJmODZTVGhCVi0tbll0em9OV1FQTkJqMDJZSktnZ1dLb2NraUpoWmZBeTI0S3VZTk82b0E3VUxGVDlDNVdUeU42U2J0WXZCSnJxSHp5V0lOR3YzNEhKcXJ0MjlPVWY0d0VlQkFmV3NhalZ2elZoYnR6T1FxSjhXMHpEUjVjeEhqSWZVQVZNcmRuQy1RRmlxRE1JNzR6NGlZaFViaVU4NElERV9wSjNFc2ZKc3I3cGtDLXBGLUVYX2xabk9VRmRjX01lSC1qT1hXRjkxcnVLcU5sWlNNMUtDam9WOVVLM3kxWGpOTW95OV9EY3V3aEFoRS1DSU1MdFBmRWh0UDRkb0VwWWhkQ3pFZ2xLMEFrMFN1NTJhbnNGMncwY0FnWjBIZmI1WHJfY0x3?oc=5",
+   "published": "2026-10-24T11:35:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "d9ebf30d76f95c64",
+   "name": "Data center regulations postponed again as Planning Commission reviews UDC amendments",
+   "status": "Announced",
+   "location": "Wyoming, US",
+   "lat": 43.0,
+   "lon": -107.5,
+   "state": "WY",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "d9ebf30d76f95c64",
+   "source": "WyomingNews.com",
+   "source_url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNbnplQi1vOGNoZGEzNTBZR1Y4UndnaGZMbGdoRG1XVXVtMXhHWFo5emd4WWNoVm9ZWC1LR0k4cEhaZGFTZVRVSUZKLTNhbnFSM0pvTkpVUl8zdnJDRnBGUVRKNVhhWjcyU0s0bUtjaUJmcEk5R2lXVzZMNF91N1VDNFlmTU1yTnZMWGppV0tzdGZ6dGI0UWVKb1FaM0liNkhBVWVsVkNjbXo0Y3g0Qm9JcUlhcllOczBLQjJoVHk0SFZlUTdEYkRBSl90cTJMdUF3S25yYTA3SzMzS0dZWHU3d05xZ0FXOGJhb01rWTNkVE1xdFFFTGFtSE5jRHNkc0Vuc3piNWViWm9SQWFIcUl5TFVqUQ?oc=5",
+   "published": "2026-10-24T11:00:00+00:00",
+   "detected": "auto"
+  },
   {
    "id": "524f168fae3cdf46",
    "name": "Southern California Data Center Plans Spark Opposition, Push for Moratorium",
@@ -204,8 +238,8 @@
    "utilities": [],
    "precision": "county",
    "cluster_id": "57736c9206303b30",
-   "source": "www.waer.org",
-   "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVGF4bFM2Mmo4MEI2UVA4QlNOaEhZTXcxRUlxRnN2blRfdkx6WG9SUHp1ZnJPUUg5V05QbTBTdk4wZXp4eE9wN3c4dlFDY18tcmRNcVF2RVN6bkVVT3JVLWRkTUF4ZVlDYkFubHlNSkVOMl9sSEJHUnpvNUhNZUZwZnpyZGNmUVRXOFM5S3NYRGZMQlJzQl82VzZsRzVSRkcyai1pQndrbw?oc=5",
+   "source": "WAER",
+   "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQN25mRnY0Y21nNmFEX2NzNzRNSDY4U0tGRnZjVnl2ZXkwZ2FKdjBaazBuUkMwanQ3T3FrTnUzYTEzanFOakpyWHlHb0FtdzRaT2J3RmJqWDM0N242Ymd6MWdobzB1ZW5pTUNpbnR1SFNyVUJ4UTNmblFFWnUxU1BHd2lxQkxSRXhGVFpCM1c1TFctSzNZLVV4eTB3?oc=5",
    "published": "2026-10-23T14:03:00+00:00",
    "detected": "auto"
   },
@@ -878,24 +912,6 @@
    "investment_usd_b": 3.6
   },
   {
-   "id": "68cf50ba23d55c73",
-   "name": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana",
-   "status": "Announced",
-   "location": "Indiana, US",
-   "lat": 39.9,
-   "lon": -86.3,
-   "state": "IN",
-   "companies": [],
-   "utilities": [],
-   "precision": "state",
-   "cluster_id": "68cf50ba23d55c73",
-   "source": "ConstructConnect News",
-   "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVFktUmdldUNCMzFoaEJSWmpzNWlXR0ROek9aM21GZS1HTlpIR18xb2lSdmNrX2VtNk05MVdUaEM3WFhCU2VGRDlGX1N4TDd1WXNGci14aWlBRjNPT2NieEpla19TRGNibllqVFlkbFE5VkFoNGFaSktvTHVfbVU3YjdxdmstMlN1RkNyRExKbGpRc2xGenotZW0yUTNVSVVBcU9EMUVUdmtVcXVMSkRxNmZn0gGyAUFVX3lxTE5UWS1SZ2V1Q0IzMWhoQlJaanM1aVdHRE56T1ozbUZlLUdOWkhHXzFvaVJ2Y2tfZW02TTkxV1RoQzdYWEJTZUZEOUZfU3hMN3VZc0ZyLXhpaUFGM09PY2J4SmVrX1NEY2JuWWpUWWRsUTlWQWg0YVpKS29MdV9tVTdiN3F2ay0yU3VGQ3JETEpsalFzbEZ6ei1lbTJRM1VJVUFxT0QxRVR2a1VxdUxKRHE2Zmc?oc=5",
-   "published": "2026-10-21T20:20:26+00:00",
-   "detected": "auto",
-   "capacity_mw": 10
-  },
-  {
    "id": "8ae11f5bfc5da64b",
    "name": "Soluna and Applied Digital to build 50 MW wind-powered AI data center in Texas",
    "status": "Announced",
@@ -914,6 +930,24 @@
    "published": "2026-10-21T20:06:58+00:00",
    "detected": "auto",
    "capacity_mw": 50
+  },
+  {
+   "id": "68cf50ba23d55c73",
+   "name": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana",
+   "status": "Announced",
+   "location": "Indiana, US",
+   "lat": 39.9,
+   "lon": -86.3,
+   "state": "IN",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "68cf50ba23d55c73",
+   "source": "ConstructConnect News",
+   "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcW1XSS16a2FGRXMwN1Y2WlU4cGpHUUx5S0o0Z20tdFdsNF84RkZpMDdLWHA1aVF3WEZkdTViWGpEaTUyUVRrbldtZEVhUnBPNGNHTnJzTDhFRWR2bVJlSkdiZkhUWFJMdFNpTi1yR3A0YUFLZXVwSTVBQTJwcE1LdmRocU1BVlV6LWtuaERtMmljZUE1VzRiQmh2VG1yZGlpaEHSAbIBQVVfeXFMTlRZLVJnZXVDQjMxaGhCUlpqczVpV0dETnpPWjNtRmUtR05aSEdfMW9pUnZja19lbTZNOTFXVGhDN1hYQlNlRkQ5Rl9TeEw3dVlzRnIteGlpQUYzT09jYnhKZWtfU0RjYm5ZalRZZGxROVZBaDRhWkpLb0x1X21VN2I3cXZrLTJTdUZDckRMSmxqUXNsRnp6LWVtMlEzVUlVQXFPRDFFVHZrVXF1TEpEcTZmZw?oc=5",
+   "published": "2026-10-21T19:08:34+00:00",
+   "detected": "auto",
+   "capacity_mw": 10
   },
   {
    "id": "3749531349a05f65",
@@ -1906,7 +1940,7 @@
    "cluster_id": "4315e2ad43d45502",
    "source": "WSJ",
    "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRzBfNExYZG9PekNvTUpWeXZ4aExTY3hDeFVQZjVtTDlkR1IzcG9MRzVqSkVleXRJa05hRVBFallGSUw4U0xrMm5JYzFtWFAyeTJDdkh6RkpKUWxNWjBQbFV6aUd5ajZ0WTQ4cnZmS05uNTBzb1Y0LVlWelMxQTRfNG9fdjZheml4dU4tdksxSTJWUjBXeVREcHg4NzFudE5NSDFRSmdR?oc=5",
-   "published": "2026-10-20T21:24:00+00:00",
+   "published": "2026-10-20T21:28:18+00:00",
    "detected": "auto"
   },
   {
