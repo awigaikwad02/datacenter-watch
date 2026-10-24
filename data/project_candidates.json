@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-24T16:38:49+00:00",
- "count": 235,
+ "updated": "2026-10-24T19:31:50+00:00",
+ "count": 236,
  "projects": [
   {
    "id": "91a353723be12ab7",
@@ -457,6 +457,23 @@
    "detected": "auto"
   },
   {
+   "id": "e969d345b4246e62",
+   "name": "New documents on Bessemer data center plans",
+   "status": "Announced",
+   "location": "Bessemer, Alabama, US",
+   "lat": 33.4,
+   "lon": -86.95,
+   "state": "AL",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "e969d345b4246e62",
+   "source": "WBRC",
+   "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY3dHN09XZzhqS19aMlBVMHZDeTcxeWxPcVgwazJfdGVoMUpyclNWemNTMkZUbHpzdURCV3JEdjFGOWRwM0VFRDRUWUI0VDJjLTRjLVBKMFB1ZFVnNjBjU2dHV0JweUgyM3BlZEhUaHJFeFdDck5sb0lWNGRzREFnRGRXaXp4UQ?oc=5",
+   "published": "2026-10-23T00:21:34+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "3da8bda9a3526e12",
    "name": "Amazon scraps Virginia data center",
    "status": "Cancelled / Blocked",
@@ -490,23 +507,6 @@
    "source": "Daily Mail",
    "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUTNUZTFqY0JnVktZd3NFSFcydU5STjBYQ1QxZWJSTXpVenVjUllLajktY2VpNUNRdkkzaFRuTGFRVjl0M3NhQWJBU2xxVFg5bHo0LTZjUlVkTmJrVHM0ZjhRTE5pV2U4My1jUzNicXMzWnREd3BYUFkzUE0tX0VGNDNTVjRza0o2REd3YVpBdDUtam1PWDZlMlJYVGtPUG52b0dLYUhsMTBPOHhlUnZCZVJ3ZmVGd1lBdjMyLdIBwgFBVV95cUxPZ0RyMWxBZzRkbkdrd0pFUlhvamxDOVNTcjhiUXlQbEdfWFJRQVpMWnplZWVVVEpkUkN5UnYwZVBwQ2hxdlVjLUZOMk1ZZTZuMnIzakxfT0lVcktIZHFTdDI2VlBQVkJWSEFQTmRKRU40aWtsdnRUd0pTMEQxakFlX3FIb2Q4Vlg5NWFhZWhheEdhUFgyTlY2Yjd0Tm4tY0oxUXRfMzBsdHlGaWRrcllRa3JHQl84LU1IQ19jbVJ5UzlHUQ?oc=5",
    "published": "2026-10-22T21:42:34+00:00",
-   "detected": "auto"
-  },
-  {
-   "id": "e969d345b4246e62",
-   "name": "New documents on Bessemer data center plans",
-   "status": "Announced",
-   "location": "Bessemer, Alabama, US",
-   "lat": 33.4,
-   "lon": -86.95,
-   "state": "AL",
-   "companies": [],
-   "utilities": [],
-   "precision": "city",
-   "cluster_id": "e969d345b4246e62",
-   "source": "WBRC 6 News",
-   "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY3dHN09XZzhqS19aMlBVMHZDeTcxeWxPcVgwazJfdGVoMUpyclNWemNTMkZUbHpzdURCV3JEdjFGOWRwM0VFRDRUWUI0VDJjLTRjLVBKMFB1ZFVnNjBjU2dHV0JweUgyM3BlZEhUaHJFeFdDck5sb0lWNGRzREFnRGRXaXp4UQ?oc=5",
-   "published": "2026-10-22T21:25:57+00:00",
    "detected": "auto"
   },
   {
@@ -1151,25 +1151,6 @@
    "detected": "auto"
   },
   {
-   "id": "3f7c7b9dec3fea88",
-   "name": "Amazon agrees to withdraw data center construction plans on GW’s Virginia campus following backlash",
-   "status": "Cancelled / Blocked",
-   "location": "Virginia, US",
-   "lat": 37.5,
-   "lon": -78.9,
-   "state": "VA",
-   "companies": [
-    "Amazon"
-   ],
-   "utilities": [],
-   "precision": "state",
-   "cluster_id": "3f7c7b9dec3fea88",
-   "source": "The GW Hatchet",
-   "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWU41Y25oNm16ckE5MXlXWGhCRGR2N0ZRdkV2OTVocXktbUFCTWtZRzJ4N0kwQjk2V25GcGZWQXZqUkpUSTQxbE9sek1TbkZ2WXc2eHMwZ085T25zTC1pSm92ZTgyc2lOSzZIcm5PRnRuQkNMUVRBRHY0MmVyVF82cUhkY2VzcDAzZjNjZDlPTnBLaE1rdW9PUWQ1Qkw1ZFI2R0xDUktCM3NGQzQ3RFZBeHdrMk5vQUFuaUNRWWdTRE1CVWVIbXBV?oc=5",
-   "published": "2026-10-21T16:05:33+00:00",
-   "detected": "auto"
-  },
-  {
    "id": "178501a396f9869e",
    "name": "Breakfast links: Amazon drops data center plan at former George Washington University site",
    "status": "Cancelled / Blocked",
@@ -1509,6 +1490,25 @@
    "source": "Northern News Now",
    "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNR3U5RXFPRmllSkl3MDJ4dlVGOTVWZmNXcTNIQ1lrQXNTUFRjc1p4aDEzaVo0NEpRakpOd04wTUhydEtMN1dFekZqOXZYdFlkMmZGN05ZOFNGMTZGaWxGSENHdG9zYlhaTGNESm1DVGVPbGFwenpGdm8wcnVudVZPWEd6a2RDcnVmRHNTNG5TdDFidDJkdDU4ZU9IX3lVdDlhMmF6cnVwYlhEQS1wYVVsRk9GU2pfT1JrQ3lr0gHPAUFVX3lxTE5SQ3dSclZnWDRHN1RjY1BqbFhDOVc1ZWFZajZ3eUxTaGp1Z0ZUVlo4ay1sQmZnbEI1OHV0QnE1Z1dINXJjeTM4ektoOUtMZVN0dXVlSXllVExlaURVZ0tHV2xkdjNjam5aVGlrOW81c1VCel9QYmhzMjBHZWJ2VEI5aFB3c1lJUlluaDRiN25LZng3SlgwbktpektjTEVEZExyUHlOVGRGZlgzdGhzU2NnQkJEbS1XdU8yWW42UDByc3dmamZjUmZ3MlNnVTZzMA?oc=5",
    "published": "2026-10-21T04:18:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "3f7c7b9dec3fea88",
+   "name": "Amazon agrees to withdraw data center construction plans on GW’s Virginia campus following backlash",
+   "status": "Cancelled / Blocked",
+   "location": "Virginia, US",
+   "lat": 37.5,
+   "lon": -78.9,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "3f7c7b9dec3fea88",
+   "source": "The GW Hatchet",
+   "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWU41Y25oNm16ckE5MXlXWGhCRGR2N0ZRdkV2OTVocXktbUFCTWtZRzJ4N0kwQjk2V25GcGZWQXZqUkpUSTQxbE9sek1TbkZ2WXc2eHMwZ085T25zTC1pSm92ZTgyc2lOSzZIcm5PRnRuQkNMUVRBRHY0MmVyVF82cUhkY2VzcDAzZjNjZDlPTnBLaE1rdW9PUWQ1Qkw1ZFI2R0xDUktCM3NGQzQ3RFZBeHdrMk5vQUFuaUNRWWdTRE1CVWVIbXBV?oc=5",
+   "published": "2026-10-21T04:07:00+00:00",
    "detected": "auto"
   },
   {
@@ -2962,6 +2962,23 @@
    "source": "REJournals",
    "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObEFXYmRmNUVIUWFiTmZFMHhDeElvTGkzaEM5Mjd2RVE1SVZxcWhOcmU3X05PdWMtUWplMzlrQm5sX292WFRlSkJaUHVZUUZIR1JRRE1IeTcyUXpRbEV2T3h2cmV4SjAxWWdxX2dmUnplOTV4T0YtTHlLdHhOVmxuajVKSWZVcHFzRV9sM1ZFam1UTlo0VktXWlhBMlNLM2s?oc=5",
    "published": "2026-10-19T09:15:26+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "04f8d7e2266ddb7f",
+   "name": "Butler County tables proposed data center regulations until September | Trusted News Source for Wichita & Kansas",
+   "status": "Announced",
+   "location": "Butler County, Kansas, US",
+   "lat": 37.781,
+   "lon": -96.839,
+   "state": "KS",
+   "companies": [],
+   "utilities": [],
+   "precision": "county",
+   "cluster_id": "04f8d7e2266ddb7f",
+   "source": "KAKE",
+   "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQODhSR21xYUZnSnRpOVY3d0g2RmxSakRkSXJTRmducWd0Vjk5dC1faHF2bmExNzJiMnJSbE1fWHVrbEMxcGU4RmVYTXk1UnVVVHV5UHIzRV9GTzNPZTRRU1Ruc3JnMWM4c253NG44c1RwUUxYVkZpTFB6TmlJZU85eXR1NUhSMmI1LWc3MUgwM2xqUTRlZDJERzlDTl85c3BNaW5XeGNqRmoyd0xTYzNEcDE2a1ZUTnU0QjlEalVTcWpydkpVNF9Ld1Z3bFg5bmNPYVFMYk5mR2E4clJ1SVE?oc=5",
+   "published": "2026-10-19T07:00:00+00:00",
    "detected": "auto"
   },
   {
