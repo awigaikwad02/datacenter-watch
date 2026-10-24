@@ -1,7 +1,44 @@
 {
- "updated": "2026-10-24T12:44:03+00:00",
- "count": 231,
+ "updated": "2026-10-24T16:38:49+00:00",
+ "count": 235,
  "projects": [
+  {
+   "id": "91a353723be12ab7",
+   "name": "Amazon abandons its Virginia data center campus to local opposition",
+   "status": "Cancelled / Blocked",
+   "location": "Virginia, US",
+   "lat": 37.5,
+   "lon": -78.9,
+   "state": "VA",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "ed18adfbe69a6b24",
+   "source": "Startup Fortune",
+   "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQclhvZzRSUDBUZDVmTnMyTlU0ZDZRTUh5NnpDUmdZNzhIYnBnU29DWWZyMHA0ZExsLUJwRHFqc0h3ZmxjNkZKR01QRHZZRVVxZnVtRUdJY3JBejFqRTQ1VkY3djN5M2c1UDVEaDVQN3J3NXRhQXZ5RVRwU3JFdEg5RG1TR0x3Z1hQS2xQMU1pQ3FuOUN1dW4wOXJLaw?oc=5",
+   "published": "2026-10-24T12:28:29+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "4af1733842d81d80",
+   "name": "Carrier’s $600M Fort Worth Plant Brings 1,500 Planned Jobs Into Texas’ Data Center Debate",
+   "status": "Announced",
+   "location": "Fort Worth, Texas, US",
+   "lat": 32.75,
+   "lon": -97.33,
+   "state": "TX",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "4af1733842d81d80",
+   "source": "Dallas Express",
+   "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONmVieU5HMGdyYXhGQTFteTc5NS1BWjZLZEhUWEdfVVFtMW9nWnlObzdtYlFvcEVHbkJ3alZtUUQ2d3VmajdXbk1lTi1zdXBOd2dyazFUWGRvdW9weVBkSmR1MUphc2pZRldfVHJod3JMVGdjRkdfYklDbWZMRHY0S3FRdkZ6WFJ4Um80T3gtM2NaemJSZEVfLXk1Y0NCRWhWRFpXQ0hiU3FHc2hrM2twSFdVOG9IbzI2VmdNamZSWTBUWVR5ODhSRQ?oc=5",
+   "published": "2026-10-24T12:07:35+00:00",
+   "detected": "auto",
+   "investment_usd_b": 0.6
+  },
   {
    "id": "83fd529defebbc0a",
    "name": "Texas has suspended 17 data center construction permits and shut down automated portal that rubber-stamped projects — site was left running for a month after Greg Abbott called for a pause on approvals",
@@ -37,6 +74,23 @@
    "detected": "auto"
   },
   {
+   "id": "ecea6e62858bd80e",
+   "name": "Major meeting in Sioux Falls Tuesday on proposed hyperscale data center",
+   "status": "Announced",
+   "location": "Sioux Falls, South Dakota, US",
+   "lat": 43.55,
+   "lon": -96.73,
+   "state": "SD",
+   "companies": [],
+   "utilities": [],
+   "precision": "city",
+   "cluster_id": "ecea6e62858bd80e",
+   "source": "The South Dakota Standard",
+   "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUmwxX2NkZ2sxODV0YnR1bEJrTjlhQjJ5bzFTT3ZVMG9HY0M5VnJDZjlUWmpucFpGWEhkc2JkLWZ2Z1RRc2daQzJJWDVSSlNaUHlGdWc2R3VoSmpxdzdSUkxRVjBqalNYalhRN3pfVWNfSm5PZWlWZFg5ZUo2aFRjMTRPZjRaMjQyQ2dfTUhEcGk2UGhVdWc?oc=5",
+   "published": "2026-10-24T10:46:22+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "524f168fae3cdf46",
    "name": "Southern California Data Center Plans Spark Opposition, Push for Moratorium",
    "status": "Announced",
@@ -68,6 +122,23 @@
    "source": "The Union Democrat",
    "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYWxTaFBBa3BqM2p4S1d1OEIzNEJVUXk0UlJZQ0N1WXotTG1Ma1ViUVJTZ0N1QW9nWUcyMUZGUkNSaHJlYXRsVWk3alVQamVGY1owa1ByeU96ek1ZZTlTUURSTE9nODY3cDdPN2tpM1ZxZUtEY3lkSThkRnRJNXFxQm9tUDV5a3hKU2Rsaw?oc=5",
    "published": "2026-10-24T01:10:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "c7679bdd300a5b48",
+   "name": "Phil Weiser Colorado Governor Plans: Housing, Medicaid, Data Centers",
+   "status": "Announced",
+   "location": "Colorado, US",
+   "lat": 39.0,
+   "lon": -105.5,
+   "state": "CO",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "c7679bdd300a5b48",
+   "source": "Hoodline",
+   "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUjJjQmtIdHJTXzJBWHpUZ0x1RFNHdkM2Wkg0a09JM3ZIb0U0Rkp5RTlaQjJ4SHNvdkliWGo3UnFyVmxZS3dDV19tWXp4enN1M3JSQk4zenhrdjNKVmV1c3JiUzdGMTU4c25MNC1mSmNaU05KdXBsT3hERUdlU0NMSlJHZ0Jaa1NadmtIWlRkYzkxb2YzcWMzS3Z1dEdhWFlIdzkyNlh0bHhRZnRBamw4?oc=5",
+   "published": "2026-10-23T22:56:01+00:00",
    "detected": "auto"
   },
   {
@@ -1940,7 +2011,7 @@
    "cluster_id": "4315e2ad43d45502",
    "source": "WSJ",
    "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRzBfNExYZG9PekNvTUpWeXZ4aExTY3hDeFVQZjVtTDlkR1IzcG9MRzVqSkVleXRJa05hRVBFallGSUw4U0xrMm5JYzFtWFAyeTJDdkh6RkpKUWxNWjBQbFV6aUd5ajZ0WTQ4cnZmS05uNTBzb1Y0LVlWelMxQTRfNG9fdjZheml4dU4tdksxSTJWUjBXeVREcHg4NzFudE5NSDFRSmdR?oc=5",
-   "published": "2026-10-20T21:28:18+00:00",
+   "published": "2026-10-20T21:24:00+00:00",
    "detected": "auto"
   },
   {
