@@ -293,11 +293,22 @@ def log(msg):
     print(msg, flush=True)
 
 
+CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f\u2028\u2029]")
+INVISIBLE_RE = re.compile(r"[\u200b-\u200f\ufeff]")
+
+
 def clean_text(s):
+    """Plain text from feed markup: tags, entities and control or invisible characters removed."""
     if not s:
         return ""
     s = html.unescape(TAG_RE.sub(" ", s))
-    return WS_RE.sub(" ", s).strip()
+    return WS_RE.sub(" ", CONTROL_RE.sub(" ", INVISIBLE_RE.sub("", s))).strip()
+
+
+def safe_link(url):
+    """Only plain http(s) links are kept; javascript:, data: and anything else is dropped."""
+    url = INVISIBLE_RE.sub("", CONTROL_RE.sub("", (url or "").strip()))
+    return url if re.match(r"^https?://[^\s]+$", url, re.I) else ""
 
 
 def norm_key(title):
@@ -764,7 +775,9 @@ def main():
                 if (source and tail.strip().lower() == source.lower()) or (not source and len(tail) < 40):
                     title = head.strip()
                     source = source or tail.strip()
-            link = e.get("link", "")
+            link = safe_link(e.get("link", ""))
+            if not link:
+                continue
             dt = parse_dt(e) or now
             if (now - dt).days > NEWS_MAX_AGE_DAYS:
                 continue
