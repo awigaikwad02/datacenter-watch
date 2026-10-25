@@ -1,7 +1,24 @@
 {
- "updated": "2026-10-25T11:45:24+00:00",
- "count": 239,
+ "updated": "2026-10-25T16:28:54+00:00",
+ "count": 241,
  "projects": [
+  {
+   "id": "4fd8abd65168adf2",
+   "name": "Letter: Utah County Planning Commission hearing on data centers was a farce",
+   "status": "Announced",
+   "location": "Utah County, Utah, US",
+   "lat": 40.12,
+   "lon": -111.669,
+   "state": "UT",
+   "companies": [],
+   "utilities": [],
+   "precision": "county",
+   "cluster_id": "4fd8abd65168adf2",
+   "source": "The Salt Lake Tribune",
+   "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUkZRbUdjZ2UzZnJNMFVBR29MU0NHWnVJbEk5OHNuYUZRY0IxNlFYZU1GQWtRaUZxZldFeEtuYWRIVklnR0lsaTZZeGQ5MDktcXFjYlV2eWNyOEtrWExUa294U1VVTHQ1UjcxUEY3Nk9aZmdzWFFnMzJyaXgxN1pCY3ZmVTk?oc=5",
+   "published": "2026-10-25T12:00:44+00:00",
+   "detected": "auto"
+  },
   {
    "id": "f6aa9fb087ce5bd9",
    "name": "West Virginia group urges public consent as proposed data centers raise concerns",
@@ -88,23 +105,6 @@
    "source": "Tom's Hardware",
    "source_url": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxOYnpkN0VrZkpVVG8xLTlibHpEdXB3eTgwZk05SnNwOHRmY2dfbEs3dU11UEV5YTg0Q09hclRuZVJmODZTVGhCVi0tbll0em9OV1FQTkJqMDJZSktnZ1dLb2NraUpoWmZBeTI0S3VZTk82b0E3VUxGVDlDNVdUeU42U2J0WXZCSnJxSHp5V0lOR3YzNEhKcXJ0MjlPVWY0d0VlQkFmV3NhalZ2elZoYnR6T1FxSjhXMHpEUjVjeEhqSWZVQVZNcmRuQy1RRmlxRE1JNzR6NGlZaFViaVU4NElERV9wSjNFc2ZKc3I3cGtDLXBGLUVYX2xabk9VRmRjX01lSC1qT1hXRjkxcnVLcU5sWlNNMUtDam9WOVVLM3kxWGpOTW95OV9EY3V3aEFoRS1DSU1MdFBmRWh0UDRkb0VwWWhkQ3pFZ2xLMEFrMFN1NTJhbnNGMncwY0FnWjBIZmI1WHJfY0x3?oc=5",
    "published": "2026-10-24T11:35:00+00:00",
-   "detected": "auto"
-  },
-  {
-   "id": "d9ebf30d76f95c64",
-   "name": "Data center regulations postponed again as Planning Commission reviews UDC amendments",
-   "status": "Announced",
-   "location": "Wyoming, US",
-   "lat": 43.0,
-   "lon": -107.5,
-   "state": "WY",
-   "companies": [],
-   "utilities": [],
-   "precision": "source",
-   "cluster_id": "d9ebf30d76f95c64",
-   "source": "WyomingNews.com",
-   "source_url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNbnplQi1vOGNoZGEzNTBZR1Y4UndnaGZMbGdoRG1XVXVtMXhHWFo5emd4WWNoVm9ZWC1LR0k4cEhaZGFTZVRVSUZKLTNhbnFSM0pvTkpVUl8zdnJDRnBGUVRKNVhhWjcyU0s0bUtjaUJmcEk5R2lXVzZMNF91N1VDNFlmTU1yTnZMWGppV0tzdGZ6dGI0UWVKb1FaM0liNkhBVWVsVkNjbXo0Y3g0Qm9JcUlhcllOczBLQjJoVHk0SFZlUTdEYkRBSl90cTJMdUF3S25yYTA3SzMzS0dZWHU3d05xZ0FXOGJhb01rWTNkVE1xdFFFTGFtSE5jRHNkc0Vuc3piNWViWm9SQWFIcUl5TFVqUQ?oc=5",
-   "published": "2026-10-24T11:00:00+00:00",
    "detected": "auto"
   },
   {
@@ -1052,6 +1052,24 @@
    "investment_usd_b": 3.6
   },
   {
+   "id": "68cf50ba23d55c73",
+   "name": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana",
+   "status": "Announced",
+   "location": "Indiana, US",
+   "lat": 39.9,
+   "lon": -86.3,
+   "state": "IN",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "68cf50ba23d55c73",
+   "source": "ConstructConnect News",
+   "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVFktUmdldUNCMzFoaEJSWmpzNWlXR0ROek9aM21GZS1HTlpIR18xb2lSdmNrX2VtNk05MVdUaEM3WFhCU2VGRDlGX1N4TDd1WXNGci14aWlBRjNPT2NieEpla19TRGNibllqVFlkbFE5VkFoNGFaSktvTHVfbVU3YjdxdmstMlN1RkNyRExKbGpRc2xGenotZW0yUTNVSVVBcU9EMUVUdmtVcXVMSkRxNmZn0gGyAUFVX3lxTE5UWS1SZ2V1Q0IzMWhoQlJaanM1aVdHRE56T1ozbUZlLUdOWkhHXzFvaVJ2Y2tfZW02TTkxV1RoQzdYWEJTZUZEOUZfU3hMN3VZc0ZyLXhpaUFGM09PY2J4SmVrX1NEY2JuWWpUWWRsUTlWQWg0YVpKS29MdV9tVTdiN3F2ay0yU3VGQ3JETEpsalFzbEZ6ei1lbTJRM1VJVUFxT0QxRVR2a1VxdUxKRHE2Zmc?oc=5",
+   "published": "2026-10-21T20:20:26+00:00",
+   "detected": "auto",
+   "capacity_mw": 10
+  },
+  {
    "id": "8ae11f5bfc5da64b",
    "name": "Soluna and Applied Digital to build 50 MW wind-powered AI data center in Texas",
    "status": "Announced",
@@ -1070,24 +1088,6 @@
    "published": "2026-10-21T20:06:58+00:00",
    "detected": "auto",
    "capacity_mw": 50
-  },
-  {
-   "id": "68cf50ba23d55c73",
-   "name": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana",
-   "status": "Announced",
-   "location": "Indiana, US",
-   "lat": 39.9,
-   "lon": -86.3,
-   "state": "IN",
-   "companies": [],
-   "utilities": [],
-   "precision": "state",
-   "cluster_id": "68cf50ba23d55c73",
-   "source": "ConstructConnect News",
-   "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcW1XSS16a2FGRXMwN1Y2WlU4cGpHUUx5S0o0Z20tdFdsNF84RkZpMDdLWHA1aVF3WEZkdTViWGpEaTUyUVRrbldtZEVhUnBPNGNHTnJzTDhFRWR2bVJlSkdiZkhUWFJMdFNpTi1yR3A0YUFLZXVwSTVBQTJwcE1LdmRocU1BVlV6LWtuaERtMmljZUE1VzRiQmh2VG1yZGlpaEHSAbIBQVVfeXFMTlRZLVJnZXVDQjMxaGhCUlpqczVpV0dETnpPWjNtRmUtR05aSEdfMW9pUnZja19lbTZNOTFXVGhDN1hYQlNlRkQ5Rl9TeEw3dVlzRnIteGlpQUYzT09jYnhKZWtfU0RjYm5ZalRZZGxROVZBaDRhWkpLb0x1X21VN2I3cXZrLTJTdUZDckRMSmxqUXNsRnp6LWVtMlEzVUlVQXFPRDFFVHZrVXF1TEpEcTZmZw?oc=5",
-   "published": "2026-10-21T19:08:34+00:00",
-   "detected": "auto",
-   "capacity_mw": 10
   },
   {
    "id": "3749531349a05f65",
@@ -2105,6 +2105,23 @@
    "detected": "auto"
   },
   {
+   "id": "d9ebf30d76f95c64",
+   "name": "Data center regulations postponed again as Planning Commission reviews UDC amendments",
+   "status": "Announced",
+   "location": "Wyoming, US",
+   "lat": 43.0,
+   "lon": -107.5,
+   "state": "WY",
+   "companies": [],
+   "utilities": [],
+   "precision": "source",
+   "cluster_id": "d9ebf30d76f95c64",
+   "source": "WyomingNews.com",
+   "source_url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOM1NES1BGZy1rOGpqVzBQTlRNRURoRkpCNVB2RG5PWXpHVS1RSy1GUkp5V2t5VHJGX09Zb05KRkxmb2duZnBoSlozbXRJODA2bW5MR2FzMlVFS3VGeWk1Z1hEZ2JpdlpoUTdhMlFoTGVoN0JRVEpUa28wRmpCbDB6XzlLTUNqTmZyWDBpVXowRUZxWklDRTRHd01TODdWb2lyb0JZcWhpN2g3VFo4Sl9SbmhzQlJVZ3NhOV84UDJreVU2LWlMN3RlZ21hSGFuVFYwQnNPRVF3S05iS2o4TzVuMFhseDJUalVYaFZka1VXUG83ZGVsWTA3NHNyalN0NDdmQUVOb1RMV1RsT1k?oc=5",
+   "published": "2026-10-20T20:16:00+00:00",
+   "detected": "auto"
+  },
+  {
    "id": "2599137ebefd9c81",
    "name": "Hermantown Planning and Zoning Commission to review data center permits Tuesday night",
    "status": "Announced",
@@ -2327,6 +2344,23 @@
    "source": "Business Journal Daily",
    "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMWhsY09lZjNsMnI5QWdZVG5ScUdzTFlVM3VTejB6M0NSMWtSYkRrdWNHdW5TSmZCNDQ0dlh5bWdOQm9sUXJZQmNGU1lBX1ZOUU44dG1LNFdYTHEyLXZsWmtXMHpxZTROTENJTUdZUHhJNnk5ekFZU2xWaUEyT05MV1c2bEhza0t1b0pGYjQ1UUZaeGFjUUtUbUMwR0lMOTB6YW1V?oc=5",
    "published": "2026-10-20T16:45:00+00:00",
+   "detected": "auto"
+  },
+  {
+   "id": "72ad193a43682d27",
+   "name": "Nearly 300 Planned Data Center Projects Threaten Texas’s Air Quality Progress",
+   "status": "Announced",
+   "location": "Texas, US",
+   "lat": 31.5,
+   "lon": -99.3,
+   "state": "TX",
+   "companies": [],
+   "utilities": [],
+   "precision": "state",
+   "cluster_id": "72ad193a43682d27",
+   "source": "Truthout",
+   "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNX1FFeXAzSTlRQVpsZU4tbkVRM2FkV0xkTzNVRWJQQm8ySTdncVBScE9KUk1UYWlEOUZSeEE4TnlXamk0czVQYnJyVHhKemRMTlUzMWlBYndYRHBfaFZNc3B3S2JVb1RWQlBFdjgyNXFjeWpqa1kwVkFMMGlCU0tkSmtDQlFlMlk4QkduQnlQR0pkTy05NFJyU2x6Qlc0ZkM3U3JIRF8yR1Z6cHF5?oc=5",
+   "published": "2026-10-20T16:03:05+00:00",
    "detected": "auto"
   },
   {
@@ -2885,7 +2919,7 @@
    "utilities": [],
    "precision": "city",
    "cluster_id": "499a1f6754bac454",
-   "source": "Crain's Cleveland",
+   "source": "Crain's Cleveland Business",
    "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZWNUUHJCMFYxTENIaVJLZGJVZEJ4T3puNGp1RTI5aGZqTzlEMFYyNS1tTEpmVTlXbDBWQUxzODdqYzh5em16al9WVVNhakRJcmxpY1hhbUxxVDRDRVNfTTQ0Qkt4VkpHRkVUOElYaWwwVjl4bi1MbjR3clZfQlc5dHhyaGthUm1Xd0t0Q2JuS1BncjltWWxqOA?oc=5",
    "published": "2026-10-19T17:07:00+00:00",
    "detected": "auto"
