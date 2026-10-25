@@ -1,19 +1,19 @@
 {
- "checked_at": "2026-10-25T21:18:46+00:00",
- "overall": "pass",
+ "checked_at": "2026-10-25T21:21:56+00:00",
+ "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 2h",
    "status": "pass",
-   "value": "1h 36m ago",
-   "detail": "2026-10-25T19:41:56+00:00"
+   "value": "1h 40m ago",
+   "detail": "2026-10-25T19:41:56Z"
   },
   {
    "name": "Workflow runs (last 10)",
-   "status": "pass",
-   "value": "10/10 succeeded, avg 28s",
-   "detail": ""
+   "status": "fail",
+   "value": "7/8 succeeded, avg 31s",
+   "detail": "failed: pages-build-deployment"
   },
   {
    "name": "Feeds all returned data (status.json)",
@@ -48,7 +48,7 @@
   {
    "name": "news.json updated within 2h",
    "status": "pass",
-   "value": "1h 37m ago",
+   "value": "1h 40m ago",
    "detail": "2026-10-25T19:41:45+00:00"
   },
   {
@@ -186,7 +186,7 @@
   {
    "name": "No secrets in the repo",
    "status": "pass",
-   "value": "0 matches in 45 files",
+   "value": "0 matches in 50 files",
    "detail": ""
   },
   {
@@ -346,5 +346,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-25T21:19:35+00:00"
+ "browser_checked_at": "2026-10-25T21:22:45+00:00"
 }
