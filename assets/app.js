@@ -386,10 +386,12 @@ window.RR = (function () {
   }
   function countUp(el, to, fmt) {
     fmt = fmt || fmtN;
-    if (reducedMotion() || !to) { el.innerHTML = fmt(to); return; }
+    // Hidden tabs never run animation frames, so show the final value straight away.
+    if (reducedMotion() || !to || document.visibilityState === "hidden") { el.innerHTML = fmt(to); return; }
     const t0 = performance.now(), dur = 900;
     (function step(t) {
-      const k = Math.min(1, (t - t0) / dur);
+      // The first frame's timestamp can be earlier than t0; clamp so the count never goes negative.
+      const k = Math.max(0, Math.min(1, (t - t0) / dur));
       el.innerHTML = fmt(to * (1 - Math.pow(1 - k, 3)));
       if (k < 1) requestAnimationFrame(step);
     })(t0);
