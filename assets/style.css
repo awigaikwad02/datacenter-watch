@@ -69,6 +69,8 @@ body {
 }
 a { color: var(--cyan); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* Links inside running text are underlined, not told apart by colour alone. */
+.prose a, .callout a, .note a, .lede a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 h1, h2, h3, h4 { margin: 0; line-height: 1.15; letter-spacing: -.025em; font-weight: 700; }
 p { margin: 0 0 1em; }
 svg { flex: none; }
