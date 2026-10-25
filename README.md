@@ -90,6 +90,13 @@ python scripts/seed_archive.py                     # (re)seed data/archive from 
 python -m http.server 8000                         # then open http://localhost:8000
 ```
 
+## Health checks
+
+- `python scripts/healthcheck.py`: pipeline, data integrity, internal links, sitemap, metadata, CNAME and security checks. Prints a table, writes `data/health.json`, exits 1 on any failure. `--context update` is the lighter gate the hourly data job runs before committing (a failure blocks the commit).
+- `node scripts/healthcheck_browser.mjs` (needs `npm install --no-save playwright @axe-core/playwright` and `npx playwright install chromium`): loads every page at 390px and 1280px on a Pages-like local server and checks console errors, CSP violations, links, the Atlas map, the freshness badge and axe-core accessibility. Results are merged into `data/health.json`.
+- `.github/workflows/healthcheck.yml` runs both daily at 07:23 UTC (and on demand), commits `data/health.json`, and keeps one "Health check failed" issue open while anything fails; it closes the issue on the next passing run. The Methodology page shows the latest result.
+- `HEALTH.md` holds the most recent full audit.
+
 ## Notes
 
 - Only headlines and short machine-generated summaries are shown; article text is never copied.
