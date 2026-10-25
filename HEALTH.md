@@ -15,7 +15,7 @@ The latest result is on the Methodology page and in `data/health.json`.
 | Area | Check | Before | Now | Measured value |
 |---|---|---|---|---|
 | Pipeline | Last 10 workflow runs | PASS | PASS | 10/10 succeeded, average 28 s. After the fixes: 8/9 succeeded plus 1 Pages deploy cancelled because a newer push replaced it |
-| Pipeline | Last "Update news data" commit within 2 h | PASS | PASS | 1 h 31 m old (19:41 UTC). See Needs Awi #1: scheduled runs come every 3 to 5 h |
+| Pipeline | Last "Update news data" commit within 2 h | PASS | PASS | 1 h 31 m old (19:41 UTC). See Needs attention #1: scheduled runs come every 3 to 5 h |
 | Pipeline | `data/status.json` feeds_ok = feeds_total | PASS | PASS | 12 of 12 feeds, 11 new headlines in the last run |
 | Pipeline | Fetcher on `scripts/sample_feed.xml` | PASS | PASS | exit 0; news, candidates and status files parse |
 | Data | All data files parse as JSON | PASS | PASS | 6/6 (news, candidates, projects, status, archive month, archive index) |
@@ -84,7 +84,7 @@ Verified in CI:
 - **CSP:** the site sets no Content-Security-Policy, so "zero CSP violations" is automatically true. Adding a CSP would be a separate change.
 - **Unescaped data in HTML:** the scan is pattern-based. It catches a data field added straight into an HTML string (tested with a planted example), not every possible path.
 
-## 4. Needs Awi
+## 4. Needs attention
 
 1. **Scheduled data runs are unreliable.** On 2026-10-25 GitHub ran the hourly schedule only 5 times: 01:14, 06:15, 11:45, 16:28 and 19:41 UTC. Every run succeeded, but the gaps are longer than 2 hours, so the freshness checks will fail on many days and open the "Health check failed" issue. The fix is an external trigger:
    - a fine-grained token limited to this repository, with Actions read/write permission;
