@@ -128,13 +128,16 @@ def runs(ctx):
     if r.returncode != 0:
         check("Workflow runs (last 10)", "skip", "", "gh run list failed: " + r.stderr.strip()[:120])
         return
-    rows = [x for x in json.loads(r.stdout) if x["status"] == "completed"]
+    # The health check's own runs are left out: their failures are already reported in its issue.
+    rows = [x for x in json.loads(r.stdout) if x["status"] == "completed" and x["workflowName"] != "Health check"]
     ok = sum(x["conclusion"] == "success" for x in rows)
-    failed = [x["workflowName"] for x in rows if x["conclusion"] not in ("success", "skipped")]
+    # A Pages deploy cancelled because a newer push superseded it is normal, not a failure.
+    cancelled = sum(x["conclusion"] == "cancelled" for x in rows)
+    failed = [x["workflowName"] for x in rows if x["conclusion"] not in ("success", "skipped", "cancelled")]
     secs = [(iso(x["updatedAt"]) - iso(x["startedAt"])).total_seconds() for x in rows]
     avg = round(sum(secs) / len(secs)) if secs else 0
-    check("Workflow runs (last 10)", "pass" if not failed else "fail", f"{ok}/{len(rows)} succeeded, avg {avg}s",
-          "failed: " + ", ".join(failed) if failed else "")
+    check("Workflow runs (last 10)", "pass" if not failed else "fail",
+          f"{ok}/{len(rows)} succeeded, {cancelled} superseded, avg {avg}s", "failed: " + ", ".join(failed) if failed else "")
 
 
 def _parses(p):
