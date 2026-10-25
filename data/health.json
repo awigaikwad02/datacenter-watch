@@ -1,25 +1,25 @@
 {
- "checked_at": "2026-10-25T21:21:56+00:00",
- "overall": "fail",
+ "checked_at": "2026-10-25T21:24:18+00:00",
+ "overall": "pass",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 2h",
    "status": "pass",
-   "value": "1h 40m ago",
-   "detail": "2026-10-25T19:41:56Z"
+   "value": "2m ago",
+   "detail": "2026-10-25T21:21:48Z"
   },
   {
    "name": "Workflow runs (last 10)",
-   "status": "fail",
-   "value": "7/8 succeeded, avg 31s",
-   "detail": "failed: pages-build-deployment"
+   "status": "pass",
+   "value": "7/8 succeeded, 1 superseded, avg 31s",
+   "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-10-25T19:41:45+00:00, 11 new"
+   "detail": "run at 2026-10-25T21:21:30+00:00, 19 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -42,19 +42,19 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "1664 KB",
+   "value": "1675 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 2h",
    "status": "pass",
-   "value": "1h 40m ago",
-   "detail": "2026-10-25T19:41:45+00:00"
+   "value": "2m ago",
+   "detail": "2026-10-25T21:21:30+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "1648 items, 0 problems",
+   "value": "1660 items, 0 problems",
    "detail": ""
   },
   {
@@ -73,13 +73,13 @@
    "name": "No category above 30%",
    "status": "pass",
    "value": "top: General 23.6%",
-   "detail": "General 389, Policy / Permits 376, New Announcement 238, Power / Utility 206, AI Infrastructure 164, Cancelled / Blocked 92, Deals / Investment 78, Construction 61, Expansion 30, Operations 8, Land Acquisition 6"
+   "detail": "General 391, Policy / Permits 381, New Announcement 238, Power / Utility 209, AI Infrastructure 164, Cancelled / Blocked 93, Deals / Investment 78, Construction 62, Expansion 30, Operations 8, Land Acquisition 6"
   },
   {
    "name": "At least 50% of headlines located",
    "status": "pass",
-   "value": "854/1648 (51.8%)",
-   "detail": "with a company: 195"
+   "value": "857/1660 (51.6%)",
+   "detail": "with a company: 196"
   },
   {
    "name": "No non-U.S. locations in headlines",
@@ -90,7 +90,7 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "1 month(s), 1737 headlines, earliest 2026-10-14",
+   "value": "1 month(s), 1749 headlines, earliest 2026-10-14",
    "detail": ""
   },
   {
@@ -270,8 +270,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 2h ago",
-   "detail": "expected \"Updated 2h ago\""
+   "value": "Updated 3m ago",
+   "detail": "expected \"Updated 3m ago\""
   },
   {
    "name": "Browser: /atlas @1280px loads cleanly",
@@ -346,5 +346,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-25T21:22:45+00:00"
+ "browser_checked_at": "2026-10-25T21:25:08+00:00"
 }
