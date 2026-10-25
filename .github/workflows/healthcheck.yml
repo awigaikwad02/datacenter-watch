@@ -1,0 +1,99 @@
+name: Health check
+
+on:
+  schedule:
+    - cron: "23 7 * * *"
+  workflow_dispatch:
+
+# contents: commit data/health.json; issues: open/update/close the "Health check failed" issue;
+# actions: read the recent workflow runs for the pipeline check.
+permissions:
+  contents: write
+  issues: write
+  actions: read
+
+concurrency:
+  group: healthcheck
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          fetch-depth: 50 # enough history to find the last "Update news data" commit
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+          npm install --no-save --no-audit --no-fund playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx playwright install --with-deps chromium
+
+      - name: Data, link, sitemap and security checks
+        id: static
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/healthcheck.py
+
+      - name: Browser checks (pages, links, map, accessibility)
+        id: browser
+        continue-on-error: true
+        run: node scripts/healthcheck_browser.mjs
+
+      - name: Render the report
+        run: python scripts/healthcheck.py --render-md "$RUNNER_TEMP/health.md"
+
+      - name: Commit data/health.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/health.json
+          if git diff --cached --quiet; then
+            echo "No change to data/health.json"
+            exit 0
+          fi
+          git commit -m "Health check $(date -u +'%Y-%m-%d %H:%M UTC')"
+          # The hourly data job may have pushed in the meantime.
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
+
+      - name: Open, update or close the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Health check failed"
+          num=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number,title \
+                --jq ".[] | select(.title == \"$TITLE\") | .number" | head -n 1)
+          overall=$(python -c "import json; print(json.load(open('data/health.json'))['overall'])")
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          if [ "$overall" = "fail" ]; then
+            {
+              echo "The health check failed on $(date -u +'%Y-%m-%d %H:%M UTC') ([run]($run_url))."
+              echo
+              cat "$RUNNER_TEMP/health.md"
+            } > "$RUNNER_TEMP/body.md"
+            if [ -n "$num" ]; then
+              gh issue edit "$num" --body-file "$RUNNER_TEMP/body.md"
+            else
+              gh issue create --title "$TITLE" --body-file "$RUNNER_TEMP/body.md"
+            fi
+            exit 1
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "The health check passed on $(date -u +'%Y-%m-%d %H:%M UTC') ([run]($run_url)). Closing."
+          fi
