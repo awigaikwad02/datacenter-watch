@@ -230,22 +230,36 @@ def data(ctx):
     check("No non-U.S. locations in headlines", soft if leaks else "pass", f"{len(leaks)} items",
           "; ".join(i["title"][:60] for i in leaks[:3]))
 
-    archive(items)
+    archive(items, ctx)
     registry(ctx)
     curated()
     announced_metric()
 
 
-def archive(items):
+def archive(items, ctx="full"):
     idx = load(DATA / "archive/index.json")
     on_disk = {Path(p).stem for p in glob.glob(str(DATA / "archive/*.json")) if re.match(r"\d{4}-\d{2}$", Path(p).stem)}
     listed = {m["month"] for m in idx.get("months", [])}
-    archived, dup_months = set(), []
+    archived, dup_months, cross = set(), [], []
     for m in sorted(on_disk):
         ids = [i["id"] for i in load(DATA / f"archive/{m}.json").get("items", [])]
         if len(ids) != len(set(ids)):
             dup_months.append(m)
+        cross += [i for i in set(ids) if i in archived]
         archived.update(ids)
+    check("Archive ids unique across all months", "fail" if cross else "pass", f"{len(archived)} ids, {len(cross)} in two months",
+          ", ".join(cross[:5]))
+    # Every month from the earliest archived one to the current month has a file.
+    if on_disk:
+        y, mo = map(int, min(on_disk).split("-"))
+        expected = []
+        while (y, mo) <= (NOW.year, NOW.month):
+            expected.append(f"{y:04d}-{mo:02d}")
+            y, mo = (y + 1, 1) if mo == 12 else (y, mo + 1)
+        gaps = [m for m in expected if m not in on_disk]
+        # A gap is a coverage problem, not bad data: it warns in the hourly gate and fails the daily check.
+        check("Archive months contiguous to now", ("warn" if ctx == "update" else "fail") if gaps else "pass", f"{min(on_disk)} to {expected[-1]}, {len(gaps)} missing",
+              ", ".join(gaps[:8]))
     missing = [i["id"] for i in items if i["id"] not in archived]
     ok = listed == on_disk and not dup_months and not missing
     check("Archive consistent with news.json", "pass" if ok else "fail",
@@ -299,6 +313,11 @@ def registry(ctx):
     check("Registry statuses and history dates valid", "fail" if bad_status or bad_dates else "pass",
           f"{len(bad_status)} bad statuses, {len(bad_dates)} bad dates", "; ".join((bad_status + bad_dates)[:5]))
     check("Registry records inside the U.S.", "fail" if outside else "pass", f"{len(outside)} outside", "; ".join(outside[:5]))
+    unbacked = [r["id"] for r in recs if not r.get("hidden") and not r.get("curated") and r.get("status") == "Operational"
+                and not r.get("status_override") and not any(n.get("stage_signal") == "Operational" for n in r.get("news", []))]
+    check("Operational records backed by an operational headline", "fail" if unbacked else "pass",
+          f"{sum(1 for r in recs if r.get('status') == 'Operational' and not r.get('curated'))} detected operational, {len(unbacked)} without one",
+          ", ".join(unbacked[:5]) + ("" if not unbacked else " (curated records take their status from projects.json)"))
     check("Registry news all in the archive", "fail" if orphans else "pass",
           f"{sum(len(r.get('news', [])) for r in recs)} attached headlines, {len(orphans)} missing", "; ".join(orphans[:5]))
 
