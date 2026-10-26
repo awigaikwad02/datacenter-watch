@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-25T21:24:18+00:00",
+ "checked_at": "2026-10-26T00:50:34+00:00",
  "overall": "pass",
  "context": "full",
  "checks": [
@@ -7,19 +7,19 @@
    "name": "Last data commit within 2h",
    "status": "pass",
    "value": "2m ago",
-   "detail": "2026-10-25T21:21:48Z"
+   "detail": "2026-10-26T00:48:27Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "7/8 succeeded, 1 superseded, avg 31s",
+   "value": "8/9 succeeded, 1 superseded, avg 26s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-10-25T21:21:30+00:00, 19 new"
+   "detail": "run at 2026-10-26T00:48:10+00:00, 11 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -36,25 +36,25 @@
   {
    "name": "Data files parse as JSON",
    "status": "pass",
-   "value": "6/6",
+   "value": "7/7",
    "detail": ""
   },
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "1675 KB",
+   "value": "1689 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 2h",
    "status": "pass",
    "value": "2m ago",
-   "detail": "2026-10-25T21:21:30+00:00"
+   "detail": "2026-10-26T00:48:10+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "1660 items, 0 problems",
+   "value": "1676 items, 0 problems",
    "detail": ""
   },
   {
@@ -72,14 +72,14 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: General 23.6%",
-   "detail": "General 391, Policy / Permits 381, New Announcement 238, Power / Utility 209, AI Infrastructure 164, Cancelled / Blocked 93, Deals / Investment 78, Construction 62, Expansion 30, Operations 8, Land Acquisition 6"
+   "value": "top: General 23.8%",
+   "detail": "General 399, Policy / Permits 383, New Announcement 240, Power / Utility 212, AI Infrastructure 164, Cancelled / Blocked 94, Deals / Investment 78, Construction 62, Expansion 30, Operations 8, Land Acquisition 6"
   },
   {
    "name": "At least 50% of headlines located",
    "status": "pass",
-   "value": "857/1660 (51.6%)",
-   "detail": "with a company: 196"
+   "value": "862/1676 (51.4%)",
+   "detail": "with a company: 197"
   },
   {
    "name": "No non-U.S. locations in headlines",
@@ -90,14 +90,44 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "1 month(s), 1749 headlines, earliest 2026-10-14",
+   "value": "1 month(s), 1765 headlines, earliest 2026-10-14",
    "detail": ""
   },
   {
-   "name": "Candidate pins valid (U.S. box, status, source)",
+   "name": "Registry ids unique",
    "status": "pass",
-   "value": "241 pins, 0 problems",
+   "value": "73 records, 73 visible",
    "detail": ""
+  },
+  {
+   "name": "No registry record lost since the last commit",
+   "status": "pass",
+   "value": "73 -> 73",
+   "detail": ""
+  },
+  {
+   "name": "Registry statuses and history dates valid",
+   "status": "pass",
+   "value": "0 bad statuses, 0 bad dates",
+   "detail": ""
+  },
+  {
+   "name": "Registry records inside the U.S.",
+   "status": "pass",
+   "value": "0 outside",
+   "detail": ""
+  },
+  {
+   "name": "Registry news all in the archive",
+   "status": "pass",
+   "value": "62 attached headlines, 0 missing",
+   "detail": ""
+  },
+  {
+   "name": "Registry status machine self-test",
+   "status": "pass",
+   "value": "Announced -> Under construction -> Operational",
+   "detail": "aws-richmond-county-nc-2026, 3 news"
   },
   {
    "name": "Curated projects valid",
@@ -108,8 +138,8 @@
   {
    "name": "Overview 'announced' excludes Cancelled / Blocked",
    "status": "pass",
-   "value": "147",
-   "detail": "29 cancelled or blocked sites this month are left out"
+   "value": "13",
+   "detail": "3 cancelled or blocked records this month are left out"
   },
   {
    "name": "Internal links resolve",
@@ -126,7 +156,13 @@
   {
    "name": "Sitemap matches pages",
    "status": "pass",
-   "value": "6 entries",
+   "value": "79 entries (6 site pages + 73 project pages)",
+   "detail": ""
+  },
+  {
+   "name": "Project pages under 5 MB",
+   "status": "pass",
+   "value": "73 pages, 297 KB",
    "detail": ""
   },
   {
@@ -174,8 +210,8 @@
   {
    "name": "Pages under 300 KB (HTML+CSS+JS)",
    "status": "pass",
-   "value": "learn.html 211 KB",
-   "detail": "404.html 111 KB, atlas.html 137 KB, companies.html 124 KB, index.html 125 KB, learn.html 211 KB, methodology.html 124 KB, newsroom.html 127 KB"
+   "value": "learn.html 214 KB",
+   "detail": "404.html 113 KB, atlas.html 141 KB, companies.html 127 KB, index.html 127 KB, learn.html 214 KB, methodology.html 128 KB, newsroom.html 130 KB"
   },
   {
    "name": "Freshness badge and 10-minute no-store poller",
@@ -186,7 +222,7 @@
   {
    "name": "No secrets in the repo",
    "status": "pass",
-   "value": "0 matches in 50 files",
+   "value": "0 matches in 126 files",
    "detail": ""
   },
   {
@@ -244,6 +280,12 @@
    "detail": ""
   },
   {
+   "name": "Browser: /projects/amazon-georgia/ @390px loads cleanly",
+   "status": "pass",
+   "value": "0 console errors, 0 CSP violations, 0 failed requests",
+   "detail": ""
+  },
+  {
    "name": "Browser: 404 page @390px loads cleanly",
    "status": "pass",
    "value": "0 console errors, 0 CSP violations, 0 failed requests",
@@ -258,8 +300,8 @@
   {
    "name": "Browser: Overview 'announced' matches recomputed value",
    "status": "pass",
-   "value": "147",
-   "detail": "Python recomputed 147 (Cancelled / Blocked excluded)"
+   "value": "13",
+   "detail": "Python recomputed 13 (Cancelled / Blocked excluded)"
   },
   {
    "name": "Browser: /newsroom @1280px loads cleanly",
@@ -271,7 +313,7 @@
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
    "value": "Updated 3m ago",
-   "detail": "expected \"Updated 3m ago\""
+   "detail": "expected Updated 3m ago or Updated 2m ago, title \"Data last updated Oct 26, 2026\""
   },
   {
    "name": "Browser: /atlas @1280px loads cleanly",
@@ -282,7 +324,7 @@
   {
    "name": "Browser: Atlas renders pins and state bubbles",
    "status": "pass",
-   "value": "25 markers, 29 bubbles (zoom 5+), 19 approx counts at country zoom",
+   "value": "19 markers, 7 bubbles (zoom 5+), 5 approx counts at country zoom",
    "detail": ""
   },
   {
@@ -294,13 +336,25 @@
   {
    "name": "Browser: Atlas filters change the list",
    "status": "pass",
-   "value": "2 in view · 242 total -> 6 in view · 6 total (state AL)",
+   "value": "1 in view · 70 total -> 1 in view · 1 total (state AZ)",
+   "detail": ""
+  },
+  {
+   "name": "Browser: Atlas registry filters (cancelled off, low-confidence toggle, Operational only)",
+   "status": "pass",
+   "value": "default 70 (0 cancelled: true), with low-confidence 70, Operational only 23",
    "detail": ""
   },
   {
    "name": "Browser: Atlas deep link opens the project",
    "status": "pass",
    "value": "#project=stargate-abilene -> Stargate Abilene",
+   "detail": ""
+  },
+  {
+   "name": "Browser: Atlas panel shows status timeline and project news",
+   "status": "pass",
+   "value": "google-van-buren-township-mi-2026: 2 timeline steps, 7/7 news",
    "detail": ""
   },
   {
@@ -322,6 +376,12 @@
    "detail": ""
   },
   {
+   "name": "Browser: /projects/amazon-georgia/ @1280px loads cleanly",
+   "status": "pass",
+   "value": "0 console errors, 0 CSP violations, 0 failed requests",
+   "detail": ""
+  },
+  {
    "name": "Browser: 404 page @1280px loads cleanly",
    "status": "pass",
    "value": "0 console errors, 0 CSP violations, 0 failed requests",
@@ -336,7 +396,7 @@
   {
    "name": "Browser: Sitemap entries return 200",
    "status": "pass",
-   "value": "6 entries",
+   "value": "79 entries",
    "detail": ""
   },
   {
@@ -346,5 +406,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-25T21:25:08+00:00"
+ "browser_checked_at": "2026-10-26T00:51:32+00:00"
 }
