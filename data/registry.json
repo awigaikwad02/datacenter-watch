@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-26T01:16:50+00:00",
+ "updated": "2026-10-26T01:16:54+00:00",
  "count": 101,
  "visible": 101,
  "records": [
@@ -5302,6 +5302,15 @@
    "notes": "",
    "news": [
     {
+     "id": "bf90f3b677111d92",
+     "title": "'Small-scale' data center proposed at building that houses Starbucks' Seattle headquarters",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYWlxbkUyTWc1SDFiTVh5QzVlZFZheXRoNXFSY1BaUW5zM2FNbklCbC1qV2RrdjUzMHhaNjhMWDV6TG9FZEdLMGk3bG4tQjNfTTZ3WmhIandiRS1vSGNndGxkc3JYYk85cnB4TjhiZGZFRWZiWmZQUVBEN0NMdTBCd3FNR3B3T01LT3JtV3ZTSFpXdzBTMHIxeGNTUHdxT25sal9lTEc0bmNSY1FQTVRUNjRMWDNYUTFRdE01a0U5elFpWnRkZGhfRkJ6U2ljM05PclFob21B?oc=5",
+     "source": "KING5.com",
+     "published": "2026-06-16T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "bf90f3b677111d92"
+    },
+    {
      "id": "13ae1f2715915b23",
      "title": "20MW data center proposed in Starbucks' Seattle HQ building in Washington",
      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWjZrZXlYa01fV2QtamVYSmZZelc4Y19mNC1ER1B4NmlVNWNnMDB6dnRkdGEyNnlzUldfd0xVYzJ2czItckRlYV9jLUNZQTFFaDNhQjdHU1FGUzNGa1dtWk9jX1ZBU3J4Wm5HRXVYLVZJeW9GWkVwcWpOc0V6Qm8xVGhGYlBfR3pPZkk4eDk4N3JYcV8zTnZfQjZtSHM1LVU4UGx3dEJTRDFhLTktVFkyRnJVcDh3VGM?oc=5",
@@ -5311,21 +5320,21 @@
      "cluster_id": "13ae1f2715915b23"
     }
    ],
-   "first_seen": "2026-06-24T07:00:00+00:00",
+   "first_seen": "2026-06-16T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
    "status_history": [
     {
-     "date": "2026-06-24T07:00:00+00:00",
+     "date": "2026-06-16T07:00:00+00:00",
      "status": "Announced",
-     "headline_id": "13ae1f2715915b23"
+     "headline_id": "bf90f3b677111d92"
     }
    ],
    "events": [],
    "capacity_mw": 20,
    "investment_usd_b": null,
    "last_news": "2026-06-24T07:00:00+00:00",
-   "sources_count": 1,
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false
   },
