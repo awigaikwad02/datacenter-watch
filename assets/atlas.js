@@ -6,7 +6,9 @@
   const STATUSES = Object.keys(R.STATUS);
   // Cancelled / Blocked projects and low-confidence pins are off by default.
   const DEFAULT_STATUSES = STATUSES.filter((s) => s !== R.CANCELLED);
-  const f = { q: "", statuses: new Set(DEFAULT_STATUSES), low: false, company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
+  const f = { q: "", statuses: new Set(DEFAULT_STATUSES), low: false, completed: false, company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
+  const TWO_YEARS = 730 * R.DAY;
+  const recentlyCompleted = (p) => { const d = R.completedDate(p); return !!d && Date.now() - new Date(d).getTime() <= TWO_YEARS; };
   let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
   R.shell("/atlas", "Project Atlas");
   $("#fitBtn").innerHTML = R.icon("focus");
@@ -17,6 +19,7 @@
   function match(p, skip) {
     if (skip !== "status" && !f.statuses.has(p.status)) return false;
     if (!f.low && p.confidence === "low" && !p.approx) return false;
+    if (f.completed && !recentlyCompleted(p)) return false;
     if (skip !== "company" && f.company && !p.companies.includes(f.company)) return false;
     if (skip !== "state" && f.state && p.state !== f.state) return false;
     if (skip !== "year" && f.year && String(p.year) !== f.year) return false;
@@ -43,6 +46,7 @@
     const sc = tally("status", (p) => p.status);
     const onlyOps = f.statuses.size === 1 && f.statuses.has("Operational");
     $("#statusChips").innerHTML = '<button class="chip quick" data-quick="Operational" aria-pressed="' + onlyOps + '">Operational only</button>' +
+      '<button class="chip quick" data-completed aria-pressed="' + f.completed + '">Completed in the last 2 years</button>' +
       STATUSES.map((s) => '<button class="chip" data-status="' + s + '" style="--tone:' + R.STATUS[s].tone + '" aria-pressed="' + f.statuses.has(s) + '"><span class="dot"></span>' + (s === R.CANCELLED ? "Cancelled" : s) + ' <span class="n">' + (sc[s] || 0) + "</span></button>").join("");
     $("#lowConf").checked = f.low;
     options("#company", tally("company", (p) => p.companies), "All companies", f.company);
@@ -58,13 +62,13 @@
   }
   function activeCount() {
     const statusChanged = f.statuses.size !== DEFAULT_STATUSES.length || DEFAULT_STATUSES.some((s) => !f.statuses.has(s));
-    return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd, f.low].filter(Boolean).length + (statusChanged ? 1 : 0);
+    return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd, f.low, f.completed].filter(Boolean).length + (statusChanged ? 1 : 0);
   }
 
   // ---------- Map ----------
   function marker(p) {
     const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p, false), title: p.curated ? p.name : p.place, keyboard: true, riseOnHover: true });
-    m.bindTooltip("<b>" + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.status) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + " · " + R.esc(p.place) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -12] });
+    m.bindTooltip("<b>" + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(R.statusSince(p)) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + " · " + R.esc(p.place) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -12] });
     m.on("click", () => select(p.id, "map"));
     return m;
   }
@@ -92,7 +96,7 @@
     $("#list").innerHTML = shown.map((p) => {
       const who = p.curated ? p.company : (p.source || "News") + " · " + R.ago(p.published);
       return '<button class="proj-card" data-id="' + R.esc(p.id) + '"' + (sel === p.id ? ' aria-current="true"' : "") + ' style="--tone:' + R.status(p.status).tone + '">' +
-        '<span class="sdot' + (p.curated ? "" : " auto") + '" aria-hidden="true"></span><span><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.place) + (p.approx ? " (approximate)" : "") + " · " + R.esc(p.status) + "</small><small>" + R.esc(who || "") + (p.stories > 1 ? " · " + p.stories + " sources" : "") + "</small></span>" +
+        '<span class="sdot' + (p.curated ? "" : " auto") + '" aria-hidden="true"></span><span><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.place) + (p.approx ? " (approximate)" : "") + " · " + R.esc(R.statusSince(p)) + "</small><small>" + R.esc(who || "") + (p.stories > 1 ? " · " + p.stories + " sources" : "") + "</small></span>" +
         '<span class="cap">' + (p.capacity_mw ? R.fmtMW(p.capacity_mw) : p.investment_usd_b ? R.fmtMoney(p.investment_usd_b) : "") + "</span></button>";
     }).join("");
   }
@@ -243,7 +247,7 @@
     if ($("#sheet").classList.contains("open")) $("#sheetApply").textContent = "Show " + filtered().length + " projects";
   }
   function reset() {
-    Object.assign(f, { q: "", company: "", state: "", year: "", kind: "", mw: 0, usd: 0, low: false });
+    Object.assign(f, { q: "", company: "", state: "", year: "", kind: "", mw: 0, usd: 0, low: false, completed: false });
     f.statuses = new Set(DEFAULT_STATUSES);
     $("#q").value = "";
     changed();
@@ -261,6 +265,13 @@
     $("#resetFilters").addEventListener("click", reset);
     $("#lowConf").addEventListener("change", (e) => { f.low = e.target.checked; changed(); });
     $("#statusChips").addEventListener("click", (e) => {
+      if (e.target.closest("[data-completed]")) {
+        f.completed = !f.completed;
+        changed();
+        const nc = document.querySelector("#statusChips [data-completed]");
+        if (nc) nc.focus();
+        return;
+      }
       const q = e.target.closest("[data-quick]");
       if (q) {
         const on = f.statuses.size === 1 && f.statuses.has(q.dataset.quick);

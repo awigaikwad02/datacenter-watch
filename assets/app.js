@@ -214,6 +214,26 @@ window.RR = (function () {
   // What the maps show by default: no cancelled projects and no low-confidence pins. Sites known
   // only to the state (umbrellas) always show, as the approximate state bubbles.
   const defaultVisible = (p) => p.status !== CANCELLED && (p.confidence !== "low" || p.approx);
+  // When the current status started, from status_history. Curated projects only carry their announced
+  // month, so a curated construction or operational status has no date of its own.
+  function statusDate(p) {
+    const h = (p.status_history || []).filter((x) => x.status === p.status).pop();
+    if (!h || !h.date || (h.by === "curated" && p.status !== "Announced" && p.status !== "Planned")) return null;
+    return h.date;
+  }
+  function statusSince(p) {
+    const d = statusDate(p), when = d ? fmtDate(d.slice(0, 7)) : "";
+    if (!when) return p.status;
+    return p.status === "Announced" || p.status === "Planned" ? p.status + " " + when : p.status + " since " + when;
+  }
+  // The date a project was reported complete: the headline that moved it to Operational.
+  function completedDate(p) {
+    if (p.status !== "Operational") return null;
+    const h = (p.status_history || []).filter((x) => x.status === "Operational" && x.headline_id).pop();
+    if (h) return h.date;
+    const n = (p.news || []).filter((x) => x.stage_signal === "Operational").pop();
+    return n ? n.published : null;
+  }
 
   // Headlines: one card per story cluster, with every matching headline kept as .members. The card shows
   // the cluster's display headline (most precise place, else earliest) when it is among the matches.
@@ -605,7 +625,7 @@ window.RR = (function () {
 
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
-    STATES, CATS, STATUS, CANCELLED, PRECISION, defaultVisible, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
+    STATES, CATS, STATUS, CANCELLED, PRECISION, defaultVisible, statusSince, completedDate, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
     news, archive, projects, freshness, live, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };

@@ -86,7 +86,7 @@
     cl.clearLayers();
     cl.addLayers(recent.filter((p) => p.curated || !p.approx).map((p) => {
       const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p), title: p.curated ? p.name : p.place, keyboard: true });
-      m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(p.status) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
+      m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(R.statusSince(p)) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
       m.on("click", () => { location.href = "/atlas#project=" + encodeURIComponent(p.id); });
       return m;
     }));
