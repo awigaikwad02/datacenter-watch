@@ -285,7 +285,7 @@ window.RR = (function () {
       if (!d || !d.updated || d.updated === updatedIso || !newsP) return;
       return newsP.then((old) => {
         const known = new Set(old.items.map((i) => i.id));
-        delete cache["data/project_candidates.json"];
+        delete cache["data/registry.json"];
         cache["data/news.json"] = Promise.resolve(d);
         newsP = projP = archP = null;
         Object.keys(cache).forEach((k) => { if (k.startsWith("data/archive")) delete cache[k]; });
