@@ -133,7 +133,6 @@ window.RR = (function () {
     "Planned": { tone: "var(--st-planned)", hex: "#38bdf8", step: 1 },
     "Under construction": { tone: "var(--st-construction)", hex: "#fbbf24", step: 2 },
     "Operational": { tone: "var(--st-operational)", hex: "#34d399", step: 3 },
-    "Expansion": { tone: "var(--st-expansion)", hex: "#f472b6", step: 3 },
     "Cancelled / Blocked": { tone: "var(--st-cancelled)", hex: "#6b7280", step: 0 },
   };
   const CANCELLED = "Cancelled / Blocked";
@@ -196,40 +195,26 @@ window.RR = (function () {
     return archP;
   }
   function placeName(loc) { return (loc || "").replace(/, US$/, ""); }
+  // Projects come from the permanent registry (data/registry.json): curated records from
+  // data/projects.json plus projects detected from headlines. Hidden records never reach the page.
+  const PRECISION = { city: 4, county: 3, state: 2, source: 1 };
   function projects() {
-    projP = projP || Promise.all([json("data/projects.json"), json("data/project_candidates.json").catch(() => ({ projects: [] }))]).then(([cur, cand]) => {
-      const a = (cur.projects || []).map((p) => Object.assign({}, p, {
-        curated: true, companies: p.companies || [], place: placeName(p.location),
-        date: p.announced || null, t: p.announced ? new Date(p.announced + "-15T12:00:00").getTime() : 0,
-        year: p.announced ? Number(p.announced.slice(0, 4)) : null,
-      }));
-      const b = (cand.projects || []).filter((p) => p.state && STATES[p.state]).map((p) => Object.assign({}, p, {
-        curated: false, companies: p.companies || [], place: placeName(p.location),
-        date: p.published, t: new Date(p.published).getTime(), year: new Date(p.published).getFullYear(),
-      }));
-      return a.concat(collapse(b));
-    });
+    projP = projP || json("data/registry.json").then((reg) => (reg.records || []).filter((r) => !r.hidden && r.state && STATES[r.state] && isFinite(r.lat) && isFinite(r.lon)).map((r) => {
+      const t = r.curated && r.announced ? new Date(r.announced + "-15T12:00:00").getTime() : new Date(r.first_seen || r.last_news || 0).getTime();
+      const latest = (r.news || [])[r.news.length - 1];
+      return Object.assign({}, r, {
+        companies: r.companies || [], news: (r.news || []).slice().reverse(), place: placeName(r.location),
+        date: r.curated ? r.announced || r.first_seen : r.first_seen, t, year: t ? new Date(t).getFullYear() : null,
+        approx: (PRECISION[r.precision] || 0) <= 2, stories: (r.news || []).length,
+        published: r.last_news, source: latest && latest.source, source_url: latest && latest.link,
+      });
+    }));
     return projP;
   }
+  // What the maps show by default: no cancelled projects and no low-confidence pins. Sites known
+  // only to the state (umbrellas) always show, as the approximate state bubbles.
+  const defaultVisible = (p) => p.status !== CANCELLED && (p.confidence !== "low" || p.approx);
 
-  // Detected sites: one per story cluster, placed at the most precise location any of its headlines gave.
-  const PRECISION = { city: 4, county: 3, state: 2, source: 1 };
-  function collapse(list) {
-    const groups = new Map();
-    list.forEach((p) => { const k = p.cluster_id || p.id; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(p); });
-    return [...groups.values()].map((g) => {
-      g.sort((x, y) => (PRECISION[y.precision] || 0) - (PRECISION[x.precision] || 0) || x.t - y.t);
-      const lead = g[0], first = g.reduce((m, p) => (p.t < m.t ? p : m), lead);
-      return Object.assign({}, lead, {
-        companies: [...new Set(g.flatMap((p) => p.companies))],
-        stories: g.length, sources: g.map((p) => ({ source: p.source, url: p.source_url, published: p.published, name: p.name })),
-        date: first.published, t: first.t, year: new Date(first.t).getFullYear(),
-        approx: !PRECISION[lead.precision] || PRECISION[lead.precision] <= 2,
-        capacity_mw: lead.capacity_mw || Math.max(0, ...g.map((p) => p.capacity_mw || 0)) || undefined,
-        investment_usd_b: lead.investment_usd_b || Math.max(0, ...g.map((p) => p.investment_usd_b || 0)) || undefined,
-      });
-    });
-  }
   // Headlines: one card per story cluster, with every matching headline kept as .members. The card shows
   // the cluster's display headline (most precise place, else earliest) when it is among the matches.
   function stories(list) {
@@ -610,17 +595,17 @@ window.RR = (function () {
     const names = p.companies.length ? p.companies : p.company ? [p.company] : [];
     const who = names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names[names.length - 1] : names[0] || "An unnamed developer";
     const many = names.length > 1;
-    const what = { [CANCELLED]: many ? "were tied to" : "was tied to", "Announced": "announced", "Planned": many ? "are planning" : "is planning", "Under construction": many ? "are building" : "is building", "Operational": many ? "operate" : "operates", "Expansion": many ? "are expanding" : "is expanding" }[p.status] || "are tied to";
+    const what = { [CANCELLED]: many ? "were tied to" : "was tied to", "Announced": "announced", "Planned": many ? "are planning" : "is planning", "Under construction": many ? "are building" : "is building", "Operational": many ? "operate" : "operates" }[p.status] || "are tied to";
     const size = [p.capacity_mw ? fmtMW(p.capacity_mw) : "", p.investment_usd_b ? fmtMoney(p.investment_usd_b) : ""].filter(Boolean).join(", ");
     return p.curated
       ? who + " " + what + " this " + (size ? size + " " : "") + "data center project in " + p.place + "."
-      : "Detected from a " + (p.source || "news") + " headline on " + fmtDate(p.published) + ": " + (p.status === CANCELLED ? "a data center project reported cancelled, blocked or paused" : "a " + p.status.toLowerCase() + " data center project") + " in " + p.place + (size ? " (" + size + " mentioned)" : "") + "." +
-        (p.stories > 1 ? " " + p.stories + " headlines cover this story." : "");
+      : (p.umbrella ? "Headlines name " + who + " and " + (STATES[p.state] || p.state) + " but not yet a site: " : "Detected from " + p.stories + " headline" + (p.stories === 1 ? "" : "s") + " since " + fmtDate(p.first_seen) + ": ") +
+        (p.status === CANCELLED ? "a data center project reported cancelled, blocked or paused" : (/^[aeiou]/i.test(p.status) ? "an " : "a ") + p.status.toLowerCase() + " data center project") + (p.umbrella ? "" : " in " + p.place) + (size ? " (" + size + " mentioned)" : "") + ".";
   }
 
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
-    STATES, CATS, STATUS, CANCELLED, PRECISION, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
+    STATES, CATS, STATUS, CANCELLED, PRECISION, defaultVisible, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
     news, archive, projects, freshness, live, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };

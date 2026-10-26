@@ -10,7 +10,9 @@
     const week = raw.filter((i) => now - i.t <= 7 * DAY);
     const monthStart = new Date(d.getFullYear(), d.getMonth(), 1).getTime();
     // Projects are already one per story cluster; cancelled or blocked sites never count as announced.
-    const announced = projects.filter((p) => (p.status === "Announced" || p.status === "Planned") && p.status !== R.CANCELLED && p.t >= monthStart).length;
+    // Registry records first seen this month, as shown on the map by default: not cancelled,
+    // not low confidence, and pinned to a place (umbrellas without a named site are left out).
+    const announced = projects.filter((p) => (p.status === "Announced" || p.status === "Planned") && !p.approx && p.confidence !== "low" && p.t >= monthStart).length;
     const states = new Set(items.filter((i) => now - i.t <= 30 * DAY && i.state).map((i) => i.state)
       .concat(projects.filter((p) => !p.curated && now - p.t <= 30 * DAY).map((p) => p.state))).size;
     const mw = items.filter((i) => now - i.t <= 7 * DAY && i.category !== R.CANCELLED).reduce((a, i) => a + (i.capacity_mw || 0), 0);
@@ -77,7 +79,7 @@
   let pulseProjects = [], pulseLayers = null;
   function drawPulse() {
     const now = Date.now();
-    const recent = pulseProjects.filter((p) => p.curated || now - p.t <= 90 * DAY);
+    const recent = pulseProjects.filter(R.defaultVisible);
     $("#pulseCount").innerHTML = '<span class="live-dot" aria-hidden="true"></span>' + recent.length + " sites on the map";
     if (!pulseLayers) return;
     const { cl, approx } = pulseLayers;

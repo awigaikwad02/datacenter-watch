@@ -798,3 +798,40 @@ html .leaflet-container { font-family: var(--font); background: #1a1a1d; }
 .milestones span { color: var(--text); line-height: 1.4; }
 .milestones a { display: inline-block; margin-top: 3px; font-size: 12px; color: var(--muted); }
 .milestones a:hover { color: var(--cyan); }
+
+/* ---------- Project registry: Atlas controls and status timeline ---------- */
+.check-row { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 13px; color: var(--text-2); cursor: pointer; }
+.check-row input { width: 16px; height: 16px; accent-color: var(--accent); }
+.status-chips .chip.quick { border-style: dashed; }
+.status-steps li { border-left: 3px solid var(--tone, var(--border)); border-radius: 0 9px 9px 0; }
+.status-steps .step-status { font-weight: 650; color: var(--text); }
+.status-steps .step-event { font-weight: 600; color: var(--text-2); }
+.status-steps small { color: var(--muted); }
+.co-status { margin: 8px 0 0; font-size: 12.5px; color: var(--muted); }
+
+/* ---------- Static project pages (projects/<id>/index.html, no JavaScript) ---------- */
+.static-page { background: var(--bg); }
+.static-top { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--border); background: rgba(12, 12, 13, .94); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.static-top .page { display: flex; align-items: center; gap: 18px; min-height: 56px; flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
+.static-top nav { display: flex; gap: 4px 14px; flex-wrap: wrap; font-size: 13.5px; }
+.static-top nav a { color: var(--text-2); }
+.static-foot { margin-top: 48px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+.static-foot .page { padding-top: 20px; padding-bottom: 32px; }
+.static-foot a, .pp p a:not(.btn) { text-decoration: underline; text-underline-offset: 3px; }
+.pp { padding: 28px 0 8px; }
+.pp h1 { font-size: clamp(26px, 4vw, 38px); letter-spacing: -.03em; margin: 8px 0 6px; }
+.pp .lede { color: var(--text-2); margin: 0 0 18px; }
+.pp-grid { display: grid; gap: 18px; align-items: start; }
+@media (min-width: 760px) { .pp-grid { grid-template-columns: 1fr 256px; } }
+.pp-map { position: relative; width: 256px; max-width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-2); }
+.pp-map img { display: block; width: 256px; height: 256px; }
+.pp-pin { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: var(--tone); border: 2px solid #0c0c0d; box-shadow: 0 0 0 4px color-mix(in srgb, var(--tone) 30%, transparent); }
+.pp-map small { position: absolute; right: 6px; bottom: 4px; font-size: 10px; color: var(--muted); background: rgba(12, 12, 13, .7); padding: 1px 4px; border-radius: 4px; }
+.pp-steps, .pp-news { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 10px; }
+.pp-steps li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding-left: 12px; border-left: 2px solid var(--tone); }
+.pp-steps time { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.pp-news li { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-2); }
+.pp-news a { color: var(--text); }
+.pp-news small { color: var(--muted); font-size: 12.5px; }
+.pp .sub-h { margin-top: 28px; }
+.pp + .pp { border-top: 1px solid var(--border); margin-top: 24px; }

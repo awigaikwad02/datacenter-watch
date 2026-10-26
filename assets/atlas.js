@@ -4,7 +4,9 @@
   "use strict";
   const R = RR, $ = (s) => document.querySelector(s);
   const STATUSES = Object.keys(R.STATUS);
-  const f = { q: "", statuses: new Set(STATUSES), company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
+  // Cancelled / Blocked projects and low-confidence pins are off by default.
+  const DEFAULT_STATUSES = STATUSES.filter((s) => s !== R.CANCELLED);
+  const f = { q: "", statuses: new Set(DEFAULT_STATUSES), low: false, company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
   let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
   R.shell("/atlas", "Project Atlas");
   $("#fitBtn").innerHTML = R.icon("focus");
@@ -14,6 +16,7 @@
   const hay = (p) => p._hay || (p._hay = [p.name, p.company, p.place, R.STATES[p.state], p.companies.join(" "), p.notes].join(" ").toLowerCase());
   function match(p, skip) {
     if (skip !== "status" && !f.statuses.has(p.status)) return false;
+    if (!f.low && p.confidence === "low" && !p.approx) return false;
     if (skip !== "company" && f.company && !p.companies.includes(f.company)) return false;
     if (skip !== "state" && f.state && p.state !== f.state) return false;
     if (skip !== "year" && f.year && String(p.year) !== f.year) return false;
@@ -38,7 +41,10 @@
   }
   function controls() {
     const sc = tally("status", (p) => p.status);
-    $("#statusChips").innerHTML = STATUSES.map((s) => '<button class="chip" data-status="' + s + '" style="--tone:' + R.STATUS[s].tone + '" aria-pressed="' + f.statuses.has(s) + '"><span class="dot"></span>' + s + ' <span class="n">' + (sc[s] || 0) + "</span></button>").join("");
+    const onlyOps = f.statuses.size === 1 && f.statuses.has("Operational");
+    $("#statusChips").innerHTML = '<button class="chip quick" data-quick="Operational" aria-pressed="' + onlyOps + '">Operational only</button>' +
+      STATUSES.map((s) => '<button class="chip" data-status="' + s + '" style="--tone:' + R.STATUS[s].tone + '" aria-pressed="' + f.statuses.has(s) + '"><span class="dot"></span>' + (s === R.CANCELLED ? "Cancelled" : s) + ' <span class="n">' + (sc[s] || 0) + "</span></button>").join("");
+    $("#lowConf").checked = f.low;
     options("#company", tally("company", (p) => p.companies), "All companies", f.company);
     options("#state", tally("state", (p) => p.state), "All states", f.state, (s) => R.STATES[s] || s);
     options("#year", tally("year", (p) => (p.year ? String(p.year) : "")), "Any year", f.year, null, (a, b) => b - a);
@@ -51,7 +57,8 @@
     document.querySelectorAll(".js-filters").forEach((b) => { b.innerHTML = R.icon("filter") + "Filters" + (n ? " · " + n : ""); });
   }
   function activeCount() {
-    return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd].filter(Boolean).length + (f.statuses.size < STATUSES.length ? 1 : 0);
+    const statusChanged = f.statuses.size !== DEFAULT_STATUSES.length || DEFAULT_STATUSES.some((s) => !f.statuses.has(s));
+    return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd, f.low].filter(Boolean).length + (statusChanged ? 1 : 0);
   }
 
   // ---------- Map ----------
@@ -101,9 +108,7 @@
     const town = p.place.split(",")[0].toLowerCase();
     return (source || news).map((n) => {
       let s = 0;
-      const member = !p.curated && (n.id === p.id || (n.cluster_id && n.cluster_id === p.cluster_id));
-      if (member && p.stories > 1) return [0, n]; // already listed under "Coverage of this story"
-      if (member) s += 100;
+      if (own(p).has(n.id)) return [0, n]; // already listed under "News about this project"
       const sameState = n.state === p.state || (n.states || []).includes(p.state);
       if (sameState && p.companies.some((c) => n.companies.includes(c))) s += 6;
       if (town.length > 3 && n.title.toLowerCase().includes(town)) s += 5;
@@ -111,16 +116,19 @@
       return [s, n];
     }).filter((x) => x[0] >= 5).sort((a, b) => b[0] - a[0] || b[1].t - a[1].t).slice(0, source ? 8 : 6).map((x) => x[1]);
   }
-  function timeline(p) {
-    const st = R.status(p.status).step;
-    const steps = [["Announced", p.curated ? p.announced : p.status === "Announced" ? p.published : null],
-      ["Under construction", !p.curated && p.status === "Under construction" ? p.published : null],
-      ["Operational", !p.curated && p.status === "Operational" ? p.published : null]];
-    if (p.status === "Expansion") steps.push(["Expansion", !p.curated ? p.published : null]);
-    if (p.status === R.CANCELLED) steps.push([R.CANCELLED, p.published]);
-    return '<ol class="timeline" style="--tone:' + R.status(p.status).tone + '">' + steps.map(([name, date], i) => {
-      const on = i < st || (p.status === "Expansion" && i === 3) || (p.status === "Planned" && i === 0) || (p.status === R.CANCELLED && i === 3);
-      return '<li class="' + (on ? "on" : "") + '"><span>' + name + "</span><span>" + (date ? R.fmtDate(date, date.length === 7 ? { month: "short", year: "numeric" } : undefined) : on ? "Date not reported" : "—") + "</span></li>";
+  const own = (p) => p._own || (p._own = new Set((p.news || []).map((n) => n.id)));
+  // Status timeline from the registry: every status change and event, each linked to the headline behind it.
+  function statusTimeline(p) {
+    const byId = Object.fromEntries((p.news || []).map((n) => [n.id, n]));
+    const steps = (p.status_history || []).map((h) => Object.assign({ label: h.status, kind: "status" }, h))
+      .concat((p.events || []).map((e) => Object.assign({ label: e.type, kind: "event" }, e)))
+      .sort((a, b) => String(a.date).localeCompare(String(b.date)));
+    if (!steps.length) return '<p class="co-empty">No status changes recorded yet.</p>';
+    return '<ol class="milestones status-steps">' + steps.map((s) => {
+      const n = byId[s.headline_id], tone = s.kind === "status" ? R.status(s.label).tone : "var(--faint)";
+      const why = n ? '<br><a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "</a> <small>" + R.esc(n.source) + "</small>"
+        : s.by === "curated" ? " <small>(curated)</small>" : s.by === "override" ? " <small>(correction)</small>" : "";
+      return '<li style="--tone:' + tone + '"><time datetime="' + R.esc(s.date) + '">' + R.esc(R.fmtDate(s.date)) + "</time><div><span class=\"step-" + s.kind + '">' + R.esc(s.label) + "</span>" + why + "</div></li>";
     }).join("") + "</ol>";
   }
   function detailHTML(p) {
@@ -137,14 +145,15 @@
       (p.timeline && p.timeline.length ? '<div><h3 class="sub-h">Milestones</h3><ol class="milestones">' + p.timeline.slice().sort((a, b) => String(a.date).localeCompare(String(b.date))).map((m) =>
         '<li><time datetime="' + R.esc(m.date) + '">' + R.esc(R.fmtDate(m.date, m.date.length === 7 ? { month: "short", year: "numeric" } : undefined)) + "</time><div><span>" + R.esc(m.event) + "</span>" +
         (m.url ? '<br><a href="' + R.esc(m.url) + '" target="_blank" rel="noopener">' + R.esc(new URL(m.url).hostname.replace(/^www\./, "")) + " →</a>" : "") + "</div></li>").join("") + "</ol></div>" : "") +
-      '<div><h3 class="sub-h">Stage</h3>' + timeline(p) + "</div>" +
+      '<div><h3 class="sub-h">Status timeline</h3>' + statusTimeline(p) + "</div>" +
       (p.notes ? '<div><h3 class="sub-h">Notes</h3><p>' + R.esc(p.notes) + "</p></div>" : "") +
-      (p.stories > 1 ? '<div><h3 class="sub-h">Coverage of this story</h3><div class="headlines">' + p.sources.map((s) => '<a href="' + R.esc(s.url) + '" target="_blank" rel="noopener">' + R.esc(s.name) + "<small>" + R.esc(s.source || "News") + " · " + R.ago(s.published) + "</small></a>").join("") + "</div></div>" : "") +
+      '<div><h3 class="sub-h">News about this project</h3>' + ((p.news || []).length ? '<div class="headlines">' + p.news.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source || "News") + " · " + R.esc(R.fmtDate(n.published)) + (n.stage_signal ? " · " + R.esc(n.stage_signal) : "") + "</small></a>").join("") + "</div>" : '<p class="co-empty">No headlines attached to this project yet.</p>') + "</div>" +
       '<div id="archiveRel" hidden></div>' +
       '<div><h3 class="sub-h">Related headlines</h3>' + (rel.length ? '<div class="headlines">' + rel.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>" : '<p class="co-empty">No matching headlines in the last 90 days.</p>') + "</div>" +
       '<div class="detail-actions">' + (source ? '<a class="btn sm" href="' + R.esc(source) + '" target="_blank" rel="noopener">' + R.icon("external") + "Latest source</a>" : "") +
+      '<a class="btn sm" href="/projects/' + encodeURIComponent(p.id) + '/">' + R.icon("external") + "Project page</a>" +
       '<button class="btn sm" id="shareProject">' + R.icon("share") + "Share</button></div>" +
-      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from a headline that names only a state, so it is counted in the state's approximate bubble rather than pinned." : "Detected automatically from a headline. The pin sits at the place named, which can be off.")) + ' <a href="/methodology#report">Report a wrong pin</a>.</div></div>';
+      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from headlines that name only a state, so it is counted in the state's approximate bubble rather than pinned." : "Detected automatically from headlines (confidence: " + R.esc(p.confidence) + "). The pin sits at the place named, which can be off.")) + ' <a href="/methodology#report">Report a wrong pin</a>.</div></div>';
   }
   function setPin(id, on) {
     const p = all.find((x) => x.id === id), m = markers[id];
@@ -180,7 +189,7 @@
   function archiveRelated(p) {
     R.archive().then((a) => {
       if (sel !== p.id) return;
-      const shown = new Set(news.map((n) => n.id));
+      const shown = new Set(news.map((n) => n.id).concat([...own(p)]));
       const rel = related(p, a.items.filter((n) => !shown.has(n.id)));
       const box = document.getElementById("archiveRel");
       if (!box || !rel.length) return;
@@ -234,8 +243,8 @@
     if ($("#sheet").classList.contains("open")) $("#sheetApply").textContent = "Show " + filtered().length + " projects";
   }
   function reset() {
-    Object.assign(f, { q: "", company: "", state: "", year: "", kind: "", mw: 0, usd: 0 });
-    f.statuses = new Set(STATUSES);
+    Object.assign(f, { q: "", company: "", state: "", year: "", kind: "", mw: 0, usd: 0, low: false });
+    f.statuses = new Set(DEFAULT_STATUSES);
     $("#q").value = "";
     changed();
   }
@@ -250,12 +259,22 @@
     $("#usd").addEventListener("input", (e) => { f.usd = Number(e.target.value); changed(); });
     $("#inView").addEventListener("change", (e) => { f.inView = e.target.checked; renderList(); });
     $("#resetFilters").addEventListener("click", reset);
+    $("#lowConf").addEventListener("change", (e) => { f.low = e.target.checked; changed(); });
     $("#statusChips").addEventListener("click", (e) => {
+      const q = e.target.closest("[data-quick]");
+      if (q) {
+        const on = f.statuses.size === 1 && f.statuses.has(q.dataset.quick);
+        f.statuses = on ? new Set(DEFAULT_STATUSES) : new Set([q.dataset.quick]);
+        changed();
+        const nq = document.querySelector("#statusChips [data-quick]");
+        if (nq) nq.focus();
+        return;
+      }
       const b = e.target.closest("[data-status]");
       if (!b) return;
       const s = b.dataset.status;
-      if (f.statuses.size === STATUSES.length) { f.statuses = new Set([s]); }
-      else if (f.statuses.has(s)) { f.statuses.delete(s); if (!f.statuses.size) f.statuses = new Set(STATUSES); }
+      // Each chip toggles its status; Cancelled is just another chip, off by default.
+      if (f.statuses.has(s)) { f.statuses.delete(s); if (!f.statuses.size) f.statuses = new Set(DEFAULT_STATUSES); }
       else f.statuses.add(s);
       changed();
       const nb = document.querySelector('#statusChips [data-status="' + s + '"]');

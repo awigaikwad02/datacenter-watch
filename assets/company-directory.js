@@ -13,12 +13,21 @@
       const ns = items.filter((n) => n.companies.includes(name));
       const states = new Set(ps.map((p) => p.state).concat(ns.map((n) => n.state).filter(Boolean)));
       const latest = Math.max(0, ...ns.map((n) => n.t), ...ps.filter((p) => !p.curated).map((p) => p.t));
+      // Registry records per company (hidden ones never arrive here), split by status.
+      const byStatus = {};
+      ps.forEach((p) => { byStatus[p.status] = (byStatus[p.status] || 0) + 1; });
       return {
-        name, info, tone: R.companyTone(name), projects: ps, news: ns, states: [...states].sort(), latest,
+        name, info, tone: R.companyTone(name), projects: ps, byStatus, news: ns, states: [...states].sort(), latest,
         major: ps.filter((p) => p.curated).sort((a, b) => (b.capacity_mw || 0) - (a.capacity_mw || 0)).slice(0, 3),
         hay: (name + " " + info.type + " " + info.desc + " " + [...states].map((s) => R.STATES[s] + " " + s).join(" ")).toLowerCase(),
       };
     });
+  }
+
+  const SPLIT = [["Operational", "operational"], ["Under construction", "building"], ["Announced", "announced"], ["Planned", "planned"], [R.CANCELLED, "cancelled"]];
+  function statusSplit(c) {
+    const parts = SPLIT.filter(([s]) => c.byStatus[s]).map(([s, label]) => c.byStatus[s] + " " + label);
+    return parts.length ? '<p class="co-status">' + R.esc(parts.join(" · ")) + "</p>" : "";
   }
 
   function stats(projects) {
@@ -59,7 +68,7 @@
         '<p class="co-desc">' + R.esc(c.info.desc) + "</p>" +
         (c.major.length ? '<p class="co-latest"><b>Major projects:</b> ' + c.major.map((p) => R.esc(p.name)).join(", ") + "</p>" : "") +
         (last ? '<p class="co-latest"><b>Latest:</b> ' + R.esc(last.title) + "</p>" : '<p class="co-latest co-empty">No tracked headlines yet.</p>') +
-        '<span class="co-metrics"><span><b>' + c.projects.length + "</b><span>projects</span></span><span><b>" + c.states.length + "</b><span>states</span></span><span><b>" + c.news.length + "</b><span>stories</span></span></span></article>";
+        '<span class="co-metrics"><span><b>' + c.projects.length + "</b><span>projects</span></span><span><b>" + c.states.length + "</b><span>states</span></span><span><b>" + c.news.length + "</b><span>stories</span></span></span>" + statusSplit(c) + "</article>";
     }).join("");
     R.reveal($("#grid"));
   }
