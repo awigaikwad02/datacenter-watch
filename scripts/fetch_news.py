@@ -660,6 +660,49 @@ def guess_status(title):
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+def entry_to_item(e, label, now, gaz, geo, max_age_days=NEWS_MAX_AGE_DAYS):
+    """One RSS entry -> a tagged headline, or None when it is dropped (no title, unsafe link,
+    too old, blocked source, off topic or outside the U.S.). The hourly run and
+    scripts/backfill_news.py both use this, so every headline takes the same path."""
+    raw_title = clean_text(e.get("title", ""))
+    if not raw_title:
+        return None
+    source = ""
+    src = e.get("source")
+    if isinstance(src, dict):
+        source = clean_text(src.get("title", ""))
+    # Google News titles end with " - Source"
+    title = raw_title
+    if " - " in raw_title:
+        head, _, tail = raw_title.rpartition(" - ")
+        if (source and tail.strip().lower() == source.lower()) or (not source and len(tail) < 40):
+            title = head.strip()
+            source = source or tail.strip()
+    link = safe_link(e.get("link", ""))
+    if not link:
+        return None
+    dt = parse_dt(e) or now
+    if max_age_days is not None and (now - dt).days > max_age_days:
+        return None
+    # Google News descriptions repeat the title and outlet; Alerts carry a real snippet.
+    desc = clean_text(e.get("summary", "") or e.get("description", ""))
+    snippet = desc[:300] if desc and not desc.startswith(title[:40]) else ""
+    item = {
+        "id": make_id(title),
+        "title": title,
+        "link": link,
+        "source": source,
+        "published": dt.isoformat(timespec="seconds"),
+        "feed": label,
+    }
+    if snippet:
+        item["snippet"] = snippet
+    item["_desc"] = desc  # scanned for places and companies, never stored
+    ok = tag_item(item, gaz, geo)
+    item.pop("_desc", None)
+    return item if ok else None
+
+
 # ---------------------------------------------------------------------------
 # Permanent archive
 # ---------------------------------------------------------------------------
@@ -670,6 +713,12 @@ def archive_items(new_items, archive_dir):
     ever trimmed or deleted. Returns the number of headlines added.
     """
     archive_dir.mkdir(parents=True, exist_ok=True)
+    # Ids are unique across the whole archive, not just within a month: a headline seen
+    # again with another date stays where it was first archived.
+    everywhere = set()
+    for path in archive_dir.glob("*.json"):
+        if MONTH_RE.match(path.stem):
+            everywhere.update(x["id"] for x in load_json(path, {}).get("items", []))
     by_month = {}
     for it in new_items:
         month = it.get("published", "")[:7]
@@ -682,8 +731,9 @@ def archive_items(new_items, archive_dir):
         known = {x["id"] for x in current}
         fresh = []
         for it in its:
-            if it["id"] not in known:
+            if it["id"] not in known and it["id"] not in everywhere:
                 known.add(it["id"])
+                everywhere.add(it["id"])
                 fresh.append(it)
         if not fresh:
             continue
@@ -770,48 +820,10 @@ def main():
         feeds_ok += bool(parsed.entries)
         n = 0
         for e in parsed.entries:
-            raw_title = clean_text(e.get("title", ""))
-            if not raw_title:
+            item = entry_to_item(e, label, now, gaz, geo)
+            if not item or item["id"] in fresh:
                 continue
-            source = ""
-            src = e.get("source")
-            if isinstance(src, dict):
-                source = clean_text(src.get("title", ""))
-            # Google News titles end with " - Source"
-            title = raw_title
-            if " - " in raw_title:
-                head, _, tail = raw_title.rpartition(" - ")
-                if (source and tail.strip().lower() == source.lower()) or (not source and len(tail) < 40):
-                    title = head.strip()
-                    source = source or tail.strip()
-            link = safe_link(e.get("link", ""))
-            if not link:
-                continue
-            dt = parse_dt(e) or now
-            if (now - dt).days > NEWS_MAX_AGE_DAYS:
-                continue
-            key = make_id(title)
-            if key in fresh:
-                continue
-            # Google News descriptions repeat the title and outlet; Alerts carry a real snippet.
-            desc = clean_text(e.get("summary", "") or e.get("description", ""))
-            snippet = desc[:300] if desc and not desc.startswith(title[:40]) else ""
-            item = {
-                "id": key,
-                "title": title,
-                "link": link,
-                "source": source,
-                "published": dt.isoformat(timespec="seconds"),
-                "feed": label,
-            }
-            if snippet:
-                item["snippet"] = snippet
-            item["_desc"] = desc  # scanned for places and companies, never stored
-            ok = tag_item(item, gaz, geo)
-            item.pop("_desc", None)
-            if not ok:
-                continue
-            fresh[key] = item
+            fresh[item["id"]] = item
             n += 1
         log(f"  {label}: {n} items")
     if sources and raw_total == 0:
