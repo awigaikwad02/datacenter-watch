@@ -213,7 +213,8 @@ window.RR = (function () {
   }
   // What the maps show by default: no cancelled projects and no low-confidence pins. Sites known
   // only to the state (umbrellas) always show, as the approximate state bubbles.
-  const defaultVisible = (p) => p.status !== CANCELLED && (p.confidence !== "low" || p.approx);
+  // Projects with no location beyond the state ("Location unavailable") are off by default too.
+  const defaultVisible = (p) => p.status !== CANCELLED && p.confidence !== "low" && !p.approx;
   // When the current status started, from status_history. Curated projects only carry their announced
   // month, so a curated construction or operational status has no date of its own.
   function statusDate(p) {
@@ -566,31 +567,34 @@ window.RR = (function () {
       iconCreateFunction: (c) => {
         let n = 0, a = 0;
         c.getAllChildMarkers().forEach((m) => { if (m.options.approx) a += m.options.approx; else n++; });
-        if (!n) { const s = Math.round(Math.min(56, 28 + Math.sqrt(a) * 5)); return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble" title="' + a + ' stories, location approximate">~' + a + "</div>" }); }
+        if (!n) { const s = Math.round(Math.min(56, 28 + Math.sqrt(a) * 5)); return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble" title="' + a + ' projects, location unavailable">~' + a + "</div>" }); }
         const s = (n < 10 ? 34 : n < 30 ? 40 : 46) + (a ? 8 : 0);
-        return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="cluster' + (a ? " has-apx" : "") + '"' + (a ? ' title="' + n + " sites, plus " + a + ' stories with approximate location"' : "") + ">" + n + (a ? '<small class="apx" aria-label="plus ' + a + ' approximate">~' + a + "</small>" : "") + "</div>" });
+        return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="cluster' + (a ? " has-apx" : "") + '"' + (a ? ' title="' + n + " sites, plus " + a + ' projects with location unavailable"' : "") + ">" + n + (a ? '<small class="apx" aria-label="plus ' + a + ' approximate">~' + a + "</small>" : "") + "</div>" });
       },
     });
   }
-  function legendHTML() {
+  // withApprox: include the "Location unavailable" entry (only when those projects are on the map).
+  function legendHTML(withApprox) {
     return Object.keys(STATUS).map((s) => '<span class="lg"><i style="--tone:' + STATUS[s].tone + '"></i>' + s + "</span>").join("") +
       '<span class="lg"><i class="auto" style="--tone:var(--faint)"></i>Detected from news</span>' +
-      '<span class="lg"><i class="bub"></i>~N: state level only, location approximate</span>';
+      (withApprox ? '<span class="lg"><i class="bub"></i>Location unavailable</span>' : "");
   }
-  // Detected sites known only to the state go into one translucent bubble per state, not pins.
+  // Projects known only to the state (location unavailable) go into one bubble per state, not pins.
+  // The bubble shows how many projects it holds; onClick(state, projects, marker) lists them.
   // With ghost true the markers are small and carry options.approx, for folding into cluster circles.
   function approxBubbles(list, onClick, ghost) {
     const L = window.L, by = {};
     list.filter((p) => !p.curated && p.approx).forEach((p) => {
-      const b = by[p.state] || (by[p.state] = { state: p.state, lat: p.lat, lon: p.lon, n: 0 });
+      const b = by[p.state] || (by[p.state] = { state: p.state, lat: p.lat, lon: p.lon, items: [] });
       if (p.precision === "state") { b.lat = p.lat; b.lon = p.lon; }
-      b.n += p.stories || 1;
+      b.items.push(p);
     });
     return Object.values(by).map((b) => {
-      const s = ghost ? Math.round(Math.min(40, 24 + Math.sqrt(b.n) * 4)) : Math.round(Math.min(64, 30 + Math.sqrt(b.n) * 7)), label = b.n + (b.n === 1 ? " story" : " stories") + ", location approximate";
-      const m = L.marker([b.lat, b.lon], { icon: L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble">' + (ghost ? "~" : "") + b.n + "</div>" }), title: (STATES[b.state] || b.state) + ": " + label, keyboard: true, zIndexOffset: -500, approx: ghost ? b.n : 0 });
-      m.bindTooltip("<b>" + esc(STATES[b.state] || b.state) + "</b><small>" + esc(label) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -s / 2] });
-      if (onClick) m.on("click", () => onClick(b.state));
+      const n = b.items.length;
+      const s = ghost ? Math.round(Math.min(40, 24 + Math.sqrt(n) * 4)) : Math.round(Math.min(64, 30 + Math.sqrt(n) * 7)), label = n + (n === 1 ? " project" : " projects") + ", location unavailable";
+      const m = L.marker([b.lat, b.lon], { icon: L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble">' + (ghost ? "~" : "") + n + "</div>" }), title: (STATES[b.state] || b.state) + ": " + label, keyboard: true, zIndexOffset: -500, approx: ghost ? n : 0 });
+      m.bindTooltip("<b>" + esc(STATES[b.state] || b.state) + "</b><small>" + esc(label) + (onClick ? " · select to list them" : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -s / 2] });
+      if (onClick) m.on("click", () => onClick(b.state, b.items, m));
       return m;
     });
   }

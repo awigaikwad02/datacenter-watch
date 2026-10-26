@@ -6,7 +6,7 @@
   const STATUSES = Object.keys(R.STATUS);
   // Cancelled / Blocked projects and low-confidence pins are off by default.
   const DEFAULT_STATUSES = STATUSES.filter((s) => s !== R.CANCELLED);
-  const f = { q: "", statuses: new Set(DEFAULT_STATUSES), low: false, completed: false, company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
+  const f = { q: "", statuses: new Set(DEFAULT_STATUSES), low: false, approx: false, completed: false, company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
   const TWO_YEARS = 730 * R.DAY;
   const recentlyCompleted = (p) => { const d = R.completedDate(p); return !!d && Date.now() - new Date(d).getTime() <= TWO_YEARS; };
   let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
@@ -18,6 +18,8 @@
   const hay = (p) => p._hay || (p._hay = [p.name, p.company, p.place, R.STATES[p.state], p.companies.join(" "), p.notes].join(" ").toLowerCase());
   function match(p, skip) {
     if (skip !== "status" && !f.statuses.has(p.status)) return false;
+    // Projects with no location beyond the state are off unless "Location unavailable" is ticked.
+    if (!f.approx && p.approx) return false;
     if (!f.low && p.confidence === "low" && !p.approx) return false;
     if (f.completed && !recentlyCompleted(p)) return false;
     if (skip !== "company" && f.company && !p.companies.includes(f.company)) return false;
@@ -49,6 +51,7 @@
       '<button class="chip quick" data-completed aria-pressed="' + f.completed + '">Completed in the last 2 years</button>' +
       STATUSES.map((s) => '<button class="chip" data-status="' + s + '" style="--tone:' + R.STATUS[s].tone + '" aria-pressed="' + f.statuses.has(s) + '"><span class="dot"></span>' + (s === R.CANCELLED ? "Cancelled" : s) + ' <span class="n">' + (sc[s] || 0) + "</span></button>").join("");
     $("#lowConf").checked = f.low;
+    $("#approxOn").checked = f.approx;
     options("#company", tally("company", (p) => p.companies), "All companies", f.company);
     options("#state", tally("state", (p) => p.state), "All states", f.state, (s) => R.STATES[s] || s);
     options("#year", tally("year", (p) => (p.year ? String(p.year) : "")), "Any year", f.year, null, (a, b) => b - a);
@@ -62,7 +65,7 @@
   }
   function activeCount() {
     const statusChanged = f.statuses.size !== DEFAULT_STATUSES.length || DEFAULT_STATUSES.some((s) => !f.statuses.has(s));
-    return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd, f.low, f.completed].filter(Boolean).length + (statusChanged ? 1 : 0);
+    return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd, f.low, f.approx, f.completed].filter(Boolean).length + (statusChanged ? 1 : 0);
   }
 
   // ---------- Map ----------
@@ -78,6 +81,18 @@
     cluster.clearLayers();
     cluster.addLayers(list.filter((p) => p.curated || !p.approx).map((p) => (markers[p.id] = markers[p.id] || marker(p))));
     approx.set(list);
+  }
+
+  // A "Location unavailable" bubble lists its projects; each one opens the detail panel.
+  function approxList(st, items, m) {
+    const rows = items.slice().sort((a, b) => (b.published || "").localeCompare(a.published || "")).map((p) =>
+      '<button class="pop-item" data-id="' + R.esc(p.id) + '"><b>' + R.esc(p.name) + "</b><small>" + R.esc(R.statusSince(p)) +
+      (p.stories ? " · " + p.stories + " headline" + (p.stories === 1 ? "" : "s") : "") + "</small></button>").join("");
+    window.L.popup({ className: "rr-pop", maxWidth: 300, minWidth: 220, autoPanPaddingTopLeft: [16, 120], autoPanPaddingBottomRight: [16, 90] })
+      .setLatLng(m.getLatLng())
+      .setContent('<div class="pop-head"><b>' + R.esc(R.STATES[st] || st) + "</b><small>" + items.length + " project" + (items.length === 1 ? "" : "s") +
+        ' · location unavailable</small></div><div class="pop-list">' + rows + "</div>")
+      .openOn(map);
   }
 
   // ---------- List and stats ----------
@@ -96,7 +111,7 @@
     $("#list").innerHTML = shown.map((p) => {
       const who = p.curated ? p.company : (p.source || "News") + " · " + R.ago(p.published);
       return '<button class="proj-card" data-id="' + R.esc(p.id) + '"' + (sel === p.id ? ' aria-current="true"' : "") + ' style="--tone:' + R.status(p.status).tone + '">' +
-        '<span class="sdot' + (p.curated ? "" : " auto") + '" aria-hidden="true"></span><span><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.place) + (p.approx ? " (approximate)" : "") + " · " + R.esc(R.statusSince(p)) + "</small><small>" + R.esc(who || "") + (p.stories > 1 ? " · " + p.stories + " sources" : "") + "</small></span>" +
+        '<span class="sdot' + (p.curated ? "" : " auto") + '" aria-hidden="true"></span><span><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.place) + (p.approx ? " · location unavailable" : "") + " · " + R.esc(R.statusSince(p)) + "</small><small>" + R.esc(who || "") + (p.stories > 1 ? " · " + p.stories + " sources" : "") + "</small></span>" +
         '<span class="cap">' + (p.capacity_mw ? R.fmtMW(p.capacity_mw) : p.investment_usd_b ? R.fmtMoney(p.investment_usd_b) : "") + "</span></button>";
     }).join("");
   }
@@ -104,7 +119,7 @@
     controls();
     drawMarkers(filtered());
     renderList();
-    $("#legend").innerHTML = R.legendHTML();
+    $("#legend").innerHTML = R.legendHTML(f.approx);
   }
 
   // ---------- Detail panel ----------
@@ -141,7 +156,7 @@
     const kv = [["Capacity", p.capacity_mw ? R.fmtMW(p.capacity_mw) : "Not reported"], ["Investment", p.investment_usd_b ? R.fmtMoney(p.investment_usd_b) : "Not reported"],
       [p.curated ? "Announced" : "First reported", p.date ? R.fmtDate(p.date, p.curated ? { month: "short", year: "numeric" } : undefined) : "Not reported"], ["State", R.STATES[p.state] || p.state]];
     return '<div class="detail-head" style="--tone:' + tone + '"><span class="tag" style="--tone:' + tone + '"><span class="dot"></span>' + R.esc(p.status) + (p.curated ? " · Curated" : " · Detected") + "</span>" +
-      '<h2 id="detailTitle">' + R.esc(p.name) + '</h2><div class="loc">' + R.icon("pin") + R.esc(p.place) + (!p.curated && p.precision && p.precision !== "city" ? " (approximate, " + R.esc(p.precision === "source" ? "outlet's home state" : p.precision + " level") + ")" : "") + "</div>" +
+      '<h2 id="detailTitle">' + R.esc(p.name) + '</h2><div class="loc">' + R.icon("pin") + R.esc(p.place) + (p.approx ? " · location unavailable (state only)" : !p.curated && p.precision === "county" ? " (county level)" : "") + "</div>" +
       '<button class="icon-btn close" id="closeDetail" aria-label="Close project details">' + R.icon("x") + "</button></div>" +
       '<div class="detail-body"><p>' + R.esc(R.summary(p)) + "</p>" +
       '<div class="kv">' + kv.map((k) => "<div><span>" + k[0] + "</span><b>" + R.esc(k[1]) + "</b></div>").join("") + "</div>" +
@@ -157,7 +172,7 @@
       '<div class="detail-actions">' + (source ? '<a class="btn sm" href="' + R.esc(source) + '" target="_blank" rel="noopener">' + R.icon("external") + "Latest source</a>" : "") +
       '<a class="btn sm" href="/projects/' + encodeURIComponent(p.id) + '/">' + R.icon("external") + "Project page</a>" +
       '<button class="btn sm" id="shareProject">' + R.icon("share") + "Share</button></div>" +
-      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from headlines that name only a state, so it is counted in the state's approximate bubble rather than pinned." : "Detected automatically from headlines (confidence: " + R.esc(p.confidence) + "). The pin sits at the place named, which can be off.")) + ' <a href="/methodology#report">Report a wrong pin</a>.</div></div>';
+      '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from headlines that name only a state, so its location is unavailable: it is grouped in the state's bubble rather than pinned." : "Detected automatically from headlines (confidence: " + R.esc(p.confidence) + "). The pin sits at the place named, which can be off.")) + ' <a href="/methodology#report">Report a wrong pin</a>.</div></div>';
   }
   function setPin(id, on) {
     const p = all.find((x) => x.id === id), m = markers[id];
@@ -247,7 +262,7 @@
     if ($("#sheet").classList.contains("open")) $("#sheetApply").textContent = "Show " + filtered().length + " projects";
   }
   function reset() {
-    Object.assign(f, { q: "", company: "", state: "", year: "", kind: "", mw: 0, usd: 0, low: false, completed: false });
+    Object.assign(f, { q: "", company: "", state: "", year: "", kind: "", mw: 0, usd: 0, low: false, approx: false, completed: false });
     f.statuses = new Set(DEFAULT_STATUSES);
     $("#q").value = "";
     changed();
@@ -264,6 +279,14 @@
     $("#inView").addEventListener("change", (e) => { f.inView = e.target.checked; renderList(); });
     $("#resetFilters").addEventListener("click", reset);
     $("#lowConf").addEventListener("change", (e) => { f.low = e.target.checked; changed(); });
+    $("#approxOn").addEventListener("change", (e) => { f.approx = e.target.checked; changed(); });
+    // A project picked from a "Location unavailable" bubble's list opens like any other.
+    map.getContainer().addEventListener("click", (e) => {
+      const b = e.target.closest(".pop-item");
+      if (!b) return;
+      map.closePopup();
+      select(b.dataset.id, "list");
+    });
     $("#statusChips").addEventListener("click", (e) => {
       if (e.target.closest("[data-completed]")) {
         f.completed = !f.completed;
@@ -325,7 +348,7 @@
     window.L.control.zoom({ position: "bottomright" }).addTo(map);
     cluster = R.clusterGroup();
     map.addLayer(cluster);
-    approx = R.approxLayer(map, cluster, (st) => { f.state = st; changed(); fitTo(filtered()); });
+    approx = R.approxLayer(map, cluster, approxList);
     bind();
     update();
     readHash();

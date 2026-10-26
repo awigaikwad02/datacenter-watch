@@ -104,7 +104,7 @@
       window.L.control.zoom({ position: "topright" }).addTo(map);
       const cl = R.clusterGroup();
       map.addLayer(cl);
-      pulseLayers = { cl, approx: R.approxLayer(map, cl, (st) => { location.href = "/atlas#state=" + st; }) };
+      pulseLayers = { cl, approx: R.approxLayer(map, cl, null) };
       drawPulse();
       $("#pulsePh").remove();
     }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open the Project Atlas instead."; });

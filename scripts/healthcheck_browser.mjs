@@ -156,11 +156,36 @@ async function main() {
 
 async function atlas(p, base) {
   const pins = await p.$$eval(".leaflet-marker-icon", (e) => e.length);
+  // "Location unavailable" projects are off by default; tick the filter to show their state bubbles.
+  const hiddenByDefault = (await p.$$eval(".bubble, .cluster .apx", (e) => e.length)) === 0 && !(await p.isChecked("#approxOn"));
+  await p.check("#approxOn", { force: true }); await p.waitForTimeout(500);
   const atCountry = await p.$$eval(".cluster .apx, .bubble", (e) => e.length);
   await p.click(".leaflet-control-zoom-in"); await p.waitForTimeout(500);
   await p.click(".leaflet-control-zoom-in"); await p.waitForTimeout(900);
   const bubbles = await p.$$eval(".bubble", (e) => e.length);
-  check("Atlas renders pins and state bubbles", pins > 0 && bubbles > 0, `${pins} markers, ${bubbles} bubbles (zoom 5+), ${atCountry} approx counts at country zoom`);
+  check("Atlas renders pins and state bubbles", pins > 0 && bubbles > 0 && hiddenByDefault,
+    `${pins} markers; location-unavailable hidden by default: ${hiddenByDefault}; ${bubbles} bubbles at zoom 5+, ${atCountry} at country zoom`);
+  // A bubble lists its projects and each one opens the panel.
+  const bpt = await p.evaluate(() => {
+    for (const el of document.querySelectorAll(".leaflet-marker-icon .bubble")) {
+      const r = el.getBoundingClientRect(), x = r.x + r.width / 2, y = r.y + r.height / 2;
+      const hit = document.elementFromPoint(x, y);
+      if (hit && el.closest(".leaflet-marker-icon").contains(hit)) return { x, y };
+    }
+    return null;
+  });
+  let listed = 0, picked = "";
+  if (bpt) {
+    await p.mouse.click(bpt.x, bpt.y); await p.waitForTimeout(600);
+    listed = await p.$$eval(".rr-pop .pop-item", (e) => e.length);
+    if (listed) {
+      await p.click(".rr-pop .pop-item"); await p.waitForTimeout(1200);
+      picked = await p.$eval("#detail.open #detailTitle", (e) => e.textContent).catch(() => "");
+    }
+  }
+  check("Atlas 'Location unavailable' bubble lists projects and opens one", listed > 0 && !!picked, `${listed} projects listed, opened "${picked || "none"}"`);
+  await p.click("#closeDetail").catch(() => {});
+  await p.uncheck("#approxOn", { force: true }); await p.waitForTimeout(400);
   // Click into clusters until a single pin is visible, then click it.
   let opened = false;
   for (let i = 0; i < 6 && !opened; i++) {

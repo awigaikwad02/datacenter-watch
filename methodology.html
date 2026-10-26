@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=rr18">
+  <link rel="stylesheet" href="assets/style.css?v=rr19">
   <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
 <body>
@@ -78,7 +78,7 @@
 
           <h2 id="projects">Curated and detected projects</h2>
           <p><strong>Curated projects</strong> (rack-shaped pins on the Atlas) are entered by hand in <code>data/projects.json</code> from public reporting, with exact coordinates where known. Each one has a <code>verified</code> flag that stays false until it has been checked against current sources.</p>
-          <p><strong>Detected projects</strong> (ring pins) live in a permanent registry. A headline that mentions a data center or campus, a stage (announced, under construction, operational, expansion or cancelled) and a U.S. place is attached to an existing project when it belongs to the same story, names the project (Stargate, Hyperion and other code names), or names the same company in the same county or city. Otherwise it starts a new project, but only when it is placed at a city or county and names a tracked company, a code name or a MW or dollar figure. A project's status only moves forward (announced, under construction, operational), except that a cancellation marks it Cancelled / Blocked and a later construction or opening headline revives it; every change is kept with the headline that caused it. Each project has a confidence level: high needs a tracked company, a city or county and two or more outlets. The Atlas hides low-confidence and cancelled projects by default. Each project also has its own page under <code>/projects/</code>. The pin is placed at the city or county named. Sites known only to the state are not pinned: from zoom level 5 in they are added up in one translucent bubble per state, labelled with the number of stories and marked as approximate. Zoomed out to the whole country, those counts are folded into the nearest cluster circle as a small "~N" figure. Headlines that name a company and only a state are grouped into one "site not yet named" project per company and state. Detected projects are leads to check, not confirmed facts; corrections go in <code>data/project_overrides.json</code>.</p>
+          <p><strong>Detected projects</strong> (ring pins) live in a permanent registry. A headline that mentions a data center or campus, a stage (announced, under construction, operational, expansion or cancelled) and a U.S. place is attached to an existing project when it belongs to the same story, names the project (Stargate, Hyperion and other code names), or names the same company in the same county or city. Otherwise it starts a new project, but only when it is placed at a city or county and names a tracked company, a code name or a MW or dollar figure. A project's status only moves forward (announced, under construction, operational), except that a cancellation marks it Cancelled / Blocked and a later construction or opening headline revives it; every change is kept with the headline that caused it. Each project has a confidence level: high needs a tracked company, a city or county and two or more outlets. The Atlas hides low-confidence and cancelled projects by default. Each project also has its own page under <code>/projects/</code>. The pin is placed at the city or county named. Projects known only to the state are marked <b>Location unavailable</b> and are not pinned. They are hidden by default; with the "Show projects with location unavailable" filter on, each state gets one dashed bubble showing how many such projects it has (folded into the nearest cluster circle as a small "~N" figure when zoomed out to the whole country), and selecting a bubble lists its projects so each can be opened. Headlines that name a company and only a state are grouped into one "site not yet named" project per company and state. Detected projects are leads to check, not confirmed facts; corrections go in <code>data/project_overrides.json</code>.</p>
 
           <h2 id="limitations">Known limitations</h2>
           <ul>
@@ -104,8 +104,8 @@
     <footer class="site-footer" id="footer"></footer>
   </div>
   <nav class="tabbar" id="tabbar"></nav>
-  <script src="assets/companies.js?v=rr18"></script>
-  <script src="assets/app.js?v=rr18"></script>
-  <script src="assets/methodology.js?v=rr18"></script>
+  <script src="assets/companies.js?v=rr19"></script>
+  <script src="assets/app.js?v=rr19"></script>
+  <script src="assets/methodology.js?v=rr19"></script>
 </body>
 </html>
