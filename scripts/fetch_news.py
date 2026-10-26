@@ -7,9 +7,12 @@ data/feeds.json, cleans and dedupes the headlines, tags each one with a
 category, detects place names, and writes:
 
   data/news.json                the feed shown on index.html
-  data/project_candidates.json  announced / under construction / opened
-                                projects detected from headlines, shown on
-                                the map next to the curated projects.json
+  data/registry.json            permanent project registry (scripts/registry.py):
+                                curated projects plus projects detected from
+                                headlines, never trimmed
+  projects/<id>/index.html      one static page per visible project
+  sitemap.xml                   the six site pages plus the project pages
+  data/status.json              a short report of the run
   data/archive/YYYY-MM.json     permanent monthly archive; headlines are only
                                 ever appended, never trimmed or deleted
   data/archive/index.json       months available and item counts
@@ -47,7 +50,6 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 FEEDS_FILE = DATA / "feeds.json"
 NEWS_FILE = DATA / "news.json"
-CAND_FILE = DATA / "project_candidates.json"
 STATUS_FILE = DATA / "status.json"
 GAZ_FILE = Path(__file__).resolve().parent / "gazetteer.json"
 ARCHIVE_DIR = DATA / "archive"
@@ -57,8 +59,6 @@ NEWS_MAX_AGE_DAYS = 90
 NEWS_MAX_ITEMS = 3000
 # Capacity figures above this are grid-wide totals ("474 GW of requests"), not one project.
 MAX_PROJECT_MW = 20000
-CAND_MAX_AGE_DAYS = 180
-CAND_MAX_ITEMS = 800
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; TheRackReport/1.0; +https://therackreport.org)"}
 TIMEOUT = 25
 FETCH_TRIES = 3          # retry 429 and 5xx responses with exponential backoff
@@ -724,7 +724,7 @@ def write_archive_index(archive_dir):
 
 
 def parse_args():
-    ap = argparse.ArgumentParser(description="Refresh data/news.json and data/project_candidates.json")
+    ap = argparse.ArgumentParser(description="Refresh data/news.json, data/registry.json and the project pages")
     ap.add_argument("--no-fetch", action="store_true", help="re-tag the stored items without fetching feeds")
     ap.add_argument("--sample", metavar="RSS_FILE", help="read this local RSS file instead of the network")
     ap.add_argument("--out", metavar="DIR", help="write the JSON files here instead of data/ (existing data/ files are read as the starting point)")
@@ -735,7 +735,6 @@ def main():
     args = parse_args()
     no_fetch = args.no_fetch
     news_out = Path(args.out) / NEWS_FILE.name if args.out else NEWS_FILE
-    cand_out = Path(args.out) / CAND_FILE.name if args.out else CAND_FILE
     status_out = Path(args.out) / STATUS_FILE.name if args.out else STATUS_FILE
     archive_out = Path(args.out) / "archive" if args.out else ARCHIVE_DIR
     if args.out:
@@ -852,57 +851,14 @@ def main():
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Wrote {news_out}: {len(items)} items")
 
-    # Project candidates: site + stage + place, rebuilt every run from re-tagged
-    # headlines so rule changes (cancellations, places) apply to every pin.
-    cutoff_c = now - timedelta(days=CAND_MAX_AGE_DAYS)
-    pool = {it["id"]: it for it in kept}
-    for path in sorted(archive_out.glob("*.json")):
-        if MONTH_RE.match(path.stem) and path.stem >= cutoff_c.strftime("%Y-%m"):
-            for it in load_json(path, {}).get("items", []):
-                if it["id"] not in pool and datetime.fromisoformat(it["published"]) >= cutoff_c:
-                    it = dict(it)
-                    if tag_item(it, gaz, geo):
-                        it.setdefault("cluster_id", it["id"])
-                        pool[it["id"]] = it
-    cands = {}
-    for it in pool.values():
-        if not it["locations"] or not PROJECT_WORDS.search(it["title"]):
-            continue
-        status = guess_status(it["title"])
-        if not status:
-            continue
-        loc = it["locations"][0]
-        c = {
-            "id": it["id"],
-            "name": it["title"],
-            "status": status,
-            "location": loc["name"],
-            "lat": loc["lat"],
-            "lon": loc["lon"],
-            "state": state_of(loc),
-            "companies": it.get("companies", []),
-            "utilities": it.get("utilities", []),
-            "precision": loc.get("precision", "city"),
-            "cluster_id": it.get("cluster_id", it["id"]),
-            "source": it["source"],
-            "source_url": it["link"],
-            "published": it["published"],
-            "detected": "auto",
-        }
-        for k in ("capacity_mw", "investment_usd_b"):
-            if k in it:
-                c[k] = it[k]
-        cands[it["id"]] = c
-    cand_list = [c for c in cands.values()
-                 if datetime.fromisoformat(c["published"]) >= cutoff_c]
-    cand_list.sort(key=lambda c: c["published"], reverse=True)
-    cand_list = cand_list[:CAND_MAX_ITEMS]
-    cand_out.write_text(json.dumps({
-        "updated": now.isoformat(timespec="seconds"),
-        "count": len(cand_list),
-        "projects": cand_list,
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"Wrote {cand_out}: {len(cand_list)} candidates")
+    # Permanent project registry: attach project-shaped headlines to records, apply
+    # data/project_overrides.json, rebuild statuses, then the static project pages and sitemap.
+    import registry
+    reg_out = Path(args.out) / "registry.json" if args.out else registry.REGISTRY_FILE
+    reg_in = reg_out if reg_out.exists() else registry.REGISTRY_FILE
+    records = registry.update(kept, gaz, registry_in=reg_in, registry_out=reg_out, log=log)
+    registry.build_pages(records, out_dir=Path(args.out) / "projects" if args.out else registry.PAGES_DIR,
+                         sitemap=Path(args.out) / "sitemap.xml" if args.out else registry.SITEMAP_FILE, log=log)
 
     # A small run report for the Methodology page.
     status_out.write_text(json.dumps({
