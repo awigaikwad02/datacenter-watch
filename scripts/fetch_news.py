@@ -421,6 +421,16 @@ def find_locations(text, gaz, geo, context_states=()):
     resolved with the states found elsewhere in the text or the outlet's state."""
     found = []
     work = text
+    # A city name inside "Richmond County" or "Van Buren Township" is not that city:
+    # blank the matched county/parish/township names before looking for cities.
+    for m in AREA_RE.finditer(text):
+        words, kind = m.group(1).split(), m.group(2)
+        for k in range(len(words), 0, -1):
+            key = " ".join(words[-k:]) + " " + kind
+            if key in geo.areas:
+                start = m.end() - len(key)
+                work = work[:start] + " " * len(key) + work[m.end():]
+                break
     for name, pat in geo.patterns:
         m = pat.search(work)
         if not m:
