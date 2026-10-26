@@ -76,12 +76,16 @@ Every visible record gets a static page at `/projects/<id>/` (no JavaScript; map
 
 ### Archive
 
-`data/news.json` is the recent file: 90 days, up to 3,000 headlines. Every headline that passes the U.S. filter is also appended to `data/archive/YYYY-MM.json` for the month it was published; archive files are never trimmed and existing entries are never rewritten. `scripts/seed_archive.py` rebuilt the archive from every version of `data/news.json` in git history and is safe to re-run.
+`data/news.json` is the recent file: 90 days, up to 3,000 headlines. Every headline that passes the U.S. filter is also appended to `data/archive/YYYY-MM.json` for the month it was published; archive files are never trimmed, existing entries are never rewritten, and a headline id appears in only one month. Headlines that today's rules reject keep their entry with `"filtered": true` and are hidden on the site. `scripts/seed_archive.py` rebuilt the archive from every version of `data/news.json` in git history and is safe to re-run.
 
-Fields written on each headline: `id, title, link, source, published, feed, category, tags, locations, states, state, county, location_precision, companies, utilities, cluster_id, cluster_title` and, when present, `snippet, capacity_mw, investment_usd_b`. Candidates (rebuilt every run from recent and archived headlines) add `status, location, lat, lon, state, companies, utilities, precision, cluster_id, source, source_url, published`.
+Fields written on each headline: `id, title, link, source, published, feed, category, tags, locations, states, state, county, location_precision, companies, utilities, cluster_id, cluster_title` and, when present, `snippet, capacity_mw, investment_usd_b`.
 
 Categories: Cancelled / Blocked, New Announcement, Expansion, Construction, Power / Utility, Land Acquisition, Policy / Permits, Deals / Investment, Operations, AI Infrastructure, General.
-Statuses: Announced, Planned (curated only), Under construction, Operational, Expansion, Cancelled / Blocked.
+Registry statuses: Announced, Planned (curated only), Under construction, Operational, Cancelled / Blocked (Expansion is an event).
+
+### News backfill
+
+`scripts/backfill_news.py` (manual, or the **Backfill news** workflow: Actions → Backfill news → Run workflow with `start`, `end`, `window_days`) fills the archive with older headlines from Google News RSS only, using the same `google_news_url()` builder with `after:`/`before:` date operators and one query per lifecycle stage (operational in two halves, construction, announced in 7-day windows, cancelled, hyperscaler sweep). Every headline goes through `fetch_news.entry_to_item()`, the same path as the hourly run, and is appended to the archive by published month; `data/news.json` is never touched. Requests are 2 to 3 seconds apart with 3 tries on 429/5xx; the run stops after 10 failures in a row. Google keeps only the first 32 words of a query, so the date operators come first; a window that returns 100 results (the cap) is split in half down to one day, and headlines more than a week outside their window are dropped. Progress is saved to `data/backfill_progress.json` after every window and `--resume` continues from there; the workflow commits every 20 windows, then rebuilds the registry from the whole archive (`python scripts/registry.py --backfill`) and writes `BACKFILL.md`, `data/backfill_report.json` and `data/registry_review.json` (`python scripts/backfill_report.py`). If the first month returns nothing at all, the script stops with exit code 3 instead of trying anything else.
 
 ### Data quality rules
 
