@@ -40,9 +40,13 @@ TEST_DAYS = 30                # if the first month returns nothing at all, stop
 
 # One query per lifecycle stage so each window stays under Google News' 100-result cap.
 # The third value overrides the window length for that query (the busiest one).
+# Google keeps only the first 32 words of a query, so the date operators go first and the
+# operational query is asked in two halves (it is 32 words on its own); a window that still
+# returns 100 results is split in half until it does not, down to one day.
+RESULT_CAP = 100
 QUERIES = [
-    ("operational", '"data center" (opens OR opened OR "now open" OR "grand opening" OR "ribbon cutting" OR "goes live" OR '
-                    '"comes online" OR "now operational" OR "officially open" OR completes OR completed OR energized)', None),
+    ("operational", '"data center" (opens OR opened OR "now open" OR "grand opening" OR "ribbon cutting" OR "goes live")', None),
+    ("operational", '"data center" ("comes online" OR "now operational" OR "officially open" OR completes OR completed OR energized)', None),
     ("construction", '"data center" ("breaks ground" OR groundbreaking OR "under construction" OR "construction begins" OR '
                      '"construction underway" OR "topping out")', None),
     ("announced", '"data center" (announces OR announced OR plans OR proposed OR "to build" OR unveils OR approves OR approved)', 7),
@@ -116,36 +120,49 @@ def run_window(a, b, prog, known, gaz, geo, feed_file=None):
     now = datetime.now(timezone.utc)
     month = a.strftime("%Y-%m")
     stats, new = {}, []
+    def ask(name, query, lo, hi, st):
+        url = fn.google_news_url(f"after:{lo.isoformat()} before:{hi.isoformat()} {query}")
+        entries = fetch(url, prog, feed_file)
+        if entries is None:
+            log(f"    {name} {lo}..{hi}: request failed ({prog['consecutive_failures']} in a row)")
+            return prog["consecutive_failures"] < MAX_CONSECUTIVE_FAILURES
+        if len(entries) >= RESULT_CAP and (hi - lo).days > 1 and not feed_file:
+            mid = lo + timedelta(days=(hi - lo).days // 2)
+            st["split"] += 1
+            return ask(name, query, lo, mid, st) and ask(name, query, mid, hi, st)
+        st["capped"] += len(entries) >= RESULT_CAP
+        st["fetched"] += len(entries)
+        lo_ok, hi_ok = (lo - timedelta(days=7)).isoformat(), (hi + timedelta(days=7)).isoformat()
+        for e in entries:
+            item = fn.entry_to_item(e, "Backfill: " + name, now, gaz, geo, max_age_days=None)
+            if not item:
+                continue
+            st["passed"] += 1
+            # Google does not apply the date operators strictly; keep only headlines within a week of the window.
+            if not (lo_ok <= item["published"][:10] < hi_ok):
+                st["out_of_window"] += 1
+                continue
+            if item["id"] in known:
+                continue
+            known.add(item["id"])
+            new.append(item)
+            st["new"] += 1
+        return True
+
     for name, query, sub_days in QUERIES:
-        st = stats.setdefault(name, {"fetched": 0, "passed": 0, "new": 0})
+        st = stats.setdefault(name, {"fetched": 0, "passed": 0, "new": 0, "out_of_window": 0, "split": 0, "capped": 0})
         step = timedelta(days=sub_days or (b - a).days)
         lo = a
         while lo < b:
             hi = min(lo + step, b)
-            url = fn.google_news_url(f"{query} after:{lo.isoformat()} before:{hi.isoformat()}")
-            entries = fetch(url, prog, feed_file)
-            if entries is None:
-                log(f"    {name} {lo}..{hi}: request failed ({prog['consecutive_failures']} in a row)")
-                if prog["consecutive_failures"] >= MAX_CONSECUTIVE_FAILURES:
-                    return None, stats
-            else:
-                st["fetched"] += len(entries)
-                for e in entries:
-                    item = fn.entry_to_item(e, "Backfill: " + name, now, gaz, geo, max_age_days=None)
-                    if not item:
-                        continue
-                    st["passed"] += 1
-                    if item["id"] in known:
-                        continue
-                    known.add(item["id"])
-                    new.append(item)
-                    st["new"] += 1
+            if not ask(name, query, lo, hi, st):
+                return None, stats
             lo = hi
     m = prog["months"].setdefault(month, {})
     for name, st in stats.items():
-        acc = m.setdefault(name, {"fetched": 0, "passed": 0, "new": 0})
-        for k in acc:
-            acc[k] += st[k]
+        acc = m.setdefault(name, {})
+        for k, v in st.items():
+            acc[k] = acc.get(k, 0) + v
     return new, stats
 
 
@@ -191,7 +208,8 @@ def main():
         prog["next"] = nxt.isoformat()
         save_progress(prog)
         log(f"  {cur}..{nxt}: fetched {fetched}, passed {passed}, archived {added}  " +
-            "  ".join(f"{k} {v['fetched']}/{v['passed']}" for k, v in stats.items()))
+            "  ".join(f"{k} {v['fetched']}/{v['passed']}/{v['new']}" + (f" (split {v['split']}, capped {v['capped']})" if v["split"] or v["capped"] else "")
+                      for k, v in stats.items()))
         windows += 1
         cur = nxt
         # The date operators must work: if the whole first month came back empty, stop.

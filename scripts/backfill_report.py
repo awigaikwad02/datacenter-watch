@@ -51,7 +51,7 @@ def main():
 
     queries = sorted({q for m in prog.get("months", {}).values() for q in m})
     months = [{"month": m, "archive_total": by_month.get(m, 0),
-               **{q: prog["months"][m].get(q, {"fetched": 0, "passed": 0, "new": 0}) for q in queries}}
+               **{q: {"fetched": 0, "passed": 0, "new": 0, **prog["months"][m].get(q, {})} for q in queries}}
               for m in sorted(prog.get("months", {}))]
 
     created_ops = []
