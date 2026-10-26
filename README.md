@@ -32,7 +32,10 @@ GitHub Actions (every hour at :17)
      reads  data/feeds.json             Google News RSS searches and Google Alerts feeds
      reads  scripts/gazetteer.json      place names -> coordinates (U.S. and foreign)
      writes data/news.json              headlines with category, state(s), companies, MW/$ figures
-     writes data/project_candidates.json projects detected in headlines (U.S. only)
+     reads  data/projects.json          curated projects (edited by hand)
+     reads  data/project_overrides.json corrections to the registry (edited by hand)
+     writes data/registry.json          permanent project registry (scripts/registry.py)
+     writes projects/<id>/index.html    one static page per visible project, plus sitemap.xml
      writes data/status.json            last run: feeds_total, feeds_ok, items_total, items_new
      writes data/archive/YYYY-MM.json   permanent archive by published month, append-only
      writes data/archive/index.json     months available, item counts, earliest/latest dates
@@ -42,6 +45,34 @@ GitHub Pages serves the HTML; the pages fetch the JSON in the browser
 ```
 
 `data/projects.json` holds curated projects and is edited by hand. A project can carry an optional `timeline` array of `{date, event, url}` milestones (date as `YYYY-MM` or `YYYY-MM-DD`), shown in the Atlas detail panel.
+
+### Project registry
+
+`data/registry.json` is the permanent list of projects, written by `scripts/registry.py` (called from the fetcher) and never trimmed: records are hidden, not deleted. Curated projects are re-imported from `data/projects.json` every run and their fields (name, place, status, figures, notes, timeline) win.
+
+Each run, every project-shaped headline (a U.S. place, a site word and a stage word) is attached to the first record that matches, in this order: (a) a headline from the same story cluster is already attached; (b) a project code name in the title (Stargate, Hyperion, Prometheus, Fairwater, Project Rainier, Colossus, Project Matador, any curated name of 6+ characters, any alias) matches a record's name or aliases in the same state; (c) same company and the same county or city; (d) same company and state, when the record is known only to the state; (e) no company on either side, the same city or county and title-word Jaccard >= 0.4 within 60 days. With no match, a new record is created when the headline is at city or county precision and names a tracked company, a code name, a MW/GW figure or a dollar figure. State-only headlines with a company go to one umbrella record per company and state ("Amazon, North Carolina (site not yet named)"), which is folded into the first named site for that company and state when one appears. Everything else stays in the news only.
+
+Status, `status_history`, `events`, figures, `first_seen`/`last_news`, `sources_count` and `confidence` are rebuilt every run by replaying the record's headlines in date order: Announced < Under construction < Operational only moves forward; Cancelled / Blocked adds a Cancelled event and a later construction or operational headline adds a Revived event; Expansion, Approval and Power deal are events and never change status. Confidence is high for a tracked company + city/county + 2 or more outlets, medium for a company or figure + city/county, low otherwise (umbrellas are always low).
+
+Self-test: `python scripts/registry.py --selftest` (also run by the health check). One-time backfill from the archive: `python scripts/registry.py --backfill`. Rebuild pages only: `python scripts/registry.py --pages`.
+
+### Registry overrides
+
+`data/project_overrides.json` holds `{"operations": [ ... ]}`, applied in order after matching on every run. Each operation is idempotent, so they stay in the file:
+
+| Operation | Effect |
+|---|---|
+| `{"op": "merge", "from": ID, "into": ID}` | Moves all headlines (and so history and events) into `into`; `from` is hidden with `merged_into` set and later headlines follow it. |
+| `{"op": "rename", "id": ID, "name": "New name"}` | Sets the display name. |
+| `{"op": "set_status", "id": ID, "status": STATUS, "date": "YYYY-MM-DD"}` | Forces the status at that date (forward or backward); later headlines continue from there. STATUS is Announced, Planned, Under construction, Operational or Cancelled / Blocked. |
+| `{"op": "set_location", "id": ID, "lat": N, "lon": N, "location": "Place, State, US", "precision": "city"}` | Moves the pin; city or county precision turns an umbrella into a named site. |
+| `{"op": "hide", "id": ID}` | Hides a record that is not a project; it keeps collecting its story's headlines. |
+| `{"op": "alias", "id": ID, "alias": "Code name"}` | Adds a name that matching rule (b) will look for in headlines. |
+| `{"op": "split", "id": ID, "headline_ids": [ID, ...], "new_id": ID}` | Moves those headlines into a new record (same place and companies; rename or relocate it with further operations). |
+
+### Project pages
+
+Every visible record gets a static page at `/projects/<id>/` (no JavaScript; map thumbnail is an OpenStreetMap tile), listed in `sitemap.xml`. If there are more than 2,000 visible records the build switches to one page per state (`/projects/state-xx/`). The pages must stay under 5 MB in total (checked by the health check).
 
 ### Archive
 
