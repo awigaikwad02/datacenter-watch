@@ -1,13 +1,100 @@
 {
- "generated": "2026-10-26T01:28:44+00:00",
+ "generated": "2026-10-26T01:46:50+00:00",
  "_readme": "Records that received headlines naming two different companies with nothing in common: likely wrong merges. Fix with split or merge in data/project_overrides.json.",
  "records": [
+  {
+   "id": "meta-tx-unnamed",
+   "name": "Meta, Texas (site not yet named)",
+   "state": "TX",
+   "companies": [
+    "Meta",
+    "OpenAI",
+    "Oracle"
+   ],
+   "example": [
+    {
+     "companies": [
+      "Meta"
+     ],
+     "title": "Meta unveils plans for $1.5bn AI data centre in Texas",
+     "id": "ca3f5859dde65549"
+    },
+    {
+     "companies": [
+      "OpenAI",
+      "Oracle"
+     ],
+     "title": "Oracle and OpenAI drop Texas data center expansion plan, Bloomberg News reports",
+     "id": "35a859dbe9962d22"
+    }
+   ],
+   "suggestion": "split the headlines of the other company into a new record, or merge into the right one"
+  },
+  {
+   "id": "openai-tx-unnamed",
+   "name": "OpenAI, Texas (site not yet named)",
+   "state": "TX",
+   "companies": [
+    "Crusoe",
+    "OpenAI",
+    "Vantage"
+   ],
+   "example": [
+    {
+     "companies": [
+      "Crusoe",
+      "OpenAI"
+     ],
+     "title": "Watch Crusoe Enters Second Phase of Building an OpenAI Texas Data Center",
+     "id": "bc9ddbce51bc816f"
+    },
+    {
+     "companies": [
+      "Vantage"
+     ],
+     "title": "Vantage Data Centers breaks ground on data center campus in Texas",
+     "id": "19ddb5ee955e2ee1"
+    }
+   ],
+   "suggestion": "split the headlines of the other company into a new record, or merge into the right one"
+  },
+  {
+   "id": "site-port-washington-wi-2025-8",
+   "name": "Port Washington data center",
+   "state": "WI",
+   "companies": [
+    "OpenAI",
+    "Oracle",
+    "SoftBank",
+    "Vantage"
+   ],
+   "example": [
+    {
+     "companies": [
+      "Vantage"
+     ],
+     "title": "$15 billion Vantage data center breaks ground in Port Washington",
+     "id": "9c32502d6c6bda5d"
+    },
+    {
+     "companies": [
+      "OpenAI",
+      "Oracle",
+      "SoftBank"
+     ],
+     "title": "$15B Stargate data center breaks ground in Wisconsin",
+     "id": "3fdcb5d851e018aa"
+    }
+   ],
+   "suggestion": "split the headlines of the other company into a new record, or merge into the right one"
+  },
   {
    "id": "stargate-abilene",
    "name": "Stargate Abilene",
    "state": "TX",
    "companies": [
     "Crusoe",
+    "Microsoft",
     "OpenAI",
     "Oracle",
     "SoftBank"
@@ -28,6 +115,35 @@
      ],
      "title": "Crusoe expands Abilene AI campus to 1.2 GW",
      "id": "9c3310b848d0ab1d"
+    }
+   ],
+   "suggestion": "split the headlines of the other company into a new record, or merge into the right one"
+  },
+  {
+   "id": "stargate-port-washington-lighthouse",
+   "name": "Stargate Port Washington (Lighthouse)",
+   "state": "WI",
+   "companies": [
+    "OpenAI",
+    "Oracle",
+    "SoftBank",
+    "Vantage"
+   ],
+   "example": [
+    {
+     "companies": [
+      "Vantage"
+     ],
+     "title": "Vantage identified as operator for Port Washington's proposed 3.5 gigawatt data center campus",
+     "id": "6eb07870ea2689d0"
+    },
+    {
+     "companies": [
+      "OpenAI",
+      "Oracle"
+     ],
+     "title": "Oracle, OpenAI to Build $15 Billion Data Center Site in Wisconsin",
+     "id": "dcce8c3874f08487"
     }
    ],
    "suggestion": "split the headlines of the other company into a new record, or merge into the right one"

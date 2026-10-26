@@ -1,19 +1,19 @@
 {
- "generated": "2026-10-26T01:28:44+00:00",
+ "generated": "2026-10-26T01:46:50+00:00",
  "range": {
   "start": "2024-10-01",
   "end": "2026-10-14",
   "window_days": 14,
   "done": false
  },
- "requests": 174,
+ "requests": 526,
  "failed_requests": 0,
- "fetched": 7035,
- "passed_filters": 3787,
- "added_to_archive": 2440,
+ "fetched": 19777,
+ "passed_filters": 13948,
+ "added_to_archive": 8762,
  "archive": {
   "before": 1765,
-  "after": 5019,
+  "after": 11341,
   "earliest": "2019-11-18T08:00:00+00:00"
  },
  "months": [
@@ -412,6 +412,402 @@
     "split": 0,
     "capped": 0
    }
+  },
+  {
+   "month": "2025-07",
+   "archive_total": 346,
+   "announced": {
+    "fetched": 331,
+    "passed": 242,
+    "new": 182,
+    "out_of_window": 0,
+    "split": 4,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 77,
+    "passed": 38,
+    "new": 21,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 29,
+    "passed": 22,
+    "new": 18,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 75,
+    "passed": 42,
+    "new": 21,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 146,
+    "passed": 81,
+    "new": 68,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-08",
+   "archive_total": 479,
+   "announced": {
+    "fetched": 580,
+    "passed": 457,
+    "new": 303,
+    "out_of_window": 0,
+    "split": 7,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 94,
+    "passed": 44,
+    "new": 27,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 94,
+    "passed": 49,
+    "new": 39,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 92,
+    "passed": 54,
+    "new": 12,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 190,
+    "passed": 99,
+    "new": 86,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-09",
+   "archive_total": 576,
+   "announced": {
+    "fetched": 1180,
+    "passed": 947,
+    "new": 531,
+    "out_of_window": 0,
+    "split": 15,
+    "capped": 3
+   },
+   "cancelled": {
+    "fetched": 98,
+    "passed": 91,
+    "new": 44,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 79,
+    "passed": 50,
+    "new": 43,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 113,
+    "passed": 71,
+    "new": 17,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 154,
+    "passed": 103,
+    "new": 92,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-10",
+   "archive_total": 642,
+   "announced": {
+    "fetched": 1166,
+    "passed": 947,
+    "new": 521,
+    "out_of_window": 0,
+    "split": 13,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 96,
+    "passed": 65,
+    "new": 26,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 95,
+    "passed": 68,
+    "new": 62,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 92,
+    "passed": 51,
+    "new": 11,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 177,
+    "passed": 89,
+    "new": 81,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-11",
+   "archive_total": 716,
+   "announced": {
+    "fetched": 943,
+    "passed": 764,
+    "new": 465,
+    "out_of_window": 0,
+    "split": 9,
+    "capped": 1
+   },
+   "cancelled": {
+    "fetched": 120,
+    "passed": 108,
+    "new": 71,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 54,
+    "passed": 39,
+    "new": 31,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 69,
+    "passed": 39,
+    "new": 12,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 152,
+    "passed": 73,
+    "new": 65,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-12",
+   "archive_total": 645,
+   "announced": {
+    "fetched": 691,
+    "passed": 610,
+    "new": 380,
+    "out_of_window": 0,
+    "split": 7,
+    "capped": 3
+   },
+   "cancelled": {
+    "fetched": 149,
+    "passed": 138,
+    "new": 67,
+    "out_of_window": 0,
+    "split": 1,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 23,
+    "passed": 19,
+    "new": 14,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 59,
+    "passed": 35,
+    "new": 9,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 121,
+    "passed": 82,
+    "new": 73,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2026-01",
+   "archive_total": 729,
+   "announced": {
+    "fetched": 905,
+    "passed": 813,
+    "new": 502,
+    "out_of_window": 0,
+    "split": 11,
+    "capped": 1
+   },
+   "cancelled": {
+    "fetched": 134,
+    "passed": 130,
+    "new": 78,
+    "out_of_window": 0,
+    "split": 1,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 90,
+    "passed": 66,
+    "new": 54,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 96,
+    "passed": 50,
+    "new": 23,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 182,
+    "passed": 102,
+    "new": 95,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2026-02",
+   "archive_total": 727,
+   "announced": {
+    "fetched": 598,
+    "passed": 534,
+    "new": 435,
+    "out_of_window": 0,
+    "split": 8,
+    "capped": 1
+   },
+   "cancelled": {
+    "fetched": 326,
+    "passed": 314,
+    "new": 176,
+    "out_of_window": 0,
+    "split": 3,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 100,
+    "passed": 84,
+    "new": 75,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 47,
+    "passed": 33,
+    "new": 5,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 93,
+    "passed": 68,
+    "new": 65,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2026-03",
+   "archive_total": 1090,
+   "announced": {
+    "fetched": 1918,
+    "passed": 1721,
+    "new": 955,
+    "out_of_window": 0,
+    "split": 23,
+    "capped": 2
+   },
+   "cancelled": {
+    "fetched": 429,
+    "passed": 391,
+    "new": 210,
+    "out_of_window": 0,
+    "split": 4,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 110,
+    "passed": 79,
+    "new": 67,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 136,
+    "passed": 94,
+    "new": 45,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 239,
+    "passed": 165,
+    "new": 145,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
   }
  ],
  "registry_before": {
@@ -430,20 +826,20 @@
   }
  },
  "registry_after": {
-  "count": 224,
-  "visible": 224,
+  "count": 411,
+  "visible": 411,
   "status": {
-   "Announced": 138,
-   "Cancelled / Blocked": 10,
-   "Operational": 39,
-   "Under construction": 37
+   "Announced": 280,
+   "Cancelled / Blocked": 20,
+   "Operational": 50,
+   "Under construction": 61
   },
   "confidence": {
-   "high": 28,
-   "low": 54,
-   "medium": 142
+   "high": 43,
+   "low": 93,
+   "medium": 275
   },
-  "umbrellas": 54
+  "umbrellas": 93
  },
  "lost_records": [],
  "lost_news": [],
@@ -479,6 +875,16 @@
    "page": "https://therackreport.org/projects/site-santa-clara-ca-2024/"
   },
   {
+   "id": "edgecore-silicon-valley-ca-2025",
+   "name": "EdgeCore Silicon Valley data center",
+   "place": "Silicon Valley, California",
+   "state": "CA",
+   "completed": "2025-09-19",
+   "headline": "EdgeCore opens Silicon Valley data center",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcWpyLW1PaFV5cDRtU0FmTmxxX1B3aWZsNy15ZWYtMHVDdUg1blpRbnlWUE5EYXJFZUNkTTExeVE4ZUtQbGtaZmhnLWZmdGVNMEE3WGd3a1RSeC1JOVZKenVwT1U5Q2NadlotMml4NUowZFRLOUR2YWpRTlBGYnltc1lVNng5VngyYmtFV2hB?oc=5",
+   "page": "https://therackreport.org/projects/edgecore-silicon-valley-ca-2025/"
+  },
+  {
    "id": "flexential-atlanta-ga-2025",
    "name": "Flexential Atlanta data center",
    "place": "Atlanta, Georgia",
@@ -499,6 +905,16 @@
    "page": "https://therackreport.org/projects/apple-ia-unnamed/"
   },
   {
+   "id": "qts-ia-unnamed",
+   "name": "QTS, Iowa (site not yet named)",
+   "place": "Iowa",
+   "state": "IA",
+   "completed": "2025-12-23",
+   "headline": "CBJ Newsmakers: First QTS data center buildings near completion",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM0kwODVkb2lxZFNxcFlKdmxTY2ItZlJia0pWVXZtV1ZZVXctNFJwMnItX3E0SW5VTTZQQm10YXhJQnVEUFJYYlhzNjhobkhmQnR1WXNWaUFkOEFJTW9VTHpwb2M4SGVBeWMxMHFNTHlINW0yV0dpTmg4NWxxVnM1WGUtMjI3UUhDM1JMWEU4RDM2VDR3QmNj?oc=5",
+   "page": "https://therackreport.org/projects/qts-ia-unnamed/"
+  },
+  {
    "id": "meta-id-unnamed",
    "name": "Meta, Idaho (site not yet named)",
    "place": "Idaho",
@@ -507,6 +923,26 @@
    "headline": "Meta’s mega data center in Kuna on track to be completed by 2025",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNXRCZWhiWHAxWS1pYkZWbFh4eDF0ZnF6V3RWVk14eUNsUkJOTDhFYmJNVUtTVXg1OFRSaDdYTl9BbGJaTjdjcDdRUk5aTzRpZUpzNTFJY1pGWnNYMjFNS0RzbWoyRHBXYU43dGVtYlJsbnhsODNkNnRuT0lnbXl1N0Znb2lZTEVNWEVUSVhPaDZmRjJCUTQ4eUdJWmFGMjlpaTN3R191eGl1bWM?oc=5",
    "page": "https://therackreport.org/projects/meta-id-unnamed/"
+  },
+  {
+   "id": "meta-kansas-city-mo-2025",
+   "name": "Meta Kansas City data center",
+   "place": "Kansas City, Missouri",
+   "state": "MO",
+   "completed": "2025-08-20",
+   "headline": "Meta's latest data center campus goes live in Kansas City, Missouri",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaWs1RXpfMjBodjk1OTdVNDUtX0RuLVZTVDJPTWVHUlhxbWdUb0VaaGx4ek02SFB5NEs2RGVfdUVjbVk5Sk4tMkpIVjcxZWR0Sm9wNk5yTk5aOHVzLXlTMGRhZlEzbGgySjAyQTdORVFHQV8zbWRYTmk4QWZqMGJTRWJGTVJycVVHTHZKR2QtX0xscVcwbFJQaC1ZQmE2bjBjVWdWOHpzb3dTMmVCMGc?oc=5",
+   "page": "https://therackreport.org/projects/meta-kansas-city-mo-2025/"
+  },
+  {
+   "id": "meta-mo-unnamed",
+   "name": "Meta, Missouri (site not yet named)",
+   "place": "Missouri",
+   "state": "MO",
+   "completed": "2025-08-20",
+   "headline": "Meta Data Center Opens; Represents $1B Investment in Missouri",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS1g3bkg5LVlkcnRTYWVaeFQ1X194X3ZDaTlwaWVYNy1aWXk1ZlBEX3JLVDJsam81dnpnVTB3ZkRCaUZqNHlqYURjZU1CUVV2YVZnUnd5U2dpb1AzRzZEa3JjSXA1VGFZUGRyRXAtMnBhN1E4aWg2WVBROGktaDJZTndIVlJ6NDR0LUV6RFlkM2NrMUVhdnlZaUNtU3l5QTlwZU02YXhsWUxkOE55emN0V0xpalhWQQ?oc=5",
+   "page": "https://therackreport.org/projects/meta-mo-unnamed/"
   },
   {
    "id": "aws-ms-unnamed",
@@ -519,6 +955,16 @@
    "page": "https://therackreport.org/projects/aws-ms-unnamed/"
   },
   {
+   "id": "applied-digital-nd-unnamed",
+   "name": "Applied Digital, North Dakota (site not yet named)",
+   "place": "North Dakota",
+   "state": "ND",
+   "completed": "2025-12-01",
+   "headline": "Applied Digital completes first data center building at North Dakota campus",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTllpNGxiV2dtU01BVF85OU9CRzhDMW02bHdJby16S3VCWmtpQU9BTzk1aTBGcXdTNld6Y1c0Rl91b25zQW9ZeDdDcUtzdzMtQWQtclUwZkctaWpkbkFldU5oYkVTRGQwX2dkbEZkd0NQb21JQl9KVTRNTXpxNllqNmFIcGFHb09BMmI5MzE1Ui1OMGVJaXZPdXZSSTBtbVBObEtQMDBWVGg4ZkE1TDE2RmxudXF2ZWtIa2RN?oc=5",
+   "page": "https://therackreport.org/projects/applied-digital-nd-unnamed/"
+  },
+  {
    "id": "novva-storey-county-nv-2025",
    "name": "Novva Storey County data center",
    "place": "Storey County, Nevada",
@@ -527,6 +973,56 @@
    "headline": "Novva opens 300,000-square-foot data center in Nevada's tech corridor in Storey County",
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPMDFobDVaLWVuQm9EeFk4Z1NVVF9VUFJaT3AtVTlUMG1Xb0t2c1RHMnhFOXUzX1Z2WlkzYU9fSU5sd3ZHX2F5SUV5cUFnd2hpQndDS3BlUGUtSUpJbTQ1TFJDNVg2eUtVNkpBa05pR3BMLVJCYTBvZUdoNXZMVkdtWk03bElqSHdzN3YycXI0R0Z5Y25JbmVQT1FRVDZOLXZMckpyTkJYOFJxSlphakJ5eklDd29UdXBseXNmQjV0Q1hBYWJpWHU2VXlzUFZQeVFncmhwMWltWGxOX1oxeW51VjVwNnNUZF9fbG0tZENVVmhHQlRjSFZXVVhxNHo?oc=5",
    "page": "https://therackreport.org/projects/novva-storey-county-nv-2025/"
+  },
+  {
+   "id": "novva-reno-nv-2025",
+   "name": "Novva Reno data center",
+   "place": "Reno, Nevada",
+   "state": "NV",
+   "completed": "2025-07-09",
+   "headline": "Novva data center with robot dog guard, drone monitoring completed near Reno",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSVlDQ1NhaDd6cWJWRkstVmh1M3d3SWt3UjM4eWI0RGZ5emR0cC1pUm1UNllqeVY2MV9PUUZ3emJjMzEyWm11SnNkX1ZvYTNhRURXOFNBZHJrNGZfV2lKX3RGaU82dWdvYk5nUkVMTktNRGZjYmlqVEI1Vms0d0hnU0lSWlREdUtzRklCM3Z5MW5YRDFQeUpPdXY4eUw4cnhjZ21OODZrNW9IbWNOQldmXzFSMzVZYTdzTEJuZXJiRDd4WUZEeEI2Y1h1aUdxNnVW?oc=5",
+   "page": "https://therackreport.org/projects/novva-reno-nv-2025/"
+  },
+  {
+   "id": "site-new-albany-oh-2025",
+   "name": "New Albany data center",
+   "place": "New Albany, Ohio",
+   "state": "OH",
+   "completed": "2025-09-15",
+   "headline": "$246M AI-focused data center opens in New Albany",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQXzdZdUFycnB3a3lvaGVVZEdScElQOHduWXBhWWhmUTYtbHlwU1cwREFheVFLYnJfdnROMkg1SGkzZEx1Qnhrb1o0MU11X3paTklxbEM3YkdKNUZmaE1KNVhIS3JGMHRaLUNYSllGYjNsaDZEeTBZYmJNQ3dHbzU4RUoxbzRCWTZqckpIWnRuQUVnVGc?oc=5",
+   "page": "https://therackreport.org/projects/site-new-albany-oh-2025/"
+  },
+  {
+   "id": "site-oklahoma-city-ok-2025",
+   "name": "Oklahoma City data center",
+   "place": "Oklahoma City, Oklahoma",
+   "state": "OK",
+   "completed": "2025-09-23",
+   "headline": "Cerebras opens 10MW data center in Oklahoma City",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUnByNkoybzNmd20zcGNndHdwMS1RWVJZdWU1UDRmUVlUTEZkVHUyYWlhTFpMY21jMmtkT1ZXX0RNTWFSYTRpM3Z2ekhjdlZtcUNFY2lTT1VvU2pxQnFhdFBPcEJheDR6eGg2Uzhpc3BSTVV3eU85OUR3NXVzTnM5MXhaZ09JdkVaQnNBMkZqWmQ4eXF2eVNR?oc=5",
+   "page": "https://therackreport.org/projects/site-oklahoma-city-ok-2025/"
+  },
+  {
+   "id": "site-orangeburg-county-sc-2025",
+   "name": "Orangeburg County data center",
+   "place": "Orangeburg County, South Carolina",
+   "state": "SC",
+   "completed": "2025-12-16",
+   "headline": "Data center supplier opens $7.4M factory in rural Orangeburg County",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQVdzV0p5NTVtdlM5bV9fZldLVGR4NnQ5ZzZ5WWVlUWg5M1BvYk1VbkNxczBuYWV1TUpsUFA4UlVUUWtkaE0xSGs0YklsXzRFM01fZEVNQ1EtcTVFblJvUExucDNJVlBYYWFSSXhjdHpndF9kRWFpbDRuT0JSVlkwSVROcnNmazRDSVJOZWpFODJGNnl6X0R1c0Y4TFVibkhHRThOS25WWDc?oc=5",
+   "page": "https://therackreport.org/projects/site-orangeburg-county-sc-2025/"
+  },
+  {
+   "id": "xai-tn-unnamed",
+   "name": "xAI, Tennessee (site not yet named)",
+   "place": "Tennessee",
+   "state": "TN",
+   "completed": "2026-04-10",
+   "headline": "Mayor, MLGW push xAI to complete water recycling facility",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMFpqVm9RZ3ZvNG9vaHVPTDAyY29WSHJnd1BWZkRiVlFVNEUyclRsLVlaTDFLQW03d213UmJZTnNCSGRQSTJfUjM3SHVKakJrd2dIZ0FyVWpiTGQ3SG9GLWxCbXJkVFluX3dOakpxeWIwQ3I0YmdmVDRBUTZuVENBX3QyblozSGY3RmhzbklpU1FiTFY5MUlnUkhteGF3Z9IBowFBVV95cUxNM0t6amgxSVJJOTF5WWVRWUtsZUVMdnlwVGVjR01WbFdkT1IzVEVRYzdjWkxubW9BckdObTJnaHR1UGJfVWhCR25ZdDducUQ2bU5zSWp1dWdJYnhpQlVFMzBrMzZsQWdtQVdqWmt3Rzk5RWJjeWw1MTdTMnJURzdyU3pfRTRfam9nUTA2dGlrUGFJLTUwMHd4LUdLVW92LS1VQ213?oc=5",
+   "page": "https://therackreport.org/projects/xai-tn-unnamed/"
   },
   {
    "id": "sabey-austin-tx-2024",
@@ -599,7 +1095,7 @@
    "page": "https://therackreport.org/projects/aws-walla-walla-county-wa-2026/"
   }
  ],
- "operational_completed_last_24_months": 12,
+ "operational_completed_last_24_months": 23,
  "largest_by_mw": [
   {
    "id": "project-matador",
@@ -616,6 +1112,24 @@
    "state": "TX",
    "status": "Announced",
    "capacity_mw": 11000,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "softbank-oh-unnamed",
+   "name": "SoftBank, Ohio (site not yet named)",
+   "state": "OH",
+   "status": "Announced",
+   "capacity_mw": 10000,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "site-lea-county-nm-2025",
+   "name": "Lea County data center",
+   "state": "NM",
+   "status": "Announced",
+   "capacity_mw": 7000,
    "curated": false,
    "confidence": "medium"
   },
@@ -665,13 +1179,22 @@
    "confidence": "medium"
   },
   {
+   "id": "crusoe-wy-unnamed",
+   "name": "Crusoe, Wyoming (site not yet named)",
+   "state": "WY",
+   "status": "Announced",
+   "capacity_mw": 1800,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
    "id": "frontier",
    "name": "Frontier",
    "state": "TX",
    "status": "Under construction",
    "capacity_mw": 1400,
    "curated": true,
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "stargate-michigan",
@@ -681,6 +1204,24 @@
    "capacity_mw": 1400,
    "curated": true,
    "confidence": "high"
+  },
+  {
+   "id": "openai-tx-unnamed",
+   "name": "OpenAI, Texas (site not yet named)",
+   "state": "TX",
+   "status": "Under construction",
+   "capacity_mw": 1400,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "oracle-mi-unnamed",
+   "name": "Oracle, Michigan (site not yet named)",
+   "state": "MI",
+   "status": "Announced",
+   "capacity_mw": 1300,
+   "curated": false,
+   "confidence": "low"
   },
   {
    "id": "stargate-abilene",
@@ -716,7 +1257,7 @@
    "status": "Under construction",
    "capacity_mw": 1000,
    "curated": true,
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "stargate-port-washington-lighthouse",
@@ -725,13 +1266,40 @@
    "status": "Announced",
    "capacity_mw": 1000,
    "curated": true,
-   "confidence": "medium"
+   "confidence": "high"
+  },
+  {
+   "id": "google-detroit-mi-2026",
+   "name": "Google Detroit data center",
+   "state": "MI",
+   "status": "Announced",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "high"
   },
   {
    "id": "google-tx-unnamed",
    "name": "Google, Texas (site not yet named)",
    "state": "TX",
    "status": "Operational",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "meta-in-unnamed",
+   "name": "Meta, Indiana (site not yet named)",
+   "state": "IN",
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "openai-mi-unnamed",
+   "name": "OpenAI, Michigan (site not yet named)",
+   "state": "MI",
+   "status": "Under construction",
    "capacity_mw": 1000,
    "curated": false,
    "confidence": "low"
@@ -773,6 +1341,15 @@
    "confidence": "medium"
   },
   {
+   "id": "site-greene-county-pa-2025",
+   "name": "Greene County data center",
+   "state": "PA",
+   "status": "Announced",
+   "capacity_mw": 944,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
    "id": "site-chesterfield-county-va-2025",
    "name": "Chesterfield County data center",
    "state": "VA",
@@ -782,95 +1359,14 @@
    "confidence": "medium"
   },
   {
-   "id": "digital-realty-ks-unnamed",
-   "name": "Digital Realty, Kansas (site not yet named)",
-   "state": "KS",
-   "status": "Announced",
-   "capacity_mw": 600,
-   "curated": false,
-   "confidence": "low"
-  },
-  {
-   "id": "site-kansas-city-mo-2025",
-   "name": "Kansas City data center",
-   "state": "MO",
-   "status": "Announced",
-   "capacity_mw": 600,
-   "curated": false,
-   "confidence": "medium"
-  },
-  {
-   "id": "edgecore-mesa-az-2025",
-   "name": "EdgeCore Mesa data center",
-   "state": "AZ",
-   "status": "Announced",
-   "capacity_mw": 450,
-   "curated": false,
-   "confidence": "high"
-  },
-  {
-   "id": "polaris-forge-1",
-   "name": "Polaris Forge 1",
-   "state": "ND",
-   "status": "Under construction",
-   "capacity_mw": 400,
-   "curated": true,
-   "confidence": "high"
-  },
-  {
-   "id": "powerhouse-louisville-ky-2025",
-   "name": "PowerHouse Louisville data center",
-   "state": "KY",
-   "status": "Announced",
-   "capacity_mw": 400,
-   "curated": false,
-   "confidence": "medium"
-  },
-  {
-   "id": "cyrusone-tx-unnamed",
-   "name": "CyrusOne, Texas (site not yet named)",
-   "state": "TX",
-   "status": "Under construction",
-   "capacity_mw": 380,
-   "curated": false,
-   "confidence": "low"
-  },
-  {
-   "id": "site-appomattox-county-va-2024",
-   "name": "Appomattox County data center",
+   "id": "site-fauquier-county-va-2025",
+   "name": "Fauquier County data center",
    "state": "VA",
-   "status": "Announced",
-   "capacity_mw": 300,
+   "status": "Cancelled / Blocked",
+   "capacity_mw": 800,
    "curated": false,
    "confidence": "medium"
-  },
-  {
-   "id": "site-leesburg-va-2025",
-   "name": "Leesburg data center",
-   "state": "VA",
-   "status": "Announced",
-   "capacity_mw": 300,
-   "curated": false,
-   "confidence": "medium"
-  },
-  {
-   "id": "site-west-feliciana-parish-la-2024-3",
-   "name": "West Feliciana Parish data center",
-   "state": "LA",
-   "status": "Announced",
-   "capacity_mw": 300,
-   "curated": false,
-   "confidence": "medium"
-  },
-  {
-   "id": "coreweave-nd-unnamed",
-   "name": "CoreWeave, North Dakota (site not yet named)",
-   "state": "ND",
-   "status": "Announced",
-   "capacity_mw": 250,
-   "curated": false,
-   "confidence": "low"
   }
  ],
- "review_count": 1
+ "review_count": 5
 }
