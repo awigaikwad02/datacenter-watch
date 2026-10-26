@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-26T14:27:00+00:00",
+ "updated": "2026-10-26T19:12:54+00:00",
  "count": 504,
  "visible": 504,
  "records": [
@@ -7466,6 +7466,15 @@
      "published": "2026-10-24T12:28:29+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "ed18adfbe69a6b24"
+    },
+    {
+     "id": "9dc5f9527072ce92",
+     "title": "Amazon pitches roughly 1,500 housing units for GW's Loudoun campus after scrapping data center plan",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSVFDQlJUTzBRcjdvQkxFZzBTQjBWSFRGOHBJRmlMajNVVlU3MkZhQmlHcUgwWjJTVnUwQ2JGS2xzYVlITDc5WmtxQUtmY1RhRVNId0Y5cTBZRGVPd3U2UzROSEZzdlpwRXZydV9ySnlVZjBCTVAyMzA5NnVZcFNDMFpJTDJLbTQyWDBURXJnTjF4YThXazVF?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-10-26T17:37:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "9dc5f9527072ce92"
     }
    ],
    "first_seen": "2024-10-22T07:00:00+00:00",
@@ -7522,7 +7531,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.427,
-   "last_news": "2026-10-24T12:28:29+00:00",
+   "last_news": "2026-10-26T17:37:00+00:00",
    "sources_count": 22,
    "confidence": "low",
    "hidden": false
