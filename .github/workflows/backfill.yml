@@ -1,0 +1,88 @@
+name: Backfill news
+
+# Manual only: fetches historical headlines window by window into data/archive/, then
+# rebuilds the project registry. Commits every 20 windows so the 6-hour job limit never
+# loses work; re-running with the same inputs resumes from data/backfill_progress.json.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "First day (YYYY-MM-DD)"
+        default: "2024-10-01"
+        required: true
+      end:
+        description: "Day after the last (YYYY-MM-DD or today)"
+        default: "today"
+        required: true
+      window_days:
+        description: "Window length in days (the Announced query always uses 7)"
+        default: "14"
+        required: true
+
+permissions:
+  contents: write
+
+# Shared with the hourly data job so the two never push the same files at once.
+concurrency:
+  group: data-files
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch windows, committing every 20
+        env:
+          START: ${{ inputs.start }}
+          END_IN: ${{ inputs.end }}
+          WINDOW: ${{ inputs.window_days }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          END="$END_IN"; [ "$END" = "today" ] && END=$(date -u +%F)   # fixed once, so a run past midnight still resumes
+          commit() {
+            python scripts/backfill_report.py
+            git add data/archive data/registry.json data/backfill_progress.json data/backfill_report.json \
+                    data/registry_review.json BACKFILL.md sitemap.xml
+            git add -A projects
+            git diff --cached --quiet && return 0
+            git commit -q -m "$1"
+            for i in 1 2 3; do git pull --rebase -q origin main && git push -q && return 0; sleep $((i * 10)); done
+            return 1
+          }
+          while true; do
+            set +e
+            python scripts/backfill_news.py --start "$START" --end "$END" --window-days "$WINDOW" --resume --max-windows 20
+            code=$?
+            set -e
+            next=$(python -c "import json; print(json.load(open('data/backfill_progress.json'))['next'])")
+            commit "Backfill news $START to $END: through $next"
+            if [ "$code" -eq 10 ]; then continue; fi
+            if [ "$code" -ne 0 ]; then echo "::error::backfill_news.py exited $code (see the log above)"; exit "$code"; fi
+            break
+          done
+
+      - name: Rebuild the registry from the whole archive and report
+        run: |
+          python scripts/registry.py --backfill
+          python scripts/backfill_report.py
+          python scripts/healthcheck.py --context update
+          git add data/registry.json data/backfill_report.json data/registry_review.json BACKFILL.md sitemap.xml
+          git add -A projects
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Rebuild the registry from the full archive after the backfill"
+            for i in 1 2 3; do git pull --rebase -q origin main && git push -q && exit 0; sleep $((i * 10)); done
+            exit 1
+          fi

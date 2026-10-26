@@ -9,6 +9,11 @@ on:
 permissions:
   contents: write
 
+# Shared with the manual news backfill so the two never push the same data files at once.
+concurrency:
+  group: data-files
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
