@@ -41,7 +41,8 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git add data/news.json data/project_candidates.json data/status.json data/archive
+          git add data/news.json data/registry.json data/project_overrides.json data/status.json data/archive sitemap.xml
+          git add -A projects
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else

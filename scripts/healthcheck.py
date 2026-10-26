@@ -110,7 +110,7 @@ def pipeline(ctx):
         r = subprocess.run([sys.executable, str(ROOT / "scripts/fetch_news.py"), "--sample",
                             str(ROOT / "scripts/sample_feed.xml"), "--out", str(tmp)],
                            capture_output=True, text=True, timeout=300)
-        valid = all(_parses(tmp / f) for f in ("news.json", "project_candidates.json", "status.json"))
+        valid = all(_parses(tmp / f) for f in ("news.json", "registry.json", "status.json"))
         check("Fetcher runs on sample feed", "pass" if r.returncode == 0 and valid else "fail",
               f"exit {r.returncode}", "outputs parse as JSON" if valid else (r.stderr or r.stdout)[-300:])
         hostile(tmp)
@@ -178,7 +178,7 @@ def hostile(tmp):
 # Data integrity
 # ---------------------------------------------------------------------------
 def data(ctx):
-    files = ["news.json", "project_candidates.json", "projects.json", "status.json"] + \
+    files = ["news.json", "registry.json", "project_overrides.json", "projects.json", "status.json"] + \
             [os.path.relpath(p, DATA) for p in sorted(glob.glob(str(DATA / "archive/*.json")))]
     broken = [f for f in files if not _parses(DATA / f)]
     check("Data files parse as JSON", "fail" if broken else "pass", f"{len(files) - len(broken)}/{len(files)}",
@@ -231,7 +231,7 @@ def data(ctx):
           "; ".join(i["title"][:60] for i in leaks[:3]))
 
     archive(items)
-    candidates()
+    registry(ctx)
     curated()
     announced_metric()
 
@@ -260,19 +260,55 @@ def in_us(lat, lon):
     return any(a <= lat <= b and c <= lon <= d for a, b, c, d in US_BOXES)
 
 
-def candidates():
-    cands = load(DATA / "project_candidates.json").get("projects", [])
-    bad = []
-    for c in cands:
-        if not isinstance(c.get("lat"), (int, float)) or not isinstance(c.get("lon"), (int, float)) or not in_us(c["lat"], c["lon"]):
-            bad.append(f"{c.get('id')}: coordinates {c.get('lat')},{c.get('lon')}")
-        if c.get("status") not in STATUSES:
-            bad.append(f"{c.get('id')}: status {c.get('status')}")
-        if not str(c.get("source_url", "")).startswith(("http://", "https://")):
-            bad.append(f"{c.get('id')}: source_url")
-    check("Candidate pins valid (U.S. box, status, source)", "fail" if bad else "pass",
-          f"{len(cands)} pins, {len(bad)} problems", "; ".join(bad[:5]))
+def registry(ctx):
+    """data/registry.json: ids unique, nothing lost since the last commit, valid statuses and
+    history dates, every record inside the U.S., every attached headline in the archive."""
+    reg = load(DATA / "registry.json")
+    recs = reg.get("records", [])
+    ids = [r.get("id") for r in recs]
+    dupes = [k for k, n in Counter(ids).items() if n > 1]
+    check("Registry ids unique", "fail" if dupes else "pass", f"{len(recs)} records, {sum(1 for r in recs if not r.get('hidden'))} visible",
+          ", ".join(map(str, dupes[:5])))
 
+    prev = git("show", "HEAD:data/registry.json")
+    if prev:
+        try:
+            old_ids = {r["id"] for r in json.loads(prev).get("records", [])}
+        except ValueError:
+            old_ids = set()
+        lost = sorted(old_ids - set(ids))
+        check("No registry record lost since the last commit", "fail" if lost else "pass",
+              f"{len(old_ids)} -> {len(ids)}", ", ".join(lost[:5]))
+    else:
+        check("No registry record lost since the last commit", "skip", "", "no committed registry yet")
+
+    archived = set()
+    for p in glob.glob(str(DATA / "archive/*.json")):
+        if re.match(r"\d{4}-\d{2}$", Path(p).stem):
+            archived.update(i["id"] for i in load(p).get("items", []))
+    bad_status, bad_dates, outside, orphans = [], [], [], []
+    for r in recs:
+        if r.get("status") not in STATUSES:
+            bad_status.append(f"{r['id']}: {r.get('status')}")
+        for h in r.get("status_history", []):
+            if not h.get("date") or not (iso(h["date"]) or re.match(r"^\d{4}-\d{2}(-\d{2})?$", str(h["date"]))):
+                bad_dates.append(f"{r['id']}: {h.get('date')}")
+        if not (isinstance(r.get("lat"), (int, float)) and isinstance(r.get("lon"), (int, float)) and in_us(r["lat"], r["lon"])):
+            outside.append(f"{r['id']}: {r.get('lat')},{r.get('lon')}")
+        orphans += [f"{r['id']}: {n['id']}" for n in r.get("news", []) if n["id"] not in archived and not n["id"].startswith("selftest-")]
+    check("Registry statuses and history dates valid", "fail" if bad_status or bad_dates else "pass",
+          f"{len(bad_status)} bad statuses, {len(bad_dates)} bad dates", "; ".join((bad_status + bad_dates)[:5]))
+    check("Registry records inside the U.S.", "fail" if outside else "pass", f"{len(outside)} outside", "; ".join(outside[:5]))
+    check("Registry news all in the archive", "fail" if orphans else "pass",
+          f"{sum(len(r.get('news', [])) for r in recs)} attached headlines, {len(orphans)} missing", "; ".join(orphans[:5]))
+
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import registry as rg
+    got = rg.selftest()
+    ok = len(got) == 1 and len(got[0]["news"]) == 3 and [h["status"] for h in got[0]["status_history"]] == ["Announced", "Under construction", "Operational"]
+    check("Registry status machine self-test", "pass" if ok else "fail",
+          " -> ".join(h["status"] for h in got[0]["status_history"]) if len(got) == 1 else f"{len(got)} records",
+          f"{got[0]['id']}, {len(got[0]['news'])} news" if got else "")
 
 def curated():
     projects = load(DATA / "projects.json").get("projects", [])
@@ -308,26 +344,24 @@ def states_in_app():
 
 def announced_metric():
     """Recompute the Overview's "Projects announced this month" the way assets/app.js and
-    overview.js do (curated + detected sites, one per story cluster) and make sure Cancelled /
-    Blocked sites are not in it. The browser check compares this number with the page."""
+    overview.js do from the registry: visible records first seen this month (curated: their
+    announced month), status Announced or Planned, pinned to a place, not low confidence.
+    Cancelled / Blocked never counts. The browser check compares this number with the page."""
     states = states_in_app()
     month_start = NOW.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
-    sites = []
-    for p in load(DATA / "projects.json").get("projects", []):
-        t = iso(p["announced"] + "-15T12:00:00+00:00") if p.get("announced") else None
-        sites.append((p.get("status"), t))
-    groups = {}
-    for c in load(DATA / "project_candidates.json").get("projects", []):
-        if c.get("state") in states:
-            groups.setdefault(c.get("cluster_id") or c["id"], []).append(c)
-    for g in groups.values():
-        g.sort(key=lambda c: (-PRECISION.get(c.get("precision"), 0), c["published"]))
-        sites.append((g[0]["status"], min(iso(c["published"]) for c in g)))
-    counted = [s for s, t in sites if s in ("Announced", "Planned") and t and t >= month_start]
-    cancelled_now = sum(1 for s, t in sites if s == CANCELLED and t and t >= month_start)
-    check("Overview 'announced' excludes Cancelled / Blocked", "pass" if CANCELLED not in counted else "fail",
-          len(counted), f"{cancelled_now} cancelled or blocked sites this month are left out")
-
+    counted, cancelled_now = 0, 0
+    for r in load(DATA / "registry.json").get("records", []):
+        if r.get("hidden") or r.get("state") not in states:
+            continue
+        t = iso(r["announced"] + "-15T12:00:00+00:00") if r.get("curated") and r.get("announced") else iso(r.get("first_seen") or "")
+        if not t or t < month_start:
+            continue
+        if r.get("status") == CANCELLED:
+            cancelled_now += 1
+        elif r.get("status") in ("Announced", "Planned") and r.get("precision") not in ("state", "source") and r.get("confidence") != "low":
+            counted += 1
+    check("Overview 'announced' excludes Cancelled / Blocked", "pass", counted,
+          f"{cancelled_now} cancelled or blocked records this month are left out")
 
 # ---------------------------------------------------------------------------
 # Site: links, sitemap, metadata, assets
@@ -344,6 +378,8 @@ def resolve(path):
     p = ROOT / path.lstrip("/")
     if p.is_file():
         return p
+    if p.is_dir() and (p / "index.html").is_file():
+        return p / "index.html"
     if (ROOT / (path.lstrip("/") + ".html")).is_file():
         return ROOT / (path.lstrip("/") + ".html")
     return None
@@ -356,7 +392,7 @@ def sitemap_paths():
 
 
 def site():
-    html_files = sorted(glob.glob(str(ROOT / "*.html")))
+    html_files = sorted(glob.glob(str(ROOT / "*.html"))) + sorted(glob.glob(str(ROOT / "projects/*/index.html")))
     js_files = sorted(glob.glob(str(ROOT / "assets/*.js")))
     links, broken, with_html = set(), [], []
     for f in html_files:
@@ -383,9 +419,23 @@ def site():
     sm_paths = {l.replace(SITE, "") or "/" for l in locs}
     off = sorted(p for p in pages if p not in sm_paths and p != "/projects")
     missing = sorted(p for p in sm_paths if not resolve(p))
-    check("Sitemap matches pages", "fail" if off or missing or len(locs) != 6 else "pass",
-          f"{len(locs)} entries", "; ".join(filter(None, [f"linked but not in sitemap: {off}" if off else "",
-                                                          f"sitemap entry without a page: {missing}" if missing else ""])))
+    reg = load(DATA / "registry.json").get("records", []) if (DATA / "registry.json").is_file() else []
+    project_pages = {p.parent.name for p in (ROOT / "projects").glob("*/index.html")}
+    want_pages = {f"/projects/{d}/" for d in project_pages}
+    base = {"/", "/newsroom", "/atlas", "/companies", "/learn", "/methodology"}
+    missing_base = sorted(base - sm_paths)
+    unlisted = sorted(want_pages - sm_paths)
+    hidden_pages = sorted(r["id"] for r in reg if r.get("hidden") and r["id"] in project_pages)
+    check("Sitemap matches pages", "fail" if off or missing or missing_base or unlisted or hidden_pages else "pass",
+          f"{len(locs)} entries (6 site pages + {len(want_pages)} project pages)",
+          "; ".join(filter(None, [f"linked but not in sitemap: {off}" if off else "",
+                                  f"sitemap entry without a page: {missing[:5]}" if missing else "",
+                                  f"site pages missing: {missing_base}" if missing_base else "",
+                                  f"project pages not in sitemap: {unlisted[:5]}" if unlisted else "",
+                                  f"pages for hidden records: {hidden_pages[:5]}" if hidden_pages else ""])))
+    pages_bytes = sum(p.stat().st_size for p in (ROOT / "projects").rglob("*.html"))
+    check("Project pages under 5 MB", "pass" if pages_bytes <= 5 * 1024 * 1024 else "fail",
+          f"{len(project_pages)} pages, {pages_bytes / 1024:.0f} KB")
 
     bad_meta = []
     for f, clean in PAGES.items():

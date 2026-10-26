@@ -22,6 +22,9 @@ import AxeBuilder from "@axe-core/playwright";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PAGES = ["/", "/newsroom", "/atlas", "/companies", "/learn", "/methodology"];
+// One static project page (written by scripts/registry.py) is loaded with the site pages.
+const REG = JSON.parse(fs.readFileSync(path.join(ROOT, "data/registry.json"), "utf8")).records.filter((r) => !r.hidden);
+const PROJECT_PAGE = REG.length ? "/projects/" + REG[0].id + "/" : null;
 const MISSING = "/this-page-does-not-exist";
 const WIDTHS = [390, 1280];
 const VENDOR = process.env.RR_VENDOR_DIR;
@@ -37,7 +40,8 @@ function serve() {
     const url = decodeURIComponent(req.url.split("?")[0].split("#")[0]);
     let file = path.join(ROOT, url === "/" ? "index.html" : url);
     if (!file.startsWith(ROOT)) { res.writeHead(403).end(); return; }
-    if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) file = fs.existsSync(file + ".html") ? file + ".html" : null;
+    if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = fs.existsSync(path.join(file, "index.html")) ? path.join(file, "index.html") : null;
+    else if (!fs.existsSync(file)) file = fs.existsSync(file + ".html") ? file + ".html" : null;
     if (!file) { res.writeHead(404, { "content-type": TYPES[".html"] }).end(fs.readFileSync(path.join(ROOT, "404.html"))); return; }
     res.writeHead(200, { "content-type": TYPES[path.extname(file)] || "application/octet-stream" }).end(fs.readFileSync(file));
   });
@@ -70,7 +74,7 @@ async function main() {
   const news = JSON.parse(fs.readFileSync(path.join(ROOT, "data/news.json"), "utf8"));
 
   for (const width of WIDTHS) {
-    for (const page of [...PAGES, MISSING]) {
+    for (const page of [...PAGES, ...(PROJECT_PAGE ? [PROJECT_PAGE] : []), MISSING]) {
       const ctx = await browser.newContext({ viewport: { width, height: 900 } });
       await offline(ctx);
       const p = await ctx.newPage();
@@ -107,8 +111,14 @@ async function main() {
         }
       }
       if (page === "/newsroom" && width === 1280) {
-        const badge = await p.evaluate((u) => ({ text: document.getElementById("livePill").textContent, want: "Updated " + RR.ago(u) }), news.updated);
-        check("Freshness badge shows news.json time", badge.text === badge.want, badge.text, `expected "${badge.want}"`);
+        // The age text is rounded and can tick over between render and check, so compare the badge's
+        // date (its title) and accept the age computed now or a minute earlier.
+        const badge = await p.evaluate((u) => {
+          const el = document.getElementById("livePill"), t = new Date(u).getTime();
+          const agoAt = (ms) => { const real = Date.now; Date.now = () => ms; try { return RR.ago(u); } finally { Date.now = real; } };
+          return { text: el.textContent, title: el.title, date: RR.fmtDate(u), want: ["Updated " + agoAt(Date.now()), "Updated " + agoAt(Date.now() - 60e3)] };
+        }, news.updated);
+        check("Freshness badge shows news.json time", badge.title.includes(badge.date) && badge.want.includes(badge.text), badge.text, `expected ${badge.want.join(" or ")}, title "${badge.title}"`);
       }
       if (page === "/" && width === 1280) {
         const shown = await p.evaluate(() => {
@@ -154,8 +164,16 @@ async function atlas(p, base) {
   // Click into clusters until a single pin is visible, then click it.
   let opened = false;
   for (let i = 0; i < 6 && !opened; i++) {
-    const pin = await p.$(".leaflet-marker-icon .pin-rack, .leaflet-marker-icon .pin-auto");
-    if (pin) { await pin.click({ force: true }); await p.waitForTimeout(1200); opened = await p.$eval("#detail", (d) => d.classList.contains("open")); break; }
+    // A pin whose centre is really on screen (not under the filter panel or the legend).
+    const pt = await p.evaluate(() => {
+      for (const el of document.querySelectorAll(".leaflet-marker-icon .pin-rack, .leaflet-marker-icon .pin-auto")) {
+        const r = el.getBoundingClientRect(), x = r.x + r.width / 2, y = r.y + r.height / 2;
+        const hit = document.elementFromPoint(x, y);
+        if (hit && el.closest(".leaflet-marker-icon").contains(hit)) return { x, y };
+      }
+      return null;
+    });
+    if (pt) { await p.mouse.click(pt.x, pt.y); await p.waitForTimeout(1200); opened = await p.$eval("#detail", (d) => d.classList.contains("open")); break; }
     const cl = await p.$(".leaflet-marker-icon .cluster");
     if (!cl) break;
     await cl.click({ force: true }); await p.waitForTimeout(900);
@@ -166,10 +184,32 @@ async function atlas(p, base) {
   await p.selectOption("#state", st); await p.waitForTimeout(600);
   const after = await p.textContent("#listCount");
   check("Atlas filters change the list", before !== after, `${before} -> ${after} (state ${st})`);
+  await p.selectOption("#state", ""); await p.uncheck("#inView").catch(() => {}); await p.waitForTimeout(400);
+  const cards = () => p.$$eval(".proj-card small:first-of-type", (e) => e.map((x) => x.textContent));
+  const def = await cards();
+  const cancelledShown = def.filter((t) => /Cancelled/.test(t)).length;
+  await p.check("#lowConf"); await p.waitForTimeout(400);
+  const withLow = (await cards()).length;
+  await p.uncheck("#lowConf");
+  await p.click("#statusChips [data-quick]"); await p.waitForTimeout(400);
+  const ops = await cards();
+  check("Atlas registry filters (cancelled off, low-confidence toggle, Operational only)",
+    cancelledShown === 0 && withLow >= def.length && ops.length > 0 && ops.every((t) => /Operational/.test(t)),
+    `default ${def.length} (0 cancelled: ${cancelledShown === 0}), with low-confidence ${withLow}, Operational only ${ops.length}`);
+  await p.click("#statusChips [data-quick]"); await p.waitForTimeout(300);
   const proj = JSON.parse(fs.readFileSync(path.join(ROOT, "data/projects.json"), "utf8")).projects[0];
   await p.goto(base + "/atlas#project=" + encodeURIComponent(proj.id)); await p.waitForTimeout(2200);
   const title = await p.$eval("#detailTitle", (e) => e.textContent).catch(() => "");
   check("Atlas deep link opens the project", title === proj.name, `#project=${proj.id} -> ${title || "no panel"}`);
+  const withNews = REG.filter((r) => !r.curated && r.news.length > 1 && r.precision !== "state" && r.confidence !== "low" && r.status !== "Cancelled / Blocked")[0];
+  if (withNews) {
+    await p.goto(base + "/atlas#project=" + encodeURIComponent(withNews.id)); await p.waitForTimeout(2200);
+    const sec = await p.evaluate(() => [...document.querySelectorAll("#detail .sub-h")].map((h) => h.textContent));
+    const steps = await p.$$eval("#detail .status-steps li", (e) => e.length);
+    const items = await p.$$eval("#detail .sub-h", (hs) => { const h = hs.find((x) => x.textContent === "News about this project"); return h ? h.nextElementSibling.querySelectorAll("a").length : 0; });
+    check("Atlas panel shows status timeline and project news", sec.includes("Status timeline") && sec.includes("News about this project") && steps > 0 && items === withNews.news.length,
+      `${withNews.id}: ${steps} timeline steps, ${items}/${withNews.news.length} news`);
+  }
 }
 
 function report() {
