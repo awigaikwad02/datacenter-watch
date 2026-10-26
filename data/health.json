@@ -1,25 +1,25 @@
 {
- "checked_at": "2026-10-26T00:50:34+00:00",
- "overall": "pass",
+ "checked_at": "2026-10-26T14:23:33+00:00",
+ "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 2h",
    "status": "pass",
-   "value": "2m ago",
-   "detail": "2026-10-26T00:48:27Z"
+   "value": "1h 23m ago",
+   "detail": "2026-10-26T13:00:25Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "8/9 succeeded, 1 superseded, avg 26s",
+   "value": "7/9 succeeded, 2 superseded, avg 54s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-10-26T00:48:10+00:00, 11 new"
+   "detail": "run at 2026-10-26T12:59:47+00:00, 51 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -36,25 +36,25 @@
   {
    "name": "Data files parse as JSON",
    "status": "pass",
-   "value": "7/7",
+   "value": "33/33",
    "detail": ""
   },
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "1689 KB",
+   "value": "3002 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 2h",
    "status": "pass",
-   "value": "2m ago",
-   "detail": "2026-10-26T00:48:10+00:00"
+   "value": "1h 23m ago",
+   "detail": "2026-10-26T12:59:47+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "1676 items, 0 problems",
+   "value": "3000 items, 0 problems",
    "detail": ""
   },
   {
@@ -72,14 +72,14 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: General 23.8%",
-   "detail": "General 399, Policy / Permits 383, New Announcement 240, Power / Utility 212, AI Infrastructure 164, Cancelled / Blocked 94, Deals / Investment 78, Construction 62, Expansion 30, Operations 8, Land Acquisition 6"
+   "value": "top: Policy / Permits 23.4%",
+   "detail": "Policy / Permits 703, General 639, New Announcement 564, Power / Utility 308, AI Infrastructure 257, Cancelled / Blocked 205, Deals / Investment 125, Construction 101, Expansion 54, Operations 31, Land Acquisition 13"
   },
   {
    "name": "At least 50% of headlines located",
-   "status": "pass",
-   "value": "862/1676 (51.4%)",
-   "detail": "with a company: 197"
+   "status": "fail",
+   "value": "1416/3000 (47.2%)",
+   "detail": "with a company: 343"
   },
   {
    "name": "No non-U.S. locations in headlines",
@@ -88,21 +88,33 @@
    "detail": ""
   },
   {
+   "name": "Archive ids unique across all months",
+   "status": "pass",
+   "value": "19752 ids, 0 in two months",
+   "detail": ""
+  },
+  {
+   "name": "Archive months contiguous to now",
+   "status": "pass",
+   "value": "2024-10 to 2026-10, 0 missing",
+   "detail": ""
+  },
+  {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "1 month(s), 1765 headlines, earliest 2026-10-14",
+   "value": "27 month(s), 19752 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
    "name": "Registry ids unique",
    "status": "pass",
-   "value": "73 records, 73 visible",
+   "value": "504 records, 504 visible",
    "detail": ""
   },
   {
    "name": "No registry record lost since the last commit",
    "status": "pass",
-   "value": "73 -> 73",
+   "value": "504 -> 504",
    "detail": ""
   },
   {
@@ -118,9 +130,15 @@
    "detail": ""
   },
   {
+   "name": "Operational records backed by an operational headline",
+   "status": "pass",
+   "value": "30 detected operational, 0 without one",
+   "detail": ""
+  },
+  {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "62 attached headlines, 0 missing",
+   "value": "1250 attached headlines, 0 missing",
    "detail": ""
   },
   {
@@ -138,8 +156,8 @@
   {
    "name": "Overview 'announced' excludes Cancelled / Blocked",
    "status": "pass",
-   "value": "13",
-   "detail": "3 cancelled or blocked records this month are left out"
+   "value": "14",
+   "detail": "1 cancelled or blocked records this month are left out"
   },
   {
    "name": "Internal links resolve",
@@ -156,13 +174,13 @@
   {
    "name": "Sitemap matches pages",
    "status": "pass",
-   "value": "79 entries (6 site pages + 73 project pages)",
+   "value": "510 entries (6 site pages + 504 project pages)",
    "detail": ""
   },
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "73 pages, 297 KB",
+   "value": "504 pages, 2627 KB",
    "detail": ""
   },
   {
@@ -210,8 +228,8 @@
   {
    "name": "Pages under 300 KB (HTML+CSS+JS)",
    "status": "pass",
-   "value": "learn.html 214 KB",
-   "detail": "404.html 113 KB, atlas.html 141 KB, companies.html 127 KB, index.html 127 KB, learn.html 214 KB, methodology.html 128 KB, newsroom.html 130 KB"
+   "value": "learn.html 217 KB",
+   "detail": "404.html 116 KB, atlas.html 146 KB, companies.html 129 KB, index.html 130 KB, learn.html 217 KB, methodology.html 130 KB, newsroom.html 132 KB"
   },
   {
    "name": "Freshness badge and 10-minute no-store poller",
@@ -222,7 +240,7 @@
   {
    "name": "No secrets in the repo",
    "status": "pass",
-   "value": "0 matches in 126 files",
+   "value": "0 matches in 590 files",
    "detail": ""
   },
   {
@@ -300,8 +318,8 @@
   {
    "name": "Browser: Overview 'announced' matches recomputed value",
    "status": "pass",
-   "value": "13",
-   "detail": "Python recomputed 13 (Cancelled / Blocked excluded)"
+   "value": "14",
+   "detail": "Python recomputed 14 (Cancelled / Blocked excluded)"
   },
   {
    "name": "Browser: /newsroom @1280px loads cleanly",
@@ -312,8 +330,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 3m ago",
-   "detail": "expected Updated 3m ago or Updated 2m ago, title \"Data last updated Oct 26, 2026\""
+   "value": "Updated 1h ago",
+   "detail": "expected Updated 1h ago or Updated 1h ago, title \"Data last updated Oct 26, 2026\""
   },
   {
    "name": "Browser: /atlas @1280px loads cleanly",
@@ -324,25 +342,31 @@
   {
    "name": "Browser: Atlas renders pins and state bubbles",
    "status": "pass",
-   "value": "19 markers, 7 bubbles (zoom 5+), 5 approx counts at country zoom",
+   "value": "25 markers; location-unavailable hidden by default: true; 35 bubbles at zoom 5+, 22 at country zoom",
+   "detail": ""
+  },
+  {
+   "name": "Browser: Atlas 'Location unavailable' bubble lists projects and opens one",
+   "status": "pass",
+   "value": "2 projects listed, opened \"Amazon, Minnesota (site not yet named)\"",
    "detail": ""
   },
   {
    "name": "Browser: Atlas pin click opens the panel",
    "status": "pass",
-   "value": "Project Matador",
+   "value": "Minneapolis data center",
    "detail": ""
   },
   {
    "name": "Browser: Atlas filters change the list",
    "status": "pass",
-   "value": "1 in view · 70 total -> 1 in view · 1 total (state AZ)",
+   "value": "1 in view · 372 total -> 5 in view · 5 total (state AL)",
    "detail": ""
   },
   {
    "name": "Browser: Atlas registry filters (cancelled off, low-confidence toggle, Operational only)",
    "status": "pass",
-   "value": "default 70 (0 cancelled: true), with low-confidence 70, Operational only 23",
+   "value": "default 372 (0 cancelled: true), with low-confidence 372, Operational only 40",
    "detail": ""
   },
   {
@@ -354,7 +378,7 @@
   {
    "name": "Browser: Atlas panel shows status timeline and project news",
    "status": "pass",
-   "value": "google-van-buren-township-mi-2026: 2 timeline steps, 7/7 news",
+   "value": "aligned-dallas-tx-2025: 3 timeline steps, 2/2 news",
    "detail": ""
   },
   {
@@ -396,7 +420,7 @@
   {
    "name": "Browser: Sitemap entries return 200",
    "status": "pass",
-   "value": "79 entries",
+   "value": "510 entries",
    "detail": ""
   },
   {
@@ -406,5 +430,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-26T00:51:32+00:00"
+ "browser_checked_at": "2026-10-26T14:24:40+00:00"
 }
