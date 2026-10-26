@@ -222,7 +222,7 @@ window.RR = (function () {
     return h.date;
   }
   function statusSince(p) {
-    const d = statusDate(p), when = d ? fmtDate(d.slice(0, 7)) : "";
+    const d = statusDate(p), when = d ? fmtDate(d.slice(0, 7), { month: "short", year: "numeric" }) : "";
     if (!when) return p.status;
     return p.status === "Announced" || p.status === "Planned" ? p.status + " " + when : p.status + " since " + when;
   }
