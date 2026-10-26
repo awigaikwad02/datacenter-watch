@@ -1,7 +1,7 @@
 {
  "updated": "2026-10-25T22:36:40+00:00",
  "count": 1671,
- "new_this_run": 17,
+ "new_this_run": 0,
  "items": [
   {
    "id": "301b83be7325d827",
@@ -542,14 +542,6 @@
      "lon": -111.669,
      "level": 3,
      "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -1236,9 +1228,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "capacity_mw": 25,
    "cluster_id": "36aea132b5ace4dc",
-   "cluster_title": "Maryland Data Centers: HB 1534 Warning, 25 MW Rule [2026]"
+   "cluster_title": "Maryland Data Centers: HB 1534 Warning, 25 MW Rule [2026]",
+   "capacity_mw": 25
   },
   {
    "id": "2e107b10f55f556a",
@@ -1316,9 +1308,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.215,
    "cluster_id": "bd5d58b270b4f0fb",
-   "cluster_title": "Maryland Data Center Moratorium: $215M at Stake [2026]"
+   "cluster_title": "Maryland Data Center Moratorium: $215M at Stake [2026]",
+   "investment_usd_b": 0.215
   },
   {
    "id": "aecc397f31b18a31",
@@ -1499,9 +1491,9 @@
     "Amazon"
    ],
    "utilities": [],
-   "investment_usd_b": 0.427,
    "cluster_id": "4dcb4800f32005a3",
-   "cluster_title": "Amazon Just Walked Away From a $427 Million Data Center Plan After Neighbors Fought Back"
+   "cluster_title": "Amazon Just Walked Away From a $427 Million Data Center Plan After Neighbors Fought Back",
+   "investment_usd_b": 0.427
   },
   {
    "id": "e1dc4cde93879c6c",
@@ -1709,9 +1701,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.6,
    "cluster_id": "4af1733842d81d80",
-   "cluster_title": "Carrier’s $600M Fort Worth Plant Brings 1,500 Planned Jobs Into Texas’ Data Center Debate"
+   "cluster_title": "Carrier’s $600M Fort Worth Plant Brings 1,500 Planned Jobs Into Texas’ Data Center Debate",
+   "investment_usd_b": 0.6
   },
   {
    "id": "83fd529defebbc0a",
@@ -2500,9 +2492,9 @@
     "Amazon"
    ],
    "utilities": [],
-   "investment_usd_b": 0.427,
    "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers",
+   "investment_usd_b": 0.427
   },
   {
    "id": "927e66439a55cfc9",
@@ -3102,9 +3094,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.5,
    "cluster_id": "92a5ad542fb083bc",
-   "cluster_title": "Construction firms top $500M in revenue amid shift from warehouses to data centers"
+   "cluster_title": "Construction firms top $500M in revenue amid shift from warehouses to data centers",
+   "investment_usd_b": 0.5
   },
   {
    "id": "b4fb20c99635f3a2",
@@ -4045,9 +4037,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.6,
    "cluster_id": "8f4340a4f3aca813",
-   "cluster_title": "News | Spike in data center demand drives HVAC company to pick Texas for $600 million hub"
+   "cluster_title": "News | Spike in data center demand drives HVAC company to pick Texas for $600 million hub",
+   "investment_usd_b": 0.6
   },
   {
    "id": "23bcdf2c589987f4",
@@ -4826,7 +4818,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -4834,8 +4826,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "cluster_id": "5f1c32032ba62b4d",
@@ -4916,9 +4908,9 @@
     "Amazon"
    ],
    "utilities": [],
-   "investment_usd_b": 2.0,
    "cluster_id": "278c984acd35b46f",
-   "cluster_title": "Amazon executive addresses concerns over proposed $2 billion Sunbury data center ahead of November vote"
+   "cluster_title": "Amazon executive addresses concerns over proposed $2 billion Sunbury data center ahead of November vote",
+   "investment_usd_b": 2.0
   },
   {
    "id": "c5619647b68afe6b",
@@ -5281,9 +5273,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 6.0,
    "cluster_id": "e52168e3ba1823ae",
-   "cluster_title": "Short Sellers Just Made $6 Billion Betting Against AI Data Center Stocks"
+   "cluster_title": "Short Sellers Just Made $6 Billion Betting Against AI Data Center Stocks",
+   "investment_usd_b": 6.0
   },
   {
    "id": "bb97e20893e84ddd",
@@ -5696,7 +5688,7 @@
    ],
    "locations": [
     {
-     "name": "Northern Virginia, US",
+     "name": "Northern Virginia, Virginia, US",
      "lat": 39.0,
      "lon": -77.5,
      "level": 3,
@@ -5704,8 +5696,10 @@
      "country": "US"
     }
    ],
-   "states": [],
-   "state": null,
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
    "location_precision": "city",
    "companies": [
@@ -6816,9 +6810,9 @@
     "Applied Digital"
    ],
    "utilities": [],
-   "capacity_mw": 50,
    "cluster_id": "05e3bbc8f824f676",
-   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas"
+   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas",
+   "capacity_mw": 50
   },
   {
    "id": "0f6eb846a7b5f808",
@@ -8294,9 +8288,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 350.0,
    "cluster_id": "1dc52ca79df9e84b",
-   "cluster_title": "SK Data Center Arm in Talks to Fund $350 Billion AI Buildout"
+   "cluster_title": "SK Data Center Arm in Talks to Fund $350 Billion AI Buildout",
+   "investment_usd_b": 350.0
   },
   {
    "id": "d944819375eb3cea",
@@ -9106,9 +9100,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 3.0,
    "cluster_id": "ae7007f69d0a58e7",
-   "cluster_title": "Data centers will cost ComEd $3 billion but consumer groups worry Illinois households will be on the hook"
+   "cluster_title": "Data centers will cost ComEd $3 billion but consumer groups worry Illinois households will be on the hook",
+   "investment_usd_b": 3.0
   },
   {
    "id": "0c7f8ce8cad50a0a",
@@ -9415,7 +9409,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -9423,8 +9417,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -9501,14 +9495,6 @@
      "lon": -111.669,
      "level": 3,
      "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -9730,9 +9716,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.24,
    "cluster_id": "83228dc2e3d75cdc",
-   "cluster_title": "MXL: AI data-center demand drove 72% Q3 revenue growth; Q4 revenue guided to $240M–$260M"
+   "cluster_title": "MXL: AI data-center demand drove 72% Q3 revenue growth; Q4 revenue guided to $240M–$260M",
+   "investment_usd_b": 0.24
   },
   {
    "id": "5a81c0eb666e9158",
@@ -10056,9 +10042,9 @@
    "location_precision": "source",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 53.0,
    "cluster_id": "91339381e18fe9fa",
-   "cluster_title": "CSI report: Data centers’ $53 billion investment through 2031"
+   "cluster_title": "CSI report: Data centers’ $53 billion investment through 2031",
+   "investment_usd_b": 53.0
   },
   {
    "id": "903911e6d7a89fcd",
@@ -10896,9 +10882,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 10.0,
    "cluster_id": "82ac38a49f3ac8a9",
-   "cluster_title": "Merrin took $10,500 tied to data center financiers, including Blackstone CEO behind $10 billion Ohio project"
+   "cluster_title": "Merrin took $10,500 tied to data center financiers, including Blackstone CEO behind $10 billion Ohio project",
+   "investment_usd_b": 10.0
   },
   {
    "id": "fa3a804ef0156e01",
@@ -11130,22 +11116,11 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [
-    {
-     "name": "Washington, US",
-     "lat": 47.4,
-     "lon": -120.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "WA"
-   ],
-   "state": "WA",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "state",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
    "cluster_id": "236d5e7804b3eb6b",
@@ -11508,14 +11483,6 @@
      "lon": -111.669,
      "level": 3,
      "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -12649,9 +12616,9 @@
     "Applied Digital"
    ],
    "utilities": [],
-   "capacity_mw": 50,
    "cluster_id": "05e3bbc8f824f676",
-   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas"
+   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas",
+   "capacity_mw": 50
   },
   {
    "id": "46dba0f0d9df3843",
@@ -12671,9 +12638,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 3.5,
    "cluster_id": "46dba0f0d9df3843",
-   "cluster_title": "Nebius gets $3.5 billion Citi facility for data center growth"
+   "cluster_title": "Nebius gets $3.5 billion Citi facility for data center growth",
+   "investment_usd_b": 3.5
   },
   {
    "id": "23cd2271e8d3ce13",
@@ -13287,9 +13254,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.6,
    "cluster_id": "2ddc06a5a9d638cc",
-   "cluster_title": "Exclusive | Carrier Plans $600 Million Texas Plant to Make Cooling Gear for AI Data Centers"
+   "cluster_title": "Exclusive | Carrier Plans $600 Million Texas Plant to Make Cooling Gear for AI Data Centers",
+   "investment_usd_b": 0.6
   },
   {
    "id": "c437a0dded81b609",
@@ -13892,22 +13859,11 @@
    "tags": [
     "Deals / Investment"
    ],
-   "locations": [
-    {
-     "name": "Delaware, US",
-     "lat": 39.0,
-     "lon": -75.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "DE"
-   ],
-   "state": "DE",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "state",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
    "cluster_id": "3eaae94158e3da62",
@@ -14013,14 +13969,6 @@
    ],
    "locations": [
     {
-     "name": "Spokane, Washington, US",
-     "lat": 47.66,
-     "lon": -117.43,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Spokane County, Washington, US",
      "lat": 47.62,
      "lon": -117.405,
@@ -14034,7 +13982,7 @@
    ],
    "state": "WA",
    "county": "Spokane County, Washington, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "cluster_id": "0f652f1c95e0e1eb",
@@ -14989,14 +14937,6 @@
      "level": 3,
      "precision": "county",
      "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
@@ -15031,7 +14971,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     },
     {
@@ -15047,15 +14987,15 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
-   "investment_usd_b": 0.427,
    "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers",
+   "investment_usd_b": 0.427
   },
   {
    "id": "9ddffc8b65956e03",
@@ -15682,9 +15622,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 4.2,
    "cluster_id": "89d3fb1333d67f6c",
-   "cluster_title": "New $4.2 Billion Texas Gas Pipe to Supply Fuel for Data Center"
+   "cluster_title": "New $4.2 Billion Texas Gas Pipe to Supply Fuel for Data Center",
+   "investment_usd_b": 4.2
   },
   {
    "id": "6c48baad312eba6d",
@@ -16206,14 +16146,6 @@
      "level": 3,
      "precision": "county",
      "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
@@ -16395,9 +16327,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 3.6,
    "cluster_id": "1af03a3ffba51fe1",
-   "cluster_title": "Ohio High Court Keeps Proposed $3.6B Data Center on Ice"
+   "cluster_title": "Ohio High Court Keeps Proposed $3.6B Data Center on Ice",
+   "investment_usd_b": 3.6
   },
   {
    "id": "68cf50ba23d55c73",
@@ -16429,9 +16361,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "capacity_mw": 10,
    "cluster_id": "68cf50ba23d55c73",
-   "cluster_title": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana"
+   "cluster_title": "Brightray Signs LOI for Planned 10MW Prefab Data Center in Indiana",
+   "capacity_mw": 10
   },
   {
    "id": "252c283d36a1de57",
@@ -16608,9 +16540,9 @@
     "Applied Digital"
    ],
    "utilities": [],
-   "capacity_mw": 50,
    "cluster_id": "05e3bbc8f824f676",
-   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas"
+   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas",
+   "capacity_mw": 50
   },
   {
    "id": "641808188b795c28",
@@ -16703,14 +16635,6 @@
      "level": 3,
      "precision": "county",
      "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
@@ -16740,14 +16664,6 @@
      "lon": -111.669,
      "level": 3,
      "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -17271,9 +17187,9 @@
     "Amazon"
    ],
    "utilities": [],
-   "investment_usd_b": 0.427,
    "cluster_id": "00ff028c6dff6d32",
-   "cluster_title": "Amazon abandons $427 million GW campus data center plan and pledges land donations worth $65 million instead"
+   "cluster_title": "Amazon abandons $427 million GW campus data center plan and pledges land donations worth $65 million instead",
+   "investment_usd_b": 0.427
   },
   {
    "id": "2ded3f5850a23b14",
@@ -17573,7 +17489,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -17581,8 +17497,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -18005,7 +17921,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -18013,8 +17929,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -18183,7 +18099,7 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "745b432767011ab1",
-   "cluster_title": "Page wants St. Louis County Health Department to monitor data center noise"
+   "cluster_title": "Page wants County health department to monitor low frequency data center noise"
   },
   {
    "id": "f245ac9a711e692a",
@@ -18194,34 +18110,15 @@
    "feed": "Google News: Local approvals",
    "category": "General",
    "tags": [],
-   "locations": [
-    {
-     "name": "St. Louis, Missouri, US",
-     "lat": 38.63,
-     "lon": -90.2,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "St. Louis County, Missouri, US",
-     "lat": 38.641,
-     "lon": -90.446,
-     "level": 3,
-     "precision": "county",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "MO"
-   ],
-   "state": "MO",
-   "county": "St. Louis County, Missouri, US",
-   "location_precision": "city",
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
    "companies": [],
    "utilities": [],
    "cluster_id": "745b432767011ab1",
-   "cluster_title": "Page wants St. Louis County Health Department to monitor data center noise"
+   "cluster_title": "Page wants County health department to monitor low frequency data center noise"
   },
   {
    "id": "1044897bc7628341",
@@ -18262,14 +18159,6 @@
      "lon": -111.669,
      "level": 3,
      "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -18334,14 +18223,6 @@
      "lon": -111.669,
      "level": 3,
      "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "Utah, US",
-     "lat": 39.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -19187,7 +19068,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -19195,8 +19076,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -20489,7 +20370,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -20497,8 +20378,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -20532,7 +20413,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -20540,7 +20421,7 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
+   "county": "Loudoun County, Virginia, US",
    "location_precision": "city",
    "companies": [
     "Amazon"
@@ -21624,9 +21505,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.009,
    "cluster_id": "614eb5915c21d340",
-   "cluster_title": "Texas governor said data centers 'dug their own grave,' then took $9 million from data center-linked donors"
+   "cluster_title": "Texas governor said data centers 'dug their own grave,' then took $9 million from data center-linked donors",
+   "investment_usd_b": 0.009
   },
   {
    "id": "7abeb01d85248b19",
@@ -21683,9 +21564,9 @@
     "Amazon"
    ],
    "utilities": [],
-   "investment_usd_b": 0.427,
    "cluster_id": "5ee9df2bf905ccd8",
-   "cluster_title": "$427M Virginia Science and Technology Campus: Amazon Drops 800,000 Square Foot Data Center Plan"
+   "cluster_title": "$427M Virginia Science and Technology Campus: Amazon Drops 800,000 Square Foot Data Center Plan",
+   "investment_usd_b": 0.427
   },
   {
    "id": "40129133a81cc401",
@@ -22757,7 +22638,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -22765,8 +22646,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -23401,14 +23282,6 @@
    ],
    "locations": [
     {
-     "name": "Spokane, Washington, US",
-     "lat": 47.66,
-     "lon": -117.43,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Spokane County, Washington, US",
      "lat": 47.62,
      "lon": -117.405,
@@ -23423,7 +23296,7 @@
    "state": "WA",
    "companies": [],
    "county": "Spokane County, Washington, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "utilities": [],
    "cluster_id": "b5e0add8cfee29ef",
    "cluster_title": "Spokane County Commissioners pass resolution extending data center development pause"
@@ -23443,14 +23316,6 @@
    ],
    "locations": [
     {
-     "name": "Spokane, Washington, US",
-     "lat": 47.66,
-     "lon": -117.43,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Spokane County, Washington, US",
      "lat": 47.62,
      "lon": -117.405,
@@ -23464,7 +23329,7 @@
    ],
    "state": "WA",
    "county": "Spokane County, Washington, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "cluster_id": "7a49978c1fab98a7",
@@ -23869,30 +23734,11 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [
-    {
-     "name": "St. Louis, Missouri, US",
-     "lat": 38.63,
-     "lon": -90.2,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "St. Louis County, Missouri, US",
-     "lat": 38.641,
-     "lon": -90.446,
-     "level": 3,
-     "precision": "county",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "MO"
-   ],
-   "state": "MO",
-   "county": "St. Louis County, Missouri, US",
-   "location_precision": "city",
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
    "companies": [],
    "utilities": [],
    "cluster_id": "1283f08a223c94c5",
@@ -26624,9 +26470,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 80.0,
    "cluster_id": "4769556be0a67af5",
-   "cluster_title": "Opinion | The $80 billion data-center tax break myth"
+   "cluster_title": "Opinion | The $80 billion data-center tax break myth",
+   "investment_usd_b": 80.0
   },
   {
    "id": "46ebdf63fe77a74d",
@@ -26775,7 +26621,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -26783,8 +26629,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "cluster_id": "c4b725818495e3b7",
@@ -27035,9 +26881,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.009,
    "cluster_id": "4a9c8811e58cfd89",
-   "cluster_title": "Report: Abbott hauled $9M from data center affiliated donors while calling for regulations"
+   "cluster_title": "Report: Abbott hauled $9M from data center affiliated donors while calling for regulations",
+   "investment_usd_b": 0.009
   },
   {
    "id": "a5a684f9dcaf1102",
@@ -28062,9 +27908,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.075,
    "cluster_id": "4c5393c9fcc052dd",
-   "cluster_title": "$75M data center plan scrapped in Wayne County after residents pack City Hall"
+   "cluster_title": "$75M data center plan scrapped in Wayne County after residents pack City Hall",
+   "investment_usd_b": 0.075
   },
   {
    "id": "a3ebe6b6e26a81ff",
@@ -29067,9 +28913,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 66.0,
    "cluster_id": "3d7e206c184d66ef",
-   "cluster_title": "Who’s Behind a Proposed $66 Billion Wyoming AI Data Center?"
+   "cluster_title": "Who’s Behind a Proposed $66 Billion Wyoming AI Data Center?",
+   "investment_usd_b": 66.0
   },
   {
    "id": "5ea23c7ef0e5e46b",
@@ -29632,9 +29478,9 @@
     "STACK"
    ],
    "utilities": [],
-   "capacity_mw": 3000,
    "cluster_id": "201e5b951bc80194",
-   "cluster_title": "Pittsylvania County's Stack data center project to include 21 buildings, use up to 3,000 megawatts of power and 7 million gallons a day of water"
+   "cluster_title": "Pittsylvania County's Stack data center project to include 21 buildings, use up to 3,000 megawatts of power and 7 million gallons a day of water",
+   "capacity_mw": 3000
   },
   {
    "id": "53bb67e7c4ece1e4",
@@ -30606,14 +30452,6 @@
    ],
    "locations": [
     {
-     "name": "Spokane, Washington, US",
-     "lat": 47.66,
-     "lon": -117.43,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Spokane County, Washington, US",
      "lat": 47.62,
      "lon": -117.405,
@@ -30628,7 +30466,7 @@
    "state": "WA",
    "companies": [],
    "county": "Spokane County, Washington, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "utilities": [],
    "cluster_id": "c8a69e2c5aa0d58c",
    "cluster_title": "Spokane County’s Data Center Legislation"
@@ -32167,9 +32005,9 @@
    "utilities": [
     "Entergy"
    ],
-   "investment_usd_b": 0.5,
    "cluster_id": "25c1ef3eb00a6745",
-   "cluster_title": "Entergy Arkansas announces enhanced partnership at Google West Memphis campus, delivering at least $500M in new savings for all customers"
+   "cluster_title": "Entergy Arkansas announces enhanced partnership at Google West Memphis campus, delivering at least $500M in new savings for all customers",
+   "investment_usd_b": 0.5
   },
   {
    "id": "fddc1c0aed1e9549",
@@ -34481,9 +34319,9 @@
    "location_precision": "source",
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 0.009,
    "cluster_id": "2850dad025da0c46",
-   "cluster_title": "Greg Abbott raked in $9 million from data center-related donors as he called for regulations"
+   "cluster_title": "Greg Abbott raked in $9 million from data center-related donors as he called for regulations",
+   "investment_usd_b": 0.009
   },
   {
    "id": "db44daa25ec68629",
@@ -35036,9 +34874,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investment_usd_b": 6.6,
    "cluster_id": "ba0155e0c9333f2f",
-   "cluster_title": "A $6.6B Clarksville Data Center Will Generate Its Own Power. Will It Win Over Skeptics?"
+   "cluster_title": "A $6.6B Clarksville Data Center Will Generate Its Own Power. Will It Win Over Skeptics?",
+   "investment_usd_b": 6.6
   },
   {
    "id": "e481a60108f203d9",
@@ -41654,18 +41492,9 @@
      "level": 3,
      "precision": "county",
      "country": "US"
-    },
-    {
-     "name": "Indiana, US",
-     "lat": 39.9,
-     "lon": -86.3,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "IN",
     "PA"
    ],
    "state": "PA",
