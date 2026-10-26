@@ -1,8 +1,8 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-26T00:48:21+00:00",
- "count": 73,
- "visible": 73,
+ "updated": "2026-10-26T01:16:50+00:00",
+ "count": 101,
+ "visible": 101,
  "records": [
   {
    "id": "amazon-georgia",
@@ -606,6 +606,51 @@
    "id": "fairwater",
    "news": [
     {
+     "id": "05fc0f29956ee8a4",
+     "title": "Microsoft finishes construction of Mount Pleasant data center, plans for more",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQU2JFanh4eG5sSElBOGNXclNjbURxbWEzT3g2X2RsRHBENDFXRzAzWmgxV3h0QjJ4NWNHeUVQQUI2LXIxM0tOQ2EtZFVNSEZVbTZFOGxDaGZZLXZnU25kZGRRU3NFWVhtSU1lUDdhQnRFVW14Zlg0cmxlZ0RvMWFjeVA0eDU0VHU0RnJ3?oc=5",
+     "source": "WPR",
+     "published": "2026-06-23T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "05fc0f29956ee8a4"
+    },
+    {
+     "id": "1f57ef35b936507e",
+     "title": "Microsoft completes first Mount Pleasant data center, announces facility is operational",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYmxYQzJ1MGNJeTFiaTBxYTFudzdZNXR3WDczYjJVSS1HSkxkcTEtQW9Wd05CRGg0eHliSXFCbjRFanpxX3VXRDlpeUc2dXlGclhXNTFnekpWTU1fUi1WckRwNWJYSkMtb0VzV1ZGeVc0emRhSGlpM2x4Y01qdUZPOS1rMzR4aUVUTmxvVkl5RXpFRWVacHpFb3djVVE4MGU4aHdnVGpmRndfZExqeGlJbllKZmxrQnNiTklUaA?oc=5",
+     "source": "WTMJ",
+     "published": "2026-06-23T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "f22e6bd54028681c"
+    },
+    {
+     "id": "9302d37e54e43a63",
+     "title": "Microsoft announces completion of Mount Pleasant data center",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTmx5TTZ1b0RSRkJsTUJMVVhtRF9RY2ZqTGFXZGVPZ3VyTmUxcEctbTdaaHJDM2FNd2JpQWtkOFllZ0pQNE9fUXk4U3daQ2xxOFFXYVlTM0YycTJCX2FQQkxUaGxuV3JYaG1NZHlqeUVIeVh4aVpuRlNMQVA3WnRsWmV0cXZwODR4RjAtcl9UWnNyV0w1Z2NTOWctaWjSAbABQVVfeXFMT1FXNWVncDFDRmNSdHlQYmk5ZFctWEdVMTQtMzhSdUYwbDRDZ19WVkJPSllRcjdLSGV2czBxR2RnZ0VSS2d4dGJQRlAzS1J0UndBcUlYeFFiVGtOQ3VMRUloZ29GMlFXUUVNRFZWSGg4UEhyOEZpd2t5MFd4NUQtbGNPMHY0MG82Y19LQzVnbmhpQUZ2Y1Z6NzBxdUVSYVR1ZDBQZkNNemszR0hNbFdHbko?oc=5",
+     "source": "WMTV 15 NEWS",
+     "published": "2026-06-23T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "f22e6bd54028681c"
+    },
+    {
+     "id": "f22e6bd54028681c",
+     "title": "Microsoft completes construction on first datacenter facility in Mount Pleasant, Wisconsin",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLUxRMjlBazlyalBJV1h1TUl5QXMxZlZSdGVoWTZPY2xYQk9wZ2FPNW5iWk9ISHl5NDNEalBVNFctekZ5bmRTekltYkpTV01yQlF3aFZyR1NVZWF5QWhTTzlYdHVlMWxnNTN2N2RENXpUVG1zSjJ5T0xPYW9BR2NONzlaVWpOckJmTTRKMWRNaXA0bTFPdTY5R29oT19yY1ItZW9HcjdaYU5BQW12WkVYcnN0N2N1SlFrNzhsWlI1ZWdrdmRsMUlfN21WWEttYkpN?oc=5",
+     "source": "Microsoft Source",
+     "published": "2026-06-23T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "f22e6bd54028681c"
+    },
+    {
+     "id": "dd7552bf321d2d6c",
+     "title": "Microsoft opens the Fairwater data center in Mount Pleasant",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQjlWT0tJU3JldXRUNlR5anR6akVhYWlweEgtcW5VelFDUFdza3ZNekxuUXB4M3Z1MGtsRnRBSF9BQ2tKZkxBckRzQlZtZk1ScWhtRUJvUGxtZnl1Vzhsd3J1b2g4ZHRFSi02ZVNXLWIwNFZpWnF6MFgtSDk4R185WVlaM1djaG9ZOWxEdlRka1l5RjN5Z1JoUlN2V1BEZw?oc=5",
+     "source": "Civic Media",
+     "published": "2026-06-24T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "f22e6bd54028681c"
+    },
+    {
      "id": "e3304b184be1ba9d",
      "title": "Microsoft planning to build fewer data centers at sprawling Mount Pleasant campus",
      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSjRqWE43V3pHQ0s5U3FfMi05TEp5TEphUE9xODFySW55V0xBQllMUm44NUZmTHlhczlOUzA0WWpuZnVrMzdCc25kcHdyNmJ2aDRjeTNwOEJDNC1jV2VLZWdzbGtjUGlOemF0MUVYUk9adjNrN2dNN0Jaa3doSXl4X1hFaVdXVmFKMzJtc0hn?oc=5",
@@ -615,7 +660,7 @@
      "cluster_id": "e3304b184be1ba9d"
     }
    ],
-   "first_seen": "2026-10-15T10:00:00+00:00",
+   "first_seen": "2026-06-23T07:00:00+00:00",
    "name": "Fairwater",
    "company": "Microsoft",
    "companies": [
@@ -666,8 +711,8 @@
    "capacity_mw": null,
    "investment_usd_b": 7,
    "last_news": "2026-10-15T10:00:00+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "sources_count": 5,
+   "confidence": "high",
    "hidden": false,
    "imported": "2026-10-26"
   },
@@ -888,7 +933,17 @@
   },
   {
    "id": "google-fort-wayne",
-   "news": [],
+   "news": [
+    {
+     "id": "9a141a9d393fc16b",
+     "title": "$2 billion data center now operational in Fort Wayne, Google outlines its plans for the community",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRUdYVWI2UEc2cGk0eC11TmVxSVJucG9QclVMOVJzYXN2RDgxN1FnVWRuYkl5SzIyZEJyRWRpdG1KcVc5cDBsV2tOd0NscGUtN3FLbV9rRHBHVE9KNnZHVWJ1UmV0Q3FzN2xtamJOeXBnS0RETjU3Ym5pRUs4TFl5UmVoWEpkRktYTkJXNm1USXVrRnRjcVp1c29OekRRY3liaHc0ODB2ZWdkdHpfYmRDcFZpY0VjQU9ObmF4bERZM3ZnXzB4R1hybdIBzgFBVV95cUxQV0J6MG1kc1EzcENINnRoR2dwWEc1dFF3eXNfVDZTdGwtU0NqZ1Aza2Z3ZGd5aC1PTUpGbGQ4Y3M1QWpUUmRiRWY5Q1JJUG9JQ1BGbUpmdXd0b3JMekhJY3lGd3lnZ1JiOUw5clZvQzlTcVFxZ3BxZEpnUEgwQTdvN1Z2Z0JDcmtfeUJlay1HWTM1VXByTFEzSFl4cVpvSWlLSjJ6M2c2SklhOGZCbnZXNVlTWUVsdTBGZ3JwZGtzRC1FdmxmazFmbmNLSHNpUQ?oc=5",
+     "source": "WANE 15",
+     "published": "2025-12-11T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "9a141a9d393fc16b"
+    }
+   ],
    "first_seen": "2024-04-01",
    "name": "Google Fort Wayne",
    "company": "Google",
@@ -923,8 +978,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 2,
-   "last_news": null,
-   "sources_count": 0,
+   "last_news": "2025-12-11T08:00:00+00:00",
+   "sources_count": 1,
    "confidence": "medium",
    "hidden": false,
    "imported": "2026-10-26"
@@ -1398,7 +1453,26 @@
   },
   {
    "id": "meta-el-paso",
-   "news": [],
+   "news": [
+    {
+     "id": "e3c7cd904075ac61",
+     "title": "El Paso City Council rejects effort to end Meta data center agreement",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWTdGOWJSRW1mMTY5WWR3d1V6MzBQOUJncjk5aFhLdlcxR2FNRHBZRVB4R0lIeXd1a05MZTVyV2pvaEhTNnpwSWJsWTJpbHFubkxvbktXem9ZYTAtbHVMRVVTRlppTmZpZXEtUkVsVzAtX09yT0ZDQmJSX0xiRkVRMGRSckRkM0pQR2ZZS1B0akNzQmxwVm04aHZkM2MwaE91Y1JrcGgxeXRWaUpsTjNwNG53UjRxZEdnR0hlYQ?oc=5",
+     "source": "El Paso Matters",
+     "published": "2026-06-09T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "e3c7cd904075ac61"
+    },
+    {
+     "id": "fb7ea73be4ad2b49",
+     "title": "City of El Paso challenges proposed power plant for Meta AI data center | Local News",
+     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNN0NxdDE4eDZuN1RoQUtTM2Q1VTdtQXFRbklwS3A3XzZmSHA2OFp6ZzdVSFc2RFItY3hSVUl0ajlZQndiTVRnZE5Jdm1oWEc5TnJyY3hjWWZNcTkyc2ZQX3hxN0ltZUhUUFMtOGFEcW0tMWk1Y0ZXTmhOSDUtcWNWeGQxbEVybVMwVmVjQmJrNVdZaGhzakxaWnVxdTgxY1hpUWxLUi02eldqTFJyNTdhMFNKcXNRYzdfOGpmUmU1Q1R5Zm8zTUJxOGplVjFfTnNPSmZHTW15UVFuekdzdUdHNkdGQXZpWEdUNzNNQVpxSWdkNFJlaUE?oc=5",
+     "source": "El Paso Inc.",
+     "published": "2026-06-18T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "fb7ea73be4ad2b49"
+    }
+   ],
    "first_seen": "2025-10-01",
    "name": "Meta El Paso",
    "company": "Meta",
@@ -1430,12 +1504,18 @@
      "by": "curated"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-06-09T07:00:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "e3c7cd904075ac61"
+    }
+   ],
    "capacity_mw": 1000,
    "investment_usd_b": null,
-   "last_news": null,
-   "sources_count": 0,
-   "confidence": "medium",
+   "last_news": "2026-06-18T07:00:00+00:00",
+   "sources_count": 2,
+   "confidence": "high",
    "hidden": false,
    "imported": "2026-10-26"
   },
@@ -2069,7 +2149,17 @@
   },
   {
    "id": "stargate-michigan",
-   "news": [],
+   "news": [
+    {
+     "id": "55098981c6436fa1",
+     "title": "News | Related, Oracle start construction on Stargate AI data center complex in Michigan",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcEYyRVEzVVdiNWdwX0N3NmstdnFaTW10dUNQRS1ST2Jyc1hCZWdQZHBPWFN2cEU2ei16RGVyamhDYzdNWm1XUDBaQVZXUlg2WkZzMjhaOWR2OEJSRnh2bkU0c01YaU1sTkM0Q0hURFpsUXg3Y09SbFhXYkhaN0JOeE1tYUtENVNkWmRseGI2amJJMFdSaldaN0N4VWxtZHV4RTEwdzd1bnJvUVRLVlRTdE1GUGZFaTZJZ2tFeC15OA?oc=5",
+     "source": "CoStar",
+     "published": "2026-06-05T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "55098981c6436fa1"
+    }
+   ],
    "first_seen": "2025-10-01",
    "name": "Stargate Michigan",
    "company": "Oracle, Related Digital",
@@ -2105,8 +2195,8 @@
    "events": [],
    "capacity_mw": 1400,
    "investment_usd_b": null,
-   "last_news": null,
-   "sources_count": 0,
+   "last_news": "2026-06-05T07:00:00+00:00",
+   "sources_count": 1,
    "confidence": "medium",
    "hidden": false,
    "imported": "2026-10-26"
@@ -2245,8 +2335,18 @@
   },
   {
    "id": "switch-las-vegas-core-campus",
-   "news": [],
-   "first_seen": "2026-10-26",
+   "news": [
+    {
+     "id": "585fa5d1a7aadca5",
+     "title": "Residents still have questions after Switch data center expansion approved in southwest Las Vegas",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPRjV3N3N4LXAxcXRBa2lYUzRROG1TTU40TUF3dnFQNDc3VkdrbllLZm84ZlZBZFhxbWsyTVlsYkxMaXpPTG5sZjJjRUhGdnJSSUl1N0JLTGNCS2dfR3RGNWRYVjRiSnNma1hPcTJUbDBuMnl1MUVvRW4yZlJSblNpZE1BeFF1S3BnNTI2bXc3NlRGbGxMaHZ5cFFCNm8tc0R3aWljd1Y3TlFSbmc4dmllZTF1QWlQZG1zZS1kdE5qd01oQnhRdnRIWldlclVGNU85cFZQVGIxMFdRZUZEcmg4Q0xFRGk4S00?oc=5",
+     "source": "KTNV Las Vegas",
+     "published": "2026-06-19T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "585fa5d1a7aadca5"
+    }
+   ],
+   "first_seen": "2026-06-19T07:00:00+00:00",
    "name": "Switch Las Vegas Core Campus",
    "company": "Switch",
    "companies": [
@@ -2271,17 +2371,28 @@
    "status": "Operational",
    "status_history": [
     {
-     "date": "2026-10-26",
+     "date": "2026-06-19",
      "status": "Operational",
      "headline_id": null,
      "by": "curated"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-06-19T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "585fa5d1a7aadca5"
+    },
+    {
+     "date": "2026-06-19T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "585fa5d1a7aadca5"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": null,
-   "sources_count": 0,
+   "last_news": "2026-06-19T07:00:00+00:00",
+   "sources_count": 1,
    "confidence": "medium",
    "hidden": false,
    "imported": "2026-10-26"
@@ -2353,6 +2464,109 @@
    "hidden": false
   },
   {
+   "id": "aws-chicago-il-2026",
+   "name": "Amazon Chicago data center",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "Chicago, Illinois, US",
+   "state": "IL",
+   "county": "Jasper County, Illinois, US",
+   "city": "Chicago, Illinois, US",
+   "lat": 41.88,
+   "lon": -87.63,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "5b7debe542a39e07",
+     "title": "NWI Forum announces $7 billion Amazon data center coming to Jasper County",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQXE5VWZTUXNyZDRCc0hEZjBSYXg3djgxMzN4NFNvemlaYzhYbjNGbVlWbERCYWdVSENtX3pkOFMwaTU2VVE3RjFNNGxaR0pNeVlsNkpXaGNGYnpTNmNKNExCSDM0NlFFTWh1NVdJWjQ0dDI5T3J4RlVlQmVYcTZWNmQ1Yy1wR2dNYzNZMW5R?oc=5",
+     "source": "Chicago Tribune",
+     "published": "2026-06-17T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "5b7debe542a39e07"
+    }
+   ],
+   "first_seen": "2026-06-17T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-17T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "5b7debe542a39e07"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 7.0,
+   "last_news": "2026-06-17T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "aws-in-unnamed",
+   "name": "Amazon, Indiana (site not yet named)",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "Indiana, US",
+   "state": "IN",
+   "county": null,
+   "city": null,
+   "lat": 39.9,
+   "lon": -86.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Amazon",
+   "news": [
+    {
+     "id": "f86fe3cf8860444a",
+     "title": "Amazon opens $11 billion AI data center in rural Indiana as rivals race to break ground",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUE83N0E1NGNZUVpfWnRjVkwwdTB6SmdEYl91MXZ5cGRobklrMHE4VEVrWjUwSEEyaXF2MXFhMFYzR2tidnVIUGRUR0lEZG5QQThrOW9yU1ZqdzktbW41Q1ZSYkVFNUM4OWd4YWo0Ymw4YUVTVF9GWUZBT2Zibjc1S1dDcTdOclUxSnBDUVh2WUQ3dGt5NEtxUmRDRzNLcmxaeEJWedIBqgFBVV95cUxOVDJBUlhKQUZXcGo0TG5wXzFkczBCazVlODNYbFBxaGR2RVJWeWxCSk1GUnJDdHZzM09ldVhRRDhHX0phaTEwUjltUWViSWRZLUQ2MmU1YTZZSklnUDNhQ2lYZEV5UXc4bC1OMUpUZXJCalRkVFA0akkxRTJYeVpnZ3hHOGhwS1NFM3VtU3hUTFMzemlqVm9ib3Y1dEtaR0Z2WTR1LWVuaWFwdw?oc=5",
+     "source": "CNBC",
+     "published": "2025-10-29T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "f86fe3cf8860444a"
+    },
+    {
+     "id": "8b2014a0a5304611",
+     "title": "Amazon plans nine-building data center campus in Wheatfield, Indiana",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTml6TnZ5Y0JIWExZN2laT0FhUnh1WlBCc3BLMFhWd19QLWFvT0duaXNmeWJuVFR3bkh2ZmhueEJjX05WdVI3UFcwdUxhY1R6TTJtelFzYl9IcFBraGgwZUhqcVJxNkxGcm5MOU5SMkhKMFpPUEx4MEJDVTdJdlQ5eXMwTDZKQWpocFp4R0lnRkZOOFNEQzRsQ0dKSnhNUWdUSUVPMFhCQkRUcGxxNndWdw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-03T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "8b2014a0a5304611"
+    }
+   ],
+   "first_seen": "2025-10-29T07:00:00+00:00",
+   "utilities": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2025-10-29T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "f86fe3cf8860444a"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 11.0,
+   "last_news": "2026-06-03T07:00:00+00:00",
+   "sources_count": 2,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
    "id": "aws-indiana-county-pa-2026",
    "name": "Amazon Indiana County data center",
    "company": "Amazon",
@@ -2402,6 +2616,226 @@
    "last_news": "2026-10-15T17:44:38+00:00",
    "sources_count": 1,
    "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "aws-mo-unnamed",
+   "name": "Amazon, Missouri (site not yet named)",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "Missouri, US",
+   "state": "MO",
+   "county": null,
+   "city": null,
+   "lat": 38.4,
+   "lon": -92.5,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Amazon",
+   "news": [
+    {
+     "id": "c2b1435e1faecb66",
+     "title": "AMZN Stock Jumps — Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQV2l3WU13SDAwOUxIem5BUHRZQkRkVi10TnU5UzJJVE0xMHhmSF83WXdST3NzWGg0Tlh1X2tzZE9fMzQtNkNrVmhMSlBwWlh3LVFzTExDSjQ5X19rSUxVa2Y0eWFHSGEtNmhGMjhFV0tHUXlfdG4yR0NhcVJ4V0YxcW5FTTRtaUctOTFTSE9pbjNlN1YzQXg0UjdpYUgtbWJobGZSdXVtam1ENDhEQzNCSDQzVnNvQkFHZ29uS09GaE1HUlc2a0VCTG5Rb0Q?oc=5",
+     "source": "Stocktwits",
+     "published": "2026-06-15T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "d8320edc94d5089d"
+    },
+    {
+     "id": "d8320edc94d5089d",
+     "title": "Amazon announces multibillion-dollar data center investment in Missouri",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ3dCUkFveXEzdTV2S2hlbmZ1UUdFOTIyQnU1a09ETnRjV2JqZlZXOVkzb2xfX25Bb0U1aEJJb0dxZ3ZQX2s5dm1HUXRjcVREaTV6S3N5Zm1kMVZnNzlZbHY5ZnRQUlcxN0xaTWxhaDR6dnVWRE1PeVp6cDF5MHpvNmFfTDJwRG5Ma1E?oc=5",
+     "source": "About Amazon",
+     "published": "2026-06-15T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d8320edc94d5089d"
+    },
+    {
+     "id": "12f4e4095b4f2b81",
+     "title": "Amazon plans $10B Missouri data center campus",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYVZoR2laNlpIOWRTSjNVa3ROd29jSFo1SjNRMDdQOUNDTUN3YmdsUHlqeEd1VUI4WDhBUUFHN01aTkpudmgxTkxxQ1g1Y05RSHNXSTFmNE9XSEhlTGEtSHF6M1dBQkh5S2IwbVRaOUlsSmFkM1pJck1YQVZ3RWZPNUctRWVjNWtiaENENC03RQ?oc=5",
+     "source": "Construction Dive",
+     "published": "2026-06-17T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "12f4e4095b4f2b81"
+    }
+   ],
+   "first_seen": "2026-06-15T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-15T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "c2b1435e1faecb66"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-15T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "c2b1435e1faecb66"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 10.0,
+   "last_news": "2026-06-17T07:00:00+00:00",
+   "sources_count": 3,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "aws-montgomery-county-mo-2026",
+   "name": "Amazon Montgomery County data center",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "Montgomery County, Missouri, US",
+   "state": "MO",
+   "county": "Montgomery County, Missouri, US",
+   "city": null,
+   "lat": 38.942,
+   "lon": -91.469,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "02d3f3840e48baa1",
+     "title": "Amazon, Missouri officials announce $10B Montgomery County data center plan",
+     "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNbG1oM2U1d3NTdm4zQS1fejVDU1pKMTQ3b1ZHMjJTUGN5VndDVWh4TWQweVZkdDRFb0Fab1lEV3h5Q1dYWjd0SmdIdDRsNTNfUDE3am1BM1pZWS1FRGRSZHVlZE5BREJhMFkyc0ZpVHhHMHVOQjMxLU54VzRvbVZkZnlqdEIxRFRyUkdlS0E3RGpSd1RmbVdxV2xqN3NmT0czcmdJV3IwMjlWMUFFTHN1UXZ1d2FOd29LWXhjeUhRQlVCQ0Y5ZmRLMEZqcWYyT2l3RUZfWDVTMDBfdFVjaUtlREkyQ0JSSm9EcDZ2Rm5pQWNXRVF3RGNqWg?oc=5",
+     "source": "KOMU 8",
+     "published": "2026-06-15T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "02d3f3840e48baa1"
+    }
+   ],
+   "first_seen": "2026-06-15T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-15T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "02d3f3840e48baa1"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 10.0,
+   "last_news": "2026-06-15T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "aws-ms-unnamed",
+   "name": "Amazon, Mississippi (site not yet named)",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "Mississippi, US",
+   "state": "MS",
+   "county": null,
+   "city": null,
+   "lat": 32.7,
+   "lon": -89.7,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Amazon",
+   "news": [
+    {
+     "id": "ab00bc2d03e2dabd",
+     "title": "‘When Amazon comes to town.’ Clinton and company host ribbon cutting for new data center",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xSl9lVmh5VkQwc1l4SE9rUGFsa3hXZnp5aU1XVkl4QWlCQzJhU3VHLVFoZk5sSFljSWVZZDJmUUM1NEo1WGthcW9VRXFnUkNmVlFleUVYLVE1V2dGYWhjRjRvWmNKUW5nTzRiZW12SVAweXoxNXdOb25QZFpsd2c?oc=5",
+     "source": "Mississippi Today",
+     "published": "2026-06-09T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "ab00bc2d03e2dabd"
+    }
+   ],
+   "first_seen": "2026-06-09T07:00:00+00:00",
+   "utilities": [],
+   "status": "Operational",
+   "status_history": [
+    {
+     "date": "2026-06-09T07:00:00+00:00",
+     "status": "Operational",
+     "headline_id": "ab00bc2d03e2dabd"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-06-09T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "aws-nc-unnamed",
+   "name": "Amazon, North Carolina (site not yet named)",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "North Carolina, US",
+   "state": "NC",
+   "county": null,
+   "city": null,
+   "lat": 35.6,
+   "lon": -79.4,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Amazon",
+   "news": [
+    {
+     "id": "bed616e9767dd363",
+     "title": "Amazon expands data center investment with Corning deal in North Carolina",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNeXdpdUtyb3JvYk1FdHlPdTA2R1RfcVpzMWdETFRyOEtRQTVKNGg3VThZVktrOExya25OMzdTclpJWUJJLXVrWUExZlh2WUoxUjhIZjJrWm1CWmF1LWRUWWpsWWl3QkY1MWxpdEZtTElvY1ZRdkh2VHFqblo5ME8tOHlsdEN6QmlrWXd1b0lwcjAxaXlRVm1aNWhzbERPMEY4dHFxUnEydUlxZGZuSmZldWpqZk1KVUN1cmV1TDFZdXhraXFIV2F0bFhSSDVzU3ZXSGE4?oc=5",
+     "source": "WCNC",
+     "published": "2026-06-08T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "bed616e9767dd363"
+    }
+   ],
+   "first_seen": "2026-06-08T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-08T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "bed616e9767dd363"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-08T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "bed616e9767dd363"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-06-08T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
    "hidden": false
   },
   {
@@ -2548,6 +2982,61 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-10-23T03:00:06+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "aws-st-louis-mo-2026",
+   "name": "Amazon St. Louis data center",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "St. Louis, Missouri, US",
+   "state": "MO",
+   "county": null,
+   "city": "St. Louis, Missouri, US",
+   "lat": 38.63,
+   "lon": -90.2,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "44b58f6ae80e762b",
+     "title": "Amazon to announce St. Louis area data center Monday",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUlc3ckNBcDY4NXV0SjFRcm85cVRIbEpqVVhSWEdDYXlibnNVMm9oM2xKSm9MLXlVLUprTUFxVjJfX1BuRFp5OUJsODh0QUJvbVJwc2JVN2ctZi10dTVyRmtKWnA2UWdGazJsMWhtc2Q4X09fNHRGUi1tMm9XQ3FUSXN2TWkxV2s3Y3pFMER4NlBUWnJHUEVNVkd5a0I0Y3ZyV3Ata2h6NEdjX0NMY3c?oc=5",
+     "source": "Spectrum News",
+     "published": "2026-06-12T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "44b58f6ae80e762b"
+    },
+    {
+     "id": "8c685f6501461dae",
+     "title": "Amazon to build $10 billion data center west of St. Louis",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObzdwZUJTSlNLY0JENVlGaE1ZUmp2RjVUbXBXWnBvYlh0dUE5a2Nmd1lUZzA0NU8wVnpGRE96MldILWdpRjZsNVhFZExZWVpENFdHY3lVNHRsdzZrMjdGRFQ1S256aVprb0YtWGtmdkJHQUNSdWwxOVFndG1xQ2hFZm5NeUVYUDl6X3dWZmlpUlY1cHJNUC1SdzNySWhPdThhRl9mNW1na1dTbndfZVg1aXJObG84UQ?oc=5",
+     "source": "Spectrum News",
+     "published": "2026-06-15T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "44b58f6ae80e762b"
+    }
+   ],
+   "first_seen": "2026-06-12T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-12T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "44b58f6ae80e762b"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 10.0,
+   "last_news": "2026-06-15T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
@@ -2760,6 +3249,100 @@
    "hidden": false
   },
   {
+   "id": "aws-walla-walla-county-wa-2026",
+   "name": "Amazon Walla Walla County data center",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
+   "location": "Walla Walla County, Washington, US",
+   "state": "WA",
+   "county": "Walla Walla County, Washington, US",
+   "city": null,
+   "lat": 46.229,
+   "lon": -118.479,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "cc8febae0618be6b",
+     "title": "Walla Walla County opens comment period for Amazon data center",
+     "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOYVhxX01PUVBJSThfQkFRMFdfZldmSlphMVozSi1DeUxxMXNYWGtoc25mb2FvQ3ZDTTlsQXRQeUNHajE3NjBLU1JLOUNSMS14ZVV4YWZ1LVIwODRoc2hTZzJPUVRvTkoyNnV3SEFLYVdHd044Q196MVBSRkZYOGd4UGdwdkU2Z1h3eDNyUWtQVFlnNDZQR0REV0VBQXBUbnJQRmh6OVlfTnl2eEFPa1duTXdKVlVWWnQwX2QxazJ5emFZVzNJcU1SS1Z2emVhT2dpaEFSUWowckRYRGJPMHJCVGpSSHVRaHgtTDVMNjBDVW5OMHhkTjlQZWJn?oc=5",
+     "source": "Union-Bulletin",
+     "published": "2026-09-16T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "3f312ef6fe6233a5"
+    }
+   ],
+   "first_seen": "2026-09-16T07:00:00+00:00",
+   "utilities": [],
+   "status": "Operational",
+   "status_history": [
+    {
+     "date": "2026-09-16T07:00:00+00:00",
+     "status": "Operational",
+     "headline_id": "cc8febae0618be6b"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-09-16T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "cyrusone-tx-unnamed",
+   "name": "CyrusOne, Texas (site not yet named)",
+   "company": "CyrusOne",
+   "companies": [
+    "CyrusOne"
+   ],
+   "location": "Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": null,
+   "lat": 31.5,
+   "lon": -99.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "CyrusOne",
+   "news": [
+    {
+     "id": "1d411e406f3a4a6e",
+     "title": "CyrusOne breaks ground on 380MW data center in Texas",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRXlJZTdCTkNXcDBqR3FDRmJscDJ4ODBCdVV2VXJQVllLNFNpNFZ1clRoR1J5MC1DbmxrZERGVU1WSERBT0Jrc2R3SnJCd3FsTjNoejlMQTFGT01PU0VCMGtnSkNQOVlTSjlyVEdDb3dsQWhNdlZJU2U0NjJiald4SmNrVloxZHJrTU1kY1FYOUt0MVk2MUNZYmFBQ0o?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-08T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "1d411e406f3a4a6e"
+    }
+   ],
+   "first_seen": "2026-06-08T07:00:00+00:00",
+   "utilities": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-06-08T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "1d411e406f3a4a6e"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 380,
+   "investment_usd_b": null,
+   "last_news": "2026-06-08T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
    "id": "digital-realty-indianapolis-in-2026",
    "name": "Digital Realty Indianapolis data center",
    "company": "Digital Realty",
@@ -2801,6 +3384,177 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-10-16T14:06:42+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "digital-realty-ks-unnamed",
+   "name": "Digital Realty, Kansas (site not yet named)",
+   "company": "Digital Realty",
+   "companies": [
+    "Digital Realty"
+   ],
+   "location": "Kansas, US",
+   "state": "KS",
+   "county": null,
+   "city": null,
+   "lat": 38.5,
+   "lon": -98.4,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Digital Realty",
+   "news": [
+    {
+     "id": "f409f40e5073e3e1",
+     "title": "Digital Realty plans 600MW campus in Kansas, acquires investment firm Columbia Capital",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaVNUMFctNk14dGdHXzUwUWllQjFOX1VyYzQ5OXBkVjVHUWdhdzJmUFltV3BSNm84bldKMlRGbFVtRDZ2Nm51WXl3bWVEeUdKbnd2QS1TSXJVRE94bG13YWd2SHRYaHFGWFpTbXBlS1ZlY2pIemZXc2VsY3JyUXlYN3I5TzhNUEp0bmtsWDZYOV90VHBNeXJQM1FvdnNDOWNxOUdQbXN0el9FOXpYZ2VVSk13ZXRaNzBacVNwUWFKMGF1eWpkUWRGOQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-22T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "f409f40e5073e3e1"
+    }
+   ],
+   "first_seen": "2026-06-22T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-22T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "f409f40e5073e3e1"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 600,
+   "investment_usd_b": null,
+   "last_news": "2026-06-22T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "google-al-unnamed",
+   "name": "Google, Alabama (site not yet named)",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Alabama, US",
+   "state": "AL",
+   "county": null,
+   "city": null,
+   "lat": 32.8,
+   "lon": -86.8,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Google",
+   "news": [
+    {
+     "id": "2b78cef788a0f213",
+     "title": "Google announces $1.5 billion Alabama data center expansion, says it's covering energy costs",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd1UtSUpIaU92NGRHc1AtdGotak9TTC1LMWVOcDJ3MG5OTURVNFVDQUNjX2pMM2JCNWVRSl9mbGFVYjMyaE5mZ25Nc2E2T1JDME1WdnVEQ0lvbS1WaEVBbTM0YmRHRzg3MGR3Zml5cnk5MkphYTBWN0lKUEtvSDRLd0tmY2pkSGhrM3JSdG9mekZ0TnRCLVRadmk0X1VrbHQ3OW9IbWlR?oc=5",
+     "source": "9to5Google",
+     "published": "2026-06-15T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "2b78cef788a0f213"
+    },
+    {
+     "id": "8fe76b2b3fb869f7",
+     "title": "Google investing $1.5 billion to expand data center campus in north Alabama",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOVNBZlFlQnFSUkpKaWZsSUs4U05iY0pVaWI5Q3dlbjU4TFFBZWJBZUhRUF8teS0tUTJJZ2VMWUhSQ1gweG1yZHJKUUpCVHQ2dWhfWnZrY3BQQ2RWN3pFTHlzdm9JR0wyelVzYmV2SzEtVGQ2VmttSVNaYkZmSHFhdGE2YTNiVENtNFVjaUZ1R1FFbFpSNnhPX1M5cEJTV0RzeHdXZk1FdGxtbVBNYjVrd2Q5ZU5tYmkzdVBxY3Fn?oc=5",
+     "source": "AL.com",
+     "published": "2026-06-15T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "8fe76b2b3fb869f7"
+    },
+    {
+     "id": "f794287b131ad74e",
+     "title": "Google invests $1.5B to expand Jackson County data center",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQl9taE5BQTFsMzFobXlBYVNENlNsTmVFSEhPTkVCNUJFWklSSEJGTjVqNnV5eXJpSnRPNzJCVWVWSDRRQTVlSk1TMG9IOVlFcHRNSHhUZTJ6U2JwSGJXQlNqcWREbkN4SVB0NXVPTUFJcFZXcGJmdGVyX0RfTEs4X1JKQ2dGMUJY?oc=5",
+     "source": "Alabama Daily News",
+     "published": "2026-06-16T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "f794287b131ad74e"
+    }
+   ],
+   "first_seen": "2026-06-15T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-15T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "2b78cef788a0f213"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-15T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "2b78cef788a0f213"
+    },
+    {
+     "date": "2026-06-16T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "f794287b131ad74e"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 1.5,
+   "last_news": "2026-06-16T07:00:00+00:00",
+   "sources_count": 3,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "google-austin-tx-2026",
+   "name": "Google Austin data center",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Austin, Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": "Austin, Texas, US",
+   "lat": 30.27,
+   "lon": -97.74,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "1a6640958586a34b",
+     "title": "Google announces $10M Texas water impact fund; makes data center water use pledges",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYkFyYm5iTjZEOUg5MkRDbC1zU0dWZkYzazJ0dWprRVNSZmRtR3k2T0ZWYmZSa09VVTZZQjRwZEptUTMtSGlzZEN1Mktudkg1UzMwMUdjYW1haG5FbmFsQ1piNGVWeFptbTU3NVJVVTNzSDNzcWZHUXJ0X2NOYUl6OHdFaGFxNUxPYXVyX3RnRWE1UUtHeE84VjlzMkVaUXBDakg2VmdUQmJqOG1qaDY1STYyRkhSNDczUkd3dFl0Z9IBxAFBVV95cUxNSmFYUEl2eVVueUtPU2RYNExWMHVZRnY3dmFRbnkyTTNBS0lCb1BMYkF3cFZFSzBOSUk4MUU0OWpoZ3QtbjVZWlVkUUpmcS05cVBmY0VKanRmS0hIdzJkMEZWQUJSZzU5bFRYQU5pZmFnU2o0TEhpOXV4LWFISlB4a25ENmJBU2k1bHFQbFVqZmlNTXY1WHduTlowby02UHgzNnJIaTBOamJVUjVPVkRKbHpzVi1teklJc1RpSjlCbV9BZkFH?oc=5",
+     "source": "KXAN Austin",
+     "published": "2026-06-03T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1a6640958586a34b"
+    }
+   ],
+   "first_seen": "2026-06-03T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-03T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "1a6640958586a34b"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 0.01,
+   "last_news": "2026-06-03T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
@@ -2870,6 +3624,15 @@
    "notes": "",
    "news": [
     {
+     "id": "6053565ccf3d153e",
+     "title": "Google data center in Van Buren Township would destroy 13 acres of wetlands",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE84SXllOFlKcE5tQVVsT0FBN01udjRfX2lhREVtbS0xQWwwaGx2ZnlHUkwzTW81VElfM21UTUFGdEZRcExMNHl4U284OFJxR0RNdGY5V2NTMWEwQkRVajhMa1h0a2c0OUdmOUFFMU9JWQ?oc=5",
+     "source": "Planet Detroit",
+     "published": "2026-06-17T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6053565ccf3d153e"
+    },
+    {
      "id": "307ee0dc0aa2c6e9",
      "title": "Google wins zoning approval for huge data center near Detroit airport",
      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOY3BLckpyTFdrT0pkZlVFQzJPbGFXOWIwQ2JuWDRuc3pHcW45UkZ2M2JSeS01UGNxZjBlN1ZBWU9jbW1WYnBjaU83TmZhYUhhWk85WlZXa2N2dUt5ekdIdjFXYUZpcUZqdDF3bnhNZUk1YS1yaHdMOUpLV3F0VW5DRTF3WFZUa2dXXzhUYzk2Ml8wa2lJV0UyRklGQnd5eHZFNjZZbTBTQnZ0Njd6cWplbmZJU3kzd3JFYy1lSE9nY0ZnejNLcWZNRDhycw?oc=5",
@@ -2879,14 +3642,14 @@
      "cluster_id": "307ee0dc0aa2c6e9"
     }
    ],
-   "first_seen": "2026-10-15T23:07:00+00:00",
+   "first_seen": "2026-06-17T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
    "status_history": [
     {
-     "date": "2026-10-15T23:07:00+00:00",
+     "date": "2026-06-17T07:00:00+00:00",
      "status": "Announced",
-     "headline_id": "307ee0dc0aa2c6e9"
+     "headline_id": "6053565ccf3d153e"
     }
    ],
    "events": [
@@ -2899,8 +3662,8 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-10-15T23:07:00+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "sources_count": 2,
+   "confidence": "high",
    "hidden": false
   },
   {
@@ -2963,6 +3726,52 @@
    "last_news": "2026-10-23T03:28:00+00:00",
    "sources_count": 1,
    "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "google-little-rock-ar-2026",
+   "name": "Google Little Rock data center",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Little Rock, Arkansas, US",
+   "state": "AR",
+   "county": null,
+   "city": "Little Rock, Arkansas, US",
+   "lat": 34.75,
+   "lon": -92.29,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "7fc78d492a63a425",
+     "title": "Google talks plans for Little Rock data center during invitation-only meeting",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUVJqeTFqRk5NZnJ3M18teDhmdlJDNE5xWDZqU1ZUX0QzR2k5Z3BpUnBIaWdJQTd0OF83YjZxY2EzUlRXbWhmUXRHWk9NUTc3bnFVTWpmZ3dVSEF5UExQc1c4UENrUTROVXcwZnBiNTZJOFp3Q2RYMXNjVGN2UkVjXzlEcVViZE1xQ0NRNjdyU0F0YnhCQUR5d2tmdw?oc=5",
+     "source": "The Arkansas Democrat-Gazette",
+     "published": "2026-06-10T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7fc78d492a63a425"
+    }
+   ],
+   "first_seen": "2026-06-10T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-10T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "7fc78d492a63a425"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-06-10T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
    "hidden": false
   },
   {
@@ -3043,6 +3852,60 @@
    "hidden": false
   },
   {
+   "id": "google-mn-unnamed",
+   "name": "Google, Minnesota (site not yet named)",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Minnesota, US",
+   "state": "MN",
+   "county": null,
+   "city": null,
+   "lat": 46.3,
+   "lon": -94.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Google",
+   "news": [
+    {
+     "id": "76a554ee81e6ea4a",
+     "title": "Judge halts Google data center project in Minnesota",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYU5MQ1RLYUVteTRreUVWS2hvbm1UT2pjV2lMbFpmNk80VS1ydFhRMVNPOHA0Y3FNSzg2UkdaQl9JdXMzb1JzN1YxcUtrOVd4RW1lZUVCQU5YMVByUWkzZW5DZlVWcWdVdmN3MDlkN3lSbkQ1cDZKb0JMemFGX2tzUElfRVlGMVlSbng3UQ?oc=5",
+     "source": "Construction Dive",
+     "published": "2026-06-05T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "76a554ee81e6ea4a"
+    }
+   ],
+   "first_seen": "2026-06-05T07:00:00+00:00",
+   "utilities": [],
+   "status": "Cancelled / Blocked",
+   "status_history": [
+    {
+     "date": "2026-06-05T07:00:00+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "76a554ee81e6ea4a"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-05T07:00:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "76a554ee81e6ea4a"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-06-05T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
    "id": "google-roanoke-county-va-2026",
    "name": "Google Roanoke County data center",
    "company": "Google",
@@ -3086,6 +3949,83 @@
    "last_news": "2026-10-16T21:34:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "google-tx-unnamed",
+   "name": "Google, Texas (site not yet named)",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": null,
+   "lat": 31.5,
+   "lon": -99.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Google",
+   "news": [
+    {
+     "id": "319d4b24385c44d7",
+     "title": "Google pledges $10M to Texas water as it expands data centers statewide",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOX2MxVjR0RUJ5UEdBRUxFZ3ZmWjV4S0k4SkxQWExVVWQ0d043Z09qTndnWUtPcEFEb182MTVFdHNlZ2V5SGxlZVFfZDFsQkUxLXlmY19qaFExZm01N2NJS0I1Y3Yzams1Zmh0aUNHc1Ixc3QzTUZZSkYyRi05SWd4M0lsVGxzaG03LXQ2UUJ5akpMM2x2VTNZOU5sVTlLMFhrTlJhQ3pmN3A5VjBrZ09J?oc=5",
+     "source": "USA Today",
+     "published": "2026-06-03T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "ba30a2c5ca854764"
+    },
+    {
+     "id": "202ed7e022eff30e",
+     "title": "Google announces $40 billion Texas data center and energy push with new Meitner Energy Center",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxTGpxRjdkZGlrRDkwMlVWbmhrc09abWhTMXdDM29TbDJoZXJEbi0tQ2tWTlJUSUgteWxWeHR4VmthWWh0d2d0bzVzaXVmNTI0cC1hYkJnUDg0Z3dTOGpTV3lnWTBxYXluc2ZNTnFOeWRGVXdxaUE?oc=5",
+     "source": "Crypto Briefing",
+     "published": "2026-06-05T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "202ed7e022eff30e"
+    },
+    {
+     "id": "987e0a578ea6b3c7",
+     "title": "Google, Intersect Power break ground on colocated data center and 1GW+ energy project in Texas",
+     "link": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxQYk1odXRCNjhEN3ZqTmhFSjFIcXhGejZadnhnbEg4NlVTNDZ4Q2pod1VGY3VzN1FNMVBpaFd5V1JMenpyOGR1dHJQdjgxaGV6aVdIa0xvbEdvN3labGZqOXhHU3pGb0tRNjdXaXA0SDBETVlvLWFESDl3ZnVLcVl5Tk1WdUxzY3hQMFRwZzJ4Z1lBY0tsTEVLcGk2N3ZxTlhPdzdhUER1SmlMcWFrTHQtbHpKdF9OYnNsYnNnYy1LdElkRTVNR05WaWdVa09LVjdKSWxUYnJWNVVrNjhmanR5bGoxWEdNSG52d0lmQlRESjVUQzVNRVdEdkUtQXNKbTVjMjRpeW1PZXoyRjk5NzJZdG5PejlJeDd5OHJhbHFJdmprSzBlRjNXWEh5VE1NTHE0LTBuSW8zU3B6UHRmc3JCZEI2MjgxUERROVNIWnlKRkJWUlh4ZVNxWDdobGFLWHdUYWhhSGV5NA?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-05T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "987e0a578ea6b3c7"
+    }
+   ],
+   "first_seen": "2026-06-03T07:00:00+00:00",
+   "utilities": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-06-03T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "319d4b24385c44d7"
+    },
+    {
+     "date": "2026-06-05T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "987e0a578ea6b3c7"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-03T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "319d4b24385c44d7"
+    }
+   ],
+   "capacity_mw": 1000,
+   "investment_usd_b": 40.0,
+   "last_news": "2026-06-05T07:00:00+00:00",
+   "sources_count": 3,
+   "confidence": "low",
    "hidden": false
   },
   {
@@ -3261,6 +4201,157 @@
    "hidden": false
   },
   {
+   "id": "meta-huntsville-al-2026",
+   "name": "Meta Huntsville data center",
+   "company": "Meta",
+   "companies": [
+    "Meta"
+   ],
+   "location": "Huntsville, Alabama, US",
+   "state": "AL",
+   "county": null,
+   "city": "Huntsville, Alabama, US",
+   "lat": 34.73,
+   "lon": -86.59,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "c26e0767a940678c",
+     "title": "Meta opens Huntsville data center doors amid local concerns over water and power use",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQOHQ2blIyN3ZodWlranpSVGRNaUd3UFNIbnVZOGhIUXptVHdrSlEzUHRlNktlbHh3MjFMZ2xUR29acHl1WjZ5dDNiRkNpaHdVcmVlbU0yS25VWS1DbTItWXF2aERxeUd2Wjdnb3pOWWtpUGxDMEwzMkNUNXNWM3F3SFd3VU81eTVjR2tULQ?oc=5",
+     "source": "Yahoo",
+     "published": "2026-10-21T22:42:19+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "c26e0767a940678c"
+    }
+   ],
+   "first_seen": "2026-10-21T22:42:19+00:00",
+   "utilities": [],
+   "status": "Operational",
+   "status_history": [
+    {
+     "date": "2026-10-21T22:42:19+00:00",
+     "status": "Operational",
+     "headline_id": "c26e0767a940678c"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-10-21T22:42:19+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "meta-id-unnamed",
+   "name": "Meta, Idaho (site not yet named)",
+   "company": "Meta",
+   "companies": [
+    "Meta"
+   ],
+   "location": "Idaho, US",
+   "state": "ID",
+   "county": null,
+   "city": null,
+   "lat": 44.4,
+   "lon": -114.6,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Meta",
+   "news": [
+    {
+     "id": "a1e9f70ca56443c4",
+     "title": "Meta's $1.2bn data center in Kuna, Idaho, goes live",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWY0Y3EwNnB4b0hUQ2tvQTh2bHVXZzl3NUx6ZUppbEhyb2JGX2Fqb0t3NkNFZkNzeUtDVmZ3YWVOTHJQV1daRWIteHJaRHdDMC10X1h0am5zSmxEb2hHLVpsak4tdE1EVGdfSGZQalVaQnl6cnZPcEhzWmVtTjhSMkRlZzhGMDRRckJVcHV0cFpoc1p0?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-09-04T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "a1e9f70ca56443c4"
+    },
+    {
+     "id": "1a210f02136e42cc",
+     "title": "Huge data center proposed on federal land south of Boise. It could dwarf Meta’s",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTndDcTZEY1UzR05QYkkwTHVYOVZZV1h1X0xCbUl2VGtQUmZUaEU2MG9BVEFoT3lEeGVvdm1YWk5ZaVpHZVB3ZTg0ODdlc0Z6Z0tacDh4WGtrVHV0bWJXV0lGMUdKMFRwbjdnRXBQbmduYjg5Q2t2TUVFbFRXZEJxR3czUmF0RU9EakdBUmNZMUhHbW9wNk5leTh1Mll3T05BWGVDVXhjV3FnUFhaT3NtTUJJVEhiMzhlSko1cm1yVUwwdw?oc=5",
+     "source": "Boise Dev",
+     "published": "2026-09-21T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1a210f02136e42cc"
+    }
+   ],
+   "first_seen": "2026-09-04T07:00:00+00:00",
+   "utilities": [],
+   "status": "Operational",
+   "status_history": [
+    {
+     "date": "2026-09-04T07:00:00+00:00",
+     "status": "Operational",
+     "headline_id": "a1e9f70ca56443c4"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 1.2,
+   "last_news": "2026-09-21T07:00:00+00:00",
+   "sources_count": 2,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "meta-la-unnamed",
+   "name": "Meta, Louisiana (site not yet named)",
+   "company": "Meta",
+   "companies": [
+    "Meta"
+   ],
+   "location": "Louisiana, US",
+   "state": "LA",
+   "county": null,
+   "city": null,
+   "lat": 31.1,
+   "lon": -92.0,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Meta",
+   "news": [
+    {
+     "id": "6c4f673725aa7363",
+     "title": "Meta announces Louisiana Workforce Academy for AI data center construction",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONlZXTHhydjFWenhQVkJlei1UMEJNcGpRVG1mdmRHM21Lbkx6M2lpYlF0blhxbDdteXgxVjRVanljODJ2Nm01M1RSa21IZ1kwRmhNVGJSTlJiZDgtNDFieFRRVGZHLTEycjhDMk1XamtMajRFVC1kZHFxOEN2Rk43NjFnVXYwcWp00gGOAUFVX3lxTFBFN0JXcndQWXdiWDJtdTJHWlotVHA3bHY0d1pwcDNVSnptYVZzdWhHcGZ1a1JQUWc5ZGlaYzVRNGtuS0JIZF9fQzVzOHhvNlRFTU1qdkZBbmJqbGlkMTZZMW4xWDhvbFcwS1cwX3QtOGxlb3VIQ2ZXRUh0VGxBLUVISk1HMlpGczFEaUQzOGc?oc=5",
+     "source": "KTALnews.com",
+     "published": "2026-06-09T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6c4f673725aa7363"
+    }
+   ],
+   "first_seen": "2026-06-09T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-09T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "6c4f673725aa7363"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-06-09T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
    "id": "meta-mason-county-ky-2026",
    "name": "Meta Mason County data center",
    "company": "Meta",
@@ -3310,6 +4401,54 @@
    "last_news": "2026-10-14T21:58:46+00:00",
    "sources_count": 1,
    "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "meta-tx-unnamed",
+   "name": "Meta, Texas (site not yet named)",
+   "company": "Meta",
+   "companies": [
+    "Meta"
+   ],
+   "location": "Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": null,
+   "lat": 31.5,
+   "lon": -99.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Meta",
+   "news": [
+    {
+     "id": "8af1769ddbbfe3ad",
+     "title": "$1.2B Meta Data Center Opens in Temple",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1TdG9GSGFTRTR1cHNIaVNJUmdIMF9vNTJkWDlDTGdqQVB1RjYwODhjS0lsN1oydDRMMjlna1ZYNk1SbXRCbG9FMkNvZlYzTV9NQ2VwNVctWkMtVDVrSGNLQ0tnV3BHaEZ1aHhWcVhHSUdiZlB3eFRXdlpRaw?oc=5",
+     "source": "Texas Scorecard",
+     "published": "2026-08-05T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "66125465b5884c8a"
+    }
+   ],
+   "first_seen": "2026-08-05T07:00:00+00:00",
+   "utilities": [],
+   "status": "Operational",
+   "status_history": [
+    {
+     "date": "2026-08-05T07:00:00+00:00",
+     "status": "Operational",
+     "headline_id": "8af1769ddbbfe3ad"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 1.2,
+   "last_news": "2026-08-05T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
    "hidden": false
   },
   {
@@ -3387,6 +4526,33 @@
    "umbrella_company": "Microsoft",
    "news": [
     {
+     "id": "5e49af0f7bab0ced",
+     "title": "Microsoft breaks ground on new data center in LaPorte",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVVJwM2lHM2EyX3hPQXByaWtmR09oMllVeVBtSXpBZGdWSFVUeGdBSlhVcGxvTG5xcXBTaUNjMUN2Q1VRNTI4Sno5NHJTckRQUHhjdGhlUVhVR0NVa1pLc3A2eUZRcmlWbUEzVVRxSGMwd0h5alhSX2pWdUZyV0hYdW5MZFVhWEJ6am5jRVZlMXgySDBjYkhQQ3VXX0l1MU1HcEZfSXFTMGt1bGNBWGxkQlppX1lGT3B5bzBrcldyU0hrd2duMHJYbGZxM0drb1g1U0oycm84Y244czhINnhn?oc=5",
+     "source": "WSBT",
+     "published": "2026-06-17T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "5e49af0f7bab0ced"
+    },
+    {
+     "id": "1ffbf8bfd5e01294",
+     "title": "Microsoft breaks ground on data center campus in La Porte, Indiana",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeWtVVzZOdG5VVE5Ca0VqVFVwdGRSbzR0Y28xVmVzZVJMMjNyTUFrLUZjNDZBanZGX2hOeTNJMlBUaEVEMjBldFhjMm1sMXVHQ0VBVnB4WldVU0lDNTJlYURGSHRqbGY0YnFyU0tCbk1vRXN5YU1JbXVCOHdndXpRSFNycW1SWFpEWHJ3UHEzOEd0Nk1JZHlRVFZidjdoUnA3bXY1TVhpRDNySm5Cdmc?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-18T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "5e49af0f7bab0ced"
+    },
+    {
+     "id": "bddebaf2275b9cf6",
+     "title": "Microsoft breaks ground on La Porte data center",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQU0huMDRMSjhFY2I5Y3N0TVpBNklSQ2J3c1A5WXRuRjNyYXJLQkc3R1Z3NWdpc2JIakZubWd6QlNxbnQwNnBrbnh5eGNxazg4Mm00TUF6c3lfcnBKTDNEZG5sMElrNXdJM0NHb2JTbTZOcVh0MkV1SE53SWZuT09HQ0hNckd3YUFkV3dYZmhsTG92UC1xeXNLZENIMjJ1OUwzTmxVdGFzTnQwLUx2Sm5WeFpad0tvTUhncmlYcHF0eklQSVdfUVQycDR5THVhczFwUl9Da2RNMA?oc=5",
+     "source": "Northwest Indiana Business Magazine",
+     "published": "2026-06-18T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "5e49af0f7bab0ced"
+    },
+    {
      "id": "db44daa25ec68629",
      "title": "Microsoft signs 20-year power deal with Indiana utility NiSource for planned data center in the state",
      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPQ2JTQnRHVTNPNnN3RVhSeXdERV9FZS15R3Zmb0JMeEFTN19TQl95Q00wZWxsOW1aRndEb1FWam1wZDlqM0dqMVNOZkhTR3FYVFZyeGFEd1VOeTRmM1E5V1AzZXJtXzZfZ0ZMaGM3RUg5Qi1BMjZMMlAtbFdaeVgta3A5RXdpeGVUUk5WUlAycnl2bHR1WXgzaFNKdjYzbnhNNDczcmh1Z2dFckdDSjRBdm1lV3ZNQllRUVEzTDdySUVHM0doLUJXQ1lGUjJ6WTN0ZWhBNjhuWG4xbW50OXc?oc=5",
@@ -3396,14 +4562,14 @@
      "cluster_id": "bbbd03e4ba5675f6"
     }
    ],
-   "first_seen": "2026-10-19T09:51:42+00:00",
+   "first_seen": "2026-06-17T07:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Under construction",
    "status_history": [
     {
-     "date": "2026-10-19T09:51:42+00:00",
-     "status": "Announced",
-     "headline_id": "db44daa25ec68629"
+     "date": "2026-06-17T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "5e49af0f7bab0ced"
     }
    ],
    "events": [
@@ -3416,6 +4582,127 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-10-19T09:51:42+00:00",
+   "sources_count": 3,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "microsoft-san-jose-ca-2026",
+   "name": "Microsoft San Jose data center",
+   "company": "Microsoft",
+   "companies": [
+    "Microsoft"
+   ],
+   "location": "San Jose, California, US",
+   "state": "CA",
+   "county": null,
+   "city": "San Jose, California, US",
+   "lat": 37.34,
+   "lon": -121.89,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "f3416fda1bc371a4",
+     "title": "Microsoft's $73M land bet pays off as company breaks ground on San Jose data center",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMmFWWk5DeDdfVjJwSnRJdXhzWXdmcVluOFQydlpydndlMy1RclpISHBDVEZidkU4T2ptSldNRWlxemZlNFE1bm5YUWlUWV9KUDVLNHdQMXJ1SFZVd0dVd0ZNOGZWVE1NcjJSLXdtNzhXcEZfbHZOVG5fVGZfNnJvN09kNG9kZXJGR0NNOFhXeEk1YWlGczQ3TzlFdTl6djJLU1RnSQ?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-06-10T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "f3416fda1bc371a4"
+    },
+    {
+     "id": "8e1dc5c3c9200a8d",
+     "title": "Microsoft Breaks Ground on Long-Planned North San Jose Data Center Site",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbGhJaC1YUEN3UWt4SW1XU1BMQWFoMUVsOWJrTm4tMldCbFlHX2ZFa3docjI2WWFRZl8yRERGeUZVQlNJS3BJNkhES2lCUkJUcXMzNnRJT184RXl6MTlaeTdzOGNua0N4VnFkRUFrQl9fLWlmcFZUb2hLM2hyallVWkNDazhJanZuNDVKWm5CRlJXOHhabG8ydF9LbEJ5MTh1WEhuMER0MjlqQlU?oc=5",
+     "source": "Connect CRE",
+     "published": "2026-06-11T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "f3416fda1bc371a4"
+    },
+    {
+     "id": "94425c988b52d4b0",
+     "title": "Microsoft breaks ground on new data center in San Jose",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNk9ia0R0cHlzeDhCdUkyaXVUR1FDQ09vR3o1UksydWRFWWRuNjdPMXZwTmY4a3NrVkJ5c1B3VG9wLUUyNGJwbmEzczEzV2RmaDMyeW8zQUlXRVpDcDIxM1ZEWVVFNUNvbldTNVRmdWVkQUNHb1VQbU1WYlAtZWczSVBiZENHa2xRMFkyNkpuNHk2R2tkRWhmM1JhczBadU8wM0pR0gGrAUFVX3lxTE1DVTAwbzYtd2l3dFJZWHZtcmNvVU5lWkJTbWIxNS1hanBRdmNxbThONE9FNjFkOEw3anQxMzJPYVpQcWJPU1lhS2liMGFBWkFMc19BWnZ4cFgtUlZyeFJSWkpwczdiQkZLVFNnYThEWXE2bTJSb1VtUi1uN2tjWDNqWEFkc0l0eEIzQlpfV0ZMN1UxQ0hVbkZsclR2NjZNRjRtUnRMZ29tZ191SQ?oc=5",
+     "source": "NBC Bay Area",
+     "published": "2026-06-11T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "f3416fda1bc371a4"
+    },
+    {
+     "id": "d667c6c49d1e6ee5",
+     "title": "Microsoft breaks ground on Alviso data center campus in San Jose, California",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUXdEVmpPR3lGelFwazVTM2ZReWNNOHVwT1JlTHhSLV85aURoMVMxdXFKZ21ucVlkQzJXZVVjUEFZSm11QkY3ZndRRWx3UE5IbWdoeWRuR1FLZ2tqX3NsZm9fWjFJQU1CSlAzOWZxbklEaVQ0TTBkTGxDNVpCV2xSVUpXTEpMMnlKcU1ZUjhIZDhXeXRWWF8ySXJkOTVKR3NDUThDeF9WaG92VjBRWG1tN0VpMHZqbE5hNzdn?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-12T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "f3416fda1bc371a4"
+    }
+   ],
+   "first_seen": "2026-06-10T07:00:00+00:00",
+   "utilities": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-06-10T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "f3416fda1bc371a4"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 0.073,
+   "last_news": "2026-06-12T07:00:00+00:00",
+   "sources_count": 4,
+   "confidence": "high",
+   "hidden": false
+  },
+  {
+   "id": "microsoft-tx-unnamed",
+   "name": "Microsoft, Texas (site not yet named)",
+   "company": "Microsoft",
+   "companies": [
+    "Microsoft"
+   ],
+   "location": "Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": null,
+   "lat": 31.5,
+   "lon": -99.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Microsoft",
+   "news": [
+    {
+     "id": "1845d731ab923727",
+     "title": "Microsoft plans 2GW data center campus in Pecos, Texas",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTE5VWDFmT1lqd0lpUUhoWjRzNnZVenhYTHFXQWRPNnIyZnlsazFDMlBaUUpBM0hTX1ZucW1BN01mVUdFQ2ZpNGN4eUFQU0oxUVdrTXY3VWpfOFlXaWlkSE80QjVkSjhrZ0dpV2h3M0pGajVXMURJX2ZxREZyeE5VdTRFZ2xCZ0tLMkp3dl85QlZwaTlsNU5Pem41N0FnZw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-22T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1845d731ab923727"
+    }
+   ],
+   "first_seen": "2026-06-22T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-22T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "1845d731ab923727"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 2000,
+   "investment_usd_b": null,
+   "last_news": "2026-06-22T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "low",
    "hidden": false
@@ -3441,6 +4728,15 @@
    "umbrella_company": "Microsoft",
    "news": [
     {
+     "id": "8d7230b5655cb6bd",
+     "title": "Microsoft completes construction on first Racine County data center",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNb05UUG9CSVo2NS05SDg0MlF0dFo5clJPVndueVNoNVdrcVk3bk95Y1h1bDZ6N3RHYmhDb2FTMFdxRjlWSUw1eVBZeE5EaGkxN1hKQlEwX3pxY2RoLXVJazM2RUlTNm9IVnhEdzZBamg4cWpRdmM0TlM4RnBtQXRwcFlKNjllcnBZSXRYRVhnQnByUTMwd1BJMGZiVjlRVEVMYW1FZllQVjFsX3pXMGJMVDhMbi1jMXJ2VTVTWWNmMHlSbVdTQVU2VVdlOEdPNXhoZ2s4?oc=5",
+     "source": "Milwaukee Journal Sentinel",
+     "published": "2026-06-23T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "8d7230b5655cb6bd"
+    },
+    {
      "id": "18024da714bb07c5",
      "title": "Microsoft planning to expand data center operations to Sturtevant",
      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTmE5MHRfSkN3ZVdhRjNFOVJWTXN5bWxFWWtKNU9CbWwwVG9fTFQzZVdNNDhYdDRkRHR4Wm1VN25Vckg0RF9uVVk3TWQ2ZHJTcTNmcEFxRThUZVRnamFvSTZkVlJ6Vk9XU0tVUG55STAyN2hPMGxRdlEzd0tOTGRfdi03OTM3ZFdpcWRlRkNXc2h5VmtIZndQNEd2cG0xRmRadDVTWG5TR09QeFhlN3pMdmZjYUx6ckJMZVRIZHZLWGJBdHdRSFhVNjYtMHhxSkNS?oc=5",
@@ -3450,14 +4746,14 @@
      "cluster_id": "18024da714bb07c5"
     }
    ],
-   "first_seen": "2026-10-20T20:08:00+00:00",
+   "first_seen": "2026-06-23T07:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Operational",
    "status_history": [
     {
-     "date": "2026-10-20T20:08:00+00:00",
-     "status": "Announced",
-     "headline_id": "18024da714bb07c5"
+     "date": "2026-06-23T07:00:00+00:00",
+     "status": "Operational",
+     "headline_id": "8d7230b5655cb6bd"
     }
    ],
    "events": [
@@ -3470,6 +4766,191 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-10-20T20:08:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "openai-mi-unnamed",
+   "name": "OpenAI, Michigan (site not yet named)",
+   "company": "OpenAI",
+   "companies": [
+    "OpenAI"
+   ],
+   "location": "Michigan, US",
+   "state": "MI",
+   "county": null,
+   "city": null,
+   "lat": 44.3,
+   "lon": -85.4,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "OpenAI",
+   "news": [
+    {
+     "id": "73124b6812c34fb3",
+     "title": "Whitmer poses next to OpenAI CEO for Michigan data center groundbreaking – drawing ire",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUG9IUTB4YlZKc2xxS3NzVzVHZUluVWs4bEVfQ0lhMzdXSk5PMlFwa01ILW9mYVp1V2s3Qk1kT2JBRThkNXhzc0k5dnl2Q2JIbDlCZVE3a09JS0NmZE5HNEhSbF92b3ZKeWprZDM2Z3p3X3BISi1BVlZyTTBfN000bWhBWmxRNC1NdWxnWm1IVFFxNzVfd0FjQlp5eEhLdVdnVTlwSFNnbk1YMUQ1SVhXQ09RTWVnWDdzTWIyQktDQTg1NXRNWGNz?oc=5",
+     "source": "MLive.com",
+     "published": "2026-06-02T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "73124b6812c34fb3"
+    },
+    {
+     "id": "80c14915990cb4c9",
+     "title": "Democrats Split on Saline Data Center Groundbreaking with OpenAI Founder",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUmhGQVFaSGtNX0RlTGQwMUlYMXFOeGZ6NXA1ckpGaDh0bENIanY0QUgxZjBfckZIenRnWWhrSFptczg0aFJwZ1RJaGVBdHNOcmNLQ2pCUTlFRjl5NUgwa0RBbVhPRVl0RjNJWlpGeDE4VTZ6MFI0SmhHTVlVbUpycTZaaExNMDFOcnBqZUp3QjdNQjhIWkFXMVoxSU5jMTQ4cXYwaktn?oc=5",
+     "source": "The Michigan Chronicle",
+     "published": "2026-06-02T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "80c14915990cb4c9"
+    },
+    {
+     "id": "8100c6da2d9490d3",
+     "title": "5 takeaways from OpenAI, Oracle data center groundbreaking south of Ann Arbor",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdTVkbGxjV1ZEODhZb3UwU2tuT20yT3J0OWtGZmlJWUt2TWtuTzM5NF83cHEzSTY1eXduRFNJMHBpbjA0NUluRU1TclRJVW9IOFRYSVJyekpxOTNid0dROEpFZGJUV0E0Nlo5VmF6ajR6WDN2d0FzZ20xbGtTTEFZaWNrQTF5eUJwajFSMm5CSEd5M0dOYno5RFRKSkdrcDhib1JsSFJQbVdpRTdwbWhHdVA0Rk5ZbEVCOWJjWlJrc3JNR25k?oc=5",
+     "source": "MLive.com",
+     "published": "2026-06-02T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "e2556e5e19abc8c7"
+    }
+   ],
+   "first_seen": "2026-06-02T07:00:00+00:00",
+   "utilities": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-06-02T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "73124b6812c34fb3"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-06-02T07:00:00+00:00",
+   "sources_count": 2,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "oracle-detroit-mi-2026",
+   "name": "Oracle Detroit data center",
+   "company": "Oracle, OpenAI",
+   "companies": [
+    "Oracle",
+    "OpenAI"
+   ],
+   "location": "Detroit, Michigan, US",
+   "state": "MI",
+   "county": null,
+   "city": "Detroit, Michigan, US",
+   "lat": 42.33,
+   "lon": -83.05,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "2b2d807bbf23319e",
+     "title": "Oracle, OpenAI 'Barn' data center breaks ground in Saline Township, additional community investments announced",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcVZndGxKeXlFNDJBa0stbWllcVBkZzRKNTR2aGVmSEhfZFdFUlgwXy0xMk0tWkVycDNRM3dtUFptRnphOC1oWW40ZlBkakJJa1pfSl9sMjdMMExyTGhmMml4LXB2bnhtNmZoRDhtMG14a0Y5TXRPSGc1NlVKTmVCZ2RGZnJqcHpvZ1NyRFA5UG1ILXpBMkg5aXVoOHdlMzJ5Z2F4YmZQM3d5WWpMVGdsUzhwV3JNZ2pSaWxHWW5qaEZKMGVRVm96SGc3Q3NUZEZUZGFoUlB3cEVKN0N1Z2c?oc=5",
+     "source": "WXYZ 7 News Detroit",
+     "published": "2026-06-01T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "2b2d807bbf23319e"
+    },
+    {
+     "id": "eace6f12fceae983",
+     "title": "$16bn “The Barn” Data Center by OpenAI and Oracle Breaks Ground in Saline Township, Michigan",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZTFRS09mdG4yMXNuTTRPT2VPZ0I2ZDJNS3BZZWpBZWFMc01nTGJqbXhKeFdodjBKaUNSX0NhOXFZXzI3bkdLa0dPcVZYTFZSdTVMTG1OVWxudFBnRVQ3QTlBc2R0bXhMaFlGdFNDNVJHajc3MUstcERLNTNabklRZHJYdy1Fd3VnbVd3OXU1ZVVjam4tbFUtTXNNaTdhZjN2anFaVTFUVkh3c2ZFcXJOcXdLMmpIbldxYkRZWUgxdjB2R2lf?oc=5",
+     "source": "Construction Review",
+     "published": "2026-06-02T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "2b2d807bbf23319e"
+    },
+    {
+     "id": "11380db771348554",
+     "title": "Michigan data center debate continues as OpenAI data center breaks ground",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY3dwZk9Ga2xuNzBvZjBlclM1YktRMkN1NllGODdzQzVSUGpHT0lBSm9oTFQ4Ulh5cTh1aG5BMDFVeE81eGo4UDBSTC1GUHAtSXk4RENLa1VXbm9NQ1pqSG1ndEtibnUwNThGd0llSWt4eDBrbGhKRVp3ZWVFQjZkREtNZ1VyTW13QzlTN2xDMmhyUnE1RGdKYlJZVVJONDZWWE14STlB0gG6AUFVX3lxTFBoUmh4a1BYRU1vTFZVRE9GdTNPMkRvQ1lKTHYtZmhlcEF2M2hZX3R2OXYwNkxmcGZDODRYeTdDS21rWmNEeDAweVlQOTBLeWpPRXVWMzZTOWJRNHFhcjJpYkdTb1hJQVdhXzE0WW1QVzZ5RTlOUVAwV2lvMXhqaTc5b2lONFk2V3B3MElLLU1VWUQ4RUtZbmNFdFFaT3FJTzlqVTJnOGgtRWxaaTJPZlVtZTlrMmdxQzZPZw?oc=5",
+     "source": "WNDU",
+     "published": "2026-06-05T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "2b2d807bbf23319e"
+    }
+   ],
+   "first_seen": "2026-06-01T07:00:00+00:00",
+   "utilities": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-06-01T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "2b2d807bbf23319e"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 16.0,
+   "last_news": "2026-06-05T07:00:00+00:00",
+   "sources_count": 3,
+   "confidence": "high",
+   "hidden": false
+  },
+  {
+   "id": "oracle-wa-unnamed",
+   "name": "Oracle, Washington (site not yet named)",
+   "company": "Oracle",
+   "companies": [
+    "Oracle"
+   ],
+   "location": "Washington, US",
+   "state": "WA",
+   "county": null,
+   "city": null,
+   "lat": 47.4,
+   "lon": -120.5,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Oracle",
+   "news": [
+    {
+     "id": "45c72b35df86fa50",
+     "title": "Saint Martin’s University Expands Washington Vets to Tech Program With a 12-Week Data Center Technician Pathway in Partnership With Oracle",
+     "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNZG9mS3p0a3dvTVBVZnRkWmRQTjlfUzhXQi1YV01mQlF1RWRzTDdzUk5DOEU4UGdPbWExUkk1OEpCTEhHLWcxZlFpSmVISGdSMHIya25jUXQ5SllHZ01aU1pST1JTZEFvSmF1czFRUUttQ3hWTXlJRDBaZ0w1N3ZpZW5ONDZmSEJFTXQzREdXR2wya1pPZy0tcmVQUzd6V3VUWlpyTFhjSFg1MGpybTUydDRjOEV1RFR0Q1pnaHl5MGx3cDN6VmsxM21TeDZ4NkU3dWYxUFZMTFFidm1tT1BlWkw5WW5BQmplT0RVQVJuU2x2Uzk5b2FJM2M4SHBtZ01aSHg1VzFfRTdMQQ?oc=5",
+     "source": "ThurstonTalk",
+     "published": "2026-06-10T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "45c72b35df86fa50"
+    }
+   ],
+   "first_seen": "2026-06-10T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-10T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "45c72b35df86fa50"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-10T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "45c72b35df86fa50"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-06-10T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "low",
    "hidden": false
@@ -3529,6 +5010,100 @@
    "hidden": false
   },
   {
+   "id": "prime-data-centers-phoenix-az-2026",
+   "name": "Prime Data Centers Phoenix data center",
+   "company": "Prime Data Centers",
+   "companies": [
+    "Prime Data Centers"
+   ],
+   "location": "Phoenix, Arizona, US",
+   "state": "AZ",
+   "county": null,
+   "city": "Phoenix, Arizona, US",
+   "lat": 33.45,
+   "lon": -112.07,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "ae930a79eb0fc082",
+     "title": "Prime Data Centers Breaks Ground on Three Buildings in Phoenix, Advancing $3B Investment",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLThzRjRBeHJfOHVDbkMyX1A2dXl3TDRESFk1cDlGUExuQWV3azlMbHFwRm96Yk9Tc3VlbERzUzhTQ3owU3BHenA4czdDNmJhMS1qSGFDSlRneGNZWXpQZmRsVFF5RzR1MnJDeDJPaFFHdk5YbUh0UTRHMlA3aHhOTXh2eFRNXzNTckRBYUQxWXBMRVhpY0k5ZEl6ajRIb1YyWHFLM3hpZmxiRURNSS1PdlpNOWJ2SzJwNnhBb3A2TUNMaldkS1dJajBGcmJnckV0?oc=5",
+     "source": "Construction Equipment Guide",
+     "published": "2026-06-09T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "ae930a79eb0fc082"
+    }
+   ],
+   "first_seen": "2026-06-09T07:00:00+00:00",
+   "utilities": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-06-09T07:00:00+00:00",
+     "status": "Under construction",
+     "headline_id": "ae930a79eb0fc082"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 3.0,
+   "last_news": "2026-06-09T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "qts-oh-unnamed",
+   "name": "QTS, Ohio (site not yet named)",
+   "company": "QTS",
+   "companies": [
+    "QTS"
+   ],
+   "location": "Ohio, US",
+   "state": "OH",
+   "county": null,
+   "city": null,
+   "lat": 40.3,
+   "lon": -82.8,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "QTS",
+   "news": [
+    {
+     "id": "6acf65bb27bfad34",
+     "title": "QTS behind Van Wert, Ohio, “mega site” acquisition, announces $10 billion data center campus",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYjJtd01BV3dwOXgtX00ydzdxZFctWWRXRmJZVjFkZUk5OHB3dlJUUEhUU2dTRkxsUFhnUzhfeGNGNGM4eENVQlNNRnN2TUwtZFNxVTE5Wjd2emIyNjZaMlBvRnR4QXZMVU1WdVM5cVBUQ3htNER4bU1YbnlFMnB0aFEydHZYSU40bzEzZF84UmFrVmtFekFyNk5DTzlzNEdXRjdkVU5QT09YQ3RRRC12b25yS3R2Zlg0WHBMU2ZYYVhuVFVHcWZEeEpR?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-02T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6acf65bb27bfad34"
+    }
+   ],
+   "first_seen": "2026-06-02T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-02T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "6acf65bb27bfad34"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 10.0,
+   "last_news": "2026-06-02T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
    "id": "site-atlanta-ga-2026",
    "name": "Atlanta data center",
    "company": "",
@@ -3568,6 +5143,56 @@
    "capacity_mw": 4,
    "investment_usd_b": null,
    "last_news": "2026-10-19T12:56:57+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "site-cleveland-oh-2026",
+   "name": "Cleveland data center",
+   "company": "",
+   "companies": [],
+   "location": "Cleveland, Ohio, US",
+   "state": "OH",
+   "county": null,
+   "city": "Cleveland, Ohio, US",
+   "lat": 41.5,
+   "lon": -81.69,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "9cf6268de8061c4f",
+     "title": "H5 Data Centers Files Plans for $30 Million Cleveland Expansion",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaC1XbnVETnRFMmNIMkpuMWlhTjN3SUdTY0dLN2NUSnYwYS1pcEUzY1NOWHBFdHp0ZXc5VjF2enhPbTRYNVVfQkpHNlpiYU1VUTlsX29jdE0yVTNpUW4yY2lVNlFMbmF2ajhLcUZaZEo4ZERReFN2OUw1NTdSdTZ3M2hEcmR0XzQxNlV4R1RQbXF1MzZqZllfWmxwaEtyY2ZjU0IwSg?oc=5",
+     "source": "Cleveland Magazine",
+     "published": "2026-06-12T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "9cf6268de8061c4f"
+    }
+   ],
+   "first_seen": "2026-06-12T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-12T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "9cf6268de8061c4f"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-12T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "9cf6268de8061c4f"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 0.03,
+   "last_news": "2026-06-12T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
@@ -3656,6 +5281,50 @@
    "capacity_mw": null,
    "investment_usd_b": 0.05,
    "last_news": "2026-10-16T19:27:28+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "site-seattle-wa-2026",
+   "name": "Seattle data center",
+   "company": "",
+   "companies": [],
+   "location": "Seattle, Washington, US",
+   "state": "WA",
+   "county": null,
+   "city": "Seattle, Washington, US",
+   "lat": 47.61,
+   "lon": -122.33,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "13ae1f2715915b23",
+     "title": "20MW data center proposed in Starbucks' Seattle HQ building in Washington",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWjZrZXlYa01fV2QtamVYSmZZelc4Y19mNC1ER1B4NmlVNWNnMDB6dnRkdGEyNnlzUldfd0xVYzJ2czItckRlYV9jLUNZQTFFaDNhQjdHU1FGUzNGa1dtWk9jX1ZBU3J4Wm5HRXVYLVZJeW9GWkVwcWpOc0V6Qm8xVGhGYlBfR3pPZkk4eDk4N3JYcV8zTnZfQjZtSHM1LVU4UGx3dEJTRDFhLTktVFkyRnJVcDh3VGM?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-24T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "13ae1f2715915b23"
+    }
+   ],
+   "first_seen": "2026-06-24T07:00:00+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-06-24T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "13ae1f2715915b23"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 20,
+   "investment_usd_b": null,
+   "last_news": "2026-06-24T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false

@@ -1,0 +1,319 @@
+{
+ "generated": "2026-10-26T01:16:50+00:00",
+ "range": {
+  "start": "2026-06-01",
+  "end": "2026-07-01",
+  "window_days": 14,
+  "done": true
+ },
+ "requests": 17,
+ "failed_requests": 0,
+ "fetched": 1239,
+ "passed_filters": 1120,
+ "added_to_archive": 814,
+ "archive": {
+  "before": 1765,
+  "after": 2579,
+  "earliest": "2019-11-18T08:00:00+00:00"
+ },
+ "months": [
+  {
+   "month": "2026-06",
+   "archive_total": 695,
+   "announced": {
+    "fetched": 405,
+    "passed": 388,
+    "new": 327
+   },
+   "cancelled": {
+    "fetched": 284,
+    "passed": 283,
+    "new": 213
+   },
+   "construction": {
+    "fetched": 184,
+    "passed": 152,
+    "new": 141
+   },
+   "hyperscaler": {
+    "fetched": 133,
+    "passed": 89,
+    "new": 47
+   },
+   "operational": {
+    "fetched": 233,
+    "passed": 208,
+    "new": 86
+   }
+  }
+ ],
+ "registry_before": {
+  "count": 73,
+  "visible": 73,
+  "status": {
+   "Announced": 31,
+   "Cancelled / Blocked": 3,
+   "Operational": 23,
+   "Under construction": 16
+  },
+  "confidence": {
+   "high": 4,
+   "low": 10,
+   "medium": 59
+  }
+ },
+ "registry_after": {
+  "count": 101,
+  "visible": 101,
+  "status": {
+   "Announced": 44,
+   "Cancelled / Blocked": 4,
+   "Operational": 29,
+   "Under construction": 24
+  },
+  "confidence": {
+   "high": 9,
+   "low": 26,
+   "medium": 66
+  },
+  "umbrellas": 26
+ },
+ "lost_records": [],
+ "lost_news": [],
+ "operational_created_by_backfill": [
+  {
+   "id": "meta-huntsville-al-2026",
+   "name": "Meta Huntsville data center",
+   "place": "Huntsville, Alabama",
+   "state": "AL",
+   "completed": "2026-10-21",
+   "headline": "Meta opens Huntsville data center doors amid local concerns over water and power use",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQOHQ2blIyN3ZodWlranpSVGRNaUd3UFNIbnVZOGhIUXptVHdrSlEzUHRlNktlbHh3MjFMZ2xUR29acHl1WjZ5dDNiRkNpaHdVcmVlbU0yS25VWS1DbTItWXF2aERxeUd2Wjdnb3pOWWtpUGxDMEwzMkNUNXNWM3F3SFd3VU81eTVjR2tULQ?oc=5",
+   "page": "https://therackreport.org/projects/meta-huntsville-al-2026/"
+  },
+  {
+   "id": "meta-id-unnamed",
+   "name": "Meta, Idaho (site not yet named)",
+   "place": "Idaho",
+   "state": "ID",
+   "completed": "2026-09-04",
+   "headline": "Meta's $1.2bn data center in Kuna, Idaho, goes live",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWY0Y3EwNnB4b0hUQ2tvQTh2bHVXZzl3NUx6ZUppbEhyb2JGX2Fqb0t3NkNFZkNzeUtDVmZ3YWVOTHJQV1daRWIteHJaRHdDMC10X1h0am5zSmxEb2hHLVpsak4tdE1EVGdfSGZQalVaQnl6cnZPcEhzWmVtTjhSMkRlZzhGMDRRckJVcHV0cFpoc1p0?oc=5",
+   "page": "https://therackreport.org/projects/meta-id-unnamed/"
+  },
+  {
+   "id": "aws-ms-unnamed",
+   "name": "Amazon, Mississippi (site not yet named)",
+   "place": "Mississippi",
+   "state": "MS",
+   "completed": "2026-06-09",
+   "headline": "‘When Amazon comes to town.’ Clinton and company host ribbon cutting for new data center",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xSl9lVmh5VkQwc1l4SE9rUGFsa3hXZnp5aU1XVkl4QWlCQzJhU3VHLVFoZk5sSFljSWVZZDJmUUM1NEo1WGthcW9VRXFnUkNmVlFleUVYLVE1V2dGYWhjRjRvWmNKUW5nTzRiZW12SVAweXoxNXdOb25QZFpsd2c?oc=5",
+   "page": "https://therackreport.org/projects/aws-ms-unnamed/"
+  },
+  {
+   "id": "meta-tx-unnamed",
+   "name": "Meta, Texas (site not yet named)",
+   "place": "Texas",
+   "state": "TX",
+   "completed": "2026-08-05",
+   "headline": "$1.2B Meta Data Center Opens in Temple",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1TdG9GSGFTRTR1cHNIaVNJUmdIMF9vNTJkWDlDTGdqQVB1RjYwODhjS0lsN1oydDRMMjlna1ZYNk1SbXRCbG9FMkNvZlYzTV9NQ2VwNVctWkMtVDVrSGNLQ0tnV3BHaEZ1aHhWcVhHSUdiZlB3eFRXdlpRaw?oc=5",
+   "page": "https://therackreport.org/projects/meta-tx-unnamed/"
+  },
+  {
+   "id": "aws-walla-walla-county-wa-2026",
+   "name": "Amazon Walla Walla County data center",
+   "place": "Walla Walla County, Washington",
+   "state": "WA",
+   "completed": "2026-09-16",
+   "headline": "Walla Walla County opens comment period for Amazon data center",
+   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOYVhxX01PUVBJSThfQkFRMFdfZldmSlphMVozSi1DeUxxMXNYWGtoc25mb2FvQ3ZDTTlsQXRQeUNHajE3NjBLU1JLOUNSMS14ZVV4YWZ1LVIwODRoc2hTZzJPUVRvTkoyNnV3SEFLYVdHd044Q196MVBSRkZYOGd4UGdwdkU2Z1h3eDNyUWtQVFlnNDZQR0REV0VBQXBUbnJQRmh6OVlfTnl2eEFPa1duTXdKVlVWWnQwX2QxazJ5emFZVzNJcU1SS1Z2emVhT2dpaEFSUWowckRYRGJPMHJCVGpSSHVRaHgtTDVMNjBDVW5OMHhkTjlQZWJn?oc=5",
+   "page": "https://therackreport.org/projects/aws-walla-walla-county-wa-2026/"
+  }
+ ],
+ "operational_completed_last_24_months": 6,
+ "largest_by_mw": [
+  {
+   "id": "project-matador",
+   "name": "Project Matador",
+   "state": "TX",
+   "status": "Announced",
+   "capacity_mw": 11000,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "hyperion",
+   "name": "Hyperion",
+   "state": "LA",
+   "status": "Under construction",
+   "capacity_mw": 2000,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "microsoft-tx-unnamed",
+   "name": "Microsoft, Texas (site not yet named)",
+   "state": "TX",
+   "status": "Announced",
+   "capacity_mw": 2000,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "crusoe-cheyenne",
+   "name": "Crusoe Cheyenne",
+   "state": "WY",
+   "status": "Announced",
+   "capacity_mw": 1800,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "frontier",
+   "name": "Frontier",
+   "state": "TX",
+   "status": "Under construction",
+   "capacity_mw": 1400,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "stargate-michigan",
+   "name": "Stargate Michigan",
+   "state": "MI",
+   "status": "Announced",
+   "capacity_mw": 1400,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "stargate-abilene",
+   "name": "Stargate Abilene",
+   "state": "TX",
+   "status": "Under construction",
+   "capacity_mw": 1200,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "colossus-2",
+   "name": "Colossus 2",
+   "state": "TN",
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "meta-el-paso",
+   "name": "Meta El Paso",
+   "state": "TX",
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "curated": true,
+   "confidence": "high"
+  },
+  {
+   "id": "prometheus",
+   "name": "Prometheus",
+   "state": "OH",
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "stargate-port-washington-lighthouse",
+   "name": "Stargate Port Washington (Lighthouse)",
+   "state": "WI",
+   "status": "Announced",
+   "capacity_mw": 1000,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "google-tx-unnamed",
+   "name": "Google, Texas (site not yet named)",
+   "state": "TX",
+   "status": "Under construction",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "powerhouse-tx-unnamed",
+   "name": "PowerHouse, Texas (site not yet named)",
+   "state": "TX",
+   "status": "Announced",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "digital-realty-ks-unnamed",
+   "name": "Digital Realty, Kansas (site not yet named)",
+   "state": "KS",
+   "status": "Announced",
+   "capacity_mw": 600,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "polaris-forge-1",
+   "name": "Polaris Forge 1",
+   "state": "ND",
+   "status": "Under construction",
+   "capacity_mw": 400,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "cyrusone-tx-unnamed",
+   "name": "CyrusOne, Texas (site not yet named)",
+   "state": "TX",
+   "status": "Under construction",
+   "capacity_mw": 380,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "coreweave-lancaster",
+   "name": "CoreWeave Lancaster",
+   "state": "PA",
+   "status": "Announced",
+   "capacity_mw": 100,
+   "curated": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "applied-digital-tx-unnamed",
+   "name": "Applied Digital, Texas (site not yet named)",
+   "state": "TX",
+   "status": "Announced",
+   "capacity_mw": 50,
+   "curated": false,
+   "confidence": "low"
+  },
+  {
+   "id": "site-seattle-wa-2026",
+   "name": "Seattle data center",
+   "state": "WA",
+   "status": "Announced",
+   "capacity_mw": 20,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "site-atlanta-ga-2026",
+   "name": "Atlanta data center",
+   "state": "GA",
+   "status": "Announced",
+   "capacity_mw": 4,
+   "curated": false,
+   "confidence": "medium"
+  }
+ ],
+ "review_count": 0
+}

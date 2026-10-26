@@ -1,0 +1,306 @@
+{
+ "start": "2026-06-01",
+ "end": "2026-07-01",
+ "window_days": 14,
+ "next": "2026-07-01",
+ "done": true,
+ "windows_done": 3,
+ "requests": 17,
+ "failed_requests": 0,
+ "consecutive_failures": 0,
+ "fetched": 1239,
+ "passed": 1120,
+ "added": 814,
+ "months": {
+  "2026-06": {
+   "operational": {
+    "fetched": 233,
+    "passed": 208,
+    "new": 86
+   },
+   "construction": {
+    "fetched": 184,
+    "passed": 152,
+    "new": 141
+   },
+   "announced": {
+    "fetched": 405,
+    "passed": 388,
+    "new": 327
+   },
+   "cancelled": {
+    "fetched": 284,
+    "passed": 283,
+    "new": 213
+   },
+   "hyperscaler": {
+    "fetched": 133,
+    "passed": 89,
+    "new": 47
+   }
+  }
+ },
+ "windows": [
+  {
+   "start": "2026-06-01",
+   "end": "2026-06-15",
+   "fetched": 502,
+   "passed": 448,
+   "added": 366,
+   "queries": {
+    "operational": {
+     "fetched": 33,
+     "passed": 24,
+     "new": 19
+    },
+    "construction": {
+     "fetched": 100,
+     "passed": 83,
+     "new": 83
+    },
+    "announced": {
+     "fetched": 200,
+     "passed": 195,
+     "new": 169
+    },
+    "cancelled": {
+     "fetched": 100,
+     "passed": 99,
+     "new": 64
+    },
+    "hyperscaler": {
+     "fetched": 69,
+     "passed": 47,
+     "new": 31
+    }
+   }
+  },
+  {
+   "start": "2026-06-15",
+   "end": "2026-06-29",
+   "fetched": 524,
+   "passed": 476,
+   "added": 355,
+   "queries": {
+    "operational": {
+     "fetched": 100,
+     "passed": 92,
+     "new": 67
+    },
+    "construction": {
+     "fetched": 69,
+     "passed": 55,
+     "new": 47
+    },
+    "announced": {
+     "fetched": 200,
+     "passed": 190,
+     "new": 155
+    },
+    "cancelled": {
+     "fetched": 100,
+     "passed": 100,
+     "new": 72
+    },
+    "hyperscaler": {
+     "fetched": 55,
+     "passed": 39,
+     "new": 14
+    }
+   }
+  },
+  {
+   "start": "2026-06-29",
+   "end": "2026-07-01",
+   "fetched": 213,
+   "passed": 196,
+   "added": 93,
+   "queries": {
+    "operational": {
+     "fetched": 100,
+     "passed": 92,
+     "new": 0
+    },
+    "construction": {
+     "fetched": 15,
+     "passed": 14,
+     "new": 11
+    },
+    "announced": {
+     "fetched": 5,
+     "passed": 3,
+     "new": 3
+    },
+    "cancelled": {
+     "fetched": 84,
+     "passed": 84,
+     "new": 77
+    },
+    "hyperscaler": {
+     "fetched": 9,
+     "passed": 3,
+     "new": 2
+    }
+   }
+  }
+ ],
+ "baseline": {
+  "registry": {
+   "taken": "2026-10-26T01:15:58+00:00",
+   "count": 73,
+   "visible": 73,
+   "ids": [
+    "amazon-georgia",
+    "apple-maiden",
+    "apple-mesa",
+    "applied-digital-tx-unnamed",
+    "aws-boardman",
+    "aws-central-ohio",
+    "aws-indiana-county-pa-2026",
+    "aws-mississippi",
+    "aws-oh-unnamed",
+    "aws-or-unnamed",
+    "aws-pennsylvania",
+    "aws-posey-county-in-2026",
+    "aws-richmond-county",
+    "aws-va-unnamed",
+    "colossus",
+    "colossus-2",
+    "coreweave-lancaster",
+    "crusoe-cheyenne",
+    "data-center-alley",
+    "digital-realty-indianapolis-in-2026",
+    "fairwater",
+    "fairwater-atlanta",
+    "frontier",
+    "google-berkeley-county",
+    "google-botetourt-county-va-2026",
+    "google-council-bluffs",
+    "google-detroit-mi-2026",
+    "google-douglas-county",
+    "google-fort-wayne",
+    "google-henderson",
+    "google-ia-unnamed",
+    "google-kansas-city",
+    "google-mi-unnamed",
+    "google-midlothian",
+    "google-oklahoma",
+    "google-papillion",
+    "google-roanoke-county-va-2026",
+    "google-the-dalles",
+    "google-van-buren-township-mi-2026",
+    "google-wayne-county-mi-2026",
+    "google-west-memphis",
+    "hyperion",
+    "meta-altoona",
+    "meta-el-paso",
+    "meta-fort-worth",
+    "meta-los-lunas",
+    "meta-mason-county-ky-2026",
+    "meta-prineville",
+    "microsoft-ga-unnamed",
+    "microsoft-in-unnamed",
+    "microsoft-quincy",
+    "microsoft-san-antonio",
+    "microsoft-west-des-moines",
+    "microsoft-wi-unnamed",
+    "polaris-forge-1",
+    "powerhouse-tx-unnamed",
+    "project-matador",
+    "project-rainier",
+    "prometheus",
+    "qts-fayetteville",
+    "site-atlanta-ga-2026",
+    "site-fort-worth-tx-2026",
+    "site-mason-county-ky-2026",
+    "site-st-louis-mo-2026",
+    "site-wayne-county-mi-2026",
+    "stargate-abilene",
+    "stargate-do-a-ana-county",
+    "stargate-lordstown",
+    "stargate-michigan",
+    "stargate-milam-county",
+    "stargate-port-washington-lighthouse",
+    "switch-citadel-campus",
+    "switch-las-vegas-core-campus"
+   ],
+   "status": {
+    "Announced": 31,
+    "Cancelled / Blocked": 3,
+    "Operational": 23,
+    "Under construction": 16
+   },
+   "confidence": {
+    "high": 4,
+    "low": 10,
+    "medium": 59
+   },
+   "news_ids": [
+    "06d24bd03e2f3d88",
+    "0ab0ed0c421e37e0",
+    "0da8e97e64283e69",
+    "178501a396f9869e",
+    "18024da714bb07c5",
+    "1b780b443e3b153c",
+    "1c04d8b2cf0af119",
+    "1d7e9754da99d61f",
+    "25c1ef3eb00a6745",
+    "2635defb38db468c",
+    "2759ad3bd1de1892",
+    "307ee0dc0aa2c6e9",
+    "3341742539179499",
+    "33abecd9d7f15be0",
+    "33dae6f3b4415f54",
+    "36d94139ab821e00",
+    "3da8bda9a3526e12",
+    "3e15b68fc960c926",
+    "3f7c7b9dec3fea88",
+    "45d685364786de21",
+    "4637ddd4aead3c77",
+    "4af1733842d81d80",
+    "4c5393c9fcc052dd",
+    "4d3324ef7efb7cc8",
+    "4ee541d6545df147",
+    "50c0f7c17e31a828",
+    "50dc027e7ec0216c",
+    "5276c8c874decc34",
+    "5ee9df2bf905ccd8",
+    "67f6d794ce2a16d4",
+    "6887b428b4b30e63",
+    "6a7eedc04e6a0519",
+    "6ccfd88b985b0e62",
+    "7333b322acdad635",
+    "7743d05f18028856",
+    "7915b37c7de43180",
+    "7c38dd3322dee769",
+    "7f2fad7c09f99f13",
+    "85223e34a811f3d8",
+    "8a4a361ab5c2e8e9",
+    "8ae11f5bfc5da64b",
+    "91a353723be12ab7",
+    "92d261a8674a0798",
+    "a23c6d5cf26715bb",
+    "a3b56ac385681620",
+    "a5ec4f26256bd4a5",
+    "a7b590b212f6dfb5",
+    "a846bdd2eca90e42",
+    "a9486a84eee16469",
+    "ab5a7b48247ded31",
+    "c12cc811c8dcb646",
+    "c23850792c147771",
+    "c7e3f30b07af9885",
+    "ce498550128cc579",
+    "cf561fb964153015",
+    "db10705f0599c173",
+    "db44daa25ec68629",
+    "ddda38ec211187f8",
+    "e3304b184be1ba9d",
+    "e352141024c40ff6",
+    "ed18adfbe69a6b24",
+    "f331bc64861ddf70"
+   ]
+  },
+  "archive_ids": 1765
+ },
+ "updated": "2026-10-26T01:16:50+00:00"
+}
