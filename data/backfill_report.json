@@ -1,49 +1,416 @@
 {
- "generated": "2026-10-26T01:16:54+00:00",
+ "generated": "2026-10-26T01:28:44+00:00",
  "range": {
-  "start": "2026-06-01",
-  "end": "2026-07-01",
+  "start": "2024-10-01",
+  "end": "2026-10-14",
   "window_days": 14,
-  "done": true
+  "done": false
  },
- "requests": 17,
+ "requests": 174,
  "failed_requests": 0,
- "fetched": 1239,
- "passed_filters": 1120,
- "added_to_archive": 814,
+ "fetched": 7035,
+ "passed_filters": 3787,
+ "added_to_archive": 2440,
  "archive": {
   "before": 1765,
-  "after": 2579,
+  "after": 5019,
   "earliest": "2019-11-18T08:00:00+00:00"
  },
  "months": [
   {
-   "month": "2026-06",
-   "archive_total": 695,
+   "month": "2024-10",
+   "archive_total": 207,
    "announced": {
-    "fetched": 405,
-    "passed": 388,
-    "new": 327
+    "fetched": 361,
+    "passed": 234,
+    "new": 149,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
    },
    "cancelled": {
-    "fetched": 284,
-    "passed": 283,
-    "new": 213
+    "fetched": 83,
+    "passed": 16,
+    "new": 6,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
    },
    "construction": {
-    "fetched": 184,
-    "passed": 152,
-    "new": 141
+    "fetched": 108,
+    "passed": 36,
+    "new": 29,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
    },
    "hyperscaler": {
-    "fetched": 133,
-    "passed": 89,
-    "new": 47
+    "fetched": 121,
+    "passed": 53,
+    "new": 13,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
    },
    "operational": {
-    "fetched": 233,
-    "passed": 208,
-    "new": 86
+    "fetched": 239,
+    "passed": 101,
+    "new": 85,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2024-11",
+   "archive_total": 204,
+   "announced": {
+    "fetched": 307,
+    "passed": 233,
+    "new": 152,
+    "out_of_window": 0,
+    "split": 1,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 72,
+    "passed": 15,
+    "new": 8,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 73,
+    "passed": 29,
+    "new": 24,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 68,
+    "passed": 45,
+    "new": 6,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 108,
+    "passed": 60,
+    "new": 51,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2024-12",
+   "archive_total": 230,
+   "announced": {
+    "fetched": 220,
+    "passed": 146,
+    "new": 96,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 64,
+    "passed": 7,
+    "new": 2,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 58,
+    "passed": 21,
+    "new": 12,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 60,
+    "passed": 31,
+    "new": 7,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 122,
+    "passed": 55,
+    "new": 45,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-01",
+   "archive_total": 299,
+   "announced": {
+    "fetched": 497,
+    "passed": 309,
+    "new": 180,
+    "out_of_window": 0,
+    "split": 4,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 96,
+    "passed": 9,
+    "new": 1,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 57,
+    "passed": 26,
+    "new": 19,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 92,
+    "passed": 33,
+    "new": 4,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 188,
+    "passed": 85,
+    "new": 76,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-02",
+   "archive_total": 276,
+   "announced": {
+    "fetched": 405,
+    "passed": 269,
+    "new": 178,
+    "out_of_window": 0,
+    "split": 2,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 73,
+    "passed": 23,
+    "new": 11,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 65,
+    "passed": 37,
+    "new": 28,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 73,
+    "passed": 40,
+    "new": 13,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 133,
+    "passed": 55,
+    "new": 52,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-03",
+   "archive_total": 283,
+   "announced": {
+    "fetched": 339,
+    "passed": 236,
+    "new": 159,
+    "out_of_window": 0,
+    "split": 2,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 70,
+    "passed": 9,
+    "new": 2,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 71,
+    "passed": 33,
+    "new": 20,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 75,
+    "passed": 36,
+    "new": 11,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 144,
+    "passed": 73,
+    "new": 64,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-04",
+   "archive_total": 272,
+   "announced": {
+    "fetched": 453,
+    "passed": 332,
+    "new": 243,
+    "out_of_window": 0,
+    "split": 2,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 117,
+    "passed": 41,
+    "new": 16,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 97,
+    "passed": 28,
+    "new": 19,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 110,
+    "passed": 46,
+    "new": 16,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 156,
+    "passed": 78,
+    "new": 70,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-05",
+   "archive_total": 271,
+   "announced": {
+    "fetched": 450,
+    "passed": 304,
+    "new": 195,
+    "out_of_window": 0,
+    "split": 3,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 94,
+    "passed": 33,
+    "new": 5,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 85,
+    "passed": 36,
+    "new": 28,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 92,
+    "passed": 41,
+    "new": 12,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 182,
+    "passed": 85,
+    "new": 76,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   }
+  },
+  {
+   "month": "2025-06",
+   "archive_total": 326,
+   "announced": {
+    "fetched": 475,
+    "passed": 285,
+    "new": 185,
+    "out_of_window": 0,
+    "split": 3,
+    "capped": 0
+   },
+   "cancelled": {
+    "fetched": 56,
+    "passed": 26,
+    "new": 6,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "construction": {
+    "fetched": 64,
+    "passed": 32,
+    "new": 22,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "hyperscaler": {
+    "fetched": 64,
+    "passed": 26,
+    "new": 9,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
+   },
+   "operational": {
+    "fetched": 98,
+    "passed": 39,
+    "new": 35,
+    "out_of_window": 0,
+    "split": 0,
+    "capped": 0
    }
   }
  ],
@@ -63,20 +430,20 @@
   }
  },
  "registry_after": {
-  "count": 101,
-  "visible": 101,
+  "count": 224,
+  "visible": 224,
   "status": {
-   "Announced": 44,
-   "Cancelled / Blocked": 4,
-   "Operational": 29,
-   "Under construction": 24
+   "Announced": 138,
+   "Cancelled / Blocked": 10,
+   "Operational": 39,
+   "Under construction": 37
   },
   "confidence": {
-   "high": 9,
-   "low": 26,
-   "medium": 66
+   "high": 28,
+   "low": 54,
+   "medium": 142
   },
-  "umbrellas": 26
+  "umbrellas": 54
  },
  "lost_records": [],
  "lost_news": [],
@@ -92,13 +459,53 @@
    "page": "https://therackreport.org/projects/meta-huntsville-al-2026/"
   },
   {
+   "id": "meta-mesa-az-2025",
+   "name": "Meta Mesa data center",
+   "place": "Mesa, Arizona",
+   "state": "AZ",
+   "completed": "2025-01-30",
+   "headline": "Meta’s Mesa, Arizona, data center comes online",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUGQ2ME1FZ2l6ejJ3VjhZZ1Ywczd4bV81VmxNX19ocXJ0ZndQZHhmV1M3MV9oSDhQckFVdFV4LW9UWl9vU3pMMXJJRzlMLXkySWVfX2ZnMjdtMWdvRmM3MVdSNmY0bkgwcVRiRXR2OE1wbnc2eVhwdDRTamV2S1d5MEMyb1ltLVFlRl9tLWVXWkc?oc=5",
+   "page": "https://therackreport.org/projects/meta-mesa-az-2025/"
+  },
+  {
+   "id": "site-santa-clara-ca-2024",
+   "name": "Santa Clara data center",
+   "place": "Santa Clara, California",
+   "state": "CA",
+   "completed": "2024-11-19",
+   "headline": "Colovore Opens Second 9MW High-Density, Liquid-Cooled Data Center in Santa Clara",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQ2RqR2kwdFoySy02NnNOU1hrWnlTc3kxMkRWQTlqc205WFpyWVlFZFBkLXE5ZDE4WVRFS25VSWZxQXpTcjZtTmN2SEhzcldLeFBwOHBIbzc1WllBZjJvLTRhb2N2Q21mQXFRRzY1bEY0VnktQUdDbDgxbC1mSTdFc0IzYTVsZnNrQk9GdUhScjdXNFNTWDZMX0FJYmdjRlg3NUQwNy11blNxbHlaNElpWmdKNUt6NVJKM3hpTE5zQ3NIRVQ2MXlYR0lPLVRCSFhkNGc?oc=5",
+   "page": "https://therackreport.org/projects/site-santa-clara-ca-2024/"
+  },
+  {
+   "id": "flexential-atlanta-ga-2025",
+   "name": "Flexential Atlanta data center",
+   "place": "Atlanta, Georgia",
+   "state": "GA",
+   "completed": "2025-05-14",
+   "headline": "Flexential Completes Atlanta Data Center Purchase",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPY09tdlJJTmVDa1NOTEtXb0JDN2x1YnJkR2pSaElDdTVZWG5RaFZVVWZWSjRmMGEtc3VxdEJSalZBdW5YSVhXNmVaY2VoQ1FSRkVZdUh4dC14NkpiMm9KY0w4NmlSMHg4bS1XYmFibk5jQWJXSlhFbUtXRnhmSXdrN3RSTGo5RVF0VFprNUxoVUNhUQ?oc=5",
+   "page": "https://therackreport.org/projects/flexential-atlanta-ga-2025/"
+  },
+  {
+   "id": "apple-ia-unnamed",
+   "name": "Apple, Iowa (site not yet named)",
+   "place": "Iowa",
+   "state": "IA",
+   "completed": "2024-10-16",
+   "headline": "Seven years on, Waukee, Iowa's Apple data center finally opens",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTExyLXdjWlhWWmxHM1dmSk5CWWNEdmUta0RHOEZLT1k2Rm82SmZnTVRrYld4WWJxYWJ6RVhXOUQxeUJEcl9LZHJrcEZtRlcwUkxjd0F3Z3Zidkg5ZGRHWTFlNV9MNUlGbmF0bHFmVVpONXRaYllfazFYcXRmUHNRY0wwUVVRNmwzcU03d0Ewb2pDOWJHa0xpdEpTOA?oc=5",
+   "page": "https://therackreport.org/projects/apple-ia-unnamed/"
+  },
+  {
    "id": "meta-id-unnamed",
    "name": "Meta, Idaho (site not yet named)",
    "place": "Idaho",
    "state": "ID",
-   "completed": "2026-09-04",
-   "headline": "Meta's $1.2bn data center in Kuna, Idaho, goes live",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWY0Y3EwNnB4b0hUQ2tvQTh2bHVXZzl3NUx6ZUppbEhyb2JGX2Fqb0t3NkNFZkNzeUtDVmZ3YWVOTHJQV1daRWIteHJaRHdDMC10X1h0am5zSmxEb2hHLVpsak4tdE1EVGdfSGZQalVaQnl6cnZPcEhzWmVtTjhSMkRlZzhGMDRRckJVcHV0cFpoc1p0?oc=5",
+   "completed": "2024-10-25",
+   "headline": "Meta’s mega data center in Kuna on track to be completed by 2025",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNXRCZWhiWHAxWS1pYkZWbFh4eDF0ZnF6V3RWVk14eUNsUkJOTDhFYmJNVUtTVXg1OFRSaDdYTl9BbGJaTjdjcDdRUk5aTzRpZUpzNTFJY1pGWnNYMjFNS0RzbWoyRHBXYU43dGVtYlJsbnhsODNkNnRuT0lnbXl1N0Znb2lZTEVNWEVUSVhPaDZmRjJCUTQ4eUdJWmFGMjlpaTN3R191eGl1bWM?oc=5",
    "page": "https://therackreport.org/projects/meta-id-unnamed/"
   },
   {
@@ -112,6 +519,56 @@
    "page": "https://therackreport.org/projects/aws-ms-unnamed/"
   },
   {
+   "id": "novva-storey-county-nv-2025",
+   "name": "Novva Storey County data center",
+   "place": "Storey County, Nevada",
+   "state": "NV",
+   "completed": "2025-07-08",
+   "headline": "Novva opens 300,000-square-foot data center in Nevada's tech corridor in Storey County",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPMDFobDVaLWVuQm9EeFk4Z1NVVF9VUFJaT3AtVTlUMG1Xb0t2c1RHMnhFOXUzX1Z2WlkzYU9fSU5sd3ZHX2F5SUV5cUFnd2hpQndDS3BlUGUtSUpJbTQ1TFJDNVg2eUtVNkpBa05pR3BMLVJCYTBvZUdoNXZMVkdtWk03bElqSHdzN3YycXI0R0Z5Y25JbmVQT1FRVDZOLXZMckpyTkJYOFJxSlphakJ5eklDd29UdXBseXNmQjV0Q1hBYWJpWHU2VXlzUFZQeVFncmhwMWltWGxOX1oxeW51VjVwNnNUZF9fbG0tZENVVmhHQlRjSFZXVVhxNHo?oc=5",
+   "page": "https://therackreport.org/projects/novva-storey-county-nv-2025/"
+  },
+  {
+   "id": "sabey-austin-tx-2024",
+   "name": "Sabey Austin data center",
+   "place": "Austin, Texas",
+   "state": "TX",
+   "completed": "2024-10-17",
+   "headline": "Sabey Data Centers Completes Construction at Austin, Texas Data Center Site",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOenEyLUFQZFZ3UmdUU0NvZ1ljTWc0TktxVUdoaHlvZXo2SXRZeTBzRXRHUl84SEo5dDZnNjlQaDFybmMta05qWGJhWXVjcWJnNlAydjhYdldsN1NGNkI0d3RENE11VF9EbG1FLU15aHJOLTVWYnQ2dDlEME05QlVpdWJkZVQ3d3lBMGRmeGtKOXVZV051b2lBV013Y29CUnk4cWRuOU5sM3U5VGJmbGtNaUNfSGNSNUVoWVV5RnhJM2VmalJJTDBVOHhudw?oc=5",
+   "page": "https://therackreport.org/projects/sabey-austin-tx-2024/"
+  },
+  {
+   "id": "google-tx-unnamed",
+   "name": "Google, Texas (site not yet named)",
+   "place": "Texas",
+   "state": "TX",
+   "completed": "2024-10-21",
+   "headline": "Massive Texas solar farm opens to power Google data centers",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNXzZGLWNFTURhRXA0SW1Xcm0zRm9ENWRhTVZwWWpiLXdMYjYtM0d2cllRc1NiWk9ZcEpYSlJSWU1GOXBCNEdRVFVzQ2JTNVpSYm1PZ09RcU9wczZmOUZXQy1saEpzU2RzMmRvZVNVTUNMZEpFc3U0UFVlazNUdk8wdG91TTAtMjE1bjRSR3lwWUhmVXVaSGhV?oc=5",
+   "page": "https://therackreport.org/projects/google-tx-unnamed/"
+  },
+  {
+   "id": "site-fort-worth-tx-2025",
+   "name": "Fort Worth data center",
+   "place": "Fort Worth, Texas",
+   "state": "TX",
+   "completed": "2025-03-06",
+   "headline": "Siemens Opens $190M Fort Worth Manufacturing Hub to Build Equipment Powering America’s AI/Data Center Infrastructure",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOE54X25rckhBVnhmMms2aTVDOVJmNjlXczlpMVM4eUI4TUV0OVhZajVUaVRMQkVweEtPNmJBdmY3aWF6Ylo2bTlvdnB6ZjU2MWhpYmRLV0pYS3lSLUdZTjZ6NlpIT2tTNURoMFpRYXJyOUVlSFRYUzI1UkFYUGVUeU15ZmJlS1NDYjI0?oc=5",
+   "page": "https://therackreport.org/projects/site-fort-worth-tx-2025/"
+  },
+  {
+   "id": "compass-datacenters-dallas-tx-2025",
+   "name": "Compass Datacenters Dallas data center",
+   "place": "Dallas, Texas",
+   "state": "TX",
+   "completed": "2025-05-27",
+   "headline": "News | Compass Datacenters lands loan backed by newly completed data center in Dallas area",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNFZhQnBNODBOY1V6RE9ZWmJ3ckZJeVk0eTE5OGlIcS14MFZMQjNFY0tuTVhPbmdJdXRfeVJoNDRxWXoxNlI0a0gtd3lXTFd1dDM0V2hrc2stbkJOb0xTWDhXUmt0bTBPWU80dzJuNmRmckNOdWl3LTk2cU1kR1lEUWlPREFZY2VybWZWZ0p2dGJTUnhJeTZXcXRVV3RSUlRkbENGRWRxX1VSMDJlZnllU3l0OXJ4ZjJHczhKVjJSRzdLUQ?oc=5",
+   "page": "https://therackreport.org/projects/compass-datacenters-dallas-tx-2025/"
+  },
+  {
    "id": "meta-tx-unnamed",
    "name": "Meta, Texas (site not yet named)",
    "place": "Texas",
@@ -120,6 +577,16 @@
    "headline": "$1.2B Meta Data Center Opens in Temple",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1TdG9GSGFTRTR1cHNIaVNJUmdIMF9vNTJkWDlDTGdqQVB1RjYwODhjS0lsN1oydDRMMjlna1ZYNk1SbXRCbG9FMkNvZlYzTV9NQ2VwNVctWkMtVDVrSGNLQ0tnV3BHaEZ1aHhWcVhHSUdiZlB3eFRXdlpRaw?oc=5",
    "page": "https://therackreport.org/projects/meta-tx-unnamed/"
+  },
+  {
+   "id": "novva-ut-unnamed",
+   "name": "Novva, Utah (site not yet named)",
+   "place": "Utah",
+   "state": "UT",
+   "completed": "2025-03-13",
+   "headline": "Novva Secures $2B to Complete Utah Data Center Campus Construction",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORDc1b0piVmczenUzMms0dW5PMWxpamVJWTlzU0pOMVRKd3pvcWstWC1MdlBCUnJBUG1SRWFsdldpcUYzVWxpdDJ5cm9ka2F5cXJxelA0MFM1UGlyRmtEblcwQmtnY1RQdjdGVkt4ZHkxTmxjVjZhRlhLbXJHczNxajdRMHNQM3EwVUltSE1GbmJ5RzFMaFFkcjkxbUZCcVQ1cUE?oc=5",
+   "page": "https://therackreport.org/projects/novva-ut-unnamed/"
   },
   {
    "id": "aws-walla-walla-county-wa-2026",
@@ -132,7 +599,7 @@
    "page": "https://therackreport.org/projects/aws-walla-walla-county-wa-2026/"
   }
  ],
- "operational_completed_last_24_months": 6,
+ "operational_completed_last_24_months": 12,
  "largest_by_mw": [
   {
    "id": "project-matador",
@@ -144,6 +611,24 @@
    "confidence": "medium"
   },
   {
+   "id": "site-amarillo-tx-2025",
+   "name": "Amarillo data center",
+   "state": "TX",
+   "status": "Announced",
+   "capacity_mw": 11000,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "site-port-washington-wi-2025",
+   "name": "Port Washington data center",
+   "state": "WI",
+   "status": "Announced",
+   "capacity_mw": 3500,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
    "id": "hyperion",
    "name": "Hyperion",
    "state": "LA",
@@ -151,6 +636,15 @@
    "capacity_mw": 2000,
    "curated": true,
    "confidence": "medium"
+  },
+  {
+   "id": "meta-la-unnamed",
+   "name": "Meta, Louisiana (site not yet named)",
+   "state": "LA",
+   "status": "Under construction",
+   "capacity_mw": 2000,
+   "curated": false,
+   "confidence": "low"
   },
   {
    "id": "microsoft-tx-unnamed",
@@ -186,7 +680,7 @@
    "status": "Announced",
    "capacity_mw": 1400,
    "curated": true,
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "stargate-abilene",
@@ -195,7 +689,7 @@
    "status": "Under construction",
    "capacity_mw": 1200,
    "curated": true,
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "colossus-2",
@@ -237,7 +731,7 @@
    "id": "google-tx-unnamed",
    "name": "Google, Texas (site not yet named)",
    "state": "TX",
-   "status": "Under construction",
+   "status": "Operational",
    "capacity_mw": 1000,
    "curated": false,
    "confidence": "low"
@@ -252,6 +746,42 @@
    "confidence": "low"
   },
   {
+   "id": "site-des-moines-ia-2024",
+   "name": "Des Moines data center",
+   "state": "IA",
+   "status": "Announced",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "site-houston-tx-2024",
+   "name": "Houston data center",
+   "state": "TX",
+   "status": "Announced",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "site-stafford-county-va-2025",
+   "name": "Stafford County data center",
+   "state": "VA",
+   "status": "Announced",
+   "capacity_mw": 1000,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "site-chesterfield-county-va-2025",
+   "name": "Chesterfield County data center",
+   "state": "VA",
+   "status": "Announced",
+   "capacity_mw": 900,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
    "id": "digital-realty-ks-unnamed",
    "name": "Digital Realty, Kansas (site not yet named)",
    "state": "KS",
@@ -261,12 +791,39 @@
    "confidence": "low"
   },
   {
+   "id": "site-kansas-city-mo-2025",
+   "name": "Kansas City data center",
+   "state": "MO",
+   "status": "Announced",
+   "capacity_mw": 600,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "edgecore-mesa-az-2025",
+   "name": "EdgeCore Mesa data center",
+   "state": "AZ",
+   "status": "Announced",
+   "capacity_mw": 450,
+   "curated": false,
+   "confidence": "high"
+  },
+  {
    "id": "polaris-forge-1",
    "name": "Polaris Forge 1",
    "state": "ND",
    "status": "Under construction",
    "capacity_mw": 400,
    "curated": true,
+   "confidence": "high"
+  },
+  {
+   "id": "powerhouse-louisville-ky-2025",
+   "name": "PowerHouse Louisville data center",
+   "state": "KY",
+   "status": "Announced",
+   "capacity_mw": 400,
+   "curated": false,
    "confidence": "medium"
   },
   {
@@ -279,41 +836,41 @@
    "confidence": "low"
   },
   {
-   "id": "coreweave-lancaster",
-   "name": "CoreWeave Lancaster",
-   "state": "PA",
+   "id": "site-appomattox-county-va-2024",
+   "name": "Appomattox County data center",
+   "state": "VA",
    "status": "Announced",
-   "capacity_mw": 100,
-   "curated": true,
+   "capacity_mw": 300,
+   "curated": false,
    "confidence": "medium"
   },
   {
-   "id": "applied-digital-tx-unnamed",
-   "name": "Applied Digital, Texas (site not yet named)",
-   "state": "TX",
+   "id": "site-leesburg-va-2025",
+   "name": "Leesburg data center",
+   "state": "VA",
    "status": "Announced",
-   "capacity_mw": 50,
+   "capacity_mw": 300,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "site-west-feliciana-parish-la-2024-3",
+   "name": "West Feliciana Parish data center",
+   "state": "LA",
+   "status": "Announced",
+   "capacity_mw": 300,
+   "curated": false,
+   "confidence": "medium"
+  },
+  {
+   "id": "coreweave-nd-unnamed",
+   "name": "CoreWeave, North Dakota (site not yet named)",
+   "state": "ND",
+   "status": "Announced",
+   "capacity_mw": 250,
    "curated": false,
    "confidence": "low"
-  },
-  {
-   "id": "site-seattle-wa-2026",
-   "name": "Seattle data center",
-   "state": "WA",
-   "status": "Announced",
-   "capacity_mw": 20,
-   "curated": false,
-   "confidence": "medium"
-  },
-  {
-   "id": "site-atlanta-ga-2026",
-   "name": "Atlanta data center",
-   "state": "GA",
-   "status": "Announced",
-   "capacity_mw": 4,
-   "curated": false,
-   "confidence": "medium"
   }
  ],
- "review_count": 0
+ "review_count": 1
 }

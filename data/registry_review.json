@@ -1,5 +1,36 @@
 {
- "generated": "2026-10-26T01:16:54+00:00",
+ "generated": "2026-10-26T01:28:44+00:00",
  "_readme": "Records that received headlines naming two different companies with nothing in common: likely wrong merges. Fix with split or merge in data/project_overrides.json.",
- "records": []
+ "records": [
+  {
+   "id": "stargate-abilene",
+   "name": "Stargate Abilene",
+   "state": "TX",
+   "companies": [
+    "Crusoe",
+    "OpenAI",
+    "Oracle",
+    "SoftBank"
+   ],
+   "example": [
+    {
+     "companies": [
+      "OpenAI",
+      "Oracle",
+      "SoftBank"
+     ],
+     "title": "Stargate's first data center is underway in Texas. Public filings show how much it will cost to build.",
+     "id": "2d61eb59bd51cdd8"
+    },
+    {
+     "companies": [
+      "Crusoe"
+     ],
+     "title": "Crusoe expands Abilene AI campus to 1.2 GW",
+     "id": "9c3310b848d0ab1d"
+    }
+   ],
+   "suggestion": "split the headlines of the other company into a new record, or merge into the right one"
+  }
+ ]
 }
