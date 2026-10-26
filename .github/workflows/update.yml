@@ -2,21 +2,62 @@ name: Update data center news
 
 on:
   schedule:
-    # Every hour at 17 minutes past (off the top of the hour, when GitHub is busiest)
-    - cron: "17 * * * *"
+    # GitHub treats schedules as best effort and was starting an hourly cron only every 3 to 5
+    # hours. So the workflow is woken every 5 minutes and the gate below lets the fetch run only
+    # when the last real fetch is an hour old: one wake-up per hour is enough to stay hourly.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Shared with the manual news backfill so the two never push the same data files at once.
-concurrency:
-  group: data-files
-  cancel-in-progress: false
-
 jobs:
-  update:
+  # Decides in a few seconds whether this wake-up should fetch. Runs that only pass through the
+  # gate show the update job as skipped.
+  gate:
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
+    outputs:
+      run: ${{ steps.decide.outputs.run }}
+    steps:
+      - name: Is the last fetch an hour old?
+        id: decide
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, subprocess
+          from datetime import datetime, timezone
+          if os.environ["EVENT"] == "workflow_dispatch":
+              print("run=true"); raise SystemExit
+          repo, me = os.environ["GITHUB_REPOSITORY"], int(os.environ["GITHUB_RUN_ID"])
+          api = lambda path: json.loads(subprocess.check_output(["gh", "api", path]))
+          now = datetime.now(timezone.utc)
+          for r in api(f"repos/{repo}/actions/workflows/update.yml/runs?per_page=40")["workflow_runs"]:
+              if r["id"] == me or r["status"] != "completed":
+                  continue
+              job = next((j for j in api(f"repos/{repo}/actions/runs/{r['id']}/jobs")["jobs"] if j["name"] == "update"), None)
+              if not job or job["conclusion"] not in ("success", "failure"):
+                  continue  # only passed through the gate, or was cancelled
+              age = (now - datetime.fromisoformat(job["started_at"].replace("Z", "+00:00"))).total_seconds() / 60
+              # Fetch again after 55 minutes, or 15 minutes after a failed fetch.
+              wait = 55 if job["conclusion"] == "success" else 15
+              print(f"run={'true' if age >= wait else 'false'}")
+              print(f"last fetch {age:.0f} min ago ({job['conclusion']})", file=__import__('sys').stderr)
+              raise SystemExit
+          print("run=true")
+          PY
+
+  update:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    # Shared with the manual news backfill so the two never push the same data files at once.
+    concurrency:
+      group: data-files
+      cancel-in-progress: false
     steps:
       - name: Check out repo
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
