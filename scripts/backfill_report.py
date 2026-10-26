@@ -88,6 +88,29 @@ def main():
                            "suggestion": "split the headlines of the other company into a new record, or merge into the right one"})
     review.sort(key=lambda x: x["id"])
 
+    # Review lists: likely false Operational steps, places with several detected records, and
+    # umbrellas that sit next to a named record for the same company and state.
+    import re
+    not_done = re.compile(r"\b(purchase|acquisition|application|financing|loan|factory|plant|manufactur\w*|solar|wind farm|"
+                          r"on track|near completion|to complete|substation|transmission)\b", re.I)
+    false_ops = []
+    for r in vis:
+        h = operational_date(r)
+        n = next((x for x in r["news"] if h and x["id"] == h.get("headline_id")), None)
+        if not r.get("curated") and n and not_done.search(n["title"]):
+            false_ops.append({"id": r["id"], "title": n["title"], "link": n["link"], "suggestion": "set_status back to the previous status"})
+    places = {}
+    for r in vis:
+        if not r.get("curated") and not r.get("umbrella"):
+            places.setdefault((r.get("state"), r.get("county") or r.get("city") or r["location"]), []).append(r)
+    dup_places = sorted(({"place": k[1].replace(", US", ""), "records": [x["id"] for x in v],
+                          "without_company": sum(1 for x in v if not x.get("companies"))} for k, v in places.items() if len(v) > 1),
+                        key=lambda d: -len(d["records"]))
+    umb_named = [{"umbrella": u["id"], "named": [r["id"] for r in vis if not r.get("umbrella") and r.get("state") == u.get("state")
+                                                 and set(r.get("companies", [])) & set(u.get("companies", []))]}
+                 for u in vis if u.get("umbrella")]
+    umb_named = [x for x in umb_named if x["named"]]
+
     count = lambda key: dict(sorted(Counter(r.get(key) for r in vis).items()))
     after = {"count": len(recs), "visible": len(vis), "status": count("status"), "confidence": count("confidence"),
              "umbrellas": sum(1 for r in vis if r.get("umbrella"))}
@@ -108,6 +131,9 @@ def main():
         "operational_completed_last_24_months": len(completed_24m),
         "largest_by_mw": largest,
         "review_count": len(review),
+        "likely_false_operational": false_ops,
+        "places_with_several_records": dup_places,
+        "umbrellas_next_to_named_records": umb_named,
     }
     REPORT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     REVIEW_JSON.write_text(json.dumps({"generated": report["generated"], "_readme": "Records that received headlines naming two different "
@@ -153,6 +179,22 @@ def write_md(rep, queries, review):
     for i, r in enumerate(rep["largest_by_mw"], 1):
         L.append(f"| {i} | [{esc(r['name'])}]({SITE}/projects/{r['id']}/) | {r['state']} | {r['status']} | {r['capacity_mw']:,} | "
                  f"{'curated' if r['curated'] else 'detected, ' + str(r['confidence'])} |")
+    L += ["", f"## Likely false Operational steps ({len(rep['likely_false_operational'])})", "",
+          "The headline that moved these to Operational is about a purchase, an application, a factory, solar power or a "
+          "completion still to come. Fix with `set_status` in `data/project_overrides.json`, or tighten the Operational rule.", "",
+          "| Record | Headline |", "|---|---|"]
+    L += [f"| `{x['id']}` | [{esc(x['title'])}]({x['link']}) |" for x in rep["likely_false_operational"]]
+    dp = rep["places_with_several_records"]
+    L += ["", f"## Places with several detected records ({len(dp)} places, {sum(len(d['records']) for d in dp)} records)", "",
+          "Different companies in one city can be different projects; records without a company in the same place usually "
+          "are not (matching rule (e) needs 40% title overlap within 60 days). Merge with `merge` overrides.", "",
+          "| Place | Records | Without a company |", "|---|---|---|"]
+    L += [f"| {esc(d['place'])} | {len(d['records'])} | {d['without_company']} |" for d in dp[:40]]
+    un = rep["umbrellas_next_to_named_records"]
+    L += ["", f"## Umbrellas next to a named record ({len(un)})", "",
+          "The umbrella was created after the named site, so it was not folded in automatically.", "",
+          "| Umbrella | Named records, same company and state |", "|---|---|"]
+    L += [f"| `{x['umbrella']}` | {', '.join(f'`{n}`' for n in x['named'])} |" for x in un]
     L += ["", f"## Records to review ({len(review)})", "",
           "Each received headlines naming different companies with nothing in common, which usually means two projects were merged.", "",
           "| Record | Companies | Example headlines |", "|---|---|---|"]

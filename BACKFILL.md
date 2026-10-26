@@ -1,6 +1,6 @@
 # News backfill report
 
-Generated 2026-10-26T02:09:35+00:00. Range 2024-10-01 to 2026-10-14 in 14-day windows (complete).
+Generated 2026-10-26T02:13:06+00:00. Range 2024-10-01 to 2026-10-14 in 14-day windows (complete).
 
 - Requests: 957 (0 failed)
 - Headlines fetched: 36950; passed the filters: 29436; new to the archive: 17116
@@ -123,6 +123,142 @@ Fetched / passed the filters / new to the archive, by the month the window start
 | 28 | [Crusoe, Texas (site not yet named)](https://therackreport.org/projects/crusoe-tx-unnamed/) | TX | Under construction | 1,000 | detected, low |
 | 29 | [Google Detroit data center](https://therackreport.org/projects/google-detroit-mi-2026/) | MI | Announced | 1,000 | detected, high |
 | 30 | [Google, Texas (site not yet named)](https://therackreport.org/projects/google-tx-unnamed/) | TX | Operational | 1,000 | detected, low |
+
+## Likely false Operational steps (13)
+
+The headline that moved these to Operational is about a purchase, an application, a factory, solar power or a completion still to come. Fix with `set_status` in `data/project_overrides.json`, or tighten the Operational rule.
+
+| Record | Headline |
+|---|---|
+| `aws-walla-walla-county-wa-2026` | [Amazon completes its application for a data center in Walla Walla County](https://news.google.com/rss/articles/CBMihwJBVV95cUxNZGZwNzBkbUVTU3lGalpHVFd6eFNlY0IwYkRJY01RZHhTcHB1VFg2Y2NGUkZDM0hXdDZIWE5nVjFfTlo1NVZIcExxVFZGZE1yMzM2SjgtOFBCWUltUHJGblR3WGNLUlZ6aGRDMmN4bWFUTFBQQWhqcGNoNGhqV1JIeFh3MkhTYlhSc0wtRXpvYWYyUHFXbEFwU3BBejVmQkhDS05sdjlncVFwSmFfU2pEeXllc1AxNjl2MjlJd1lpM0pXVFk4cThWSlVWelBsT0NNS1p1aF9QTlRMdzExR0lHUnByWVNmYVNnZXJVMjlLV1hYbmZvdmlvUVo3R0dUYzVLVUlTTDVxUQ?oc=5) |
+| `compass-datacenters-dallas-tx-2025` | [News \| Compass Datacenters lands loan backed by newly completed data center in Dallas area](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNFZhQnBNODBOY1V6RE9ZWmJ3ckZJeVk0eTE5OGlIcS14MFZMQjNFY0tuTVhPbmdJdXRfeVJoNDRxWXoxNlI0a0gtd3lXTFd1dDM0V2hrc2stbkJOb0xTWDhXUmt0bTBPWU80dzJuNmRmckNOdWl3LTk2cU1kR1lEUWlPREFZY2VybWZWZ0p2dGJTUnhJeTZXcXRVV3RSUlRkbENGRWRxX1VSMDJlZnllU3l0OXJ4ZjJHczhKVjJSRzdLUQ?oc=5) |
+| `crusoe-tulsa-ok-2026` | [Crusoe Opens Second Tulsa Plant to Build AI Data Center Components](https://news.google.com/rss/articles/CBMikgFBVV95cUxOVUJ1Uy04UnF1LUxZd1FpeVg3dUhHcDA1d3NVREVNSFFsMld0S005QTFQaGJ0VENXQlUtWlFuc0xWTi05aWxkRUx4X0ZWblZkV29vWng0b0ZaZHVybTNiOC1Bd1dmZm1uTHhNcDdYSFlpNEVJc1psckY3bzM2ZDZlWTdBZkNtZUJoS1FCZ19FTUlMUQ?oc=5) |
+| `flexential-atlanta-ga-2025` | [Flexential Completes Atlanta Data Center Purchase](https://news.google.com/rss/articles/CBMikgFBVV95cUxPY09tdlJJTmVDa1NOTEtXb0JDN2x1YnJkR2pSaElDdTVZWG5RaFZVVWZWSjRmMGEtc3VxdEJSalZBdW5YSVhXNmVaY2VoQ1FSRkVZdUh4dC14NkpiMm9KY0w4NmlSMHg4bS1XYmFibk5jQWJXSlhFbUtXRnhmSXdrN3RSTGo5RVF0VFprNUxoVUNhUQ?oc=5) |
+| `google-tx-unnamed` | [Massive Texas solar farm opens to power Google data centers](https://news.google.com/rss/articles/CBMilwFBVV95cUxNXzZGLWNFTURhRXA0SW1Xcm0zRm9ENWRhTVZwWWpiLXdMYjYtM0d2cllRc1NiWk9ZcEpYSlJSWU1GOXBCNEdRVFVzQ2JTNVpSYm1PZ09RcU9wczZmOUZXQy1saEpzU2RzMmRvZVNVTUNMZEpFc3U0UFVlazNUdk8wdG91TTAtMjE1bjRSR3lwWUhmVXVaSGhV?oc=5) |
+| `meta-id-unnamed` | [Meta’s mega data center in Kuna on track to be completed by 2025](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNXRCZWhiWHAxWS1pYkZWbFh4eDF0ZnF6V3RWVk14eUNsUkJOTDhFYmJNVUtTVXg1OFRSaDdYTl9BbGJaTjdjcDdRUk5aTzRpZUpzNTFJY1pGWnNYMjFNS0RzbWoyRHBXYU43dGVtYlJsbnhsODNkNnRuT0lnbXl1N0Znb2lZTEVNWEVUSVhPaDZmRjJCUTQ4eUdJWmFGMjlpaTN3R191eGl1bWM?oc=5) |
+| `meta-or-unnamed` | [Big solar tied to Meta data center needs comes online in Oregon](https://news.google.com/rss/articles/CBMilwFBVV95cUxOT3cyZ1llQzdOc24tMlVuTkdHQmdTYlBqXzBxdmx2Vnc4UmV2akhoaTRiSmJVa0NfSGZGZzBiZU9hRUs1ZHlCN0FXNjBJLXdrRnR5dVZ2bVhPcEdHbi1uN3Fld1JvLU5PT29OVzhYRHN0ZFp2Q0NxVmF2dE1zNWM2bmtsX2xNamN1ZnM4R1F4SDVMX291cWE4?oc=5) |
+| `novva-ut-unnamed` | [Novva Secures $2B to Complete Utah Data Center Campus Construction](https://news.google.com/rss/articles/CBMiogFBVV95cUxORDc1b0piVmczenUzMms0dW5PMWxpamVJWTlzU0pOMVRKd3pvcWstWC1MdlBCUnJBUG1SRWFsdldpcUYzVWxpdDJ5cm9ka2F5cXJxelA0MFM1UGlyRmtEblcwQmtnY1RQdjdGVkt4ZHkxTmxjVjZhRlhLbXJHczNxajdRMHNQM3EwVUltSE1GbmJ5RzFMaFFkcjkxbUZCcVQ1cUE?oc=5) |
+| `qts-ia-unnamed` | [CBJ Newsmakers: First QTS data center buildings near completion](https://news.google.com/rss/articles/CBMilwFBVV95cUxNM0kwODVkb2lxZFNxcFlKdmxTY2ItZlJia0pWVXZtV1ZZVXctNFJwMnItX3E0SW5VTTZQQm10YXhJQnVEUFJYYlhzNjhobkhmQnR1WXNWaUFkOEFJTW9VTHpwb2M4SGVBeWMxMHFNTHlINW0yV0dpTmg4NWxxVnM1WGUtMjI3UUhDM1JMWEU4RDM2VDR3QmNj?oc=5) |
+| `site-des-moines-ia-2026` | [Digi Power X Announces $200 Million Debt Financing Commitment to Support Completion of Alabama AI Data Center and Provides Expansion Update](https://news.google.com/rss/articles/CBMipwJBVV95cUxOZDNvVndsV1ZzMVAwN1RqOHNxZ0k2WklPY2V0bzNhNHNNNWpJRU1uTTVuUkJpOFh5ZkhmS2RzOXBCMFZQb0JqVXcwYmN3NnZnUm5uM2I4S3UwVW12M0lNdDdBSmc1R3MwUG1JcUoxOEdZcHZ6aS00ZllSUVBPU25TM3FLN0MwNDBwc3pZcTB1RDQ3ZFliX2hCVmM0cGFBb3VyMXJDcXhubWkyaWllYjVGcUhTbEFvWHFYZDZ4azNkZnBZNDU2RnlrWjdIZUVMZDY5Z3ZfMklmeUxtX1J4U2tUWmZWcVU3NGNJUmZLeE5IbFotTlgwQnAxQ20tLVdEQ204RXVFbEozYTJTUkE5NzdOa2xnal9DcjA4WnFNeGg4em5jYm5kc0pN?oc=5) |
+| `site-fort-worth-tx-2025` | [Siemens Opens $190M Fort Worth Manufacturing Hub to Build Equipment Powering America’s AI/Data Center Infrastructure](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOE54X25rckhBVnhmMms2aTVDOVJmNjlXczlpMVM4eUI4TUV0OVhZajVUaVRMQkVweEtPNmJBdmY3aWF6Ylo2bTlvdnB6ZjU2MWhpYmRLV0pYS3lSLUdZTjZ6NlpIT2tTNURoMFpRYXJyOUVlSFRYUzI1UkFYUGVUeU15ZmJlS1NDYjI0?oc=5) |
+| `site-orangeburg-county-sc-2025` | [Data center supplier opens $7.4M factory in rural Orangeburg County](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQVdzV0p5NTVtdlM5bV9fZldLVGR4NnQ5ZzZ5WWVlUWg5M1BvYk1VbkNxczBuYWV1TUpsUFA4UlVUUWtkaE0xSGs0YklsXzRFM01fZEVNQ1EtcTVFblJvUExucDNJVlBYYWFSSXhjdHpndF9kRWFpbDRuT0JSVlkwSVROcnNmazRDSVJOZWpFODJGNnl6X0R1c0Y4TFVibkhHRThOS25WWDc?oc=5) |
+| `xai-tn-unnamed` | [Mayor, MLGW push xAI to complete water recycling facility](https://news.google.com/rss/articles/CBMingFBVV95cUxOMFpqVm9RZ3ZvNG9vaHVPTDAyY29WSHJnd1BWZkRiVlFVNEUyclRsLVlaTDFLQW03d213UmJZTnNCSGRQSTJfUjM3SHVKakJrd2dIZ0FyVWpiTGQ3SG9GLWxCbXJkVFluX3dOakpxeWIwQ3I0YmdmVDRBUTZuVENBX3QyblozSGY3RmhzbklpU1FiTFY5MUlnUkhteGF3Z9IBowFBVV95cUxNM0t6amgxSVJJOTF5WWVRWUtsZUVMdnlwVGVjR01WbFdkT1IzVEVRYzdjWkxubW9BckdObTJnaHR1UGJfVWhCR25ZdDducUQ2bU5zSWp1dWdJYnhpQlVFMzBrMzZsQWdtQVdqWmt3Rzk5RWJjeWw1MTdTMnJURzdyU3pfRTRfam9nUTA2dGlrUGFJLTUwMHd4LUdLVW92LS1VQ213?oc=5) |
+
+## Places with several detected records (64 places, 262 records)
+
+Different companies in one city can be different projects; records without a company in the same place usually are not (matching rule (e) needs 40% title overlap within 60 days). Merge with `merge` overrides.
+
+| Place | Records | Without a company |
+|---|---|---|
+| Atlanta, Georgia | 17 | 11 |
+| Detroit, Michigan | 13 | 9 |
+| Kansas City, Missouri | 12 | 11 |
+| Indianapolis, Indiana | 10 | 7 |
+| Port Washington, Wisconsin | 10 | 10 |
+| Dallas, Texas | 9 | 4 |
+| Chicago, Illinois | 9 | 6 |
+| Charlotte, North Carolina | 8 | 4 |
+| New Albany, Ohio | 7 | 4 |
+| Columbus, Ohio | 7 | 7 |
+| Fort Worth, Texas | 7 | 7 |
+| Austin, Texas | 6 | 3 |
+| Fargo, North Dakota | 5 | 4 |
+| Little Rock, Arkansas | 5 | 3 |
+| Seattle, Washington | 5 | 2 |
+| St. Louis, Missouri | 4 | 3 |
+| Memphis, Tennessee | 4 | 2 |
+| Reno, Nevada | 4 | 1 |
+| Phoenix, Arizona | 4 | 3 |
+| Cleveland, Ohio | 4 | 4 |
+| El Paso, Texas | 4 | 4 |
+| San Antonio, Texas | 4 | 3 |
+| Houston, Texas | 3 | 2 |
+| Frederick, Maryland | 3 | 2 |
+| Tulsa, Oklahoma | 3 | 1 |
+| Northern Virginia, Virginia | 3 | 1 |
+| Richmond, Virginia | 3 | 0 |
+| Louisville, Kentucky | 3 | 1 |
+| Cheyenne, Wyoming | 3 | 1 |
+| San Jose, California | 3 | 2 |
+| Bessemer, Alabama | 3 | 2 |
+| Cedar Rapids, Iowa | 3 | 2 |
+| Coweta County, Georgia | 3 | 3 |
+| Troup County, Georgia | 3 | 3 |
+| Bartow County, Georgia | 3 | 3 |
+| Boise, Idaho | 3 | 3 |
+| Dauphin County, Pennsylvania | 3 | 3 |
+| Denver, Colorado | 3 | 3 |
+| Des Moines, Iowa | 3 | 3 |
+| Nashville, Tennessee | 3 | 3 |
+
+## Umbrellas next to a named record (62)
+
+The umbrella was created after the named site, so it was not folded in automatically.
+
+| Umbrella | Named records, same company and state |
+|---|---|
+| `aligned-tx-unnamed` | `aligned-dallas-tx-2025` |
+| `apple-nc-unnamed` | `apple-maiden`, `apple-charlotte-nc-2025`, `apple-raleigh-nc-2025` |
+| `applied-digital-la-unnamed` | `applied-digital-rapides-parish-la-2026` |
+| `applied-digital-nd-unnamed` | `polaris-forge-1` |
+| `aws-ga-unnamed` | `amazon-georgia`, `aws-atlanta-ga-2024` |
+| `aws-in-unnamed` | `project-rainier`, `aws-posey-county-in-2026` |
+| `aws-md-unnamed` | `aws-baltimore-md-2026`, `aws-calvert-county-md-2026`, `aws-frederick-md-2025` |
+| `aws-mo-unnamed` | `aws-montgomery-county-mo-2026`, `aws-st-louis-mo-2026` |
+| `aws-ms-unnamed` | `aws-mississippi` |
+| `aws-nc-unnamed` | `aws-richmond-county` |
+| `aws-oh-unnamed` | `aws-central-ohio` |
+| `aws-or-unnamed` | `aws-boardman` |
+| `aws-pa-unnamed` | `aws-pennsylvania`, `aws-bucks-county-pa-2025`, `aws-indiana-county-pa-2026` |
+| `aws-va-unnamed` | `data-center-alley` |
+| `aws-wa-unnamed` | `aws-seattle-wa-2026`, `aws-walla-walla-county-wa-2026` |
+| `coreweave-nd-unnamed` | `polaris-forge-1` |
+| `coreweave-pa-unnamed` | `coreweave-lancaster` |
+| `crusoe-tx-unnamed` | `stargate-abilene` |
+| `crusoe-wy-unnamed` | `crusoe-cheyenne` |
+| `digital-realty-tx-unnamed` | `digital-realty-dallas-tx-2025` |
+| `google-ar-unnamed` | `google-west-memphis`, `google-little-rock-ar-2026` |
+| `google-ia-unnamed` | `google-council-bluffs` |
+| `google-in-unnamed` | `google-fort-wayne`, `google-indianapolis-in-2025` |
+| `google-mi-unnamed` | `google-detroit-mi-2026`, `google-van-buren-township-mi-2026`, `google-wayne-county-mi-2026` |
+| `google-nc-unnamed` | `google-charlotte-nc-2024`, `google-lenoir-nc-2026` |
+| `google-ne-unnamed` | `google-papillion` |
+| `google-ok-unnamed` | `google-oklahoma` |
+| `google-tx-unnamed` | `google-midlothian`, `google-austin-tx-2026` |
+| `google-va-unnamed` | `data-center-alley`, `google-botetourt-county-va-2026`, `google-roanoke-county-va-2026` |
+| `google-wy-unnamed` | `google-laramie-county-wy-2026` |
+| `meta-al-unnamed` | `meta-huntsville-al-2026` |
+| `meta-in-unnamed` | `meta-new-carlisle-in-2025` |
+| `meta-la-unnamed` | `hyperion` |
+| `meta-mo-unnamed` | `meta-kansas-city-mo-2025` |
+| `meta-nm-unnamed` | `meta-los-lunas` |
+| `meta-oh-unnamed` | `prometheus`, `meta-columbus-oh-2025` |
+| `meta-or-unnamed` | `meta-prineville` |
+| `meta-tn-unnamed` | `meta-memphis-tn-2024` |
+| `meta-tx-unnamed` | `meta-el-paso`, `meta-fort-worth` |
+| `microsoft-ga-unnamed` | `fairwater-atlanta` |
+| `microsoft-ia-unnamed` | `microsoft-west-des-moines` |
+| `microsoft-nc-unnamed` | `microsoft-person-county-nc-2026` |
+| `microsoft-oh-unnamed` | `microsoft-columbus-oh-2024`, `microsoft-new-albany-oh-2024` |
+| `microsoft-tx-unnamed` | `microsoft-san-antonio` |
+| `microsoft-wa-unnamed` | `microsoft-quincy` |
+| `microsoft-wi-unnamed` | `fairwater` |
+| `openai-ga-unnamed` | `openai-atlanta-ga-2026`, `openai-effingham-county-ga-2026` |
+| `openai-mi-unnamed` | `oracle-detroit-mi-2026` |
+| `openai-nm-unnamed` | `stargate-do-a-ana-county` |
+| `openai-oh-unnamed` | `stargate-lordstown` |
+| `openai-tx-unnamed` | `stargate-abilene`, `stargate-milam-county` |
+| `oracle-mi-unnamed` | `stargate-michigan`, `oracle-detroit-mi-2026` |
+| `oracle-tx-unnamed` | `stargate-abilene` |
+| `oracle-wi-unnamed` | `stargate-port-washington-lighthouse` |
+| `qts-ga-unnamed` | `qts-fayetteville` |
+| `qts-ia-unnamed` | `qts-cedar-rapids-ia-2025` |
+| `qts-va-unnamed` | `qts-richmond-va-2026` |
+| `skybox-tx-unnamed` | `skybox-round-rock-tx-2025` |
+| `softbank-oh-unnamed` | `stargate-lordstown` |
+| `vantage-tx-unnamed` | `frontier` |
+| `vantage-va-unnamed` | `vantage-stafford-county-va-2025` |
+| `xai-tn-unnamed` | `colossus`, `colossus-2` |
 
 ## Records to review (5)
 
