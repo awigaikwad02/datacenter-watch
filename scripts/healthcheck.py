@@ -249,16 +249,18 @@ def archive(items, ctx="full"):
         archived.update(ids)
     check("Archive ids unique across all months", "fail" if cross else "pass", f"{len(archived)} ids, {len(cross)} in two months",
           ", ".join(cross[:5]))
-    # Every month from the earliest archived one to the current month has a file.
-    if on_disk:
-        y, mo = map(int, min(on_disk).split("-"))
+    # Every month from the earliest archived one to the current month has a file. Months whose
+    # headlines are all marked filtered (rejected by today's rules) do not count.
+    covered = {m for m in on_disk if any(not i.get("filtered") for i in load(DATA / f"archive/{m}.json").get("items", []))}
+    if covered:
+        y, mo = map(int, min(covered).split("-"))
         expected = []
         while (y, mo) <= (NOW.year, NOW.month):
             expected.append(f"{y:04d}-{mo:02d}")
             y, mo = (y + 1, 1) if mo == 12 else (y, mo + 1)
         gaps = [m for m in expected if m not in on_disk]
         # A gap is a coverage problem, not bad data: it warns in the hourly gate and fails the daily check.
-        check("Archive months contiguous to now", ("warn" if ctx == "update" else "fail") if gaps else "pass", f"{min(on_disk)} to {expected[-1]}, {len(gaps)} missing",
+        check("Archive months contiguous to now", ("warn" if ctx == "update" else "fail") if gaps else "pass", f"{min(covered)} to {expected[-1]}, {len(gaps)} missing",
               ", ".join(gaps[:8]))
     missing = [i["id"] for i in items if i["id"] not in archived]
     ok = listed == on_disk and not dup_months and not missing
