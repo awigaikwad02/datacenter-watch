@@ -145,7 +145,11 @@ class Matcher:
 
     def reindex(self):
         self.by_news, self.by_cluster = {}, {}
+        # Lookup indexes for rules c-e, so matching stays fast with tens of thousands of
+        # headlines. Each list keeps record order, so the first match is the same as a scan.
+        self.order, self.by_place, self.by_state, self.no_company = {}, {}, {}, {}
         for r in self.records.values():
+            self.index(r)
             for n in r["news"]:
                 self.by_news[n["id"]] = r["id"]
                 if n.get("cluster_id"):
@@ -154,6 +158,22 @@ class Matcher:
         aliases = [a for r in self.records.values() for a in r.get("aliases", [])]
         names = sorted(set(CODE_NAMES + curated + aliases), key=len, reverse=True)
         self.code_rx = [(n, re.compile(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])", re.I)) for n in names]
+
+    def index(self, r):
+        self.order.setdefault(r["id"], len(self.order))
+        places = [p for p in (r.get("county"), r.get("city")) if p]
+        for c in r.get("companies", []):
+            for p in places:
+                self.by_place.setdefault((c, p), []).append(r["id"])
+            if r.get("precision") in ("state", "source"):
+                self.by_state.setdefault((c, r.get("state")), []).append(r["id"])
+        if not r.get("companies"):
+            for p in places:
+                self.no_company.setdefault(p, []).append(r["id"])
+
+    def first(self, rids):
+        live = [rid for rid in dict.fromkeys(rids) if rid in self.records and not self.records[rid].get("hidden")]
+        return min(live, key=lambda rid: self.order.get(rid, 1e9)) if live else None
 
     def resolve(self, rid):
         seen = set()
@@ -191,21 +211,22 @@ class Matcher:
             if same:
                 same.sort(key=lambda r: (not r.get("curated"), -len(r["news"])))
                 return same[0]["id"], "code name " + code
-        # c. same company and same county or city
+        # c. same company and same county or city (no time limit)
+        places = [p for p in (inf["county"], inf["city"]) if p]
         if inf["companies"]:
-            for r in self.live():
-                if inf["companies"] & set(r.get("companies", [])) and (
-                        (inf["county"] and r.get("county") == inf["county"]) or (inf["city"] and r.get("city") == inf["city"])):
-                    return r["id"], "company + place"
-            # d. same company and state, existing record known only to the state
-            for r in self.live():
-                if r.get("precision") in ("state", "source") and inf["companies"] & set(r.get("companies", [])) \
-                        and r.get("state") == inf["state"]:
-                    return r["id"], "company + state"
+            rid = self.first([x for c in inf["companies"] for p in places for x in self.by_place.get((c, p), [])])
+            if rid:
+                return rid, "company + place"
+            # d. same company and state, existing record known only to the state (no time limit)
+            rid = self.first([x for c in inf["companies"] for x in self.by_state.get((c, inf["state"]), [])
+                              if self.records[x].get("precision") in ("state", "source")])
+            if rid:
+                return rid, "company + state"
         # e. no company on either side, same place and similar title within 60 days
-        elif inf["county"] or inf["city"]:
-            for r in self.live():
-                if r.get("companies") or not ((inf["county"] and r.get("county") == inf["county"]) or (inf["city"] and r.get("city") == inf["city"])):
+        elif places:
+            for rid in sorted(dict.fromkeys(x for p in places for x in self.no_company.get(p, [])), key=lambda x: self.order.get(x, 1e9)):
+                r = self.records[rid]
+                if r.get("hidden") or r.get("companies"):
                     continue
                 for n in r["news"]:
                     t = parse(n["published"])
@@ -238,6 +259,7 @@ class Matcher:
             "curated": False, "verified": False, "notes": "", "news": [], "first_seen": it["published"],
         }
         self.records[rid] = r
+        self.index(r)
         # An umbrella for the same company and state now has a named site: fold it in.
         for c in r["companies"]:
             u = self.umbrella(c, inf["state"])
@@ -261,6 +283,7 @@ class Matcher:
             "curated": False, "verified": False, "notes": "", "umbrella": True, "umbrella_company": company,
             "news": [], "first_seen": None,
         }
+        self.index(self.records[rid])
         return rid
 
     def merge(self, src, dst, reason="merged"):
@@ -602,7 +625,7 @@ def page_shell(title, desc, canonical, body):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="/assets/style.css?v=rr17">
+  <link rel="stylesheet" href="/assets/style.css?v=rr18">
 </head>
 <body class="static-page">
   <a class="skip" href="#main">Skip to content</a>
