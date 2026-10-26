@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-26T02:09:13+00:00",
+ "updated": "2026-10-26T02:09:35+00:00",
  "count": 504,
  "visible": 504,
  "records": [
@@ -903,6 +903,15 @@
      "published": "2026-06-23T07:00:00+00:00",
      "stage_signal": "Operational",
      "cluster_id": "f22e6bd54028681c"
+    },
+    {
+     "id": "32896ad814bcaf8e",
+     "title": "Construction complete for first data center facility in Mount Pleasant",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY09JcGp1ZnpRMy1EQ0htTzNCU1pteElfQWtYQm4xMHI3cnVNVk4yZVhoMFozeERxMjNELUdCSnJPTVFTQjZ3emZFeDNZVm5FZHFKQkpZMWhGMm5Ga1hSZlhCU0QzZUh2d1JMcVpwWkQwYm45X0RKeFpOQ2ZycWZkVkNQRldpTXAtcm4xcGdOT1hIc0lFNmVBb21ub0ROOFZ5RVM4ak9OTmxsVE1ydEpwN3E3ZHE?oc=5",
+     "source": "Spectrum News",
+     "published": "2026-06-23T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "32896ad814bcaf8e"
     },
     {
      "id": "70d51b8d86ad78cf",
@@ -3939,6 +3948,15 @@
    "umbrella_company": "Aligned",
    "news": [
     {
+     "id": "7098e49774628cd1",
+     "title": "Aligned breaks ground on 540MW data center campus in Texas",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR1hnTy1IRWJpanRkSHFJTnBBbnVTMVlfcGhrOWN0OEsyZHJsSTFleFlyY2M0S0Y0eGJBX3hFNF9Td3RTeWNYbmFWMjNJakhqcUlJcVZVR3pUN1dZbFNZMzVfcVhDRTQ5VUR5c2YxT3lNbDNmSGlLOTBOb19ldnF1dEhhZkJUQ1JDc0k2TmlvVDk4UHp4YjZkV1FOWWpFV09zWEZnNQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-04-10T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "5f986687b44fd50d"
+    },
+    {
      "id": "d6b385752746dbad",
      "title": "Project Caprock: Aligned Data Centers breaks ground on 540 MW DC campus in Texas",
      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdFdkS2Qya2FubVJuc0FzdTB6UnU0d0otc1h4U2swT3RBWVRsUzFPc2R0S3l5R1FvQURFMHpxZGdKNmxNd19MYUlRMEtMcFNlb0ZmM3J2R1ZrMGVRd3M5SHRmdHhldExYd25TbVpmZWM5OG5GQUF5azJ6OVh3Zm02d2hxN2owNi10d2g1dEI0NEFBaFV4cFAxdDkyUTc?oc=5",
@@ -3957,21 +3975,21 @@
      "cluster_id": "e546bac7b6fafed7"
     }
    ],
-   "first_seen": "2026-04-13T07:00:00+00:00",
+   "first_seen": "2026-04-10T07:00:00+00:00",
    "utilities": [],
    "status": "Under construction",
    "status_history": [
     {
-     "date": "2026-04-13T07:00:00+00:00",
+     "date": "2026-04-10T07:00:00+00:00",
      "status": "Under construction",
-     "headline_id": "d6b385752746dbad"
+     "headline_id": "7098e49774628cd1"
     }
    ],
    "events": [],
    "capacity_mw": 540,
    "investment_usd_b": null,
    "last_news": "2026-05-11T07:00:00+00:00",
-   "sources_count": 2,
+   "sources_count": 3,
    "confidence": "low",
    "hidden": false
   },
@@ -7183,6 +7201,15 @@
      "cluster_id": "c92dc7dd52f3fc6d"
     },
     {
+     "id": "f8968aff961003cf",
+     "title": "Penzance Breaks Ground on 45-Megawatt Next-Generation Data Center in Northern Virginia",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWmNIVVlwRXp0bjFpenhhQkhkX2o1RGlaeGFXMEZacURfVzFSUDRlSHBuNWVNc3FBRFlKTFloTU5qNEZ6QWhSVHFQNXhXSDdwVlZ6eDQySnpfNFB0eVNmekFyc3dFRzU4TDZIdkZxRF9USmxYV2pVRDR4R2ZwaDZ0VlBYLVRMc0k1dEh1dXVBbHVZQU8yX2tPU0M3YzYzSDRvU2doRUhSa1dXSW8zeUk2NUVXQlFEQ3RRVDZxTWp4cWo4eE9qX3V2Q2F2bW9QZ3VzYmJIenc3UzdoWDg?oc=5",
+     "source": "Business Wire",
+     "published": "2025-11-21T08:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "f8968aff961003cf"
+    },
+    {
      "id": "6016d9d8c35612dc",
      "title": "Penzance breaks ground on new AWS data center in Chantilly",
      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBKNjZQazctRzBxbVpoYTV6UHIzdWZUeTFXMXoxNVZubUNwYXlQNnpkS19CMS1Fd01Xc2xMV0NtS196VTFQN0FMbFRRakRPN1R5UG1IWXJiZWp5NzBPamVRdDBuVXY0dG1kcE9JVENmeUJyQzQ2TXZlaQ?oc=5",
@@ -7414,9 +7441,9 @@
      "headline_id": "6a0cbe4ed11add75"
     },
     {
-     "date": "2025-11-24T08:00:00+00:00",
+     "date": "2025-11-21T08:00:00+00:00",
      "status": "Under construction",
-     "headline_id": "6016d9d8c35612dc"
+     "headline_id": "f8968aff961003cf"
     },
     {
      "date": "2026-08-31T07:00:00+00:00",
@@ -7431,9 +7458,9 @@
      "headline_id": "6a0cbe4ed11add75"
     },
     {
-     "date": "2025-11-24T08:00:00+00:00",
+     "date": "2025-11-21T08:00:00+00:00",
      "type": "Revived",
-     "headline_id": "6016d9d8c35612dc"
+     "headline_id": "f8968aff961003cf"
     },
     {
      "date": "2026-08-31T07:00:00+00:00",
@@ -7454,7 +7481,7 @@
    "capacity_mw": null,
    "investment_usd_b": 0.427,
    "last_news": "2026-10-24T12:28:29+00:00",
-   "sources_count": 21,
+   "sources_count": 22,
    "confidence": "low",
    "hidden": false
   },
@@ -11978,6 +12005,15 @@
      "published": "2025-11-12T08:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "4d8672675c284207"
+    },
+    {
+     "id": "900c1ec0db5248f6",
+     "title": "Petersburg residents raise concerns over proposed 175-acre data center",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsWEhoQ25MZ1pwTmpOc1JBbnBpazVCUEp6YTNWb0IzZ3dVZExXcVZXR0ZDdzBneVBNTzhlbnIwWjZCcmoyVmNuYTBnbHlQX0N4TUQ3TW5XbHktWmpTX3JtQTBLbUoyZnFoWGVib09DeC0tbE02YmVUZTZINA?oc=5",
+     "source": "WTVR.com",
+     "published": "2026-01-13T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "900c1ec0db5248f6"
     },
     {
      "id": "5dde754e380b6391",
@@ -18755,6 +18791,15 @@
    "notes": "",
    "news": [
     {
+     "id": "3637ded6ab8b6543",
+     "title": "Cedar Rapids City Council approves data center agreement, calling it an investment in the future",
+     "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPdzN5bDFCNHpxRFlxM3VIRFpXX0sxTzJla2tIZHFVMFF1VG9kcl9TN0YzT242Si1CNHlyMWdTdXl4RWJHdXlkeUYtek91ZEY2V29ZTHplZkxpUlpINnpEOUlneWRKdHF0MW96ZzhYOXh2SXYxQnliYkZOQjNtb1NFVjJIdzMwNTJ6RFV6V2tIRVBiS3hxZjJublBzanhOVjFrZ09QdFh1WXRRNm5rdzRJTTdIUExxWTV6bm5tSWdVNU41NVhScUxDQVdCZy1OY1pPZF9RRGxKb0NIQUxFXzhLUnRlZXhUblhvVDdUYzhLVkpYNWpsOFdwWUhEUlNJWjd5aWVZWFludndRMHZwcDB4QQ?oc=5",
+     "source": "The Gazette",
+     "published": "2025-01-29T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3637ded6ab8b6543"
+    },
+    {
      "id": "865c2629a34af0bd",
      "title": "Cedar Rapids council approves development agreement for QTS data center project",
      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZmFwOU9MSDljMThLUXczSy1jcW52Nzc2cTBjY3lxV3U0R2k5dHZHQjhGeFY3bkhBR0VvUDZ2MGZjaEU5Tlcta0RtQlUwSHJVczdTeFJtdE1EODlHcE9acEs3dDd2dUxTQVhJV2RHWnQtZzEtOHh5V3RLbW0xYVIzSDJoSXdHUW1pZFlIek1HOWFGTUJMVTZyeG5KcDh0RjZjeHp2ZnlMMVpJSlFlVmc?oc=5",
@@ -18836,14 +18881,14 @@
      "cluster_id": "53bb206ecb5cbf94"
     }
    ],
-   "first_seen": "2025-01-30T08:00:00+00:00",
+   "first_seen": "2025-01-29T08:00:00+00:00",
    "utilities": [],
    "status": "Under construction",
    "status_history": [
     {
-     "date": "2025-01-30T08:00:00+00:00",
+     "date": "2025-01-29T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "865c2629a34af0bd"
+     "headline_id": "3637ded6ab8b6543"
     },
     {
      "date": "2025-07-29T07:00:00+00:00",
@@ -18857,6 +18902,11 @@
     }
    ],
    "events": [
+    {
+     "date": "2025-01-29T08:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "3637ded6ab8b6543"
+    },
     {
      "date": "2025-01-30T08:00:00+00:00",
      "type": "Approval",
@@ -18881,7 +18931,7 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-06-01T07:00:00+00:00",
-   "sources_count": 5,
+   "sources_count": 6,
    "confidence": "high",
    "hidden": false
   },
@@ -20167,6 +20217,15 @@
    "notes": "",
    "news": [
     {
+     "id": "2d2ab50e7785d7e7",
+     "title": "1.7 million sq ft data center proposed outside Atlanta, Georgia",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRDUxYmVlaGxzNmFxd2twa2tKSHdjd1BXYXpRbjFRTmFLbE9XQ3BQb20tN0o3cmV6bEpKTUNETmtwV1RwYzNvY3dSRjlfdnpla1FBWlJSV3JqcHl4a0lrRUZIZ3dwUTlTd1hySkNoU2JfVUExSkpsQmc0YU1QUFJaYThsMFlYOVBmbE5jOE5YWU1hR295a01xbEhwS3BoeVdhVnJXOWFaYXA?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2024-11-20T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "2d2ab50e7785d7e7"
+    },
+    {
      "id": "436910e63d38094f",
      "title": "$17bn 'Project Sail' data center campus proposed in Atlanta, Georgia",
      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOHJ3TzNRQVdzT2ZKeEh4eUtHeHlmcWppbWRMMjZlZ1dsNUFhaU9NVktqZ2kzdGt0c3ZYNDc4bjgycC14cm45NHFnWW1EdzdyalVXcGNNZS03VVc0MVJJS3diNmQxZlY1RjN5Skk4ZGU5ZUFLVTE1a1pOSzBVUGdkak5rdnFoV0d2c2lRUE1vSUhadHQ1Z1E?oc=5",
@@ -20230,14 +20289,14 @@
      "cluster_id": "5d34866461485a56"
     }
    ],
-   "first_seen": "2025-01-02T08:00:00+00:00",
+   "first_seen": "2024-11-20T08:00:00+00:00",
    "utilities": [],
    "status": "Announced",
    "status_history": [
     {
-     "date": "2025-01-02T08:00:00+00:00",
+     "date": "2024-11-20T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "436910e63d38094f"
+     "headline_id": "2d2ab50e7785d7e7"
     }
    ],
    "events": [],
@@ -21783,6 +21842,51 @@
    "notes": "",
    "news": [
     {
+     "id": "9e732d917960a5e8",
+     "title": "Chandler City Council rejects controversial AI data center",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORTNvemxVXzNNZ3R3WWhqci1xRUxsNHkzS0RGU1Z3WjVod29GNGE1LURSZzlFNWR4Ql9meXVoaHhRQlRjRjFvcjYzWm5kTnNyTG12Mm1xcGxENWF2U3dhZm1CQ3ZPVjQ4OHpIUFNEdjZIQ0NWV3Zld2FyLXRnLXdSYTFMOFFRLXdXMncxdXdpWFE?oc=5",
+     "source": "The Business Journals",
+     "published": "2025-12-10T08:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "9e732d917960a5e8"
+    },
+    {
+     "id": "02ea71e417a322f6",
+     "title": "Chandler rejects proposed data center",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNTZ6emZpMUZhTFItY19fM3lmNTlXMTVmNUlId2lmekFBZXBUVW5oZm94R0dub2JHaUJzN0ZKcDZwdDJIajFHS3pITXJkSnRMZUI5bDd0djdUQ19vT3J1VndVOWNuSkdRWHJEcTJaZ2EtNDBPSGJjRVhZSlZnYnJyZTk5QjZpNHhzeVFXbE9INjBqbUdCb3ZZbm5qR18xc1NldGE0ddIBqgFBVV95cUxQMkRkQVlqTGROVEtveWtrajFpbFpZVDQzTVBBc0dmOVF3OFcxcVFIOWFjMEZoS0g2RXotTnVhSnUwRlF2bDZSaDJQQ05CZWJsS3VfVGx6OWdNRE50Zk5PN2I5Ukt1RlpWWW9Cc1RxbFFzVFRONDZKcEUtLVF1U1pQWVdLZENLbXU5TGxHd0ZpUEdfOS1PQXlJeHVSLWx5LWNsUC1HcTRGVVRtZw?oc=5",
+     "source": "FOX 10 Phoenix",
+     "published": "2025-12-11T08:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "9e732d917960a5e8"
+    },
+    {
+     "id": "2a0cfa9f24419eb1",
+     "title": "Chandler city council unanimously rejects proposed new data center",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeWMxSWtLaElESzZLbF9Ca0NSMG94RnJGX3Y1blFUZmpnRHpDVWl5Z0dzOW5NODk2ZFNaeHNWSkNvRjFhbFJzb2hLdk9BMTM2ZS1DRWJoYmxqMlQ3bWlKWERlT0hIUWtBbE9vdGhLNmpYajdmM3d2OExCN0NzSnJwa3BYVUNGellNaFJkUUdQbDVxa0taRWhTeW9sZXo4ZzM3anNqS09PeXM1TFh2ZmxPam5B?oc=5",
+     "source": "ABC15 Arizona",
+     "published": "2025-12-11T08:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "9e732d917960a5e8"
+    },
+    {
+     "id": "6d8b1d0556430baa",
+     "title": "Chandler unanimously votes against proposed AI data center",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdWVCWEl5TzhJeWE1QWE0ZUc1a2psbW4xaTY5TkNmSGVuUWZocWZabkNzZ21DQ2IwZ0dsV29sMmF4eFBhLVZKUzV4M2xlNG5yWHZjNk80d1ZfcGZkQ053bWZ0bmx5WWJ3V1lYT09rSVAwZnNuY244dmlORUhTZFJoQjE0TEUzaFhoN1pUMDVORXEyVVFMR3RvMHVaRdIBrwFBVV95cUxQM1lVbDMyRmpCU0QyZFNfVWZvUnU2V2RkaTlJT0NjNTBrZC1TbmZ1SkV3QWtSNnlTQ0JCS1JjTDFnMG43TUtfVlJGVFB2R0E2SW9ldkQyZmlnMlFsR2QybW5aeTBfb0ZPVERvdkgxRFp5TUl6bi1LdTY4NHNYLVVYN3h4ZlZMaDV1eklCN0F5RmJhOXR2X0duRGswcnlJUXc1SDhWQUVYLW42S3dvVGVZ?oc=5",
+     "source": "AZ Family",
+     "published": "2025-12-11T08:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "9e732d917960a5e8"
+    },
+    {
+     "id": "7233b72a86608611",
+     "title": "Chandler City Council shoots down proposed data center",
+     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPczR0N0d0bG5QeUgzZldsZDUyQlM4MmZVRXZwbHJWM01UMUljSHBqaDFpeUg3OHdvQTdiRGJvMmswcldsMTVWSWZYS0tYaWNHb0hJbUtkYlFtc1ZDZURLZEJGdndVaGJYWnJoZGJ3VjNYc3dkbFJxeHd0S0p0MjlNSkNXdzlJanJhNmVZaTRVd05JRFpLand6S3BwcDJqcUMyMmpEVC1DbE5zdXN5amFLMDBUcGJsRnZWS1MxOENBdm9fRVVFYkpWcHcxTEp2SzRQWTFxSndjVG5QczdXTmE4VjFKcWU5VVpTNFE?oc=5",
+     "source": "12News",
+     "published": "2025-12-11T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "9e732d917960a5e8"
+    },
+    {
      "id": "20104daae560a692",
      "title": "Chandler City Council unanimously rejects proposed $2 billion AI data center, but questions remain",
      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQVG5xOG13aUlzUHpOMmstTm5YOWRIemFMaFZ5dlg4ZEloOEZfbnZ6ZEV3MlpCWjlGUWRWRjRqMEt5VkZGaUlSZDlIeS10UXY2ZWJ0QWlOVUhrdUxDaXJlVW8yVVJVWktERUtrXzRiN3BYYmkwV0lpdlpkU1VpTXVfQnRmSzZEc2p4clBoeDhjSFBVQjk0R2Y1Q21ma09QanRpSmptYVd4Zkc1Z2c1ZEU2VEh3VHp6NUwxSWptYmV1OHRMM196NEd5angxVDJlRm5iRVhnaDdtT2ExNU5QOHkzeFptalJpdTNHQXhodFNJN3NXc0ROVGxLRENEeG5JcXlwbkJMOGhEQ0QyaEVJNWRRNjBjYWZYNFNHOGsyQ013?oc=5",
@@ -21792,27 +21896,27 @@
      "cluster_id": "9e732d917960a5e8"
     }
    ],
-   "first_seen": "2025-12-12T08:00:00+00:00",
+   "first_seen": "2025-12-10T08:00:00+00:00",
    "utilities": [],
    "status": "Cancelled / Blocked",
    "status_history": [
     {
-     "date": "2025-12-12T08:00:00+00:00",
+     "date": "2025-12-10T08:00:00+00:00",
      "status": "Cancelled / Blocked",
-     "headline_id": "20104daae560a692"
+     "headline_id": "9e732d917960a5e8"
     }
    ],
    "events": [
     {
-     "date": "2025-12-12T08:00:00+00:00",
+     "date": "2025-12-10T08:00:00+00:00",
      "type": "Cancelled",
-     "headline_id": "20104daae560a692"
+     "headline_id": "9e732d917960a5e8"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 2.0,
    "last_news": "2025-12-12T08:00:00+00:00",
-   "sources_count": 1,
+   "sources_count": 5,
    "confidence": "medium",
    "hidden": false
   },
@@ -28678,6 +28782,15 @@
    "notes": "",
    "news": [
     {
+     "id": "1fa66647d00c628c",
+     "title": "Port Washington data center designs approved",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBLbWIzNU9iWGVGSFFzajZDYm1jalZCTWR2Wno3YVc3bFcwY2pTbWpmZzdhbEJXNlljaUVLQWx1TW8taThlYTFHVVhhNEx3dE5SMVhEeGF2N2pZcHEzVVQzR1BFX25tbDlrbGdmS2xtdHZ4a1VnNlM1RXRlNmVHZ9IBgwFBVV95cUxNNEFhaDNCbzJPYzNvRHcwUld3aHdSLTRxdm15RU1RMzNvTnlla0tpU21uOE9HMDFzTkFGclhBUmc4d2YyT3hBUDFtTnlzS3RGNmt4QnpGQWZmd21jT05DcS1CVWExYU43Sm1WMXgzRVFyWkpObmJZcHJsalFtUkJZWmIxaw?oc=5",
+     "source": "FOX6 News Milwaukee",
+     "published": "2025-08-29T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1fa66647d00c628c"
+    },
+    {
      "id": "b9ce58d1360d5981",
      "title": "Designs for $8B data center campus approved in Port Washington",
      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYWJGUWxoSXVNb091dWlJbGhiWVJvSDBpeDRodzhlemd2R3o1X3ZCOExGenhxRjZoazdjbnVDb2o5eFhHZEJzenRTTWJpbGRFb0RQbFp0SkE3aHczeUNpRk8zcDNGaHhadU9LNl9seGdfbkdYU0xtdG5YUHFNd1NTR2ZieGxvRUxFMXRDZWJQalBkVHFEc1B4UWp4TmpqcjZFV2F0bnhnREM?oc=5",
@@ -28694,20 +28807,20 @@
     {
      "date": "2025-08-29T07:00:00+00:00",
      "status": "Announced",
-     "headline_id": "b9ce58d1360d5981"
+     "headline_id": "1fa66647d00c628c"
     }
    ],
    "events": [
     {
      "date": "2025-08-29T07:00:00+00:00",
      "type": "Approval",
-     "headline_id": "b9ce58d1360d5981"
+     "headline_id": "1fa66647d00c628c"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 8.0,
    "last_news": "2025-08-29T07:00:00+00:00",
-   "sources_count": 1,
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false
   },
@@ -28781,6 +28894,15 @@
    "notes": "",
    "news": [
     {
+     "id": "dc402c0a3eeb6771",
+     "title": "Neighbors split as Port Washington officially approves TID for data center campus infrastructure",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPQ2k5OF9lZ294UmRsamllZjBiLTk1VW11a3RKRXJGQjh2bjduLWVXVkdCMXB1dUZnSVZrTWxFODNvaVIzejdBVmVNaXE0WTNoUzB4dy1xVElkb3BHX2Z6TFN3RklWb29xX21JMmt1dTFfNGVIajNVcFlLU1dFeGh3enZfcmdJcU5DZFVWUGxQbGJMRHppLXkyZ196REN4ekd0cC1SaGxUWG10eVhiLVZwZThUR2N0STdGYWpYNGgtMm5jNHRKbGRjYjJRVGlLdk9wTFY4?oc=5",
+     "source": "TMJ4 News",
+     "published": "2025-11-04T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "dc402c0a3eeb6771"
+    },
+    {
      "id": "91d3000cc6491d70",
      "title": "Port Washington council approves TID for $15B data center campus as residents continue to speak out",
      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VMkhDT2Q5SjNXQ2p1YTR1Q1VQQUh2VUQ5c1R2Z1JXYnE2UHJhbVlhanQ1aHVOU1JjQkltcEVLVFc2aWZfdzhQVW93elVRcHAwa2pQQW5IaV91aGwyMDJDQkdvNEo1MHFKS3k4Wkd3?oc=5",
@@ -28790,17 +28912,22 @@
      "cluster_id": "dc402c0a3eeb6771"
     }
    ],
-   "first_seen": "2025-11-05T08:00:00+00:00",
+   "first_seen": "2025-11-04T08:00:00+00:00",
    "utilities": [],
    "status": "Announced",
    "status_history": [
     {
-     "date": "2025-11-05T08:00:00+00:00",
+     "date": "2025-11-04T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "91d3000cc6491d70"
+     "headline_id": "dc402c0a3eeb6771"
     }
    ],
    "events": [
+    {
+     "date": "2025-11-04T08:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "dc402c0a3eeb6771"
+    },
     {
      "date": "2025-11-05T08:00:00+00:00",
      "type": "Approval",
@@ -28810,7 +28937,7 @@
    "capacity_mw": null,
    "investment_usd_b": 15.0,
    "last_news": "2025-11-05T08:00:00+00:00",
-   "sources_count": 1,
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false
   },
@@ -31708,6 +31835,15 @@
      "cluster_id": "83f4396c88d47642"
     },
     {
+     "id": "6596fc3caec8c169",
+     "title": "SpaceXAI announces removal of temporary turbines from Southaven data center",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTnRIU0lDTS0xTzVnN3E4bjJnbjBLQlZqV01DNTBydExvdm9JUnNOVjdQa0NBUTB1aHFac2hNNmd0Z2lNdkdUc3prVFlkak1CZXpMdFRucjRRZHhTb2czVmE4X0hrY290LXNHWExKNDEwQW5pRXF5NmVieGNkRHdnaUg1T3N3dDc0b2JmanpXSklzbVUzcE5uOG01WkQ3VkdXNkFxUTNBVEx1UmfSAb8BQVVfeXFMTUhacS1Cc2lHVmFVMy1SV0drNzhGSHdFdEVOM1c1Unk4dVdZZ0hHTy1yclFieVBUSDVsU2ZzakREZEZfWXJvUVFaYXZvSTBvSU00SVNVTG1jcWJIZ3FocXNlNkRFai1Gc2F6bFZxVjRsNll0TFdiUzNFRmEyM2kydThrSFBBdmxTREJndVFncTB3R2pFRGhQMFdpT3pwU2I3WEFsNHpXVkNCU3Fjd0tWY3RJeEVsbkVBVHpXYWp2V1E?oc=5",
+     "source": "Action News 5",
+     "published": "2026-07-30T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6596fc3caec8c169"
+    },
+    {
      "id": "aa76fbebacee4c8b",
      "title": "xAI announces fourth data center; turbines to be removed from Southaven site",
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMGJXOXoxNzRBdFJlRXZqTGc0M2RtdXhJQ2pZcmVqN1lRU3g0cG5JMWJfRGdtc21rSnVQQThoSkliM1p6OXZfOEJETVVieUFEcUVaSl9KcGFpbW82eS1RbFNDLW81REp5eXE3LTZ1R3pVdUpheDVjLVhoTUNRb0N1c2Z3Y0l0M3ZrVjljM1Vta0xTamYtdWxidzd2RTktQXBxSEt3c2pCUjNjdw?oc=5",
@@ -31742,7 +31878,7 @@
    "capacity_mw": null,
    "investment_usd_b": 20.0,
    "last_news": "2026-07-31T07:00:00+00:00",
-   "sources_count": 3,
+   "sources_count": 4,
    "confidence": "low",
    "hidden": false
   },

@@ -1,6 +1,6 @@
 # News backfill report
 
-Generated 2026-10-26T02:09:13+00:00. Range 2024-10-01 to 2026-10-14 in 14-day windows (complete).
+Generated 2026-10-26T02:09:35+00:00. Range 2024-10-01 to 2026-10-14 in 14-day windows (complete).
 
 - Requests: 957 (0 failed)
 - Headlines fetched: 36950; passed the filters: 29436; new to the archive: 17116
