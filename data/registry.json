@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-26T02:09:35+00:00",
+ "updated": "2026-10-26T06:25:04+00:00",
  "count": 504,
  "visible": 504,
  "records": [
@@ -5058,6 +5058,33 @@
      "cluster_id": "5fc0a0c984505c8a"
     },
     {
+     "id": "05ba6ebfb6358c4f",
+     "title": "Calvert County Passes Six-Month Moratorium On Data Centers",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPR3YtTW1qN3pOUGxGM3Q5UUhfT1ZwQmpEUEUyNG02aWhKSnBUWE9PWFctdjdXdW9FNm1YaG84QnF6WTFwSkthTEhSaDluSEwwX1JMWmREU1dxTXRfdzRMUnp4NjFDSVNjeEh5aU91WURJOGQ5MjJacWxOMkNqMXRJOVNISzBESmRB?oc=5",
+     "source": "The BayNet",
+     "published": "2026-08-18T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "e309e1409eec30e7"
+    },
+    {
+     "id": "73fa43d897087fc5",
+     "title": "Calvert County board passes 6-month moratorium on new data centers",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNU3dGeU1FMUpKQUpyMm1RQ0p2VXdpT2MydWpBYTdSNHhScDZOZXEyYzlVbF8zZzJudDNWVHp3UWY5OGtuNzZPRUtsUVF6MmdHWmlxOU5iNkJTSS16X0EwR0NfU2lsY0drWDVCOTJxQ1pGcnBGMVBCcFJXTWpoQnVsUEc2di1wVFU2Q1dSc2V6U1gwUXFxRTRBTkJDVzN3ZkhLWGVIYlpHRHZ0OWpuMk9IZXJsaWtYQ3NCR1k5TzhPOHA?oc=5",
+     "source": "The Baltimore Banner",
+     "published": "2026-08-18T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "e309e1409eec30e7"
+    },
+    {
+     "id": "badec40d6245cee8",
+     "title": "Calvert County commissioners pass 6-month data center moratorium",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdUktcGFSTlV4X1NXVlZjQk9aU3k4b2xlbjFlMVFGeEpFWFZfdzlKb2ZWMmdGaFdUeGNTMzc5MUFKVWJwdE5ib3NaaVlZM2k2TkYzRGEtbVVFOVNkZDBpUnRmT081U3BtdzNLNFpWUFhtTjFlSXZKVU9ESFJma1djeDhSVEhmSkRaSm5DaFRQaGZUWkpPenVqQ2pabzZrUGRORHlKYm9DY9IBrAFBVV95cUxNSTlEeWk3WU0wanVzUWdUdGJCNHNNX2hzd0M2Nlg4OTdEUm9NbHRRYUhVdWhIcHhNaW94ZlJHOTIzaDFsYnFVMVFrTlR1VmRDNHdRSGxkTDZVaTBZY2llTmhlV1NGZTZRWkk4SWJBenBVa3JuaVNUVzRCcldUZFZKNmFoZkJLNnJ4eXVGTG1TVi1BMnk1SzZOMTFCZENDY0QwR1IwSHhaOV9FNFR4?oc=5",
+     "source": "FOX 5 DC",
+     "published": "2026-08-18T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "e309e1409eec30e7"
+    },
+    {
      "id": "e309e1409eec30e7",
      "title": "Calvert County approves 6-month data center moratorium after Amazon pullout",
      "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQeTdXSWU0cWNyOXZGaHdyR2dfdnRLVWFhbWxtWkdpS1l6RWVZYjU1MjJwOTRpS3BWazEtYWNBZWtYSWZ1ZUppQmE4M3BBc0JxdDZPUGR5T2gzUE1hdlZITk5ORFpWMlFhUlFtamV6eVNRSnlhdWJzT0tZamdHVDRGa1VXTEZicnJNbVFVeUV1NE5QdTV3dkJsZC16VUlFbTFtUnVoWUZheEhGcFJQVnk2VHN5VGhDZnVoaU1EeUlBRUNteEhGU1RjUXlHaHIxQ3h6MTZsWVRZcGRab1dVSjNRTjFyYmdxdzJ5VnJXS3JmRDBYRG9rWlZoSXdkcXFyQWpYcWJmdjA0X25CWFBqdnJBQm9iMjk4bk5pb29HMzcwOFNwNHFycXBrdA?oc=5",
@@ -5079,20 +5106,20 @@
     {
      "date": "2026-08-18T07:00:00+00:00",
      "status": "Cancelled / Blocked",
-     "headline_id": "e309e1409eec30e7"
+     "headline_id": "05ba6ebfb6358c4f"
     }
    ],
    "events": [
     {
      "date": "2026-08-18T07:00:00+00:00",
      "type": "Cancelled",
-     "headline_id": "e309e1409eec30e7"
+     "headline_id": "05ba6ebfb6358c4f"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-08-18T07:00:00+00:00",
-   "sources_count": 3,
+   "sources_count": 6,
    "confidence": "high",
    "hidden": false
   },
@@ -13051,6 +13078,15 @@
      "published": "2026-09-21T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1ae96d606da7afc0"
+    },
+    {
+     "id": "5a5e30a0fc8862fe",
+     "title": "New data center proposed on federal land south of Boise",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUmsxLWJrSDlYcG9VaWN5YjJyNHlkNzZ2THFxMml0ZndJcjJxbEQzUmdRY3VwQTVQR3Bnb3RXeEo4TnFZVjdSc0MwcEs1TEV5bVV3OU51aUUzbTdXbmhjSTZwc1pOQ2VKRXVyUVNNcHpIZVFBZ2xxZXZiaWZuUE5lX0JLU2x5aGlZM0ttbmZGT1FlQQ?oc=5",
+     "source": "KBOI",
+     "published": "2026-09-21T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1a210f02136e42cc"
     }
    ],
    "first_seen": "2024-10-25T07:00:00+00:00",
@@ -13067,7 +13103,7 @@
    "capacity_mw": null,
    "investment_usd_b": 1.2,
    "last_news": "2026-09-21T07:00:00+00:00",
-   "sources_count": 5,
+   "sources_count": 6,
    "confidence": "low",
    "hidden": false
   },
@@ -31480,6 +31516,15 @@
      "published": "2026-07-29T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "70638cf9b2e2e4ef"
+    },
+    {
+     "id": "86e9dc22be5d5cbd",
+     "title": "Vantage data center plan draws questions ahead of Oregon vote",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOODdpOG5LWmFxZFZKQ1N4Mm1lY3o5UGxVR1JjN1RTMkc5ZDBvNU1QSlJveklQZXN1QWszSHhBQkwyLVF0T3pUQTBnYmM5QnlrWVROeEtNaVJVVExSMjY3U05lVXgwbWNlYlJxUE1GOW5LZl91NHZ0V2NkcjJTWTU4bWVWdkdaRktQUWoydjBsRjJjLUtoS0dN0gGrAUFVX3lxTFB0R2ZIU3k4UENNMlVqcUJkTUhMTFBqYWhhOXdwdGNzNHZpd0htV2ZQdWRsQThNOXJLNkxmbzA2MS1od0tPVWh5QzNIbmw5dDJCcGo0dmlwZWZ6Uks1WllycUdnYnBTc2RrQy1VOUJxZlFFTUw1MHFyT3BhR19HMkhYRUgxU3FrM25lR1h3SGpBWXpXeVA4OXNQd05yR2xOR2xReXVnejdWa054Yw?oc=5",
+     "source": "WTVG",
+     "published": "2026-10-26T00:50:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "86e9dc22be5d5cbd"
     }
    ],
    "first_seen": "2026-07-29T07:00:00+00:00",
@@ -31495,8 +31540,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-07-29T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-10-26T00:50:00+00:00",
+   "sources_count": 2,
    "confidence": "low",
    "hidden": false
   },
