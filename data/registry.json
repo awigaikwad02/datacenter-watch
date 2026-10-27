@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-27T02:07:50+00:00",
+ "updated": "2026-10-27T07:52:36+00:00",
  "count": 504,
  "visible": 504,
  "records": [
@@ -11497,6 +11497,24 @@
      "published": "2026-08-17T07:00:00+00:00",
      "stage_signal": "Under construction",
      "cluster_id": "a059fa9279f1dbe3"
+    },
+    {
+     "id": "fb159a48813cdeb0",
+     "title": "Google data center expansion prompts debate in central Ohio",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPS0NPZFQ0Qk5uZ2hiem5qRVpKWmV3NFR2Ynl5amt3Tk5qa19GUi1ybzEyeFFfeHMzZFZ0MkstaVVLeHRjZTlUUjBDekk1VERmT2VjTGk5NV9PWVR1cW1HMWZDTjFzY1hLZHFldm1hOV9FdFNKdUl6ZlNtTkFWbjFaelZjVnNIU2x0dnd3NEF1QXo0UmZaZ29HWmttRDZBQQ?oc=5",
+     "source": "NBC4 WCMH-TV",
+     "published": "2026-10-26T21:21:45+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "fb159a48813cdeb0"
+    },
+    {
+     "id": "7e6b72ec7d06740b",
+     "title": "Central Ohio data center expansion prompts debate in Lancaster",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWUZZSUVqelVvZzNhMHg0U0dSZDZwZTd5R0pCY2U5Z3hrMXJzSUtLTElobFY3OTgxYk1VNndvMTBQRUpRN3UtQzhzdkxSMVJad2tzaTY4cWdkZXQ2eWlHbzB6SmFyTmxySWFpbmxwVWJKVElaTnoyQTRtNEF2Um4tRUhRcmhsWGdRU3JlUnkwVDRPa0dIWVJ4UVdXNWhRaEdFTE4tZUpPVC00M2NnaXhuZXk1MVJ3b19NN3hQLVRuRVZ4UmRGMHZjSVBzVTcxSkJzbFNB0gHYAUFVX3lxTE5jT1JOZmxCNUNaZU5WNlQ3clBCTWJ6eTZiaGpnd0k0U1VteDQ4MTZpQzRXbmotelp6OXVZQ1ZXYjNaa2YxR3R6eGUzLVk0bmU4REtsdjNlMnhBSUtYWW44V2NHUXRweWNUQmQ1VEFxNnBIbWZJQlU1SnV3emwxejZ4TWw5ODUyQnlfYkxIaVJGMDB3MXpPNG50ZVdPMEN0LXBINVhWeldJTVlpSWxmZnJxUS1Rek94cHdjUlVpdjlRTGd2R0FRdnRyb0RLMGk1QXhCa1B0c3RjTg?oc=5",
+     "source": "NBC4 WCMH-TV",
+     "published": "2026-10-26T21:30:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "fb159a48813cdeb0"
     }
    ],
    "first_seen": "2026-08-17T07:00:00+00:00",
@@ -11509,11 +11527,17 @@
      "headline_id": "a059fa9279f1dbe3"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-10-26T21:21:45+00:00",
+     "type": "Expansion",
+     "headline_id": "fb159a48813cdeb0"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-08-17T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-10-26T21:30:00+00:00",
+   "sources_count": 2,
    "confidence": "low",
    "hidden": false
   },
