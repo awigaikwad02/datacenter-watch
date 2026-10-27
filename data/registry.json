@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-27T19:23:25+00:00",
+ "updated": "2026-10-27T23:04:15+00:00",
  "count": 505,
  "visible": 505,
  "records": [
@@ -18911,6 +18911,15 @@
      "published": "2026-07-16T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "3912e873d112c917"
+    },
+    {
+     "id": "86fc54dfc3647881",
+     "title": "Next for Bessemer: QTS data center eyes 5-7 year buildout, talks on economic benefits",
+     "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNa1RwMkd6c3plcUhKZDlwZnNiYlBOeWZkRXpoaHBnaXhQU2hiUlJoUDc1cThSVnFJeUZwY3JwcVlZRmthbng5V0paRTJBcXpkX2tFVFkxX0RVNlZKWlo2clNDaDlkWTBKOXZFT1BOUDFGbDVhMFJxb1g4X0tSMTZqaTRiYzJpMGRBQThVUDhaQWZVeEdhcWlEc254SjQxaDY5TVVULXBCcGFBVmJxLVdHeFZHTFZ0UDFCSndUMF9ZN2lReDlBV29EUE1WY0thaUZWRVF0bUJMU1gyMjRHQllGeGZ4TE0zdldkZ3VnSzJ4ZlVFbWhiMWZ5Y3hzZHN5VmJRNGc2V3BTNTRjcGN2S1RKQ3g4TnlVZjY1a2cxb3dINEZkRU1RUjFSRzZUWnlqanlsZ28zcHFkbmowZVhnNzVJb1RjV3kyU3Jjdmw1cEpKOUJBZjhmc2pNaDVPdTRYTkVNZUE?oc=5",
+     "source": "WBMA",
+     "published": "2026-10-27T22:26:42+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "86fc54dfc3647881"
     }
    ],
    "first_seen": "2026-07-01T07:00:00+00:00",
@@ -18926,8 +18935,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-07-16T07:00:00+00:00",
-   "sources_count": 2,
+   "last_news": "2026-10-27T22:26:42+00:00",
+   "sources_count": 3,
    "confidence": "high",
    "hidden": false
   },
