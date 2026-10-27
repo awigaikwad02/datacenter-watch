@@ -1,25 +1,25 @@
 {
- "checked_at": "2026-10-26T14:23:33+00:00",
+ "checked_at": "2026-10-27T13:21:54+00:00",
  "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 2h",
-   "status": "pass",
-   "value": "1h 23m ago",
-   "detail": "2026-10-26T13:00:25Z"
+   "status": "fail",
+   "value": "5h 28m ago",
+   "detail": "2026-10-27T07:52:57Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "7/9 succeeded, 2 superseded, avg 54s",
+   "value": "9/9 succeeded, 0 superseded, avg 45s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-10-26T12:59:47+00:00, 51 new"
+   "detail": "run at 2026-10-27T07:52:15+00:00, 61 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -47,9 +47,9 @@
   },
   {
    "name": "news.json updated within 2h",
-   "status": "pass",
-   "value": "1h 23m ago",
-   "detail": "2026-10-26T12:59:47+00:00"
+   "status": "fail",
+   "value": "5h 29m ago",
+   "detail": "2026-10-27T07:52:15+00:00"
   },
   {
    "name": "News items well formed",
@@ -72,14 +72,14 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: Policy / Permits 23.4%",
-   "detail": "Policy / Permits 703, General 639, New Announcement 564, Power / Utility 308, AI Infrastructure 257, Cancelled / Blocked 205, Deals / Investment 125, Construction 101, Expansion 54, Operations 31, Land Acquisition 13"
+   "value": "top: Policy / Permits 23.7%",
+   "detail": "Policy / Permits 712, General 662, New Announcement 535, Power / Utility 311, AI Infrastructure 250, Cancelled / Blocked 198, Deals / Investment 130, Construction 108, Expansion 54, Operations 28, Land Acquisition 12"
   },
   {
    "name": "At least 50% of headlines located",
    "status": "fail",
-   "value": "1416/3000 (47.2%)",
-   "detail": "with a company: 343"
+   "value": "1401/3000 (46.7%)",
+   "detail": "with a company: 333"
   },
   {
    "name": "No non-U.S. locations in headlines",
@@ -90,7 +90,7 @@
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "19752 ids, 0 in two months",
+   "value": "19987 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -102,7 +102,7 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "27 month(s), 19752 headlines, earliest 2019-11-18",
+   "value": "27 month(s), 19987 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
@@ -138,7 +138,7 @@
   {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "1250 attached headlines, 0 missing",
+   "value": "1253 attached headlines, 0 missing",
    "detail": ""
   },
   {
@@ -180,7 +180,7 @@
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "504 pages, 2627 KB",
+   "value": "504 pages, 2629 KB",
    "detail": ""
   },
   {
@@ -330,8 +330,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 1h ago",
-   "detail": "expected Updated 1h ago or Updated 1h ago, title \"Data last updated Oct 26, 2026\""
+   "value": "Updated 6h ago",
+   "detail": "expected Updated 6h ago or Updated 5h ago, title \"The data has not changed for more than 3 hours (last update Oct 27, 2026)\""
   },
   {
    "name": "Browser: /atlas @1280px loads cleanly",
@@ -430,5 +430,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-26T14:24:40+00:00"
+ "browser_checked_at": "2026-10-27T13:23:00+00:00"
 }
