@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-27T07:52:36+00:00",
+ "updated": "2026-10-27T13:59:05+00:00",
  "count": 504,
  "visible": 504,
  "records": [
@@ -4641,6 +4641,15 @@
      "cluster_id": "05e3bbc8f824f676"
     },
     {
+     "id": "64b467b6bf6ae16c",
+     "title": "Soluna and Applied Digital Plan 50 MW AI Data Center in Texas",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1KekVGRFVBa1F0RlNIMGhCRnZGMFVFNDl6dDhIcXJuSkF0ZGp6ZDFWUjB3UUdDOUZpQVNCQTRGT1M5dk84SFZ2SWFmWENLOUptSzVIYXBHNEg?oc=5",
+     "source": "www.tokenpost.com",
+     "published": "2026-10-21T23:37:39+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "05e3bbc8f824f676"
+    },
+    {
      "id": "6a7eedc04e6a0519",
      "title": "Soluna and Applied Digital to build 50MW data center in Texas",
      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObGoxS2EtU2JrU05RTW9MUTQyZmhmaTBqMU0xME82MFd5amJWbS1DOXlFR0FpYVhVcjVINF9Zbjdqb0dwSUFQU1hRcHFrM0dLSmFabHNNeHcwOWxaNjRhRi1WOXdUaGcxa0d5ZWhsTlZrSzFzLUQ1QVNRd2VjX1JWRzU2ZkRyd3F1STFQS19Sc3hQWkplRDJlQ2pGRTN5VzZIQmxsV1hZbWM?oc=5",
@@ -4664,7 +4673,7 @@
    "capacity_mw": 50,
    "investment_usd_b": null,
    "last_news": "2026-10-22T11:19:36+00:00",
-   "sources_count": 3,
+   "sources_count": 4,
    "confidence": "low",
    "hidden": false
   },
@@ -7410,6 +7419,15 @@
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQY0I2RmNGMWtiNUxrT3NEb0ZYLUkyWGtHcFJFeTAydHVOc1JDOGFHaGZ5WGtCQUNINFdvV3dPOHE1Umc2aDdiYjFmVllFQkd0ZTNmc2NvdG5vbFpFUjRPN182YW1HeHZaTVNIenRvNFhDcjQ4NFVRcjlHSGJqOHlRU3NiV2JPSVBOa1dFbkMxMGxkSHY4dTNSLTFxS1NOUzRidFVlZDE4SjA2UQ?oc=5",
      "source": "Washington Examiner",
      "published": "2026-10-21T17:44:24+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "ed18adfbe69a6b24"
+    },
+    {
+     "id": "285c322274318492",
+     "title": "Amazon abandons Virginia data center plan — Fortune",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTQxT1JSSkhhZFJHamQwb1JyVEdKYkZBUm9sbXVOdFpEZlAybWJITDd1aUo4cWxLZGxnbU44MHhmeFpSb3gzdFhrNm1vUXg5S2RYWE91M29EQlZfTklxaEdGZkIzcm10RWp3VS1rcGEwLWpFWnhraEJhQ3hoVVdwclBLdlpmWllRdFFV?oc=5",
+     "source": "UA.NEWS",
+     "published": "2026-10-21T18:49:38+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "ed18adfbe69a6b24"
     },
