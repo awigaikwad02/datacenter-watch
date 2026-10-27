@@ -1,8 +1,8 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-27T13:59:05+00:00",
- "count": 504,
- "visible": 504,
+ "updated": "2026-10-27T19:23:25+00:00",
+ "count": 505,
+ "visible": 505,
  "records": [
   {
    "id": "amazon-georgia",
@@ -8916,6 +8916,54 @@
    "hidden": false
   },
   {
+   "id": "digital-realty-in-unnamed",
+   "name": "Digital Realty, Indiana (site not yet named)",
+   "company": "Digital Realty",
+   "companies": [
+    "Digital Realty"
+   ],
+   "location": "Indiana, US",
+   "state": "IN",
+   "county": null,
+   "city": null,
+   "lat": 39.9,
+   "lon": -86.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Digital Realty",
+   "news": [
+    {
+     "id": "a6605cbf93386b91",
+     "title": "Digital Realty proposes 1GW data center campus in Indiana",
+     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQU2FiQlY1aWN0ajAyZWF3VmhrSlNCbm1HSlllTUo4RjREV2JuZkI2Y29oMlA0eDhuRm5ZVUYzR21IclFBSjNCbE1LSnFTRmpYMU43bGV5eVZJd1NrakxUNXZhMEwyVmRJR2ZTU2RGS0VLbVVvOXZ3X3hBUmplU3cyQndaMkdtSDE3eV9PWkpWOHI1MG1hN1VHbGwwSUtPVkYtd05lZEhLMkpyY0tHbWs0WFlsUDBvQ2xINTdzeVJKNElvZUZIUk5mRGZvVkw3M1V4YzJyVE1GSWt5blpTenRQYzF5dElXNXo4SzJEalhvbHdsaGxIc1daaGlxa0ZkQkQzUDdqTGc1SjRidmPSAdoBQVVfeXFMTkxZbTJQVEVFMng1Tzh5Q05aTlNuRzE2OGloS3Q4R0JHRlNnV2x4Qkpnck15WEMtRXdwMWVmNEczRnp6OThmd3Y4Y25UVF9zbDlfOVQ2UzJ1Vm4xOHBYRXhvM0JSMW9lTjE3cGd1RnhCZ3FhNGFsd2tVY3pqcFJxTlFyaFFqNXpMVVAxeHdxVUg1dW5oZkdrd21RalNQRjh3bG12R3piQUJ2aWVabG9PbS14Yk5NX2lSdFc1X2ZqeW5qZEZkbFFSNlBqSHU5N2QtMjJ0M1pqMUdTcEE?oc=5",
+     "source": "ET Datacenters",
+     "published": "2026-10-22T02:34:55+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "a6605cbf93386b91"
+    }
+   ],
+   "first_seen": "2026-10-22T02:34:55+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-22T02:34:55+00:00",
+     "status": "Announced",
+     "headline_id": "a6605cbf93386b91"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 1000,
+   "investment_usd_b": null,
+   "last_news": "2026-10-22T02:34:55+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
    "id": "digital-realty-indianapolis-in-2026",
    "name": "Digital Realty Indianapolis data center",
    "company": "Digital Realty",
@@ -17507,6 +17555,15 @@
      "published": "2026-07-22T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "c3336dcf3607e6a6"
+    },
+    {
+     "id": "aae109073b5564b5",
+     "title": "OpenAI applies for federal permit to build portion of Effingham County, Georgia, data center on wetlands - report",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQQnlrLXVBTjNzc0lPbmxraExRZkJ3TUY1bGVmM2xLbmFBTGdVY3JDQTBzLUpVX0pXeXhoRV9uZUh6azhkTUszMEplOXU2R2dHcktJVkFOZU1tYnJsMjhHMkRNSDRQSEJhWmdtbTVvalZ1N1J2UUdGSXRlVDZEc1pPMlQ1WEJRVVRPYmdDWGVYUXZ6NjJobmppWHI1OEJEN3p3V3hiRkFiTWFZV2EwcjRLbHlkeW9HVUNTSjJYaGkzUlNsX2pmRjVLR3NqR3NyRFBsRVpndW9TUXBCQzFlRDRZdllGQ3Zvc0w2?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-10-27T12:12:32+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "aae109073b5564b5"
     }
    ],
    "first_seen": "2026-07-22T07:00:00+00:00",
@@ -17522,7 +17579,7 @@
    "events": [],
    "capacity_mw": 3200,
    "investment_usd_b": 20.0,
-   "last_news": "2026-07-22T07:00:00+00:00",
+   "last_news": "2026-10-27T12:12:32+00:00",
    "sources_count": 2,
    "confidence": "high",
    "hidden": false
