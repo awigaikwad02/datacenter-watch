@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-28T15:29:15+00:00",
+ "updated": "2026-10-28T20:32:16+00:00",
  "count": 505,
  "visible": 505,
  "records": [
@@ -12227,6 +12227,15 @@
      "published": "2026-07-29T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "9d74e530329adaff"
+    },
+    {
+     "id": "cc2165c32a3196b5",
+     "title": "Google eyeing data center campus in Goochland’s West Creek",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR3JYQkc3YmJYeFA4YUV3VFRMOTd3Q1FRejVpalRIM2lEdXpQUFZVdUpibkphcC03UlBFZ3hia1F0UW9rN3ZrR25DNG5XUm9jTVpES3BDM0VEOEd6bm1aQl82Y0t3eThQd21QWnZvc0Fha25pX0ZrZ2dfQUtTemM1RGlMcHI5V0V6YkNIZDg5RklOVzB5QWdtQWJB?oc=5",
+     "source": "WTVR.com",
+     "published": "2026-10-28T19:28:28+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "acd091afae327c6f"
     }
    ],
    "first_seen": "2025-08-27T07:00:00+00:00",
@@ -12258,7 +12267,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 9.0,
-   "last_news": "2026-07-29T07:00:00+00:00",
+   "last_news": "2026-10-28T19:28:28+00:00",
    "sources_count": 11,
    "confidence": "low",
    "hidden": false
@@ -15470,23 +15479,43 @@
      "published": "2026-08-10T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "cdf9e1fbd542708a"
+    },
+    {
+     "id": "87e944cd62f8236b",
+     "title": "Prometheus Hyperscale drops plans for $500M data center campus in Natrona County",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVmZ0REVKeDRGMTYwaHN3Zk9fVHpJWnZjRExTWWRCQi14NWNBUm9veTRpLUVGMHB0aldvbWRjNklLYUhJM0RMMlBVR2VRenFuZTV6dWhMMjcyNGxTck93TDVlQkhDSUFtM1BhdjVGYmMyRjlETEt5Vng2M01MV3dpb2YzWU1adE56NF9ZTFpOdFJnWUtGOWRPXzZ3RkVBLW9wb2FyRFdBSkdMLVVKRHFOV2gtU3FJRm94a00wUjZWRUlwWnpYdHJ1Mno0SQ?oc=5",
+     "source": "Oil City News",
+     "published": "2026-10-28T18:32:46+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "87e944cd62f8236b"
     }
    ],
    "first_seen": "2025-10-07T07:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2025-10-07T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "08319997e46d1e48"
+    },
+    {
+     "date": "2026-10-28T18:32:46+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "87e944cd62f8236b"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-10-28T18:32:46+00:00",
+     "type": "Cancelled",
+     "headline_id": "87e944cd62f8236b"
+    }
+   ],
    "capacity_mw": null,
-   "investment_usd_b": null,
-   "last_news": "2026-08-10T07:00:00+00:00",
-   "sources_count": 3,
+   "investment_usd_b": 0.5,
+   "last_news": "2026-10-28T18:32:46+00:00",
+   "sources_count": 4,
    "confidence": "low",
    "hidden": false
   },
@@ -19524,23 +19553,37 @@
      "published": "2026-06-02T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "6acf65bb27bfad34"
+    },
+    {
+     "id": "ff411a16a3daef8f",
+     "title": "$10 billion QTS data center campus breaks ground in Van Wert, Ohio",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbzh0LUItYVFrcnNGT2JJLTJWRlk5NHFVOENsRzd2dXpIWDU1RlFHRDFpUnNXRjg3WmZGQUk4eUE4eHRycVRRYVVTd0p2cm40YkxQaXJiMFBBV3NDa2EzVkM4R2NDblBkc1JaR2p0endqY19JX3IwOWx6enBZVVpfcUdZbDRJOU5YY2FLOVJib013NmZqc2dDWXBkRVdJWXJXdlFfaQ?oc=5",
+     "source": "Construction Review",
+     "published": "2026-10-28T15:55:51+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "ff411a16a3daef8f"
     }
    ],
    "first_seen": "2026-06-02T07:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Under construction",
    "status_history": [
     {
      "date": "2026-06-02T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "6acf65bb27bfad34"
+    },
+    {
+     "date": "2026-10-28T15:55:51+00:00",
+     "status": "Under construction",
+     "headline_id": "ff411a16a3daef8f"
     }
    ],
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 10.0,
-   "last_news": "2026-06-02T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-10-28T15:55:51+00:00",
+   "sources_count": 2,
    "confidence": "low",
    "hidden": false
   },
