@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-28T02:11:24+00:00",
+ "updated": "2026-10-28T08:39:43+00:00",
  "count": 505,
  "visible": 505,
  "records": [
@@ -10874,6 +10874,15 @@
      "published": "2026-06-10T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7fc78d492a63a425"
+    },
+    {
+     "id": "7b2a54c535e3745a",
+     "title": "New rules on data centers proposed in Tennessee county Google invited Little Rock leaders to visit",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcE10TzRyX0I5M21fMkwyc0tfbTZIWWhic3RCNlh6MG1seGpXWHRBRGxhRkE2NVowcHJWQjNWeElndllXb3B2Y2xzeWJ3cUttN09tX25XbzJzdFdvSnZLeW1HYzNEbG5QcmowT21pSE5SUS1XS2RDWUFtUVJXNzZaZzZZQldkVncwSmh6bVFzdmtEamM1LWs0bVBJTHI?oc=5",
+     "source": "The Arkansas Democrat-Gazette",
+     "published": "2026-10-28T02:55:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7b2a54c535e3745a"
     }
    ],
    "first_seen": "2026-04-09T07:00:00+00:00",
@@ -10889,7 +10898,7 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
-   "last_news": "2026-06-10T07:00:00+00:00",
+   "last_news": "2026-10-28T02:55:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
