@@ -1,25 +1,25 @@
 {
- "checked_at": "2026-10-27T13:21:54+00:00",
+ "checked_at": "2026-10-28T14:07:46+00:00",
  "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 2h",
    "status": "fail",
-   "value": "5h 28m ago",
-   "detail": "2026-10-27T07:52:57Z"
+   "value": "5h 27m ago",
+   "detail": "2026-10-28T08:39:55Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "9/9 succeeded, 0 superseded, avg 45s",
+   "value": "9/9 succeeded, 0 superseded, avg 81s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-10-27T07:52:15+00:00, 61 new"
+   "detail": "run at 2026-10-28T08:39:30+00:00, 46 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -42,14 +42,14 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "3002 KB",
+   "value": "2996 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 2h",
    "status": "fail",
-   "value": "5h 29m ago",
-   "detail": "2026-10-27T07:52:15+00:00"
+   "value": "5h 28m ago",
+   "detail": "2026-10-28T08:39:30+00:00"
   },
   {
    "name": "News items well formed",
@@ -72,14 +72,14 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: Policy / Permits 23.7%",
-   "detail": "Policy / Permits 712, General 662, New Announcement 535, Power / Utility 311, AI Infrastructure 250, Cancelled / Blocked 198, Deals / Investment 130, Construction 108, Expansion 54, Operations 28, Land Acquisition 12"
+   "value": "top: Policy / Permits 24.2%",
+   "detail": "Policy / Permits 727, General 666, New Announcement 495, Power / Utility 337, AI Infrastructure 245, Cancelled / Blocked 195, Deals / Investment 135, Construction 103, Expansion 57, Operations 24, Land Acquisition 16"
   },
   {
    "name": "At least 50% of headlines located",
    "status": "fail",
-   "value": "1401/3000 (46.7%)",
-   "detail": "with a company: 333"
+   "value": "1400/3000 (46.7%)",
+   "detail": "with a company: 306"
   },
   {
    "name": "No non-U.S. locations in headlines",
@@ -90,7 +90,7 @@
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "19987 ids, 0 in two months",
+   "value": "20307 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -102,19 +102,19 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "27 month(s), 19987 headlines, earliest 2019-11-18",
+   "value": "27 month(s), 20307 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
    "name": "Registry ids unique",
    "status": "pass",
-   "value": "504 records, 504 visible",
+   "value": "505 records, 505 visible",
    "detail": ""
   },
   {
    "name": "No registry record lost since the last commit",
    "status": "pass",
-   "value": "504 -> 504",
+   "value": "505 -> 505",
    "detail": ""
   },
   {
@@ -138,7 +138,7 @@
   {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "1253 attached headlines, 0 missing",
+   "value": "1259 attached headlines, 0 missing",
    "detail": ""
   },
   {
@@ -174,13 +174,13 @@
   {
    "name": "Sitemap matches pages",
    "status": "pass",
-   "value": "510 entries (6 site pages + 504 project pages)",
+   "value": "511 entries (6 site pages + 505 project pages)",
    "detail": ""
   },
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "504 pages, 2629 KB",
+   "value": "505 pages, 2637 KB",
    "detail": ""
   },
   {
@@ -240,7 +240,7 @@
   {
    "name": "No secrets in the repo",
    "status": "pass",
-   "value": "0 matches in 590 files",
+   "value": "0 matches in 591 files",
    "detail": ""
   },
   {
@@ -330,8 +330,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 6h ago",
-   "detail": "expected Updated 6h ago or Updated 5h ago, title \"The data has not changed for more than 3 hours (last update Oct 27, 2026)\""
+   "value": "Updated 5h ago",
+   "detail": "expected Updated 5h ago or Updated 5h ago, title \"The data has not changed for more than 3 hours (last update Oct 28, 2026)\""
   },
   {
    "name": "Browser: /atlas @1280px loads cleanly",
@@ -420,7 +420,7 @@
   {
    "name": "Browser: Sitemap entries return 200",
    "status": "pass",
-   "value": "510 entries",
+   "value": "511 entries",
    "detail": ""
   },
   {
@@ -430,5 +430,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-27T13:23:00+00:00"
+ "browser_checked_at": "2026-10-28T14:09:05+00:00"
 }
