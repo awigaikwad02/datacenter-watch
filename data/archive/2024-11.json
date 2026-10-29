@@ -11,26 +11,19 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
-   "locations": [
-    {
-     "name": "Chicago, Illinois, US",
-     "lat": 41.88,
-     "lon": -87.63,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "IL"
-   ],
-   "state": "IL",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "624dcf82450e409a",
    "cluster_title": "Plan Commission approves data center at 2800 S. Ashland"
   },
@@ -41,9 +34,19 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-29T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
    "locations": [
+    {
+     "name": "Wylie, Texas, US",
+     "lat": 33.0151,
+     "lon": -96.5389,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
     {
      "name": "Indiana, US",
      "lat": 39.9,
@@ -54,13 +57,17 @@
     }
    ],
    "states": [
-    "IN"
+    "IN",
+    "TX"
    ],
-   "state": "IN",
+   "state": "TX",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "76ed72062f4d1048",
    "cluster_title": "Province Group and Wylie Capital seek to develop data center campuses in Northwest Indiana"
   },
@@ -94,6 +101,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5bf079a7b41476d5",
    "cluster_title": "University of Alabama to begin construction of high-performance computing and data center"
   },
@@ -126,6 +136,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a870a1811b47094e",
    "cluster_title": "Oppidan breaks ground on Chicago data center"
   },
@@ -166,6 +179,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e54c43ccd84e444d",
    "cluster_title": "Falls Township approves NDA for data center project outside Philadelphia, Pennsylvania"
   },
@@ -176,8 +192,10 @@
    "source": "The Business Journals",
    "published": "2024-11-27T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
    "locations": [
     {
      "name": "Pittsburgh, Pennsylvania, US",
@@ -196,6 +214,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ec5586ec1732cab7",
    "cluster_title": "BNY sells former data center facility north of Pittsburgh"
   },
@@ -212,6 +233,14 @@
    ],
    "locations": [
     {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Texas, US",
      "lat": 31.5,
      "lon": -99.3,
@@ -225,11 +254,14 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Core Scientific"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 6.1,
    "cluster_id": "c9c2836210b3e342",
    "cluster_title": "Core Scientific plans to upgrade Denton, Texas, data center for up to $6.1bn"
@@ -253,6 +285,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.03,
    "cluster_id": "4911060f7b8b72e1",
    "cluster_title": "Company to build $30 million data center in Montgomery"
@@ -273,6 +308,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "cb6ae128efd0f843",
    "cluster_title": "Nokia’s data center push is starting to pay off"
   },
@@ -283,8 +321,9 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-27T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Land Acquisition",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "Land Acquisition",
     "AI Infrastructure"
    ],
@@ -316,6 +355,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0d73b2c225e091dc",
    "cluster_title": "Meta set to develop 1,500 acre data center campus outside Indianapolis, Indiana"
   },
@@ -328,13 +370,27 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Faribault, Minnesota, US",
+     "lat": 44.295,
+     "lon": -93.2688,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.004,
    "cluster_id": "a0f22f3b26f28d90",
    "cluster_title": "Data center site in Faribault fetches $4.5M"
@@ -346,13 +402,23 @@
    "source": "The Business Journals",
    "published": "2024-11-27T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [
     {
      "name": "Round Rock, Texas, US",
      "lat": 30.51,
      "lon": -97.68,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Georgetown, Texas, US",
+     "lat": 30.6327,
+     "lon": -97.6772,
      "level": 3,
      "precision": "city",
      "country": "US"
@@ -366,6 +432,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "44c44876ebaf37f4",
    "cluster_title": "Data center tech provider approved for incentives to move HQ from Round Rock to Georgetown"
   },
@@ -384,7 +453,7 @@
      "lat": 37.5,
      "lon": -78.9,
      "level": 2,
-     "precision": "state",
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -393,11 +462,14 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "source",
    "companies": [],
    "utilities": [
     "Dominion Energy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "7c6fc71fb91157c2",
    "cluster_title": "Under pressure from the SCC, Dominion reveals the true cost of data centers"
   },
@@ -431,6 +503,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.16,
    "cluster_id": "fa6de6485b3f5df1",
    "cluster_title": "Data center operator buys massive Charlotte site for $160M"
@@ -457,7 +532,8 @@
    "utilities": [],
    "investment_usd_b": 1.2,
    "cluster_id": "44b996cb222d86f8",
-   "cluster_title": "Equinix issues $1.2 billion in green bonds"
+   "cluster_title": "Equinix issues $1.2 billion in green bonds",
+   "filtered": true
   },
   {
    "id": "2546c4f190c9337e",
@@ -476,7 +552,8 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "2546c4f190c9337e",
-   "cluster_title": "Elisa Estonia completes 3G shutdown"
+   "cluster_title": "Elisa Estonia completes 3G shutdown",
+   "filtered": true
   },
   {
    "id": "734e96e7a72bc1d8",
@@ -495,7 +572,7 @@
      "lat": 39.9,
      "lon": -86.3,
      "level": 2,
-     "precision": "state",
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -504,9 +581,12 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "734e96e7a72bc1d8",
    "cluster_title": "Ratepayer advocates hail ‘landmark’ settlement with data centers, utility company"
   },
@@ -520,7 +600,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Deals / Investment"
+    "Deals / Investment",
+    "Economy / Jobs"
    ],
    "locations": [],
    "states": [],
@@ -529,6 +610,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "3c8763ff4bd691bb",
    "cluster_title": "Springfield data center project proposes 100 jobs, over $1 billion investment"
@@ -554,6 +638,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "52bcefc9bba2cf4e",
    "cluster_title": "Microsoft to build two data centers outside Cologne"
   },
@@ -575,6 +662,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "750b8f1f0dee3b59",
    "cluster_title": "BSO launches new data center platform, DataOne"
   },
@@ -596,6 +686,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "89b3a48111ac6e1c",
    "cluster_title": "Data-center reliance on fossil fuels may delay clean-energy transition"
   },
@@ -626,6 +719,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "157e521eac0ede65",
    "cluster_title": "Tract accuses Switch of \"harassing rivals\" as part of Nevada data center site dispute"
   },
@@ -638,26 +734,19 @@
    "feed": "Backfill: announced",
    "category": "Deals / Investment",
    "tags": [
-    "Deals / Investment"
+    "Deals / Investment",
+    "Policy / Permits"
    ],
-   "locations": [
-    {
-     "name": "Miami, Florida, US",
-     "lat": 25.76,
-     "lon": -80.19,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "FL"
-   ],
-   "state": "FL",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.004,
    "cluster_id": "17a8438219a6efa0",
    "cluster_title": "$3.6 million county incentive targets a vast data center"
@@ -678,6 +767,10 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Danish Data Center",
    "cluster_id": "dbc07f5bc61cc35e",
    "cluster_title": "atNorth joins Danish Data Center Industry Association."
   },
@@ -690,7 +783,8 @@
    "feed": "Backfill: cancelled",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -701,6 +795,9 @@
    "utilities": [
     "PJM"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "81144de7261d7897",
    "cluster_title": "Constellation asks FERC for PJM rules on data centers and other co-located load"
   },
@@ -724,6 +821,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "42f29e6f4b453066",
    "cluster_title": "Microsoft fuels Nokia’s data center dreams"
   },
@@ -734,9 +834,11 @@
    "source": "TechTarget",
    "published": "2024-11-25T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Environment",
    "tags": [
-    "AI Infrastructure"
+    "Environment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -745,6 +847,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "dc04b06d7ca52bdc",
    "cluster_title": "How the rise in AI impacts data centers and the environment"
   },
@@ -777,6 +882,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e145c6d025a8fe5c",
    "cluster_title": "The Punch List: Central Ohio to see billions of dollars in new data center investment"
   },
@@ -810,6 +918,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 8,
    "cluster_id": "328cb91f53301acb",
    "cluster_title": "Coresite completes construction of 8MW data hall at VA3 data center in Virginia"
@@ -846,6 +957,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "08df25b56168f1e7",
    "cluster_title": "Microsoft files to expand El Mirage data center campus in Arizona"
   },
@@ -856,8 +970,10 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-25T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "Construction",
+   "tags": [
+    "Construction"
+   ],
    "locations": [
     {
      "name": "Phoenix, Arizona, US",
@@ -886,6 +1002,9 @@
     "Vantage"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a8106dcd810e81a9",
    "cluster_title": "Vantage tops out AZ14 facility outside of Phoenix, Arizona"
   },
@@ -900,13 +1019,27 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Merrillville, Indiana, US",
+     "lat": 41.4828,
+     "lon": -87.3328,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "801ea9bd3eb567a0",
    "cluster_title": "$2B+ in Data Center Projects Planned for Merrillville, Ind."
@@ -924,6 +1057,14 @@
    ],
    "locations": [
     {
+     "name": "Dallas, Texas, US",
+     "lat": 32.78,
+     "lon": -96.8,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Texas, US",
      "lat": 31.5,
      "lon": -99.3,
@@ -937,11 +1078,14 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "CyrusOne"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8cb45e7664b7bade",
    "cluster_title": "CyrusOne files to build data center outside DFW, Texas"
   },
@@ -954,7 +1098,8 @@
    "feed": "Backfill: announced",
    "category": "Deals / Investment",
    "tags": [
-    "Deals / Investment"
+    "Deals / Investment",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -965,7 +1110,8 @@
    "utilities": [],
    "investment_usd_b": 0.5,
    "cluster_id": "50658e0b43440f53",
-   "cluster_title": "Blackstone invests $500 million in Lancium – report"
+   "cluster_title": "Blackstone invests $500 million in Lancium – report",
+   "filtered": true
   },
   {
    "id": "b9308139baf3022d",
@@ -999,6 +1145,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "b9308139baf3022d",
    "cluster_title": "Amazon to open new $2 billion data center in Ohio"
@@ -1023,6 +1172,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e651bd17e446f865",
    "cluster_title": "Amazon explores building data center in Fayette Co."
   },
@@ -1039,15 +1191,29 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.8,
    "cluster_id": "e720f6d972a310a4",
    "cluster_title": "Meta proposes $800 million data center in Lebanon"
@@ -1066,22 +1232,25 @@
    ],
    "locations": [
     {
-     "name": "Maryland, US",
-     "lat": 39.0,
-     "lon": -76.8,
-     "level": 2,
-     "precision": "state",
+     "name": "Prince George, Virginia, US",
+     "lat": 37.2204,
+     "lon": -77.288,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
    "states": [
-    "MD"
+    "VA"
    ],
-   "state": "MD",
+   "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "305e8959d6bf61cc",
    "cluster_title": "Prince George’s County Council votes against data centers — for now"
   },
@@ -1094,24 +1263,16 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [
-    {
-     "name": "New York, US",
-     "lat": 42.9,
-     "lon": -75.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "NY"
-   ],
-   "state": "NY",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "state",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8a4d027e84fff0a6",
    "cluster_title": "Former BP Chief Joins A.I. Data Center Developer (Published 2024)"
   },
@@ -1131,6 +1292,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b4499f50abc56a61",
    "cluster_title": "Developer quashes rumor of Clevengers' data center"
   },
@@ -1155,6 +1319,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "84ef9b0304b20611",
    "cluster_title": "Amazon Web Services To Build Data Center In Sunbury"
   },
@@ -1167,17 +1334,10 @@
    "feed": "Backfill: construction",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
    "locations": [
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Kenosha, Wisconsin, US",
      "lat": 42.58,
@@ -1195,6 +1355,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8dbbc7a68e7599ac",
    "cluster_title": "Plan Commission Approves New Kenosha Data Center"
   },
@@ -1208,7 +1371,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -1230,6 +1394,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "91d151ffee6641eb",
    "cluster_title": "What are AI data centers? Here's how the planned Meta facility in Louisiana could work."
   },
@@ -1247,6 +1414,14 @@
    ],
    "locations": [
     {
+     "name": "Sunbury, Ohio, US",
+     "lat": 40.2426,
+     "lon": -82.8591,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Ohio, US",
      "lat": 40.3,
      "lon": -82.8,
@@ -1260,11 +1435,14 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "af32b18676e57d52",
    "cluster_title": "AWS plans $2bn data center campus in Sunbury, Ohio"
@@ -1287,6 +1465,9 @@
     "QTS"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3b5b373190752223",
    "cluster_title": "QTS Data Centers Celebrates Topping Off Ceremony In East Windsor"
   },
@@ -1308,6 +1489,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b7dd54cb28d2b837",
    "cluster_title": "New data center proposed for American Township"
   },
@@ -1327,8 +1511,13 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Cologix"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 7.0,
    "cluster_id": "f51303477578b68a",
    "cluster_title": "Cologix Plans $7B Data Center Campus"
@@ -1363,6 +1552,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "d84a0065a259f72d",
    "cluster_title": "As Illinois’ Governor Recruits Data Centers, Chicagoans’ Electricity Bills Are Getting More Expensive"
   },
@@ -1386,6 +1578,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "90f389284714a205",
    "cluster_title": "Prime opens 243K sf data center in Vernon leased to two AI firms"
   },
@@ -1418,8 +1613,13 @@
    "state": "OH",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Cologix"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 800,
    "cluster_id": "243dadbd566833ae",
    "cluster_title": "Cologix buys land in Ohio for 800MW campus"
@@ -1442,6 +1642,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2df6125d5b694956",
    "cluster_title": "Data4 breaks ground on Greek data center outside Athens"
   },
@@ -1465,6 +1668,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 6.0,
    "cluster_id": "7a4523657fa973a0",
    "cluster_title": "Denton data center is shifting focus to AI, planning to grow and use more power with $6B investment"
@@ -1476,28 +1682,21 @@
    "source": "Michigan Capitol Confidential",
    "published": "2024-11-21T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Economy / Jobs",
    "tags": [
+    "Economy / Jobs",
     "Policy / Permits"
    ],
-   "locations": [
-    {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "MI"
-   ],
-   "state": "MI",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "state",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b54fbe9f01638910",
    "cluster_title": "Legislature extends tax breaks for data center that brought only 2.6% of promised jobs"
   },
@@ -1523,6 +1722,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b6d133e6415bf411",
    "cluster_title": "Meta goes all in on gas to power a mega data center"
   },
@@ -1555,11 +1757,16 @@
    "state": "OH",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Cologix"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 7.0,
-   "cluster_id": "f72e48e470278e1c",
-   "cluster_title": "Cologix Acquires 154 Acres in Central Ohio, Plans $7B Data Center Campus"
+   "cluster_id": "5d1652d067c41957",
+   "cluster_title": "Cologix plans $7B data center expansion in Central Ohio"
   },
   {
    "id": "00a7b3575298c293",
@@ -1571,7 +1778,8 @@
    "category": "Deals / Investment",
    "tags": [
     "Deals / Investment",
-    "Power / Utility"
+    "Power / Utility",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -1590,7 +1798,12 @@
    "county": null,
    "location_precision": "state",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "CPS Energy"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.3,
    "cluster_id": "00a7b3575298c293",
    "cluster_title": "CPS Energy to invest upwards of $1.3bn in transmission and generation to meet rapid data center growth in Texas"
@@ -1610,9 +1823,9 @@
    ],
    "locations": [
     {
-     "name": "Columbus, Ohio, US",
-     "lat": 39.96,
-     "lon": -83.0,
+     "name": "Sunbury, Ohio, US",
+     "lat": 40.2426,
+     "lon": -82.8591,
      "level": 3,
      "precision": "city",
      "country": "US"
@@ -1628,6 +1841,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "fe3510d202322a09",
    "cluster_title": "Amazon picks Sunbury as site for $2 billion data center investment"
@@ -1653,6 +1869,9 @@
     "Crusoe"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.686,
    "cluster_id": "568a6290b1aaaef9",
    "cluster_title": "Crusoe, a rumored OpenAI data center supplier, has secured $686M in new funds, filing shows"
@@ -1667,7 +1886,8 @@
    "category": "Expansion",
    "tags": [
     "Expansion",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -1678,6 +1898,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0a5c6fa27095b951",
    "cluster_title": "Nokia expands multi-year agreement to supply Microsoft Azure datacenter networks"
   },
@@ -1703,6 +1926,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "f172bba685e0b84f",
    "cluster_title": "Nokia expands partnership with Microsoft Azure for data center networks"
   },
@@ -1734,8 +1960,13 @@
    "state": "OH",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Cologix"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 7.0,
    "cluster_id": "05c2f1e796311e38",
    "cluster_title": "Cologix Plans $7 Billion, 800-MW Data Center Complex in Ohio"
@@ -1768,8 +1999,13 @@
    "state": "OH",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Cologix"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 7.0,
    "cluster_id": "5d1652d067c41957",
    "cluster_title": "Cologix plans $7B data center expansion in Central Ohio"
@@ -1785,26 +2021,18 @@
    "tags": [
     "Expansion"
    ],
-   "locations": [
-    {
-     "name": "Omaha, Nebraska, US",
-     "lat": 41.26,
-     "lon": -95.94,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "NE"
-   ],
-   "state": "NE",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "674bb02377022f5e",
    "cluster_title": "Facebook Data Center Expands to the South"
   },
@@ -1846,6 +2074,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2d2ab50e7785d7e7",
    "cluster_title": "1.7 million sq ft data center proposed outside Atlanta, Georgia"
   },
@@ -1858,15 +2089,31 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Economy / Jobs",
+    "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a8f066c44cf98b5f",
    "cluster_title": "Data center plans in Ringgold spark debates amid economic potential and community concerns"
   },
@@ -1890,6 +2137,9 @@
     "xAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "7d34c900dcd311c8",
    "cluster_title": "The Colossus Supercomputer: Elon Musk’s Drive Toward Data Center AI Technology"
   },
@@ -1925,6 +2175,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 5.0,
    "cluster_id": "4980ae56df53bd53",
    "cluster_title": "Meta plans $5bn data center campus in Louisiana"
@@ -1936,26 +2189,20 @@
    "source": "The Boston Globe",
    "published": "2024-11-20T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
-   "locations": [
-    {
-     "name": "Boston, Massachusetts, US",
-     "lat": 42.36,
-     "lon": -71.06,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
    ],
-   "states": [
-    "MA"
-   ],
-   "state": "MA",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "cd5d6b4c4195dec1",
    "cluster_title": "A multibillion-dollar data center project is coming to Western Mass."
   },
@@ -1966,8 +2213,10 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-20T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
    "locations": [
     {
      "name": "Chicago, Illinois, US",
@@ -1995,6 +2244,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b44073dbb8a28cc9",
    "cluster_title": "Colovore to develop liquid-cooled data centers in Reno and Chicago"
   },
@@ -2011,14 +2263,6 @@
    ],
    "locations": [
     {
-     "name": "Columbus, Ohio, US",
-     "lat": 39.96,
-     "lon": -83.0,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Licking County, Ohio, US",
      "lat": 40.092,
      "lon": -82.483,
@@ -2032,9 +2276,14 @@
    ],
    "state": "OH",
    "county": "Licking County, Ohio, US",
-   "location_precision": "city",
-   "companies": [],
+   "location_precision": "county",
+   "companies": [
+    "Cologix"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 7.0,
    "cluster_id": "a9b52db3b5779a58",
    "cluster_title": "Cologix to invest $7 billion in Licking County data center campus"
@@ -2050,11 +2299,11 @@
    "tags": [],
    "locations": [
     {
-     "name": "Kansas City, Missouri, US",
-     "lat": 39.1,
-     "lon": -94.58,
-     "level": 3,
-     "precision": "city",
+     "name": "Missouri, US",
+     "lat": 38.4,
+     "lon": -92.5,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -2063,9 +2312,12 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ce3268ee3b0738f0",
    "cluster_title": "Company bringing data center to The Star’s old printing press said it could be KC’s tech hub"
   },
@@ -2100,6 +2352,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "397209a32489f05c",
    "cluster_title": "Black Box Announces Grand Opening of a Hyperscale Data Centre of Excellence in Minnesota"
   },
@@ -2130,6 +2385,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fd5157c9a411fe84",
    "cluster_title": "DC Blox bringing new, large data centers to two Alabama locations"
   },
@@ -2163,6 +2421,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 9,
    "cluster_id": "dd99f5e92ef5dcf9",
    "cluster_title": "Colovore Opens Second 9MW High-Density, Liquid-Cooled Data Center in Santa Clara"
@@ -2200,6 +2461,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1ec92df52d6e3767",
    "cluster_title": "Meta, Facebook's parent company, plans to build multi-billion dollar AI data center in Louisiana"
   },
@@ -2222,6 +2486,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "94b17f5c25ff6981",
    "cluster_title": "As generative AI asks for more power, data centers seek more reliable, cleaner energy solutions"
   },
@@ -2265,6 +2532,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "de78241f9e8a8e69",
    "cluster_title": "Meta plans to build a large data center in Richland Parish, Louisiana."
   },
@@ -2300,6 +2570,9 @@
    "utilities": [
     "Entergy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 2200,
    "cluster_id": "4f408e855de6d3f3",
    "cluster_title": "Entergy Louisiana Eyes 2.2 GW of New Gas-Fired Generation to Support Data Center Demand"
@@ -2311,8 +2584,9 @@
    "source": "96.5 KPEL",
    "published": "2024-11-19T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Deals / Investment",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "Deals / Investment"
    ],
    "locations": [
@@ -2333,6 +2607,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "185001dba3de7c40",
    "cluster_title": "Tech Giant’s Multi-Billion Dollar Data Center Is Coming to Louisiana"
   },
@@ -2357,6 +2634,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6cc293fb15c8078a",
    "cluster_title": "Microsoft Ignite 2024: New Azure Data Center Chips Unveiled"
   },
@@ -2379,25 +2659,21 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "KS",
     "MO"
    ],
    "state": "MO",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Nebius"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "748b3f1608648360",
    "cluster_title": "Patmos Announces Nebius as First Tenant in New Kansas City Data Center"
   },
@@ -2416,6 +2692,14 @@
    ],
    "locations": [
     {
+     "name": "Muskogee, Oklahoma, US",
+     "lat": 35.7479,
+     "lon": -95.3697,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Oklahoma, US",
      "lat": 35.6,
      "lon": -97.5,
@@ -2429,12 +2713,15 @@
    ],
    "state": "OK",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "CoreWeave",
     "Core Scientific"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 100,
    "cluster_id": "958a9931dbd4fda4",
    "cluster_title": "CoreWeave and Core Scientific break ground on 100MW data center in Muskogee, Oklahoma"
@@ -2457,6 +2744,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "11bcea85a2802e69",
    "cluster_title": "Patmos picks first tenant for data center in former KC Star building"
   },
@@ -2467,8 +2757,11 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-19T08:00:00+00:00",
    "feed": "Backfill: cancelled",
-   "category": "General",
-   "tags": [],
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -2476,6 +2769,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4314119372780055",
    "cluster_title": "Essential infrastructure: data centers powering economic growth"
   },
@@ -2500,6 +2796,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ad3c25334fdf6cc3",
    "cluster_title": "Microsoft launches two data center infrastructure chips to speed AI applications"
   },
@@ -2519,6 +2818,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ae6c4e696d5ec9db",
    "cluster_title": "Roundabout for new data center north of BG nearly ready for motorists to take a spin"
   },
@@ -2540,6 +2842,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "3832cbbd0df997ed",
    "cluster_title": "Keppel DC REIT Buys Genting Lane Data Centers for S$1 Billion"
@@ -2554,7 +2859,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -2576,6 +2882,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ef404b197aa72443",
    "cluster_title": "FERC urged to shield AES Ohio customers from expected grid costs due to 1.5-GW Amazon data center"
   },
@@ -2598,6 +2907,14 @@
      "level": 3,
      "precision": "city",
      "country": "US"
+    },
+    {
+     "name": "Augusta, Georgia, US",
+     "lat": 33.471,
+     "lon": -81.9748,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
     }
    ],
    "states": [
@@ -2608,6 +2925,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "994ddf1a562465e7",
    "cluster_title": "North Augusta is about to get its first data center, thanks to investment by Atlanta company"
   },
@@ -2640,6 +2960,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "34108f631435b6c8",
    "cluster_title": "Data centers could derail Virginia’s clean energy progress"
   },
@@ -2663,6 +2986,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a99b6829a81f3e54",
    "cluster_title": "Meta showcases Gallatin data centers, where your Facebook profile could live"
   },
@@ -2673,8 +2999,9 @@
    "source": "Louisiana Illuminator",
    "published": "2024-11-16T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Deals / Investment",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "Deals / Investment",
     "Power / Utility"
    ],
@@ -2696,6 +3023,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 5.0,
    "cluster_id": "398a082a426a7cb0",
    "cluster_title": "Huge power plant eyed to run mystery $5 billion Louisiana data center"
@@ -2729,6 +3059,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "f105dec88e2da813",
    "cluster_title": "Another data center proposed in southeast Wisconsin"
   },
@@ -2746,6 +3079,14 @@
    ],
    "locations": [
     {
+     "name": "Gallatin, Tennessee, US",
+     "lat": 36.3884,
+     "lon": -86.4467,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Tennessee, US",
      "lat": 35.9,
      "lon": -86.4,
@@ -2759,13 +3100,16 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
    "utilities": [],
-   "cluster_id": "277ad17ea6860d50",
-   "cluster_title": "Meta officially launches Gallatin data center campus in Tennessee"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a423dc017bb1e5af",
+   "cluster_title": "Meta data center officially goes live in Gallatin"
   },
   {
    "id": "f7710c5cc5999b0a",
@@ -2774,8 +3118,9 @@
    "source": "WPR",
    "published": "2024-11-15T08:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
+    "Environment",
     "Power / Utility",
     "AI Infrastructure"
    ],
@@ -2799,6 +3144,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "f7710c5cc5999b0a",
    "cluster_title": "Microsoft to use diesel-fired generators as backup power for data centers"
   },
@@ -2809,17 +3157,33 @@
    "source": "11Alive.com",
    "published": "2024-11-15T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Community",
    "tags": [
-    "Policy / Permits"
+    "Community",
+    "Policy / Permits",
+    "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Henry County, Georgia, US",
+     "lat": 33.452,
+     "lon": -84.153,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Henry County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fd987350a0cd112c",
    "cluster_title": "Data center in Henry County given green light by zoning advisory board | Why residents are concerned"
   },
@@ -2842,18 +3206,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "KS",
     "MO"
    ],
    "state": "MO",
@@ -2861,6 +3216,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "0dd7f33a668a4d8a",
    "cluster_title": "Patmos to Build $1B Kansas City Data Center"
@@ -2896,6 +3254,9 @@
    "utilities": [
     "PG&E"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a3938e4e5664f6fa",
    "cluster_title": "Westbank and PG&E want to heat San Jose homes with data center power"
   },
@@ -2918,18 +3279,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "KS",
     "MO"
    ],
    "state": "MO",
@@ -2937,6 +3289,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 100,
    "cluster_id": "25ce35ff1695064b",
    "cluster_title": "US hosting firm Patmos to convert former printing press in Kansas City into 100MW data center"
@@ -2979,6 +3334,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "23506efbf6b5865a",
    "cluster_title": "Data center campus planned in Kenosha - BizTimes - Milwaukee Business News"
   },
@@ -2989,8 +3347,9 @@
    "source": "Southern Environmental Law Center",
    "published": "2024-11-15T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Environment",
    "tags": [
+    "Environment",
     "AI Infrastructure"
    ],
    "locations": [
@@ -3013,6 +3372,9 @@
     "xAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "445daccb7d929cbf",
    "cluster_title": "Elon Musk’s xAI facility is polluting South Memphis"
   },
@@ -3048,6 +3410,11 @@
     "xAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
    "investment_usd_b": 6.0,
    "cluster_id": "a2394f6a30d0253e",
    "cluster_title": "Elon Musk's xAI raising up to $6 billion to purchase 100,000 Nvidia chips for Memphis data center"
@@ -3064,15 +3431,29 @@
     "Operations",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Gallatin, Tennessee, US",
+     "lat": 36.3884,
+     "lon": -86.4467,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a423dc017bb1e5af",
    "cluster_title": "Meta data center officially goes live in Gallatin"
   },
@@ -3097,7 +3478,8 @@
    ],
    "utilities": [],
    "cluster_id": "1262a60bf67bbf5b",
-   "cluster_title": "Gallatin, we are online!"
+   "cluster_title": "Gallatin, we are online!",
+   "filtered": true
   },
   {
    "id": "c8fc46a7401004a1",
@@ -3117,6 +3499,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 750,
    "cluster_id": "c8fc46a7401004a1",
    "cluster_title": "SMR firm Oklo promises 750MW of nuclear power to two data center operators"
@@ -3140,18 +3525,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "KS",
     "MO"
    ],
    "state": "MO",
@@ -3159,6 +3535,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 100,
    "cluster_id": "9f0681e0cc90c6b8",
    "cluster_title": "Patmos to Convert the Iconic Kansas City Star Building into a State-of-the-Art 100 MW Data Center"
@@ -3180,18 +3559,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "KS",
     "MO"
    ],
    "state": "MO",
@@ -3199,6 +3569,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "518588f6dc71fea7",
    "cluster_title": "Former Kansas City Star printing plant to become flagship data center"
   },
@@ -3221,6 +3594,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 5.0,
    "cluster_id": "293b812e970a1b24",
    "cluster_title": "‘Transformative’ $5 billion data center campus planned for Wallula"
@@ -3244,6 +3620,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3272a7adb912f960",
    "cluster_title": "Solidigm unveils 122TB data center SSD for AI workloads"
   },
@@ -3280,6 +3659,11 @@
    "utilities": [
     "PG&E"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
    "capacity_mw": 200,
    "cluster_id": "32c25c3b860f5e46",
    "cluster_title": "PG&E plans 200MW data center campus in San Jose, deploys Nvidia hardware to nuclear power plant"
@@ -3291,8 +3675,9 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-14T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Economy / Jobs",
    "tags": [
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -3304,6 +3689,9 @@
     "Anthropic"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "8a26228829399ce1",
    "cluster_title": "Anthropic CEO: AI training data centers to be $10bn in 2026, $100bn from 2027"
@@ -3324,6 +3712,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1bd61e7a6561ccd5",
    "cluster_title": "Former KC Star building at center of Royals stadium talk to become data center"
   },
@@ -3336,17 +3727,12 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Environment",
+    "Politics",
+    "Policy / Permits"
    ],
    "locations": [
-    {
-     "name": "Detroit, Michigan, US",
-     "lat": 42.33,
-     "lon": -83.05,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Michigan, US",
      "lat": 44.3,
@@ -3361,9 +3747,12 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "44e1a7e01c7ac9ae",
    "cluster_title": "Democrats ‘blew a hole’ in Michigan climate plan with data center bills, advocate says"
   },
@@ -3378,11 +3767,11 @@
    "tags": [],
    "locations": [
     {
-     "name": "Kansas City, Missouri, US",
-     "lat": 39.1,
-     "lon": -94.58,
-     "level": 3,
-     "precision": "city",
+     "name": "Missouri, US",
+     "lat": 38.4,
+     "lon": -92.5,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -3391,9 +3780,12 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "55d1e615eb9b7cf1",
    "cluster_title": "Instead of a downtown baseball stadium, former KC Star printing press will be a data center"
   },
@@ -3416,6 +3808,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c7643b3d5a0e7517",
    "cluster_title": "Solidigm Unveils World’s First “122 TB” Data Center SSD, Targeting AI-Focused Workloads"
   },
@@ -3430,7 +3825,8 @@
    "tags": [
     "New Announcement",
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -3440,6 +3836,11 @@
    "companies": [],
    "utilities": [
     "AEP"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Bloom Energy"
    ],
    "cluster_id": "033fe77638074cd3",
    "cluster_title": "Bloom Energy Announces Gigawatt Fuel Cell Procurement Agreement With AEP To Power AI Data Centers"
@@ -3462,6 +3863,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "584545a6532304e2",
    "cluster_title": "Billion-dollar retrofit will convert former Star printing plant into a data center"
   },
@@ -3472,8 +3876,9 @@
    "source": "Business Wire",
    "published": "2024-11-14T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -3483,6 +3888,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "46af55938f836dfa",
    "cluster_title": "DC BLOX to Develop Four Southeastern Hyperscale Edge Node Data Centers"
   },
@@ -3495,7 +3903,8 @@
    "feed": "Backfill: cancelled",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -3504,6 +3913,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3d1b2bda7fda4909",
    "cluster_title": "FERC Order Rejecting Co-Location of Nuclear Facility and Data Center Increases Uncertainty and Leaves Data Center Stakeholders Contemplating Alternative Paths"
   },
@@ -3540,6 +3952,9 @@
     "Iron Mountain"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 200,
    "cluster_id": "ddf7c91ee831d47e",
    "cluster_title": "Iron Mountain acquires 66 acres outside Richmond for 200MW data center campus"
@@ -3551,8 +3966,10 @@
    "source": "Urbanize LA",
    "published": "2024-11-13T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -3560,6 +3977,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9b6faea5119836a9",
    "cluster_title": "Here's the updated look for the big data center at 727 S. Grand Ave. in DTLA"
   },
@@ -3573,7 +3993,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -3584,6 +4005,9 @@
     "xAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 150,
    "cluster_id": "b7375db082f90667",
    "cluster_title": "Elon Musk's massive AI data center gets unlocked — xAI gets approved for 150MW of power, enabling all 100,000 GPUs to run concurrently"
@@ -3604,6 +4028,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1cee3c160c4531eb",
    "cluster_title": "ZAB and BOC to Consider Two Data Center Requests This Month"
   },
@@ -3640,6 +4067,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "586b0b220330717d",
    "cluster_title": "Michigan House OKs tax breaks to lure Google, Microsoft data server farms"
   },
@@ -3662,6 +4092,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 750,
    "cluster_id": "871e71d4e636f35e",
    "cluster_title": "Oklo secures up to 750 MW-worth of new data center partnerships"
@@ -3684,6 +4117,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "24a5f56319732ab8",
    "cluster_title": "Phison Unveils Pascari D-Series PCIe Gen 5 128TB Data Center SSDs"
   },
@@ -3707,6 +4143,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.024,
    "cluster_id": "3c54b46624a40dc4",
    "cluster_title": "Accelsius Secures $24M in Series A Funding to Efficiently Cool AI Data Centers"
@@ -3722,7 +4161,8 @@
    "tags": [
     "Cancelled / Blocked",
     "New Announcement",
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -3731,6 +4171,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6443a1d83cd81c94",
    "cluster_title": "FERC Rejects Interconnection Proposal for Nuclear-Powered Data Center Project"
   },
@@ -3741,8 +4184,9 @@
    "source": "Virginia Mercury",
    "published": "2024-11-13T08:00:00+00:00",
    "feed": "Backfill: cancelled",
-   "category": "Policy / Permits",
+   "category": "Environment",
    "tags": [
+    "Environment",
     "Policy / Permits"
    ],
    "locations": [
@@ -3763,6 +4207,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "39bf31e99d54b713",
    "cluster_title": "Virginia environmental regulators make info on data center operations more publicly accessible"
   },
@@ -3773,8 +4220,10 @@
    "source": "Construction Dive",
    "published": "2024-11-12T08:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -3782,6 +4231,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "15ab397477550073",
    "cluster_title": "Planning activity cools, data center surge moderates"
   },
@@ -3804,6 +4256,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3430d76cd4eb0d3b",
    "cluster_title": "High Performance Computing and Data Center Construction Ready to Begin"
   },
@@ -3844,6 +4299,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a24335e56a68a353",
    "cluster_title": "Stack files to build two more data centers outside Atlanta, Georgia"
   },
@@ -3884,6 +4342,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 300,
    "cluster_id": "e6363888568e52ed",
    "cluster_title": "Revised gas-powered 300MW data center campus in the works for Pittsylvania County, Virginia"
@@ -3907,6 +4368,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bc8030b03f4521b6",
    "cluster_title": "Samsung C&T will participate in the investment and construction of the data center in Ansan, Gye.."
   },
@@ -3919,9 +4383,19 @@
    "feed": "Backfill: operational",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Community",
+    "Policy / Permits"
    ],
    "locations": [
+    {
+     "name": "Stillwater, Oklahoma, US",
+     "lat": 36.1156,
+     "lon": -97.0584,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
     {
      "name": "Oklahoma, US",
      "lat": 35.6,
@@ -3936,9 +4410,12 @@
    ],
    "state": "OK",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4617628cc01bc9c4",
    "cluster_title": "Stillwater residents vote in favor of power agreement for Oklahoma data center campus"
   },
@@ -3949,8 +4426,9 @@
    "source": "Utility Dive",
    "published": "2024-11-11T08:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "Power / Utility",
+   "category": "Construction",
    "tags": [
+    "Construction",
     "Power / Utility"
    ],
    "locations": [],
@@ -3962,6 +4440,9 @@
    "utilities": [
     "APS"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "59f342bfdb4af0a6",
    "cluster_title": "Rising data center loads pose grid reliability, residential cost risks: APS executive"
   },
@@ -3995,6 +4476,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 30,
    "cluster_id": "9a5393aa68d85e0a",
    "cluster_title": "Dataprana breaks ground on new 30 MW data center site in Texas"
@@ -4013,6 +4497,14 @@
    ],
    "locations": [
     {
+     "name": "Wichita Falls, Texas, US",
+     "lat": 33.9137,
+     "lon": -98.4934,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Texas, US",
      "lat": 31.5,
      "lon": -99.3,
@@ -4026,9 +4518,12 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 300,
    "cluster_id": "babbbf66aa446c81",
    "cluster_title": "Wichita Falls council approves land rezoning for 300MW data center in Texas"
@@ -4056,6 +4551,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "87381ede49d22bc4",
    "cluster_title": "Data Center Nuclear Power Update: Microsoft, Constellation, AWS, Talen, Meta"
   },
@@ -4074,6 +4572,14 @@
    ],
    "locations": [
     {
+     "name": "Becker, Minnesota, US",
+     "lat": 45.3933,
+     "lon": -93.8769,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Minnesota, US",
      "lat": 46.3,
      "lon": -94.3,
@@ -4087,11 +4593,14 @@
    ],
    "state": "MN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9d29b7dc232d63c4",
    "cluster_title": "Amazon buys 350-acre parcel in Becker, Minnesota, for data center"
   },
@@ -4125,6 +4634,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4ac3884d0a7d943a",
    "cluster_title": "Ark breaks ground on Green Bay data center expansion in Wisconsin"
   },
@@ -4147,6 +4659,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "3c2c7a936e438b90",
    "cluster_title": "Aurum Equity Partners launches $1bn tokenized equity and debt fund for data center invesment"
@@ -4158,8 +4673,10 @@
    "source": "Construction Dive",
    "published": "2024-11-08T08:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs"
+   ],
    "locations": [
     {
      "name": "Ohio, US",
@@ -4178,6 +4695,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "3dd167d8e5c79ea8",
    "cluster_title": "Turner Wins $2B Ohio Data Center Campus Contract"
@@ -4192,7 +4712,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Politics"
    ],
    "locations": [
     {
@@ -4214,6 +4735,9 @@
     "xAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 150,
    "cluster_id": "1a3673cb1bc29644",
    "cluster_title": "Fury from campaigners as Elon Musk's xAI gets 150MW for Colossus supercomputer in Memphis"
@@ -4227,7 +4751,8 @@
    "feed": "Backfill: announced",
    "category": "Deals / Investment",
    "tags": [
-    "Deals / Investment"
+    "Deals / Investment",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -4247,6 +4772,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.017,
    "cluster_id": "c3cd4aa5f4d79fd1",
    "cluster_title": "Oregon approves $17.3 million purchase agreement for data center"
@@ -4258,8 +4786,9 @@
    "source": "LoudounNow.com",
    "published": "2024-11-08T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Community",
    "tags": [
+    "Community",
     "Policy / Permits"
    ],
    "locations": [
@@ -4280,6 +4809,9 @@
    "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3efd41e0da02ec57",
    "cluster_title": "Planning Commission Opposes Oaklawn Data Center Application"
   },
@@ -4299,6 +4831,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "10eb11d4149ff37a",
    "cluster_title": "Projections and feasibility of data centers in space"
   },
@@ -4313,11 +4848,11 @@
    "tags": [],
    "locations": [
     {
-     "name": "Prince William County, Virginia, US",
-     "lat": 38.7,
-     "lon": -77.48,
-     "level": 3,
-     "precision": "city",
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -4326,9 +4861,12 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "695ddfc9a37cd7fd",
    "cluster_title": "Data center near historic Black horse show grounds on hold"
   },
@@ -4350,6 +4888,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2e2facede66529ea",
    "cluster_title": "AtNorth to expand two Icelandic data centers"
   },
@@ -4382,6 +4923,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "25659e4ac13af286",
    "cluster_title": "Data centers keep growing in Virginia — and so does energy demand"
   },
@@ -4394,7 +4938,8 @@
    "feed": "Backfill: operational",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -4403,6 +4948,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9c3c437391954c54",
    "cluster_title": "Uptime Launches Enhanced M&O Stamp of Approval to Accelerate Improvements in Data Center Operational Resiliency"
   },
@@ -4433,6 +4981,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "3dd167d8e5c79ea8",
    "cluster_title": "Turner Wins $2B Ohio Data Center Campus Contract"
@@ -4447,7 +4998,9 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Power / Utility"
+    "Power / Utility",
+    "Community",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -4458,6 +5011,9 @@
    "utilities": [
     "TVA"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b5d784cc1ae4607e",
    "cluster_title": "TVA approves Elon Musk’s controversial data center plan for more power"
   },
@@ -4480,6 +5036,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "33d352227e2303a5",
    "cluster_title": "Vistra in Talks to Expand Power for Data Centers Through Nuclear, Gas Options"
   },
@@ -4490,8 +5049,10 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-07T08:00:00+00:00",
    "feed": "Backfill: hyperscaler",
-   "category": "Policy / Permits",
+   "category": "Environment",
    "tags": [
+    "Environment",
+    "Community",
     "Policy / Permits"
    ],
    "locations": [],
@@ -4502,7 +5063,8 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "aeffc6b103e96661",
-   "cluster_title": "Outreach with the opposition: A conversation with the Piedmont Environmental Council"
+   "cluster_title": "Outreach with the opposition: A conversation with the Piedmont Environmental Council",
+   "filtered": true
   },
   {
    "id": "d7ffbe6b56a68648",
@@ -4513,7 +5075,8 @@
    "feed": "Backfill: operational",
    "category": "Policy / Permits",
    "tags": [
-    "Policy / Permits"
+    "Policy / Permits",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -4522,6 +5085,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "d7ffbe6b56a68648",
    "cluster_title": "Data Center Regulation Trends to Watch in 2025"
   },
@@ -4539,6 +5105,14 @@
    ],
    "locations": [
     {
+     "name": "Grand Rapids, Michigan, US",
+     "lat": 42.9634,
+     "lon": -85.6681,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Michigan, US",
      "lat": 44.3,
      "lon": -85.4,
@@ -4552,9 +5126,12 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8191c4415090b9f3",
    "cluster_title": "Switch plans second expansion of pyramid data center campus in Grand Rapids, Michigan"
   },
@@ -4576,6 +5153,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "df1338aac9b4e55f",
    "cluster_title": "Algerian government launches parliament data center"
   },
@@ -4588,7 +5168,8 @@
    "feed": "Backfill: operational",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -4597,6 +5178,10 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Kemet Data Center",
    "cluster_id": "ee614607d257b29b",
    "cluster_title": "Kemet Data Center secures land under usufruct agreement"
   },
@@ -4621,6 +5206,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fc5de6b35e7680f0",
    "cluster_title": "Amazon slated to build second data center in Louisa County"
   },
@@ -4645,6 +5233,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "195ce8224549a10b",
    "cluster_title": "Bees block Meta’s nuclear-powered data center -- ANS / Nuclear Newswire"
   },
@@ -4659,17 +5250,33 @@
    "tags": [
     "Deals / Investment",
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Politics",
+    "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "White House, Tennessee, US",
+     "lat": 36.4703,
+     "lon": -86.6514,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "OpenAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 5000,
    "cluster_id": "63724c7d2a528120",
    "cluster_title": "Here's the 5GW, 30 million sq ft data center pitch doc OpenAI showed the White House"
@@ -4706,7 +5313,8 @@
    ],
    "utilities": [],
    "cluster_id": "7d4701ab2472347a",
-   "cluster_title": "The Amazon factor in Virginia"
+   "cluster_title": "The Amazon factor in Virginia",
+   "filtered": true
   },
   {
    "id": "a13ec2a3ade039a9",
@@ -4718,6 +5326,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Environment",
     "Power / Utility",
     "AI Infrastructure"
    ],
@@ -4728,6 +5337,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a13ec2a3ade039a9",
    "cluster_title": "Not privacy lawyers or environmentalists, but a rare bee species forced Mark Zuckerberg to scrap his ambitious plan to build a nuclear-powered AI data center worth hundreds of millions of dollars"
   },
@@ -4740,7 +5352,8 @@
    "feed": "Backfill: cancelled",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -4749,6 +5362,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "750c288ddcfc6b91",
    "cluster_title": "Feds deal blow to dream of data centers connected to nuclear plants"
   },
@@ -4767,11 +5383,11 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Grand Rapids, Michigan, US",
+     "lat": 42.9634,
+     "lon": -85.6681,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -4780,9 +5396,12 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.7,
    "cluster_id": "6e76b7b16076e954",
    "cluster_title": "Data center south of Grand Rapids plans $700 million expansion"
@@ -4805,6 +5424,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "743f166b66295222",
    "cluster_title": "1 million square-foot data center project slated for Union City"
   },
@@ -4824,6 +5446,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bf96fe32cf051e5c",
    "cluster_title": "New Data Center Developments: November 2024"
   },
@@ -4849,14 +5474,6 @@
      "country": "US"
     },
     {
-     "name": "Dallas, Texas, US",
-     "lat": 32.78,
-     "lon": -96.8,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Texas, US",
      "lat": 31.5,
      "lon": -99.3,
@@ -4875,6 +5492,9 @@
     "DataBank"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.265,
    "cluster_id": "6228e13a7e64d09c",
    "cluster_title": "Red Oak to gain $265M DataBank data center expansion amid soaring North Texas tech demand"
@@ -4915,7 +5535,8 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "f4c3ef7d56d03c62",
-   "cluster_title": "Culpeper County – The new Ashburn?"
+   "cluster_title": "Culpeper County – The new Ashburn?",
+   "filtered": true
   },
   {
    "id": "671a0b665085b15d",
@@ -4939,6 +5560,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "671a0b665085b15d",
    "cluster_title": "Meta’s plans to build a nuclear-powered data center for AI fell through because of rare bees"
   },
@@ -4963,6 +5587,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "616280e4b0d4279e",
    "cluster_title": "Meta’s Data Center Expansion Hits an Unexpected Roadblock: Bees"
   },
@@ -5006,6 +5633,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "255c5c767e3d6db2",
    "cluster_title": "Amazon files for 3.8 million sq ft data center campus in Louisa County, Virginia"
   },
@@ -5031,6 +5661,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "24039aaa1adfde9d",
    "cluster_title": "A Rare Bee Species Reportedly Put an End to Meta’s Plans for a Nuclear-Powered AI Data Center"
   },
@@ -5043,7 +5676,8 @@
    "feed": "Backfill: announced",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -5052,6 +5686,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c035025b61b0a551",
    "cluster_title": "How Fiber Innovation Is Key to Unlocking AI Data Center Network Growth"
   },
@@ -5067,13 +5704,27 @@
     "New Announcement",
     "Deals / Investment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Niagara Falls, New York, US",
+     "lat": 43.0945,
+     "lon": -79.0567,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.5,
    "cluster_id": "df136eee0301cb0a",
    "cluster_title": "Niagara Falls Redevelopment is taking the next steps on a $1.5 billion plan to construct a massive data center campus in the City of Niagara Falls."
@@ -5087,7 +5738,8 @@
    "feed": "Backfill: hyperscaler",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -5098,6 +5750,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0781a1ff65f729d8",
    "cluster_title": "Microsoft Research details early-stage modular robotics for data centers"
   },
@@ -5110,7 +5765,8 @@
    "feed": "Backfill: operational",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -5121,6 +5777,9 @@
     "OpenAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "7402405cda09c041",
    "cluster_title": "OpenAI’s comments to the NTIA on data center growth, resilience, and security"
   },
@@ -5144,6 +5803,11 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [
+    "Gensler"
+   ],
+   "suppliers": [],
    "cluster_id": "dd2535f12c8861c7",
    "cluster_title": "Gensler works on new hybrid timber data centers for Microsoft"
   },
@@ -5154,8 +5818,9 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-04T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Environment",
    "tags": [
+    "Environment",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -5166,7 +5831,8 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "428a6802c8f363b6",
-   "cluster_title": "US National Security Agency hybrid cloud environment now operational"
+   "cluster_title": "US National Security Agency hybrid cloud environment now operational",
+   "filtered": true
   },
   {
    "id": "ea00a3a1e3ac3a39",
@@ -5203,6 +5869,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.256,
    "cluster_id": "ea00a3a1e3ac3a39",
    "cluster_title": "Dallas firm to make $256M addition to Red Oak data center campus"
@@ -5244,6 +5913,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "dcba88cfb76a25be",
    "cluster_title": "TA Realty files for 1 million sq ft data center campus outside Atlanta, Georgia"
   },
@@ -5268,6 +5940,9 @@
     "Vantage"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "7a6472f7a227738f",
    "cluster_title": "Turner Selected for $2 Billion Expansion Project for Vantage Data Centers"
@@ -5294,6 +5969,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "47ad49d779d806c9",
    "cluster_title": "Rare bees kill Meta’s nuclear-powered AI data center plans"
   },
@@ -5307,6 +5985,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Construction",
     "Power / Utility"
    ],
    "locations": [],
@@ -5318,6 +5997,9 @@
    "utilities": [
     "Dominion Energy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5764cb7c45fb92d8",
    "cluster_title": "Dominion reaffirms commitment to build out new power generation within Virginian market to meet rising data center demand"
   },
@@ -5355,7 +6037,8 @@
    ],
    "utilities": [],
    "cluster_id": "7bb5a441a87a58ce",
-   "cluster_title": "Microsoft acquires 1,385 acres of land in North Carolina"
+   "cluster_title": "Microsoft acquires 1,385 acres of land in North Carolina",
+   "filtered": true
   },
   {
    "id": "d59aa30ad3807cf3",
@@ -5379,6 +6062,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "d59aa30ad3807cf3",
    "cluster_title": "Endangered Bees Halt Meta's Nuclear-Powered AI Data Center Plans"
   },
@@ -5404,6 +6090,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "160a5b7bed153670",
    "cluster_title": "Endangered bees stop Meta’s plan for nuclear-powered AI data center"
   },
@@ -5414,8 +6103,10 @@
    "source": "Data Center Dynamics",
    "published": "2024-11-04T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Virginia, US",
@@ -5435,7 +6126,8 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "443528acfcd79cf6",
-   "cluster_title": "The future of Virginia post-Loudoun"
+   "cluster_title": "The future of Virginia post-Loudoun",
+   "filtered": true
   },
   {
    "id": "2efe2f02c0fe1699",
@@ -5459,6 +6151,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2efe2f02c0fe1699",
    "cluster_title": "Federal energy regulators block Amazon’s data center deal with Salem Twp. power plant"
   },
@@ -5481,6 +6176,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5d2aa75cb2e38d96",
    "cluster_title": "Mark Zuckerberg’s Nuclear-Powered Data Center for AI Derailed by Bees"
   },
@@ -5495,7 +6193,8 @@
    "tags": [
     "Cancelled / Blocked",
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -5504,6 +6203,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9843a365770ed1f2",
    "cluster_title": "FERC rejects interconnection pact for Talen-Amazon data center deal at nuclear plant"
   },
@@ -5519,7 +6221,8 @@
     "Cancelled / Blocked",
     "Expansion",
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -5530,6 +6233,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "40d6a26364fcc555",
    "cluster_title": "FERC rejects nuclear-powered expansion of Amazon data center"
   },
@@ -5544,7 +6250,8 @@
    "tags": [
     "Cancelled / Blocked",
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -5555,6 +6262,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0d50c3a4dc7ef4b6",
    "cluster_title": "Talen, Constellation and Vistra tumble after government rejects Amazon nuclear data center agreement"
   },
@@ -5579,6 +6289,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "d2a124eeb94e181d",
    "cluster_title": "Meta nuclear powered AI data center scuppered by discovery of rare bee species"
   },
@@ -5603,6 +6316,9 @@
     "CoreWeave"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1042314a06f169e8",
    "cluster_title": "CoreWeave Leases Kenilworth Lab Space for Data Center Conversion"
   },
@@ -5618,7 +6334,8 @@
     "New Announcement",
     "Expansion",
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -5631,6 +6348,9 @@
    "utilities": [
     "PJM"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ccf629b45d0396fa",
    "cluster_title": "FERC Blocks PJM Proposal to Expand Amazon Data Center Load at Susquehanna Nuclear Plant"
   },
@@ -5641,8 +6361,10 @@
    "source": "Tech Xplore",
    "published": "2024-11-02T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -5650,6 +6372,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8d86698d8b0eefa7",
    "cluster_title": "As data center industry booms, an English village becomes a battleground"
   },
@@ -5662,15 +6387,16 @@
    "feed": "Backfill: operational",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
    "locations": [
     {
-     "name": "West Virginia, US",
-     "lat": 38.6,
-     "lon": -80.6,
-     "level": 2,
-     "precision": "state",
+     "name": "Huntington, West Virginia, US",
+     "lat": 38.4192,
+     "lon": -82.4451,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -5679,9 +6405,12 @@
    ],
    "state": "WV",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "89149f677153b79b",
    "cluster_title": "Officials announce development of data center in downtown Huntington"
   },
@@ -5702,18 +6431,9 @@
      "level": 2,
      "precision": "state",
      "country": "US"
-    },
-    {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "VA",
     "WV"
    ],
    "state": "WV",
@@ -5721,6 +6441,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0ff482a751eda049",
    "cluster_title": "Alpha Technologies to convert office to data center in West Virginia"
   },
@@ -5745,6 +6468,9 @@
    "utilities": [
     "Xcel Energy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 9000,
    "investment_usd_b": 45.0,
    "cluster_id": "df8a01c7644c0a30",
@@ -5760,15 +6486,29 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Policy / Permits"
+    "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Farmington, Minnesota, US",
+     "lat": 44.6402,
+     "lon": -93.1436,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "70113d7cda40265a",
    "cluster_title": "Proposed data center in Farmington sparks resident pushback"
   },
@@ -5807,6 +6547,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bf5c6e8901ba727f",
    "cluster_title": "Province Group data center campus gets green light in Powhatan County, Virginia"
   },
@@ -5831,6 +6574,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "409b72fc194021a4",
    "cluster_title": "US regulators reject amended interconnect agreement for Amazon data center"
   }

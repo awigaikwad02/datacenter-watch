@@ -42,6 +42,9 @@
    "utilities": [
     "Entergy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "48cb7e68aff81de0",
    "cluster_title": "Entergy Louisiana breaks ground on key substation to power data center in Richland Parish"
   },
@@ -77,6 +80,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "5569343fdc5f9b63",
    "cluster_title": "The unknown costs of Amazon’s $20B promise to build 2 data centers in Pennsylvania"
@@ -99,6 +105,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "11f2376edee0d12f",
    "cluster_title": "Data Centers: Beyond The Megawatt -"
   },
@@ -115,9 +124,9 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
+     "name": "Marietta, Georgia, US",
+     "lat": 33.9526,
+     "lon": -84.5499,
      "level": 3,
      "precision": "city",
      "country": "US"
@@ -131,6 +140,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "83bc7ec31973a5d8",
    "cluster_title": "Zoning approved for new Marietta data center"
   },
@@ -152,6 +164,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a56a2ede6f1a3142",
    "cluster_title": "The Rise of Data Centers in the Grid"
   },
@@ -171,6 +186,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "dbdd64eb9480b938",
    "cluster_title": "Learnings from Five Cases of Data Center Development and Defiance"
   },
@@ -181,8 +199,10 @@
    "source": "www.investigatetv.com",
    "published": "2025-06-30T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -190,6 +210,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e6bae5c187627a4b",
    "cluster_title": "Secrets, Servers, and Strain: The hidden toll of America’s data center boom"
   },
@@ -224,6 +247,9 @@
     "Google"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a347584c9d828a8e",
    "cluster_title": "8 things to know about Google’s data center deal in Botetourt County"
   },
@@ -239,13 +265,27 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Rowan County, North Carolina, US",
+     "lat": 35.639,
+     "lon": -80.525,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
+   "county": "Rowan County, North Carolina, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1d1b375c02d529dd",
    "cluster_title": "Manufacturing company to build AI data center in Rowan County, Stein announced"
   },
@@ -282,8 +322,11 @@
     "Google"
    ],
    "utilities": [],
-   "cluster_id": "64f535f9a9f0a89e",
-   "cluster_title": "Google buys land for data center in Botetourt County, Virginia"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8d8f9f349cc78dd5",
+   "cluster_title": "Google buys Botetourt County land for data center plans"
   },
   {
    "id": "081488bedcd7146e",
@@ -305,26 +348,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Washington, US",
-     "lat": 47.4,
-     "lon": -120.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "WA",
     "WI"
    ],
    "state": "WI",
@@ -332,6 +358,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.012,
    "cluster_id": "3a978be336b682df",
    "cluster_title": "Planned Port Washington data center operator starts buying land. First sales total $9 million"
@@ -354,6 +383,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8a2fc87f9f2e635e",
    "cluster_title": "Gabon Signs Landmark Deal to Build National Data Center, Advancing Digital Sovereignty"
   },
@@ -366,7 +398,8 @@
    "feed": "Backfill: announced",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -396,6 +429,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "53cdfe35db331e8e",
    "cluster_title": "Michigan is big on data centers, but what do Switch and Microsoft do for Kent County?"
   },
@@ -416,25 +452,19 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "MD",
-    "VA"
+    "MD"
    ],
    "state": "MD",
    "county": null,
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "7dd804dae93dd023",
    "cluster_title": "Frederick prepares for data center development"
   },
@@ -449,15 +479,16 @@
    "tags": [
     "New Announcement",
     "Deals / Investment",
-    "Policy / Permits"
+    "Community",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Ann Arbor, Michigan, US",
+     "lat": 42.2776,
+     "lon": -83.7409,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -466,9 +497,12 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "41b6cfaf14d85756",
    "cluster_title": "2 proposed billion-dollar data centers near Ann Arbor face fierce opposition: What to know"
   },
@@ -482,7 +516,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Deals / Investment"
+    "Deals / Investment",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -502,6 +537,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.3,
    "cluster_id": "7cd8b7b33ae97c14",
    "cluster_title": "Data Center Manufacturer to Build $300 Million Assembly Plant in Texas"
@@ -525,6 +563,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8669ec388e21a458",
    "cluster_title": "Proposed data center campus recommended for approval by planning commission"
   },
@@ -548,6 +589,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "08e7703ac8a9354a",
    "cluster_title": "Amazon Is Building a Gigantic Computing Facility to Match the Human Brain"
   },
@@ -570,18 +614,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "KS",
     "MO"
    ],
    "state": "MO",
@@ -589,6 +624,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c28521eebaac45c1",
    "cluster_title": "Tech firm eyes development for 6 data centers north of Kansas City International Airport"
   },
@@ -612,6 +650,9 @@
     "Google"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "dd1e3c076421d88b",
    "cluster_title": "Google to retool 2006 Data Center; New River Road plant to payout in October"
   },
@@ -650,6 +691,9 @@
    "utilities": [
     "Entergy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "60d1c0617ccb3635",
    "cluster_title": "Entergy Louisiana breaks ground on substation to serve Meta Data Center"
   },
@@ -663,7 +707,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Deals / Investment"
+    "Deals / Investment",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -676,7 +721,8 @@
    "utilities": [],
    "investment_usd_b": 0.735,
    "cluster_id": "df9ed4b7036bcad1",
-   "cluster_title": "Vantage secures $735m refinancing loan - report"
+   "cluster_title": "Vantage secures $735m refinancing loan - report",
+   "filtered": true
   },
   {
    "id": "33deefbb6fab89fb",
@@ -717,6 +763,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 11000,
    "cluster_id": "33deefbb6fab89fb",
    "cluster_title": "Former Texas governor and US energy sec plans 11GW data center campus outside Amarillo, Texas"
@@ -730,7 +779,9 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -739,14 +790,6 @@
      "lon": -86.51,
      "level": 3,
      "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "Indiana, US",
-     "lat": 39.9,
-     "lon": -86.3,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -758,6 +801,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5da150560ae9a9bb",
    "cluster_title": "Pittsboro residents ask court to halt planned Hendricks County data center"
   },
@@ -768,29 +814,21 @@
    "source": "Cleveland Magazine",
    "published": "2025-06-27T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility",
+    "Environment",
     "AI Infrastructure"
    ],
-   "locations": [
-    {
-     "name": "Cleveland, Ohio, US",
-     "lat": 41.5,
-     "lon": -81.69,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "OH"
-   ],
-   "state": "OH",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "f1d698f390901ff2",
    "cluster_title": "As the Great Lakes Become a Data Center Hub, AI’s Water Usage Impact Remains Unknown"
   },
@@ -812,6 +850,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "06515558eaba7f90",
    "cluster_title": "Plans announced to resurrect former steelworks as a ‘green’ data center"
   },
@@ -822,8 +863,10 @@
    "source": "The Business Journals",
    "published": "2025-06-27T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [
     {
      "name": "Kansas, US",
@@ -842,6 +885,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 12.0,
    "cluster_id": "0d13b11341dcf79b",
    "cluster_title": "$12B data center campus near Kansas Speedway gets initial UG approval"
@@ -853,15 +899,32 @@
    "source": "Shaw Local",
    "published": "2025-06-27T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Yorkville, Illinois, US",
+     "lat": 41.6411,
+     "lon": -88.4473,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Steel",
    "cluster_id": "ca5fe5466a720bc1",
    "cluster_title": "Yorkville mayor asks Project Steel data center to write upfront check to school district"
   },
@@ -876,11 +939,11 @@
    "tags": [],
    "locations": [
     {
-     "name": "Detroit, Michigan, US",
-     "lat": 42.33,
-     "lon": -83.05,
-     "level": 3,
-     "precision": "city",
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -889,9 +952,12 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fa5ce8a33849a527",
    "cluster_title": "Oakland University seeks private sector partner for new data center on campus"
   },
@@ -935,6 +1001,10 @@
     "Fermi America"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Matador",
    "cluster_id": "fdf79b230ce0f0b2",
    "cluster_title": "Project Matador: Fermi America’s Planned 11-GW Power Campus in Amarillo, Texas"
   },
@@ -970,6 +1040,9 @@
     "Crusoe"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8aa178b845256d26",
    "cluster_title": "Crusoe, Redwood Partner on Nevada Data Center Powered by Used Batteries"
   },
@@ -983,15 +1056,32 @@
    "category": "Expansion",
    "tags": [
     "Expansion",
-    "Power / Utility"
+    "Power / Utility",
+    "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "ComEd"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fc6f81dad8919840",
    "cluster_title": "ComEd expanding Elk Grove substation to power data center boom"
   },
@@ -1014,6 +1104,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6ec854fe624e0b2a",
    "cluster_title": "US data center expansion drives significant rise in cement demand: ACA"
   },
@@ -1026,7 +1119,8 @@
    "feed": "Backfill: operational",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Community"
    ],
    "locations": [],
    "states": [],
@@ -1037,6 +1131,9 @@
     "Crusoe"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fccf7fdefa2f2925",
    "cluster_title": "Crusoe introduces Crusoe Spark: Modular AI data centers for scalable edge computing"
   },
@@ -1062,6 +1159,9 @@
     "xAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 1000,
    "cluster_id": "c1fa58c5ae0b2df1",
    "cluster_title": "OpenAI's gargantuan data center is even bigger than Elon Musk's xAI Colossus — world's largest 300 MW AI data center could reach record 1 gigawatt scale by next year, threatens grid stability"
@@ -1105,6 +1205,9 @@
     "Sabey"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1cc5ace40741525c",
    "cluster_title": "Sabey breaks ground on third building at Ashburn, Virginia, campus"
   },
@@ -1115,9 +1218,11 @@
    "source": "425business.com",
    "published": "2025-06-26T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "AI Infrastructure",
+   "category": "Economy / Jobs",
    "tags": [
-    "AI Infrastructure"
+    "Economy / Jobs",
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -1139,6 +1244,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b9e98b722eb27ca9",
    "cluster_title": "Report Outlines Economic Impact of Microsoft’s Central Washington Data Centers"
   },
@@ -1152,7 +1260,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -1161,6 +1270,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "37dac4dc92573007",
    "cluster_title": "AI data-centre boom could destroy Big Tech's net-zero plans"
   },
@@ -1193,6 +1305,9 @@
     "EdgeCore"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 17.0,
    "cluster_id": "e12041e1686a8df1",
    "cluster_title": "EdgeCore to invest $17B in Louisa County data center campus"
@@ -1204,8 +1319,9 @@
    "source": "WFYI",
    "published": "2025-06-26T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Community",
    "tags": [
+    "Community",
     "Policy / Permits"
    ],
    "locations": [
@@ -1226,6 +1342,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9fcf6d555397854d",
    "cluster_title": "Despite community pushback, hearing examiner recommends approval for Indianapolis data center"
   },
@@ -1238,17 +1357,10 @@
    "feed": "Backfill: announced",
    "category": "Deals / Investment",
    "tags": [
-    "Deals / Investment"
+    "Deals / Investment",
+    "Environment"
    ],
    "locations": [
-    {
-     "name": "Tucson, Arizona, US",
-     "lat": 32.22,
-     "lon": -110.97,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Pima County, Arizona, US",
      "lat": 32.099,
@@ -1263,9 +1375,12 @@
    ],
    "state": "AZ",
    "county": "Pima County, Arizona, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "91147a8bc7e4c462",
    "cluster_title": "Data center’s environmental impact raises alarm in Pima County"
   },
@@ -1276,8 +1391,9 @@
    "source": "WBOY.com",
    "published": "2025-06-26T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Community",
    "tags": [
+    "Community",
     "Policy / Permits"
    ],
    "locations": [
@@ -1298,6 +1414,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9046bb06a4d401c6",
    "cluster_title": "Community split on data center at Tucker County Commission"
   },
@@ -1312,13 +1431,27 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "de89931be70a0a2b",
    "cluster_title": "Rezoning for $1B data center in Franklin Township clears first hurdle"
@@ -1355,6 +1488,9 @@
    "utilities": [
     "PG&E"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "367450c2eb01f787",
    "cluster_title": "News | PG&E invests to meet surging demand for Silicon Valley data centers"
   },
@@ -1391,8 +1527,11 @@
     "Google"
    ],
    "utilities": [],
-   "cluster_id": "64f535f9a9f0a89e",
-   "cluster_title": "Google buys land for data center in Botetourt County, Virginia"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8d8f9f349cc78dd5",
+   "cluster_title": "Google buys Botetourt County land for data center plans"
   },
   {
    "id": "3a978be336b682df",
@@ -1414,26 +1553,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Washington, US",
-     "lat": 47.4,
-     "lon": -120.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "WA",
     "WI"
    ],
    "state": "WI",
@@ -1441,6 +1563,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.009,
    "cluster_id": "3a978be336b682df",
    "cluster_title": "Planned Port Washington data center operator starts buying land. First sales total $9 million"
@@ -1464,6 +1589,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 30,
    "cluster_id": "9ddc3808bd0484d6",
    "cluster_title": "ESDS partners Central Electronics Limited to build 30MW data center in Ghaziabad"
@@ -1487,6 +1615,11 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "HPE"
+   ],
    "cluster_id": "d7f3f0c2fb410757",
    "cluster_title": "KDDI and HPE Join Forces to Launch AI Data Center Operations by Early 2026"
   },
@@ -1497,9 +1630,9 @@
    "source": "Environmental and Energy Study Institute (EESI)",
    "published": "2025-06-25T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility"
+    "Environment"
    ],
    "locations": [],
    "states": [],
@@ -1508,6 +1641,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "228cb0bf50c085dc",
    "cluster_title": "Data Centers and Water Consumption | Article"
   },
@@ -1544,6 +1680,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "adf5a962733fe3e9",
    "cluster_title": "To land Meta’s massive $10 billion data center, Louisiana pulled out all the stops. Will it be worth it?"
@@ -1567,14 +1706,6 @@
      "level": 3,
      "precision": "county",
      "country": "US"
-    },
-    {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
@@ -1587,6 +1718,9 @@
     "EdgeCore"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 17.0,
    "cluster_id": "e12041e1686a8df1",
    "cluster_title": "EdgeCore to invest $17B in Louisa County data center campus"
@@ -1612,6 +1746,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fafec15b7728c191",
    "cluster_title": "SK Group and AWS to Launch AI Data Center in Ulsan by 2027"
   },
@@ -1644,6 +1781,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "71c396ff772acf36",
    "cluster_title": "Texas law gives grid operator power to disconnect data centers during crisis"
   },
@@ -1654,8 +1794,10 @@
    "source": "GovTech",
    "published": "2025-06-25T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Atlanta, Georgia, US",
@@ -1674,6 +1816,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "7dae746d51b59c33",
    "cluster_title": "What Lessons Can Atlanta Learn From ‘Data Center Alley’?"
   },
@@ -1695,6 +1840,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "408c11f35875493e",
    "cluster_title": "Energy Tax Benefits for Data Centers: In Brief"
   },
@@ -1705,8 +1853,10 @@
    "source": "IndyStar",
    "published": "2025-06-25T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [
     {
      "name": "Indiana, US",
@@ -1725,6 +1875,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5d1ca30c076c10d8",
    "cluster_title": "Indiana is betting big on data centers, but will Hoosiers end up footing the bill?"
   },
@@ -1737,7 +1890,9 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -1757,6 +1912,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "feabfa28c2d31ee3",
    "cluster_title": "How confidentiality agreements around a proposed data center could impact Indianapolis' development"
   },
@@ -1769,15 +1927,16 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
    "locations": [
     {
-     "name": "Indianapolis, Indiana, US",
-     "lat": 39.77,
-     "lon": -86.16,
-     "level": 3,
-     "precision": "city",
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -1786,9 +1945,12 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e18c56ed1e0967a7",
    "cluster_title": "IEDC board approves incentives for four planned data center projects"
   },
@@ -1799,8 +1961,10 @@
    "source": "FauquierNow",
    "published": "2025-06-25T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -1808,6 +1972,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4403a5e0b6c8a901",
    "cluster_title": "Southern Fauquier data center project includes land owned by Supervisor Culbertson; critics call for recusal"
   },
@@ -1820,32 +1987,16 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [
-    {
-     "name": "Cherokee County, South Carolina, US",
-     "lat": 35.049,
-     "lon": -81.621,
-     "level": 3,
-     "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "South Carolina, US",
-     "lat": 33.9,
-     "lon": -80.9,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "SC"
-   ],
-   "state": "SC",
-   "county": "Cherokee County, South Carolina, US",
-   "location_precision": "county",
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.1,
    "cluster_id": "3c6aea867699de93",
    "cluster_title": "Cherokee County inks $2.1B deal with data center developer"
@@ -1891,8 +2042,11 @@
     "Google"
    ],
    "utilities": [],
-   "cluster_id": "64f535f9a9f0a89e",
-   "cluster_title": "Google buys land for data center in Botetourt County, Virginia"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8d8f9f349cc78dd5",
+   "cluster_title": "Google buys Botetourt County land for data center plans"
   },
   {
    "id": "21cd20c0d0607406",
@@ -1926,6 +2080,9 @@
     "Sabey"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.65,
    "cluster_id": "21cd20c0d0607406",
    "cluster_title": "Data center demand drives Sabey's $650M Ashburn expansion"
@@ -1937,8 +2094,9 @@
    "source": "Data Center Dynamics",
    "published": "2025-06-25T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Power / Utility",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "Power / Utility"
    ],
    "locations": [
@@ -1969,6 +2127,9 @@
     "EdgeCore"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 1100,
    "cluster_id": "b1c29f8304bc8bd3",
    "cluster_title": "EdgeCore to develop 1.1GW data center in Louisa County, Virginia"
@@ -1984,15 +2145,30 @@
    "tags": [
     "New Announcement",
     "Operations",
-    "Power / Utility"
+    "Power / Utility",
+    "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "43a494ee75a7251d",
    "cluster_title": "Tariffs slow Group14’s battery production plans — but data center demand opens potential new growth"
   },
@@ -2012,6 +2188,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "72584db232c0164b",
    "cluster_title": "Global Data Center Trends 2025"
   },
@@ -2022,9 +2201,10 @@
    "source": "Business Insider",
    "published": "2025-06-24T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility"
+    "Environment",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -2033,6 +2213,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0e31acbaca3b6af0",
    "cluster_title": "As drought deepens, big tech has put nearly half of its data centers in water-scarce regions"
   },
@@ -2050,11 +2233,11 @@
    ],
    "locations": [
     {
-     "name": "Montana, US",
-     "lat": 47.0,
-     "lon": -109.6,
-     "level": 2,
-     "precision": "state",
+     "name": "Great Falls, Montana, US",
+     "lat": 47.5002,
+     "lon": -111.3008,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -2063,9 +2246,12 @@
    ],
    "state": "MT",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ab2844fa9c8e699f",
    "cluster_title": "For massive Great Falls data center proposal, energy supply is crucial to push project forward"
   },
@@ -2103,6 +2289,9 @@
     "Google"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8d8f9f349cc78dd5",
    "cluster_title": "Google buys Botetourt County land for data center plans"
   },
@@ -2116,15 +2305,31 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Deals / Investment"
+    "Deals / Investment",
+    "Economy / Jobs",
+    "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "South Carolina, US",
+     "lat": 33.9,
+     "lon": -80.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SC"
+   ],
+   "state": "SC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.1,
    "cluster_id": "203a33d9d9471408",
    "cluster_title": "Upstate data center will bring $2.1B investment and create 30 jobs, officials announced this week"
@@ -2138,7 +2343,8 @@
    "feed": "Backfill: announced",
    "category": "Deals / Investment",
    "tags": [
-    "Deals / Investment"
+    "Deals / Investment",
+    "Community"
    ],
    "locations": [
     {
@@ -2158,6 +2364,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "cf1c4f2164706644",
    "cluster_title": "Some residents hesitant about new $1 billion data center headed for central Ohio"
@@ -2169,8 +2378,9 @@
    "source": "WRIC ABC 8News",
    "published": "2025-06-24T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Land Acquisition",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "Land Acquisition"
    ],
    "locations": [
@@ -2191,6 +2401,9 @@
    "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8211d747eb7eb59c",
    "cluster_title": "Nearly 700-acre data center campus coming to Louisa"
   },
@@ -2201,8 +2414,10 @@
    "source": "FOX Carolina News",
    "published": "2025-06-24T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
    "locations": [
     {
      "name": "Cherokee County, South Carolina, US",
@@ -2221,6 +2436,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "113cf77ff567d565",
    "cluster_title": "Company’s first SC data center to be built in Cherokee County"
   },
@@ -2231,8 +2449,10 @@
    "source": "Data Center Frontier",
    "published": "2025-06-24T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Henrico County, Virginia, US",
@@ -2259,6 +2479,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bfd7dc42be16deba",
    "cluster_title": "Henrico County, Virginia Moves To Slow Data Center Growth"
   },
@@ -2273,26 +2496,18 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [
-    {
-     "name": "New York, US",
-     "lat": 42.9,
-     "lon": -75.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "NY"
-   ],
-   "state": "NY",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "state",
+   "location_precision": null,
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "38746ff4c2bdca91",
    "cluster_title": "At Amazon’s Biggest Data Center, Everything Is Supersized for A.I. (Published 2025)"
   },
@@ -2329,7 +2544,8 @@
    "utilities": [],
    "capacity_mw": 1000,
    "cluster_id": "254d793f1fa4ad70",
-   "cluster_title": "New York plans for 1GW nuclear power plant as AI demand grows"
+   "cluster_title": "New York plans for 1GW nuclear power plant as AI demand grows",
+   "filtered": true
   },
   {
    "id": "eded205822ca2029",
@@ -2341,15 +2557,29 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Policy / Permits"
+    "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Mooresville, North Carolina, US",
+     "lat": 35.5849,
+     "lon": -80.8101,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "eded205822ca2029",
    "cluster_title": "Proposed Mooresville data center faces delays, pushback from residents"
   },
@@ -2372,6 +2602,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "860f6c4042f2dc12",
    "cluster_title": "AI data centers could need 30 times more power by 2035, Deloitte warns"
   },
@@ -2389,8 +2622,13 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Cipher Mining"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2bcda41b937524ff",
    "cluster_title": "Cipher Mining Commences Bitcoin Mining at Black Pearl Data Center"
   },
@@ -2403,7 +2641,8 @@
    "feed": "Backfill: construction",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -2412,14 +2651,6 @@
      "lon": -77.5,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -2431,6 +2662,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 4900,
    "cluster_id": "ac2a235a848f6bb3",
    "cluster_title": "Northern Virginia data centers have topped 4,900 megawatts. What does that mean?"
@@ -2442,8 +2676,9 @@
    "source": "Data Center Dynamics",
    "published": "2025-06-23T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Power / Utility",
    "tags": [
+    "Power / Utility",
     "Policy / Permits"
    ],
    "locations": [
@@ -2464,6 +2699,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0e3b967ae673ad51",
    "cluster_title": "Texas Governor approves bill mandating data centers to contribute to costs of interconnection"
   },
@@ -2494,6 +2732,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "24ef805b110438e1",
    "cluster_title": "Alabama city may change its laws to allow one of the country’s largest data centers"
   },
@@ -2507,7 +2748,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Community"
    ],
    "locations": [
     {
@@ -2529,6 +2771,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "507241ad85945478",
    "cluster_title": "'A Black Hole of Energy Use': Meta's Massive AI Data Center Is Stressing Out a Louisiana Community"
   },
@@ -2541,13 +2786,27 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "North Dakota, US",
+     "lat": 47.5,
+     "lon": -100.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ND"
+   ],
+   "state": "ND",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a3dc0408f6b682c6",
    "cluster_title": "Out-of-town company looks into buying land near Buckstop Junction for data center"
   },
@@ -2572,6 +2831,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "128b9c8c7ca01c7a",
    "cluster_title": "Amazon Web Services to form AI Zone in planned SK Ulsan data center"
   },
@@ -2602,6 +2864,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c4e3ca5a9975199a",
    "cluster_title": "This Utah county could host largest data center campus in the world"
   },
@@ -2612,8 +2877,10 @@
    "source": "The Mesa Tribune",
    "published": "2025-06-22T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Mesa, Arizona, US",
@@ -2632,6 +2899,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c0bb0eb4b39471d9",
    "cluster_title": "Mesa may leash rampant data center growth"
   },
@@ -2656,7 +2926,8 @@
    "utilities": [],
    "capacity_mw": 100,
    "cluster_id": "443f12f6c4fdb707",
-   "cluster_title": "Enegix signs deal to build 100MW crypto facility in Piauí"
+   "cluster_title": "Enegix signs deal to build 100MW crypto facility in Piauí",
+   "filtered": true
   },
   {
    "id": "ae9d7e19959ea005",
@@ -2670,24 +2941,16 @@
     "Power / Utility",
     "AI Infrastructure"
    ],
-   "locations": [
-    {
-     "name": "Cleveland, Ohio, US",
-     "lat": 41.5,
-     "lon": -81.69,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "OH"
-   ],
-   "state": "OH",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ae9d7e19959ea005",
    "cluster_title": "Area's robust power grid attracts AI data center developer"
   },
@@ -2698,8 +2961,11 @@
    "source": "Business Insider",
    "published": "2025-06-20T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -2707,6 +2973,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a4c6d3e72dfb8269",
    "cluster_title": "Massive subsidies, minimal jobs: The math behind America's data center boom"
   },
@@ -2717,13 +2986,15 @@
    "source": "Planet Detroit",
    "published": "2025-06-20T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [
     {
-     "name": "Detroit, Michigan, US",
-     "lat": 42.33,
-     "lon": -83.05,
+     "name": "Ypsilanti, Michigan, US",
+     "lat": 42.2411,
+     "lon": -83.613,
      "level": 3,
      "precision": "city",
      "country": "US"
@@ -2745,6 +3016,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "d990c57659703705",
    "cluster_title": "Ypsilanti Township residents speak out against University of Michigan's ‘biggest, baddest’ data center"
   },
@@ -2755,8 +3029,10 @@
    "source": "Data Center Dynamics",
    "published": "2025-06-20T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
    "locations": [
     {
      "name": "Red Oak, Texas, US",
@@ -2785,6 +3061,9 @@
     "DataBank"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "aae0b970e68de38d",
    "cluster_title": "DataBank files to develop two more data centers at upcoming Red Oak, Texas, campus"
   },
@@ -2819,6 +3098,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1496f31f60d08682",
    "cluster_title": "Cawley Partners acquires 5,200 acres outside Dallas, plans data center park"
   },
@@ -2831,7 +3113,8 @@
    "feed": "Backfill: announced",
    "category": "Cancelled / Blocked",
    "tags": [
-    "Cancelled / Blocked"
+    "Cancelled / Blocked",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -2853,6 +3136,9 @@
     "Tract"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "20e2e931d915bafd",
    "cluster_title": "County planning officials outside Richmond vote against Tract data center park"
   },
@@ -2874,6 +3160,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fb28f2d5b0b5741d",
    "cluster_title": "Planning Commission recommends denial of 700-acre data center project in Chesterfield"
   },
@@ -2884,8 +3173,10 @@
    "source": "Bisnow",
    "published": "2025-06-20T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [
     {
      "name": "Virginia, US",
@@ -2904,6 +3195,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ae1dfc8f3c5aacb8",
    "cluster_title": "Local Officials Slam Brakes On 3 Virginia Data Center Campuses"
   },
@@ -2921,11 +3215,11 @@
    ],
    "locations": [
     {
-     "name": "Richmond, Virginia, US",
-     "lat": 37.54,
-     "lon": -77.44,
-     "level": 3,
-     "precision": "city",
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -2934,9 +3228,12 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fb28f2d5b0b5741d",
    "cluster_title": "Planning Commission recommends denial of 700-acre data center project in Chesterfield"
   },
@@ -2947,17 +3244,11 @@
    "source": "Pennsylvania Capital-Star",
    "published": "2025-06-20T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [
-    {
-     "name": "Pennsylvania, US",
-     "lat": 40.9,
-     "lon": -77.8,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    },
     {
      "name": "Illinois, US",
      "lat": 40.0,
@@ -2968,14 +3259,16 @@
     }
    ],
    "states": [
-    "IL",
-    "PA"
+    "IL"
    ],
-   "state": "PA",
+   "state": "IL",
    "county": null,
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a653cdf0e12e6a76",
    "cluster_title": "As Pa. courts data centers, Illinois serves as a cautionary tale"
   },
@@ -3008,6 +3301,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "cc0564cff269158e",
    "cluster_title": "Virginia doesn’t have statewide data center regulations. Localities are making their own rules."
   },
@@ -3038,6 +3334,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e850f8f84fe17ad6",
    "cluster_title": "Get the Facts: Data center in south Louisville gets green light from Metro development committee"
   },
@@ -3051,17 +3350,32 @@
    "category": "Cancelled / Blocked",
    "tags": [
     "Cancelled / Blocked",
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
-   "cluster_id": "07c20167aaab6aed",
-   "cluster_title": "Chesapeake city leaders vote against proposed data center in Great Bridge"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c8bfebc3d1743f77",
+   "cluster_title": "Chesapeake residents unite against proposed data center"
   },
   {
    "id": "296ba39122dfdcee",
@@ -3072,7 +3386,8 @@
    "feed": "Backfill: announced",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -3080,7 +3395,7 @@
      "lat": 34.3,
      "lon": -111.7,
      "level": 2,
-     "precision": "state",
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -3089,9 +3404,14 @@
    ],
    "state": "AZ",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "source",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "Tucson Electric Power"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "296ba39122dfdcee",
    "cluster_title": "TEP seeks 14% rate hike for homes; county supervisor says redo data-center vote as result"
   },
@@ -3105,6 +3425,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Markets / Earnings",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -3117,7 +3438,8 @@
    ],
    "utilities": [],
    "cluster_id": "faa535efd5c9f6f1",
-   "cluster_title": "Intel appoints new chief revenue officer, announces former Cadence, Google, and Rain AI execs as engineering leads"
+   "cluster_title": "Intel appoints new chief revenue officer, announces former Cadence, Google, and Rain AI execs as engineering leads",
+   "filtered": true
   },
   {
    "id": "4129f677b0c36c89",
@@ -3133,11 +3455,11 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "state",
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -3146,11 +3468,14 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6394eee040d95094",
-   "cluster_title": "Chesapeake City Council rejects massive data center"
+   "cluster_title": "Chesapeake City Council rejects data center proposal"
   },
   {
    "id": "6c43d79fcc359332",
@@ -3159,18 +3484,33 @@
    "source": "MPR News",
    "published": "2025-06-18T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility",
+    "Environment",
+    "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6c43d79fcc359332",
    "cluster_title": "Data centers face new regulations, some worry they fall short of protecting water, residents"
   },
@@ -3188,14 +3528,6 @@
    ],
    "locations": [
     {
-     "name": "Columbus, Ohio, US",
-     "lat": 39.96,
-     "lon": -83.0,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Delaware, US",
      "lat": 39.0,
      "lon": -75.5,
@@ -3205,14 +3537,16 @@
     }
    ],
    "states": [
-    "DE",
-    "OH"
+    "DE"
    ],
-   "state": "OH",
+   "state": "DE",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "e1c5f0cb15119420",
    "cluster_title": "Data center operator starts work on $1 billion Delaware complex, part of larger expansion"
@@ -3228,13 +3562,27 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Millersport, Ohio, US",
+     "lat": 39.9001,
+     "lon": -82.534,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "6c211aa72e7606da",
    "cluster_title": "Over $1B data center campus planned for Millersport"
@@ -3246,8 +3594,10 @@
    "source": "GovTech",
    "published": "2025-06-18T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Atlanta, Georgia, US",
@@ -3266,6 +3616,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2a50a548d43a1796",
    "cluster_title": "How the Atlanta Area Became the Hot Data Center Market"
   },
@@ -3285,6 +3638,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "061c6b739f8eda2e",
    "cluster_title": "The True Cost of Data Centers"
   },
@@ -3318,6 +3674,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 600,
    "cluster_id": "6174f25e061d795f",
    "cluster_title": "600MW data center campus proposed in Montana"
@@ -3336,11 +3695,11 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -3349,9 +3708,12 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3ecf462ef0825cba",
    "cluster_title": "Chesapeake City Council shuts down plans for proposed data center"
   },
@@ -3366,11 +3728,11 @@
    "tags": [],
    "locations": [
     {
-     "name": "Tucson, Arizona, US",
-     "lat": 32.22,
-     "lon": -110.97,
-     "level": 3,
-     "precision": "city",
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -3379,9 +3741,13 @@
    ],
    "state": "AZ",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Blue",
    "investment_usd_b": 3.6,
    "cluster_id": "240b3ca5b3bc0412",
    "cluster_title": "Pima Supes OK selling county land for $3.6B Project Blue data center"
@@ -3424,6 +3790,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 108,
    "cluster_id": "36c37a246eeda8c2",
    "cluster_title": "108MW data center campus granted zoning approval outside Atlanta, Georgia"
@@ -3461,6 +3830,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1dfa4ee2b9c195a3",
    "cluster_title": "Microsoft secures power supply for data center project in Malaga, Washington"
   },
@@ -3476,15 +3848,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6394eee040d95094",
-   "cluster_title": "Chesapeake City Council rejects massive data center"
+   "cluster_title": "Chesapeake City Council rejects data center proposal"
   },
   {
    "id": "b692cf79c91e670c",
@@ -3495,7 +3881,9 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -3515,6 +3903,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b692cf79c91e670c",
    "cluster_title": "“Nobody likes it” critics say as Metro committee gives unanimous approval to proposed data center in southwest Louisville"
   },
@@ -3525,17 +3916,11 @@
    "source": "The Atlanta Journal-Constitution",
    "published": "2025-06-18T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [
-    {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Georgia, US",
      "lat": 32.7,
@@ -3550,9 +3935,12 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "569f2e0e1c55e0a6",
    "cluster_title": "Data centers become new flashpoint for local controversy in Georgia"
   },
@@ -3576,6 +3964,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ab3c57fe54749ca1",
    "cluster_title": "Data center moratorium extended to determine impact on ratepayers"
   },
@@ -3586,9 +3977,11 @@
    "source": "Great Lakes Now",
    "published": "2025-06-17T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility"
+    "Environment",
+    "Community",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -3608,6 +4001,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "f060f7c7bd401cce",
    "cluster_title": "As data centers proliferate across Illinois, communities grapple with how to supply the necessary water"
   },
@@ -3630,6 +4026,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "f76af0a45ca1dd8e",
    "cluster_title": "Data Center World Announces the Launch of Data Center World POWER"
   },
@@ -3671,6 +4070,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 2,
    "cluster_id": "62805f92df00ca9b",
    "cluster_title": "1623 Farnam adds 1.5MW to Omaha data center in Nebraska"
@@ -3682,8 +4084,11 @@
    "source": "Business Insider",
    "published": "2025-06-17T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -3691,6 +4096,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9ab570f2b6178f99",
    "cluster_title": "Data centers' environmental impact is hard to quantify. Here's how we did it."
   },
@@ -3712,6 +4120,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "df84c7304f7fa10c",
    "cluster_title": "AI's promise is still taking shape. The costs of its data centers are already here."
   },
@@ -3734,6 +4145,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "6766eddc7fe328ab",
    "cluster_title": "GFDA announces $1 billion proposed data center project"
@@ -3751,15 +4165,29 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6394eee040d95094",
-   "cluster_title": "Chesapeake City Council rejects massive data center"
+   "cluster_title": "Chesapeake City Council rejects data center proposal"
   },
   {
    "id": "312e0302f4e0d8e2",
@@ -3774,13 +4202,27 @@
     "Land Acquisition",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Marietta, Georgia, US",
+     "lat": 33.9526,
+     "lon": -84.5499,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "312e0302f4e0d8e2",
    "cluster_title": "Marietta City Council approves plan for 31-acre data center"
   },
@@ -3802,6 +4244,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "decf21f7b597f0b5",
    "cluster_title": "Data center campus is planned for Great Falls"
   },
@@ -3824,6 +4269,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "221454acba30b2e4",
    "cluster_title": "Architecture Firm Unveils ‘First Data Center Designed Entirely by AI’"
   },
@@ -3836,7 +4284,8 @@
    "feed": "Backfill: announced",
    "category": "Land Acquisition",
    "tags": [
-    "Land Acquisition"
+    "Land Acquisition",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -3856,6 +4305,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4ceb5abee0b12382",
    "cluster_title": "Data center deal approved for 290 acres in southern Arizona"
   },
@@ -3873,11 +4325,11 @@
    ],
    "locations": [
     {
-     "name": "Alabama, US",
-     "lat": 32.8,
-     "lon": -86.8,
-     "level": 2,
-     "precision": "source",
+     "name": "Birmingham, Alabama, US",
+     "lat": 33.5207,
+     "lon": -86.8025,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -3886,9 +4338,12 @@
    ],
    "state": "AL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 14.0,
    "cluster_id": "5adfff4a841eade0",
    "cluster_title": "$14 billion proposed data center near Birmingham moves forward"
@@ -3907,6 +4362,14 @@
    ],
    "locations": [
     {
+     "name": "Fort Meade, Florida, US",
+     "lat": 27.7523,
+     "lon": -81.8017,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Florida, US",
      "lat": 28.6,
      "lon": -82.4,
@@ -3920,9 +4383,12 @@
    ],
    "state": "FL",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5cb25938c8c74c09",
    "cluster_title": "4.4 million sq ft data center campus gets zoning approval in Fort Meade, Florida"
   },
@@ -3939,14 +4405,6 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Clayton County, Georgia, US",
      "lat": 33.543,
      "lon": -84.357,
@@ -3960,9 +4418,12 @@
    ],
    "state": "GA",
    "county": "Clayton County, Georgia, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "f34a19233e82ddd3",
    "cluster_title": "Clayton County agency approves tax break for $1B data center"
@@ -3974,8 +4435,10 @@
    "source": "The Daily Yonder",
    "published": "2025-06-17T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -3983,6 +4446,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "34918f1d3fd71a6f",
    "cluster_title": "This Rural Community Fought One of the Country’s Biggest Gas-Powered Data Centers, and Won"
   },
@@ -4016,6 +4482,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "283f9693cb903cec",
    "cluster_title": "Pima Supes move data center plan forward. Now Tucson Council ok required."
   },
@@ -4028,7 +4497,9 @@
    "feed": "Backfill: announced",
    "category": "Land Acquisition",
    "tags": [
-    "Land Acquisition"
+    "Land Acquisition",
+    "Deals / Investment",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -4037,14 +4508,6 @@
      "lon": -110.97,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Arizona, US",
-     "lat": 34.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -4056,6 +4519,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ae4a0cd42b64eed6",
    "cluster_title": "Huge data center complex near Tucson endorsed by Pima County administrator"
   },
@@ -4080,6 +4546,9 @@
     "Microsoft"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9d81e5faea31df4c",
    "cluster_title": "Chelan PUD, Microsoft Finalize Energy Deal for Malaga Campus"
   },
@@ -4092,7 +4561,8 @@
    "feed": "Backfill: announced",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -4120,6 +4590,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8b352c26ff52e249",
    "cluster_title": "Developer cries foul that Loudoun would stymie approved Leesburg data centers over substation"
   },
@@ -4143,6 +4616,9 @@
    "utilities": [
     "AEP"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "46908058636cacf6",
    "cluster_title": "Data centers’ power needs lead AEP to collaboration on fuel cells"
   },
@@ -4166,6 +4642,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.5,
    "cluster_id": "fab14a7743a621b0",
    "cluster_title": "Jabil Announces Planned Multi-Year $500 Million Investment in U.S. Manufacturing for Cloud and AI Data Center Infrastructure"
@@ -4189,14 +4668,6 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Alabama, US",
-     "lat": 32.8,
-     "lon": -86.8,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
@@ -4207,6 +4678,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4601cde729a71650",
    "cluster_title": "Proposed Bessemer data center could threaten endangered fish species"
   },
@@ -4228,6 +4702,10 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Leola Data Center",
    "cluster_id": "193fb89196f90a81",
    "cluster_title": "Proposed Leola Data Center could fund area emergency services"
   },
@@ -4238,15 +4716,17 @@
    "source": "South Dakota Searchlight",
    "published": "2025-06-16T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [
     {
      "name": "South Dakota, US",
      "lat": 44.4,
      "lon": -100.2,
      "level": 2,
-     "precision": "state",
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -4255,9 +4735,12 @@
    ],
    "state": "SD",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3ed814b1fea26403",
    "cluster_title": "Data center official says other states offer better incentives than SD"
   },
@@ -4270,15 +4753,30 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c8bfebc3d1743f77",
    "cluster_title": "Chesapeake residents unite against proposed data center"
   },
@@ -4298,6 +4796,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "40df45fb65dbc45e",
    "cluster_title": "The Darter Fish and the Data Center"
   },
@@ -4311,7 +4812,8 @@
    "category": "Land Acquisition",
    "tags": [
     "Land Acquisition",
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -4331,6 +4833,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0624c6fcccf7c49a",
    "cluster_title": "APR Energy obtains approval for 800-acre natural gas powered data center in Pampa, Texas"
   },
@@ -4347,11 +4852,11 @@
    ],
    "locations": [
     {
-     "name": "Prince William County, Virginia, US",
-     "lat": 38.7,
-     "lon": -77.48,
-     "level": 3,
-     "precision": "city",
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -4360,9 +4865,12 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "446801854fc47bea",
    "cluster_title": "County board chairs clash on plan to build data centers behind Four Seasons"
   },
@@ -4373,8 +4881,10 @@
    "source": "Marietta Daily Journal",
    "published": "2025-06-16T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -4382,6 +4892,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a8db410ec730bb79",
    "cluster_title": "Marietta Approves Data Center on Bells Ferry"
   },
@@ -4395,7 +4908,8 @@
    "category": "Deals / Investment",
    "tags": [
     "Deals / Investment",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -4417,6 +4931,9 @@
     "Google"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c6684493bc1c3995",
    "cluster_title": "Google Acquisition Continues Ohio Data Center Gold Rush"
   },
@@ -4438,6 +4955,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "77a2a6c142254bd1",
    "cluster_title": "Fort Meade City Commission approves zoning change that could yield massive data center"
   },
@@ -4452,6 +4972,7 @@
    "tags": [
     "New Announcement",
     "Deals / Investment",
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -4465,7 +4986,8 @@
    ],
    "utilities": [],
    "cluster_id": "c680fdd550e9236e",
-   "cluster_title": "After Meta confirms Scale AI investment and hires, Google plans to end partnership"
+   "cluster_title": "After Meta confirms Scale AI investment and hires, Google plans to end partnership",
+   "filtered": true
   },
   {
    "id": "556f6cf236fb1bcc",
@@ -4477,6 +4999,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Markets / Earnings",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -4486,6 +5009,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "556f6cf236fb1bcc",
    "cluster_title": "SK Hynix shares soar to over 2-decade highs as chipmaker's parent reportedly plans AI data center"
   },
@@ -4498,7 +5024,9 @@
    "feed": "Backfill: announced",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -4507,14 +5035,6 @@
      "lon": -110.97,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Arizona, US",
-     "lat": 34.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -4526,6 +5046,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1146fd1976b55847",
    "cluster_title": "Tim Steller's column: Demand details before approving Tucson area's data-center deal"
   },
@@ -4562,6 +5085,9 @@
     "Google"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9047e35862cc87ad",
    "cluster_title": "Google subsidiary acquires 85-acre site in New Albany"
   },
@@ -4584,6 +5110,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c27ad12221156d36",
    "cluster_title": "HUBER+SUHNER opens new POLATIS® optical circuit switch production site to support AI data centers"
   },
@@ -4605,6 +5134,11 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [
+    "Rosendin"
+   ],
+   "suppliers": [],
    "cluster_id": "df3360a3d353c04d",
    "cluster_title": "Transforming Data Center Energy: The Innovative FlexGen and Rosendin BESSUPS Collaboration"
   },
@@ -4617,15 +5151,16 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Community"
    ],
    "locations": [
     {
-     "name": "Charlotte, North Carolina, US",
-     "lat": 35.23,
-     "lon": -80.84,
-     "level": 3,
-     "precision": "city",
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -4634,11 +5169,14 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
-   "cluster_id": "cb7318bebddf0831",
-   "cluster_title": "Dale Earnhardt’s widow riles neighbors with planned $30B data center on her 400 acres"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e43c37dd5f244f6b",
+   "cluster_title": "Dale Earnhardt’s widow faces neighbors over data center plans: Timeline"
   },
   {
    "id": "95f2562ca4bd9995",
@@ -4670,6 +5208,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "95f2562ca4bd9995",
    "cluster_title": "Fibernet CEO eyes multi-gigawatt data center campus in Utah"
   },
@@ -4685,13 +5226,28 @@
     "Land Acquisition",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Yorkville, Illinois, US",
+     "lat": 41.6411,
+     "lon": -88.4473,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Steel",
    "cluster_id": "47e78e93cab57afb",
    "cluster_title": "540-acre Project Steel data center in Yorkville taking shape; public hearing scheduled"
   },
@@ -4716,6 +5272,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 1920,
    "cluster_id": "fc3e611b0cae94d9",
    "cluster_title": "Amazon joins the big nuclear party, buying 1.92 GW for AWS"
@@ -4750,6 +5309,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0e7fb30783ab2af0",
    "cluster_title": "Data centers bemoan Florida plans for rate hike plan"
   },
@@ -4760,8 +5322,12 @@
    "source": "Tech Policy Press",
    "published": "2025-06-12T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Community",
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -4769,6 +5335,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "6cdc834c71419be2",
    "cluster_title": "Data Center Boom Risks Health of Already Vulnerable Communities"
   },
@@ -4809,7 +5378,6 @@
    ],
    "states": [
     "CO",
-    "WA",
     "WI"
    ],
    "state": "WI",
@@ -4817,6 +5385,10 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Port Washington campus",
    "cluster_id": "6b6de7f24de5a9ee",
    "cluster_title": "Denver data center company named as user of Port Washington campus - BizTimes - Milwaukee Business News"
   },
@@ -4855,6 +5427,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 150,
    "cluster_id": "bc6858c5313c9f02",
    "cluster_title": "Governor announces XGS Energy, Meta geothermal partnership - Nation-leading 150 MW geothermal project on its way to New Mexico - Office of the Governor - Michelle Lujan Grisham"
@@ -4884,14 +5459,6 @@
      "level": 3,
      "precision": "county",
      "country": "US"
-    },
-    {
-     "name": "Arizona, US",
-     "lat": 34.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
@@ -4902,6 +5469,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ae4a0cd42b64eed6",
    "cluster_title": "Huge data center complex near Tucson endorsed by Pima County administrator"
   },
@@ -4926,6 +5496,11 @@
     "Crusoe"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "AMD"
+   ],
    "investment_usd_b": 0.4,
    "cluster_id": "1dd29e75b24bd495",
    "cluster_title": "'Neocloud' Crusoe to buy $400 million worth of AMD chips for AI data centers"
@@ -4948,6 +5523,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4566c8b72e8c4364",
    "cluster_title": "PIMCO extends data center fundraise as investor roster grows"
   },
@@ -4972,6 +5550,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 150,
    "cluster_id": "6db66f24aab8b199",
    "cluster_title": "XGS Energy and Meta to Partner on 150 MW Advanced Geothermal Project"
@@ -4986,7 +5567,8 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "Deals / Investment"
+    "Deals / Investment",
+    "Economy / Jobs"
    ],
    "locations": [],
    "states": [],
@@ -4995,6 +5577,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "872782ad80a2ea59",
    "cluster_title": "Investing in Data Centers | Pillsbury - Gravel2Gavel Construction & Real Estate Law"
   },
@@ -5008,7 +5593,8 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -5028,6 +5614,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "cb24a1f9a97b0165",
    "cluster_title": "How Arizona data center construction will explode with AI adoption"
   },
@@ -5041,15 +5630,16 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Land Acquisition"
+    "Land Acquisition",
+    "Community"
    ],
    "locations": [
     {
-     "name": "Charlotte, North Carolina, US",
-     "lat": 35.23,
-     "lon": -80.84,
-     "level": 3,
-     "precision": "city",
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -5058,9 +5648,12 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 30.0,
    "cluster_id": "cb7318bebddf0831",
    "cluster_title": "Dale Earnhardt’s widow riles neighbors with planned $30B data center on her 400 acres"
@@ -5094,6 +5687,9 @@
     "Digital Realty"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.1,
    "cluster_id": "46743aa7edb22e83",
    "cluster_title": "Digital Realty downsizes $100m upgrade to Dallas data center due to “unforeseen circumstances”"
@@ -5109,15 +5705,37 @@
    "tags": [
     "Construction"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Eagan, Minnesota, US",
+     "lat": 44.8041,
+     "lon": -93.1669,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Dakota County, Minnesota, US",
+     "lat": 44.672,
+     "lon": -93.064,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": "Dakota County, Minnesota, US",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
-   "cluster_id": "bb9a0efc04f5ef89",
-   "cluster_title": "Oppidan breaks ground on new data center in Eagan | Dakota County"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e529be060017510d",
+   "cluster_title": "Oppidan breaks ground on data center in Eagan, Minnesota"
   },
   {
    "id": "6eb07870ea2689d0",
@@ -5139,26 +5757,9 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Washington, US",
-     "lat": 47.4,
-     "lon": -120.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "WA",
     "WI"
    ],
    "state": "WI",
@@ -5168,6 +5769,9 @@
     "Vantage"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 3500,
    "cluster_id": "6eb07870ea2689d0",
    "cluster_title": "Vantage identified as operator for Port Washington's proposed 3.5 gigawatt data center campus"
@@ -5179,8 +5783,9 @@
    "source": "Minnesota Reformer",
    "published": "2025-06-11T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "AI Infrastructure",
    "tags": [
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -5201,6 +5806,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "77f6d073e15065b4",
    "cluster_title": "Minnesota lawmakers extend tax breaks for Big Tech data centers"
   },
@@ -5226,6 +5834,9 @@
     "Vantage"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1c6c44fae8e8680a",
    "cluster_title": "Microsoft? Meta? No, it’s data center giant Vantage"
   },
@@ -5236,12 +5847,21 @@
    "source": "Data Center Dynamics",
    "published": "2025-06-11T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Power / Utility",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "Power / Utility",
     "AI Infrastructure"
    ],
    "locations": [
+    {
+     "name": "Hammond, Indiana, US",
+     "lat": 41.5834,
+     "lon": -87.5,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
     {
      "name": "Indiana, US",
      "lat": 39.9,
@@ -5256,11 +5876,15 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "CoreWeave"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Crossroads campus",
    "capacity_mw": 180,
    "cluster_id": "f97b1bcc674ebb8f",
    "cluster_title": "CoreWeave to develop 180MW data center at Digital Crossroads campus in Hammond, Indiana"
@@ -5286,6 +5910,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "49c439c1f90b57c7",
    "cluster_title": "Onsite gas turbines, reciprocating engines to power Meta data center"
   },
@@ -5296,8 +5923,9 @@
    "source": "WRIC ABC 8News",
    "published": "2025-06-11T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Community",
    "tags": [
+    "Community",
     "Policy / Permits"
    ],
    "locations": [
@@ -5318,6 +5946,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a1777c183a911b2e",
    "cluster_title": "‘Totally elated by this’: Henrico residents react to Board of Supervisors’ new data center regulations"
   },
@@ -5340,14 +5971,6 @@
      "country": "US"
     },
     {
-     "name": "Washington, US",
-     "lat": 47.4,
-     "lon": -120.5,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    },
-    {
      "name": "Wisconsin, US",
      "lat": 44.6,
      "lon": -89.9,
@@ -5357,7 +5980,6 @@
     }
    ],
    "states": [
-    "WA",
     "WI"
    ],
    "state": "WI",
@@ -5367,6 +5989,9 @@
     "Vantage"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "38313bbbea29fe3b",
    "cluster_title": "Vantage explores data center development on Cloverleaf site in Port Washington, Wisconsin"
   },
@@ -5377,8 +6002,13 @@
    "source": "Star Tribune",
    "published": "2025-06-11T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "AI Infrastructure",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Minnesota, US",
@@ -5397,6 +6027,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5a7de05e6e05c898",
    "cluster_title": "What Minnesota's new data center rules mean for the environment, big tech"
   },
@@ -5414,14 +6047,6 @@
    ],
    "locations": [
     {
-     "name": "Philadelphia, Pennsylvania, US",
-     "lat": 39.95,
-     "lon": -75.17,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Pennsylvania, US",
      "lat": 40.9,
      "lon": -77.8,
@@ -5435,13 +6060,16 @@
    ],
    "state": "PA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
-   "cluster_id": "3f90facf8f7802b4",
-   "cluster_title": "Amazon building data centers in Pennsylvania, marking largest private sector investment in state history"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "60a9d8713acdb68b",
@@ -5463,6 +6091,9 @@
     "Applied Digital"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "60a9d8713acdb68b",
    "cluster_title": "Applied Digital has more gigawatt-scale data centers up its sleeve"
   },
@@ -5486,6 +6117,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.5,
    "cluster_id": "bf52f8cfb18a1553",
    "cluster_title": "Armenia to build AI-Data Center with $500 million investment: Minister on the largest technological project in the region"
@@ -5499,7 +6133,8 @@
    "feed": "Backfill: announced",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Community"
    ],
    "locations": [],
    "states": [],
@@ -5510,6 +6145,9 @@
     "Google"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2564f1a4affdd69b",
    "cluster_title": "4 ways Google data centers transform communities for the better"
   },
@@ -5523,7 +6161,7 @@
    "category": "Expansion",
    "tags": [
     "Expansion",
-    "Power / Utility",
+    "Environment",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -5535,8 +6173,11 @@
     "Amazon"
    ],
    "utilities": [],
-   "cluster_id": "c8460f14c63d20f5",
-   "cluster_title": "Amazon expands recycled water use at US data centers"
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4c5bcee04d80112e",
+   "cluster_title": "As data center demand soars, Amazon expands use of recycled waste water to cool its cloud"
   },
   {
    "id": "618e00bc2562cd09",
@@ -5545,8 +6186,10 @@
    "source": "Data Center Dynamics",
    "published": "2025-06-10T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
    "locations": [
     {
      "name": "Austin, Texas, US",
@@ -5575,6 +6218,9 @@
     "Sabey"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "618e00bc2562cd09",
    "cluster_title": "Sabey looks to develop data center campus outside Austin, Texas"
   },
@@ -5594,6 +6240,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "37981950f55dd541",
    "cluster_title": "Cogent’s colo journey: Dave Schaeffer on the company’s new data center ambitions"
   },
@@ -5629,6 +6278,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0607d723db9e3500",
    "cluster_title": "Ohio Power Siting Board approves Licking County natural gas plant for Meta data center"
   },
@@ -5674,6 +6326,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 200,
    "cluster_id": "0e70fcfdc0e0de72",
    "cluster_title": "Ohio regulators approve construction of 200MW gas power plant to serve Meta's New Albany data center"
@@ -5697,6 +6352,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 3.0,
    "cluster_id": "de48789668c4cc89",
    "cluster_title": "SB Energy’s $3B data center bet wants tenants for tax breaks"
@@ -5731,6 +6389,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.2,
    "cluster_id": "2d154711d7e1dea8",
    "cluster_title": "Data center tax breaks could leave Indiana $2.2 billion short"
@@ -5756,6 +6417,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 30.0,
    "cluster_id": "af6b2ecbd294e011",
    "cluster_title": "Amazon Doubles Down on AI Infrastructure with $30B in New U.S. Data Center Investments"
@@ -5772,13 +6436,27 @@
     "New Announcement",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Chickasha, Oklahoma, US",
+     "lat": 35.0526,
+     "lon": -97.9364,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ea082a3f5a956d24",
    "cluster_title": "New state law clears path for power plant and data center planned at Chickasha"
   },
@@ -5815,9 +6493,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "b7e652286cd97502",
@@ -5828,7 +6509,8 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Community"
    ],
    "locations": [
     {
@@ -5856,6 +6538,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b7e652286cd97502",
    "cluster_title": "Planned data center project in Kentucky’s Oldham County relocated and downsized amid backlash"
   },
@@ -5890,6 +6575,9 @@
    "utilities": [
     "Duke Energy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 1400,
    "cluster_id": "185ee0705f666392",
    "cluster_title": "Duke Energy to submit application for 1.4GW gas power plant in South Carolina to serve growing data center market"
@@ -5907,14 +6595,6 @@
    ],
    "locations": [
     {
-     "name": "Omaha, Nebraska, US",
-     "lat": 41.26,
-     "lon": -95.94,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Iowa, US",
      "lat": 42.1,
      "lon": -93.5,
@@ -5924,14 +6604,17 @@
     }
    ],
    "states": [
-    "IA",
-    "NE"
+    "IA"
    ],
-   "state": "NE",
+   "state": "IA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Lola",
    "cluster_id": "3a1f11a4df7e6e19",
    "cluster_title": "'Project Lola' data center reduced in size, still planned near Iowa Western"
   },
@@ -5948,11 +6631,11 @@
    ],
    "locations": [
     {
-     "name": "Indiana, US",
-     "lat": 39.9,
-     "lon": -86.3,
-     "level": 2,
-     "precision": "source",
+     "name": "Hammond, Indiana, US",
+     "lat": 41.5834,
+     "lon": -87.5,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -5961,9 +6644,12 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "563571cfe4343dba",
    "cluster_title": "Hammond council approves multibillion-dollar data center project"
   },
@@ -5990,6 +6676,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "a9bb7501759ea2e3",
    "cluster_title": "Amazon announces $20B nuclear-powered data center expansion in US"
@@ -6004,7 +6693,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Power / Utility",
+    "Environment",
     "AI Infrastructure"
    ],
    "locations": [
@@ -6035,6 +6724,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "45916697f15ac135",
    "cluster_title": "Amazon announces water sustainability strategy for Georgia data centers - Atlanta Business Chronicle"
   },
@@ -6045,12 +6737,21 @@
    "source": "The Clarion-Ledger",
    "published": "2025-06-10T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility",
-    "AI Infrastructure"
+    "Environment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
+    {
+     "name": "Jackson, Mississippi, US",
+     "lat": 32.2988,
+     "lon": -90.1848,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
     {
      "name": "Mississippi, US",
      "lat": 32.7,
@@ -6065,11 +6766,14 @@
    ],
    "state": "MS",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fd69d606e3f7f205",
    "cluster_title": "Water and AWS in, near Jackson, MS area. What Amazon will do with data center technology"
   },
@@ -6083,7 +6787,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "Policy / Permits"
+    "Policy / Permits",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -6091,7 +6796,7 @@
      "lat": 34.3,
      "lon": -111.7,
      "level": 2,
-     "precision": "state",
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -6100,9 +6805,12 @@
    ],
    "state": "AZ",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ae77d58420e8b5bc",
    "cluster_title": "Tempe ordinance aims to manage data center growth as demand surges"
   },
@@ -6126,6 +6834,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fef8738979efad24",
    "cluster_title": "Alloy Enterprises Unveils 3D Printed Copper Cooling for AI Data Centers"
   },
@@ -6145,8 +6856,13 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "IBM"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5722a5a52c58be80",
    "cluster_title": "IBM Sets the Course to Build World's First Large-Scale, Fault-Tolerant Quantum Computer at New IBM Quantum Data Center - Jun 10, 2025"
   },
@@ -6157,8 +6873,9 @@
    "source": "Construction Dive",
    "published": "2025-06-10T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Economy / Jobs",
    "tags": [
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [
@@ -6181,9 +6898,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "d5828dd0444176b3",
@@ -6217,6 +6937,9 @@
     "Digital Realty"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "d5828dd0444176b3",
    "cluster_title": "News | Data center owner Digital Realty to scale back investment plans in Dallas"
   },
@@ -6230,6 +6953,7 @@
    "category": "Expansion",
    "tags": [
     "Expansion",
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [
@@ -6252,9 +6976,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "3158570e317cddc4",
@@ -6274,6 +7001,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3158570e317cddc4",
    "cluster_title": "Cisco Powers AI-Ready Data Centers, From Hyperscale to Enterprise"
   },
@@ -6284,8 +7014,11 @@
    "source": "WIRED",
    "published": "2025-06-10T07:00:00+00:00",
    "feed": "Backfill: cancelled",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -6293,6 +7026,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "78764c70d7f80012",
    "cluster_title": "A Political Battle Is Brewing Over Data Centers"
   },
@@ -6316,6 +7052,9 @@
     "Digital Realty"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.104,
    "cluster_id": "0c021073b3e0b757",
    "cluster_title": "Digital Realty backs off $104M downtown data center investment"
@@ -6353,9 +7092,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "74650aea8c3f76f5",
-   "cluster_title": "Amazon will build two data centers in Pennsylvania worth $20 billion"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "91edbd2141f78fe8",
@@ -6369,26 +7111,18 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [
-    {
-     "name": "Philadelphia, Pennsylvania, US",
-     "lat": 39.95,
-     "lon": -75.17,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "PA"
-   ],
-   "state": "PA",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "91edbd2141f78fe8",
    "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
@@ -6434,6 +7168,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "0c1b1dda947aebb1",
    "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
@@ -6449,7 +7186,8 @@
    "tags": [
     "New Announcement",
     "Deals / Investment",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -6471,6 +7209,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "0c1b1dda947aebb1",
    "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
@@ -6507,9 +7248,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "a41613837b41deb6",
@@ -6521,6 +7265,7 @@
    "category": "Deals / Investment",
    "tags": [
     "Deals / Investment",
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [
@@ -6543,9 +7288,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "225217f9e5a08999",
@@ -6559,18 +7307,32 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "225217f9e5a08999",
-   "cluster_title": "Amazon Web Services' $20B Pa. investment will include data centers in Luzerne, Bucks counties"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "97b9c6feae2c6110",
@@ -6604,9 +7366,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "ef131782bb00f85c",
@@ -6626,6 +7391,9 @@
     "Vantage"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ef131782bb00f85c",
    "cluster_title": "Vantage Data Centers Completes Industry’s First Euro-Based Data Center Asset-Backed Securitization (ABS) with €640M Transaction"
   },
@@ -6651,6 +7419,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "a49e99b9f489e25c",
    "cluster_title": "Amazon will spend $20 billion to build data centers in Bucks and Luzerne"
@@ -6686,9 +7457,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "b7235b6718830eca",
@@ -6723,6 +7497,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "0c1b1dda947aebb1",
    "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
@@ -6760,9 +7537,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "0607d723db9e3500",
@@ -6774,17 +7554,10 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [
-    {
-     "name": "Columbus, Ohio, US",
-     "lat": 39.96,
-     "lon": -83.0,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Licking County, Ohio, US",
      "lat": 40.092,
@@ -6807,11 +7580,14 @@
    ],
    "state": "OH",
    "county": "Licking County, Ohio, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0607d723db9e3500",
    "cluster_title": "Ohio Power Siting Board approves Licking County natural gas plant for Meta data center"
   },
@@ -6828,11 +7604,11 @@
    ],
    "locations": [
     {
-     "name": "Oklahoma, US",
-     "lat": 35.6,
-     "lon": -97.5,
-     "level": 2,
-     "precision": "state",
+     "name": "Chickasha, Oklahoma, US",
+     "lat": 35.0526,
+     "lon": -97.9364,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -6841,9 +7617,12 @@
    ],
    "state": "OK",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b99b10f25ea0ac74",
    "cluster_title": "More details about the proposed Chickasha data center"
   },
@@ -6880,6 +7659,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "0c1b1dda947aebb1",
    "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
@@ -6916,9 +7698,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
-   "cluster_id": "91edbd2141f78fe8",
-   "cluster_title": "In ‘largest' investment in Pa. history, Amazon to spend $20B on data centers"
+   "cluster_id": "0c1b1dda947aebb1",
+   "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
   },
   {
    "id": "011a62d2ebb844c4",
@@ -6930,7 +7715,7 @@
    "category": "Expansion",
    "tags": [
     "Expansion",
-    "Power / Utility",
+    "Environment",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -6942,6 +7727,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "011a62d2ebb844c4",
    "cluster_title": "Amazon to expand number of data centers using recycled water to 120"
   },
@@ -6954,13 +7742,27 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "444320abd3e1e0ef",
    "cluster_title": "New data center's impact on Berwick"
   },
@@ -6996,6 +7798,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "0c1b1dda947aebb1",
    "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
@@ -7021,6 +7826,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "0c1b1dda947aebb1",
    "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
@@ -7057,6 +7865,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 20.0,
    "cluster_id": "0c1b1dda947aebb1",
    "cluster_title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment"
@@ -7071,7 +7882,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -7093,6 +7905,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0607d723db9e3500",
    "cluster_title": "Ohio Power Siting Board approves Licking County natural gas plant for Meta data center"
   },
@@ -7106,18 +7921,33 @@
    "category": "Expansion",
    "tags": [
     "Expansion",
+    "Environment",
     "Power / Utility",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4c5bcee04d80112e",
    "cluster_title": "As data center demand soars, Amazon expands use of recycled waste water to cool its cloud"
   },
@@ -7152,6 +7982,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b79a8a41ba5c326d",
    "cluster_title": "With an Amazon data center out of the picture, will Lehigh Valley developer find another?"
   },
@@ -7164,7 +7997,8 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -7184,6 +8018,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9192f3958103f2b4",
    "cluster_title": "Leesburg Commission to Study Request for Data Center Town Plan Change"
   },
@@ -7224,6 +8061,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ac64db3abbd7a41a",
    "cluster_title": "US Signal to expand capacity at data centers in Michigan & Detroit"
   },
@@ -7246,6 +8086,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c00e5315dd8a9178",
    "cluster_title": "Northern Data opens its new North American AI data center in Robinson"
   },
@@ -7258,7 +8101,8 @@
    "feed": "Backfill: announced",
    "category": "Deals / Investment",
    "tags": [
-    "Deals / Investment"
+    "Deals / Investment",
+    "Community"
    ],
    "locations": [
     {
@@ -7278,6 +8122,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 7.0,
    "cluster_id": "d6e0fb4856c8d3f8",
    "cluster_title": "$7 billion data center deal in southeast North Dakota is 'worth the growing pains,' residents say"
@@ -7295,6 +8142,14 @@
    ],
    "locations": [
     {
+     "name": "Eagan, Minnesota, US",
+     "lat": 44.8041,
+     "lon": -93.1669,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Minnesota, US",
      "lat": 46.3,
      "lon": -94.3,
@@ -7308,9 +8163,12 @@
    ],
    "state": "MN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e529be060017510d",
    "cluster_title": "Oppidan breaks ground on data center in Eagan, Minnesota"
   },
@@ -7346,6 +8204,9 @@
     "Google"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 7.0,
    "cluster_id": "82094dfe141b53a7",
    "cluster_title": "Google Doubles Down on Iowa with $7 Billion Data Center Investment"
@@ -7372,6 +8233,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2832b155cbb272f3",
    "cluster_title": "Amazon Web Services proposes a third, 7.2 million square foot data center in Louisa County"
   },
@@ -7382,8 +8246,9 @@
    "source": "Minnesota Reformer",
    "published": "2025-06-06T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
+    "Environment",
     "Power / Utility"
    ],
    "locations": [
@@ -7406,6 +8271,9 @@
    "utilities": [
     "Xcel Energy"
    ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b3034ef8ec6ad730",
    "cluster_title": "Xcel president: Minnesota can meet data center energy demands and 2040 carbon-free mandate"
   },
@@ -7416,19 +8284,13 @@
    "source": "The Boston Globe",
    "published": "2025-06-06T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Power / Utility",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
+    "Economy / Jobs",
     "Power / Utility"
    ],
    "locations": [
-    {
-     "name": "Boston, Massachusetts, US",
-     "lat": 42.36,
-     "lon": -71.06,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Massachusetts, US",
      "lat": 42.3,
@@ -7443,9 +8305,12 @@
    ],
    "state": "MA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4ef298ab5361bed4",
    "cluster_title": "An economic opportunity, or an energy crisis in waiting? Data centers are coming to Massachusetts."
   },
@@ -7478,6 +8343,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "8cbbbc573f04d848",
    "cluster_title": "Colorado misses out on billions as massive data center projects select other states"
   },
@@ -7500,6 +8368,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e38cc2bd5ad120d9",
    "cluster_title": "Toshiba creates team to build, power, and run datacenters"
   },
@@ -7522,6 +8393,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 55.0,
    "cluster_id": "17a31cfceeb30db2",
    "cluster_title": "TikTok to build R$55 billion data center in Ceará state"
@@ -7533,8 +8407,10 @@
    "source": "PennLive.com",
    "published": "2025-06-05T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [
     {
      "name": "Pennsylvania, US",
@@ -7553,6 +8429,9 @@
    "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0299ca5910036ab2",
    "cluster_title": "Another central Pa. community creates space for a data center"
   },
@@ -7585,6 +8464,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "3ef3ac3b04640051",
    "cluster_title": "3 data centers newly proposed in and around San Marcos"
   },
@@ -7627,7 +8509,8 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "f2a5e7bd1ed49c24",
-   "cluster_title": "Lambda and Cologix launch Nvidia HGX B200 clusters in Columbus, Ohio"
+   "cluster_title": "Lambda and Cologix launch Nvidia HGX B200 clusters in Columbus, Ohio",
+   "filtered": true
   },
   {
    "id": "9ede91a223a447f7",
@@ -7638,7 +8521,8 @@
    "feed": "Backfill: operational",
    "category": "Deals / Investment",
    "tags": [
-    "Deals / Investment"
+    "Deals / Investment",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -7649,6 +8533,9 @@
     "Equinix"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9ede91a223a447f7",
    "cluster_title": "Equinix finalizes data center acquisition to support PH digital growth"
   },
@@ -7659,19 +8546,12 @@
    "source": "The Denver Post",
    "published": "2025-06-05T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility"
+    "Environment",
+    "Analysis / Opinion"
    ],
    "locations": [
-    {
-     "name": "Denver, Colorado, US",
-     "lat": 39.74,
-     "lon": -104.99,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Colorado, US",
      "lat": 39.0,
@@ -7686,9 +8566,12 @@
    ],
    "state": "CO",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1d3f256827f454a7",
    "cluster_title": "Could data center boom threaten Colorado’s water supply and climate goals?"
   },
@@ -7708,6 +8591,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "028496bd0d017dd1",
    "cluster_title": "New Data Center Developments: June 2025"
   },
@@ -7738,6 +8624,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "037ac387506c9d1b",
    "cluster_title": "Portion of old Fort Gillem property to become $2B data center - Atlanta Business Chronicle"
@@ -7762,14 +8651,6 @@
      "level": 3,
      "precision": "city",
      "country": "US"
-    },
-    {
-     "name": "Arkansas, US",
-     "lat": 34.9,
-     "lon": -92.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
@@ -7782,6 +8663,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 0.151,
    "cluster_id": "1e89b19758189f2b",
    "cluster_title": "Amazon to build $151M, 950,000-square-foot facility at Little Rock Port"
@@ -7793,8 +8677,11 @@
    "source": "Utility Dive",
    "published": "2025-06-05T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Analysis / Opinion"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -7802,6 +8689,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bcda54f2dd25a2b7",
    "cluster_title": "Data center growth and the imperative of economic discipline"
   },
@@ -7816,13 +8706,27 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Appling, Georgia, US",
+     "lat": 33.5461,
+     "lon": -82.3173,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "12eabe3f0cef9798",
    "cluster_title": "Col. Co. leaders start plans for new data center and technology park in Appling"
   },
@@ -7847,6 +8751,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fd8f07f7153299eb",
    "cluster_title": "Amazon to Build Data Center Campus in Richmond County"
   },
@@ -7879,6 +8786,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c749f2fe3216c15f",
    "cluster_title": "Data centers are building their own gas power plants in Texas"
   },
@@ -7889,8 +8799,9 @@
    "source": "REBusinessOnline",
    "published": "2025-06-05T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "New Announcement",
    "tags": [
+    "New Announcement",
     "AI Infrastructure"
    ],
    "locations": [
@@ -7913,9 +8824,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "904d1369c6079e72",
-   "cluster_title": "Amazon planning $10B investment in North Carolina for data center and AI campus"
+   "cluster_title": "Amazon invests $10B, adds 500 jobs for data center between Charlotte and Raleigh"
   },
   {
    "id": "ba33bd0e927608c2",
@@ -7944,6 +8858,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ba33bd0e927608c2",
    "cluster_title": "Two data centers in the works for Tulsa area"
   },
@@ -7977,6 +8894,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 250,
    "cluster_id": "bb786cf6491e4d77",
    "cluster_title": "Texas Critical Data Centers signs MoU for onsite gas generation at 250MW AI data center in Texas"
@@ -8014,9 +8934,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "904d1369c6079e72",
-   "cluster_title": "Amazon planning $10B investment in North Carolina for data center and AI campus"
+   "cluster_title": "Amazon invests $10B, adds 500 jobs for data center between Charlotte and Raleigh"
   },
   {
    "id": "5a2e891bb7565ce4",
@@ -8048,6 +8971,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5a2e891bb7565ce4",
    "cluster_title": "Leesburg Planning Commission Begins Review of Latest Data Center Proposal"
   },
@@ -8070,6 +8996,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 200,
    "cluster_id": "6d6205fe5f330f69",
    "cluster_title": "Bit Digital to Build 200 MW Data Center in N.C."
@@ -8088,11 +9017,11 @@
    ],
    "locations": [
     {
-     "name": "Tennessee, US",
-     "lat": 35.9,
-     "lon": -86.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Johnson City, Tennessee, US",
+     "lat": 36.3134,
+     "lon": -82.3535,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -8101,9 +9030,12 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bc1b296d3d2ae246",
    "cluster_title": "Johnson City Commission approves moratorium on data centers"
   },
@@ -8116,7 +9048,9 @@
    "feed": "Backfill: announced",
    "category": "Power / Utility",
    "tags": [
-    "Power / Utility"
+    "Power / Utility",
+    "Policy / Permits",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -8125,6 +9059,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c959b1e84f1c94da",
    "cluster_title": "How your electric bill may be paying for big data centers’ energy use"
   },
@@ -8158,6 +9095,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2dee66ffc263f7ea",
    "cluster_title": "Another data center? Plans for a third data center in Aiken County get County Council's support"
   },
@@ -8170,7 +9110,8 @@
    "feed": "Backfill: announced",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [
     {
@@ -8192,6 +9133,9 @@
     "xAI"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "860046c9484717cf",
    "cluster_title": "Unpacking how Elon Musk's xAI supercomputer project in Memphis unfolded over the past year"
   },
@@ -8209,11 +9153,11 @@
    ],
    "locations": [
     {
-     "name": "Pittsburgh, Pennsylvania, US",
-     "lat": 40.44,
-     "lon": -79.99,
-     "level": 3,
-     "precision": "city",
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -8222,9 +9166,12 @@
    ],
    "state": "PA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "fb4719c6b6361248",
    "cluster_title": "New AI data center opens in Robinson, riding a wave of such developments"
   },
@@ -8235,8 +9182,10 @@
    "source": "KUT",
    "published": "2025-06-04T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [
     {
      "name": "Hays County, Texas, US",
@@ -8255,6 +9204,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "7bacc010cf5c26b0",
    "cluster_title": "Hays County residents aren't happy about a new neighbor moving in: a data center"
   },
@@ -8276,6 +9228,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bc413d71ea2b2f9a",
    "cluster_title": "Ribbon cut on Ardent data center in McKees Rocks"
   },
@@ -8288,7 +9243,8 @@
    "feed": "Backfill: operational",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Environment"
    ],
    "locations": [],
    "states": [],
@@ -8297,6 +9253,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "cf61b82fae8c6c06",
    "cluster_title": "Secure I.T. Environments completes upgrade at Jersey data center"
   },
@@ -8320,6 +9279,9 @@
     "Equinix"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2368631bd2901ebc",
    "cluster_title": "Equinix completes acquisition of 3 Philippine data centers"
   },
@@ -8340,7 +9302,8 @@
    "companies": [],
    "utilities": [],
    "cluster_id": "58dd4b92950f78a7",
-   "cluster_title": "MSNi-owned Zhone Technologies snaps up DZS assets"
+   "cluster_title": "MSNi-owned Zhone Technologies snaps up DZS assets",
+   "filtered": true
   },
   {
    "id": "c56216a8acbd1a04",
@@ -8358,6 +9321,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "c56216a8acbd1a04",
    "cluster_title": "Komdigi Ministry still testing feasibility of National Data Center 1"
   },
@@ -8382,9 +9348,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "a0c7d9d4a411cda4",
-   "cluster_title": "Amazon plots state record $10B data center project in Richmond County"
+   "cluster_title": "Amazon plans $10B AI data center in Richmond County"
   },
   {
    "id": "e20db0705628b7cb",
@@ -8393,8 +9362,10 @@
    "source": "Southern Environmental Law Center",
    "published": "2025-06-04T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -8402,6 +9373,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e20db0705628b7cb",
    "cluster_title": "Data center defeated"
   },
@@ -8416,37 +9390,21 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [
-    {
-     "name": "Richmond County, North Carolina, US",
-     "lat": 35.0,
-     "lon": -79.75,
-     "level": 3,
-     "precision": "county",
-     "country": "US"
-    },
-    {
-     "name": "North Carolina, US",
-     "lat": 35.6,
-     "lon": -79.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "NC"
-   ],
-   "state": "NC",
-   "county": "Richmond County, North Carolina, US",
-   "location_precision": "county",
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "a0c7d9d4a411cda4",
-   "cluster_title": "Amazon plots state record $10B data center project in Richmond County"
+   "cluster_title": "Amazon plans $10B AI data center in Richmond County"
   },
   {
    "id": "2ed3e6c40333ee5c",
@@ -8467,6 +9425,11 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [
+    "Brookfield"
+   ],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "2ed3e6c40333ee5c",
    "cluster_title": "Brookfield plans to spend $10bn on a Swedish AI data center"
@@ -8489,6 +9452,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "0ceaf8382d7eef73",
    "cluster_title": "Mr. Wonderful-backed Bitzero Blockchain announces four data centers"
   },
@@ -8524,9 +9490,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "904d1369c6079e72",
-   "cluster_title": "Amazon planning $10B investment in North Carolina for data center and AI campus"
+   "cluster_title": "Amazon invests $10B, adds 500 jobs for data center between Charlotte and Raleigh"
   },
   {
    "id": "5c90dd06d1db6860",
@@ -8560,9 +9529,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "904d1369c6079e72",
-   "cluster_title": "Amazon planning $10B investment in North Carolina for data center and AI campus"
+   "cluster_title": "Amazon invests $10B, adds 500 jobs for data center between Charlotte and Raleigh"
   },
   {
    "id": "8ac5f1cadf657e78",
@@ -8574,20 +9546,35 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
-   "cluster_id": "8ac5f1cadf657e78",
-   "cluster_title": "Amazon plans $10B artificial intelligence data campus, 500 jobs in NC"
+   "cluster_id": "904d1369c6079e72",
+   "cluster_title": "Amazon invests $10B, adds 500 jobs for data center between Charlotte and Raleigh"
   },
   {
    "id": "2e1f05d2e4534b2d",
@@ -8600,6 +9587,7 @@
    "tags": [
     "Expansion",
     "Deals / Investment",
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [
@@ -8630,8 +9618,11 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
-   "cluster_id": "2e1f05d2e4534b2d",
+   "cluster_id": "904d1369c6079e72",
    "cluster_title": "Amazon invests $10B, adds 500 jobs for data center between Charlotte and Raleigh"
   },
   {
@@ -8643,7 +9634,8 @@
    "feed": "Backfill: announced",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -8652,6 +9644,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a56fd198c2447190",
    "cluster_title": "5C Group to Drive Business Growth in HPC and AI Data Center Deployments"
   },
@@ -8687,9 +9682,12 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "904d1369c6079e72",
-   "cluster_title": "Amazon planning $10B investment in North Carolina for data center and AI campus"
+   "cluster_title": "Amazon invests $10B, adds 500 jobs for data center between Charlotte and Raleigh"
   },
   {
    "id": "3877ad73c41d23ee",
@@ -8711,6 +9709,11 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Vertiv"
+   ],
    "cluster_id": "3877ad73c41d23ee",
    "cluster_title": "Vertiv unveils trio of liquid cooling CDUs for AI data centers"
   },
@@ -8735,6 +9738,9 @@
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "212336ac6a482804",
    "cluster_title": "Amazon to invest $10B in new NC data center campus"
@@ -8746,8 +9752,9 @@
    "source": "Atlanta News First",
    "published": "2025-06-04T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Policy / Permits",
+   "category": "Community",
    "tags": [
+    "Community",
     "Policy / Permits"
    ],
    "locations": [
@@ -8768,6 +9775,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "bf8c25094df20f2b",
    "cluster_title": "Atlanta tightens restrictions on data centers, bans them in some neighborhoods"
   },
@@ -8792,6 +9802,9 @@
     "Meta"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4b399cc8782a85d2",
    "cluster_title": "Meta inks 20-year nuclear deal to power data center"
   },
@@ -8804,7 +9817,8 @@
    "feed": "Backfill: cancelled",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -8813,6 +9827,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e53f15d270ae1e4b",
    "cluster_title": "How a data center operator is upgrading its data centers for AI — and trying to stay green"
   },
@@ -8826,17 +9843,32 @@
    "category": "Deals / Investment",
    "tags": [
     "Deals / Investment",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "17f899e21c1ecc1a",
    "cluster_title": "Amazon bets big on NC's future as tech hub with $10 billion AI innovation campus"
@@ -8859,6 +9891,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "100178e33170c28b",
    "cluster_title": "Plans Call for Third Data Center in Growing Hill County Cluster"
   },
@@ -8869,8 +9904,10 @@
    "source": "AJC.com",
    "published": "2025-06-03T07:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Atlanta, Georgia, US",
@@ -8889,6 +9926,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b3f12a178b1ab18b",
    "cluster_title": "How data centers are transforming Atlanta into a tech giant"
   },
@@ -8919,8 +9959,14 @@
    "state": "OH",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Lambda",
+    "Cologix"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "f3e9635b03fb751b",
    "cluster_title": "Columbus Cologix data center to house Lambda's AI computing installation worth \"hundreds of millions\""
   },
@@ -8931,8 +9977,10 @@
    "source": "The Business Journals",
    "published": "2025-06-03T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "Northern Virginia, Virginia, US",
@@ -8940,14 +9988,6 @@
      "lon": -77.5,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "state",
      "country": "US"
     }
    ],
@@ -8959,6 +9999,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "a9fdcba1ce4bb65c",
    "cluster_title": "JLL report reveals Northern Virginia remains the most dominant data center market"
   },
@@ -8989,6 +10032,9 @@
    "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2bd3ff6960c87145",
    "cluster_title": "Building a new data center in Atlanta just became more difficult"
   },
@@ -8999,17 +10045,11 @@
    "source": "Louisville Public Media",
    "published": "2025-06-03T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [
-    {
-     "name": "Louisville, Kentucky, US",
-     "lat": 38.25,
-     "lon": -85.76,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
     {
      "name": "Oldham County, Kentucky, US",
      "lat": 38.4,
@@ -9024,9 +10064,12 @@
    ],
    "state": "KY",
    "county": "Oldham County, Kentucky, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "1301a3349aa6557f",
    "cluster_title": "Oldham County data center switches sites, reduces size amid local resistance"
   },
@@ -9037,8 +10080,10 @@
    "source": "West Virginia Watch",
    "published": "2025-06-03T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
    "locations": [
     {
      "name": "West Virginia, US",
@@ -9047,18 +10092,9 @@
      "level": 2,
      "precision": "state",
      "country": "US"
-    },
-    {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
     }
    ],
    "states": [
-    "VA",
     "WV"
    ],
    "state": "WV",
@@ -9066,6 +10102,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4decb4e1a9481ceb",
    "cluster_title": "Commentary: West Virginia: Stop trying to make data centers happen"
   },
@@ -9076,15 +10115,31 @@
    "source": "Monroe Local News",
    "published": "2025-06-03T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Social Circle, Georgia, US",
+     "lat": 33.6562,
+     "lon": -83.7182,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "46c95da96cdd001e",
    "cluster_title": "Social Circle officials clear way for second data center"
   },
@@ -9120,6 +10175,9 @@
    "location_precision": "state",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 99,
    "cluster_id": "92c6114fe3a69b20",
    "cluster_title": "Bit Digital acquires manufacturing site in North Carolina, plans 99MW data center"
@@ -9133,15 +10191,30 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "56f4c41ec1814b7f",
    "cluster_title": "Chesapeake residents voice concerns over proposed data center"
   },
@@ -9155,15 +10228,30 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Power / Utility"
+    "Power / Utility",
+    "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "587634505790fe16",
    "cluster_title": "AES has plans that could power a data center. Residents might pay the price."
   },
@@ -9174,8 +10262,10 @@
    "source": "ClickOnDetroit | WDIV Local 4",
    "published": "2025-06-03T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
    "locations": [
     {
      "name": "Washtenaw County, Michigan, US",
@@ -9194,6 +10284,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "b7f311ed1496ccc0",
    "cluster_title": "Farming community resists $1B data center project in Washtenaw County"
@@ -9207,15 +10300,16 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Community"
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -9224,9 +10318,12 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "9f9b170ccfeec8aa",
    "cluster_title": "Data center plan ignites Chesapeake residents' concerns"
   },
@@ -9246,6 +10343,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "700a8a26ab260f71",
    "cluster_title": "Enhancing emergency response capabilities in data center engineering supply chains through government subsidies"
   },
@@ -9260,26 +10360,18 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [
-    {
-     "name": "Cleveland, Ohio, US",
-     "lat": 41.5,
-     "lon": -81.69,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    }
-   ],
-   "states": [
-    "OH"
-   ],
-   "state": "OH",
+   "locations": [],
+   "states": [],
+   "state": null,
    "county": null,
-   "location_precision": "city",
+   "location_precision": null,
    "companies": [
     "Amazon"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "4723a45b85e502fb",
    "cluster_title": "Sources Say The I-X Center Is Being Repurposed Into a Data Center, Potentially by Amazon"
   },
@@ -9301,6 +10393,12 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Eaton",
+    "Siemens"
+   ],
    "cluster_id": "9655f58b1bda7368",
    "cluster_title": "Eaton and Siemens Energy join forces to provide power and technology to accelerate the delivery of new data center capacity"
   },
@@ -9311,8 +10409,11 @@
    "source": "The Newnan Times-Herald",
    "published": "2025-06-03T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -9320,6 +10421,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "ba645d459bcee047",
    "cluster_title": "Data centers face resistance in Coweta despite state incentives"
   },
@@ -9339,6 +10443,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "832b186c18d3603a",
    "cluster_title": "LiquidStack touts modular, scalable data center coolant distribution unit"
   },
@@ -9360,6 +10467,10 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "OC Data Center",
    "cluster_id": "3ad89a8ef6ebe523",
    "cluster_title": "OC Data Center selects new Oldham County location"
   },
@@ -9379,6 +10490,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5e343ea802b3598a",
    "cluster_title": "Satellite firm Globalstar taps DXN to deliver three prefab data center modules"
   },
@@ -9411,6 +10525,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "56c6af8fedc28a66",
    "cluster_title": "Sauerbeck Family Drive-In owner says business would move for proposed Oldham County data center"
   },
@@ -9424,6 +10541,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -9433,6 +10551,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "b4d1d56cd98b71f9",
    "cluster_title": "Riot Hires Data Center Chief as Bitcoin Miner Ramps Up HPC and AI Hosting Plans"
   },
@@ -9446,6 +10567,7 @@
    "category": "Deals / Investment",
    "tags": [
     "Deals / Investment",
+    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [],
@@ -9455,6 +10577,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "investment_usd_b": 1.0,
    "cluster_id": "4a82494a41d8494e",
    "cluster_title": "AI data center company to invest $1 billion in former Unifi factory, create 60 jobs in Rockingham County"
@@ -9496,6 +10621,9 @@
    "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "d7b12d591ae4c093",
    "cluster_title": "Virginia's Chesterfield County approves rezoning for two data center projects"
   },
@@ -9517,6 +10645,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5b69b2a4eb5586fe",
    "cluster_title": "Latvian telco Tet breaks ground on latest data center"
   },
@@ -9527,9 +10658,10 @@
    "source": "Bay Journal",
    "published": "2025-06-02T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "Power / Utility",
+   "category": "Environment",
    "tags": [
-    "Power / Utility"
+    "Environment",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -9538,6 +10670,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "54346cfb1b0a28f0",
    "cluster_title": "Clean water advocates weigh data center growth in Chesapeake region"
   },
@@ -9548,9 +10683,11 @@
    "source": "KUNR",
    "published": "2025-06-02T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "AI Infrastructure",
+   "category": "Environment",
    "tags": [
-    "AI Infrastructure"
+    "Environment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
    ],
    "locations": [],
    "states": [],
@@ -9559,6 +10696,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e1259cab4b2f856f",
    "cluster_title": "AI-driven data centers are growing in the drought-stricken Mountain West, analysis finds"
   },
@@ -9572,7 +10712,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -9603,6 +10744,10 @@
     "Applied Digital"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Ellendale campus",
    "capacity_mw": 250,
    "cluster_id": "86c03a5ade4e6898",
    "cluster_title": "Applied Digital signs 250MW agreement with CoreWeave for capacity at Ellendale campus, North Dakota"
@@ -9614,8 +10759,10 @@
    "source": "News Dakota",
    "published": "2025-06-02T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [
     {
      "name": "Ellendale, North Dakota, US",
@@ -9636,6 +10783,9 @@
     "Applied Digital"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "86c03a5ade4e6898",
    "cluster_title": "Applied Digital signs 250MW agreement with CoreWeave for capacity at Ellendale campus, North Dakota"
   },
@@ -9674,6 +10824,9 @@
     "Applied Digital"
    ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 250,
    "cluster_id": "86c03a5ade4e6898",
    "cluster_title": "Applied Digital signs 250MW agreement with CoreWeave for capacity at Ellendale campus, North Dakota"
@@ -9697,6 +10850,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "380992b42e7d5b73",
    "cluster_title": "Launch of GridFree AI Enables Rapid Data Center Deployments"
   },
@@ -9711,13 +10867,27 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Oldham County, Kentucky, US",
+     "lat": 38.4,
+     "lon": -85.448,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KY"
+   ],
+   "state": "KY",
+   "county": "Oldham County, Kentucky, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "2c6b36a6d93ddb42",
    "cluster_title": "Proposed Oldham County data center changing sites, will be smaller"
   },
@@ -9730,15 +10900,31 @@
    "feed": "Backfill: hyperscaler",
    "category": "AI Infrastructure",
    "tags": [
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits",
+    "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "5e10ac29f918f943",
    "cluster_title": "AI boom drives states to offer big incentives for data center development"
   },
@@ -9759,8 +10945,13 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Riot Platforms"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "cluster_id": "e4862418f985506d",
    "cluster_title": "Riot Platforms Announces Hiring of Jonathan Gibbs as Chief Data Center Officer to Lead Data Center Platform"
   }
