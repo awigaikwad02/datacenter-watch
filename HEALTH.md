@@ -1,5 +1,17 @@
 # The Rack Report: health check
 
+> **Current state (2026-10-29).** The audit below is the original one from 2026-10-25 and is kept
+> as a record. Since then:
+> - The health check runs every **6 hours** (not daily) and also checks: the no-AI ground rule
+>   (`scripts/no_ai.py`), the pytest suite (`tests/`), per-workflow permissions, General under 10%
+>   and Policy / Permits under 20% of headlines, and at least **55%** of headlines located (now ~59%
+>   of recent headlines, 62% of the archive). Freshness allows **3 hours**.
+> - "Needs attention" item 1 (unreliable scheduled runs) is solved without a token: the update
+>   workflow is a self-sustaining hourly loop, with a backup cron and a 2-hourly watchdog
+>   (docs/DECISIONS.md, decision 2). Items 2 to 4 still stand.
+> - Project Atlas is now Rack Radar (`/radar`); the browser check also tests the old `/atlas` redirect.
+> - What to do when a check fails: docs/RUNBOOK.md.
+
 Audit run on 2026-10-25, 21:09 to 21:25 UTC, against `main` (data commit `22c6aab`, then the fixes listed below).
 "Before" is the first run of each check. "Now" is after the fixes.
 
