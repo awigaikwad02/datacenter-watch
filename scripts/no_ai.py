@@ -39,6 +39,9 @@ AI_CODE = re.compile(
     re.I | re.M)
 AI_PACKAGE = re.compile(r"^\s*['\"]?(anthropic|openai|google-generativeai|google-genai|langchain[\w-]*|litellm|cohere|mistralai"
                         r"|@anthropic-ai/[\w-]+|@google/generative-ai)\b", re.I | re.M)
+# In package.json a dependency is a quoted key anywhere in the file: "openai": "^4.0.0"
+AI_NPM = re.compile(r"[\"'](openai|@anthropic-ai/[\w-]+|@google/generative-ai|@google/genai|langchain[\w-]*|@langchain/[\w-]+|"
+                    r"cohere-ai|@mistralai/[\w-]+|ai)[\"']\s*:", re.I)
 SECRET_USE = re.compile(r"secrets\.([A-Za-z_][A-Za-z0-9_]*)")
 
 
@@ -65,8 +68,11 @@ def findings(root=ROOT):
             for m in AI_CODE.finditer(text):
                 line = text.count("\n", 0, m.start()) + 1
                 out.append(f"{f}:{line}: AI SDK, model API or API key reference ({m.group(0).strip()[:40]})")
-        if Path(f).name in ("requirements.txt", "package.json"):
+        if Path(f).name == "requirements.txt":
             for m in AI_PACKAGE.finditer(text):
+                out.append(f"{f}: AI package {m.group(1)}")
+        if Path(f).name == "package.json":
+            for m in AI_NPM.finditer(text):
                 out.append(f"{f}: AI package {m.group(1)}")
         if f.startswith(".github/workflows/"):
             for m in SECRET_USE.finditer(text):
