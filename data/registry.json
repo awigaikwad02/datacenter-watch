@@ -55,9 +55,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-29T08:57:52+00:00",
- "count": 626,
- "visible": 626,
+ "updated": "2026-10-29T09:57:52+00:00",
+ "count": 627,
+ "visible": 627,
  "records": [
   {
    "id": "amazon-georgia",
@@ -21637,6 +21637,56 @@
    "last_news": "2026-05-14T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "low",
+   "hidden": false
+  },
+  {
+   "id": "nebius-spartanburg-sc-2026",
+   "name": "Nebius Spartanburg data center",
+   "company": "Nebius",
+   "companies": [
+    "Nebius"
+   ],
+   "location": "Spartanburg, South Carolina, US",
+   "state": "SC",
+   "county": null,
+   "city": "Spartanburg, South Carolina, US",
+   "lat": 34.9496,
+   "lon": -81.9321,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "623a946a0d398432",
+     "title": "AIB plans 50MW AI data center at former Spartanburg cryptomine to serve Nebius",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcFVmSXFGWURYQkZsOHhMOTlTLTEzSTVxNGZLa1VYV2swM3FLT0ZjeC0zblFOM2pCaWZnRU1McUt6NEpnMzVkeGlYNjU2TE1Tc01ZRU1wSzc3UnZCaXk2ckZMbGpqdDd3M0N1NThlby04eWZ6NlR1TXl2TDFJeXhHMzN0WERxcGhzX3ZnUmR5bkxVM2lXTEZxU2ZZZVByVld3cWxzWUVoX1hoUS1mZU1Md25DallTMUlGbHVaMUF5cw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-10-29T09:37:30+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "623a946a0d398432"
+    }
+   ],
+   "first_seen": "2026-10-29T09:37:30+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-29T09:37:30+00:00",
+     "status": "Announced",
+     "headline_id": "623a946a0d398432"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 50,
+   "investment_usd_b": null,
+   "last_news": "2026-10-29T09:37:30+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
    "hidden": false
   },
   {
