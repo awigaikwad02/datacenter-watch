@@ -233,11 +233,14 @@ class Matcher:
             rid = self.first([x for c in inf["companies"] for p in places for x in self.by_place.get((c, p), [])])
             if rid:
                 return rid, "company + place"
-            # d. same company and state, existing record known only to the state (no time limit)
-            rid = self.first([x for c in inf["companies"] for x in self.by_state.get((c, inf["state"]), [])
-                              if self.records[x].get("precision") in ("state", "source")])
-            if rid:
-                return rid, "company + state"
+            # d. a headline that names only the state joins the same company's record known only to the
+            #    state (no time limit). A headline that names a town or county does not: it creates the
+            #    named site, which folds that umbrella in (see create).
+            if inf["precision"] in ("state", "source"):
+                rid = self.first([x for c in inf["companies"] for x in self.by_state.get((c, inf["state"]), [])
+                                  if self.records[x].get("precision") in ("state", "source")])
+                if rid:
+                    return rid, "company + state"
         # e. no company on either side, same place and similar title within 60 days
         elif places:
             for rid in sorted(dict.fromkeys(x for p in places for x in self.no_company.get(p, [])), key=lambda x: self.order.get(x, 1e9)):
