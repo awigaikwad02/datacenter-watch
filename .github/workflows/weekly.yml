@@ -1,0 +1,48 @@
+name: Weekly summary
+
+# Mondays 13:00 UTC: open the issue "Weekly summary <date>" (written by scripts/weekly_summary.py
+# from the repository's own data; no API or AI service) and close last week's. GitHub emails the
+# owner when the issue opens; its "Needs you" list says whether anything needs a decision.
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+
+# contents: read the data and its history; issues: open the new summary and close the old one.
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Fetch the last 9 days of history
+        run: git fetch -q --shallow-since="9 days ago" origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Write the summary
+        run: |
+          since=$(git rev-list -1 --before="7 days ago" origin/main || true)
+          python scripts/weekly_summary.py ${since:+--since "$since"} --out "$RUNNER_TEMP/summary.md"
+          cat "$RUNNER_TEMP/summary.md"
+
+      - name: Open this week's issue, close last week's
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Weekly summary $(date -u +%Y-%m-%d)"
+          old=$(gh issue list --state open --search '"Weekly summary" in:title' --json number,title \
+                --jq '.[] | select(.title | startswith("Weekly summary ")) | .number')
+          url=$(gh issue create --title "$TITLE" --body-file "$RUNNER_TEMP/summary.md")
+          echo "Opened $url"
+          for n in $old; do
+            gh issue close "$n" --comment "Superseded by $url."
+          done
