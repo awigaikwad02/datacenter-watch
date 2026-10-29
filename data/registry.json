@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-29T04:27:28+00:00",
+ "updated": "2026-10-29T04:40:45+00:00",
  "count": 623,
  "visible": 623,
  "records": [
@@ -1534,7 +1534,7 @@
      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRUdYVWI2UEc2cGk0eC11TmVxSVJucG9QclVMOVJzYXN2RDgxN1FnVWRuYkl5SzIyZEJyRWRpdG1KcVc5cDBsV2tOd0NscGUtN3FLbV9rRHBHVE9KNnZHVWJ1UmV0Q3FzN2xtamJOeXBnS0RETjU3Ym5pRUs4TFl5UmVoWEpkRktYTkJXNm1USXVrRnRjcVp1c29OekRRY3liaHc0ODB2ZWdkdHpfYmRDcFZpY0VjQU9ObmF4bERZM3ZnXzB4R1hybdIBzgFBVV95cUxQV0J6MG1kc1EzcENINnRoR2dwWEc1dFF3eXNfVDZTdGwtU0NqZ1Aza2Z3ZGd5aC1PTUpGbGQ4Y3M1QWpUUmRiRWY5Q1JJUG9JQ1BGbUpmdXd0b3JMekhJY3lGd3lnZ1JiOUw5clZvQzlTcVFxZ3BxZEpnUEgwQTdvN1Z2Z0JDcmtfeUJlay1HWTM1VXByTFEzSFl4cVpvSWlLSjJ6M2c2SklhOGZCbnZXNVlTWUVsdTBGZ3JwZGtzRC1FdmxmazFmbmNLSHNpUQ?oc=5",
      "source": "WANE 15",
      "published": "2025-12-11T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Operational",
      "cluster_id": "9a141a9d393fc16b"
     },
     {
@@ -3263,7 +3263,7 @@
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rcld5NVJScWJOWjc4a25VTGtRSXdIQnNHQW1sMnJNVk9lMnpuZmFQNFdXQ1k0WjAyRkNJalZXUFIxeHhKNzFiRFRENWpPTlVhZjI5dnV6VGRNem9keTNKX1NGZ2t1MVZxVUpuWTJGUHhRTnPSAXhBVV95cUxNZWRfSWVubXg1dXlCb196UzdVY0hGTmlUVWpSRXgtbWZNano4dEU2YzJpMlYxRjl5SVNqNTJlVS1nYkVsRnEyMC13dUs5SnQwaTljU1JFNjBuNXJlQXltdXBQaG9IWlFvekJibXR3VUs4T0ZMWmZpbmQ?oc=5",
      "source": "CNBC",
      "published": "2025-07-22T07:00:00+00:00",
-     "stage_signal": "Expansion",
+     "stage_signal": "Operational",
      "cluster_id": "5e100e06b09f2f8a"
     },
     {
@@ -3326,7 +3326,7 @@
      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9EaUdJb0hidkpoc3VlTXFVeFhrS0llTkM2YkRybUV0WlRpbkc0cVlKUEV3ZUJTY2t5akcwOHdwdGFSWXR0WXRTVG9xWUlJMGdyektsWlJHcEowZ3h5Y290UjhFY2dzMUNsODZJbkVFMGc4RElaYkJNRE1R0gGOAUFVX3lxTE45MmpBbEhwVzdGQ0QwN3FUUkR2eHRNWGs1T1NWNEYyWVdUTEJDT043ZWlWY1picmVOamN0QmF3dDlOQjBxTVBoamJLNEZ1ZzNCTDMwWXBid3dkM0pJUF81M1VwdXhEa1BkSHd0SUxLZ0M5TklCLVUyVzE4cnN5akZJVnU3ZVF4N2t6U1FvUkE?oc=5",
      "source": "Chosunbiz",
      "published": "2025-09-24T07:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Operational",
      "cluster_id": "9a871e3161eb04a1"
     },
     {
@@ -3344,7 +3344,7 @@
      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWEFxNG1NczZfUWpVZGlVdGxHVUhYS0lNTFdQRlllbk5HOXZPbF9iTllUaENuaWhoeTV2ZXB1UXptdTVZdW5UVXREX1RNd0lvaDZPdjlZZHNTZTd0dzhydjRlS2dvMVdZblN0b3JCbjA3NkpiaVg3enRCak96MkVTQmRrYVhPOGs4aHRLQUc3eTVEa3l2U2VidzRB?oc=5",
      "source": "Crusoe",
      "published": "2025-09-30T07:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Operational",
      "cluster_id": "598f889128472c68"
     },
     {
@@ -3457,11 +3457,6 @@
      "date": "2025-03-24T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "ae4e6c3fdf5e368e"
-    },
-    {
-     "date": "2025-07-22T07:00:00+00:00",
-     "type": "Expansion",
-     "headline_id": "5e100e06b09f2f8a"
     },
     {
      "date": "2025-09-23T07:00:00+00:00",
@@ -3851,7 +3846,7 @@
      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNUs1ZXBJa1RqVEdtYjU1eG1sZG5EeS1CWHh3bmZKTjc1OEpMdkw3Vjg4THZmcW00TUI5c2NHTHVTRHBLTkV6ZnZZdTZLek1DWEczdTB5RTJCMWw4cHNMdG9oU1R2R2pHYTlrU3RUUUhuQ3NKZDNwbUxCR1VZUHc5cTkySXJlbmN1Q3ZDV01Za3ZoNmY5ZTVkZVNrOEhVMTU5Ukd2YUZ6aWN5dHRENE92d0lsRzllZ091MGRfYw?oc=5",
      "source": "TMJ4 News",
      "published": "2026-07-29T07:00:00+00:00",
-     "stage_signal": "Operational",
+     "stage_signal": null,
      "cluster_id": "2af4cb0f9f94b6fd"
     },
     {
@@ -4644,27 +4639,15 @@
      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNFIwcFg5MmJ5RkxWQUtWM19Za0o1ZWFuS0Q0cmxVNkp6QTQ3OF9FZHVrMVRWQkEtX2FlYzJlb3NVNHI4cnE1S3o5bHdpejgwazN5ejk3SFJ0UHBjTVZQam5VZXU1WmNaT3NpR3MxMnc1a0FLNWtoNS1uaFU4dE84LW5pR1E3TlZPVUliQm1xa0p2c3lyVGNsTkp3ZTY0MTE1akhwMWxWTQ?oc=5",
      "source": "Data Center Dynamics",
      "published": "2025-04-07T07:00:00+00:00",
-     "stage_signal": "Expansion",
+     "stage_signal": null,
      "cluster_id": "8d09fc31033c3e02"
     }
    ],
    "first_seen": "2025-04-07T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [
-    {
-     "date": "2025-04-07T07:00:00+00:00",
-     "status": "Announced",
-     "headline_id": "8d09fc31033c3e02"
-    }
-   ],
-   "events": [
-    {
-     "date": "2025-04-07T07:00:00+00:00",
-     "type": "Expansion",
-     "headline_id": "8d09fc31033c3e02"
-    }
-   ],
+   "status_history": [],
+   "events": [],
    "capacity_mw": null,
    "investment_usd_b": 0.175,
    "last_news": "2025-04-07T07:00:00+00:00",
@@ -15110,7 +15093,7 @@
      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPa2ZrbVl3a3VtQkpiWGo1UnpJM016cjVtNlFLLTNsUjlfYkdyd2hMSU8yWkhRTERNWHZYVlZucUFwZV9QajE3cERFMjlMUWh6cXlfbTBVb2lTd1ppaG9LUWtRMmN1aFQyMTM2RzEzQUd1YlBrMmJveEJHQnBlY1RVRkRfRGptbTNQVkd1TFR1SXc5ZzkwY0RYVHEycUVXVm9ZdmU3VjY0Y1hWc1ZYbjJwSFBLM0VyQ0lJRF8waS1CTzU?oc=5",
      "source": "WWNO",
      "published": "2026-10-13T07:00:00+00:00",
-     "stage_signal": "Under construction",
+     "stage_signal": null,
      "cluster_id": "d0a5e9f24950db23"
     }
    ],
@@ -16153,6 +16136,15 @@
      "published": "2026-09-04T07:00:00+00:00",
      "stage_signal": "Operational",
      "cluster_id": "a1e9f70ca56443c4"
+    },
+    {
+     "id": "b9411f8e51e3c9fe",
+     "title": "Meta’s $1.2B Kuna data center is up and running. Here’s what to know",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11Mlc0RlB4eEp5VFBWTUNRWk1WU0VRN0lJcU9ZRUk4QkpWVW5LM1B2eFAyOVItaVNIbDRmNlVPM0xhVnhiVVZFbHFKcEF2anhzdFVmVHI4MFVxTEZqNUc0bGZxN2ZJdFdTTkZVdGpvdTRVR1B60gF0QVVfeXFMT1lUa053Z193RFA0WVFFOGI5ZkxGNUpwcFg3TmlKd2h6RXZIMGwzZU9FZlRrUWpUOWRkN3phTkhYLTNIVHo5WHJVVzdXWXZwQjhIb0tkWVQybEtuV2R3cUFLTkIwSkczdkdYaS1Ca2s3Y1NiRFk?oc=5",
+     "source": "Idaho Statesman",
+     "published": "2026-09-12T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "b9411f8e51e3c9fe"
     },
     {
      "id": "0dc0a700c898c1f2",
@@ -17632,7 +17624,7 @@
      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNVdzcklyVDhHd1k2WS1JWHZBdWlQd1pQLXFaa09UWktxZ0JETUdGN3BReVh4ZllJNkctN0MydVhaNl9JSTZfeWlnZ215TkVOa0RWTHhhNkJFUDBfOHExVGRZVXlqdnJZN21pY2tvZmxSNkxQVVAzX2taVHJBWWNLWDVhQmtKOXB4S2dYVWtzTFFOMnJObFI1R3NjUW9xemhwNmVqTTdFZ3Q?oc=5",
      "source": "AZ Big Media",
      "published": "2025-02-11T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Operational",
      "cluster_id": "fdac919427742d6c"
     },
     {

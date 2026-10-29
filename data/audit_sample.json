@@ -1,6 +1,6 @@
 {
  "_readme": "Status audit written by scripts/status_audit.py. records: a fixed stratified sample of detected registry records; for each, the status replayed from its headlines with the live rules (status_rules, history_rules) and with a stricter main-clause reading (status_strict, history_strict), and every headline's stage signal under both (rules, strict). disagreements: records whose status differs, with the headlines that differ. previous_run: the counts from the run before, to compare a rule change.",
- "generated": "2026-10-29T04:35:05+00:00",
+ "generated": "2026-10-29T04:40:46+00:00",
  "size": 150,
  "by_status": {
   "Operational": 30,
@@ -9,12 +9,12 @@
   "Announced": 52
  },
  "disagreement_count": 1,
- "headline_disagreements": 26,
+ "headline_disagreements": 25,
  "previous_run": {
-  "generated": "2026-10-29T04:20:50+00:00",
+  "generated": "2026-10-29T04:38:13+00:00",
   "size": 150,
   "disagreement_count": 1,
-  "headline_disagreements": 24
+  "headline_disagreements": 25
  },
  "disagreements": [
   {
@@ -427,8 +427,8 @@
      "id": "fdac919427742d6c",
      "title": "Meta announces Mesa Data Center is operational",
      "published": "2025-02-11",
-     "rules": "Announced",
-     "strict": "Announced"
+     "rules": "Operational",
+     "strict": "Operational"
     },
     {
      "id": "62a9dfa120a8a2f3",
@@ -1266,6 +1266,13 @@
      "id": "a1e9f70ca56443c4",
      "title": "Meta's $1.2bn data center in Kuna, Idaho, goes live",
      "published": "2026-09-04",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "b9411f8e51e3c9fe",
+     "title": "Meta’s $1.2B Kuna data center is up and running. Here’s what to know",
+     "published": "2026-09-12",
      "rules": "Operational",
      "strict": "Operational"
     },
@@ -7025,19 +7032,14 @@
    "name": "Apple, North Carolina (site not yet named)",
    "status_rules": "Announced",
    "status_strict": "Announced",
-   "history_rules": [
-    [
-     "2025-04-07",
-     "Announced"
-    ]
-   ],
+   "history_rules": [],
    "history_strict": [],
    "headlines": [
     {
      "id": "8d09fc31033c3e02",
      "title": "Apple to invest $175m in expanding North Carolina data center",
      "published": "2025-04-07",
-     "rules": "Expansion",
+     "rules": null,
      "strict": null
     }
    ]
