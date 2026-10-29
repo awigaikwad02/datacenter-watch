@@ -98,6 +98,7 @@ CANCEL_NOT = re.compile(
     r"withdrawn|halts?|halted|pauses?|paused|votes? against|voted against|scraps?|scrapped|cancels?|cancell?ed)"
     r" (?:[\w$’'.,-]+ ){0,6}?(?:moratorium|ban|freeze|pause|restrictions?|ordinance|regulations?|rules|guardrails|"
     r"limits|lawsuit|suit|challenge|appeal|petition|referendum|opposition|tax|bill|plan to|plan that|meeting|"
+    r"task force|study|committee|"
     r"hearing|session|vote)\b|\b(?:blocks?|blocked) \w+ from\b|\b(?:rejects?|rejected) \$\d|"
     r"\b(?:votes?|voted|rules?|ruled) against (?:requiring|forcing|making|letting|allowing)\b|"
     r"\b(?:shares|stocks?|prices?|demand|revenue|profits?|levels?|ratings?|costs?|rates?) (?:drops?|dropped)\b", re.I)
@@ -138,24 +139,25 @@ CATEGORY_RULES = [
     # "Google opens Mesa data center", "Outage at Ashburn data center", "Job fair for new data center"
     ("Operations",
      r"\b(opens|opened|officially open|now open|grand opening|goes live|went live|comes online|now online|"
-     r"online|commissioned|energized|outages?|downtime|hiring|job fair|jobs fair|ribbon)\b"),
+     r"online|commissioned|energized|up and running|is live|now live|(?:is|are|now|fully) operational|activates|activated|"
+     r"outages?|downtime|hiring|job fair|jobs fair|ribbon)\b"),
     # "Applied Digital shares jump on CoreWeave lease", "Equinix earnings beat", "Is the AI data center
     # boom a bubble?" Before Deals, so a stock story with a dollar figure is a market story.
     ("Markets / Earnings",
      r"\b(stocks?|shares|shareholders|earnings|quarterly|q[1-4]|(?<!tax )(?<!lost )revenue|profits?|"
-     r"wall street|analysts?|bubble|investors? (worry|fear|bet|cheer)|nasdaq|s&p|dow|market cap|"
+     r"wall street|analysts?|(?:ai|tech|market|data center) bubble|bubble (?:fears?|talk|bursts?)|investors? (worry|fear|bet|cheer)|nasdaq|s&p|dow|market cap|"
      r"net absorption|vacancy|backlog|outlook|forecast)\b"),
     # "Blackstone buys AirTrunk", "$2.4B financing for Abilene campus", "Data center REIT signs lease"
     ("Deals / Investment",
      r"\b(acqui\w*|merger|buys?|bought|purchase\w*|invest\w*|funding|raises?|raised|financing|financed|loan|debt|"
-     r"bonds?|reits?|lease[sd]?|leasing|joint venture|partnership|stake|ipo|valuation|billion|million|\$\s?\d|"
+     r"bonds?|reits?|lease[sd]?|leasing|joint venture|partnership|(?<!at )stake|ipo|valuation|billion|million|\$\s?\d|"
      r"m&a|sells?|sold|sale)\b"),
     # "Data center could bring 300 jobs", "Tax revenue from data centers tops $1B in Loudoun",
     # "Data center boom pushes up land prices", "Louisiana's data center surge tests economic growth"
     ("Economy / Jobs",
      r"\b(jobs?|workers?|workforce|employment|employees|hires|economic\w*|economy|tax (revenue|base|dollars|bill)|"
      r"property tax\w*|revenue for|real estate|land (prices|values)|property values|home prices|housing|rents?|"
-     r"windfall|payroll|wages?|training|apprentice\w*|small business\w*|tourism|farmland)\b"),
+     r"windfall|payroll|wages?|training|apprentice\w*|small business\w*|tourism)\b"),
     # "Data center water use worries Tucson", "Neighbors say data center noise is unbearable",
     # "Report: data center diesel generators threaten air quality"
     ("Environment",
@@ -185,7 +187,7 @@ CATEGORY_RULES = [
     ("Politics",
      r"\b(elections?|electoral|midterms?|primary|primaries|candidates?|campaign\w*|voters|ballots?|"
      r"democrats?|republicans?|gop|g\.o\.p\.|dems?|partisan|bipartisan|trump|biden|harris|vance|white house|"
-     r"congress\w*|politic\w*|polls?|governor['’]s race|races? for|runs? for|running for|seat)\b"),
+     r"congress\w*|politic\w*|polls|polling|governor['’]s race|races? for|runs? for|running for|seat)\b"),
     # "Planning commission recommends rezoning", "Indiana lawmakers file data center bill",
     # "County approves data center rules", "Judge sides with county in data center lawsuit"
     ("Policy / Permits",
@@ -193,7 +195,7 @@ CATEGORY_RULES = [
      r"board of supervisors|city council|county commission(ers?)?|public hearings?|hearings?|lawsuits?|referendums?|"
      r"tax (breaks?|incentives?|exemptions?|credits?)|incentives?|abatements?|approv\w*|green-?lights?|"
      r"bans?|banned|banning|pauses?|regulat\w*|regs|rules|restrictions?|crackdown|lawmakers?|legislat\w*|legislature|"
-     r"senate|senators?|assembly|house bill|bills?|governor|gov\.|executive order|"
+     r"senate|senators?|assembly|house bill|bills?|governor|gov|executive order|polic(?:y|ies)|"
      r"votes?|council\w*|commissioners?|supervisors|mayors?|officials|ndas?|transparency|"
      r"judges?|courts?|sues?|sued|appeals?|legal|federal|feds|epa|ferc|puc|psc|task force|"
      r"local control|agreements?|annex\w*|tif|pilot)\b"),
@@ -239,7 +241,8 @@ STATUS_RULES = [
 # scripts/status_audit.py): "could break ground this summer", "plans to break ground",
 # "on track to be completed by 2025", "$2B to complete Utah campus", "push xAI to complete",
 # "will be operational in 2027", "jobs expectations when AI facility opens".
-# "to build" and "plans" are themselves Announced words, so this test is not applied to that rule.
+# "to build" and "plans" are themselves Announced words and "plans to expand" is an expansion
+# announcement, so this test is not applied to Announced or Expansion.
 STAGE_FUTURE = re.compile(r"\b(to|will|would|could|may|might|plans? to|planning to|aims? to|hopes? to|seeks? to|"
                           r"wants? to|set to|slated to|expected to|scheduled to|poised to|on track to|"
                           r"before|until|unless|if|when|once)\b\W*(\w+\W+){0,3}$", re.I)
@@ -310,7 +313,7 @@ COMPANIES = [
     ("DartPoints", r"DartPoints"),
     ("Evocative", r"Evocative"),
     ("Ascent", r"Ascent(?= (Data|data|Mission|Group)\b)"),
-    ("Edged", r"Edged(?= (Data|data|US|Energy)\b)|EdgedEnergy"),
+    ("Edged", r"Edged(?= (Data|data|US|Energy|opens|plans|to|breaks|announces|launches|expands)\b)|EdgedEnergy"),
     ("Yondr", r"Yondr"),
     ("Corscale", r"Corscale"),
     ("Lincoln Rackhouse", r"Lincoln Rackhouse"),
@@ -521,7 +524,7 @@ FOREIGN_SOURCES = {
     "the sydney morning herald", "the australian", "abc (australia)", "itnews", "the japan times",
     "nikkei asia", "the korea herald", "the korea times", "gulf news", "khaleej times", "arab news",
     "the national", "zawya", "techcentral", "businesstech", "mybroadband", "techcabal", "lusa",
-    "nz herald", "rnz", "stuff", "beinsure", "capacity media", "w.media", "dcd asia", "datacenter forum",
+    "nz herald", "rnz", "stuff", "beinsure", "capacity media", "w.media", "dcd asia", "datacenter forum", "bm.ge",
 }
 STATE_CODES = {
     "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO",
@@ -1002,7 +1005,7 @@ def stage_counts(status, m, title):
     before, after = title[:m.start()], title[m.end():]
     # "coming to Heath, Hebron after groundbreaking": a step right after "after" already happened.
     past = bool(re.search(r"\b(after|following|since)\W*$", before, re.I))
-    if status != "Announced" and not past and STAGE_FUTURE.search(" ".join(before.split()[-4:]) + " "):
+    if status not in ("Announced", "Expansion") and not past and STAGE_FUTURE.search(" ".join(before.split()[-4:]) + " "):
         return False
     if status == "Operational":
         # The thing that opens is named just before or after the verb, or opens the headline.
