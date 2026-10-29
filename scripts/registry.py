@@ -36,26 +36,37 @@ SITEMAP_FILE = fn.ROOT / "sitemap.xml"
 SITE = "https://therackreport.org"
 
 CANCELLED = fn.CANCELLED
+# A status only moves forward along these steps (Cancelled / Blocked is separate; see derive).
 STAGE = {"Announced": 1, "Under construction": 2, "Operational": 3}
 STATUSES = ("Announced", "Planned", "Under construction", "Operational", CANCELLED)
+# Project code names that identify one campus wherever they appear (matching rule b):
+# "Hyperion" is Meta in Richland Parish, "Colossus" xAI in Memphis. Curated project names and
+# aliases from overrides are added at run time.
 CODE_NAMES = ["Stargate", "Hyperion", "Prometheus", "Fairwater", "Project Rainier", "Colossus", "Project Matador"]
+# Rule e: with no operator on either side, a headline joins a record at the same town or county
+# only when their titles share 40% of their words within 60 days.
 NO_COMPANY_JACCARD = 0.4
 NO_COMPANY_DAYS = 60
 MAX_PAGES_PER_RECORD = 2000      # above this many records, write one page per state instead
 MAX_PAGES_BYTES = 5 * 1024 * 1024
 SLUG_ALIAS = {"Amazon": "aws"}
 
+# Events on the timeline (they do not change the status).
+# Approval: "Board approves rezoning for Project Sail", "QTS campus clears final vote".
 APPROVAL_RE = re.compile(r"\b(approv(e|es|ed|al|als)|green-?lights?|green light|clears? (a |the |key |final )?(vote|hurdle|review|step)|"
                          r"grants? (a )?(permit|approval|rezoning)|signs? off|rezoning (passes|approved))\b", re.I)
+# Power deal: "Meta signs power purchase agreement with Entergy", "xAI inks electricity deal".
 POWER_RE = re.compile(r"\b(power (purchase|supply) agreements?|ppas?|power deals?|energy (deal|agreement|contract)s?|"
                       r"electric(ity)? (deal|agreement|contract|service agreement)s?|(utility|power) (deal|agreement|contract)s?)\b", re.I)
 
 
 def now_iso():
+    """The current UTC time as an ISO 8601 string, to the second."""
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
 def parse(s):
+    """An ISO date or datetime string as an aware UTC datetime, or None when it does not parse."""
     try:
         d = datetime.fromisoformat(str(s).replace("Z", "+00:00"))
         return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
@@ -64,6 +75,7 @@ def parse(s):
 
 
 def slug(s):
+    """Lowercase words joined by hyphens, for record ids: 'Richmond County' -> 'richmond-county'."""
     return re.sub(r"[^a-z0-9]+", "-", str(s).lower()).strip("-")
 
 
@@ -76,15 +88,16 @@ def short_place(display):
 # Loading and saving
 # ---------------------------------------------------------------------------
 def load(path=REGISTRY_FILE):
+    """The registry as {id: record}."""
     doc = fn.load_json(path, {})
     return {r["id"]: r for r in doc.get("records", [])}
 
 
 def save(records, path=REGISTRY_FILE):
+    """Write the registry, curated records first, with its _readme and counts."""
     recs = sorted(records.values(), key=lambda r: (not r.get("curated"), r["id"]))
     doc = {
-        "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not "
-                   "deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
+        "_readme": fn.readme("registry.json"),
         "updated": now_iso(),
         "count": len(recs),
         "visible": sum(1 for r in recs if not r.get("hidden")),
@@ -112,6 +125,9 @@ def place_fields(location, precision):
 
 
 def import_curated(records):
+    """Copy every project in data/projects.json into its registry record (creating it the first
+    time). Curated fields always win over detected ones. Returns the set of curated ids.
+    """
     curated = fn.load_json(PROJECTS_FILE, {}).get("projects", [])
     for p in curated:
         r = records.get(p["id"]) or {"id": p["id"], "news": [], "first_seen": None}
@@ -136,16 +152,24 @@ def import_curated(records):
 # Matching
 # ---------------------------------------------------------------------------
 def project_shaped(it):
+    """True when a headline can be about one project: it names a place, a site word (data center,
+    campus, facility) and a stage word.
+    """
     return bool(it.get("locations")) and bool(fn.PROJECT_WORDS.search(it["title"])) and bool(fn.guess_status(it["title"]))
 
 
 class Matcher:
+    """Attaches headlines to registry records, following the matching rules a to f in match(), and
+    creates records and umbrellas when nothing matches.
+    """
     def __init__(self, records, gaz):
+        """Index the records for matching."""
         self.records = records
         self.gaz = gaz
         self.reindex()
 
     def reindex(self):
+        """Rebuild every lookup index from the records (after overrides change them)."""
         self.by_news, self.by_cluster = {}, {}
         # Lookup indexes for rules c-e, so matching stays fast with tens of thousands of
         # headlines. Each list keeps record order, so the first match is the same as a scan.
@@ -162,6 +186,7 @@ class Matcher:
         self.code_rx = [(n, re.compile(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])", re.I)) for n in names]
 
     def index(self, r):
+        """Add one record to the place, state, no-company and name-hint indexes."""
         self.order.setdefault(r["id"], len(self.order))
         places = [p for p in (r.get("county"), r.get("city")) if p]
         for p in places:
@@ -178,10 +203,12 @@ class Matcher:
                 self.no_company.setdefault(p, []).append(r["id"])
 
     def first(self, rids):
+        """The oldest live record among the ids, so matching is the same as a scan in record order."""
         live = [rid for rid in dict.fromkeys(rids) if rid in self.records and not self.records[rid].get("hidden")]
         return min(live, key=lambda rid: self.order.get(rid, 1e9)) if live else None
 
     def resolve(self, rid):
+        """Follow merged_into links to the record that now holds a merged record's news."""
         seen = set()
         while rid in self.records and self.records[rid].get("merged_into") and rid not in seen:
             seen.add(rid)
@@ -189,10 +216,15 @@ class Matcher:
         return rid
 
     def live(self):
+        """Every record that is not hidden."""
         return [r for r in self.records.values() if not r.get("hidden")]
 
     @staticmethod
     def info(it):
+        """The fields matching needs from a tagged headline: operators, state, county, city,
+        precision, title words, time, name hint and whether it names only builders or
+        suppliers.
+        """
         locs = it.get("locations", [])
         city = next((l["name"] for l in locs if l.get("precision") == "city"), None)
         return {
@@ -205,10 +237,12 @@ class Matcher:
         }
 
     def code_names(self, title):
+        """Project code names (Stargate, Hyperion, curated names, aliases) found in a title."""
         return [n for n, rx in self.code_rx if rx.search(title)]
 
     def match(self, it, inf):
         # a. a headline from the same story cluster is already attached
+        """The record a headline belongs to and the rule that matched (for the run log), or (None, None)."""
         rid = self.by_cluster.get(it.get("cluster_id"))
         if rid:
             return self.resolve(rid), "cluster"
@@ -263,12 +297,16 @@ class Matcher:
 
     # ------------------------------------------------------------------
     def new_id(self, base):
+        """A record id not yet used: base, then base-2, base-3 and so on."""
         rid, i = base, 2
         while rid in self.records:
             rid, i = f"{base}-{i}", i + 1
         return rid
 
     def create(self, it, inf, codes):
+        """Create a record from a headline that matched nothing, and fold the operator's
+        umbrella for that state into it. Returns the new id.
+        """
         loc = next((l for l in it["locations"] if l.get("precision") in ("city", "county")), it["locations"][0])
         company = sorted(inf["companies"], key=lambda n: fn.COMPANY_ORDER.get(n, 99))[0] if inf["companies"] else None
         place = short_place(loc["name"])
@@ -296,10 +334,14 @@ class Matcher:
         return rid
 
     def umbrella(self, company, state):
+        """The umbrella record for an operator in a state (hidden or not), or None."""
         return next((r for r in self.records.values() if r.get("umbrella") and r.get("umbrella_company") == company
                      and r.get("state") == state), None)
 
     def create_umbrella(self, company, state):
+        """Create 'Company, State (site not yet named)' for state-level headlines about an
+        operator. Returns its id.
+        """
         name_state = next((n for n, c in fn.STATE_CODES.items() if c == state), state)
         entry = fn.entry_candidates(self.gaz.get(name_state, [0, 0, 2, name_state]))[0] if name_state in self.gaz else None
         co = SLUG_ALIAS.get(company, slug(company))
@@ -315,6 +357,9 @@ class Matcher:
         return rid
 
     def merge(self, src, dst, reason="merged"):
+        """Move every headline of record src into dst and hide src with merged_into = dst.
+        Nothing is deleted.
+        """
         s, d = self.records[src], self.records[dst]
         have = {n["id"] for n in d["news"]}
         d["news"].extend(n for n in s["news"] if n["id"] not in have)
@@ -324,6 +369,7 @@ class Matcher:
             self.by_news[n["id"]] = dst
 
     def attach(self, rid, it, stage):
+        """Add a headline to a record (once), with its stage signal and project name hint."""
         r = self.records[rid]
         if any(n["id"] == it["id"] for n in r["news"]):
             return
@@ -366,6 +412,10 @@ class Matcher:
 # Overrides
 # ---------------------------------------------------------------------------
 def apply_overrides(m, ops):
+    """Apply data/project_overrides.json (merge, rename, set_status, set_location, hide, alias,
+    split) after matching. Returns (operations applied, problems found); a bad operation is
+    reported and skipped, never fatal.
+    """
     applied, problems = 0, []
     for op in ops:
         kind, rec = op.get("op"), m.records
@@ -601,19 +651,25 @@ TONE = {"Announced": "--st-announced", "Planned": "--st-planned", "Under constru
 
 
 def page_mode(records):
+    """'record' (one page per project) until there are more than MAX_PAGES_PER_RECORD visible
+    records, then 'state' (one page per state).
+    """
     visible = [r for r in records.values() if not r.get("hidden")]
     return "state" if len(visible) > MAX_PAGES_PER_RECORD else "record"
 
 
 def page_path(r, mode):
+    """The URL path of a record's static page in the given page mode."""
     return f"/projects/{r['id']}/" if mode == "record" else f"/projects/state-{(r.get('state') or 'us').lower()}/#{r['id']}"
 
 
 def esc(s):
+    """HTML-escape a value for the static pages (None becomes an empty string)."""
     return html.escape(str(s if s is not None else ""), quote=True)
 
 
 def fmt_date(s):
+    """A date for people: 'Oct 29, 2026', or 'Oct 2026' for a month."""
     d = parse(s) if s and len(s) > 7 else None
     if d:
         return d.strftime("%b %-d, %Y")
@@ -639,10 +695,14 @@ def orgs_html(r):
 
 
 def record_html(r):
+    """The <article> for one record on its static page: name, place, figures, organisations, status
+    timeline and news.
+    """
     news = {n["id"]: n for n in r["news"]}
     steps = sorted([dict(h, kind="status") for h in r.get("status_history", [])] +
                    [dict(e, kind="event") for e in r.get("events", [])], key=lambda s: str(s.get("date")))
     def step(s):
+        """One <li> of the status timeline, linking the headline that caused the step."""
         label = s["status"] if s["kind"] == "status" else s["type"]
         n = news.get(s.get("headline_id"))
         how = f' <a href="{esc(n["link"])}" rel="noopener">{esc(n["source"] or "source")}</a>' if n else \
@@ -684,6 +744,7 @@ def record_html(r):
 
 
 def page_shell(title, desc, canonical, body):
+    """A complete static HTML page (head, navigation, footer) around a body."""
     nav = "".join(f'<a href="{u}">{t}</a>' for u, t in NAV)
     return f"""<!doctype html>
 <html lang="en">
@@ -751,6 +812,7 @@ def build_pages(records, out_dir=PAGES_DIR, sitemap=SITEMAP_FILE, log=print):
 
 
 def write_sitemap(pages, path=SITEMAP_FILE):
+    """Write sitemap.xml: the six site pages, then the project pages, keeping each page's previous lastmod."""
     old = path.read_text(encoding="utf-8") if path.exists() else ""
     lastmods = dict(re.findall(r"<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>", old))
     rows = [f'  <url><loc>{SITE}{u}</loc><lastmod>{lastmods.get(SITE + u, now_iso()[:10])}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>'
@@ -831,6 +893,7 @@ def selftest(log=lambda *_: None):
 
 
 def main():
+    """Command line: --backfill, --pages or --selftest (see the module docstring)."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--backfill", action="store_true", help="seed data/registry.json from the archive")
     ap.add_argument("--pages", action="store_true", help="rebuild projects/ pages and the sitemap from data/registry.json")

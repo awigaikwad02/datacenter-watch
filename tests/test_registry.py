@@ -35,6 +35,7 @@ def run(tmp_path, monkeypatch):
     path = tmp_path / "registry.json"
 
     def _run(headlines, overrides=()):
+        """Tag the headlines and run the registry once per headline in date order; returns the records."""
         (tmp_path / "overrides.json").write_text(json.dumps({"operations": list(overrides)}))
         items = []
         for title, days in headlines:
@@ -52,10 +53,12 @@ def run(tmp_path, monkeypatch):
 
 
 def live(records):
+    """Records that are not hidden."""
     return [r for r in records.values() if not r.get("hidden")]
 
 
 def only(records):
+    """The one visible record that has headlines (fails the test when there are several)."""
     rs = [r for r in live(records) if r["news"]]
     assert len(rs) == 1, [r["id"] for r in rs]
     return rs[0]

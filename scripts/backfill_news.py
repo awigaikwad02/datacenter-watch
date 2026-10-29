@@ -57,14 +57,17 @@ QUERIES = [
 
 
 def log(msg):
+    """Print a progress line immediately."""
     print(msg, flush=True)
 
 
 def day(s):
+    """A YYYY-MM-DD string, or 'today', as a date."""
     return date.today() if s == "today" else date.fromisoformat(s)
 
 
 def archive_ids():
+    """Every headline id already in data/archive, so a window's new headlines can be counted."""
     ids = set()
     for p in fn.ARCHIVE_DIR.glob("*.json"):
         if fn.MONTH_RE.match(p.stem):
@@ -73,6 +76,7 @@ def archive_ids():
 
 
 def registry_snapshot():
+    """Counts of the registry before the backfill (records, statuses, confidence, ids) for the report."""
     recs = [r for r in rg.load().values()]
     vis = [r for r in recs if not r.get("hidden")]
     count = lambda key: {k: sum(1 for r in vis if r.get(key) == k) for k in sorted({r.get(key) for r in vis})}
@@ -82,6 +86,7 @@ def registry_snapshot():
 
 
 def load_progress(args):
+    """The saved progress for a resumed run with the same start, end and window, or a fresh one."""
     old = fn.load_json(PROGRESS_FILE, {})
     same = old.get("start") == args.start and old.get("end") == str(args.end) and old.get("window_days") == args.window_days
     if args.resume and same:
@@ -95,7 +100,9 @@ def load_progress(args):
 
 
 def save_progress(prog):
+    """Write data/backfill_progress.json with the time it was saved."""
     prog["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    prog["_readme"] = fn.readme("backfill_progress.json")
     PROGRESS_FILE.write_text(json.dumps(prog, indent=1) + "\n", encoding="utf-8")
 
 
@@ -121,6 +128,7 @@ def run_window(a, b, prog, known, gaz, geo, feed_file=None):
     month = a.strftime("%Y-%m")
     stats, new = {}, []
     def ask(name, query, lo, hi, st):
+        """Run one query for one date window; returns the entries, or None when the feed failed."""
         url = fn.google_news_url(f"after:{lo.isoformat()} before:{hi.isoformat()} {query}")
         entries = fetch(url, prog, feed_file)
         if entries is None:
@@ -167,6 +175,9 @@ def run_window(a, b, prog, known, gaz, geo, feed_file=None):
 
 
 def main():
+    """Fetch every window from start to end for each backfill query, archive what is new and save
+    progress; exits 10 after --max-windows windows so the workflow can commit and continue.
+    """
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--start", default="2024-10-01")
     ap.add_argument("--end", default="today")

@@ -82,6 +82,9 @@ def sample(records, size):
 
 
 def replay(r, reader):
+    """The status and status history a record gets when its headlines are read with reader (live
+    rules or strict).
+    """
     r = copy.deepcopy(r)
     for n in r["news"]:
         n["stage_signal"] = reader(n["title"])
@@ -90,6 +93,7 @@ def replay(r, reader):
 
 
 def main():
+    """Sample the registry, compare both readings and write data/audit_sample.json."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--size", type=int, default=150)
     args = ap.parse_args()
@@ -108,12 +112,7 @@ def main():
                         "headlines": [h for h in heads if h["rules"] != h["strict"]]})
     prev = fn.load_json(OUT, {})
     doc = {
-        "_readme": "Status audit written by scripts/status_audit.py. records: a fixed stratified sample of detected "
-                   "registry records; for each, the status replayed from its headlines with the live rules "
-                   "(status_rules, history_rules) and with a stricter main-clause reading (status_strict, "
-                   "history_strict), and every headline's stage signal under both (rules, strict). "
-                   "disagreements: records whose status differs, with the headlines that differ. previous_run: "
-                   "the counts from the run before, to compare a rule change.",
+        "_readme": fn.readme("audit_sample.json"),
         "generated": reg.now_iso(),
         "size": len(rows),
         "by_status": {s: sum(1 for x in rows if x["status_rules"] == s) for s in MIX},

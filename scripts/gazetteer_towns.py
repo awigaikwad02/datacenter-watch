@@ -46,6 +46,7 @@ CODE_TO_STATE = {v: k for k, v in fn.STATE_CODES.items()}
 
 
 def main():
+    """Run the script (see the module docstring for what it does and its options)."""
     ap = argparse.ArgumentParser()
     ap.add_argument("cities_json")
     ap.add_argument("words_json")

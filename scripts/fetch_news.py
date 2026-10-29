@@ -46,6 +46,8 @@ from urllib.parse import quote_plus
 import feedparser
 import requests
 
+from data_readme import readme
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 FEEDS_FILE = DATA / "feeds.json"
@@ -105,6 +107,10 @@ CANCELLED = "Cancelled / Blocked"
 
 
 def is_cancelled(title):
+    """True when the headline reports a project cancelled or blocked (CANCEL_RE), unless it only
+    proposes one (CANCEL_HEDGE) or is about a restriction, vote or share price instead
+    (CANCEL_NOT).
+    """
     return bool(CANCEL_RE.search(title)) and not CANCEL_HEDGE.search(title) and not CANCEL_NOT.search(title)
 
 
@@ -437,6 +443,7 @@ SUPPLIERS = [
 
 
 def _org_rules(pairs):
+    """Compile (name, pattern) pairs into whole-word, case-sensitive regexes."""
     return [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in pairs]
 
 
@@ -551,6 +558,7 @@ WS_RE = re.compile(r"\s+")
 # Helpers
 # ---------------------------------------------------------------------------
 def log(msg):
+    """Print a progress line immediately (the Actions log shows it as it happens)."""
     print(msg, flush=True)
 
 
@@ -573,14 +581,17 @@ def safe_link(url):
 
 
 def norm_key(title):
+    """The title reduced to lowercase letters and digits, so the same headline from two feeds dedupes."""
     return re.sub(r"[^a-z0-9]+", "", title.lower())
 
 
 def make_id(title):
+    """A headline's permanent id: the first 16 hex digits of the SHA-1 of its normalised title."""
     return hashlib.sha1(norm_key(title).encode("utf-8")).hexdigest()[:16]
 
 
 def parse_dt(entry):
+    """The entry's publication time as an aware UTC datetime, or None when the feed gives none."""
     for key in ("published_parsed", "updated_parsed"):
         st = entry.get(key)
         if st:
@@ -592,6 +603,7 @@ def parse_dt(entry):
 
 
 def load_json(path, default):
+    """Read a JSON file, or return `default` when it is missing or unreadable (with a warning)."""
     if path.exists():
         try:
             return json.loads(path.read_text(encoding="utf-8"))
@@ -601,6 +613,7 @@ def load_json(path, default):
 
 
 def google_news_url(query):
+    """The Google News RSS search URL for a query, always in the U.S. edition (gl=US)."""
     return ("https://news.google.com/rss/search?q=" + quote_plus(query) +
             "&hl=en-US&gl=US&ceid=US:en")
 
@@ -642,6 +655,7 @@ class Geo:
     """Everything location and source handling needs, loaded once per run."""
 
     def __init__(self, patterns, areas, source_states, blocked, ambiguous=None):
+        """Hold the compiled place data; see load_gazetteer."""
         self.patterns = patterns            # [(name, regex)] for cities, states, countries
         self.areas = areas                  # "Mason County" -> [candidates]
         self.ambiguous = ambiguous or {}    # "Lansing" -> [candidates in several states]
@@ -660,6 +674,11 @@ def entry_candidates(value):
 
 
 def load_gazetteer():
+    """Load scripts/gazetteer.json and data/feeds.json into (gaz, Geo): gaz maps a place name to
+    its first entry; Geo holds the compiled place patterns (longest names first), the
+    county/parish/township and ambiguous-town candidates, the outlets' home states and the
+    blocked outlets.
+    """
     raw = {k: v for k, v in load_json(GAZ_FILE, {}).items() if not k.startswith("_")}
     areas, gaz, ambiguous = {}, {}, {}
     for k, v in raw.items():
@@ -684,6 +703,7 @@ def load_gazetteer():
 
 
 def loc_from(entry, precision):
+    """A gazetteer entry as a location dict (name, lat, lon, level, precision, country)."""
     lat, lon, level, display = entry[:4]
     country = entry[4] if len(entry) > 4 else ("US" if display.endswith(", US") else display.split(",")[-1].strip())
     return {"name": display, "lat": lat, "lon": lon, "level": level, "precision": precision, "country": country}
@@ -750,10 +770,12 @@ def country_of(loc):
 
 
 def is_us(loc):
+    """True for a location in the United States."""
     return country_of(loc) == "US"
 
 
 def find_companies(text):
+    """The operators named in the text, in COMPANIES order (aliases such as Stargate add several)."""
     found = set()
     for names, rx in COMPANY_RULES:
         if rx.search(text):
@@ -767,10 +789,14 @@ def find_orgs(rules, text):
 
 
 def find_utilities(text):
+    """The utilities and grid operators named in the text."""
     return find_orgs(UTILITY_RULES, text)
 
 
 def is_on_topic(text, companies):
+    """True when the text is about data centers: it names one (ON_TOPIC_RE), or names a tracked
+    operator together with a site word (campus, facility, megawatts).
+    """
     return bool(ON_TOPIC_RE.search(text) or (companies and SITE_RE.search(text)))
 
 
@@ -920,6 +946,7 @@ def title_words(title, source=""):
 
 
 def jaccard(a, b):
+    """Share of words two titles have in common (0 to 1), used for story clustering and matching."""
     return len(a & b) / len(a | b) if a and b else 0.0
 
 
@@ -931,12 +958,14 @@ def cluster_items(items):
     parent = {it["id"]: it["id"] for it in items}
 
     def find(x):
+        """Union-find root of a headline id, with path halving."""
         while parent[x] != x:
             parent[x] = parent[parent[x]]
             x = parent[x]
         return x
 
     def places(it):
+        """The city and county names a headline is placed in."""
         return {l["name"] for l in it.get("locations", []) if l.get("precision") in ("city", "county")}
 
     rows = sorted(({"id": it["id"], "t": datetime.fromisoformat(it["published"]),
@@ -948,6 +977,9 @@ def cluster_items(items):
     geo = {r["id"]: (set(r["s"]), set(r["p"])) for r in rows}
 
     def conflict(ra, rb):
+        """True when two clusters name different states, or different towns or counties, so
+        they must not merge.
+        """
         (sa, pa), (sb, pb) = geo[ra], geo[rb]
         return bool((sa and sb and not sa & sb) or (pa and pb and not pa & pb))
 
@@ -997,6 +1029,9 @@ def classify(title):
 
 
 def extract_numbers(title):
+    """Capacity (MW; GW converted) and investment (billions of dollars) stated in the title. A
+    capacity above MAX_PROJECT_MW is dropped as a grid or statewide figure, not one project.
+    """
     out = {}
     m = GW_RE.search(title)
     if m:
@@ -1144,7 +1179,7 @@ def archive_items(new_items, archive_dir):
             continue
         items = current + fresh
         items.sort(key=lambda x: x["published"], reverse=True)
-        path.write_text(json.dumps({"month": month, "count": len(items), "items": items},
+        path.write_text(json.dumps({"_readme": readme("archive month"), "month": month, "count": len(items), "items": items},
                                    ensure_ascii=False, indent=1), encoding="utf-8")
         added += len(fresh)
     write_archive_index(archive_dir)
@@ -1152,6 +1187,9 @@ def archive_items(new_items, archive_dir):
 
 
 def write_archive_index(archive_dir):
+    """Rewrite data/archive/index.json: the months on disk with their headline counts, the total
+    and the earliest date.
+    """
     months = []
     for path in sorted(archive_dir.glob("*.json"), reverse=True):
         if not MONTH_RE.match(path.stem):
@@ -1164,6 +1202,7 @@ def write_archive_index(archive_dir):
             "earliest": min(x["published"] for x in items), "latest": max(x["published"] for x in items),
         })
     index = {
+        "_readme": readme("archive index"),
         "total": sum(m["count"] for m in months),
         "earliest": min((m["earliest"] for m in months), default=None),
         "latest": max((m["latest"] for m in months), default=None),
@@ -1179,6 +1218,7 @@ def write_archive_index(archive_dir):
 
 
 def parse_args():
+    """Command-line options: --no-fetch, --sample RSS_FILE and --out DIR (see the module docstring)."""
     ap = argparse.ArgumentParser(description="Refresh data/news.json, data/registry.json and the project pages")
     ap.add_argument("--no-fetch", action="store_true", help="re-tag the stored items without fetching feeds")
     ap.add_argument("--sample", metavar="RSS_FILE", help="read this local RSS file instead of the network")
@@ -1187,6 +1227,10 @@ def parse_args():
 
 
 def main():
+    """One update run: fetch every feed, tag and cluster the headlines, archive them, write
+    data/news.json, update the registry and project pages, and write data/status.json. Returns
+    the exit code (0 ok, 1 no data, 75 rate limited).
+    """
     args = parse_args()
     no_fetch = args.no_fetch
     news_out = Path(args.out) / NEWS_FILE.name if args.out else NEWS_FILE
@@ -1268,6 +1312,7 @@ def main():
         since = now - timedelta(days=days)
         items = [slim(it) for it in kept if datetime.fromisoformat(it["published"]) >= since]
         text = json.dumps({
+            "_readme": readme("news.json"),
             "updated": now.isoformat(timespec="seconds"),
             "window_days": days,
             "count": len(items),
@@ -1290,6 +1335,7 @@ def main():
 
     # A small run report for the Methodology page.
     status_out.write_text(json.dumps({
+        "_readme": readme("status.json"),
         "updated": now.isoformat(timespec="seconds"),
         "feeds_total": len(sources),
         "feeds_ok": feeds_ok,

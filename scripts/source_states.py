@@ -59,6 +59,7 @@ def suggest(items, known):
 
 
 def main():
+    """Run the script (see the module docstring for what it does and its options)."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true")
     args = ap.parse_args()

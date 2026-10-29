@@ -20,6 +20,9 @@ FILES = {"data/news.json": "items", "data/registry.json": "records"}
 
 
 def row(r, key):
+    """The fields of one headline or record that count as a real change (ids, cluster, status,
+    name, place); timestamps do not.
+    """
     if key == "items":
         return (r.get("id"), r.get("cluster_id"))
     return (r.get("id"), r.get("status"), r.get("hidden"), r.get("name"), r.get("lat"), r.get("lon"),
@@ -27,6 +30,7 @@ def row(r, key):
 
 
 def signature(text, key):
+    """A sorted, comparable list of rows from a JSON document's list under key."""
     try:
         rows = json.loads(text).get(key, [])
     except (json.JSONDecodeError, AttributeError):
@@ -35,11 +39,15 @@ def signature(text, key):
 
 
 def committed(path):
+    """The file's contents in the last commit, or '' when it is not committed."""
     r = subprocess.run(["git", "show", "HEAD:" + path], cwd=ROOT, capture_output=True, text=True)
     return r.stdout if r.returncode == 0 else ""
 
 
 def main():
+    """Exit 0 when news.json or registry.json changed in a way that matters since the last commit,
+    1 when only timestamps moved.
+    """
     if not committed("data/status.json"):
         print("data/status.json is not committed yet")
         return 0

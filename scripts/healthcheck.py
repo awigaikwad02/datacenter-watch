@@ -57,14 +57,19 @@ checks = []
 
 
 def check(name, status, value="", detail=""):
+    """Record one check result: status is pass, warn, fail or skip; value is shown in the table,
+    detail when it is not a pass.
+    """
     checks.append({"name": name, "status": status, "value": str(value), "detail": str(detail)})
 
 
 def load(path):
+    """Read a JSON file (raises when it is missing or broken; callers decide)."""
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
 def iso(s):
+    """An ISO date string as an aware UTC datetime, or None."""
     try:
         d = datetime.fromisoformat(str(s).replace("Z", "+00:00"))
         return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
@@ -73,11 +78,13 @@ def iso(s):
 
 
 def ago(d):
+    """How long ago a datetime was: '45m ago', '3h 10m ago'."""
     m = int((NOW - d).total_seconds() // 60)
     return f"{m // 60}h {m % 60}m ago" if m >= 60 else f"{m}m ago"
 
 
 def git(*args):
+    """Run a git command in the repo; its output, or '' when it fails."""
     r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
     return r.stdout.strip() if r.returncode == 0 else ""
 
@@ -86,6 +93,9 @@ def git(*args):
 # Pipeline
 # ---------------------------------------------------------------------------
 def pipeline(ctx):
+    """Freshness and pipeline checks: last data commit, recent workflow runs, feeds in
+    data/status.json, and the fetcher run on scripts/sample_feed.xml in a temporary folder.
+    """
     if ctx == "update":
         check("Last data commit within 3h", "skip", "", "not checked while the update itself runs")
         check("Workflow runs (last 10)", "skip", "", "not checked while the update itself runs")
@@ -122,6 +132,9 @@ def pipeline(ctx):
 
 
 def runs(ctx):
+    """The last 10 completed workflow runs (except the health check's own) must have succeeded; a
+    superseded Pages deploy is not a failure.
+    """
     if not shutil.which("gh"):
         check("Workflow runs (last 10)", "skip", "", "gh CLI not available")
         return
@@ -144,6 +157,7 @@ def runs(ctx):
 
 
 def _parses(p):
+    """True when the file is valid JSON."""
     try:
         load(p)
         return True
@@ -181,6 +195,9 @@ def hostile(tmp):
 # Data integrity
 # ---------------------------------------------------------------------------
 def data(ctx):
+    """Data checks: every data file parses, news.json size, freshness and shape, topic and location
+    balance, no non-U.S. places, then the archive, registry and curated-project checks.
+    """
     files = ["news.json", "registry.json", "project_overrides.json", "projects.json", "status.json"] + \
             [os.path.relpath(p, DATA) for p in sorted(glob.glob(str(DATA / "archive/*.json")))]
     broken = [f for f in files if not _parses(DATA / f)]
@@ -248,6 +265,9 @@ def data(ctx):
 
 
 def archive(items, ctx="full"):
+    """Archive checks: ids unique across months, no missing month since coverage began, index.json
+    matches the files, every headline in news.json is archived.
+    """
     idx = load(DATA / "archive/index.json")
     on_disk = {Path(p).stem for p in glob.glob(str(DATA / "archive/*.json")) if re.match(r"\d{4}-\d{2}$", Path(p).stem)}
     listed = {m["month"] for m in idx.get("months", [])}
@@ -286,6 +306,9 @@ def archive(items, ctx="full"):
 
 
 def in_us(lat, lon):
+    """True when a point falls inside one of the U.S. bounding boxes (lower 48, Alaska, Hawaii,
+    Puerto Rico, Guam).
+    """
     return any(a <= lat <= b and c <= lon <= d for a, b, c, d in US_BOXES)
 
 
@@ -345,6 +368,7 @@ def registry(ctx):
           f"{got[0]['id']}, {len(got[0]['news'])} news" if got else "")
 
 def curated():
+    """data/projects.json: required fields present, a known status and state, coordinates inside the U.S."""
     projects = load(DATA / "projects.json").get("projects", [])
     need = ("id", "name", "company", "status", "location", "lat", "lon", "state")
     bad = []
@@ -371,6 +395,7 @@ PRECISION = {"city": 4, "county": 3, "state": 2, "source": 1}
 
 
 def states_in_app():
+    """The two-letter state codes the site knows (assets/app.js STATES)."""
     js = (ROOT / "assets/app.js").read_text(encoding="utf-8")
     block = js[js.index("const STATES"):js.index("};", js.index("const STATES"))]
     return set(re.findall(r"\b([A-Z]{2}):", block))
@@ -420,12 +445,17 @@ def resolve(path):
 
 
 def sitemap_paths():
+    """Every <loc> in sitemap.xml."""
     tree = ET.parse(ROOT / "sitemap.xml")
     locs = [e.text.strip() for e in tree.iter() if e.tag.endswith("loc")]
     return locs
 
 
 def site():
+    """Site checks: internal links resolve and are clean, sitemap matches the pages, project pages
+    within budget, canonical/og tags, CNAME, robots.txt, https-only resources, SRI on the map
+    library, escaped data in HTML strings, page weight and the freshness badge.
+    """
     html_files = sorted(glob.glob(str(ROOT / "*.html"))) + sorted(glob.glob(str(ROOT / "projects/*/index.html")))
     js_files = sorted(glob.glob(str(ROOT / "assets/*.js")))
     links, broken, with_html = set(), [], []
@@ -576,6 +606,10 @@ def tests():
 
 
 def security():
+    """Security checks: no secrets in tracked files, actions pinned to commit SHAs, each workflow's
+    permissions exactly as WORKFLOW_PERMISSIONS, the no-AI ground rule (scripts/no_ai.py) and
+    SECURITY.md present.
+    """
     tracked = git("ls-files").splitlines()
     hits = []
     for f in tracked:
@@ -621,10 +655,12 @@ def security():
 # Output
 # ---------------------------------------------------------------------------
 def overall(rows):
+    """'fail' when any check failed, else 'pass' (warnings and skips do not fail)."""
     return "fail" if any(c["status"] == "fail" for c in rows) else "pass"
 
 
 def table(rows):
+    """The checks as a plain-text table for the Actions log."""
     w = max(len(c["name"]) for c in rows)
     lines = [f"{'CHECK'.ljust(w)}  STATUS  VALUE"]
     for c in rows:
@@ -633,6 +669,7 @@ def table(rows):
 
 
 def markdown(doc):
+    """data/health.json as a Markdown table, for the 'Health check failed' issue."""
     out = [f"**Overall: {doc['overall'].upper()}** · checked {doc['checked_at']}", "",
            "| Check | Status | Value | Detail |", "|---|---|---|---|"]
     for c in doc["checks"]:
@@ -642,6 +679,9 @@ def markdown(doc):
 
 
 def main():
+    """Run the sections for the chosen context, print the table, write data/health.json (full
+    context only) and return 1 when anything failed.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--context", choices=["full", "update"], default="full")
     ap.add_argument("--no-write", action="store_true", help="do not write data/health.json")
@@ -660,7 +700,10 @@ def main():
         except Exception as e:  # a crashing section is itself a failure, keep checking the rest
             check(f"Check crashed: {name}", "fail", type(e).__name__, str(e)[:200])
 
-    doc = {"checked_at": NOW.isoformat(timespec="seconds"), "overall": overall(checks), "context": args.context, "checks": checks}
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from data_readme import readme
+    doc = {"_readme": readme("health.json"), "checked_at": NOW.isoformat(timespec="seconds"), "overall": overall(checks),
+           "context": args.context, "checks": checks}
     print(table(checks))
     print(f"\nOverall: {doc['overall'].upper()} ({sum(c['status'] == 'fail' for c in checks)} failing)")
     if not args.no_write and args.context == "full":

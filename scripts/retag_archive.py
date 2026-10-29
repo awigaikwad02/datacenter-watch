@@ -22,6 +22,7 @@ KEEP = ("id", "title", "link", "source", "published", "feed", "snippet")
 
 
 def main():
+    """Run the script (see the module docstring for what it does and its options)."""
     gaz, geo = fn.load_gazetteer()
     files = sorted(p for p in fn.ARCHIVE_DIR.glob("*.json") if fn.MONTH_RE.match(p.stem))
     months, everything, rejected = {}, [], []
@@ -42,7 +43,7 @@ def main():
     clusters = fn.cluster_items([i for i in everything if not i.get("filtered")])
     for path, items in months.items():
         items.sort(key=lambda x: x["published"], reverse=True)
-        path.write_text(json.dumps({"month": path.stem, "count": len(items), "items": items},
+        path.write_text(json.dumps({"_readme": fn.readme("archive month"), "month": path.stem, "count": len(items), "items": items},
                                    ensure_ascii=False, indent=1), encoding="utf-8")
     fn.write_archive_index(fn.ARCHIVE_DIR)
     shown = [i for i in everything if not i.get("filtered")]

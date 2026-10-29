@@ -26,6 +26,7 @@ SITE = "https://therackreport.org"
 
 
 def archive_items():
+    """Every archived headline as {id: item}."""
     items = {}
     for p in sorted(fn.ARCHIVE_DIR.glob("*.json")):
         if fn.MONTH_RE.match(p.stem):
@@ -35,11 +36,15 @@ def archive_items():
 
 
 def operational_date(r):
+    """The status-history step that made a record Operational, or None."""
     hist = [h for h in r.get("status_history", []) if h.get("status") == "Operational"]
     return hist[-1] if hist else None
 
 
 def main():
+    """Write data/backfill_report.json, data/registry_review.json and BACKFILL.md from the progress
+    file, the archive and the registry.
+    """
     prog = fn.load_json(fn.DATA / "backfill_progress.json", {})
     base = prog.get("baseline", {}).get("registry", {})
     base_ids = set(base.get("ids", []))
@@ -135,20 +140,23 @@ def main():
         "places_with_several_records": dup_places,
         "umbrellas_next_to_named_records": umb_named,
     }
-    REPORT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    REVIEW_JSON.write_text(json.dumps({"generated": report["generated"], "_readme": "Records that received headlines naming two different "
-                                       "companies with nothing in common: likely wrong merges. Fix with split or merge in "
-                                       "data/project_overrides.json.", "records": review}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    REPORT_JSON.write_text(json.dumps({"_readme": fn.readme("backfill_report.json"), **report}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    REVIEW_JSON.write_text(json.dumps({"generated": report["generated"], "_readme": fn.readme("registry_review.json"),
+                                       "records": review}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     write_md(report, queries, review)
     print(f"Wrote {REPORT_JSON.name}, {REVIEW_JSON.name} ({len(review)} to review) and BACKFILL.md")
     return 0
 
 
 def esc(s):
+    """Make a value safe inside a Markdown table cell."""
     return str(s if s is not None else "").replace("|", "\\|").replace("\n", " ")
 
 
 def write_md(rep, queries, review):
+    """Write BACKFILL.md: headlines per month and query, the registry before and after, and the
+    lists to review.
+    """
     b, a = rep["registry_before"], rep["registry_after"]
     statuses = sorted(set((b.get("status") or {}).keys()) | set(a["status"].keys()))
     conf = sorted(set((b.get("confidence") or {}).keys()) | set(a["confidence"].keys()))

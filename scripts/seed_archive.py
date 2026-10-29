@@ -22,10 +22,15 @@ import fetch_news as fn  # noqa: E402
 
 
 def git(*args):
+    """Run git and return its raw output (raises on failure)."""
     return subprocess.run(["git", *args], cwd=fn.ROOT, check=True, capture_output=True).stdout
 
 
 def main():
+    """Rebuild the archive from every past version of data/news.json in git history. Historical:
+    written for the archive's creation and kept for reference; it predates the current
+    load_gazetteer() return value.
+    """
     gaz, patterns = fn.load_gazetteer()
     shas = git("log", "--format=%H", "--", "data/news.json").decode().split()
     seen = {}
