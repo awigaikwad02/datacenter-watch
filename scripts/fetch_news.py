@@ -218,9 +218,12 @@ STATUS_RULES = [
      re.compile(r"\b(break(s|ing)? ground|groundbreaking|ground-breaking|under construction|"
                 r"construction (begins|starts|underway|begun|started|kicks off)|begins? construction|"
                 r"starts? construction|topping out|tops out|crews|near(s|ing)? completion)\b", re.I)),
-    # "Google opens Mesa data center", "Meta's Kansas City campus comes online"
+    # "Google opens Mesa data center", "Meta's Kansas City campus comes online",
+    # "Crusoe announces flagship Abilene data center is live", "OpenAI activates Stargate data center"
     ("Operational",
-     re.compile(r"\b(opens|opened|officially open|now open|grand opening|goes live|comes online|now online|"
+     re.compile(r"\b(opens|opened|officially open|now open|grand opening|goes live|went live|is live|are live|now live|"
+                r"comes online|came online|goes online|now online|(?:is|are|now|fully|becomes?|became|be) operational|in operation|up and running|"
+                r"activates|activated|begins operations|starts operations|powers on|powered on|"
                 r"completes?|completed|completion|commissioned|energized|ribbon)\b", re.I)),
     # "QTS expands Fayetteville campus with second phase"
     ("Expansion",
@@ -234,11 +237,12 @@ STATUS_RULES = [
 ]
 # A stage word does not count when it is still to come (fixed after the status audit,
 # scripts/status_audit.py): "could break ground this summer", "plans to break ground",
-# "on track to be completed by 2025", "$2B to complete Utah campus", "push xAI to complete".
+# "on track to be completed by 2025", "$2B to complete Utah campus", "push xAI to complete",
+# "will be operational in 2027", "jobs expectations when AI facility opens".
 # "to build" and "plans" are themselves Announced words, so this test is not applied to that rule.
 STAGE_FUTURE = re.compile(r"\b(to|will|would|could|may|might|plans? to|planning to|aims? to|hopes? to|seeks? to|"
                           r"wants? to|set to|slated to|expected to|scheduled to|poised to|on track to|"
-                          r"before|until|unless|if)\W*(\w+\W+){0,2}$", re.I)
+                          r"before|until|unless|if|when|once)\b\W*(\w+\W+){0,3}$", re.I)
 # An opening or completion about something other than the data center or its construction:
 # "Crusoe opens second Tulsa plant", "Texas solar farm opens to power Google data centers",
 # "Flexential completes Atlanta data center purchase", "Amazon completes its application".
@@ -996,7 +1000,9 @@ def extract_numbers(title):
 def stage_counts(status, m, title):
     """Whether one stage-word match describes the project's own present stage (see STAGE_FUTURE)."""
     before, after = title[:m.start()], title[m.end():]
-    if status != "Announced" and STAGE_FUTURE.search(" ".join(before.split()[-4:]) + " "):
+    # "coming to Heath, Hebron after groundbreaking": a step right after "after" already happened.
+    past = bool(re.search(r"\b(after|following|since)\W*$", before, re.I))
+    if status != "Announced" and not past and STAGE_FUTURE.search(" ".join(before.split()[-4:]) + " "):
         return False
     if status == "Operational":
         # The thing that opens is named just before or after the verb, or opens the headline.
