@@ -1,7 +1,19 @@
 {
- "updated": "2026-10-29T04:55:59+00:00",
+ "_readme": {
+  "about": "A short report of the last update run, shown on the Methodology page and checked by the health check.",
+  "written_by": "scripts/fetch_news.py, every hourly cycle",
+  "fields": {
+   "updated": "When the run finished.",
+   "feeds_total": "Feeds the run asked for.",
+   "feeds_ok": "Feeds that returned at least one entry.",
+   "items_total": "Headlines in news.json after the run.",
+   "items_new": "Headlines first seen in this run."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
+ "updated": "2026-10-29T05:55:59+00:00",
  "feeds_total": 12,
  "feeds_ok": 12,
- "items_total": 3752,
- "items_new": 16
+ "items_total": 3768,
+ "items_new": 17
 }
