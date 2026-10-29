@@ -99,7 +99,7 @@ CANCEL_NOT = re.compile(
     r" (?:[\w$’'.,-]+ ){0,6}?(?:moratorium|ban|freeze|pause|restrictions?|ordinance|regulations?|rules|guardrails|"
     r"limits|lawsuit|suit|challenge|appeal|petition|referendum|opposition|tax|bill|plan to|plan that|meeting|"
     r"hearing|session|vote)\b|\b(?:blocks?|blocked) \w+ from\b|\b(?:rejects?|rejected) \$\d|"
-    r"\b(?:shares|stocks?|prices?|demand|revenue|profits?) (?:drops?|dropped)\b", re.I)
+    r"\b(?:shares|stocks?|prices?|demand|revenue|profits?|levels?|ratings?|costs?|rates?) (?:drops?|dropped)\b", re.I)
 CANCELLED = "Cancelled / Blocked"
 
 
@@ -210,22 +210,42 @@ COMPILED_RULES = [(name, re.compile(pat, re.I)) for name, pat in CATEGORY_RULES]
 
 # Project detection: headline must be about a site and describe a stage.
 PROJECT_WORDS = re.compile(r"\b(data\s?cent(er|re)s?|campus|hyperscale|facility|facilities)\b", re.I)
+# Stage words, checked in this order; the first one that counts gives the headline's stage signal.
 STATUS_RULES = [
+    # "AWS breaks ground on Richmond County campus", "First QTS buildings near completion"
     ("Under construction",
      re.compile(r"\b(break(s|ing)? ground|groundbreaking|ground-breaking|under construction|"
                 r"construction (begins|starts|underway|begun|started|kicks off)|begins? construction|"
-                r"starts? construction|topping out|crews)\b", re.I)),
+                r"starts? construction|topping out|tops out|crews|near(s|ing)? completion)\b", re.I)),
+    # "Google opens Mesa data center", "Meta's Kansas City campus comes online"
     ("Operational",
      re.compile(r"\b(opens|opened|officially open|now open|grand opening|goes live|comes online|now online|"
                 r"completes?|completed|completion|commissioned|energized|ribbon)\b", re.I)),
+    # "QTS expands Fayetteville campus with second phase"
     ("Expansion",
      re.compile(r"\b(expands?|expanding|expanded|expansion|adds|second phase|phase (2|ii|two)|"
                 r"additional buildings?)\b", re.I)),
+    # "Amazon plans $10B campus in Louisa County", "Board approves Project Sail rezoning"
     ("Announced",
      re.compile(r"\b(announc\w*|plans?|planned|planning|propos\w*|unveil\w*|to build|will build|eyes|eyeing|"
                 r"selects?|chooses?|picks?|lands|secures?|approv\w*|acquires? (land|site)|"
                 r"buys? (land|site|acres)|\d[\d,]* acres)\b", re.I)),
 ]
+# A stage word does not count when it is still to come (fixed after the status audit,
+# scripts/status_audit.py): "could break ground this summer", "plans to break ground",
+# "on track to be completed by 2025", "$2B to complete Utah campus", "push xAI to complete".
+# "to build" and "plans" are themselves Announced words, so this test is not applied to that rule.
+STAGE_FUTURE = re.compile(r"\b(to|will|would|could|may|might|plans? to|planning to|aims? to|hopes? to|seeks? to|"
+                          r"wants? to|set to|slated to|expected to|scheduled to|poised to|on track to|"
+                          r"before|until|unless|if)\W*(\w+\W+){0,2}$", re.I)
+# An opening or completion about something other than the data center or its construction:
+# "Crusoe opens second Tulsa plant", "Texas solar farm opens to power Google data centers",
+# "Flexential completes Atlanta data center purchase", "Amazon completes its application".
+OPENS_OTHER = re.compile(r"\b(plant|factory|manufacturing|hub|solar|farm|wind|substation|office|headquarters|"
+                         r"warehouse|store|school|training|recycling|pipeline|mine)s?\b", re.I)
+COMPLETES_OTHER = re.compile(r"^\W*(?:[\w$.,'’-]+\W+){0,4}?(application|purchase|acquisition|sale|deal|financing|"
+                             r"transaction|merger|review|study|annexation|agreement|rezoning|filing|survey|"
+                             r"funding|offering|ipo|loan)\b", re.I)
 
 # Organisations. Patterns are case-sensitive whole words. A name that is also a common word only
 # matches with a qualifying next word (a "guard"): "Stream Data Centers" but not "a stream of",
@@ -971,11 +991,28 @@ def extract_numbers(title):
     return out
 
 
+def stage_counts(status, m, title):
+    """Whether one stage-word match describes the project's own present stage (see STAGE_FUTURE)."""
+    before, after = title[:m.start()], title[m.end():]
+    if status != "Announced" and STAGE_FUTURE.search(" ".join(before.split()[-4:]) + " "):
+        return False
+    if status == "Operational":
+        # The thing that opens is named just before or after the verb, or opens the headline.
+        near = " ".join(before.split()[:3]) + " " + " ".join(before.split()[-3:]) + " " + " ".join(after.split()[:3])
+        if OPENS_OTHER.search(near) or COMPLETES_OTHER.search(after):
+            return False
+    return True
+
+
 def guess_status(title):
+    """The stage a headline reports: Cancelled / Blocked, Under construction, Operational,
+    Expansion, Announced, or None. The first rule with a match that counts wins, so in "Amazon
+    opens Indiana campus as rivals race to break ground" the future "to break ground" is skipped
+    and "opens" gives Operational."""
     if is_cancelled(title):
         return CANCELLED
     for status, rx in STATUS_RULES:
-        if rx.search(title):
+        if any(stage_counts(status, m, title) for m in rx.finditer(title)):
             return status
     return None
 

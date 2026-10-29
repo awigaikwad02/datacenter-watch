@@ -1,0 +1,7093 @@
+{
+ "_readme": "Status audit written by scripts/status_audit.py. records: a fixed stratified sample of detected registry records; for each, the status replayed from its headlines with the live rules (status_rules, history_rules) and with a stricter main-clause reading (status_strict, history_strict), and every headline's stage signal under both (rules, strict). disagreements: records whose status differs, with the headlines that differ. previous_run: the counts from the run before, to compare a rule change.",
+ "generated": "2026-10-29T04:20:50+00:00",
+ "size": 150,
+ "by_status": {
+  "Operational": 23,
+  "Under construction": 38,
+  "Cancelled / Blocked": 29,
+  "Announced": 60
+ },
+ "disagreement_count": 1,
+ "headline_disagreements": 24,
+ "previous_run": {
+  "generated": "2026-10-29T04:20:41+00:00",
+  "size": 150,
+  "disagreement_count": 2,
+  "headline_disagreements": 25
+ },
+ "disagreements": [
+  {
+   "id": "microsoft-newark-nj-2026",
+   "name": "Microsoft Newark data center",
+   "rules": "Under construction",
+   "strict": "Announced",
+   "headlines": [
+    {
+     "id": "1a06f6d9c7624b9d",
+     "title": "Microsoft data centers coming to Heath, Hebron after groundbreaking",
+     "published": "2026-03-02",
+     "rules": "Under construction",
+     "strict": null
+    }
+   ]
+  }
+ ],
+ "records": [
+  {
+   "id": "stack-va-unnamed",
+   "name": "STACK, Virginia (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2026-05-28",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-28",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "53fa0f2de6d2c06b",
+     "title": "Stack Infrastructure completes first building at 1GW Virginia data center campus",
+     "published": "2026-05-28",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "microsoft-wi-unnamed",
+   "name": "Microsoft, Wisconsin (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-01-09",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-09-18",
+     "Under construction"
+    ],
+    [
+     "2025-10-08",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-06-23",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-01-09",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-09-18",
+     "Under construction"
+    ],
+    [
+     "2025-10-08",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-06-23",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "5d2c1628cf4686c3",
+     "title": "Microsoft Pauses Construction of Portions of $3.3B Wisconsin Data Center",
+     "published": "2025-01-09",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "2c6504aef1105513",
+     "title": "Microsoft acquires 240 acres in Kenosha for major data center project",
+     "published": "2025-01-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "9de234ab7ee2d74f",
+     "title": "Microsoft acquires 240 acres in Kenosha, Wisconsin, for data center development",
+     "published": "2025-01-28",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "fb093cbadc7e46e5",
+     "title": "Microsoft pays nearly $35 million for Kenosha land to build data center",
+     "published": "2025-01-29",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "103a94caac7fdeab",
+     "title": "Microsoft in Wisconsin; data center plans",
+     "published": "2025-02-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "5b0b5f7a8aadfaa5",
+     "title": "Microsoft abandons some data center projects. Company says Mt. Pleasant work on track",
+     "published": "2025-03-27",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "1030c8d3670f035b",
+     "title": "Microsoft announces $4 billion data center expansion in southeastern Wisconsin",
+     "published": "2025-09-18",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "1ee5beaa00ef7d0a",
+     "title": "Microsoft announces additional $4 billion data center in Racine County",
+     "published": "2025-09-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "41ffdcf0814a3c84",
+     "title": "Microsoft nears completion of ‘world’s most powerful AI datacenter’ in Wisconsin, plans 2nd one",
+     "published": "2025-09-18",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "68c0ad486e3de75d",
+     "title": "Microsoft plans $4 billion expansion of Racine County work for an advanced AI data center",
+     "published": "2025-09-18",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "adcc579d7861cfae",
+     "title": "Microsoft announces $4B investment in second data center in Racine County",
+     "published": "2025-09-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ff983787b5df0ded",
+     "title": "Microsoft plans $4B addition to Wisconsin data center",
+     "published": "2025-09-19",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ae86acefb6a2c430",
+     "title": "Microsoft unveils its largest AI data center yet; to spend US$ 7 billion on Wisconsin facility",
+     "published": "2025-09-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "9feb6d45aec7c100",
+     "title": "Wisconsin village’s plan commission approves rezoning for Microsoft data center",
+     "published": "2025-09-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b78fb2b7c772956d",
+     "title": "Caledonia Plan Commission approves rezone of property for Microsoft data center",
+     "published": "2025-09-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b39810ee54e7fc02",
+     "title": "Microsoft’s Third Wisconsin Data Center Plan Advances in Racine County",
+     "published": "2025-10-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "8aef1483e7b534e4",
+     "title": "Microsoft scraps plans for Caledonia data center site, working to find an alternate location",
+     "published": "2025-10-08",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "57d7941bb581227a",
+     "title": "Microsoft expands Racine County data center holdings. It just spent $38 million on 135 acres",
+     "published": "2025-11-10",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "aeba464c9d9c5a7f",
+     "title": "Anthropic, Microsoft announce new AI data center projects as construction continues",
+     "published": "2025-11-13",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "29a27fa3c9fa1955",
+     "title": "'What we do matters’: Viral video sparks Kenosha residents’ concerns over Microsoft’s planned data center",
+     "published": "2025-11-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ce4f833aaa89e8de",
+     "title": "Packed Kenosha meeting — residents spark conversation over Microsoft’s proposed data center",
+     "published": "2025-11-17",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c6561bbdd6837318",
+     "title": "Microsoft's plans for 15 more data centers win approval at former Wisconsin Foxconn site",
+     "published": "2026-01-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "8d7230b5655cb6bd",
+     "title": "Microsoft completes construction on first Racine County data center",
+     "published": "2026-06-23",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "5af1adb00616c7fc",
+     "title": "Microsoft’s US$ 3.3 billion Wisconsin data center goes live ahead of schedule",
+     "published": "2026-06-24",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "56992070cb8cab7e",
+     "title": "Kenosha community packs Rhode Center for forum on proposed Microsoft data center",
+     "published": "2026-06-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "00212d39238488aa",
+     "title": "Kenosha area residents push for data center moratorium to pause proposed Microsoft development",
+     "published": "2026-08-27",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "b465e1f5acce90f8",
+     "title": "Kenosha residents back data center moratorium amid Microsoft proposal",
+     "published": "2026-08-27",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "f4e0d9b3365d840c",
+     "title": "Wisconsin regulators, Microsoft question utility plan for data center transmission costs",
+     "published": "2026-08-28",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "18024da714bb07c5",
+     "title": "Microsoft planning to expand data center operations to Sturtevant",
+     "published": "2026-10-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "novva-storey-county-nv-2025",
+   "name": "Novva Storey County data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-07-08",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-07-08",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "b7825db16f089b5a",
+     "title": "Novva opens 300,000-square-foot data center in Nevada's tech corridor in Storey County",
+     "published": "2025-07-08",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "meta-mesa-az-2025",
+   "name": "Meta Mesa data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-01-30",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-01-30",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "50fd56f0c04bc3be",
+     "title": "Meta’s Mesa, Arizona, data center comes online",
+     "published": "2025-01-30",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "edd4191e7e3c5958",
+     "title": "First phase of Meta’s Mesa data center project open; more under construction",
+     "published": "2025-01-30",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "280c9fb5ebf06320",
+     "title": "Meta unveils new data center in Mesa, Arizona",
+     "published": "2025-01-31",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "fdac919427742d6c",
+     "title": "Meta announces Mesa Data Center is operational",
+     "published": "2025-02-11",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "62a9dfa120a8a2f3",
+     "title": "Meta Update: Opens Mesa, Arizona Data Center; Unveils Major Subsea Cable Initiative; Forges Oklahoma Wind Farm PPA; More",
+     "published": "2025-02-24",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "0a3e82656704cf59",
+     "title": "Prometheus Hyperscale, Mesa Power Solutions partner on proposed Natrona County data center campus",
+     "published": "2026-08-31",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "meta-mo-unnamed",
+   "name": "Meta, Missouri (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-08-20",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-08-20",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "d14235d127ae68de",
+     "title": "Meta Data Center Opens; Represents $1B Investment in Missouri",
+     "published": "2025-08-20",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "f0710688d617837d",
+     "title": "Meta opens first data center in Missouri",
+     "published": "2025-08-20",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "meta-huntsville-al-2026",
+   "name": "Meta Huntsville data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-10-27",
+     "Announced"
+    ],
+    [
+     "2026-10-21",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-27",
+     "Announced"
+    ],
+    [
+     "2026-10-21",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "30e150f832010ba7",
+     "title": "Meta announces recipients of Huntsville Data Center Community Action Grants",
+     "published": "2025-10-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c26e0767a940678c",
+     "title": "Meta opens Huntsville data center doors amid local concerns over water and power use",
+     "published": "2026-10-21",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "applied-digital-nd-unnamed",
+   "name": "Applied Digital, North Dakota (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-08-18",
+     "Announced"
+    ],
+    [
+     "2025-12-01",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-08-18",
+     "Announced"
+    ],
+    [
+     "2025-12-01",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "beab07382cec7f61",
+     "title": "Applied Digital to Break Ground on $3 Billion Polaris Forge 2 Campus in September 2025, Expanding North Dakota’s Role as a National AI Infrastructure Leader",
+     "published": "2025-08-18",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "08ce872c4f9c180d",
+     "title": "Applied Digital completes first data center building at North Dakota campus",
+     "published": "2025-12-01",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "ead0fb8c4e53f2cd",
+     "title": "Applied Digital Completes First 100MW Data Center at North Dakota’s Polaris Forge Campus",
+     "published": "2025-12-02",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "10046856ef3bdaef",
+     "title": "Applied Digital completes second building at North Dakota data center campus",
+     "published": "2026-07-02",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "4acf6a7f8317a827",
+     "title": "Applied Digital expands in North Dakota, eyes Oliver County for third data center",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "site-fort-worth-tx-2025",
+   "name": "Fort Worth data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-03-06",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-03-06",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "a4702aaf288c0826",
+     "title": "Siemens Opens $190M Fort Worth Manufacturing Hub to Build Equipment Powering America’s AI/Data Center Infrastructure",
+     "published": "2025-03-06",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "qts-ia-unnamed",
+   "name": "QTS, Iowa (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-07-23",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-07-23",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "294f3521cc269c60",
+     "title": "Groundbreaking set Tuesday for QTS data center project",
+     "published": "2025-07-23",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "7785027a992c921e",
+     "title": "QTS breaks ground on data center campus in Iowa",
+     "published": "2025-08-11",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "7e20451d2c9e755f",
+     "title": "CBJ Newsmakers: First QTS data center buildings near completion",
+     "published": "2025-12-23",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-des-moines-ia-2026",
+   "name": "Des Moines data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-10-13",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-10-13",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "c5a5c7637f3b3e2a",
+     "title": "Digi Power X Announces $200 Million Debt Financing Commitment to Support Completion of Alabama AI Data Center and Provides Expansion Update",
+     "published": "2026-10-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "google-tx-unnamed",
+   "name": "Google, Texas (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-11-14",
+     "Announced"
+    ],
+    [
+     "2026-06-05",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-11-14",
+     "Announced"
+    ],
+    [
+     "2026-06-05",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "d704c737df35ddb3",
+     "title": "Massive Texas solar farm opens to power Google data centers",
+     "published": "2024-10-21",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "058d6c21275a0009",
+     "title": "Google announces $40B plans for Texas AI data centers, including Armstrong County",
+     "published": "2025-11-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "8c4a90938a76d23c",
+     "title": "Google to build three new data centers in Texas in $40 billion investment",
+     "published": "2025-11-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "91df404520380f97",
+     "title": "Google Announces $40 Billion in Texas AI Data Centers",
+     "published": "2025-11-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b670303be8365cf5",
+     "title": "Google plans $40 billion Texas data center investment amid AI boom",
+     "published": "2025-11-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "f355208304c937b2",
+     "title": "Google Announces $40 Billion For Texas AI Data Centers",
+     "published": "2025-11-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "fd0753f6bb6de02c",
+     "title": "News | Google to build three AI data center hubs in Texas as part of $40 billion investment",
+     "published": "2025-11-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "389f5f626db39c82",
+     "title": "Google Announces $40 Billion Texas Investment To Expand AI And Data Center Infrastructure",
+     "published": "2025-11-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "4337e0e7dd5b722d",
+     "title": "Google Announces $40 Billion Texas Data Center Investment to Expand Cloud and AI Infrastructure",
+     "published": "2025-11-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "48f1fa4b10cf2e19",
+     "title": "Google plans to invest $40 billion towards building data centers in Texas",
+     "published": "2025-11-16",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "a89523e5331e9992",
+     "title": "Google is spending $40 billion to build 3 new data centers in Texas",
+     "published": "2025-11-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2c78944b4a71eb44",
+     "title": "Google announces new data center in Armstrong County, Texas",
+     "published": "2025-11-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "24797e008ddc58cf",
+     "title": "Google announces new “clean energy” data center agreement with Wilbarger County",
+     "published": "2026-02-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "df0ce12d16210d88",
+     "title": "Google plans new data center in Wilbarger County, expected to bring jobs, economic growth",
+     "published": "2026-02-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1eafb45530b09756",
+     "title": "Google announces data center agreement with rural Texas county, officials say",
+     "published": "2026-02-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "319d4b24385c44d7",
+     "title": "Google pledges $10M to Texas water as it expands data centers statewide",
+     "published": "2026-06-03",
+     "rules": "Expansion",
+     "strict": null
+    },
+    {
+     "id": "2e2017a2afc55e27",
+     "title": "Google to build new data center in Gray County in Texas Panhandle",
+     "published": "2026-06-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "202ed7e022eff30e",
+     "title": "Google announces $40 billion Texas data center and energy push with new Meitner Energy Center",
+     "published": "2026-06-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "987e0a578ea6b3c7",
+     "title": "Google, Intersect Power break ground on colocated data center and 1GW+ energy project in Texas",
+     "published": "2026-06-05",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "1811fb241e81f6e4",
+     "title": "Archer County residents fight against proposed Google data center",
+     "published": "2026-09-29",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "novva-reno-nv-2025",
+   "name": "Novva Reno data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-07-09",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-07-09",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "e6532e2baaf391c5",
+     "title": "Novva data center with robot dog guard, drone monitoring completed near Reno",
+     "published": "2025-07-09",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "meta-tx-unnamed",
+   "name": "Meta, Texas (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-10-16",
+     "Announced"
+    ],
+    [
+     "2026-03-06",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-08-05",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-16",
+     "Announced"
+    ],
+    [
+     "2026-03-06",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-08-05",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ca3f5859dde65549",
+     "title": "Meta unveils plans for $1.5bn AI data centre in Texas",
+     "published": "2025-10-16",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c6dc2600cd8f51bb",
+     "title": "Prometheus Hyperscale details plans for Dallas data center campus",
+     "published": "2026-02-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2101a1ed74b851a3",
+     "title": "Oracle, OpenAI Scrap Texas AI Data Center Expansion Plans; Meta Eyes Site: Report",
+     "published": "2026-03-06",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "35a859dbe9962d22",
+     "title": "Oracle and OpenAI drop Texas data center expansion plan, Bloomberg News reports",
+     "published": "2026-03-06",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "d2afa66333ebbd94",
+     "title": "Oracle drops after report that it and OpenAI scrapped plans to expand a data center site in Texas",
+     "published": "2026-03-06",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "dd42488221b60f86",
+     "title": "OpenAI and Oracle Curtail Data Center Expansion in Abilene, Texas",
+     "published": "2026-03-06",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "04caf631b022a1f4",
+     "title": "Did Oracle and OpenAI scrap Texas data center expansion plans?",
+     "published": "2026-03-09",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "8af1769ddbbfe3ad",
+     "title": "$1.2B Meta Data Center Opens in Temple",
+     "published": "2026-08-05",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "f9a1185d4452db4c",
+     "title": "Abbott announces Meta will comply with Texas data center standards",
+     "published": "2026-08-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "f925185773da2b4d",
+     "title": "Meta Announces Large Solar Purchase Agreement in Texas, But It’s Powering Some Data Centers With Gas",
+     "published": "2026-09-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "compass-datacenters-dallas-tx-2025",
+   "name": "Compass Datacenters Dallas data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-05-27",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-05-27",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ccfa92f6321aee62",
+     "title": "News | Compass Datacenters lands loan backed by newly completed data center in Dallas area",
+     "published": "2025-05-27",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "meta-or-unnamed",
+   "name": "Meta, Oregon (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "6e281397a839694d",
+     "title": "Big solar tied to Meta data center needs comes online in Oregon",
+     "published": "2026-06-03",
+     "rules": null,
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "meta-kansas-city-mo-2025",
+   "name": "Meta Kansas City data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-08-20",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-08-20",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "a57bae53a24e3374",
+     "title": "Meta's latest data center campus goes live in Kansas City, Missouri",
+     "published": "2025-08-20",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "aws-ms-unnamed",
+   "name": "Amazon, Mississippi (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-02-27",
+     "Announced"
+    ],
+    [
+     "2026-06-09",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-11-20",
+     "Announced"
+    ],
+    [
+     "2026-06-09",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "bba83aa7ebc38572",
+     "title": "Report: Amazon to spend 60% more than planned on Mississippi data centers. Get details",
+     "published": "2025-02-27",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "057625cfcfad2398",
+     "title": "Amazon announces new $3 billion data center project for Mississippi. Where will it go?",
+     "published": "2025-11-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "72af759eba537adb",
+     "title": "Amazon to invest $3 billion to build data center in Mississippi",
+     "published": "2025-11-20",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "93b78a7129bb110a",
+     "title": "Amazon to Build $3B AI Data Center in Vicksburg, as Gov. Reeves Proclaims Arrival of the ‘Digital Delta’",
+     "published": "2025-11-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c7dcc935e526bba9",
+     "title": "Amazon plans to invest at least $3 billion in Warren County, Mississippi, for next-generation data center campus",
+     "published": "2025-11-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ce9be9d8a5db342a",
+     "title": "Gov. Reeves announces $3 billion Amazon data center investment in Mississippi",
+     "published": "2025-11-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "dbe484b510ceda4d",
+     "title": "Amazon announces $3 billion data center planned for Warren County",
+     "published": "2025-11-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "cb3d9cd8c16070d7",
+     "title": "Amazon to build $3bn data center campus in Vicksburg, Mississippi",
+     "published": "2025-11-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "15336a46a2f72b52",
+     "title": "AWS likely behind plans for $750m data center in Clinton, Mississippi",
+     "published": "2026-03-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2d31d328854eeca5",
+     "title": "Amazon Expands Mississippi Data Center Investment To $25B Amid Aggressive AI Bet",
+     "published": "2026-04-09",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "ac5b7f71f1a7e5db",
+     "title": "Amazon plans to invest $25 billion in Mississippi data centers, create 2,000 jobs",
+     "published": "2026-04-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "afd13eb9baf5cf19",
+     "title": "See photos as Amazon announces new data center in Ridgeland, MS",
+     "published": "2026-04-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "cd075b8990cc0757",
+     "title": "Amazon Is Expanding Data Centers in Central Mississippi, Governor Announces",
+     "published": "2026-04-10",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "5f1821c434742837",
+     "title": "Ribbon-cutting ceremony held for new Amazon data center in Clinton",
+     "published": "2026-06-09",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "ab00bc2d03e2dabd",
+     "title": "‘When Amazon comes to town.’ Clinton and company host ribbon cutting for new data center",
+     "published": "2026-06-09",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "xai-tn-unnamed",
+   "name": "xAI, Tennessee (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "0a6af00adb6520f2",
+     "title": "Mayor, MLGW push xAI to complete water recycling facility",
+     "published": "2026-04-10",
+     "rules": null,
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "site-oklahoma-city-ok-2025",
+   "name": "Oklahoma City data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-09-23",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-23",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4a76dc9a2b97c5a9",
+     "title": "Cerebras opens 10MW data center in Oklahoma City",
+     "published": "2025-09-23",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "flexential-atlanta-ga-2025",
+   "name": "Flexential Atlanta data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "f4e3f16fe63e9f39",
+     "title": "Flexential Completes Atlanta Data Center Purchase",
+     "published": "2025-05-14",
+     "rules": null,
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "meta-id-unnamed",
+   "name": "Meta, Idaho (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2026-09-04",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-09-04",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "0fe07243e70ebb42",
+     "title": "Meta’s mega data center in Kuna on track to be completed by 2025",
+     "published": "2024-10-25",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "a1e9f70ca56443c4",
+     "title": "Meta's $1.2bn data center in Kuna, Idaho, goes live",
+     "published": "2026-09-04",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "0dc0a700c898c1f2",
+     "title": "Data center 5 times bigger than Meta’s is planned for public land near Boise",
+     "published": "2026-09-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1a210f02136e42cc",
+     "title": "Huge data center proposed on federal land south of Boise. It could dwarf Meta’s",
+     "published": "2026-09-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1ae96d606da7afc0",
+     "title": "First data center in Idaho proposed on public lands. It would be four times larger than Meta's Kuna facility",
+     "published": "2026-09-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "5a5e30a0fc8862fe",
+     "title": "New data center proposed on federal land south of Boise",
+     "published": "2026-09-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "crusoe-tulsa-ok-2026",
+   "name": "Crusoe Tulsa data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2026-09-14",
+     "Announced"
+    ],
+    [
+     "2026-09-14",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-09-14",
+     "Announced"
+    ],
+    [
+     "2026-09-14",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "307c5cbafdff031b",
+     "title": "Crusoe Opens Second Tulsa Plant to Build AI Data Center Components",
+     "published": "2026-09-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "31276712e1cee4eb",
+     "title": "Crusoe opens 2nd Tulsa facility, a 400,000-square-foot data center",
+     "published": "2026-09-14",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "aa4e03c63e336ec1",
+     "title": "Crusoe opens second Tulsa facility, a 400,000-square-foot manufacturing facility",
+     "published": "2026-09-14",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "ebe2743fb37fb3ab",
+     "title": "Crusoe opens second Tulsa facility, a 400,000-square-foot data center campus",
+     "published": "2026-09-14",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "site-orangeburg-county-sc-2025",
+   "name": "Orangeburg County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "6c539e3e3f962a49",
+     "title": "Data center supplier opens $7.4M factory in rural Orangeburg County",
+     "published": "2025-12-16",
+     "rules": null,
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "site-new-albany-oh-2025",
+   "name": "New Albany data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-09-15",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-15",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "36341253f3687fae",
+     "title": "$246M AI-focused data center opens in New Albany",
+     "published": "2025-09-15",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "edgecore-silicon-valley-ca-2025",
+   "name": "EdgeCore Silicon Valley data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-09-19",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-19",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "c95857dce76da498",
+     "title": "EdgeCore opens Silicon Valley data center",
+     "published": "2025-09-19",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "apple-ia-unnamed",
+   "name": "Apple, Iowa (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2024-10-16",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-16",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4c4fd0b833a8f964",
+     "title": "Seven years on, Waukee, Iowa's Apple data center finally opens",
+     "published": "2024-10-16",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "5e78fce01874f83c",
+     "title": "Data center in Waukee to expand as part of Apple’s new $500 billion U.S. investment plan",
+     "published": "2025-02-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "aws-walla-walla-county-wa-2026",
+   "name": "Amazon Walla Walla County data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2026-08-07",
+     "Announced"
+    ],
+    [
+     "2026-09-01",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-08-07",
+     "Announced"
+    ],
+    [
+     "2026-09-01",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "1d73891f06b24494",
+     "title": "What we know so far about Amazon's proposed data center in Walla Walla County",
+     "published": "2026-08-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ccc59edde1a5231d",
+     "title": "Amazon completes its application for a data center in Walla Walla County",
+     "published": "2026-08-25",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "df053f3b0cd31b10",
+     "title": "Amazon’s proposed data center application deemed complete by Walla Walla County",
+     "published": "2026-09-01",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "cc8febae0618be6b",
+     "title": "Walla Walla County opens comment period for Amazon data center",
+     "published": "2026-09-16",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "site-santa-clara-ca-2024",
+   "name": "Santa Clara data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2024-11-19",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-11-19",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "dd99f5e92ef5dcf9",
+     "title": "Colovore Opens Second 9MW High-Density, Liquid-Cooled Data Center in Santa Clara",
+     "published": "2024-11-19",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "sabey-austin-tx-2024",
+   "name": "Sabey Austin data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2024-10-17",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-17",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ffbe3e4db5731445",
+     "title": "Sabey Data Centers Completes Construction at Austin, Texas Data Center Site",
+     "published": "2024-10-17",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "ee05d3a6381e323c",
+     "title": "Sabey Data Centers Announces Launch of Austin Building B, Expanding Presence in Key Technology Hub",
+     "published": "2025-07-29",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "novva-ut-unnamed",
+   "name": "Novva, Utah (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-03-06",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-03-06",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "23073dbfd71a270d",
+     "title": "Novva secures $2bn loan to expand West Jordan campus in Utah",
+     "published": "2025-03-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "af32b23eba1d8c79",
+     "title": "Novva Secures $2B to Complete Utah Data Center Campus Construction",
+     "published": "2025-03-13",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "microsoft-columbus-oh-2024",
+   "name": "Microsoft Columbus data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2024-10-28",
+     "Announced"
+    ],
+    [
+     "2025-04-08",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-03-04",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-28",
+     "Announced"
+    ],
+    [
+     "2025-04-08",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-03-04",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "0bd0e57dba4f37a8",
+     "title": "Microsoft spending $1 billion to build multiple data center campuses in Licking County",
+     "published": "2024-10-28",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "9cdb91c85ea084ec",
+     "title": "Microsoft to build 3 data centers in Licking County as part of $1 billion investment",
+     "published": "2024-10-28",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "fab6c4dd926e7138",
+     "title": "Microsoft buys another 43 acres in Pataskala for $11.4 million amid data center projects",
+     "published": "2024-12-03",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b173def7944a8e29",
+     "title": "Microsoft pushes back $1 billion plan for data centers in central Ohio",
+     "published": "2025-04-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "065ad6a5dcf2f998",
+     "title": "Microsoft 'not moving forward' with $1B Licking County data center plans right now",
+     "published": "2025-04-08",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c14b26cc3466135d",
+     "title": "Microsoft pauses $1bn data center plans in Licking County, Ohio",
+     "published": "2025-04-08",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "971834b3f0453a90",
+     "title": "Microsoft tapped the brakes on its $1B Ohio data center plan. Local leaders still believe",
+     "published": "2025-04-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2eea388dc23658bb",
+     "title": "Microsoft breaks ground on two Licking County data centers",
+     "published": "2026-03-04",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "9d85c7a663b95153",
+     "title": "$1 Billion Microsoft Licking County Data Center Expansion Moves From Pause to Construction",
+     "published": "2026-10-14",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "meta-la-unnamed",
+   "name": "Meta, Louisiana (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2024-11-19",
+     "Announced"
+    ],
+    [
+     "2025-06-25",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-06-27",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-11-19",
+     "Announced"
+    ],
+    [
+     "2025-06-25",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-06-27",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "1ec92df52d6e3767",
+     "title": "Meta, Facebook's parent company, plans to build multi-billion dollar AI data center in Louisiana",
+     "published": "2024-11-19",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "4980ae56df53bd53",
+     "title": "Meta plans $5bn data center campus in Louisiana",
+     "published": "2024-11-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "91d151ffee6641eb",
+     "title": "What are AI data centers? Here's how the planned Meta facility in Louisiana could work.",
+     "published": "2024-11-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "27571227851992cb",
+     "title": "Meta Announces $10 Billion Data Center in Louisiana",
+     "published": "2024-12-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "38aedd98d214b773",
+     "title": "Meta is investing $10B to build a data center in north Louisiana",
+     "published": "2024-12-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "3c953159a9fdd65a",
+     "title": "Landry Announces Meta Selects North Louisiana as Site of $10 Billion Artificial Intelligence Optimized Data Center",
+     "published": "2024-12-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7ebf6e3e7afe11bf",
+     "title": "Meta plans $10B data center with 500 jobs in NE Louisiana: Details of the deal",
+     "published": "2024-12-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "a8357b282f94f5e6",
+     "title": "Meta AI facility will be 'game changer' for Louisiana as Jeff Landry announces $10B plan",
+     "published": "2024-12-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "cea2ab766a6f6cc3",
+     "title": "Facebook Parent Company Meta Announces $10 Billion AI Data Center in Louisiana",
+     "published": "2024-12-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "d373601188046e53",
+     "title": "Meta to build $10 Billion AI data center in Richland Parish",
+     "published": "2024-12-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "0313306545098bbd",
+     "title": "Meta Announces USD 10 Billion AI Data Center in Louisiana",
+     "published": "2024-12-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2bc1bc16070b361c",
+     "title": "Meta Picks Turner-DPR-Mortenson Team for $10B Louisiana Data Center",
+     "published": "2024-12-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7f4ad0b859c1c7db",
+     "title": "Meta to build $10 billion AI data center in Louisiana as Elon Musk expands his Tennessee AI facility",
+     "published": "2024-12-05",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "b5af15ff76ad2da7",
+     "title": "Meta announces 4 million sq ft, 2GW Louisiana data center campus",
+     "published": "2024-12-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "e3d81b55635f2004",
+     "title": "Meta selects Entergy, Northeast Louisiana as site of $10B data center",
+     "published": "2024-12-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1afee8e46fb399fc",
+     "title": "Meta chooses Northeast Louisiana to build $13 billion AI data center",
+     "published": "2024-12-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "fd99a4e68b2f6889",
+     "title": "Meta plans to build $15 billion AI data center in Louisiana",
+     "published": "2024-12-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "512f773c69fc7000",
+     "title": "Environmental groups move to block power supply for Meta’s planned Louisiana AI data center",
+     "published": "2025-02-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6c22df6bf08faa9a",
+     "title": "Advocacy groups challenge Entergy’s plan to build $3 billion power plants for Meta AI data center in Louisiana",
+     "published": "2025-02-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b25b8590b71edeb9",
+     "title": "Advocates want light shed on power plans for Meta’s Louisiana data center",
+     "published": "2025-03-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "89b7e5abd06e5fe0",
+     "title": "Judge rejects challenge to electricity plan for Meta's huge Louisiana data center",
+     "published": "2025-04-08",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "adf5a962733fe3e9",
+     "title": "To land Meta’s massive $10 billion data center, Louisiana pulled out all the stops. Will it be worth it?",
+     "published": "2025-06-25",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "60d1c0617ccb3635",
+     "title": "Entergy Louisiana breaks ground on substation to serve Meta Data Center",
+     "published": "2025-06-27",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "a8f6b648a8e21f68",
+     "title": "Entergy to build $1.2bn 500kV transmission line to serve Meta mega data center in Louisiana",
+     "published": "2025-08-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "8291ec91189e537b",
+     "title": "Plan to power Meta's huge Louisiana data center heads for approval — far earlier than expected",
+     "published": "2025-08-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6510385ad38051b3",
+     "title": "Entergy Louisiana wants fast approval of gas plants to power Meta data center",
+     "published": "2025-08-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "af31045f20546bcd",
+     "title": "Entergy power plant for Meta data center moves toward early regulatory approval",
+     "published": "2025-08-19",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2e245a03008e1cae",
+     "title": "Entergy receives regulatory approval for investments to support Meta's Louisiana data center",
+     "published": "2025-08-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6442d614000bb2cc",
+     "title": "Louisiana regulators approve power plan for giant Meta AI data center",
+     "published": "2025-08-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "f867ac36125b4c55",
+     "title": "Louisiana regulators approve new Entergy infrastructure for $10 bil Meta data center",
+     "published": "2025-08-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "73f1a5d17ace1e31",
+     "title": "Trump announces Mark Zuckerberg's Meta planning to spend $50B on Manhattan-sized AI data center in Louisiana",
+     "published": "2025-08-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b5a7247ff86ff237",
+     "title": "Meta's planned Louisiana AI data center to cost $50 billion, Trump says",
+     "published": "2025-08-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "59e145625a9662ed",
+     "title": "Meta, Blue Owl to build $27B data center campus in Louisiana",
+     "published": "2025-11-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "d905fbf165db8887",
+     "title": "What’s Next After Louisiana’s Gas Plant Approval for Meta Data Center - The Equation - Union of Concerned Scientists",
+     "published": "2025-11-20",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "4a454b34d48a8bfd",
+     "title": "Entergy breaks ground on power facility for giant Meta data center",
+     "published": "2025-12-01",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "201494ae336dbe23",
+     "title": "Entergy breaks ground on two natural gas plants for Meta's 2GW data center in Richland Parish, Louisiana",
+     "published": "2025-12-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "c780c1a21629c5bf",
+     "title": "Entergy breaks ground on new electricity plants for Meta's Louisiana AI data center",
+     "published": "2025-12-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "fb62666d2e30c665",
+     "title": "Entergy Louisiana breaks ground on two new combined cycle plants to power Meta data center",
+     "published": "2025-12-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "c126700870341309",
+     "title": "Meta’s expanding its already massive Louisiana data center project",
+     "published": "2026-02-09",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "0296dcf91909a24e",
+     "title": "Meta, Entergy announce massive expansion at Louisiana AI data center",
+     "published": "2026-03-27",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "2e3f8aec129f530b",
+     "title": "Entergy Louisiana plans major power expansion for Meta AI data center",
+     "published": "2026-03-31",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "6aa2db8151c94e84",
+     "title": "$27B Meta Data Center Pushes Louisiana Toward Massive Power Expansion",
+     "published": "2026-04-02",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "e41fdca2a3f79cf0",
+     "title": "Entergy takes first step to power massive Meta data center expansion",
+     "published": "2026-04-16",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "656e660994ec2da8",
+     "title": "A Louisiana state senator helped secure Meta’s largest datacenter. Then he sold the land beside it",
+     "published": "2026-05-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6c4f673725aa7363",
+     "title": "Meta announces Louisiana Workforce Academy for AI data center construction",
+     "published": "2026-06-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "36120aad0454a473",
+     "title": "Meta Expands Louisiana AI Data Center Into A $50 Billion Megaproject",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "3b5f28e8580d45e5",
+     "title": "Meta expands its Louisiana data center project",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "3fef689e53f737b2",
+     "title": "Meta expands data center campus in Richland Parish, Louisiana, to 5GW & $50bn",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "53365d0ffc868336",
+     "title": "Meta expands Louisiana Hyperion data center to 5GW and $50 billion",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "6999df3ec20a2e72",
+     "title": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "6a6fc4eaa30d82e4",
+     "title": "Meta plans $40 billion expansion of Louisiana AI data center, more than doubling its size",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "6c97bdf9ddcf74a5",
+     "title": "Meta expands Louisiana data center in $50B AI push, boosting rural community",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "81bc42045db280c3",
+     "title": "Meta expands Louisiana data center to 5 gigawatts, investment crosses $50 billion",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "873ebfabc47167a7",
+     "title": "How big will the Richland Parish data center be? Meta will expand AI center",
+     "published": "2026-07-13",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "8f8fcf0c35115f97",
+     "title": "Meta Expands Louisiana Data Center to 5GW, Lifts Richland Parish Investment Above $50 Billion",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "9284ef8cf9ca3bad",
+     "title": "Meta expands Louisiana AI data center investment to more than $50B",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "9538ff56f61c22c2",
+     "title": "Meta Will Invest Over $50B To Expand North Louisiana Data Center Campus",
+     "published": "2026-07-13",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "98e7d62fa271adb4",
+     "title": "Meta Expands Louisiana AI Campus to $50B",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "a083218c4ef8fe97",
+     "title": "Meta expands Richland Parish data center, now $50-billion project",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "b02e2e96f2d69f62",
+     "title": "Meta more than doubles size of Louisiana AI data center in massive $50 billion expansion",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "c0f57423f802440c",
+     "title": "Meta expands Louisiana AI data center to 5 GW, lifting planned investment above $50 billion",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "c47bea6ce02bd5f6",
+     "title": "Meta expands Louisiana AI data center investment to more than $50 billion",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "d609375b3871cc9b",
+     "title": "Gov. Landry touts tech investments as Meta expands Louisiana data center",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "e7549199d4e89c59",
+     "title": "Meta expands Louisiana data center to 5 gigawatts compute capacity",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "e8ebb3018deaef92",
+     "title": "Meta plans $40 billion expansion of Louisiana AI data center",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "b90fd90b9fb32564",
+     "title": "Meta expands plans for Richland Parish data center while investing in the local community",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "5d5dbdf74d981366",
+     "title": "Gov. Jeff Landry hails expansion of Meta’s massive data center in Louisiana",
+     "published": "2026-07-13",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "0c9d688b6623be19",
+     "title": "Meta expanding Richland Parish data center to 5 gigawatts, one of the largest in history",
+     "published": "2026-07-14",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "29f2ec5b186c2ded",
+     "title": "Meta unveils plans for massive Louisiana data center",
+     "published": "2026-07-14",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "e44ce4bc573e1868",
+     "title": "Meta expands Richland Parish data center project",
+     "published": "2026-07-14",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "659a29abea85e578",
+     "title": "Meta Expands Louisiana Data Center In Over $50 Billion Investment for Richland Parish",
+     "published": "2026-07-15",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "5ac2c3ad6b53f81a",
+     "title": "As Meta data center expands, advocates push harder for transparency",
+     "published": "2026-08-05",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "d917087d0888087c",
+     "title": "Commentary: Public Service Commission can demand transparency for Meta’s data center expansion",
+     "published": "2026-08-11",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "microsoft-newark-nj-2026",
+   "name": "Microsoft Newark data center",
+   "status_rules": "Under construction",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-03-02",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "1a06f6d9c7624b9d",
+     "title": "Microsoft data centers coming to Heath, Hebron after groundbreaking",
+     "published": "2026-03-02",
+     "rules": "Under construction",
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "site-fort-worth-tx-2026-4",
+   "name": "Fort Worth data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-05-19",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-19",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "2bfe25556df30a1d",
+     "title": "Planned $1.1B data center campus near Benbrook could break ground this summer",
+     "published": "2026-05-19",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-fargo-nd-2025-3",
+   "name": "Fargo data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-09-15",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-15",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "5b59ac480f19fd18",
+     "title": "Construction begins on $3 billion AI data center near Fargo",
+     "published": "2025-09-15",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-cedar-rapids-ia-2025",
+   "name": "Cedar Rapids data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-10-21",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-21",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "b6dff1d97ee6b2c3",
+     "title": "Officials hold topping out ceremony for $10 billion Cedar Rapids data center campus",
+     "published": "2025-10-21",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "cyrusone-tx-unnamed",
+   "name": "CyrusOne, Texas (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2024-10-07",
+     "Announced"
+    ],
+    [
+     "2025-04-07",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-07",
+     "Announced"
+    ],
+    [
+     "2025-04-07",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "21517a5382e933bf",
+     "title": "CyrusOne to build $200M data center in north Fort Worth | Keller - Roanoke - Northeast Fort Worth",
+     "published": "2024-10-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "8cb45e7664b7bade",
+     "title": "CyrusOne files to build data center outside DFW, Texas",
+     "published": "2024-11-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "971443a7f454bc18",
+     "title": "CyrusOne breaks ground on Fort Worth data center campus in Texas",
+     "published": "2025-04-07",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "96526d8d8fd4949c",
+     "title": "Dallas' CyrusOne Partners With Houston's Calpine to Build $1.2B Data Center Campus Near Waco",
+     "published": "2025-07-31",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "112962dc6e9ebee2",
+     "title": "CyrusOne files to expand data center campus outside Waco, Texas",
+     "published": "2025-12-08",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "1d411e406f3a4a6e",
+     "title": "CyrusOne breaks ground on 380MW data center in Texas",
+     "published": "2026-06-08",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "094dffe7f443f2f4",
+     "title": "CyrusOne announces sixth data center campus in San Antonio, Texas",
+     "published": "2026-07-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "microsoft-san-jose-ca-2026",
+   "name": "Microsoft San Jose data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-06-10",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-06-10",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "f3416fda1bc371a4",
+     "title": "Microsoft's $73M land bet pays off as company breaks ground on San Jose data center",
+     "published": "2026-06-10",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "8e1dc5c3c9200a8d",
+     "title": "Microsoft Breaks Ground on Long-Planned North San Jose Data Center Site",
+     "published": "2026-06-11",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "94425c988b52d4b0",
+     "title": "Microsoft breaks ground on new data center in San Jose",
+     "published": "2026-06-11",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "d667c6c49d1e6ee5",
+     "title": "Microsoft breaks ground on Alviso data center campus in San Jose, California",
+     "published": "2026-06-12",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "powerhouse-reno-nv-2024",
+   "name": "PowerHouse Reno data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2024-10-02",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-02",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "a62b8593bd33fee8",
+     "title": "PowerHouse breaks ground on data center project east of Reno",
+     "published": "2024-10-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "e6541b281914dd15",
+     "title": "PowerHouse breaks ground on Reno data center",
+     "published": "2024-10-03",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "vantage-oh-unnamed",
+   "name": "Vantage, Ohio (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2024-10-25",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-25",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "6c7eebef022fe949",
+     "title": "Vantage Data Centers Breaks Ground on 192MW Campus, Enters Growing Ohio Data Center Market with Over $2 Billion Investment in Hyperscale Digital Infrastructure",
+     "published": "2024-10-25",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "1858af2a3c60ce66",
+     "title": "Vantage breaks ground on New Albany data center in Ohio",
+     "published": "2024-10-28",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-frederick-md-2025",
+   "name": "Frederick data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-02-05",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-02-05",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "fc6adbe81cde4b8d",
+     "title": "Aligned breaks ground on 72MW Maryland data center in Quantum Frederick Park",
+     "published": "2025-02-05",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-houston-tx-2025",
+   "name": "Houston data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-11-18",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-11-18",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4e9aff715362c9ad",
+     "title": "TRG Datacenters Breaks Ground on 24 MW Houston Data Center",
+     "published": "2025-11-18",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "19d790a32bcd0d62",
+     "title": "TRG breaks ground on 24MW data center in Houston, Texas",
+     "published": "2025-11-19",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "6319624277454c44",
+     "title": "Element Critical breaks ground on 10MW data center expansion in Houston, Texas",
+     "published": "2025-11-19",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "6a8db987814098f1",
+     "title": "TRG Datacenters Breaks Ground on 24MW Houston Facility",
+     "published": "2025-11-19",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "c438da7be96dadcf",
+     "title": "TRG Expands Houston Data Center Campus",
+     "published": "2025-11-20",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "iron-mountain-miami-fl-2025",
+   "name": "Iron Mountain Miami data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-02-27",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-02-27",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "780456aa0894a3c7",
+     "title": "Iron Mountain breaks ground on first data center in Miami",
+     "published": "2025-02-27",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-hudspeth-county-tx-2026",
+   "name": "Hudspeth County data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-10-09",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-10-09",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "627059843a5581ce",
+     "title": "Los Angeles-based firm breaks ground on $15B data center in Hudspeth County",
+     "published": "2026-10-09",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "cyrusone-new-albany-oh-2025",
+   "name": "CyrusOne New Albany data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-09-18",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-18",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ed26b4ebab682825",
+     "title": "CyrusOne breaks ground on New Albany, Ohio data center",
+     "published": "2025-09-18",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "sabey-ashburn-va-2025",
+   "name": "Sabey Ashburn data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-06-25",
+     "Announced"
+    ],
+    [
+     "2025-06-26",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-06-25",
+     "Announced"
+    ],
+    [
+     "2025-06-26",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "21cd20c0d0607406",
+     "title": "Data center demand drives Sabey's $650M Ashburn expansion",
+     "published": "2025-06-25",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "1cc5ace40741525c",
+     "title": "Sabey breaks ground on third building at Ashburn, Virginia, campus",
+     "published": "2025-06-26",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "crusoe-tx-unnamed",
+   "name": "Crusoe, Texas (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-05-21",
+     "Announced"
+    ],
+    [
+     "2026-07-27",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-05-21",
+     "Announced"
+    ],
+    [
+     "2026-07-27",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "eb866092c24a234e",
+     "title": "'Neocloud' Crusoe secures $11.6 billion funding for Texas data center",
+     "published": "2025-05-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6cd186d1d089bc86",
+     "title": "Crusoe and Lancium Announce 1.0 Gigawatt AI Data Center Campus in Childress, Texas",
+     "published": "2026-07-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c14c45ec297df659",
+     "title": "Crusoe and Lancium plan to build a new AI data center in Childress, Texas",
+     "published": "2026-07-16",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "468cb7d78298d193",
+     "title": "Energy Vault Breaks Ground on Powered AI Infrastructure Campus in Snyder, Texas to Deploy Crusoe Spark Modular Data Centers",
+     "published": "2026-07-27",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "aae357a95b94419c",
+     "title": "Energy Vault Breaks Ground on AI Campus in Texas for Crusoe Spark Modular Data Centers",
+     "published": "2026-07-27",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-cheyenne-wy-2025",
+   "name": "Cheyenne data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-10-07",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-07",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "31a4033d6467884c",
+     "title": "$1.2 billion data center breaks ground in Cheyenne, promises water-free operations",
+     "published": "2025-10-07",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "38b84429714102d5",
+     "title": "$1.2 Billion Data Center Breaks Ground In Cheyenne, CEO Stresses Low Water Impact",
+     "published": "2025-10-07",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "22f25d53679019e4",
+     "title": "$1.2 billion data center breaks ground in Cheyenne",
+     "published": "2025-10-08",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "cyrusone-il-unnamed",
+   "name": "CyrusOne, Illinois (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2024-10-04",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-04",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "9ac506708de42cec",
+     "title": "CyrusOne breaks ground on 40MW Illinois data center campus",
+     "published": "2024-10-04",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "5f4e1c0b8a136146",
+     "title": "CyrusOne eyes 600MW data center campus in Illinois",
+     "published": "2025-10-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6ea43a0723b2b846",
+     "title": "Proposed CyrusOne Data Center could bring 500 construction jobs to Sangamon County",
+     "published": "2025-12-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "openai-tx-unnamed",
+   "name": "OpenAI, Texas (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-05-21",
+     "Announced"
+    ],
+    [
+     "2025-12-15",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-05-21",
+     "Announced"
+    ],
+    [
+     "2025-12-15",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "bc9ddbce51bc816f",
+     "title": "Watch Crusoe Enters Second Phase of Building an OpenAI Texas Data Center",
+     "published": "2025-05-21",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "501bd68788e8134a",
+     "title": "OpenAI CEO Sam Altman shares video of AI data center in Texas, plans 5 more",
+     "published": "2025-09-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "69f52cf0e3548f8b",
+     "title": "Vantage breaks ground on Texas gigawatt data center campus for OpenAI",
+     "published": "2025-12-15",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "19ddb5ee955e2ee1",
+     "title": "Vantage Data Centers breaks ground on data center campus in Texas",
+     "published": "2025-12-16",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "4401f9df103d2954",
+     "title": "Vantage Breaks Ground on 1.4GW Texas Data Center for OpenAI",
+     "published": "2025-12-16",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "prime-data-centers-sacramento-ca-2026",
+   "name": "Prime Data Centers Sacramento data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-05-07",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-07",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "f79d729ed5c6bf2a",
+     "title": "Prime Data Centers Breaks Ground on Second Sacramento Data Center, Expanding Regional Campus Footprint",
+     "published": "2026-05-07",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "25807c22c19456f8",
+     "title": "Prime breaks ground on latest data center in Sacramento, California",
+     "published": "2026-05-08",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-port-washington-wi-2025-8",
+   "name": "Port Washington data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-12-17",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-12-17",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "58658f75224e8556",
+     "title": "Groundbreaking held as construction begins on $15 billion Port Washington data center - BizTimes - Milwaukee Business News",
+     "published": "2025-12-17",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "9c32502d6c6bda5d",
+     "title": "$15 billion Vantage data center breaks ground in Port Washington",
+     "published": "2025-12-18",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "3fdcb5d851e018aa",
+     "title": "$15B Stargate data center breaks ground in Wisconsin",
+     "published": "2025-12-19",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "da14740d22e68444",
+     "title": "Controversial $15 billion data center breaks ground in Port Washington",
+     "published": "2025-12-19",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "f63d095f1dfcce5a",
+     "title": "$15B Vantage Data Center Breaks Ground in Port Washington, Wisconsin",
+     "published": "2025-12-20",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "7cdb9bb86ecdb741",
+     "title": "Vantage Breaks Ground on $15B Stargate Campus in Wisconsin",
+     "published": "2025-12-22",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "coreweave-ok-unnamed",
+   "name": "CoreWeave, Oklahoma (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2024-11-19",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-11-19",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "958a9931dbd4fda4",
+     "title": "CoreWeave and Core Scientific break ground on 100MW data center in Muskogee, Oklahoma",
+     "published": "2024-11-19",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-san-antonio-tx-2025",
+   "name": "San Antonio data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-08-08",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-08-08",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "895b90d7787f0f9a",
+     "title": "Rowan Digital breaks ground on 300MW data center campus outside San Antonio, Texas",
+     "published": "2025-08-08",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-saline-township-mi-2026",
+   "name": "Saline Township data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-04-28",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-28",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "e30e9c28683e049e",
+     "title": "$16 billion data center campus in Saline Township secures financing, construction underway",
+     "published": "2026-04-28",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "google-ia-unnamed",
+   "name": "Google, Iowa (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-05-30",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-05-30",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "10d8d9b4ff0ecd00",
+     "title": "Google announces $7 billion investment in Iowa, including new Cedar Rapids data center",
+     "published": "2025-05-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7cf5fc32e31c91d1",
+     "title": "Google looks to build up to six data centers near nuclear power site in Linn County, Iowa",
+     "published": "2025-10-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "3d9d8192ec675df1",
+     "title": "Google eyes data center in Palo to bypass Linn County regulations",
+     "published": "2026-03-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b24f703f67ffd828",
+     "title": "Google bypassing Linn County to try to build data center",
+     "published": "2026-03-04",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "251a4b5a31c7c838",
+     "title": "Palo residents question Google data center plans at town hall",
+     "published": "2026-03-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ed5404745712fcf3",
+     "title": "Google’s data center plans in Palo stir up support from the mayor and concerns from residents",
+     "published": "2026-03-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "f149a57ed4ee59bf",
+     "title": "How Google’s plan to build a data center created a rift between local governments in eastern Iowa",
+     "published": "2026-04-23",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "02b74a347bc58811",
+     "title": "Google moving ahead on proposed Palo data center, sets public meeting to discuss plan",
+     "published": "2026-10-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6ccfd88b985b0e62",
+     "title": "Google to host open house for proposed Palo data center",
+     "published": "2026-10-19",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "a3b56ac385681620",
+     "title": "Google gives insight into the Palo data center project and plans to break ground",
+     "published": "2026-10-23",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "aligned-tx-unnamed",
+   "name": "Aligned, Texas (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-04-10",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-10",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "7098e49774628cd1",
+     "title": "Aligned breaks ground on 540MW data center campus in Texas",
+     "published": "2026-04-10",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "d6b385752746dbad",
+     "title": "Project Caprock: Aligned Data Centers breaks ground on 540 MW DC campus in Texas",
+     "published": "2026-04-13",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "e546bac7b6fafed7",
+     "title": "Aligned Data Centers Breaks Ground on Sustainable Campus in Northwest Texas",
+     "published": "2026-05-11",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "edgecore-northern-virginia-va-2025",
+   "name": "EdgeCore Northern Virginia data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-02-21",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-02-21",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "36e509a93ac0d344",
+     "title": "EdgeCore begins construction at 114MW Northern Virginia campus",
+     "published": "2025-02-21",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "342fa0b60216ba78",
+     "title": "News | EdgeCore secures $1.5 billion in loans to finance two Northern Virginia data centers",
+     "published": "2026-04-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-fairfax-county-va-2025",
+   "name": "Fairfax County data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-10-24",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-24",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "1568a134feab60f1",
+     "title": "Menlo Equities breaks ground on 48MW data center in Fairfax County, Virginia",
+     "published": "2025-10-24",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-northern-virginia-va-2025",
+   "name": "Northern Virginia data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-02-04",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-02-04",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "0424026ad0b18638",
+     "title": "Corscale breaks ground on 54MW Gainsville Crossing facility in Northern Virginia",
+     "published": "2025-02-04",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "aligned-az-unnamed",
+   "name": "Aligned, Arizona (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-05-19",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-05-19",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "f869bdf0a1a067ba",
+     "title": "Aligned Data Centers Breaks Ground in Glendale, Expanding Arizona Infrastructure",
+     "published": "2025-05-19",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "d0f8c7d83c32a09a",
+     "title": "Aligned Data Centers unveils advanced cooling lab in Phoenix amid AI computing surge",
+     "published": "2025-08-12",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "aws-in-unnamed",
+   "name": "Amazon, Indiana (site not yet named)",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2024-10-04",
+     "Under construction"
+    ],
+    [
+     "2025-10-29",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-04",
+     "Under construction"
+    ],
+    [
+     "2025-10-29",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "3eddd2738778784c",
+     "title": "AWS breaks ground on $11bn data center campus in Indiana",
+     "published": "2024-10-04",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "fc07295592d6bbe0",
+     "title": "Amazon breaks ground on $11B data center campus",
+     "published": "2024-10-16",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "ad99be5d14330293",
+     "title": "AWS plans USD $11 billion Indiana data centre hub, 1,000 jobs",
+     "published": "2025-04-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "f86fe3cf8860444a",
+     "title": "Amazon opens $11 billion AI data center in rural Indiana as rivals race to break ground",
+     "published": "2025-10-29",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "0ea259a281ec3a28",
+     "title": "Amazon announces $15 billion investment in data center campuses in Northern Indiana",
+     "published": "2025-11-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "35972167c9fcf8c1",
+     "title": "Amazon plans to invest $15 billion in Northern Indiana to build new data center campuses and advance AI innovation",
+     "published": "2025-11-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7887385f40aac573",
+     "title": "Amazon plans $15 billion data center investment in Region, largest in Indiana history",
+     "published": "2025-11-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7db9f57142897d19",
+     "title": "Amazon plans $15 billion investment for data center campuses in northern Indiana",
+     "published": "2025-11-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "9eec098dc0361215",
+     "title": "Amazon announces new $15 billion northern Indiana data center project",
+     "published": "2025-11-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "21d899230281f745",
+     "title": "Amazon plans $15B investment in Indiana data centers",
+     "published": "2025-11-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "5a0a90922563f3ef",
+     "title": "Amazon announces $15bn data center & AI investment plan for Northern Indiana",
+     "published": "2025-11-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "60ec29eaeb425576",
+     "title": "Newly announced Amazon data center to be built in Hobart",
+     "published": "2025-11-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "61da18e64149be4a",
+     "title": "Amazon announces $15 billion investment in Northern Indiana data centers",
+     "published": "2025-11-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b26f8c1765e69779",
+     "title": "Amazon plans $15 billion data center investment in northern Indiana",
+     "published": "2025-11-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1c096c5762dc02d9",
+     "title": "Amazon to build new data center campuses",
+     "published": "2025-12-01",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "477769915db8c10b",
+     "title": "Amazon Plans to Invest $15 billion in Northern Indiana to Build New Data Center Campuses, Advance AI Innovation",
+     "published": "2025-12-01",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "15566dd82d907c63",
+     "title": "NiSource Announces New Data Center Agreement, Expands Contract with Amazon",
+     "published": "2026-04-24",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "8b2014a0a5304611",
+     "title": "Amazon plans nine-building data center campus in Wheatfield, Indiana",
+     "published": "2026-06-03",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "prime-data-centers-phoenix-az-2026",
+   "name": "Prime Data Centers Phoenix data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-05-21",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-21",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "53eec602d7d88be2",
+     "title": "Prime Data Centers Breaks Ground on Three Buildings at its 240MW Campus in Phoenix, Advancing $3B Investment in Avondale",
+     "published": "2026-05-21",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "0927fd6b8632822e",
+     "title": "Prime Data Centers breaks ground on three out of five buildings at its 240MW campus in Phoenix, Arizona",
+     "published": "2026-05-22",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "e81e0464d6b7b463",
+     "title": "Prime Breaks Ground on $3B Phoenix Data Center Campus",
+     "published": "2026-05-22",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "3efe8cce8a56caae",
+     "title": "Prime Data Centers breaks ground on three buildings at its 240MW campus in Phoenix, advancing $3b investment",
+     "published": "2026-05-26",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "452a3c1e52e0b3a9",
+     "title": "Prime Data Centers Breaks Ground on Three Buildings at $3B Metro Phoenix Campus",
+     "published": "2026-05-26",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "b619d315f0ee882b",
+     "title": "Prime Data Centers Breaks Ground on Three Buildings in Phoenix",
+     "published": "2026-05-26",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "ae930a79eb0fc082",
+     "title": "Prime Data Centers Breaks Ground on Three Buildings in Phoenix, Advancing $3B Investment",
+     "published": "2026-06-09",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "meta-tulsa-ok-2026",
+   "name": "Meta Tulsa data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-04-21",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-21",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "42f3fc501e793e08",
+     "title": "Breaking Ground on a New AI-Optimized Data Center in Tulsa, Oklahoma",
+     "published": "2026-04-21",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "4a03392845842400",
+     "title": "Gov. Stitt announces Meta behind Tulsa data center known as ‘Project Anthem’",
+     "published": "2026-04-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6a30b9f66d6a600a",
+     "title": "Meta breaks ground on over $1 billion data center in Oklahoma's Tulsa",
+     "published": "2026-04-21",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "9d9c8cdda2e312a2",
+     "title": "META TO TULSA: Data center planned for east Tulsa supports Meta",
+     "published": "2026-04-21",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "7fba416730413fa6",
+     "title": "Councilor critical, mayor silent on Meta's Tulsa AI data center announcement",
+     "published": "2026-04-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "843e26674fa8c698",
+     "title": "Meta breaks ground on data center in Tulsa, Oklahoma",
+     "published": "2026-04-22",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "a2a8b49ac702a1e9",
+     "title": "Meta to build US$ 1 billion AI data center in Tulsa",
+     "published": "2026-04-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b02a98a1984c43e4",
+     "title": "Meta breaks ground on $1B Tulsa data center amid moratorium",
+     "published": "2026-04-22",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-phoenix-az-2026-2",
+   "name": "Phoenix data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-09-10",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-09-10",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "cb1015c85c82f69f",
+     "title": "2 GW Project Phoenix Data Center Campus Breaks Ground in Pennsylvania",
+     "published": "2026-09-10",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "oracle-detroit-mi-2026",
+   "name": "Oracle Detroit data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-10-30",
+     "Announced"
+    ],
+    [
+     "2026-06-01",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-30",
+     "Announced"
+    ],
+    [
+     "2026-06-01",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "6e8b48a283ad57f2",
+     "title": "ChatGPT creator OpenAI plans massive data center near Ann Arbor with multibillion-dollar investment",
+     "published": "2025-10-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "adfab709ba1b8adb",
+     "title": "Massive OpenAI data center planned for farmland near Ann Arbor",
+     "published": "2025-10-31",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2b2d807bbf23319e",
+     "title": "Oracle, OpenAI 'Barn' data center breaks ground in Saline Township, additional community investments announced",
+     "published": "2026-06-01",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "eace6f12fceae983",
+     "title": "$16bn “The Barn” Data Center by OpenAI and Oracle Breaks Ground in Saline Township, Michigan",
+     "published": "2026-06-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "11380db771348554",
+     "title": "Michigan data center debate continues as OpenAI data center breaks ground",
+     "published": "2026-06-05",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-tulsa-ok-2025",
+   "name": "Tulsa data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-10-30",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-30",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "b834d650568b8221",
+     "title": "Developers break ground on $1B data center near Tulsa",
+     "published": "2025-10-30",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "site-kansas-city-mo-2026-6",
+   "name": "Kansas City data center",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2026-05-12",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-12",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "58900118ca64617a",
+     "title": "$150 billion Independence AI data center breaks ground, barricades protesters",
+     "published": "2026-05-12",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "79350367efbd2238",
+     "title": "Nebius breaks ground on AI data center in Independence amid community opposition",
+     "published": "2026-05-12",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    }
+   ]
+  },
+  {
+   "id": "qts-va-unnamed",
+   "name": "QTS, Virginia (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-07-02",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-07-02",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "65c1e13c7fc00dde",
+     "title": "Blackstone’s QTS Abandons Massive Data Center in Virginia",
+     "published": "2026-07-02",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "d51f470dd38bc1d9",
+     "title": "Blackstone-owned QTS abandons planned world’s largest data center campus after years of lawsuits — 2,100-acre Virginia Digital Gateway project dies over a newspaper-notice technicality",
+     "published": "2026-07-03",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "google-in-unnamed",
+   "name": "Google, Indiana (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-09-23",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-23",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "585096de7cda38ff",
+     "title": "Google withdraws rezoning proposal for 468-acre data center project in Franklin Township, Indiana",
+     "published": "2025-09-23",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "42f50cb5bf881eba",
+     "title": "AES Indiana details plan to power proposed Google data center",
+     "published": "2026-04-23",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "043a0a7f07b93b06",
+     "title": "IURC approves AES plan to power Google data center in Morgan County",
+     "published": "2026-10-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2107d73799f3aa7c",
+     "title": "Indiana approves AES plan to power Google data center in Monrovia",
+     "published": "2026-10-12",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "crusoe-wy-unnamed",
+   "name": "Crusoe, Wyoming (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-07-25",
+     "Announced"
+    ],
+    [
+     "2026-06-09",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-07-25",
+     "Announced"
+    ],
+    [
+     "2026-06-09",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4e4fb7689d04ea12",
+     "title": "Crusoe plans 1.8GW data center campus in Wyoming",
+     "published": "2025-07-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "9da2f2ed4e7cd1a4",
+     "title": "Crusoe pulls out of Project Jade data center",
+     "published": "2026-06-09",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "49244777c9d403ea",
+     "title": "Crusoe claimed it “paused” a plan to build a Wyoming data center after it failed to win customers including Google",
+     "published": "2026-06-12",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-fargo-nd-2025-4",
+   "name": "Fargo data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-12-08",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-12-08",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "17895ab51d75b250",
+     "title": "Fargo withdraws annexation attempts of $3 billion AI data center near Harwood",
+     "published": "2025-12-08",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-louisville-ky-2025",
+   "name": "Louisville data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-07-03",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-07-03",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "44be479cba251c57",
+     "title": "$6B Oldham County data center project scrapped - Louisville Business First",
+     "published": "2025-07-03",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-raleigh-nc-2025",
+   "name": "Raleigh data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-09-11",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-11",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "272184dd13d0e767",
+     "title": "Eastern NC town just blocked a $6 billion data center. It might get it anyway.",
+     "published": "2025-09-11",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-cleveland-oh-2026-3",
+   "name": "Cleveland data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-05-14",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-14",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "2c5078df26a6ae13",
+     "title": "City of Cleveland rejects permit for $1.6B data center in Slavic Village",
+     "published": "2026-05-14",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "b2ba1c9bad7ad2d3",
+     "title": "City rejects permit application for proposed data center in Cleveland’s Slavic Village neighborhood",
+     "published": "2026-05-14",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "e2a2b78e0ea852ca",
+     "title": "Cleveland rejects Slavic Village data center permit",
+     "published": "2026-05-14",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "qts-chicago-il-2025",
+   "name": "QTS Chicago data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-09-05",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-05",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "342ead30083ce8a6",
+     "title": "QTS withdraws proposal for two Union Township data centers",
+     "published": "2025-09-05",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "tract-richmond-va-2025",
+   "name": "Tract Richmond data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-02-03",
+     "Announced"
+    ],
+    [
+     "2025-06-20",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-02-03",
+     "Announced"
+    ],
+    [
+     "2025-06-20",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "e71dfd854139ae4e",
+     "title": "Tract plans second data center park outside Richmond, Virginia",
+     "published": "2025-02-03",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "20e2e931d915bafd",
+     "title": "County planning officials outside Richmond vote against Tract data center park",
+     "published": "2025-06-20",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "aws-calvert-county-md-2026",
+   "name": "Amazon Calvert County data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-04-01",
+     "Announced"
+    ],
+    [
+     "2026-08-18",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-01",
+     "Announced"
+    ],
+    [
+     "2026-08-18",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "5fc0a0c984505c8a",
+     "title": "AWS proposes data center campus next to nuclear plant in Calvert County, Maryland",
+     "published": "2026-04-01",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "5a9ed34f23760e7d",
+     "title": "Amazon Data Center Campus Proposed next to Nuclear Plant in Calvert County, Maryland",
+     "published": "2026-04-02",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "05ba6ebfb6358c4f",
+     "title": "Calvert County Passes Six-Month Moratorium On Data Centers",
+     "published": "2026-08-18",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "73fa43d897087fc5",
+     "title": "Calvert County board passes 6-month moratorium on new data centers",
+     "published": "2026-08-18",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "badec40d6245cee8",
+     "title": "Calvert County commissioners pass 6-month data center moratorium",
+     "published": "2026-08-18",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "e309e1409eec30e7",
+     "title": "Calvert County approves 6-month data center moratorium after Amazon pullout",
+     "published": "2026-08-18",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "google-indianapolis-in-2025",
+   "name": "Google Indianapolis data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-08-21",
+     "Announced"
+    ],
+    [
+     "2025-10-01",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-08-21",
+     "Announced"
+    ],
+    [
+     "2025-10-01",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4a4bd779cb9bbd8c",
+     "title": "Google's Indianapolis data center plan advances over neighbors' objections",
+     "published": "2025-08-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "24ed0c0e1fbd88d0",
+     "title": "Google pulls Franklin Township data center plan following public opposition",
+     "published": "2025-09-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b3d351f8938c5f92",
+     "title": "Google officially withdraws plans for data center in Franklin Township",
+     "published": "2025-10-01",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-columbus-oh-2025-2",
+   "name": "Columbus data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-09-24",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-24",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "3031a273e03b9c5b",
+     "title": "LaGrange halts new data centers for 6 months. Does it affect the $8B one already planned?",
+     "published": "2025-09-24",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-fort-worth-tx-2026-6",
+   "name": "Fort Worth data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-09-30",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-09-30",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "25f8552721c400c1",
+     "title": "$430M data center planned for this North Texas tech hub, as Abbott halts permits",
+     "published": "2026-09-30",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-chicago-il-2026",
+   "name": "Chicago data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-02-12",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-02-12",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "5823f70e86c6ebd0",
+     "title": "Brennan Investment Group withdraws plans for $2bn data center outside Chicago, Illinois",
+     "published": "2026-02-12",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "qts-ny-unnamed",
+   "name": "QTS, New York (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-07-29",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-07-29",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "19777fbb80a988c9",
+     "title": "QTS data center groundbreaking canceled in wake of deadly New York shooting",
+     "published": "2025-07-29",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "aws-az-unnamed",
+   "name": "Amazon, Arizona (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2024-10-18",
+     "Announced"
+    ],
+    [
+     "2025-08-07",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-18",
+     "Announced"
+    ],
+    [
+     "2025-08-07",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "5f7d4b6a6fce75ff",
+     "title": "Amazon's data center arm buys land in Laveen 'tech corridor' for $277 million",
+     "published": "2024-10-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "89cf8fbf1c495767",
+     "title": "Tucson council blocks Amazon data center after public outcry",
+     "published": "2025-08-07",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "ce0dca6b30d1598e",
+     "title": "Residents cheer as Tucson rejects Amazon's massive Project Blue data center campus in Arizona",
+     "published": "2025-08-08",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "0dd9b2199d970b4d",
+     "title": "Amazon's planned data center won't be cooled with as much water. Here's what it will use",
+     "published": "2025-09-19",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "d7063ff99986649f",
+     "title": "Amazon Web Services reportedly pulls out of Tucson Project Blue data center proposal",
+     "published": "2025-12-02",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "c57999c59ed72eda",
+     "title": "Rejected by Tucson and abandoned by Amazon, Project Blue data center moves forward",
+     "published": "2025-12-09",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "tract-hanover-county-va-2026",
+   "name": "Tract Hanover County data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-06-02",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-06-02",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "f5ba9312fa3ba651",
+     "title": "Tract's 430-acre data center rejected by local officials in Hanover County, Virginia",
+     "published": "2026-06-02",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-wayne-county-mi-2026",
+   "name": "Wayne County data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-10-20",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-10-20",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4c5393c9fcc052dd",
+     "title": "$75M data center plan scrapped in Wayne County after residents pack City Hall",
+     "published": "2026-10-20",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "openai-mi-unnamed",
+   "name": "OpenAI, Michigan (site not yet named)",
+   "status_rules": "Under construction",
+   "status_strict": "Under construction",
+   "history_rules": [
+    [
+     "2025-10-30",
+     "Announced"
+    ],
+    [
+     "2026-02-20",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-06-02",
+     "Under construction"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-30",
+     "Announced"
+    ],
+    [
+     "2026-02-20",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2026-06-02",
+     "Under construction"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "03046e8871686251",
+     "title": "ChatGPT-creator OpenAI announces massive new data center in Michigan",
+     "published": "2025-10-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7ea17bff74e970f7",
+     "title": "OpenAI, Oracle plan 1 gigawatt Stargate data center in Michigan with Related Digital",
+     "published": "2025-10-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6bcdf666d2ba5c47",
+     "title": "Michigan Chosen to Build Multi-Billion-Dollar OpenAI Stargate Data Center Facility",
+     "published": "2025-11-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "e9bdc74eeb7359ec",
+     "title": "OpenAI data center planned for farmland in Saline",
+     "published": "2025-12-02",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7b546986fe323e6f",
+     "title": "Judge denies rural neighbor’s effort to intervene in OpenAI, Oracle data center suit",
+     "published": "2026-02-20",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "9583388af208e539",
+     "title": "Judge again denies rural resident’s intervention in OpenAI data center project",
+     "published": "2026-04-08",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "73124b6812c34fb3",
+     "title": "Whitmer poses next to OpenAI CEO for Michigan data center groundbreaking – drawing ire",
+     "published": "2026-06-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "80c14915990cb4c9",
+     "title": "Democrats Split on Saline Data Center Groundbreaking with OpenAI Founder",
+     "published": "2026-06-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "8100c6da2d9490d3",
+     "title": "5 takeaways from OpenAI, Oracle data center groundbreaking south of Ann Arbor",
+     "published": "2026-06-02",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "18a2b2557e30c6c7",
+     "title": "Pond near Oracle, OpenAI data center construction site recovering after level drops",
+     "published": "2026-07-13",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "e7d9ca05af1350c5",
+     "title": "Township near Ann Arbor approves much smaller tax break for $43B Oracle, OpenAI data center",
+     "published": "2026-07-15",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "f291ac9ea9a2529e",
+     "title": "Public hearing set on OpenAI, Oracle data center’s proposal to discharge wastewater into Saline River",
+     "published": "2026-09-12",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "aws-md-unnamed",
+   "name": "Amazon, Maryland (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-08-04",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-08-04",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "3d423e493d08be0b",
+     "title": "Amazon abandons plans for data center campus at Calvert Cliffs",
+     "published": "2026-08-04",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "245cc82496ea3940",
+     "title": "AWS pulls out of planned data center campus next to Maryland nuclear plant",
+     "published": "2026-08-05",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "qts-wi-unnamed",
+   "name": "QTS, Wisconsin (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-10-29",
+     "Announced"
+    ],
+    [
+     "2026-01-29",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-29",
+     "Announced"
+    ],
+    [
+     "2026-01-29",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "574f0386c057480e",
+     "title": "QTS Data Centers looks to build another facility near Madison, Wisconsin",
+     "published": "2025-10-29",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "b243f3713e6b76bb",
+     "title": "QTS plans to propose multibillion-dollar data center campus in Dane County",
+     "published": "2025-10-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ce003064103331e3",
+     "title": "Data center operator QTS plans multi-billion dollar development in Dane County",
+     "published": "2025-10-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "2ac59170c3884aed",
+     "title": "QTS advances plans for Dane County data center campus",
+     "published": "2025-10-31",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "563f1831453db316",
+     "title": "QTS plans $12B data center, jobs boost for Wisconsin",
+     "published": "2025-11-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "5ca00e64b015c975",
+     "title": "QTS drops plan for data center near Madison, Wisconsin, amid opposition from local officials",
+     "published": "2026-01-29",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "aws-oh-unnamed",
+   "name": "Amazon, Ohio (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2024-11-21",
+     "Announced"
+    ],
+    [
+     "2025-04-22",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-08-07",
+     "Operational"
+    ],
+    [
+     "2026-09-22",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-11-21",
+     "Announced"
+    ],
+    [
+     "2025-04-22",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-08-07",
+     "Operational"
+    ],
+    [
+     "2026-09-22",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "fe3510d202322a09",
+     "title": "Amazon picks Sunbury as site for $2 billion data center investment",
+     "published": "2024-11-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "af32b18676e57d52",
+     "title": "AWS plans $2bn data center campus in Sunbury, Ohio",
+     "published": "2024-11-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "259c6b6c58d2c836",
+     "title": "Amazon Web Services to invest billions to expand Ohio data center infrastructure",
+     "published": "2024-12-16",
+     "rules": null,
+     "strict": null
+    },
+    {
+     "id": "d9c7518718b4941a",
+     "title": "Governor DeWine announces $10 billion AWS investment to expand Ohio data centers",
+     "published": "2024-12-16",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "0256309927903d5b",
+     "title": "Amazon Web Services announces $10 billion data center expansion in Ohio",
+     "published": "2024-12-17",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "3ea1e0f7ee2b10c1",
+     "title": "Amazon picks where the first of its $10 billion in data centers will go in Ohio",
+     "published": "2025-01-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "9853f5d2b3d77180",
+     "title": "Amazon purchases nearly 600 acres in Fayette County for new data center",
+     "published": "2025-01-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "25312b12617d534e",
+     "title": "Amazon eyes another data center campus outside Columbus, Ohio",
+     "published": "2025-02-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "4e2ccf5aadacd02e",
+     "title": "Amazon picks central Ohio city for new $1 billion data center",
+     "published": "2025-03-11",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "fcfe0d9ae2110fde",
+     "title": "As Ohio preps for Amazon data center growth, analysts say company has paused lease talks",
+     "published": "2025-04-22",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "d3dcb4d02eb42e62",
+     "title": "Could Amazon's reported data center pullback impact its plans in Ohio? What we know",
+     "published": "2025-04-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c7364476f6a2511f",
+     "title": "Amazon Web Services opens 2 data centers as part of $3.5 billion investment in New Albany",
+     "published": "2025-08-07",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
+     "id": "7ace31228fc88d0f",
+     "title": "Why Sunbury residents are fighting Amazon's proposed data center",
+     "published": "2026-03-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "f496c75c5ffc3604",
+     "title": "Amazon plans 18-building campus outside Cincinnati, Ohio",
+     "published": "2026-08-13",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1f5ba6b318c539e2",
+     "title": "Amazon eyes land for suburban county's first hyperscale data center",
+     "published": "2026-08-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "e22ca7b9a1698685",
+     "title": "Madison Township objects to Trenton annexation for proposed Amazon data center",
+     "published": "2026-08-25",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "675c6e429f59b720",
+     "title": "What to know about the proposed Amazon data center in Butler County",
+     "published": "2026-09-14",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "478159911dcf2635",
+     "title": "Public hearing canceled after Trenton withdraws annexation petition for proposed Amazon data center",
+     "published": "2026-09-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "7b195082071bce9c",
+     "title": "Ohio Supreme Court Blocks Ballot Measure Targeting $4B AWS Data Center",
+     "published": "2026-09-22",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "7f2fad7c09f99f13",
+     "title": "Amazon rallies support for Tri-State data center plan ahead of possible voter ban",
+     "published": "2026-10-16",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-chandler-az-2025",
+   "name": "Chandler data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-12-10",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-12-10",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "9e732d917960a5e8",
+     "title": "Chandler City Council rejects controversial AI data center",
+     "published": "2025-12-10",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "02ea71e417a322f6",
+     "title": "Chandler rejects proposed data center",
+     "published": "2025-12-11",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "2a0cfa9f24419eb1",
+     "title": "Chandler city council unanimously rejects proposed new data center",
+     "published": "2025-12-11",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "6d8b1d0556430baa",
+     "title": "Chandler unanimously votes against proposed AI data center",
+     "published": "2025-12-11",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "7233b72a86608611",
+     "title": "Chandler City Council shoots down proposed data center",
+     "published": "2025-12-11",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "20104daae560a692",
+     "title": "Chandler City Council unanimously rejects proposed $2 billion AI data center, but questions remain",
+     "published": "2025-12-12",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "aws-va-unnamed",
+   "name": "Amazon, Virginia (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2024-10-22",
+     "Announced"
+    ],
+    [
+     "2025-05-21",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-11-21",
+     "Under construction"
+    ],
+    [
+     "2026-08-31",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-22",
+     "Announced"
+    ],
+    [
+     "2025-07-25",
+     "Cancelled / Blocked"
+    ],
+    [
+     "2025-11-21",
+     "Under construction"
+    ],
+    [
+     "2026-08-31",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ec4044fdb4d8073d",
+     "title": "Prince William County supervisors shelve Amazon data center proposal indefinitely",
+     "published": "2024-10-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "30815a2eff7188f4",
+     "title": "Amazon eyes Caroline, Spotsylvania for 11-building data center campus",
+     "published": "2025-02-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "44a37969e9ffa932",
+     "title": "Amazon eyes massive Virginia data center campus south of Fredericksburg",
+     "published": "2025-02-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "eba5a6b131ad63c4",
+     "title": "Amazon acquires 100 acres in Leesburg, Virginia, for potential data center development",
+     "published": "2025-05-08",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "6a0cbe4ed11add75",
+     "title": "Amazon takes King George County Supervisors to court over denied data center project",
+     "published": "2025-05-21",
+     "rules": "Cancelled / Blocked",
+     "strict": null
+    },
+    {
+     "id": "06095e6b517993a2",
+     "title": "Some Louisa County residents celebrate victory as Amazon withdraws data center proposal",
+     "published": "2025-07-25",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "5b0ea0931d8d5411",
+     "title": "Amazon cancels data center in Louisa County",
+     "published": "2025-07-28",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "c92dc7dd52f3fc6d",
+     "title": "Amazon pulls Louisa County data center proposal after strong resistance",
+     "published": "2025-07-28",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "f8968aff961003cf",
+     "title": "Penzance Breaks Ground on 45-Megawatt Next-Generation Data Center in Northern Virginia",
+     "published": "2025-11-21",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "6016d9d8c35612dc",
+     "title": "Penzance breaks ground on new AWS data center in Chantilly",
+     "published": "2025-11-24",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "dc39ae0c550a94db",
+     "title": "Penzance Breaks Ground on New Amazon Data Center in Chantilly",
+     "published": "2025-11-25",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
+     "id": "6ffbc6b34f7bf26f",
+     "title": "Amazon Withdraws Groundwater Permit for 869-Acre Virginia Data Center Campus",
+     "published": "2026-08-31",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "f71ef84157a4e19c",
+     "title": "What to know about Amazon's data center proposal",
+     "published": "2026-09-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "3463a8f8d56b3243",
+     "title": "Amazon can’t build data centers on GWU campus without board approval, zoning administrator says",
+     "published": "2026-10-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "5ee323169dbf94da",
+     "title": "Loudoun officials say Amazon needs county approval to build data centers at VSTC campus",
+     "published": "2026-10-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "ddda38ec211187f8",
+     "title": "Amazon Drops Data Center Plans at GWU Campus, Donating 25 Acres to County",
+     "published": "2026-10-20",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "ed18adfbe69a6b24",
+     "title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers",
+     "published": "2026-10-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c23850792c147771",
+     "title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county",
+     "published": "2026-10-20",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "4637ddd4aead3c77",
+     "title": "Amazon withdraws data center application in Loudoun County",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "3f7c7b9dec3fea88",
+     "title": "Amazon agrees to withdraw data center construction plans on GW’s Virginia campus following backlash",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": null
+    },
+    {
+     "id": "5ee9df2bf905ccd8",
+     "title": "$427M Virginia Science and Technology Campus: Amazon Drops 800,000 Square Foot Data Center Plan",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "a846bdd2eca90e42",
+     "title": "Loudoun County, Amazon reach deal to withdraw data center project on GW campus in Ashburn",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": null
+    },
+    {
+     "id": "a7b590b212f6dfb5",
+     "title": "Amazon Cancels Data Center Plans for GW Campus, Plans to Donate Part of the Land to Loudoun County",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "cf561fb964153015",
+     "title": "Amazon withdraws proposal to build data centers on GW campus in Loudoun County",
+     "published": "2026-10-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c7e3f30b07af9885",
+     "title": "Amazon cancels data centers for GW Ashburn campus",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "a5ec4f26256bd4a5",
+     "title": "Amazon withdraws data center proposal for former GWU campus in Loudoun County",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "0ab0ed0c421e37e0",
+     "title": "Loudoun County scraps plans for new Amazon data center amid community pushback",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "285c322274318492",
+     "title": "Amazon abandons Virginia data center plan — Fortune",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "36d94139ab821e00",
+     "title": "Amazon abandons Virginia data center — Fortune",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "2e5bba30f5aeffbe",
+     "title": "Amazon withdraws data center proposal for former GW campus in Loudoun County",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "2635defb38db468c",
+     "title": "Amazon Scraps $427 Million Data Center Plan at GW's Virginia Campus, Hands 25 Acres to Loudoun County",
+     "published": "2026-10-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "e352141024c40ff6",
+     "title": "Amazon cancels plan for data centers in Loudoun County, donates land",
+     "published": "2026-10-22",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "3da8bda9a3526e12",
+     "title": "Amazon scraps Virginia data center",
+     "published": "2026-10-22",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "ab5a7b48247ded31",
+     "title": "Amazon bows to local backlash over AI data centers, scraps plans to build four new facilities in Northern Virginia — site to be repurposed for mixed-use and residential development.",
+     "published": "2026-10-23",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "91a353723be12ab7",
+     "title": "Amazon abandons its Virginia data center campus to local opposition",
+     "published": "2026-10-24",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "9dc5f9527072ce92",
+     "title": "Amazon pitches roughly 1,500 housing units for GW's Loudoun campus after scrapping data center plan",
+     "published": "2026-10-26",
+     "rules": "Announced",
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "site-fauquier-county-va-2025",
+   "name": "Fauquier County data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-09-01",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-01",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "0abccd336a9e31bf",
+     "title": "Plans for 800MW Gigaland data center campus withdrawn in Fauquier County, Virginia",
+     "published": "2025-09-01",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "meta-wy-unnamed",
+   "name": "Meta, Wyoming (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-10-07",
+     "Announced"
+    ],
+    [
+     "2026-10-28",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-07",
+     "Announced"
+    ],
+    [
+     "2026-10-28",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "08319997e46d1e48",
+     "title": "Prometheus Hyperscale, Spiritus, and Casper Carbon Capture Announce Strategic Partnership to Build Carbon-Negative Data Halls and Energy Infrastructure in Wyoming",
+     "published": "2025-10-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "699226d5e3c05a80",
+     "title": "Wyoming Woos Google, Microsoft, and Meta To Build More AI Data Centers in the State",
+     "published": "2026-04-02",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "cdf9e1fbd542708a",
+     "title": "Meta announces new fund for data center communities; Cheyenne gets Crow Creek stormwater filters",
+     "published": "2026-08-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "87e944cd62f8236b",
+     "title": "Prometheus Hyperscale drops plans for $500M data center campus in Natrona County",
+     "published": "2026-10-28",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "d33f633ddfd41f35",
+     "title": "Prometheus Abruptly Drops Natrona Data Center Plan, Eyes New Wyoming Locations",
+     "published": "2026-10-28",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "aws-or-unnamed",
+   "name": "Amazon, Oregon (site not yet named)",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2024-10-23",
+     "Announced"
+    ],
+    [
+     "2026-10-19",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-23",
+     "Announced"
+    ],
+    [
+     "2026-10-19",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ce259fd69e9e3e64",
+     "title": "Amazon plans to power Eastern Oregon data centers with nuclear reactors - Oregon Public Broadcasting - OPB",
+     "published": "2024-10-23",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "d7a0061fdef00ed1",
+     "title": "Amazon plans major data center expansion in tiny Oregon town",
+     "published": "2025-02-16",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "9d30d5fbc245f255",
+     "title": "Plans call for Oregon’s first ‘exascale’ data center on Amazon site",
+     "published": "2026-03-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "3fab5479444c53df",
+     "title": "Protesters rally in Walla Walla to fight Amazon’s plan for $5 billion data center",
+     "published": "2026-10-08",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "85223e34a811f3d8",
+     "title": "Oregon halts most new data center permits until July, and Amazon warns billions of dollars are at risk",
+     "published": "2026-10-19",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "aws-fargo-nd-2025",
+   "name": "Amazon Fargo data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2025-04-21",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-04-21",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "1fc9485091645cc3",
+     "title": "Amazon has halted some data center leasing talks, Wells Fargo analysts say",
+     "published": "2025-04-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "caccb337b890e5c5",
+     "title": "Amazon has paused some data center lease commitments, Wells Fargo says",
+     "published": "2025-04-21",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-nobles-county-mn-2026",
+   "name": "Nobles County data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-04-24",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-24",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "7e2301863204e5f7",
+     "title": "$4bn data center rejected by Nobles County, Minnesota",
+     "published": "2026-04-24",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "site-lebanon-county-pa-2026-2",
+   "name": "Lebanon County data center",
+   "status_rules": "Cancelled / Blocked",
+   "status_strict": "Cancelled / Blocked",
+   "history_rules": [
+    [
+     "2026-05-13",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-13",
+     "Cancelled / Blocked"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "e68ed133687593f7",
+     "title": "Plan for $1.7bn data center in Lebanon County, Pennsylvania, withdrawn by developer",
+     "published": "2026-05-13",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    }
+   ]
+  },
+  {
+   "id": "aws-indiana-county-pa-2026",
+   "name": "Amazon Indiana County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-09-10",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-09-10",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "7b709826ebd7fac6",
+     "title": "'Not welcome:' Indiana County residents voice concerns over proposed Amazon data centers",
+     "published": "2026-09-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "248bf24a1e7c7588",
+     "title": "AWS plans 36-building data center campus in Indiana County, Pennsylvania",
+     "published": "2026-10-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "0da8e97e64283e69",
+     "title": "What's next? Indiana County officials approve Amazon application for proposed data center",
+     "published": "2026-10-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-dallas-tx-2025",
+   "name": "Dallas data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-01-08",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-01-08",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4b4c95f8f1681e1f",
+     "title": "Dallas firms plan another data center campus with $1 billion price tag",
+     "published": "2025-01-08",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-glasscock-county-tx-2026",
+   "name": "Glasscock County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-04-27",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-27",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ab29b204868162fa",
+     "title": "Pace plans 100MW \"Texas first\" data center in Glasscock County",
+     "published": "2026-04-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "t5-atlanta-ga-2025",
+   "name": "T5 Atlanta data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-05-06",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-05-06",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "588e43e1f93876d1",
+     "title": "T5 Data Centers plans campus spanning 20 buildings in Georgia",
+     "published": "2025-05-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "aws-atlanta-ga-2024",
+   "name": "Amazon Atlanta data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2024-10-15",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-15",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "f3264191da820918",
+     "title": "Amazon Data Center Arm Buys 118 Acres In Suburban Atlanta",
+     "published": "2024-10-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "477294d4b8770d71",
+     "title": "Amazon plans $11 billion data center expansion in Georgia",
+     "published": "2025-01-08",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "c4dd148586532432",
+     "title": "News | Amazon picks Georgia for $11 billion investment in data centers",
+     "published": "2025-01-08",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "45916697f15ac135",
+     "title": "Amazon announces water sustainability strategy for Georgia data centers - Atlanta Business Chronicle",
+     "published": "2025-06-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-indianapolis-in-2026-4",
+   "name": "Indianapolis data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-04-07",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-07",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "7e8b4facc0d38283",
+     "title": "Shelbyville Common Council advances plans for $2B data center complex",
+     "published": "2026-04-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "apple-raleigh-nc-2025",
+   "name": "Apple Raleigh data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-02-25",
+     "Announced"
+    ]
+   ],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "353eed2b04fb3b88",
+     "title": "Apple in NC asked and answered, from RTP campus to latest data center announcement",
+     "published": "2025-02-25",
+     "rules": "Announced",
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "stack-new-albany-oh-2025",
+   "name": "STACK New Albany data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-12-11",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-12-11",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "3925a6366c0fa68b",
+     "title": "Data center developer Stack Infrastructure expanding New Albany campus with 330,000-square-foot facility",
+     "published": "2025-12-11",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "vantage-or-unnamed",
+   "name": "Vantage, Oregon (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-07-29",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-07-29",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "70638cf9b2e2e4ef",
+     "title": "Oregon identifies Vantage Data Centers as developer; Debate over proposed data center continues",
+     "published": "2026-07-29",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "86e9dc22be5d5cbd",
+     "title": "Vantage data center plan draws questions ahead of Oregon vote",
+     "published": "2026-10-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "flexential-kaufman-county-tx-2026",
+   "name": "Flexential Kaufman County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-07-29",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-07-29",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "f760ec1bb96c321c",
+     "title": "Flexential plans 110-acre data center campus in Kaufman County",
+     "published": "2026-07-29",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-st-louis-mo-2026",
+   "name": "St. Louis data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-10-17",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-10-17",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "45d685364786de21",
+     "title": "St. Louis wants to build a $3 billion tech hub — but the data center anchoring it is sparking backlash",
+     "published": "2026-10-17",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "openai-az-unnamed",
+   "name": "OpenAI, Arizona (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-02-07",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-02-07",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "84a72396ca531157",
+     "title": "Arizona among 16 states that OpenAI is eyeing for data center sites",
+     "published": "2025-02-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-atlanta-ga-2026-3",
+   "name": "Atlanta data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-04-08",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-08",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "057bda13f7caae70",
+     "title": "$17B 'Project Sail' data center project approved south of Atlanta",
+     "published": "2026-04-08",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-hillsboro-or-2026",
+   "name": "Hillsboro data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "c3107dd570a9ee5a",
+     "title": "Data center developer Stack to expand Hillsboro campus by 121MW",
+     "published": "2026-02-11",
+     "rules": null,
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "site-west-feliciana-parish-la-2024-2",
+   "name": "West Feliciana Parish data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2024-12-17",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-12-17",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "21d7d88167ae1240",
+     "title": "West Feliciana Parish lands $12 billion AI data center",
+     "published": "2024-12-17",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "openai-effingham-county-ga-2026",
+   "name": "OpenAI Effingham County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-07-22",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-07-22",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "0e478ef4adcb3c49",
+     "title": "OpenAI plans to build a $20B data center campus in Effingham County. It could be Georgia's largest yet",
+     "published": "2026-07-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "41da686787ade4c8",
+     "title": "OpenAI plans 3.2GW data center campus in Effingham County, Georgia",
+     "published": "2026-07-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "aae109073b5564b5",
+     "title": "OpenAI applies for federal permit to build portion of Effingham County, Georgia, data center on wetlands - report",
+     "published": "2026-10-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-cleveland-oh-2024",
+   "name": "Cleveland data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2024-12-16",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-12-16",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "9a827f2a32dfbd71",
+     "title": "$10B more announced to bolster expansion of data centers in Ohio",
+     "published": "2024-12-16",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-charlotte-nc-2026-2",
+   "name": "Charlotte data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-08-25",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-08-25",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ab065cbe9691e478",
+     "title": "$60M data center expansion planned outside Charlotte, even as moratoriums mount",
+     "published": "2026-08-25",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "applied-digital-la-unnamed",
+   "name": "Applied Digital, Louisiana (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-05-26",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-26",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "1825248176fac55a",
+     "title": "Applied Digital plans $3.6B central Louisiana data center campus to train large AI models",
+     "published": "2026-05-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-san-jose-ca-2026",
+   "name": "San Jose data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-07-09",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-07-09",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "c19406db8cc2d11c",
+     "title": "Prologis files to build 99MW data center in San Jose, California",
+     "published": "2026-07-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-new-braunfels-tx-2026",
+   "name": "New Braunfels data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-03-26",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-03-26",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4607709d0f64ee3c",
+     "title": "Guadalupe County commissioners vote down $500M tax cut for proposed data center in New Braunfels",
+     "published": "2026-03-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "vantage-wy-unnamed",
+   "name": "Vantage, Wyoming (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-07-01",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-07-01",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "0a1af8eea8b544a6",
+     "title": "Vantage hosts open house for proposed data center in southern Wyoming",
+     "published": "2026-07-01",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "aea9aa9c51bee472",
+     "title": "Commissioners approve zone change for Vantage Data Center south of Cheyenne",
+     "published": "2026-09-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "google-austin-tx-2026",
+   "name": "Google Austin data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-06-03",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-06-03",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "1a6640958586a34b",
+     "title": "Google announces $10M Texas water impact fund; makes data center water use pledges",
+     "published": "2026-06-03",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-dickens-county-tx-2026",
+   "name": "Dickens County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-03-18",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-03-18",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "d8f7c576b5c5acec",
+     "title": "Massive $3.5 billion expansion planned at AI data center in Dickens County",
+     "published": "2026-03-18",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "aws-pa-unnamed",
+   "name": "Amazon, Pennsylvania (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-06-10",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-06-10",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "74650aea8c3f76f5",
+     "title": "Amazon will build two data centers in Pennsylvania worth $20 billion",
+     "published": "2025-06-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c20afa8af08ebfd6",
+     "title": "Amazon Plans $20B Pennsylvania Data Centers Investment",
+     "published": "2025-06-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "fcc9b10084a2c2ea",
+     "title": "Amazon’s $20B Pennsylvania Data Center Expansion: ‘Thousands of Good-Paying Jobs’ Expected",
+     "published": "2025-06-10",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    },
+    {
+     "id": "5569343fdc5f9b63",
+     "title": "The unknown costs of Amazon’s $20B promise to build 2 data centers in Pennsylvania",
+     "published": "2025-06-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "e0a58149cf5424e3",
+     "title": "Residents voice concerns as Amazon officials reveal plans for new Schuylkill County data center",
+     "published": "2026-01-17",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "72eb0a1fb72bf709",
+     "title": "AWS plans 2.5 million sq ft data center campus in Kline Township, Pennsylvania",
+     "published": "2026-01-26",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "d9808a7d1c26b02b",
+     "title": "Amazon eyes Homer City site for data center campus",
+     "published": "2026-08-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "0aedd8ef75c2fd4d",
+     "title": "Kline Township supervisors vote to approve Amazon data center project in Schuylkill County",
+     "published": "2026-09-30",
+     "rules": "Announced",
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "site-denver-co-2026-2",
+   "name": "Denver data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-05-28",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-28",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "ff868205d0732de0",
+     "title": "Denver company secures $2.9B in financing for Texas data center",
+     "published": "2026-05-28",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "oracle-mi-unnamed",
+   "name": "Oracle, Michigan (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-04-01",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-04-01",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "b4e46a66b4a604ec",
+     "title": "Michigan approves 1.3 GW BESS portfolio, including contested Oracle data center assets",
+     "published": "2026-04-01",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "a6e6903cae5196e1",
+     "title": "Related Digital secures financing for $16 billion Oracle data center in Michigan",
+     "published": "2026-04-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "c163cd7ed02bbf32",
+     "title": "A massive Oracle data center planned for rural Michigan secures $16 billion in funding",
+     "published": "2026-04-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "3ec4fedb5f3fcf47",
+     "title": "Oracle plans Michigan data center, secures $16 billion in funding",
+     "published": "2026-04-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "8723a2fdf1e4d1a7",
+     "title": "Related Digital Announces Financing for $16 Billion Oracle Data Center Project in Saline Township, Michigan",
+     "published": "2026-04-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "95dc19dbad58b84d",
+     "title": "Oracle's $16B Michigan Data Center Secures Financing as Power Contracts Face Appeals",
+     "published": "2026-04-29",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "aws-bucks-county-pa-2025",
+   "name": "Amazon Bucks County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-06-09",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-06-09",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "0c1b1dda947aebb1",
+     "title": "Amazon plans Bucks County data center as part of $20 billion Pennsylvania investment",
+     "published": "2025-06-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "14220a79a5919b3f",
+     "title": "News | Amazon ramps up data center plans with $20 billion investment in Pennsylvania",
+     "published": "2025-06-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "8974de0329776d6b",
+     "title": "Amazon to build Bucks County data center as part of a $20B investment in PA. What to know",
+     "published": "2025-06-09",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "digital-realty-ks-unnamed",
+   "name": "Digital Realty, Kansas (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-06-22",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-06-22",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "f409f40e5073e3e1",
+     "title": "Digital Realty plans 600MW campus in Kansas, acquires investment firm Columbia Capital",
+     "published": "2026-06-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "digital-realty-indianapolis-in-2026",
+   "name": "Digital Realty Indianapolis data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-10-16",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-10-16",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "7743d05f18028856",
+     "title": "Digital Realty eyes gigawatt-scale data center site outside Indianapolis, Indiana",
+     "published": "2026-10-16",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "oracle-wa-unnamed",
+   "name": "Oracle, Washington (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-06-10",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-06-10",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "45c72b35df86fa50",
+     "title": "Saint Martin’s University Expands Washington Vets to Tech Program With a 12-Week Data Center Technician Pathway in Partnership With Oracle",
+     "published": "2026-06-10",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "site-atlanta-ga-2025-3",
+   "name": "Atlanta data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-03-12",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-03-12",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "8e354aa3df2f8eb9",
+     "title": "Massive $9.7 billion data center proposed in Troup County",
+     "published": "2025-03-12",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "240a15999153747c",
+     "title": "$9.7 billion data center project proposed in Troup County",
+     "published": "2025-03-13",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-austin-tx-2026-2",
+   "name": "Austin data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-03-27",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-03-27",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "247066962c545598",
+     "title": "Taylor approves $2.5 billion data center near Samsung chip plant",
+     "published": "2026-03-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "microsoft-person-county-nc-2026",
+   "name": "Microsoft Person County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-02-25",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-02-25",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "21afc435d78cf6f8",
+     "title": "Microsoft releases plans for 1,350 acre data center in Person County",
+     "published": "2026-02-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "apple-nc-unnamed",
+   "name": "Apple, North Carolina (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-04-07",
+     "Announced"
+    ]
+   ],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "8d09fc31033c3e02",
+     "title": "Apple to invest $175m in expanding North Carolina data center",
+     "published": "2025-04-07",
+     "rules": "Expansion",
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "site-port-washington-wi-2025-7",
+   "name": "Port Washington data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-11-04",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-11-04",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "dc402c0a3eeb6771",
+     "title": "Neighbors split as Port Washington officially approves TID for data center campus infrastructure",
+     "published": "2025-11-04",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "91d3000cc6491d70",
+     "title": "Port Washington council approves TID for $15B data center campus as residents continue to speak out",
+     "published": "2025-11-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-lordstown-oh-2025",
+   "name": "Lordstown data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-10-30",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-10-30",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "fd750563e8bf9fcb",
+     "title": "Developer proposes $3.6B data center in Lordstown",
+     "published": "2025-10-30",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-chicago-il-2026-3",
+   "name": "Chicago data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-03-24",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-03-24",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "59fdf3aee67c7a47",
+     "title": "Approval given to $20bn data center near Chicago, Illinois",
+     "published": "2026-03-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-miami-dade-county-fl-2024",
+   "name": "Miami-Dade County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2024-12-06",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-12-06",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "498b4f4f90409c53",
+     "title": "Miami-Dade County approves $3.6 million incentive deal for new data center",
+     "published": "2024-12-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "openai-nm-unnamed",
+   "name": "OpenAI, New Mexico (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-09-26",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-26",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "330b08a763495516",
+     "title": "OpenAI to build massive data center in New Mexico as part of nationwide expansion",
+     "published": "2025-09-26",
+     "rules": "Expansion",
+     "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "site-appomattox-county-va-2024",
+   "name": "Appomattox County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2024-12-10",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-12-10",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "b1bdc5579e454e16",
+     "title": "AVAIO Digital to Build $3 Billion Data Center Campus on 452 Acres in Appomattox County, Virginia",
+     "published": "2024-12-10",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "cda9cb7aa8a1e11e",
+     "title": "Avaio plans 300MW data center campus in Appomattox County, Virginia",
+     "published": "2024-12-11",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "aws-seattle-wa-2026",
+   "name": "Amazon Seattle data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-08-11",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-08-11",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "4c5172dd6bbf67d5",
+     "title": "VIDEO: Amazon plans to build large A.I. data center",
+     "published": "2026-08-11",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "10e800662c5d6e77",
+     "title": "Activists are trying to kill an Amazon data center plan in Walla Walla",
+     "published": "2026-10-08",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-lea-county-nm-2025",
+   "name": "Lea County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-11-07",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-11-07",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "9dc91472ed825b2a",
+     "title": "New Era plans 7GW AI data center in Lea County, New Mexico, powered by gas and nuclear",
+     "published": "2025-11-07",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-lowndes-county-al-2026",
+   "name": "Lowndes County data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-06-03",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-06-03",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "06490fc42d8ca32b",
+     "title": "What we know about the $1.5B data center eyeing Lowndes County",
+     "published": "2026-06-03",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "google-ne-unnamed",
+   "name": "Google, Nebraska (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-03-13",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-03-13",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "bfdf7e708c8de5ea",
+     "title": "Google proposes Nebraska data center requiring more power than all of Lincoln",
+     "published": "2026-03-13",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "microsoft-ga-unnamed",
+   "name": "Microsoft, Georgia (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-05-05",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-05-05",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "30c15fb111177187",
+     "title": "Microsoft confirms plans for data center in Tyrone, Georgia",
+     "published": "2026-05-05",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "33dae6f3b4415f54",
+     "title": "News | Microsoft seeks approval for data center in northwest Georgia",
+     "published": "2026-10-23",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-amarillo-tx-2025",
+   "name": "Amarillo data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-06-27",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-06-27",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "33deefbb6fab89fb",
+     "title": "Former Texas governor and US energy sec plans 11GW data center campus outside Amarillo, Texas",
+     "published": "2025-06-27",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "microsoft-northern-virginia-va-2024",
+   "name": "Microsoft Northern Virginia data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2024-10-31",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2024-10-31",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "eb5e2e1e8c142cc9",
+     "title": "Microsoft uses wood to build two data centers in Northern Virginia",
+     "published": "2024-10-31",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "softbank-oh-unnamed",
+   "name": "SoftBank, Ohio (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-03-20",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-03-20",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "b5c965774b28fd28",
+     "title": "SoftBank eyes 10GW data center at former DOE nuclear enrichment site in Ohio",
+     "published": "2026-03-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "eaf88872f7cff56a",
+     "title": "SoftBank and AEP plan massive Ohio gas-fired AI data center campus",
+     "published": "2026-03-20",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1aa81ab2a63febba",
+     "title": "SoftBank planning massive $500 billion data center in Ohio",
+     "published": "2026-03-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "a36f25c2a718c3fc",
+     "title": "SoftBank Group's Son unveils $500 bil. AI data center investment in Ohio",
+     "published": "2026-03-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "site-fargo-nd-2025-2",
+   "name": "Fargo data center",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-08-18",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-08-18",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "d13e96a07c69133e",
+     "title": "$3 billion hyperscale ‘AI factory’ planned north of Fargo",
+     "published": "2025-08-18",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  },
+  {
+   "id": "openai-ga-unnamed",
+   "name": "OpenAI, Georgia (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-08-14",
+     "Announced"
+    ]
+   ],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "988880b331c407d8",
+     "title": "OpenAI forced to delay plans for $20B data center in Georgia",
+     "published": "2026-08-14",
+     "rules": "Announced",
+     "strict": null
+    },
+    {
+     "id": "2f773b687ff7b982",
+     "title": "Savannah residents voice concerns over Georgia Power’s ties to proposed OpenAI data center",
+     "published": "2026-09-15",
+     "rules": "Announced",
+     "strict": null
+    }
+   ]
+  },
+  {
+   "id": "skybox-tx-unnamed",
+   "name": "Skybox, Texas (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2026-01-06",
+     "Announced"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2026-01-06",
+     "Announced"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "cdbf08aedb0cbbf1",
+     "title": "Skybox eyes six-building data center campus in San Angelo, Texas",
+     "published": "2026-01-06",
+     "rules": "Announced",
+     "strict": "Announced"
+    }
+   ]
+  }
+ ]
+}

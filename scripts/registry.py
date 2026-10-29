@@ -423,7 +423,13 @@ def apply_overrides(m, ops):
 # ---------------------------------------------------------------------------
 # Derived fields: replay the headlines in date order
 # ---------------------------------------------------------------------------
-def derive(r):
+def derive(r, resignal=True):
+    """Rebuild status, history, events, figures and confidence from the record's headlines.
+    With resignal (the default) every headline's stage signal is re-read with today's rules, so a
+    rule fix in fetch_news.guess_status corrects old records too."""
+    if resignal:
+        for n in r["news"]:
+            n["stage_signal"] = fn.guess_status(n["title"])
     news = sorted(r["news"], key=lambda n: (n["published"], n["id"]))
     history, events, status = [], [], None
     override = r.get("status_override")
