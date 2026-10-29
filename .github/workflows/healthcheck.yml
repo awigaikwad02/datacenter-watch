@@ -2,7 +2,7 @@ name: Health check
 
 on:
   schedule:
-    - cron: "23 7 * * *"
+    - cron: "23 */6 * * *"   # every 6 hours
   workflow_dispatch:
 
 # contents: commit data/health.json; issues: open/update/close the "Health check failed" issue;
