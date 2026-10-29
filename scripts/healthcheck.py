@@ -40,7 +40,9 @@ PAGES = {"index.html": "/", "newsroom.html": "/newsroom", "radar.html": "/radar"
          "companies.html": "/companies", "learn.html": "/learn", "methodology.html": "/methodology"}
 MAX_AGE = timedelta(hours=3)  # the loop refreshes hourly; the watchdog restarts it at 3h
 MAX_CATEGORY_SHARE = 0.30
-MIN_LOCATED_SHARE = 0.50
+MIN_LOCATED_SHARE = 0.55
+MAX_GENERAL_SHARE = 0.10   # headlines no topic rule matched
+MAX_POLICY_SHARE = 0.20
 MAX_PAGE_BYTES = 300 * 1024
 MAX_NEWS_BYTES = 3 * 1024 * 1024
 STATUSES = {"Announced", "Planned", "Under construction", "Operational", "Expansion", "Cancelled / Blocked"}
@@ -220,8 +222,11 @@ def data(ctx):
     top, top_n = cats.most_common(1)[0] if cats else ("", 0)
     check("No category above 30%", "pass" if top_n / n <= MAX_CATEGORY_SHARE else soft,
           f"top: {top} {100 * top_n / n:.1f}%", ", ".join(f"{k} {v}" for k, v in cats.most_common()))
+    for name, limit in (("General", MAX_GENERAL_SHARE), ("Policy / Permits", MAX_POLICY_SHARE)):
+        share = cats.get(name, 0) / n
+        check(f"{name} under {limit:.0%} of headlines", "pass" if share <= limit else soft, f"{100 * share:.1f}%")
     located = sum(1 for i in items if i.get("state"))
-    check("At least 50% of headlines located", "pass" if located / n >= MIN_LOCATED_SHARE else soft,
+    check("At least 55% of headlines located", "pass" if located / n >= MIN_LOCATED_SHARE else soft,
           f"{located}/{len(items)} ({100 * located / n:.1f}%)",
           f"with a company: {sum(1 for i in items if i.get('companies'))}")
 

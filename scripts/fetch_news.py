@@ -107,42 +107,104 @@ def is_cancelled(title):
     return bool(CANCEL_RE.search(title)) and not CANCEL_HEDGE.search(title) and not CANCEL_NOT.search(title)
 
 
-# Checked in this order after Cancelled / Blocked; the first match wins. Policy / Permits is
-# last and needs a governance phrase, so a vote or a county name alone does not make a story policy.
+# Topic rules, checked in this order after Cancelled / Blocked; the first match wins and every
+# match is kept as a tag. Rules near the top describe what is happening to a project; the later
+# ones describe what the story is about (markets, the economy, the environment, a community, a
+# government). Analysis / Opinion is a fallback for explainers, studies and columns. A headline that
+# matches nothing is General; the health check keeps General under 10% and Policy / Permits under 20%.
 CATEGORY_RULES = [
+    # "Meta announces $10B data center in Richland Parish", "Massive data center could be coming to
+    # Upstate New York town", "Potential data center eyed for former mill site"
     ("New Announcement",
-     r"\b(announc\w*|plans?|planned|propos\w*|unveil\w*|to build|will build|eyes|eyeing|"
-     r"selects?|chooses?|picks?|lands|secures?|launch\w*|new campus|mega)\b"),
+     r"\b(announc\w*|plans?|planned|propos\w*|unveil\w*|to build|will build|eyes|eyeing|eyed|"
+     r"selects?|chooses?|picks?|lands|secures?|launch\w*|new campus|mega|"
+     r"(?:could be|is|are) coming|coming to|headed to|could be built|would be built|to be built|"
+     r"potential|possible|would bring|wants to build|looks to build|to develop|would become)\b"),
+    # "AWS breaks ground in Richmond County", "Data center being built near Abilene tops out"
     ("Construction",
      r"\b(break(s|ing)? ground|groundbreaking|ground-breaking|under construction|construction|"
-     r"topping out|contractor|crews|build-?out|begins? building|starts? building)\b"),
+     r"topping out|tops out|contractor|crews|build-?out|begins? building|starts? building|being built|"
+     r"rising)\b"),
+    # "QTS expands Fayetteville campus with second phase"
     ("Expansion",
      r"\b(expands?|expanding|expanded|expansion|adds|second phase|phase (2|ii|two)|"
      r"additional buildings?|more buildings)\b"),
+    # "Developer buys 1,200 acres for data center campus", "Broker markets LeRay land for data center"
     ("Land Acquisition",
      r"(\b\d[\d,]*[- ]acres?\b|\bacres\b|\bparcels?\b|\bland (purchase|deal|sale|buy)\b|\b(buys?|bought|purchases?|"
-     r"purchased|acquires?|acquired) (\w+ ){0,2}(land|site|property|acreage|farmland)\b|\bsite acquisition\b)"),
+     r"purchased|acquires?|acquired|markets|sells?|sold|being sold) (\w+ ){0,2}(land|site|property|acreage|farmland)\b|"
+     r"\bsite acquisition\b)"),
+    # "Google opens Mesa data center", "Outage at Ashburn data center", "Job fair for new data center"
     ("Operations",
      r"\b(opens|opened|officially open|now open|grand opening|goes live|went live|comes online|now online|"
      r"online|commissioned|energized|outages?|downtime|hiring|job fair|jobs fair|ribbon)\b"),
+    # "Applied Digital shares jump on CoreWeave lease", "Equinix earnings beat", "Is the AI data center
+    # boom a bubble?" Before Deals, so a stock story with a dollar figure is a market story.
+    ("Markets / Earnings",
+     r"\b(stocks?|shares|shareholders|earnings|quarterly|q[1-4]|(?<!tax )(?<!lost )revenue|profits?|"
+     r"wall street|analysts?|bubble|investors? (worry|fear|bet|cheer)|nasdaq|s&p|dow|market cap|"
+     r"net absorption|vacancy|backlog|outlook|forecast)\b"),
+    # "Blackstone buys AirTrunk", "$2.4B financing for Abilene campus", "Data center REIT signs lease"
     ("Deals / Investment",
      r"\b(acqui\w*|merger|buys?|bought|purchase\w*|invest\w*|funding|raises?|raised|financing|financed|loan|debt|"
-     r"bonds?|reits?|lease[sd]?|leasing|joint venture|partnership|stake|ipo|valuation|billion|million|\$\s?\d)\b"),
+     r"bonds?|reits?|lease[sd]?|leasing|joint venture|partnership|stake|ipo|valuation|billion|million|\$\s?\d|"
+     r"m&a|sells?|sold|sale)\b"),
+    # "Data center could bring 300 jobs", "Tax revenue from data centers tops $1B in Loudoun",
+    # "Data center boom pushes up land prices", "Louisiana's data center surge tests economic growth"
+    ("Economy / Jobs",
+     r"\b(jobs?|workers?|workforce|employment|employees|hires|economic\w*|economy|tax (revenue|base|dollars|bill)|"
+     r"property tax\w*|revenue for|real estate|land (prices|values)|property values|home prices|housing|rents?|"
+     r"windfall|payroll|wages?|training|apprentice\w*|small business\w*|tourism|farmland)\b"),
+    # "Data center water use worries Tucson", "Neighbors say data center noise is unbearable",
+    # "Report: data center diesel generators threaten air quality"
+    ("Environment",
+     r"\b(water|aquifers?|wells?|drought|wastewater|noise|noisy|hum|decibels?|air quality|air permit|pollut\w*|"
+     r"emissions?|carbon|climate|environment\w*|wildlife|wetlands?|national parks?|diesel|generators?|"
+     r"sustainab\w*|heat island|light pollution|health|pfas)\b"),
+    # "Dominion seeks 5 GW for data centers", "Data centers drive up electric bills", "SMRs for data centers"
     ("Power / Utility",
      r"\b(power|grid|utilit(y|ies)|utility bills?|electric\w*|electricity rates?|energy|megawatts?|gigawatts?|\d+\s?[MG]W|"
      r"nuclear|reactors?|smrs?|natural gas|gas plants?|gas-fired|power plants?|gas turbines?|turbines?|solar|wind|"
-     r"batter(y|ies)|transmission|substations?|demand|load|rates?|ratepayers?|blackout|cooling|water)\b"),
+     r"batter(y|ies)|transmission|substations?|interconnection|demand|load|rates?|ratepayers?|blackout|cooling|coal)\b"),
+    # "Nvidia GPUs headed to Stargate site", "OpenAI's compute plans", "Hyperscalers race for AI capacity"
     ("AI Infrastructure",
      r"\b(ai|a\.i\.|artificial intelligence|gpus?|nvidia|compute|computing|ai factor(y|ies)|supercomputers?|"
-     r"hyperscal\w*|openai|microsoft|amazon|aws|google|alphabet|meta|oracle|xai|anthropic|stargate|crusoe|coreweave|cloud)\b"),
+     r"hyperscal\w*|openai|microsoft|amazon|aws|google|alphabet|meta|oracle|xai|anthropic|stargate|crusoe|coreweave|cloud|"
+     r"big tech|neoclouds?|chips?)\b"),
+    # "Chester residents protest data center", "Data center backlash grows in rural Georgia",
+    # "Neighbors push back on Project Sail". Before Policy, so a community fight is not counted as policy.
+    ("Community",
+     r"\b(residents?|neighbou?rs?|neighbou?rhoods?|locals|backlash|push(es|ing|ed)? back|pushback|protest\w*|"
+     r"opponents?|oppos\w*|opposition|fight\w*|fought|battle\w*|critics?|concerns?|worr\w*|petitions?|"
+     r"anti-data|outcry|uproar|angry|anger|frustrat\w*|speak(s|ing)? out|spoke out|resistance|grassroots|"
+     r"community|communities|town hall|open house|(public|community) (input|forum|meeting)s?|controvers\w*|"
+     r"sparks?|draws?|divided|divides|divisive|defeat\w*|said no|says no|no data centers?|quality of life|farmers?|rural)\b"),
+    # "Will a data center backlash help Talarico turn Texas blue?", "Candidates split on data centers"
+    # Elections and party politics, before Policy / Permits so that topic stays about permits and rules.
+    ("Politics",
+     r"\b(elections?|electoral|midterms?|primary|primaries|candidates?|campaign\w*|voters|ballots?|"
+     r"democrats?|republicans?|gop|g\.o\.p\.|dems?|partisan|bipartisan|trump|biden|harris|vance|white house|"
+     r"congress\w*|politic\w*|polls?|governor['’]s race|races? for|runs? for|running for|seat)\b"),
+    # "Planning commission recommends rezoning", "Indiana lawmakers file data center bill",
+    # "County approves data center rules", "Judge sides with county in data center lawsuit"
     ("Policy / Permits",
      r"\b(zoning|rezon(e|es|ed|ing)|moratoriums?|ordinances?|permits?|permitting|planning (commission|board)|"
-     r"board of supervisors|city council|county commission(ers?)?|public hearings?|lawsuits?|referendums?|"
-     r"tax (breaks?|incentives?)|abatements?|opposition|residents? oppose[sd]?|pushback|"
-     # Also governance, though not a vote or a county name on its own:
-     r"bans?|banned|banning|pauses?|regulat\w*|restrictions?|crackdown|lawmakers?|legislat\w*|legislature|"
-     r"senate|governor|ballots?|elections?|midterms?|voters|town hall|council|commissioners?|ndas?|"
-     r"(public|community) (input|forum|meeting)s?|transparency)\b"),
+     r"board of supervisors|city council|county commission(ers?)?|public hearings?|hearings?|lawsuits?|referendums?|"
+     r"tax (breaks?|incentives?|exemptions?|credits?)|incentives?|abatements?|approv\w*|green-?lights?|"
+     r"bans?|banned|banning|pauses?|regulat\w*|regs|rules|restrictions?|crackdown|lawmakers?|legislat\w*|legislature|"
+     r"senate|senators?|assembly|house bill|bills?|governor|gov\.|executive order|"
+     r"votes?|council\w*|commissioners?|supervisors|mayors?|officials|ndas?|transparency|"
+     r"judges?|courts?|sues?|sued|appeals?|legal|federal|feds|epa|ferc|puc|psc|task force|"
+     r"local control|agreements?|annex\w*|tif|pilot)\b"),
+    # Fallback before General: explainers, studies, reports, columns and podcasts.
+    # "What to know about the data center boom", "Opinion: Data centers are not the enemy",
+    # "Report: Fairfax County leads state in data centers near homes"
+    ("Analysis / Opinion",
+     r"\b(opinion|op-ed|editorial|column|commentary|letters?|viewpoint|perspective|guest|"
+     r"what (to|you|we) (know|need)|here['’]s|explain\w*|explainer|faq|q&a|how many|why|what|how|"
+     r"study|studies|reports?|survey|analysis|research|data shows|finds|index|ranking|map|"
+     r"podcast|video|watch|listen|interview|newsletter|the daily|weekly|roundup|recap|boom|race|rush|"
+     r"growth|surge|explosion|future|era|age of)\b"),
 ]
 COMPILED_RULES = [(name, re.compile(pat, re.I)) for name, pat in CATEGORY_RULES]
 
