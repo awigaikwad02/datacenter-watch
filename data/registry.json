@@ -55,9 +55,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-29T20:00:31+00:00",
- "count": 630,
- "visible": 629,
+ "updated": "2026-10-29T21:00:31+00:00",
+ "count": 631,
+ "visible": 630,
  "records": [
   {
    "id": "amazon-georgia",
@@ -27266,6 +27266,60 @@
    "builders": [],
    "suppliers": [],
    "name_hints": []
+  },
+  {
+   "id": "site-carroll-county-ky-2026",
+   "name": "Carroll County data center",
+   "company": "",
+   "companies": [],
+   "location": "Carroll County, Kentucky, US",
+   "state": "KY",
+   "county": "Carroll County, Kentucky, US",
+   "city": null,
+   "lat": 38.667,
+   "lon": -85.122,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "46956f1ef60d9c0d",
+     "title": "Carroll County approves community benefit agreement as part of $4B data center project",
+     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQX2poenpwb0V5Z3Z1S1RWYnk2RmNYRUVwdEM1NGxqMHUxT0dyOWNsNWNJNDFpZ0Y2S0Y2NmQ0aVVnNERCcFF1TXJDYTlBYUNBLUc4bHJFX3daUHFSUE1ra1FabDBWY0pIZUNZRTNfdmd2Z2FGeVRIYUFYdE1EcnpoWlNyM195SHJmbDZGUUEwMVdIZmMtNnBTWG4zMmh3RWJwRXp4b2Mwb3YzcE53b0o3TlBQQmI5VGNlbWJhQ3huYzdCVXhrSHlIT1llQmNqYlhsSEZBeHltaThRYmZCQjlTakRvMExMbG40VGJGTkNuODJ4TzAtWGgxNjBrVXM3Zm5RTkE?oc=5",
+     "source": "WHAS11",
+     "published": "2026-10-28T22:28:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "46956f1ef60d9c0d"
+    }
+   ],
+   "first_seen": "2026-10-28T22:28:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-28T22:28:00+00:00",
+     "status": "Announced",
+     "headline_id": "46956f1ef60d9c0d"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-10-28T22:28:00+00:00",
+     "type": "Approval",
+     "headline_id": "46956f1ef60d9c0d"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 4.0,
+   "last_news": "2026-10-28T22:28:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-carson-county-tx-2026",
