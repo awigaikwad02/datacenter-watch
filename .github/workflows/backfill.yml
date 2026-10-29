@@ -3,6 +3,8 @@ name: Backfill news
 # Manual only: fetches historical headlines window by window into data/archive/, then
 # rebuilds the project registry. Commits every 20 windows so the 6-hour job limit never
 # loses work; re-running with the same inputs resumes from data/backfill_progress.json.
+# The tests (tests/) must pass before each commit. While this runs, the hourly update loop
+# waits (shared "data-files" lock); see docs/RUNBOOK.md, "Run a news backfill".
 on:
   workflow_dispatch:
     inputs:
@@ -53,6 +55,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           END="$END_IN"; [ "$END" = "today" ] && END=$(date -u +%F)   # fixed once, so a run past midnight still resumes
           commit() {
+            # Nothing is committed while a tagging or registry test fails.
+            python -m pytest -q tests || { echo "::error::tests failed; nothing committed"; return 1; }
             python scripts/backfill_report.py
             git add data/archive data/registry.json data/backfill_progress.json data/backfill_report.json \
                     data/registry_review.json BACKFILL.md sitemap.xml
@@ -79,6 +83,7 @@ jobs:
           python scripts/registry.py --backfill
           python scripts/backfill_report.py
           python scripts/healthcheck.py --context update
+          python -m pytest -q tests
           git add data/registry.json data/backfill_report.json data/registry_review.json BACKFILL.md sitemap.xml
           git add -A projects
           if ! git diff --cached --quiet; then
