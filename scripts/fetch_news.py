@@ -227,19 +227,40 @@ STATUS_RULES = [
                 r"buys? (land|site|acres)|\d[\d,]* acres)\b", re.I)),
 ]
 
-# Companies tracked across news and projects. Patterns are case sensitive
-# whole words. A pattern can map to several companies (Stargate).
+# Organisations. Patterns are case-sensitive whole words. A name that is also a common word only
+# matches with a qualifying next word (a "guard"): "Stream Data Centers" but not "a stream of",
+# "Prime Data Centers" but not "prime location", "Galaxy Digital" but not "Galaxy", "Edged Data
+# Centers" but not "edged out". Organisations fall in five fields on every headline:
+#   companies   operators and developers: who owns or runs the data center (drives project matching)
+#   investors   who finances or owns the operator ("Blackstone to buy AirTrunk")
+#   builders    contractors, engineers and architects ("Mortenson breaks ground on ...")
+#   suppliers   equipment and chip makers ("Vertiv to supply cooling for ...")
+#   utilities   power companies and grid operators
+# Only operators create projects; a headline naming only builders or suppliers can attach to a
+# project that already exists at the same place (scripts/registry.py).
 COMPANIES = [
+    # Hyperscalers and AI labs. "Meta breaks ground on Hyperion in Richland Parish"
     ("Google", r"Google|Alphabet"),
     ("Microsoft", r"Microsoft|Azure|Fairwater"),
-    ("Meta", r"Meta|Facebook|Hyperion|Prometheus"),
+    ("Meta", r"Meta|Facebook|Hyperion|Prometheus(?! Hyperscale)"),
     ("Amazon", r"Amazon Web Services|Amazon|AWS|Project Rainier"),
     ("Oracle", r"Oracle|OCI"),
     ("OpenAI", r"OpenAI|ChatGPT"),
     ("xAI", r"xAI|Colossus"),
     ("Anthropic", r"Anthropic"),
+    ("Apple", r"Apple"),
+    ("IBM", r"IBM"),
+    # GPU clouds and AI compute. "Nebius buys 79 acres in Birmingham"
     ("CoreWeave", r"CoreWeave"),
     ("Crusoe", r"Crusoe"),
+    ("Lambda", r"Lambda(?= (Labs|Inc|Cloud|AI|data|Data|plans|signs|leases|to|will|and)\b)|Lambda's"),
+    ("Nebius", r"Nebius"),
+    ("Nscale", r"Nscale"),
+    ("Fluidstack", r"Fluidstack|FluidStack"),
+    ("Together AI", r"Together AI"),
+    ("Poolside", r"Poolside"),
+    ("Cerebras", r"Cerebras"),
+    # Colocation and wholesale developers. "QTS files plans for Fayetteville campus"
     ("QTS", r"QTS"),
     ("Equinix", r"Equinix"),
     ("Digital Realty", r"Digital Realty"),
@@ -254,14 +275,47 @@ COMPANIES = [
     ("Iron Mountain", r"Iron Mountain"),
     ("DataBank", r"DataBank"),
     ("Flexential", r"Flexential"),
+    ("CoreSite", r"CoreSite"),
+    ("Cologix", r"Cologix"),
+    ("Centersquare", r"Centersquare|CenterSquare"),
+    ("TierPoint", r"TierPoint"),
+    ("H5 Data Centers", r"H5 Data Centers|H5(?= data cent)"),
+    ("Element Critical", r"Element Critical"),
+    ("1547 Critical Systems", r"1547 Critical Systems|1547 Realty|1547(?= (data|Data))"),
+    ("DartPoints", r"DartPoints"),
+    ("Evocative", r"Evocative"),
+    ("Ascent", r"Ascent(?= (Data|data|Mission|Group)\b)"),
+    ("Edged", r"Edged(?= (Data|data|US|Energy)\b)|EdgedEnergy"),
+    ("Yondr", r"Yondr"),
+    ("Corscale", r"Corscale"),
+    ("Lincoln Rackhouse", r"Lincoln Rackhouse"),
+    ("Chirisa", r"Chirisa"),
+    ("Rowan Digital", r"Rowan Digital( Infrastructure)?"),
+    ("Provident Data Centers", r"Provident Data Centers|Provident(?= (data|Data))"),
+    ("Quantum Loophole", r"Quantum Loophole"),
+    ("Prometheus Hyperscale", r"Prometheus Hyperscale"),
+    ("Wyoming Hyperscale", r"Wyoming Hyperscale"),
+    ("Lancium", r"Lancium"),
+    ("Cloudburst", r"Cloudburst"),
+    ("Digital Edge", r"Digital Edge"),
     ("Applied Digital", r"Applied Digital"),
     ("Core Scientific", r"Core Scientific"),
+    # Bitcoin miners turning sites into AI data centers. "TeraWulf to hold meeting on Lansing project"
+    ("IREN", r"IREN|Iris Energy"),
+    ("Cipher Mining", r"Cipher Mining|Cipher Digital|Cipher(?= (to|plans|signs|data|Data)\b)"),
+    ("TeraWulf", r"TeraWulf"),
+    ("Hut 8", r"Hut 8"),
+    ("Galaxy Digital", r"Galaxy Digital|Galaxy(?=['’]s Helios)"),
+    ("Riot Platforms", r"Riot Platforms|Riot(?= (Blockchain|to|plans)\b)"),
+    ("MARA", r"MARA Holdings|MARA|Marathon Digital"),
+    ("Bitdeer", r"Bitdeer"),
+    ("CleanSpark", r"CleanSpark"),
+    ("Soluna", r"Soluna"),
+    # Energy-first and land developers. "Fermi America signs gas deal for Project Matador"
     ("Fermi America", r"Fermi America|Fermi|Project Matador"),
-    ("SoftBank", r"SoftBank"),
-    ("Apple", r"Apple"),
     ("Related Digital", r"Related Digital"),
     ("Tallgrass", r"Tallgrass"),
-    # Developers
+    ("Intersect Power", r"Intersect Power"),
     ("Tract", r"Tract(?=('s| (Inc|Capital|data|Data|plans|Plans|buys|Buys|acquires|Acquires|proposes|Proposes|files|Files|campus|Campus|park|Park)\b))"),
     ("Hillwood", r"Hillwood"),
     ("PowerHouse", r"PowerHouse Data Centers|PowerHouse"),
@@ -272,31 +326,138 @@ COMPANIES = [
     ("Skybox", r"Skybox Datacenters|Skybox Data Centers|Skybox"),
     ("Novva", r"Novva Data Centers|Novva"),
 ]
-ALIASES = [("Stargate", ["OpenAI", "Oracle", "SoftBank"])]
+# Code names that stand for several operators.
+ALIASES = [("Stargate", ["OpenAI", "Oracle"])]
 COMPANY_RULES = [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in COMPANIES]
 COMPANY_RULES += [(names, re.compile(r"(?<![\w-])" + a + r"(?![\w-])")) for a, names in ALIASES]
 COMPANY_ORDER = {name: i for i, (name, _) in enumerate(COMPANIES)}
 
+# Investors. "Blackstone's QTS ...", "DigitalBridge and SoftBank back Vantage"
+INVESTORS = [
+    ("Blackstone", r"Blackstone"),
+    ("Brookfield", r"Brookfield(?! (County|Township|Zoo|Wisconsin|Illinois|Connecticut))"),
+    ("KKR", r"KKR"),
+    ("DigitalBridge", r"DigitalBridge"),
+    ("Blue Owl", r"Blue Owl"),
+    ("Macquarie", r"Macquarie"),
+    ("BlackRock", r"BlackRock"),
+    ("GIP", r"Global Infrastructure Partners|GIP"),
+    ("Apollo", r"Apollo(?= (Global|Management|Funds|-backed|-managed)\b)|Apollo's"),
+    ("Carlyle", r"Carlyle"),
+    ("Stonepeak", r"Stonepeak"),
+    ("Energy Capital Partners", r"Energy Capital Partners|ECP(?= (to|and|buys|acquires)\b)"),
+    ("MGX", r"MGX"),
+    ("SoftBank", r"SoftBank|Stargate"),
+]
+# Builders: general contractors, engineers and architects. "Mortenson breaks ground on ..."
+BUILDERS = [
+    ("Turner Construction", r"Turner Construction|Turner(?= (to build|builds|breaks ground|selected)\b)"),
+    ("DPR Construction", r"DPR Construction|DPR"),
+    ("Holder Construction", r"Holder Construction"),
+    ("HITT", r"HITT"),
+    ("Mortenson", r"Mortenson"),
+    ("Clayco", r"Clayco"),
+    ("Hensel Phelps", r"Hensel Phelps"),
+    ("JE Dunn", r"JE Dunn|J\.E\. Dunn"),
+    ("Whiting-Turner", r"Whiting-Turner"),
+    ("Brasfield & Gorrie", r"Brasfield & Gorrie|Brasfield and Gorrie"),
+    ("Gilbane", r"Gilbane"),
+    ("Suffolk Construction", r"Suffolk Construction"),
+    ("Fortis Construction", r"Fortis Construction"),
+    ("Layton Construction", r"Layton Construction"),
+    ("Balfour Beatty", r"Balfour Beatty"),
+    ("Skanska", r"Skanska"),
+    ("Fluor", r"Fluor"),
+    ("Bechtel", r"Bechtel"),
+    ("Kiewit", r"Kiewit"),
+    ("Rosendin", r"Rosendin"),
+    ("Burns & McDonnell", r"Burns & McDonnell|Burns and McDonnell"),
+    ("Black & Veatch", r"Black & Veatch|Black and Veatch"),
+    ("Jacobs", r"Jacobs Engineering|Jacobs Solutions|Jacobs(?= (to design|wins|selected)\b)"),
+    ("AECOM", r"AECOM"),
+    ("HDR", r"HDR(?= (Inc|Engineering|to|wins)\b)"),
+    ("Corgan", r"Corgan"),
+    ("Gensler", r"Gensler"),
+    ("Page Southerland Page", r"Page Southerland Page|Page(?= (architects|Architects)\b)"),
+    ("Syska Hennessy", r"Syska Hennessy|Syska"),
+    ("kW Mission Critical", r"kW Mission Critical( Engineering)?"),
+]
+# Suppliers: power, cooling, generators and chips. "Vertiv shares jump on data center orders"
+SUPPLIERS = [
+    ("Vertiv", r"Vertiv"),
+    ("Schneider Electric", r"Schneider Electric|Schneider(?= (to|and)\b)"),
+    ("Eaton", r"Eaton(?! (County|Township|Rapids|Park))"),
+    ("ABB", r"ABB"),
+    ("Siemens", r"Siemens Energy|Siemens"),
+    ("Caterpillar", r"Caterpillar"),
+    ("Cummins", r"Cummins"),
+    ("Rolls-Royce", r"Rolls-Royce"),
+    ("GE Vernova", r"GE Vernova"),
+    ("Bloom Energy", r"Bloom Energy|Bloom(?= (fuel cells|to supply)\b)"),
+    ("Honeywell", r"Honeywell"),
+    ("Johnson Controls", r"Johnson Controls"),
+    ("Trane", r"Trane Technologies|Trane"),
+    ("Carrier", r"Carrier Global|Carrier(?= (to|and|Corp|Corporation)\b)"),
+    ("Daikin", r"Daikin"),
+    ("Nvidia", r"Nvidia|NVIDIA"),
+    ("AMD", r"AMD"),
+    ("Supermicro", r"Supermicro|Super Micro"),
+    ("Dell", r"Dell Technologies|Dell(?! (Rapids|City))"),
+    ("HPE", r"Hewlett Packard Enterprise|HPE"),
+]
+
+
+def _org_rules(pairs):
+    return [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in pairs]
+
+
+INVESTOR_RULES, BUILDER_RULES, SUPPLIER_RULES = _org_rules(INVESTORS), _org_rules(BUILDERS), _org_rules(SUPPLIERS)
+
 # Utilities and grid operators, written to a separate "utilities" field.
+# "Entergy files for gas plants to serve Meta", "ERCOT warns of data center load growth"
 UTILITIES = [
     ("Entergy", r"Entergy"),
     ("Dominion Energy", r"Dominion Energy|Dominion"),
     ("Georgia Power", r"Georgia Power"),
+    ("Southern Company", r"Southern Company|Southern Co\."),
     ("Duke Energy", r"Duke Energy|Duke's"),
     ("AEP", r"AEP|American Electric Power"),
+    ("PSO", r"Public Service Company of Oklahoma|PSO"),
+    ("SWEPCO", r"SWEPCO|Southwestern Electric Power"),
     ("Xcel Energy", r"Xcel Energy|Xcel"),
     ("Oncor", r"Oncor"),
+    ("CenterPoint", r"CenterPoint Energy|CenterPoint"),
     ("PG&E", r"PG&E|Pacific Gas and Electric"),
     ("APS", r"APS|Arizona Public Service"),
     ("SRP", r"SRP|Salt River Project"),
+    ("Tucson Electric Power", r"Tucson Electric Power|Tucson Electric|TEP"),
+    ("NV Energy", r"NV Energy"),
+    ("El Paso Electric", r"El Paso Electric"),
     ("Ameren", r"Ameren"),
     ("Evergy", r"Evergy"),
+    ("OG&E", r"OG&E|Oklahoma Gas and Electric|Oklahoma Gas & Electric"),
+    ("FirstEnergy", r"FirstEnergy"),
+    ("PPL", r"PPL Electric|PPL"),
+    ("Exelon", r"Exelon"),
+    ("ComEd", r"ComEd|Commonwealth Edison"),
+    ("Pepco", r"Pepco"),
+    ("Consumers Energy", r"Consumers Energy"),
+    ("DTE Energy", r"DTE Energy|DTE"),
+    ("Alliant Energy", r"Alliant Energy|Alliant"),
+    ("MidAmerican Energy", r"MidAmerican Energy|MidAmerican"),
+    ("Portland General Electric", r"Portland General Electric|Portland General"),
+    ("PacifiCorp", r"PacifiCorp|Rocky Mountain Power"),
+    ("Idaho Power", r"Idaho Power"),
+    ("Santee Cooper", r"Santee Cooper"),
+    ("CPS Energy", r"CPS Energy"),
+    ("Austin Energy", r"Austin Energy"),
+    ("LCRA", r"LCRA|Lower Colorado River Authority"),
     ("TVA", r"TVA|Tennessee Valley Authority"),
     ("PJM", r"PJM"),
     ("ERCOT", r"ERCOT"),
     ("MISO", r"MISO"),
 ]
-UTILITY_RULES = [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in UTILITIES]
+UTILITY_RULES = _org_rules(UTILITIES)
 
 # A headline is on topic when it names data centers, or a tracked company together with a site word.
 ON_TOPIC_RE = re.compile(r"\b(data[\s-]?cent(er|re)s?|datacent(er|re)s?|hyperscal\w*|colocation|ai factor(y|ies)|supercomputers?|server farms?|data halls?|computing (site|campus|facility|facilities))\b", re.I)
@@ -568,8 +729,13 @@ def find_companies(text):
     return sorted(found, key=lambda n: COMPANY_ORDER.get(n, 99))
 
 
+def find_orgs(rules, text):
+    """Names from one organisation list (utilities, investors, builders, suppliers) found in text."""
+    return [name for name, rx in rules if rx.search(text)]
+
+
 def find_utilities(text):
-    return [name for name, rx in UTILITY_RULES if rx.search(text)]
+    return find_orgs(UTILITY_RULES, text)
 
 
 def is_on_topic(text, companies):
@@ -602,6 +768,67 @@ def us_filter(item, all_locs, title_locs=()):
     return True
 
 
+# Project names in headlines, used by the registry to match headlines about the same site and to
+# name a record when no operator is known:
+#   "Plans for $17 billion 'Project Sail' proposed for Coweta County" -> Project Sail
+#   "Wildcat Ridge Data Center in Archbald to use huge amounts of power" -> Wildcat Ridge Data Center
+#   "TeraWulf tops out latest data center at Lake Mariner campus"      -> Lake Mariner campus
+#   "Mayor discusses potential data center at Wood Haven Technology Park" -> Wood Haven Technology Park
+# Capital letters only mean a name in sentence-case headlines, so in Title Case Headlines only
+# "Project X" counts. The plural "X Data Centers" is nearly always a company ("Fleet Data Centers
+# raises $3.8B"), so only the singular names a site. Generic words ("New", "Massive"), a tracked
+# operator alone ("Amazon Data Center") and a state alone are not names.
+NAME_PROJECT_RE = re.compile(r"(?<!Center )(?<!Centre )(?<!Campus )\bProject ([A-Z][a-z]{2,}(?: [A-Z][a-z]{2,})?)\b")
+NAME_SITE_RE = re.compile(r"\b((?:[A-Z][\w'’&.-]+ ){1,3})(Data Center|Data Centre|Datacenter|campus|Campus|Technology Park|Tech Park)(?!s)\b")
+NAME_GENERIC = set("""A An The This That Proposed Planned Possible Potential Massive Huge Giant Big Biggest Largest Large Mega
+Major Hyperscale Hyperscaler AI A.I. Artificial Intelligence Local County City Town Township State Rural Area Regional Future
+Second Third First Next Another Its Their Our Your His Her Controversial Secret Mystery Data Center Centers Campus Campuses
+Crypto Bitcoin Cloud Tech Technology Digital Gigawatt Billion Million Dollar Green Clean Solar Nuclear Gas Energy Power
+U.S. US American National Federal Is Are Was Will Could Would Should Why How What Where When Who No Yes Not Latest
+Residents Neighbors Officials Council Commission Board Opponents Critics Approves Approved Rejects Plans Plan Proposal
+Says Said Pushes Coming Built Building Opens Opening Breaks Ground Moratorium Ban Rules Vote Votes Hearing Meeting
+Inside Near At In On For To Of And With From By Over After Before About Amid Against Into Hosting College University School
+Hospital Medical Office Corporate Headquarters HQ Edge Enterprise Colocation Wholesale Retail Modular Orbital Space
+GW MW SF AB""".split())
+# Words after "Project" that are not part of a name: "Project Caprock Data Center" is Project Caprock,
+# and "Project Profile:" or "Project Manager" are not projects at all.
+NAME_PROJECT_NOT = {"Advances", "Moves", "Gets", "Wins", "Faces", "Clears", "Draws", "Sparks", "Approved", "Rejected",
+                    "Data", "Center", "Campus", "Site", "Plan", "Plans", "Proposal", "Update", "Updates", "Manager",
+                    "Director", "Details", "Profile", "Spotlight", "Labor", "Management"}
+
+
+def title_case(title):
+    """True for Headlines Written Like This, where capital letters say nothing about names."""
+    words = [w for w in re.findall(r"[A-Za-z][\w'’-]*", title) if len(w) > 3]
+    return bool(words) and sum(w[0].isupper() for w in words) / len(words) >= 0.6
+
+
+def name_hint(title):
+    """A project's own name in the headline ("Project Sail", "Wildcat Ridge Data Center"), or None."""
+    m = NAME_PROJECT_RE.search(title)
+    if m:
+        words = m.group(1).split()
+        if words[0] not in NAME_GENERIC and words[0] not in NAME_PROJECT_NOT:
+            return "Project " + (words[0] if words[-1] in NAME_PROJECT_NOT else m.group(1))
+    for m in NAME_SITE_RE.finditer(title):
+        # Judge the case of the rest of the headline, not of the name itself.
+        if title_case(title[:m.start()] + title[m.end():]):
+            continue
+        words = m.group(1).split()
+        # Drop generic words and possessives in front: "the proposed Hermantown Data Center" -> "Hermantown Data Center"
+        while words and (words[0] in NAME_GENERIC or words[0].endswith(("'s", "’s", "'", "’"))):
+            words = words[1:]
+        if not words or any(w in NAME_GENERIC or w.endswith(("'s", "’s")) for w in words) or not all(w[0].isupper() for w in words):
+            continue
+        name = " ".join(words)
+        if name in STATE_CODES or find_companies(name) or find_companies(m.group(0)):
+            continue
+        kind = m.group(2)
+        kind = "Data Center" if kind.lower().startswith(("data", "datacent")) else "campus" if kind.lower() == "campus" else kind
+        return f"{name} {kind}"
+    return None
+
+
 def tag_item(item, gaz, geo):
     """(Re)compute topic, places, companies and figures. Returns False to drop the headline."""
     if item.get("source", "").strip().lower() in geo.blocked:
@@ -630,6 +857,14 @@ def tag_item(item, gaz, geo):
     item["location_precision"] = us_locs[0]["precision"] if us_locs else None
     item["companies"] = companies
     item["utilities"] = find_utilities(text)
+    item["investors"] = find_orgs(INVESTOR_RULES, text)
+    item["builders"] = find_orgs(BUILDER_RULES, text)
+    item["suppliers"] = find_orgs(SUPPLIER_RULES, text)
+    hint = name_hint(item["title"])
+    if hint:
+        item["name_hint"] = hint
+    else:
+        item.pop("name_hint", None)
     item.pop("capacity_mw", None)
     item.pop("investment_usd_b", None)
     item.update(extract_numbers(item["title"]))
@@ -749,7 +984,7 @@ def guess_status(title):
 # Main
 # ---------------------------------------------------------------------------
 # Fields the pages never read: kept in the archive, left out of data/news.json to keep it small.
-NEWS_DROP_FIELDS = ("locations", "tags", "feed", "location_precision", "county", "cluster_title")
+NEWS_DROP_FIELDS = ("locations", "tags", "feed", "location_precision", "county", "cluster_title", "name_hint")
 
 
 def slim(it):

@@ -147,7 +147,7 @@ class Matcher:
         self.by_news, self.by_cluster = {}, {}
         # Lookup indexes for rules c-e, so matching stays fast with tens of thousands of
         # headlines. Each list keeps record order, so the first match is the same as a scan.
-        self.order, self.by_place, self.by_state, self.no_company = {}, {}, {}, {}
+        self.order, self.by_place, self.by_state, self.no_company, self.by_hint, self.by_any_place = {}, {}, {}, {}, {}, {}
         for r in self.records.values():
             self.index(r)
             for n in r["news"]:
@@ -162,6 +162,10 @@ class Matcher:
     def index(self, r):
         self.order.setdefault(r["id"], len(self.order))
         places = [p for p in (r.get("county"), r.get("city")) if p]
+        for p in places:
+            self.by_any_place.setdefault(p, []).append(r["id"])
+        for h in r.get("name_hints", []):
+            self.by_hint.setdefault((h.lower(), r.get("state")), []).append(r["id"])
         for c in r.get("companies", []):
             for p in places:
                 self.by_place.setdefault((c, p), []).append(r["id"])
@@ -193,6 +197,9 @@ class Matcher:
             "companies": set(it.get("companies", [])), "state": it.get("state"), "county": it.get("county"),
             "city": city, "precision": it.get("location_precision") or (locs[0].get("precision") if locs else None),
             "words": fn.title_words(it["title"], it.get("source", "")), "t": parse(it["published"]),
+            "hint": it.get("name_hint"),
+            # Builders and suppliers never create a project (see process).
+            "vendors_only": not it.get("companies") and bool(it.get("builders") or it.get("suppliers")),
         }
 
     def code_names(self, title):
@@ -211,6 +218,13 @@ class Matcher:
             if same:
                 same.sort(key=lambda r: (not r.get("curated"), -len(r["news"])))
                 return same[0]["id"], "code name " + code
+        # b2. the same project name ("Project Sail", "Wildcat Ridge Data Center") in the same state,
+        #     when the operators agree or one side names none
+        if inf["hint"] and inf["state"]:
+            for rid in self.by_hint.get((inf["hint"].lower(), inf["state"]), []):
+                r = self.records.get(rid)
+                if r and not r.get("hidden") and (not inf["companies"] or not r.get("companies") or inf["companies"] & set(r["companies"])):
+                    return self.resolve(rid), "name " + inf["hint"]
         # c. same company and same county or city (no time limit)
         places = [p for p in (inf["county"], inf["city"]) if p]
         if inf["companies"]:
@@ -233,6 +247,13 @@ class Matcher:
                     if t and inf["t"] and abs((inf["t"] - t).days) <= NO_COMPANY_DAYS and \
                             fn.jaccard(inf["words"], fn.title_words(n["title"], n.get("source", ""))) >= NO_COMPANY_JACCARD:
                         return r["id"], "place + similar title"
+        # f. a builder or supplier headline ("Mortenson breaks ground in Hermantown") joins the one
+        #    project already tracked at that place, whatever its operator; with two or more it joins none
+        if inf["vendors_only"] and places:
+            live = list(dict.fromkeys(x for p in places for x in self.by_any_place.get(p, [])
+                                      if not self.records[x].get("hidden")))
+            if len(live) == 1:
+                return live[0], "vendor + place"
         return None, None
 
     # ------------------------------------------------------------------
@@ -249,7 +270,8 @@ class Matcher:
         year = it["published"][:4]
         co = SLUG_ALIAS.get(company, slug(company)) if company else "site"
         rid = self.new_id(f"{co}-{slug(place)}-{(inf['state'] or 'us').lower()}-{year}")
-        name = f"{codes[0]} ({place})" if codes else f"{company} {place} data center" if company else f"{place} data center"
+        name = (f"{codes[0]} ({place})" if codes else f"{company} {place} data center" if company
+                else f"{inf['hint']} ({place})" if inf["hint"] else f"{place} data center")
         r = {
             "id": rid, "name": name, "company": ", ".join(sorted(inf["companies"], key=lambda n: fn.COMPANY_ORDER.get(n, 99))),
             "companies": sorted(inf["companies"], key=lambda n: fn.COMPANY_ORDER.get(n, 99)),
@@ -257,6 +279,7 @@ class Matcher:
             "county": inf["county"] if loc.get("precision") in ("city", "county") else None,
             "city": inf["city"], "lat": loc["lat"], "lon": loc["lon"], "precision": loc.get("precision"),
             "curated": False, "verified": False, "notes": "", "news": [], "first_seen": it["published"],
+            "name_hints": [inf["hint"]] if inf["hint"] else [],
         }
         self.records[rid] = r
         self.index(r)
@@ -304,6 +327,10 @@ class Matcher:
         self.by_news[it["id"]] = rid
         if it.get("cluster_id"):
             self.by_cluster.setdefault(it["cluster_id"], rid)
+        hint = it.get("name_hint")
+        if hint and hint not in r.setdefault("name_hints", []):
+            r["name_hints"].append(hint)
+            self.by_hint.setdefault((hint.lower(), r.get("state")), []).append(rid)
 
     def process(self, it):
         """Attach one tagged headline. Returns (record id or None, how)."""
@@ -312,6 +339,8 @@ class Matcher:
         inf = self.info(it)
         stage = fn.guess_status(it["title"])
         rid, how = self.match(it, inf)
+        if not rid and inf["vendors_only"]:
+            return None, None
         if not rid:
             codes = self.code_names(it["title"])
             figure = it.get("capacity_mw") or it.get("investment_usd_b")
@@ -469,6 +498,13 @@ def derive(r):
     r["sources_count"] = len({n.get("source") for n in news if n.get("source")})
     r["news"] = news
 
+    if not r.get("curated"):
+        # Operators only: a name that left the operator list (SoftBank is an investor) moves over.
+        moved = [c for c in r.get("companies", []) if c not in fn.COMPANY_ORDER]
+        if moved:
+            r["investors"] = sorted(set(r.get("investors", [])) | {c for c in moved if c in dict(fn.INVESTORS)})
+        r["companies"] = sorted((c for c in r.get("companies", []) if c in fn.COMPANY_ORDER), key=lambda n: fn.COMPANY_ORDER[n])
+        r["company"] = ", ".join(r["companies"])
     company, local = bool(r.get("companies")), r.get("precision") in ("city", "county")
     figure = bool(r.get("capacity_mw") or r.get("investment_usd_b"))
     if r.get("umbrella"):
@@ -480,17 +516,31 @@ def derive(r):
     else:
         r["confidence"] = "low"
     r.setdefault("hidden", False)
-    for k in ("company", "utilities", "notes", "verified"):
-        r.setdefault(k, [] if k == "utilities" else "" if k in ("company", "notes") else False)
+    for k in ("company", "notes", "verified", "name_hints") + ORG_FIELDS:
+        r.setdefault(k, "" if k in ("company", "notes") else False if k == "verified" else [])
     return r
 
 
-def attach_utilities(records, items_by_id):
+ORG_FIELDS = ("utilities", "investors", "builders", "suppliers")
+
+
+def attach_orgs(records, items_by_id):
+    """Add the organisations named in a record's headlines to the record: utilities, investors,
+    builders and suppliers for every record, and operators (companies) for detected records, so a
+    record created from "Hermantown data center plan" gains Google when a later headline names it.
+    Only headlines in this run are looked at; what earlier runs added is kept."""
     for r in records.values():
-        u = set(r.get("utilities", []))
-        for n in r["news"]:
-            u.update(items_by_id.get(n["id"], {}).get("utilities", []))
-        r["utilities"] = sorted(u)
+        news = [items_by_id[n["id"]] for n in r["news"] if n["id"] in items_by_id]
+        for k in ORG_FIELDS:
+            have = set(r.get(k, []))
+            for it in news:
+                have.update(it.get(k, []))
+            r[k] = sorted(have)
+        if not r.get("curated") and not r.get("umbrella"):
+            cos = list(r.get("companies", []))
+            for it in news:
+                cos += [c for c in it.get("companies", []) if c not in cos]
+            r["companies"] = cos
 
 
 # ---------------------------------------------------------------------------
@@ -510,7 +560,7 @@ def update(items, gaz, registry_in=REGISTRY_FILE, registry_out=REGISTRY_FILE, lo
     applied, problems = apply_overrides(m, load_overrides())
     for p in problems:
         log("  override problem: " + p)
-    attach_utilities(records, {it["id"]: it for it in items})
+    attach_orgs(records, {it["id"]: it for it in items})
     for r in records.values():
         derive(r)
     save(records, registry_out)
