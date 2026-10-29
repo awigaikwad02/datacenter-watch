@@ -99,6 +99,7 @@ CANCEL_NOT = re.compile(
     r" (?:[\w$’'.,-]+ ){0,6}?(?:moratorium|ban|freeze|pause|restrictions?|ordinance|regulations?|rules|guardrails|"
     r"limits|lawsuit|suit|challenge|appeal|petition|referendum|opposition|tax|bill|plan to|plan that|meeting|"
     r"hearing|session|vote)\b|\b(?:blocks?|blocked) \w+ from\b|\b(?:rejects?|rejected) \$\d|"
+    r"\b(?:votes?|voted|rules?|ruled) against (?:requiring|forcing|making|letting|allowing)\b|"
     r"\b(?:shares|stocks?|prices?|demand|revenue|profits?|levels?|ratings?|costs?|rates?) (?:drops?|dropped)\b", re.I)
 CANCELLED = "Cancelled / Blocked"
 
@@ -814,7 +815,8 @@ GW MW SF AB""".split())
 # and "Project Profile:" or "Project Manager" are not projects at all.
 NAME_PROJECT_NOT = {"Advances", "Moves", "Gets", "Wins", "Faces", "Clears", "Draws", "Sparks", "Approved", "Rejected",
                     "Data", "Center", "Campus", "Site", "Plan", "Plans", "Proposal", "Update", "Updates", "Manager",
-                    "Director", "Details", "Profile", "Spotlight", "Labor", "Management"}
+                    "Director", "Details", "Profile", "Spotlight", "Labor", "Management", "Resumes", "Begins",
+                    "Starts", "Breaks", "Stalls", "Halts", "Paused", "Delayed", "Returns", "Head", "Lead"}
 
 
 def title_case(title):

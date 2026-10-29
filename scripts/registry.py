@@ -532,8 +532,8 @@ ORG_FIELDS = ("utilities", "investors", "builders", "suppliers")
 
 def attach_orgs(records, items_by_id):
     """Add the organisations named in a record's headlines to the record: utilities, investors,
-    builders and suppliers for every record, and operators (companies) for detected records, so a
-    record created from "Hermantown data center plan" gains Google when a later headline names it.
+    builders and suppliers for every record, project name hints, and operators for a detected record
+    that has none, so "Hermantown data center plan" gains Google when a later headline names it.
     Only headlines in this run are looked at; what earlier runs added is kept."""
     for r in records.values():
         news = [items_by_id[n["id"]] for n in r["news"] if n["id"] in items_by_id]
@@ -542,11 +542,15 @@ def attach_orgs(records, items_by_id):
             for it in news:
                 have.update(it.get(k, []))
             r[k] = sorted(have)
-        if not r.get("curated") and not r.get("umbrella"):
-            cos = list(r.get("companies", []))
-            for it in news:
-                cos += [c for c in it.get("companies", []) if c not in cos]
-            r["companies"] = cos
+        # A record with no operator yet takes the operators of its earliest headline that names one;
+        # a record that has operators keeps them (a later "Meta and xAI" roundup does not add xAI).
+        if not r.get("curated") and not r.get("umbrella") and not r.get("companies"):
+            named = [it for it in sorted(news, key=lambda x: x["published"]) if it.get("companies")]
+            if named:
+                r["companies"] = list(named[0]["companies"])
+        hints = list(r.get("name_hints", []))
+        hints += [it["name_hint"] for it in news if it.get("name_hint") and it["name_hint"] not in hints]
+        r["name_hints"] = list(dict.fromkeys(hints))
 
 
 # ---------------------------------------------------------------------------
@@ -616,6 +620,14 @@ def tile(lat, lon, z=9):
     return z, int(x), int(y), round((x - int(x)) * 256), round((y - int(y)) * 256)
 
 
+def orgs_html(r):
+    """'Investors: Blackstone · Builders: Mortenson ...' for the organisations named in the record's news."""
+    parts = [f"<b>{label}:</b> {esc(', '.join(r[k]))}" for k, label in
+             (("investors", "Investors"), ("builders", "Builders"), ("suppliers", "Suppliers"), ("utilities", "Utilities"))
+             if r.get(k)]
+    return f'<p class="pp-orgs">{" · ".join(parts)}</p>' if parts else ""
+
+
 def record_html(r):
     news = {n["id"]: n for n in r["news"]}
     steps = sorted([dict(h, kind="status") for h in r.get("status_history", [])] +
@@ -649,6 +661,7 @@ def record_html(r):
     <div>
       <div class="kv">{"".join(f'<div><span>{esc(k)}</span><b>{esc(v)}</b></div>' for k, v in figures)}</div>
       {f'<p>{esc(r["notes"])}</p>' if r.get("notes") else ""}
+      {orgs_html(r)}
       <p><a class="btn sm primary" href="/radar#project={esc(r['id'])}">Open in Rack Radar</a></p>
     </div>
     {thumb}
@@ -681,7 +694,7 @@ def page_shell(title, desc, canonical, body):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="/assets/style.css?v=rr20">
+  <link rel="stylesheet" href="/assets/style.css?v=rr21">
 </head>
 <body class="static-page">
   <a class="skip" href="#main">Skip to content</a>

@@ -44,6 +44,7 @@ MIN_LOCATED_SHARE = 0.55
 MAX_GENERAL_SHARE = 0.10   # headlines no topic rule matched
 MAX_POLICY_SHARE = 0.20
 MAX_PAGE_BYTES = 300 * 1024
+MIN_MONTH_ITEMS = 20
 MAX_NEWS_BYTES = 3 * 1024 * 1024
 STATUSES = {"Announced", "Planned", "Under construction", "Operational", "Expansion", "Cancelled / Blocked"}
 CANCELLED = "Cancelled / Blocked"
@@ -261,7 +262,9 @@ def archive(items, ctx="full"):
           ", ".join(cross[:5]))
     # Every month from the earliest archived one to the current month has a file. Months whose
     # headlines are all marked filtered (rejected by today's rules) do not count.
-    covered = {m for m in on_disk if any(not i.get("filtered") for i in load(DATA / f"archive/{m}.json").get("items", []))}
+    # A stray old headline (one from 2019 surfaced by a search) does not start the coverage: it
+    # starts at the first month with at least MIN_MONTH_ITEMS shown headlines.
+    covered = {m for m in on_disk if sum(not i.get("filtered") for i in load(DATA / f"archive/{m}.json").get("items", [])) >= MIN_MONTH_ITEMS}
     if covered:
         y, mo = map(int, min(covered).split("-"))
         expected = []
