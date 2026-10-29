@@ -30,6 +30,8 @@ import fetch_news as fn  # noqa: E402
 
 REGISTRY_FILE = fn.DATA / "registry.json"
 OVERRIDES_FILE = fn.DATA / "project_overrides.json"
+REJECTS_FILE = fn.DATA / "registry_rejects.json"
+REJECTS_DAYS = 30
 PROJECTS_FILE = fn.DATA / "projects.json"
 PAGES_DIR = fn.ROOT / "projects"
 SITEMAP_FILE = fn.ROOT / "sitemap.xml"
@@ -616,17 +618,45 @@ def attach_orgs(records, items_by_id):
 # ---------------------------------------------------------------------------
 # One run
 # ---------------------------------------------------------------------------
-def update(items, gaz, registry_in=REGISTRY_FILE, registry_out=REGISTRY_FILE, log=print):
-    """Attach new headlines, apply overrides, rebuild derived fields, save. Returns the records."""
+def reject_reason(inf):
+    """Why a project-shaped headline started no record (see Matcher.process)."""
+    if inf["vendors_only"]:
+        return "names only a builder or supplier"
+    if inf["precision"] in ("state", "source"):
+        return "no operator, and only a state" if not inf["companies"] else "only a state"
+    return "no operator, code name or figure"
+
+
+def write_rejects(rejects, records, path=REJECTS_FILE):
+    """Keep data/registry_rejects.json: project-shaped headlines from the last REJECTS_DAYS days
+    that matched no record and started none, so a missed project can be spotted (the weekly
+    summary lists them). Headlines that a record holds by now are dropped from the file."""
+    held = {n["id"] for r in records.values() for n in r["news"]}
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=REJECTS_DAYS)).isoformat()
+    old = fn.load_json(path, {}).get("items", [])
+    merged = {x["id"]: x for x in old + rejects if x["published"] >= cutoff and x["id"] not in held}
+    items = sorted(merged.values(), key=lambda x: x["published"], reverse=True)
+    path.write_text(json.dumps({"_readme": fn.readme("registry_rejects.json"), "count": len(items), "items": items},
+                               ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def update(items, gaz, registry_in=REGISTRY_FILE, registry_out=REGISTRY_FILE, log=print, rejects_out=None):
+    """Attach new headlines, apply overrides, rebuild derived fields, save. Returns the records.
+    With rejects_out, also update that rejects file (the hourly run passes REJECTS_FILE)."""
     records = load(registry_in)
     before = len(records)
     import_curated(records)
     m = Matcher(records, gaz)
-    counts = {}
+    counts, rejects = {}, []
     for it in sorted(items, key=lambda x: (x["published"], x["id"])):
         rid, how = m.process(it)
         if how:
             counts[how.split(" ")[0]] = counts.get(how.split(" ")[0], 0) + 1
+        elif it["id"] not in m.by_news and project_shaped(it):
+            inf = m.info(it)
+            rejects.append({k: it.get(k) for k in ("id", "title", "link", "source", "published", "state", "companies",
+                                                    "builders", "suppliers")} | {"precision": inf["precision"],
+                                                                                  "reason": reject_reason(inf)})
     applied, problems = apply_overrides(m, load_overrides())
     for p in problems:
         log("  override problem: " + p)
@@ -634,6 +664,8 @@ def update(items, gaz, registry_in=REGISTRY_FILE, registry_out=REGISTRY_FILE, lo
     for r in records.values():
         derive(r)
     save(records, registry_out)
+    if rejects_out:
+        write_rejects(rejects, records, rejects_out)
     log(f"Registry: {len(records)} records ({len(records) - before} new), attached {sum(counts.values())} headlines "
         f"{dict(sorted(counts.items()))}, {applied} overrides applied")
     return records

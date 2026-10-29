@@ -208,6 +208,18 @@ Records that received headlines naming two operators with nothing in common: lik
 | `generated` | When it was written. |
 | `records` | {id, name, state, companies, example: [{companies, title, id}]}. |
 
+## registry_rejects.json
+
+- **Path:** `data/registry_rejects.json`
+- **Written by:** scripts/registry.py, every hourly cycle
+
+Project-shaped headlines from the last 30 days that matched no record and started none: possible missed projects. The weekly summary lists them; a headline leaves the file once a record holds it.
+
+| Field | Meaning |
+|---|---|
+| `count` | Number of items. |
+| `items` | {id, title, link, source, published, state, companies, builders, suppliers, precision, reason}; reason says why no record was started (only a state, no operator, only a builder or supplier). |
+
 ## backfill_report.json
 
 - **Path:** `data/backfill_report.json`

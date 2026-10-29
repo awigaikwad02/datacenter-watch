@@ -77,7 +77,7 @@ cycle() {
     git reset -q --hard && git clean -qfd projects data
     return 0
   fi
-  git add data/news.json data/registry.json data/project_overrides.json data/status.json data/archive sitemap.xml
+  git add data/news.json data/registry.json data/registry_rejects.json data/project_overrides.json data/status.json data/archive sitemap.xml
   git add -A projects
   if git diff --cached --quiet; then
     return 0

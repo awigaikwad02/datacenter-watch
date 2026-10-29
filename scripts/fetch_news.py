@@ -1329,7 +1329,8 @@ def main():
     import registry
     reg_out = Path(args.out) / "registry.json" if args.out else registry.REGISTRY_FILE
     reg_in = reg_out if reg_out.exists() else registry.REGISTRY_FILE
-    records = registry.update(kept, gaz, registry_in=reg_in, registry_out=reg_out, log=log)
+    records = registry.update(kept, gaz, registry_in=reg_in, registry_out=reg_out, log=log,
+                              rejects_out=Path(args.out) / "registry_rejects.json" if args.out else registry.REJECTS_FILE)
     registry.build_pages(records, out_dir=Path(args.out) / "projects" if args.out else registry.PAGES_DIR,
                          sitemap=Path(args.out) / "sitemap.xml" if args.out else registry.SITEMAP_FILE, log=log)
 
