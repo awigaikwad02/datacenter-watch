@@ -38,7 +38,7 @@ DATA = ROOT / "data"
 SITE = "https://therackreport.org"
 PAGES = {"index.html": "/", "newsroom.html": "/newsroom", "atlas.html": "/atlas",
          "companies.html": "/companies", "learn.html": "/learn", "methodology.html": "/methodology"}
-MAX_AGE = timedelta(hours=2)
+MAX_AGE = timedelta(hours=3)  # the loop refreshes hourly; the watchdog restarts it at 3h
 MAX_CATEGORY_SHARE = 0.30
 MIN_LOCATED_SHARE = 0.50
 MAX_PAGE_BYTES = 300 * 1024
@@ -84,15 +84,15 @@ def git(*args):
 # ---------------------------------------------------------------------------
 def pipeline(ctx):
     if ctx == "update":
-        check("Last data commit within 2h", "skip", "", "not checked while the update itself runs")
+        check("Last data commit within 3h", "skip", "", "not checked while the update itself runs")
         check("Workflow runs (last 10)", "skip", "", "not checked while the update itself runs")
     else:
         last = git("log", "-1", "--format=%cI", "--grep=Update news data")
         d = iso(last) if last else None
         if not d:
-            check("Last data commit within 2h", "fail", "none", "no 'Update news data' commit found")
+            check("Last data commit within 3h", "fail", "none", "no 'Update news data' commit found")
         else:
-            check("Last data commit within 2h", "pass" if NOW - d <= MAX_AGE else "fail", ago(d), last)
+            check("Last data commit within 3h", "pass" if NOW - d <= MAX_AGE else "fail", ago(d), last)
         runs(ctx)
 
     st_path = DATA / "status.json"
@@ -192,7 +192,7 @@ def data(ctx):
     check("news.json under 3 MB", "pass" if size <= MAX_NEWS_BYTES else "fail", f"{size / 1024:.0f} KB")
 
     up = iso(news.get("updated"))
-    check("news.json updated within 2h", "pass" if up and NOW - up <= MAX_AGE else "fail",
+    check("news.json updated within 3h", "pass" if up and NOW - up <= MAX_AGE else "fail",
           ago(up) if up else "missing", news.get("updated"))
 
     need = ("id", "title", "link", "source", "published", "category", "cluster_id")
@@ -225,9 +225,14 @@ def data(ctx):
           f"{located}/{len(items)} ({100 * located / n:.1f}%)",
           f"with a company: {sum(1 for i in items if i.get('companies'))}")
 
-    leaks = [i for i in items for l in i.get("locations", [])
+    # news.json no longer carries the full "locations" list (it is slimmed to stay small), so this
+    # looks at the archived copies of the headlines currently on the site.
+    ids = {i["id"] for i in items}
+    recent = [a for m in sorted(glob.glob(str(DATA / "archive/[0-9]*.json")))[-3:]
+              for a in load(m).get("items", []) if a.get("id") in ids]
+    leaks = [i for i in recent for l in i.get("locations", [])
              if (l.get("country") or ("US" if str(l.get("name", "")).endswith(", US") else "?")) != "US"]
-    check("No non-U.S. locations in headlines", soft if leaks else "pass", f"{len(leaks)} items",
+    check("No non-U.S. locations in headlines", soft if leaks else "pass", f"{len(leaks)} of {len(recent)} items",
           "; ".join(i["title"][:60] for i in leaks[:3]))
 
     archive(items, ctx)
@@ -541,6 +546,27 @@ SECRET = re.compile(r"(?i)(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|gh[
                     r"(?:api[_-]?key|token|password|passwd|secret)[\"']?\s*[:=]\s*[\"'][^\"'\s]{12,}[\"'])")
 
 
+# The exact permissions each workflow may ask for. A new workflow must be added here, with a reason.
+WORKFLOW_PERMISSIONS = {
+    "update.yml": ["contents: write", "actions: write"],          # commit data; see and start loop runs
+    "healthcheck.yml": ["contents: write", "issues: write", "actions: read"],  # health.json; its issue; run history
+    "watchdog.yml": ["contents: read", "actions: write", "issues: write"],     # read data; start update; issue
+    "backfill.yml": ["contents: write"],                          # commit backfilled data
+    "weekly.yml": ["contents: read", "issues: write"],            # read data; open/close the summary issue
+}
+
+
+def tests():
+    """Run the pytest suite (tests/). Fails the check when any test fails."""
+    if not (ROOT / "tests").is_dir():
+        check("Tests pass (pytest)", "skip", "", "no tests/ folder")
+        return
+    r = subprocess.run([sys.executable, "-m", "pytest", "-q", "tests"], cwd=ROOT, capture_output=True, text=True, timeout=600)
+    last = (r.stdout.strip().splitlines() or [""])[-1]
+    check("Tests pass (pytest)", "pass" if r.returncode == 0 else "fail", last[:120],
+          "" if r.returncode == 0 else (r.stdout + r.stderr)[-300:])
+
+
 def security():
     tracked = git("ls-files").splitlines()
     hits = []
@@ -564,14 +590,22 @@ def security():
             if not re.search(r"@[0-9a-f]{40}$", u):
                 unpinned.append(f"{Path(wf).name}: {u}")
         block = re.search(r"^permissions:\n((?:[ \t]+.+\n)+)", text, re.M)
-        got = sorted(l.strip() for l in block.group(1).splitlines()) if block else []
-        # The data job only commits; the health job also manages its issue and reads run history.
-        want = ["contents: write"] + (["actions: read", "issues: write"] if Path(wf).name == "healthcheck.yml" else [])
-        if got != sorted(want):
+        got = sorted(l.split("#")[0].strip() for l in block.group(1).splitlines()) if block else []
+        want = WORKFLOW_PERMISSIONS.get(Path(wf).name)
+        if want is None:
+            perms.append(f"{Path(wf).name}: not listed in WORKFLOW_PERMISSIONS")
+        elif got != sorted(want):
             perms.append(f"{Path(wf).name}: {got or 'none'}")
     check("Workflow actions pinned to commit SHAs", "fail" if unpinned else "pass", f"{len(unpinned)} unpinned", "; ".join(unpinned[:6]))
     check("Workflow permissions minimal", "fail" if perms else "pass",
-          "update: contents: write; health: + issues: write, actions: read", "; ".join(perms))
+          f"{len(WORKFLOW_PERMISSIONS)} workflows match WORKFLOW_PERMISSIONS", "; ".join(perms))
+
+    # Ground rule (docs/DECISIONS.md): no AI service, model API, API key or extra secret anywhere.
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import no_ai
+    found = no_ai.findings(ROOT)
+    check("No AI services, API keys or extra secrets", "fail" if found else "pass",
+          f"{len(found)} findings", "; ".join(found[:5]))
     check("SECURITY.md present", "pass" if (ROOT / "SECURITY.md").is_file() else "fail", "")
 
 
@@ -611,7 +645,7 @@ def main():
 
     sections = [("pipeline", lambda: pipeline(args.context)), ("data", lambda: data(args.context))]
     if args.context == "full":
-        sections += [("site", site), ("security", security)]
+        sections += [("site", site), ("security", security), ("tests", tests)]
     for name, section in sections:
         try:
             section()

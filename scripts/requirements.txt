@@ -1,2 +1,4 @@
 feedparser>=6.0
 requests>=2.31
+# Tests only (python -m pytest tests); not used by the site itself.
+pytest>=8.0
