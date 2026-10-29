@@ -175,6 +175,9 @@ window.RR = (function () {
       category: it.category || "General",
       companies: it.companies || [],
       utilities: it.utilities || [],
+      investors: it.investors || [],
+      builders: it.builders || [],
+      suppliers: it.suppliers || [],
       states: it.states || (it.state ? [it.state] : []),
       state: it.state || (it.states && it.states[0]) || null,
     });
@@ -273,6 +276,9 @@ window.RR = (function () {
         members,
         companies: [...new Set(members.flatMap((m) => m.companies || []))],
         utilities: [...new Set(members.flatMap((m) => m.utilities || []))],
+        investors: [...new Set(members.flatMap((m) => m.investors || []))],
+        builders: [...new Set(members.flatMap((m) => m.builders || []))],
+        suppliers: [...new Set(members.flatMap((m) => m.suppliers || []))],
       });
     }).sort((a, b) => b.t - a.t);
   }

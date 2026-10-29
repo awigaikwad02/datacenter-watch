@@ -1,4 +1,6 @@
-// Companies: directory cards computed from projects and headlines, with a profile modal.
+// Companies: directory cards for the operators (assets/companies.js), computed from projects and
+// headlines, with a profile modal; plus "Who builds and equips them": the investors, builders and
+// suppliers named in recent stories, each linking to the Newsroom filtered to it.
 (function () {
   "use strict";
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY;
@@ -23,6 +25,19 @@
         hay: (name + " " + info.type + " " + info.desc + " " + [...states].map((s) => R.STATES[s] + " " + s).join(" ")).toLowerCase(),
       };
     });
+  }
+
+  // Investors, builders and suppliers: story counts in the news window, most-mentioned first.
+  const VENDOR_GROUPS = [["investors", "investor", "Investors", "dollar"], ["builders", "builder", "Builders", "factory"], ["suppliers", "supplier", "Suppliers", "plug"]];
+  function vendors(stories) {
+    $("#vendorCols").innerHTML = VENDOR_GROUPS.map(([field, key, label, icon]) => {
+      const n = {};
+      stories.forEach((s) => (s[field] || []).forEach((v) => { n[v] = (n[v] || 0) + 1; }));
+      const rows = Object.entries(n).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+      return '<div class="card vendor-col"><h3 class="sub-h">' + R.icon(icon) + label + "</h3>" + (rows.length
+        ? "<ul>" + rows.map(([v, c]) => '<li><a href="/newsroom#' + key + "=" + encodeURIComponent(v) + '&range=90">' + R.esc(v) + '</a><span class="n">' + c + " stor" + (c === 1 ? "y" : "ies") + "</span></li>").join("") + "</ul>"
+        : '<p class="co-empty">None named in the last ' + days + " days.</p>") + "</div>";
+    }).join("");
   }
 
   const SPLIT = [["Operational", "operational"], ["Under construction", "building"], ["Announced", "announced"], ["Planned", "planned"], [R.CANCELLED, "cancelled"]];
@@ -85,7 +100,7 @@
       '<div class="modal-body"><p style="margin:0;color:var(--text-2)">' + R.esc(c.info.desc) + "</p>" +
       '<div class="kv four">' + [["Tracked projects", c.projects.length], ["Curated", c.projects.filter((p) => p.curated).length], ["Active states", c.states.length], ["Stories (" + days + " days)", c.news.length]].map((k) => "<div><span>" + k[0] + "</span><b>" + k[1] + "</b></div>").join("") + "</div>" +
       (c.states.length ? '<div><h3 class="sub-h">Active states</h3><div class="news-tags">' + c.states.map((s) => '<span class="tag plain">' + R.esc(R.STATES[s] || s) + "</span>").join("") + "</div></div>" : "") +
-      '<div style="display:flex;gap:8px;flex-wrap:wrap">' + (c.projects.length ? '<a class="btn sm primary" href="/radar#company=' + encodeURIComponent(c.name) + '">' + R.icon("map") + "View on the Atlas</a>" : "") +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap">' + (c.projects.length ? '<a class="btn sm primary" href="/radar#company=' + encodeURIComponent(c.name) + '">' + R.icon("map") + "View on Rack Radar</a>" : "") +
       '<a class="btn sm" href="/newsroom#company=' + encodeURIComponent(c.name) + '&range=90">' + R.icon("news") + "All headlines</a></div>" +
       '<div><h3 class="sub-h">Projects</h3>' + (projects.length ? '<table class="ptable"><thead><tr><th scope="col">Project</th><th scope="col">Status</th><th scope="col">Capacity</th></tr></thead><tbody>' +
         projects.map((p) => '<tr><td><a href="/radar#project=' + encodeURIComponent(p.id) + '">' + R.esc(p.curated ? p.name : p.name.length > 70 ? p.name.slice(0, 68) + "…" : p.name) + "</a><small>" + R.esc(p.place) + (p.curated ? " · curated" : " · detected") + "</small></td>" +
@@ -135,9 +150,10 @@
     stats(projects);
     types();
     grid();
+    vendors(R.stories(n.items));
     bind();
     openFromHash();
-    R.live((n, projects) => { cos = build(projects, R.stories(n.items)); stats(projects); types(); grid(); });
+    R.live((n, projects) => { cos = build(projects, R.stories(n.items)); stats(projects); types(); grid(); vendors(R.stories(n.items)); });
     R.ready();
   }).catch((err) => {
     console.error(err);

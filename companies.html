@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=rr19">
+  <link rel="stylesheet" href="assets/style.css?v=rr21">
   <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
 </head>
 <body>
@@ -43,7 +43,7 @@
         <section class="page-hero">
           <span class="eyebrow">Companies</span>
           <h1>Who is building America's data centers.</h1>
-          <p class="lede">Hyperscalers, AI labs, GPU clouds, developers, colocation providers, investors and energy partners. Every count here is computed from tracked headlines and projects; a company with no activity yet shows zero.</p>
+          <p class="lede">The operators: hyperscalers, AI labs, GPU clouds, developers, colocation providers, bitcoin miners turned AI hosts and energy-first developers. Every count here is computed from tracked headlines and projects; a company with no activity yet shows zero.</p>
         </section>
         <div class="stats" id="stats"><div class="skel tile"></div><div class="skel tile"></div><div class="skel tile"></div><div class="skel tile"></div></div>
         <div class="toolbar">
@@ -53,6 +53,10 @@
         <div class="chips scroll" id="types" role="group" aria-label="Company type" style="margin-top:12px"></div>
         <p class="result-count" id="count" style="margin:16px 0 0" aria-live="polite"></p>
         <div class="co-grid" id="grid"><div class="skel co"></div><div class="skel co"></div><div class="skel co"></div></div>
+        <section class="vendors" id="vendors" aria-labelledby="vendorsTitle">
+          <div class="section-head"><div><h2 id="vendorsTitle">Who builds and equips them</h2><p>Investors, builders (contractors, engineers and architects) and suppliers (power, cooling and chips) named in recent headlines. They are tracked separately from operators and never create a project on their own.</p></div></div>
+          <div class="vendor-cols" id="vendorCols"></div>
+        </section>
       </div>
       <div class="backdrop" id="back"></div>
       <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden></section>
@@ -60,8 +64,8 @@
     <footer class="site-footer" id="footer"></footer>
   </div>
   <nav class="tabbar" id="tabbar"></nav>
-  <script src="assets/companies.js?v=rr19"></script>
-  <script src="assets/app.js?v=rr19"></script>
-  <script src="assets/company-directory.js?v=rr19"></script>
+  <script src="assets/companies.js?v=rr21"></script>
+  <script src="assets/app.js?v=rr21"></script>
+  <script src="assets/company-directory.js?v=rr21"></script>
 </body>
 </html>

@@ -509,7 +509,8 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .filter-row { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .filter-row .grow { grid-column: 1 / -1; }
 @media (max-width: 1099px) { .filter-row .field:last-child { grid-column: 1 / -1; } }
-@media (min-width: 1100px) { .filter-row { grid-template-columns: 1.6fr repeat(5, minmax(0, 1fr)); } .filter-row .grow { grid-column: auto; } }
+/* Desktop: search and the two main filters, then the four organisation filters, then source and saved. */
+@media (min-width: 1100px) { .filter-row { grid-template-columns: repeat(4, minmax(0, 1fr)); } .filter-row .grow { grid-column: span 2; } }
 .filter-row2 { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
 .filter-row2 .chips { flex: 1; min-width: 0; }
 .filter-meta { display: flex; gap: 10px; align-items: center; justify-content: space-between; margin: 16px 0 0; flex-wrap: wrap; }
@@ -855,3 +856,15 @@ html .leaflet-container { font-family: var(--font); background: #1a1a1d; }
 .pop-item:hover, .pop-item:focus-visible { background: var(--surface-2); }
 .pop-item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .pop-item small { color: var(--muted); font-size: 12px; }
+
+/* Companies: "Who builds and equips them" (investors, builders, suppliers) */
+.vendors { margin-top: 40px; }
+.vendor-cols { display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); margin-top: 14px; }
+@media (min-width: 760px) { .vendor-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.vendor-col { padding: 16px 18px; }
+.vendor-col .sub-h { display: flex; gap: 8px; align-items: center; margin: 0 0 8px; }
+.vendor-col ul { list-style: none; margin: 0; padding: 0; }
+.vendor-col li { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-top: 1px solid var(--border); font-size: 14px; }
+.vendor-col li:first-child { border-top: 0; }
+.vendor-col a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
+.vendor-col .n { color: var(--muted); font-size: 12px; white-space: nowrap; }

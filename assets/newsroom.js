@@ -1,15 +1,18 @@
-// Newsroom: featured story, instant filters (company, state, source, topic, time, saved, search), day-grouped cards.
+// Newsroom: featured story, instant filters (company, utility, investor, builder, supplier, state, source, topic,
+// time, saved, search), day-grouped cards.
 (function () {
   "use strict";
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY, PAGE = 30;
-  const f = { q: "", company: "", utility: "", state: "", source: "", topic: "", range: 7, saved: false, archive: false, view: R.store("view") || "list", shown: PAGE };
+  const f = { q: "", company: "", utility: "", investor: "", builder: "", supplier: "", state: "", source: "", topic: "", range: 7, saved: false, archive: false, view: R.store("view") || "list", shown: PAGE };
   // items: data/news.json (the last windowDays days). archived: the whole archive, loaded by the
   // "Include archive" switch. older: archive months needed when the time range is longer than news.json.
   let items = [], archived = null, older = null, windowDays = 90;
   R.shell("/newsroom", "Newsroom");
 
   // ---------- URL hash <-> filters, so a filtered view can be shared ----------
-  const KEYS = ["q", "company", "utility", "state", "source", "topic", "range", "saved", "archive"];
+  const KEYS = ["q", "company", "utility", "investor", "builder", "supplier", "state", "source", "topic", "range", "saved", "archive"];
+  // Organisation filters other than the operator ("company"): filter key -> headline field and label.
+  const ORGS = { utility: ["utilities", "All utilities"], investor: ["investors", "All investors"], builder: ["builders", "All builders"], supplier: ["suppliers", "All suppliers"] };
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
     KEYS.forEach((k) => { if (h.has(k)) f[k] = k === "range" ? Number(h.get(k)) || 7 : k === "saved" || k === "archive" ? h.get(k) === "1" : h.get(k); });
@@ -40,18 +43,19 @@
     const items = base();
     if (!f.saved) return items;
     const s = R.saved.all(), ids = new Set(items.map((i) => i.id));
-    const gone = Object.values(s).filter((x) => !ids.has(x.id)).map((x) => Object.assign({}, x, { t: new Date(x.published).getTime(), companies: x.companies || [], utilities: x.utilities || [], states: x.states || [], category: x.category || "General" }));
+    const gone = Object.values(s).filter((x) => !ids.has(x.id)).map((x) => Object.assign({}, x, { t: new Date(x.published).getTime(), companies: x.companies || [], utilities: x.utilities || [], investors: x.investors || [], builders: x.builders || [], suppliers: x.suppliers || [], states: x.states || [], category: x.category || "General" }));
     return items.filter((i) => s[i.id]).concat(gone);
   }
   function match(it, skip) {
     if (skip !== "range" && !f.saved && !f.archive && Date.now() - it.t > f.range * DAY) return false;
     if (skip !== "company" && f.company && !it.companies.includes(f.company)) return false;
-    if (skip !== "utility" && f.utility && !(it.utilities || []).includes(f.utility)) return false;
+    for (const k in ORGS) if (skip !== k && f[k] && !(it[ORGS[k][0]] || []).includes(f[k])) return false;
     if (skip !== "state" && f.state && it.state !== f.state && !(it.states || []).includes(f.state)) return false;
     if (skip !== "source" && f.source && it.source !== f.source) return false;
     if (skip !== "topic" && f.topic && it.category !== f.topic) return false;
     if (f.q) {
-      const hay = (it.title + " " + it.source + " " + (it.state ? R.STATES[it.state] : "") + " " + it.companies.join(" ") + " " + (it.utilities || []).join(" ")).toLowerCase();
+      const orgs = Object.values(ORGS).map(([field]) => (it[field] || []).join(" ")).join(" ");
+      const hay = (it.title + " " + it.source + " " + (it.state ? R.STATES[it.state] : "") + " " + it.companies.join(" ") + " " + orgs).toLowerCase();
       if (!f.q.toLowerCase().split(/\s+/).every((w) => hay.includes(w))) return false;
     }
     return true;
@@ -81,7 +85,7 @@
   }
   function controls() {
     options($("#company"), counts("company", (i) => i.companies), "All companies", f.company);
-    options($("#utility"), counts("utility", (i) => i.utilities || []), "All utilities", f.utility);
+    for (const k in ORGS) options($("#" + k), counts(k, (i) => i[ORGS[k][0]] || []), ORGS[k][1], f[k]);
     options($("#state"), counts("state", (i) => i.state), "All states", f.state, (s) => R.STATES[s] || s);
     const src = counts("source", (i) => i.source), top = Object.fromEntries(Object.entries(src).sort((a, b) => b[1] - a[1]).slice(0, 40));
     options($("#source"), top, "All sources", f.source);
@@ -100,7 +104,7 @@
     const act = [];
     if (f.q) act.push(["q", "“" + f.q + "”"]);
     if (f.company) act.push(["company", f.company]);
-    if (f.utility) act.push(["utility", f.utility]);
+    for (const k in ORGS) if (f[k]) act.push([k, f[k]]);
     if (f.state) act.push(["state", R.STATES[f.state] || f.state]);
     if (f.source) act.push(["source", f.source]);
     if (f.topic) act.push(["topic", f.topic]);
@@ -144,7 +148,7 @@
     const q = $("#q");
     q.value = f.q;
     q.addEventListener("input", R.debounce(() => { f.q = q.value.trim(); render(true); }, 150));
-    ["company", "utility", "state", "source"].forEach((k) => $("#" + k).addEventListener("change", (e) => { f[k] = e.target.value; render(true); }));
+    ["company", "utility", "investor", "builder", "supplier", "state", "source"].forEach((k) => $("#" + k).addEventListener("change", (e) => { f[k] = e.target.value; render(true); }));
     $("#saved").addEventListener("change", (e) => { f.saved = e.target.value === "1"; render(true); });
     $("#archiveBtn").addEventListener("click", () => { f.archive = !f.archive; loadArchive(); render(true); });
     $("#more").addEventListener("click", () => { f.shown += PAGE; feed(); });
@@ -161,7 +165,7 @@
       else if (d.state) { f.state = d.state; render(true); $("#filters").scrollIntoView({ behavior: R.reducedMotion() ? "auto" : "smooth" }); }
       else if (d.company) { f.company = d.company; render(true); $("#filters").scrollIntoView({ behavior: R.reducedMotion() ? "auto" : "smooth" }); }
       else if (d.clear) {
-        if (d.clear === "all") Object.assign(f, { q: "", company: "", utility: "", state: "", source: "", topic: "", saved: false });
+        if (d.clear === "all") Object.assign(f, { q: "", company: "", utility: "", investor: "", builder: "", supplier: "", state: "", source: "", topic: "", saved: false });
         else f[d.clear] = d.clear === "saved" ? false : "";
         q.value = f.q;
         render(true);
