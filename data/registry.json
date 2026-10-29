@@ -1,6 +1,6 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-29T00:22:53+00:00",
+ "updated": "2026-10-29T03:56:19+00:00",
  "count": 506,
  "visible": 506,
  "records": [
@@ -15497,6 +15497,15 @@
      "published": "2026-10-28T18:32:46+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "87e944cd62f8236b"
+    },
+    {
+     "id": "d33f633ddfd41f35",
+     "title": "Prometheus Abruptly Drops Natrona Data Center Plan, Eyes New Wyoming Locations",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPN29Zc1hsNFZUZ1BBTEdkRFZEWkdwZWhfd3hwWkdDSXdqZ3Y4a3lKXzkwb0YzNkJKVWpBeGxJYTY0YmtUWTJTRHM0UWFKNUNYLTBXd20wcDkydEJ3OXlsdXhBa3RkYWVSdE5BVW13WFdhazIxN0RENlVCNDAxeG1aTkpEUnRxUTFxVld6VXJjOHJZV3doMEQ0ckYwLXhsb1JaZXctc1BLZElUZHFpUU40Sk10WWV3RV9HNjA3OUVB?oc=5",
+     "source": "Cowboy State Daily",
+     "published": "2026-10-28T23:17:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "87e944cd62f8236b"
     }
    ],
    "first_seen": "2025-10-07T07:00:00+00:00",
@@ -15523,8 +15532,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.5,
-   "last_news": "2026-10-28T18:32:46+00:00",
-   "sources_count": 4,
+   "last_news": "2026-10-28T23:17:00+00:00",
+   "sources_count": 5,
    "confidence": "low",
    "hidden": false
   },
