@@ -1,8 +1,8 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-29T04:44:09+00:00",
- "count": 625,
- "visible": 625,
+ "updated": "2026-10-29T04:53:58+00:00",
+ "count": 626,
+ "visible": 626,
  "records": [
   {
    "id": "amazon-georgia",
@@ -827,7 +827,7 @@
      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcWJzUjFtbk5PamFRWmdOSkgwLWY5dXNtVmViMEVUbWtVN1lKSnJ1bHg2RU9yUm91QUlfLWhOWVFPeTJfcmFkVmROSUprUU8yUFNzYWJGRzlDek5FeVk2RDJlTTRERFJHRy0wTE5CYV9mQkpDQl95UEZqelFwREFCWFgzRjZ0YWt3VmRhWjNRQ0wtejliWE9paU14bkRiWVJMNEFPYUdWeHVTcllMMzVuUUlJWm1PZjVKQVVEMFJydHUzRHVVQVB2bTRVZk1ydkNYaDl6b0ln?oc=5",
      "source": "Milwaukee Journal Sentinel",
      "published": "2025-08-01T07:00:00+00:00",
-     "stage_signal": "Operational",
+     "stage_signal": null,
      "cluster_id": "71328e22a3f7cefa"
     },
     {
@@ -1146,11 +1146,6 @@
      "headline_id": "95cdceced6cc3da3"
     },
     {
-     "date": "2025-08-01T07:00:00+00:00",
-     "type": "Revived",
-     "headline_id": "71328e22a3f7cefa"
-    },
-    {
      "date": "2025-08-08T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "6e8f0e56bd8c3467"
@@ -1189,6 +1184,11 @@
      "date": "2026-01-28T08:00:00+00:00",
      "type": "Approval",
      "headline_id": "b0bb43dcf7cb219d"
+    },
+    {
+     "date": "2026-06-23T07:00:00+00:00",
+     "type": "Revived",
+     "headline_id": "1b55f6a90173f5d8"
     }
    ],
    "capacity_mw": null,
@@ -5383,7 +5383,7 @@
      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNeVZ6bTU5RU13aU04SlhaZC1XUnpGOHNDaWhfdnoteXM2bXZGRkJDNW5RQTF6Qlh4bW5SLUU3bE4wYldaZE93bzFiVURyWU5Td253LUF4eHM2Z0RrM3Y5VzBTWmZ4X0x6bjRDdjhKb1JxNmdsQjZBY01Cd205eUp3SWNEM2RsMTBXbFhMbkxBeUs0V1lxZUF6NEZTZFItODZENmZiOFBNVUpkZFJ1bzFfWjhSY2lJM2NLd0NPN19pNlF5REdyb000T3c5ZnIyQlR3cFpIemM5cFQ?oc=5",
      "source": "Tucson Sentinel",
      "published": "2026-02-19T08:00:00+00:00",
-     "stage_signal": "Cancelled / Blocked",
+     "stage_signal": null,
      "cluster_id": "cedc3d1498003669"
     },
     {
@@ -31931,7 +31931,9 @@
    "hidden": false,
    "investors": [],
    "builders": [],
-   "suppliers": [],
+   "suppliers": [
+    "Carrier"
+   ],
    "name_hints": []
   },
   {
@@ -41342,6 +41344,58 @@
    "last_news": "2026-06-17T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "switch-nv-unnamed",
+   "name": "Switch, Nevada (site not yet named)",
+   "company": "Switch",
+   "companies": [
+    "Switch"
+   ],
+   "location": "Nevada, US",
+   "state": "NV",
+   "county": null,
+   "city": null,
+   "lat": 39.3,
+   "lon": -116.6,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Switch",
+   "news": [
+    {
+     "id": "590f67bf9598fd8d",
+     "title": "Switch plans massive natural gas plant to power Nevada data centers",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZ2g2MG83dWVXd0Y0LU83U1NuazlNd1Z2Tk13bkc3ZGN4TldraEt5cHFBQ0ZnUURVbkxiZHNQSmk5Z05iaktBbUpiVGY1akZOQWlseDJxam9LUklhbml3VEFWc0VsMDhuZnVlRjhKTzIycWI2NkE3NXFfRV9IdllyQmtkTVBIdkYwY0R5akJ0MGdjNzhuTDljeVZHRW5Fa1pnWjJkd1V3VnFFZDBpWmxwaGsyY0hxdnA3X2czYjRkUQ?oc=5",
+     "source": "Las Vegas Review-Journal",
+     "published": "2026-10-16T13:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "590f67bf9598fd8d"
+    }
+   ],
+   "first_seen": "2026-10-16T13:00:00+00:00",
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hints": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-16T13:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "590f67bf9598fd8d"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-10-16T13:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
    "hidden": false
   },
   {

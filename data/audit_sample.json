@@ -1,6 +1,6 @@
 {
  "_readme": "Status audit written by scripts/status_audit.py. records: a fixed stratified sample of detected registry records; for each, the status replayed from its headlines with the live rules (status_rules, history_rules) and with a stricter main-clause reading (status_strict, history_strict), and every headline's stage signal under both (rules, strict). disagreements: records whose status differs, with the headlines that differ. previous_run: the counts from the run before, to compare a rule change.",
- "generated": "2026-10-29T04:44:09+00:00",
+ "generated": "2026-10-29T04:50:46+00:00",
  "size": 150,
  "by_status": {
   "Operational": 31,
@@ -11,10 +11,10 @@
  "disagreement_count": 1,
  "headline_disagreements": 39,
  "previous_run": {
-  "generated": "2026-10-29T04:40:46+00:00",
+  "generated": "2026-10-29T04:47:17+00:00",
   "size": 150,
   "disagreement_count": 1,
-  "headline_disagreements": 25
+  "headline_disagreements": 39
  },
  "disagreements": [
   {
@@ -5065,8 +5065,8 @@
      "id": "cedc3d1498003669",
      "title": "Marana rejects referendums against Project Blue data center rezoning",
      "published": "2026-02-19",
-     "rules": "Cancelled / Blocked",
-     "strict": "Cancelled / Blocked"
+     "rules": null,
+     "strict": null
     },
     {
      "id": "129ca465ea14927b",
