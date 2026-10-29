@@ -3,7 +3,9 @@
   "use strict";
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY, PAGE = 30;
   const f = { q: "", company: "", utility: "", state: "", source: "", topic: "", range: 7, saved: false, archive: false, view: R.store("view") || "list", shown: PAGE };
-  let items = [], archived = null;
+  // items: data/news.json (the last windowDays days). archived: the whole archive, loaded by the
+  // "Include archive" switch. older: archive months needed when the time range is longer than news.json.
+  let items = [], archived = null, older = null, windowDays = 90;
   R.shell("/newsroom", "Newsroom");
 
   // ---------- URL hash <-> filters, so a filtered view can be shared ----------
@@ -22,9 +24,17 @@
   // ---------- Filtering ----------
   // Recent headlines, plus every archived headline when "Include archive" is on.
   function base() {
-    if (!f.archive || !archived) return items;
+    const extra = f.archive ? (archived && archived.items) : (f.range > windowDays && older);
+    if (!extra) return items;
     const ids = new Set(items.map((i) => i.id));
-    return items.concat(archived.items.filter((i) => !ids.has(i.id)));
+    return items.concat(extra.filter((i) => !ids.has(i.id)));
+  }
+  /** When the chosen range reaches past what news.json holds, load just those archive months once. */
+  function loadOlder() {
+    if (f.archive || f.range <= windowDays || older) return;
+    older = [];
+    R.archiveSince(Date.now() - 90 * DAY).then((list) => { older = list; render(false); })
+      .catch((err) => { console.error(err); older = null; R.toast("Couldn't load older headlines"); });
   }
   function pool() {
     const items = base();
@@ -145,7 +155,7 @@
       const b = e.target.closest("button");
       if (!b) return;
       const d = b.dataset;
-      if (d.range) { f.range = Number(d.range); render(true); }
+      if (d.range) { f.range = Number(d.range); loadOlder(); render(true); }
       else if (d.topic !== undefined) { f.topic = d.topic; render(true); const c = document.querySelector('#topics [data-topic="' + CSS.escape(d.topic) + '"]'); if (c) c.classList.add("pop"); }
       else if (d.view) { f.view = d.view; R.store("view", f.view); controls(); feed(); }
       else if (d.state) { f.state = d.state; render(true); $("#filters").scrollIntoView({ behavior: R.reducedMotion() ? "auto" : "smooth" }); }
@@ -167,7 +177,7 @@
         if (it) R.share(it.title, it.link);
       }
     });
-    window.addEventListener("hashchange", () => { readHash(); q.value = f.q; render(true); });
+    window.addEventListener("hashchange", () => { readHash(); q.value = f.q; loadOlder(); render(true); });
   }
 
   function loadArchive() {
@@ -183,6 +193,8 @@
   readHash();
   R.news().then((n) => {
     items = n.items;
+    windowDays = n.windowDays;
+    loadOlder();
     featured();
     bind();
     render(true);

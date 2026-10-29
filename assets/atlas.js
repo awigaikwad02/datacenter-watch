@@ -168,7 +168,7 @@
       (p.notes ? '<div><h3 class="sub-h">Notes</h3><p>' + R.esc(p.notes) + "</p></div>" : "") +
       '<div><h3 class="sub-h">News about this project</h3>' + ((p.news || []).length ? '<div class="headlines">' + p.news.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source || "News") + " · " + R.esc(R.fmtDate(n.published)) + (n.stage_signal ? " · " + R.esc(n.stage_signal) : "") + "</small></a>").join("") + "</div>" : '<p class="co-empty">No headlines attached to this project yet.</p>') + "</div>" +
       '<div id="archiveRel" hidden></div>' +
-      '<div><h3 class="sub-h">Related headlines</h3>' + (rel.length ? '<div class="headlines">' + rel.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>" : '<p class="co-empty">No matching headlines in the last 90 days.</p>') + "</div>" +
+      '<div><h3 class="sub-h">Related headlines</h3>' + (rel.length ? '<div class="headlines">' + rel.map((n) => '<a href="' + R.esc(n.link) + '" target="_blank" rel="noopener">' + R.esc(n.title) + "<small>" + R.esc(n.source) + " · " + R.ago(n.published) + "</small></a>").join("") + "</div>" : '<p class="co-empty">No other matching headlines in recent news.</p>') + "</div>" +
       '<div class="detail-actions">' + (source ? '<a class="btn sm" href="' + R.esc(source) + '" target="_blank" rel="noopener">' + R.icon("external") + "Latest source</a>" : "") +
       '<a class="btn sm" href="/projects/' + encodeURIComponent(p.id) + '/">' + R.icon("external") + "Project page</a>" +
       '<button class="btn sm" id="shareProject">' + R.icon("share") + "Share</button></div>" +

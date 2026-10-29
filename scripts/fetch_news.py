@@ -55,8 +55,14 @@ GAZ_FILE = Path(__file__).resolve().parent / "gazetteer.json"
 ARCHIVE_DIR = DATA / "archive"
 MONTH_RE = re.compile(r"^\d{4}-\d{2}$")
 
+# How far back the hourly run accepts headlines from a feed and refills news.json from the archive.
 NEWS_MAX_AGE_DAYS = 90
-NEWS_MAX_ITEMS = 3000
+# data/news.json keeps 90 days when that fits in NEWS_MAX_BYTES, otherwise the last 30 days.
+# There is no item cap; older headlines live in data/archive/ and the Newsroom loads them on demand.
+NEWS_WINDOW_DAYS = (90, 30)
+NEWS_MAX_BYTES = int(2.5 * 1024 * 1024)
+# Exit code for "Google is rate limiting us: skip this cycle and try again next hour".
+EXIT_BACKOFF = 75
 # Capacity figures above this are grid-wide totals ("474 GW of requests"), not one project.
 MAX_PROJECT_MW = 20000
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; TheRackReport/1.0; +https://therackreport.org)"}
@@ -344,8 +350,15 @@ def google_news_url(query):
             "&hl=en-US&gl=US&ceid=US:en")
 
 
+# Per-run counts of feeds that failed, and of those whose last answer was HTTP 429 (rate limited).
+FETCH_STATS = {"failed": 0, "rate_limited": 0}
+
+
 def fetch_feed(url):
-    """Fetch one feed, retrying 429 and 5xx responses (and network errors) with exponential backoff."""
+    """Fetch one feed, retrying 429 and 5xx responses (and network errors) with exponential backoff.
+
+    Returns the parsed feed, or None after the last try fails. Failures are counted in FETCH_STATS
+    so main() can tell "Google is rate limiting us" (back off) from an ordinary bad feed."""
     for attempt in range(1, FETCH_TRIES + 1):
         try:
             r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
@@ -362,6 +375,8 @@ def fetch_feed(url):
                 time.sleep(wait)
                 continue
             log(f"  warning: fetch failed for {url[:90]}... ({e})")
+            FETCH_STATS["failed"] += 1
+            FETCH_STATS["rate_limited"] += status == 429
             return None
 
 
@@ -660,6 +675,19 @@ def guess_status(title):
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+# Fields the pages never read: kept in the archive, left out of data/news.json to keep it small.
+NEWS_DROP_FIELDS = ("locations", "tags", "feed", "location_precision", "county", "cluster_title")
+
+
+def slim(it):
+    """A headline as written to data/news.json: no archive-only fields, no empty values, and the
+    story's display headline marked with cluster_lead instead of repeating cluster_title."""
+    out = {k: v for k, v in it.items() if k not in NEWS_DROP_FIELDS and v not in (None, [], "")}
+    if it.get("cluster_title") == it.get("title"):
+        out["cluster_lead"] = True
+    return out
+
+
 def entry_to_item(e, label, now, gaz, geo, max_age_days=NEWS_MAX_AGE_DAYS):
     """One RSS entry -> a tagged headline, or None when it is dropped (no title, unsafe link,
     too old, blocked source, off topic or outside the U.S.). The hourly run and
@@ -826,6 +854,11 @@ def main():
             fresh[item["id"]] = item
             n += 1
         log(f"  {label}: {n} items")
+    # Rate limited on more than half the feeds: write nothing and let the caller retry next hour.
+    if sources and FETCH_STATS["rate_limited"] * 2 > len(sources):
+        log(f"BACKOFF: {FETCH_STATS['rate_limited']} of {len(sources)} feeds were rate limited (HTTP 429); "
+            "leaving the data files unchanged for this cycle")
+        return EXIT_BACKOFF
     if sources and raw_total == 0:
         log("ERROR: every feed returned zero items; leaving the data files unchanged")
         return 1
@@ -851,17 +884,23 @@ def main():
     added = archive_items(kept, archive_out)
     log(f"Archive: {added} new headlines added under {archive_out}")
 
-    items = [it for it in kept if datetime.fromisoformat(it["published"]) >= cutoff][:NEWS_MAX_ITEMS]
-
     known = {it["id"] for it in existing}
     new_this_run = len([k for k in fresh if k not in known])
-    news_out.write_text(json.dumps({
-        "updated": now.isoformat(timespec="seconds"),
-        "count": len(items),
-        "new_this_run": new_this_run,
-        "items": items,
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"Wrote {news_out}: {len(items)} items")
+    # The longest window (90 days, then 30) whose file fits in NEWS_MAX_BYTES.
+    for days in NEWS_WINDOW_DAYS:
+        since = now - timedelta(days=days)
+        items = [slim(it) for it in kept if datetime.fromisoformat(it["published"]) >= since]
+        text = json.dumps({
+            "updated": now.isoformat(timespec="seconds"),
+            "window_days": days,
+            "count": len(items),
+            "new_this_run": new_this_run,
+            "items": items,
+        }, ensure_ascii=False, separators=(",", ":"))
+        if len(text.encode()) <= NEWS_MAX_BYTES or days == NEWS_WINDOW_DAYS[-1]:
+            break
+    news_out.write_text(text, encoding="utf-8")
+    log(f"Wrote {news_out}: {len(items)} items, last {days} days, {len(text.encode()) / 1024:.0f} KB")
 
     # Permanent project registry: attach project-shaped headlines to records, apply
     # data/project_overrides.json, rebuild statuses, then the static project pages and sitemap.

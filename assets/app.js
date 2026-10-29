@@ -177,7 +177,8 @@ window.RR = (function () {
   function news() {
     newsP = newsP || json("data/news.json").then((d) => {
       setUpdated(d.updated);
-      return { updated: d.updated, items: (d.items || []).map(prepNews).sort((a, b) => b.t - a.t) };
+      // window_days: how many days news.json holds (30 or 90); older headlines come from the archive.
+      return { updated: d.updated, windowDays: d.window_days || 90, items: (d.items || []).map(prepNews).sort((a, b) => b.t - a.t) };
     });
     return newsP;
   }
@@ -193,6 +194,20 @@ window.RR = (function () {
         return { index: idx, items, earliest: idx.earliest || (items.length ? items[items.length - 1].published : null) };
       }));
     return archP;
+  }
+  /** Archived headlines published on or after `since` (ms), loading only the month files that can hold them. */
+  function archiveSince(since) {
+    const first = new Date(since).toISOString().slice(0, 7);
+    return json("data/archive/index.json").then((idx) => {
+      const months = (idx.months || []).filter((m) => m.month >= first);
+      return Promise.all(months.map((m) => json(m.file).catch(() => ({ items: [] })))).then((files) => {
+        const seen = new Set(), items = [];
+        files.forEach((f) => (f.items || []).forEach((it) => {
+          if (!it.filtered && !seen.has(it.id)) { seen.add(it.id); const p = prepNews(it); if (p.t >= since) items.push(p); }
+        }));
+        return items.sort((a, b) => b.t - a.t);
+      });
+    });
   }
   function placeName(loc) { return (loc || "").replace(/, US$/, ""); }
   // Projects come from the permanent registry (data/registry.json): curated records from
@@ -246,7 +261,8 @@ window.RR = (function () {
       groups.get(k).push(it);
     });
     return [...groups.values()].map((members) => {
-      const lead = members.find((m) => m.cluster_title && m.title === m.cluster_title) || members[0];
+      // cluster_lead marks the story's display headline (older files repeat cluster_title instead).
+      const lead = members.find((m) => m.cluster_lead || (m.cluster_title && m.title === m.cluster_title)) || members[0];
       return Object.assign({}, lead, {
         members,
         companies: [...new Set(members.flatMap((m) => m.companies || []))],
@@ -630,7 +646,7 @@ window.RR = (function () {
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
     STATES, CATS, STATUS, CANCELLED, PRECISION, defaultVisible, statusSince, completedDate, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
-    news, archive, projects, freshness, live, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
+    news, archive, archiveSince, projects, freshness, live, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };
 })();
