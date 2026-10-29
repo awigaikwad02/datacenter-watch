@@ -1953,8 +1953,7 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement",
-    "Economy / Jobs"
+    "New Announcement"
    ],
    "locations": [],
    "states": [],
@@ -4723,7 +4722,8 @@
     "New Announcement",
     "Deals / Investment",
     "Economy / Jobs",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -6543,9 +6543,8 @@
    "source": "Michigan Advance",
    "published": "2025-12-16T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Markets / Earnings",
+   "category": "Community",
    "tags": [
-    "Markets / Earnings",
     "Community"
    ],
    "locations": [
@@ -9636,8 +9635,9 @@
    "source": "Fort Wayne Business Weekly",
    "published": "2025-12-12T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Operations",
    "tags": [
+    "Operations",
     "AI Infrastructure",
     "Community"
    ],
@@ -10845,10 +10845,8 @@
    "source": "CNBC",
    "published": "2025-12-12T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Markets / Earnings",
-   "tags": [
-    "Markets / Earnings"
-   ],
+   "category": "General",
+   "tags": [],
    "locations": [
     {
      "name": "Texas, US",
@@ -11374,6 +11372,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Operations",
     "Deals / Investment",
     "AI Infrastructure",
     "Community"
@@ -11447,8 +11446,9 @@
    "source": "Data Center Dynamics",
    "published": "2025-12-11T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Operations",
    "tags": [
+    "Operations",
     "AI Infrastructure"
    ],
    "locations": [
@@ -18840,7 +18840,6 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Economy / Jobs",
     "AI Infrastructure"
    ],
    "locations": [

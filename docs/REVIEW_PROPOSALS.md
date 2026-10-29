@@ -95,3 +95,16 @@ Decide whether that is the same campus (then add `"Microsoft"` to this project's
 `split` operation, as in item 1). Also, the curated status may now be "Operational": parts of the
 campus have been live since September 2025 ("Crusoe Announces Flagship Abilene Data Center is
 Live").
+
+---
+
+## Also found: curated statuses that headlines say are out of date
+
+Curated projects take their status from `data/projects.json`, never from headlines. These now
+have headlines saying they are running; if you agree, change `"status"` to `"Operational"` there.
+
+| Project | Status in projects.json | Headline |
+|---|---|---|
+| `fairwater` (Microsoft, Mount Pleasant, WI) | Under construction | Microsoft's first data center at Mount Pleasant, Wisconsin, campus now operational |
+| `google-fort-wayne` (Google, Fort Wayne, IN) | Under construction | Google's $2bn data center now operational in Fort Wayne, Indiana |
+| `stargate-abilene` (see item 5) | Under construction | Crusoe Announces Flagship Abilene Data Center is Live |

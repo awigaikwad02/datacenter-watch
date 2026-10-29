@@ -2733,7 +2733,8 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -4574,7 +4575,8 @@
    "feed": "Backfill: announced",
    "category": "Construction",
    "tags": [
-    "Construction"
+    "Construction",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -4607,8 +4609,10 @@
    "source": "City & State Pennsylvania",
    "published": "2026-05-27T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "General",
-   "tags": [],
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
    "locations": [],
    "states": [],
    "state": null,
@@ -5048,7 +5052,8 @@
    "feed": "Backfill: announced",
    "category": "New Announcement",
    "tags": [
-    "New Announcement"
+    "New Announcement",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -6275,6 +6280,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
+    "Policy / Permits",
     "Analysis / Opinion"
    ],
    "locations": [
@@ -6768,7 +6774,8 @@
    "tags": [
     "New Announcement",
     "Deals / Investment",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -9722,7 +9729,8 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "Deals / Investment"
+    "Deals / Investment",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -10305,6 +10313,7 @@
    "tags": [
     "AI Infrastructure",
     "Community",
+    "Policy / Permits",
     "Analysis / Opinion"
    ],
    "locations": [],
@@ -22582,9 +22591,8 @@
    "source": "ABC4 Utah",
    "published": "2026-05-05T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Deals / Investment",
+   "category": "AI Infrastructure",
    "tags": [
-    "Deals / Investment",
     "AI Infrastructure",
     "Analysis / Opinion"
    ],

@@ -1,8 +1,8 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-29T04:40:45+00:00",
- "count": 623,
- "visible": 623,
+ "updated": "2026-10-29T04:44:09+00:00",
+ "count": 625,
+ "visible": 625,
  "records": [
   {
    "id": "amazon-georgia",
@@ -836,7 +836,7 @@
      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNb3RMVnhxalNHS1F0Q3FYUWFobTJsc0V5LVl1cmc5MlQwcVVLeEZUSWowZXhGVjkxdkNocU84WVRYZ1ZMRXdRa0IzcUNXRmdhcklyLXFQTTdhX2w4QXgzbjdRVzNySTJ2elRrNFFFbjVqUzBhV3VCMTlUdFRmVzBiVmk0VGZQeGpyNVRUaQ?oc=5",
      "source": "Finance & Commerce",
      "published": "2025-08-08T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "6e8f0e56bd8c3467"
     },
     {
@@ -972,6 +972,15 @@
      "source": "WPR",
      "published": "2026-06-23T07:00:00+00:00",
      "stage_signal": "Announced",
+     "cluster_id": "05fc0f29956ee8a4"
+    },
+    {
+     "id": "1b55f6a90173f5d8",
+     "title": "Microsoft's first data center at Mount Pleasant, Wisconsin, campus now operational",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb2E3UlBIMFk3bWdyYXFmdmM1VDl2dEdhZUJ3dlpPeEdRbTZ4U0g4ckc3WFJEanRSMVlPSFhSUFV2NlhQRV9lanRJMzVtZ3d6aTNrMVM3TWJrSExlM2dheEFQbU5IN1ByRUlpSHNLb3RTNXJra0U3VTZuOWFsd1FveEdlZFl4NlNNS0pUY01fei14WndEWTUtMmRjOFBlMXNCUU1hOVlkMEl2Q2JnZVM1SS1zM09PMWJfNWFBclJKLTc?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-23T07:00:00+00:00",
+     "stage_signal": "Operational",
      "cluster_id": "05fc0f29956ee8a4"
     },
     {
@@ -1142,6 +1151,11 @@
      "headline_id": "71328e22a3f7cefa"
     },
     {
+     "date": "2025-08-08T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "6e8f0e56bd8c3467"
+    },
+    {
      "date": "2026-01-20T08:00:00+00:00",
      "type": "Expansion",
      "headline_id": "09ebd48801cd9c0d"
@@ -1180,7 +1194,7 @@
    "capacity_mw": null,
    "investment_usd_b": 7,
    "last_news": "2026-10-15T10:00:00+00:00",
-   "sources_count": 17,
+   "sources_count": 18,
    "confidence": "high",
    "hidden": false,
    "imported": "2026-10-26",
@@ -1527,6 +1541,15 @@
      "published": "2025-12-08T08:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7ef9df56e12c5214"
+    },
+    {
+     "id": "66324383cec666bc",
+     "title": "Google's $2bn data center now operational in Fort Wayne, Indiana",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRXdzRWZCdzRTN05YSTFfb1pPNkhlQ1czZDBmNTh4RktsLTZ5bFVLRGx0a3VSUElxck5xQ183bGV6Q0hOR0pYSjQ2VnZGVzhSeVRHZVVKYWdkU2xXSVJxenQ1QVBaSURBbUQyT2xQWnFIUm1GcncxVFozSGdSTExmNGNiRVowMFItU05lb1lFREtUMnhPdzNDY1JfMks1Y01PUk5sR0JfeXQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2025-12-11T08:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "9a141a9d393fc16b"
     },
     {
      "id": "9a141a9d393fc16b",
@@ -2613,7 +2636,7 @@
      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORUx0cS1xZXRtdUNLY1hDMVJHSTVERk9fMVJPbDQ3dHVVT3I3S3g1bU1GRXU0M29WZ2VmbTRfTWVvN0ROM0dnYTZnaEw3WDgyWVdBb1YzVzZwdTJKS1JaWGlhSlZBaGJjVWpXYVI2Yl8wMnNUMll1RnpXYlNkRXZMSHpDanAzWVdTUG8tTFR0RVBFV21KeXc?oc=5",
      "source": "KOB 4",
      "published": "2026-03-19T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "91bca5b9d51da04f"
     }
    ],
@@ -2653,6 +2676,11 @@
      "date": "2025-01-17T08:00:00+00:00",
      "type": "Expansion",
      "headline_id": "551ea05efc3e31c0"
+    },
+    {
+     "date": "2026-03-19T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "91bca5b9d51da04f"
     }
    ],
    "capacity_mw": null,
@@ -4117,6 +4145,15 @@
    "notes": "",
    "news": [
     {
+     "id": "c7ad71fe31f52ab4",
+     "title": "Aligned Data Centers to expand in DFW on 27-acre site",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcmNOQUFnb0RWUm1IbW1URnUtcTNJa1JVeXRpMG5VRm10QjI4STI2LXlZQ1FIclI4OG5aaEtBcGFzWjJ2bXpFOGVWY0M4ODBOajBxOXdiY0tEbVk2bnlzcmVhLTJSNFBtd0FqZ0Q1Z0w4enJDMEV1cW9mOXA4VklJTFc2VUdOOVBQdkYzWDN5TQ?oc=5",
+     "source": "The Business Journals",
+     "published": "2025-02-19T08:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "c7ad71fe31f52ab4"
+    },
+    {
      "id": "d067325a14dad40d",
      "title": "Aligned Data Centers Expands Dallas Site To Meet AI Demand",
      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWk5ROW5mRlYzQ1lQYXhGOHAtcWwyeVdKNXZMQU9LNFJkUzRHWUpTOW12aGE5M3Baa003WUE5M3JsNWdUWkdsOUV1cTRZcVBac0JiSTNUaFEzTnN5ZGx2NnE5S3hhUFNWdWptLXdCMFU3U0t2UUlxTEVnWC1xZUpqNmZOQXl5Q3kzYWtpMjU3LUNQdEFHT24zM3ZiUGpJRUQ0U0E?oc=5",
@@ -4135,17 +4172,22 @@
      "cluster_id": "52abfcf00c8290e0"
     }
    ],
-   "first_seen": "2025-02-20T08:00:00+00:00",
+   "first_seen": "2025-02-19T08:00:00+00:00",
    "utilities": [],
    "status": "Announced",
    "status_history": [
     {
-     "date": "2025-02-20T08:00:00+00:00",
+     "date": "2025-02-19T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "d067325a14dad40d"
+     "headline_id": "c7ad71fe31f52ab4"
     }
    ],
    "events": [
+    {
+     "date": "2025-02-19T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "c7ad71fe31f52ab4"
+    },
     {
      "date": "2025-02-20T08:00:00+00:00",
      "type": "Expansion",
@@ -4160,7 +4202,7 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2025-02-25T08:00:00+00:00",
-   "sources_count": 2,
+   "sources_count": 3,
    "confidence": "high",
    "hidden": false,
    "investors": [],
@@ -4239,6 +4281,15 @@
    "umbrella_company": "Aligned",
    "news": [
     {
+     "id": "4951fcaa0b3c9f89",
+     "title": "Project Caprock Data Center Construction Begins in Hale County, Texas With First Facility",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNGdTdkFmSG1MTWo0QVAzcnk4bXpvUU83UXJHWTQ4ZG1QWHNCcEp2VFY5OU5fbmtyanl3cmRJdXF0TUpjemREdFdyVUNHYVQ1RXc1aUp2dU1wNDlrNmdTQXF6ekpPeVV5OUcxYnlib2U1UzR3WnlmOTRSX2ZGWnpubUIzaEloQUF3UTgwVUVGWlo4WEE0RjluNzhGOTFhdUp3MDJJazhEZmVzX0tNQmhRZHg0SGhubkRWM0o2alJjRXBSdnJu?oc=5",
+     "source": "Construction Review",
+     "published": "2026-04-10T07:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "4951fcaa0b3c9f89"
+    },
+    {
      "id": "7098e49774628cd1",
      "title": "Aligned breaks ground on 540MW data center campus in Texas",
      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR1hnTy1IRWJpanRkSHFJTnBBbnVTMVlfcGhrOWN0OEsyZHJsSTFleFlyY2M0S0Y0eGJBX3hFNF9Td3RTeWNYbmFWMjNJakhqcUlJcVZVR3pUN1dZbFNZMzVfcVhDRTQ5VUR5c2YxT3lNbDNmSGlLOTBOb19ldnF1dEhhZkJUQ1JDc0k2TmlvVDk4UHp4YjZkV1FOWWpFV09zWEZnNQ?oc=5",
@@ -4273,14 +4324,14 @@
     {
      "date": "2026-04-10T07:00:00+00:00",
      "status": "Under construction",
-     "headline_id": "7098e49774628cd1"
+     "headline_id": "4951fcaa0b3c9f89"
     }
    ],
    "events": [],
    "capacity_mw": 540,
    "investment_usd_b": null,
    "last_news": "2026-05-11T07:00:00+00:00",
-   "sources_count": 3,
+   "sources_count": 4,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -4530,12 +4581,21 @@
      "cluster_id": "4c4fd0b833a8f964"
     },
     {
+     "id": "9b5aa3aaf32a0b16",
+     "title": "Apple data center in Waukee finally up and running, roughly seven years after it was pitched",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZWVjMGpJVTBDMWY3SzUySEFqVFVoRlZkaldSWWVUcFNHbjFRT3o4VnQ0czBFbW5UNHVIZVZEX1o4T0pmNGVTUUVwdU9vam83QlI4ajFFME9hZ3hZMUdQNTlFQkRzQXFqWERtOUhSOGVXS0FILUg2VkxHT3hFNl8wOFp1NjdIcWZpa3BZd2YxOEZrbUcyeUVVRHdmblRKd0VTcE41VTROVkp4MGpRVnNJa2s0dGJtUDBJaUo4ODlrdmg5X214cFJQdE8zVVRyRnVLQ0ZTWElGeGRkcUV2ZDZMbFN3?oc=5",
+     "source": "The Des Moines Register",
+     "published": "2024-10-16T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "4c4fd0b833a8f964"
+    },
+    {
      "id": "5e78fce01874f83c",
      "title": "Data center in Waukee to expand as part of Apple’s new $500 billion U.S. investment plan",
      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQWgwOThDNDgxTElEa3hvemw0dG55dFNtMks1T205MGNycEtGaDhIUEFyQnk1SEpYZ0tuOHdSRjRENWdmX0M3ZnBiNXk4OHRPZWl5MDhmZjRud2otUDhMVFRrMmg0SE1TYlVfTVhSY01lZF9PN1gtTUNhdGJPS2ZoZ2xtWkczYlRRTzd0dG5Ubm9UQk1JOS1HM050SmY0N0l4S3NFQ2YtTlR4U1VoaHhkN0d4RS10d2RqcnhqWVlqcUR4UWdpSGI4UEdLbnEwckw1c2J5Zk9EWm8wNTVz?oc=5",
      "source": "The Des Moines Register",
      "published": "2025-02-26T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "5e78fce01874f83c"
     }
    ],
@@ -4549,7 +4609,13 @@
      "headline_id": "4c4fd0b833a8f964"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2025-02-26T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "5e78fce01874f83c"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 500.0,
    "last_news": "2025-02-26T08:00:00+00:00",
@@ -4639,15 +4705,27 @@
      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNFIwcFg5MmJ5RkxWQUtWM19Za0o1ZWFuS0Q0cmxVNkp6QTQ3OF9FZHVrMVRWQkEtX2FlYzJlb3NVNHI4cnE1S3o5bHdpejgwazN5ejk3SFJ0UHBjTVZQam5VZXU1WmNaT3NpR3MxMnc1a0FLNWtoNS1uaFU4dE84LW5pR1E3TlZPVUliQm1xa0p2c3lyVGNsTkp3ZTY0MTE1akhwMWxWTQ?oc=5",
      "source": "Data Center Dynamics",
      "published": "2025-04-07T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "8d09fc31033c3e02"
     }
    ],
    "first_seen": "2025-04-07T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [],
-   "events": [],
+   "status_history": [
+    {
+     "date": "2025-04-07T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "8d09fc31033c3e02"
+    }
+   ],
+   "events": [
+    {
+     "date": "2025-04-07T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "8d09fc31033c3e02"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 0.175,
    "last_news": "2025-04-07T07:00:00+00:00",
@@ -5174,6 +5252,60 @@
      "cluster_id": "5f7d4b6a6fce75ff"
     },
     {
+     "id": "c289e60348a9b656",
+     "title": "The Project Blue data center proposal sprang up fast — so did the organizing",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOWFvYklUNGpzR25wR0s5b1daaXoySmVldFE5NUpHSmNIX3pyckNJdHZfbEdCYjI2MkhVNHFXdElGQVM4YmgxWnhUSlZqN0puOWt0Tl9TamxhZHpRek0tdUhXWmJNc3NubzlibUlKVmZieHhNdy1nYWRVLTNndUVKMTBRRkVFR2otWUoteElGcl9ZY1RlREZiV0VyNWRmdktEMDY0?oc=5",
+     "source": "AZ Luminaria",
+     "published": "2025-07-21T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "c289e60348a9b656"
+    },
+    {
+     "id": "cfb9ffe6e3b185c4",
+     "title": "Project Blue: Transformational Data Center Campus Proposed for Southeast Tucson",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUmw2QzluTVNySGNXeGd6QTFYcS1rdG95SF9QVGR2bl80Y2ViUFd0RUhQVGczcmYteDRYdWk3bU5BSUVOTk12Rm8wWDU3TmVBUFdMVUdLOXlWUkxHdWtBN3g5NzRIYndxUFpfdUFEMVJ5MmRKYW9sYklNSjhZcXYxN0JoX2Y0TU4xMlRxV0FwdTJfX1dpdWdPd2Q5MWwyRFdoRHFKcjMtd3g2NEZzMk9DeHBB?oc=5",
+     "source": "Real Estate Daily News",
+     "published": "2025-07-22T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "cfb9ffe6e3b185c4"
+    },
+    {
+     "id": "d4013a2caa1aeeb0",
+     "title": "Company behind Project Blue data center unveils information, sparking debate amongst attendees",
+     "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdGZ6dFdUNlhrdEItb1JwOUZrZ3FtMHEtY0pBU0pTdEE5MUljdUlGX2pNRDlvSjRjaTVwQkE1RkgtaUhnUS1SV2tscWUyS19XSXJhSDB5cnpnbnAxYzU2VjdSN2d2RGVNbmxfWEtQaVpTbXJQOTE0SWlKSWZicGpuTmlDYmRsQ3JueFFNaWZaWUxFQ2taMHd0OHNUclpuRDk5cjBLQXBkeFZfYkdfNmtxTWJJdGs5MFNxTFFmR2lrSVZHQWFaQktqemR1eEtUMktnU3MxQ0NDY0ZhNzFuR0FlTWwyTHR1aWtOMjBn?oc=5",
+     "source": "KGUN 9",
+     "published": "2025-07-24T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d4013a2caa1aeeb0"
+    },
+    {
+     "id": "351d91bf9da0c0be",
+     "title": "Hundreds demand answers on Tucson's proposed Project Blue data center at heated community meeting",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZlhOVHd0OG9xMnFaMmxGRktIckQ1ZC02Q3czTzBqYkNrNVh0NEdVMVlDSDl0enNHZEFzWG9vaWExWGVLSUtKUkp5MkdNeHV3NWtWd2xyYlozLU1uQzNpUVpKMmlBRGVxb3lQTTBRLVlld0VNNjhiN0RjM1pqeTBDY1FNT1I2dkQwZTJWeUw3SDJkX3JJN1N3OUtqd2w0ajFxRzRQZDgtZXRtaGVJVExMMTF1Vl9UeG5IdlRWNUFDbkJyZE5DTUpvUUhSM1Y?oc=5",
+     "source": "AZ Luminaria",
+     "published": "2025-07-25T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "351d91bf9da0c0be"
+    },
+    {
+     "id": "1633bb277ac952a9",
+     "title": "Project Blue Rejected: Deep dive into ‘hyperscale’ data centers",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVEh3TXNOcGpMRDd2bHZsRGVUV1VFVGY1YlloSlU0WFZ1MmJTUTFhOUhGMnc1STJIZ3QyazhBdXd0WjhjbkRjVk1DdF96WFdwaWo5b0tpR3ROUmRKcGI4NEVudkdHQjhpLVlUcXZsa0xPbC05ZElFMEU0MXpldndLYVdyM00tajFkSE56YWlaOVdYeXZhTWRmONIBrAFBVV95cUxOdWdQZ21JUVdDOFhOQ0Nibzk5Rlk1bGNHX0FGWUZ3dU9DWWdJYXhyVERjZnltQTdFbF9NT3hoZEkyRzBSbUk0UnNnREhpYURXUjVOVHh0VDZFbVc1Q2dHQnJMOWJSckh0QWRaWGJISjE3Y3RvQ2xzcUEwd0FoaWJQaGFyYm5nRWJ0Ui1oSmdfV2E4V0ZteGoyTHlPX0lGUVRYcG1KdDlPaVM4aE1w?oc=5",
+     "source": "KOLD",
+     "published": "2025-08-06T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "1633bb277ac952a9"
+    },
+    {
+     "id": "48ac616ea008f691",
+     "title": "Tucson City Council rejects Project Blue data center amid intense community pressure",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTzZsNXgwSW0tRHdwTGQ1NHF1VHkzaTBRbDY4UThSbjBrVW8tU0czX09VdHh4X3ZISlJkcXhhcWNuSjAyQjlZenIzUmVBVGpiU3FRTUt3cWZTalhWRy1HdjZVd2RNem5iNTRnVzlleUR5eGVGVHZmRmZwRWdPdjVJMjRIR080Uk44X0k2dmluZXBVXzhOVXlwVDAxeXlzemJ2bFc2SWlyam5Gb0xv?oc=5",
+     "source": "AZ Luminaria",
+     "published": "2025-08-06T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "48ac616ea008f691"
+    },
+    {
      "id": "89cf8fbf1c495767",
      "title": "Tucson council blocks Amazon data center after public outcry",
      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWkZXdlRtZkxWSmNleUhMTWdIYkxuLUZ2SzdWSVpvQ3JxYUJnYjk3eW91Rnd3d2xTbFdZS0hIbjhDNUhobFN0TG8xME5ScmVIZTJpdU5oSmRVZmdNTndxdXFVU3pNMHo1VUhsZU40V3V1S29MZl82cVpqMnZnUHNKMjlwOWdQNnBtbUhkSlVOM1JUc2lPUU9CNjZNUlljTnM?oc=5",
@@ -5181,6 +5313,15 @@
      "published": "2025-08-07T07:00:00+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "89cf8fbf1c495767"
+    },
+    {
+     "id": "68d2be283f3b2826",
+     "title": "The End of Project Blue | Tucson City Council pulls the plug on the controversial data center",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaU9BMmNsanc0djJPa094OVM1ZWZtR1pwYlhxYjhvT3FUMjJxWm1DTS1BSkd1aG1tSk5UbUJRM3RMNENPNGN6SENGUmhMYXZfSklSMS1fYmhJdVo4bWJnVVJNeV9iZGxJaXlOSlJldnZ6cV9tOFZ4RGthclFJeWp5YjlQR0pRWE5lOWtlWE1KRzVkMFlaeG1pYnlsZWhWQk02a2FHV3pvZERqU0M1bDNyZ3BpTktDbGVCTzBRZGZJQVlUVVRzMXBwSXY0NU1sb29Jd244?oc=5",
+     "source": "AZPM",
+     "published": "2025-08-08T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "48ac616ea008f691"
     },
     {
      "id": "ce0dca6b30d1598e",
@@ -5192,6 +5333,15 @@
      "cluster_id": "ce0dca6b30d1598e"
     },
     {
+     "id": "bc7c5a2880b4ff72",
+     "title": "Plan B for Project Blue: Records reveal 3 other sites considered for controversial data center",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRkpyczlxekdWXzhfTHRqUUtxYk9FQ1hRS0ktUzFzbkxoTlo5YlAzM0dHWnVHNXZjanFOWFRQUkUyWG1Qa1pWc0gyMTRvT0tfU2dSYzd4bVlKSGM2cWdUNi1IVTlxTWpfcl9jdXZyTURhUG0zZlBVMXBJdzFLemdZTFlqU0xFb1JzWTI5eVBHUXpKXzJnZHhtSDVQdzAwS2g1V1d3OU9xNUVzdHVSZERDR3NqRnBCUlZCdURodkhBVnZwVlBwcEJLSw?oc=5",
+     "source": "AZ Luminaria",
+     "published": "2025-08-15T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "bc7c5a2880b4ff72"
+    },
+    {
      "id": "0dd9b2199d970b4d",
      "title": "Amazon's planned data center won't be cooled with as much water. Here's what it will use",
      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLU91Nmt2Q2JEMV9pT2ZubVU1dl9CbXMzVEo2Mkx2STNfUHdMZjhMR0tRWEJBblFXdU9uaW5RdllFdVNqRHEyMmFDdDdkLXlIMDROeS02dlhPV3c1WWtpV24zWUlrYm1FWDRvVHJXMzVMX0hyTndoMEZlSlpJZUhQMGVkb0hkTjZzZXZtdUZaX1hMejBKbFg5UXlRdVFGakV3d2swbkxjQ1c3dmFrYzBYeXVCOGgtSnZ4c01hN3l5cVoxc1BiV0kyMVdJWnZ2MW1nSEQzM25sSQ?oc=5",
@@ -5199,6 +5349,15 @@
      "published": "2025-09-19T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "0dd9b2199d970b4d"
+    },
+    {
+     "id": "3191126efa0c29f2",
+     "title": "Project Blue developer applies for 600 acres in Marana to build data center campus",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTXhsUkRPRjloeUQyV0U4RFk2LU80YW8tekVTQURoUmtfYW91bFV2aGFfLVpPcERNemVqMWZkalpCVHJVV3BHdVdJSmtVVFVvZHRsWUllcEstYm9ybHV2QUlLdDZUdkJ5QTFwTWtfMzJjTVdSMFhSakMtREpHYzNLcXJUN3V6b2FHWnBYRkp3b3lMMVZRSGFMUWQzRVhLVzJ2MEJoSGRCUm5SRFpHdDFxS0VyY2hxT0I1c216dWdZYw?oc=5",
+     "source": "azcentral.com and The Arizona Republic",
+     "published": "2025-10-31T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3191126efa0c29f2"
     },
     {
      "id": "d7063ff99986649f",
@@ -5217,6 +5376,24 @@
      "published": "2025-12-09T08:00:00+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "c57999c59ed72eda"
+    },
+    {
+     "id": "cedc3d1498003669",
+     "title": "Marana rejects referendums against Project Blue data center rezoning",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNeVZ6bTU5RU13aU04SlhaZC1XUnpGOHNDaWhfdnoteXM2bXZGRkJDNW5RQTF6Qlh4bW5SLUU3bE4wYldaZE93bzFiVURyWU5Td253LUF4eHM2Z0RrM3Y5VzBTWmZ4X0x6bjRDdjhKb1JxNmdsQjZBY01Cd205eUp3SWNEM2RsMTBXbFhMbkxBeUs0V1lxZUF6NEZTZFItODZENmZiOFBNVUpkZFJ1bzFfWjhSY2lJM2NLd0NPN19pNlF5REdyb000T3c5ZnIyQlR3cFpIemM5cFQ?oc=5",
+     "source": "Tucson Sentinel",
+     "published": "2026-02-19T08:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "cedc3d1498003669"
+    },
+    {
+     "id": "129ca465ea14927b",
+     "title": "Arizona water officials approve wells tied to Project Blue data center",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZldGeV92NlUzXzY5c0tBem1LWDJyZW0wOGNEZHJORjh6b2V1NG9ib1l0SVBQR2d1ZG9GNWszOTFlVVB4YnQ2cVNuaU5POTFDUlJvZlh4b1Zxa1BDdl83VmlDZ241QmdEeEh1eGUyWXVmeDYtVWhHM2J0TG1EMExLcWdPRWxidlItd2Z0em80Wi0xd3NOb3E3a3NTZVVVMnJtV25N?oc=5",
+     "source": "AZPM",
+     "published": "2026-05-28T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "129ca465ea14927b"
     },
     {
      "id": "ff7f904396c60f66",
@@ -5238,22 +5415,27 @@
      "headline_id": "5f7d4b6a6fce75ff"
     },
     {
-     "date": "2025-08-07T07:00:00+00:00",
+     "date": "2025-08-06T07:00:00+00:00",
      "status": "Cancelled / Blocked",
-     "headline_id": "89cf8fbf1c495767"
+     "headline_id": "1633bb277ac952a9"
     }
    ],
    "events": [
     {
-     "date": "2025-08-07T07:00:00+00:00",
+     "date": "2025-08-06T07:00:00+00:00",
      "type": "Cancelled",
-     "headline_id": "89cf8fbf1c495767"
+     "headline_id": "1633bb277ac952a9"
+    },
+    {
+     "date": "2026-05-28T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "129ca465ea14927b"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.277,
    "last_news": "2026-09-07T07:00:00+00:00",
-   "sources_count": 4,
+   "sources_count": 10,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -5722,15 +5904,27 @@
      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVTh2WG0wUHB2R0FvYmF1a0xOdEhrdWQxWUdsN3pfOGtLSzdheFNJNm5rd2EyZjIzUERqWGZLdDQtMkdlSmYxdUlhQ2l2UnM1UjA3NHM1Si1pZlFSQm5jdDRMNlRCMVRuMS02bHJpeXludlk4angtcmxrRjZVVHRlTExpUGVUcWFzQ2Jyc19WQWJZVVVOTW5UVFBWTGttZ0VvdWxna2tkM1hXSzRnZGNBYlhuYTNWTnNjT1hOQXJKejVrWDU2TVNMM0tEQ3ZBaTRFU04zUERGUHlOV3ZaTERHbHZn?oc=5",
      "source": "Data Center Dynamics",
      "published": "2025-04-25T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "dbe52bd087417f86"
     }
    ],
    "first_seen": "2025-04-25T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [],
-   "events": [],
+   "status_history": [
+    {
+     "date": "2025-04-25T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "dbe52bd087417f86"
+    }
+   ],
+   "events": [
+    {
+     "date": "2025-04-25T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "dbe52bd087417f86"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2025-04-25T07:00:00+00:00",
@@ -5768,7 +5962,7 @@
      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTTVZNEYzRFExUU1rRHRuSEEzLXgxUm5hbXBEaWdUSUxoYlBJNk9xMmp0OUZpejlnclBQUmhvdDZBWFp4bEVFT2lObW5VQWh4U1BSSktLUlM4UGhMN1NWUXhGbFVmUjE5QUNwaExNUmRPYl94Zi1xQ09ka0Z1MUlycURMNDJWbGtzRzVJSklZanpfbUJNSkRYS2o2T3gydzcxOHBMYzlQVHJZSzQ5cHFQVGtSeGxzV3M?oc=5",
      "source": "TechCrunch",
      "published": "2025-01-07T08:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "242fb325a3b8979d"
     },
     {
@@ -5786,12 +5980,18 @@
    "status": "Announced",
    "status_history": [
     {
-     "date": "2025-08-04T07:00:00+00:00",
+     "date": "2025-01-07T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "3590663af2767f01"
+     "headline_id": "242fb325a3b8979d"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2025-01-07T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "242fb325a3b8979d"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 11.0,
    "last_news": "2025-08-04T07:00:00+00:00",
@@ -6605,7 +6805,7 @@
      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaWlCZWFtZml3SlVBeDE0d3BNekNTRGdvcjVZbDZhQWkxRjNCUmRZVjMwV3p1eGo2T0tiT24tc01Za1lxU3V5NDJUQklrT3BiVkQtSVRTc2FmNEtMTGROeWNtLWpNWkU0VWtTNkFrYzBMRmFpVHROSmY5eFhMVjd5Z0JVb0d3NXg1VlNyblhFMHlSOEV5eXNqemhnOGpRUXhzNG5ORmRjd1BrSzAxVkU5aldxeXJERFo0OXc?oc=5",
      "source": "ABC17NEWS",
      "published": "2026-10-22T21:39:04+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "f5a4f243a22f02d9"
     },
     {
@@ -6614,7 +6814,7 @@
      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaWlCZWFtZml3SlVBeDE0d3BNekNTRGdvcjVZbDZhQWkxRjNCUmRZVjMwV3p1eGo2T0tiT24tc01Za1lxU3V5NDJUQklrT3BiVkQtSVRTc2FmNEtMTGROeWNtLWpNWkU0VWtTNkFrYzBMRmFpVHROSmY5eFhMVjd5Z0JVb0d3NXg1VlNyblhFMHlSOEV5eXNqemhnOGpRUXhzNG5ORmRjd1BrSzAxVkU5aldxeXJERFo0OXc?oc=5",
      "source": "ABC17NEWS",
      "published": "2026-10-22T21:39:04+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "f5a4f243a22f02d9"
     },
     {
@@ -6623,7 +6823,7 @@
      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTEdjMllSa3FocVZMYVFLLWZBRzBtbTVhZ0NpVUgyTzQ4VThheWtiWkU2VlZYRUF3b0RZeVFSQi1LaXZ3b3FzbzI5UDFqZG5IRHRJbk1NMjQxRlBCVWxkN2ZBNVRUSE9FOGcyMHZwZW5HdzlHZFc5ZDVsbkpaOUVuYTRvY2VWR0t3dngyVmhQV1p4X0k5cjlYa1M5dWNRMXJvSFRqZFExNlNxamFJbEpsQ3QycFIxdw?oc=5",
      "source": "Data Center Dynamics",
      "published": "2026-10-26T10:46:16+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "06edd7d1386b71e7"
     }
    ],
@@ -6637,7 +6837,18 @@
      "headline_id": "02d3f3840e48baa1"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-10-22T21:39:04+00:00",
+     "type": "Expansion",
+     "headline_id": "49cea0d9181ffbc1"
+    },
+    {
+     "date": "2026-10-26T10:46:16+00:00",
+     "type": "Expansion",
+     "headline_id": "06edd7d1386b71e7"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 10.0,
    "last_news": "2026-10-26T10:46:16+00:00",
@@ -7030,7 +7241,7 @@
      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR0MwUXYtT3h4TExGVURXRWlEdHNPdngzemlOOFQ3bW1EWVBIZFdwOVY5OEtESmVwWVVJa21GcU5BTHZudEJWU05nSkJHdGpSX2VjeFc3TzRJQzE0X18wWXd5dFh0NWJNZTVvN3ViTk14YTdKR19UQjBzZ2NCdl83bGVwZ2dScnB5Q2xVSzlnVVh2dzFaQ1ZfT0R3?oc=5",
      "source": "WLWT",
      "published": "2024-12-16T08:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "259c6b6c58d2c836"
     },
     {
@@ -7039,7 +7250,7 @@
      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdTRLUF8xd1ZrNzIxbVdGNE43SklWczA1anNvZ1lINGlHclFxLTQzNXlxazBfY1NjV0t2cnRXeWRlaFZudFdPdlE4OXkzQVh0WHNiYnhSelp1MEZUb2d2a0ZwU2poNEU0TjdSckZzNmdOR0ZvTktDMmVIRDZ6anJHRThUU0NCamw5R1NmNVI4WmVCaHdyZWs0cDFaVTdfWElNM0RZeUVEM0Vic19jcjEtMFNsX2xHYVI2cUNaWjAwSFNlUQ?oc=5",
      "source": "Scioto Valley Guardian",
      "published": "2024-12-16T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "d9c7518718b4941a"
     },
     {
@@ -7138,7 +7349,7 @@
      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTWFXWHBlR25JWlcwemxJOVFnRlAwVUtPTnY4Qm1RaGNKTHROVWh5THhCeVRkcUl5U205bC1EVkNnWUpzVTBtbGZSYmRGZFFwZktFSHY4V2NRa0JJamFNdnVEVXhua1VHZl9zTXhtSFB5bnhFUHZiUE5wQ3RDSUV6UXZhc05nSlpvMmdSU3RZS2xia25pbDQ3VXFHb29WS2JMNTBvMUc1aUxGRFhhNHlOVWVKTVJCX1dFNnZnZjJFWUItZ2NHU0xfaWlkR0htaEw50gHkAUFVX3lxTFBsMHhYQU9YUl82WktrT1NIbzkxM1BROTYxZEJHUGlaX2E5NF9ta0tSVWN3MFpRdnMwWHZ3bzdIOGRXcFpEc2pvM2xtQkZ0Y0tfaXdZaDkwckNwdTVlUnNWRGliU21RcHNQbUt6ZHoyUDlMZ2xCakNfdlJGVFBNUmU3MzhHX3N4T0JLZ213RndyLW9ZdlczY1pCNTJnb1hWYWdaaWtobnl2Vi11VlNKVFY3N1dkT0x0cmkya19vVENOMS1lakUtSTlvazl2eEZfZ3l0TnNrb1VsWEk3Y3dtTWtvY2hUQQ?oc=5",
      "source": "WHIO TV",
      "published": "2026-01-15T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "64f83d7667688411"
     },
     {
@@ -7277,6 +7488,11 @@
    ],
    "events": [
     {
+     "date": "2024-12-16T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "259c6b6c58d2c836"
+    },
+    {
      "date": "2024-12-17T08:00:00+00:00",
      "type": "Expansion",
      "headline_id": "0256309927903d5b"
@@ -7290,6 +7506,11 @@
      "date": "2025-08-07T07:00:00+00:00",
      "type": "Revived",
      "headline_id": "c7364476f6a2511f"
+    },
+    {
+     "date": "2026-01-15T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "64f83d7667688411"
     },
     {
      "date": "2026-04-15T07:00:00+00:00",
@@ -8514,7 +8735,7 @@
      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZnE5b0lqaXNWQ3Z5YlpzNHVYN25DVDhlZkVySkc2TXFaamN4Sko3VEFFblhOazRKZHhFWEJ2U3hPS0NfdHd6ZXAwellHMGhuSFBKZmpvMXhQc1FiWGlQdi1XNGg1UW1lVDJ6M0I0UkFENEFoUXJjaGFaTWtBTmZaMzNhUWN5d252T0ItTWVTQXhMVGFEaUJRa1BHVkNzOHhBTkM3RVZaTlA5ZU9DTjZzam4tVGJ1d01rRklrQXFB?oc=5",
      "source": "Data Center Dynamics",
      "published": "2026-09-04T07:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "918af426c66e4654"
     }
    ],
@@ -8532,7 +8753,13 @@
      "headline_id": "918af426c66e4654"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-09-04T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "918af426c66e4654"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-09-04T07:00:00+00:00",
@@ -9375,6 +9602,64 @@
    "hidden": false
   },
   {
+   "id": "coresite-va-unnamed",
+   "name": "CoreSite, Virginia (site not yet named)",
+   "company": "CoreSite",
+   "companies": [
+    "CoreSite"
+   ],
+   "location": "Virginia, US",
+   "state": "VA",
+   "county": null,
+   "city": null,
+   "lat": 37.5,
+   "lon": -78.9,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "CoreSite",
+   "news": [
+    {
+     "id": "f0106695cd6c1a73",
+     "title": "CoreSite moves to expand Reston data centers, alarming some residents",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc01JdFdHZnN4SklTRFhjdG8tQnRkV1JYaVY0SmFGcGxsQjdnaHp2VndkUmxPd3NjOXRmV1ByZzlUQjNoVk9JUWxsaEVZTmN1bk5VU3hWREFGeVpaTzBGek1JN3Y3NXJ6eC1XSGhXb2dGcFo4eFhtczhzVFFBV0t2WTZ6aFM3c1hyWWlXalZPR2NJY2RmclZiNVczV0o0YlVTNzExZ05B?oc=5",
+     "source": "FFXnow",
+     "published": "2025-07-02T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "f0106695cd6c1a73"
+    }
+   ],
+   "first_seen": "2025-07-02T07:00:00+00:00",
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hints": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2025-07-02T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "f0106695cd6c1a73"
+    }
+   ],
+   "events": [
+    {
+     "date": "2025-07-02T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "f0106695cd6c1a73"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2025-07-02T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
+  },
+  {
    "id": "coreweave-nd-unnamed",
    "name": "CoreWeave, North Dakota (site not yet named)",
    "company": "CoreWeave",
@@ -10083,7 +10368,7 @@
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPV0E5aXhYZ0xMRS03LWxUMDBQUjdvSzlpNTcwVDQ5eDRiS1dmLVRwQ2hfNzRLY1ljWHRxQnkyMFB6MWtzbGFXaHVkU2I1MWZYUUpXM3BEa1Zjb2hLMVNnaVNSWERXVVlQQWJzOU1QN1QwQ3BhbllBR25DOTdxOFhIWkYtdnE0RGRMYUNWSEJKOW5VMmViUzQ0XzNOS0FNMGxSUmNiOTI4UkpOUQ?oc=5",
      "source": "Data Center Dynamics",
      "published": "2025-12-08T08:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "112962dc6e9ebee2"
     },
     {
@@ -10129,7 +10414,13 @@
      "headline_id": "971443a7f454bc18"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2025-12-08T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "112962dc6e9ebee2"
+    }
+   ],
    "capacity_mw": 380,
    "investment_usd_b": 1.2,
    "last_news": "2026-07-20T07:00:00+00:00",
@@ -10956,6 +11247,15 @@
      "published": "2025-03-03T08:00:00+00:00",
      "stage_signal": "Operational",
      "cluster_id": "92cf539e1853f5e1"
+    },
+    {
+     "id": "ac7ab870a4c37610",
+     "title": "Edged breaks ground on second Chicago data center",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdS1UVjNWTjFRdVZkNkc0Vm1XMnRCSVM4MnYtRldrMVB3cEhJTnJnaFoxanBkRERFaWJmOHdESVJzTnZBWWVKQ1pSRDhxSGh1ZndyandRTXBuUWlScllSRVFLeXNiVTFHRUNyeFozM1Y2M1lySjh4SVlnYlVFQ0xSR1FYZFZCWVpHemxFUWJDajFjVUNXdmg3Zw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2025-11-18T08:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "ac7ab870a4c37610"
     }
    ],
    "first_seen": "2025-03-03T08:00:00+00:00",
@@ -10975,8 +11275,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2025-03-03T08:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2025-11-18T08:00:00+00:00",
+   "sources_count": 2,
    "confidence": "low",
    "hidden": false
   },
@@ -11026,6 +11326,56 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-04-07T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "edged-new-albany-oh-2025",
+   "name": "Edged New Albany data center",
+   "company": "Edged",
+   "companies": [
+    "Edged"
+   ],
+   "location": "New Albany, Ohio, US",
+   "state": "OH",
+   "county": null,
+   "city": "New Albany, Ohio, US",
+   "lat": 40.08,
+   "lon": -82.81,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "c26e0f8945784635",
+     "title": "Edged opens data center in New Albany, Ohio",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQd000ckY0Y2p5MWhIa2MzME5aR1ltdk5mTlFBUHE1MHBrWmV1LVR6U1FiZEg0U1dTS0FEM1NJUnZEcVlhQWlOcnpLYTdsMk53aGVTNFRNaHd1MWhZS25PcnZKU1RBbGRYeW14T3JLa0hzNGF4U29ybTV2Mm5ZMHllY194ZWRRVUNIam9yZXd3RQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2025-09-22T07:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "c26e0f8945784635"
+    }
+   ],
+   "first_seen": "2025-09-22T07:00:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Operational",
+   "status_history": [
+    {
+     "date": "2025-09-22T07:00:00+00:00",
+     "status": "Operational",
+     "headline_id": "c26e0f8945784635"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2025-09-22T07:00:00+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
@@ -11429,7 +11779,7 @@
      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOVNBZlFlQnFSUkpKaWZsSUs4U05iY0pVaWI5Q3dlbjU4TFFBZWJBZUhRUF8teS0tUTJJZ2VMWUhSQ1gweG1yZHJKUUpCVHQ2dWhfWnZrY3BQQ2RWN3pFTHlzdm9JR0wyelVzYmV2SzEtVGQ2VmttSVNaYkZmSHFhdGE2YTNiVENtNFVjaUZ1R1FFbFpSNnhPX1M5cEJTV0RzeHdXZk1FdGxtbVBNYjVrd2Q5ZU5tYmkzdVBxY3Fn?oc=5",
      "source": "AL.com",
      "published": "2026-06-15T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "8fe76b2b3fb869f7"
     },
     {
@@ -11447,7 +11797,7 @@
      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQl9taE5BQTFsMzFobXlBYVNENlNsTmVFSEhPTkVCNUJFWklSSEJGTjVqNnV5eXJpSnRPNzJCVWVWSDRRQTVlSk1TMG9IOVlFcHRNSHhUZTJ6U2JwSGJXQlNqcWREbkN4SVB0NXVPTUFJcFZXcGJmdGVyX0RfTEs4X1JKQ2dGMUJY?oc=5",
      "source": "Alabama Daily News",
      "published": "2026-06-16T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "f794287b131ad74e"
     }
    ],
@@ -11999,7 +12349,7 @@
      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNnNZeUo0cjhEOHM4VGUzZ1ZiU2FReVFzdGhLRHpIYTRlU1ZWVEcyUUQxcXRITmJVWWtxaWJkVEtXS1c0dGw1QnN4UzN2MlRKQ2Fxa1lHZjBtWkxjR29fdlJZNlNwdUQ0aEpXT0g3WWlRZFRwZXVFVTZJZWJCY2pSbE52MDdlLU9vblMtb3EwZXBUN2p2cEpSM3BIbzlhWkxWaWVyV01RQ0xaamk4cnliV3RwRHBDS3B1Q3c?oc=5",
      "source": "Data Center Dynamics",
      "published": "2024-10-28T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "ea8fa18a12518011"
     },
     {
@@ -12027,6 +12377,11 @@
      "date": "2024-10-24T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "d9ac193c1b5c8f11"
+    },
+    {
+     "date": "2024-10-28T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "ea8fa18a12518011"
     },
     {
      "date": "2026-03-13T07:00:00+00:00",
@@ -12069,7 +12424,7 @@
      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOFJBQUozc3BmQVA3VzBtMENzeG1raDMwcVJpUnlpYVpnWGpKNEpGNEl1b3NNa0g3UFdocE5USkNmS3FEbDRLWnRUQnFtNVB3WExWT0FOd1R3NldCZXFvOXRGcGJfclpqR0NPY3QyMU5WbU43WUhfVTh1QnNfMFZ6VXIxVkQ1T3ZQN0lncWVPcDJFTm90bmNrOEd1Ri0tQQ?oc=5",
      "source": "Chattanooga Times Free Press",
      "published": "2026-06-15T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "e197bfccd002634b"
     }
    ],
@@ -12078,8 +12433,20 @@
     "TVA"
    ],
    "status": "Announced",
-   "status_history": [],
-   "events": [],
+   "status_history": [
+    {
+     "date": "2026-06-15T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "e197bfccd002634b"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-15T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "e197bfccd002634b"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 1.5,
    "last_news": "2026-06-15T07:00:00+00:00",
@@ -13187,6 +13554,15 @@
      "cluster_id": "68af538a0fda07ad"
     },
     {
+     "id": "8f0885b86ffd7bc1",
+     "title": "Stop the Hermantown Data Center announces new lawsuit against city",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd20ySzhWNmJYMVdsVGpfUEl0Nmk1aU1zWnEtdXBWVDJna0JQVUFUcVNEM1FCRWY2dmdzZHpuMlRzZ3NET0xhMVJ4N0NJdndzbHFNZ1dGQ0FmVDhtWGFWdEF4Y2FUVWVsdHVMVnlwQllfOHMzcTJEQ2NlSW41UE53RENrcHJpendQcU1BSFZqM0VRUF9fQmxlVU8xVDV0YTU1RjFKT05sNlFfZ9IBvgFBVV95cUxOZGVhMXNrQlBPY3owSEU2S3dlek9SLW5tQVRWN1BYS2w5UVVldzhfYThVaDUycmpHek1KdGJJQjE4Wm5kMXl0LUJMckl6WDEzLXVESXRJMnZVYTVpSjRBQWkxN1Vwa0tqX2JpUUpqX1A0UzFoRmFDWEZkcllEVFNtcXdlWGVGU1NPbWRXY0d3ZlNNWjFPb2VLX2RWYUdZSEd2WlRlS3hyOFhaLV9VX2J1TUFaRUhYVzlyYXJHY3RR?oc=5",
+     "source": "Northern News Now",
+     "published": "2026-04-29T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "8f0885b86ffd7bc1"
+    },
+    {
      "id": "b748fbe6e27680bd",
      "title": "UPDATE: Proposed abatement for Google’s data center tabled after hours long Hermantown City Council meeting",
      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQnJIZm5HN3Jka0RFc3cta2RESnkwQU15ZFU2YU5OU3BIOWhtNnBJRHYyTUVxb2Z2eEFFRlVWc0lWM2dTVHhiVVVNMmtuT1hLN08wN2w5OEJBRDdoZWZNUExxeUdBMUNNWnE0U1luNnBCODFVbE1FTV9NSEpwYnpaeVVzSDhQazNjekZISklfYU1VNWZxYnFQUm5OMURRNFpoUFRpeVVaemhXSWszc09zNldCbW1ESTZNWm1uOXpPVdIB0wFBVV95cUxNLTB2TERuNmNDOF9hdGd0V0tHajZrOVdIUTlVNXNPcGhrbW4tRXVDY08wUGNWajFLX3pfSGhCN2laaUQ3ZTVYZ1NJblBWLTg2UjJEeGo4ekZGYnFra3BUemJ3VXM0NmNkbnZGcHE2TE50Q2dvbnFNSDVEclhEdlpTYkRBaFlvd1FId1pMZk9HeFNoeERaOF9CVm9fendjSDR4S0lMbTY3bW1MMlZtZ3d2Z3NXWTA0N3FRMndDQUdRN016bmJyU05lZkI0RjFwbHhRRVg0?oc=5",
@@ -13230,6 +13606,15 @@
      "published": "2026-06-24T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "87129894191e20c5"
+    },
+    {
+     "id": "4c950eeca761bedc",
+     "title": "Residents pack forum as questions continue over proposed Hermantown Data Center",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT2pHMDF2UEFSdXhCVG1lVXN2cGtVMmxHeXFjR1pkbEtUOTEzUHJ3ZVJ1d1NDODV0cHM5dFp3VmplYXVoX3U5NVBkaV8wb3hIMWU1TnF3TVlIVjJ4dVM0NVA0bEF1V0IxWVIyVWVKNGE3MnNOZXZjQm16WDY0Wk54QzFHV0pSRENEVnZSTXhLTkx1U21WbkRLcFdaNUdVZEJUMjhWNGpEcGlKYkljdHQxNUJzMA?oc=5",
+     "source": "WDIO.com",
+     "published": "2026-07-09T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "4c950eeca761bedc"
     },
     {
      "id": "39fa0562d0a9ade6",
@@ -13792,7 +14177,7 @@
      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdUh6N3g0UVNsMnJsNjFYQVpFbHl0NHlWX1dGeWxNc1pjS0x1czBvYW14c2cwS2xnaE1IV1BIRTdacVZ1OWJOazBsX3ZkMXpNODhReTN6clVXektCMnV5R0t2dVR1c3gwaEhJVklRM3hfbFRVVzZIY0QzRU4wd0E2QzhrUWpsRFFLdklZaUFrQ2E0bkpzNzQ0?oc=5",
      "source": "KOKH",
      "published": "2025-08-14T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "6008025b2e7bf015"
     },
     {
@@ -13874,6 +14259,11 @@
      "date": "2025-08-13T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "e140ad7d4f942eb0"
+    },
+    {
+     "date": "2025-08-14T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "25d488299d12ff2e"
     },
     {
      "date": "2025-08-19T07:00:00+00:00",
@@ -14150,7 +14540,7 @@
      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeDlRQjU4TkV1RTVFbWxVWkRiS3otTHNHei1IdllnLXd3QWY1RkxhQjZEZ0JFWGRhNjZXVFBiM2xMbzNJMTJfUkF0ZVBHNEY0NjBORkZKak85ZmNJSlZJYUp6aE9ibVR2SGUtdUdyWHpLc1VINFZlQXM5dHlMakZONWN3SmE2Ul9rX2tScDU3T2JJX2VFb21xVXRQdDhyQUhES2R3ODRzUFZ5bXlWNk13V1U0azdiTjc2cjg2aXBqWWhjVHhyMUdoNjE2d2Y?oc=5",
      "source": "Dallas Express",
      "published": "2025-11-15T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "b670303be8365cf5"
     },
     {
@@ -14159,7 +14549,7 @@
      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPU3dCcFpqZmw3R0NYMkQ4MlBzVGpDRXFYeEhVTGM0aWFrYWdzd2ZaWG51dXdNSFYzS1dRTHAzMktQLTRfZEFQbXB3bzVlbkNUXzA3V3FRVzdXSlROOVFWY285LWdoT1BvTzJZU3JIQlk1QW5aU29ITFA4U0pvenNJWXpTNFJSWjlxeDVPSGpDTGJyUWp0YnVNVTFmWjdLWHd2Wlo0X3BsNU5haDhoXzktbW9tSVFIZw?oc=5",
      "source": "MLQ.ai",
      "published": "2025-11-15T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "b670303be8365cf5"
     },
     {
@@ -14314,6 +14704,11 @@
     }
    ],
    "events": [
+    {
+     "date": "2025-11-15T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "389f5f626db39c82"
+    },
     {
      "date": "2026-06-03T07:00:00+00:00",
      "type": "Expansion",
@@ -15286,7 +15681,7 @@
      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQWJTeld6V3Ywc3lrems0ZlJBSHlBdEJiQnZDN1BRM3JERG5ELTVKSjRYWDM4WXJBYl9lTWs2dl85TGJxUHBxWHRIOWZ5NEpMQUNCV0pNdTRUbUVrVU1ERTFMbkI5LXJoTnFfbjZtX3JnM3hiR3NpeWhiS1M3RDJ5WENzbGdpdG9FbXpWSl9GT3E5cGxhRGVwUkN1a0Q5QkV2ZEE1cXV1U3VxRHlGaGfSAbMBQVVfeXFMTm5YWUJ3T1lEQ2hOeVdYbkR4NXBieWZoX3JjVHJGTmZnNmQ4QWtHNDNBdWZEVHl6QVhLSWx6MUtzUkNvV09yenhkOUtLUHByNFJFcXBTVUJ5Q2c0dEFxd2ZOODUtNmpJblFoM0lhSUhXVHdiOXJHMDVTeVhhWmRvT2haSWxyRVFDc0lHR0Y0UkoxMkhiZ1NPdEV2ODgtbFBTLU4zSHpab0stSVFvWXZHbnFBaDg?oc=5",
      "source": "BigCountryHomepage.com",
      "published": "2025-03-10T07:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "3a4bfb44733c5e5a"
     },
     {
@@ -15322,7 +15717,13 @@
      "headline_id": "3a4bfb44733c5e5a"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2025-03-10T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "3a4bfb44733c5e5a"
+    }
+   ],
    "capacity_mw": 2750,
    "investment_usd_b": null,
    "last_news": "2025-03-17T07:00:00+00:00",
@@ -15404,7 +15805,7 @@
      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSDNPWDl1QjI3cVhKSFJPY1kwQ25oaXZrU3lvYko5eVBMSm1POWFLTENKd0hNXzg1TC1qRmlyRVp4bTEtWEtnVFlDc1VtNUZvSlY0TDlFQ19QaEx1QjFTWm5tTkR6c202Si1nVWluZ0s4TkZGcWJ3SU5nM3N3VWlhcGg5UVpCUE9ua3BIb1h4ZGNSYWEzX05n0gGrAUFVX3lxTE5GZG96bl9kSFk3UEFpTDlsRVlINEJrTjNWMmZpbkYtclVDM0VRdGc3UmI0S2x1aFh5R1ZEVEVNdmRyOUdVdDFWUDlIM1V3eTVNeW9neU1VQ0VXRTl3TkRoM2Q3SXhJZFhjTjhyOGVRaXZSdFhBcmwxNk1mZDl6a3RZbG5Dbm5CUnJYZHE3dkRCQzQ4OFVEUmx5NXlDZkJFcmZqUXVyRmVEdk5DWQ?oc=5",
      "source": "WWBT",
      "published": "2025-02-18T08:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "e441bd7700399256"
     },
     {
@@ -15433,10 +15834,15 @@
     {
      "date": "2025-02-18T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "e441bd7700399256"
+     "headline_id": "845efb5bc8db2d59"
     }
    ],
    "events": [
+    {
+     "date": "2025-02-18T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "845efb5bc8db2d59"
+    },
     {
      "date": "2025-03-05T08:00:00+00:00",
      "type": "Expansion",
@@ -15808,7 +16214,7 @@
      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQY3NhcFJoTVFjOGxvTXJ5eDM2aXk3eVdqVEJvc01EWExiQ3QzYmRiZGphYk8tRVpCM1BRVUN6QXVGTEJpb3c4N1BIUzJ1LUUxQkcyWk45c2I2VG5ZeGNDc1BMVU5ydEhOM2NFODRhejcxaU5TNVlfWFVqWFdNenFRS0dJUGdOZ0Rl?oc=5",
      "source": "WSFA",
      "published": "2025-09-23T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "add93793656acc23"
     },
     {
@@ -17007,7 +17413,7 @@
      "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPMHdvbGl6OV9YNFkwbl82TGxYRm5BdFdXaFY2TGRUaENfNTZfOVVvUnJ3VHJndkoyNmtfTE1ab2k1X2pwQzdjc0NnVkxWR2dKbDVEMFBQZGF2RDU0c1RMNU1CTzFYcjhLbW1VLWU3Z2c0NndmelNGcU1fR1poc2JMMG1fdFZpQ1I3WXhSdGxmTVd6ZmJkdVNaRjVZc2xSYTJnTGpMUGg2YWlLTnlLV0lfSTl0eGJzUjFwUU5qaVVuaHJoODR3Y3JJN3ZrY2x6bGdic3Y0NjRrRTJYSl83ZDN3WHBWNWt1N1dNUUZycHBueC1hMjdPSVZ1c2dueFJ6ZjcxdUZDbVhheGVOSVdJMXhQYVpHR1VldjQ?oc=5",
      "source": "Shreveport Times",
      "published": "2026-07-13T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "a67004b5a6239449"
     },
     {
@@ -17034,7 +17440,7 @@
      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ292V1RnaE1maXc4MHlPQzM5My0yd0hmZ2Rsa0V1ZWU1dEVLVnVKWTRZbTNHOEVlQWhTckg3ZXAwTXpDZkUxUlkzS2lLS05lWmxxZVVLYmdqWk5CWDNWX1FYYVU4MWI0Rm9qNDI2SnQtNDloQ0I3MEpSWDhyN0xJUE4wcmlIeG5hdGpHNE1VM0ptdWx5b1VOZzFWYmhmQUU5VUZVRw?oc=5",
      "source": "Business Facilities",
      "published": "2026-07-13T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "a67004b5a6239449"
     },
     {
@@ -17541,7 +17947,7 @@
      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbHluVHQ0Y1lJU25sLXhTTjJtVmVTelhVVnBqejB2VXJRS09BRnNzd1lxeFozamluRlVqZlFwZE9tLUEyRzhENDRMOG5JczE3UGhtaktsLWVaM1dTeDVZWTRHVlZqazI3N29vVUlYRE5BWjhsYmFISzBpdnVyWFhHcGkyQlVIQmNFRTBXWmhTWEZRekk2M3ZYbkZaN0JhWTJWUUR6RFZDVTZ2bVNLbnBkcFM5MjVZWElObjJVU19yRUpGVzJ0eXdfT3VPV2QwWGVrZ3Vr?oc=5",
      "source": "MarketWatch",
      "published": "2024-12-04T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "0ef85f35cf64123e"
     }
    ],
@@ -17591,6 +17997,15 @@
    "verified": false,
    "notes": "",
    "news": [
+    {
+     "id": "1b7723595c944b11",
+     "title": "Meta boasts company's dedication to community as Mesa Data Center goes online",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON1FOQTFSMVZOaGtmd3NIYnhYVUhNbmpOSG9wRkUyTGJlTjRTTGYtVFhSc19janFwaFJDa0RnUVg5SDFKZmJfY0xZb3VDMHpUZGRhcm91TS12aHdRcE1sak83OVp0OVNiTFNtekJEVG5KQlFadlVkb0ZhNG0wSzZ4N2JEZldNZXJNUTRoOEgxUjlIS2k0bjZqbVphRDJab1hSMG1HdFhVNkFIb2d1Ni1GZUZ0dXVYendIMWFVQTE0WXVMS0lLdGlJUFYyMzg?oc=5",
+     "source": "ABC15 Arizona",
+     "published": "2025-01-30T08:00:00+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "50fd56f0c04bc3be"
+    },
     {
      "id": "50fd56f0c04bc3be",
      "title": "Meta’s Mesa, Arizona, data center comes online",
@@ -17653,7 +18068,7 @@
     {
      "date": "2025-01-30T08:00:00+00:00",
      "status": "Operational",
-     "headline_id": "50fd56f0c04bc3be"
+     "headline_id": "1b7723595c944b11"
     }
    ],
    "events": [
@@ -17666,7 +18081,7 @@
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-08-31T07:00:00+00:00",
-   "sources_count": 6,
+   "sources_count": 7,
    "confidence": "high",
    "hidden": false,
    "investors": [],
@@ -18193,6 +18608,24 @@
    "notes": "",
    "news": [
     {
+     "id": "411c9fab77f7958e",
+     "title": "Data center developer withdraws Phase Two application for Project Anthem in Tulsa",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNT01Ld01MMVJnakJCcXpEQnRobjA4ZVJidjJ0YnozRE10dUQ0WWlsTmFMSGhvVTltRFB1VWFUOWl0QkdDMlp1UHFWcGtZRUxVSzZtOWJaZUlLXzBLSVhIY1pBSkZNUC0yWVZnWC15bnlUbzliWUN6YllVSTU5V0ZmZkxNTWxaVXlsSmo3MGZLeXdzY2hxcVFOc1gwM0Y1RVc0Uy1DZEZ6bzNNNDl2N2NfRVZ2OE96ODdRb0tqM0U2SU5DSXc?oc=5",
+     "source": "News On 6",
+     "published": "2026-03-30T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "411c9fab77f7958e"
+    },
+    {
+     "id": "72e956576b380247",
+     "title": "Developer withdraws plans to build second phase of 500-acre data center in Tulsa, Oklahoma",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRUFlbXI2WlpqUllZel9yRnBoQ1VOcnN4UGJuYzNlN2d3TldVRmxKUlZNU19yeXRfd2VkUkVDa2ZVNmpWaC1mc2Z2N3FWNkJTcUw1X3pwTXRBZml4YWNVeVM2Ylh5ZDB1NDd3TDVhVVNHQVZOT21ZMDJQTUUzWWtqMzVoRXhqb0pNajRJQ29tNzh6eHViMnNjeExBSUs0Ul9nS0FQU0Izc2FpX2RsRU5CNllJalY1SDdiaXg2TWI4X3BvNDVkLXluR1p0dTRMUQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-04-01T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "411c9fab77f7958e"
+    },
+    {
      "id": "42f3fc501e793e08",
      "title": "Breaking Ground on a New AI-Optimized Data Center in Tulsa, Oklahoma",
      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbTFyakgxN2REOTMyczNtNkJhbzJWZExOeXJMbnRuMHVBUzJhMVRqRFlGWFNoVGIwV2lfZTFKZlFyVXpIc2V5Ui0zZFNTbG5PZ2NDYlRLVmttWlJiOVFiSUZUTkE0MTZZUlRsZDF0OC1sZnkxOGFscVBpcm5WMFBvQ2dQYXBlSlliMS1iN0MxZHl1ZlJqcWNvRjdn0gGfAUFVX3lxTE1iLVBkZnpZcVlOMWNnT1NCRXRnOVFSMndyUGVUM01uLXNEcnBNcThNdDlwOTdsZGVwU3hCRG1YYVM0ejlBSTBYZkktdUxzcjVqbUtnVWtnbm91RkhsVkdjdy1nVldLeThaS1ZaTVZNaXhsZVM1NUlsRHgwa25UU1ZrR1FOQ1ZJZlFreWhjYkpzODhFV1pKWTRpYWs4ZDBtcw?oc=5",
@@ -18265,17 +18698,33 @@
      "cluster_id": "6a30b9f66d6a600a"
     }
    ],
-   "first_seen": "2026-04-21T07:00:00+00:00",
+   "first_seen": "2026-03-30T07:00:00+00:00",
    "utilities": [],
    "status": "Under construction",
    "status_history": [
+    {
+     "date": "2026-03-30T07:00:00+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "411c9fab77f7958e"
+    },
     {
      "date": "2026-04-21T07:00:00+00:00",
      "status": "Under construction",
      "headline_id": "42f3fc501e793e08"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-03-30T07:00:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "411c9fab77f7958e"
+    },
+    {
+     "date": "2026-04-21T07:00:00+00:00",
+     "type": "Revived",
+     "headline_id": "42f3fc501e793e08"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
    "last_news": "2026-04-22T07:00:00+00:00",
@@ -18517,7 +18966,7 @@
      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQmlmOFRYcGw0cmR2UVlGTWtjZUVJaFpHV0VFTFljRkFmMlZUQ1dYbW9CQjZvZGVxUFNtM2lVXzNVZFZvS1AxcTJxaHM4SGpqTERDNVhBOEo1X2ZSbFpiZWstT2ZHS2VFXzFyU0pDQ3dmMnREeTJoZnRoYlpXTWtqYzQ3V04tZ9IBiwFBVV95cUxOb21jTl8tQm9OZm5wRkNVdVRVVTdzeTJUWFgxMUVaRV9zQ0JSaXQwamF4VzZTYk15d2JiLXNDM1FDU21BOGR5aE9wWE1oVlNiNXlZVWI1Mk1RMkxhS1BOYzhTM0YwTG9VNjV5VVJUZVFVRVFtZHp2YnlUQnJBdlNyLWRqUnZuWW1EcU9R?oc=5",
      "source": "ABC4 Utah",
      "published": "2026-09-14T07:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "cfe48477b501fb8a"
     },
     {
@@ -18526,7 +18975,7 @@
      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxON2h5bVI5WDlaXzFpWnk4VzFnamM3T3NRcGVRV1VYMTE5N0szNW9EZTc3Tlc0MXBFZThrb3RjNVZDRUpDelhlOF9CVjl0OENNLTZPdk1RbGZQa2dSajZ2LVZwT2pkZ3ZKelVRbE9RRUN5cGZJUDVpVkxWQkFUb0IwZXBBYUZIcmF4NDRpWFIydTFaUDJrZDhaUHhCZjN6TF9hWlE?oc=5",
      "source": "Data Center Dynamics",
      "published": "2026-09-15T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "cfe48477b501fb8a"
     },
     {
@@ -18558,7 +19007,7 @@
     {
      "date": "2026-09-15T07:00:00+00:00",
      "type": "Expansion",
-     "headline_id": "591657ce65c02beb"
+     "headline_id": "4c201eeab8d61e8c"
     }
    ],
    "capacity_mw": null,
@@ -18883,7 +19332,7 @@
      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRTBfNVdVdkFNWjduYVVZZUNocWh5TVg2UkNWYUl1YXFZaFItYk5udzVFMDdDWTltcnJ3QzZqRExPaUROblFVWmFHUTVhUXROVjVaaFZ1QmJZeHFCVkpyRlRjYzRuUXdOM2RRS2EtWGxiM05tR254RUVRN2plZlhoazkxOTNKdW1tN3RORG5BcS04WE1BUHNVRzA5aHctZUFmOFFBUnE5QkxlSUFuUVE?oc=5",
      "source": "Data Center Dynamics",
      "published": "2024-11-25T08:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "08df25b56168f1e7"
     },
     {
@@ -18901,12 +19350,18 @@
    "status": "Announced",
    "status_history": [
     {
-     "date": "2024-12-13T08:00:00+00:00",
+     "date": "2024-11-25T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "74577af0c7ed27f4"
+     "headline_id": "08df25b56168f1e7"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2024-11-25T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "08df25b56168f1e7"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2024-12-13T08:00:00+00:00",
@@ -18960,7 +19415,7 @@
      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQb3FXSFoxUlAtamhTOVFrZ0JNTGtGY1ozWUk3SS1IaHJFMFdCcVdPQ041bERWeVplT3I0ald6NjBKNENNYmhIdHZXeF85X29GZllQeDcxdjBqalFIUjhhMDA3aDVvZzkwWTk1bV9UaElOR2c1eHRiSnh0clJEVk9KS0J1Uy10U0piX0l6ZndjSzUzSVhMT0J2WUNrb2Z4dnd5UjdUQW1TeC0tcTFZczNzQzFOOUtGSlNxRlFCczZ1VWdpX0Z1cTh4YzFIVUpDclNRMWRCSEYzekFkVmpiV2R1aTNxUGFWSElIYjdYcU5GekNaQQ?oc=5",
      "source": "Microsoft Source",
      "published": "2026-04-14T07:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "e0a8c2839e46070b"
     },
     {
@@ -18993,6 +19448,11 @@
      "date": "2025-05-15T07:00:00+00:00",
      "type": "Approval",
      "headline_id": "ff5e5add665bcf76"
+    },
+    {
+     "date": "2026-04-14T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "e0a8c2839e46070b"
     }
    ],
    "capacity_mw": null,
@@ -19502,15 +19962,27 @@
      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNc2huRzhNNmlqdFpYNGVKUElzWndEY0NyMVktblZxZHg1aU1paEYtdUFCbUMwcUVBbWxkMVViaWxZNW91c1FGWkRrWDJOXzR3c2dOZGlBR29odjJrcnFxSUE1ZlBDVDFyR3ZieWN2NHJlSUszNHdpYXBVaVNzeHlzSHMxNW5CZktaUHZ6NDQybldkWGl6RUxtWGZ4TzNJTXZINnZpVlF2Vml1RU5PV2U5T0VYc0Z4ZDk5NDZB?oc=5",
      "source": "Data Center Dynamics",
      "published": "2026-06-04T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "98b3e54df150db76"
     }
    ],
    "first_seen": "2026-06-04T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [],
-   "events": [],
+   "status_history": [
+    {
+     "date": "2026-06-04T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "98b3e54df150db76"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-06-04T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "98b3e54df150db76"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-06-04T07:00:00+00:00",
@@ -20635,7 +21107,7 @@
      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTmE5MHRfSkN3ZVdhRjNFOVJWTXN5bWxFWWtKNU9CbWwwVG9fTFQzZVdNNDhYdDRkRHR4Wm1VN25Vckg0RF9uVVk3TWQ2ZHJTcTNmcEFxRThUZVRnamFvSTZkVlJ6Vk9XU0tVUG55STAyN2hPMGxRdlEzd0tOTGRfdi03OTM3ZFdpcWRlRkNXc2h5VmtIZndQNEd2cG0xRmRadDVTWG5TR09QeFhlN3pMdmZjYUx6ckJMZVRIZHZLWGJBdHdRSFhVNjYtMHhxSkNS?oc=5",
      "source": "Milwaukee Journal Sentinel",
      "published": "2026-10-20T20:08:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "18024da714bb07c5"
     }
    ],
@@ -20704,6 +21176,11 @@
      "date": "2026-06-23T07:00:00+00:00",
      "type": "Revived",
      "headline_id": "8d7230b5655cb6bd"
+    },
+    {
+     "date": "2026-10-20T20:08:00+00:00",
+     "type": "Expansion",
+     "headline_id": "18024da714bb07c5"
     }
    ],
    "capacity_mw": null,
@@ -21233,7 +21710,7 @@
      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZG5qUEtxY3J4aW1NZWlhTTZzV3RJTHpzSDBPRXZoRnV1UGJiaGdKc2hteGY1b05hMV9mYnZKbDM4WmM4elV0U2NzU3VYdXdRTXNURm1UQVowcFdqMWZ2NEJaYzdlSWpjM3dyS1h4dTJxMDAyTXVOQVRKaGNSM28weTlXQ0wtYUJyQ1c5RVJ4VGc4UXVSaFAwMzhiZk91WFNDRTRFRHhR?oc=5",
      "source": "Data Center Dynamics",
      "published": "2025-03-06T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "23073dbfd71a270d"
     },
     {
@@ -21256,7 +21733,13 @@
      "headline_id": "23073dbfd71a270d"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2025-03-06T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "23073dbfd71a270d"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 2.0,
    "last_news": "2025-03-13T07:00:00+00:00",
@@ -23295,15 +23778,27 @@
      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOM2F2c1BocDk0TmpyTl8wOG16R0dFcnVDUHg2Z1NyYVZNWmc3dGFvN09FRFVqQWtLa1JOcV8tOEJnWTF6NnFCWWZVQzAtQVRQYmU3VVoyckd1bkNBN3pwMU9jUmpxZmcwdk9IZGhjbzlNbi1OeHhtR2hEeFlUdWNjS20wbUFQUW5xY1doRjF4RHJVUzVnZXRETUxFQTFlOTBWMUJQdE9LamY2VTg?oc=5",
      "source": "Data Center Dynamics",
      "published": "2025-04-24T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "291cb8d16132eed7"
     }
    ],
    "first_seen": "2025-04-24T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [],
-   "events": [],
+   "status_history": [
+    {
+     "date": "2025-04-24T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "291cb8d16132eed7"
+    }
+   ],
+   "events": [
+    {
+     "date": "2025-04-24T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "291cb8d16132eed7"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2025-04-24T07:00:00+00:00",
@@ -23391,15 +23886,27 @@
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUm9kTmpXN3phaVlpR2NnU0ZXRDI3NEVrR25kRnZ4R3phWjRtQ01KWUZLdnQzTnAyT2F6eUUyZDRMX0dTYWx3VE9nc2dfTDRlZ0R5UmpTaklOM214VlZGWlhrVzNZRUdLcUw1bjhhTkpobnRBd0tYMmdaY2MwUExHVlh5bm5CZG1yUTlTMmxHOXRkNDd0MGI2b24wYVF5X2ZrUXd1Q3htMVB6Zw?oc=5",
      "source": "Data Center Dynamics",
      "published": "2026-01-15T08:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "547213b46471a413"
     }
    ],
    "first_seen": "2026-01-15T08:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [],
-   "events": [],
+   "status_history": [
+    {
+     "date": "2026-01-15T08:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "547213b46471a413"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-01-15T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "547213b46471a413"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-01-15T08:00:00+00:00",
@@ -23740,7 +24247,7 @@
      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSzJxSlhuU21TVXdERm5MeEFleGt1RFNwTDJkNEhycDcyQ2l4M1lVcE16X0dZVHlNNGZSeXpWSTZRa1lwX0xRZlM4TEdPdzk5NzhLQ2xtWnhzRk1fRE5nV3FHTHRJcGdaaFlPN3lvWF9OMnhiemc3czc1cWJRaklyQkl6UU1WYmJ0bnhMVFp6SG5lWXFvQVgySW9fRE96QmxfNXFISmVn?oc=5",
      "source": "Data Center Dynamics",
      "published": "2026-06-12T07:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "dd15869e9142bc83"
     }
    ],
@@ -23759,6 +24266,11 @@
      "date": "2026-05-18T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "a8fa6e03b64bd14c"
+    },
+    {
+     "date": "2026-06-12T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "dd15869e9142bc83"
     }
    ],
    "capacity_mw": null,
@@ -26183,6 +26695,15 @@
      "published": "2025-11-19T08:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "17a42fdcedb36bb0"
+    },
+    {
+     "id": "bf8410b5eccd0bb8",
+     "title": "Bessemer approves rezoning of 914 acres for 'Project Marvel' data center",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeDY1M3J2NnJCbjBRWHpOSEhCdU9BTGFkZ1QtejI2V0F3dWxIdDdKSHdyaU92MC1vZ1drNERKMGstclMxLWZ4Nk9kNnJyY3FOajVpS0x5VFBzclQ0cW9xaGRXMHNrY0ZNQkM2ZUpzQk5QWlVBeGFjQU1XTUh2TmlrSjdBNWdQc3FaU1V3cTNXb0tKc2VWay1qck1LM2FzWVdoREZzLVBSSGFxZ2llSmxqOFk5MzE3QVAzamM0QQ?oc=5",
+     "source": "WBMA",
+     "published": "2026-04-21T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "bf8410b5eccd0bb8"
     }
    ],
    "first_seen": "2025-11-19T08:00:00+00:00",
@@ -26200,12 +26721,17 @@
      "date": "2025-11-19T08:00:00+00:00",
      "type": "Approval",
      "headline_id": "17a42fdcedb36bb0"
+    },
+    {
+     "date": "2026-04-21T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "bf8410b5eccd0bb8"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 14.0,
-   "last_news": "2025-11-19T08:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-04-21T07:00:00+00:00",
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -27656,7 +28182,7 @@
      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRlpEeWRiaUJuc193QVpfejZXUXdGQWxvTnFRQnRaT1BrejhjWllpQURESEh6aDBtcjcxbmF0VlMwczcwbHFmRmUzc3NBVHVyeFVFeG9SbjVQV0k3bXRBRFdxNGVsU1lJSV9rbldnQ2lEeU1MVW5fLXJNQWEybC1qRFVvNVhxaU1NSVo0dUltVFpzeS1PSFBVNWVxRjdWeFBiUEVXRnl3ZVVDZjA?oc=5",
      "source": "Cleveland.com",
      "published": "2024-12-16T08:00:00+00:00",
-     "stage_signal": "Announced",
+     "stage_signal": "Expansion",
      "cluster_id": "9a827f2a32dfbd71"
     }
    ],
@@ -27670,7 +28196,13 @@
      "headline_id": "9a827f2a32dfbd71"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2024-12-16T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "9a827f2a32dfbd71"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 10.0,
    "last_news": "2024-12-16T08:00:00+00:00",
@@ -29534,8 +30066,10 @@
   {
    "id": "site-des-moines-ia-2025",
    "name": "Des Moines data center",
-   "company": "",
-   "companies": [],
+   "company": "Edged",
+   "companies": [
+    "Edged"
+   ],
    "location": "Des Moines, Iowa, US",
    "state": "IA",
    "county": null,
@@ -30378,6 +30912,15 @@
    "notes": "",
    "news": [
     {
+     "id": "7c0a990154192b53",
+     "title": "Eagan Planning Commission approves data center on YMCA land",
+     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUzhSNVB4QmNYaEFINlRZYmhLbzRXV01zXzlCampKb3hZRTVMcWtBNGVMOG9IUE5hd0RKQm1lVkZzM05fNGEyZ3FtTHJKRDlRTEJIbGk5alVZLVJybGdRanUzZEp2Y1Y5blNTTHlvUHI3U2RtWU5DZmJHSHptT1dnY1dwWDc0bFd1OEpRVl90b3VNSEkzbUdKMmkzYm52OUxXTGg2bm1TdzBuQ3J0Z0tHbDFPenQwVHdsaVF3eEdoZ21aQ1lNZ3ktTGlDUWhBcWFjajlHclhSOUNOSGFRcy1oMUlieDFZazQ4VGwxZlhSeE9Yc0FKeS02Yl94Q2Y0UQ?oc=5",
+     "source": "hometownsource.com",
+     "published": "2025-01-09T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7c0a990154192b53"
+    },
+    {
      "id": "5b64540be6ebc345",
      "title": "Oppidan plans 5MW data center on YMCA land in Eagan, Minnesota",
      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTC0zeC1xUGE5V0xxdEw1ZFVwa25DS3gtcUFQSHk4aXBXUjBnT0VEaXBUaC1xdlUwQWVTWkpjMFFlc0FUSWZVanZ4dTkyMFR4RmFVeWRYSFZleFlVU1FXY1otUjVPYy1GZjhZNzVka3pCTHdFQklwZWltZTJDQmw4NGh1VUliRUpQaklia2pRYjZLbDdTRVFFVVlzam9HbEpFVVhpN1huTEQ?oc=5",
@@ -30387,7 +30930,7 @@
      "cluster_id": "7c0a990154192b53"
     }
    ],
-   "first_seen": "2025-01-10T08:00:00+00:00",
+   "first_seen": "2025-01-09T08:00:00+00:00",
    "name_hints": [],
    "utilities": [],
    "investors": [],
@@ -30396,16 +30939,22 @@
    "status": "Announced",
    "status_history": [
     {
-     "date": "2025-01-10T08:00:00+00:00",
+     "date": "2025-01-09T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "5b64540be6ebc345"
+     "headline_id": "7c0a990154192b53"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2025-01-09T08:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "7c0a990154192b53"
+    }
+   ],
    "capacity_mw": 5,
    "investment_usd_b": null,
    "last_news": "2025-01-10T08:00:00+00:00",
-   "sources_count": 1,
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false
   },
@@ -32193,15 +32742,27 @@
      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNmYzRU91RFBJMzh1MThwTS0ybVpJSVlYcXpBRjZvbXdrOVkxUTNyUHNPWWtUMlNSLVVCeDRBWEZLNV8tMHcyMlo1N2ptWVZhb3hOdU5jNkY3cnRjUzBEN0o0ZER3ZmdEa05lbkUzaFA1d0o0MW1FZ1AtS2t1ZjF5SkV2TWRCWFFudlhMTWE3WDV6am5hTG5MMXdueFdoNWstZFhSdDlxdWkyX3M?oc=5",
      "source": "Data Center Dynamics",
      "published": "2026-02-11T08:00:00+00:00",
-     "stage_signal": null,
+     "stage_signal": "Expansion",
      "cluster_id": "c3107dd570a9ee5a"
     }
    ],
    "first_seen": "2026-02-11T08:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [],
-   "events": [],
+   "status_history": [
+    {
+     "date": "2026-02-11T08:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "c3107dd570a9ee5a"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-02-11T08:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "c3107dd570a9ee5a"
+    }
+   ],
    "capacity_mw": 121,
    "investment_usd_b": null,
    "last_news": "2026-02-11T08:00:00+00:00",
@@ -32516,6 +33077,15 @@
    "notes": "",
    "news": [
     {
+     "id": "f582c2f42d1e4388",
+     "title": "Hutto council approves permit for new data center | Pflugerville - Hutto",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQWtMSUxqME4tNnpJa2RlcWlRdk1reF9mMWFZZ2dSdUo2QW5NUFhrT1daS3BhOUpkd3VZUHBtem9yZ3ZTelI0aGJCN1F1X3FtZnZvWkJQalloVm9KQXNqdFVXNW9SSWNORllvNWZkTFlRakUyWU44andCd00wVkpFbFVURHZwWGhqYjU4YTVlSXRrNTZrZ3VQSDBFaWxnU0dpcHFGTEszQzczVXYtMkE?oc=5",
+     "source": "Community Impact Newspaper",
+     "published": "2024-12-06T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "f582c2f42d1e4388"
+    },
+    {
      "id": "1cbab9ea85c8c0c8",
      "title": "Hutto Approves $500M Data Center",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE93TDllM0VaRlVVMjk1UklZTWJLbkJsRmllM3BPUzFaVXJaS0FVTzF0aWxEd0tTZm01THlJR3Z2Y3RXTjdxekVZb1JMNW8zdlRRQkZBZnF3d19TSnFxYUdQR2pnTHdJZUwxZTZLZkNFeXpYSjdvMFE?oc=5",
@@ -32525,7 +33095,7 @@
      "cluster_id": "f582c2f42d1e4388"
     }
    ],
-   "first_seen": "2024-12-09T08:00:00+00:00",
+   "first_seen": "2024-12-06T08:00:00+00:00",
    "name_hints": [],
    "utilities": [],
    "investors": [],
@@ -32534,12 +33104,17 @@
    "status": "Announced",
    "status_history": [
     {
-     "date": "2024-12-09T08:00:00+00:00",
+     "date": "2024-12-06T08:00:00+00:00",
      "status": "Announced",
-     "headline_id": "1cbab9ea85c8c0c8"
+     "headline_id": "f582c2f42d1e4388"
     }
    ],
    "events": [
+    {
+     "date": "2024-12-06T08:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "f582c2f42d1e4388"
+    },
     {
      "date": "2024-12-09T08:00:00+00:00",
      "type": "Approval",
@@ -32549,7 +33124,7 @@
    "capacity_mw": null,
    "investment_usd_b": 0.5,
    "last_news": "2024-12-09T08:00:00+00:00",
-   "sources_count": 1,
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false
   },
@@ -32618,6 +33193,15 @@
    "notes": "",
    "news": [
     {
+     "id": "c690dede84258493",
+     "title": "Developer withdraws proposed data center rezoning in Hutto after community pushback",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObV9kZGN0M0x1MEpVQ0Y5TjhRWk00azMtVHI3VXVTMkt2QWlYTWVFb21VNlZJS1RjOHRRbmdKd0VCaWoyOC10WGduLTdUUmNmbW9zNTNSUHNzQlZaLWdvSG55ZV81N0VFckFSXzNTNm92UXliUnl5RE9lRVBpVXAxU3V0cTI5cjBRX3FTYmNRbXRWdVpvSWp4VlVsblF4cW9XSlFrSFdLR3JabE9ibUI2NXBwVzlPVzA?oc=5",
+     "source": "KEYE",
+     "published": "2026-04-17T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "c690dede84258493"
+    },
+    {
      "id": "661dbbdf200122fb",
      "title": "Developer withdraws application for 70MW data center in Hutto, Texas",
      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVXRsWWJZQ3NSN1FqcjdkeEc3RUhXQWt5NGw2dkx0cGg4RkpUSlZiVGNGNEgxdkM5UEdBSlBJU29icHhTSmxjSTN2YmRoajlKOXZuU3ZWd3E0a1RldnJWWkk2d2lFc1Mzd3VLOTM5Vmlqbjd3U0JVY0Y2dkZJZkwzSVpWTHh2alNacEdJdUs0V3BiQlN5WFIwc25kSEp1Qjh0ckdpckZVQ1RPLU93WlA5Qw?oc=5",
@@ -32636,7 +33220,7 @@
      "cluster_id": "c690dede84258493"
     }
    ],
-   "first_seen": "2026-04-20T07:00:00+00:00",
+   "first_seen": "2026-04-17T07:00:00+00:00",
    "name_hints": [],
    "utilities": [],
    "investors": [],
@@ -32645,22 +33229,22 @@
    "status": "Cancelled / Blocked",
    "status_history": [
     {
-     "date": "2026-04-20T07:00:00+00:00",
+     "date": "2026-04-17T07:00:00+00:00",
      "status": "Cancelled / Blocked",
-     "headline_id": "661dbbdf200122fb"
+     "headline_id": "c690dede84258493"
     }
    ],
    "events": [
     {
-     "date": "2026-04-20T07:00:00+00:00",
+     "date": "2026-04-17T07:00:00+00:00",
      "type": "Cancelled",
-     "headline_id": "661dbbdf200122fb"
+     "headline_id": "c690dede84258493"
     }
    ],
    "capacity_mw": 70,
    "investment_usd_b": null,
    "last_news": "2026-04-20T07:00:00+00:00",
-   "sources_count": 2,
+   "sources_count": 3,
    "confidence": "medium",
    "hidden": false
   },
@@ -33326,6 +33910,69 @@
    "notes": "",
    "news": [
     {
+     "id": "bd89d1a44b6301ea",
+     "title": "795-acre proposed data center to take center stage at Joliet City Council meeting",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMGV6QkpGOWxwS0hWVmhFanBUeW5qdkpDZjFLNnRmUzZFNG5oVExWdUI4NzdrUC1FQ1J6enZMeU9TWVFRT3o4RGkwTllDckNJbjhvYVFqbXR3bzAxS3lkRG02NlctYVhSekUtLTRPWm1fTG5UYk9iR2t1TWRvbXB2TVZvZWpPTlc3U2ExTVNWNm9XY1o1VUY3SmoyeFVDQnkyNzdlZnl6YjZHa1U5Tm5JaEln0gG3AUFVX3lxTE5pcnBoTEt0dVJOelFiNk5ua29rVk5FLVVLT3hCUlYtUDJBQVNMbVNhNjJfTUZjeXZFb21rRnRJajFwRm9LbTN0c0t3M1pnSUNIZFQxNG9WYzJaUVV3bWY0SXdfLWpiVUk0N2FIRUhRNXlFQTFrVThkNVpyZTYzZGJfZFFTdE5JUnF6dXo0aHBlamlZS1dTYkFTRm1VSDVGdW9BVnhEd2tNMXVlZUFST1ljZE45cEdvUQ?oc=5",
+     "source": "WGN-TV",
+     "published": "2026-03-16T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ccb8759844d90117"
+    },
+    {
+     "id": "ccb8759844d90117",
+     "title": "Data centers in Illinois: City council considers plans for Joliet data center near Bernhard and Rowell, east of Speedway",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdVZnNmNjVHF5bFFDd2t4Q21aWVdMa2pSbmVXdFBYcnNGdGZ1QmlaRmxuc0JNUlluZW1jeTFBbU0zZmU3QzZ2X2dBakk3Y2FESGNkMFVSeEVlQjc1Zi1jUC1iV3J3VzdZY1JwdWNsdUpGdGZEZndFQnJfQTVWSnZxbUZ3aGpkN0Q1alplTlVOYUF2TjFCdURPb3BTWV9ia2Vic0QyVk9VYzVDeGo5TzFwTHpvdGxUVHBKMVVfU1ZoN01TRFI2b1p4TWt6eVhTUdIB0wFBVV95cUxNM19qR2FGc0hsQllJQ1N2dUNZRnc2T3ZfcGpLcWt2MUJiZGlESmhkSG84UHl3eDI2dFZCc25HYlZjLVRCVGs4VXFjSGpTNk1wWjQtTzY5MENTcjNreTkzNGhscHJnX2lBNks2aGY2djdCbHZ6eENxRl9tdktILXhlWFRTUy12RkVqMEU1WUdtUWRCckEyZ1R5Sll5N3dTcWU1OElhVmM0ejNZcnJkS1RMbjBNcG4yUkJqM0U0V2JYeDJKczF3YlZCc0dDaHpNVmZLaHNv?oc=5",
+     "source": "ABC7 Chicago",
+     "published": "2026-03-16T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ccb8759844d90117"
+    },
+    {
+     "id": "0bd18c7cfcb8b126",
+     "title": "Data centers in Illinois: City council approves plans for Joliet data center near Bernhard and Rowell, east of Speedway",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcTRMc2xVM3RPVnA3Zk1hVUgyRHA1ZVFlWUtIZlhrc2pfdGdYVVlETENPazVnSzZGOUtQXzBXNXBuWVV4dVRrN2Y5SkVrcE54d25QcHJ1OFlORlFKY1AtemtWMzJQak5sb2kyTGZMZk5EYmJ1aFZPY1hTSTRIdlF6UHRwWXZUUUVLRnNQcFVkRGxtOWpnYnBaNHlxZUgweUlMN0tnb19aNm9LYVlxSUpmVFpnNDQ3MjlXZ2hDZDg5Z2ZUejVWbFozZHNmQXTSAdIBQVVfeXFMT3FVVkZvU1hTb1QyOFMyQ2hmNlQ3ZlpVRDZxT3JsODB2RlhYMDVOSEZmLUFxbmNvTmFad1VfbGJEalhTWUtERERueFNLTW1XaDJDZHBxWFJHTEU1Sk1Vd0RkVWhxMlg0M1JxZDlaZWdyLTlGcnFobzA4bFEtdW1QcGRISWV0OU9xTmFFUTVFN1RaemtRNi1JQjhIVTZ5NXBtc2hDaFFmUDhFUEtUX1h5MmY1Nk0xZDZ4Q1BfZTdmOWJxMktmcXA5UDE2YXM0ZkhHVUl3?oc=5",
+     "source": "ABC7 Chicago",
+     "published": "2026-03-19T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ccb8759844d90117"
+    },
+    {
+     "id": "1cb355bb6b27e068",
+     "title": "Heated moments in Joliet City Council meeting as data center approved",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTE1sY0JTVlZVZUVxTTFMWWdqZFJmcHZreUVHQnY4Zm5lYTluazgwWFZPM0FoaU4yVmpzTVJ3TnoySzdzek0za1lMTVZNSV9YeXdHUng0R3R6cG5IMXlkWTNTOFYwVDZ0d19sanNEUTBYVWZSRTJ5N0hXZkxyMUluSzh6eXY3MUNkdnRGMXhIWlprd1VCd2JN0gGcAUFVX3lxTE5NOF9sLTZzQUI0endvUFl5RlBUX0FaV1lzTDlmWm8ySlhfY20ta0pvSjhUWHFGS0Y3ajBYeE56TEh6clVhY0V0ZTRLamViT3Npcmc2MklQdmp3b2Q0UFdiYTQtajJucTN6THRkV3EtajE5dE9ucVpBclgxQ0g4dGduWmVPVTltTEtnbXlmcWFmcW5PZ0VUc3JlVzhGag?oc=5",
+     "source": "FOX 32 Chicago",
+     "published": "2026-03-19T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ccb8759844d90117"
+    },
+    {
+     "id": "6f0fc610c06323fb",
+     "title": "City of Joliet approves plans for what could be the largest data center in Illinois",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWEpSR0JLX2lMclRBTU5oeHVueFdsMlNjVkxPQ2lfU2Zsa0ZHVTZ2VzVaSGMzMUVWNFBsNkdQS2ZxM043ZV9fVDJjMHpidHlxWFp2b0VZLUtGUjFMQUNqeHlqampYVnNOdDk2WTlRbGxzN3ZaTXlJYl9weEw3T3ZRT2w2ZmJQdnIwaWtkTEtSNy1OQWZoSkRQR29WWFdicTlJT2pOUERtMWRHX2gyRG1pc2UxbXBqVmRsVXRVRllvdG05MVZhdFBiZnp30gHSAUFVX3lxTE11SWs3eUZOTUtvMWdnZGRlVzRtQS1HNG1GcnBwa0VmM1FUOUV6bnRrR0xjZzBXWWlqS1U0b29CZzdhdXEyVlBudkxnSl8tNlBQMDFNakxtcTk1djdpaUJFYUtTNXEyZ3FZVWhPOHluOUZfTkVSVzNnUlpCTWZ2VVIzVE45cE1jcGZacVc5V2NXQklpQjB3Q1VqQlliVlhTTWdvSERubF92UUljY2daUGxFclBxRnVaczZjWnd0UHE1VFRWNUdTdWl0QmFCTjVFSVZhUQ?oc=5",
+     "source": "NBC 5 Chicago",
+     "published": "2026-03-19T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ccb8759844d90117"
+    },
+    {
+     "id": "7e8a222a4b49a55c",
+     "title": "Joliet City Council approves data center project leaving residents upset",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNUo1R2VCejRqMWN5dnNvT2NhVzg3UWR0ODJ4ZnEtNmEwOXY2akdoNE9ZNmx2YkZsUVh4c0h4T0FfbEJWcE5DeE1EbjhGTmdWTVFoRnVacDNhb3dJaWc1NEM4UkpTMDRBUENFN2hmZnB5UFZaRDg5NHNmRTNpenVqWkdhaWY1cW00N3Z0Z1NZWS15NHVPYWg4ZW5aR0g4RzlIVzBfd05sR3hHbDdOcF9TdWNvNWhKcmlj?oc=5",
+     "source": "The Times Weekly",
+     "published": "2026-03-19T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ccb8759844d90117"
+    },
+    {
+     "id": "f4416a1667130db2",
+     "title": "Joliet City Council approves plans for Illinois' largest data center",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMVZOZ3dJeHdyblVWVlU4ZUhwclJlZFBDcW16cTBjd09XcjQzOFVVM092NVplM3dWNHBUTEduVnpaVHRFMlNTaUVRRDZINERMelhXSnp2ZnR2aG9fNy1JRzBnclRXelJQd1hkZnVKMXRETUZRUWE3cFUtT0dPWFR5RkM3UWl5WVRjYUpZ?oc=5",
+     "source": "CBS News",
+     "published": "2026-03-19T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ccb8759844d90117"
+    },
+    {
      "id": "eb7e29ef0c412aa4",
      "title": "Joliet approves $20B, 795-acre data center, despite backlash",
      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUG9CbVUwcXZhZEdPckd6SGViYktrZGJib3d3bS1GeWNxMFRTUFJWMTBybko1alVDa202VlNlU3ZqSlBLbkJhWWx4b2tIb1NfZFRJam0zSmI5LXUxNkExRzhWdDl6TWJvVG1ZR1BySFFOMF9UcmVmWFZHbDVhNGlvOXZiWUNpWGJjd2JBWlVhSzNKQQ?oc=5",
@@ -33342,9 +33989,18 @@
      "published": "2026-03-24T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "ccb8759844d90117"
+    },
+    {
+     "id": "aba097915bc36764",
+     "title": "Joliet Approves Illinois’ Largest Data Center, 795-Acre Project Moves Forward",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQ1gtNmw4ZUdjd0tseVpib3UtQzctR0tLT1psTUlONXZkLU9DZURORUh2Y2lNNFRnM1JPeVBMSmhOQURoS19MaTh5WWsySmRJVmJyNWVMdm1ZQkZxRUlNbk9LME94aElUZ3RxaDk5eFlReGJURmtLVS1mWDdxNm50YkRFaW5kQ2VtTTJEbnVoUFhWRWYwLWZZ?oc=5",
+     "source": "Construction Owners",
+     "published": "2026-04-05T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "aba097915bc36764"
     }
    ],
-   "first_seen": "2026-03-20T07:00:00+00:00",
+   "first_seen": "2026-03-16T07:00:00+00:00",
    "name_hints": [],
    "utilities": [],
    "investors": [],
@@ -33353,12 +34009,17 @@
    "status": "Announced",
    "status_history": [
     {
-     "date": "2026-03-20T07:00:00+00:00",
+     "date": "2026-03-16T07:00:00+00:00",
      "status": "Announced",
-     "headline_id": "eb7e29ef0c412aa4"
+     "headline_id": "bd89d1a44b6301ea"
     }
    ],
    "events": [
+    {
+     "date": "2026-03-19T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "0bd18c7cfcb8b126"
+    },
     {
      "date": "2026-03-20T07:00:00+00:00",
      "type": "Approval",
@@ -33368,12 +34029,17 @@
      "date": "2026-03-24T07:00:00+00:00",
      "type": "Approval",
      "headline_id": "16848d9195dfa78a"
+    },
+    {
+     "date": "2026-04-05T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "aba097915bc36764"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 20.0,
-   "last_news": "2026-03-24T07:00:00+00:00",
-   "sources_count": 2,
+   "last_news": "2026-04-05T07:00:00+00:00",
+   "sources_count": 9,
    "confidence": "medium",
    "hidden": false
   },
@@ -34924,6 +35590,15 @@
      "published": "2026-03-17T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "408bde0970c10a7d"
+    },
+    {
+     "id": "16403d2688ef8146",
+     "title": "200-acre 'Project Azalea' data center approved outside Augusta, Georgia",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVTg3Tm5yUTNGUmp5Nmw3YjRDZWhRRF9vMFNNa19wR1lnNVQ4Qnc4V2lUT01JWkx5UFhOM0JWTmhkcmxaMG9USG55RVg4RXYwSzRQRWlYNUFLU3Roc1FaWU96b1ByRG1FNGhKTjJ3RTZ4cTJYNFdOZ21HYjNwQ24zSVpfS184ME9sWDg4clJiSWJTZw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-03-18T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "16403d2688ef8146"
     }
    ],
    "first_seen": "2026-03-17T07:00:00+00:00",
@@ -34941,12 +35616,17 @@
      "date": "2026-03-17T07:00:00+00:00",
      "type": "Approval",
      "headline_id": "408bde0970c10a7d"
+    },
+    {
+     "date": "2026-03-18T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "16403d2688ef8146"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
-   "last_news": "2026-03-17T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-03-18T07:00:00+00:00",
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -40905,6 +41585,15 @@
    "umbrella_company": "TeraWulf",
    "news": [
     {
+     "id": "e4b4e46c829bb142",
+     "title": "Kentucky Power finalizes deal with TeraWulf to expand electric demand at Grayson data center",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRmhaMWEwQkdtR3RQOUFzWEVkWXhJZEZiN3ZuRjFWYmtYTjFJUTRKeTdFaGE3d01SYW9EMm1nZERPUThZS2U0VDZPUHVsQXhwa2hHa29YYjZKMUxCZ3JqR0pNQXl5WjNSaVlGWmRTeUZRZWNobEhqSVNrM0NPR0NoSGNLbG1VWThpZ0FzdzA4UERZMnFPY0tpZUQ2RlJWNGR5N1dZYTg4b1ZTaWRpMlpodDlweHhXUDRpdzVZ0gHPAUFVX3lxTE8xa2ZhOG5fR1d6VHRyOVVNUE1MQWdSOWFzLXRRMVNvVVJLMS1KanFCSktTOGhwTnk0ZnR2TzBSTHRZUlhBQ0dSSDl4YnFIdU55aDdpU3NLZGtobU9pTm51QjJyeENsVGI1enVBakd1Y2M5VjBVNUxtTnRSUjdiWFoxOEwyUkpDVnJvcU53ZUtONGstYnYwcU5SaEU0MmRNWEd3UF9NX2hMVUFHTWVmU2hlRGxUWlZNbFB3Ym1vbkRiRzRLX252TkZlcmRzMXo4UQ?oc=5",
+     "source": "WKYT",
+     "published": "2026-10-05T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "e4b4e46c829bb142"
+    },
+    {
      "id": "4233a2dba96f3d3c",
      "title": "TeraWulf Expands Kentucky Data Center Power Commitment to 1 GW",
      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUW1xaDJlTXlpS0FRT0hTLTlHclVRaDYtV19KS2hPV0Y0LUxtbXotLXdHNm54dzBXUFlhaWczY0Ywa2x0VVFzWGlXS3VURXV4bWdBR1NBVk5lMEFRMXJuM1ZfX2FFRVZHVVVlckNHR1dsRnRrM3F1YWNWcnpBRkwyZWFEZU4yTVo1RFkyUXFGRVYxbTZMbkQ4dFZlWm_SAawBQVVfeXFMTmxnbjZ4TFlLSHhpdHNBTUd2SnRVVkdGNU9aRkR0eDlzWmJORXZqc3E3dXBLN05mVDhOcURNLWRtTkxRVnE3Y3BRUnZvZ0hENFpENEJmUG1nR0plVU9QRi1xZ2lrYm82bEpjcTk5ZVh6V0R4SkI4SXlFSWI0SVhBTTh4UnQ0aXpISzNJci1zaGlyOFFDWGdET2ZhMFZaTGxZcW1sSkJPaUF6Z2VabA?oc=5",
@@ -40923,7 +41612,7 @@
      "cluster_id": "f3a05a5bc76d28b4"
     }
    ],
-   "first_seen": "2026-10-12T07:00:00+00:00",
+   "first_seen": "2026-10-05T07:00:00+00:00",
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -40932,12 +41621,17 @@
    "status": "Announced",
    "status_history": [
     {
-     "date": "2026-10-12T07:00:00+00:00",
+     "date": "2026-10-05T07:00:00+00:00",
      "status": "Announced",
-     "headline_id": "4233a2dba96f3d3c"
+     "headline_id": "e4b4e46c829bb142"
     }
    ],
    "events": [
+    {
+     "date": "2026-10-05T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "e4b4e46c829bb142"
+    },
     {
      "date": "2026-10-12T07:00:00+00:00",
      "type": "Expansion",
@@ -40952,7 +41646,7 @@
    "capacity_mw": 1000,
    "investment_usd_b": null,
    "last_news": "2026-10-21T07:00:00+00:00",
-   "sources_count": 2,
+   "sources_count": 3,
    "confidence": "low",
    "hidden": false
   },

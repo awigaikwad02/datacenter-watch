@@ -1814,7 +1814,6 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "Markets / Earnings",
     "Analysis / Opinion"
    ],
    "locations": [],
@@ -2874,7 +2873,8 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -3008,9 +3008,8 @@
    "source": "The Christian Science Monitor",
    "published": "2025-03-20T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Economy / Jobs",
+   "category": "Community",
    "tags": [
-    "Economy / Jobs",
     "Community"
    ],
    "locations": [
@@ -4091,9 +4090,8 @@
    "source": "The Des Moines Register",
    "published": "2025-03-17T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Economy / Jobs",
+   "category": "Analysis / Opinion",
    "tags": [
-    "Economy / Jobs",
     "Analysis / Opinion"
    ],
    "locations": [
@@ -7761,7 +7759,8 @@
    "feed": "Backfill: announced",
    "category": "Expansion",
    "tags": [
-    "Expansion"
+    "Expansion",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -7972,7 +7971,9 @@
    "state": "IA",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Edged"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],

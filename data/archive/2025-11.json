@@ -856,8 +856,7 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "Land Acquisition",
-    "Economy / Jobs"
+    "Land Acquisition"
    ],
    "locations": [
     {
@@ -3024,10 +3023,8 @@
    "source": "fox56.com",
    "published": "2025-11-25T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Politics",
-   "tags": [
-    "Politics"
-   ],
+   "category": "General",
+   "tags": [],
    "locations": [
     {
      "name": "Archbald, Pennsylvania, US",
@@ -6375,7 +6372,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -6440,7 +6438,8 @@
    "tags": [
     "New Announcement",
     "Deals / Investment",
-    "AI Infrastructure"
+    "AI Infrastructure",
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -8967,7 +8966,9 @@
    "state": "IL",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Edged"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],

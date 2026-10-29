@@ -1,17 +1,17 @@
 {
  "_readme": "Status audit written by scripts/status_audit.py. records: a fixed stratified sample of detected registry records; for each, the status replayed from its headlines with the live rules (status_rules, history_rules) and with a stricter main-clause reading (status_strict, history_strict), and every headline's stage signal under both (rules, strict). disagreements: records whose status differs, with the headlines that differ. previous_run: the counts from the run before, to compare a rule change.",
- "generated": "2026-10-29T04:40:46+00:00",
+ "generated": "2026-10-29T04:44:09+00:00",
  "size": 150,
  "by_status": {
-  "Operational": 30,
+  "Operational": 31,
   "Under construction": 38,
   "Cancelled / Blocked": 30,
-  "Announced": 52
+  "Announced": 51
  },
  "disagreement_count": 1,
- "headline_disagreements": 25,
+ "headline_disagreements": 39,
  "previous_run": {
-  "generated": "2026-10-29T04:38:13+00:00",
+  "generated": "2026-10-29T04:40:46+00:00",
   "size": 150,
   "disagreement_count": 1,
   "headline_disagreements": 25
@@ -325,7 +325,7 @@
      "id": "18024da714bb07c5",
      "title": "Microsoft planning to expand data center operations to Sturtevant",
      "published": "2026-10-20",
-     "rules": "Announced",
+     "rules": "Expansion",
      "strict": "Announced"
     }
    ]
@@ -402,6 +402,13 @@
     ]
    ],
    "headlines": [
+    {
+     "id": "1b7723595c944b11",
+     "title": "Meta boasts company's dedication to community as Mesa Data Center goes online",
+     "published": "2025-01-30",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
     {
      "id": "50fd56f0c04bc3be",
      "title": "Meta’s Mesa, Arizona, data center comes online",
@@ -504,6 +511,13 @@
      "published": "2025-03-03",
      "rules": "Operational",
      "strict": "Operational"
+    },
+    {
+     "id": "ac7ab870a4c37610",
+     "title": "Edged breaks ground on second Chicago data center",
+     "published": "2025-11-18",
+     "rules": "Under construction",
+     "strict": "Under construction"
     }
    ]
   },
@@ -634,6 +648,33 @@
      "id": "a4702aaf288c0826",
      "title": "Siemens Opens $190M Fort Worth Manufacturing Hub to Build Equipment Powering America’s AI/Data Center Infrastructure",
      "published": "2025-03-06",
+     "rules": "Operational",
+     "strict": "Operational"
+    }
+   ]
+  },
+  {
+   "id": "edged-new-albany-oh-2025",
+   "name": "Edged New Albany data center",
+   "status_rules": "Operational",
+   "status_strict": "Operational",
+   "history_rules": [
+    [
+     "2025-09-22",
+     "Operational"
+    ]
+   ],
+   "history_strict": [
+    [
+     "2025-09-22",
+     "Operational"
+    ]
+   ],
+   "headlines": [
+    {
+     "id": "c26e0f8945784635",
+     "title": "Edged opens data center in New Albany, Ohio",
+     "published": "2025-09-22",
      "rules": "Operational",
      "strict": "Operational"
     }
@@ -1503,10 +1544,17 @@
      "strict": "Operational"
     },
     {
+     "id": "9b5aa3aaf32a0b16",
+     "title": "Apple data center in Waukee finally up and running, roughly seven years after it was pitched",
+     "published": "2024-10-16",
+     "rules": "Operational",
+     "strict": "Operational"
+    },
+    {
      "id": "5e78fce01874f83c",
      "title": "Data center in Waukee to expand as part of Apple’s new $500 billion U.S. investment plan",
      "published": "2025-02-26",
-     "rules": "Announced",
+     "rules": "Expansion",
      "strict": "Announced"
     }
    ]
@@ -2204,7 +2252,7 @@
      "id": "873ebfabc47167a7",
      "title": "How big will the Richland Parish data center be? Meta will expand AI center",
      "published": "2026-07-13",
-     "rules": null,
+     "rules": "Expansion",
      "strict": null
     },
     {
@@ -2225,7 +2273,7 @@
      "id": "9538ff56f61c22c2",
      "title": "Meta Will Invest Over $50B To Expand North Louisiana Data Center Campus",
      "published": "2026-07-13",
-     "rules": null,
+     "rules": "Expansion",
      "strict": null
     },
     {
@@ -2783,14 +2831,14 @@
      "id": "389f5f626db39c82",
      "title": "Google Announces $40 Billion Texas Investment To Expand AI And Data Center Infrastructure",
      "published": "2025-11-15",
-     "rules": "Announced",
+     "rules": "Expansion",
      "strict": "Announced"
     },
     {
      "id": "4337e0e7dd5b722d",
      "title": "Google Announces $40 Billion Texas Data Center Investment to Expand Cloud and AI Infrastructure",
      "published": "2025-11-15",
-     "rules": "Announced",
+     "rules": "Expansion",
      "strict": "Announced"
     },
     {
@@ -2958,7 +3006,7 @@
      "id": "112962dc6e9ebee2",
      "title": "CyrusOne files to expand data center campus outside Waco, Texas",
      "published": "2025-12-08",
-     "rules": null,
+     "rules": "Expansion",
      "strict": null
     },
     {
@@ -3911,6 +3959,13 @@
    ],
    "headlines": [
     {
+     "id": "4951fcaa0b3c9f89",
+     "title": "Project Caprock Data Center Construction Begins in Hale County, Texas With First Facility",
+     "published": "2026-04-10",
+     "rules": "Under construction",
+     "strict": "Under construction"
+    },
+    {
      "id": "7098e49774628cd1",
      "title": "Aligned breaks ground on 540MW data center campus in Texas",
      "published": "2026-04-10",
@@ -4236,17 +4291,24 @@
    "status_strict": "Cancelled / Blocked",
    "history_rules": [
     [
-     "2026-04-20",
+     "2026-04-17",
      "Cancelled / Blocked"
     ]
    ],
    "history_strict": [
     [
-     "2026-04-20",
+     "2026-04-17",
      "Cancelled / Blocked"
     ]
    ],
    "headlines": [
+    {
+     "id": "c690dede84258493",
+     "title": "Developer withdraws proposed data center rezoning in Hutto after community pushback",
+     "published": "2026-04-17",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
     {
      "id": "661dbbdf200122fb",
      "title": "Developer withdraws application for 70MW data center in Hutto, Texas",
@@ -4879,7 +4941,7 @@
      "Announced"
     ],
     [
-     "2025-08-07",
+     "2025-08-06",
      "Cancelled / Blocked"
     ]
    ],
@@ -4889,7 +4951,7 @@
      "Announced"
     ],
     [
-     "2025-08-07",
+     "2025-08-06",
      "Cancelled / Blocked"
     ]
    ],
@@ -4902,9 +4964,58 @@
      "strict": "Announced"
     },
     {
+     "id": "c289e60348a9b656",
+     "title": "The Project Blue data center proposal sprang up fast — so did the organizing",
+     "published": "2025-07-21",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "cfb9ffe6e3b185c4",
+     "title": "Project Blue: Transformational Data Center Campus Proposed for Southeast Tucson",
+     "published": "2025-07-22",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "d4013a2caa1aeeb0",
+     "title": "Company behind Project Blue data center unveils information, sparking debate amongst attendees",
+     "published": "2025-07-24",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "351d91bf9da0c0be",
+     "title": "Hundreds demand answers on Tucson's proposed Project Blue data center at heated community meeting",
+     "published": "2025-07-25",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "1633bb277ac952a9",
+     "title": "Project Blue Rejected: Deep dive into ‘hyperscale’ data centers",
+     "published": "2025-08-06",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "48ac616ea008f691",
+     "title": "Tucson City Council rejects Project Blue data center amid intense community pressure",
+     "published": "2025-08-06",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
      "id": "89cf8fbf1c495767",
      "title": "Tucson council blocks Amazon data center after public outcry",
      "published": "2025-08-07",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "68d2be283f3b2826",
+     "title": "The End of Project Blue | Tucson City Council pulls the plug on the controversial data center",
+     "published": "2025-08-08",
      "rules": "Cancelled / Blocked",
      "strict": "Cancelled / Blocked"
     },
@@ -4916,9 +5027,23 @@
      "strict": "Cancelled / Blocked"
     },
     {
+     "id": "bc7c5a2880b4ff72",
+     "title": "Plan B for Project Blue: Records reveal 3 other sites considered for controversial data center",
+     "published": "2025-08-15",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
      "id": "0dd9b2199d970b4d",
      "title": "Amazon's planned data center won't be cooled with as much water. Here's what it will use",
      "published": "2025-09-19",
+     "rules": "Announced",
+     "strict": "Announced"
+    },
+    {
+     "id": "3191126efa0c29f2",
+     "title": "Project Blue developer applies for 600 acres in Marana to build data center campus",
+     "published": "2025-10-31",
      "rules": "Announced",
      "strict": "Announced"
     },
@@ -4935,6 +5060,20 @@
      "published": "2025-12-09",
      "rules": "Cancelled / Blocked",
      "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "cedc3d1498003669",
+     "title": "Marana rejects referendums against Project Blue data center rezoning",
+     "published": "2026-02-19",
+     "rules": "Cancelled / Blocked",
+     "strict": "Cancelled / Blocked"
+    },
+    {
+     "id": "129ca465ea14927b",
+     "title": "Arizona water officials approve wells tied to Project Blue data center",
+     "published": "2026-05-28",
+     "rules": "Announced",
+     "strict": "Announced"
     },
     {
      "id": "ff7f904396c60f66",
@@ -5163,14 +5302,14 @@
      "id": "259c6b6c58d2c836",
      "title": "Amazon Web Services to invest billions to expand Ohio data center infrastructure",
      "published": "2024-12-16",
-     "rules": null,
+     "rules": "Expansion",
      "strict": null
     },
     {
      "id": "d9c7518718b4941a",
      "title": "Governor DeWine announces $10 billion AWS investment to expand Ohio data centers",
      "published": "2024-12-16",
-     "rules": "Announced",
+     "rules": "Expansion",
      "strict": "Announced"
     },
     {
@@ -5247,7 +5386,7 @@
      "id": "64f83d7667688411",
      "title": "City leaders looking to expand plans for proposed Amazon data center in Wilmington",
      "published": "2026-01-15",
-     "rules": "Announced",
+     "rules": "Expansion",
      "strict": null
     },
     {
@@ -6197,14 +6336,19 @@
    "name": "Hillsboro data center",
    "status_rules": "Announced",
    "status_strict": "Announced",
-   "history_rules": [],
+   "history_rules": [
+    [
+     "2026-02-11",
+     "Announced"
+    ]
+   ],
    "history_strict": [],
    "headlines": [
     {
      "id": "c3107dd570a9ee5a",
      "title": "Data center developer Stack to expand Hillsboro campus by 121MW",
      "published": "2026-02-11",
-     "rules": null,
+     "rules": "Expansion",
      "strict": null
     }
    ]
@@ -6334,7 +6478,7 @@
      "id": "9a827f2a32dfbd71",
      "title": "$10B more announced to bolster expansion of data centers in Ohio",
      "published": "2024-12-16",
-     "rules": "Announced",
+     "rules": "Expansion",
      "strict": "Announced"
     }
    ]
@@ -6559,6 +6703,28 @@
      "published": "2026-03-18",
      "rules": "Expansion",
      "strict": "Expansion"
+    }
+   ]
+  },
+  {
+   "id": "coresite-va-unnamed",
+   "name": "CoreSite, Virginia (site not yet named)",
+   "status_rules": "Announced",
+   "status_strict": "Announced",
+   "history_rules": [
+    [
+     "2025-07-02",
+     "Announced"
+    ]
+   ],
+   "history_strict": [],
+   "headlines": [
+    {
+     "id": "f0106695cd6c1a73",
+     "title": "CoreSite moves to expand Reston data centers, alarming some residents",
+     "published": "2025-07-02",
+     "rules": "Expansion",
+     "strict": null
     }
    ]
   },
@@ -7032,14 +7198,19 @@
    "name": "Apple, North Carolina (site not yet named)",
    "status_rules": "Announced",
    "status_strict": "Announced",
-   "history_rules": [],
+   "history_rules": [
+    [
+     "2025-04-07",
+     "Announced"
+    ]
+   ],
    "history_strict": [],
    "headlines": [
     {
      "id": "8d09fc31033c3e02",
      "title": "Apple to invest $175m in expanding North Carolina data center",
      "published": "2025-04-07",
-     "rules": null,
+     "rules": "Expansion",
      "strict": null
     }
    ]
@@ -7247,7 +7418,7 @@
    "status_strict": "Announced",
    "history_rules": [
     [
-     "2026-10-12",
+     "2026-10-05",
      "Announced"
     ]
    ],
@@ -7258,6 +7429,13 @@
     ]
    ],
    "headlines": [
+    {
+     "id": "e4b4e46c829bb142",
+     "title": "Kentucky Power finalizes deal with TeraWulf to expand electric demand at Grayson data center",
+     "published": "2026-10-05",
+     "rules": "Expansion",
+     "strict": null
+    },
     {
      "id": "4233a2dba96f3d3c",
      "title": "TeraWulf Expands Kentucky Data Center Power Commitment to 1 GW",
@@ -7296,60 +7474,6 @@
      "id": "498b4f4f90409c53",
      "title": "Miami-Dade County approves $3.6 million incentive deal for new data center",
      "published": "2024-12-06",
-     "rules": "Announced",
-     "strict": "Announced"
-    }
-   ]
-  },
-  {
-   "id": "openai-nm-unnamed",
-   "name": "OpenAI, New Mexico (site not yet named)",
-   "status_rules": "Announced",
-   "status_strict": "Announced",
-   "history_rules": [
-    [
-     "2025-09-26",
-     "Announced"
-    ]
-   ],
-   "history_strict": [
-    [
-     "2025-09-26",
-     "Announced"
-    ]
-   ],
-   "headlines": [
-    {
-     "id": "330b08a763495516",
-     "title": "OpenAI to build massive data center in New Mexico as part of nationwide expansion",
-     "published": "2025-09-26",
-     "rules": "Expansion",
-     "strict": "Expansion"
-    }
-   ]
-  },
-  {
-   "id": "site-holyoke-ma-2026",
-   "name": "Holyoke data center",
-   "status_rules": "Announced",
-   "status_strict": "Announced",
-   "history_rules": [
-    [
-     "2026-06-02",
-     "Announced"
-    ]
-   ],
-   "history_strict": [
-    [
-     "2026-06-02",
-     "Announced"
-    ]
-   ],
-   "headlines": [
-    {
-     "id": "f1d27f0c654570d3",
-     "title": "Developer plans $200M data center at former Holyoke paper mill: ‘We have the power’",
-     "published": "2026-06-02",
      "rules": "Announced",
      "strict": "Announced"
     }
