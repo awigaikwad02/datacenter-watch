@@ -522,9 +522,9 @@ def update(items, gaz, registry_in=REGISTRY_FILE, registry_out=REGISTRY_FILE, lo
 # ---------------------------------------------------------------------------
 # Static project pages and the sitemap
 # ---------------------------------------------------------------------------
-BASE_PAGES = [("/", "hourly", "1.0"), ("/newsroom", "hourly", "0.9"), ("/atlas", "daily", "0.9"),
+BASE_PAGES = [("/", "hourly", "1.0"), ("/newsroom", "hourly", "0.9"), ("/radar", "daily", "0.9"),
               ("/companies", "daily", "0.8"), ("/learn", "monthly", "0.7"), ("/methodology", "monthly", "0.5")]
-NAV = [("/", "Overview"), ("/newsroom", "Newsroom"), ("/atlas", "Project Atlas"), ("/companies", "Companies"),
+NAV = [("/", "Overview"), ("/newsroom", "Newsroom"), ("/radar", "Rack Radar"), ("/companies", "Companies"),
        ("/learn", "Learn"), ("/methodology", "Methodology")]
 TONE = {"Announced": "--st-announced", "Planned": "--st-planned", "Under construction": "--st-construction",
         "Operational": "--st-operational", CANCELLED: "--st-cancelled"}
@@ -593,7 +593,7 @@ def record_html(r):
     <div>
       <div class="kv">{"".join(f'<div><span>{esc(k)}</span><b>{esc(v)}</b></div>' for k, v in figures)}</div>
       {f'<p>{esc(r["notes"])}</p>' if r.get("notes") else ""}
-      <p><a class="btn sm primary" href="/atlas#project={esc(r['id'])}">Open in the Project Atlas</a></p>
+      <p><a class="btn sm primary" href="/radar#project={esc(r['id'])}">Open in Rack Radar</a></p>
     </div>
     {thumb}
   </div>
@@ -625,7 +625,7 @@ def page_shell(title, desc, canonical, body):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="/assets/style.css?v=rr19">
+  <link rel="stylesheet" href="/assets/style.css?v=rr20">
 </head>
 <body class="static-page">
   <a class="skip" href="#main">Skip to content</a>

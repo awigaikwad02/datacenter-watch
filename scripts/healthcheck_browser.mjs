@@ -7,7 +7,7 @@
 // Serves the repo the way GitHub Pages does (/newsroom -> newsroom.html, unknown paths -> 404.html),
 // then loads the six pages plus a missing path at 390px and 1280px. Checks console errors, CSP
 // violations, failed requests, rendered links, sitemap entries, the freshness badge, the Overview
-// "announced" number, the Atlas map and axe-core (serious and critical issues). Results are merged
+// "announced" number, the Rack Radar map, the old /atlas redirect and axe-core (serious and critical issues). Results are merged
 // into data/health.json; exits 1 on any failure. Run scripts/healthcheck.py first.
 //
 // Offline use (no CDN access): RR_VENDOR_DIR=<dir with leaflet/ and leaflet.markercluster/ packages>
@@ -21,7 +21,7 @@ import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const PAGES = ["/", "/newsroom", "/atlas", "/companies", "/learn", "/methodology"];
+const PAGES = ["/", "/newsroom", "/radar", "/companies", "/learn", "/methodology"];
 // One static project page (written by scripts/registry.py) is loaded with the site pages.
 const REG = JSON.parse(fs.readFileSync(path.join(ROOT, "data/registry.json"), "utf8")).records.filter((r) => !r.hidden);
 const PROJECT_PAGE = REG.length ? "/projects/" + REG[0].id + "/" : null;
@@ -95,7 +95,7 @@ async function main() {
         if (r.status() >= 400 && r.url().startsWith(base) && !r.url().endsWith(MISSING)) failed.push(r.status() + " " + r.url().replace(base, ""));
       });
       await p.goto(base + page, { waitUntil: "load" });
-      await p.waitForTimeout(page === "/atlas" || page === "/" ? 2500 : 1500);
+      await p.waitForTimeout(page === "/radar" || page === "/" ? 2500 : 1500);
       const csp = await p.evaluate(() => window.__csp);
       const label = `${page === MISSING ? "404 page" : page} @${width}px`;
       check(`${label} loads cleanly`, !errors.length && !csp.length && !failed.length,
@@ -129,7 +129,7 @@ async function main() {
         try { expected = Number(JSON.parse(fs.readFileSync(path.join(ROOT, "data/health.json"), "utf8")).checks.find((c) => /excludes Cancelled/.test(c.name)).value); } catch (e) { /* not run yet */ }
         check("Overview 'announced' matches recomputed value", expected !== null && shown === expected, shown, `Python recomputed ${expected} (Cancelled / Blocked excluded)`);
       }
-      if (page === "/atlas" && width === 1280) await atlas(p, base);
+      if (page === "/radar" && width === 1280) await radar(p, base);
       await ctx.close();
     }
   }
@@ -154,7 +154,7 @@ async function main() {
   return report();
 }
 
-async function atlas(p, base) {
+async function radar(p, base) {
   const pins = await p.$$eval(".leaflet-marker-icon", (e) => e.length);
   // "Location unavailable" projects are off by default; tick the filter to show their state bubbles.
   const hiddenByDefault = (await p.$$eval(".bubble, .cluster .apx", (e) => e.length)) === 0 && !(await p.isChecked("#approxOn"));
@@ -163,7 +163,7 @@ async function atlas(p, base) {
   await p.click(".leaflet-control-zoom-in"); await p.waitForTimeout(500);
   await p.click(".leaflet-control-zoom-in"); await p.waitForTimeout(900);
   const bubbles = await p.$$eval(".bubble", (e) => e.length);
-  check("Atlas renders pins and state bubbles", pins > 0 && bubbles > 0 && hiddenByDefault,
+  check("Rack Radar renders pins and state bubbles", pins > 0 && bubbles > 0 && hiddenByDefault,
     `${pins} markers; location-unavailable hidden by default: ${hiddenByDefault}; ${bubbles} bubbles at zoom 5+, ${atCountry} at country zoom`);
   // A bubble lists its projects and each one opens the panel.
   const bpt = await p.evaluate(() => {
@@ -183,7 +183,7 @@ async function atlas(p, base) {
       picked = await p.$eval("#detail.open #detailTitle", (e) => e.textContent).catch(() => "");
     }
   }
-  check("Atlas 'Location unavailable' bubble lists projects and opens one", listed > 0 && !!picked, `${listed} projects listed, opened "${picked || "none"}"`);
+  check("Rack Radar 'Location unavailable' bubble lists projects and opens one", listed > 0 && !!picked, `${listed} projects listed, opened "${picked || "none"}"`);
   await p.click("#closeDetail").catch(() => {});
   await p.uncheck("#approxOn", { force: true }); await p.waitForTimeout(400);
   // Click into clusters until a single pin is visible, then click it.
@@ -203,12 +203,12 @@ async function atlas(p, base) {
     if (!cl) break;
     await cl.click({ force: true }); await p.waitForTimeout(900);
   }
-  check("Atlas pin click opens the panel", opened, opened ? await p.$eval("#detailTitle", (e) => e.textContent) : "no panel");
+  check("Rack Radar pin click opens the panel", opened, opened ? await p.$eval("#detailTitle", (e) => e.textContent) : "no panel");
   const before = await p.textContent("#listCount");
   const st = await p.$$eval("#state option", (o) => (o[1] ? o[1].value : ""));
   await p.selectOption("#state", st); await p.waitForTimeout(600);
   const after = await p.textContent("#listCount");
-  check("Atlas filters change the list", before !== after, `${before} -> ${after} (state ${st})`);
+  check("Rack Radar filters change the list", before !== after, `${before} -> ${after} (state ${st})`);
   await p.selectOption("#state", ""); await p.uncheck("#inView").catch(() => {}); await p.waitForTimeout(400);
   const cards = () => p.$$eval(".proj-card small:first-of-type", (e) => e.map((x) => x.textContent));
   const def = await cards();
@@ -218,21 +218,26 @@ async function atlas(p, base) {
   await p.uncheck("#lowConf");
   await p.click("#statusChips [data-quick]"); await p.waitForTimeout(400);
   const ops = await cards();
-  check("Atlas registry filters (cancelled off, low-confidence toggle, Operational only)",
+  check("Rack Radar registry filters (cancelled off, low-confidence toggle, Operational only)",
     cancelledShown === 0 && withLow >= def.length && ops.length > 0 && ops.every((t) => /Operational/.test(t)),
     `default ${def.length} (0 cancelled: ${cancelledShown === 0}), with low-confidence ${withLow}, Operational only ${ops.length}`);
   await p.click("#statusChips [data-quick]"); await p.waitForTimeout(300);
   const proj = JSON.parse(fs.readFileSync(path.join(ROOT, "data/projects.json"), "utf8")).projects[0];
-  await p.goto(base + "/atlas#project=" + encodeURIComponent(proj.id)); await p.waitForTimeout(2200);
+  await p.goto(base + "/radar#project=" + encodeURIComponent(proj.id)); await p.waitForTimeout(2200);
   const title = await p.$eval("#detailTitle", (e) => e.textContent).catch(() => "");
-  check("Atlas deep link opens the project", title === proj.name, `#project=${proj.id} -> ${title || "no panel"}`);
+  check("Rack Radar deep link opens the project", title === proj.name, `#project=${proj.id} -> ${title || "no panel"}`);
+  // Project Atlas was renamed Rack Radar; old /atlas#project= links must still land on the project.
+  await p.goto(base + "/atlas#project=" + encodeURIComponent(proj.id)); await p.waitForTimeout(2200);
+  const moved = await p.$eval("#detailTitle", (e) => e.textContent).catch(() => "");
+  check("Old /atlas link redirects to Rack Radar with the project", new URL(p.url()).pathname === "/radar" && moved === proj.name,
+    `${new URL(p.url()).pathname}${new URL(p.url()).hash} -> ${moved || "no panel"}`);
   const withNews = REG.filter((r) => !r.curated && r.news.length > 1 && r.precision !== "state" && r.confidence !== "low" && r.status !== "Cancelled / Blocked")[0];
   if (withNews) {
-    await p.goto(base + "/atlas#project=" + encodeURIComponent(withNews.id)); await p.waitForTimeout(2200);
+    await p.goto(base + "/radar#project=" + encodeURIComponent(withNews.id)); await p.waitForTimeout(2200);
     const sec = await p.evaluate(() => [...document.querySelectorAll("#detail .sub-h")].map((h) => h.textContent));
     const steps = await p.$$eval("#detail .status-steps li", (e) => e.length);
     const items = await p.$$eval("#detail .sub-h", (hs) => { const h = hs.find((x) => x.textContent === "News about this project"); return h ? h.nextElementSibling.querySelectorAll("a").length : 0; });
-    check("Atlas panel shows status timeline and project news", sec.includes("Status timeline") && sec.includes("News about this project") && steps > 0 && items === withNews.news.length,
+    check("Rack Radar panel shows status timeline and project news", sec.includes("Status timeline") && sec.includes("News about this project") && steps > 0 && items === withNews.news.length,
       `${withNews.id}: ${steps} timeline steps, ${items}/${withNews.news.length} news`);
   }
 }

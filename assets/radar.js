@@ -1,4 +1,4 @@
-// Project Atlas: clustered U.S. map, filters (panel on desktop, bottom sheet on mobile),
+// Rack Radar (formerly Project Atlas; route /radar, old /atlas redirects): clustered U.S. map, filters (panel on desktop, bottom sheet on mobile),
 // a list synced with the filters and map viewport, and a deep-linkable detail panel.
 (function () {
   "use strict";
@@ -10,7 +10,7 @@
   const TWO_YEARS = 730 * R.DAY;
   const recentlyCompleted = (p) => { const d = R.completedDate(p); return !!d && Date.now() - new Date(d).getTime() <= TWO_YEARS; };
   let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
-  R.shell("/atlas", "Project Atlas");
+  R.shell("/radar", "Rack Radar");
   $("#fitBtn").innerHTML = R.icon("focus");
   $("#sheetClose").innerHTML = R.icon("x");
 
@@ -363,7 +363,7 @@
     R.ready();
   }).catch((err) => {
     console.error(err);
-    $("#list").innerHTML = '<div class="empty">' + R.icon("alert") + "<b>Couldn't load the Atlas</b>Check your connection and reload. The map library loads from unpkg.com.</div>";
+    $("#list").innerHTML = '<div class="empty">' + R.icon("alert") + "<b>Couldn't load Rack Radar</b>Check your connection and reload. The map library loads from unpkg.com.</div>";
     R.ready();
   });
 })();

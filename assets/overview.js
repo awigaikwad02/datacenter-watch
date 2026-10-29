@@ -87,7 +87,7 @@
     cl.addLayers(recent.filter((p) => p.curated || !p.approx).map((p) => {
       const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p), title: p.curated ? p.name : p.place, keyboard: true });
       m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(R.statusSince(p)) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
-      m.on("click", () => { location.href = "/atlas#project=" + encodeURIComponent(p.id); });
+      m.on("click", () => { location.href = "/radar#project=" + encodeURIComponent(p.id); });
       return m;
     }));
     approx.set(recent);
@@ -107,7 +107,7 @@
       pulseLayers = { cl, approx: R.approxLayer(map, cl, null) };
       drawPulse();
       $("#pulsePh").remove();
-    }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open the Project Atlas instead."; });
+    }).catch(() => { $("#pulsePh").textContent = "The map couldn't load. Open Rack Radar instead."; });
     if (!("IntersectionObserver" in window)) return start();
     const io = new IntersectionObserver((e) => { if (e[0].isIntersecting) { io.disconnect(); start(); } }, { rootMargin: "300px" });
     io.observe(el);

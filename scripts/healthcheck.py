@@ -36,7 +36,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SITE = "https://therackreport.org"
-PAGES = {"index.html": "/", "newsroom.html": "/newsroom", "atlas.html": "/atlas",
+PAGES = {"index.html": "/", "newsroom.html": "/newsroom", "radar.html": "/radar",
          "companies.html": "/companies", "learn.html": "/learn", "methodology.html": "/methodology"}
 MAX_AGE = timedelta(hours=3)  # the loop refreshes hourly; the watchdog restarts it at 3h
 MAX_CATEGORY_SHARE = 0.30
@@ -448,7 +448,7 @@ def site():
     reg = load(DATA / "registry.json").get("records", []) if (DATA / "registry.json").is_file() else []
     project_pages = {p.parent.name for p in (ROOT / "projects").glob("*/index.html")}
     want_pages = {f"/projects/{d}/" for d in project_pages}
-    base = {"/", "/newsroom", "/atlas", "/companies", "/learn", "/methodology"}
+    base = {"/", "/newsroom", "/radar", "/companies", "/learn", "/methodology"}
     missing_base = sorted(base - sm_paths)
     unlisted = sorted(want_pages - sm_paths)
     hidden_pages = sorted(r["id"] for r in reg if r.get("hidden") and r["id"] in project_pages)

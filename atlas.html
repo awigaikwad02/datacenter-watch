@@ -2,106 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Project Atlas · The Rack Report</title>
-  <meta name="description" content="Interactive map of U.S. data center projects: announced, planned, under construction, operational and expanding campuses, with companies, capacity and related headlines.">
-  <meta name="theme-color" content="#0c0c0d">
-  <link rel="canonical" href="https://therackreport.org/atlas">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Project Atlas was renamed Rack Radar (/radar). This stub keeps old links working,
+       including deep links such as /atlas#project=ID and /atlas#company=NAME. -->
+  <title>Rack Radar · The Rack Report</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://therackreport.org/radar">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="The Rack Report">
-  <meta property="og:title" content="Project Atlas · The Rack Report">
-  <meta property="og:description" content="Interactive map of U.S. data center projects: announced, planned, under construction, operational and expanding campuses, with companies, capacity and related headlines.">
-  <meta property="og:url" content="https://therackreport.org/atlas">
-  <meta property="og:image" content="https://therackreport.org/assets/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="The Rack Report: the U.S. data center buildout, tracked in one place.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Project Atlas · The Rack Report">
-  <meta name="twitter:description" content="Interactive map of U.S. data center projects: announced, planned, under construction, operational and expanding campuses, with companies, capacity and related headlines.">
-  <meta name="twitter:image" content="https://therackreport.org/assets/og.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=rr19">
-  <script>try{if(sessionStorage.getItem("rr-intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("no-loader");else sessionStorage.setItem("rr-intro","1")}catch(e){document.documentElement.classList.add("no-loader")}</script>
+  <script>location.replace("/radar" + location.search + location.hash);</script>
+  <noscript><meta http-equiv="refresh" content="0; url=/radar"></noscript>
 </head>
-<body class="app-page">
-  <a class="skip" href="#main">Skip to content</a>
-  <div id="loader" aria-hidden="true"><div class="ld">
-    <svg class="ld-mark" viewBox="0 0 48 48"><rect class="ld-outline" x="8" y="3.75" width="32" height="40.5" rx="7" fill="none" stroke="currentColor" stroke-width="3.5" pathLength="150"/><rect class="ld-bar b1" x="14" y="11" width="20" height="4.5" rx="2.25" fill="#B9F542"/><rect class="ld-bar b2" x="14" y="18.5" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b3" x="14" y="26" width="20" height="4.5" rx="2.25" fill="currentColor"/><rect class="ld-bar b4" x="14" y="33.5" width="20" height="4.5" rx="2.25" fill="currentColor"/></svg>
-    <p class="ld-text">Initializing The Rack Report…</p>
-  </div></div>
-  <aside class="sidebar" id="sidebar" aria-label="Site"></aside>
-  <div class="shell-main">
-    <header class="topbar" id="topbar"></header>
-    <main id="main" tabindex="-1">
-      <div class="atlas" id="atlas">
-        <aside class="atlas-side" id="side" aria-label="Project filters and list">
-          <div class="side-tools">
-            <button class="btn sm js-filters" aria-haspopup="dialog" aria-controls="sheet"></button>
-            <div class="seg" role="group" aria-label="View"><button data-mode="map" aria-pressed="false">Map</button><button data-mode="list" aria-pressed="true">List</button></div>
-          </div>
-          <div class="atlas-head">
-            <span class="eyebrow">Project Atlas</span>
-            <h1>U.S. data center projects</h1>
-            <p>Rack pins are curated projects. Rings were detected in headlines and placed at the town or state named.</p>
-            <div class="mini-stats" id="miniStats" aria-live="polite"></div>
-          </div>
-          <div id="panelHome">
-            <div class="filter-panel" id="filterPanel">
-              <label class="search"><span class="sr-only">Search projects</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="q" class="input" type="search" placeholder="Search projects, companies, towns…" autocomplete="off"></label>
-              <div class="chips status-chips" id="statusChips" role="group" aria-label="Status"></div>
-              <label class="check-row"><input type="checkbox" id="lowConf"> Show low-confidence projects</label>
-              <label class="check-row"><input type="checkbox" id="approxOn"> Show projects with location unavailable</label>
-              <div class="row2">
-                <label class="field">Company<select id="company" class="select"></select></label>
-                <label class="field">State<select id="state" class="select"></select></label>
-              </div>
-              <div class="row2">
-                <label class="field">Year announced<select id="year" class="select"></select></label>
-                <label class="field">Sources<select id="kind" class="select"><option value="">Curated and detected</option><option value="curated">Curated only</option><option value="auto">Detected only</option></select></label>
-              </div>
-              <div class="row2">
-                <label class="range-field">Min. capacity <output id="mwOut">Any</output><input id="mw" type="range" min="0" max="2000" step="100" value="0" aria-label="Minimum capacity in megawatts"></label>
-                <label class="range-field">Min. investment <output id="usdOut">Any</output><input id="usd" type="range" min="0" max="50" step="1" value="0" aria-label="Minimum investment in billions of dollars"></label>
-              </div>
-              <button class="link-btn" id="resetFilters" style="justify-self:start">Reset filters</button>
-            </div>
-          </div>
-          <div class="list-head"><span id="listCount" aria-live="polite">Loading…</span><label><input type="checkbox" id="inView" checked> Only what's in view</label></div>
-          <div class="proj-list" id="list"><div class="skel news" style="margin:6px"></div><div class="skel news" style="margin:6px"></div></div>
-        </aside>
-
-        <section class="atlas-map" aria-label="Map">
-          <div id="map" role="region" aria-label="Interactive map of U.S. data center projects. Use the list for keyboard access to every project."></div>
-          <div class="map-tools">
-            <button class="btn sm mobile-only js-filters" id="filtersBtn" aria-haspopup="dialog" aria-controls="sheet"></button>
-            <div class="seg mobile-only" id="viewToggle" role="group" aria-label="View"><button data-mode="map" aria-pressed="true">Map</button><button data-mode="list" aria-pressed="false">List</button></div>
-            <span class="spacer"></span>
-            <button class="icon-btn" id="fitBtn" aria-label="Show the whole United States" data-tip="Show the whole U.S."></button>
-          </div>
-          <div class="legend" id="legend" role="note" aria-label="Map legend"></div>
-          <aside class="detail" id="detail" aria-labelledby="detailTitle" tabindex="-1"></aside>
-        </section>
-      </div>
-
-      <div class="backdrop" id="sheetBack"></div>
-      <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
-        <div class="grabber" aria-hidden="true"></div>
-        <div class="sheet-head"><h2 id="sheetTitle">Filter projects</h2><button class="icon-btn" id="sheetClose" aria-label="Close filters"></button></div>
-        <div class="sheet-body" id="sheetBody"></div>
-        <div class="sheet-foot"><button class="btn" id="sheetReset">Reset</button><button class="btn primary" id="sheetApply">Show projects</button></div>
-      </section>
-    </main>
-
-  </div>
-  <nav class="tabbar" id="tabbar"></nav>
-  <script src="assets/companies.js?v=rr19"></script>
-  <script src="assets/app.js?v=rr19"></script>
-  <script src="assets/atlas.js?v=rr19"></script>
+<body style="background:#070b14;color:#eef2f8;font-family:system-ui,sans-serif">
+  <p>Project Atlas is now <a href="/radar" style="color:#b9f542">Rack Radar</a>.</p>
 </body>
 </html>

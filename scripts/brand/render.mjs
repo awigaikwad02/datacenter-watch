@@ -26,7 +26,7 @@ const og = `<div style="position:relative;width:1200px;height:630px;background:r
   <div style="position:absolute;left:96px;top:150px;color:#E9EEF7">${sized(mark, 132, 132)}</div>
   <div style="position:absolute;left:96px;top:318px;font-size:84px;letter-spacing:-2.5px;color:#F4F7FB;font-weight:400">The <b style="font-weight:600">Rack</b> Report</div>
   <div style="position:absolute;left:100px;top:432px;font-size:32px;color:#A9B6C9;letter-spacing:-.3px">The U.S. data center buildout, tracked in one place.</div>
-  <div style="position:absolute;left:100px;top:520px;display:flex;gap:12px;align-items:center;font-size:22px;color:#B9F542;font-weight:600"><span style="width:12px;height:12px;border-radius:50%;background:#B9F542;box-shadow:0 0 18px #B9F542"></span>News · Project Atlas · Companies · Learn</div>
+  <div style="position:absolute;left:100px;top:520px;display:flex;gap:12px;align-items:center;font-size:22px;color:#B9F542;font-weight:600"><span style="width:12px;height:12px;border-radius:50%;background:#B9F542;box-shadow:0 0 18px #B9F542"></span>News · Rack Radar · Companies · Learn</div>
 </div>`;
 
 const jobs = [

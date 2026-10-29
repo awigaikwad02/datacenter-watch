@@ -10,14 +10,15 @@ Live site: https://therackreport.org/ (custom domain on GitHub Pages; the root `
 |---|---|---|
 | `index.html` | Overview | Hero, live metrics, latest major story, headline ticker, project pulse map (lazy-loaded), most active companies, topic mix |
 | `newsroom.html` | Newsroom | Every headline with instant filters (company, state, topic, source, today/week/month/90 days), search, save and share; an **Include archive** switch searches the full archive |
-| `atlas.html` | Project Atlas | Clustered map of curated and detected U.S. projects, filters, list synced with the map, detail panel with timeline and related headlines; deep links with `#project=ID`, `#company=Name`, `#state=TX` |
+| `radar.html` | Rack Radar | Clustered map of curated and detected U.S. projects, filters, list synced with the map, detail panel with timeline and related headlines; deep links with `#project=ID`, `#company=Name`, `#state=TX` |
 | `companies.html` | Companies | Company cards and profiles computed from the data; deep links with `#Name` |
 | `learn.html` | Learn | Ten modules from beginner to advanced with diagrams, calculators, quizzes and saved progress |
 | `methodology.html` | Methodology | Sources, tagging, detection, limitations, how to report an error |
-| `projects.html` | Redirect | Sends old map links to the Atlas |
+| `projects.html` | Redirect | Sends old map links (`#p=ID`) to Rack Radar |
+| `atlas.html` | Redirect | Project Atlas was renamed Rack Radar; keeps `/atlas#project=ID` links working |
 | `404.html` | Not found | Served by Pages for any missing path; links to the six pages |
 
-Links use clean, root-relative URLs (`/newsroom`, `/atlas`, `/` for the Overview); GitHub Pages serves `newsroom.html` for `/newsroom`. The `.html` files keep their names.
+Links use clean, root-relative URLs (`/newsroom`, `/radar`, `/` for the Overview); GitHub Pages serves `newsroom.html` for `/newsroom`. The `.html` files keep their names.
 | `robots.txt`, `sitemap.xml` | SEO | Crawl rules and the six pages on https://therackreport.org |
 
 Shared code: `assets/style.css` (all design tokens and components), `assets/app.js` (shell, loader, data loading, helpers), `assets/companies.js` (one-line company descriptions). Each page has its own script in `assets/`. Leaflet and Leaflet.markercluster load from unpkg with subresource integrity; map tiles are OpenStreetMap's standard tiles, darkened with a CSS filter (no API key needed).
@@ -44,7 +45,7 @@ GitHub Actions (every hour at :17)
 GitHub Pages serves the HTML; the pages fetch the JSON in the browser
 ```
 
-`data/projects.json` holds curated projects and is edited by hand. A project can carry an optional `timeline` array of `{date, event, url}` milestones (date as `YYYY-MM` or `YYYY-MM-DD`), shown in the Atlas detail panel.
+`data/projects.json` holds curated projects and is edited by hand. A project can carry an optional `timeline` array of `{date, event, url}` milestones (date as `YYYY-MM` or `YYYY-MM-DD`), shown in Rack Radar detail panel.
 
 ### Project registry
 
@@ -93,7 +94,7 @@ Registry statuses: Announced, Planned (curated only), Under construction, Operat
 - **Topic order:** Cancelled / Blocked, New Announcement, Construction, Expansion, Land Acquisition, Operations, Deals / Investment, Power / Utility, AI Infrastructure, Policy / Permits (last, and only with a governance phrase).
 - **Cancelled / Blocked** is checked before every other topic and status (withdrawn, scrapped, denied, voted down, halted, paused, moratorium passed; "calls for" and "considers" do not count).
 - **Locations:** title and RSS description are scanned against `scripts/gazetteer.json` (every U.S. county and parish at its Census centroid, plus townships in the news). `source_states` in `data/feeds.json` maps local outlets to their home state as a last resort. `location_precision` is `city`, `county`, `state` or `source`.
-- **Stories:** headlines within 5 days cluster when title-word Jaccard is >= 0.5, or >= 0.3 with the same city/county, or >= 0.3 with the same company and state (union-find; clusters naming different states or places never merge). Each item gets `cluster_id` (earliest member) and `cluster_title` (most precise place, else earliest). The Newsroom shows one card per story and company counts are stories. On the Atlas, projects known only to the state are "Location unavailable": hidden by default, and with that filter on shown as one bubble per state (folded into cluster circles below zoom 5) that lists its projects when selected.
+- **Stories:** headlines within 5 days cluster when title-word Jaccard is >= 0.5, or >= 0.3 with the same city/county, or >= 0.3 with the same company and state (union-find; clusters naming different states or places never merge). Each item gets `cluster_id` (earliest member) and `cluster_title` (most precise place, else earliest). The Newsroom shows one card per story and company counts are stories. On Rack Radar, projects known only to the state are "Location unavailable": hidden by default, and with that filter on shown as one bubble per state (folded into cluster circles below zoom 5) that lists its projects when selected.
 - **U.S. filter:** every gazetteer entry has a country code; headlines whose only places are non-U.S. are dropped, and `FOREIGN_SOURCES` outlets need a U.S. place or state in the title.
 - **Archive re-tag:** `scripts/retag_archive.py` re-applies the current rules to `data/archive/*.json`, keeping ids; rejected headlines stay, marked `"filtered": true`, and the site hides them.
 - **Fetching:** 429 and 5xx responses are retried 3 times with exponential backoff; the script exits non-zero if every feed returned nothing.
@@ -128,7 +129,7 @@ python -m http.server 8000                         # then open http://localhost:
 ## Health checks
 
 - `python scripts/healthcheck.py`: pipeline, data integrity, internal links, sitemap, metadata, CNAME and security checks. Prints a table, writes `data/health.json`, exits 1 on any failure. `--context update` is the lighter gate the hourly data job runs before committing (a failure blocks the commit).
-- `node scripts/healthcheck_browser.mjs` (needs `npm install --no-save playwright @axe-core/playwright` and `npx playwright install chromium`): loads every page at 390px and 1280px on a Pages-like local server and checks console errors, CSP violations, links, the Atlas map, the freshness badge and axe-core accessibility. Results are merged into `data/health.json`.
+- `node scripts/healthcheck_browser.mjs` (needs `npm install --no-save playwright @axe-core/playwright` and `npx playwright install chromium`): loads every page at 390px and 1280px on a Pages-like local server and checks console errors, CSP violations, links, the Rack Radar map, the freshness badge and axe-core accessibility. Results are merged into `data/health.json`.
 - `.github/workflows/healthcheck.yml` runs both daily at 07:23 UTC (and on demand), commits `data/health.json`, and keeps one "Health check failed" issue open while anything fails; it closes the issue on the next passing run. The Methodology page shows the latest result.
 - `HEALTH.md` holds the most recent full audit.
 

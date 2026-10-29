@@ -275,7 +275,7 @@ window.RR = (function () {
   const NAV = [
     ["/", "Overview", "overview", "Overview"],
     ["/newsroom", "Newsroom", "news", "News"],
-    ["/atlas", "Project Atlas", "map", "Atlas"],
+    ["/radar", "Rack Radar", "map", "Radar"],
     ["/companies", "Companies", "building", "Companies"],
     ["/learn", "Learn", "learn", "Learn"],
     ["/methodology", "Methodology", "method", "Method"],
