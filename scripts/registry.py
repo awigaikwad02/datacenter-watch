@@ -93,8 +93,10 @@ def save(records, path=REGISTRY_FILE):
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def load_overrides(path=OVERRIDES_FILE):
-    return [op for op in fn.load_json(path, {}).get("operations", []) if isinstance(op, dict) and op.get("op")]
+def load_overrides(path=None):
+    """The operations in data/project_overrides.json (the module-level path is read at call time,
+    so tests can point OVERRIDES_FILE somewhere else)."""
+    return [op for op in fn.load_json(path or OVERRIDES_FILE, {}).get("operations", []) if isinstance(op, dict) and op.get("op")]
 
 
 # ---------------------------------------------------------------------------
@@ -404,9 +406,14 @@ def apply_overrides(m, ops):
                 ids = set(op["headline_ids"])
                 moving = [n for n in src["news"] if n["id"] in ids]
                 if op["new_id"] not in rec:
-                    skip = ("news", "hidden", "merged_into", "aliases", "curated", "timeline", "announced", "notes", "verified", "imported", "renamed")
+                    skip = ("news", "hidden", "merged_into", "aliases", "curated", "timeline", "announced", "notes", "verified",
+                            "imported", "renamed", "umbrella", "umbrella_company", "name_hints")
                     rec[op["new_id"]] = {k: v for k, v in src.items() if k not in skip and not k.startswith("curated_")}
-                    rec[op["new_id"]].update({"id": op["new_id"], "name": src["name"] + " (split)", "news": [], "curated": False})
+                    # The new record's operators are the ones its own headlines name, else the source's.
+                    named = [c for n in moving for c in fn.find_companies(n["title"])]
+                    cos = sorted(set(named), key=lambda c: fn.COMPANY_ORDER.get(c, 99)) or list(src.get("companies", []))
+                    rec[op["new_id"]].update({"id": op["new_id"], "name": src["name"] + " (split)", "news": [], "curated": False,
+                                              "companies": cos, "company": ", ".join(cos)})
                 rec[op["new_id"]]["news"].extend(moving)
                 src["news"] = [n for n in src["news"] if n["id"] not in ids]
                 for n in moving:
