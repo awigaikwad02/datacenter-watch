@@ -1,13 +1,22 @@
 // Rack Radar (formerly Project Atlas; route /radar, old /atlas redirects): clustered U.S. map, filters (panel on desktop, bottom sheet on mobile),
 // a list synced with the filters and map viewport, and a deep-linkable detail panel.
+// Loaded by radar.html (/radar), after assets/companies.js and assets/app.js; atlas.html redirects here.
+// Reads data/registry.json (RR.projects) and data/news.json (RR.news, for related headlines). The
+// archive (RR.archive) loads when a project panel opens, for "From the archive". Leaflet and
+// Leaflet.markercluster load from unpkg.com (RR.loadLeaflet). The URL hash accepts #project=<id>,
+// #company=<name> and #state=<XX>; opening a project writes #project=<id>.
+// Uses window.RR and window.RR_COMPANIES; exports nothing.
 (function () {
   "use strict";
+  // R is window.RR; $ is a querySelector shorthand.
   const R = RR, $ = (s) => document.querySelector(s);
   const STATUSES = Object.keys(R.STATUS);
   // Cancelled / Blocked projects and low-confidence pins are off by default.
   const DEFAULT_STATUSES = STATUSES.filter((s) => s !== R.CANCELLED);
+  // f holds the current filters; inView limits the list to what the map shows.
   const f = { q: "", statuses: new Set(DEFAULT_STATUSES), low: false, approx: false, completed: false, company: "", state: "", year: "", kind: "", mw: 0, usd: 0, inView: true };
   const TWO_YEARS = 730 * R.DAY;
+  // True when the project was reported complete in the last two years.
   const recentlyCompleted = (p) => { const d = R.completedDate(p); return !!d && Date.now() - new Date(d).getTime() <= TWO_YEARS; };
   let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
   R.shell("/radar", "Rack Radar");
@@ -15,7 +24,12 @@
   $("#sheetClose").innerHTML = R.icon("x");
 
   // ---------- Filtering ----------
+  // Lowercase search text for a project, built once and kept on the record as _hay.
   const hay = (p) => p._hay || (p._hay = [p.name, p.company, p.place, R.STATES[p.state], p.companies.join(" "), p.notes].join(" ").toLowerCase());
+  /**
+   * True when project p passes every filter. skip names one filter to ignore, so its dropdown can show counts.
+   * Search needs every word to appear in the name, company, place, state, companies or notes.
+   */
   function match(p, skip) {
     if (skip !== "status" && !f.statuses.has(p.status)) return false;
     // Projects with no location beyond the state are off unless "Location unavailable" is ticked.
@@ -31,19 +45,30 @@
     if (f.q && !f.q.toLowerCase().split(/\s+/).every((w) => hay(p).includes(w))) return false;
     return true;
   }
+  // Projects that pass every filter except skip.
   const filtered = (skip) => all.filter((p) => match(p, skip));
 
   // ---------- Controls ----------
+  /**
+   * Fills the <select> with this id with "Label (n)" options; the current value stays listed even with no matches.
+   * @param {function} [fmt] formats a value for display
+   * @param {function} [order] sort function (default: alphabetical by displayed text)
+   */
   function options(id, counts, label, current, fmt, order) {
     const keys = Object.keys(counts).concat(current && !counts[current] ? [current] : []);
     keys.sort(order || ((a, b) => (fmt ? fmt(a) : a).localeCompare(fmt ? fmt(b) : b)));
     $(id).innerHTML = '<option value="">' + label + "</option>" + keys.map((k) => '<option value="' + R.esc(k) + '"' + (k === current ? " selected" : "") + ">" + R.esc(fmt ? fmt(k) : k) + " (" + (counts[k] || 0) + ")</option>").join("");
   }
+  /**
+   * Counts filtered(skip) projects per value of key(p); key may return one value or a list.
+   * @returns {object} value -> count
+   */
   function tally(skip, key) {
     const c = {};
     filtered(skip).forEach((p) => [].concat(key(p)).forEach((v) => { if (v) c[v] = (c[v] || 0) + 1; }));
     return c;
   }
+  /** Redraws the status chips, checkboxes, dropdowns, sliders and the "Filters · n" button labels from f. */
   function controls() {
     const sc = tally("status", (p) => p.status);
     const onlyOps = f.statuses.size === 1 && f.statuses.has("Operational");
@@ -63,20 +88,24 @@
     const n = activeCount();
     document.querySelectorAll(".js-filters").forEach((b) => { b.innerHTML = R.icon("filter") + "Filters" + (n ? " · " + n : ""); });
   }
+  /** Number of filters that differ from the defaults, shown on the Filters buttons. */
   function activeCount() {
     const statusChanged = f.statuses.size !== DEFAULT_STATUSES.length || DEFAULT_STATUSES.some((s) => !f.statuses.has(s));
     return [f.q, f.company, f.state, f.year, f.kind, f.mw, f.usd, f.low, f.approx, f.completed].filter(Boolean).length + (statusChanged ? 1 : 0);
   }
 
   // ---------- Map ----------
+  /** Creates the Leaflet marker for a project, with a tooltip; clicking it opens the detail panel. */
   function marker(p) {
     const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p, false), title: p.curated ? p.name : p.place, keyboard: true, riseOnHover: true });
     m.bindTooltip("<b>" + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(R.statusSince(p)) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + " · " + R.esc(p.place) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -12] });
     m.on("click", () => select(p.id, "map"));
     return m;
   }
+  // Shortens long detected-project names (headline text) to 80 characters.
   const short = (t) => (t.length > 80 ? t.slice(0, 78) + "…" : t);
   // City- and county-level sites are pins; state-level ones are summed into one approximate bubble per state.
+  /** Markers are made once per project id and reused from `markers`. */
   function drawMarkers(list) {
     cluster.clearLayers();
     cluster.addLayers(list.filter((p) => p.curated || !p.approx).map((p) => (markers[p.id] = markers[p.id] || marker(p))));
@@ -84,6 +113,7 @@
   }
 
   // A "Location unavailable" bubble lists its projects; each one opens the detail panel.
+  /** Opens a popup at bubble m listing state st's projects, most recent first. */
   function approxList(st, items, m) {
     const rows = items.slice().sort((a, b) => (b.published || "").localeCompare(a.published || "")).map((p) =>
       '<button class="pop-item" data-id="' + R.esc(p.id) + '"><b>' + R.esc(p.name) + "</b><small>" + R.esc(R.statusSince(p)) +
@@ -96,7 +126,9 @@
   }
 
   // ---------- List and stats ----------
+  // True when p is inside the current map view, or when "Only what's in view" is off.
   function inBounds(p) { return !f.inView || !map || map.getBounds().pad(0.02).contains([p.lat, p.lon]); }
+  /** Renders the side list (largest capacity first) and the mini stats for the filtered projects. */
   function renderList() {
     const list = filtered();
     const shown = list.filter(inBounds).sort((a, b) => (b.capacity_mw || 0) - (a.capacity_mw || 0) || b.curated - a.curated || b.t - a.t);
@@ -115,6 +147,7 @@
         '<span class="cap">' + (p.capacity_mw ? R.fmtMW(p.capacity_mw) : p.investment_usd_b ? R.fmtMoney(p.investment_usd_b) : "") + "</span></button>";
     }).join("");
   }
+  /** Redraws controls, markers, list and legend after a filter change. */
   function update() {
     controls();
     drawMarkers(filtered());
@@ -123,6 +156,12 @@
   }
 
   // ---------- Detail panel ----------
+  /**
+   * Headlines related to project p, scored: same state and company 6, town in the title 5, curated
+   * name in the title 8. Keeps scores of 5 or more and skips the project's own headlines.
+   * @param {object[]} [source] headlines to search (default: recent news)
+   * @returns {object[]} up to 6 headlines (8 when source is given), best first
+   */
   function related(p, source) {
     const town = p.place.split(",")[0].toLowerCase();
     return (source || news).map((n) => {
@@ -135,8 +174,10 @@
       return [s, n];
     }).filter((x) => x[0] >= 5).sort((a, b) => b[0] - a[0] || b[1].t - a[1].t).slice(0, source ? 8 : 6).map((x) => x[1]);
   }
+  // Ids of the headlines attached to a project, built once and kept as _own.
   const own = (p) => p._own || (p._own = new Set((p.news || []).map((n) => n.id)));
   // Status timeline from the registry: every status change and event, each linked to the headline behind it.
+  /** @returns {string} HTML list of status_history and events, oldest first */
   function statusTimeline(p) {
     const byId = Object.fromEntries((p.news || []).map((n) => [n.id, n]));
     const steps = (p.status_history || []).map((h) => Object.assign({ label: h.status, kind: "status" }, h))
@@ -150,6 +191,10 @@
       return '<li style="--tone:' + tone + '"><time datetime="' + R.esc(s.date) + '">' + R.esc(R.fmtDate(s.date)) + "</time><div><span class=\"step-" + s.kind + '">' + R.esc(s.label) + "</span>" + why + "</div></li>";
     }).join("") + "</ol>";
   }
+  /**
+   * HTML for the detail panel: status, place, summary, key figures, companies, milestones, status
+   * timeline, notes, attached and related headlines, and links.
+   */
   function detailHTML(p) {
     const tone = R.status(p.status).tone, rel = related(p);
     const source = p.source_url || (rel[0] && rel[0].link);
@@ -174,10 +219,16 @@
       '<button class="btn sm" id="shareProject">' + R.icon("share") + "Share</button></div>" +
       '<div class="note">' + (p.curated ? (p.verified ? "Curated and checked against public sources." : "Curated from public reporting; not yet verified against current sources.") : (p.approx ? "Detected automatically from headlines that name only a state, so its location is unavailable: it is grouped in the state's bubble rather than pinned." : "Detected automatically from headlines (confidence: " + R.esc(p.confidence) + "). The pin sits at the place named, which can be off.")) + ' <a href="/methodology#report">Report a wrong pin</a>.</div></div>';
   }
+  /** Switches a project's pin between normal and highlighted. */
   function setPin(id, on) {
     const p = all.find((x) => x.id === id), m = markers[id];
     if (p && m) m.setIcon(R.pinIcon(p, on));
   }
+  /**
+   * Opens the detail panel for project id: sets #project=<id> in the hash, starts the archive search,
+   * flies the map to the pin (offset so the panel does not cover it) and highlights it.
+   * @param {string} from "map", "list" or "hash"; focus moves to the close button unless the pin was clicked
+   */
   function select(id, from) {
     const p = all.find((x) => x.id === id);
     if (!p) return;
@@ -193,6 +244,7 @@
     if (from !== "map") setTimeout(() => $("#closeDetail").focus(), 50);
     if ($("#atlas").classList.contains("list-view")) setMode("map");
     const m = markers[id];
+    // Zooms to the project, then highlights its pin after the flight.
     const go = () => {
       const z = Math.max(map.getZoom(), p.curated || p.precision === "city" ? 8 : 6);
       const wide = innerWidth >= 1024;
@@ -205,6 +257,7 @@
     const row = document.querySelector('.proj-card[data-id="' + CSS.escape(id) + '"]');
     if (row) row.setAttribute("aria-current", "true");
   }
+  /** Searches the full archive for related headlines and adds a "From the archive" section, if the panel still shows p. */
   function archiveRelated(p) {
     R.archive().then((a) => {
       if (sel !== p.id) return;
@@ -218,6 +271,7 @@
       box.parentNode.insertBefore(box, box.nextElementSibling.nextElementSibling);
     }).catch(() => {});
   }
+  /** Closes the detail panel, un-highlights the pin, returns focus to its list row and clears the hash. */
   function close() {
     const d = $("#detail");
     if (!d.classList.contains("open")) return;
@@ -232,12 +286,14 @@
   }
 
   // ---------- Mobile: list/map toggle and filter sheet ----------
+  /** Mobile toggle between "map" and "list". The list view shows every filtered project, not just those in view. */
   function setMode(mode) {
     $("#atlas").classList.toggle("list-view", mode === "list");
     document.querySelectorAll("[data-mode]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
     if (mode === "list") { f.inView = false; $("#inView").checked = false; renderList(); }
     if (mode === "map") setTimeout(() => map.invalidateSize(), 50);
   }
+  /** Mobile: moves the filter panel into the bottom sheet and opens it, with focus kept inside. */
   function openSheet() {
     const sheet = $("#sheet");
     sheet.hidden = false;
@@ -246,6 +302,7 @@
     requestAnimationFrame(() => { sheet.classList.add("open"); $("#sheetBack").classList.add("open"); });
     releaseSheet = R.trapFocus(sheet, closeSheet);
   }
+  /** Closes the bottom sheet and moves the filter panel back. */
   function closeSheet() {
     const sheet = $("#sheet");
     sheet.classList.remove("open");
@@ -257,16 +314,22 @@
   }
 
   // ---------- Events ----------
+  /** Called after any filter change: redraws and updates the sheet's "Show n projects" button. */
   function changed() {
     update();
     if ($("#sheet").classList.contains("open")) $("#sheetApply").textContent = "Show " + filtered().length + " projects";
   }
+  /** Puts every filter back to its default. */
   function reset() {
     Object.assign(f, { q: "", company: "", state: "", year: "", kind: "", mw: 0, usd: 0, low: false, approx: false, completed: false });
     f.statuses = new Set(DEFAULT_STATUSES);
     $("#q").value = "";
     changed();
   }
+  /**
+   * Attaches the event handlers: search, dropdowns, sliders, checkboxes, status chips, list and popup
+   * clicks, the fit button, the sheet, the map/list toggle, Escape, map moves and hash changes.
+   */
   function bind() {
     $("#q").addEventListener("input", R.debounce((e) => { f.q = e.target.value.trim(); changed(); }, 150));
     ["company", "state", "year", "kind"].forEach((k) => $("#" + k).addEventListener("change", (e) => {
@@ -326,10 +389,15 @@
     map.on("moveend", R.debounce(renderList, 80));
     window.addEventListener("hashchange", readHash);
   }
+  /** Zooms the map to fit the given projects (no closer than zoom 7). */
   function fitTo(list) {
     if (!list.length) return;
     map.fitBounds(list.map((p) => [p.lat, p.lon]), { padding: [60, 60], maxZoom: 7 });
   }
+  /**
+   * Applies #company=, #state= and #project= from the URL hash. Company names match without regard
+   * to case, with dashes read as spaces.
+   */
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
     if (h.get("company")) {
@@ -341,6 +409,7 @@
     if (h.get("project")) setTimeout(() => select(h.get("project"), "hash"), 250);
   }
 
+  // Start-up: load projects, news and Leaflet together, then build the map.
   Promise.all([R.projects(), R.news().catch(() => ({ items: [] })), R.loadLeaflet()]).then(([projects, n]) => {
     all = projects;
     news = n.items;

@@ -1,10 +1,21 @@
 // Overview: metrics, major story, ticker, latest headlines, project pulse map, active companies and topics.
+// Loaded by index.html (/), after assets/companies.js and assets/app.js.
+// Reads data/news.json (RR.news) and data/registry.json (RR.projects). Leaflet loads only when the
+// pulse map nears the viewport. Uses window.RR (and window.L once loaded); exports nothing.
+// Everything is redrawn when live refresh brings new data (RR.live).
 (function () {
   "use strict";
+  // R is window.RR; $ is a querySelector shorthand.
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY;
   R.shell("/", "Overview");
   document.querySelectorAll("[data-icon]").forEach((a) => a.insertAdjacentHTML("afterbegin", R.icon(a.dataset.icon)));
 
+  /**
+   * Fills #stats with four count-up tiles: headlines this week, projects announced this month,
+   * states with activity (30 days) and MW mentioned this week.
+   * @param {object[]} raw every headline  @param {object[]} items headlines grouped into stories
+   * @param {object[]} projects registry projects
+   */
   function stats(raw, items, projects) {
     const now = Date.now(), d = new Date();
     const week = raw.filter((i) => now - i.t <= 7 * DAY);
@@ -31,6 +42,10 @@
     });
   }
 
+  /**
+   * Fills #major with the latest major story (an announcement or construction story with a state and
+   * a size figure, else the newest) and up to four "Also moving" stories. Cancelled stories are skipped.
+   */
   function major(items) {
     const live = items.filter((i) => i.category !== R.CANCELLED);
     const pick = live.find((i) => (i.category === "New Announcement" || i.category === "Construction") && i.state && (i.capacity_mw || i.investment_usd_b)) || live[0];
@@ -53,12 +68,14 @@
       "</article>";
   }
 
+  /** Fills #latest with the eight newest stories. */
   function latest(items) {
     $("#latest").innerHTML = items.slice(0, 8).map((i) =>
       '<a href="' + R.esc(i.link) + '" target="_blank" rel="noopener" style="--tone:' + R.cat(i.category).tone + '"><span class="k"><i></i>' + R.esc(i.source) + " · " + R.ago(i.published) + (i.state ? " · " + R.esc(i.state) : "") + "</span>" + R.esc(i.title) + "</a>").join("") ||
       '<p class="muted">No headlines yet.</p>';
   }
 
+  /** Fills #topCos with a bar chart of the most-named companies in the last 30 days. */
   function companies(items) {
     const now = Date.now(), counts = {};
     items.filter((i) => now - i.t <= 30 * DAY).forEach((i) => i.companies.forEach((c) => { counts[c] = (counts[c] || 0) + 1; }));
@@ -66,6 +83,7 @@
     $("#topCos").innerHTML = top.length ? R.miniBars(top.map(([c, n], i) => ({ label: c, value: n, hi: i === 0 })), { label: "Company headline mentions, last 30 days", width: $("#topCos").clientWidth })
       : '<p class="co-empty">No tracked companies were named in headlines in the last 30 days.</p>';
   }
+  /** Fills #topics with a bar chart of headline topics in the last 7 days. */
   function topics(items) {
     const now = Date.now(), counts = {};
     items.filter((i) => now - i.t <= 7 * DAY).forEach((i) => { counts[i.category] = (counts[i.category] || 0) + 1; });
@@ -77,6 +95,10 @@
   // The pulse map loads Leaflet only when it scrolls near the viewport. Live refreshes
   // call pulse() again, which only swaps the markers once the map exists.
   let pulseProjects = [], pulseLayers = null;
+  /**
+   * Updates the site count and, once the map exists, replaces its pins and bubbles with the
+   * projects shown by default. Clicking a pin opens it on /radar#project=<id>.
+   */
   function drawPulse() {
     const now = Date.now();
     const recent = pulseProjects.filter(R.defaultVisible);
@@ -92,6 +114,7 @@
     }));
     approx.set(recent);
   }
+  /** Stores the projects and redraws. The first call also adds the legend and builds the map when #pulseMap nears the viewport. */
   function pulse(projects) {
     const first = !pulseProjects.length;
     pulseProjects = projects;
@@ -99,6 +122,7 @@
     if (!first) return;
     $("#pulseLegend").innerHTML = R.legendHTML();
     const el = $("#pulseMap");
+    // Loads Leaflet and builds the map; shows a message if that fails.
     const start = () => R.loadLeaflet().then(() => {
       const map = R.baseMap(el, { scrollWheelZoom: false });
       window.L.control.zoom({ position: "topright" }).addTo(map);
@@ -113,6 +137,7 @@
     io.observe(el);
   }
 
+  /** Draws the whole page from the news and projects; also the callback for live refresh. */
   function render(n, projects) {
     // One entry per story: duplicate coverage of the same event is folded into one card.
     const items = R.stories(n.items);
@@ -124,6 +149,7 @@
     topics(items);
     pulse(projects);
   }
+  // Start-up: load news and projects, render, then follow live refreshes.
   Promise.all([R.news(), R.projects()]).then(([n, projects]) => {
     render(n, projects);
     R.live(render);

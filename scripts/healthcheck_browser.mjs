@@ -12,6 +12,10 @@
 //
 // Offline use (no CDN access): RR_VENDOR_DIR=<dir with leaflet/ and leaflet.markercluster/ packages>
 // serves Leaflet locally, and map tiles and web fonts are stubbed.
+// Not loaded by any page: it is a Node script, run by .github/workflows/healthcheck.yml.
+// Reads data/registry.json, data/news.json, data/projects.json, data/health.json and sitemap.xml;
+// writes data/health.json. Uses Playwright (Chromium) and @axe-core/playwright; inside the pages it
+// reads window.RR (RR.ago, RR.fmtDate). Exports nothing.
 
 import http from "node:http";
 import fs from "node:fs";
@@ -32,9 +36,15 @@ const TYPES = { ".html": "text/html; charset=utf-8", ".js": "application/javascr
   ".svg": "image/svg+xml", ".png": "image/png", ".xml": "application/xml", ".txt": "text/plain" };
 
 const checks = [];
+// Records one result. Names get a "Browser: " prefix so report() can replace the previous browser results.
 const check = (name, ok, value = "", detail = "") => checks.push({ name: "Browser: " + name, status: ok ? "pass" : "fail", value: String(value), detail: String(detail) });
 
 // ---------- A static server that behaves like GitHub Pages ----------
+/**
+ * Starts a local server on a free port that serves the repo like GitHub Pages: "/" -> index.html,
+ * folders -> index.html, extensionless paths -> .html, anything else -> 404.html with status 404.
+ * @returns {Promise<http.Server>}
+ */
 function serve() {
   const server = http.createServer((req, res) => {
     const url = decodeURIComponent(req.url.split("?")[0].split("#")[0]);
@@ -48,6 +58,10 @@ function serve() {
   return new Promise((ok) => server.listen(0, "127.0.0.1", () => ok(server)));
 }
 
+/**
+ * With RR_VENDOR_DIR set, serves Leaflet from local copies and stubs map tiles (a 1px PNG) and
+ * Google Fonts. Does nothing otherwise.
+ */
 async function offline(ctx) {
   if (!VENDOR) return;
   await ctx.route(/unpkg\.com\/(leaflet(?:\.markercluster)?)@[\d.]+\/(.*)$/, (route) => {
@@ -60,11 +74,16 @@ async function offline(ctx) {
   await ctx.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ status: 200, body: "", headers: { "content-type": "text/css" } }));
 }
 
+/** @returns {string[]} the paths listed in sitemap.xml */
 function sitemap() {
   const xml = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
 }
 
+/**
+ * Runs every check: each page at each width, then links, sitemap and accessibility, then writes the report.
+ * @returns {Promise<number>} the exit code
+ */
 async function main() {
   const server = await serve();
   const base = "http://127.0.0.1:" + server.address().port;
@@ -115,6 +134,7 @@ async function main() {
         // date (its title) and accept the age computed now or a minute earlier.
         const badge = await p.evaluate((u) => {
           const el = document.getElementById("livePill"), t = new Date(u).getTime();
+          // RR.ago(u) as if the current time were ms.
           const agoAt = (ms) => { const real = Date.now; Date.now = () => ms; try { return RR.ago(u); } finally { Date.now = real; } };
           return { text: el.textContent, title: el.title, date: RR.fmtDate(u), want: ["Updated " + agoAt(Date.now()), "Updated " + agoAt(Date.now() - 60e3)] };
         }, news.updated);
@@ -154,6 +174,10 @@ async function main() {
   return report();
 }
 
+/**
+ * Rack Radar checks on an open /radar page: pins and bubbles, the bubble list, pin click, filters,
+ * registry filters, deep links, the old /atlas redirect and the panel's sections.
+ */
 async function radar(p, base) {
   const pins = await p.$$eval(".leaflet-marker-icon", (e) => e.length);
   // "Location unavailable" projects are off by default; tick the filter to show their state bubbles.
@@ -210,6 +234,7 @@ async function radar(p, base) {
   const after = await p.textContent("#listCount");
   check("Rack Radar filters change the list", before !== after, `${before} -> ${after} (state ${st})`);
   await p.selectOption("#state", ""); await p.uncheck("#inView").catch(() => {}); await p.waitForTimeout(400);
+  // The first line of every project card in the list.
   const cards = () => p.$$eval(".proj-card small:first-of-type", (e) => e.map((x) => x.textContent));
   const def = await cards();
   const cancelledShown = def.filter((t) => /Cancelled/.test(t)).length;
@@ -242,6 +267,11 @@ async function radar(p, base) {
   }
 }
 
+/**
+ * Merges these results into data/health.json (replacing earlier "Browser: " checks), sets
+ * browser_checked_at and overall, and prints a table.
+ * @returns {number} 1 when any browser check failed, else 0
+ */
 function report() {
   const file = path.join(ROOT, "data/health.json");
   let doc = { checks: [] };

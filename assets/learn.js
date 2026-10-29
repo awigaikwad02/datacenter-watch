@@ -1,18 +1,26 @@
 // Learn: ten expandable modules with Beginner / Advanced views, saved progress,
 // step-by-step navigation, quizzes and the interactive tools inside the modules.
+// Loaded by learn.html (/learn), after assets/companies.js and assets/app.js.
+// Reads data/status.json only (RR.freshness, for the header badge); all lesson content is in the page.
+// Progress is stored in localStorage as "rr-learn" (a list of completed module ids).
+// Uses window.RR (as both D and R); exports nothing.
 (function () {
   "use strict";
   const D = RR, R = RR, $ = (s) => document.querySelector(s);
   const HOME_KWH = 10800; // average U.S. household electricity use per year
+  // Number with thousands separators and up to d decimals.
   const fmt = (n, d) => Number(n).toLocaleString("en-US", { maximumFractionDigits: d || 0 });
   R.shell("/learn", "Learn");
   R.freshness().catch(() => {});
 
   // ---------- Modules: accordion, depth toggle, progress, navigation ----------
   const mods = [...document.querySelectorAll(".module")];
+  // Completed module ids from localStorage.
   const load = () => { const v = R.store("learn"); return new Set(Array.isArray(v) ? v : []); };
   let done = load();
+  // Stores progress and redraws it.
   function save() { R.store("learn", [...done]); progress(); }
+  /** Redraws the progress text, bar and module dots, and each module's "Mark complete" button. */
   function progress() {
     const n = mods.filter((m) => done.has(m.id)).length;
     $("#progText").textContent = n + " of " + mods.length + " modules complete";
@@ -25,6 +33,10 @@
       if (b) { b.setAttribute("aria-pressed", String(done.has(m.id))); b.innerHTML = R.icon("check") + (done.has(m.id) ? "Completed" : "Mark complete"); }
     });
   }
+  /**
+   * Opens or closes module m's accordion panel, with a CSS transition.
+   * @param {boolean} [scroll] scroll the module into view when opening
+   */
   function setOpen(m, open, scroll) {
     const btn = m.querySelector(".acc-btn"), panel = m.querySelector(".acc-panel");
     btn.setAttribute("aria-expanded", String(open));
@@ -37,6 +49,7 @@
       setTimeout(() => { if (btn.getAttribute("aria-expanded") === "false") panel.hidden = true; }, R.reducedMotion() ? 0 : 420);
     }
   }
+  // Per module: Previous / Mark complete / Next buttons, the accordion toggle and the Beginner / Advanced switch.
   mods.forEach((m, i) => {
     const prev = mods[i - 1], next = mods[i + 1];
     m.querySelector(".module-nav").innerHTML =
@@ -50,6 +63,7 @@
       m.querySelectorAll(".lvl-pane").forEach((p) => { p.hidden = p.dataset.pane !== b.dataset.level; });
     }));
   });
+  // Mark complete, Next / Finish (which also mark the module done) and progress-dot clicks.
   document.addEventListener("click", (e) => {
     const c = e.target.closest("[data-complete]");
     if (c) { const id = c.dataset.complete; done.has(id) ? done.delete(id) : done.add(id); save(); if (done.has(id)) R.toast("Module complete"); return; }
@@ -66,6 +80,7 @@
     if (dot) { const t = document.getElementById(dot.getAttribute("href").slice(1)); if (t && t.querySelector(".acc-btn").getAttribute("aria-expanded") !== "true") setOpen(t, true, false); }
   });
   $("#resetProg").addEventListener("click", () => { done = new Set(); save(); });
+  /** Opens the module named in the URL hash, if any. */
   function openFromHash() {
     const t = location.hash && document.getElementById(location.hash.slice(1));
     if (t && t.classList.contains("module")) setOpen(t, true, true);
@@ -77,10 +92,12 @@
   else setOpen(first, true, false);
 
   // ---------- Quizzes ----------
+  /** Re-enables a quiz's options and removes its explanation. */
   function resetQuiz(q) {
     q.querySelectorAll(".opt").forEach((o) => { o.disabled = false; o.classList.remove("right", "wrong"); });
     const w = q.querySelector(".why"); if (w) w.remove();
   }
+  // Quizzes: picking an option shows the right answer and the explanation from data-why.
   document.querySelectorAll(".quiz").forEach((q) => {
         q.querySelectorAll(".opt").forEach((o, i) => o.addEventListener("click", () => {
       const right = i === Number(q.dataset.answer);
@@ -109,6 +126,7 @@
     fiber: ["Fiber entrances", "At least two separate underground routes bring fiber into the building, so one accidental cut can't take the site offline."],
   };
   const cut = $("#cutaway");
+  /** Highlights zone z on the cutaway drawing and shows its description. */
   function showZone(z) {
     cut.querySelectorAll(".zone").forEach((g) => g.classList.toggle("on", g.dataset.z === z));
     $("#cutawayInfo").innerHTML = "<b>" + ZONES[z][0] + ".</b> " + ZONES[z][1];
@@ -126,7 +144,9 @@
   // ---------- Lesson 4: scale ----------
   const scMW = $("#scMW");
   const sliderToMW = (v) => Math.round(Math.pow(10, 0 + (v / 100) * 3.7)); // 1 MW to ~5 GW, log scale
+  // The inverse of sliderToMW.
   const mwToSlider = (mw) => (Math.log10(mw) / 3.7) * 100;
+  /** Shows what mw megawatts means: homes powered, yearly energy and rack counts. */
   function scaleUpdate(mw) {
     $("#scMWv").textContent = D.fmtMW(mw);
     const mwh = mw * 8760;
@@ -160,6 +180,7 @@
     [0, "Grid restored", "When utility power is stable again, the switch transfers back and the generators cool down. Nobody online noticed a thing."],
   ];
   let ci = 0, outage = null, outT;
+  /** Draws the power chain with step ci highlighted and shows its description (unless the outage demo is running). */
   function renderChain() {
     $("#chain").innerHTML = CHAIN.map((c, i) => '<button data-ci="' + i + '" class="' + (i === ci ? "on" : "") + (i < ci ? " passed" : "") + '" aria-label="' + c[1] + '"><span class="node">' + D.icon(c[0]) + "</span>" + c[1] + "</button>").join("");
     if (outage == null) $("#chainInfo").innerHTML = "<b>" + (ci + 1) + ". " + CHAIN[ci][1] + "</b>" + CHAIN[ci][2];
@@ -167,7 +188,9 @@
   $("#chain").addEventListener("click", (e) => { const b = e.target.closest("[data-ci]"); if (b) { stopOutage(); ci = Number(b.dataset.ci); renderChain(); } });
   $("#chainPrev").addEventListener("click", () => { stopOutage(); ci = Math.max(0, ci - 1); renderChain(); });
   $("#chainNext").addEventListener("click", () => { stopOutage(); ci = Math.min(CHAIN.length - 1, ci + 1); renderChain(); });
+  // Stops the outage demo.
   function stopOutage() { clearTimeout(outT); outage = null; $("#outageBtn").textContent = "Simulate a utility outage"; }
+  /** Shows one step of the outage demo and schedules the next one 2.6 s later. */
   function outageStep() {
     const s = OUTAGE[outage];
     ci = s[0];
@@ -186,6 +209,7 @@
 
   // ---------- Lesson 6: density ----------
   const dn = $("#dn");
+  /** Moves the rack-density needle and shows the cooling method needed at the chosen kW per rack. */
   function density() {
     const kw = Number(dn.value);
     $("#dnV").textContent = kw + " kW";
@@ -201,6 +225,7 @@
   density();
 
   // ---------- Lesson 7: rack diagram ----------
+  /** Draws the 42U rack diagram into #rackSvg once. */
   (function rack() {
     const svg = $("#rackSvg"), x = 280, w = 200, top = 24, u = 8.2;
     const units = [
@@ -234,9 +259,11 @@
   })();
 
   // ---------- Lesson 8: network diagram ----------
+  /** Draws the spine-leaf network diagram into #netSvg once. */
   (function net() {
     const svg = $("#netSvg");
     let h = "";
+    // A labelled box: a rect with a title and an optional subtitle.
     const box = (x, y, w, hh, t, s, cls) => '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + hh + '" rx="8" class="' + (cls || "bx") + '"/><text x="' + (x + w / 2) + '" y="' + (y + hh / 2 + (s ? -2 : 4)) + '" text-anchor="middle" class="t">' + t + "</text>" + (s ? '<text x="' + (x + w / 2) + '" y="' + (y + hh / 2 + 13) + '" text-anchor="middle" class="s">' + s + "</text>" : "");
     const spines = [150, 300, 450, 600].map((cx) => [cx, 130]);
     const leaves = [90, 206, 322, 438, 554, 670].map((cx) => [cx, 220]);
@@ -253,6 +280,7 @@
 
   // ---------- Lesson 9: redundancy ----------
   let redMode = "N+1", failed = new Set();
+  /** Draws the units for the chosen redundancy mode (N, N+1 or 2N) and says whether the load stays up with the clicked units failed. */
   function redRender() {
     document.querySelectorAll("#redMode button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.m === redMode));
     const paths = redMode === "2N" ? [["A", 3], ["B", 3]] : [["", redMode === "N" ? 3 : 4]];
@@ -280,6 +308,7 @@
   redRender();
 
   // ---------- Lesson 10: PUE ----------
+  /** Recalculates the PUE / WUE tool: total power, overhead, energy, homes, water and a rating. */
   function pue() {
     const it = Number($("#peIT").value), p = Number($("#pePUE").value), wue = Number($("#peWUE").value);
     $("#peITv").textContent = D.fmtMW(it);
@@ -305,6 +334,7 @@
 
   // ---------- Lesson 11: AI cluster ----------
   const gpusFromSlider = (v) => Math.round(Math.pow(10, 3 + (v / 100) * 3) / 1000) * 1000; // 1k to 1M
+  /** Recalculates the AI cluster tool from the GPU count, GPU generation ("kW per GPU|GPUs per rack") and PUE. */
   function ai() {
     const n = gpusFromSlider($("#aiN").value);
     const [kw, perRack] = $("#aiGen").value.split("|").map(Number);
@@ -375,6 +405,7 @@
     ["WUE", "Water usage effectiveness: liters of water consumed per kWh of IT energy."],
     ["Wholesale data center", "A building or campus leased in large blocks to one or a few big tenants."],
   ];
+  /** Filters the glossary by the search box and renders the matching terms. */
   function glossary() {
     const q = $("#glq").value.trim().toLowerCase();
     const list = GLOSSARY.filter((g) => !q || (g[0] + " " + g[1]).toLowerCase().includes(q));

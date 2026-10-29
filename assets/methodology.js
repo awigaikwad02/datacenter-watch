@@ -1,4 +1,8 @@
 // Methodology: static content; shell and reveal only.
+// Loaded by methodology.html (/methodology), after assets/companies.js and assets/app.js.
+// Reads data/status.json (RR.freshness) for the "Last data update" line in #runStatus, and
+// data/health.json (fetched fresh, skipping caches) for the site health summary in #siteHealth.
+// Uses window.RR; exports nothing and defines no named functions.
 (function () {
   "use strict";
   const R = RR;

@@ -1,9 +1,18 @@
 // The Rack Report: shared runtime. Shell (sidebar, top bar, tab bar, footer), loader,
 // data loading and normalization, formatting, and small UI patterns used by every page.
+// Loaded by every page (index, newsroom, radar, companies, learn, methodology and 404), after
+// assets/companies.js and before the page's own script.
+// Data files: data/news.json (news), data/registry.json (projects), data/archive/index.json and the
+// month files it lists (archive, archiveSince) and data/status.json (freshness). Every fetch skips
+// the browser and CDN caches (see fresh) and is then cached per path for the life of the page.
+// Exports window.RR: the object returned at the bottom of this file. Reads window.RR_COMPANIES
+// (assets/companies.js) for company types and lettermarks. Loads Leaflet from unpkg.com on demand.
+// localStorage keys are prefixed "rr-" (saved headlines, Newsroom view, Learn progress).
 window.RR = (function () {
   "use strict";
   const REPO = "https://github.com/awigaikwad02/datacenter-watch";
   const LINKEDIN = "https://www.linkedin.com/in/avishkar-gaikwad-/";
+  // HTML for the "Contact on LinkedIn" link; cls adds extra classes.
   const contact = (cls) => '<a class="contact' + (cls ? " " + cls : "") + '" href="' + LINKEDIN + '" target="_blank" rel="noopener" aria-label="Contact AG on LinkedIn"><span class="initials" aria-hidden="true">AG</span><span>Contact on LinkedIn</span></a>';
   const DAY = 864e5;
 
@@ -52,9 +61,19 @@ window.RR = (function () {
     acre: '<path d="M3 21h18M5 21V11l7-6 7 6v10M9 21v-6h6v6"/>',
     activity: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
   };
+  /**
+   * Inline SVG for a named icon from P (an unknown name gives an empty icon).
+   * @param {string} name key of P
+   * @param {string} [cls] extra class names
+   * @returns {string} SVG markup
+   */
   function icon(name, cls) {
     return '<svg class="ic' + (cls ? " " + cls : "") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[name] || "") + "</svg>";
   }
+  /**
+   * The rack logo as SVG. With a label it is an image with that name; without one it is hidden from screen readers.
+   * @returns {string} SVG markup
+   */
   function mark(cls, label) {
     return '<svg class="mark' + (cls ? " " + cls : "") + '" viewBox="0 0 48 48"' + (label ? ' role="img" aria-label="' + label + '"' : ' aria-hidden="true"') + '>' +
       '<rect x="8" y="3.75" width="32" height="40.5" rx="7" fill="none" stroke="currentColor" stroke-width="3.5"/>' +
@@ -63,10 +82,16 @@ window.RR = (function () {
       '<rect x="14" y="26" width="20" height="4.5" rx="2.25" fill="currentColor"/>' +
       '<rect x="14" y="33.5" width="20" height="4.5" rx="2.25" fill="currentColor"/></svg>';
   }
+  // Logo plus "The Rack Report", used in the sidebar, top bar and footer.
   const wordmark = () => mark() + "<span>The <b>Rack</b> Report</span>";
 
   // ---------- Formatting ----------
+  // Escapes &, <, > and " for HTML text and attributes; null and undefined become "".
   const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  /**
+   * Relative age such as "just now", "5m ago", "3h ago" or "2 days ago".
+   * @returns {string} "" for an invalid date
+   */
   function ago(iso) {
     const d = new Date(iso);
     if (isNaN(d)) return "";
@@ -78,14 +103,21 @@ window.RR = (function () {
     const dd = Math.round(h / 24);
     return dd === 1 ? "1 day ago" : dd + " days ago";
   }
+  /**
+   * Formats a date as "Oct 29, 2026" (en-US). A "YYYY-MM" string is read as the 15th of that month.
+   * @param {object} [opts] toLocaleDateString options
+   * @returns {string} "" for an invalid date
+   */
   function fmtDate(iso, opts) {
     const d = typeof iso === "string" && /^\d{4}-\d{2}$/.test(iso) ? new Date(iso + "-15T12:00:00") : new Date(iso);
     return isNaN(d) ? "" : d.toLocaleDateString("en-US", opts || { month: "short", day: "numeric", year: "numeric" });
   }
+  /** Local-time "YYYY-MM-DD" key for a timestamp or date; used to group headlines by day. */
   function dayKey(t) {
     const d = new Date(t);
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
   }
+  /** Heading for a dayKey: "Today", "Yesterday", or a date such as "Monday, Oct 27". */
   function dayLabel(key) {
     const now = new Date(), y = new Date(now - DAY);
     if (key === dayKey(now)) return "Today";
@@ -93,16 +125,26 @@ window.RR = (function () {
     const [Y, M, D] = key.split("-").map(Number);
     return new Date(Y, M - 1, D).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
   }
+  // Megawatts as "450 MW" or "1.2 GW" (a whole number of GW has no decimal); "" for null.
   const fmtMW = (mw) => (mw == null ? "" : mw >= 1000 ? (mw / 1000).toFixed(mw % 1000 === 0 ? 0 : 1) + " GW" : Math.round(mw).toLocaleString("en-US") + " MW");
+  // Billions of dollars as "$2.5B", or "$400M" below $1B; "" for null.
   const fmtMoney = (b) => (b == null ? "" : b >= 1 ? "$" + (Math.round(b * 10) / 10) + "B" : "$" + Math.round(b * 1000) + "M");
+  // Rounded number with thousands separators.
   const fmtN = (n) => Math.round(n).toLocaleString("en-US");
+  /** Wraps fn so it runs only once ms have passed without another call (search boxes, map moves). */
   function debounce(fn, ms) { let t; return function () { const a = arguments; clearTimeout(t); t = setTimeout(() => fn.apply(this, a), ms); }; }
+  /**
+   * Reads or writes a JSON value in localStorage under "rr-" + key.
+   * With one argument it reads (null when missing or when storage is blocked); with two it writes.
+   * Storage errors are ignored.
+   */
   function store(key, val) {
     try {
       if (val === undefined) return JSON.parse(localStorage.getItem("rr-" + key));
       localStorage.setItem("rr-" + key, JSON.stringify(val));
     } catch (e) { return null; }
   }
+  // True when the visitor asked for reduced motion; animations are skipped then.
   const reducedMotion = () => window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // ---------- Reference data ----------
@@ -142,11 +184,16 @@ window.RR = (function () {
     "Cancelled / Blocked": { tone: "var(--st-cancelled)", hex: "#6b7280", step: 0 },
   };
   const CANCELLED = "Cancelled / Blocked";
+  // Display settings (tone, icon) for a news category; unknown ones fall back to General.
   const cat = (c) => CATS[c] || CATS.General;
+  // Display settings (tone, hex, step) for a project status; unknown ones fall back to Announced.
   const status = (s) => STATUS[s] || STATUS.Announced;
+  // The company's entry in window.RR_COMPANIES (assets/companies.js), or a generic placeholder.
   const companyInfo = (name) => (window.RR_COMPANIES && window.RR_COMPANIES[name]) || { type: "Company", desc: "" };
   const TYPE_TONE = { "Hyperscaler": "#38bdf8", "AI lab": "#c084fc", "GPU cloud": "#f472b6", "Developer": "#fbbf24", "Colocation": "#2dd4bf", "Investor": "#818cf8", "Energy": "#facc15", "Bitcoin and AI hosting": "#fb923c", "Company": "#94a3b8" };
+  // Colour for a company, chosen by its type.
   const companyTone = (name) => TYPE_TONE[companyInfo(name).type] || TYPE_TONE.Company;
+  /** Lettermark for a company: its mark from companies.js, else the initials of its first two words, else its first two letters. */
   function letters(name) {
     const info = companyInfo(name);
     if (info.mark) return info.mark;
@@ -159,6 +206,11 @@ window.RR = (function () {
   // Every data fetch bypasses both the browser cache and GitHub Pages' CDN cache (~10 minutes):
   // a unique query string plus cache: "no-store".
   const fresh = (path) => fetch(path + "?t=" + Date.now(), { cache: "no-store" });
+  /**
+   * Fetches a JSON file once per page: a fresh copy the first time, then the cached promise.
+   * poll() clears the cached entries when the data changes.
+   * @returns {Promise<object>} rejects when the response is not OK
+   */
   function json(path) {
     if (!cache[path]) {
       cache[path] = fresh(path).then((r) => {
@@ -168,6 +220,11 @@ window.RR = (function () {
     }
     return cache[path];
   }
+  /**
+   * Normalizes one headline: adds t (ms) and day, defaults category to "General", makes sure the
+   * organization lists exist, and fills state and states from each other.
+   * @returns {object} a new object; the input is not changed
+   */
   function prepNews(it) {
     const t = new Date(it.published).getTime();
     return Object.assign({}, it, {
@@ -183,6 +240,10 @@ window.RR = (function () {
     });
   }
   let newsP, projP;
+  /**
+   * Loads data/news.json once and updates the header freshness badge.
+   * @returns {Promise<{updated: string, windowDays: number, items: object[]}>} items normalized, newest first
+   */
   function news() {
     newsP = newsP || json("data/news.json").then((d) => {
       setUpdated(d.updated);
@@ -193,6 +254,10 @@ window.RR = (function () {
   }
   // The permanent archive: every month file listed in data/archive/index.json, merged and de-duplicated.
   let archP;
+  /**
+   * Loaded once. A month file that fails to load counts as empty; "filtered" headlines and repeated ids are skipped.
+   * @returns {Promise<{index: object, items: object[], earliest: string}>} items newest first
+   */
   function archive() {
     archP = archP || json("data/archive/index.json").then((idx) =>
       Promise.all((idx.months || []).map((m) => json(m.file).catch(() => ({ items: [] })))).then((files) => {
@@ -218,10 +283,17 @@ window.RR = (function () {
       });
     });
   }
+  // Location text without the trailing ", US".
   function placeName(loc) { return (loc || "").replace(/, US$/, ""); }
   // Projects come from the permanent registry (data/registry.json): curated records from
   // data/projects.json plus projects detected from headlines. Hidden records never reach the page.
   const PRECISION = { city: 4, county: 3, state: 2, source: 1 };
+  /**
+   * Loads data/registry.json once and keeps the records the site shows: not hidden, with a known state and coordinates.
+   * Adds place, date, t, year, approx (state-level location or worse), stories, news (newest first)
+   * and the latest headline's source and link.
+   * @returns {Promise<object[]>}
+   */
   function projects() {
     projP = projP || json("data/registry.json").then((reg) => (reg.records || []).filter((r) => !r.hidden && r.state && STATES[r.state] && isFinite(r.lat) && isFinite(r.lon)).map((r) => {
       const t = r.curated && r.announced ? new Date(r.announced + "-15T12:00:00").getTime() : new Date(r.first_seen || r.last_news || 0).getTime();
@@ -241,17 +313,23 @@ window.RR = (function () {
   const defaultVisible = (p) => p.status !== CANCELLED && p.confidence !== "low" && !p.approx;
   // When the current status started, from status_history. Curated projects only carry their announced
   // month, so a curated construction or operational status has no date of its own.
+  /** @returns {string|null} the date the current status started, or null when it is not known */
   function statusDate(p) {
     const h = (p.status_history || []).filter((x) => x.status === p.status).pop();
     if (!h || !h.date || (h.by === "curated" && p.status !== "Announced" && p.status !== "Planned")) return null;
     return h.date;
   }
+  /** The status with its month, e.g. "Planned Mar 2026" or "Operational since Jan 2025"; just the status when no date is known. */
   function statusSince(p) {
     const d = statusDate(p), when = d ? fmtDate(d.slice(0, 7), { month: "short", year: "numeric" }) : "";
     if (!when) return p.status;
     return p.status === "Announced" || p.status === "Planned" ? p.status + " " + when : p.status + " since " + when;
   }
   // The date a project was reported complete: the headline that moved it to Operational.
+  /**
+   * Falls back to the newest attached headline whose stage signal is Operational.
+   * @returns {string|null} null when the project is not Operational or no date is known
+   */
   function completedDate(p) {
     if (p.status !== "Operational") return null;
     const h = (p.status_history || []).filter((x) => x.status === "Operational" && x.headline_id).pop();
@@ -262,6 +340,10 @@ window.RR = (function () {
 
   // Headlines: one card per story cluster, with every matching headline kept as .members. The card shows
   // the cluster's display headline (most precise place, else earliest) when it is among the matches.
+  /**
+   * @param {object[]} list prepared headlines
+   * @returns {object[]} one object per cluster (the lead headline plus members and merged organization lists), newest first
+   */
   function stories(list) {
     const groups = new Map();
     list.forEach((it) => {
@@ -296,6 +378,7 @@ window.RR = (function () {
   // The header badge shows the age of data/news.json's "updated" time, re-rendered every minute,
   // and turns amber when the data is more than 3 hours old.
   const STALE_MS = 3 * 36e5;
+  /** Remembers the data time and redraws the header badge (#livePill), when the page has one. */
   function setUpdated(iso) {
     updatedIso = iso;
     const el = document.getElementById("livePill");
@@ -307,6 +390,7 @@ window.RR = (function () {
   }
   setInterval(() => { if (updatedIso) setUpdated(updatedIso); }, 60e3);
   // Pages that don't load the headlines read the same timestamp from the small run report.
+  /** @returns {Promise<object>} the parsed data/status.json */
   function freshness() {
     return json("data/status.json").then((st) => { if (!updatedIso && st.updated) setUpdated(st.updated); return st; });
   }
@@ -316,6 +400,10 @@ window.RR = (function () {
   // "updated" time has moved, reload the data and hand it to the page's callback without a reload.
   const POLL_MS = 10 * 60e3;
   let liveCb = null, pollTimer = null, polling = false, pillEl = null, pillTimer = null;
+  /**
+   * Turns on live refresh for the page. Call once.
+   * @param {function} onUpdate called as onUpdate(news, projects, addedCount) after new data has loaded
+   */
   function live(onUpdate) {
     liveCb = onUpdate;
     document.addEventListener("visibilitychange", () => {
@@ -323,10 +411,16 @@ window.RR = (function () {
     });
     schedule();
   }
+  /** Sets the next poll for POLL_MS from now, unless the tab is hidden. */
   function schedule() {
     clearTimeout(pollTimer);
     if (document.visibilityState !== "hidden") pollTimer = setTimeout(poll, POLL_MS);
   }
+  /**
+   * Checks data/news.json, skipping caches. When its "updated" time has changed, drops the cached news,
+   * registry and archive files, reloads news and projects, calls the page's callback and shows the update notice.
+   * Does nothing while the tab is hidden or a poll is running; always schedules the next one.
+   */
   function poll() {
     if (polling || !liveCb || document.visibilityState === "hidden") return;
     polling = true;
@@ -346,6 +440,7 @@ window.RR = (function () {
       });
     }).catch((err) => console.warn("Live refresh skipped:", err)).then(() => { polling = false; schedule(); });
   }
+  /** Shows the floating "Updated … · N new headlines" notice for 6 seconds. */
   function updatePill(iso, added) {
     if (!pillEl) { pillEl = document.createElement("div"); pillEl.className = "update-pill"; pillEl.setAttribute("role", "status"); document.body.appendChild(pillEl); }
     pillEl.innerHTML = '<span class="live-dot" aria-hidden="true"></span>Updated ' + esc(ago(iso)) + " · " +
@@ -354,8 +449,14 @@ window.RR = (function () {
     clearTimeout(pillTimer);
     pillTimer = setTimeout(() => pillEl.classList.remove("show"), 6000);
   }
+  /**
+   * Fills the shared page frame: #sidebar, #topbar (with the freshness badge), #tabbar and #footer, when present.
+   * @param {string} active path of the current page in NAV, e.g. "/newsroom"
+   * @param {string} title page name shown in the top bar
+   */
   function shell(active, title) {
     document.body.classList.add("has-shell");
+    // Nav links; labelIdx picks the long (1) or short (3) label from NAV.
     const navLinks = (labelIdx) => NAV.map((n) => '<a href="' + n[0] + '"' + (n[0] === active ? ' aria-current="page"' : "") + ">" + icon(n[2]) + "<span>" + n[labelIdx] + "</span></a>").join("");
     const side = document.getElementById("sidebar");
     if (side) {
@@ -384,6 +485,8 @@ window.RR = (function () {
   const T0 = performance.now();
   const loaderEl = document.getElementById("loader");
   let loaderTimer;
+  // Start-up loader: cycles its messages and hides itself after 1.15 s at most.
+  // Pages that add the "no-loader" class to <html> skip it.
   if (loaderEl && !document.documentElement.classList.contains("no-loader")) {
     const msgs = ["Initializing The Rack Report…", "Scanning U.S. infrastructure signals…", "Loading data center intelligence…"];
     let i = 0;
@@ -391,6 +494,7 @@ window.RR = (function () {
     loaderTimer = setInterval(() => { i = (i + 1) % msgs.length; if (txt) txt.textContent = msgs[i]; }, 380);
     setTimeout(hideLoader, 1150);
   }
+  // A news card's "N sources" button shows or hides its list of other outlets.
   document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-sources]");
     if (!b) return;
@@ -399,12 +503,14 @@ window.RR = (function () {
     ul.hidden = !ul.hidden;
     b.setAttribute("aria-expanded", String(!ul.hidden));
   });
+  /** Fades out and removes the #loader overlay. Safe to call more than once. */
   function hideLoader() {
     clearInterval(loaderTimer);
     if (!loaderEl || loaderEl.classList.contains("done")) return;
     loaderEl.classList.add("done");
     setTimeout(() => loaderEl.remove(), 300);
   }
+  /** Called by each page when its first render is done: hides the loader (no sooner than 450 ms after start) and starts the reveal animations. */
   function ready() {
     setTimeout(hideLoader, Math.max(0, 450 - (performance.now() - T0)));
     reveal();
@@ -412,17 +518,26 @@ window.RR = (function () {
 
   // ---------- UI helpers ----------
   let io;
+  /**
+   * Adds class "in" to .reveal elements as they scroll into view; all at once with reduced motion or no IntersectionObserver.
+   * @param {Element} [root] only look inside this element
+   */
   function reveal(root) {
     const els = (root || document).querySelectorAll(".reveal:not(.in)");
     if (reducedMotion() || !("IntersectionObserver" in window)) { els.forEach((e) => e.classList.add("in")); return; }
     io = io || new IntersectionObserver((ents) => ents.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } }), { rootMargin: "0px 0px -30px 0px" });
     els.forEach((e) => io.observe(e));
   }
+  /**
+   * Counts el's content up from 0 to `to` over 0.9 s, easing out.
+   * @param {function} [fmt] formats each value (default fmtN)
+   */
   function countUp(el, to, fmt) {
     fmt = fmt || fmtN;
     // Hidden tabs never run animation frames, so show the final value straight away.
     if (reducedMotion() || !to || document.visibilityState === "hidden") { el.innerHTML = fmt(to); return; }
     const t0 = performance.now(), dur = 900;
+    // One animation frame.
     (function step(t) {
       // The first frame's timestamp can be earlier than t0; clamp so the count never goes negative.
       const k = Math.max(0, Math.min(1, (t - t0) / dur));
@@ -431,6 +546,7 @@ window.RR = (function () {
     })(t0);
   }
   let toastEl, toastT;
+  /** Shows a short status message at the bottom of the screen for about 2 seconds. */
   function toast(msg) {
     if (!toastEl) { toastEl = document.createElement("div"); toastEl.className = "toast"; toastEl.setAttribute("role", "status"); document.body.appendChild(toastEl); }
     toastEl.textContent = msg;
@@ -439,6 +555,7 @@ window.RR = (function () {
     toastT = setTimeout(() => toastEl.classList.remove("show"), 1900);
   }
   let tipEl;
+  /** Shows the shared tooltip with html at page position x, y; tip(null) hides it. */
   function tip(html, x, y) {
     if (!tipEl) { tipEl = document.createElement("div"); tipEl.className = "tip"; tipEl.setAttribute("role", "tooltip"); document.body.appendChild(tipEl); }
     if (html == null) { tipEl.classList.remove("show"); return; }
@@ -453,17 +570,27 @@ window.RR = (function () {
   document.addEventListener("focusin", (e) => { const t = e.target.closest("[data-tip]"); if (t) { const r = t.getBoundingClientRect(); tip(esc(t.dataset.tip), r.left + r.width / 2, r.top); } });
   document.addEventListener("focusout", () => tip(null));
 
+  /**
+   * Copies text to the clipboard and confirms (or reports failure) with a toast.
+   * @returns {Promise}
+   */
   function copy(text) {
     return (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(() => toast("Link copied"), () => toast("Couldn't copy the link"));
   }
+  /** Opens the system share sheet when there is one, otherwise copies the URL. */
   function share(title, url) {
     if (navigator.share) return navigator.share({ title, url }).catch(() => {});
     return copy(url);
   }
   // Saved headlines live in localStorage as {id: item}.
   const saved = {
+    // all(): every saved headline by id. has(id): whether one is saved.
     all: () => store("saved") || {},
     has: (id) => !!(store("saved") || {})[id],
+    /**
+     * Saves a trimmed copy of the headline, or removes it if it was saved.
+     * @returns {boolean} true when it is now saved
+     */
     toggle(item) {
       const s = store("saved") || {};
       if (s[item.id]) delete s[item.id];
@@ -474,9 +601,11 @@ window.RR = (function () {
   };
 
   // Keeps focus inside a dialog while it is open; Escape calls onClose.
+  /** @returns {function} release: removes the key handler and returns focus to where it was */
   function trapFocus(el, onClose) {
     const prev = document.activeElement;
     const sel = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea, [tabindex]:not([tabindex="-1"])';
+    /** Escape calls onClose; Tab and Shift+Tab wrap around inside el. */
     function key(e) {
       if (e.key === "Escape") { e.preventDefault(); onClose(); return; }
       if (e.key !== "Tab") return;
@@ -495,6 +624,10 @@ window.RR = (function () {
   }
 
   // Horizontal bar chart as inline SVG. rows: [{label, value, hi}]
+  /**
+   * @param {object} [opts] label (for screen readers), width (px) and labelW (label column width)
+   * @returns {string} SVG markup; labels longer than 16 characters are shortened
+   */
   function miniBars(rows, opts) {
     opts = opts || {};
     // Draw at the container's real width so text stays at its natural size.
@@ -513,6 +646,11 @@ window.RR = (function () {
   }
 
   // ---------- News card ----------
+  /**
+   * Tag row for a headline: category, state, up to two companies, MW and $ figures.
+   * With opts.buttons the state and company tags are buttons (data-state, data-company) that pages use as filters.
+   * @returns {string} HTML
+   */
   function newsTags(it, opts) {
     opts = opts || {};
     let h = '<span class="tag" style="--tone:' + cat(it.category).tone + '"><span class="dot"></span>' + esc(it.category) + "</span>";
@@ -522,6 +660,10 @@ window.RR = (function () {
     if (it.investment_usd_b) h += '<span class="tag num" style="--tone:var(--c-deals)">' + fmtMoney(it.investment_usd_b) + "</span>";
     return h;
   }
+  /**
+   * HTML card for one story: source, age, NEW badge (under 12 hours), title link, tags, save and share
+   * buttons and, for a cluster, a hidden list of the other sources. `i` is not used.
+   */
   function newsCard(it, i) {
     const isNew = Date.now() - it.t < 12 * 36e5;
     return '<article class="card lift news-card" style="--tone:' + cat(it.category).tone + '">' +
@@ -535,7 +677,12 @@ window.RR = (function () {
   }
 
   // ---------- Ticker ----------
+  /**
+   * Fills el with the scrolling LIVE ticker. The links are rendered twice (the copy hidden from
+   * screen readers) so the loop is seamless; the speed scales with the number of items.
+   */
   function ticker(el, items) {
+    // One copy of the ticker links; aria true marks it as the hidden duplicate.
     const one = (aria) => items.map((it) => '<a href="' + esc(it.link) + '" target="_blank" rel="noopener" style="--tone:' + cat(it.category).tone + '"' + (aria ? ' aria-hidden="true" tabindex="-1"' : "") + ">" + esc(it.title) + " <span>" + esc(it.source) + "</span></a>").join("");
     el.innerHTML = '<div class="ticker-label"><span class="live-dot" aria-hidden="true"></span>LIVE</div><div class="ticker-viewport"><div class="ticker-track" style="--dur:' + Math.max(40, items.length * 9) + 's">' + one(false) + one(true) + "</div></div>";
   }
@@ -548,6 +695,10 @@ window.RR = (function () {
     ["js", "https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js", "sha384-eXVCORTRlv4FUUgS/xmOyr66XBVraen8ATNLMESp92FKXLAMiKkerixTiBvXriZr"],
   ];
   let leafletP;
+  /**
+   * Loads Leaflet and Leaflet.markercluster (CSS and JS, with SRI hashes) from unpkg.com, in order, once.
+   * @returns {Promise<object>} window.L; resolves at once when Leaflet is already on the page
+   */
   function loadLeaflet() {
     if (window.L && window.L.markerClusterGroup) return Promise.resolve(window.L);
     leafletP = leafletP || LEAFLET.reduce((p, [kind, url, sri]) => p.then(() => new Promise((res, rej) => {
@@ -562,10 +713,16 @@ window.RR = (function () {
     })), Promise.resolve()).then(() => window.L);
     return leafletP;
   }
+  // Map bounds: the default U.S. view and the furthest the map can be panned.
   const US = {
     view: [[24.4, -125], [49.5, -66.9]],
     max: [[15, -180], [72.5, -60]],
   };
+  /**
+   * Creates a Leaflet map in el with OpenStreetMap tiles, limited to US.max and fitted to the U.S.
+   * @param {object} [opts] extra L.map options
+   * @returns {object} the map
+   */
   function baseMap(el, opts) {
     const L = window.L;
     const map = L.map(el, Object.assign({ zoomControl: false, minZoom: 3, maxZoom: 13, zoomSnap: 0.25, maxBounds: US.max, maxBoundsViscosity: 1, worldCopyJump: false }, opts || {}));
@@ -579,6 +736,11 @@ window.RR = (function () {
     return map;
   }
   // Curated projects use the rack mark as their pin; detected ones are rings.
+  /**
+   * Curated pins grow with capacity.
+   * @param {boolean} [sel] draw the selected (highlighted) version
+   * @returns {object} an L.divIcon
+   */
   function pinIcon(p, sel) {
     const L = window.L, tone = status(p.status).tone;
     if (!p.curated) return L.divIcon({ className: sel ? "pin-sel" : "", iconSize: [13, 13], html: '<div class="pin-auto" style="--tone:' + tone + '"></div>' });
@@ -588,6 +750,7 @@ window.RR = (function () {
       html: '<svg class="pin-rack" viewBox="0 0 20 25" style="--tone:' + tone + '" aria-hidden="true"><rect class="body" x="1" y="1" width="18" height="23" rx="4"/><rect class="slot" x="5" y="6" width="10" height="2.4" rx="1.2"/><rect class="slot" x="5" y="11.3" width="10" height="2.4" rx="1.2"/><rect class="slot" x="5" y="16.6" width="10" height="2.4" rx="1.2"/></svg>',
     });
   }
+  /** Marker cluster layer used by both maps; clustering stops at zoom 8. */
   function clusterGroup() {
     return window.L.markerClusterGroup({
       showCoverageOnHover: false, maxClusterRadius: 44, spiderfyOnMaxZoom: true, disableClusteringAtZoom: 8,
@@ -602,6 +765,7 @@ window.RR = (function () {
     });
   }
   // withApprox: include the "Location unavailable" entry (only when those projects are on the map).
+  /** @returns {string} HTML: one entry per status, plus "Detected from news" and optionally "Location unavailable" */
   function legendHTML(withApprox) {
     return Object.keys(STATUS).map((s) => '<span class="lg"><i style="--tone:' + STATUS[s].tone + '"></i>' + s + "</span>").join("") +
       '<span class="lg"><i class="auto" style="--tone:var(--faint)"></i>Detected from news</span>' +
@@ -610,6 +774,10 @@ window.RR = (function () {
   // Projects known only to the state (location unavailable) go into one bubble per state, not pins.
   // The bubble shows how many projects it holds; onClick(state, projects, marker) lists them.
   // With ghost true the markers are small and carry options.approx, for folding into cluster circles.
+  /**
+   * Only detected projects with an approximate location are used.
+   * @returns {object[]} L.marker objects, one per state
+   */
   function approxBubbles(list, onClick, ghost) {
     const L = window.L, by = {};
     list.filter((p) => !p.curated && p.approx).forEach((p) => {
@@ -628,9 +796,15 @@ window.RR = (function () {
   }
   // Approximate bubbles show from zoom 5 in; at country zoom (<= 4) they fold into the cluster circles.
   const APPROX_ZOOM = 4;
+  /**
+   * Keeps the approximate bubbles on the map: in their own layer when zoomed in, folded into cluster
+   * layer cl at country zoom. Redraws when the zoom crosses APPROX_ZOOM.
+   * @returns {{set: function, refresh: function}} set(list) replaces the projects; refresh() redraws
+   */
   function approxLayer(map, cl, onClick) {
     const layer = window.L.layerGroup().addTo(map);
     let list = [], ghosts = [], low = null;
+    /** Rebuilds the bubbles for the current zoom. */
     function draw() {
       low = map.getZoom() <= APPROX_ZOOM;
       layer.clearLayers();
@@ -643,6 +817,7 @@ window.RR = (function () {
     return { set(l) { list = l; draw(); }, refresh: draw };
   }
   // One sentence built only from the record's own fields.
+  /** @returns {string} e.g. "Google is building this 1 GW data center project in New Albany, OH." (worded differently for detected projects) */
   function summary(p) {
     const names = p.companies.length ? p.companies : p.company ? [p.company] : [];
     const who = names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names[names.length - 1] : names[0] || "An unnamed developer";
@@ -655,6 +830,7 @@ window.RR = (function () {
         (p.status === CANCELLED ? "a data center project reported cancelled, blocked or paused" : (/^[aeiou]/i.test(p.status) ? "an " : "a ") + p.status.toLowerCase() + " data center project") + (p.umbrella ? "" : " in " + p.place) + (size ? " (" + size + " mentioned)" : "") + ".";
   }
 
+  // Public API: window.RR.
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
     STATES, CATS, STATUS, CANCELLED, PRECISION, defaultVisible, statusSince, completedDate, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,

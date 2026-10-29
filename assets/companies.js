@@ -3,6 +3,9 @@
 // Investors, builders and suppliers are separate lists in the same script and are shown on the
 // Companies page under "Who builds and equips them", computed from the headlines.
 // Counts and projects shown on the site are always computed from the data files, never from here.
+// Loaded by every page, before assets/app.js. Reads no data files and has no functions.
+// Exports window.RR_COMPANIES: {name: {type, mark, desc}}. type sets the colour (RR.companyTone),
+// mark is the lettermark (RR.letters) and desc is the line shown on the Companies page.
 window.RR_COMPANIES = {
   "Google": { type: "Hyperscaler", mark: "G", desc: "Builds and runs its own campuses for Search, YouTube, Google Cloud and AI." },
   "Microsoft": { type: "Hyperscaler", mark: "MS", desc: "Runs Azure cloud regions and is building large AI datacenters across the U.S." },

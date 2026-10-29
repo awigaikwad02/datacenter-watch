@@ -1,8 +1,16 @@
 // Newsroom: featured story, instant filters (company, utility, investor, builder, supplier, state, source, topic,
 // time, saved, search), day-grouped cards.
+// Loaded by newsroom.html (/newsroom), after assets/companies.js and assets/app.js.
+// Reads data/news.json (RR.news). The archive (data/archive/index.json and its month files) loads
+// through RR.archive() when "Include archive" is on, or RR.archiveSince() when the time range
+// reaches past what news.json holds. Saved headlines come from localStorage (RR.saved); the
+// list/grid choice is stored as "rr-view". Filters are kept in the URL hash (readHash, writeHash).
+// Uses window.RR; exports nothing.
 (function () {
   "use strict";
+  // R is window.RR; $ is a querySelector shorthand; PAGE is how many stories show before "Show more".
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY, PAGE = 30;
+  // f holds the current filters and view.
   const f = { q: "", company: "", utility: "", investor: "", builder: "", supplier: "", state: "", source: "", topic: "", range: 7, saved: false, archive: false, view: R.store("view") || "list", shown: PAGE };
   // items: data/news.json (the last windowDays days). archived: the whole archive, loaded by the
   // "Include archive" switch. older: archive months needed when the time range is longer than news.json.
@@ -13,10 +21,18 @@
   const KEYS = ["q", "company", "utility", "investor", "builder", "supplier", "state", "source", "topic", "range", "saved", "archive"];
   // Organisation filters other than the operator ("company"): filter key -> headline field and label.
   const ORGS = { utility: ["utilities", "All utilities"], investor: ["investors", "All investors"], builder: ["builders", "All builders"], supplier: ["suppliers", "All suppliers"] };
+  /**
+   * Copies filter values from the URL hash (e.g. #company=Google&range=90) into f.
+   * range defaults to 7; saved and archive are "1" flags.
+   */
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
     KEYS.forEach((k) => { if (h.has(k)) f[k] = k === "range" ? Number(h.get(k)) || 7 : k === "saved" || k === "archive" ? h.get(k) === "1" : h.get(k); });
   }
+  /**
+   * Writes the active filters to the URL hash with history.replaceState (no new history entry).
+   * The default 7-day range is left out.
+   */
   function writeHash() {
     const h = new URLSearchParams();
     KEYS.forEach((k) => { const v = f[k]; if (v && !(k === "range" && v === 7)) h.set(k, k === "saved" || k === "archive" ? "1" : v); });
@@ -26,6 +42,10 @@
 
   // ---------- Filtering ----------
   // Recent headlines, plus every archived headline when "Include archive" is on.
+  /**
+   * Also adds the older archive months when the range is longer than news.json covers. Repeated ids are dropped.
+   * @returns {object[]} headlines
+   */
   function base() {
     const extra = f.archive ? (archived && archived.items) : (f.range > windowDays && older);
     if (!extra) return items;
@@ -39,6 +59,10 @@
     R.archiveSince(Date.now() - 90 * DAY).then((list) => { older = list; render(false); })
       .catch((err) => { console.error(err); older = null; R.toast("Couldn't load older headlines"); });
   }
+  /**
+   * The headlines to filter. With "Saved only" on: the saved ones still in the data, plus the stored
+   * copies of saved headlines that are no longer loaded. Otherwise base().
+   */
   function pool() {
     const items = base();
     if (!f.saved) return items;
@@ -46,6 +70,11 @@
     const gone = Object.values(s).filter((x) => !ids.has(x.id)).map((x) => Object.assign({}, x, { t: new Date(x.published).getTime(), companies: x.companies || [], utilities: x.utilities || [], investors: x.investors || [], builders: x.builders || [], suppliers: x.suppliers || [], states: x.states || [], category: x.category || "General" }));
     return items.filter((i) => s[i.id]).concat(gone);
   }
+  /**
+   * True when headline it passes every filter. skip names one filter to ignore, so each dropdown can
+   * count what choosing it would show. The time range is ignored for the saved and archive views.
+   * Search needs every word to appear in the title, source, state or organization names.
+   */
   function match(it, skip) {
     if (skip !== "range" && !f.saved && !f.archive && Date.now() - it.t > f.range * DAY) return false;
     if (skip !== "company" && f.company && !it.companies.includes(f.company)) return false;
@@ -60,11 +89,14 @@
     }
     return true;
   }
+  // Headlines that pass every filter except skip, newest first.
   const filtered = (skip) => pool().filter((it) => match(it, skip)).sort((a, b) => b.t - a.t);
 
   // ---------- Rendering ----------
+  /** Fills #featured with the top story of the last 3 days (else the newest headline). */
   function featured() {
     const now = Date.now();
+    // Points for announcements, size figures, a state and named companies, minus one per day of age.
     const score = (i) => (i.category === "New Announcement" || i.category === "Construction" || i.category === "Expansion" ? 3 : 0) + (i.capacity_mw ? 2 : 0) + (i.investment_usd_b ? 2 : 0) + (i.state ? 1 : 0) + Math.min(2, i.companies.length) - (now - i.t) / DAY;
     const top = items.filter((i) => now - i.t <= 3 * DAY).sort((a, b) => score(b) - score(a))[0] || items[0];
     if (!top) { $("#featured").innerHTML = ""; return; }
@@ -73,16 +105,28 @@
       '<h2><a href="' + R.esc(top.link) + '" target="_blank" rel="noopener">' + R.esc(top.title) + "</a></h2>" +
       '<div class="news-foot"><div class="news-meta"><span class="src">' + R.esc(top.source) + "</span><span>·</span><span>" + R.ago(top.published) + '</span></div></div><div class="news-tags" style="margin-top:12px">' + R.newsTags(top, { buttons: true }) + "</div></article>";
   }
+  /**
+   * Fills a <select> with values sorted by count, shown as "Name (n)". The current choice stays listed even with no matches.
+   * @param {function} [fmt] formats a value for display
+   */
   function options(sel, values, label, current, fmt) {
     const opts = Object.entries(values).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
     if (current && !values[current]) opts.unshift([current, 0]);
     sel.innerHTML = '<option value="">' + label + "</option>" + opts.map(([v, n]) => '<option value="' + R.esc(v) + '"' + (v === current ? " selected" : "") + ">" + R.esc(fmt ? fmt(v) : v) + " (" + n + ")</option>").join("");
   }
+  /**
+   * Counts filtered(skip) headlines per value of key(i); key may return one value or a list.
+   * @returns {object} value -> count
+   */
   function counts(skip, key) {
     const c = {};
     filtered(skip).forEach((i) => [].concat(key(i)).forEach((v) => { if (v) c[v] = (c[v] || 0) + 1; }));
     return c;
   }
+  /**
+   * Redraws every filter control from f: dropdowns with counts, range buttons, archive switch and note,
+   * topic chips, list/grid toggle and the active-filter tags.
+   */
   function controls() {
     options($("#company"), counts("company", (i) => i.companies), "All companies", f.company);
     for (const k in ORGS) options($("#" + k), counts(k, (i) => i[ORGS[k][0]] || []), ORGS[k][1], f[k]);
@@ -111,6 +155,7 @@
     if (f.saved) act.push(["saved", "Saved only"]);
     $("#active").innerHTML = act.length ? act.map((a) => '<button class="tag" data-clear="' + a[0] + '" aria-label="Remove filter ' + R.esc(a[1]) + '">' + R.esc(a[1]) + R.icon("x") + "</button>").join("") + '<button class="link-btn" data-clear="all">Clear all</button>' : "";
   }
+  /** Renders the stories grouped by day (up to f.shown), the count line and the "Show more" button. */
   function feed() {
     const raw = filtered(), list = R.stories(raw);
     const rangeLabel = f.saved ? "saved" : f.archive ? "in the archive" : { 1: "today", 7: "this week", 31: "this month", 90: "in the last 90 days" }[f.range];
@@ -136,6 +181,10 @@
     $("#more").hidden = list.length <= f.shown;
     $("#more").textContent = "Show more stories (" + (list.length - f.shown) + " more)";
   }
+  /**
+   * Redraws the controls and the feed and updates the hash.
+   * @param {boolean} reset go back to the first page of results
+   */
   function render(reset) {
     if (reset) f.shown = PAGE;
     controls();
@@ -144,6 +193,10 @@
   }
 
   // ---------- Events ----------
+  /**
+   * Attaches the event handlers: search box ("/" focuses it), dropdowns, archive switch, "Show more",
+   * clicks on range, topic, view, state, company, clear, save and share buttons, and hash changes.
+   */
   function bind() {
     const q = $("#q");
     q.value = f.q;
@@ -184,6 +237,7 @@
     window.addEventListener("hashchange", () => { readHash(); q.value = f.q; loadOlder(); render(true); });
   }
 
+  /** Loads the full archive the first time "Include archive" is on; on failure turns the switch back off. */
   function loadArchive() {
     if (!f.archive || archived) return;
     R.archive().then((a) => { archived = a; render(false); }).catch((err) => {
@@ -194,6 +248,7 @@
     });
   }
 
+  // Start-up: apply the hash, load news.json, render, then follow live refreshes.
   readHash();
   R.news().then((n) => {
     items = n.items;

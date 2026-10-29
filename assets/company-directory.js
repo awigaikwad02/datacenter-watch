@@ -1,14 +1,25 @@
 // Companies: directory cards for the operators (assets/companies.js), computed from projects and
 // headlines, with a profile modal; plus "Who builds and equips them": the investors, builders and
 // suppliers named in recent stories, each linking to the Newsroom filtered to it.
+// Loaded by companies.html (/companies), after assets/companies.js and assets/app.js.
+// Reads data/registry.json (RR.projects) and data/news.json (RR.news). The list of companies is
+// window.RR_COMPANIES. The profile modal opens from the URL hash (#<company name>) and sets it.
+// Uses window.RR; exports nothing.
 (function () {
   "use strict";
+  // R is window.RR; $ is a querySelector shorthand.
   const R = RR, $ = (s) => document.querySelector(s), DAY = R.DAY;
+  // f holds the search text, the type chip and the sort order.
   const f = { q: "", type: "", sort: "projects" };
   // days: how many days of headlines data/news.json holds (30 or 90), for the labels.
   let cos = [], release = null, days = 30;
   R.shell("/companies", "Companies");
 
+  /**
+   * Builds one record per company in RR_COMPANIES: its projects, stories, states, latest activity,
+   * counts by status, top three curated projects by capacity, and a lowercase search string (hay).
+   * @param {object[]} items headlines grouped into stories
+   */
   function build(projects, items) {
     return Object.keys(window.RR_COMPANIES).map((name) => {
       const info = R.companyInfo(name);
@@ -29,6 +40,7 @@
 
   // Investors, builders and suppliers: story counts in the news window, most-mentioned first.
   const VENDOR_GROUPS = [["investors", "investor", "Investors", "dollar"], ["builders", "builder", "Builders", "factory"], ["suppliers", "supplier", "Suppliers", "plug"]];
+  /** Fills #vendorCols; each name links to the Newsroom filtered to it over 90 days. */
   function vendors(stories) {
     $("#vendorCols").innerHTML = VENDOR_GROUPS.map(([field, key, label, icon]) => {
       const n = {};
@@ -41,11 +53,13 @@
   }
 
   const SPLIT = [["Operational", "operational"], ["Under construction", "building"], ["Announced", "announced"], ["Planned", "planned"], [R.CANCELLED, "cancelled"]];
+  /** Line such as "3 operational · 1 building" for a company card; "" when it has no projects. */
   function statusSplit(c) {
     const parts = SPLIT.filter(([s]) => c.byStatus[s]).map(([s, label]) => c.byStatus[s] + " " + label);
     return parts.length ? '<p class="co-status">' + R.esc(parts.join(" · ")) + "</p>" : "";
   }
 
+  /** Fills #stats with four count-up tiles: companies tracked, active in the data, projects linked, story mentions. */
   function stats(projects) {
     const active = cos.filter((c) => c.projects.length || c.news.length).length;
     const linked = projects.filter((p) => p.companies.length).length;
@@ -58,6 +72,7 @@
     $("#stats").querySelectorAll(".stat-value").forEach((el) => R.countUp(el, Number(el.dataset.v)));
   }
 
+  /** Fills #types with "All" plus one chip per company type, with counts. */
   function types() {
     const n = {};
     cos.forEach((c) => { n[c.info.type] = (n[c.info.type] || 0) + 1; });
@@ -65,6 +80,7 @@
       Object.keys(n).sort().map((t) => '<button class="chip" data-type="' + R.esc(t) + '" style="--tone:' + R.companyTone(cos.find((c) => c.info.type === t).name) + '" aria-pressed="' + (f.type === t) + '"><span class="dot"></span>' + R.esc(t) + ' <span class="n">' + n[t] + "</span></button>").join("");
   }
 
+  /** Filters companies by the search words and type chip, sorts them by f.sort and renders the cards into #grid. */
   function grid() {
     const words = f.q.toLowerCase().split(/\s+/).filter(Boolean);
     const list = cos.filter((c) => (!f.type || c.info.type === f.type) && words.every((w) => c.hay.includes(w)));
@@ -89,6 +105,10 @@
     R.reveal($("#grid"));
   }
 
+  /**
+   * Opens the profile modal for a company: details, states, projects table, latest headlines and links
+   * to Rack Radar and the Newsroom. Traps focus and sets the URL hash to the company name.
+   */
   function profile(name) {
     const c = cos.find((x) => x.name === name);
     if (!c) return;
@@ -115,6 +135,7 @@
     release = R.trapFocus(m, close);
     history.replaceState(null, "", "#" + encodeURIComponent(c.name));
   }
+  /** Closes the profile modal, returns focus and clears the URL hash. */
   function close() {
     const m = $("#modal");
     if (!m.classList.contains("open")) return;
@@ -126,6 +147,7 @@
     history.replaceState(null, "", location.pathname);
   }
 
+  /** Attaches handlers for search, sort, type chips, card clicks, the backdrop and hash changes. */
   function bind() {
     $("#q").addEventListener("input", R.debounce((e) => { f.q = e.target.value.trim(); grid(); }, 150));
     $("#sort").addEventListener("change", (e) => { f.sort = e.target.value; grid(); });
@@ -141,8 +163,10 @@
     $("#back").addEventListener("click", close);
     window.addEventListener("hashchange", openFromHash);
   }
+  // Opens the profile named in the URL hash, if it is a tracked company.
   function openFromHash() { const n = decodeURIComponent(location.hash.slice(1)); if (n && window.RR_COMPANIES[n]) profile(n); }
 
+  // Start-up: load projects and news, render, then follow live refreshes.
   Promise.all([R.projects(), R.news()]).then(([projects, n]) => {
     days = n.windowDays;
     // Count stories, not headlines: several outlets covering one event count once.
