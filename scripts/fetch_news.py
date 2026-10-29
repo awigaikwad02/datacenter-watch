@@ -448,9 +448,10 @@ def fetch_feed(url):
 class Geo:
     """Everything location and source handling needs, loaded once per run."""
 
-    def __init__(self, patterns, areas, source_states, blocked):
+    def __init__(self, patterns, areas, source_states, blocked, ambiguous=None):
         self.patterns = patterns            # [(name, regex)] for cities, states, countries
         self.areas = areas                  # "Mason County" -> [candidates]
+        self.ambiguous = ambiguous or {}    # "Lansing" -> [candidates in several states]
         self.source_states = source_states  # outlet name -> two-letter state
         self.blocked = blocked              # outlet names (lowercase) that are dropped
 
@@ -467,12 +468,14 @@ def entry_candidates(value):
 
 def load_gazetteer():
     raw = {k: v for k, v in load_json(GAZ_FILE, {}).items() if not k.startswith("_")}
-    areas, gaz = {}, {}
+    areas, gaz, ambiguous = {}, {}, {}
     for k, v in raw.items():
         if re.search(r" (County|Parish|Township)$", k):
             areas[k] = entry_candidates(v)
         else:
             gaz[k] = entry_candidates(v)[0]
+            if len(entry_candidates(v)) > 1:
+                ambiguous[k] = entry_candidates(v)  # a town name found in several states
     patterns = []
     for n in sorted(gaz.keys(), key=len, reverse=True):
         if re.fullmatch(r"[A-Z]{2}", n):
@@ -484,7 +487,7 @@ def load_gazetteer():
     cfg = load_json(FEEDS_FILE, {})
     source_states = {k: v for k, v in cfg.get("source_states", {}).items() if not k.startswith("_")}
     blocked = {s.strip().lower() for s in cfg.get("blocked_sources", []) if isinstance(s, str) and not s.startswith("#")}
-    return gaz, Geo(patterns, areas, source_states, blocked)
+    return gaz, Geo(patterns, areas, source_states, blocked, ambiguous)
 
 
 def loc_from(entry, precision):
@@ -494,9 +497,10 @@ def loc_from(entry, precision):
 
 
 def find_locations(text, gaz, geo, context_states=()):
-    """Places named in the text, most precise first. Ambiguous county names are
-    resolved with the states found elsewhere in the text or the outlet's state."""
-    found = []
+    """Places named in the text, most precise first. Ambiguous county and town names
+    ("Mason County", "Lansing") are resolved with the states found elsewhere in the text or
+    the outlet's state, and skipped when that does not settle them."""
+    found, deferred = [], []
     work = text
     # A city name inside "Richmond County" or "Van Buren Township" is not that city:
     # blank the matched county/parish/township names before looking for cities.
@@ -512,11 +516,18 @@ def find_locations(text, gaz, geo, context_states=()):
         m = pat.search(work)
         if not m:
             continue
-        entry = gaz[name]
-        found.append(loc_from(entry, "city" if entry[2] >= 3 else "state" if entry[2] == 2 else "country"))
+        if name in geo.ambiguous:
+            deferred.append(geo.ambiguous[name])
+        else:
+            entry = gaz[name]
+            found.append(loc_from(entry, "city" if entry[2] >= 3 else "state" if entry[2] == 2 else "country"))
         # blank out the match so shorter names inside it do not re-match
         work = work[:m.start()] + (" " * (m.end() - m.start())) + work[m.end():]
     known_states = {state_of(f) for f in found} | set(context_states)
+    for cands in deferred:
+        picks = [c for c in cands if state_of({"name": c[3]}) in known_states]
+        if len(picks) == 1:
+            found.append(loc_from(picks[0], "city"))
     for m in AREA_RE.finditer(text):
         words, kind = m.group(1).split(), m.group(2)
         for k in range(len(words), 0, -1):  # "Proposed Mason County" -> "Mason County"
