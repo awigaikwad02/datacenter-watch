@@ -55,9 +55,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-29T10:57:52+00:00",
- "count": 627,
- "visible": 627,
+ "updated": "2026-10-29T11:57:52+00:00",
+ "count": 628,
+ "visible": 628,
  "records": [
   {
    "id": "amazon-georgia",
@@ -33070,6 +33070,62 @@
    "builders": [],
    "suppliers": [],
    "name_hints": []
+  },
+  {
+   "id": "site-houston-tx-2026",
+   "name": "Houston data center",
+   "company": "",
+   "companies": [],
+   "location": "Houston, Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": "Houston, Texas, US",
+   "lat": 29.76,
+   "lon": -95.37,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "0ba7153c85cb5859",
+     "title": "CenterPoint adds $4B to power lines as Houston data center growth accelerates",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbEctVHlzS3NlU2Z4ZkY5aUMwZk1EUUttOHp1MGNxR25FOEJEZVE1MXNZVDM1cnFrdlBualRva2dnM2VnS2VVN05md3RVSHVYSHZ5VjhYMExCZWhjRmYzNGxIRktGbllMRzZYNVhCUG5UV2x3ejZHc2p1dExDcTFhOGJyRVVzYzd0WWtod1pfUkhlSl81cEZDVHdSOVlfbXNoVktabDFzUHJLMEFqMzJ6LUZ1dHUwbXNkUy1R?oc=5",
+     "source": "Houston Chronicle",
+     "published": "2026-10-29T11:21:44+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "0ba7153c85cb5859"
+    }
+   ],
+   "first_seen": "2026-10-29T11:21:44+00:00",
+   "name_hints": [],
+   "utilities": [
+    "CenterPoint"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-29T11:21:44+00:00",
+     "status": "Announced",
+     "headline_id": "0ba7153c85cb5859"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-10-29T11:21:44+00:00",
+     "type": "Expansion",
+     "headline_id": "0ba7153c85cb5859"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 4.0,
+   "last_news": "2026-10-29T11:21:44+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-hudspeth-county-tx-2026",
