@@ -38,8 +38,101 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 3808,
+ "count": 3815,
  "items": [
+  {
+   "id": "1a9386f5f6de6b3e",
+   "title": "Developers Eye Utah, Iowa as Texas Halts Data Center Permits",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQLVJybWZ6ZnQ5MW0tMC1KSU9MaU1SMkZWak84alZ4bEN5X0NLeS1VYldtWGxxWFNROWpOT01FcWptWGQtbk9MRThjTXpqUlRPWDFxcy03UnVqdVdoaE5zRk5sTXFxWWJyR0xMYzF1Mjl6ZlZyMHhuQTJqM0htT1k3MmdJMzZiY0ZqNnlrOGNMbDI?oc=5",
+   "source": "FourWeekMBA",
+   "published": "2026-10-29T12:20:12+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Iowa, US",
+     "lat": 42.1,
+     "lon": -93.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Utah, US",
+     "lat": 39.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA",
+    "TX",
+    "UT"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1a9386f5f6de6b3e",
+   "cluster_title": "Developers Eye Utah, Iowa as Texas Halts Data Center Permits"
+  },
+  {
+   "id": "e54d32518356a262",
+   "title": "Proposed Google data center in Pine Island to undergo new environmental review",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRkF2Zk42ZjNWSk5JNXN2QmVWSGt5RGQ2YWlMV1JCdFBBUlg1YTVlSE9STzRxa2pEbEV2M1RuQVZhY0hKR3kxZU5WTFFXbjMwa0xaTXhuaHlNWVk4UWxTbnNEa0R3bERRbVB2aVYwZGFFY1BnLTROWWJkXzVKT3hSV2ZFUExBbFMyYXZXRUwxZ2ZscjNVeXViVjJ2VHJKamtUWHczUHJ3?oc=5",
+   "source": "MPR News",
+   "published": "2026-10-29T12:00:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Environment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5723120ae2c6c929",
+   "cluster_title": "Proposed data center in Pine Island will undergo a new environmental review due to settlement"
+  },
   {
    "id": "8dfc8a3f2f302cf1",
    "title": "Senate passes bill to ban secrecy agreements in data center approvals",
@@ -101,6 +194,30 @@
    "suppliers": [],
    "cluster_id": "c004d6ba54a2acc2",
    "cluster_title": "Google revealed as user for potential data center campus in Goochland’s West Creek"
+  },
+  {
+   "id": "121df56c731c9034",
+   "title": "Data Center Headed Your Way? This Tool Lets You See Where the Candidates Stand.",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSDBfdVZZRlZ3dGVoUHA3Rl9VSXBQMG13cTJEaF9YcFMwM1hudkh5ZTZZRUxpQTMybnJiQnh5WGMxTnB3cjV0b1I5U2JzUXBReFRTNmN2eENvalVvN3BfSUVSb1JmVjEwU1czR1Nwd0dfX0t4YUlGTHJPSzJDZzdfZWw5RnlObzNnQWc2cFRVMzFwTHkwbkUwcnJjM2VBNGJ3X3VGR1Zzc1J3UDdVZEZkRU9vT0JjWDEwSGoxU3ZoQ2hoeEozalVQUVgtMG1BZkpZelE?oc=5",
+   "source": "Mother Jones",
+   "published": "2026-10-29T11:30:43+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "121df56c731c9034",
+   "cluster_title": "Data Center Headed Your Way? This Tool Lets You See Where the Candidates Stand."
   },
   {
    "id": "0ba7153c85cb5859",
@@ -374,6 +491,31 @@
    "cluster_title": "Corporation Commission candidates differ on Oklahoma data center regulation, utility rates"
   },
   {
+   "id": "2568633ab4516763",
+   "title": "How Do You Know If Your Data Center Provider Is Managing Its Cooling Responsibly?",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQT1dfYzBVRnhXdnJ0cHJ6STItazB5N1Bna2dWN0huOTZQdDRXN0ZsS0h0SDV2MThDZVBWREV5bmlKa1Q4MVh2R0RQcTlSUkM3WmJSWFl6QUc1Z0s5alhETDZIRXVmYkNfekN6NFM1VHJxeHQxVno2ZWtQdHdYdFk2TDlsSGhKLVctakpjdUh1U3hkUmxxV3U0bVEyLWQyeGs1WW9KOExwa2EtX0pDMjlsV1RtMVlrRTdJb1k0MnlwVENlQkhNdzJ6cXZCWHFSY2ti?oc=5",
+   "source": "Environmental Leader",
+   "published": "2026-10-29T11:00:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2568633ab4516763",
+   "cluster_title": "How Do You Know If Your Data Center Provider Is Managing Its Cooling Responsibly?"
+  },
+  {
    "id": "11a3a9e07e92317f",
    "title": "Falls Township to unveil data center zoning fix. What's next",
    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdS1xcVJaMW1IMG5OVDFyRnlkZUFMSmVmVW1WZVlUcVQwT19TNmdTLU5pM0RNTThOVlhfaWJFWXVWZlNJUXZscWRXSkV2R3R4M2x6Q3Q5eHpuekxHU01oSUdlOGx0NWdqQmFUNERteDJnQk8tVGhHOXVUTkdoY0dEQTFYVnBHNk1uZ3k0dHBfZFZYYVM2SmNMRmFoREk1X3pySWlyQ1RpU2xEckhNQzJVV1hjWGRmYktNYzNyTGViV3BuM2dCT212aGp1bF9wVU4yTF9tY09RMVNINXBZenQxM09xeUVwMnBqOFE?oc=5",
@@ -619,6 +761,41 @@
    "investment_usd_b": 2.2,
    "cluster_id": "4fe78ca96eecb1da",
    "cluster_title": "$2.2B data center tops Central Ohio's largest 2026 construction projects"
+  },
+  {
+   "id": "9677c589851aa230",
+   "title": "Oregon Town Says Data Center Moratorium is Costing Them Millions",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdENJemw5OGdFS18zN3pXVGphS1dNSG9aLURoTzhuc1BtS3BJSGY3cGxtYXl1N2tKSmFqUldKY2pSUkZ0OGtBM1RuaHJRbzhYTWdLVW5CUEZ3cGFlV1FQWWtZUHBCblVWZWczdXd3M2NVRm1PWjRPRk9MOF82bnhzeU1lUFVJV0RDVmZVRlo1SGZzemZk?oc=5",
+   "source": "Inside Towers",
+   "published": "2026-10-29T09:59:32+00:00",
+   "feed": "Google News: West",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Oregon, US",
+     "lat": 43.9,
+     "lon": -120.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9677c589851aa230",
+   "cluster_title": "Oregon Town Says Data Center Moratorium is Costing Them Millions"
   },
   {
    "id": "5ad7a15b15490ab4",
@@ -3099,6 +3276,42 @@
    "cluster_title": "National political action committees pour money into Kansas data center politics"
   },
   {
+   "id": "151eadb3923d61e0",
+   "title": "Mississippi state auditor investigating Walls amid data center concerns",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02SWJpbXFJSlRSU3hhcUpDTkRNY2pGV0hZYTd2bHRBZXFKSXFEaDZFak9NQ0JuMTlMZUN4aEtpVjREaC12WlhPMml3Q2N0YzlC?oc=5",
+   "source": "Daily Memphian",
+   "published": "2026-10-28T22:49:02+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Mississippi, US",
+     "lat": 32.7,
+     "lon": -89.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "151eadb3923d61e0",
+   "cluster_title": "Mississippi state auditor investigating Walls amid data center concerns"
+  },
+  {
    "id": "87b470a5bc540fad",
    "title": "A Practical Approach to Power, Cooling, and Facility Monitoring within Data Center Infrastructure Management",
    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQSDVYbEZWMGFWbmRPVzBOcUJXUDdBQkt0VmxTSXZJUld2eG9VcVVyNnpfaE9FZ2phMG5yQmtyaWM1anJnbjFoRWdRdjFFcS1lcnZSVzNrOEJzM0tCMExzb0tDc1lXZU1JNTFTaURHREJyazZsaEdzay1mVWltZjE0WE5QbzgtRU1FWDRZVkpITWpHOXN5U216WFU1N0RRQVExcGJtUjgybl80ay1GcmpJLXE5RGhValBIV3FEQmgtbmhfOFpmWGZXXzJxSGJ1RUg4NlhjWDNMbXJuRjRYMXZjc1ZjQTZzMEttQlF0dW9oakwyUTFSSjNaWVZ3?oc=5",
@@ -3553,6 +3766,41 @@
    "suppliers": [],
    "cluster_id": "c338455ac7000021",
    "cluster_title": "‘Sloppy is the way I would describe this approach’: Unknown plans for an underwater data center in Cook Inlet"
+  },
+  {
+   "id": "eb8fbaffffbfd59d",
+   "title": "Unknown plans for an underwater data center in Cook Inlet",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZVkxQ1pBbGlhcjFEMHdjN3kzWm9mSUtyU2w1bFoxMHVyV1JkdjB5YkpfUkxkYW9uYVF1MmpBX2lKaUExQXFrQ01oQ284VU1UUzRWeURhdHgwaUM4OTd6S1R4UUM2eVNrQ2FELU9qYW1vb2RmUUM0QzYxTFVjR2JjSlVOdzJNaWcwYUlBSmJMUXFCRkY2TU5UNVRjak1tNjR2NlBBUg?oc=5",
+   "source": "Alaska's News Source",
+   "published": "2026-10-28T22:06:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Alaska, US",
+     "lat": 64.2,
+     "lon": -152.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AK"
+   ],
+   "state": "AK",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "eb8fbaffffbfd59d",
+   "cluster_title": "Unknown plans for an underwater data center in Cook Inlet"
   },
   {
    "id": "e8db27c99f8caa74",
