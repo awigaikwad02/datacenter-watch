@@ -1,25 +1,37 @@
 {
- "checked_at": "2026-10-28T14:07:46+00:00",
- "overall": "fail",
+ "_readme": {
+  "about": "The latest full health check. 'Health check failed' issue opens when overall is fail.",
+  "written_by": "scripts/healthcheck.py and scripts/healthcheck_browser.mjs, every 6 hours",
+  "fields": {
+   "checked_at": "When the Python checks ran.",
+   "browser_checked_at": "When the browser checks ran.",
+   "overall": "fail when any check failed, else pass.",
+   "context": "full (the scheduled check) or update (the gate inside each hourly cycle, not written to this file).",
+   "checks": "Every check: {name, status (pass, warn, fail, skip), value, detail}."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
+ "checked_at": "2026-10-29T05:12:19+00:00",
+ "overall": "pass",
  "context": "full",
  "checks": [
   {
-   "name": "Last data commit within 2h",
-   "status": "fail",
-   "value": "5h 27m ago",
-   "detail": "2026-10-28T08:39:55Z"
+   "name": "Last data commit within 3h",
+   "status": "pass",
+   "value": "15m ago",
+   "detail": "2026-10-29T04:57:11Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "9/9 succeeded, 0 superseded, avg 81s",
+   "value": "9/9 succeeded, 0 superseded, avg 26s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-10-28T08:39:30+00:00, 46 new"
+   "detail": "run at 2026-10-29T04:55:59+00:00, 16 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -42,19 +54,19 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "2996 KB",
+   "value": "2217 KB",
    "detail": ""
   },
   {
-   "name": "news.json updated within 2h",
-   "status": "fail",
-   "value": "5h 28m ago",
-   "detail": "2026-10-28T08:39:30+00:00"
+   "name": "news.json updated within 3h",
+   "status": "pass",
+   "value": "3m ago",
+   "detail": "2026-10-29T05:09:17+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "3000 items, 0 problems",
+   "value": "3752 items, 0 problems",
    "detail": ""
   },
   {
@@ -72,25 +84,37 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: Policy / Permits 24.2%",
-   "detail": "Policy / Permits 727, General 666, New Announcement 495, Power / Utility 337, AI Infrastructure 245, Cancelled / Blocked 195, Deals / Investment 135, Construction 103, Expansion 57, Operations 24, Land Acquisition 16"
+   "value": "top: New Announcement 19.7%",
+   "detail": "New Announcement 741, Policy / Permits 699, Community 425, Power / Utility 290, General 262, Cancelled / Blocked 227, AI Infrastructure 202, Deals / Investment 158, Construction 148, Environment 135, Politics 120, Analysis / Opinion 114, Expansion 68, Markets / Earnings 60, Economy / Jobs 53, Operations 32, Land Acquisition 18"
   },
   {
-   "name": "At least 50% of headlines located",
-   "status": "fail",
-   "value": "1400/3000 (46.7%)",
-   "detail": "with a company: 306"
+   "name": "General under 10% of headlines",
+   "status": "pass",
+   "value": "7.0%",
+   "detail": ""
+  },
+  {
+   "name": "Policy / Permits under 20% of headlines",
+   "status": "pass",
+   "value": "18.6%",
+   "detail": ""
+  },
+  {
+   "name": "At least 55% of headlines located",
+   "status": "pass",
+   "value": "2201/3752 (58.7%)",
+   "detail": "with a company: 421"
   },
   {
    "name": "No non-U.S. locations in headlines",
    "status": "pass",
-   "value": "0 items",
+   "value": "0 of 3751 items",
    "detail": ""
   },
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "20307 ids, 0 in two months",
+   "value": "20599 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -102,19 +126,19 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "27 month(s), 20307 headlines, earliest 2019-11-18",
+   "value": "27 month(s), 20599 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
    "name": "Registry ids unique",
    "status": "pass",
-   "value": "505 records, 505 visible",
+   "value": "626 records, 626 visible",
    "detail": ""
   },
   {
    "name": "No registry record lost since the last commit",
    "status": "pass",
-   "value": "505 -> 505",
+   "value": "626 -> 626",
    "detail": ""
   },
   {
@@ -132,13 +156,13 @@
   {
    "name": "Operational records backed by an operational headline",
    "status": "pass",
-   "value": "30 detected operational, 0 without one",
+   "value": "31 detected operational, 0 without one",
    "detail": ""
   },
   {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "1259 attached headlines, 0 missing",
+   "value": "1596 attached headlines, 0 missing",
    "detail": ""
   },
   {
@@ -156,7 +180,7 @@
   {
    "name": "Overview 'announced' excludes Cancelled / Blocked",
    "status": "pass",
-   "value": "14",
+   "value": "21",
    "detail": "1 cancelled or blocked records this month are left out"
   },
   {
@@ -174,13 +198,13 @@
   {
    "name": "Sitemap matches pages",
    "status": "pass",
-   "value": "511 entries (6 site pages + 505 project pages)",
+   "value": "632 entries (6 site pages + 626 project pages)",
    "detail": ""
   },
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "505 pages, 2637 KB",
+   "value": "626 pages, 3301 KB",
    "detail": ""
   },
   {
@@ -228,8 +252,8 @@
   {
    "name": "Pages under 300 KB (HTML+CSS+JS)",
    "status": "pass",
-   "value": "learn.html 217 KB",
-   "detail": "404.html 116 KB, atlas.html 146 KB, companies.html 129 KB, index.html 130 KB, learn.html 217 KB, methodology.html 130 KB, newsroom.html 132 KB"
+   "value": "learn.html 237 KB",
+   "detail": "404.html 134 KB, companies.html 151 KB, index.html 150 KB, learn.html 237 KB, methodology.html 153 KB, newsroom.html 156 KB, radar.html 169 KB"
   },
   {
    "name": "Freshness badge and 10-minute no-store poller",
@@ -240,7 +264,7 @@
   {
    "name": "No secrets in the repo",
    "status": "pass",
-   "value": "0 matches in 591 files",
+   "value": "0 matches in 735 files",
    "detail": ""
   },
   {
@@ -252,13 +276,25 @@
   {
    "name": "Workflow permissions minimal",
    "status": "pass",
-   "value": "update: contents: write; health: + issues: write, actions: read",
+   "value": "5 workflows match WORKFLOW_PERMISSIONS",
+   "detail": ""
+  },
+  {
+   "name": "No AI services, API keys or extra secrets",
+   "status": "pass",
+   "value": "0 findings",
    "detail": ""
   },
   {
    "name": "SECURITY.md present",
    "status": "pass",
    "value": "",
+   "detail": ""
+  },
+  {
+   "name": "Tests pass (pytest)",
+   "status": "pass",
+   "value": "221 passed in 1.57s",
    "detail": ""
   },
   {
@@ -274,7 +310,7 @@
    "detail": ""
   },
   {
-   "name": "Browser: /atlas @390px loads cleanly",
+   "name": "Browser: /radar @390px loads cleanly",
    "status": "pass",
    "value": "0 console errors, 0 CSP violations, 0 failed requests",
    "detail": ""
@@ -318,8 +354,8 @@
   {
    "name": "Browser: Overview 'announced' matches recomputed value",
    "status": "pass",
-   "value": "14",
-   "detail": "Python recomputed 14 (Cancelled / Blocked excluded)"
+   "value": "21",
+   "detail": "Python recomputed 21 (Cancelled / Blocked excluded)"
   },
   {
    "name": "Browser: /newsroom @1280px loads cleanly",
@@ -330,55 +366,61 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 5h ago",
-   "detail": "expected Updated 5h ago or Updated 5h ago, title \"The data has not changed for more than 3 hours (last update Oct 28, 2026)\""
+   "value": "Updated 4m ago",
+   "detail": "expected Updated 4m ago or Updated 3m ago, title \"Data last updated Oct 29, 2026\""
   },
   {
-   "name": "Browser: /atlas @1280px loads cleanly",
+   "name": "Browser: /radar @1280px loads cleanly",
    "status": "pass",
    "value": "0 console errors, 0 CSP violations, 0 failed requests",
    "detail": ""
   },
   {
-   "name": "Browser: Atlas renders pins and state bubbles",
+   "name": "Browser: Rack Radar renders pins and state bubbles",
    "status": "pass",
-   "value": "25 markers; location-unavailable hidden by default: true; 35 bubbles at zoom 5+, 22 at country zoom",
+   "value": "27 markers; location-unavailable hidden by default: true; 37 bubbles at zoom 5+, 21 at country zoom",
    "detail": ""
   },
   {
-   "name": "Browser: Atlas 'Location unavailable' bubble lists projects and opens one",
+   "name": "Browser: Rack Radar 'Location unavailable' bubble lists projects and opens one",
    "status": "pass",
-   "value": "2 projects listed, opened \"Amazon, Minnesota (site not yet named)\"",
+   "value": "1 projects listed, opened \"Apple, Minnesota (site not yet named)\"",
    "detail": ""
   },
   {
-   "name": "Browser: Atlas pin click opens the panel",
+   "name": "Browser: Rack Radar pin click opens the panel",
    "status": "pass",
-   "value": "Minneapolis data center",
+   "value": "Wisconsin Rapids data center",
    "detail": ""
   },
   {
-   "name": "Browser: Atlas filters change the list",
+   "name": "Browser: Rack Radar filters change the list",
    "status": "pass",
-   "value": "1 in view · 372 total -> 5 in view · 5 total (state AL)",
+   "value": "16 in view · 465 total -> 11 in view · 11 total (state AL)",
    "detail": ""
   },
   {
-   "name": "Browser: Atlas registry filters (cancelled off, low-confidence toggle, Operational only)",
+   "name": "Browser: Rack Radar registry filters (cancelled off, low-confidence toggle, Operational only)",
    "status": "pass",
-   "value": "default 372 (0 cancelled: true), with low-confidence 372, Operational only 40",
+   "value": "default 465 (0 cancelled: true), with low-confidence 465, Operational only 43",
    "detail": ""
   },
   {
-   "name": "Browser: Atlas deep link opens the project",
+   "name": "Browser: Rack Radar deep link opens the project",
    "status": "pass",
    "value": "#project=stargate-abilene -> Stargate Abilene",
    "detail": ""
   },
   {
-   "name": "Browser: Atlas panel shows status timeline and project news",
+   "name": "Browser: Old /atlas link redirects to Rack Radar with the project",
    "status": "pass",
-   "value": "aligned-dallas-tx-2025: 3 timeline steps, 2/2 news",
+   "value": "/radar#project=stargate-abilene -> Stargate Abilene",
+   "detail": ""
+  },
+  {
+   "name": "Browser: Rack Radar panel shows status timeline and project news",
+   "status": "pass",
+   "value": "aligned-dallas-tx-2025: 4 timeline steps, 3/3 news",
    "detail": ""
   },
   {
@@ -420,7 +462,7 @@
   {
    "name": "Browser: Sitemap entries return 200",
    "status": "pass",
-   "value": "511 entries",
+   "value": "632 entries",
    "detail": ""
   },
   {
@@ -430,5 +472,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-28T14:09:05+00:00"
+ "browser_checked_at": "2026-10-29T05:14:12+00:00"
 }
