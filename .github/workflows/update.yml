@@ -1,59 +1,54 @@
 name: Update data center news
 
+# The data refresh. GitHub starts scheduled workflows late or not at all (in October 2026 an
+# hourly cron started only every 3 to 6 hours), so this workflow keeps itself running instead:
+# one run loops for about 5 hours 40 minutes, refreshing once an hour (scripts/update_loop.sh),
+# then dispatches the next run. The hourly cron and the freshness watchdog (watchdog.yml) only
+# restart the loop if the chain ever breaks; a start while a loop is running is skipped.
+# No AI service is involved anywhere: every step is deterministic code (see docs/DECISIONS.md).
 on:
   schedule:
-    # GitHub treats schedules as best effort and was starting an hourly cron only every 3 to 5
-    # hours. So the workflow is woken every 5 minutes and the gate below lets the fetch run only
-    # when the last real fetch is an hour old: one wake-up per hour is enough to stay hourly.
-    - cron: "*/5 * * * *"
+    - cron: "17 * * * *"   # backup only
   workflow_dispatch:
+    inputs:
+      chain:
+        description: "Started by the previous loop (leave false when starting by hand)"
+        type: boolean
+        default: false
 
+# contents: commit the data; actions: see whether a loop is already running and start the next one.
 permissions:
   contents: write
+  actions: write
 
 jobs:
-  # Decides in a few seconds whether this wake-up should fetch. Runs that only pass through the
-  # gate show the update job as skipped.
+  # Lets this run through only when no other loop is running (or when the previous loop started it).
   gate:
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
     outputs:
       run: ${{ steps.decide.outputs.run }}
     steps:
-      - name: Is the last fetch an hour old?
+      - name: Is a loop already running?
         id: decide
         env:
           GH_TOKEN: ${{ github.token }}
-          EVENT: ${{ github.event_name }}
+          CHAIN: ${{ inputs.chain }}
         run: |
-          python3 - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, os, subprocess
-          from datetime import datetime, timezone
-          if os.environ["EVENT"] == "workflow_dispatch":
-              print("run=true"); raise SystemExit
-          repo, me = os.environ["GITHUB_REPOSITORY"], int(os.environ["GITHUB_RUN_ID"])
-          api = lambda path: json.loads(subprocess.check_output(["gh", "api", path]))
-          now = datetime.now(timezone.utc)
-          for r in api(f"repos/{repo}/actions/workflows/update.yml/runs?per_page=40")["workflow_runs"]:
-              if r["id"] == me or r["status"] != "completed":
-                  continue
-              job = next((j for j in api(f"repos/{repo}/actions/runs/{r['id']}/jobs")["jobs"] if j["name"] == "update"), None)
-              if not job or job["conclusion"] not in ("success", "failure"):
-                  continue  # only passed through the gate, or was cancelled
-              age = (now - datetime.fromisoformat(job["started_at"].replace("Z", "+00:00"))).total_seconds() / 60
-              # Fetch again after 55 minutes, or 15 minutes after a failed fetch.
-              wait = 55 if job["conclusion"] == "success" else 15
-              print(f"run={'true' if age >= wait else 'false'}")
-              print(f"last fetch {age:.0f} min ago ({job['conclusion']})", file=__import__('sys').stderr)
-              raise SystemExit
-          print("run=true")
-          PY
+          if [ "$CHAIN" = "true" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          busy=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/update.yml/runs?per_page=20" \
+            --jq "[.workflow_runs[] | select(.id != $GITHUB_RUN_ID and (.status == \"in_progress\" or .status == \"queued\" or .status == \"waiting\" or .status == \"pending\"))] | length")
+          if [ "$busy" -gt 0 ]; then
+            echo "A loop is already running; this start is skipped."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
 
-  update:
+  loop:
     needs: gate
     if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 355   # GitHub stops jobs at 6 hours; the loop ends at 5h40m plus one cycle
     # Shared with the manual news backfill so the two never push the same data files at once.
     concurrency:
       group: data-files
@@ -70,28 +65,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Fetch feeds and rebuild data files
-        run: python scripts/fetch_news.py
+      - name: Refresh once an hour for 5 hours 40 minutes
+        run: bash scripts/update_loop.sh
 
-      # A bad data file must never be committed: if the checks fail, this step fails
-      # and the commit step below does not run.
-      - name: Check the new data
-        run: python scripts/healthcheck.py --context update
-
-      - name: Commit updated data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Skip the commit when only the "updated" timestamps moved (no new or changed items).
-          if ! python scripts/data_changed.py; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          git add data/news.json data/registry.json data/project_overrides.json data/status.json data/archive sitemap.xml
-          git add -A projects
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update news data $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
-          fi
+      # Runs even when every cycle failed, so the chain never stops on its own.
+      - name: Start the next loop
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update.yml --ref main -f chain=true
