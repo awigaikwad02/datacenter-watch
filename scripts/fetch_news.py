@@ -86,7 +86,7 @@ CANCEL_PAT = (
     r"voted against|court rules against|rules against|(?:puts?|putting|placed?) a pause|"
     r"moratorium (?:passed|passes|approved|adopted|enacted|extended|imposed)|"
     r"(?:pass|passes|passed|approve|approves|approved|adopts|adopted|enacts|enacted|extends|extended|extending|"
-    r"expands|expanded|imposes|imposed|signs|signed|finalizes|finalized|starts|started) "
+    r"expands|expanded|imposes|imposed|issues|issued|signs|signed|finalizes|finalized|starts|started) "
     r"(?:a |an |the )?(?:[\w$-]+ ){0,4}(?:moratoriums?|pause))\b")
 CANCEL_RE = re.compile(CANCEL_PAT, re.I)
 # Not a cancellation: proposals and calls for one, or a vote against a restriction rather than a project.
@@ -96,10 +96,9 @@ CANCEL_HEDGE = re.compile(
 CANCEL_NOT = re.compile(
     r"\b(?:votes? down|voted down|rejects?|rejected|denies|denied|blocks?|blocked|drops?|dropped|withdraws?|withdrew|"
     r"withdrawn|halts?|halted|pauses?|paused|votes? against|voted against|scraps?|scrapped|cancels?|cancell?ed)"
-    r" (?:[\w$’'.,-]+ ){0,6}?(?:moratorium|ban|freeze|pause|restrictions?|ordinance|regulations?|rules|guardrails|"
-    r"limits|lawsuit|suit|challenge|appeal|petition|referendum|opposition|tax|bill|plan to|plan that|meeting|"
-    r"task force|study|committee|"
-    r"hearing|session|vote)\b|\b(?:blocks?|blocked) \w+ from\b|\b(?:rejects?|rejected) \$\d|"
+    r" (?:[\w$’'.,-]+ ){0,6}?(?:moratoriums?|bans?|freezes?|pauses?|restrictions?|ordinances?|regulations?|rules|guardrails|"
+    r"limits|lawsuits?|suits?|challenges?|appeals?|petitions?|referendums?|opposition|tax(?:es)?|bills?|plan to|plan that|"
+    r"meetings?|task force|study|studies|committee|hearings?|sessions?|votes?)\b|\b(?:blocks?|blocked) \w+ from\b|\b(?:rejects?|rejected) \$\d|"
     r"\b(?:votes?|voted|rules?|ruled) against (?:requiring|forcing|making|letting|allowing)\b|"
     r"\b(?:shares|stocks?|prices?|demand|revenue|profits?|levels?|ratings?|costs?|rates?) (?:drops?|dropped)\b", re.I)
 CANCELLED = "Cancelled / Blocked"
@@ -144,8 +143,9 @@ CATEGORY_RULES = [
     # "Applied Digital shares jump on CoreWeave lease", "Equinix earnings beat", "Is the AI data center
     # boom a bubble?" Before Deals, so a stock story with a dollar figure is a market story.
     ("Markets / Earnings",
-     r"\b(stocks?|shares|shareholders|earnings|quarterly|q[1-4]|(?<!tax )(?<!lost )revenue|profits?|"
-     r"wall street|analysts?|(?:ai|tech|market|data center) bubble|bubble (?:fears?|talk|bursts?)|investors? (worry|fear|bet|cheer)|nasdaq|s&p|dow|market cap|"
+     r"\b(stocks?|shares (?:jump|jumped|rise|rose|fall|fell|drop|dropped|slide|slid|surge|surged|climb|climbed|sink|sank|"
+     r"tumble|tumbled|soar|soared|gain|gained|pop|popped)|shares of|shareholders|earnings|quarterly|q[1-4]|(?<!tax )(?<!lost )revenue|profits?|"
+     r"wall street|(?<!Wells Fargo )analysts?|(?:ai|tech|market|data center) bubble|bubble (?:fears?|talk|bursts?)|investors? (worry|fear|bet|cheer)|nasdaq|s&p|dow|market cap|"
      r"net absorption|vacancy|backlog|outlook|forecast)\b"),
     # "Blackstone buys AirTrunk", "$2.4B financing for Abilene campus", "Data center REIT signs lease"
     ("Deals / Investment",
@@ -167,13 +167,8 @@ CATEGORY_RULES = [
     # "Dominion seeks 5 GW for data centers", "Data centers drive up electric bills", "SMRs for data centers"
     ("Power / Utility",
      r"\b(power|grid|utilit(y|ies)|utility bills?|electric\w*|electricity rates?|energy|megawatts?|gigawatts?|\d+\s?[MG]W|"
-     r"nuclear|reactors?|smrs?|natural gas|gas plants?|gas-fired|power plants?|gas turbines?|turbines?|solar|wind|"
+     r"nuclear|(?:micro)?reactors?|smrs?|natural gas|gas plants?|gas-fired|power plants?|gas turbines?|turbines?|solar|wind|"
      r"batter(y|ies)|transmission|substations?|interconnection|demand|load|rates?|ratepayers?|blackout|cooling|coal)\b"),
-    # "Nvidia GPUs headed to Stargate site", "OpenAI's compute plans", "Hyperscalers race for AI capacity"
-    ("AI Infrastructure",
-     r"\b(ai|a\.i\.|artificial intelligence|gpus?|nvidia|compute|computing|ai factor(y|ies)|supercomputers?|"
-     r"hyperscal\w*|openai|microsoft|amazon|aws|google|alphabet|meta|oracle|xai|anthropic|stargate|crusoe|coreweave|cloud|"
-     r"big tech|neoclouds?|chips?)\b"),
     # "Chester residents protest data center", "Data center backlash grows in rural Georgia",
     # "Neighbors push back on Project Sail". Before Policy, so a community fight is not counted as policy.
     ("Community",
@@ -182,6 +177,12 @@ CATEGORY_RULES = [
      r"anti-data|outcry|uproar|angry|anger|frustrat\w*|speak(s|ing)? out|spoke out|resistance|grassroots|"
      r"community|communities|town hall|open house|(public|community) (input|forum|meeting)s?|controvers\w*|"
      r"sparks?|draws?|divided|divides|divisive|defeat\w*|said no|says no|no data centers?|quality of life|farmers?|rural)\b"),
+    # "Nvidia GPUs headed to Stargate site", "OpenAI's compute plans", "Hyperscalers race for AI capacity".
+    # After Community: "AI" is in so many headlines that a fight over an "AI data center" is a community story.
+    ("AI Infrastructure",
+     r"\b(ai|a\.i\.|artificial intelligence|gpus?|nvidia|compute|computing|ai factor(y|ies)|supercomputers?|"
+     r"hyperscal\w*|openai|microsoft|amazon|aws|google|alphabet|meta|oracle|xai|anthropic|stargate|crusoe|coreweave|cloud|"
+     r"big tech|neoclouds?|chips?)\b"),
     # "Will a data center backlash help Talarico turn Texas blue?", "Candidates split on data centers"
     # Elections and party politics, before Policy / Permits so that topic stays about permits and rules.
     ("Politics",
@@ -281,7 +282,7 @@ COMPANIES = [
     # GPU clouds and AI compute. "Nebius buys 79 acres in Birmingham"
     ("CoreWeave", r"CoreWeave"),
     ("Crusoe", r"Crusoe"),
-    ("Lambda", r"Lambda(?= (Labs|Inc|Cloud|AI|data|Data|plans|signs|leases|to|will|and)\b)|Lambda's"),
+    ("Lambda", r"Lambda(?= (Labs|Inc|Cloud|AI|data|Data|leases|will|and|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)|Lambda['’]s|(?<=operator )Lambda"),
     ("Nebius", r"Nebius"),
     ("Nscale", r"Nscale"),
     ("Fluidstack", r"Fluidstack|FluidStack"),
@@ -292,7 +293,7 @@ COMPANIES = [
     ("QTS", r"QTS"),
     ("Equinix", r"Equinix"),
     ("Digital Realty", r"Digital Realty"),
-    ("Switch", r"Switch(?= (Inc|data cent|campus|Citadel))|Switch's"),
+    ("Switch", r"Switch(?= (Inc|data cent|campus|Citadel|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)|Switch['’]s|(?<=accuses )Switch|(?<=against )Switch|(?<=do )Switch"),
     ("CyrusOne", r"CyrusOne"),
     ("Compass Datacenters", r"Compass Data ?[Cc]enters"),
     ("Vantage", r"Vantage"),
@@ -313,7 +314,7 @@ COMPANIES = [
     ("DartPoints", r"DartPoints"),
     ("Evocative", r"Evocative"),
     ("Ascent", r"Ascent(?= (Data|data|Mission|Group)\b)"),
-    ("Edged", r"Edged(?= (Data|data|US|Energy|opens|plans|to|breaks|announces|launches|expands)\b)|EdgedEnergy"),
+    ("Edged", r"Edged(?= (Data|data|US|Energy|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)|Edged['’]s|(?<=for )Edged|EdgedEnergy"),
     ("Yondr", r"Yondr"),
     ("Corscale", r"Corscale"),
     ("Lincoln Rackhouse", r"Lincoln Rackhouse"),
@@ -333,7 +334,7 @@ COMPANIES = [
     ("Cipher Mining", r"Cipher Mining|Cipher Digital|Cipher(?= (to|plans|signs|data|Data)\b)"),
     ("TeraWulf", r"TeraWulf"),
     ("Hut 8", r"Hut 8"),
-    ("Galaxy Digital", r"Galaxy Digital|Galaxy(?=['’]s Helios)"),
+    ("Galaxy Digital", r"Galaxy Digital|Galaxy(?=['’]s Helios| (plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)"),
     ("Riot Platforms", r"Riot Platforms|Riot(?= (Blockchain|to|plans)\b)"),
     ("MARA", r"MARA Holdings|MARA|Marathon Digital"),
     ("Bitdeer", r"Bitdeer"),
@@ -344,13 +345,13 @@ COMPANIES = [
     ("Related Digital", r"Related Digital"),
     ("Tallgrass", r"Tallgrass"),
     ("Intersect Power", r"Intersect Power"),
-    ("Tract", r"Tract(?=('s| (Inc|Capital|data|Data|plans|Plans|buys|Buys|acquires|Acquires|proposes|Proposes|files|Files|campus|Campus|park|Park)\b))"),
+    ("Tract", r"(?<=with )Tract|Tract(?=(['’]s| (Inc|Capital|data|Data|proposes|Proposes|campus|Campus|park|Park|lawsuit|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b))"),
     ("Hillwood", r"Hillwood"),
     ("PowerHouse", r"PowerHouse Data Centers|PowerHouse"),
     ("Sabey", r"Sabey Data Centers|Sabey"),
     ("T5", r"T5 Data Centers|T5"),
-    ("Stream", r"Stream Data Centers"),
-    ("Prime Data Centers", r"Prime Data Centers"),
+    ("Stream", r"Stream Data Centers|Stream Realty|Stream(?= (data|Data|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)|(?<=serve )Stream"),
+    ("Prime Data Centers", r"Prime Data Centers|Prime(?= (plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)"),
     ("Skybox", r"Skybox Datacenters|Skybox Data Centers|Skybox"),
     ("Novva", r"Novva Data Centers|Novva"),
 ]
@@ -370,7 +371,7 @@ INVESTORS = [
     ("Macquarie", r"Macquarie"),
     ("BlackRock", r"BlackRock"),
     ("GIP", r"Global Infrastructure Partners|GIP"),
-    ("Apollo", r"Apollo(?= (Global|Management|Funds|-backed|-managed)\b)|Apollo's"),
+    ("Apollo", r"Apollo(?= (Global|Management|Funds|-backed|-managed|in talks|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)|Apollo['’]s|(?<=by )Apollo|(?<=firm )Apollo"),
     ("Carlyle", r"Carlyle"),
     ("Stonepeak", r"Stonepeak"),
     ("Energy Capital Partners", r"Energy Capital Partners|ECP(?= (to|and|buys|acquires)\b)"),
@@ -401,7 +402,7 @@ BUILDERS = [
     ("Rosendin", r"Rosendin"),
     ("Burns & McDonnell", r"Burns & McDonnell|Burns and McDonnell"),
     ("Black & Veatch", r"Black & Veatch|Black and Veatch"),
-    ("Jacobs", r"Jacobs Engineering|Jacobs Solutions|Jacobs(?= (to design|wins|selected)\b)"),
+    ("Jacobs", r"Jacobs Engineering|Jacobs Solutions|Jacobs(?= (to design|wins|selected)\b)|(?<=with )Jacobs|(?<=taps )Jacobs|(?<=hires )Jacobs"),
     ("AECOM", r"AECOM"),
     ("HDR", r"HDR(?= (Inc|Engineering|to|wins)\b)"),
     ("Corgan", r"Corgan"),
@@ -425,7 +426,7 @@ SUPPLIERS = [
     ("Honeywell", r"Honeywell"),
     ("Johnson Controls", r"Johnson Controls"),
     ("Trane", r"Trane Technologies|Trane"),
-    ("Carrier", r"Carrier Global|Carrier(?= (to|and|Corp|Corporation)\b)"),
+    ("Carrier", r"Carrier Global|Carrier['’]s|Carrier(?= (and|Corp|Corporation|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)"),
     ("Daikin", r"Daikin"),
     ("Nvidia", r"Nvidia|NVIDIA"),
     ("AMD", r"AMD"),
@@ -502,7 +503,10 @@ FOREIGN_RE = re.compile(
     r"Japan|Japanese|Korea|Korean|Australia|Australian|Canada|Canadian|Mexico|Mexican|Brazil|Brazilian|"
     r"Saudi|Emirati|Gulf|Africa|African|Asia|Asian|APAC|EMEA|LATAM|Indonesia|Malaysia|Malaysian|Thailand|"
     r"Vietnam|Philippines|Singapore|Ireland|Irish|Germany|German|France|French|Spain|Spanish|Italy|Italian|"
-    r"Nordic|Norway|Sweden|Finland|Denmark|Dutch|Netherlands|Poland|Polish|Israel|Israeli|Pakistan|"
+    r"Nordic|Norway|Norwegian|Sweden|Swedish|Finland|Finnish|Denmark|Danish|Dutch|Netherlands|Poland|Polish|"
+    r"Belgium|Belgian|Austria|Austrian|Switzerland|Swiss|Portugal|Portuguese|Greece|Greek|Czech|Hungary|Hungarian|"
+    r"Romania|Romanian|Iceland|Icelandic|Luxembourg|Estonia|Latvia|Lithuania|Croatia|Serbia|Bulgaria|Slovakia|"
+    r"Israel|Israeli|Pakistan|"
     r"Bangladesh|Sri Lanka|Nepal|Kenya|Nigeria|Egypt|Morocco|Turkey|Russia|Russian|Ukraine|Kazakhstan|"
     r"Chile|Colombia|Argentina|Peru|New Zealand|Taiwan|Taiwanese|Hong Kong|Scotland|Scottish|Welsh|Wales|"
     r"Türkiye|Turkiye|Ankara|Istanbul|Lagos|Nairobi|Seoul|Tokyo|Mumbai|Jakarta|Bangkok|Manila|Hanoi|"
@@ -973,8 +977,19 @@ def cluster_items(items):
     return len(groups)
 
 
+# A headline the outlet itself labels as opinion is Analysis / Opinion whatever it is about:
+# "Times Opinion: We can and should resist AI data centers", "Letter: City should take its time",
+# "Vantage Data Center opponents push misleading claims on jobs | Opinion"
+OPINION_LABEL = re.compile(r"^(?:[\w .]{0,20}\b)?(?:opinion|commentary|editorial|op-ed|letters?(?: to the editor)?|guest column|viewpoint|"
+                           r"my turn|your turn|column)\s*[:|]|[|:-]\s*(?:opinion|commentary|editorial|op-ed)\s*$", re.I)
+
+
 def classify(title):
+    """(primary topic, every matching topic). Cancelled / Blocked first, then a labelled opinion,
+    then CATEGORY_RULES in order; General when nothing matches."""
     tags = [name for name, rx in COMPILED_RULES if rx.search(title)]
+    if OPINION_LABEL.search(title):
+        tags = ["Analysis / Opinion"] + [t for t in tags if t != "Analysis / Opinion"]
     if is_cancelled(title):
         tags.insert(0, CANCELLED)
     primary = tags[0] if tags else "General"
@@ -1000,12 +1015,18 @@ def extract_numbers(title):
     return out
 
 
+SCHEDULED = re.compile(r"\s+(?:in|by|this|next)\s+(?:early |late |mid-?|the )?(?:20\d\d|year|spring|summer|fall|autumn|winter|month|week|quarter)", re.I)
+
+
 def stage_counts(status, m, title):
     """Whether one stage-word match describes the project's own present stage (see STAGE_FUTURE)."""
     before, after = title[:m.start()], title[m.end():]
     # "coming to Heath, Hebron after groundbreaking": a step right after "after" already happened.
     past = bool(re.search(r"\b(after|following|since)\W*$", before, re.I))
     if status not in ("Announced", "Expansion") and not past and STAGE_FUTURE.search(" ".join(before.split()[-4:]) + " "):
+        return False
+    # "data center that opens in 2026", "goes live by next year": a present-tense opening with a date is a schedule.
+    if status == "Operational" and not m.group(0).lower().endswith("ed") and SCHEDULED.match(after):
         return False
     if status == "Operational":
         # The thing that opens is named just before or after the verb, or opens the headline.

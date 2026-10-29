@@ -55,6 +55,8 @@
     "# https://www.google.com/alerts/feeds/00000000000000000000/0000000000000000000"
   ],
   "blocked_sources": [
+    "# BM.GE is a business outlet in the country of Georgia; its 'Georgia' is never the U.S. state.",
+    "BM.GE",
     "Simply Wall Street",
     "Simply Wall St",
     "Yahoo Finance",
