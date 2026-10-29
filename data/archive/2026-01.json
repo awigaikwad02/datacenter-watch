@@ -1,4 +1,42 @@
 {
+ "_readme": {
+  "about": "Every headline ever kept, one file per month of publication. Headlines are only added, never removed; one rejected by today's rules is kept with filtered: true.",
+  "written_by": "scripts/fetch_news.py (appends), scripts/retag_archive.py and scripts/backfill_news.py",
+  "fields": {
+   "month": "YYYY-MM.",
+   "count": "Number of items.",
+   "items": "The headlines of that month, newest first. Each item: see 'headline fields'."
+  },
+  "item_fields": {
+   "id": "Permanent id: the first 16 hex digits of the SHA-1 of the normalised title. Never reused.",
+   "title": "The headline as published (control characters removed).",
+   "link": "Link to the article through Google News; only http(s) links are kept.",
+   "source": "The outlet's name as Google News gives it.",
+   "published": "Publication time, ISO 8601 UTC.",
+   "feed": "Archive only. Which feed or backfill query found the headline.",
+   "snippet": "Archive only, when the feed gave one: the outlet line under the headline.",
+   "category": "Topic: the first matching rule in fetch_news.CATEGORY_RULES (Cancelled / Blocked first, General when none).",
+   "tags": "Archive only. Every topic rule that matched, primary first.",
+   "locations": "Archive only. Up to three U.S. places found, most precise first: {name, lat, lon, level, precision, country}.",
+   "states": "Every two-letter U.S. state the headline is placed in.",
+   "state": "The main state (from the most precise place), or absent.",
+   "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
+   "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
+   "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
+   "investors": "Investors named (fetch_news.INVESTORS).",
+   "builders": "Contractors, engineers and architects named (fetch_news.BUILDERS).",
+   "suppliers": "Equipment and chip suppliers named (fetch_news.SUPPLIERS).",
+   "capacity_mw": "Capacity stated in the title, in megawatts (gigawatts converted); absent when none or above 20,000 MW.",
+   "investment_usd_b": "Investment stated in the title, in billions of U.S. dollars.",
+   "name_hint": "Archive only. A project name in the title ('Project Sail', 'Wildcat Ridge Data Center'), used for matching.",
+   "cluster_id": "The story this headline belongs to: the id of the story's earliest headline.",
+   "cluster_title": "Archive only. The story's display headline (the one with the most precise place).",
+   "cluster_lead": "news.json only. true on the story's display headline (replaces cluster_title there).",
+   "filtered": "Archive only. true when today's rules reject the headline (off topic, foreign, blocked outlet); kept, never shown."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
  "month": "2026-01",
  "count": 729,
  "items": [
@@ -2003,7 +2041,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "fcba4d3d01863fc6",
-   "cluster_title": "Romania preparing to build giant AI hub, data centers"
+   "cluster_title": "Romania preparing to build giant AI hub, data centers",
+   "filtered": true
   },
   {
    "id": "b165135491dc218c",
@@ -2745,10 +2784,10 @@
    "source": "WBNG",
    "published": "2026-01-28T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -3164,10 +3203,10 @@
    "source": "ClickOnDetroit | WDIV Local 4",
    "published": "2026-01-28T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -3527,10 +3566,10 @@
    "source": "The Business Journals",
    "published": "2026-01-27T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -4075,10 +4114,10 @@
    "source": "South Carolina Public Radio",
    "published": "2026-01-27T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -4126,10 +4165,10 @@
    "source": "People's World",
    "published": "2026-01-27T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -4165,8 +4204,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -4752,10 +4791,10 @@
    "source": "NPR",
    "published": "2026-01-26T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Politics"
    ],
    "locations": [],
@@ -5428,7 +5467,8 @@
    "location_precision": null,
    "companies": [
     "Oracle",
-    "OpenAI"
+    "OpenAI",
+    "Switch"
    ],
    "utilities": [],
    "investors": [
@@ -5579,8 +5619,8 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -5812,10 +5852,10 @@
    "source": "Colorado Newsline",
    "published": "2026-01-23T08:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "Economy / Jobs",
+   "category": "Analysis / Opinion",
    "tags": [
-    "Economy / Jobs",
-    "Analysis / Opinion"
+    "Analysis / Opinion",
+    "Economy / Jobs"
    ],
    "locations": [
     {
@@ -6149,8 +6189,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -6549,8 +6589,8 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -7032,8 +7072,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -7687,10 +7727,10 @@
    "source": "WSLS",
    "published": "2026-01-21T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -7737,7 +7777,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Galaxy Digital"
+   ],
    "utilities": [
     "ERCOT"
    ],
@@ -8563,8 +8605,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -8787,10 +8829,10 @@
    "source": "The Chestnut Hill Local",
    "published": "2026-01-21T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -9072,7 +9114,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ffc8171fb2d5d713",
-   "cluster_title": "Despite plenty of renewable energy, data centers split Norwegian society"
+   "cluster_title": "Despite plenty of renewable energy, data centers split Norwegian society",
+   "filtered": true
   },
   {
    "id": "13492332613585bf",
@@ -9493,10 +9536,10 @@
    "source": "Colorado Public Radio",
    "published": "2026-01-20T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -11572,8 +11615,8 @@
     "Deals / Investment",
     "Environment",
     "Power / Utility",
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [],
@@ -11862,10 +11905,10 @@
    "source": "WSLS",
    "published": "2026-01-17T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -11949,10 +11992,10 @@
    "source": "Oregon Public Broadcasting - OPB",
    "published": "2026-01-17T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -12130,8 +12173,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -12465,8 +12508,8 @@
    "category": "Construction",
    "tags": [
     "Construction",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -12536,10 +12579,10 @@
    "source": "Maven's Notebook",
    "published": "2026-01-16T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Analysis / Opinion"
    ],
    "locations": [],
@@ -12956,12 +12999,17 @@
    "state": "TX",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Galaxy Digital"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Helios campus",
    "capacity_mw": 800,
    "cluster_id": "c03ea02eddde9736",
-   "cluster_title": "Galaxy secures approval for more than 800MW at Helios campus in Texas",
-   "filtered": true
+   "cluster_title": "Galaxy secures approval for more than 800MW at Helios campus in Texas"
   },
   {
    "id": "878fb870a56fd6f4",
@@ -12970,10 +13018,10 @@
    "source": "NJ.com",
    "published": "2026-01-16T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -13750,7 +13798,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Galaxy Digital"
+   ],
    "utilities": [
     "ERCOT"
    ],
@@ -13836,10 +13886,10 @@
    "source": "Data Center Knowledge",
    "published": "2026-01-15T08:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -13964,8 +14014,8 @@
     "New Announcement",
     "Deals / Investment",
     "Environment",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -15191,10 +15241,10 @@
    "source": "Unite.AI",
    "published": "2026-01-15T08:00:00+00:00",
    "feed": "Backfill: cancelled",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -15216,10 +15266,10 @@
    "source": "KTVQ",
    "published": "2026-01-15T05:39:45+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -15252,9 +15302,8 @@
    "source": "WCPO 9 Cincinnati",
    "published": "2026-01-15T03:45:44+00:00",
    "feed": "Backfill: announced",
-   "category": "Cancelled / Blocked",
+   "category": "Community",
    "tags": [
-    "Cancelled / Blocked",
     "Community",
     "Policy / Permits",
     "Analysis / Opinion"
@@ -15375,10 +15424,10 @@
    "source": "Milwaukee Journal Sentinel",
    "published": "2026-01-14T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -15501,8 +15550,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -15882,8 +15931,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -15995,8 +16044,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -17059,8 +17108,8 @@
     "New Announcement",
     "Deals / Investment",
     "Environment",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -17526,7 +17575,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Tract"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -18245,10 +18296,10 @@
    "source": "KUOW",
    "published": "2026-01-13T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -18537,8 +18588,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -18813,10 +18864,10 @@
    "source": "Chattanooga Times Free Press",
    "published": "2026-01-13T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Analysis / Opinion",
    "tags": [
-    "AI Infrastructure",
-    "Analysis / Opinion"
+    "Analysis / Opinion",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -19290,10 +19341,10 @@
    "source": "CoStar",
    "published": "2026-01-13T08:00:00+00:00",
    "feed": "Backfill: hyperscaler",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [],
@@ -19318,10 +19369,10 @@
    "source": "The Atlanta Journal-Constitution",
    "published": "2026-01-13T08:00:00+00:00",
    "feed": "Backfill: hyperscaler",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -19413,11 +19464,11 @@
    "source": "Nevada Current",
    "published": "2026-01-12T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "Power / Utility",
+   "category": "Analysis / Opinion",
    "tags": [
+    "Analysis / Opinion",
     "Power / Utility",
-    "Policy / Permits",
-    "Analysis / Opinion"
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -19511,7 +19562,9 @@
    ],
    "utilities": [],
    "investors": [],
-   "builders": [],
+   "builders": [
+    "Jacobs"
+   ],
    "suppliers": [],
    "cluster_id": "f2263280305ae360",
    "cluster_title": "Hut 8 partners with Jacobs for engineering, construction management services for West Feliciana data center"
@@ -20092,8 +20145,8 @@
    "category": "Power / Utility",
    "tags": [
     "Power / Utility",
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Analysis / Opinion"
    ],
    "locations": [
@@ -20868,8 +20921,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -20950,10 +21003,10 @@
    "source": "Ironton Tribune",
    "published": "2026-01-07T08:00:00+00:00",
    "feed": "Backfill: operational",
-   "category": "Policy / Permits",
+   "category": "Analysis / Opinion",
    "tags": [
-    "Policy / Permits",
-    "Analysis / Opinion"
+    "Analysis / Opinion",
+    "Policy / Permits"
    ],
    "locations": [],
    "states": [],
@@ -21089,8 +21142,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -21773,12 +21826,12 @@
    "source": "South Dakota Searchlight",
    "published": "2026-01-06T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "Economy / Jobs",
+   "category": "Analysis / Opinion",
    "tags": [
+    "Analysis / Opinion",
     "Economy / Jobs",
     "Environment",
-    "Policy / Permits",
-    "Analysis / Opinion"
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -21894,10 +21947,10 @@
    "source": "The Fayetteville Observer",
    "published": "2026-01-06T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "New Announcement",
+   "category": "Analysis / Opinion",
    "tags": [
-    "New Announcement",
-    "Analysis / Opinion"
+    "Analysis / Opinion",
+    "New Announcement"
    ],
    "locations": [],
    "states": [],
@@ -22041,8 +22094,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -22411,9 +22464,8 @@
    "source": "The Atlanta Journal-Constitution",
    "published": "2026-01-06T08:00:00+00:00",
    "feed": "Backfill: cancelled",
-   "category": "Cancelled / Blocked",
+   "category": "Power / Utility",
    "tags": [
-    "Cancelled / Blocked",
     "Power / Utility",
     "Politics",
     "Policy / Permits"
@@ -22907,8 +22959,8 @@
     "New Announcement",
     "Land Acquisition",
     "Deals / Investment",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -23105,10 +23157,10 @@
    "source": "MLive.com",
    "published": "2026-01-03T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -23213,8 +23265,8 @@
    "tags": [
     "New Announcement",
     "Expansion",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -23541,11 +23593,11 @@
    "source": "Florida Phoenix",
    "published": "2026-01-01T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Analysis / Opinion",
    "tags": [
-    "AI Infrastructure",
+    "Analysis / Opinion",
     "Community",
-    "Analysis / Opinion"
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -23602,10 +23654,10 @@
    "source": "CNBC",
    "published": "2026-01-01T08:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Analysis / Opinion"
    ],
    "locations": [],

@@ -1,4 +1,42 @@
 {
+ "_readme": {
+  "about": "Every headline ever kept, one file per month of publication. Headlines are only added, never removed; one rejected by today's rules is kept with filtered: true.",
+  "written_by": "scripts/fetch_news.py (appends), scripts/retag_archive.py and scripts/backfill_news.py",
+  "fields": {
+   "month": "YYYY-MM.",
+   "count": "Number of items.",
+   "items": "The headlines of that month, newest first. Each item: see 'headline fields'."
+  },
+  "item_fields": {
+   "id": "Permanent id: the first 16 hex digits of the SHA-1 of the normalised title. Never reused.",
+   "title": "The headline as published (control characters removed).",
+   "link": "Link to the article through Google News; only http(s) links are kept.",
+   "source": "The outlet's name as Google News gives it.",
+   "published": "Publication time, ISO 8601 UTC.",
+   "feed": "Archive only. Which feed or backfill query found the headline.",
+   "snippet": "Archive only, when the feed gave one: the outlet line under the headline.",
+   "category": "Topic: the first matching rule in fetch_news.CATEGORY_RULES (Cancelled / Blocked first, General when none).",
+   "tags": "Archive only. Every topic rule that matched, primary first.",
+   "locations": "Archive only. Up to three U.S. places found, most precise first: {name, lat, lon, level, precision, country}.",
+   "states": "Every two-letter U.S. state the headline is placed in.",
+   "state": "The main state (from the most precise place), or absent.",
+   "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
+   "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
+   "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
+   "investors": "Investors named (fetch_news.INVESTORS).",
+   "builders": "Contractors, engineers and architects named (fetch_news.BUILDERS).",
+   "suppliers": "Equipment and chip suppliers named (fetch_news.SUPPLIERS).",
+   "capacity_mw": "Capacity stated in the title, in megawatts (gigawatts converted); absent when none or above 20,000 MW.",
+   "investment_usd_b": "Investment stated in the title, in billions of U.S. dollars.",
+   "name_hint": "Archive only. A project name in the title ('Project Sail', 'Wildcat Ridge Data Center'), used for matching.",
+   "cluster_id": "The story this headline belongs to: the id of the story's earliest headline.",
+   "cluster_title": "Archive only. The story's display headline (the one with the most precise place).",
+   "cluster_lead": "news.json only. true on the story's display headline (replaces cluster_title there).",
+   "filtered": "Archive only. true when today's rules reject the headline (off topic, foreign, blocked outlet); kept, never shown."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
  "month": "2025-10",
  "count": 642,
  "items": [
@@ -506,10 +544,10 @@
    "source": "MLive.com",
    "published": "2025-10-31T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -808,7 +846,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "9886be1aa1de5ccf",
-   "cluster_title": "Silk Road Group to Invest USD 30 MLN In Georgia’s First Data Center"
+   "cluster_title": "Silk Road Group to Invest USD 30 MLN In Georgia’s First Data Center",
+   "filtered": true
   },
   {
    "id": "9d48d7e35679ec6b",
@@ -891,12 +930,12 @@
    "source": "Daily Herald",
    "published": "2025-10-31T07:00:00+00:00",
    "feed": "Backfill: cancelled",
-   "category": "Deals / Investment",
+   "category": "Analysis / Opinion",
    "tags": [
+    "Analysis / Opinion",
     "Deals / Investment",
     "Community",
-    "Policy / Permits",
-    "Analysis / Opinion"
+    "Policy / Permits"
    ],
    "locations": [
     {
@@ -1339,8 +1378,8 @@
    "category": "Deals / Investment",
    "tags": [
     "Deals / Investment",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -1791,10 +1830,10 @@
    "source": "Sierra Club",
    "published": "2025-10-30T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Analysis / Opinion"
    ],
    "locations": [
@@ -2368,8 +2407,8 @@
     "Construction",
     "Operations",
     "Deals / Investment",
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Analysis / Opinion"
    ],
    "locations": [
@@ -2759,8 +2798,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -4298,8 +4337,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -4409,8 +4448,8 @@
    "tags": [
     "Construction",
     "Power / Utility",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -5180,8 +5219,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -5799,10 +5838,10 @@
    "source": "Tri-City Herald",
    "published": "2025-10-25T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "New Announcement",
+   "category": "Analysis / Opinion",
    "tags": [
-    "New Announcement",
-    "Analysis / Opinion"
+    "Analysis / Opinion",
+    "New Announcement"
    ],
    "locations": [],
    "states": [],
@@ -7581,10 +7620,10 @@
    "source": "Daily Dodge",
    "published": "2025-10-22T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -8781,10 +8820,10 @@
    "source": "WHAS11",
    "published": "2025-10-21T07:00:00+00:00",
    "feed": "Backfill: construction",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -8984,8 +9023,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -9486,8 +9525,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -10132,8 +10171,8 @@
    "category": "Deals / Investment",
    "tags": [
     "Deals / Investment",
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -10937,7 +10976,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Switch"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -12690,8 +12731,8 @@
    "category": "New Announcement",
    "tags": [
     "New Announcement",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -13524,12 +13565,12 @@
    "source": "Inquirer.com",
    "published": "2025-10-16T07:00:00+00:00",
    "feed": "Backfill: hyperscaler",
-   "category": "Environment",
+   "category": "Analysis / Opinion",
    "tags": [
+    "Analysis / Opinion",
     "Environment",
     "Power / Utility",
-    "Community",
-    "Analysis / Opinion"
+    "Community"
    ],
    "locations": [],
    "states": [],
@@ -13851,8 +13892,8 @@
    "tags": [
     "New Announcement",
     "Deals / Investment",
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -16402,10 +16443,10 @@
    "source": "TMJ4 News",
    "published": "2025-10-07T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -16509,10 +16550,10 @@
    "source": "WISN",
    "published": "2025-10-07T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -16908,7 +16949,9 @@
    "location_precision": null,
    "companies": [],
    "utilities": [],
-   "investors": [],
+   "investors": [
+    "Apollo"
+   ],
    "builders": [],
    "suppliers": [],
    "cluster_id": "2b64c10bc3df21eb",
@@ -18206,10 +18249,10 @@
    "source": "WDRB",
    "published": "2025-10-04T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -18321,7 +18364,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "7c8d8b3b6c1c0ad9",
-   "cluster_title": "Sparc Group welcomes Norwegian Data Center Installation AS (“DCI”)"
+   "cluster_title": "Sparc Group welcomes Norwegian Data Center Installation AS (“DCI”)",
+   "filtered": true
   },
   {
    "id": "0ee01550e20ec7db",
@@ -18631,10 +18675,10 @@
    "source": "Inquirer.com",
    "published": "2025-10-03T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [
     {
@@ -19170,7 +19214,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5bfbadab6d5d4218",
-   "cluster_title": "Raxio, led by Danish executive Robert Skjødt, unveils Angola’s largest data center"
+   "cluster_title": "Raxio, led by Danish executive Robert Skjødt, unveils Angola’s largest data center",
+   "filtered": true
   },
   {
    "id": "df925dd9393494d7",
@@ -19439,11 +19484,11 @@
    "source": "Missoula Current",
    "published": "2025-10-02T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "New Announcement",
+   "category": "Analysis / Opinion",
    "tags": [
+    "Analysis / Opinion",
     "New Announcement",
-    "Power / Utility",
-    "Analysis / Opinion"
+    "Power / Utility"
    ],
    "locations": [
     {
@@ -19824,10 +19869,10 @@
    "source": "MLive.com",
    "published": "2025-10-02T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
     "Community",
+    "AI Infrastructure",
     "Policy / Permits"
    ],
    "locations": [
@@ -19979,10 +20024,10 @@
    "source": "People.com",
    "published": "2025-10-02T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],
@@ -20168,10 +20213,10 @@
    "source": "The Fayette County Record",
    "published": "2025-10-02T07:00:00+00:00",
    "feed": "Backfill: announced",
-   "category": "AI Infrastructure",
+   "category": "Community",
    "tags": [
-    "AI Infrastructure",
-    "Community"
+    "Community",
+    "AI Infrastructure"
    ],
    "locations": [],
    "states": [],

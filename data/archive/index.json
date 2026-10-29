@@ -1,5 +1,17 @@
 {
- "updated": "2026-10-29T04:56:28+00:00",
+ "updated": "2026-10-29T05:05:17+00:00",
+ "_readme": {
+  "about": "The months available in the archive, for the Newsroom's 'Include archive' switch.",
+  "written_by": "scripts/fetch_news.py (write_archive_index)",
+  "fields": {
+   "updated": "When the index was written.",
+   "total": "Headlines in the whole archive.",
+   "earliest": "Publication time of the oldest archived headline.",
+   "latest": "Publication time of the newest archived headline.",
+   "months": "One entry per month file, newest first: {month, count, file, earliest, latest}."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
  "total": 20599,
  "earliest": "2019-11-18T08:00:00+00:00",
  "latest": "2026-10-29T04:47:54+00:00",

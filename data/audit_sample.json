@@ -1,6 +1,20 @@
 {
- "_readme": "Status audit written by scripts/status_audit.py. records: a fixed stratified sample of detected registry records; for each, the status replayed from its headlines with the live rules (status_rules, history_rules) and with a stricter main-clause reading (status_strict, history_strict), and every headline's stage signal under both (rules, strict). disagreements: records whose status differs, with the headlines that differ. previous_run: the counts from the run before, to compare a rule change.",
- "generated": "2026-10-29T04:50:46+00:00",
+ "_readme": {
+  "about": "A fixed sample of registry records with their status under the live rules and under a stricter reading.",
+  "written_by": "scripts/status_audit.py (by hand, after a status rule change)",
+  "fields": {
+   "generated": "When it was written.",
+   "size": "Records in the sample.",
+   "by_status": "Sample records per status under the live rules.",
+   "disagreement_count": "Records whose status differs between the two readings.",
+   "headline_disagreements": "Headlines whose stage signal differs.",
+   "previous_run": "The same counts from the run before.",
+   "disagreements": "The records that differ, with the headlines that differ.",
+   "records": "Every sampled record: {id, name, status_rules, status_strict, history_rules, history_strict, headlines}."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
+ "generated": "2026-10-29T05:05:34+00:00",
  "size": 150,
  "by_status": {
   "Operational": 31,
@@ -11,7 +25,7 @@
  "disagreement_count": 1,
  "headline_disagreements": 39,
  "previous_run": {
-  "generated": "2026-10-29T04:47:17+00:00",
+  "generated": "2026-10-29T04:50:46+00:00",
   "size": 150,
   "disagreement_count": 1,
   "headline_disagreements": 39

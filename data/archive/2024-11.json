@@ -1,4 +1,42 @@
 {
+ "_readme": {
+  "about": "Every headline ever kept, one file per month of publication. Headlines are only added, never removed; one rejected by today's rules is kept with filtered: true.",
+  "written_by": "scripts/fetch_news.py (appends), scripts/retag_archive.py and scripts/backfill_news.py",
+  "fields": {
+   "month": "YYYY-MM.",
+   "count": "Number of items.",
+   "items": "The headlines of that month, newest first. Each item: see 'headline fields'."
+  },
+  "item_fields": {
+   "id": "Permanent id: the first 16 hex digits of the SHA-1 of the normalised title. Never reused.",
+   "title": "The headline as published (control characters removed).",
+   "link": "Link to the article through Google News; only http(s) links are kept.",
+   "source": "The outlet's name as Google News gives it.",
+   "published": "Publication time, ISO 8601 UTC.",
+   "feed": "Archive only. Which feed or backfill query found the headline.",
+   "snippet": "Archive only, when the feed gave one: the outlet line under the headline.",
+   "category": "Topic: the first matching rule in fetch_news.CATEGORY_RULES (Cancelled / Blocked first, General when none).",
+   "tags": "Archive only. Every topic rule that matched, primary first.",
+   "locations": "Archive only. Up to three U.S. places found, most precise first: {name, lat, lon, level, precision, country}.",
+   "states": "Every two-letter U.S. state the headline is placed in.",
+   "state": "The main state (from the most precise place), or absent.",
+   "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
+   "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
+   "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
+   "investors": "Investors named (fetch_news.INVESTORS).",
+   "builders": "Contractors, engineers and architects named (fetch_news.BUILDERS).",
+   "suppliers": "Equipment and chip suppliers named (fetch_news.SUPPLIERS).",
+   "capacity_mw": "Capacity stated in the title, in megawatts (gigawatts converted); absent when none or above 20,000 MW.",
+   "investment_usd_b": "Investment stated in the title, in billions of U.S. dollars.",
+   "name_hint": "Archive only. A project name in the title ('Project Sail', 'Wildcat Ridge Data Center'), used for matching.",
+   "cluster_id": "The story this headline belongs to: the id of the story's earliest headline.",
+   "cluster_title": "Archive only. The story's display headline (the one with the most precise place).",
+   "cluster_lead": "news.json only. true on the story's display headline (replaces cluster_title there).",
+   "filtered": "Archive only. true when today's rules reject the headline (off topic, foreign, blocked outlet); kept, never shown."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
  "month": "2024-11",
  "count": 204,
  "items": [
@@ -717,7 +755,10 @@
    "state": "NV",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Switch",
+    "Tract"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -772,7 +813,8 @@
    "suppliers": [],
    "name_hint": "Danish Data Center",
    "cluster_id": "dbc07f5bc61cc35e",
-   "cluster_title": "atNorth joins Danish Data Center Industry Association."
+   "cluster_title": "atNorth joins Danish Data Center Industry Association.",
+   "filtered": true
   },
   {
    "id": "81144de7261d7897",
@@ -1576,7 +1618,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Prime Data Centers"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -1646,7 +1690,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2df6125d5b694956",
-   "cluster_title": "Data4 breaks ground on Greek data center outside Athens"
+   "cluster_title": "Data4 breaks ground on Greek data center outside Athens",
+   "filtered": true
   },
   {
    "id": "7a4523657fa973a0",
@@ -4892,7 +4937,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2e2facede66529ea",
-   "cluster_title": "AtNorth to expand two Icelandic data centers"
+   "cluster_title": "AtNorth to expand two Icelandic data centers",
+   "filtered": true
   },
   {
    "id": "25659e4ac13af286",
@@ -5127,7 +5173,9 @@
    "state": "MI",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Switch"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
