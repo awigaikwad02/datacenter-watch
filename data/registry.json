@@ -1,8 +1,8 @@
 {
  "_readme": "Permanent project registry written by scripts/fetch_news.py. Never trimmed; records are hidden, not deleted. Curated records come from data/projects.json; corrections go in data/project_overrides.json.",
- "updated": "2026-10-28T20:32:16+00:00",
- "count": 505,
- "visible": 505,
+ "updated": "2026-10-29T00:22:53+00:00",
+ "count": 506,
+ "visible": 506,
  "records": [
   {
    "id": "amazon-georgia",
@@ -12236,6 +12236,15 @@
      "published": "2026-10-28T19:28:28+00:00",
      "stage_signal": "Announced",
      "cluster_id": "acd091afae327c6f"
+    },
+    {
+     "id": "704d24d13cba23f8",
+     "title": "Google eyeing 1,000-acre site in Goochland for data center campus",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMUUtVGl0aDB3N3AwYnNTbWROY3A5bnBrU2tjUVdSV2tvSHBlQ0x6MW1NRDhhSnZadV9FekdlQTA5YmtQYUxwQldUZHN3eEpVdWhtemx0NHRKekRJY2FVdzRCUXlGeEYzcU14Ym5vZ0p4bFc5eE1XS18tdVZNalJDUU1RZWtSVlE?oc=5",
+     "source": "Virginia Business",
+     "published": "2026-10-28T21:20:32+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "acd091afae327c6f"
     }
    ],
    "first_seen": "2025-08-27T07:00:00+00:00",
@@ -12267,7 +12276,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 9.0,
-   "last_news": "2026-10-28T19:28:28+00:00",
+   "last_news": "2026-10-28T21:20:32+00:00",
    "sources_count": 11,
    "confidence": "low",
    "hidden": false
@@ -27950,6 +27959,50 @@
    "capacity_mw": null,
    "investment_usd_b": 5.5,
    "last_news": "2025-11-12T08:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "site-milwaukee-wi-2026",
+   "name": "Milwaukee data center",
+   "company": "",
+   "companies": [],
+   "location": "Milwaukee, Wisconsin, US",
+   "state": "WI",
+   "county": null,
+   "city": "Milwaukee, Wisconsin, US",
+   "lat": 43.04,
+   "lon": -87.91,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "09a0a82a33c062d5",
+     "title": "Generac has $4.5 billion data center order backlog, plans to triple production capacity in 2027 - BizTimes - Milwaukee Business News",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdHFlN3QwRmV1ODV5VHZHbWYzLWFNUFJPZXlkaElEZUJ5X0NIallHVi1oc2VOQW1ZNHZPUzE5cmFkbkpadkh2MGNGdVE4YmFoNFJ5YTZlSkZfVktiVG91WndudmN1Z25kaHEtMkJqYXozRlpzQlFud1RxYmVnUm9sNE1LWk9rLW8zaTZXRlpzd3FrMXlrcjJMYlU4X1JMVlBtVG85SzNCODI2SXJqc1VtNW5OTlRuQQ?oc=5",
+     "source": "BizTimes - Milwaukee Business News",
+     "published": "2026-10-28T17:29:52+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "09a0a82a33c062d5"
+    }
+   ],
+   "first_seen": "2026-10-28T17:29:52+00:00",
+   "utilities": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-28T17:29:52+00:00",
+     "status": "Announced",
+     "headline_id": "09a0a82a33c062d5"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 4.5,
+   "last_news": "2026-10-28T17:29:52+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
