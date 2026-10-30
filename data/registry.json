@@ -55,9 +55,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-30T19:05:59+00:00",
- "count": 632,
- "visible": 630,
+ "updated": "2026-10-30T20:05:59+00:00",
+ "count": 633,
+ "visible": 631,
  "records": [
   {
    "id": "amazon-georgia",
@@ -11607,6 +11607,58 @@
    "builders": [],
    "suppliers": [],
    "name_hints": []
+  },
+  {
+   "id": "fermi-america-tx-unnamed",
+   "name": "Fermi America, Texas (site not yet named)",
+   "company": "Fermi America",
+   "companies": [
+    "Fermi America"
+   ],
+   "location": "Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": null,
+   "lat": 31.5,
+   "lon": -99.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Fermi America",
+   "news": [
+    {
+     "id": "62626043e6c2f250",
+     "title": "Rick Perry booted from board of Fermi, the massive planned data center company he co-founded",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNWlQajc3MUFDWE5WcUtqTjFZSnlINDVvSHRFMXhxUzExUjUtZ0xULTFyTkZGaWVud2w4SC1XWU5pU0tkUHdxallYN3dPRzZuaUdyT3VwZUh4MDBTQ0lfcHJMN09FaHE3X2d2M0dhaGc4SklkWUl6X05uRlFJYm82amJ3ZUdiSGc1THJBVkVuVjhRTnYwOHc?oc=5",
+     "source": "The Texas Tribune",
+     "published": "2026-10-30T19:38:45+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "62626043e6c2f250"
+    }
+   ],
+   "first_seen": "2026-10-30T19:38:45+00:00",
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hints": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-30T19:38:45+00:00",
+     "status": "Announced",
+     "headline_id": "62626043e6c2f250"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-10-30T19:38:45+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
   },
   {
    "id": "flexential-atlanta-ga-2025",
