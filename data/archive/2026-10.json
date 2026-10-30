@@ -38,8 +38,145 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4117,
+ "count": 4131,
  "items": [
+  {
+   "id": "9c93da189d19b90d",
+   "title": "New Mexico county backs up to $165 billion in AI data center bonds as opponents seek statewide ban",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNU2tqQWNLcHV3Ml8wSXRFMU1ZalNCcDJuQ3hpbS1SZDVDQmQ5R3NvRzJzZTh3UTBhczlxUjJmRjlmU1Qza3JGTGw0dUlWelAxWTRxcURFejNfTjdsTVJlRlhxYnNUYWg3cFJDdHltd25fd1MwbjlJYkdMUGZZeThxQ2puVXgyQjlYYmY4Vjh1dmg?oc=5",
+   "source": "The Cool Down",
+   "published": "2026-10-30T15:57:00+00:00",
+   "feed": "Google News: West",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Community",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "New Mexico, US",
+     "lat": 34.4,
+     "lon": -106.1,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NM"
+   ],
+   "state": "NM",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 165.0,
+   "cluster_id": "9c93da189d19b90d",
+   "cluster_title": "New Mexico county backs up to $165 billion in AI data center bonds as opponents seek statewide ban"
+  },
+  {
+   "id": "3f0b72871a182802",
+   "title": "Sabey DC to pilot HVO fuel as diesel replacement at its data center in Austin, Texas",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRE4wOW1Ial9pR3VVOGl0a1dZa1NEUG1nVDlZdFp1alVlN2wtUW5jcmlqVV9leUVFcHdEU2g1bUdpU0pkTnhyaVBOcGhyU1BqSU52cXlJbS03YXJ1Tmh4dDNVWndwZEp2ajBtT0xhdW5BSDZqWHU0RWFIYUc3T2Z3Z0l2Q3dua0txNUg2TXQ5S05IV0YtbmhpWHpYdXpkSmptMzdLMThINFFPWDZ1UEgxRnFKc21IMmZKSDh3VEQzX0ZPUm1rM1E?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-10-30T15:44:10+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Austin, Texas, US",
+     "lat": 30.27,
+     "lon": -97.74,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Sabey"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3f0b72871a182802",
+   "cluster_title": "Sabey DC to pilot HVO fuel as diesel replacement at its data center in Austin, Texas"
+  },
+  {
+   "id": "07c866f07d01458d",
+   "title": "PJM Fixes Data Center Power Auction, Aims for March 2027 Restart",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb3M4c3lKTzNiTTI5bldsNmUxZ1dKc2ZMMmxZSGtnbHlSMUpiWHhRcFJ0Z1V3V3BPSGh2VDFfSmxuSU1JQjF1YVAxTWtpa041QVBBWUwyU0UyNGduZEc5MXFKNVRMMjAzTVk0a0FqLS0tTlltRDYwOVRNaG9LSGFybE81WTJYZk05SGozZG1UTDI2X0UzT1E1UmJ4TDZLUkhZemxscA?oc=5",
+   "source": "Marcellus Drilling News",
+   "published": "2026-10-30T15:31:45+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [
+    "PJM"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "07c866f07d01458d",
+   "cluster_title": "PJM Fixes Data Center Power Auction, Aims for March 2027 Restart"
+  },
+  {
+   "id": "b54c9e2a636a21c4",
+   "title": "Powering Growth: How Utilities and Data Centers Are Navigating the AI Power Challenge",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdU9iTWlaQnZINVpLQ3RCLUlVRWJyNU5vN3FqSWUxLXRrTGwxampmTnJPd3NZZjhoNUx4YjJGbHR4TFBpQTVGbWFVWUZfd2pNQkFHeENta0FHVC0zd0hMYVVKdVNaU1lsZkdZdEZxZXpHWVhLNVY4Z0k4ZzZHX1B4ZmlKM1drd05TclU0cjlfaHlBYnpnT0RyRFNvdExfd0x3V3F3bGJPbmpkMXRaQTMwZHhoLVE1cnBCZDBvME82Y2NfR3lqczh2TTVqZUZPOXotNkdvNVdmV2V6aTBL?oc=5",
+   "source": "Data Center Frontier",
+   "published": "2026-10-30T15:31:04+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b54c9e2a636a21c4",
+   "cluster_title": "Powering Growth: How Utilities and Data Centers Are Navigating the AI Power Challenge"
+  },
   {
    "id": "f4c25bee303df4c4",
    "title": "Thieves steal $23M in data center cargo bound for Georgia and Texas after ramming escort cars",
@@ -84,6 +221,70 @@
    "cluster_title": "Thieves steal $23M in data center cargo bound for Georgia and Texas after ramming escort cars"
   },
   {
+   "id": "e0d29fc51446291e",
+   "title": "Virginia lawmakers still divided on how to manage data center growth",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORm03blcxekF6bm8wR2pONVBGbHlZUS1sUTBQeFJ5aU1jcGZTWEhzUV9fRDZ1MmRBY3paZE5ZR2stX1NmNUVYUmZHNWxkVWJ2d2tIcEhSRVNqMGZ0eFZkUlFxZGpQRTVHTEthVEJKQXFmS3VQZ3QyNGdaTVF3WGZkWWQ1RWZNNjdoU1hmS0tqSG5OSXVYVTIxLVkyaDByc1p3M09HSExpNkN4TXFhcTR4T2hucG9KZw?oc=5",
+   "source": "The Daily Progress",
+   "published": "2026-10-30T15:00:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e0d29fc51446291e",
+   "cluster_title": "Virginia lawmakers still divided on how to manage data center growth"
+  },
+  {
+   "id": "1e76006035ea692f",
+   "title": "Blackstone’s QTS, Vantage Vow to Step Up Data Center Disclosures",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRUVDMml1ZXFTa3llLXc5aEt5VUFUay1oYnhSSmxjdFpqYThPLUh0QTMycTZOcTJ2WTNVZnlEYkpDbHZrSkZEYjNfV2xOWDJ4c2dYN0lmaGhjSnRfT2l3NkIzTWlUSElib18tcEt5YVdKZXVhWHdiUXpCdnk2V2NuSktuSGJKYUdZaTgzQ3AxQTJOUWRpcnNDaVJjR3ZBVTRmSDBsYk9lQkpGSWRkNlR0ZTI2TXI?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-10-30T14:59:07+00:00",
+   "feed": "Google News: Data center power",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "QTS",
+    "Vantage"
+   ],
+   "utilities": [],
+   "investors": [
+    "Blackstone"
+   ],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1e76006035ea692f",
+   "cluster_title": "Blackstone’s QTS, Vantage Vow to Step Up Data Center Disclosures"
+  },
+  {
    "id": "0d1bbacfa00a78aa",
    "title": "CodeWatch: Data center rules take shape, 2027 I-Codes arrive",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOT1dVWXJJd1BrWW8tek9BQmpha3lDV1V6UzdLY2tNa3JMWl9MN1lCRmZHcTVjbHB0dkZFRjRlUHlZdFRLaGEwaU9mVm55bXFMdk15T1VVbzdDeDNBVGdPYkhPVUhNWlpfUThvWHhnWUpCRktxai1GUFNSNmtJczdQMUcyQlF1TUtfMGtfREVLOXJVODZpWkgxUEwzdXlHUmFQcWRod0FDLUg2d01VVk5ldVdR?oc=5",
@@ -106,6 +307,60 @@
    "suppliers": [],
    "cluster_id": "0d1bbacfa00a78aa",
    "cluster_title": "CodeWatch: Data center rules take shape, 2027 I-Codes arrive"
+  },
+  {
+   "id": "fca9201bd43f62c6",
+   "title": "Data Center Water Use Legislation in Michigan, Illinois, and California",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaWV3NHJDM29rd0syd215T0R1eW5OWDUzc1RaSHYxbWdBcTFhUEh5QW80Q2JSaWR4TU91VzhLQ0RkNzd4bkZEU3VSdHRmVzNxR1RrZnh1TGNBMVhhVThJR053bWVHZzJBYjZ5akU3dm9CUEZaaVRuUGFTZS0zbk9jTnZ2end5QWFxaUFCTWd1amFqUFRBQTNLc0dpT2ZFRWZn?oc=5",
+   "source": "The National Law Review",
+   "published": "2026-10-30T14:27:20+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA",
+    "IL",
+    "MI"
+   ],
+   "state": "CA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fca9201bd43f62c6",
+   "cluster_title": "Data Center Water Use Legislation in Michigan, Illinois, and California"
   },
   {
    "id": "b8fdc5958cde03d8",
@@ -303,6 +558,31 @@
    "cluster_title": "Protestors request temporary restraining order for Hermantown data center"
   },
   {
+   "id": "a5da2c82a4e2509a",
+   "title": "ESIE 2027 to Spotlight AI Data Center Power Solutions and Next Generation Energy Storage in Beijing",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTW1BeTZ5a210T20wUUtXS3Z5QThqbndJYlJjZlN6c2dER1ExMzEydGdUdWJFRnBvWWQwU0N1ZWN0MnAtV0ZFa0lMNWJ6cXZDbDNSb0RRNENpZzhFTWxqelNOXzdDdUNib3ZFRDhwdWlwOGZTLXZiYjJnM3NtbzY4dEw2dmNnaEMySWlzZ1k0dkZINDZtM0ZqX2RwRDZ0Q0E1R1lHUzFFMU1TN2QxblpRVzM3MVdvdURMcnpObnBFenB4cmZZZHliaE9NWURlNl82aDZzX2pR?oc=5",
+   "source": "Renewables Now",
+   "published": "2026-10-30T13:15:42+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a5da2c82a4e2509a",
+   "cluster_title": "ESIE 2027 to Spotlight AI Data Center Power Solutions and Next Generation Energy Storage in Beijing"
+  },
+  {
    "id": "b7994de6d6602816",
    "title": "Hazle Twp. residents debate proposed data center ordinance",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYWhKTEdpNi16UkZhWHpqanZ4QndnUUNPV1pCMzZtY0ozWWlMbHRrTEc2MXg3aXR1ZHFhbUZ5ZFkzUnJlQjV2V1pKRG9wRVFWQW5STjJoUVlnQVg1ZkNEYmc0RWtvenlQUE5LU2ZFSTNBWnFWTENaS25MbjE3WXVqNlVKTEJpRE5XRzRIakh5MFdPbVh2Q1FYZ29WUTMwcjA?oc=5",
@@ -338,6 +618,30 @@
    "suppliers": [],
    "cluster_id": "b7994de6d6602816",
    "cluster_title": "Hazle Twp. residents debate proposed data center ordinance"
+  },
+  {
+   "id": "6d9335f796954903",
+   "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOV1ltQ1NtZDlhZVBMZTRrQUpUZnB6OHFkcGJ4eEYzMlRxdDFDQlk1dGhWR21xOEtCSl9zLWpKbkl2bS10RUpNajVXX0ppVHhvZGFxZG1HSVVYR3llVVUwb1p5TnRaUFI2M1R3SE5SNTB0TEVGNmFET2U3MDFPYktrVmdTZVVzcjVHV1lPcURFaFo2TUJLc254blBFX0oybE0zdllNelZBYlJaV0s4Y3F0YWVGaldHWTFsc3Q3aEJMQ0Y0SmctWjc1YXltX3hzdVE?oc=5",
+   "source": "TechCrunch",
+   "published": "2026-10-30T13:00:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6d9335f796954903",
+   "cluster_title": "Can AI data centers be mass-produced like cars? This startup aims to find out"
   },
   {
    "id": "884e0bbd447c8587",
@@ -664,6 +968,41 @@
    "suppliers": [],
    "cluster_id": "63c862a8a284bddd",
    "cluster_title": "A Data Center Offers Her Household $10,000. Keeping the Cash Could Put Her Medicaid Home Care at Risk"
+  },
+  {
+   "id": "4396fd83bf619030",
+   "title": "Maine’s data center revolt will decide who controls the Senate",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSkJZZXRSVDBOWTc2b09xcF9kUGkzVWlobHg4eGRpM3JWbTNRckNFZG9MQzdTb2ZuQlJBS3ZwS3VpZnF3RC1Kalgyc25TTGlLQ1N5Vlp5N0hXOUxEb0JfM0RNZER3TWhtMFFQZ2lpV3lzTjdfa2hEeUY3RlVEalFnRHpFMTVyRUJiLXBLS2ktTjlWdG1GVllJMjFqblQtWHRsTUZFMzJpR293YVk?oc=5",
+   "source": "The Verge",
+   "published": "2026-10-30T11:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Maine, US",
+     "lat": 45.4,
+     "lon": -69.2,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4396fd83bf619030",
+   "cluster_title": "Maine’s data center revolt will decide who controls the Senate"
   },
   {
    "id": "b60428bfe81ddca4",
@@ -1204,6 +1543,31 @@
    "cluster_title": "CHRIS JOHNSON: The data center boom is rescuing forgotten American towns"
   },
   {
+   "id": "7aa317e6b192c8cd",
+   "title": "N.J. voters divided on data center development nationally, strongly opposed locally: Stockton poll",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcWlucWZlaHBlc2VhNkN3eERpN19CRExrYXRHV3FFQWlxdkFtOG4zcFVKZHN0UzFMTTdPajVrbzZfdUhxSE5YSmdsZFYtRk1kclRKZUR3WXVSOEx6VHVCZFczemdmNE5YMnROS3BfQ3ZjUTREbmsxdVhtUV8wMlJOQ1VkZjRJaEFxRTlxVHJud0VjRWpldEhMWHhrQTRwNnBSTl9LNlRCUDAwV2d4TEY1Sm16M2Y4Rm9US0FFRDlPd1V6U0hZcXQ3YUF6VXBQby1I?oc=5",
+   "source": "ROI-NJ",
+   "published": "2026-10-30T09:00:10+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7aa317e6b192c8cd",
+   "cluster_title": "N.J. voters divided on data center development nationally, strongly opposed locally: Stockton poll"
+  },
+  {
    "id": "578306ae341b1e7c",
    "title": "Oklahoma City council approves first hyperscale data center. That doesn't mean there will be more",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5SbUpzdnRJMGkyLVZEaGVDd1ZRM3NSWTNXMU93akhnV29LOUItYmZqbHdRbUVPWEl6emlVQ2Q4bFh4QXFwcG14eGFaQ3hpdjZJUnVRMHRkb2FvSVpVdHNaZkp5Yw?oc=5",
@@ -1361,6 +1725,34 @@
    "suppliers": [],
    "cluster_id": "940b2fd7ecf5cf99",
    "cluster_title": "Army Corps of Engineers chose not to hold public hearing on Botetourt County Google data center project after getting hundreds of requests for one"
+  },
+  {
+   "id": "6f6fa0720dc3798d",
+   "title": "Voters in 10 US States to Decide on Data Center Curbs, Threatening Amazon Investment",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1VWjVZVi1kd1pkVDI2amFQazlaNjkzanFZUlllQTNXRmVZUThqWmdSeFI2SU1xRFljLVRDMFNRaWNqVC1HZm1GeGd3NGRrdElYRHRSOA?oc=5",
+   "source": "bloomingbit",
+   "published": "2026-10-30T08:44:23+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure",
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6f6fa0720dc3798d",
+   "cluster_title": "Voters in 10 US States to Decide on Data Center Curbs, Threatening Amazon Investment"
   },
   {
    "id": "b1d6a0918a576174",
@@ -5801,6 +6193,30 @@
    "suppliers": [],
    "cluster_id": "e5b6244409c70e01",
    "cluster_title": "The Jobs That Actually Exist Inside Data Centers"
+  },
+  {
+   "id": "e8694dc6165254f1",
+   "title": "Floating data center market Size, Forecasts Report 2026-2035",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBZYkt5aVA4VE44eUtrdGdSSGM2RXRoSW8xVmdzcGxJMUhNR25jOEk4dThWRTZoS1R1LTA4ZVZoM2F3b3BTQmZPaFpUVnBrQmowR0hTRGNqVzVYWGN5ZHNQOVdhek5USk5QMVlCenNXVE1WektNT1JVTkhfQlo?oc=5",
+   "source": "Global Market Insights Inc.",
+   "published": "2026-10-29T17:23:29+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e8694dc6165254f1",
+   "cluster_title": "Floating data center market Size, Forecasts Report 2026-2035"
   },
   {
    "id": "f8016b9aadbc754e",
@@ -12834,6 +13250,39 @@
    "suppliers": [],
    "cluster_id": "2544625c6f9659d6",
    "cluster_title": "Two data center interim studies with different focuses held at Oklahoma State Capitol"
+  },
+  {
+   "id": "d12d594738b45ae1",
+   "title": "Fact check: John James, Jocelyn Benson debate data centers, tariffs, more",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWlBhUnYzc0VGc2dpQzRTdW8xX0liMGg1QjBwV2FyQmU5dUF3M2I1QkNaTDFRZU5TQW9ib21JenAzRU84dGlhU01LN2hXSUw1QzNvMjYyYnlkcF9PeUhrUmdlU2dOV0JiNFJVYXQ4M21KVmw5dl94bUdoZDU5ZkNoS005U052b0gyLVQ4czNTR05lMmtvcFUyaVFwNkxHNS0wdF9sa2I0b2dmSTB5MFE?oc=5",
+   "source": "Bridge Michigan",
+   "published": "2026-10-28T21:10:25+00:00",
+   "feed": "Google News: Midwest",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d12d594738b45ae1",
+   "cluster_title": "Fact check: John James, Jocelyn Benson debate data centers, tariffs, more"
   },
   {
    "id": "9aed3078752cc774",
