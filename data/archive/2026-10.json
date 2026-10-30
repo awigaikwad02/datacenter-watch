@@ -38,7 +38,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4068,
+ "count": 4070,
  "items": [
   {
    "id": "a0e6caa9352b067a",
@@ -4837,6 +4837,30 @@
    "suppliers": [],
    "cluster_id": "48184a2653821b5b",
    "cluster_title": "On Facebook and Instagram, Political Ads Are Increasingly Critical of Data Centers"
+  },
+  {
+   "id": "b14d7cdf51dd7518",
+   "title": "Is the Trump administration illegally authorizing data centers on public land?",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOXNRd3hQbS1VYUZJNDBlQ0RXZlpMV2tUYnNvMk96dVh3SDRjdmpBM1pPU3ltM1dud0tQWXRIbmZiNTVhejNfYWJOZGN6UlpJdW5zWHkxT1BCWlpScXBIcFRTR0F2a2ctUHJSaE5nTXpzUW54NEtXcVFVNm1jaDVsUzUxcWdUZVZPYW1oMDhqaXc0Yl84ZGpNU0lIRUZ1Y0Vnb09Tend2QTVfLUpER1hKcVAzbjYyZkI0cUE?oc=5",
+   "source": "Center for Western Priorities",
+   "published": "2026-10-29T16:37:36+00:00",
+   "feed": "Google News: West",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b14d7cdf51dd7518",
+   "cluster_title": "Is the Trump administration illegally authorizing data centers on public land?"
   },
   {
    "id": "a97cb44c9463e129",
@@ -26901,6 +26925,45 @@
    "investment_usd_b": 0.8,
    "cluster_id": "aeacfb1bf44af34a",
    "cluster_title": "Stream Data Centers pulls out of $800m South Carolina data center, says utility power would take too long"
+  },
+  {
+   "id": "c5fbe4ce422343e5",
+   "title": "Amazon Backs 7.65GW Gas Plant to Power Texas AI Data Center",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaC05cjFrTGkxTWpCTkU1N1VTcm1SM0drSW5zdnpBbEF4dEE3WXpldkg5R2VOT251RXFpYm5iem9Xa2RBV3lQWUR6aFJ6VEVDUXVjcEV0aWVGRmlnM2NUbC0tVjlBcXhUN0JXa3pMbG0yc1BCWWJpWHVHMVBMUXJZYnhJSQ?oc=5",
+   "source": "Channel Insider",
+   "published": "2026-10-27T07:00:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 7650,
+   "cluster_id": "c5fbe4ce422343e5",
+   "cluster_title": "Amazon Backs 7.65GW Gas Plant to Power Texas AI Data Center"
   },
   {
    "id": "0dbfe920655a3c51",
