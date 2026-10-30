@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 581,
+ "count": 583,
  "items": [
   {
    "id": "41a2a2baf7f87d39",
@@ -17,6 +17,19 @@
    "source": "WBRZ",
    "published": "2026-10-30T03:17:39+00:00",
    "state": "LA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "0fe8d38305ffc133",
+   "title": "'We've got grit': Pennsylvania residents win fight against data center planned on 37 acres",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNXl6QVY5c0NzRm9NbFBBZ0NFQUZlUGxnTzdmRWxtSTJHUXFacllVQ3VWNld0RGdBanRLTzNYS2lWWk9XaVlXWWV5WVVaR25RVEl2X3QwR2VwUVZjT3luVC10ZTF5NFBLU0lqZmZRbVR1MVFtREJyOWVQdkJONWtFcUdGeFMxYnBOb0pFNQ?oc=5",
+   "source": "The Cool Down",
+   "published": "2026-10-30T03:06:00+00:00",
+   "state": "PA",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -39,9 +52,9 @@
   {
    "id": "c5c001d5e78ffdf8",
    "title": "New rules expand oversight as San Antonio’s data center industry grows",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQVJkZ1ZVc1J5V2pTcXc4RTc1Q0duaXpOdV9EcllqRmtreWF6ZWpjZnVQOGVOWGRnQW8tQmhKeVh1djRHTGhWd2hocWdCNUlhM0w4NGpvZXRsQ1hsZ2tuRG1mWDhtRmtrYjMxd1hSdk9ieUlSZUxqMHV6c0lJTmZOOFI1aDVFWXVvaDRiNW8tVFdleWRQRzFVTkZDNWhNeGcxZHBqNW5seTh1UkpKWnNPX1pQQ0ZNWnpQQmNiblM5UG9OZkt4NVlNcy1FQXJiT2M?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRE9wV0NJRE1sWTE0ajRJRk1ia0h5TEFwd1JpMHBSMDYzcXBkOTl1TUdFd2hLeUFYMzJaSkFobkhhZ2ljSVdibi1TQVdwcnh6Sk52V3F6bVNKdmNONnNvOVlleGJnNFI0c09KaFJCa2RCQjlnYUd3SDNrTWdEN0g1VG1fYlZWRDVod0c1ZHVVUTktcEJQWHVuWnNSNXc2eDZIZkJDRHRvaVdpSU5SRVNxYktn?oc=5",
    "source": "KABB",
-   "published": "2026-10-30T02:05:44+00:00",
+   "published": "2026-10-30T01:59:15+00:00",
    "state": "TX",
    "companies": [],
    "builders": [],
@@ -95,19 +108,6 @@
    "source": "wtol.com",
    "published": "2026-10-29T22:44:00+00:00",
    "state": "OH",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "053f7b4c573258c2",
-   "title": "Michigan Voters Split on Candidate Solutions to Data Center Proposals",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaXFCLTg4LUFDaXdQWWlBTGdqaXlOTDVjdG55dDk0QlNsNlhMTU5RVWhwaEk5YzgxRjZFQXRBUlZlTUlMbmJvQ1VBbDdpcmJjWkVmNHNiRFhsX3BocVVPQ0VOVnZ6MktQRzNTMEFhZkZxaGpFdk01ci1nN3pueElEVkRSVThLREU?oc=5",
-   "source": "The New York Times",
-   "published": "2026-10-29T22:32:20+00:00",
-   "state": "MI",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -245,6 +245,19 @@
    "reason": "no operator, code name or figure"
   },
   {
+   "id": "7d9a055b95c9167b",
+   "title": "Gov. Jeff Landry to call data centers ‘digital factories’ as he adds conditions to tax breaks",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOOVk0anJlY2JvX2FGeWlGZDljQTVqRlU3a2JqWHpWVUFQQVBQenhBMG4wbGRDNDZEMWQ5N0dIQ251azZyTWFKX3dKWF8tUmh5ZHV1X1FWOG5hVUs1VTlTbHlCVTZ0MHhsQTZCZEdBV0FBSUJ5VWc2ZmVNbU5FSU9DbnUxM1JwbWRZM3hSckpDYWx6dlVGSEo0VWR6SG9mbk53em9yNjNscVFpeUFOX2d6R2VaZ0paYk1sMmdaNVJwSld2MlZraGlNbUxDTGtranczeTJJ0gHYAUFVX3lxTE9YZ1ZDRkJadnVHaG8tODNzMnZKZmJBR0ZXWTJkZXRBQjREeUJXQjVFMWw4UmZFUnBrVWFUUE1KbTFJX0FUXzEwVHpaU0dlaDQtWmNneXBVcjlFckcwSTBrRVJjVWY1emhVUk5tSjNjdU45V3pZRXVMWFFJUzU1eEdrdWpsNDd3akZTNnBPZWU4V2FSRWJCNHZBQllTWnFxYzNRRnY4d3dnN2NHNFFFRmRtdnowTDBsQVdPa2lya2lDclIwalFFcVZCVjVQdWNYSzlUTzhWZUEwNQ?oc=5",
+   "source": "NOLA.com",
+   "published": "2026-10-29T16:59:20+00:00",
+   "state": "LA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
+  },
+  {
    "id": "7db5a4174f3fd87d",
    "title": "Charlotte City Council Extends Data Center Moratorium to 2027",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOXZxb3hyVVdrWDJmWkEweE5LSlZOeE9OcjVqQlNqT3YxTThXUE5GRWhMQjV5bFV4cFg3OEplLWZIQlJNYUFrUUFRNDFmMDNvS0tCOGxjRXplY210TGduLUVOc0pRcC10VlFUWkVpcXVkRm45NlItUDdia1dYMW5kRzAzb0xfMlZmZ0lKbW04ZFI5Wmh0R1E?oc=5",
@@ -334,6 +347,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "053f7b4c573258c2",
+   "title": "Michigan Voters Split on Candidate Solutions to Data Center Proposals",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaXFCLTg4LUFDaXdQWWlBTGdqaXlOTDVjdG55dDk0QlNsNlhMTU5RVWhwaEk5YzgxRjZFQXRBUlZlTUlMbmJvQ1VBbDdpcmJjWkVmNHNiRFhsX3BocVVPQ0VOVnZ6MktQRzNTMEFhZkZxaGpFdk01ci1nN3pueElEVkRSVThLREU?oc=5",
+   "source": "The New York Times",
+   "published": "2026-10-29T09:02:55+00:00",
+   "state": "MI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "5cfa6b8e4cf1753d",
