@@ -11,15 +11,15 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "checked_at": "2026-10-29T22:51:00+00:00",
+ "checked_at": "2026-10-30T05:59:19+00:00",
  "overall": "pass",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 3h",
    "status": "pass",
-   "value": "49m ago",
-   "detail": "2026-10-29T22:01:24Z"
+   "value": "55m ago",
+   "detail": "2026-10-30T05:03:43Z"
   },
   {
    "name": "Workflow runs (last 10)",
@@ -31,7 +31,7 @@
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-10-29T21:59:59+00:00, 20 new"
+   "detail": "run at 2026-10-30T05:02:55+00:00, 8 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -54,19 +54,19 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "2310 KB",
+   "value": "2358 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 3h",
    "status": "pass",
-   "value": "51m ago",
-   "detail": "2026-10-29T21:59:59+00:00"
+   "value": "56m ago",
+   "detail": "2026-10-30T05:02:55+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "3914 items, 0 problems",
+   "value": "3997 items, 0 problems",
    "detail": ""
   },
   {
@@ -84,8 +84,8 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: New Announcement 19.4%",
-   "detail": "New Announcement 759, Policy / Permits 720, Community 448, Power / Utility 309, General 284, Cancelled / Blocked 230, AI Infrastructure 203, Deals / Investment 173, Construction 153, Environment 142, Politics 131, Analysis / Opinion 121, Expansion 68, Markets / Earnings 62, Economy / Jobs 57, Operations 32, Land Acquisition 22"
+   "value": "top: New Announcement 19.2%",
+   "detail": "New Announcement 769, Policy / Permits 735, Community 458, Power / Utility 317, General 290, Cancelled / Blocked 233, AI Infrastructure 207, Deals / Investment 175, Construction 155, Environment 146, Politics 137, Analysis / Opinion 123, Expansion 72, Markets / Earnings 66, Economy / Jobs 59, Operations 32, Land Acquisition 23"
   },
   {
    "name": "General under 10% of headlines",
@@ -102,19 +102,19 @@
   {
    "name": "At least 55% of headlines located",
    "status": "pass",
-   "value": "2277/3914 (58.2%)",
-   "detail": "with a company: 432"
+   "value": "2324/3997 (58.1%)",
+   "detail": "with a company: 435"
   },
   {
    "name": "No non-U.S. locations in headlines",
    "status": "pass",
-   "value": "0 of 3912 items",
+   "value": "0 of 3995 items",
    "detail": ""
   },
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "20819 ids, 0 in two months",
+   "value": "20903 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -126,7 +126,7 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "27 month(s), 20819 headlines, earliest 2019-11-18",
+   "value": "27 month(s), 20903 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
@@ -162,7 +162,7 @@
   {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "1604 attached headlines, 0 missing",
+   "value": "1606 attached headlines, 0 missing",
    "detail": ""
   },
   {
@@ -204,7 +204,7 @@
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "630 pages, 3321 KB",
+   "value": "630 pages, 3322 KB",
    "detail": ""
   },
   {
@@ -294,7 +294,7 @@
   {
    "name": "Tests pass (pytest)",
    "status": "pass",
-   "value": "221 passed in 1.51s",
+   "value": "221 passed in 1.42s",
    "detail": ""
   },
   {
@@ -366,8 +366,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 52m ago",
-   "detail": "expected Updated 52m ago or Updated 51m ago, title \"Data last updated Oct 29, 2026\""
+   "value": "Updated 58m ago",
+   "detail": "expected Updated 58m ago or Updated 57m ago, title \"Data last updated Oct 30, 2026\""
   },
   {
    "name": "Browser: /radar @1280px loads cleanly",
@@ -472,5 +472,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-10-29T22:52:45+00:00"
+ "browser_checked_at": "2026-10-30T06:01:05+00:00"
 }
