@@ -38,8 +38,33 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4006,
+ "count": 4013,
  "items": [
+  {
+   "id": "221c8091f213df3f",
+   "title": "Dresden advances proposed data center regulations",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQY3FIOEhQblpBSEpmTE91XzZqTFlxREhZbks2Q3I1dmJKc3VMbXZfemlRcnkzTXFWSE5EcURtWE5nRUZvdnNJOGRrTjRtWFBfYUptRmhodnV0eENsMHFJUGFhWndIMWZaaDNGYjBESHljblZldWJiOE9rMmp4ZmdDbE14WkhwQUZHOEFoRTg5ZXB6dTl2VG5zaTJGWnZPc1l2Y1hia3hQc0tXN2xaX29qRUpyVy1Od0ZsMDcza0ZBU1l0UHFIRHFjcXJuNA?oc=5",
+   "source": "WPSD Local 6",
+   "published": "2026-10-30T02:24:23+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "221c8091f213df3f",
+   "cluster_title": "Dresden advances proposed data center regulations"
+  },
   {
    "id": "c5c001d5e78ffdf8",
    "title": "New rules expand oversight as San Antonio’s data center industry grows",
@@ -75,6 +100,30 @@
    "suppliers": [],
    "cluster_id": "c5c001d5e78ffdf8",
    "cluster_title": "New rules expand oversight as San Antonio’s data center industry grows"
+  },
+  {
+   "id": "eaccd10937c6ad02",
+   "title": "Big Tech’s Data Center Blitz Is Burning Through Cash and Scaring Wall St.",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR1hMOFZzQ0lFZmg4ci0xdnpsVkJsU1hmVW5zSjltYWs2OXBWNHpUV2Q2OHVZLWFqQUNxTVo3a0IzdkM4UU40WDZKTDFWNUJLODNlaFFLMVNyWWpKLU5EcFFGMUlyRFdqcUpORzJrQ3NRVTg0TnVPRTN0XzQ2ZWZxUlM1bmZTUWs?oc=5",
+   "source": "The New York Times",
+   "published": "2026-10-30T01:30:27+00:00",
+   "feed": "Google News: Data center",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f9e761a0f7247920",
+   "cluster_title": "Big Tech’s Data Center Blitz Is Burning Through Cash and Scaring Wall Street"
   },
   {
    "id": "974649911524c81b",
@@ -1159,6 +1208,41 @@
    "cluster_title": "NiSource Data Center Plan: $28B Capital, $7B Power [2026]"
   },
   {
+   "id": "83c4af1db2825a29",
+   "title": "Foxconn still invested in shifting GM plant to data center components",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcU9Ka0MtNEhZdXpMdmo0eFlZMnRtS2Q3ZE94TUJMa3lfM2xLTERkTExPdnV1N0o2dFM1aldBMjBUYmV2ZlgyM2stRzQtdFZ3WWpiMXBvOGZpdlJCZFNXR3p4cnA3aWJ6eVJqdUtjVVhCVDN3aFRtTEwyUTFDaUc2QzBXU3luZzlvOThIRzRtdUNzM2NhUjZZeWVTVnZ3anlNanoxdFBGUU1Ddzk1Vmc3X1pLdFRnclNERVhaQWJSTdIBxAFBVV95cUxOZS1aVGljT202ZXltWnl3WXpobjRXRlllcElZSklfYzVpaHBYdHRfY1lMNmhZX1Y0RmljZThzaG0tekpNOU0xT082dkFPMWRuaTMxYVFqdmVvQk04eGl4ekpZNGNCTVo4cmtyS0NGcjZaUEI0N3ExNkhVeFFzcWY3WThBanVCRFh2X2NPYVhONU1BMC1WelJFd1lMUTBYR1pDUzY5d2dtUm81Y2NsUmtiNlZ2UE90bUxtdjFwVzNucU1TRDRQ?oc=5",
+   "source": "WKBN.com",
+   "published": "2026-10-29T21:45:29+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "83c4af1db2825a29",
+   "cluster_title": "Foxconn still invested in shifting GM plant to data center components"
+  },
+  {
    "id": "2970a37926faae15",
    "title": "Data Centers and Electricity Prices: It’s Not as Simple as Voters May Think",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSC1CVERjU3puRlBDbHlQT2hsRFAzMUdtNWtPa3p6X2cwYU5TSC1CWjQ0N2duQTkwR2FEUFpSaDMwMWlXS2NmT2phNnRmTER6eGItcEJ0ZWdET0prdExnS2Zndk10ZzUwMUdGM3U0YTkycktrcG1wMTlCU2FFaXlObko4OEJzTlVNOVMyVmdWal9SX2ZLSkxuSU8wbVM2Wko1SzlYS0xUVURBQ2lL?oc=5",
@@ -1434,6 +1518,28 @@
    "suppliers": [],
    "cluster_id": "288f63cff0a9676f",
    "cluster_title": "ONU survey finds 55% of Ohioans oppose data center construction"
+  },
+  {
+   "id": "ada5c62e8ac0ada6",
+   "title": "Private Equity is Fueling the Data Center Crisis",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT2Z0d3ctZVV2aTJsVGYzekhwbHJ5T0hSMmlqd0dYakQ3bkwwTm1ob1UxWUFoa01uSGhMT1ZWRXJ4UGVHTGlNeTVtU0FGQVhvNXNoT3BWSXFCVVg5Tm5hbXZkSE5RRkZaM29RMlBOTVRYMGlnbkdSRm5lVWYweGZXNUY3RGpzbUJJazl2N1BBV1Q4TWh4NE4xVnNPWTBGQ1FzeWpz?oc=5",
+   "source": "Americans for Financial Reform",
+   "published": "2026-10-29T20:48:30+00:00",
+   "feed": "Google News: West",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "19620e8da50df214",
+   "cluster_title": "Press Release: Private Equity is Fueling the Data Center Crisis"
   },
   {
    "id": "324b56c8bc9cf232",
@@ -3162,6 +3268,31 @@
    "cluster_title": "On Facebook and Instagram, Political Ads Are Increasingly Critical of Data Centers"
   },
   {
+   "id": "a97cb44c9463e129",
+   "title": "DCD Studio: Regulating data centers - what can be done? With Allison Clements, ASG",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMXA0cnF4Q1hhQ1dIbHJNUGxWa01fNlBNY2pkSERReFlGcjJ5S2ZibXY3TDJ0ZlF5MlFFcXpZUmtfLVRQQ3RiTll4SjQ4cU9hM1BwN3RuUkxjbHVWYUpvb1hvaTMwUUpoN19xQ0JPUGU3SEpLYkdheUpLcFhENF9lU0pnZ1BBNU1XWFVOa1hVUThWaUtLcDNHSmxmYkdTNk5rNnp5NzJ4MHAtQk53SU1MeXUzSk1rY2k4aG9sZjhIblE?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-10-29T16:35:35+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a97cb44c9463e129",
+   "cluster_title": "DCD Studio: Regulating data centers - what can be done? With Allison Clements, ASG"
+  },
+  {
    "id": "906457d98fde06ea",
    "title": "Unlocking Flexibility Without Curtailment Report Explores Home Batteries for Data Center Power",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5HSVduNjFVVl84U2hVeU91UkFrU0RSQjVMZ21WQk9PREdVcXpJZi14ZUFWWDJmU0ZtUFc3dUR5eFQ2bUpDTGFlcW1VLUwwRWdZclEteTBreHM3V2Fsc1FwdTc4UXZIaTF5UnByczYyNXRVVENxNVYtYVllaUFYZkU?oc=5",
@@ -3904,6 +4035,34 @@
    "suppliers": [],
    "cluster_id": "9dc5f9527072ce92",
    "cluster_title": "Amazon pitches roughly 1,500 housing units for GW's Loudoun campus after scrapping data center plan"
+  },
+  {
+   "id": "6cb6676bee191b1a",
+   "title": "Lawsuit That Paused Development of Google Data Center in Pine Island Resolved",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03S0RldWdxV182dThZYTJWTExfTkw5M1BMOVBXUUd3QWFLdG5YNlNaVU9WTnFfM3M0VGp0S0hXN2xpcDB5M1NwRzE0U016M1llTnMwYlVKeVM2dmhqcXJkelhUQkphTmw1anpMUw?oc=5",
+   "source": "KROC-AM",
+   "published": "2026-10-29T14:07:38+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6cb6676bee191b1a",
+   "cluster_title": "Lawsuit That Paused Development of Google Data Center in Pine Island Resolved"
   },
   {
    "id": "8927e74fca505793",
@@ -24375,6 +24534,41 @@
    "suppliers": [],
    "cluster_id": "46c3538b2d08cac7",
    "cluster_title": "Vaisala to showcase new data center measurement solutions at DCD>Connect Virginia"
+  },
+  {
+   "id": "d08343837041f61e",
+   "title": "Midterms: Data center feelings",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQmU4OUpySmI2VTRoY0l0RHBlYjlaUDZFdTUzRWxaVW03ck83eVQtX3A3ZmlTMExDR1h4RGI4LUtOQjRhSGtWNlRVSFl3T29GbDl2ZmNOcXYxN3lyMzc2Y1dRQ1RMeHBJcUg0RUFZMlM4SkdldW5mWTJYVjRGXzJBWGpTYXVpQUZt?oc=5",
+   "source": "WKMG",
+   "published": "2026-10-27T09:20:16+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d08343837041f61e",
+   "cluster_title": "Midterms: Data center feelings"
   },
   {
    "id": "1ed92da7c054c4a2",
