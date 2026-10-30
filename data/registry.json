@@ -55,8 +55,8 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-30T06:03:16+00:00",
- "count": 631,
+ "updated": "2026-10-30T07:03:15+00:00",
+ "count": 632,
  "visible": 630,
  "records": [
   {
@@ -12700,6 +12700,292 @@
    "name_hints": []
   },
   {
+   "id": "google-goochland-va-2026",
+   "name": "Google Goochland data center",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Goochland, Virginia, US",
+   "state": "VA",
+   "county": null,
+   "city": "Goochland, Virginia, US",
+   "lat": 37.6843,
+   "lon": -77.8853,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "09a156f623a8f9ed",
+     "title": "Google announces new data center in Chesterfield, along with $9 billion investment in Virginia",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaDBmMFpGa2V4ejNaZGQyX2ptQXdFVnN3WkJwaDVDMV9hblhBNEZvdl9HYTJIbDRncFdBamxDVkNRc1o2Mnh1OGdLX3VENU81QUNNejdXY2dzMk5UNURTSXVzVkM2d05IYXQ1aURLUzlGYVFGa1ZfRllqa0k4V1BpdktYd0JNQXg2Yll2aFJCaWVTUGJia08wSklJQXJCSmcyNExhM2ozcWVMRmdEWGFPdGtvS0pDM2MzSGY0NHhGLXlHR21lVm5HY2JLTVJiYzEwRTR2ZlFHYmJVUEhEQ0dnX09zMmHSAeoBQVVfeXFMUGdtRG4zQU9pQXJmeHpNVjN5Q0R6RHZ2QnNUekJMWWVHeHVtZVh4QTdCY1d6anR6WWUxVmI3ZkRIc2tES29yY0VhSWpGbDVhVUljRVBOTHZCcVdlVWFjS09hWGVxcExPYXNzYjhDSVI0aWhTbi1DbnNobTZCd2J5c1QxZ3NRYWxyRnJhbHhtUll0RUlSWXpEOWlFVXdyZFhRa1hYaEUweVBhRkJ3WDViU2dFWjBHa0tMa0pYV0NHV2MxNXhCTGhMTFdzYzlrTGRORGJSQmJGUTVvZDUyb1JPMWFqOHlPMnJDMm53?oc=5",
+     "source": "WRIC ABC 8News",
+     "published": "2025-08-27T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "52e2bf4cc9d1c50a"
+    },
+    {
+     "id": "392378ed235451fa",
+     "title": "Google announces Chesterfield data center as part of $9B investment",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT0hSWVdITFltZmpRaGlPVnVCUDhxQlhhUkp5T2tsaWlFc2s5Vlg0S19rM0Q4YWtYcHlfclZCTEp4ZklWM213SmRJaFVjRGlmWEh3dy0zdEtPazAzUHBlMWl3d0JPZm1UVDRYcUk1ekpJd2hycGxicEtSYURDa19sbWpRQnA4ZU1MbFFndDZEUGpsQzZVbnBLalhYbk8?oc=5",
+     "source": "Virginia Business",
+     "published": "2025-08-27T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "52e2bf4cc9d1c50a"
+    },
+    {
+     "id": "4493d3d261700927",
+     "title": "Google unveils plan to build data center in Chesterfield",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTDFlNUtHb0YxSEI0ZFJadmZYREduTGJZS1ZZeTFnOU11eEliU2pWUUhQRFU3NEF3NE9JMzlneXJOekd5REFoMnhpVTU3NXRnOGhVa0dsczJhLXcyNmV6MXFxeV9GR0lVN0tYTlVteEpBbjRySHhoUkNhY3Q0MmFWOVFBMTRjWmlGVG42T2dZenJWV1FnNFHSAaoBQVVfeXFMTm5LdDZQTVd1ZXF1M0Y3aFkwX2dJNkJDODVwaGhEZjg1bzMxSVRTUzZTa2FrUTF3SUpIZFd6S0UtdDBWOFBUWlVhNnJ4QzJCZ0l0Z3NHNTVpWm4weXVVNFNzVFFCb2k1ZUgxZTV2UUd6dUtoLXpMdGstRmxTMkd4YU5veXVycW9fT2cwdEYtZkw3dEkyTW5sQVlRclREUllDMjNKcXQzcl90aVE?oc=5",
+     "source": "WWBT",
+     "published": "2025-08-27T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "4493d3d261700927"
+    },
+    {
+     "id": "4cc1d611b51a265b",
+     "title": "Breaking News: Google planning Chesterfield data center as part of $9B expansion in Virginia",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeUZyRHJCNi1RVlRpN25JTEtjNVZqRjd4Q0tabTdRRVJNRWp4YnBjMldxeUMwR1luWXBaSUpjOWtpZVVoSVluQzU4eUdJUjJjN1hMRUFGOUhZcWxRckxJczFld2hJWjVrd1VpYjJnT20wRjlrMGxHVXZONlZTR2lnT0gwdWhnWHZuNXdfYjQ2bGY2OW5CVi1DT0dNbmkzcjhCcHhMN1o3Qk9WNUt4UkJhcV80Q3oySFJOUWNtYndHWlVxd1dac3pTSUVIYw?oc=5",
+     "source": "Richmond BizSense",
+     "published": "2025-08-27T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "4cc1d611b51a265b"
+    },
+    {
+     "id": "52e2bf4cc9d1c50a",
+     "title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdDFacHZZZXpTUzhyNTBYS2JUSVRWZ1dNZHZqeFpHR1pqUExMTzBsUnNlbzZVcUJXWHN1YTQyekVFRkhHYURFdWxTQ0I1ai1hLTE2Y3lsemphWU9jR2NqYWVHV1ZCcjF0ZXBBX1pjczhSNGE2c3JUYTFXMmFYSUh0em04OHNQRVFCTHktTGVyMHV1TWFSSUZobTRsVDg1Qy1hTFhHRjRLT0xvQmJEUlU3N1U3dXA?oc=5",
+     "source": "The Richmonder",
+     "published": "2025-08-27T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "52e2bf4cc9d1c50a"
+    },
+    {
+     "id": "8e3e31f6481d69d0",
+     "title": "Google Expands Data Center Investment in Virginia, Doesn’t Share Site Specifics",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaVd0V0c3b0ZCOXdYbFNqVTgwVGxVXy1wRFpndjRZT1lYTE8yejNtN2gyUlhUZW0ydk9lZy03R055ajV4NXpndE9nVUxPZ21Id0x2MktfVWU3emg4UTR4djdsNUhGNC0tQ25yT09HYnNmME9JcUtyVXZ1aHRVOGhiRGpnMHkzT1BSbndB?oc=5",
+     "source": "Inside Climate News",
+     "published": "2025-08-27T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "8e3e31f6481d69d0"
+    },
+    {
+     "id": "c0ade67cfe57e722",
+     "title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPS0VvSmo0TGItNmdnN2txaV9yYjVZd0JxVzJWUmZ5REJ0bzE5VWtFYWRMelVLWUl1Ti1yLUJpZTFNcktiNVBreHVvSVBYd2doZ2xtUFFUNW5iNHp5VkNEaENYUGhrc3NuZThESjVJV3ZMLTFtaDRSeEtYUnV3cEd4cGZnNjJ3RE5vRUZ6V1lQTlNrNVFRQWxpcHZ0NVN3RGZIek5VSV93TzhzY3Y3SVNsMm84bUJtTWxna25fQzk3ZE9rQ3NqOFMwMw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2025-08-28T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "52e2bf4cc9d1c50a"
+    },
+    {
+     "id": "74c9ec19c54362a0",
+     "title": "Google expands Virginia data centers with $9 billion investment, but some residents feel they are paying the price",
+     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQU1ZPOTZVTkwweUZ6ejNSOFdiNlk1bzR1UVdHY2FLNndVSmJELXI4eExrRW04LWhEc09fQ3lkTXVpMjNBZGgtc2J3MGFBdmx4NnB5LVJVZUFkenhBb01JOXpUekVlU1V4cEJDZUg5RTZOVk9SU1lON2N5VlZ1RXdWMDdSaUtPRk96UnotRVB2QmllVXNUNkZZVXM1ZnROQkI1WkxxTVp5XzdzNnIyQVFVeVpPN3pDWDUxaEFWTGJONElqRGlaWldrSVVicWxQdlpJQjRJUng3VzNobTRmbU5JdXAtM1N1U0F3aUpWV19BQjFpVmtxRFI1TTVWXzRoQzJFNi1vXy1KdklCaWc?oc=5",
+     "source": "WUSA9",
+     "published": "2025-08-29T07:00:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "52e2bf4cc9d1c50a"
+    },
+    {
+     "id": "504be80aa504a4ec",
+     "title": "Google files site plan for data center, moves forward with ‘Project Peanut’ in Chesterfield",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONFhDZVc0cDBKTWozSEFtUllhempiX09jci11LThwQXJjNmphT0tEbGlIQ3dlRHJHUE5xLTJ1Q3FpY0h2NEF1dGZRdURyNjY0ZjZ3UFZ4SDJjOURxVnd6b3ptVTAxSEMtTERnNU9HRXlmOGdPZ0lpMzNVYVV3YkVRQ09oV3dOZVczME5lRjRTa25SVjNUTnIyRmpvX09JWW1KS2FhTTVDUGN4X1E1TjM5TEJyOTXSAboBQVVfeXFMT1VSWlJvaml3RTJzTURBWE94VE1OeTQwRVJwaTlhOFJLazRtTnRpeUE4UUQyTDZoQXN2T1pWdG0xdC05d1BQTGlHLVFPZk5nT3dYUG9oaWpuMFpGM3VST0tsUDJKdExVQWIxd0dzSE9vX0IyUUtNbk1JX1dfdXNYWXl4SjBLeGFmMzRfLVQxUTU2NGlZT0VxaTktNFZzOHFHM1lGZ2FXNHI2MFJueE5kYjh6VUxkSnZnZG9n?oc=5",
+     "source": "WRIC ABC 8News",
+     "published": "2025-11-11T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "504be80aa504a4ec"
+    },
+    {
+     "id": "9d9220ec77be311a",
+     "title": "New details emerge as Google files Chesterfield data center plan",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFpaVEtsLWg4cjRVTmpUY2tqSElYTWhpWm5GMU1HalMxTjZmLWRwTkVDTV95VFlQS09tUFJ5YlFZNmJQeXc3SUNCa2Q3V0p5TURwUFRpeU9IQW9fcW16UU5oYzRnQ0Z5U1Rndkl3VHprTFVUVGYxNDlrNjNjS09lT00wQXU0VEpNNEJYOEY4RW8?oc=5",
+     "source": "WTVR.com",
+     "published": "2025-11-11T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "504be80aa504a4ec"
+    },
+    {
+     "id": "e519efe03cc8f7ac",
+     "title": "Google files plans for first data center facilities in eastern Chesterfield",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNek04Uk1LZlVTOHdhYlFXQkc2OEd2YjV4SWVOWFJGYmpjbTl1ZVh3YjFMTGhlWmgwNGpRNHlGMHFhSHloVGltMTkxU2dBVjIwZjdJQkk1SFNkRWl3VmhwT0laakwtUHB1dm1HUDVmQm5Tc3BMSkgyWjZhUld3Y2NnRmMzMUFCMUF2eWtpUmtwODNaemg3aUlhWFZuelpfMlllcmRxNkJ4VkdJZWhEd3hGU1BVcVZvSkk?oc=5",
+     "source": "Richmond BizSense",
+     "published": "2025-11-11T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "504be80aa504a4ec"
+    },
+    {
+     "id": "4d8672675c284207",
+     "title": "Google details plans for Project Peanut data center development outside Richmond, Virginia",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcmE4US1tLWM1akkxNEdud3NSUnRGZE9hb2lMQWY1T25tbmRIRTJBRlBFeE9DazN5VEE1MlhTSVlONUdhUnJYckpkZmcxWlRHbGRGdXl1Tk5GTkhESXRjWUxDOExrZ0NsN0JKb1ZLS2lCUElGYTI4TE1VSW50TjhMTmU3T2h0M2plUnZUZjdKRUtsMW5vWXFldTRNY3RQSkRDMWFfTWJsdlRWY0xkMVRPOFE5ZlBkYVFyLUxBeGFUUjhxcldnY2sxU2QySktZUQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2025-11-12T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "4d8672675c284207"
+    },
+    {
+     "id": "900c1ec0db5248f6",
+     "title": "Petersburg residents raise concerns over proposed 175-acre data center",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsWEhoQ25MZ1pwTmpOc1JBbnBpazVCUEp6YTNWb0IzZ3dVZExXcVZXR0ZDdzBneVBNTzhlbnIwWjZCcmoyVmNuYTBnbHlQX0N4TUQ3TW5XbHktWmpTX3JtQTBLbUoyZnFoWGVib09DeC0tbE02YmVUZTZINA?oc=5",
+     "source": "WTVR.com",
+     "published": "2026-01-13T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "900c1ec0db5248f6"
+    },
+    {
+     "id": "5dde754e380b6391",
+     "title": "Residents raise water concerns over proposed Google data center",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOUZ4N085TDlNRE55d2pIZ0FkbndqcEVwb2lyTGJTdzdDSjIxQTljQ3FIaHowbFRCcmtYLVgxbWwtbXZjR0J5S09abklVOWJHSDdTMUJWeUxORXBCaHJaLWlYS2IwZDhtVi1Ocmd5cUxOVkZUNGRqSm5NX0FXWUlRU2Z5NzZhYVFWdWl2Q3MyUkw0c0RRUW1NU1JaVENPd9IBsgFBVV95cUxOYmxvc205T3ZZRVFZX3VqX2hPSkhZV0RpTUYydzJDTmxtdTZIUVNUQW9tNDBOVXVTU3BmOFEzejZGTllsS2h3YkRIcy1fR0pJd1k0aFc0MFhJd1lEdDlOVnN2X2ZFZzlPbEtycXlTLWU4c1ZFVE9Bc3BMcXRzUFBHcElRMW5HMXg5M0dmMHNodTY2dnVJTnZDZndtSk1JZk1IeXZUQkJBVHRxa0tWc19lRGVn?oc=5",
+     "source": "WDBJ7",
+     "published": "2026-01-15T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "900c1ec0db5248f6"
+    },
+    {
+     "id": "1258779b2a29578b",
+     "title": "Botetourt faces possible $300M+ water costs for proposed Google data center",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOU9vUHN2aVZRcXV6MnlPTTFXSzJPdk16VmpsWTRrNkVSVjdGaXFDSEs4WkdDOXl0QlY1dmRtcDdKLVlEM0dZRndTQzlXZEV0U0hJc1VhQ2lFTTVZU05URllOMU10RVN5WUFiYV9OUzZPUmhmX1V0ODEzT1l3aWlHYllFbzNCc0lsT19faW5HUlpVa3NmRUdVV29Tcl9VMWMxZkxidGJoUnlyNTR1aEh1OTNXZG1hTFZP?oc=5",
+     "source": "WSLS",
+     "published": "2026-02-10T08:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1258779b2a29578b"
+    },
+    {
+     "id": "ae6a2f72f20507ad",
+     "title": "Tech Briefs: Corps of Engineers solicits public comments on proposed Google data center's effect on water sources",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdW1UTlVWdGlia0tTdjdEcWhHN1BPMUgxRjZaSTQyLTFfVGhOeVV0MjFBYUZMSUctWERkRHg3aUNqNmEwZXZHam1aVFliT1pmWFJHb250UWxuZ05SeTNmT180djBMLTlkVTN2RjlHclNybzJ1ZF81emJLZ051QmFjdDYyZ0xRMVROUUhzQ3FzbjNUZTFGTXloT0NRZ3h3akdteC1Zd2NoREFEdGpsOWtNeXFVdUhxNEVpa1RsYjVjZXhtMWFPY1Y5RmEwcVVKMjROQ3BLX2p5dVZhcnJfaVVYN0lB?oc=5",
+     "source": "Cardinal News",
+     "published": "2026-03-18T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ae6a2f72f20507ad"
+    },
+    {
+     "id": "51ae0300afceb9b8",
+     "title": "Google says it will break ground on Botetourt data center campus in coming months",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb1NZeklEbkgwOWNrWlBzNGVrRkFPV2V3SG4tNUNwT1ZPVlJ4UGlDcC01eE1JVWRsUU5KZk15VXFnWTFZbVFmWW5kMHFyTmFZUm1ZUlBWV0NnVzJNRnY4bTRWQ0h5WHJKWFhNMDQwTFdJemFHNjZ4OExOeGZ6QVJ1UGFQN0VlNkZfLXJDUXVKNWRjcDJPbF9WS2F0Z3VOVDJhV3Rka3NNUnFIQkRmaHBpMnM0ZlNMY1RrRkE?oc=5",
+     "source": "Cardinal News",
+     "published": "2026-03-27T07:00:00+00:00",
+     "stage_signal": null,
+     "cluster_id": "51ae0300afceb9b8"
+    },
+    {
+     "id": "ddbb948ab509b3c5",
+     "title": "Botetourt Co. residents pack first community meeting since official Google data center announcement",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTzc0eEF6aWRONm45OGVCTzZNbmRlMENkZmtvUEVKTS0xQmoteUZHc2VxYjR1OFpFdmxiVlZHWEZTZS1MRkxSMEJGZ3FHMmluVkV2V1dSVkJlSTVxT3lmb1o5TzNPQzF2YlNwWW43SklJT3NrYkc2cHQ0NU1xTVdKT2RmZWxiSDlxcHNrWXVrUHZDTFpldkpqRS1UaXJSS0lFT0lIdEdEU1RmV001cWZaRU52QVRmc00ydWItZWszd3hrQ2FOVjNDYmVWSWxFb3BmWWRxQVZrUktSUQ?oc=5",
+     "source": "WSLS",
+     "published": "2026-04-08T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ddbb948ab509b3c5"
+    },
+    {
+     "id": "673ce07a9b5d12e7",
+     "title": "Appalachian Power plans upgrades to serve Google data centers in Botetourt",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNW9SN0dhLTB4cW9uQ0NSRWJyUWtLZ3UyckZqS3JQSHhnOV9zLXo4UmlIaU1OOWNLcnBZd3I4VTdtdndpaXVLTTRKZEFsbkQ1OFRISk5zX045S2JTRWZFQlZTc1BNV2F2Y1hpd3FZckNRaW5qa2tIeEM1LUg5NUl5RzhoeFY0QXI4QTNTVmluWFp1b0g4TFdiMEpMemlENnNHNklmMjJRcFpJQmN1LVU5YQ?oc=5",
+     "source": "Cardinal News",
+     "published": "2026-05-15T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "673ce07a9b5d12e7"
+    },
+    {
+     "id": "c307a32350fc3873",
+     "title": "Chesterfield neighbors to question Google about planned data centers",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNkdpekx3ZksyY0hOalUwOFBlakx4elVYSGtwdlFna0Y0RUJVczlTSDh1YXhiVG9wQzRVakJpbU1wQjdxY3JjenpfbldiUEhENnM2WFZ4dGxNU2FVQk9RanFTckJvcnN2bmRqQng0ODVwN0M4UXNQLTBBQ2VJWEVtMld4WTZiMTdKLVk4Q1FkU29wTG1FQVp6c1hvV0NpRmZBZ0RhS1FHeGpVd1JBQmNJbHdoUDV0bUx6ZXhiQ2ZveGVvVDA?oc=5",
+     "source": "WTVR.com",
+     "published": "2026-07-12T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "c307a32350fc3873"
+    },
+    {
+     "id": "6969536862057bfe",
+     "title": "Google announces air-cooling for first Botetourt data center building, raising questions over new water use numbers",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd3htY2txX1E3NEJnZDVFQUE0S011bDF2YlMwY1cyRElnMk1YVkhGT2tJa1V4LXAyRjZjeGVTdzZ6Z21GMF9iOTFvQ25pakc4WHpyNDZhVEd2aEhEVUZxR25SZDg2V2dnTzY5NHZjNU80ZTFlZ1E5Qmt0clJaYmVCQWI4cw?oc=5",
+     "source": "WSLS",
+     "published": "2026-07-24T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6969536862057bfe"
+    },
+    {
+     "id": "9d74e530329adaff",
+     "title": "8 things to know about Google's proposed data center campuses in Chesterfield County",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSEZRSUNON0pHOUhoekY3SkJsbGtPSFNDOTc1R1F5cEZobjlGN2k5dHNiakVjakEtZ1FUV2FSM2VvOENiYzBrX0JyR2JGa3k3S2l6U2c3R0l1V0x0Q25DSWlCWDI3UVNRMENZbDhSMjR4NFozeHFiay1YWlRpU0k4bHVxOTZ3WDFqWUdvYURWbDJMNGhTNHhlUWxpbjFoSTh6SFJqRQ?oc=5",
+     "source": "Richmond Times-Dispatch",
+     "published": "2026-07-29T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "9d74e530329adaff"
+    },
+    {
+     "id": "acd091afae327c6f",
+     "title": "Breaking News: Google eyeing data center campus in Goochland’s West Creek",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOXZTNHNSMllIbHJqeXNjelJVVGpiSWZhZVpJX3RobGdOR2I2cU1sTWNiN3BOV0FPR3JXbFpRTEhhUFEweHg0d2lHNG5ZeURPb0JKWlBKclVqLVRFengwTEV6aF9nTmdmQ0ZNQ1VZYndzR2dtME52dnpfRi1XN2RiN1c5SDJxNU5EREVuMEVRckR3VlI3dXNfbXRva0NrQmEyQzI2aElPZnd1ME9EOTd5dXNR?oc=5",
+     "source": "Richmond BizSense",
+     "published": "2026-10-28T18:43:43+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "acd091afae327c6f"
+    },
+    {
+     "id": "cc2165c32a3196b5",
+     "title": "Google eyeing data center campus in Goochland’s West Creek",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR3JYQkc3YmJYeFA4YUV3VFRMOTd3Q1FRejVpalRIM2lEdXpQUFZVdUpibkphcC03UlBFZ3hia1F0UW9rN3ZrR25DNG5XUm9jTVpES3BDM0VEOEd6bm1aQl82Y0t3eThQd21QWnZvc0Fha25pX0ZrZ2dfQUtTemM1RGlMcHI5V0V6YkNIZDg5RklOVzB5QWdtQWJB?oc=5",
+     "source": "WTVR.com",
+     "published": "2026-10-28T19:28:28+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "acd091afae327c6f"
+    },
+    {
+     "id": "704d24d13cba23f8",
+     "title": "Google eyeing 1,000-acre site in Goochland for data center campus",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMUUtVGl0aDB3N3AwYnNTbWROY3A5bnBrU2tjUVdSV2tvSHBlQ0x6MW1NRDhhSnZadV9FekdlQTA5YmtQYUxwQldUZHN3eEpVdWhtemx0NHRKekRJY2FVdzRCUXlGeEYzcU14Ym5vZ0p4bFc5eE1XS18tdVZNalJDUU1RZWtSVlE?oc=5",
+     "source": "Virginia Business",
+     "published": "2026-10-28T21:20:32+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "acd091afae327c6f"
+    },
+    {
+     "id": "8e37d8820743f54e",
+     "title": "Google is the mystery company seeking to build data center in Goochland",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaXo1c3lNb19CVDJsSXRmeHNOWmhEWnQ2WnB2VTM1Z2pKbm1NUEhrMjAwSUIwY3VRSjBEUFdoa1cxOVdNY1gyUzFQbHZ2NFhlOGVHT1J2UFRUdFdyd09ZZ2xHajZLcXdpeDFaeXBRSkZNRmFrRVZzRHRxa3g1bmtLSmtqNU5nQ2Z2NkM4OWpGTkNzai1J?oc=5",
+     "source": "Richmond Times-Dispatch",
+     "published": "2026-10-29T21:45:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "8e37d8820743f54e"
+    }
+   ],
+   "first_seen": "2025-08-27T07:00:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2025-08-27T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "09a156f623a8f9ed"
+    }
+   ],
+   "events": [
+    {
+     "date": "2025-08-27T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "4cc1d611b51a265b"
+    },
+    {
+     "date": "2025-08-29T07:00:00+00:00",
+     "type": "Expansion",
+     "headline_id": "74c9ec19c54362a0"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 9.0,
+   "last_news": "2026-10-29T21:45:00+00:00",
+   "sources_count": 13,
+   "confidence": "high",
+   "hidden": false
+  },
+  {
    "id": "google-ia-unnamed",
    "name": "Google, Iowa (site not yet named)",
    "company": "Google",
@@ -14873,267 +15159,25 @@
    "notes": "",
    "umbrella": true,
    "umbrella_company": "Google",
-   "news": [
-    {
-     "id": "09a156f623a8f9ed",
-     "title": "Google announces new data center in Chesterfield, along with $9 billion investment in Virginia",
-     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaDBmMFpGa2V4ejNaZGQyX2ptQXdFVnN3WkJwaDVDMV9hblhBNEZvdl9HYTJIbDRncFdBamxDVkNRc1o2Mnh1OGdLX3VENU81QUNNejdXY2dzMk5UNURTSXVzVkM2d05IYXQ1aURLUzlGYVFGa1ZfRllqa0k4V1BpdktYd0JNQXg2Yll2aFJCaWVTUGJia08wSklJQXJCSmcyNExhM2ozcWVMRmdEWGFPdGtvS0pDM2MzSGY0NHhGLXlHR21lVm5HY2JLTVJiYzEwRTR2ZlFHYmJVUEhEQ0dnX09zMmHSAeoBQVVfeXFMUGdtRG4zQU9pQXJmeHpNVjN5Q0R6RHZ2QnNUekJMWWVHeHVtZVh4QTdCY1d6anR6WWUxVmI3ZkRIc2tES29yY0VhSWpGbDVhVUljRVBOTHZCcVdlVWFjS09hWGVxcExPYXNzYjhDSVI0aWhTbi1DbnNobTZCd2J5c1QxZ3NRYWxyRnJhbHhtUll0RUlSWXpEOWlFVXdyZFhRa1hYaEUweVBhRkJ3WDViU2dFWjBHa0tMa0pYV0NHV2MxNXhCTGhMTFdzYzlrTGRORGJSQmJGUTVvZDUyb1JPMWFqOHlPMnJDMm53?oc=5",
-     "source": "WRIC ABC 8News",
-     "published": "2025-08-27T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "52e2bf4cc9d1c50a"
-    },
-    {
-     "id": "392378ed235451fa",
-     "title": "Google announces Chesterfield data center as part of $9B investment",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT0hSWVdITFltZmpRaGlPVnVCUDhxQlhhUkp5T2tsaWlFc2s5Vlg0S19rM0Q4YWtYcHlfclZCTEp4ZklWM213SmRJaFVjRGlmWEh3dy0zdEtPazAzUHBlMWl3d0JPZm1UVDRYcUk1ekpJd2hycGxicEtSYURDa19sbWpRQnA4ZU1MbFFndDZEUGpsQzZVbnBLalhYbk8?oc=5",
-     "source": "Virginia Business",
-     "published": "2025-08-27T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "52e2bf4cc9d1c50a"
-    },
-    {
-     "id": "4493d3d261700927",
-     "title": "Google unveils plan to build data center in Chesterfield",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTDFlNUtHb0YxSEI0ZFJadmZYREduTGJZS1ZZeTFnOU11eEliU2pWUUhQRFU3NEF3NE9JMzlneXJOekd5REFoMnhpVTU3NXRnOGhVa0dsczJhLXcyNmV6MXFxeV9GR0lVN0tYTlVteEpBbjRySHhoUkNhY3Q0MmFWOVFBMTRjWmlGVG42T2dZenJWV1FnNFHSAaoBQVVfeXFMTm5LdDZQTVd1ZXF1M0Y3aFkwX2dJNkJDODVwaGhEZjg1bzMxSVRTUzZTa2FrUTF3SUpIZFd6S0UtdDBWOFBUWlVhNnJ4QzJCZ0l0Z3NHNTVpWm4weXVVNFNzVFFCb2k1ZUgxZTV2UUd6dUtoLXpMdGstRmxTMkd4YU5veXVycW9fT2cwdEYtZkw3dEkyTW5sQVlRclREUllDMjNKcXQzcl90aVE?oc=5",
-     "source": "WWBT",
-     "published": "2025-08-27T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "4493d3d261700927"
-    },
-    {
-     "id": "4cc1d611b51a265b",
-     "title": "Breaking News: Google planning Chesterfield data center as part of $9B expansion in Virginia",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeUZyRHJCNi1RVlRpN25JTEtjNVZqRjd4Q0tabTdRRVJNRWp4YnBjMldxeUMwR1luWXBaSUpjOWtpZVVoSVluQzU4eUdJUjJjN1hMRUFGOUhZcWxRckxJczFld2hJWjVrd1VpYjJnT20wRjlrMGxHVXZONlZTR2lnT0gwdWhnWHZuNXdfYjQ2bGY2OW5CVi1DT0dNbmkzcjhCcHhMN1o3Qk9WNUt4UkJhcV80Q3oySFJOUWNtYndHWlVxd1dac3pTSUVIYw?oc=5",
-     "source": "Richmond BizSense",
-     "published": "2025-08-27T07:00:00+00:00",
-     "stage_signal": "Expansion",
-     "cluster_id": "4cc1d611b51a265b"
-    },
-    {
-     "id": "52e2bf4cc9d1c50a",
-     "title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdDFacHZZZXpTUzhyNTBYS2JUSVRWZ1dNZHZqeFpHR1pqUExMTzBsUnNlbzZVcUJXWHN1YTQyekVFRkhHYURFdWxTQ0I1ai1hLTE2Y3lsemphWU9jR2NqYWVHV1ZCcjF0ZXBBX1pjczhSNGE2c3JUYTFXMmFYSUh0em04OHNQRVFCTHktTGVyMHV1TWFSSUZobTRsVDg1Qy1hTFhHRjRLT0xvQmJEUlU3N1U3dXA?oc=5",
-     "source": "The Richmonder",
-     "published": "2025-08-27T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "52e2bf4cc9d1c50a"
-    },
-    {
-     "id": "8e3e31f6481d69d0",
-     "title": "Google Expands Data Center Investment in Virginia, Doesn’t Share Site Specifics",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaVd0V0c3b0ZCOXdYbFNqVTgwVGxVXy1wRFpndjRZT1lYTE8yejNtN2gyUlhUZW0ydk9lZy03R055ajV4NXpndE9nVUxPZ21Id0x2MktfVWU3emg4UTR4djdsNUhGNC0tQ25yT09HYnNmME9JcUtyVXZ1aHRVOGhiRGpnMHkzT1BSbndB?oc=5",
-     "source": "Inside Climate News",
-     "published": "2025-08-27T07:00:00+00:00",
-     "stage_signal": "Expansion",
-     "cluster_id": "8e3e31f6481d69d0"
-    },
-    {
-     "id": "c0ade67cfe57e722",
-     "title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPS0VvSmo0TGItNmdnN2txaV9yYjVZd0JxVzJWUmZ5REJ0bzE5VWtFYWRMelVLWUl1Ti1yLUJpZTFNcktiNVBreHVvSVBYd2doZ2xtUFFUNW5iNHp5VkNEaENYUGhrc3NuZThESjVJV3ZMLTFtaDRSeEtYUnV3cEd4cGZnNjJ3RE5vRUZ6V1lQTlNrNVFRQWxpcHZ0NVN3RGZIek5VSV93TzhzY3Y3SVNsMm84bUJtTWxna25fQzk3ZE9rQ3NqOFMwMw?oc=5",
-     "source": "Data Center Dynamics",
-     "published": "2025-08-28T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "52e2bf4cc9d1c50a"
-    },
-    {
-     "id": "74c9ec19c54362a0",
-     "title": "Google expands Virginia data centers with $9 billion investment, but some residents feel they are paying the price",
-     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQU1ZPOTZVTkwweUZ6ejNSOFdiNlk1bzR1UVdHY2FLNndVSmJELXI4eExrRW04LWhEc09fQ3lkTXVpMjNBZGgtc2J3MGFBdmx4NnB5LVJVZUFkenhBb01JOXpUekVlU1V4cEJDZUg5RTZOVk9SU1lON2N5VlZ1RXdWMDdSaUtPRk96UnotRVB2QmllVXNUNkZZVXM1ZnROQkI1WkxxTVp5XzdzNnIyQVFVeVpPN3pDWDUxaEFWTGJONElqRGlaWldrSVVicWxQdlpJQjRJUng3VzNobTRmbU5JdXAtM1N1U0F3aUpWV19BQjFpVmtxRFI1TTVWXzRoQzJFNi1vXy1KdklCaWc?oc=5",
-     "source": "WUSA9",
-     "published": "2025-08-29T07:00:00+00:00",
-     "stage_signal": "Expansion",
-     "cluster_id": "52e2bf4cc9d1c50a"
-    },
-    {
-     "id": "504be80aa504a4ec",
-     "title": "Google files site plan for data center, moves forward with ‘Project Peanut’ in Chesterfield",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONFhDZVc0cDBKTWozSEFtUllhempiX09jci11LThwQXJjNmphT0tEbGlIQ3dlRHJHUE5xLTJ1Q3FpY0h2NEF1dGZRdURyNjY0ZjZ3UFZ4SDJjOURxVnd6b3ptVTAxSEMtTERnNU9HRXlmOGdPZ0lpMzNVYVV3YkVRQ09oV3dOZVczME5lRjRTa25SVjNUTnIyRmpvX09JWW1KS2FhTTVDUGN4X1E1TjM5TEJyOTXSAboBQVVfeXFMT1VSWlJvaml3RTJzTURBWE94VE1OeTQwRVJwaTlhOFJLazRtTnRpeUE4UUQyTDZoQXN2T1pWdG0xdC05d1BQTGlHLVFPZk5nT3dYUG9oaWpuMFpGM3VST0tsUDJKdExVQWIxd0dzSE9vX0IyUUtNbk1JX1dfdXNYWXl4SjBLeGFmMzRfLVQxUTU2NGlZT0VxaTktNFZzOHFHM1lGZ2FXNHI2MFJueE5kYjh6VUxkSnZnZG9n?oc=5",
-     "source": "WRIC ABC 8News",
-     "published": "2025-11-11T08:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "504be80aa504a4ec"
-    },
-    {
-     "id": "9d9220ec77be311a",
-     "title": "New details emerge as Google files Chesterfield data center plan",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFpaVEtsLWg4cjRVTmpUY2tqSElYTWhpWm5GMU1HalMxTjZmLWRwTkVDTV95VFlQS09tUFJ5YlFZNmJQeXc3SUNCa2Q3V0p5TURwUFRpeU9IQW9fcW16UU5oYzRnQ0Z5U1Rndkl3VHprTFVUVGYxNDlrNjNjS09lT00wQXU0VEpNNEJYOEY4RW8?oc=5",
-     "source": "WTVR.com",
-     "published": "2025-11-11T08:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "504be80aa504a4ec"
-    },
-    {
-     "id": "e519efe03cc8f7ac",
-     "title": "Google files plans for first data center facilities in eastern Chesterfield",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNek04Uk1LZlVTOHdhYlFXQkc2OEd2YjV4SWVOWFJGYmpjbTl1ZVh3YjFMTGhlWmgwNGpRNHlGMHFhSHloVGltMTkxU2dBVjIwZjdJQkk1SFNkRWl3VmhwT0laakwtUHB1dm1HUDVmQm5Tc3BMSkgyWjZhUld3Y2NnRmMzMUFCMUF2eWtpUmtwODNaemg3aUlhWFZuelpfMlllcmRxNkJ4VkdJZWhEd3hGU1BVcVZvSkk?oc=5",
-     "source": "Richmond BizSense",
-     "published": "2025-11-11T08:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "504be80aa504a4ec"
-    },
-    {
-     "id": "4d8672675c284207",
-     "title": "Google details plans for Project Peanut data center development outside Richmond, Virginia",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcmE4US1tLWM1akkxNEdud3NSUnRGZE9hb2lMQWY1T25tbmRIRTJBRlBFeE9DazN5VEE1MlhTSVlONUdhUnJYckpkZmcxWlRHbGRGdXl1Tk5GTkhESXRjWUxDOExrZ0NsN0JKb1ZLS2lCUElGYTI4TE1VSW50TjhMTmU3T2h0M2plUnZUZjdKRUtsMW5vWXFldTRNY3RQSkRDMWFfTWJsdlRWY0xkMVRPOFE5ZlBkYVFyLUxBeGFUUjhxcldnY2sxU2QySktZUQ?oc=5",
-     "source": "Data Center Dynamics",
-     "published": "2025-11-12T08:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "4d8672675c284207"
-    },
-    {
-     "id": "900c1ec0db5248f6",
-     "title": "Petersburg residents raise concerns over proposed 175-acre data center",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsWEhoQ25MZ1pwTmpOc1JBbnBpazVCUEp6YTNWb0IzZ3dVZExXcVZXR0ZDdzBneVBNTzhlbnIwWjZCcmoyVmNuYTBnbHlQX0N4TUQ3TW5XbHktWmpTX3JtQTBLbUoyZnFoWGVib09DeC0tbE02YmVUZTZINA?oc=5",
-     "source": "WTVR.com",
-     "published": "2026-01-13T08:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "900c1ec0db5248f6"
-    },
-    {
-     "id": "5dde754e380b6391",
-     "title": "Residents raise water concerns over proposed Google data center",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOUZ4N085TDlNRE55d2pIZ0FkbndqcEVwb2lyTGJTdzdDSjIxQTljQ3FIaHowbFRCcmtYLVgxbWwtbXZjR0J5S09abklVOWJHSDdTMUJWeUxORXBCaHJaLWlYS2IwZDhtVi1Ocmd5cUxOVkZUNGRqSm5NX0FXWUlRU2Z5NzZhYVFWdWl2Q3MyUkw0c0RRUW1NU1JaVENPd9IBsgFBVV95cUxOYmxvc205T3ZZRVFZX3VqX2hPSkhZV0RpTUYydzJDTmxtdTZIUVNUQW9tNDBOVXVTU3BmOFEzejZGTllsS2h3YkRIcy1fR0pJd1k0aFc0MFhJd1lEdDlOVnN2X2ZFZzlPbEtycXlTLWU4c1ZFVE9Bc3BMcXRzUFBHcElRMW5HMXg5M0dmMHNodTY2dnVJTnZDZndtSk1JZk1IeXZUQkJBVHRxa0tWc19lRGVn?oc=5",
-     "source": "WDBJ7",
-     "published": "2026-01-15T08:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "900c1ec0db5248f6"
-    },
-    {
-     "id": "1258779b2a29578b",
-     "title": "Botetourt faces possible $300M+ water costs for proposed Google data center",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOU9vUHN2aVZRcXV6MnlPTTFXSzJPdk16VmpsWTRrNkVSVjdGaXFDSEs4WkdDOXl0QlY1dmRtcDdKLVlEM0dZRndTQzlXZEV0U0hJc1VhQ2lFTTVZU05URllOMU10RVN5WUFiYV9OUzZPUmhmX1V0ODEzT1l3aWlHYllFbzNCc0lsT19faW5HUlpVa3NmRUdVV29Tcl9VMWMxZkxidGJoUnlyNTR1aEh1OTNXZG1hTFZP?oc=5",
-     "source": "WSLS",
-     "published": "2026-02-10T08:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "1258779b2a29578b"
-    },
-    {
-     "id": "ae6a2f72f20507ad",
-     "title": "Tech Briefs: Corps of Engineers solicits public comments on proposed Google data center's effect on water sources",
-     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdW1UTlVWdGlia0tTdjdEcWhHN1BPMUgxRjZaSTQyLTFfVGhOeVV0MjFBYUZMSUctWERkRHg3aUNqNmEwZXZHam1aVFliT1pmWFJHb250UWxuZ05SeTNmT180djBMLTlkVTN2RjlHclNybzJ1ZF81emJLZ051QmFjdDYyZ0xRMVROUUhzQ3FzbjNUZTFGTXloT0NRZ3h3akdteC1Zd2NoREFEdGpsOWtNeXFVdUhxNEVpa1RsYjVjZXhtMWFPY1Y5RmEwcVVKMjROQ3BLX2p5dVZhcnJfaVVYN0lB?oc=5",
-     "source": "Cardinal News",
-     "published": "2026-03-18T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "ae6a2f72f20507ad"
-    },
-    {
-     "id": "51ae0300afceb9b8",
-     "title": "Google says it will break ground on Botetourt data center campus in coming months",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb1NZeklEbkgwOWNrWlBzNGVrRkFPV2V3SG4tNUNwT1ZPVlJ4UGlDcC01eE1JVWRsUU5KZk15VXFnWTFZbVFmWW5kMHFyTmFZUm1ZUlBWV0NnVzJNRnY4bTRWQ0h5WHJKWFhNMDQwTFdJemFHNjZ4OExOeGZ6QVJ1UGFQN0VlNkZfLXJDUXVKNWRjcDJPbF9WS2F0Z3VOVDJhV3Rka3NNUnFIQkRmaHBpMnM0ZlNMY1RrRkE?oc=5",
-     "source": "Cardinal News",
-     "published": "2026-03-27T07:00:00+00:00",
-     "stage_signal": null,
-     "cluster_id": "51ae0300afceb9b8"
-    },
-    {
-     "id": "ddbb948ab509b3c5",
-     "title": "Botetourt Co. residents pack first community meeting since official Google data center announcement",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTzc0eEF6aWRONm45OGVCTzZNbmRlMENkZmtvUEVKTS0xQmoteUZHc2VxYjR1OFpFdmxiVlZHWEZTZS1MRkxSMEJGZ3FHMmluVkV2V1dSVkJlSTVxT3lmb1o5TzNPQzF2YlNwWW43SklJT3NrYkc2cHQ0NU1xTVdKT2RmZWxiSDlxcHNrWXVrUHZDTFpldkpqRS1UaXJSS0lFT0lIdEdEU1RmV001cWZaRU52QVRmc00ydWItZWszd3hrQ2FOVjNDYmVWSWxFb3BmWWRxQVZrUktSUQ?oc=5",
-     "source": "WSLS",
-     "published": "2026-04-08T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "ddbb948ab509b3c5"
-    },
-    {
-     "id": "673ce07a9b5d12e7",
-     "title": "Appalachian Power plans upgrades to serve Google data centers in Botetourt",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNW9SN0dhLTB4cW9uQ0NSRWJyUWtLZ3UyckZqS3JQSHhnOV9zLXo4UmlIaU1OOWNLcnBZd3I4VTdtdndpaXVLTTRKZEFsbkQ1OFRISk5zX045S2JTRWZFQlZTc1BNV2F2Y1hpd3FZckNRaW5qa2tIeEM1LUg5NUl5RzhoeFY0QXI4QTNTVmluWFp1b0g4TFdiMEpMemlENnNHNklmMjJRcFpJQmN1LVU5YQ?oc=5",
-     "source": "Cardinal News",
-     "published": "2026-05-15T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "673ce07a9b5d12e7"
-    },
-    {
-     "id": "c307a32350fc3873",
-     "title": "Chesterfield neighbors to question Google about planned data centers",
-     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNkdpekx3ZksyY0hOalUwOFBlakx4elVYSGtwdlFna0Y0RUJVczlTSDh1YXhiVG9wQzRVakJpbU1wQjdxY3JjenpfbldiUEhENnM2WFZ4dGxNU2FVQk9RanFTckJvcnN2bmRqQng0ODVwN0M4UXNQLTBBQ2VJWEVtMld4WTZiMTdKLVk4Q1FkU29wTG1FQVp6c1hvV0NpRmZBZ0RhS1FHeGpVd1JBQmNJbHdoUDV0bUx6ZXhiQ2ZveGVvVDA?oc=5",
-     "source": "WTVR.com",
-     "published": "2026-07-12T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "c307a32350fc3873"
-    },
-    {
-     "id": "6969536862057bfe",
-     "title": "Google announces air-cooling for first Botetourt data center building, raising questions over new water use numbers",
-     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd3htY2txX1E3NEJnZDVFQUE0S011bDF2YlMwY1cyRElnMk1YVkhGT2tJa1V4LXAyRjZjeGVTdzZ6Z21GMF9iOTFvQ25pakc4WHpyNDZhVEd2aEhEVUZxR25SZDg2V2dnTzY5NHZjNU80ZTFlZ1E5Qmt0clJaYmVCQWI4cw?oc=5",
-     "source": "WSLS",
-     "published": "2026-07-24T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "6969536862057bfe"
-    },
-    {
-     "id": "9d74e530329adaff",
-     "title": "8 things to know about Google's proposed data center campuses in Chesterfield County",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSEZRSUNON0pHOUhoekY3SkJsbGtPSFNDOTc1R1F5cEZobjlGN2k5dHNiakVjakEtZ1FUV2FSM2VvOENiYzBrX0JyR2JGa3k3S2l6U2c3R0l1V0x0Q25DSWlCWDI3UVNRMENZbDhSMjR4NFozeHFiay1YWlRpU0k4bHVxOTZ3WDFqWUdvYURWbDJMNGhTNHhlUWxpbjFoSTh6SFJqRQ?oc=5",
-     "source": "Richmond Times-Dispatch",
-     "published": "2026-07-29T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "9d74e530329adaff"
-    },
-    {
-     "id": "acd091afae327c6f",
-     "title": "Breaking News: Google eyeing data center campus in Goochland’s West Creek",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOXZTNHNSMllIbHJqeXNjelJVVGpiSWZhZVpJX3RobGdOR2I2cU1sTWNiN3BOV0FPR3JXbFpRTEhhUFEweHg0d2lHNG5ZeURPb0JKWlBKclVqLVRFengwTEV6aF9nTmdmQ0ZNQ1VZYndzR2dtME52dnpfRi1XN2RiN1c5SDJxNU5EREVuMEVRckR3VlI3dXNfbXRva0NrQmEyQzI2aElPZnd1ME9EOTd5dXNR?oc=5",
-     "source": "Richmond BizSense",
-     "published": "2026-10-28T18:43:43+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "acd091afae327c6f"
-    },
-    {
-     "id": "cc2165c32a3196b5",
-     "title": "Google eyeing data center campus in Goochland’s West Creek",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR3JYQkc3YmJYeFA4YUV3VFRMOTd3Q1FRejVpalRIM2lEdXpQUFZVdUpibkphcC03UlBFZ3hia1F0UW9rN3ZrR25DNG5XUm9jTVpES3BDM0VEOEd6bm1aQl82Y0t3eThQd21QWnZvc0Fha25pX0ZrZ2dfQUtTemM1RGlMcHI5V0V6YkNIZDg5RklOVzB5QWdtQWJB?oc=5",
-     "source": "WTVR.com",
-     "published": "2026-10-28T19:28:28+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "acd091afae327c6f"
-    },
-    {
-     "id": "704d24d13cba23f8",
-     "title": "Google eyeing 1,000-acre site in Goochland for data center campus",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMUUtVGl0aDB3N3AwYnNTbWROY3A5bnBrU2tjUVdSV2tvSHBlQ0x6MW1NRDhhSnZadV9FekdlQTA5YmtQYUxwQldUZHN3eEpVdWhtemx0NHRKekRJY2FVdzRCUXlGeEYzcU14Ym5vZ0p4bFc5eE1XS18tdVZNalJDUU1RZWtSVlE?oc=5",
-     "source": "Virginia Business",
-     "published": "2026-10-28T21:20:32+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "acd091afae327c6f"
-    }
-   ],
+   "news": [],
    "first_seen": "2025-08-27T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [
-    {
-     "date": "2025-08-27T07:00:00+00:00",
-     "status": "Announced",
-     "headline_id": "09a156f623a8f9ed"
-    }
-   ],
-   "events": [
-    {
-     "date": "2025-08-27T07:00:00+00:00",
-     "type": "Expansion",
-     "headline_id": "4cc1d611b51a265b"
-    },
-    {
-     "date": "2025-08-29T07:00:00+00:00",
-     "type": "Expansion",
-     "headline_id": "74c9ec19c54362a0"
-    }
-   ],
+   "status_history": [],
+   "events": [],
    "capacity_mw": null,
-   "investment_usd_b": 9.0,
-   "last_news": "2026-10-28T21:20:32+00:00",
-   "sources_count": 13,
+   "investment_usd_b": null,
+   "last_news": null,
+   "sources_count": 0,
    "confidence": "low",
-   "hidden": false,
+   "hidden": true,
    "investors": [],
    "builders": [],
    "suppliers": [],
    "name_hints": [
     "Project Peanut"
-   ]
+   ],
+   "merged_into": "google-goochland-va-2026"
   },
   {
    "id": "google-van-buren-township-mi-2026",

@@ -38,8 +38,74 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4037,
+ "count": 4045,
  "items": [
+  {
+   "id": "b701998ecf0e9a5c",
+   "title": "Study: Data centers’ power growth likely in handful of states, including Ohio",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOFAtbTFqVi1RTGNldVlNUGlYdFd2eHJLdVJjOHVnWXJiX3h1V21RYnJ4TkJjS2t4b1ZVZXRQY2NFTVVBNV8xSEtsSTJDYXdEMnFMdExXODRzUFBaZVN2MUpUcjk0bTNUMGxaYU9TeHZHVTM5MG9ONFFFZjZzclgxX0twVlBVdm02OHNySU9VU2k4N2EwV2QyUlNTRUxVdFlzaWFsRVkwaHhCdmlrRjBBcGhLaWFkdTNDajZPYzBhekRoeF96aXVGNzRPVDROUQ?oc=5",
+   "source": "Martins Ferry Times Leader",
+   "published": "2026-10-30T06:38:14+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b701998ecf0e9a5c",
+   "cluster_title": "Study: Data centers’ power growth likely in handful of states, including Ohio"
+  },
+  {
+   "id": "904f342078226820",
+   "title": "Nvidia weighs billions in credit guarantees for Nscale’s Anthropic data center - report",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUUpISUJTZENuV25aeEhUVVhuRF9VS2RmRWRON3hFRFp3ZFNZb2hyck13RHljN1pteWVPMlBvdnUwTVBYY1ZZdHdaaUJIRTh0VHNlajdJLWE5NXlLdUNUV0lNdlBGVEozMF9hOF9XejNNeEhFbG5hMWdIdjhlaGdGVzBUUXBZNldrV3VqZ3FZVTluU0hZQzJlLTF5dnk1ZlNPM3FOSVBpd3drNTJkSzhuaHpabUZDZHR2a1NCOGxCY1VWWXVjRm9qNXphWmozT1c0dy1QX0QxaHBrUFBoTDdBQlh3?oc=5",
+   "source": "TradingView",
+   "published": "2026-10-30T05:02:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Anthropic",
+    "Nscale"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "cluster_id": "904f342078226820",
+   "cluster_title": "Nvidia weighs billions in credit guarantees for Nscale’s Anthropic data center - report"
+  },
   {
    "id": "2e5df156560ea934",
    "title": "Hotels, housing and headaches: Abilene prices continue to increase with data center construction",
@@ -398,6 +464,45 @@
    "cluster_title": "Dresden advances proposed data center regulations"
   },
   {
+   "id": "f16cbc83fd598908",
+   "title": "NVIDIA Considers Credit Guarantee for Nscale Data Center Project in West Virginia",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb1NwcnZXbDNaOVRfMXFjRmpGakpMRVRqRllVMTVHZnFyUldSbURNeTJGdVc5WGlOM1ViMUtmLUZiU1ZncnB4V3J1QWJ5V3FpVVVUN244ZjBqY1ZZaDhWRlVsbEp3V2ZfcnhTVGhqUEt1RHVCY3BKZkU5YUJWQkJFZ283QW9wZXhBM1oyaHlyMG9KZXFGLUlqSF9LWGNyQmotYkRzaTNrYnMwb3FuMklxaFFnRFRkUQ?oc=5",
+   "source": "KuCoin",
+   "published": "2026-10-30T02:07:04+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Nscale"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "cluster_id": "f16cbc83fd598908",
+   "cluster_title": "NVIDIA Considers Credit Guarantee for Nscale Data Center Project in West Virginia"
+  },
+  {
    "id": "a2c4f96b7e8c5a44",
    "title": "The Catch in Turning Bitcoin Mines Into AI Data Centers (Every Building Is Made for One Job)",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBUenVwaTdjNWJWd1lzemxjMnk5aExlNjBKMW95TUFLa0lVbHJYd3pPR3NIbjk4NmEyLU4tMGl3X24yN2taSkZjU1Zxa2RISWhYY2ZtamZ5b1N1TU5rOGRNWDZhRWY4T3JwWnNPMHRLd3pqTW9Uci1R?oc=5",
@@ -554,6 +659,35 @@
    "suppliers": [],
    "cluster_id": "0ff988ac1ae482be",
    "cluster_title": "Texas city advances 664-acre data center as neighbor says, 'We don't have a vote'"
+  },
+  {
+   "id": "08ef2c28e32ddb2a",
+   "title": "Nvidia Looks To Backstop Nscale’s AI Data Center Debt",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUWNCUTlaMVVseFBjeDB6THhaVzlUa3N5aGdDcUo5VFdRa2IySFlBTnozc3BPRnJrUTBXQ2E0eW92dEwzNnVWZTVNS2NuTkxWbkZvZGFMVXU4MkppYkJMeC1MOVFsb1hhYmZpX0Z5RjlPRU1KT1lRcE1kMmNRbDRQN051NDdxUlJf?oc=5",
+   "source": "Finimize",
+   "published": "2026-10-30T01:05:26+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Nscale"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "cluster_id": "08ef2c28e32ddb2a",
+   "cluster_title": "Nvidia Looks To Backstop Nscale’s AI Data Center Debt"
   },
   {
    "id": "d28f6807226cb400",
@@ -887,6 +1021,41 @@
    "suppliers": [],
    "cluster_id": "ee3bf6c3020070f4",
    "cluster_title": "Judge releases shell company from suit over Birmingham data center"
+  },
+  {
+   "id": "d814cb55526faea2",
+   "title": "CORRECTION - Early Engagement and Collaboration Move PNK Group’s Pennsylvania Data Center to Approval",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPQUhCcWtLTURPeFRzLV85aHFEWVZZNVd5R0ptWWViU05ZZllRbV9peXdRcVNEVDQ2ZlVPTkhtVWl6QTR0R0pEbkVCVmkyMGNqdEZjaWtyZWkxbDZxa0xtM0JtZlR5aFBEQV9FVWdwOFNfNTRxSTNZRmNfaWZTYlgzRHlCZ2tXSFRkX3M5cGRKN2hVLUpVeXV6Z0pWSlRQbjFnOGtETDFlaXI4VHMxZWxBV0trXzdqbFFDQ2NDRmN4SzkzVzJJQlZTa2c1VG81OFFPZ3E4Q3dzNmNJZUZOYnR0VUhSbldVUnAyTENjQ2hxNWZEeGtGMGRKNFhjMDdYa3ZRSWfSAYcCQVVfeXFMTmV3ZUFkeEIwR21ObDY3TmFWMkpjZkZFal9heVVKM0R4a0JmQ1dnZVdlXzdoelpJQ2ZzZU5CTGFSMEZuSU1kd2I3cUxMWElnQTgyX2dCeWtqcXd0c0ZuZzlHQW4tX21EWEYxV1doTnBNQnBWQXoxWGdOdGdha0d1WU9NSC1Yd1o1b2NTMDJwNFhVREJZUmxUZk9jOTZDM3h1TkRocW95enM2b3RGUmVZcnJCcTI0dFRzY1FrUFhOMkZwT3lHbnpGUEZqT2ZDcXVfTFN2WXg2TkVYaVZCWjFqVzNhWDZrenNQY0w0a0JhS1VfdmVRbmx5X29RT1ZESTdkQ04tb3dmbnM?oc=5",
+   "source": "The Manila Times",
+   "published": "2026-10-29T23:54:50+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d814cb55526faea2",
+   "cluster_title": "CORRECTION - Early Engagement and Collaboration Move PNK Group’s Pennsylvania Data Center to Approval"
   },
   {
    "id": "cb3ff187d1633f10",
@@ -1694,6 +1863,44 @@
    "suppliers": [],
    "cluster_id": "83c4af1db2825a29",
    "cluster_title": "Foxconn still invested in shifting GM plant to data center components"
+  },
+  {
+   "id": "8e37d8820743f54e",
+   "title": "Google is the mystery company seeking to build data center in Goochland",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaXo1c3lNb19CVDJsSXRmeHNOWmhEWnQ2WnB2VTM1Z2pKbm1NUEhrMjAwSUIwY3VRSjBEUFdoa1cxOVdNY1gyUzFQbHZ2NFhlOGVHT1J2UFRUdFdyd09ZZ2xHajZLcXdpeDFaeXBRSkZNRmFrRVZzRHRxa3g1bmtLSmtqNU5nQ2Z2NkM4OWpGTkNzai1J?oc=5",
+   "source": "Richmond Times-Dispatch",
+   "published": "2026-10-29T21:45:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Goochland, Virginia, US",
+     "lat": 37.6843,
+     "lon": -77.8853,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8e37d8820743f54e",
+   "cluster_title": "Google is the mystery company seeking to build data center in Goochland"
   },
   {
    "id": "2970a37926faae15",
@@ -10737,6 +10944,32 @@
    "suppliers": [],
    "cluster_id": "8707e9e88434d06d",
    "cluster_title": "Experts urge Oklahoma lawmakers to weigh data centers’ economic and strategic benefits"
+  },
+  {
+   "id": "b66637283e7b422d",
+   "title": "Senate candidate Michael Whatley says data center opposition ‘isn’t organic’",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPY3VpSVAwbmpVQ1JvVF9rVU1rM190MVVxc2h6YnRXWUJ0RmdkT2pyWERRUFVVMllacHFKX2M1d21Cem1CRDdTQWdQMXdKbWpHRHZyZFUwQlhOWDdUVEp4a0duT2R2amNkQjA4Z0hfOVIzRGJfZ2RMZ0RDdnZSVVJTLW9JUUxGQkxQNVEtMVgxdXFHOHI1aXVRTnM0TkdoOEMtWVJJdVBib3lvY2JuN3pj?oc=5",
+   "source": "Cardinal & Pine",
+   "published": "2026-10-28T20:27:53+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b66637283e7b422d",
+   "cluster_title": "Senate candidate Michael Whatley says data center opposition ‘isn’t organic’"
   },
   {
    "id": "f6f06b661f0effb8",
@@ -25893,6 +26126,44 @@
    "suppliers": [],
    "cluster_id": "01d2ce7b49607a5d",
    "cluster_title": "County continues work on data center zoning, hosts open houses"
+  },
+  {
+   "id": "aeacfb1bf44af34a",
+   "title": "Stream Data Centers pulls out of $800m South Carolina data center, says utility power would take too long",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQQ2JGdXpRUC1rdHhlYTVneFhXOW4tNU5wcVhSRXR0ZjRqMml4dGJVc3VDdGhiTGhQNUxxMEdYT01LbXc1eTc4MTU3dC1xWGczMERFZXVnZk1seUFtWkRqTGRqa0l3NEFXQ3lzeVBqeXBGSk1fZGhiSUZpYWE5OGtHTU9YcUVaYnBvT3hIVko0M0RmX1VvczhzZzIzWHVQbWpoVUdTU1RTZVdzRXZkMDBhVVdRQTRhaDZ4TWc3OW5GQnhvNWgzX2dyTkVmc2drT2lMQzRsRlZadzUtMkxuYVBTVA?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-10-27T07:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "South Carolina, US",
+     "lat": 33.9,
+     "lon": -80.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SC"
+   ],
+   "state": "SC",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Stream"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.8,
+   "cluster_id": "aeacfb1bf44af34a",
+   "cluster_title": "Stream Data Centers pulls out of $800m South Carolina data center, says utility power would take too long"
   },
   {
    "id": "0dbfe920655a3c51",
