@@ -38,8 +38,129 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4131,
+ "count": 4145,
  "items": [
+  {
+   "id": "e5a7dbf4eb988e52",
+   "title": "Moog Introduces New Liquid Cooling Pumps for High-Density Data Centers",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVzZ6U2s2a1dQTmlLX3JuNkJoUXpZbHpwdHJTSm9QN2RHaGVwcjBuZlBRVzdnTEZwWWUtWjlXQ1lUS3dqUkZDOUNET0J6QmVaM3ZXQjUtNkd2UW9PZXl1M0xCLVJFaFFKSmpPN0VWajVkOXNVY0xGM29PQ2JJT21JSGxGeHVGenlXWm42OUVVS3hxdlVIVGI3TDBVRVUyX3pQam80ZGl5cGhFUjFic28yQ2RxMXZ3X1RXMWhWRDhmblJ3WWVmRW5EaVpXUEhuNkViM0tz?oc=5",
+   "source": "Data Center Frontier",
+   "published": "2026-10-30T16:37:16+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e5a7dbf4eb988e52",
+   "cluster_title": "Moog Introduces New Liquid Cooling Pumps for High-Density Data Centers"
+  },
+  {
+   "id": "366505e61aecfd0e",
+   "title": "JEA faces massive power requests from data centers eyeing Jacksonville",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVXI3UVpMZ1BCUlJCbG1XSm14ZVdSb1F1ajA0QkdNQ2swbFdGbVdKb2sxYlR1WmRjdXFVVUJzWDVaa28zTTNidzR2X1g4SzNacXlGSEUwS2NSMWlDU3J5ME52OGtNVEVTc2dLaTZlVWk2czBZcUhqVVlmTV9JakNVRHNxbUhiTkswTG1hNDNRVjhCdGhWNzJfcEVZQ2lXVGFZaU5DV0RoZV9TaUF1TWtXUWhJVkxRY0kwZVVV?oc=5",
+   "source": "Jacksonville Daily Record",
+   "published": "2026-10-30T16:37:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Jacksonville, Florida, US",
+     "lat": 30.33,
+     "lon": -81.66,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2ca6dc5c71c62a8c",
+   "cluster_title": "I-TEAM: JEA faces massive power requests from data centers eyeing Jacksonville"
+  },
+  {
+   "id": "2f29557400da09ee",
+   "title": "Distaste for data centers brings bipartisan ballot blitz to Ohio",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYVB2NUVGSFpHWGlxaGxYVDFMcnlfMzBMeVBIaHZBQV9GbWpXQm5mZHpCMktOcFFRSmhTNTAzM2d4N2VBVjhsZzZxY1JEOWd6QzlxTElvZmxPeFZjVWFRNXF6TjN2bWQwbG5EaWlFS3N2eGd4UzBOQ2pxUm5DaFJJM3dFbHdveDB3MTl0c1NhdGQxOGdXTkJSV0VFZ0ROWTVqaVU3cjVTLW5URUpTbTVjSVU3Z2k?oc=5",
+   "source": "Politico",
+   "published": "2026-10-30T16:14:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2f29557400da09ee",
+   "cluster_title": "Distaste for data centers brings bipartisan ballot blitz to Ohio"
+  },
+  {
+   "id": "0c9feec9b151db7f",
+   "title": "Lawmakers demand Burgum halt data center push on public lands",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdzB4YW03SGtIYzRqWHZhNkRTdFd2LS1aRnVPYXJWbjRmX0FLZEdsODB3c0VwazBVODhUdWJLdVJKN0pXdEp5ZlhFS0hZVUxta0k0ZWZkU21YUG0wTUlIWnFmeXZLaU1weHRpMU9aeGIxYkpqZXhmYWVjNVNickV5c183Y1c5bjhsOF82WC0ydjBHVW5aZFZxZVBlRkhfVUdhUEE?oc=5",
+   "source": "Center for Western Priorities",
+   "published": "2026-10-30T16:07:51+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0c9feec9b151db7f",
+   "cluster_title": "Lawmakers demand Burgum halt data center push on public lands"
+  },
   {
    "id": "9c93da189d19b90d",
    "title": "New Mexico county backs up to $165 billion in AI data center bonds as opponents seek statewide ban",
@@ -78,6 +199,30 @@
    "investment_usd_b": 165.0,
    "cluster_id": "9c93da189d19b90d",
    "cluster_title": "New Mexico county backs up to $165 billion in AI data center bonds as opponents seek statewide ban"
+  },
+  {
+   "id": "40973b09e81a6e61",
+   "title": "Largest US Grid Seeks to Hold Data Center Power Auction in March",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcTR2c2tnS3lLeC0wekZ3SmlzUlFyel9ieVd6WG5ZTXF1TTR1M05YaXVKYllUcmQ3OTZwYjBnaFpkWmgxN2N4OXFiMnZmZXVrMWU1RGdFQmV1TEdnZnRSR0c2VE03UDF3Y2N1Q29NdVkxcmpWLTB0X1ZwNDIxSXhfQjd5RUxzQmNabEk4VWxMcWxTbmRlSWM1MUhsY3czbmhvSHJIUGQ5NzVMTlo0dTBlWDI2MzR3Zw?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-10-30T15:50:32+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "40973b09e81a6e61",
+   "cluster_title": "Largest US Grid Seeks to Hold Data Center Power Auction in March"
   },
   {
    "id": "3f0b72871a182802",
@@ -178,6 +323,77 @@
    "cluster_title": "Powering Growth: How Utilities and Data Centers Are Navigating the AI Power Challenge"
   },
   {
+   "id": "8bb8759c0be0a523",
+   "title": "West Virginia expands data center footprint with streamlined approvals",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTkp6blE0Z0k4Q0JoeWU3YTlnLXV4aThPa1pRaHVjOXRJcTVNbDd0akloMVNpTkJuMjdxTzBjM0Fpem1qdnpJOU91aml1blJYUW1jMDc5RXBMVmJCN3dkYVAtdktwWEVnSGpyZW1VTUJ1RGdYRUt3LUJzVTItdkNhcDMwV1RJZ2NKdmpQT19iYko4clVLcnFsU1JIYW9KMUk?oc=5",
+   "source": "Crypto Briefing",
+   "published": "2026-10-30T15:20:33+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Expansion",
+   "tags": [
+    "Expansion",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8bb8759c0be0a523",
+   "cluster_title": "West Virginia expands data center footprint with streamlined approvals"
+  },
+  {
+   "id": "6b26d8f2f87cfb39",
+   "title": "Data Centers Are a Political Third Rail. West Virginia Is Grabbing It Anyway.",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRVBtOE5OVHQ0SmNlUjFpam9yWGtpVzc2SU1nLVNPZ0ZPdXYwQzdSMTk5akhFb2c5Q1BqMm1mdnpWUXllYlRLSGhLZEpleTNNVjd5UGpHQzdiSDU0MmVMbUpVeHFIRklYLUc2dGNQRmk0ZEtIck5xNjBFWk1Hc2RabFZmZVdEejFUekJpMXRHQkNyZjVxaDhhUnpUYlJYaUZf?oc=5",
+   "source": "富途牛牛",
+   "published": "2026-10-30T15:17:02+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6b26d8f2f87cfb39",
+   "cluster_title": "Data Centers Are a Political Third Rail. West Virginia Is Grabbing It Anyway."
+  },
+  {
    "id": "f4c25bee303df4c4",
    "title": "Thieves steal $23M in data center cargo bound for Georgia and Texas after ramming escort cars",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbnhmbVZLQU1kWUgzUEpwckJZU1prNDlUU0FFSGRGcnZjc1hXS2F5T0tqUGpXWVlqT0V5TkxSTWtfT0lTNHN0UWxIVjE2SW5fcE5XSFBfaXBYTXp3VXdNVHVCMW4zaGFOa1BWNVl1d0tQcmZhR1lCOHVlZy1rVTEyZkd6TQ?oc=5",
@@ -256,6 +472,42 @@
    "suppliers": [],
    "cluster_id": "e0d29fc51446291e",
    "cluster_title": "Virginia lawmakers still divided on how to manage data center growth"
+  },
+  {
+   "id": "9d60157bdc8da22f",
+   "title": "West Virginia groups and local governments demand data center oversight. The state is continuing to develop them anyway.",
+   "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNWXptTllHQU16ZWlpMVVhU1l4NF9qY2w5ejlfMnNvZG1tUS1iQTc4QzVmYkFPZ3gwZ1p5MkxoRnVBS1NJdjlNc2ViTW53YnZCOThIaXZCaEM1NTk4TmhxazZoSl9QZXZ0Tm42enA5SGxTRWVsNEJJdXhoUThjck03Y1NjQ0RhVUxNS0YxVExBYTk1RF9wOHo2TjhsMlBYT2ZvUWpMdGU1LWlMMk5FLWJvdXJQLVdKcHFKRmgyamd1VVh2VllMZ1BVdnRSNWRPMEpDclNiQWtOLVc1VzZNakdmMUpoc19Zc0FCbWpmMUtJelltYTZ6NDJRRmtnaXIxVzR2ejlyUFVTUXF0MzEwa1lzV3lZZW9CUQ?oc=5",
+   "source": "WV News",
+   "published": "2026-10-30T15:00:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9d60157bdc8da22f",
+   "cluster_title": "West Virginia groups and local governments demand data center oversight. The state is continuing to develop them anyway."
   },
   {
    "id": "1e76006035ea692f",
@@ -521,6 +773,30 @@
    "suppliers": [],
    "cluster_id": "02aa2eb7bad23055",
    "cluster_title": "Pennsylvania House Backs Study of Data Center Closure Costs"
+  },
+  {
+   "id": "dc1c0023d478dbce",
+   "title": "Port Angeles Planning Commission gets first look at data center rules",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFdra210ajJQZXZ0am5sRElSQW9EUmRWVmxvQ05ibHdjdUlOYkNVWXE2bEplbmtTeW9VWVU4aFVBQ1VLZlk4cVMwX2xYOGNJVWp5dm8yX2tZNlI0b3ZCV2Rhd0REbjRILXhHejNLN3diS2tEZzluM2ZMWEVTWmFrZ0tKZnVWS1RUSjMwSDVEYUNYdV85MFhXR2RaUDl5RTZHdjFnU21OekFpcURrUHhDdEZfTQ?oc=5",
+   "source": "My Clallam County",
+   "published": "2026-10-30T13:42:07+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dc1c0023d478dbce",
+   "cluster_title": "Port Angeles Planning Commission gets first look at data center rules"
   },
   {
    "id": "2a251bd41c4e0da0",
@@ -1003,6 +1279,52 @@
    "suppliers": [],
    "cluster_id": "4396fd83bf619030",
    "cluster_title": "Maine’s data center revolt will decide who controls the Senate"
+  },
+  {
+   "id": "bee29dd780f589c0",
+   "title": "Backlash against AI data centers threatens GOP’s grip on Ohio, Texas",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUFlxejdxN2RUWFhxMVA4VHYtTENSNkhjOU1SVUxSU0lNTTZWVVl4WW1SNG84UlJDTHk3N2RmckUzbVpVQUdzMENkV3pTdGotYnBCMXVzN2JsdFR1RGdCbWE1X2VoQ0JYSDhTcjhiaXROWjdKZS1lRVFEcWJQZnNfZUFKdUI0bTlj0gGOAUFVX3lxTE1BNTFCUWZLSElfQU81NjFQQ041SkZDaUNOMlc0N09wS1FsdHJ0SUthR3Blbm9KUHdnSENCUWdLd2FEQnFwbm80RGM4SWxDMlRUNndkVnluZ2JYb1dQN0FOcnV5QXJMZGxUSXdicTZBQVRVV3lpQUNOb3BUdF96SkFFS2wwQVU5NkM4YUQ5Wmc?oc=5",
+   "source": "The Hill",
+   "published": "2026-10-30T11:00:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH",
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7cd290e583efd48e",
+   "cluster_title": "Backlash to AI data centers threatens GOP’s grip on Ohio, Texas"
   },
   {
    "id": "b60428bfe81ddca4",
@@ -1493,6 +1815,41 @@
    "investment_usd_b": 2.0,
    "cluster_id": "30671aec93b90322",
    "cluster_title": "Data Center Rules Hang in the Balance as Voters in 10 US States Head to Polls; Amazon's approximately $2 Billion Project Rattled"
+  },
+  {
+   "id": "63200f0fff45aa9a",
+   "title": "West Conshohocken Data Center Bid Faces Borough’s New Zoning Rules",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNLVFEMklTekktQjYzRUxWbU9JZlFEWmNhRWkyOXlWWHF0SkxkemJ4MklhZTNjdGN1ZVA4VklfcDhrTEVPdzVqN1NUSDlqLVFPN1Q2ZWZYQkpBcGtVMTE4dGl5MjZRd2pPZFdjeGNua0xJS3RqSzhNVkc0SC1mUXFjalFEZ3A?oc=5",
+   "source": "PHILADELPHIA.Today",
+   "published": "2026-10-30T09:15:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Conshohocken, Pennsylvania, US",
+     "lat": 40.0793,
+     "lon": -75.3016,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "63200f0fff45aa9a",
+   "cluster_title": "West Conshohocken Data Center Bid Faces Borough’s New Zoning Rules"
   },
   {
    "id": "22a14806832238b0",
@@ -3418,6 +3775,41 @@
    "cluster_title": "Franklin County residents remain concerned about data centers after Project Flash"
   },
   {
+   "id": "87ddb9db88c9e4c1",
+   "title": "Hermantown announces changes for City Hall prior to rescheduled Data Center meeting",
+   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQRzZVWTJ6VDNHQTNrWFk4ZW1CMWdYR3pEblNNZUNnRE81Y2VGeWt3VTBzcUZfN01GXzl3NF8zcU95ZTNEV0htSVVRVGJ5R1JGTDV4NFh3Mk9KYVZ5cFJyUEJNSWtBSHI4RG1qaVk5N1laMUMteGFMVE1xemFXTnF6UUwxcXc2NU00TlBPQ2lsM3B1SzdkQnZoNFNseGFpR05SdktCRXVaX0I2ZTZsTmNQdnhqX0tkd0FtVmc0WDNXZU0xSmhFQzc1YUJBZ2Y0NXFQUzlTREczZ1prREc2NW9hbTIzR2JLV0FfVG1qVlZmaGhsTmNVZ1hDT2Nxc1plUVZfQzZOVTRscw?oc=5",
+   "source": "fox21online.com",
+   "published": "2026-10-29T22:46:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Hermantown, Minnesota, US",
+     "lat": 46.8069,
+     "lon": -92.2382,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "87ddb9db88c9e4c1",
+   "cluster_title": "Hermantown announces changes for City Hall prior to rescheduled Data Center meeting"
+  },
+  {
    "id": "c7ba6f3e074cc2be",
    "title": "Out of state developer looks to build northwest Ohio data center",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVEdLRWd2QzRYcG10aUpFTkNqT2c4bEVXcFpFdzRDd3h2ZExTUWEwMThWLUNKYXdXMXV0Ymk3OEtiQzlmWEJlRlAxWVNJTGxDalVOWnhUX2NZb0ZuLUIzdnd2ckNtZ2QzNS1LWGNwSVBOdGhWMXM1WG9iVnZGVkNuc01MVGI2M1BOMlRGcUY0eHdUcEJXX0lGeV8teWV4WC0tN3F4SEpWWXNKTVJOazVjbWRVaVhQdHlVUFNnc0o1WGdYcXRUS1JxZkIyamJlc2xmMTBiM0dILXhYNXM?oc=5",
@@ -4726,6 +5118,31 @@
    "cluster_title": "Transport of data center transformers through Porter County raises alarms"
   },
   {
+   "id": "79a7d0762ffcc24b",
+   "title": "Public hearing on proposed data center on Mike Padgett Highway moved to December 7th",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWWlQYXptaWlTbllEVjBkRlh1UU5yVmpERjN5NWRaeFZhd3NfVGxXcXUtWlRrRmpRV1RubkxEZlRaVE5uVUMyV0g4Z2U3a2pkZmVPVjFsYWN4NUI1clViVXp0MWxpOGJ5TXhmbk5XSG01UVRKT0t6TXJGMVdLSWRDVUk5RWV3c3NoemM3dHE2R1Z0NGhsc1AwSHFTbTBVenVoczgtQndaU0JwRkdfb2dPbWhvUUVUMDhLQ0FyV0dR?oc=5",
+   "source": "WJBF",
+   "published": "2026-10-29T20:43:29+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2ae0107ab4c61a29",
+   "cluster_title": "Public hearing on proposed data center on Mike Padgett Highway moved to Dec. 7th"
+  },
+  {
    "id": "7a2d4e3a71db4c27",
    "title": "CenterPoint Adds $4B for Houston Data Center Power Demand",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUkZIWWZMRWpvYkhuSFdZU0tTX3daaERQZDdfbm9pODVmamN1SmpRUEFSNzIxVk1jVEhVblZyY196TzRrWnN6cndOYmRxd25hamJ4LUlXa2o2YUdCRzFWMENqZzhpM25ueU9FTmtIeXhKUE9nYlpOQVpVWjFXZnVEZ3ZzTjhaWkRIamVlSDNuSjBBUFJvQzVpV2xJYWNiRzhWX1lxbHQxcUg1UQ?oc=5",
@@ -4934,6 +5351,31 @@
    "suppliers": [],
    "cluster_id": "8b3bab97efea4631",
    "cluster_title": "Did Salisbury approve a data center before moratorium? Officials disagree"
+  },
+  {
+   "id": "2ae0107ab4c61a29",
+   "title": "Public hearing on proposed data center on Mike Padgett Highway moved to Dec. 7th",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRzBjXzNNVUlNYmNuV2RZY3RPMFYyOUlxV0lxWWpteHYzWUxEaU5qWk1jNVJEdmlvMm1hUVU3aW5qYlBSelg0QVdwNHA2QTBRRlItOWwtcUsyVkFmazdLYlBPdmtSWkYybENtVUdheGRCMmdKbzZTRXV6d0V5STlmWEpPbzNNZjA2T09zclNaTk5KSUdSaVZobTFhc0hhbVgwTXpGLXpoTHYzX0nSAbABQVVfeXFMT0lqMnd6WlEzN2Q0RnJ4d2pLekc1c0ZBeWV5VGVJLTlfSGljS1JNbTFzUnkySkFHRFlZdGpIdTVTZDBodk1wWGdJMUo5NzBxcUZURjNWX0ZESTIzR3JNWDVVREFBZlNoaE0xdjEzN0p4MS0zV0lpX0t6YW1sd3ZFcHpUUVctU21YeFFJUktIV2I5dVhXSmFOTHNPZlNYbXJxWE1HUVZZRnJBU2stWmY3SHM?oc=5",
+   "source": "WJBF",
+   "published": "2026-10-29T20:29:26+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2ae0107ab4c61a29",
+   "cluster_title": "Public hearing on proposed data center on Mike Padgett Highway moved to Dec. 7th"
   },
   {
    "id": "c71fb645331d5dda",
