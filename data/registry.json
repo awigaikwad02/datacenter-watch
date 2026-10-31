@@ -55,7 +55,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-31T05:08:57+00:00",
+ "updated": "2026-10-31T06:08:56+00:00",
  "count": 635,
  "visible": 633,
  "records": [
@@ -2211,6 +2211,15 @@
      "published": "2026-10-21T18:38:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7915b37c7de43180"
+    },
+    {
+     "id": "215b50fc7a1238bd",
+     "title": "Entergy files request to build two battery storage systems as part of West Memphis Google data center expansion",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWFY1dER6ZHFrbU01enh5bXdrUkkwLUtDcFV4Q2ZMZjlnOFFtbjBFUEdCUU94YUFaa1ctZVhBb1lELXh5eFFNWVhWWVVUdHdaY0VYT0JNNzVvVER0OFowcUdrcFVlMjZnaWpQOGtaMTJZOEdwN2FsT1NEV2Iza0lfdjY2RHpqZG9VYmhITzdMZUlPYkNGbFFiaGVPYjF3Ukg0eU1XdGliUVhLbEZLNVI5YUs5Z1o4NnlzN3R5V2RtSjhNS0JLbG1YQXd3NFBKcDhUdDNGT0VB?oc=5",
+     "source": "The Arkansas Democrat-Gazette",
+     "published": "2026-10-30T22:51:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "215b50fc7a1238bd"
     }
    ],
    "first_seen": "2025-05-23T17:16:01+00:00",
@@ -2261,12 +2270,17 @@
      "date": "2026-10-20T21:09:00+00:00",
      "type": "Power deal",
      "headline_id": "db10705f0599c173"
+    },
+    {
+     "date": "2026-10-30T22:51:00+00:00",
+     "type": "Expansion",
+     "headline_id": "215b50fc7a1238bd"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 4,
-   "last_news": "2026-10-21T18:38:00+00:00",
-   "sources_count": 13,
+   "last_news": "2026-10-30T22:51:00+00:00",
+   "sources_count": 14,
    "confidence": "high",
    "hidden": false,
    "imported": "2026-10-26",
