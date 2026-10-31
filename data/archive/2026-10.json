@@ -38,8 +38,48 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4295,
+ "count": 4304,
  "items": [
+  {
+   "id": "46a2322fd947882a",
+   "title": "Nvidia Weighs Cosigning Debt For Nscale's West Virginia AI Data Center",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMXFXczdfZHg2eTNWNGVfeDRCM045b25jLWlvNmVDcURJNzQ5eEZZcy1CQ1F3RlN0bkRhV1dGR2h6Rmh3YXA0b2tWVWhNQ1dtdk8zMDg1clJqa2tvU2pHZTFJdk9Hb2RIay1OX0V1X1M0dVhQZHVGTVB1VWNxbmE3VWRwNmRXWmxDTjFIT2xpbjlUU2FMSDVWV3lvSlY4Zw?oc=5",
+   "source": "Startup Fortune",
+   "published": "2026-10-31T08:14:04+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Nscale"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "cluster_id": "f16cbc83fd598908",
+   "cluster_title": "NVIDIA Considers Credit Guarantee for Nscale Data Center Project in West Virginia"
+  },
   {
    "id": "39e399a4df4c203e",
    "title": "Connecticut town bans data centers before developers propose a single project",
@@ -100,6 +140,66 @@
    "suppliers": [],
    "cluster_id": "1136929c1c7ff966",
    "cluster_title": "San Diego representatives to introduce legislation stopping proposed NAVWAR data center"
+  },
+  {
+   "id": "03b84f31b60484c4",
+   "title": "Hundreds show up to reject Delhi Township data center",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMGptVWVRRmw5X3ZVT014NFNoeWg0THlDYkJPeVI2RTY1cnhXc2pDX2RjMG15Y21wV3h1ZmJxbWx1UE9oeUpLcHlPamNiZXRtSGdJUGl2WEhFN291LWNldXFzQUk0Z0J6dnY3YU1adkdDcHR4TmpfT3ExZm5fd3V0U2Zyb0dCaGdGTnpKbGJtUnY3WWlmRGfSAZsBQVVfeXFMTnVxOXF4UEFMUFBqQ21fTTRPYi1rMlNFRm9MVmlscWliNlBXTi1mWmZyaXNWUHNMZlFUVUVSaVJWcXhqb0JsWEdIcE9TajdsaVlVMXIzTlRHZThtT0JDNkRiTzJGNkE2WVRVdUlsdEFMc09lVlVjeEFmb21oYzh5UktxcHdRWU5Na0xuQTY2clZyQ01lZzlna2ZFcXc?oc=5",
+   "source": "WLNS 6 News",
+   "published": "2026-10-31T05:37:09+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "03b84f31b60484c4",
+   "cluster_title": "Hundreds show up to reject Delhi Township data center"
+  },
+  {
+   "id": "61aebd3df2d1fb83",
+   "title": "Hermantown City Council votes to move forward on Google Data Center",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOczc0TGJZR0FqeXBIOWVEV3BsWTh2MlNGUjY1VDQxbTVmb2w1ZVBGa2NUdDBNaTJ0WXRoMjNNa2I5eUpIVW9qQl96by1QQldOZnVzVjlvYkhvMlZrUklWRVo3NGppZ2paV0ZVNzhPWVlkQjQxeEpkZmtSb1RNOWhXeGw4Wm9QWExQNDNxZC1YbkNZbi1sQ3h5MHZ0NV9TSVpVTmN4OUJvY1lNVFRoZ0JhQ3pxWkpkZzJSQ21XQkZHdFJ2TmFGOTVhV2pkZThhdHY0NWRfcXR6cHdybjJKdl9CNDZCc3JuNVZpWlZCbw?oc=5",
+   "source": "fox21online.com",
+   "published": "2026-10-31T04:41:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Hermantown, Minnesota, US",
+     "lat": 46.8069,
+     "lon": -92.2382,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "61aebd3df2d1fb83",
+   "cluster_title": "Hermantown City Council votes to move forward on Google Data Center"
   },
   {
    "id": "3d5eca80d232390e",
@@ -355,6 +455,30 @@
    "suppliers": [],
    "cluster_id": "cbefb787bfa8dc5f",
    "cluster_title": "Michigan AG challenges electricity contracts for Google's massive data center outside Detroit"
+  },
+  {
+   "id": "738d257f39c84108",
+   "title": "Newly-floated data center rejected by Delhi Township board",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUTgtVU9YV2VhOWtlVEtnVGhPOFg4cDNpNl9FODZWWHRISEYyQ2x4eW9tc2VzZzFSZ2xXZF9aMkpadDRUakRWOVRteUxuZ2kwNS1hY2NHSGhhNVhVVENJend2VlE5OWx3SC1XTDA5S2hlbVhYemdoSExZZ2JVZC1UVV92RjBQX0pzdEV3d3BNOVVRZw?oc=5",
+   "source": "Lansing City Pulse",
+   "published": "2026-10-31T01:43:16+00:00",
+   "feed": "Google News: Data center",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "738d257f39c84108",
+   "cluster_title": "Newly-floated data center rejected by Delhi Township board"
   },
   {
    "id": "7c33830ddd782342",
@@ -832,6 +956,30 @@
    "cluster_title": "KC Council Weighs $20M Tax Break for Data Center Firm"
   },
   {
+   "id": "f7e92af1b02d1ac4",
+   "title": "Tazewell County implements 9-month data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdWd3TkItZTFSSmdoT3gyQnFEZDZJMmd4dEMySC1fYnRCWHJuUWtyRFJyNExhMUZBRVJ3OERyZjNvZ0V4dS1tUEwzTXhoOXpLTzk1Sy1BY2JpeXA3TGs2czVXZ0ozZWFvZElVc3g1LWVUbHJpMndJd3FZSnBQXzgwdWZEczZPYTZaTTVGMFE5aklORk0zOGhiWnBTang5QWxjbl9v?oc=5",
+   "source": "WEEK | 25 News Now",
+   "published": "2026-10-30T23:48:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "aff689619bab2d19",
+   "cluster_title": "Clock starts on 9-month Tazewell County data center moratorium"
+  },
+  {
    "id": "15ccb365b248a85c",
    "title": "Data center developers sue county in Arkansas over new regulations",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSkp3OU5YR3oxdS0zNjVhVnVIbFZ1ZmVXMDg3bWdQb09MTGV4amVKTUU1UEpiaXpVM3FzLThTYnRFdXlUMVQwelFCbzlzazRYVFR1SXN0TmxCRnJsOUdHUEp4eVg4NVR6cHJFYW9sX0tlNmtScVEyVEY5ci1uVVE0Ukx3bzluS2p5QVpFTlJyelRzWFBvTzJ0WjF2UVNjdGl0dEVYMThPS2dmNEE?oc=5",
@@ -1015,6 +1163,34 @@
    "cluster_title": "#EXCLUSIVE: Data center utility execs maxed out donations to Dan Sullivan"
   },
   {
+   "id": "6052d8ab9010bf72",
+   "title": "News | Data center build-out raises insurance risks; Workforce lags for AI-fueled property management; Development could boost retail demand",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQ0JNNFNNVUo3UlFIUThEbFlXVlh2ZTQ4ckhMOXY5X0cxbmhLR25pM3VWM3RnZS1jRGhxeTFaRHRIVnM2TXBfWFdUb3BZaVUxbnp5MTFEOEJHM29wejlWdVpIUGlzUnRLaEM0Q1NfOU9LcGIyemtWeHlyS2ZDSllNWnUwVTFlWUpya0c0S3kzc0g5SlpiUjNFQmhnTnhLXzJBc1U3eTZaNnR3azNSRmFNVVRRdmVnczFjb1RFWVVfTTE3bXFYcTRqLVZaVXNTLVYzZ1B2ZXpUUnlDZw?oc=5",
+   "source": "CoStar",
+   "published": "2026-10-30T23:13:48+00:00",
+   "feed": "Google News: Data center",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Deals / Investment",
+    "Economy / Jobs",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6052d8ab9010bf72",
+   "cluster_title": "News | Data center build-out raises insurance risks; Workforce lags for AI-fueled property management; Development could boost retail demand"
+  },
+  {
    "id": "6ace7921383f2c6b",
    "title": "San Antonio City Council Sets New Data Center Regulations",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQ3V0Sk1ReWsyTUM1bFV2ck1WaFdJOHdXX1l6WWZpTFdDUVRZR2tDZklRRzZlTk5sRElwb2ZoVndFZldvdHlMMzRJdkxsTnpmNG81Z3VFQXRXc3pkLWNkcVQ1UU1tdDlsRmswbGd5SkRPOFhVQ05tZ0dpNVluUEthYzVCS2p1SFZOM0pRNTExTVNXQ0lKOWc?oc=5",
@@ -1148,6 +1324,42 @@
    "suppliers": [],
    "cluster_id": "215b50fc7a1238bd",
    "cluster_title": "Entergy files request to build two battery storage systems as part of West Memphis Google data center expansion"
+  },
+  {
+   "id": "266778ad553cc76d",
+   "title": "DC BLOX data center tax abatement proposal planned for City-County Council presentation",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQY19GanEyS2dLejlWcTBEdUh0eEJXWHVJRkNGUWkxNUR2c19GZS1Rb1dkeEhhc01kMGhsaDVjSkxDdER0bnFlejI3QVdpeEhkandfR3NuLUsyZ2JmWjltNkN3ZVQzeWhocW90aVY0ajJ6M3ROOWVETklQWi0xTzYtbnRsX25TbHdrNTQtaXFndkZ2WUlBY3JoNEJ3NXlOMHF2X3I2QVZ4NnN6bHhkT3ljdmpCLWZweHd6Sl9sY0N1VTl5MlhqVFI1RUxEN2Y2eFRnZTBfdG1sZUR0bjktUko2ZTFHZ2p0YWxuWllMTVc2ZTEwaGVwcksyX3NTVkFieXk2X3hyM3pITGI?oc=5",
+   "source": "wthr.com",
+   "published": "2026-10-30T22:44:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "266778ad553cc76d",
+   "cluster_title": "DC BLOX data center tax abatement proposal planned for City-County Council presentation"
   },
   {
    "id": "f6a98cda8c35d1d6",
@@ -1556,6 +1768,33 @@
    "cluster_title": "Midterms 2026: The data center debate"
   },
   {
+   "id": "37ca5ac1e4e10f32",
+   "title": "Google’s first orbital AI data center is up and running — and it wrote a strange little poem",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQT25nbkpOYnlESy1RNzNSRjZPQ3BaNFRJV0Q5M3paOG1IUEg5cGVUem5oaE92WXNxcXIxUld6b05TUDBjbzJjSm90MHowd0JmWk5zRlVpa3BGcFNRdVBYU2luejZEVHNZQnZiMl9BSXVpOGU5QmVfVVE0YWtjQkFtUDZJeVRCeFJuUnJweFdINENRdmdCaXVVdmdEQVZ0VzNjVHJmd19tNzJESWMzQ0RWWWFDbjh2WF9UQUdnNlR1Ml9fbDBXU0Nfd2JFUWJHX1pB?oc=5",
+   "source": "Notebookcheck",
+   "published": "2026-10-30T21:30:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Operations",
+   "tags": [
+    "Operations",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "37ca5ac1e4e10f32",
+   "cluster_title": "Google’s first orbital AI data center is up and running — and it wrote a strange little poem"
+  },
+  {
    "id": "61b89d259981c24b",
    "title": "Data Center Files Federal Suit Against Pulaski County",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbXNER1RBejk2NXBKVDFTbmcxbmlXcFVLOTNhcFpfRzhINmZfMjZIUVl5eFlXeFNkcm1SMXhTZ2p5Q1NNaVk2TUlPWmtHTTVkeG9Vekc2NkJfNWRLM2kzMXFXZnQyeGFIeUU1emJ6Zjl2Tk9mMkN1MlZQcm9nWU15bEh0RUE2NlhwVmFVTFdJV3ZUSnBTYXFMZ1R3QQ?oc=5",
@@ -1698,6 +1937,50 @@
    "suppliers": [],
    "cluster_id": "80ab8c8f7bd89dfd",
    "cluster_title": "Data center firm sues Pulaski County 3 days after new regulations passed in Quorum Court"
+  },
+  {
+   "id": "64840c880d6258da",
+   "title": "Data center developer plans litigation against Archbald, asks Lackawanna County commissioner to keep information",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQLVVySVVxempDZk1oS1kyWVlWREhYNkVtLW9rbU5leHFyREVnaFctZWYwX0hSd18yZUtyVUJfUnBXZF9LNEtUUGFlbEw3MkpKNU84djVQc3o1SVBOeXQ5cGk1SUhnaE84dmtBNjd6RTM0U0pKZklqa2RiSXAyYlRpYVhTTEowUXBHS1Z6cS1ubXFaZDlpMGt4ZERoSS1XM0tTbC1oTXZqRTZVWFFOYmdYTTN2LTBKQ2VwRUtITUx2S1czazhvYS1mUWd1ZE14b1JtTkxZaFNoeFNuQUh2ZXBoMlNJYWNGaXFIcUE?oc=5",
+   "source": "WVIA Public Media",
+   "published": "2026-10-30T20:32:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Archbald, Pennsylvania, US",
+     "lat": 41.4948,
+     "lon": -75.5369,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Lackawanna County, Pennsylvania, US",
+     "lat": 41.437,
+     "lon": -75.609,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": "Lackawanna County, Pennsylvania, US",
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "64840c880d6258da",
+   "cluster_title": "Data center developer plans litigation against Archbald, asks Lackawanna County commissioner to keep information"
   },
   {
    "id": "6eb3daf8a7132b42",
