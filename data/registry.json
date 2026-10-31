@@ -55,9 +55,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-31T02:08:57+00:00",
- "count": 634,
- "visible": 632,
+ "updated": "2026-10-31T03:08:55+00:00",
+ "count": 635,
+ "visible": 633,
  "records": [
   {
    "id": "amazon-georgia",
@@ -22094,6 +22094,60 @@
    "name_hints": [
     "West Jordan campus"
    ]
+  },
+  {
+   "id": "nscale-wv-unnamed",
+   "name": "Nscale, West Virginia (site not yet named)",
+   "company": "Nscale",
+   "companies": [
+    "Nscale"
+   ],
+   "location": "West Virginia, US",
+   "state": "WV",
+   "county": null,
+   "city": null,
+   "lat": 38.6,
+   "lon": -80.6,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Nscale",
+   "news": [
+    {
+     "id": "2a9afe2d84559026",
+     "title": "Nvidia Eyes Cosigning Nscale's West Virginia AI Data Center Loan",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYmZ4TGNIeWxBYUxVSzB0XzZhaC1WYkg5ckF2Q0I1SnR1cDBMczkzZ3F1LXJ0eHVaUDBGTXR1Q2FDNi1TdUJsNWM4djN4WFpxMlJSbmFnTC1ibUNoYXRiZmthUkNEVk1YNHREdUM1RnZqOVNIYzBSNlZMSkdLQWZqX1ZMaFc0YTJDc2c0U3kzTzVXTDc4cktuZWo2MnBNZw?oc=5",
+     "source": "The Tech Buzz",
+     "published": "2026-10-31T01:28:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "2a9afe2d84559026"
+    }
+   ],
+   "first_seen": "2026-10-31T01:28:00+00:00",
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "name_hints": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-31T01:28:00+00:00",
+     "status": "Announced",
+     "headline_id": "2a9afe2d84559026"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-10-31T01:28:00+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
   },
   {
    "id": "openai-atlanta-ga-2026",

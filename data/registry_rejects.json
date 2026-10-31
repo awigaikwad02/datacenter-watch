@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 592,
+ "count": 593,
  "items": [
   {
    "id": "dd10706c0f7a409f",
@@ -117,8 +117,8 @@
   {
    "id": "1b422626e4dd7e86",
    "title": "Texas residents say $15 billion data center plans caught them off guard: 'We didn't even know'",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONTFhR3o0bTdiMmVzeGozQWJXQzZuSU5TMlg1Nmo4SVlUNmpweUF4UUFFejMyNXVMSTVWM2h5eHJhSDVyVkR3RUlUSDlHX25yMkJsTUJETzJoQUsxTVNtakVUWlBLeGR6YmVUN3Zpc3Z0WUwzN2p0emtSVEhZVmZYaFF6dmF3cXJV?oc=5",
-   "source": "The Cool Down",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUFlGUEFIY0VJdmZ0NzFuRy1UcDZfUlZndmp1MjRXQm1nWWNvV2FMZVF1RkhlMGtrWWtOVC0tV2lfN1ByTDUtOVJqNmd4MTVtZlE3UkRNZThKcHlPSll5anhNczVYbVNZV2stOUYxMml6a2lXaVhpQkYtdjFGWENXMlV6ZE1abFQzTTd3Z1d3?oc=5",
+   "source": "Yahoo",
    "published": "2026-10-30T14:05:00+00:00",
    "state": "TX",
    "companies": [],
@@ -146,6 +146,19 @@
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUl9PVHZGb0t4SWpDNk9GNExZYXJpUml4UXlkR1ZKeU45LVlmOVJ2RFAzamhxOV9FcENUamVUSGZnaHNjalJQYXdLRlFiWnNIbmVVcm9MeWJsNDdjUVprUUMyODg5ZmVTWnFGOUZnM3NhYTlwTlRhTWtsN0tWWWNjYkFCYzFTVVk5aWpRWmdCUUQ2T2YyTFBiUVlqQzBSaDhhWlNFRlVhVmYwM3M?oc=5",
    "source": "Duluth News Tribune",
    "published": "2026-10-30T13:45:34+00:00",
+   "state": "MN",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "b87fdca13ee55a3e",
+   "title": "Judge denies Hermantown data center protestors' request for temporary restraining order",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTkpWQVZ3UktiSFI0cS1YREtHU0Q4S21pRS1XMm5oWjJjMWhtR0lSVlNfMjhmTVpVUl9LazFRT0xKMnhNYjhmSzRrYlFEcjYxNXF4SVB3bHE1VFBzeWtNWE5HWVpDSWtTREllcjJRaUs0a3V2ZEx0MEJrR0ZiUGNoN0d6cGNfWUx1Sk1KU2h6YWhhSl9nX1pKR1dnNmRYN29YemtPY05lNTFZelhGWmZ1ZmxGVHhEbGZSZzhtMUp3V21veFZ5aThJQUpJTlNwRmxGMmNqcV9XSzZMX2R1MDhLS1J2OGdGX0JER25N?oc=5",
+   "source": "kare11.com",
+   "published": "2026-10-30T13:23:00+00:00",
    "state": "MN",
    "companies": [],
    "builders": [],
@@ -628,19 +641,6 @@
    "source": "FourWeekMBA",
    "published": "2026-10-29T12:20:12+00:00",
    "state": "TX",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "bfc3195d48e64f9b",
-   "title": "Pennsylvania lawmaker proposes statewide data center impact fee",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeW10VkstZDNjN1VIMnFnZXlqNmhlRkZIbGszN0RaYWw2NTU4UURDSDg3VjdSVVlzNTlPSFYxUk1JbXFRU1RNeEFwUDV6cU1NaUFnNDlMOXJjQnU5MWpWN1JkU2lLaTh5dk11bEtmMTQ0dDB0LUx6MFBfVWd4ZW5ZWl9uT0g2UDM5ZnljMWhKNjRkVEhkRHFaZnpxdkNUYy1Jdkh3?oc=5",
-   "source": "ABC27",
-   "published": "2026-10-29T11:58:24+00:00",
-   "state": "PA",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -1556,6 +1556,19 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "bfc3195d48e64f9b",
+   "title": "Pennsylvania lawmaker proposes statewide data center impact fee",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR2lvUFF5clB5UjJmNjlRNzJQcVVVcmhLYTZrY3BvbGF6TFFfS2JnV2JaMXNtbXdHMnNhUnhQeWhMa2VTZ0RhQVBWT1l1aC10YUNTWnFmWWZtYzlvQ3hRMlU0LVQ2TFdNamV1bE16NU8zVlhDZWFOd1pCT3VITld2LTBSbUlQY2N1S1Q1TlRNTlROSG5BWGxIZmVPU293ejA30gGmAUFVX3lxTE81TzFTOGpfUEtLbmtQMm16UzVsbXVZY1E0RnBpcktjUFVQclpmT0Q1RGItVVpaa1J2TGpnOEZ3aG02TWdpQUpseG9Kay16d3UyVFRJbVBOMkNUN0hUc3ZpQTRXT3hEVzBYY2xzWDB1akgyVmMweWNyYmVpSEJLQUdtb3FCSUhSR0I0cmtmUDBScmg0VGJpLWZmQi1ObXkzb3V2UjllVVE?oc=5",
+   "source": "ABC27",
+   "published": "2026-10-27T11:26:38+00:00",
+   "state": "PA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "fe598b5b8c4423fc",
