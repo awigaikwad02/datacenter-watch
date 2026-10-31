@@ -38,8 +38,197 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4262,
+ "count": 4270,
  "items": [
+  {
+   "id": "cbefb787bfa8dc5f",
+   "title": "Michigan AG challenges electricity contracts for Google's massive data center outside Detroit",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQZTZhWVkwaDJudVpLVlNBdTZOejd4QmRwVUVfSEt4Tkt0dFZUcURaY2p1YnVIazFMNzg5VUZvOS1MeFY2VFlvNFBJdDFRMzhSNGtHV3NEZzJxeUduZzNWMEs0OVdiYUdjeExGaXZHOHpZQ0lCMXRUVHhIYUhLTkhEZG0wVHY5QS0zT0VwYzFQTFNmNUJYZDRBc1BIUndSeFZXSk9PeC1NQlJzbDVBVW5Ma083MkEtTk0ya1VrZWtfRW9EMVdnaDVueHYwaFpEWkZSNEFKT05fTVNqUnFhbHN3UklCSmdQcTZsWFJVNndLZlJ6NW0wUVRr?oc=5",
+   "source": "Michigan Public",
+   "published": "2026-10-31T01:54:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Detroit, Michigan, US",
+     "lat": 42.33,
+     "lon": -83.05,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cbefb787bfa8dc5f",
+   "cluster_title": "Michigan AG challenges electricity contracts for Google's massive data center outside Detroit"
+  },
+  {
+   "id": "7c33830ddd782342",
+   "title": "Why AI data centers near Arizona bases are raising security questions",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcG1aYTRTUWpBN2EtaVdpNk9EZHI0dUwwTzJxSzhqdFJ5OXF3Z2tqb3hhSUV0cy1kdVBWZzBwRUZFeDNEWTNXVThVa3lMVEpMZnpnaUVaelMtYml0UUNiUW9IRkRGOGV3dzNCU2ZjVVRidXVUYk9VbVllWU9VeUVsM3pvWnZvQnNKWGZ0bHgybVlOLVJEM0M5bmxSUjVlNWtIbDdaazc4ZlhLdw?oc=5",
+   "source": "AZ Family",
+   "published": "2026-10-31T01:34:00+00:00",
+   "feed": "Google News: West",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7c33830ddd782342",
+   "cluster_title": "Why AI data centers near Arizona bases are raising security questions"
+  },
+  {
+   "id": "59bb7c5fb3432888",
+   "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZGNhWVNJR0JZTnVKVlM5RUZFeGdQZDdMMk9yODB0ZTlGSXRnYzNZU2hVbXBLdVdWbGstX3RPYkphd190d0R5N0VKN0RabTd3aW5OSUI1cHVsME9vVno4Nm1LY0lTV25qZE5EejNqNm91c1dvbVk5YnctUUowaUJoYTJwSEhCY3BIYV9kbVZ1U1RKNTk5Y3NqVDR3YTlrdXZDOWd5ekVvaDdGSzV0aVA5OUFxcw?oc=5",
+   "source": "TechCrunch",
+   "published": "2026-10-31T01:20:05+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Nscale"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "cluster_id": "f16cbc83fd598908",
+   "cluster_title": "NVIDIA Considers Credit Guarantee for Nscale Data Center Project in West Virginia"
+  },
+  {
+   "id": "23738698dad2ae2f",
+   "title": "Mich. AG Challenges Google Data Center Power Deal Approval",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZWNzWFdhTFZaRHh4eEVYc3BPdjRjR0lSQ0hXVFNFX2tWUl9WYWlHZmpOUlZ1aDNaclJtRFRDeTZhQS1pemEybEh4T2lFaHVUU2c2QWFUOHRqU1ZQdnlmQ2NaRVo3bzhHNzRrLWNxUjVSOFdHdGZ5MFl1dm9JSE1IM2wwdVhYeFFGQi1GellSdUZZT3lFOGtjc1c3SUhtTEhHWE9SMm9TYm5tV3hpSW00VTFQUHFuOTFITDFWUzV3VWt3aWQwR3ZCaU1B0gFzQVVfeXFMT2RFNHJ1VEQ2U1ZVMGxmZzJjcHpFUDhwWVhaRzc5RE9fdVNtczFxbzVIS0V0YkFaeXU2VnktemFvZkFiTldZdnNZT0sxbUJMN3hWaDBVWU5Sank4anJHS3hDNF9ZV1g1bnB3bERfV2tnSGMtMA?oc=5",
+   "source": "Law360",
+   "published": "2026-10-31T01:01:26+00:00",
+   "feed": "Google News: West",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "23738698dad2ae2f",
+   "cluster_title": "Mich. AG Challenges Google Data Center Power Deal Approval"
+  },
+  {
+   "id": "09bc39a4d5a40b5d",
+   "title": "Pivotal Hermantown Council meeting could decide future of proposed Google data center",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOX05fXzA5MGpudjVQcWJZN3ZYQTJUNV82cG1CY2pMeFJ0SkJqTkVILWYwY2lHLW5jeWxja1ZFVy1NcklsZ0ZjZl9HZjI5LXppVmQ3cjJvTGNuR3g0UWZYYU9hZTNpc1lfaXFhQjFfYTNRMzNmSGJvMXZqa1pPUEhDWVJKeTVzbmFiYkUzSlNEa2VpU2RTWmUzY2Q1N0dFdEZhVWY0MDZfRkM4bGpmSEZMWW4wemVSclZaNkxTRWduT0tXcEtkTUVWSEExTkQ?oc=5",
+   "source": "Northern News Now",
+   "published": "2026-10-31T00:55:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Hermantown, Minnesota, US",
+     "lat": 46.8069,
+     "lon": -92.2382,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "09bc39a4d5a40b5d",
+   "cluster_title": "Pivotal Hermantown Council meeting could decide future of proposed Google data center"
+  },
   {
    "id": "25db9aa0ca4e8644",
    "title": "Is Glendale project a data center or a power plant? | Exclusive",
@@ -1180,6 +1369,44 @@
    "cluster_title": "Largest U.S. grid, which covers Ohio, seeks data center power auction in March"
   },
   {
+   "id": "52a51afbce284857",
+   "title": "Nearly All Wyoming Residents Oppose Selling Public Lands; Most Oppose More AI Data Centers, UW Survey Shows",
+   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPWXFwcFRsb0RfY05UbTJsLVF1RGN2ZFRzLWdZb3dtLW5USFBiaDh5V19rNjlpbXc4TnFWN0VpZ2J2WmlYZDdvMzJQQXlkVkRHU0tDZGV6ZzdHaUZNWWlxdXVCWFNpVGg0eHVkTjNXbGpyNDZVNUhPdTZTV0ZkSk9McVFnZU9GWFpXV251SnI3R3ExYllSb29qY0lRMEJVUGMzeUxwTmJlZVpHWVBZMXZRTFpualJRTXJBN0NlOUUtbUVVZE14V0NFZ3g0ZVhhMktvNnFoTlBMVy1CQXVzU1l6WWVhRURrVlN2dDk2bFhpTFhxQVk3OEJYN2pjMHZqV3lrVF90VzNKNEJOeDg?oc=5",
+   "source": "Buffalo Bulletin",
+   "published": "2026-10-30T19:31:00+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "52a51afbce284857",
+   "cluster_title": "Nearly All Wyoming Residents Oppose Selling Public Lands; Most Oppose More AI Data Centers, UW Survey Shows"
+  },
+  {
    "id": "ed0b1b1e8f0b0607",
    "title": "Chevron: Kilby Data Center Still on Track for 2028",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNkU1czh2Y3Z6WlpGcWNNTkg0Z1ozTGNEWERsc0gwc25zbkJTcHNWTHM4dm5rLUVQXzlyQUFQTm9rUTFGZWpjSGFYTjlGYlhweUtxNzYzbFRqaWFvRUs0Z0Q4ZGV4VTl1QmRCdjh4aVhuaTFnZ19qc3dDWE1KSWpqWlhmRjVkelV4b2toUnpwQ1VrZw?oc=5",
@@ -1997,6 +2224,30 @@
    "suppliers": [],
    "cluster_id": "be6ec7632a3210eb",
    "cluster_title": "Melissa Newman: Standards as the Foundation for Responsible AI Data Center Development"
+  },
+  {
+   "id": "545a8e04216a1eb6",
+   "title": "Mark Vincent refutes claims over Franklin County data center agreement",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQam9CUWNyaU9sNUxFa2dtb1Mxc0N3bDFkREIyZTZ1MThFeFY0akp6Z2xMbC0xd2o1WTlySGVvaHJkUGozOVN0U084U0F2eGFQdFdkZEtUSk03ZmtYNmpuclRYUmgtaElqbE42ZkdOd3FDZHByTmNXbHFUQUt5dl9KQ0d6UkV6LVRzaUJURW1XQS1Wb3FUWVpsRHRxWjA2aXd6M2ZZdnZ1cmxOQS1oeldwTFhpYkJtdUV1cnFnS3N4Y2U2eHJDbklBWU9CZmlCY0w4Z3NZZ3RLQmxEYzA2ZmNfcHV6c2V4ZWc?oc=5",
+   "source": "Missourian | Washington, MO",
+   "published": "2026-10-30T17:30:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "545a8e04216a1eb6",
+   "cluster_title": "Mark Vincent refutes claims over Franklin County data center agreement"
   },
   {
    "id": "826d2708029f6c20",
@@ -3697,6 +3948,31 @@
    "suppliers": [],
    "cluster_id": "6d9335f796954903",
    "cluster_title": "Can AI data centers be mass-produced like cars? This startup aims to find out"
+  },
+  {
+   "id": "60d3744eb85e4c81",
+   "title": "Data centers add 1,000 to 1,300 local jobs within 3 to 5 years, study of 1,584 finds",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1tTWhkLWtpajFKWjVqV04ydTVzYlFQVHNIMDhxQWhGOFNiSTZmSjRZRmFoZFJUa3NxWVlhbzNPZm11ckhYVU1Mb2hhc1ZlYW5wOHhFeEtJQmdFSU1JVElVbHpyUkN2RXNqbXZMQVl3?oc=5",
+   "source": "Fortune",
+   "published": "2026-10-30T12:57:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "60d3744eb85e4c81",
+   "cluster_title": "Data centers add 1,000 to 1,300 local jobs within 3 to 5 years, study of 1,584 finds"
   },
   {
    "id": "7b6a724b8ed994cc",

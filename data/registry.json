@@ -55,9 +55,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-31T01:08:57+00:00",
- "count": 633,
- "visible": 631,
+ "updated": "2026-10-31T02:08:57+00:00",
+ "count": 634,
+ "visible": 632,
  "records": [
   {
    "id": "amazon-georgia",
@@ -13044,6 +13044,56 @@
    "last_news": "2026-10-29T22:22:02+00:00",
    "sources_count": 14,
    "confidence": "high",
+   "hidden": false
+  },
+  {
+   "id": "google-hermantown-mn-2026",
+   "name": "Google Hermantown data center",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Hermantown, Minnesota, US",
+   "state": "MN",
+   "county": null,
+   "city": "Hermantown, Minnesota, US",
+   "lat": 46.8069,
+   "lon": -92.2382,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "09bc39a4d5a40b5d",
+     "title": "Pivotal Hermantown Council meeting could decide future of proposed Google data center",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOX05fXzA5MGpudjVQcWJZN3ZYQTJUNV82cG1CY2pMeFJ0SkJqTkVILWYwY2lHLW5jeWxja1ZFVy1NcklsZ0ZjZl9HZjI5LXppVmQ3cjJvTGNuR3g0UWZYYU9hZTNpc1lfaXFhQjFfYTNRMzNmSGJvMXZqa1pPUEhDWVJKeTVzbmFiYkUzSlNEa2VpU2RTWmUzY2Q1N0dFdEZhVWY0MDZfRkM4bGpmSEZMWW4wemVSclZaNkxTRWduT0tXcEtkTUVWSEExTkQ?oc=5",
+     "source": "Northern News Now",
+     "published": "2026-10-31T00:55:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "09bc39a4d5a40b5d"
+    }
+   ],
+   "first_seen": "2026-10-31T00:55:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-10-31T00:55:00+00:00",
+     "status": "Announced",
+     "headline_id": "09bc39a4d5a40b5d"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-10-31T00:55:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
    "hidden": false
   },
   {

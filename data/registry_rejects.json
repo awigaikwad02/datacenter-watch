@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 591,
+ "count": 592,
  "items": [
   {
    "id": "dd10706c0f7a409f",
@@ -30,6 +30,19 @@
    "source": "The Daily Tribune News",
    "published": "2026-10-30T20:40:00+00:00",
    "state": "GA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "52a51afbce284857",
+   "title": "Nearly All Wyoming Residents Oppose Selling Public Lands; Most Oppose More AI Data Centers, UW Survey Shows",
+   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPWXFwcFRsb0RfY05UbTJsLVF1RGN2ZFRzLWdZb3dtLW5USFBiaDh5V19rNjlpbXc4TnFWN0VpZ2J2WmlYZDdvMzJQQXlkVkRHU0tDZGV6ZzdHaUZNWWlxdXVCWFNpVGg0eHVkTjNXbGpyNDZVNUhPdTZTV0ZkSk9McVFnZU9GWFpXV251SnI3R3ExYllSb29qY0lRMEJVUGMzeUxwTmJlZVpHWVBZMXZRTFpualJRTXJBN0NlOUUtbUVVZE14V0NFZ3g0ZVhhMktvNnFoTlBMVy1CQXVzU1l6WWVhRURrVlN2dDk2bFhpTFhxQVk3OEJYN2pjMHZqV3lrVF90VzNKNEJOeDg?oc=5",
+   "source": "Buffalo Bulletin",
+   "published": "2026-10-30T19:31:00+00:00",
+   "state": "WY",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -622,6 +635,19 @@
    "reason": "no operator, and only a state"
   },
   {
+   "id": "bfc3195d48e64f9b",
+   "title": "Pennsylvania lawmaker proposes statewide data center impact fee",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeW10VkstZDNjN1VIMnFnZXlqNmhlRkZIbGszN0RaYWw2NTU4UURDSDg3VjdSVVlzNTlPSFYxUk1JbXFRU1RNeEFwUDV6cU1NaUFnNDlMOXJjQnU5MWpWN1JkU2lLaTh5dk11bEtmMTQ0dDB0LUx6MFBfVWd4ZW5ZWl9uT0g2UDM5ZnljMWhKNjRkVEhkRHFaZnpxdkNUYy1Jdkh3?oc=5",
+   "source": "ABC27",
+   "published": "2026-10-29T11:58:24+00:00",
+   "state": "PA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
    "id": "11a3a9e07e92317f",
    "title": "Falls Township to unveil data center zoning fix. What's next",
    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdS1xcVJaMW1IMG5OVDFyRnlkZUFMSmVmVW1WZVlUcVQwT19TNmdTLU5pM0RNTThOVlhfaWJFWXVWZlNJUXZscWRXSkV2R3R4M2x6Q3Q5eHpuekxHU01oSUdlOGx0NWdqQmFUNERteDJnQk8tVGhHOXVUTkdoY0dEQTFYVnBHNk1uZ3k0dHBfZFZYYVM2SmNMRmFoREk1X3pySWlyQ1RpU2xEckhNQzJVV1hjWGRmYktNYzNyTGViV3BuM2dCT212aGp1bF9wVU4yTF9tY09RMVNINXBZenQxM09xeUVwMnBqOFE?oc=5",
@@ -633,6 +659,19 @@
    "suppliers": [],
    "precision": "source",
    "reason": "no operator, and only a state"
+  },
+  {
+   "id": "ababe222d5a70ce9",
+   "title": "Franklin County residents urge planning commission to address data center concerns",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM2YwTGVjVnJ5UzhxNjRQeHpGNThCWXNLZVNLQk1Qemx4SEFXZEotZlBkbjByekhUQ1NZWkE0UmtIMm9xM1hnVlJCdXhyYmVqSFlZZm8wX3dabU9zMmRZTVU2T1UtT3RyNzE5RXlvbURiSERCTkpaQ2ZlM1VRNEwxam41dURYMFNHSm5LUjB4bERqV0FfRlQxYi12V0NsclM2aFJoRk5kS0lybjBvdEdpY0lVSTZDNW8?oc=5",
+   "source": "WSET",
+   "published": "2026-10-29T10:41:08+00:00",
+   "state": "VA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "2e92745c050ee04b",
@@ -732,19 +771,6 @@
    "source": "WRDW",
    "published": "2026-10-29T03:22:00+00:00",
    "state": "GA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
-  },
-  {
-   "id": "ababe222d5a70ce9",
-   "title": "Franklin County residents urge planning commission to address data center concerns",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaEMxZkpqSkkxOUt5WFJzNmc5V3ZwR09Cd1JjR1hIQ21vTVJQNkJUSmU3ZDZoMzJkMjNibzU0TWlNbUM3TEg1M2xLNHNzRWJsRl9BTmR1S211eGxqRmF1RXNwSm0wRHZjZUxXQlhWX2Vfb010Y0Zhc0tFZmdZUnpicFNLUmxlVmJ2cDR0S2Fac0haUnZQUWVmamtqVzlZX1Zfb0RZbl8zWWlURElwN3JN?oc=5",
-   "source": "WSET",
-   "published": "2026-10-29T02:43:51+00:00",
-   "state": "VA",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -1532,19 +1558,6 @@
    "reason": "no operator, code name or figure"
   },
   {
-   "id": "bfc3195d48e64f9b",
-   "title": "Pennsylvania lawmaker proposes statewide data center impact fee",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR2lvUFF5clB5UjJmNjlRNzJQcVVVcmhLYTZrY3BvbGF6TFFfS2JnV2JaMXNtbXdHMnNhUnhQeWhMa2VTZ0RhQVBWT1l1aC10YUNTWnFmWWZtYzlvQ3hRMlU0LVQ2TFdNamV1bE16NU8zVlhDZWFOd1pCT3VITld2LTBSbUlQY2N1S1Q1TlRNTlROSG5BWGxIZmVPU293ejA30gGmAUFVX3lxTE81TzFTOGpfUEtLbmtQMm16UzVsbXVZY1E0RnBpcktjUFVQclpmT0Q1RGItVVpaa1J2TGpnOEZ3aG02TWdpQUpseG9Kay16d3UyVFRJbVBOMkNUN0hUc3ZpQTRXT3hEVzBYY2xzWDB1akgyVmMweWNyYmVpSEJLQUdtb3FCSUhSR0I0cmtmUDBScmg0VGJpLWZmQi1ObXkzb3V2UjllVVE?oc=5",
-   "source": "ABC27",
-   "published": "2026-10-27T11:26:38+00:00",
-   "state": "PA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
    "id": "fe598b5b8c4423fc",
    "title": "Charlotte adds 11 months to data center ban as state weighs new restrictions",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTEFnSGtSZHdkUlprcEZuRDlDSGtoM3FENlNoZGRLWHd0NmJZZVlaMGhQSjBPRnRtN241cm5ZV0t2QVFIVWU3UHZIdzl1WV9PVUF3M2VWeDBCY1RsUTd6dEdJZmRPYm95U0x1MGRqYXRobjVBQ01WTi1WMTRoMnpscUl3VUwteWU0aVlLUmxRUnl2bkxHV3FpRXJ4NDNWWG1TZUhCYXdSMHI1UQ?oc=5",
@@ -1742,8 +1755,8 @@
   {
    "id": "6d2c64aea29967f5",
    "title": "Advocates raise concerns over Nevada data center expansion, cite water and energy use",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTlZiZ0RXdWNweXZmbTNHc2YxVnVYNjA2dUc5dHNZNGJfZXVaTThnazE1UUVDeXdhWGlZMFlsLWVBajBKU3lWTVBGOUp3NkdYZWEtSVF4LXlFbVJZeERFNDVvekVGenJIYkdNRURVMmd5dm1ORjM0aGVseVpydGc1WkJjbTIxZnhMakRuTnNkdFFFZ2ZEdmlRbEtEMGFUbVNPVnZZMDVVZVhnS1B6UTZDbVphcFhFcWxfekHSAc4BQVVfeXFMTTgxUjBTVE9CMzMtZE13cDA3N3JubWlPVWMwZDlNeXJDUUFkNGhQcEFVaEVqcGlkeTRhTi1JeGtRczM1MEJ2YXlJQVhza2ZkOFRlOXNuWkpwXzZiME9QaVQzekRlWWNjblB6cWZMR0ctZUxqdE9uRWt5WXY3UTdyVDlrRF9zemdRT1hmTF9QbmRGWnd0YnpiUlRsdWxfalNJV3RUc085ekw2aVNmT3laYVQtOENfY3JGQmxkbEd6aXVCazBTTC1DNVRkY1k4cHc?oc=5",
-   "source": "FOX5 Vegas",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzVuSkJSY0NCZklST3E3NGt4SXNIRmNYbkx3LUZZYWVYUXNHaURLWk5OdzF3TUV6Z2NjSDBzSWsweXdBTTkzQnZiQlhiSTJhQVNVYXFqbVhZc3dmdGcyYnFzSkNaV3lLSEVFV1FYaW54VHRnbXFyNWhBT0o2eHBLVWlfc3BNLXBJWlZ4bnZCcmNXVHpzYjh6OXpVWURxc3NsRU01cnhWWFp3V3lwRDRDNFJpRDdzQdIBygFBVV95cUxNMERhdU9Lb2UzM0NxWmR2RDZxWEszSEo4SnEydlV2enZvcmxDM1pnc0NqU0R4OC1NSEdzeHgyWVJCOXhOcHlUajExQkNrYmRqU3AtbERqTlRHUkR1Q3FGT0M3VFNHUHg2Y05TQl9HRHdIOVlTdXFUM0FrbHJhdW4wYWYxOXZJNnQ2UW1UbmY4MHF6RzQ2T19LclY0SFJMMFdGQXlmZHdqUGxVWmFqRWk0TkhUa21KdXRwUkc2X2p5MWwxYVE2VU9SZDdn?oc=5",
+   "source": "KOLO | 8 News Now",
    "published": "2026-10-27T00:09:00+00:00",
    "state": "NV",
    "companies": [],
