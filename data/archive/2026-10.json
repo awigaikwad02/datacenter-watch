@@ -38,8 +38,45 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4343,
+ "count": 4347,
  "items": [
+  {
+   "id": "bb115920735b9877",
+   "title": "West Virginia AI Data Center Fight: 2 Sites, $45B [2026]",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPa2xHUW9nWG5tMW9XeUNUWkJ5azRqLWZZYU1XSzZaTkppclB3OEtyeENhQTRzdDU4MnhUQ25UdTNhSlhNLV95anFNMFVMY1JPSHJhUHJ5OTVIYWRjMkR2OVFVakFGVDNmVnY5QWEtV2l2Q0lCVC1WNVFpUGRqZ2VuLXBZOFZsRUdxZVE?oc=5",
+   "source": "shattered.io",
+   "published": "2026-10-31T17:31:18+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 45.0,
+   "cluster_id": "bb115920735b9877",
+   "cluster_title": "West Virginia AI Data Center Fight: 2 Sites, $45B [2026]"
+  },
   {
    "id": "92fc8dcc70b5ee14",
    "title": "Wisconsin Energy Institute panel examines data centers’ electric grid demands",
@@ -74,6 +111,32 @@
    "suppliers": [],
    "cluster_id": "92fc8dcc70b5ee14",
    "cluster_title": "Wisconsin Energy Institute panel examines data centers’ electric grid demands"
+  },
+  {
+   "id": "ed5f4d31ca9cff59",
+   "title": "Amazon Is Borrowing Against Its Own Data Center Gear to Fund More Data Centers",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ3FDTU83bk8zYk9rdkRWNnY1SHFrMDdyQTN0V0tJeUd5LWpyb284elA2Znd5SGJaS2Q4SXRQeE9UQWpXMy1KbUZnQmlJODNBckRTaTd5eVJ0VDFzc1hlZ2UyaGtBaEU2UjFFTVpCMUM4WThjRS02amE4b2lENzE1YTBaaEpHLTVBSm90YXk4MFlid2Y0VDVsVjhzSk9FcDJlRWdROFRpS3pRbDkxeEszWEVJN2VIOTBJeUZFS2FrZw?oc=5",
+   "source": "24/7 Wall St.",
+   "published": "2026-10-31T16:48:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ed5f4d31ca9cff59",
+   "cluster_title": "Amazon Is Borrowing Against Its Own Data Center Gear to Fund More Data Centers"
   },
   {
    "id": "ac25f0de8784a936",
@@ -168,6 +231,44 @@
    "suppliers": [],
    "cluster_id": "d1adb7ae88032c66",
    "cluster_title": "Hermantown approves controversial Google Data Center during late night meeting"
+  },
+  {
+   "id": "e87402251d57d869",
+   "title": "Hermantown City Council greenlights Google data center project",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWVVfRkUyOFhsTVZsd20xclk1ejBPdTkwYlJHc2pBN1BNa0VmX0RXUml2MjFPVXQ0Um5IMWNYQ05rUGdWQWoyVWFvZWN3enRpY3JHR0JNTjNGMTlyVTIxQVlWaUVOQWhEejlQVmtNZnJVWXl3M2dDU25zY1dBZUMycmcwd0dnRUZkU1lZdTNUVUFzcFVQX3lFNVVyMW1XanViU0M2QVJZaWoycTZ3M0lTY215TGhWSnpUZ25PY0s5TnpqenVfdEsxRmNhbVRzOUZLM2ZxVWMtTUxhazZR?oc=5",
+   "source": "kare11.com",
+   "published": "2026-10-31T14:38:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Hermantown, Minnesota, US",
+     "lat": 46.8069,
+     "lon": -92.2382,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b91dee0934a191ea",
+   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
   },
   {
    "id": "5c01a7649078b577",
@@ -26411,6 +26512,29 @@
    "suppliers": [],
    "cluster_id": "47ec6048ad319d6f",
    "cluster_title": "Grimes City Council introduces steps for data center proposals, focusing on transparency"
+  },
+  {
+   "id": "e5723ae233c887cc",
+   "title": "UPS Sees $15B Data Center Logistics Prize [2026]",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5kR0dVTHFJb05lZ09WanloYmRQRU0yakh6NF94Mkt2Wi1ZTUV3cU1hNmIwVUdxNHU0bWdzdDVqQ2R2TE9kY241LUdvUE1mSlJHR1YwN2hBekVrdDhieFBVT2twc0pEazluSms4VkltSnMxS2lMNkZ1c2xUeDE?oc=5",
+   "source": "https://tech-insider.org/",
+   "published": "2026-10-28T03:37:11+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 15.0,
+   "cluster_id": "e5723ae233c887cc",
+   "cluster_title": "UPS Sees $15B Data Center Logistics Prize [2026]"
   },
   {
    "id": "b740ba1e8ca9d3e5",
