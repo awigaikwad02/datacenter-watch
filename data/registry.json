@@ -55,7 +55,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-10-31T15:29:47+00:00",
+ "updated": "2026-10-31T16:29:47+00:00",
  "count": 635,
  "visible": 633,
  "records": [
@@ -13095,6 +13095,15 @@
      "published": "2026-10-31T10:56:09+00:00",
      "stage_signal": "Announced",
      "cluster_id": "09bc39a4d5a40b5d"
+    },
+    {
+     "id": "d1adb7ae88032c66",
+     "title": "Hermantown approves controversial Google Data Center during late night meeting",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdjV4b0JKVDVQR1ZabFNJdzk4NHBiQTA2UTJIZWRfV0Nnc3Bnem5iZ3F3ZzBlZHNqMTYycVBRSW1XTzFCODFEQTluTmVMNlpCU3U4TldlR1A1VTVYRjhuUUpZVVFhN0R0VG0zWWtsVlhrSGtucGJxRzBiSk9EVFRWN2VTek9TSjlYMk8wTzlRQTJrcVJQSmczSzl6dE9VTU5tanFRc1JISjc0RTBERHIwUnBWZm9peFphdVlZ?oc=5",
+     "source": "MPR News",
+     "published": "2026-10-31T15:52:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d1adb7ae88032c66"
     }
    ],
    "first_seen": "2026-10-31T00:55:00+00:00",
@@ -13111,11 +13120,17 @@
      "headline_id": "09bc39a4d5a40b5d"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-10-31T15:52:00+00:00",
+     "type": "Approval",
+     "headline_id": "d1adb7ae88032c66"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-31T10:56:09+00:00",
-   "sources_count": 2,
+   "last_news": "2026-10-31T15:52:00+00:00",
+   "sources_count": 3,
    "confidence": "high",
    "hidden": false
   },
