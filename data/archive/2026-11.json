@@ -39,8 +39,70 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 32,
+ "count": 35,
  "items": [
+  {
+   "id": "4c6bc7f4dbed48dd",
+   "title": "Opinion | As data centers pop up left and right, listen to the rural communities on the front lines",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQR0FZbFB6VHFnbnR6UEVMamVzMzhsSUFoSGozc3NjSV9aUm1sRm41RkRJMHJMZ2xJa2twdkxGdEd0VTZ5SWF2ZXctZGY5Z2JWY05rNDZvS2w2QVpaR0NwbUstVl9BdW1nNUdubHlZSzlXeWV5MEJuWU1tc0FENzdSUV9uV0VFeDhLaW10aGp1eUJMUzA?oc=5",
+   "source": "Star Tribune",
+   "published": "2026-11-01T19:30:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4c6bc7f4dbed48dd",
+   "cluster_title": "Opinion | As data centers pop up left and right, listen to the rural communities on the front lines"
+  },
+  {
+   "id": "98824fb0861fc0a5",
+   "title": "With Rapid Advances in AI, Future Data Center Load Profile Uncertain",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLVcxSEl6YnNDU3B5ejVPWHdqUEpBOWhXcjNrOUExdzd6ZnBEV3V2ZDd4anBFQklnVDJZeURWWHRmRFl1QWJaQUd4QXVYbDhxVndaSi1iNGx5YTZBOFBXYTVQVGEycWJSMFhCVnhnRmh3ODcyOC1YcWVmbW9IbXNBOWdGRXJ2ZUdXZE1GSUtxYlp6QldPcmtfMnNJS3AzRXJt?oc=5",
+   "source": "RTO Insider",
+   "published": "2026-11-01T18:24:44+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "98824fb0861fc0a5",
+   "cluster_title": "With Rapid Advances in AI, Future Data Center Load Profile Uncertain"
+  },
   {
    "id": "8b14034d3a2f5cd8",
    "title": "PJM’s Tx Owners Would Lock In What a Data Center Pays",
@@ -224,6 +286,31 @@
    "suppliers": [],
    "cluster_id": "21e712f0fe5722c0",
    "cluster_title": "Love ‘em or hate ‘em, data centers grab real estate spotlight in Texas elections"
+  },
+  {
+   "id": "da0b39ded8eca714",
+   "title": "Candidates Backing Data Center Pauses Could Win in Up to 15 Governor’s Races",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb2VfZURBeHJuaUU5UV8wbW1mUG5KYUliQVdRWlFkVHIwMWxueV9SbFBoTWc4YWYzcEFYNnh6Q1pUSUw1WmlxUVNLOEZUdjk4YTQ1TUt6VHpfQnoxRDZaYXN0ZjBwWXRtOTNqT1g0QTFIMGlzNVV1SmJ3VERBRU0zNHlQNXZTUzZRTm1Dd2ZLRldvb1ctUl9EM0VJd3lCdEJBTVE?oc=5",
+   "source": "The Information",
+   "published": "2026-11-01T16:00:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "da0b39ded8eca714",
+   "cluster_title": "Candidates Backing Data Center Pauses Could Win in Up to 15 Governor’s Races"
   },
   {
    "id": "bff190adc85f29b8",
