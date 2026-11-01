@@ -683,13 +683,27 @@ def fetch_feed(url):
 class Geo:
     """Everything location and source handling needs, loaded once per run."""
 
-    def __init__(self, patterns, areas, source_states, blocked, ambiguous=None):
+    def __init__(self, patterns, areas, source_states, blocked, ambiguous=None, cores=None, word_names=(), source_metros=None,
+                 defaults=None, new_names=(), context_names=()):
         """Hold the compiled place data; see load_gazetteer."""
         self.patterns = patterns            # [(name, regex)] for cities, states, countries
         self.areas = areas                  # "Mason County" -> [candidates]
         self.ambiguous = ambiguous or {}    # "Lansing" -> [candidates in several states]
         self.source_states = source_states  # outlet name -> two-letter state
         self.blocked = blocked              # outlet names (lowercase) that are dropped
+        self.cores = cores or {}            # metro core city -> metro ("Kansas City" -> "Kansas City")
+        self.word_names = set(word_names)   # town names that are also English words ("Liberty")
+        self.source_metros = source_metros or {}  # outlet -> metro, for outlets not named after the core city
+        self.defaults = defaults or {}      # ambiguous name -> the well-known place it meant before ("Frederick" -> Maryland)
+        self.new_names = set(new_names)     # suburb names added by gazetteer_metros.py (stricter rules, see find_locations)
+        self.context_names = set(context_names)  # new suburb names another U.S. place shares: need metro or state context
+
+    def metros_of_source(self, source):
+        """The metro an outlet covers: listed in _source_metros, or its name contains a core city."""
+        m = self.source_metros.get(source)
+        if m:
+            return {m}
+        return {metro for core, metro in self.cores.items() if core in source}
 
 
 # "Mason County", "St. Louis County", "Van Buren Township", "Richland Parish"
@@ -708,7 +722,8 @@ def load_gazetteer():
     county/parish/township and ambiguous-town candidates, the outlets' home states and the
     blocked outlets.
     """
-    raw = {k: v for k, v in load_json(GAZ_FILE, {}).items() if not k.startswith("_")}
+    doc = load_json(GAZ_FILE, {})
+    raw = {k: v for k, v in doc.items() if not k.startswith("_")}
     areas, gaz, ambiguous = {}, {}, {}
     for k, v in raw.items():
         if re.search(r" (County|Parish|Township)$", k):
@@ -723,27 +738,95 @@ def load_gazetteer():
             # Two-letter codes only count after a comma: "Abilene, TX"
             pat = re.compile(r"(?<=, )" + re.escape(n) + r"(?![A-Za-z])")
         else:
-            pat = re.compile(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])")
+            # A hyphen may follow only as "-area" ("Kansas City-area data centers"); "New York-based" is a company's home.
+            pat = re.compile(r"(?<![\w-])" + re.escape(n) + r"(?![\w])(?!-(?!area\b))")
         patterns.append((n, pat))
     cfg = load_json(FEEDS_FILE, {})
     source_states = {k: v for k, v in cfg.get("source_states", {}).items() if not k.startswith("_")}
     blocked = {s.strip().lower() for s in cfg.get("blocked_sources", []) if isinstance(s, str) and not s.startswith("#")}
-    return gaz, Geo(patterns, areas, source_states, blocked, ambiguous)
+    return gaz, Geo(patterns, areas, source_states, blocked, ambiguous, doc.get("_metro_cores", {}),
+                    doc.get("_word_names", []), doc.get("_source_metros", {}), doc.get("_defaults", {}),
+                    doc.get("_new_names", []), doc.get("_context_names", []))
 
 
 def loc_from(entry, precision):
     """A gazetteer entry as a location dict (name, lat, lon, level, precision, country)."""
     lat, lon, level, display = entry[:4]
     country = entry[4] if len(entry) > 4 else ("US" if display.endswith(", US") else display.split(",")[-1].strip())
-    return {"name": display, "lat": lat, "lon": lon, "level": level, "precision": precision, "country": country}
+    if precision == "city" and re.search(r" (County|Parish), ", display):
+        precision = "county"  # a landmark or split-state name that stands for a county ("KCI", "Kansas City, Kansas")
+    loc = {"name": display, "lat": lat, "lon": lon, "level": level, "precision": precision, "country": country}
+    if len(entry) > 5 and entry[5]:
+        loc["metro"] = entry[5]
+    return loc
 
 
-def find_locations(text, gaz, geo, context_states=()):
-    """Places named in the text, most precise first. Ambiguous county and town names
-    ("Mason County", "Lansing") are resolved with the states found elsewhere in the text or
-    the outlet's state, and skipped when that does not settle them."""
-    found, deferred = [], []
+# "near Kansas City", "outside Kansas City", "north of Kansas City", "Kansas City-area": the story
+# is somewhere around the city, so the city itself is not where the project is.
+VICINITY_BEFORE = re.compile(r"\b(?:just\s+)?(?:outside(?:\s+of)?|near|nearby|outskirts\s+of|suburbs?\s+of|suburban|"
+                             r"(?:north|south|east|west|northeast|northwest|southeast|southwest)\s+of)\s+(?:the\s+)?$", re.I)
+VICINITY_AFTER = re.compile(r"^(?:-area|\s+area\b|\s+metro\b|\s+region\b)", re.I)
+# A suburb name followed by one of these is a street, a lake or an organisation: "Jones Road", "Savannah
+# River Site", "Geronimo Power", "Oakland University".
+NOT_A_TOWN_AFTER = re.compile(r"^\s*(?:&|Road|Rd\.?|Street|St\.|Avenue|Ave\.?|Boulevard|Blvd|Drive|Highway|Lake|River|Creek|"
+                              r"Park|Township|Twp\.?|Power|Energy|Group|Capital|Partners|University|College|School|Act|Day|Hall|"
+                              r"Center|Centre|Station|Mall|Plaza|Airport|Bank|Health|Hospital|Company|Co\.)\b")
+
+
+# Capitalised words that may follow a town in a sentence-case headline ("Liberty City Council", "Olathe Planning Commission").
+CIVIC_AFTER = {"City", "County", "Council", "Commission", "Planning", "Board", "Mayor", "Police", "Public", "Schools", "Chamber",
+               "Village", "Town", "Area", "Zoning", "Data", "AI", "Missouri", "Kansas", "Mo", "Kan"} | set(STATE_CODES) | set(STATE_CODES.values())
+
+
+def _suburb_in_context(name, text, start, end, sentence_case):
+    """For a newly added suburb name: false when it is part of a longer name ("Daily Herald",
+    "Western Macedonia", "Sen. Devine", "Spring Hope") or of a street or organisation ("Jones Road")."""
+    before = text[:start].rstrip()
+    prev = re.search(r"([A-Za-z.'’&-]+)$", before)
+    if prev and before and before[-1] not in ":;,(—–-\"'‘“" and prev.group(1)[0].isupper() and not find_companies(prev.group(1)):
+        return False
+    after = text[end:]
+    if NOT_A_TOWN_AFTER.match(after):
+        return False
+    nxt = re.match(r"\s+([A-Z][a-z]+)\b", after)
+    return not (sentence_case and nxt and nxt.group(1) not in CIVIC_AFTER)
+
+
+def _pick(cands, states, metros, default=None):
+    """The one candidate in the story's metro, else the one in its states, else the name's default
+    (the well-known place it meant before suburbs were added) when the story names no other state."""
+    in_metro = [c for c in cands if len(c) > 5 and c[5] in metros]
+    if len(in_metro) == 1:
+        return in_metro[0]
+    in_state = [c for c in (in_metro or cands) if state_of({"name": c[3]}) in states]
+    if len(in_state) == 1:
+        return in_state[0]
+    if default and not in_state:
+        d = next((c for c in cands if c[3] == default), None)
+        if d and (not states or state_of({"name": d[3]}) in states):
+            return d
+    return None
+
+
+def short_name(display):
+    """'Kansas City, Missouri, US' -> 'Kansas City'."""
+    return display.split(",")[0].strip()
+
+
+def find_locations(text, gaz, geo, context_states=(), context_metros=()):
+    """Places named in the text, most precise first.
+
+    - Ambiguous county and town names ("Clay County", "Independence") are resolved to the one in
+      the story's metro (from other places, or the outlet), else its state, else skipped.
+    - A town name that is also an English word ("Liberty") only counts in a sentence-case headline.
+    - A metro's core city named only as a reference point ("outside Kansas City", "Kansas City-area")
+      is not a place of the story; its state is kept, with a note.
+    - When a headline names a metro's core city and one of its suburbs or counties, the suburb or
+      county wins ("Independence ... Kansas City" is Independence).
+    """
+    found, deferred, near = [], [], []
     work = text
+    sentence_case = not title_case(text)
     # A city name inside "Richmond County" or "Van Buren Township" is not that city:
     # blank the matched county/parish/township names before looking for cities.
     for m in AREA_RE.finditer(text):
@@ -755,31 +838,70 @@ def find_locations(text, gaz, geo, context_states=()):
                 work = work[:start] + " " * len(key) + work[m.end():]
                 break
     for name, pat in geo.patterns:
+        if name not in work:  # cheap test first: most names are not in the headline
+            continue
         m = pat.search(work)
         if not m:
             continue
-        if name in geo.ambiguous:
-            deferred.append(geo.ambiguous[name])
+        # A suburb name that does not stand for the town here leaves the text as it was, so a shorter
+        # name inside it can still match ("How One Arizona City Blocked..." is Arizona).
+        if name in geo.word_names and not sentence_case:
+            continue
+        if name in geo.new_names and not _suburb_in_context(name, text, m.start(), m.end(), sentence_case):
+            continue
+        # blank out the match so shorter names inside it do not re-match
+        work = work[:m.start()] + (" " * (m.end() - m.start())) + work[m.end():]
+        cands = geo.ambiguous.get(name) or [gaz[name]]
+        is_city = cands[0][2] >= 3 and not re.search(r" (County|Parish), ", cands[0][3])
+        # Only for a metro's core city: "near Boulder City" is close enough to Boulder City, but
+        # "outside Atlanta" can be 40 miles from Atlanta.
+        if is_city and name in geo.cores and (VICINITY_BEFORE.search(text[:m.start()]) or VICINITY_AFTER.match(text[m.end():])):
+            near.append((name, cands))
+            continue
+        if name in geo.ambiguous or name in geo.context_names:
+            deferred.append((name, cands))
+        elif (name in geo.new_names and context_states and len(cands[0]) > 5
+              and state_of({"name": cands[0][3]}) not in context_states and cands[0][5] not in context_metros):
+            continue  # a suburb in another state and metro than the outlet's ("Bessemer City" from a Birmingham station)
         else:
             entry = gaz[name]
             found.append(loc_from(entry, "city" if entry[2] >= 3 else "state" if entry[2] == 2 else "country"))
-        # blank out the match so shorter names inside it do not re-match
-        work = work[:m.start()] + (" " * (m.end() - m.start())) + work[m.end():]
     known_states = {state_of(f) for f in found} | set(context_states)
-    for cands in deferred:
-        picks = [c for c in cands if state_of({"name": c[3]}) in known_states]
-        if len(picks) == 1:
-            found.append(loc_from(picks[0], "city"))
+    known_metros = {f["metro"] for f in found if f.get("metro")} | set(context_metros)
+    for name, cands in deferred:
+        pick = _pick(cands, known_states, known_metros, geo.defaults.get(name))
+        if pick:
+            found.append(loc_from(pick, "city"))
+            if len(pick) > 5 and pick[5]:
+                known_metros.add(pick[5])
     for m in AREA_RE.finditer(text):
         words, kind = m.group(1).split(), m.group(2)
         for k in range(len(words), 0, -1):  # "Proposed Mason County" -> "Mason County"
             key = " ".join(words[-k:]) + " " + kind
             if key in geo.areas:
                 cands = geo.areas[key]
-                pick = cands[0] if len(cands) == 1 else next((c for c in cands if state_of({"name": c[3]}) in known_states), None)
+                pick = cands[0] if len(cands) == 1 else _pick(cands, known_states | {state_of(f) for f in found}, known_metros)
                 if pick:
                     found.append(loc_from(pick, "city" if kind == "Township" else "county"))
                 break
+    # A reference city gives only its state: "outside Kansas City" is somewhere in Missouri (or Kansas).
+    for name, cands in near:
+        pick = cands[0] if len(cands) == 1 else _pick(cands, known_states, known_metros)
+        st = state_of({"name": pick[3]}) if pick else None
+        state_name = next((n for n, c in STATE_CODES.items() if c == st), None)
+        if state_name in gaz and not any(f["precision"] in ("city", "county") for f in found):
+            loc = loc_from(gaz[state_name], "state")
+            loc["note"] = f"near {name}"
+            found.append(loc)
+    # A metro suburb in another state than one the headline names is a same-named place, not this
+    # one ("Antelope Data Center ... southern Utah" is not Antelope, California).
+    named_states = {state_of(f) for f in found if f["precision"] == "state" and not f.get("note")}
+    found = [f for f in found if not (f.get("metro") and f["precision"] == "city" and short_name(f["name"]) not in geo.cores
+                                      and named_states and state_of(f) not in named_states)]
+    # The metro's core city gives way to a suburb or county of the same metro.
+    local = {f["metro"] for f in found if f.get("metro") and f["precision"] in ("city", "county")
+             and short_name(f["name"]) not in geo.cores}
+    found = [f for f in found if not (short_name(f["name"]) in geo.cores and f.get("metro") in local)]
     found.sort(key=lambda f: (-PRECISION_RANK.get(f["precision"], 0), -f["level"]))
     seen, out = set(), []
     for f in found:
@@ -926,7 +1048,7 @@ def tag_item(item, gaz, geo):
     if not is_on_topic(text, companies):
         return False
     source_state = geo.source_states.get(item.get("source", ""))
-    locs = find_locations(text, gaz, geo, [source_state] if source_state else ())
+    locs = find_locations(text, gaz, geo, [source_state] if source_state else (), geo.metros_of_source(item.get("source", "")))
     title_locs = find_locations(item["title"], gaz, geo) if item.get("source", "").strip().lower() in FOREIGN_SOURCES else ()
     if not us_filter(item, locs, title_locs):
         return False
@@ -943,6 +1065,11 @@ def tag_item(item, gaz, geo):
     item["state"] = states[0] if states else None
     item["county"] = next((l["name"] for l in us_locs if l["precision"] == "county"), None)
     item["location_precision"] = us_locs[0]["precision"] if us_locs else None
+    note = next((l["note"] for l in us_locs if l.get("note")), None)
+    if note:
+        item["location_note"] = note
+    else:
+        item.pop("location_note", None)
     item["companies"] = companies
     item["utilities"] = find_utilities(text)
     item["investors"] = find_orgs(INVESTOR_RULES, text)
