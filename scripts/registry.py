@@ -45,10 +45,31 @@ STATUSES = ("Announced", "Planned", "Under construction", "Operational", CANCELL
 # "Hyperion" is Meta in Richland Parish, "Colossus" xAI in Memphis. Curated project names and
 # aliases from overrides are added at run time.
 CODE_NAMES = ["Stargate", "Hyperion", "Prometheus", "Fairwater", "Project Rainier", "Colossus", "Project Matador"]
-# Rule e: with no operator on either side, a headline joins a record at the same town or county
-# only when their titles share 40% of their words within 60 days.
-NO_COMPANY_JACCARD = 0.4
-NO_COMPANY_DAYS = 60
+# Rule e: a headline with no operator joins a record at the same town or county (no time limit)
+# when they share a project name, a figure within 25%, 30% of their title words within 180 days,
+# or when that record is the only anonymous one there; figures more than 3x apart keep them apart.
+NO_COMPANY_JACCARD = 0.3
+NO_COMPANY_DAYS = 180
+FIGURE_CLOSE = 1.25
+FIGURE_CONFLICT = 3.0
+
+# A headline never starts a project when it is a question, when the stage word's subject is a public
+# body or residents, or when the thing named is not a data center (it can still join one):
+#   "Kansas City proposes new $2 billion water treatment plant. Is it connected to data center development?"
+#   "Miami County Commission considers pause on data center construction"
+#   "Entergy breaks ground on substation to serve Meta data center"
+GUARD_BODY = re.compile(r"\b(?:residents?|neighbou?rs|commission(?:ers)?|council(?:members?)?|county|board|supervisors|"
+                        r"trustees|aldermen|lawmakers|legislators|voters|officials)\b[^,.;:?]{0,40}?\b(?:considers?|responds?|"
+                        r"weighs?|debates?|pauses?|discuss(?:es)?|reviews?|questions?|delays?|tables?|postpones?)\b", re.I)
+# ...and only when what they weigh is a restriction ("considers pause"), not the project itself
+# ("Rural Miami County residents respond to $1 billion data center proposal" is about a real project).
+GUARD_RESTRICTION = re.compile(r"\b(?:pauses?|moratori(?:um|ums|a)|bans?|rules|regulations?|ordinances?|limits?|restrictions?|"
+                               r"zoning|code|standards|lawsuits?|referendums?|petitions?|freezes?)\b", re.I)
+GUARD_NOT_DC = re.compile(r"\b(?:water treatment plant|treatment plant|wastewater|substations?|transmission lines?|power plants?|"
+                          r"gas plants?|power lines?|pipelines?|solar farms?|wind farms?|battery storage|factory|factories|"
+                          r"manufacturing (?:plant|facility|hub)|warehouses?|landfill|airport|stadium|hospital|school)\b", re.I)
+STATUS_WORD = {"Announced": "proposed", "Planned": "planned", "Under construction": "under construction",
+               "Operational": "operational", CANCELLED: "cancelled"}
 MAX_PAGES_PER_RECORD = 2000      # above this many records, write one page per state instead
 MAX_PAGES_BYTES = 5 * 1024 * 1024
 SLUG_ALIAS = {"Amazon": "aws"}
@@ -153,6 +174,57 @@ def import_curated(records):
 # ---------------------------------------------------------------------------
 # Matching
 # ---------------------------------------------------------------------------
+def creation_guard(it):
+    """Why a headline may not start a project (it may still join one), or None."""
+    t = it["title"].strip().rstrip("\"'”’ ")
+    if t.endswith("?"):
+        return "a question"
+    body = GUARD_BODY.search(t)
+    if body and GUARD_RESTRICTION.search(t[body.start():]):
+        return "a public body or residents weighing a restriction"
+    first_dc = re.search(r"\bdata\s?cent(?:er|re)s?\b", t, re.I)
+    if first_dc and GUARD_NOT_DC.search(t[:first_dc.start()]):
+        return "about something other than the data center"
+    if it.get("category") == "Policy / Permits" and not it.get("companies") and not it.get("name_hint"):
+        return "a policy story with no operator or project name"
+    return None
+
+
+def record_figures(r):
+    """(MW, $B): the largest capacity and investment in the record's headlines (or its curated values)."""
+    mw = usd = 0
+    for n in r.get("news", []):
+        f = fn.extract_numbers(n["title"])
+        mw, usd = max(mw, f.get("capacity_mw", 0)), max(usd, f.get("investment_usd_b", 0))
+    return (r.get("curated_capacity_mw") or mw or None, r.get("curated_investment_usd_b") or usd or None)
+
+
+def _ratio(a, b):
+    return max(a, b) / min(a, b) if a and b else None
+
+
+def figure_match(inf, figs):
+    """True when the headline's investment or capacity is within 25% of the record's."""
+    usd, mw = _ratio(inf.get("usd"), figs[1]), _ratio(inf.get("mw"), figs[0])
+    return bool((usd and usd <= FIGURE_CLOSE) or (mw and mw <= FIGURE_CLOSE))
+
+
+def figure_conflict(inf, figs):
+    """True when the headline's investment or capacity differs from the record's by more than 3x."""
+    usd, mw = _ratio(inf.get("usd"), figs[1]), _ratio(inf.get("mw"), figs[0])
+    return bool((usd and usd > FIGURE_CONFLICT) or (mw and mw > FIGURE_CONFLICT))
+
+
+def similar_recent(inf, r):
+    """True when a headline of the record shares 30% of title words within 180 days."""
+    for n in r.get("news", []):
+        t = parse(n["published"])
+        if t and inf["t"] and abs((inf["t"] - t).days) <= NO_COMPANY_DAYS and \
+                fn.jaccard(inf["words"], fn.title_words(n["title"], n.get("source", ""))) >= NO_COMPANY_JACCARD:
+            return True
+    return False
+
+
 def project_shaped(it):
     """True when a headline can be about one project: it names a place, a site word (data center,
     campus, facility) and a stage word.
@@ -234,6 +306,8 @@ class Matcher:
             "city": city, "precision": it.get("location_precision") or (locs[0].get("precision") if locs else None),
             "words": fn.title_words(it["title"], it.get("source", "")), "t": parse(it["published"]),
             "hint": it.get("name_hint"),
+            "mw": it.get("capacity_mw"), "usd": it.get("investment_usd_b"),
+            "guard": creation_guard(it),
             # Builders and suppliers never create a project (see process).
             "vendors_only": not it.get("companies") and bool(it.get("builders") or it.get("suppliers")),
         }
@@ -243,8 +317,8 @@ class Matcher:
         return [n for n, rx in self.code_rx if rx.search(title)]
 
     def match(self, it, inf):
-        # a. a headline from the same story cluster is already attached
         """The record a headline belongs to and the rule that matched (for the run log), or (None, None)."""
+        # a. a headline from the same story cluster is already attached
         rid = self.by_cluster.get(it.get("cluster_id"))
         if rid:
             return self.resolve(rid), "cluster"
@@ -269,6 +343,12 @@ class Matcher:
             rid = self.first([x for c in inf["companies"] for p in places for x in self.by_place.get((c, p), [])])
             if rid:
                 return rid, "company + place"
+            # e2. an operator's headline joins an anonymous record at the same place that shares its
+            #     project name, a figure, or most of its title ("Nebius breaks ground in Independence"
+            #     joins "Independence approves hyperscale AI data center, issues $150 billion in bonds")
+            rid = self.anonymous_match(inf, places, anonymous_only=True)
+            if rid:
+                return rid, "operator + anonymous record"
             # d. a headline that names only the state joins the same company's record known only to the
             #    state (no time limit). A headline that names a town or county does not: it creates the
             #    named site, which folds that umbrella in (see create).
@@ -277,17 +357,12 @@ class Matcher:
                                   if self.records[x].get("precision") in ("state", "source")])
                 if rid:
                     return rid, "company + state"
-        # e. no company on either side, same place and similar title within 60 days
+        # e. no operator: a record at the same town or county with the same project name, a figure
+        #    within 25%, a similar title within 180 days, or the only anonymous record there
         elif places:
-            for rid in sorted(dict.fromkeys(x for p in places for x in self.no_company.get(p, [])), key=lambda x: self.order.get(x, 1e9)):
-                r = self.records[rid]
-                if r.get("hidden") or r.get("companies"):
-                    continue
-                for n in r["news"]:
-                    t = parse(n["published"])
-                    if t and inf["t"] and abs((inf["t"] - t).days) <= NO_COMPANY_DAYS and \
-                            fn.jaccard(inf["words"], fn.title_words(n["title"], n.get("source", ""))) >= NO_COMPANY_JACCARD:
-                        return r["id"], "place + similar title"
+            rid = self.anonymous_match(inf, places)
+            if rid:
+                return rid, "place + anonymous match"
         # f. a builder or supplier headline ("Mortenson breaks ground in Hermantown") joins the one
         #    project already tracked at that place, whatever its operator; with two or more it joins none
         if inf["vendors_only"] and places:
@@ -296,6 +371,32 @@ class Matcher:
             if len(live) == 1:
                 return live[0], "vendor + place"
         return None, None
+
+    def at_place(self, places):
+        """Live, non-umbrella records at any of these town or county names, oldest first."""
+        rids = dict.fromkeys(x for p in places for x in self.by_any_place.get(p, []))
+        return [self.records[x] for x in sorted(rids, key=lambda x: self.order.get(x, 1e9))
+                if x in self.records and not self.records[x].get("hidden") and not self.records[x].get("umbrella")]
+
+    def anonymous_match(self, inf, places, anonymous_only=False):
+        """Rule e (and e2 with anonymous_only): the record at these places that this headline belongs
+        to, by project name, then figure, then similar title, then the only anonymous record there."""
+        recs = self.at_place(places)
+        anon = [r for r in recs if not r.get("companies")]
+        pool = anon if anonymous_only else recs
+        if inf["hint"]:
+            for r in pool:
+                if inf["hint"].lower() in (h.lower() for h in r.get("name_hints", [])):
+                    return r["id"]
+        for r in pool:
+            if figure_match(inf, record_figures(r)):
+                return r["id"]
+        for r in anon:
+            if not figure_conflict(inf, record_figures(r)) and similar_recent(inf, r):
+                return r["id"]
+        if len(anon) == 1 and not anonymous_only and not figure_conflict(inf, record_figures(anon[0])):
+            return anon[0]["id"]
+        return None
 
     # ------------------------------------------------------------------
     def new_id(self, base):
@@ -394,6 +495,14 @@ class Matcher:
         rid, how = self.match(it, inf)
         if not rid and inf["vendors_only"]:
             return None, None
+        if not rid and inf["guard"]:
+            # Never starts a project, but joins the one record at its place if there is exactly one.
+            places = [p for p in (inf["county"], inf["city"]) if p]
+            only = self.at_place(places)
+            if len(only) == 1:
+                rid, how = only[0]["id"], "guarded + only record at place"
+            else:
+                return None, "guarded"
         if not rid:
             codes = self.code_names(it["title"])
             figure = it.get("capacity_mw") or it.get("investment_usd_b")
@@ -444,6 +553,7 @@ def apply_overrides(m, ops):
                     if k in op:
                         r[k] = op[k]
                 r["city"], r["county"] = place_fields(r["location"], r.get("precision"))
+                r["location_locked"] = True  # relocate() never moves it again
                 if r.get("precision") in ("city", "county"):
                     r.pop("umbrella", None)
                 applied += 1
@@ -543,6 +653,7 @@ def derive(r, resignal=True):
             history.append({"date": override["date"], "status": status, "headline_id": None, "by": "override"})
     r["status"] = status or "Announced"
     r["status_history"] = history
+    events += r.get("location_events", [])
     # One event of each type per day: several outlets reporting the same approval are one step.
     seen, r["events"] = set(), []
     for e in events:
@@ -584,12 +695,42 @@ def derive(r, resignal=True):
     else:
         r["confidence"] = "low"
     r.setdefault("hidden", False)
+    auto_name(r)
     for k in ("company", "notes", "verified", "name_hints") + ORG_FIELDS:
         r.setdefault(k, "" if k in ("company", "notes") else False if k == "verified" else [])
     return r
 
 
 ORG_FIELDS = ("utilities", "investors", "builders", "suppliers")
+
+
+def money(usd_b):
+    """'$1B', '$650M', '$12.6B'."""
+    return f"${usd_b * 1000:.0f}M" if usd_b < 1 else f"${usd_b:g}B"
+
+
+def auto_name(r):
+    """Name a detected record from what is known, so two records in one town can be told apart:
+    operator records "Patmos Kansas City data center"; anonymous records their project name
+    ("Independence AI Data Center"), else "<place> data center ($1B, proposed 2025)". Curated,
+    renamed, umbrella and code-name records keep their names."""
+    if r.get("curated") or r.get("renamed") or r.get("umbrella"):
+        return
+    if any(code.lower() in r["name"].lower() for code in CODE_NAMES):
+        return
+    place = short_place(r.get("location"))
+    if r.get("companies"):
+        r["name"] = f"{r['companies'][0]} {place} data center"
+        return
+    hints = r.get("name_hints") or []
+    if hints:
+        h = hints[0]
+        r["name"] = h if place.lower() in h.lower() else f"{h} ({place})"
+        return
+    fig = money(r["investment_usd_b"]) if r.get("investment_usd_b") else f"{r['capacity_mw']:,} MW" if r.get("capacity_mw") else None
+    year = str(r.get("first_seen") or "")[:4]
+    when = " ".join(x for x in (STATUS_WORD.get(r.get("status"), ""), year) if x)
+    r["name"] = f"{place} data center ({', '.join(x for x in (fig, when) if x)})"
 
 
 def attach_orgs(records, items_by_id):
@@ -606,10 +747,13 @@ def attach_orgs(records, items_by_id):
             r[k] = sorted(have)
         # A record with no operator yet takes the operators of its earliest headline that names one;
         # a record that has operators keeps them (a later "Meta and xAI" roundup does not add xAI).
-        if not r.get("curated") and not r.get("umbrella") and not r.get("companies"):
+        # A detected record's operators are those of its earliest headline that names any, so a
+        # replay always gives the same answer ("Patmos announces Nebius as first tenant" is Patmos's site).
+        earliest = min(r["news"], key=lambda n: n["published"])["id"] if r["news"] else None
+        if not r.get("curated") and not r.get("umbrella") and (earliest in items_by_id or not r.get("companies")):
             named = [it for it in sorted(news, key=lambda x: x["published"]) if it.get("companies")]
             if named:
-                r["companies"] = list(named[0]["companies"])
+                r["companies"] = sorted(named[0]["companies"], key=lambda c: fn.COMPANY_ORDER.get(c, 99))
         hints = list(r.get("name_hints", []))
         hints += [it["name_hint"] for it in news if it.get("name_hint") and it["name_hint"] not in hints]
         r["name_hints"] = list(dict.fromkeys(hints))
@@ -618,10 +762,127 @@ def attach_orgs(records, items_by_id):
 # ---------------------------------------------------------------------------
 # One run
 # ---------------------------------------------------------------------------
+def best_location(news_items):
+    """The place most of a record's headlines name: town or county (most frequent, then most precise,
+    then earliest), else the state; None when they name no place."""
+    local, states = [], []
+    for it in sorted(news_items, key=lambda x: x["published"]):
+        locs = it.get("locations") or []
+        loc = next((l for l in locs if l.get("precision") in ("city", "county")), None)
+        if loc:
+            local.append((loc, it))
+        elif locs:
+            states.append((locs[0], it))
+    if local:
+        counts = {}
+        for loc, _ in local:
+            counts[loc["name"]] = counts.get(loc["name"], 0) + 1
+        rank = {"city": 2, "county": 1}
+        loc, it = max(local, key=lambda x: (counts[x[0]["name"]], rank.get(x[0]["precision"], 0)) )
+        return loc, it
+    return states[0] if states else None
+
+
+def relocate(records, items_by_id, log=print):
+    """Move detected records to the place their headlines now name (after a gazetteer or rule
+    change). Curated records, umbrellas and records with a set_location override stay. Each move
+    adds a timeline event "Moved to <place>". Returns how many moved."""
+    moved = 0
+    today = now_iso()[:10]
+    for r in records.values():
+        if r.get("curated") or r.get("umbrella") or r.get("hidden") or r.get("location_locked"):
+            continue
+        items = [items_by_id[n["id"]] for n in r["news"] if n["id"] in items_by_id]
+        best = best_location(items) if items else None
+        if not best:
+            continue
+        loc, it = best
+        if loc["name"] == r.get("location") and loc.get("precision") == r.get("precision"):
+            continue
+        old = r.get("location")
+        city = loc["name"] if loc.get("precision") == "city" else None
+        county = loc["name"] if loc.get("precision") == "county" else (it.get("county") if city else None)
+        r.update({"location": loc["name"], "lat": loc["lat"], "lon": loc["lon"], "precision": loc.get("precision"),
+                  "city": city, "county": county, "state": fn.state_of(loc) or r.get("state")})
+        r.setdefault("location_events", []).append({"date": today, "type": f"Moved to {short_place(loc['name'])}",
+                                                    "headline_id": it["id"], "from": old})
+        moved += 1
+    return moved
+
+
+def consolidate(m, items_by_id):
+    """Merge records at the same town or county that the matching rules would have joined:
+    the same operator, the same project name, an anonymous record whose figure matches an operator's
+    record, or two anonymous records with a matching figure, a similar title within 180 days, or no
+    other anonymous record there and no conflicting figure. A detected record whose every headline
+    is barred from starting a project (creation_guard) joins the one record at its place, or is
+    hidden. Older records absorb newer ones; nothing is deleted. Returns (merged, hidden)."""
+    merged = hidden = 0
+    by_place = {}
+    for r in m.live():
+        if r.get("umbrella") or r.get("precision") not in ("city", "county"):
+            continue
+        by_place.setdefault(r["location"], []).append(r)
+    for place, recs in by_place.items():
+        recs.sort(key=lambda r: m.order.get(r["id"], 1e9))
+        kept = []
+        for b in recs:
+            target = None
+            if not b.get("curated"):
+                for a in kept:
+                    if records_match(a, b, [k for k in kept if not k.get("companies")]):
+                        target = a
+                        break
+            if target:
+                m.merge(b["id"], target["id"])
+                merged += 1
+            else:
+                kept.append(b)
+        for b in list(kept):
+            if b.get("curated"):
+                continue
+            items = [items_by_id[n["id"]] for n in b["news"] if n["id"] in items_by_id]
+            if items and len(items) == len(b["news"]) and all(creation_guard(it) for it in items):
+                others = [k for k in kept if k is not b]
+                if len(others) == 1:
+                    m.merge(b["id"], others[0]["id"])
+                    merged += 1
+                else:
+                    b["hidden"], b["hidden_reason"] = True, "not a project: " + creation_guard(items[0])
+                    hidden += 1
+                kept.remove(b)
+    m.reindex()
+    return merged, hidden
+
+
+def records_match(a, b, anon_kept):
+    """Whether record b belongs with the older record a at the same place (see consolidate)."""
+    ca, cb = set(a.get("companies", [])), set(b.get("companies", []))
+    if {h.lower() for h in a.get("name_hints", [])} & {h.lower() for h in b.get("name_hints", [])}:
+        return True
+    fa, fb = record_figures(a), record_figures(b)
+    inf_b = {"usd": fb[1], "mw": fb[0]}
+    if ca and cb:
+        return bool(ca & cb)
+    if ca or cb:
+        return figure_match(inf_b, fa)
+    if figure_match(inf_b, fa):
+        return True
+    if figure_conflict(inf_b, fa):
+        return False
+    for n in b["news"]:
+        inf = {"t": parse(n["published"]), "words": fn.title_words(n["title"], n.get("source", ""))}
+        if similar_recent(inf, a):
+            return True
+    return len(anon_kept) == 1 and anon_kept[0] is a
+
+
 def reject_reason(inf):
     """Why a project-shaped headline started no record (see Matcher.process)."""
     if inf["vendors_only"]:
         return "names only a builder or supplier"
+    if inf.get("guard"):
+        return inf["guard"]
     if inf["precision"] in ("state", "source"):
         return "no operator, and only a state" if not inf["companies"] else "only a state"
     return "no operator, code name or figure"
@@ -646,28 +907,49 @@ def update(items, gaz, registry_in=REGISTRY_FILE, registry_out=REGISTRY_FILE, lo
     records = load(registry_in)
     before = len(records)
     import_curated(records)
+    items_by_id = {it["id"]: it for it in items}
+    moved = relocate(records, items_by_id)
     m = Matcher(records, gaz)
-    counts, rejects = {}, []
+    counts, rejects, deferred = {}, [], []
     for it in sorted(items, key=lambda x: (x["published"], x["id"])):
         rid, how = m.process(it)
+        if how == "guarded":
+            deferred.append(it)
+            how = None
         if how:
             counts[how.split(" ")[0]] = counts.get(how.split(" ")[0], 0) + 1
-        elif it["id"] not in m.by_news and project_shaped(it):
+        elif it["id"] not in m.by_news and project_shaped(it) and it not in deferred:
             inf = m.info(it)
             rejects.append({k: it.get(k) for k in ("id", "title", "link", "source", "published", "state", "companies",
                                                     "builders", "suppliers")} | {"precision": inf["precision"],
                                                                                   "reason": reject_reason(inf)})
+    # Second pass: a guarded headline can join a record that a later headline in this run created.
+    for it in deferred:
+        inf = m.info(it)
+        rid, how = m.match(it, inf)
+        only = m.at_place([p for p in (inf["county"], inf["city"]) if p])
+        rid = rid or (only[0]["id"] if len(only) == 1 else None)
+        if rid:
+            m.attach(rid, it, fn.guess_status(it["title"]))
+            counts["guarded"] = counts.get("guarded", 0) + 1
+        else:
+            rejects.append({k: it.get(k) for k in ("id", "title", "link", "source", "published", "state", "companies",
+                                                    "builders", "suppliers")} | {"precision": inf["precision"],
+                                                                                  "reason": reject_reason(inf)})
+    attach_orgs(records, items_by_id)
+    merged, hidden = consolidate(m, items_by_id)
     applied, problems = apply_overrides(m, load_overrides())
     for p in problems:
         log("  override problem: " + p)
-    attach_orgs(records, {it["id"]: it for it in items})
+    attach_orgs(records, items_by_id)
     for r in records.values():
         derive(r)
     save(records, registry_out)
     if rejects_out:
         write_rejects(rejects, records, rejects_out)
     log(f"Registry: {len(records)} records ({len(records) - before} new), attached {sum(counts.values())} headlines "
-        f"{dict(sorted(counts.items()))}, {applied} overrides applied")
+        f"{dict(sorted(counts.items()))}, {moved} moved, {merged} merged, {hidden} hidden as not projects, "
+        f"{applied} overrides applied")
     return records
 
 
@@ -775,6 +1057,16 @@ def record_html(r):
 </article>"""
 
 
+def redirect_page(path):
+    """A tiny page that forwards a merged record's URL to the record that holds it now."""
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Moved · The Rack Report</title>
+<meta name="robots" content="noindex"><link rel="canonical" href="{SITE}{path}">
+<meta http-equiv="refresh" content="0; url={path}"></head>
+<body><p>This project was merged: <a href="{path}">continue to its page</a>.</p></body></html>
+"""
+
+
 def page_shell(title, desc, canonical, body):
     """A complete static HTML page (head, navigation, footer) around a body."""
     nav = "".join(f'<a href="{u}">{t}</a>' for u, t in NAV)
@@ -819,6 +1111,17 @@ def build_pages(records, out_dir=PAGES_DIR, sitemap=SITEMAP_FILE, log=print):
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
     pages = []
+    # A merged record keeps a page that forwards to the record that holds its headlines, so old links work.
+    for r in records.values():
+        if r.get("hidden") and r.get("merged_into") and mode == "record":
+            target = r["merged_into"]
+            seen = set()
+            while records.get(target, {}).get("merged_into") and target not in seen:
+                seen.add(target)
+                target = records[target]["merged_into"]
+            if target in records and not records[target].get("hidden"):
+                (out_dir / r["id"]).mkdir(parents=True, exist_ok=True)
+                (out_dir / r["id"] / "index.html").write_text(redirect_page(f"/projects/{target}/"), encoding="utf-8")
     if mode == "record":
         for r in visible:
             desc = f'{r["name"]}: {r["status"].lower()} data center project in {r["location"].replace(", US", "")}, with its status history and news.'
