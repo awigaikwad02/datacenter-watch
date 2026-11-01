@@ -39,8 +39,139 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 8,
+ "count": 12,
  "items": [
+  {
+   "id": "e91b55883c73f670",
+   "title": "Beyond the grid: the maintenance challenges putting the data center boom at risk",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUy11Y2VsdG9rblIwQ2FQdGU2RkpZbDdibXlLLUFrZjdLdk9xTDZTaWl4RnlPVWpWTkppb0xpRGFSdWJwY0twc1RxbC1JdzRSRVE0RUZ0SFZBWkY2ODRXWF9TWmdab3hkTHl1S1U3cG5yVnZsbGRldTJzOENUZnJNaWx6SXdNd2V5RGMzRm9CeVdGRWJXdEw3bC1ZX01JX0tONFNBRGVkTnVyT1dIZ0JjTGdNLU5rcGh4UWZ5N1NoUTJIQzdtX2c?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-01T11:05:12+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e91b55883c73f670",
+   "cluster_title": "Beyond the grid: the maintenance challenges putting the data center boom at risk"
+  },
+  {
+   "id": "c89a01b96c5e6064",
+   "title": "Tennessee has bet big on data centers. But what if the AI boom busts?",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVG9mdF91V3VBR3NQQmlPb3B2YnZoM0dpMVFWbG5pd1dKcDczNVJGZmJONVRCY0FTUXFUQjY2WFdtNFFZTmp2ZXh2QzJQSVhYM0ZBeWppd0NleXZnZV80YTV5aEY1NHcyWUZncnNmdmdqUklreUk3YzB2c3JCY0F4azBlWHViVWRYOUNvSVNTWk1MT28wTmp5SHlnUDdIaldvUFE?oc=5",
+   "source": "The Tennessean",
+   "published": "2026-11-01T11:01:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c89a01b96c5e6064",
+   "cluster_title": "Tennessee has bet big on data centers. But what if the AI boom busts?"
+  },
+  {
+   "id": "f5711162b44e9c76",
+   "title": "Behind our reporting on Tennessee's booming data center industry",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVElPdmFpWlZwU01ZNU1YczZ5cUtiMllBTjdvb0Vxd1h3aUcwZjF3dEpiRi1hUkZwcHhCRDY1RTBDSW03TnhudENvaHgxeGpES0pGa2dRME5qa3B2N05fSHlfckstdENCVHh2alo0X2FBaXl4UjlVVXZvdlJheHdiVTRFVGxKSmU0MUhiZFcyU215eGh0Rm96bTJxUjAtZw?oc=5",
+   "source": "The Tennessean",
+   "published": "2026-11-01T11:01:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f5711162b44e9c76",
+   "cluster_title": "Behind our reporting on Tennessee's booming data center industry"
+  },
+  {
+   "id": "7ea2f19a397b066c",
+   "title": "What Democrats Can Learn From New York’s Data Center Moratorium",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS0RwY2pHbFI4LTNGR3RCZDV6OXZqQWpuTy1QZVlMeEVYa0VBc1hVYUlsNG9zNURhYTRWNHFydzE3X3Rkd2EwSF9ndHY3UzBNaHJtbFdzenVlT21XYjVKVHpWMjAzYjZyLU85VVZyejlHZVhMbEc0ZlBBNEM3REtfc2xxVHVKMmhDT0dJLXBn?oc=5",
+   "source": "WIRED",
+   "published": "2026-11-01T10:00:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "New York, US",
+     "lat": 42.9,
+     "lon": -75.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7ea2f19a397b066c",
+   "cluster_title": "What Democrats Can Learn From New York’s Data Center Moratorium"
+  },
   {
    "id": "b1ad94fc2eb2a5b3",
    "title": "Rural Charms Drew Residents to Taylor, Texas. Then Came the Data Centers.",
