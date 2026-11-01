@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-01T03:17:37+00:00",
+ "updated": "2026-11-01T03:32:33+00:00",
  "count": 701,
  "visible": 596,
  "records": [
@@ -9631,6 +9631,15 @@
      "cluster_id": "d3300bd30ed8469c"
     },
     {
+     "id": "4b86c7178eb03b18",
+     "title": "Oklahoma City Council to consider rezoning for two proposed data centers after delays",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOd2lydkdhUFFwdWdBTVdrUzZvaUZDSC1XaXRuMmh6QUU3LWJYUE1XTkFKazlDcFJlMnFFMkxxb3F3YXdjZWtUYnJ3UlA3YjRhenQ1R2VINU1TbzRlaEhmRmdCdmloYWJnME9MLWh6dXo2d3dFbC1wV28tSVN1UzVBZkJ1ODgxWjZxTlI3U1I2eFpaR2VETXBrTlJ1OEl4Zm05WlZuRnZLZ3V4OUFhQzZ1dHBlQ1h2UQ?oc=5",
+     "source": "KOKH",
+     "published": "2026-10-27T12:35:34+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "4b86c7178eb03b18"
+    },
+    {
      "id": "d1a43e41ed1a9f82",
      "title": "Oklahoma City Council approves rezoning for data center project with conditions",
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVXU1QVpoZXB5eVJVT2JidnlWZzdQT0RLcTA5OUNHRkluczlKUVRaejROZXNsc29MOWs0N2lFUHNlUzYtWTdURkxjc2paZzU2SFM0S0J6TmlVTEh6WHNsRnBhRnNNNDBuZUVUUHk0elczb2VlUDVCNVJZbDBxV2lSOGl6a3F3dlR5UXBZR09UMkNrQ3pSTjdpMmI5cVEzVUg0MW1JS2wtbURKZw?oc=5",
@@ -9647,6 +9656,15 @@
      "published": "2026-10-28T19:37:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "6e7e772ab341e394"
+    },
+    {
+     "id": "dbb07804c3b2d4dc",
+     "title": "City Council approves zoning for massive data center in west OKC",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTVlCOHFSdm9IZ01iMDBZWXVwY0FPNkswOWN4bW5aTHoyUXd4Mmk0bUJlTHV0SFdNbWVRNWtsMVpsRFk2eWE4OEk1Q1VLSDRlbFI3bFBxRHBmTmhPaTMxNGE2bVZfenF4bjNJSUJic1IxQnI4RE5KSkk5WVVzRy1lTHFZUmxaMjBJZFljWGpqNWlRSEpo?oc=5",
+     "source": "Oklahoma City Free Press",
+     "published": "2026-11-01T01:00:57+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1285ca6e87e74ecc"
     }
    ],
    "first_seen": "2025-09-23T07:00:00+00:00",
@@ -9673,12 +9691,17 @@
      "date": "2026-10-28T03:26:17+00:00",
      "type": "Approval",
      "headline_id": "d1a43e41ed1a9f82"
+    },
+    {
+     "date": "2026-11-01T01:00:57+00:00",
+     "type": "Approval",
+     "headline_id": "dbb07804c3b2d4dc"
     }
    ],
    "capacity_mw": 10,
    "investment_usd_b": null,
-   "last_news": "2026-10-28T19:37:00+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-01T01:00:57+00:00",
+   "sources_count": 6,
    "confidence": "high",
    "hidden": false
   },
@@ -15587,6 +15610,24 @@
      "cluster_id": "3b85d5b899137344"
     },
     {
+     "id": "7a007267a02591d4",
+     "title": "Hermantown City Council approves AUAR environmental review for proposed data center",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaXN0T0JrTkFOWnlrcEtBaTRnMzJBV0pCeTI2ZkJRVDBqNERCUDJmSGtzc2U0bVFSbTd5Xzhxb1l6R0wwRktmdFN1WGN5WXdoaVJyYW5ES2l1aWhOdmllNVhrS0ZIRkdONWJMWWFrUjM4bnJ2ZUlLU3hSWm4yYThhOS01NjBfNm9xeDVYWjZZU2ZfWDZ2LXFuM3JBaW1JZ0laVUdnT3dKX1FBTTlscVJFREg4d1h3VHp6?oc=5",
+     "source": "WDIO.com",
+     "published": "2026-10-05T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ed20381ad26a162a"
+    },
+    {
+     "id": "ed20381ad26a162a",
+     "title": "Hermantown council unanimously passes AUAR review for proposed data center",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVVBYR3BkRWdyNFV1MzIzQ1dGMFlKajFOaHQtUmNmZk1wMnY4bTlRTHVySGc1dk5rZEt2OVktZGtITTZGUDlnUlRiVkt4UV84Um1pMVJKY240Rl9kcXUxWDhGNVV2dzNqcmk3c1VlWnVJNlM1VTB4MzV5MzNvWnNRWEZLbU53MXdlWmJ1WHhjOG0tRHZ3dHBHMlpJRjJVRF9YQ25OeVhWb1Ixc2hrbUVabmxaWGrSAcgBQVVfeXFMTXY3clBRWklLVnBOTzEzZFdoSTJpSUpDYlNQTzF0Z0dzWkpyUThSUGVfUjVfb0t5TzhBVVk3MDJWUVZGM2ZLeUxjdy1tbklxT2dtaE13dkJJeno2eHQ4MWM5cWF6U0VaX2lLMEpGQTFzR00xS3pCcEZLUjh6cHlSWHdaMGhPSWQwZlVsQnhiUTlfZ01CUTJtaHlrUkNLQ2Ftd0NjbWhvWWljU0ktV3RyVXZLbXVGNWVBclR1cnlsYXVFVUJUdzZWWlY?oc=5",
+     "source": "Northern News Now",
+     "published": "2026-10-05T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ed20381ad26a162a"
+    },
+    {
      "id": "8f584cf6f3e13411",
      "title": "Hermantown approves updated data center review",
      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeWRSWEhJTUxFNXRzazlpSnN1LW5uMzY0RDBhbE5PNzd4SEhxZmRka3hjVlVnNVBuU1FndzliWElfV2lMd1Y0ZDJXcGE3TWJxeEluc0luNUdPS1pkc2lMVDg4Y1N1TVpFZ0tkd2sxTS16OEFvT09IeFFpUnhWR3VUc2tfV2hSOFc4c0E5cDgwWEVUSnp4MkE?oc=5",
@@ -15710,6 +15751,11 @@
      "date": "2026-05-26T07:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "187e88254065086a"
+    },
+    {
+     "date": "2026-10-05T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "7a007267a02591d4"
     },
     {
      "date": "2026-10-06T07:00:00+00:00",
@@ -35607,6 +35653,15 @@
      "cluster_id": "5eff3a7d357c0e0b"
     },
     {
+     "id": "72d49746e5d04103",
+     "title": "Middlesex Township supervisors approve PAX-1 data center development matters",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVA2cmV1ekZydXo1Smg3QnlzN2dKbUJPNkt4blRpTUt1ZUR1QVBYanQ0WTRoQWFOVXhIelVGOHpaM1VFSGNoaTdFZGY1QndZOFJJRWZWbTZDcHhQa1otMTE2RXJHaExWX2JIdS1YcHFTV2xpOXdrT1VPUmg3dlJYNWtQMV9BelVqd3NodEstVnA1ai1XRUo5Y1ZPcFA4YjNLTmMzRUJERFBySlcwSU9V0gG0AUFVX3lxTE1meUZ0YWxaTzl5dFZYMU03WnBPdTAxd3p0anpjZjlIem15bk80cVVqYnBsUlViQVQ0SWFETHozNFhCZlczcGhJSFYyNnVCTkNYR3dHWEp3WEtYWjMySEliU2o5X2FKU3h1YUJZXzJLWkI4SWFOVmVzdlAtRWdqN2Vxb0tiN2g1MFEzSk4tVU1EUWFyZ2JaWmFxRFZwQmpwV2ZXRVYtU2J4UkFsQTFWUHRvN1JDMg?oc=5",
+     "source": "ABC27",
+     "published": "2026-09-02T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "72d49746e5d04103"
+    },
+    {
      "id": "75909231385402b3",
      "title": "PAX-1 data center in Cumberland County wins key approval; opponents turn to court",
      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUW1WUFVKaWZRTEhQUGd4NFBfX21LRXlzYUdVTmJFR2pZU3VES3UxUFVRUGstbmdzMTZrYmFBOEtMZ19SYWNzWm16U1diRTBTNENmZlA0UkNrdjAzYmJjZ1FSbVZZUU04X0taYWJ5WU5KOVR1bTRQTDNTbWtkWW9PLXJrQkVoWDdUX2ZIZWpuMGpuTTJWSGJNUExkWTdQWlNRanE0Q1U4ZnlWREN3eVZQNmlReEI1LVJiaUZ3RmZubmHSAdQBQVVfeXFMTzN2MkNQUVhvdHBOakh0cXZiTlZXUW9xU2RaS2ZUaGd2b0tjOVFYZ3ZlVG5XSnhrUVFxb0EybjNQMUJMbVlkVy13Y05WNkpmalZnOTBnWmk4MWx6eWM2U0VFNzJFdkpDUFMtVGNhT0VIaXlDMEYzamxUU2d4SGt4OVNPY0NFS2ZoUzlxenNHV2Iwd3RiUjhpb2hfbkdUVnNLYzNOWEg0dGdkOTVHQW94a3VfZnVMYUk0ZnhMYi1zcXlJd0s3TzNVaDhuWUlwRVRQbThMTTE?oc=5",
@@ -35635,13 +35690,13 @@
     {
      "date": "2026-09-02T07:00:00+00:00",
      "type": "Approval",
-     "headline_id": "75909231385402b3"
+     "headline_id": "72d49746e5d04103"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 15.0,
    "last_news": "2026-09-02T07:00:00+00:00",
-   "sources_count": 2,
+   "sources_count": 3,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -44189,6 +44244,15 @@
      "cluster_id": "6dcd887fddbbbda8"
     },
     {
+     "id": "812e6c39f56adfd8",
+     "title": "First reading of data center moratorium passes through City Council",
+     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOdVBOSVVkM0lZeDJLMUlxWFA2a21UTDBVQjFIVTlfTzlienhoSXFNTjZMZEFHdmxaMElPYTdNdlZiYVJMZ2Rzd3pDUEZVR2lVNHpxa1VzLWhtenh0czEzTFlicV8tUUoxZ1UwVnNIQzZRWnY4Nm1tS0V4enJUQm1SX1RuN0lUYmNEM0phc3VhbDQ0dUZjN2dzSmZCUDViVEFjbkluUS1ZTHc3SDFhSUNWQktMeEZsaGpvTXJEUkhtVEQ0bmpyX2pxLUNBSnpOQlVkTlMwMVN4UlMxc2ZNc000cFVHQXFuUQ?oc=5",
+     "source": "FOX13 Memphis",
+     "published": "2026-08-18T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "f7e68c772b78638a"
+    },
+    {
      "id": "e4e388b7e277d059",
      "title": "Memphis council passes temporary data center moratorium on first reading",
      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPbzByWVRfYXB2VEVZVDhtUFNYRGJ0WFNvYU10Q0d6cnVsU2RWeTJtS1M5bzJrNVdvS1gtT19qZGM1M2l3eVpvRHZpc09GSEFzNVRkaDkyMV9WNHJxc3N0ZVZPeWVwTDd1OGZsMTlwNklFVXVPU0d5RzQtd0RUdkpBQ3dqeXlRT3J3RmdxcUthNVBLaVlublA2d0w4MFBmWWs4LVRjQlVwckFqc1lYbTR4RWJ1UUtQWHZ2XzRwSTctZ3JMcTh4QUNLaWc2V01fTnhEdWhIaF9lVVY5R1cyRFd0Zk9ZZnJsTmJMU0tpQlc5aDhLYkpwV2FtcXZ1MlpESWdtdzNPVUJRY3FydVJlMWtv?oc=5",
@@ -44354,7 +44418,7 @@
     {
      "date": "2026-08-18T07:00:00+00:00",
      "status": "Cancelled / Blocked",
-     "headline_id": "e4e388b7e277d059"
+     "headline_id": "812e6c39f56adfd8"
     },
     {
      "date": "2026-10-19T19:18:00+00:00",
@@ -44371,7 +44435,7 @@
     {
      "date": "2026-08-18T07:00:00+00:00",
      "type": "Cancelled",
-     "headline_id": "e4e388b7e277d059"
+     "headline_id": "812e6c39f56adfd8"
     },
     {
      "date": "2026-08-18T07:00:00+00:00",
@@ -44902,6 +44966,15 @@
      "cluster_id": "091c51461fbbca3c"
     },
     {
+     "id": "7873684c611e90b9",
+     "title": "Council Unanimously Approves Data Center Moratorium",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaVJKQzZVcEJYcUdGZF9zZ2x5dHRIZjJaTUphNEQ2TlpNYnluZmNDaVpCcUJpOERlRlM5YXVGUlVJNFh5YjgwTG1rdk16WmU0RVQ1b3lKckdJQUVMMDFDemIxYUlHMlpsUzRpeXM5UHZRU0p1YXY2d0M5S1RDM1N4TENRb1FhT1RMWENORF9OZmIyaWxa?oc=5",
+     "source": "Urban Milwaukee",
+     "published": "2026-10-13T07:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "f85c152c798ccdfa"
+    },
+    {
      "id": "fe93d736e243fe7f",
      "title": "City of Wisconsin Rapids approves data center moratorium",
      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb1JxVm1mZGs1ajFMa0hqUXYxdHdjWUlRcEZPdXJ0YWxCYkdkS3JvLWhvVmxCZ0ltVURPLTQzckIzeHVXVms4UUtxSDBXZlROME5uRW15blJESjhCbmQtYmNsSkRxUzlsQTZmUmhUbEZkNU8xb3FFTmdEdUxSWjRjY0ZDdnE4SnJUajZ3dnk5Tm1UcXVJV3hIbnhXQQ?oc=5",
@@ -45014,7 +45087,7 @@
    "capacity_mw": null,
    "investment_usd_b": 0.2,
    "last_news": "2026-10-26T15:00:46+00:00",
-   "sources_count": 7,
+   "sources_count": 8,
    "confidence": "medium",
    "hidden": false,
    "investors": [],

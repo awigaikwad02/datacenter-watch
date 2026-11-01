@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2,
+ "count": 3,
  "items": [
   {
    "id": "312160d8faae461e",
@@ -77,6 +77,41 @@
    "investment_usd_b": 22.0,
    "cluster_id": "312160d8faae461e",
    "cluster_title": "Wisconsin AI Data Centers [2026]: $22B Spent, Only 1,500 Jobs"
+  },
+  {
+   "id": "dbb07804c3b2d4dc",
+   "title": "City Council approves zoning for massive data center in west OKC",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTVlCOHFSdm9IZ01iMDBZWXVwY0FPNkswOWN4bW5aTHoyUXd4Mmk0bUJlTHV0SFdNbWVRNWtsMVpsRFk2eWE4OEk1Q1VLSDRlbFI3bFBxRHBmTmhPaTMxNGE2bVZfenF4bjNJSUJic1IxQnI4RE5KSkk5WVVzRy1lTHFZUmxaMjBJZFljWGpqNWlRSEpo?oc=5",
+   "source": "Oklahoma City Free Press",
+   "published": "2026-11-01T01:00:57+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Oklahoma City, Oklahoma, US",
+     "lat": 35.47,
+     "lon": -97.52,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1285ca6e87e74ecc",
+   "cluster_title": "OKC approves first mega-data center with strict zoning terms"
   },
   {
    "id": "8d2e6a2d058ed918",
