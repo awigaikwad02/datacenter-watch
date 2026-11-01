@@ -228,11 +228,13 @@ STATUS_RULES = [
                 r"construction (begins|starts|underway|begun|started|kicks off)|begins? construction|"
                 r"starts? construction|topping out|tops out|crews|near(s|ing)? completion)\b", re.I)),
     # "Google opens Mesa data center", "Meta's Kansas City campus comes online",
-    # "Crusoe announces flagship Abilene data center is live", "OpenAI activates Stargate data center"
+    # "Crusoe announces flagship Abilene data center is live", "OpenAI activates Stargate data center",
+    # "Edged launches 26MW Kansas City data center"
     ("Operational",
      re.compile(r"\b(opens|opened|officially open|now open|grand opening|goes live|went live|is live|are live|now live|"
                 r"comes online|came online|goes online|now online|(?:is|are|now|fully|becomes?|became|be) operational|in operation|up and running|"
                 r"activates|activated|begins operations|starts operations|powers on|powered on|"
+                r"launch(?:es|ed) (?:[\w$-]+ ){0,3}?(?:\d[\d,.]*\s?MW|data cent)|"
                 r"completes?|completed|completion|commissioned|energized|ribbon)\b", re.I)),
     # "QTS expands Fayetteville campus with second phase"
     ("Expansion",
@@ -988,6 +990,8 @@ def us_filter(item, all_locs, title_locs=()):
 # raises $3.8B"), so only the singular names a site. Generic words ("New", "Massive"), a tracked
 # operator alone ("Amazon Data Center") and a state alone are not names.
 NAME_PROJECT_RE = re.compile(r"(?<!Center )(?<!Centre )(?<!Campus )\bProject ([A-Z][a-z]{2,}(?: [A-Z][a-z]{2,})?)\b")
+# Sentence case only: "Independence AI data center", "the Wildcat Ridge data center".
+NAME_SITE_LOWER_RE = re.compile(r"\b((?:[A-Z][\w'’&.-]+ ){1,3})(data cent(?:er|re))(?!s)\b")
 NAME_SITE_RE = re.compile(r"\b((?:[A-Z][\w'’&.-]+ ){1,3})(Data Center|Data Centre|Datacenter|campus|Campus|Technology Park|Tech Park)(?!s)\b")
 NAME_GENERIC = set("""A An The This That Proposed Planned Possible Potential Massive Huge Giant Big Biggest Largest Large Mega
 Major Hyperscale Hyperscaler AI A.I. Artificial Intelligence Local County City Town Township State Rural Area Regional Future
@@ -1013,14 +1017,17 @@ def title_case(title):
     return bool(words) and sum(w[0].isupper() for w in words) / len(words) >= 0.6
 
 
-def name_hint(title):
-    """A project's own name in the headline ("Project Sail", "Wildcat Ridge Data Center"), or None."""
+def name_hint(title, places=None):
+    """A project's own name in the headline ("Project Sail", "Wildcat Ridge Data Center"), or None.
+    With places (the gazetteer), a lowercase "X data center" where X is only a place ("Kansas City
+    data center") is not a name."""
     m = NAME_PROJECT_RE.search(title)
     if m:
         words = m.group(1).split()
         if words[0] not in NAME_GENERIC and words[0] not in NAME_PROJECT_NOT:
             return "Project " + (words[0] if words[-1] in NAME_PROJECT_NOT else m.group(1))
-    for m in NAME_SITE_RE.finditer(title):
+    lower = [(m, True) for m in NAME_SITE_LOWER_RE.finditer(title)] if places is not None and not title_case(title) else []
+    for m, is_lower in [(m, False) for m in NAME_SITE_RE.finditer(title)] + lower:
         # Judge the case of the rest of the headline, not of the name itself.
         if title_case(title[:m.start()] + title[m.end():]):
             continue
@@ -1028,7 +1035,11 @@ def name_hint(title):
         # Drop generic words and possessives in front: "the proposed Hermantown Data Center" -> "Hermantown Data Center"
         while words and (words[0] in NAME_GENERIC or words[0].endswith(("'s", "’s", "'", "’"))):
             words = words[1:]
-        if not words or any(w in NAME_GENERIC or w.endswith(("'s", "’s")) for w in words) or not all(w[0].isupper() for w in words):
+        # "AI" may follow a name ("Independence AI data center") but is not a name by itself.
+        if not words or any((w in NAME_GENERIC and not (w == "AI" and i > 0)) or w.endswith(("'s", "’s"))
+                            for i, w in enumerate(words)) or not all(w[0].isupper() for w in words):
+            continue
+        if is_lower and " ".join(words) in places:
             continue
         name = " ".join(words)
         if name in STATE_CODES or find_companies(name) or find_companies(m.group(0)):
@@ -1075,7 +1086,7 @@ def tag_item(item, gaz, geo):
     item["investors"] = find_orgs(INVESTOR_RULES, text)
     item["builders"] = find_orgs(BUILDER_RULES, text)
     item["suppliers"] = find_orgs(SUPPLIER_RULES, text)
-    hint = name_hint(item["title"])
+    hint = name_hint(item["title"], gaz)
     if hint:
         item["name_hint"] = hint
     else:
@@ -1184,6 +1195,10 @@ def classify(title):
     return primary, tags
 
 
+NOT_INVESTMENT = re.compile(r"^\s*(?:in\s+)?(?:\w+\s+){0,2}(?:tax\b|incentives?|abatements?|subsid\w*|rebates?|credits?|"
+                            r"fees?|fines?|settlements?)", re.I)
+
+
 def extract_numbers(title):
     """Capacity (MW; GW converted) and investment (billions of dollars) stated in the title. A
     capacity above MAX_PROJECT_MW is dropped as a grid or statewide figure, not one project.
@@ -1196,7 +1211,8 @@ def extract_numbers(title):
         m = MW_RE.search(title)
         if m:
             out["capacity_mw"] = round(float(m.group(1).replace(",", "")))
-    m = MONEY_RE.search(title)
+    # "$229 million in tax breaks for a $1.4 billion data center": a tax break is not the investment.
+    m = next((x for x in MONEY_RE.finditer(title) if not NOT_INVESTMENT.match(title[x.end():])), None)
     if m:
         val = float(m.group(1).replace(",", ""))
         unit = m.group(2).lower()
