@@ -86,18 +86,21 @@ flowchart TD
     c -- yes --> attach
     c -- no --> d{"d. state-only headline,<br/>same operator's umbrella"}
     d -- yes --> attach
-    d -- no --> e{"e. no operator, same place,<br/>similar title within 60 days"}
+    d -- no --> e{"e. no operator, same town or county:<br/>name, figure within 25%, similar title (180 d),<br/>or the only anonymous record there"}
     e -- yes --> attach
     e -- no --> f{"f. builder or supplier only,<br/>one record at the place"}
     f -- yes --> attach
     f -- no --> new{"town or county + operator,<br/>code name or figure?"}
-    new -- yes --> create["create record<br/>(folds the umbrella)"]
+    new -- "yes, unless guarded" --> create["create record<br/>(folds the umbrella)"]
+    new -- "guarded: a question, a body weighing a pause,<br/>not a data center, policy without operator" --> only["joins the one record at its place,<br/>else rejects file"]
     new -- "state only + operator" --> umb["umbrella record"]
     new -- "builder/supplier only, or nothing" --> none["stays in the news only"]
     attach["attach headline"] --> derive
     create --> derive
     umb --> derive
-    derive["derive: replay headlines in date order<br/>status only moves forward;<br/>cancel, revive; events; confidence"] --> ov["apply data/project_overrides.json"]
+    derive["derive: replay headlines in date order<br/>status only moves forward;<br/>cancel, revive; events; confidence; names"] --> ov["apply data/project_overrides.json"]
+    reloc["relocate: records follow the place<br/>their headlines name"] -.-> h
+    cons["consolidate: merge duplicates at one place;<br/>hide records that are not projects"] -.-> derive
 ```
 
 Status moves Announced → Under construction → Operational and never back; Cancelled / Blocked

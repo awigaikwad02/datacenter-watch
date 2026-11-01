@@ -93,6 +93,13 @@ See docs/CONTRIBUTING.md, "Change a rule". In short: add the headline to `tests/
 with the right answer, change the rule in `scripts/fetch_news.py`, run the tests, then re-tag:
 `python scripts/retag_archive.py && python scripts/registry.py --backfill && python scripts/fetch_news.py --no-fetch && git checkout data/status.json`.
 
+## Too many pins on one point
+
+**You notice:** the health check fails "Likely duplicate pins under 20%", or a place marker on Rack
+Radar lists records that are the same project. Look at the place's list; merge duplicates with a
+`merge` operation (see "Fix a project record"). If a whole metro is wrong, check that its suburbs
+are in the gazetteer (`scripts/gazetteer_metros.py`, add counties to `METROS`) and re-tag.
+
 ## Improve locations
 
 1. `python scripts/source_states.py` lists local outlets that now qualify for a home state;

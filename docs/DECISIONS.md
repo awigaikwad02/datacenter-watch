@@ -114,3 +114,41 @@ such headlines joined the umbrella and the town was lost.
 Two emails at most: the "Health check failed" issue (opens on failure, closes itself when the
 check passes again) and the Monday "Weekly summary" issue (closes the previous one). Everything
 else (rule fixes, data refreshes, re-derived statuses) happens without notification.
+
+## 13. Metros: suburbs win over the core city (2026-11-01)
+
+Rack Radar stacked 17 Kansas City records on one point: suburbs (Independence, Liberty, Miami County,
+Kansas City, Kansas) were missing from the gazetteer, and headlines that said "outside Kansas City"
+were pinned to downtown. `scripts/gazetteer_metros.py` now adds the GeoNames towns of the main
+counties of 41 metros. A suburb or county beats the metro's core city; "near/outside/north of <core
+city>" and "<core city>-area" give only the state, with a note; an ambiguous name resolves to the
+metro the story or the outlet belongs to (a KC station means Kansas City). "Kansas City, Kansas" is
+Wyandotte County. New suburb names are held to stricter rules (English words only in sentence case,
+never inside a longer name or against the outlet's state, people's surnames and company names never
+towns), because a sample of 750 changed places showed those were the false matches. The vicinity
+rule is only for core cities: "near Boulder City" is close enough to Boulder City.
+
+## 14. Anonymous records and creation guards (2026-11-01)
+
+A headline with no operator joins a record at the same town or county when they share a project
+name, a figure within 25%, 30% of title words within 180 days, or when that record is the only
+anonymous one there; figures more than 3x apart stay separate. An operator's headline with a
+matching figure joins an anonymous record, which takes the operator. A headline never starts a
+project when it is a question, when a public body or residents weigh a restriction ("considers
+pause"), when it is about a water plant, substation or power plant, or when it is a policy story
+with no operator or project name; it can still join the one record at its place. Existing duplicates
+were merged by the same rules (lossless: merged records stay hidden with `merged_into`, and their
+pages forward to the surviving record). Records move when their headlines name a better place,
+with a "Moved to <place>" event; `set_location` overrides lock a record in place.
+
+## 15. Same-point projects are one place marker, not a ring (2026-11-01)
+
+Different operators in one city share the city's point, because headlines name the city, not the
+site. The map groups records by exact point: one marker with a count, whose list ("N projects at
+<place>") opens on click and at the top of the list panel. Spiderfying is off, and cluster numbers
+count projects, so a badge equals what clicking through reaches (browser test on Kansas City).
+The health check fails when more than 20% of pins share a point with a likely duplicate (same
+operator, or both anonymous): 40.9% before, 6.3% after. The share of pins sharing a point at all
+(41% after) is a warning, not a failure, until finer locations exist (needs a decision: see the
+2026-11-01 report).
+
