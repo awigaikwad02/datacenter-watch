@@ -39,8 +39,108 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 12,
+ "count": 15,
  "items": [
+  {
+   "id": "386acecb6285f62c",
+   "title": "A data center owned by Amazon Web Services under construction next to the Susquehanna nuclear power plant in Berwick, Pa.",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQZ09YN0JnbDJMZ041NjluNW5VcWxSZlhiMEJPb0Z2VGctWEZFVWRfY0pNdTA3cEhSUEdLWXRFUlk5bzB5aDRfWWF3dEpXYS1wc19GQTFhQjdhdHo2c21wWWJialI4RWtyd0dhaEg0U1h4cHY2azltV3RldHVZQ0ZKbkFCS0poekZvbTZ3OTdsR05XUFpEU2hkMmFPcjIyQVRONTNZTXA4VkF6dXJscTJqREtWdVZtNnI3eGFnNF9ONk53WEhvMnBFMExnbVhWb1FqM0pjMmlNb0Z1aFpHbms1cVNxSHJ0eTFkQ0ttNXFBd0RGQUpC?oc=5",
+   "source": "WFMZ.com",
+   "published": "2026-11-01T12:30:52+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "386acecb6285f62c",
+   "cluster_title": "A data center owned by Amazon Web Services under construction next to the Susquehanna nuclear power plant in Berwick, Pa."
+  },
+  {
+   "id": "03b65aa44aa18967",
+   "title": "Opinion: Pima County must address electronic waste in new data center regulations",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcXREX2tYQ0U0b2RsZjM4bG9adHpMV3kzY1ZtVUl2ZHEzb0xMRF9Rd2piZkZ0VW9WYk9vZ1hyaTZYT2dZOEpidlJfS3RyVzVXT1lfTlpjdEEzQkZ0MFhJc2VKUzYxZXpqRFhYQnRZRlNTUUxoNTJJQkZrM1p4cG5FRXZJRFpreWNEbTVZ?oc=5",
+   "source": "Arizona Daily Star",
+   "published": "2026-11-01T12:00:00+00:00",
+   "feed": "Google News: West",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Pima County, Arizona, US",
+     "lat": 32.099,
+     "lon": -111.789,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": "Pima County, Arizona, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "03b65aa44aa18967",
+   "cluster_title": "Opinion: Pima County must address electronic waste in new data center regulations"
+  },
+  {
+   "id": "b4e63bc4022e3655",
+   "title": "Property rights group launches Ohio data center campaign",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeC1zazA1aUpTXzNIdGpEMGQ1eEx2Rm9pRERzaEw0aER6WlpQLUt4b3VMdlY0cHU3RmMxeHV3MVhpMjhMSk1idDRnSk80OElYa3ZEcm9hcGswd1JBcmRTR183dzhXdWNaN2pZUWNIYW1jNmFNRUg3eTJVQm5ETE9hLXdvVi1HekV6U1liZDd0YUY0OWlqQUVFdjgydHBsckFubjVmY3JYVHNzSFBnLWttUm1kQ2l1SDktQ1ltWjUwbFg2d2_SAcgBQVVfeXFMUGVwaDhXWURGQl9wVGljdmxkLVNsUTR2b0Q3dEluWUxPbUhaVGpyWG9vYzJ2OG5vQkFzam9PMHRfaGxHTU1aZzB3NDJYc2JfUnFEcEZjbGVKNFdvMXVXN20tQ2hvbEpvWjlKcnNTejhaS3FMdnljY3RwRTNhN2QzTDgyLVN0ZVRNeE1GZ0QxWDVuak51bE1iM3pha19sQ1BzLWU2T1lHS0pjUDdFVVpSNTZoaXpWZXdpSXY5WEVLY1p1MU9YZGF0aHk?oc=5",
+   "source": "NBC4 WCMH-TV",
+   "published": "2026-11-01T11:30:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b4e63bc4022e3655",
+   "cluster_title": "Property rights group launches Ohio data center campaign"
+  },
   {
    "id": "e91b55883c73f670",
    "title": "Beyond the grid: the maintenance challenges putting the data center boom at risk",
