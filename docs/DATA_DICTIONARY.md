@@ -220,6 +220,17 @@ Project-shaped headlines from the last 30 days that matched no record and starte
 | `count` | Number of items. |
 | `items` | {id, title, link, source, published, state, companies, builders, suppliers, precision, reason}; reason says why no record was started (only a state, no operator, only a builder or supplier). |
 
+## operator_candidates.json
+
+- **Path:** `data/operator_candidates.json`
+- **Written by:** scripts/operator_candidates.py (by hand)
+
+Names the news often puts before 'data center', 'announces' or 'breaks ground' that are not tracked yet: candidates for fetch_news.COMPANIES, for a person to review. Nothing is added automatically.
+
+| Field | Meaning |
+|---|---|
+| `candidates` | {name, count, examples}: the 50 most frequent, with up to three example headlines. |
+
 ## backfill_report.json
 
 - **Path:** `data/backfill_report.json`

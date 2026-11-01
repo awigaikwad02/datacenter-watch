@@ -218,6 +218,13 @@ FILES = {
                      "reason says why no record was started (only a state, no operator, only a builder or supplier).",
         },
     },
+    "operator_candidates.json": {
+        "path": "data/operator_candidates.json",
+        "writer": "scripts/operator_candidates.py (by hand)",
+        "about": "Names the news often puts before 'data center', 'announces' or 'breaks ground' that are not tracked yet: "
+                 "candidates for fetch_news.COMPANIES, for a person to review. Nothing is added automatically.",
+        "fields": {"candidates": "{name, count, examples}: the 50 most frequent, with up to three example headlines."},
+    },
     "backfill_report.json": {
         "path": "data/backfill_report.json",
         "writer": "scripts/backfill_report.py",

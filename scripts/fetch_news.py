@@ -288,6 +288,8 @@ COMPANIES = [
     # GPU clouds and AI compute. "Nebius buys 79 acres in Birmingham"
     ("CoreWeave", r"CoreWeave"),
     ("Crusoe", r"Crusoe"),
+    # Before the GPU clouds: in "Patmos announces Nebius as first tenant" the site is Patmos's.
+    ("Patmos", r"Patmos"),
     ("Lambda", r"Lambda(?= (Labs|Inc|Cloud|AI|data|Data|leases|will|and|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)|Lambda['’]s|(?<=operator )Lambda"),
     ("Nebius", r"Nebius"),
     ("Nscale", r"Nscale"),
@@ -304,7 +306,7 @@ COMPANIES = [
     ("Compass Datacenters", r"Compass Data ?[Cc]enters"),
     ("Vantage", r"Vantage"),
     ("Aligned", r"Aligned Data Centers|Aligned(?= (Data|data))"),
-    ("STACK", r"STACK Infrastructure|STACK|Stack(?= (Infrastructure|data cent))"),
+    ("STACK", r"STACK Infrastructure|STACK|Stack(?= (Infrastructure|data cent|plans|Plans|files|Files|to|To|breaks|Breaks|opens|Opens|announces|Announces|launches|Launches|expands|Expands|tops|Tops|acquires|Acquires|secures|Secures|signs|Signs|raises|Raises|withdraws|Withdraws|completes|Completes|unveils|Unveils|in|wins|Wins|buys|Buys|sues|Sues|accuses|Accuses|fails|Fails|eyes|Eyes|pulls|Pulls|details|Details|planning|Planning|looks|Looks|loses|Loses|borrows|Borrows|deploys|Deploys)\b)"),
     ("EdgeCore", r"EdgeCore"),
     ("NTT", r"NTT"),
     ("Iron Mountain", r"Iron Mountain"),
@@ -333,6 +335,29 @@ COMPANIES = [
     ("Lancium", r"Lancium"),
     ("Cloudburst", r"Cloudburst"),
     ("Digital Edge", r"Digital Edge"),
+    # Added 2026-11-01 from data/operator_candidates.json (3+ headlines each) and by request.
+    ("Beale Infrastructure", r"Beale Infrastructure|Beale(?= (moving|plans|withdraws|hopes|files|to|unveils|seeks)\b)"),
+    ("DC Blox", r"DC Blox|DC BLOX"),
+    ("Metrobloks", r"Metrobloks"),
+    ("EdgeConneX", r"EdgeConneX"),
+    ("Prologis", r"Prologis"),
+    ("Oppidan", r"Oppidan"),
+    ("TECfusions", r"TECfusions"),
+    ("Karis", r"Karis Critical|Karis(?= (pitches|details|plans|data|Data)\b)"),
+    ("RadiusDC", r"RadiusDC"),
+    ("CleanArc", r"CleanArc"),
+    ("Fleet Data Centers", r"Fleet Data Centers"),
+    ("Blueprint", r"Blueprint Data Centers|Blueprint Projects"),
+    ("Colovore", r"Colovore"),
+    ("NorthMark", r"NorthMark"),
+    ("Bit Digital", r"Bit Digital"),
+    ("Digi Power X", r"Digi Power X"),
+    ("Sequitor Edge", r"Sequitor Edge|Sequitor"),
+    ("Atmosphere Data Centers", r"Atmosphere Data Centers"),
+    ("Joule", r"Joule(?= (Capital|Partners|Power|and|,)\b)|Joule,"),
+    ("Diode Ventures", r"Diode Ventures|Diode(?= (project|gets|plans|data|Data)\b)|(?<=bn )Diode"),
+    ("Red Wolf", r"Red Wolf(?= (data|Data|campus|Campus|project|Project))"),
+    ("Hunt Midwest", r"Hunt Midwest"),
     ("Applied Digital", r"Applied Digital"),
     ("Core Scientific", r"Core Scientific"),
     # Bitcoin miners turning sites into AI data centers. "TeraWulf to hold meeting on Lansing project"
@@ -347,7 +372,7 @@ COMPANIES = [
     ("CleanSpark", r"CleanSpark"),
     ("Soluna", r"Soluna"),
     # Energy-first and land developers. "Fermi America signs gas deal for Project Matador"
-    ("Fermi America", r"Fermi America|Fermi|Project Matador"),
+    ("Fermi America", r"Fermi America|Fermi(?! 2| nuclear| plant)|Project Matador"),
     ("Related Digital", r"Related Digital"),
     ("Tallgrass", r"Tallgrass"),
     ("Intersect Power", r"Intersect Power"),
@@ -361,6 +386,9 @@ COMPANIES = [
     ("Skybox", r"Skybox Datacenters|Skybox Data Centers|Skybox"),
     ("Novva", r"Novva Data Centers|Novva"),
 ]
+# Named in data center headlines but never an operator here: context only, so a headline such as
+# "De Soto OKs $3.1B data center project near new Panasonic plant" does not credit Panasonic.
+CONTEXT_ONLY = {"Panasonic"}
 # Code names that stand for several operators.
 ALIASES = [("Stargate", ["OpenAI", "Oracle"])]
 COMPANY_RULES = [(name, re.compile(r"(?<![\w-])(" + pat + r")(?![\w-])")) for name, pat in COMPANIES]
@@ -487,6 +515,7 @@ UTILITIES = [
     ("Santee Cooper", r"Santee Cooper"),
     ("CPS Energy", r"CPS Energy"),
     ("Austin Energy", r"Austin Energy"),
+    ("LG&E", r"LG&E|LG&E and KU|Louisville Gas and Electric"),
     ("LCRA", r"LCRA|Lower Colorado River Authority"),
     ("TVA", r"TVA|Tennessee Valley Authority"),
     ("PJM", r"PJM"),

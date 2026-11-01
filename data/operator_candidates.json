@@ -1,0 +1,462 @@
+{
+ "_readme": {
+  "about": "Names the news often puts before 'data center', 'announces' or 'breaks ground' that are not tracked yet: candidates for fetch_news.COMPANIES, for a person to review. Nothing is added automatically.",
+  "written_by": "scripts/operator_candidates.py (by hand)",
+  "fields": {
+   "candidates": "{name, count, examples}: the 50 most frequent, with up to three example headlines."
+  },
+  "docs": "docs/DATA_DICTIONARY.md"
+ },
+ "candidates": [
+  {
+   "name": "America",
+   "count": 10,
+   "examples": [
+    "Secrets, Servers, and Strain: The hidden toll of America’s data center boom",
+    "Massive subsidies, minimal jobs: The math behind America's data center boom",
+    "America's data center growth hot spots, mapped"
+   ]
+  },
+  {
+   "name": "Saline",
+   "count": 10,
+   "examples": [
+    "AG Nessel wants more details on power plans for Saline data center",
+    "State allowed Saline data center construction before final air quality permit approval",
+    "DTE offers 2-year rate hike freeze if Saline data center opens on time: Nessel calls it ‘ransom note’"
+   ]
+  },
+  {
+   "name": "Armory",
+   "count": 9,
+   "examples": [
+    "Documents reveal Armory data center price tag is higher than controversial St. Charles project's",
+    "Green says ban still possible as Armory data center project riles residents",
+    "Proposed Armory data center sparks debate across St. Louis and SLU community"
+   ]
+  },
+  {
+   "name": "PAX-1",
+   "count": 8,
+   "examples": [
+    "Preliminary plans for next stage of PAX-1 Data Center project approved",
+    "Middlesex Township outlines proposed 'community benefit agreement' with PAX-1 data center developers",
+    "Judge allows PAX-1 data center construction to continue as appeals proceed"
+   ]
+  },
+  {
+   "name": "Chesterfield",
+   "count": 7,
+   "examples": [
+    "After thumbs down from commission, developer withdraws, plans to refile 700-acre Chesterfield data center proposal",
+    "Google announces $9 billion investment in Virginia, including a Chesterfield data center",
+    "Google announces Chesterfield data center as part of $9B investment"
+   ]
+  },
+  {
+   "name": "Bonner",
+   "count": 7,
+   "examples": [
+    "Missoula resident starts petition opposing Bonner data center",
+    "What’s next for the proposed Bonner data center?",
+    "County review of Bonner data center delayed again"
+   ]
+  },
+  {
+   "name": "Mason",
+   "count": 7,
+   "examples": [
+    "Landowners to pursue annexation for Mason data center after township vote",
+    "Vevay Township declines Public Act 425 agreement talks for proposed Mason data center",
+    "Development firm behind proposed Mason data center identified"
+   ]
+  },
+  {
+   "name": "Aurora",
+   "count": 6,
+   "examples": [
+    "CyrusOne prepares for $350 million Aurora data center campus",
+    "CyrusOne warns residents near Aurora data center of upcoming generator use",
+    "Residents vent frustration after Aurora data center vote, tell city council \"You failed us\""
+   ]
+  },
+  {
+   "name": "Upper Burrell",
+   "count": 6,
+   "examples": [
+    "Upper Burrell data center to be company’s ‘U.S. flagship,’ founder says",
+    "Upper Burrell data center to use natural gas for more than 2 gigawatts of power generation",
+    "Upper Burrell data center to be live by end of year"
+   ]
+  },
+  {
+   "name": "Butte",
+   "count": 6,
+   "examples": [
+    "Viewpoint: Proposed Butte data center a massive energy sink",
+    "Proposed Butte data center stirs debate",
+    "Commentary: The data doesn't add up: Butte data center job predictions seem significantly inflated"
+   ]
+  },
+  {
+   "name": "Martindale Brightwood",
+   "count": 6,
+   "examples": [
+    "Metrobloks files re-zoning proposal for Martindale Brightwood data center",
+    "Metrobloks files re-zoning proposal with Indianapolis for Martindale Brightwood data center",
+    "How would a Martindale Brightwood data center impact the city? 5 things to know"
+   ]
+  },
+  {
+   "name": "Martindale-Brightwood",
+   "count": 6,
+   "examples": [
+    "Metrobloks seeks rezoning for $500M Martindale-Brightwood data center on 14 acres",
+    "UPDATE: Despite opposition from councilors and neighbors, Martindale-Brightwood data center gets initial OK",
+    "'Go home' | Hundreds of residents press Martindale-Brightwood data center developer in second meeting"
+   ]
+  },
+  {
+   "name": "STAMP",
+   "count": 5,
+   "examples": [
+    "IDA considering massive subsidies for STAMP data center",
+    "Tonawanda Senecas challenging review of proposed STAMP data center project",
+    "STAMP data center proposal faces new scrutiny as report challenges economic claims"
+   ]
+  },
+  {
+   "name": "SpaceX",
+   "count": 5,
+   "examples": [
+    "SpaceX plans IPO, Elon Musk appears to confirm it's to fund space data centers - report",
+    "SpaceX files plans for million-satellite orbital data center constellation",
+    "SpaceX files for million satellite orbital AI data center megaconstellation"
+   ]
+  },
+  {
+   "name": "RELLIS",
+   "count": 5,
+   "examples": [
+    "Back on track: Bryan City Council approves replacement tax break for RELLIS data center project",
+    "Brazos County commissioners approve new owner for RELLIS data center",
+    "Brazos County approves tax agreement for $700M RELLIS data center project | Bryan - College Station"
+   ]
+  },
+  {
+   "name": "Ahwatukee",
+   "count": 5,
+   "examples": [
+    "Phoenix vice mayor faces ethics complaint tied to Ahwatukee data center",
+    "Mayes probing Ahwatukee data center as ‘nuisance’",
+    "Kris Mayes considers nuisance lawsuit against Ahwatukee data center"
+   ]
+  },
+  {
+   "name": "Trident",
+   "count": 5,
+   "examples": [
+    "Aurora City Council halts effort to reconsider a data center moratorium amid Trident data center fight",
+    "Trident data center asks Aurora for pause on new regs, moratorium as it scouts for new site",
+    "Aurora Mayor Coffman seeks to halt Trident data center project after public backlash"
+   ]
+  },
+  {
+   "name": "Prime",
+   "count": 4,
+   "examples": [
+    "Prime files to build another Sacramento data center in California - report",
+    "Prime Data Centers uses closed-loop air and liquid cooling to earn Energy Star certifications",
+    "Prime files to build two data centers outside Austin, Texas"
+   ]
+  },
+  {
+   "name": "Temple",
+   "count": 4,
+   "examples": [
+    "700-plus acre Temple data center could open in 2026",
+    "Temple data center construction underway with community partnerships",
+    "Rowan secures $3B to help build first Temple data center"
+   ]
+  },
+  {
+   "name": "Coweta",
+   "count": 4,
+   "examples": [
+    "Coweta data center may draw from Arkansas, Verdigris Rivers, use 400 MW",
+    "Developer scraps plan for Coweta data center dubbed Project Atlas",
+    "Coweta data center: ‘Project Atlas’ proposal canceled by Beale Infrastructure"
+   ]
+  },
+  {
+   "name": "Midtown",
+   "count": 4,
+   "examples": [
+    "City Foundry developers question Midtown data center plans",
+    "Opponents ask court to halt and reverse Midtown data center permit approval",
+    "Residents, organizations file lawsuit against proposed Midtown data center"
+   ]
+  },
+  {
+   "name": "UMich",
+   "count": 4,
+   "examples": [
+    "Ypsilanti residents protest UMich data center construction",
+    "Los Alamos confirms UMich data center to be used for nuclear weapons research",
+    "Ypsilanti Township proposes water moratorium that could block planned UMich data center"
+   ]
+  },
+  {
+   "name": "DeForest",
+   "count": 4,
+   "examples": [
+    "'Finally able to breathe': DeForest data center critics get their wish",
+    "DeForest announces it won’t move forward with controversial $12 billion data center",
+    "DeForest announces it won’t move forward with controversial $12B data center"
+   ]
+  },
+  {
+   "name": "Wildcat Ridge",
+   "count": 4,
+   "examples": [
+    "Wildcat Ridge Data Center in Archbald to use huge amounts of power, water",
+    "Wildcat Ridge Data Center launches campaign touting finances, questioning foes",
+    "Wildcat Ridge Data Center Campus hearing generates more noise concerns"
+   ]
+  },
+  {
+   "name": "Lebanon",
+   "count": 4,
+   "examples": [
+    "Meta breaks ground on $10 billion Lebanon data center for AI expansion",
+    "Meta breaks silence, claims Lebanon Data Center long tied to the company",
+    "Meta pledges responsible water, energy use at $10B Lebanon data center"
+   ]
+  },
+  {
+   "name": "Fisk University",
+   "count": 4,
+   "examples": [
+    "Fisk University unveils $1 billion campus overhaul, boosted by a big data center",
+    "Fisk University announces $1B plan to transform campus, build data center",
+    "Fisk University's data center plan sparks community debate"
+   ]
+  },
+  {
+   "name": "Jefferson Lab",
+   "count": 4,
+   "examples": [
+    "Nuclear physics research lab Jefferson Lab breaks ground on 30,000 sq ft data center",
+    "Virginia leaders gather for Jefferson Lab Data Center groundbreaking",
+    "Jefferson Lab breaks ground on $49M data center"
+   ]
+  },
+  {
+   "name": "Small",
+   "count": 4,
+   "examples": [
+    "Small data center proposed in Pinellas Park",
+    "Small data center proposed at Starbucks HQ building in Sodo",
+    "Small data center proposed for industrial park south of Maquoketa"
+   ]
+  },
+  {
+   "name": "Kuna",
+   "count": 4,
+   "examples": [
+    "Temple and Kuna data centers in the US continue development as Meta expands operations",
+    "Meta’s $1.2B Kuna data center is up and running. Here’s what to know",
+    "Meta unveils massive Kuna data center with eco-friendly design, $100M in city infrastructure investment"
+   ]
+  },
+  {
+   "name": "SpaceXAI",
+   "count": 4,
+   "examples": [
+    "SpaceXAI to build new data center in Whitehaven neighborhood",
+    "SpaceXAI announces removal of temporary turbines from Southaven data center",
+    "Southaven approves new SpaceXAI data center, fifth location in area"
+   ]
+  },
+  {
+   "name": "Atmosphere",
+   "count": 4,
+   "examples": [
+    "Atmosphere Data Centers challenges six-month data center moratorium in Montgomery, Maryland",
+    "Atmosphere Data Centers challenges Elrich’s moratorium on permit review",
+    "Atmosphere Data Centers scraps challenge to Montgomery Co. executive’s permitting moratorium"
+   ]
+  },
+  {
+   "name": "Gov. Abbott",
+   "count": 4,
+   "examples": [
+    "Meta backs Gov. Abbott data center standards, won't end El Paso tax deal",
+    "Texas ag commissioner says Gov. Abbott’s data center crackdown ‘doesn’t put the brakes on anything’",
+    "Gov. Abbott’s data center moratorium sets a dangerous precedent | Opinion"
+   ]
+  },
+  {
+   "name": "Prosper",
+   "count": 4,
+   "examples": [
+    "Airport hotel, Prosper data center: Check out 6 trending Dallas-Fort Worth stories",
+    "Project Tomahawk developer scraps plans for Prosper data center",
+    "Prosper data center, Rio Mambo: Check out 6 trending Dallas-Fort Worth stories"
+   ]
+  },
+  {
+   "name": "Parker",
+   "count": 4,
+   "examples": [
+    "Douglas County approves $19M tax rebate for Parker data center",
+    "Parker data center could get $19M tax rebate from Douglas County",
+    "Douglas County approves $19.3 million tax rebate for Parker data center"
+   ]
+  },
+  {
+   "name": "Nokia",
+   "count": 3,
+   "examples": [
+    "Nokia’s data center push is starting to pay off",
+    "Microsoft fuels Nokia’s data center dreams",
+    "Iraq partners with Nokia to build first state-owned data centers in Baghdad"
+   ]
+  },
+  {
+   "name": "Stack",
+   "count": 3,
+   "examples": [
+    "Stack files to build two more data centers outside Atlanta, Georgia",
+    "Stack plans another data center campus in Virginia’s Loudoun County",
+    "Stack announces 36MW data center in Chicago, Illinois"
+   ]
+  },
+  {
+   "name": "HPC",
+   "count": 3,
+   "examples": [
+    "Northern Data to develop 120MW HPC data center in Georgia",
+    "Bitdeer buys 200 acres in Milam County, Texas, to expand AI and HPC data center",
+    "ThisWay Global plans 73MW AI and HPC data center in Bryan, Texas"
+   ]
+  },
+  {
+   "name": "Multibillion-dollar",
+   "count": 3,
+   "examples": [
+    "Multibillion-dollar data center projects to watch",
+    "Multibillion-dollar data center to be built in Genesee County",
+    "Multibillion-dollar data center to join Genesee County's booming tech hub"
+   ]
+  },
+  {
+   "name": "OKs",
+   "count": 3,
+   "examples": [
+    "Fort Worth council OKs plans for data center in neighborhood south of Loop 820",
+    "Council OKs data center agreement",
+    "NORTH PORT: City OKs data center moratorium; stipulations for application"
+   ]
+  },
+  {
+   "name": "Compass",
+   "count": 3,
+   "examples": [
+    "Meridian lands $10 billion Compass Datacenters project, Gov. Reeves announces",
+    "News | Compass Datacenters lands loan backed by newly completed data center in Dallas area",
+    "Compass Datacenters looks to calm data center controversy by funding $15m animal shelter in Ellis County, Texas"
+   ]
+  },
+  {
+   "name": "West Feliciana",
+   "count": 3,
+   "examples": [
+    "$2.5 billion West Feliciana data center approved with 'aggressive timeline to build'",
+    "'It could turn Louisiana around': Hut 8 breaks ground on $2.5 billion West Feliciana data center",
+    "Hut 8 partners with Jacobs for engineering, construction management services for West Feliciana data center"
+   ]
+  },
+  {
+   "name": "Qualcomm",
+   "count": 3,
+   "examples": [
+    "Qualcomm announces data center CPUs, will support Nvidia's NVLink Fusion",
+    "Qualcomm announces new AI chips in data center push, shares surge",
+    "Qualcomm announces new data center AI chips to target AI inference"
+   ]
+  },
+  {
+   "name": "SEC",
+   "count": 3,
+   "examples": [
+    "SEC unveils data center to power 6 new digital platforms",
+    "SEC unveils 6 digital platforms, data center to boost ease of doing business",
+    "SEC unveils digital tools, data center to boost ease of doing business"
+   ]
+  },
+  {
+   "name": "Goodman",
+   "count": 3,
+   "examples": [
+    "Singaporean sovereign wealth fund GIC eyes investment into Goodman’s data center biz – report",
+    "Goodman plans 97MW data center in Silicon Valley",
+    "Goodman acquires San Jose property being rezoned for data center development"
+   ]
+  },
+  {
+   "name": "AVAIO Digital",
+   "count": 3,
+   "examples": [
+    "AVAIO Digital plans $6 billion data center campus in Brandon",
+    "AVAIO Digital plans $6 billion data center campus in Mississippi",
+    "AVAIO Digital to build US$ 6 billion data center hub in Arkansas"
+   ]
+  },
+  {
+   "name": "M-square-foot",
+   "count": 3,
+   "examples": [
+    "‘Our rural culture under attack’: Residents debate 2.2M-square-foot data center near Saline",
+    "Public hearing for proposed 2.6M-square-foot data center in Upper Macungie paused until May",
+    "Developers revert to 1.5M-square-foot data center proposal in Chesco after months of fiery opposition"
+   ]
+  },
+  {
+   "name": "Intel",
+   "count": 3,
+   "examples": [
+    "Intel unveils Crescent Island data center GPU for inferencing workloads",
+    "Intel plans more layoffs, targeting data center group efficiencies",
+    "Intel plans fresh layoffs, this time in its data center group"
+   ]
+  },
+  {
+   "name": "DTE",
+   "count": 3,
+   "examples": [
+    "Nessel: MPSC under political pressure to pass DTE data center deal",
+    "Michigan Attorney General Dana Nessel questions redacted DTE data center contracts in Saline Township",
+    "Michigan environmental news: DTE plans 2 gigawatts in data center deals by year’s end"
+   ]
+  },
+  {
+   "name": "Ellenwood",
+   "count": 3,
+   "examples": [
+    "South DeKalb residents oppose Ellenwood data center proposal",
+    "Opposition to Ellenwood data center grows at community forum",
+    "DeKalb defers Ellenwood data center proposal to July"
+   ]
+  },
+  {
+   "name": "Chevron",
+   "count": 3,
+   "examples": [
+    "Chevron announces West Texas data center power project",
+    "Chevron to build massive gas plant for Texas data centers",
+    "Chevron to build first Texas power plant for AI data center"
+   ]
+  }
+ ]
+}
