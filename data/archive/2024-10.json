@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -231,7 +232,8 @@
      "lon": -83.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -358,7 +360,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -639,7 +642,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -742,6 +746,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Expanding Data Center",
    "cluster_id": "de19131b9fad9b3b",
    "cluster_title": "AI power: Expanding data center capacity to meet growing demand"
   },
@@ -759,14 +764,6 @@
    ],
    "locations": [
     {
-     "name": "Des Moines, Iowa, US",
-     "lat": 41.59,
-     "lon": -93.62,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Iowa, US",
      "lat": 42.1,
      "lon": -93.5,
@@ -780,7 +777,7 @@
    ],
    "state": "IA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1135,7 +1132,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -1180,7 +1178,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Virginia, US",
@@ -1219,14 +1218,6 @@
    ],
    "locations": [
     {
-     "name": "Charlotte, North Carolina, US",
-     "lat": 35.23,
-     "lon": -80.84,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "North Carolina, US",
      "lat": 35.6,
      "lon": -79.4,
@@ -1240,7 +1231,7 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [
     "Google"
    ],
@@ -1271,7 +1262,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -1311,7 +1303,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -1408,18 +1401,19 @@
    ],
    "locations": [
     {
-     "name": "Plano, Texas, US",
-     "lat": 33.02,
-     "lon": -96.7,
+     "name": "Plano, Illinois, US",
+     "lat": 41.6628,
+     "lon": -88.537,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
-    "TX"
+    "IL"
    ],
-   "state": "TX",
+   "state": "IL",
    "county": null,
    "location_precision": "city",
    "companies": [
@@ -1481,11 +1475,23 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
@@ -1688,7 +1694,8 @@
      "lon": -123.1107,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     },
     {
      "name": "Oregon, US",
@@ -1812,12 +1819,13 @@
    ],
    "locations": [
     {
-     "name": "Charlotte, North Carolina, US",
-     "lat": 35.23,
-     "lon": -80.84,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Charlotte"
     }
    ],
    "states": [
@@ -1825,7 +1833,8 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Charlotte",
    "companies": [
     "Google"
    ],
@@ -1977,14 +1986,6 @@
    "tags": [],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -1998,7 +1999,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2221,7 +2222,8 @@
      "lon": -97.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -2251,6 +2253,15 @@
    ],
    "locations": [
     {
+     "name": "Peculiar, Missouri, US",
+     "lat": 38.7192,
+     "lon": -94.4586,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    },
+    {
      "name": "Missouri, US",
      "lat": 38.4,
      "lon": -92.5,
@@ -2264,8 +2275,10 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "state",
-   "companies": [],
+   "location_precision": "city",
+   "companies": [
+    "Diode Ventures"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -2400,7 +2413,8 @@
      "lon": -77.48,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -2834,11 +2848,23 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Peculiar, Missouri, US",
+     "lat": 38.7192,
+     "lon": -94.4586,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2964,12 +2990,13 @@
    ],
    "locations": [
     {
-     "name": "Arizona, US",
-     "lat": 34.3,
-     "lon": -111.7,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Laveen, Arizona, US",
+     "lat": 33.3628,
+     "lon": -112.1693,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -2977,7 +3004,7 @@
    ],
    "state": "AZ",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -3064,7 +3091,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -3099,7 +3127,8 @@
      "lon": -97.74,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -3268,7 +3297,8 @@
      "lon": -93.8852,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Des Moines"
     },
     {
      "name": "Iowa, US",
@@ -3351,7 +3381,8 @@
      "lon": -93.8852,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Des Moines"
     },
     {
      "name": "Iowa, US",
@@ -3396,7 +3427,8 @@
      "lon": -93.8852,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Des Moines"
     }
    ],
    "states": [
@@ -3713,6 +3745,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "AI-optimised Data Center",
    "cluster_id": "1ec76313bb4a6576",
    "cluster_title": "Khazna to build MENA region’s first AI-optimised data center in Ajman"
   },
@@ -3994,12 +4027,13 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Atlanta"
     }
    ],
    "states": [
@@ -4007,7 +4041,8 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Atlanta",
    "companies": [
     "Amazon"
    ],
@@ -4267,7 +4302,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Bit Digital"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -4294,7 +4331,8 @@
      "lon": -123.1107,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -4330,7 +4368,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -4389,7 +4428,8 @@
      "lon": -123.1107,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -4446,7 +4486,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -4620,6 +4661,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Thai Data Center",
    "cluster_id": "93bf5016903158f3",
    "cluster_title": "Damac-owned Edgnex partners with Proen Corp on Thai data center campus"
   },
@@ -4761,7 +4803,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -4964,11 +5007,23 @@
    "tags": [
     "Deals / Investment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Aurora, Illinois, US",
+     "lat": 41.7606,
+     "lon": -88.3201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "CyrusOne"
    ],
@@ -4994,14 +5049,6 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -5015,8 +5062,10 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
-   "companies": [],
+   "location_precision": "state",
+   "companies": [
+    "DC Blox"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -5203,7 +5252,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -5233,20 +5283,13 @@
    ],
    "locations": [
     {
-     "name": "Fort Worth, Texas, US",
-     "lat": 32.75,
-     "lon": -97.33,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Roanoke, Texas, US",
      "lat": 33.004,
      "lon": -97.2258,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -5316,12 +5359,13 @@
    ],
    "locations": [
     {
-     "name": "Houston, Texas, US",
-     "lat": 29.76,
-     "lon": -95.37,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Houston"
     }
    ],
    "states": [
@@ -5329,7 +5373,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Houston",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5406,7 +5451,8 @@
      "lon": -93.1436,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -5467,7 +5513,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -5763,7 +5810,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -5780,7 +5828,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "a62b8593bd33fee8",
-   "cluster_title": "PowerHouse breaks ground on data center project east of Reno"
+   "cluster_title": "PowerHouse breaks ground on Reno data center"
   },
   {
    "id": "25b8a3e2dc8df932",
@@ -5848,6 +5896,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "As Data Center",
    "investment_usd_b": 0.056,
    "cluster_id": "3f972ad860056203",
    "cluster_title": "As data center usage heats up, Submer raises $55.5M to cool things down"
@@ -5871,7 +5920,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -5901,12 +5951,13 @@
    ],
    "locations": [
     {
-     "name": "Reno, Nevada, US",
-     "lat": 39.53,
-     "lon": -119.81,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Nevada, US",
+     "lat": 39.3,
+     "lon": -116.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Reno"
     }
    ],
    "states": [
@@ -5914,7 +5965,8 @@
    ],
    "state": "NV",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Reno",
    "companies": [
     "PowerHouse"
    ],
@@ -5923,7 +5975,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "a62b8593bd33fee8",
-   "cluster_title": "PowerHouse breaks ground on data center project east of Reno"
+   "cluster_title": "PowerHouse breaks ground on Reno data center"
   },
   {
    "id": "dc6ee2bb3e664a0b",
@@ -5968,7 +6020,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -6007,7 +6060,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -6079,7 +6133,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Illinois, US",
@@ -6149,7 +6204,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -6279,7 +6335,8 @@
      "lon": -77.276,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -6317,7 +6374,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [

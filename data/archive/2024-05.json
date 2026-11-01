@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",

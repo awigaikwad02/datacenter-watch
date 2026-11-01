@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -112,11 +113,23 @@
     "Construction",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Edinburgh, Indiana, US",
+     "lat": 39.3542,
+     "lon": -85.9667,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Indianapolis"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -143,7 +156,8 @@
      "lon": -77.8853,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -247,7 +261,8 @@
      "lon": -97.94,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -715,7 +730,8 @@
      "lon": -90.674,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -866,11 +882,23 @@
    "feed": "Backfill: cancelled",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -961,7 +989,8 @@
      "lon": -122.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     },
     {
      "name": "Maine, US",
@@ -1006,7 +1035,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     },
     {
      "name": "Quincy, Washington, US",
@@ -1095,7 +1125,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -1109,8 +1140,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "038006402a8320ea",
-   "cluster_title": "How Metro Council could stop a proposed data center near the Nashville Zoo"
+   "cluster_id": "faacbf55aee45cb5",
+   "cluster_title": "Nashville mayor plans to stop data center near zoo with eminent domain"
   },
   {
    "id": "1b716cae1a535f1c",
@@ -1300,7 +1331,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -1519,7 +1551,8 @@
      "lon": -87.82,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -1556,7 +1589,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -1731,7 +1765,8 @@
      "lon": -88.0798,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -1792,7 +1827,8 @@
      "lon": -77.49,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -1909,7 +1945,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -2178,7 +2215,8 @@
      "lon": -86.8025,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -2249,7 +2287,8 @@
      "lon": -87.91,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -2263,6 +2302,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Milwaukee Midtown Data Center",
    "cluster_id": "08db16e28c5a592c",
    "cluster_title": "Groundswell of concern among neighbors of proposed Milwaukee Midtown data center"
   },
@@ -2346,7 +2386,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -2360,8 +2401,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "038006402a8320ea",
-   "cluster_title": "How Metro Council could stop a proposed data center near the Nashville Zoo"
+   "cluster_id": "faacbf55aee45cb5",
+   "cluster_title": "Nashville mayor plans to stop data center near zoo with eminent domain"
   },
   {
    "id": "b04fc4b851baaa1b",
@@ -2377,6 +2418,15 @@
    ],
    "locations": [
     {
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    },
+    {
      "name": "Missouri, US",
      "lat": 38.4,
      "lon": -92.5,
@@ -2390,8 +2440,10 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "state",
-   "companies": [],
+   "location_precision": "city",
+   "companies": [
+    "Patmos"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -2501,6 +2553,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "OKed Data Center",
    "cluster_id": "702b69cf69cfb418",
    "cluster_title": "A Michigan university tentatively OKed data center due diligence"
   },
@@ -2614,7 +2667,8 @@
      "lon": -77.59,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     },
     {
      "name": "Virginia, US",
@@ -2806,7 +2860,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     },
     {
      "name": "Minnesota, US",
@@ -2961,7 +3016,8 @@
      "lon": -81.69,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -2996,7 +3052,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -3242,7 +3299,8 @@
      "lon": -79.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -3339,7 +3397,8 @@
      "lon": -121.697,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -3625,7 +3684,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -3744,7 +3804,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -3841,7 +3902,8 @@
      "lon": -93.0427,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4076,7 +4138,8 @@
      "lon": -87.82,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -4230,7 +4293,8 @@
      "lon": -93.0427,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4402,7 +4466,8 @@
      "lon": -93.0427,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4464,7 +4529,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4515,6 +4581,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Three-year Data Center",
    "cluster_id": "590471d030a79e8c",
    "cluster_title": "Three-year data center moratorium passed in town of East Fishkill, New York State, blocking planned campus"
   },
@@ -4567,12 +4634,13 @@
    ],
    "locations": [
     {
-     "name": "Missouri, US",
-     "lat": 38.4,
-     "lon": -92.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -4580,7 +4648,7 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4632,7 +4700,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -4698,12 +4767,13 @@
    ],
    "locations": [
     {
-     "name": "Oklahoma, US",
-     "lat": 35.6,
-     "lon": -97.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Norman, Oklahoma, US",
+     "lat": 35.2226,
+     "lon": -97.4395,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -4711,7 +4781,7 @@
    ],
    "state": "OK",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4733,12 +4803,13 @@
    ],
    "locations": [
     {
-     "name": "Cleveland, Ohio, US",
-     "lat": 41.5,
-     "lon": -81.69,
+     "name": "Akron, Ohio, US",
+     "lat": 41.0814,
+     "lon": -81.519,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -4799,7 +4870,8 @@
      "lon": -93.0427,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4835,7 +4907,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4907,7 +4980,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -5050,12 +5124,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -5063,14 +5138,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "038006402a8320ea",
-   "cluster_title": "How Metro Council could stop a proposed data center near the Nashville Zoo"
+   "cluster_id": "9af9d7786f2fbbdf",
+   "cluster_title": "Letter Urges Reconsideration of Proposed Data Center Near Nashville Zoo"
   },
   {
    "id": "a562c4a1bbde6563",
@@ -5191,7 +5267,8 @@
      "lon": -121.697,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -5322,7 +5399,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -5384,7 +5462,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -5419,7 +5498,8 @@
      "lon": -84.51,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cincinnati"
     },
     {
      "name": "Ohio, US",
@@ -5458,12 +5538,13 @@
    ],
    "locations": [
     {
-     "name": "Oklahoma, US",
-     "lat": 35.6,
-     "lon": -97.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Norman, Oklahoma, US",
+     "lat": 35.2226,
+     "lon": -97.4395,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -5471,7 +5552,7 @@
    ],
    "state": "OK",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5514,6 +5595,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "As Data Center",
    "cluster_id": "0340e0e55b7c0624",
    "cluster_title": "As data center proposals spread across Stark County, neighbors fear what's next"
   },
@@ -5560,7 +5642,8 @@
      "lon": -81.69,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -5595,7 +5678,8 @@
      "lon": -81.69,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -5679,7 +5763,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -5859,6 +5944,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "El Dorado Data Center",
    "cluster_id": "b8112b2eb4b236ee",
    "cluster_title": "Florida-based firm details plans for El Dorado data center"
   },
@@ -5914,11 +6000,23 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Norman, Oklahoma, US",
+     "lat": 35.2226,
+     "lon": -97.4395,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Oklahoma City"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6002,12 +6100,13 @@
    ],
    "locations": [
     {
-     "name": "Missouri, US",
-     "lat": 38.4,
-     "lon": -92.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -6015,7 +6114,7 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6042,7 +6141,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -6145,7 +6245,8 @@
      "lon": -81.69,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -6326,7 +6427,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     },
     {
      "name": "Colorado, US",
@@ -6446,7 +6548,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -6509,7 +6612,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -6525,6 +6629,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Red Oak AI Data Center",
    "cluster_id": "0a0b3a1959ff7cbc",
    "cluster_title": "Exclusive: A look inside construction on DataBank's Red Oak AI data center campus"
   },
@@ -6641,7 +6746,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     },
     {
      "name": "Washington, US",
@@ -6784,7 +6890,8 @@
      "lon": -93.5672,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -6943,7 +7050,8 @@
      "lon": -88.0798,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -7039,12 +7147,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -7052,7 +7161,8 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7368,12 +7478,13 @@
    ],
    "locations": [
     {
-     "name": "Florida, US",
-     "lat": 28.6,
-     "lon": -82.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Zephyrhills, Florida, US",
+     "lat": 28.2336,
+     "lon": -82.1812,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -7381,7 +7492,7 @@
    ],
    "state": "FL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8190,7 +8301,8 @@
      "lon": -93.0427,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -8371,18 +8483,19 @@
    ],
    "locations": [
     {
-     "name": "New Albany, Ohio, US",
-     "lat": 40.08,
-     "lon": -82.81,
+     "name": "New Albany, Indiana, US",
+     "lat": 38.2856,
+     "lon": -85.8241,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
-    "OH"
+    "IN"
    ],
-   "state": "OH",
+   "state": "IN",
    "county": null,
    "location_precision": "city",
    "companies": [],
@@ -8485,7 +8598,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -8574,6 +8688,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Whitmer Data Center",
    "cluster_id": "76e005613f90fb06",
    "cluster_title": "‘Slap in the face’: Whitmer data center outrage indicates major election year issue"
   },
@@ -8656,7 +8771,8 @@
      "lon": -88.06,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -8694,7 +8810,8 @@
      "lon": -94.348,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -8950,7 +9067,8 @@
      "lon": -93.0427,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -9021,7 +9139,8 @@
      "lon": -122.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     },
     {
      "name": "Oregon, US",
@@ -9068,6 +9187,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Lansing AI Data Center",
    "cluster_id": "99e66fefcae6c069",
    "cluster_title": "Petition opposing Lansing AI data center tops 17,000 signatures"
   },
@@ -9121,12 +9241,13 @@
    ],
    "locations": [
     {
-     "name": "Georgia, US",
-     "lat": 32.7,
-     "lon": -83.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Peachtree City, Georgia, US",
+     "lat": 33.3968,
+     "lon": -84.5958,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -9134,7 +9255,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9300,11 +9421,23 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Clay County, Florida, US",
+     "lat": 29.984,
+     "lon": -81.858,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Clay County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9481,20 +9614,13 @@
    ],
    "locations": [
     {
-     "name": "Orlando, Florida, US",
-     "lat": 28.54,
-     "lon": -81.38,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Lake County, Florida, US",
      "lat": 28.761,
      "lon": -81.711,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Orlando"
     }
    ],
    "states": [
@@ -9502,7 +9628,7 @@
    ],
    "state": "FL",
    "county": "Lake County, Florida, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9567,7 +9693,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -9605,7 +9732,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -9706,7 +9834,8 @@
      "lon": -86.4467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -9792,7 +9921,8 @@
      "lon": -86.4467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     },
     {
      "name": "Tennessee, US",
@@ -10095,7 +10225,8 @@
      "lon": -87.5,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -10130,7 +10261,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -10166,15 +10298,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -10212,7 +10337,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -10287,7 +10413,8 @@
      "lon": -82.46,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     },
     {
      "name": "Hernando County, Florida, US",
@@ -10471,7 +10598,8 @@
      "lon": -98.03,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -10534,11 +10662,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Lake County, Florida, US",
+     "lat": 28.761,
+     "lon": -81.711,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Orlando"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Lake County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -10563,7 +10703,8 @@
      "lon": -81.711,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Orlando"
     },
     {
      "name": "Florida, US",
@@ -10639,18 +10780,19 @@
    ],
    "locations": [
     {
-     "name": "New Albany, Ohio, US",
-     "lat": 40.08,
-     "lon": -82.81,
+     "name": "New Albany, Indiana, US",
+     "lat": 38.2856,
+     "lon": -85.8241,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
-    "OH"
+    "IN"
    ],
-   "state": "OH",
+   "state": "IN",
    "county": null,
    "location_precision": "city",
    "companies": [],
@@ -10785,7 +10927,8 @@
      "lon": -81.711,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Orlando"
     }
    ],
    "states": [
@@ -10918,7 +11061,8 @@
      "lon": -86.297,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -11002,7 +11146,8 @@
      "lon": -93.0427,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     },
     {
      "name": "Minnesota, US",
@@ -11046,7 +11191,8 @@
      "lon": -98.03,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -11106,7 +11252,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -11251,7 +11398,8 @@
      "lon": -94.58,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -11308,12 +11456,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -11321,7 +11470,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -11514,7 +11663,8 @@
      "lon": -94.58,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -11794,6 +11944,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Gigawatt-scale Data Center",
    "cluster_id": "0cf9e2cc993b895b",
    "cluster_title": "Gigawatt-scale data center campus proposed in Kansas"
   },
@@ -11896,11 +12047,23 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Jackson County, Missouri, US",
+     "lat": 39.009,
+     "lon": -94.348,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": "Jackson County, Missouri, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12113,20 +12276,13 @@
    ],
    "locations": [
     {
-     "name": "Cleveland, Ohio, US",
-     "lat": 41.5,
-     "lon": -81.69,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Cuyahoga County, Ohio, US",
      "lat": 41.425,
      "lon": -81.66,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -12134,7 +12290,7 @@
    ],
    "state": "OH",
    "county": "Cuyahoga County, Ohio, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12221,7 +12377,8 @@
      "lon": -86.297,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -12316,7 +12473,8 @@
      "lon": -86.8008,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -12345,18 +12503,30 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Jackson County, Missouri, US",
+     "lat": 39.009,
+     "lon": -94.348,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": "Jackson County, Missouri, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "eb4ce4942bfe4537",
-   "cluster_title": "Jackson County Legislature approves 180-day data center moratorium"
+   "cluster_id": "4ee8328126e2a872",
+   "cluster_title": "Jackson County legislature passes 6-month moratorium on data center applications"
   },
   {
    "id": "60460a3e0fb28762",
@@ -12380,7 +12550,8 @@
      "lon": -86.8008,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -12441,7 +12612,8 @@
      "lon": -94.348,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -12455,8 +12627,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "eb4ce4942bfe4537",
-   "cluster_title": "Jackson County Legislature approves 180-day data center moratorium"
+   "cluster_id": "4ee8328126e2a872",
+   "cluster_title": "Jackson County legislature passes 6-month moratorium on data center applications"
   },
   {
    "id": "fa6ad6f39658b33e",
@@ -12737,7 +12909,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -13075,7 +13248,8 @@
      "lon": -82.6995,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -13137,7 +13311,8 @@
      "lon": -115.14,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -13151,6 +13326,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Switch Data Center",
    "cluster_id": "585fa5d1a7aadca5",
    "cluster_title": "Residents still have questions after Switch data center expansion approved in southwest Las Vegas"
   },
@@ -13195,16 +13371,17 @@
      "lat": 38.2,
      "lon": -77.66,
      "level": 3,
-     "precision": "city",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Spotsylvania County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13268,7 +13445,8 @@
      "lon": -86.297,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -13399,7 +13577,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -13711,7 +13890,8 @@
      "lon": -115.14,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -13857,6 +14037,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New Data Center",
    "cluster_id": "4150a2d408ae2dd2",
    "cluster_title": "New data center regulations proposed in the Michigan Senate"
   },
@@ -13882,6 +14063,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Imperial Valley Data Center",
    "cluster_id": "0119e244ed2dcf5e",
    "cluster_title": "Water rights dispute erupts over proposed Imperial Valley data center"
   },
@@ -13976,6 +14158,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Jay Data Center",
    "cluster_id": "261fbb02a09efd81",
    "cluster_title": "Jay data center on hold indefinitely as company backs out, despite veto of statewide ban"
   },
@@ -14226,7 +14409,8 @@
      "lon": -95.86,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Omaha"
     }
    ],
    "states": [
@@ -14493,6 +14677,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "LaPorte Data Center",
    "cluster_id": "5e49af0f7bab0ced",
    "cluster_title": "Microsoft breaks ground on data center campus in La Porte, Indiana"
   },
@@ -14514,7 +14699,8 @@
      "lon": -121.5683,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     },
     {
      "name": "Pittsburg, California, US",
@@ -14558,7 +14744,8 @@
      "lon": -115.015,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -14572,6 +14759,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Switch Data Center",
    "cluster_id": "35119dc50c3c1636",
    "cluster_title": "Clark County approves Switch data center project in southwest valley after public opposition"
   },
@@ -14665,7 +14853,8 @@
      "lon": -82.6995,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -14917,7 +15106,8 @@
      "lon": -115.015,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -15048,7 +15238,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -15062,8 +15253,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "72d1e5efff17a01a",
+   "cluster_title": "Petition against proposed data center next to Nashville Zoo gets more than 400,000 signatures"
   },
   {
    "id": "5b7debe542a39e07",
@@ -15234,7 +15425,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -15600,20 +15792,21 @@
    ],
    "locations": [
     {
-     "name": "North Carolina, US",
-     "lat": 35.6,
-     "lon": -79.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "York County, South Carolina, US",
+     "lat": 34.975,
+     "lon": -81.185,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
-    "NC"
+    "SC"
    ],
-   "state": "NC",
-   "county": null,
-   "location_precision": "source",
+   "state": "SC",
+   "county": "York County, South Carolina, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16062,7 +16255,8 @@
      "lon": -81.441,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Jacksonville"
     }
    ],
    "states": [
@@ -16151,12 +16345,13 @@
    ],
    "locations": [
     {
-     "name": "Ohio, US",
-     "lat": 40.3,
-     "lon": -82.8,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Avon Lake, Ohio, US",
+     "lat": 41.5053,
+     "lon": -82.0282,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -16164,7 +16359,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16189,7 +16384,8 @@
      "lon": -81.66,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -16356,7 +16552,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -16691,7 +16888,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -16909,7 +17107,8 @@
      "lon": -83.0,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Muscogee County, Georgia, US",
@@ -17140,7 +17339,8 @@
      "lon": -82.396,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -17344,7 +17544,8 @@
      "lon": -82.396,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -17374,20 +17575,30 @@
    ],
    "locations": [
     {
-     "name": "Johnson County, Missouri, US",
-     "lat": 38.744,
-     "lon": -93.806,
+     "name": "Edgerton, Kansas, US",
+     "lat": 38.7647,
+     "lon": -95.008,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    },
+    {
+     "name": "Johnson County, Kansas, US",
+     "lat": 38.883,
+     "lon": -94.824,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
-    "MO"
+    "KS"
    ],
-   "state": "MO",
-   "county": "Johnson County, Missouri, US",
-   "location_precision": "county",
+   "state": "KS",
+   "county": "Johnson County, Kansas, US",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -17583,7 +17794,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -17592,7 +17804,9 @@
    "state": "IN",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "DC Blox"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -17803,6 +18017,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Small Data Center",
    "cluster_id": "3bd8f1d370caafbf",
    "cluster_title": "Small data center proposed at Starbucks HQ building in Sodo"
   },
@@ -18025,7 +18240,8 @@
      "lon": -86.468,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -18204,7 +18420,8 @@
      "lon": -81.441,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Jacksonville"
     }
    ],
    "states": [
@@ -18549,7 +18766,8 @@
      "lon": -95.86,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Omaha"
     }
    ],
    "states": [
@@ -19062,7 +19280,8 @@
      "lon": -82.396,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -19178,12 +19397,13 @@
    ],
    "locations": [
     {
-     "name": "St. Louis, Missouri, US",
-     "lat": 38.63,
-     "lon": -90.2,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Missouri, US",
+     "lat": 38.4,
+     "lon": -92.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near St. Louis"
     }
    ],
    "states": [
@@ -19191,7 +19411,8 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near St. Louis",
    "companies": [
     "Amazon"
    ],
@@ -19253,20 +19474,21 @@
    ],
    "locations": [
     {
-     "name": "North Carolina, US",
-     "lat": 35.6,
-     "lon": -79.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "York County, South Carolina, US",
+     "lat": 34.975,
+     "lon": -81.185,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
-    "NC"
+    "SC"
    ],
-   "state": "NC",
-   "county": null,
-   "location_precision": "source",
+   "state": "SC",
+   "county": "York County, South Carolina, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19465,7 +19687,8 @@
      "lon": -93.5672,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -19585,7 +19808,8 @@
      "lon": -93.5672,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -19824,7 +20048,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -19877,11 +20102,23 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Renton, Washington, US",
+     "lat": 47.4829,
+     "lon": -122.2171,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Seattle"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19943,7 +20180,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -20485,6 +20723,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Imperial Valley Data Center",
    "cluster_id": "429cb50822137646",
    "cluster_title": "Imperial Valley data center developer files lawsuit seeking access to Colorado River water"
   },
@@ -20550,20 +20789,21 @@
    ],
    "locations": [
     {
-     "name": "Kentucky, US",
-     "lat": 37.5,
-     "lon": -85.3,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Charlestown, Indiana, US",
+     "lat": 38.4531,
+     "lon": -85.6702,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
-    "KY"
+    "IN"
    ],
-   "state": "KY",
+   "state": "IN",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20657,6 +20897,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "W. Kern Data Center",
    "cluster_id": "5c262cc7f66bd61f",
    "cluster_title": "CRC proposes W. Kern data center with dedicated power, closed-loop cooling"
   },
@@ -21040,7 +21281,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -21251,7 +21493,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -21265,8 +21508,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "72d1e5efff17a01a",
+   "cluster_title": "Petition against proposed data center next to Nashville Zoo gets more than 400,000 signatures"
   },
   {
    "id": "664ff9313ce8b41f",
@@ -21306,11 +21549,23 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lakeland, Florida, US",
+     "lat": 28.0395,
+     "lon": -81.9498,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -21788,12 +22043,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -21801,14 +22057,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "b11c1c3031ece0f7",
+   "cluster_title": "Proposed data center near Nashville Zoo sparks heavy pushback"
   },
   {
    "id": "f11b873525979524",
@@ -22026,7 +22283,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     },
     {
      "name": "California, US",
@@ -22050,6 +22308,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Alviso Data Center",
    "cluster_id": "f3416fda1bc371a4",
    "cluster_title": "Microsoft's $73M land bet pays off as company breaks ground on San Jose data center"
   },
@@ -22149,6 +22408,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "As Data Center",
    "cluster_id": "bb15706c271e8a45",
    "cluster_title": "As data center backlash grows, cities turn to AI to lower housing costs"
   },
@@ -22170,7 +22430,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -22470,7 +22731,8 @@
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -22502,12 +22764,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -22515,14 +22778,17 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
-   "companies": [],
+   "location_precision": "state",
+   "location_note": "near Nashville",
+   "companies": [
+    "DC Blox"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "787687f78fb2115c",
+   "cluster_title": "DC Blox’s proposed 24-acre data center near Nashville Zoo could be blocked by moratorium"
   },
   {
    "id": "9cf6268de8061c4f",
@@ -22544,7 +22810,8 @@
      "lon": -81.69,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -22724,12 +22991,13 @@
    ],
    "locations": [
     {
-     "name": "St. Louis, Missouri, US",
-     "lat": 38.63,
-     "lon": -90.2,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Missouri, US",
+     "lat": 38.4,
+     "lon": -92.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near St. Louis"
     }
    ],
    "states": [
@@ -22737,7 +23005,8 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near St. Louis",
    "companies": [
     "Amazon"
    ],
@@ -22803,7 +23072,8 @@
      "lon": -95.32,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     },
     {
      "name": "Oklahoma, US",
@@ -22992,6 +23262,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Jay Data Center",
    "cluster_id": "ad975838759e60ef",
    "cluster_title": "Jay data center project at former paper mill put on hold after developer backs out"
   },
@@ -23073,6 +23344,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Army Data Center",
    "cluster_id": "b77c1c334845e951",
    "cluster_title": "House NDAA provision could derail Army data center projects"
   },
@@ -23095,7 +23367,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -23427,11 +23700,11 @@
    ],
    "locations": [
     {
-     "name": "Montana, US",
-     "lat": 47.0,
-     "lon": -109.6,
-     "level": 2,
-     "precision": "source",
+     "name": "Missoula, Montana, US",
+     "lat": 46.8721,
+     "lon": -113.994,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -23440,7 +23713,7 @@
    ],
    "state": "MT",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -23467,7 +23740,8 @@
      "lon": -77.44,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     },
     {
      "name": "Virginia, US",
@@ -23710,7 +23984,8 @@
      "lon": -122.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -23741,12 +24016,13 @@
    ],
    "locations": [
     {
-     "name": "Florida, US",
-     "lat": 28.6,
-     "lon": -82.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Lakeland, Florida, US",
+     "lat": 28.0395,
+     "lon": -81.9498,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -23754,7 +24030,7 @@
    ],
    "state": "FL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -23781,7 +24057,8 @@
      "lon": -95.7908,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -23821,7 +24098,7 @@
    "suppliers": [],
    "name_hint": "Project Swan",
    "cluster_id": "855c6aaf5fea7c5a",
-   "cluster_title": "Madison County considers data center moratorium"
+   "cluster_title": "Lakeland considers data center moratorium"
   },
   {
    "id": "60e0b48a487bfd08",
@@ -23841,7 +24118,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -24294,7 +24572,8 @@
      "lon": -88.0798,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -24443,7 +24722,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -24482,7 +24762,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -24591,7 +24872,8 @@
      "lon": -97.4094,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -24622,12 +24904,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -24635,14 +24918,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "b11c1c3031ece0f7",
+   "cluster_title": "Proposed data center near Nashville Zoo sparks heavy pushback"
   },
   {
    "id": "5664086f11ad1d4c",
@@ -24712,6 +24996,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Eastside Data Center",
    "cluster_id": "ef6e2f3d2225e89c",
    "cluster_title": "Eastside data center campus recommended for approval"
   },
@@ -24782,7 +25067,8 @@
      "lon": -77.8853,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -25319,6 +25605,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Hall Data Center",
    "cluster_id": "338ee20890f4eabf",
    "cluster_title": "Planning Board recommends denying rezoning for proposed Rural Hall data center"
   },
@@ -25391,6 +25678,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Newton Twp. Data Center",
    "cluster_id": "cb8fd125c474d6d9",
    "cluster_title": "Still no hearing set on proposed Newton Twp. data center"
   },
@@ -25449,7 +25737,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     },
     {
      "name": "Tennessee, US",
@@ -25654,7 +25943,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -25776,7 +26066,8 @@
      "lon": -84.5499,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -25830,11 +26121,23 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Springdale, Pennsylvania, US",
+     "lat": 40.5409,
+     "lon": -79.7839,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -26098,12 +26401,13 @@
    ],
    "locations": [
     {
-     "name": "San Antonio, Texas, US",
-     "lat": 29.42,
-     "lon": -98.49,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near San Antonio"
     }
    ],
    "states": [
@@ -26111,7 +26415,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near San Antonio",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -26205,7 +26510,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -26241,7 +26547,8 @@
      "lon": -81.66,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -26350,7 +26657,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -26435,6 +26743,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Kevin O’Leary-backed Data Center",
    "cluster_id": "2d95a79d43110558",
    "cluster_title": "Kevin O’Leary-backed data center is still coming for this Utah county, even after its commissioners passed a moratorium"
   },
@@ -26616,12 +26925,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -26629,14 +26939,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "a8e7ac090d97429d",
+   "cluster_title": "‘Three stories tall’: Site plans for proposed data center near Nashville Zoo bigger than originally thought"
   },
   {
    "id": "f381b0c7dbc67066",
@@ -26801,7 +27112,8 @@
      "lon": -95.7908,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -27033,18 +27345,30 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lakeland, Florida, US",
+     "lat": 28.0395,
+     "lon": -81.9498,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "855c6aaf5fea7c5a",
-   "cluster_title": "Madison County considers data center moratorium"
+   "cluster_title": "Lakeland considers data center moratorium"
   },
   {
    "id": "d53de5902a9994ec",
@@ -27183,11 +27507,23 @@
     "Expansion",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
@@ -27452,6 +27788,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "St. Joseph Data Center",
    "cluster_id": "582ea150897811bf",
    "cluster_title": "Residents voice concerns over proposed St. Joseph data center campus"
   },
@@ -27487,6 +27824,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Quantum Leap’ Data Center",
    "cluster_id": "7577e132e03e4f13",
    "cluster_title": "Fisk University addresses ‘Quantum Leap’ data center backlash"
   },
@@ -27643,7 +27981,8 @@
      "lon": -97.312,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Virginia, US",
@@ -27754,11 +28093,23 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Springdale, Pennsylvania, US",
+     "lat": 40.5409,
+     "lon": -79.7839,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -27797,6 +28148,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Lehigh Valley Data Center",
    "cluster_id": "ec06aaf1e2b604a2",
    "cluster_title": "Could nearby bald eagles stop Lehigh Valley data center projects?"
   },
@@ -27983,6 +28335,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Perry Twp. Data Center",
    "cluster_id": "50b683bfae2fe45b",
    "cluster_title": "Stark County grants final approval for Perry Twp. data center tax break"
   },
@@ -28131,7 +28484,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -28298,7 +28652,8 @@
      "lon": -86.8025,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     },
     {
      "name": "Alabama, US",
@@ -28368,7 +28723,8 @@
      "lon": -111.669,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Salt Lake City"
     }
    ],
    "states": [
@@ -28469,12 +28825,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -28482,7 +28839,8 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28536,6 +28894,15 @@
      "level": 3,
      "precision": "city",
      "country": "US"
+    },
+    {
+     "name": "Franklin, Tennessee, US",
+     "lat": 35.9251,
+     "lon": -86.8689,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -28609,6 +28976,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "East Texas Data Center",
    "cluster_id": "0e85bc4710348747",
    "cluster_title": "East Texas data center gets pushback from community"
   },
@@ -28733,20 +29101,30 @@
    ],
    "locations": [
     {
-     "name": "Tennessee, US",
-     "lat": 35.9,
-     "lon": -86.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Olive Branch, Mississippi, US",
+     "lat": 34.9618,
+     "lon": -89.8295,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Memphis"
+    },
+    {
+     "name": "DeSoto County, Mississippi, US",
+     "lat": 34.876,
+     "lon": -89.991,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
-    "TN"
+    "MS"
    ],
-   "state": "TN",
-   "county": null,
-   "location_precision": "source",
+   "state": "MS",
+   "county": "DeSoto County, Mississippi, US",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28874,7 +29252,8 @@
      "lon": -87.382,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -28910,7 +29289,8 @@
      "lon": -97.4781,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -28982,7 +29362,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -29017,7 +29398,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -29157,7 +29539,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -29229,7 +29612,8 @@
      "lon": -86.5444,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -29264,7 +29648,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -29299,7 +29684,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -29373,7 +29759,8 @@
      "lon": -97.4781,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -29520,7 +29907,8 @@
      "lon": -95.37,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Houston"
     }
    ],
    "states": [
@@ -29744,7 +30132,8 @@
      "lon": -86.8025,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -29862,12 +30251,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -29875,14 +30265,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "6b6ca573fa070193",
+   "cluster_title": "Opposition to data center near Nashville Zoo grows as city plays catch-up"
   },
   {
    "id": "86570ef5f80b5629",
@@ -29904,7 +30295,8 @@
      "lon": -83.0,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -29959,12 +30351,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -29972,14 +30365,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "991454b6eb03a9f4",
+   "cluster_title": "Massive Data Center Proposed Near Nashville Zoo. Hundreds of Thousands, Including Brad Paisley, Want to Stop It"
   },
   {
    "id": "7f348b9cc6b62fb3",
@@ -29999,7 +30393,8 @@
      "lon": -97.805,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -30129,7 +30524,8 @@
      "lon": -86.8025,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -30162,7 +30558,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -30198,7 +30595,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -30294,7 +30692,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -30426,7 +30825,8 @@
      "lon": -86.8025,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -30564,12 +30964,13 @@
    ],
    "locations": [
     {
-     "name": "Florida, US",
-     "lat": 28.6,
-     "lon": -82.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Zephyrhills, Florida, US",
+     "lat": 28.2336,
+     "lon": -82.1812,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -30577,7 +30978,7 @@
    ],
    "state": "FL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -30665,7 +31066,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -30761,7 +31163,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -30895,7 +31298,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "855c6aaf5fea7c5a",
-   "cluster_title": "Madison County considers data center moratorium"
+   "cluster_title": "Lakeland considers data center moratorium"
   },
   {
    "id": "6e3b081cdd188b55",
@@ -30910,11 +31313,23 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Clay County, Florida, US",
+     "lat": 29.984,
+     "lon": -81.858,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Clay County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31003,7 +31418,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -31039,7 +31455,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -31075,7 +31492,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -31279,7 +31697,8 @@
      "lon": -98.03,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -31357,7 +31776,8 @@
      "lon": -88.003,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -31386,18 +31806,30 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Clay County, Florida, US",
+     "lat": 29.984,
+     "lon": -81.858,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Clay County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "69e74a8f37047ef6",
-   "cluster_title": "Clay County holds hearing on potential data center development moratorium"
+   "cluster_id": "6e3b081cdd188b55",
+   "cluster_title": "Clay County public hearing on potential data center development pause draws large crowd"
   },
   {
    "id": "b38e36ae0ed7f7e5",
@@ -31550,7 +31982,8 @@
      "lon": -98.03,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -31586,7 +32019,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -31698,7 +32132,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -31806,7 +32241,8 @@
      "lon": -83.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -31925,7 +32361,8 @@
      "lon": -88.0417,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -32115,7 +32552,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -32147,12 +32585,13 @@
    ],
    "locations": [
     {
-     "name": "Florida, US",
-     "lat": 28.6,
-     "lon": -82.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Lakeland, Florida, US",
+     "lat": 28.0395,
+     "lon": -81.9498,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -32160,7 +32599,7 @@
    ],
    "state": "FL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -32188,7 +32627,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -32294,18 +32734,19 @@
    ],
    "locations": [
     {
-     "name": "De Soto, Missouri, US",
-     "lat": 38.1395,
-     "lon": -90.5551,
+     "name": "De Soto, Kansas, US",
+     "lat": 38.9792,
+     "lon": -94.9686,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
-    "MO"
+    "KS"
    ],
-   "state": "MO",
+   "state": "KS",
    "county": null,
    "location_precision": "city",
    "companies": [],
@@ -32334,7 +32775,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -32348,8 +32790,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "26e1749f0d3bf069",
+   "cluster_title": "Brad Paisley criticizes data center planned next to Nashville Zoo"
   },
   {
    "id": "2e2e864adf4c7f18",
@@ -32537,7 +32979,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -32566,11 +33009,23 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Jackson County, Missouri, US",
+     "lat": 39.009,
+     "lon": -94.348,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": "Jackson County, Missouri, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -32598,7 +33053,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -32659,7 +33115,8 @@
      "lon": -86.5444,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -33061,6 +33518,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Monterey Park AI Data Center",
    "cluster_id": "2d45a6ee5e8b1cda",
    "cluster_title": "SGV communities react to Monterey Park AI data center vote"
   },
@@ -33118,7 +33576,8 @@
      "lon": -97.4781,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -33188,7 +33647,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -33478,7 +33938,8 @@
      "lon": -79.9909,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -33518,6 +33979,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Behind-the-meter Data Center",
    "cluster_id": "562f98899bd03f6a",
    "cluster_title": "Behind-the-meter data center gas plants will raise US energy bills"
   },
@@ -33534,20 +33996,21 @@
    ],
    "locations": [
     {
-     "name": "Kentucky, US",
-     "lat": 37.5,
-     "lon": -85.3,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Charlestown, Indiana, US",
+     "lat": 38.4531,
+     "lon": -85.6702,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
-    "KY"
+    "IN"
    ],
-   "state": "KY",
+   "state": "IN",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -33694,7 +34157,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -33731,7 +34195,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -33816,11 +34281,23 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -33920,7 +34397,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -33949,18 +34427,30 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "8880ee3bf1ec94ba",
-   "cluster_title": "Nassau County leaders approve 12-month moratorium on data centers after final public hearing"
+   "cluster_id": "84975feb30ee67bd",
+   "cluster_title": "12-month data center moratorium approved in Nassau County"
   },
   {
    "id": "788af37b7dc68e61",
@@ -33981,7 +34471,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -34043,7 +34534,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -34114,7 +34606,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -34248,7 +34741,8 @@
      "lon": -97.4781,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -34356,7 +34850,8 @@
      "lon": -82.396,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -34476,7 +34971,8 @@
      "lon": -82.151,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -34505,11 +35001,23 @@
     "Power / Utility",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Snoqualmie, Washington, US",
+     "lat": 47.5287,
+     "lon": -121.8254,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Seattle"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -34540,6 +35048,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Paju AI Data Center",
    "investment_usd_b": 3.3,
    "cluster_id": "6a5c81f7adf111ea",
    "cluster_title": "Paju AI data center at heart of LG U+'s $3.3 billion order push"
@@ -34553,11 +35062,23 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Queen Creek, Arizona, US",
+     "lat": 33.2487,
+     "lon": -111.6343,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Phoenix"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -34580,12 +35101,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -34593,14 +35115,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "f3a1b85bd18faba8",
+   "cluster_title": "‘Absolute nightmare scenario’: Country star Brad Paisley speaks out against proposed data center near Nashville Zoo"
   },
   {
    "id": "92489856c7dd3cfb",
@@ -34613,11 +35136,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Clay County, Florida, US",
+     "lat": 29.984,
+     "lon": -81.858,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Clay County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -34648,6 +35183,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Paju AI Data Center",
    "cluster_id": "16fe79e0d71a1f08",
    "cluster_title": "LG Uplus accelerates Paju AI data center build, sells out first facility - CHOSUNBIZ"
   },
@@ -34752,12 +35288,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -34765,14 +35302,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "29c4727cc54ca38f",
+   "cluster_title": "Brad Paisley joins opposition to proposed data center near Nashville Zoo"
   },
   {
    "id": "d71ab7a1ff59eb6a",
@@ -34864,7 +35402,8 @@
      "lon": -97.4781,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -34967,7 +35506,8 @@
      "lon": -122.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -35100,6 +35640,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Bells Ferry Road Data Center",
    "cluster_id": "dc7f16e7b27c6f0e",
    "cluster_title": "Citizens to protest forthcoming Bells Ferry Road data center"
   },
@@ -35118,12 +35659,13 @@
    ],
    "locations": [
     {
-     "name": "Nashville, Tennessee, US",
-     "lat": 36.16,
-     "lon": -86.78,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Nashville"
     }
    ],
    "states": [
@@ -35131,14 +35673,15 @@
    ],
    "state": "TN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Nashville",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9e34239ac927b9fc",
-   "cluster_title": "Proposed data center next to Nashville Zoo draws pushback"
+   "cluster_id": "f8281c032c0aeb7b",
+   "cluster_title": "Community member launches grassroots campaign against proposed data center near Nashville Zoo"
   },
   {
    "id": "f8535018aa65bd66",
@@ -35519,7 +36062,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -35586,7 +36130,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -35763,7 +36308,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -35794,11 +36340,23 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Roseville, California, US",
+     "lat": 38.7521,
+     "lon": -121.288,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Sacramento"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -35826,7 +36384,8 @@
      "lon": -116.469,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -35958,7 +36517,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -36068,7 +36628,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -36204,7 +36765,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -36395,7 +36957,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Illinois, US",
@@ -36496,7 +37059,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -36687,7 +37251,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -36760,7 +37325,8 @@
      "lon": -96.794,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -36806,7 +37372,8 @@
      "lon": -83.211,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -36841,7 +37408,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     },
     {
      "name": "Washington, US",
@@ -36913,7 +37481,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -36944,12 +37513,13 @@
    ],
    "locations": [
     {
-     "name": "Texas, US",
-     "lat": 31.5,
-     "lon": -99.3,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Alvin, Texas, US",
+     "lat": 29.4239,
+     "lon": -95.2441,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Houston"
     }
    ],
    "states": [
@@ -36957,7 +37527,7 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37245,6 +37815,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Kevin O’Leary Data Center",
    "cluster_id": "32d80cb1ce77c3ee",
    "cluster_title": "Utah residents sue officials over Kevin O’Leary data center plan"
   },
@@ -37267,7 +37838,8 @@
      "lon": -97.7625,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -37434,7 +38006,8 @@
      "lon": -83.211,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -37498,7 +38071,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -37594,7 +38168,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -37654,7 +38229,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -37799,7 +38375,8 @@
      "lon": -82.9199,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -38412,11 +38989,23 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Williamson County, Texas, US",
+     "lat": 30.648,
+     "lon": -97.599,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Austin"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Williamson County, Texas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -38569,7 +39158,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -38630,7 +39220,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -38829,7 +39420,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -38866,7 +39458,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -39148,7 +39741,8 @@
      "lon": -83.211,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -39512,7 +40106,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -39822,7 +40417,8 @@
      "lon": -82.6743,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -39905,7 +40501,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -40090,7 +40687,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -40163,7 +40761,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -40250,7 +40849,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -40399,7 +40999,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -40546,6 +41147,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Utah AI Data Center",
    "cluster_id": "5f29efba900c10ce",
    "cluster_title": "Kevin O'Leary says Utah AI data center project will shrink after lawmakers demand cuts"
   },
@@ -40680,6 +41282,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Utah AI Data Center",
    "cluster_id": "00bdfe3e17b1a7c3",
    "cluster_title": "Kevin O’Leary says he will shrink his Utah AI data center project after political backlash"
   },
@@ -40771,7 +41374,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -40902,7 +41506,8 @@
      "lon": -122.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     },
     {
      "name": "Maine, US",
@@ -41026,7 +41631,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -41626,7 +42232,8 @@
      "lon": -82.9199,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -41952,7 +42559,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -42007,12 +42615,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -42020,7 +42629,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -42083,12 +42692,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -42096,12 +42706,13 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "OpenAI-backed Data Center",
    "investment_usd_b": 0.01,
    "cluster_id": "3919d32bcb77126d",
    "cluster_title": "OpenAI-backed data center gives $10M to Saline recreation center"
@@ -42256,7 +42867,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -42417,7 +43029,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -42519,11 +43132,23 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Big Beaver, Pennsylvania, US",
+     "lat": 40.8245,
+     "lon": -80.3628,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -42552,7 +43177,8 @@
      "lon": -88.0798,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -42937,7 +43563,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -43028,7 +43655,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Prologis"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -43276,6 +43905,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Utah AI Data Center",
    "cluster_id": "40e10f164278078e",
    "cluster_title": "Kevin O'Leary says he's 'not walking away' from his Utah AI data center, despite call to shrink it by 75%"
   },
@@ -43348,7 +43978,8 @@
      "lon": -82.6743,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -43453,12 +44084,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -43466,7 +44098,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -43706,6 +44338,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Upper Merion Data Center",
    "cluster_id": "a2c90da16e9669e6",
    "cluster_title": "Upper Merion data center meeting draws hundreds"
   },
@@ -43788,7 +44421,8 @@
      "lon": -80.35,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -43895,7 +44529,8 @@
      "lon": -97.312,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -43912,7 +44547,9 @@
    "state": "TX",
    "county": "Bastrop County, Texas, US",
    "location_precision": "county",
-   "companies": [],
+   "companies": [
+    "EdgeConneX"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -44150,6 +44787,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "PAX-1 Data Center",
    "cluster_id": "89007bb1263eb95e",
    "cluster_title": "Middlesex Township outlines proposed 'community benefit agreement' with PAX-1 data center developers"
   },
@@ -44288,11 +44926,23 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -44362,6 +45012,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Northland AI Data Center",
    "cluster_id": "fd23420fcb256d89",
    "cluster_title": "Northland AI data center withdraws bond application with Port KC"
   },
@@ -44650,7 +45301,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -44681,12 +45333,13 @@
    ],
    "locations": [
     {
-     "name": "Ohio, US",
-     "lat": 40.3,
-     "lon": -82.8,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "North Ridgeville, Ohio, US",
+     "lat": 41.3895,
+     "lon": -82.019,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -44694,7 +45347,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -44781,7 +45434,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -44860,7 +45514,8 @@
      "lon": -122.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     },
     {
      "name": "Maine, US",
@@ -45204,19 +45859,31 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lakeland, Florida, US",
+     "lat": 28.0395,
+     "lon": -81.9498,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "name_hint": "Project Swan",
-   "cluster_id": "e115a6196177041a",
-   "cluster_title": "After backlash over Project Swan, some call for data center moratorium in Lakeland"
+   "cluster_id": "8e25469ada041bdd",
+   "cluster_title": "Project Swan: What is the proposed Lakeland data center?"
   },
   {
    "id": "ef9fcd3821db4dac",
@@ -45350,7 +46017,8 @@
      "lon": -105.0867,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -45605,7 +46273,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Fleet Data Centers"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -45627,12 +46297,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -45640,7 +46311,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -45669,7 +46340,8 @@
      "lon": -83.7409,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -45985,6 +46657,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Boyd Co. Data Center",
    "cluster_id": "25709cd296b38f90",
    "cluster_title": "‘Starting it off shady.’ Residents question NDAs, protections for proposed Boyd Co. data center"
   },
@@ -46351,7 +47024,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -46471,7 +47145,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -46582,7 +47257,8 @@
      "lon": -77.492,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     },
     {
      "name": "Virginia, US",
@@ -47089,7 +47765,8 @@
      "lon": -81.38,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Orlando"
     }
    ],
    "states": [
@@ -47234,7 +47911,8 @@
      "lon": -97.833,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -47358,6 +48036,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "All Georgia Data Center",
    "cluster_id": "9a12b1ae84de7645",
    "cluster_title": "All Georgia data center ordinances — from most to least restrictive"
   },
@@ -47416,7 +48095,8 @@
      "lon": -87.8534,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -47512,7 +48192,8 @@
      "lon": -82.932,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -47948,7 +48629,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -48179,7 +48861,8 @@
      "lon": -83.093,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -48193,8 +48876,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "1310f2d3fd7351a4",
-   "cluster_title": "Grove City passes a 1-year moratorium on data centers"
+   "cluster_id": "5b31d30434121c6c",
+   "cluster_title": "Grove City data center moratorium passes"
   },
   {
    "id": "8e426bc227e7242c",
@@ -48274,7 +48957,8 @@
      "lon": -122.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -48498,7 +49182,8 @@
      "lon": -88.0798,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -48528,11 +49213,23 @@
     "Power / Utility",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Jackson County, Missouri, US",
+     "lat": 39.009,
+     "lon": -94.348,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": "Jackson County, Missouri, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -48711,12 +49408,13 @@
    ],
    "locations": [
     {
-     "name": "Missouri, US",
-     "lat": 38.4,
-     "lon": -92.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -48724,7 +49422,7 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -48766,7 +49464,6 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "investment_usd_b": 0.042,
    "cluster_id": "375500f3b7da56b1",
    "cluster_title": "Just before moratorium, two last Ohio data centers get a $42 million tax break"
   },
@@ -48823,12 +49520,13 @@
    "tags": [],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -48836,7 +49534,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -48856,6 +49554,15 @@
    "tags": [],
    "locations": [
     {
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
+    },
+    {
      "name": "Michigan, US",
      "lat": 44.3,
      "lon": -85.4,
@@ -48869,7 +49576,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -48891,12 +49598,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -48904,7 +49612,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "OpenAI"
    ],
@@ -48958,7 +49666,8 @@
      "lon": -83.7409,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -49068,7 +49777,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -49248,7 +49958,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -49389,11 +50100,23 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -49567,7 +50290,8 @@
      "lon": -111.344,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -49738,7 +50462,8 @@
      "lon": -83.838,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -49918,12 +50643,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -49931,7 +50657,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -49991,12 +50717,13 @@
    ],
    "locations": [
     {
-     "name": "San Antonio, Texas, US",
-     "lat": 29.42,
-     "lon": -98.49,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near San Antonio"
     }
    ],
    "states": [
@@ -50004,7 +50731,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near San Antonio",
    "companies": [
     "Tract"
    ],
@@ -50058,7 +50786,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -50313,7 +51042,8 @@
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -50415,7 +51145,8 @@
      "lon": -88.0798,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Naperville, Illinois, US",
@@ -50423,7 +51154,8 @@
      "lon": -88.1473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -50631,12 +51363,13 @@
    ],
    "locations": [
     {
-     "name": "Louisville, Kentucky, US",
-     "lat": 38.25,
-     "lon": -85.76,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Kentucky, US",
+     "lat": 37.5,
+     "lon": -85.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Louisville"
     }
    ],
    "states": [
@@ -50644,7 +51377,8 @@
    ],
    "state": "KY",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Louisville",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -50665,11 +51399,23 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Jackson County, Missouri, US",
+     "lat": 39.009,
+     "lon": -94.348,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": "Jackson County, Missouri, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -50697,7 +51443,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -50761,11 +51508,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Gardner, Kansas, US",
+     "lat": 38.8108,
+     "lon": -94.9272,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -50903,7 +51662,6 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "investment_usd_b": 0.042,
    "cluster_id": "4d783bd2f5fef711",
    "cluster_title": "2 Ohio data centers get $42M tax break before pause"
   },
@@ -51096,7 +51854,8 @@
      "lon": -83.093,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -51246,18 +52005,30 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Grove City, Ohio, US",
+     "lat": 39.8815,
+     "lon": -83.093,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9c49f227d05db9d3",
-   "cluster_title": "Skagit County passes data center moratorium"
+   "cluster_id": "5b31d30434121c6c",
+   "cluster_title": "Grove City data center moratorium passes"
   },
   {
    "id": "017deecc56263447",
@@ -51277,7 +52048,8 @@
      "lon": -83.613,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -51459,7 +52231,8 @@
      "lon": -94.348,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -51496,7 +52269,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [

@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -268,7 +269,8 @@
      "lon": -97.94,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -282,6 +284,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Billion-dollar San Marcos Data Center",
    "cluster_id": "fbe9899359892266",
    "cluster_title": "Billion-dollar San Marcos data center revives bid after zoning stalemate"
   },
@@ -564,7 +567,8 @@
      "lon": -83.025,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -734,7 +738,8 @@
      "lon": -97.74,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -1053,7 +1058,8 @@
      "lon": -81.6853,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Orlando"
     }
    ],
    "states": [
@@ -1409,7 +1415,8 @@
      "lon": -83.7409,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -1688,12 +1695,13 @@
    ],
    "locations": [
     {
-     "name": "San Antonio, Texas, US",
-     "lat": 29.42,
-     "lon": -98.49,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near San Antonio"
     }
    ],
    "states": [
@@ -1701,7 +1709,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near San Antonio",
    "companies": [
     "Microsoft"
    ],
@@ -1886,7 +1895,8 @@
      "lon": -115.015,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     },
     {
      "name": "Nevada, US",
@@ -2136,7 +2146,8 @@
      "lon": -82.953,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -2213,7 +2224,8 @@
      "lon": -81.6853,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Orlando"
     }
    ],
    "states": [
@@ -2430,7 +2442,8 @@
      "lon": -82.953,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -2856,7 +2869,8 @@
      "lon": -87.382,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -3090,7 +3104,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Wisconsin, US",
@@ -3175,7 +3190,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -3698,12 +3714,22 @@
    ],
    "locations": [
     {
+     "name": "South Bloomfield, Ohio, US",
+     "lat": 39.7184,
+     "lon": -82.9869,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    },
+    {
      "name": "Ashville, Ohio, US",
      "lat": 39.7156,
      "lon": -82.953,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Pickaway County, Ohio, US",
@@ -3711,7 +3737,8 @@
      "lon": -83.025,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -4068,7 +4095,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -4106,7 +4134,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -4698,15 +4727,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -5225,7 +5247,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -5333,7 +5356,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -5370,7 +5394,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -5436,7 +5461,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -5688,7 +5714,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -5755,11 +5782,23 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Birmingham, Alabama, US",
+     "lat": 33.5207,
+     "lon": -86.8025,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Birmingham"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5860,7 +5899,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -5968,7 +6008,8 @@
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -5996,11 +6037,24 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "state",
+   "location_note": "near Pittsburgh",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6122,7 +6176,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -6401,7 +6456,8 @@
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -6553,12 +6609,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Herndon, Virginia, US",
+     "lat": 38.9695,
+     "lon": -77.3861,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -6566,7 +6623,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6882,7 +6939,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -7036,11 +7094,23 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Grantville, Georgia, US",
+     "lat": 33.2348,
+     "lon": -84.8358,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7067,7 +7137,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -7242,7 +7313,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -7250,8 +7321,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7402,7 +7473,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -7476,7 +7548,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -7507,11 +7580,23 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "DeKalb County, Georgia, US",
+     "lat": 33.768,
+     "lon": -84.225,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "DeKalb County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7569,20 +7654,13 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "DeKalb County, Georgia, US",
      "lat": 33.768,
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -7590,7 +7668,7 @@
    ],
    "state": "GA",
    "county": "DeKalb County, Georgia, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7733,7 +7811,8 @@
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -7770,7 +7849,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -8117,7 +8197,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -8152,7 +8233,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -8187,7 +8269,8 @@
      "lon": -84.5424,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -8691,6 +8774,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Downtown Lansing Data Center",
    "cluster_id": "806c6b4981adbda7",
    "cluster_title": "Downtown Lansing data center proposed. When will City Council decide?"
   },
@@ -9226,8 +9310,9 @@
      "lat": 40.3,
      "lon": -82.8,
      "level": 2,
-     "precision": "source",
-     "country": "US"
+     "precision": "state",
+     "country": "US",
+     "note": "near Columbus"
     }
    ],
    "states": [
@@ -9235,7 +9320,8 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "state",
+   "location_note": "near Columbus",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9739,7 +9825,8 @@
      "lon": -83.385,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -10116,7 +10203,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -10337,6 +10425,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Atlas Agro Data Center",
    "cluster_id": "5a8e7b620ba406e8",
    "cluster_title": "Richland OKs option agreement for Atlas Agro data center"
   },
@@ -10411,7 +10500,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -10786,7 +10876,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -10800,6 +10891,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Sinema-backed Data Center",
    "cluster_id": "ba77b5edd47823c1",
    "cluster_title": "Thumbs down: Chandler kills Sinema-backed data center in 7-0 vote"
   },
@@ -11075,7 +11167,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -11182,7 +11275,8 @@
      "lon": -112.493,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -11214,12 +11308,13 @@
    ],
    "locations": [
     {
-     "name": "Phoenix, Arizona, US",
-     "lat": 33.45,
-     "lon": -112.07,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Phoenix"
     }
    ],
    "states": [
@@ -11227,7 +11322,8 @@
    ],
    "state": "AZ",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Phoenix",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11344,7 +11440,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Arizona, US",
@@ -11682,6 +11779,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Beale Data Center",
    "cluster_id": "3ba6c4fe6f34d9b0",
    "cluster_title": "Proposed Beale data center in Marana clears first hurdle"
   },
@@ -11741,7 +11839,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -11778,7 +11877,8 @@
      "lon": -82.932,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -11892,7 +11992,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -11928,7 +12029,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -12064,6 +12166,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Gateway Boulevard Data Center",
    "cluster_id": "041415f4da5a0731",
    "cluster_title": "Second time not the charm for proposed Gateway Boulevard data center"
   },
@@ -12087,7 +12190,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -12122,7 +12226,8 @@
      "lon": -83.385,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -12159,7 +12264,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -12195,7 +12301,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -12295,11 +12402,24 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Dallas"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "state",
+   "location_note": "near Dallas",
    "companies": [
     "Google"
    ],
@@ -12307,6 +12427,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Dallas-area Data Center",
    "investment_usd_b": 1.0,
    "cluster_id": "d76434c45ac90b0d",
    "cluster_title": "News | Google to spend nearly $1 billion to expand Dallas-area data center campus"
@@ -12379,7 +12500,9 @@
    "state": "MN",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Oppidan"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -12794,7 +12917,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -13042,20 +13166,21 @@
    ],
    "locations": [
     {
-     "name": "Missouri, US",
-     "lat": 38.4,
-     "lon": -92.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Collinsville, Illinois, US",
+     "lat": 38.6703,
+     "lon": -89.9845,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
-    "MO"
+    "IL"
    ],
-   "state": "MO",
+   "state": "IL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13177,12 +13302,13 @@
    ],
    "locations": [
     {
-     "name": "Dallas, Texas, US",
-     "lat": 32.78,
-     "lon": -96.8,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Dallas"
     }
    ],
    "states": [
@@ -13190,7 +13316,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Dallas",
    "companies": [
     "Google"
    ],
@@ -13220,7 +13347,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -13408,7 +13536,8 @@
      "lon": -86.446,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -13609,7 +13738,8 @@
      "lon": -83.838,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -13789,7 +13919,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -13886,16 +14017,17 @@
      "lat": 38.2,
      "lon": -77.66,
      "level": 3,
-     "precision": "city",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Spotsylvania County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -14034,7 +14166,8 @@
      "lon": -96.1089,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -14194,7 +14327,8 @@
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -14290,7 +14424,8 @@
      "lon": -96.1089,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -14329,7 +14464,8 @@
      "lon": -111.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -14470,11 +14606,23 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Hobart, Indiana, US",
+     "lat": 41.5323,
+     "lon": -87.255,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -14807,7 +14955,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -15153,7 +15302,8 @@
      "lon": -83.838,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -15252,7 +15402,8 @@
      "lon": -83.9294,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     },
     {
      "name": "Michigan, US",
@@ -15482,7 +15633,8 @@
      "lon": -83.613,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -15566,7 +15718,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -15602,7 +15755,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -15658,12 +15812,13 @@
    ],
    "locations": [
     {
-     "name": "Missouri, US",
-     "lat": 38.4,
-     "lon": -92.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -15671,7 +15826,7 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15700,7 +15855,8 @@
      "lon": -77.276,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -15842,7 +15998,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -15977,7 +16134,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -16013,7 +16171,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -16202,12 +16361,22 @@
    ],
    "locations": [
     {
+     "name": "Cheswick, Pennsylvania, US",
+     "lat": 40.5417,
+     "lon": -79.7992,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    },
+    {
      "name": "Springdale, Pennsylvania, US",
      "lat": 40.5409,
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     },
     {
      "name": "Pennsylvania, US",
@@ -16246,12 +16415,13 @@
    ],
    "locations": [
     {
-     "name": "Pennsylvania, US",
-     "lat": 40.9,
-     "lon": -77.8,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Mayfield, Pennsylvania, US",
+     "lat": 40.1362,
+     "lon": -79.5978,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -16259,7 +16429,7 @@
    ],
    "state": "PA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16339,6 +16509,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Ypsi Data Center",
    "cluster_id": "5019af72332f4779",
    "cluster_title": "Community letters on the Ypsi data center"
   },
@@ -16484,7 +16655,8 @@
      "lon": -96.1089,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -16702,7 +16874,8 @@
      "lon": -83.2219,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -16737,7 +16910,8 @@
      "lon": -119.189,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     },
     {
      "name": "Nevada, US",
@@ -16782,7 +16956,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -16930,7 +17105,8 @@
      "lon": -83.9294,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -17003,7 +17179,8 @@
      "lon": -83.9294,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -17472,7 +17649,8 @@
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -17505,7 +17683,8 @@
      "lon": -88.003,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -17627,7 +17806,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -17936,7 +18116,8 @@
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -18262,7 +18443,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -18594,7 +18776,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -18655,7 +18838,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -18886,12 +19070,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -18899,7 +19084,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "OpenAI"
    ],
@@ -19141,7 +19326,8 @@
      "lon": -77.44,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -19380,12 +19566,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -19393,7 +19580,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19564,12 +19751,13 @@
    ],
    "locations": [
     {
-     "name": "Charlotte, North Carolina, US",
-     "lat": 35.23,
-     "lon": -80.84,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Charlotte"
     }
    ],
    "states": [
@@ -19577,7 +19765,8 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Charlotte",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19771,12 +19960,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -19784,15 +19974,15 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 7.0,
-   "cluster_id": "5236b2ece4f04b42",
-   "cluster_title": "Saline residents mobilize against planned $7 billion data center"
+   "cluster_id": "7c95dd1d673a3864",
+   "cluster_title": "Protesters in downtown Saline fight against nearby planned data center"
   },
   {
    "id": "dc1ff368df302794",
@@ -19922,7 +20112,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -20023,7 +20214,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -20456,7 +20648,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -20570,7 +20763,8 @@
      "lon": -77.3703,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -21095,12 +21289,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -21108,7 +21303,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -21163,7 +21358,8 @@
      "lon": -82.953,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [

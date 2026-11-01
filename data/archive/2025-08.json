@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -112,11 +113,11 @@
    "tags": [],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Kalamazoo, Michigan, US",
+     "lat": 42.2917,
+     "lon": -85.5872,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -125,7 +126,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -281,6 +282,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "AI-only Data Center",
    "cluster_id": "3fef99862980d866",
    "cluster_title": "SK Group breaks ground on AI-only data center in Ulsan"
   },
@@ -406,7 +408,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -561,7 +564,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -664,11 +668,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Bristol, Tennessee, US",
+     "lat": 36.5951,
+     "lon": -82.1887,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -690,12 +705,13 @@
    ],
    "locations": [
     {
-     "name": "Columbus, Ohio, US",
-     "lat": 39.96,
-     "lon": -83.0,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Columbus"
     }
    ],
    "states": [
@@ -703,7 +719,8 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Columbus",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -830,7 +847,7 @@
    "suppliers": [],
    "investment_usd_b": 9.0,
    "cluster_id": "52e2bf4cc9d1c50a",
-   "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
+   "cluster_title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center"
   },
   {
    "id": "41711c317f1f0719",
@@ -1030,7 +1047,8 @@
      "lon": -77.59,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     },
     {
      "name": "Virginia, US",
@@ -1055,7 +1073,7 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 9.0,
-   "cluster_id": "52e2bf4cc9d1c50a",
+   "cluster_id": "c0ade67cfe57e722",
    "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
   },
   {
@@ -1250,7 +1268,9 @@
    "county": null,
    "location_precision": "state",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "LG&E"
+   ],
    "investors": [],
    "builders": [],
    "suppliers": [],
@@ -1345,12 +1365,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -1358,7 +1379,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -1456,12 +1477,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -1469,7 +1491,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -1495,6 +1517,15 @@
    ],
    "locations": [
     {
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
+    },
+    {
      "name": "Virginia, US",
      "lat": 37.5,
      "lon": -78.9,
@@ -1508,7 +1539,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -1518,7 +1549,7 @@
    "suppliers": [],
    "investment_usd_b": 9.0,
    "cluster_id": "52e2bf4cc9d1c50a",
-   "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
+   "cluster_title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center"
   },
   {
    "id": "6496e277ab49e699",
@@ -1621,6 +1652,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Qatari Data Center",
    "capacity_mw": 44,
    "investment_usd_b": 0.219,
    "cluster_id": "be521546a0cce81a",
@@ -1683,7 +1715,8 @@
      "lon": -112.186,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -1802,12 +1835,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -1815,7 +1849,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -1825,7 +1859,7 @@
    "suppliers": [],
    "investment_usd_b": 9.0,
    "cluster_id": "52e2bf4cc9d1c50a",
-   "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
+   "cluster_title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center"
   },
   {
    "id": "2e772e9a729147ab",
@@ -1852,7 +1886,9 @@
    "state": "AZ",
    "county": null,
    "location_precision": "source",
-   "companies": [],
+   "companies": [
+    "Beale Infrastructure"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -1876,6 +1912,15 @@
    ],
    "locations": [
     {
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
+    },
+    {
      "name": "Virginia, US",
      "lat": 37.5,
      "lon": -78.9,
@@ -1889,7 +1934,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -1899,7 +1944,7 @@
    "suppliers": [],
    "investment_usd_b": 9.0,
    "cluster_id": "52e2bf4cc9d1c50a",
-   "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
+   "cluster_title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center"
   },
   {
    "id": "565d84a6dfcdea39",
@@ -1947,7 +1992,8 @@
      "lon": -80.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -2045,12 +2091,22 @@
    ],
    "locations": [
     {
+     "name": "Commercial Point, Ohio, US",
+     "lat": 39.7684,
+     "lon": -83.0571,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    },
+    {
      "name": "Pickaway County, Ohio, US",
      "lat": 39.642,
      "lon": -83.025,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -2058,7 +2114,7 @@
    ],
    "state": "OH",
    "county": "Pickaway County, Ohio, US",
-   "location_precision": "county",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2151,7 +2207,7 @@
    "suppliers": [],
    "investment_usd_b": 9.0,
    "cluster_id": "52e2bf4cc9d1c50a",
-   "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
+   "cluster_title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center"
   },
   {
    "id": "2d3ffac637ddc6c6",
@@ -2172,16 +2228,17 @@
      "lat": 38.2,
      "lon": -77.66,
      "level": 3,
-     "precision": "city",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Spotsylvania County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2227,7 +2284,7 @@
    "suppliers": [],
    "investment_usd_b": 9.0,
    "cluster_id": "52e2bf4cc9d1c50a",
-   "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
+   "cluster_title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center"
   },
   {
    "id": "1159cc827da159ea",
@@ -2316,12 +2373,13 @@
    ],
    "locations": [
     {
-     "name": "Austin, Texas, US",
-     "lat": 30.27,
-     "lon": -97.74,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Austin"
     }
    ],
    "states": [
@@ -2329,7 +2387,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Austin",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2403,6 +2462,15 @@
    ],
    "locations": [
     {
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
+    },
+    {
      "name": "Virginia, US",
      "lat": 37.5,
      "lon": -78.9,
@@ -2416,7 +2484,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -2426,7 +2494,7 @@
    "suppliers": [],
    "investment_usd_b": 9.0,
    "cluster_id": "52e2bf4cc9d1c50a",
-   "cluster_title": "Google to invest $9bn in Virginia data centers, plans new campus in Chesterfield County"
+   "cluster_title": "Google announces $9 billion investment in Virginia, including a Chesterfield data center"
   },
   {
    "id": "61728ad0a43b798a",
@@ -2565,11 +2633,23 @@
    "feed": "Backfill: operational",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "De Soto, Kansas, US",
+     "lat": 38.9792,
+     "lon": -94.9686,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2633,6 +2713,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Southern California Data Center",
    "cluster_id": "81af054288bd4d7e",
    "cluster_title": "News | Here's where Southern California data center players are gravitating"
   },
@@ -2885,6 +2966,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Louisiana AI Data Center",
    "investment_usd_b": 50.0,
    "cluster_id": "83c51db017da6b78",
    "cluster_title": "Trump Says Meta to Spend $50 Billion on Louisiana Data Center"
@@ -2939,20 +3021,21 @@
    ],
    "locations": [
     {
-     "name": "Kansas City, Missouri, US",
-     "lat": 39.1,
-     "lon": -94.58,
+     "name": "Platte County, Missouri, US",
+     "lat": 39.38,
+     "lon": -94.773,
      "level": 3,
-     "precision": "city",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
     "MO"
    ],
    "state": "MO",
-   "county": null,
-   "location_precision": "city",
+   "county": "Platte County, Missouri, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3027,7 +3110,8 @@
      "lon": -80.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -3289,20 +3373,21 @@
    ],
    "locations": [
     {
-     "name": "Kansas City, Missouri, US",
-     "lat": 39.1,
-     "lon": -94.58,
+     "name": "Platte County, Missouri, US",
+     "lat": 39.38,
+     "lon": -94.773,
      "level": 3,
-     "precision": "city",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
     "MO"
    ],
    "state": "MO",
-   "county": null,
-   "location_precision": "city",
+   "county": "Platte County, Missouri, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3393,7 +3478,8 @@
      "lon": -106.65,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Albuquerque"
     },
     {
      "name": "Doña Ana, New Mexico, US",
@@ -3465,7 +3551,8 @@
      "lon": -94.9686,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     },
     {
      "name": "Kansas, US",
@@ -3917,7 +4004,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -4243,7 +4331,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -4281,7 +4370,8 @@
      "lon": -97.94,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -4506,7 +4596,8 @@
      "lon": -77.44,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -4541,7 +4632,8 @@
      "lon": -94.58,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -4579,7 +4671,8 @@
      "lon": -94.58,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     },
     {
      "name": "Missouri, US",
@@ -4916,15 +5009,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -5385,7 +5471,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -5455,7 +5542,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -5545,20 +5633,13 @@
    ],
    "locations": [
     {
-     "name": "Dallas, Texas, US",
-     "lat": 32.78,
-     "lon": -96.8,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Lancaster, Texas, US",
      "lat": 32.5921,
      "lon": -96.7561,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -5842,17 +5923,28 @@
     "Deals / Investment",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "De Soto, Kansas, US",
+     "lat": 38.9792,
+     "lon": -94.9686,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "investment_usd_b": 50.0,
    "cluster_id": "1d46ce115ad0c5e3",
    "cluster_title": "De Soto City Council to consider up to $50 billion in incentives for data center project"
   },
@@ -5870,11 +5962,11 @@
    ],
    "locations": [
     {
-     "name": "Bessemer, Alabama, US",
-     "lat": 33.4,
-     "lon": -86.95,
-     "level": 3,
-     "precision": "city",
+     "name": "Alabama, US",
+     "lat": 32.8,
+     "lon": -86.8,
+     "level": 2,
+     "precision": "source",
      "country": "US"
     }
    ],
@@ -5883,7 +5975,7 @@
    ],
    "state": "AL",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5957,7 +6049,9 @@
    "state": "UT",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Joule"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -5989,7 +6083,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -6429,6 +6524,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Central Ohio Data Center",
    "investment_usd_b": 0.02,
    "cluster_id": "cdc9f917f8afa587",
    "cluster_title": "A $20M pipeline project is underway to power another Central Ohio data center"
@@ -6555,6 +6651,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "S.C. Data Center",
    "cluster_id": "22a412c261cb94c0",
    "cluster_title": "New partners team up in support of Meta's first S.C. data center"
   },
@@ -6576,7 +6673,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -6590,6 +6688,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Downtown Minneapolis Data Center",
    "investment_usd_b": 0.4,
    "cluster_id": "542350cd99a72bb2",
    "cluster_title": "Downtown Minneapolis data center plan replaces Sherman's $400M mixed-use vision"
@@ -6743,7 +6842,8 @@
      "lon": -83.0,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -6857,6 +6957,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "West Feliciana Data Center",
    "investment_usd_b": 2.5,
    "cluster_id": "de9c07a68dcad65e",
    "cluster_title": "'It could turn Louisiana around': Hut 8 breaks ground on $2.5 billion West Feliciana data center"
@@ -7276,7 +7377,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -7358,7 +7460,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -7430,7 +7533,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -7466,7 +7570,8 @@
      "lon": -80.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     },
     {
      "name": "North Carolina, US",
@@ -7602,6 +7707,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Southside Data Center",
    "cluster_id": "001055ae0cd2c231",
    "cluster_title": "Southside data center could clear another hurdle this week"
   },
@@ -7623,7 +7729,8 @@
      "lon": -123.1107,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -7842,7 +7949,8 @@
      "lon": -97.7625,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -8167,6 +8275,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "South Side Data Center",
    "cluster_id": "392ae6f21e7abd5c",
    "cluster_title": "Lawsuit filed to halt South Side data center"
   },
@@ -8304,12 +8413,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -8317,7 +8427,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8345,7 +8455,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Wisconsin, US",
@@ -8499,27 +8610,19 @@
    "tags": [],
    "locations": [
     {
-     "name": "San Antonio, Texas, US",
-     "lat": 29.42,
-     "lon": -98.49,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Denver, Colorado, US",
      "lat": 39.74,
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
-    "CO",
-    "TX"
+    "CO"
    ],
-   "state": "TX",
+   "state": "CO",
    "county": null,
    "location_precision": "city",
    "companies": [],
@@ -8847,14 +8950,6 @@
    "tags": [],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -8868,7 +8963,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8965,7 +9060,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -8999,6 +9095,15 @@
    ],
    "locations": [
     {
+     "name": "Katy, Texas, US",
+     "lat": 29.7858,
+     "lon": -95.8244,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Houston"
+    },
+    {
      "name": "Texas, US",
      "lat": 31.5,
      "lon": -99.3,
@@ -9012,7 +9117,7 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9204,7 +9309,8 @@
      "lon": -77.48,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -9371,7 +9477,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -9444,7 +9551,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -9591,7 +9699,8 @@
      "lon": -80.8101,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     },
     {
      "name": "North Carolina, US",
@@ -9903,6 +10012,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Kolkata Data Center",
    "cluster_id": "79d95f8a2c61c9f1",
    "cluster_title": "First phase of CtrlS’ Kolkata data center campus operational"
   },
@@ -9924,7 +10034,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -10307,7 +10418,8 @@
      "lon": -87.91,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -10369,7 +10481,8 @@
      "lon": -80.8101,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -10405,7 +10518,8 @@
      "lon": -80.8101,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -10442,7 +10556,8 @@
      "lon": -95.32,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     },
     {
      "name": "Stillwater, Oklahoma, US",
@@ -10538,7 +10653,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -10604,12 +10720,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -10617,7 +10734,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -10847,7 +10964,8 @@
      "lon": -88.1473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -10883,7 +11001,8 @@
      "lon": -80.8101,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -10920,7 +11039,8 @@
      "lon": -80.8101,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -11039,7 +11159,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -11583,7 +11704,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -11617,7 +11739,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -11652,7 +11775,7 @@
      "lat": 38.7,
      "lon": -77.48,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -11660,15 +11783,15 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Prince William County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "daba838e587757b1",
-   "cluster_title": "Judge Blocks Prince William Digital Gateway Data Center Project"
+   "cluster_title": "Judge blocks data center project planned in Prince William County"
   },
   {
    "id": "2cc076bc74706e98",
@@ -11682,11 +11805,23 @@
     "Environment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Aurora, Illinois, US",
+     "lat": 41.7606,
+     "lon": -88.3201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "CyrusOne"
    ],
@@ -11716,7 +11851,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -11785,7 +11921,8 @@
      "lon": -94.58,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     },
     {
      "name": "Missouri, US",
@@ -11972,6 +12109,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Senate Data Center",
    "cluster_id": "6633202d103f4876",
    "cluster_title": "Senate data center hearing at Valley View largely touts benefits"
   },
@@ -11993,16 +12131,17 @@
      "lat": 38.2,
      "lon": -77.66,
      "level": 3,
-     "precision": "city",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Spotsylvania County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12033,6 +12172,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Teesworks Data Center",
    "cluster_id": "6f7088160d31aa50",
    "cluster_title": "Teesworks data center gets approved despite clash with BP over planned hydrogen plant"
   },
@@ -12055,7 +12195,8 @@
      "lon": -83.838,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -12205,7 +12346,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -12214,7 +12356,9 @@
    "state": "GA",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "DC Blox"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -12456,7 +12600,8 @@
      "lon": -80.8101,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -12531,6 +12676,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Overhyped Data Center",
    "cluster_id": "58cccd9037a3d7a2",
    "cluster_title": "Overhyped data center growth is shaping our energy future"
   },
@@ -12572,14 +12718,6 @@
    ],
    "locations": [
     {
-     "name": "San Antonio, Texas, US",
-     "lat": 29.42,
-     "lon": -98.49,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Texas, US",
      "lat": 31.5,
      "lon": -99.3,
@@ -12593,7 +12731,7 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [
     "Rowan Digital"
    ],
@@ -12753,11 +12891,23 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eloy, Arizona, US",
+     "lat": 32.7559,
+     "lon": -111.5548,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Phoenix"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12786,7 +12936,8 @@
      "lon": -77.48,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -12801,7 +12952,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "daba838e587757b1",
-   "cluster_title": "Judge Blocks Prince William Digital Gateway Data Center Project"
+   "cluster_title": "Judge blocks data center project planned in Prince William County"
   },
   {
    "id": "10a76112a8249aff",
@@ -12821,7 +12972,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -12835,7 +12987,6 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "investment_usd_b": 0.175,
    "cluster_id": "10a76112a8249aff",
    "cluster_title": "Port Washington data center could include $175M in tax incremental financing"
   },
@@ -13079,7 +13230,8 @@
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -13115,7 +13267,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -13170,6 +13323,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Amazon-linked Data Center",
    "cluster_id": "99391cc7dad6df98",
    "cluster_title": "Tucson rejects Amazon-linked data center amid water, energy concerns"
   },
@@ -13393,11 +13547,23 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Hobart, Indiana, US",
+     "lat": 41.5323,
+     "lon": -87.255,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13579,7 +13745,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -13617,7 +13784,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Joule"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -14045,7 +14214,8 @@
      "lon": -93.27,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     },
     {
      "name": "Minnesota, US",
@@ -14177,6 +14347,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Bolingbroke Data Center",
    "cluster_id": "b6a193535d900786",
    "cluster_title": "Monroe County looks ahead to multi-billion dollar projects after Bolingbroke data center denied"
   },
@@ -14196,7 +14367,8 @@
      "lon": -88.1473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -14205,7 +14377,9 @@
    "state": "IL",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Karis"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -14377,7 +14551,8 @@
      "lon": -79.7839,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Pittsburgh"
     }
    ],
    "states": [
@@ -14640,6 +14815,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Abilene AI Data Center",
    "cluster_id": "09db5a563316610b",
    "cluster_title": "An inside look at the Abilene AI data center"
   },
@@ -14891,7 +15067,8 @@
      "lon": -77.48,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -15032,6 +15209,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Bolingbroke Data Center",
    "cluster_id": "15f3d4c12b7724e2",
    "cluster_title": "Monroe County Commission denies rezoning proposal for Bolingbroke data center"
   },
@@ -15366,7 +15544,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -15535,14 +15714,6 @@
    ],
    "locations": [
     {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Wisconsin, US",
      "lat": 44.6,
      "lon": -89.9,
@@ -15556,7 +15727,7 @@
    ],
    "state": "WI",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15710,6 +15881,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Central Arkansas Data Center",
    "cluster_id": "c1b7d1b500e57f29",
    "cluster_title": "Central Arkansas data center projects 'not mutually exclusive,' Little Rock Regional Chamber says"
   },
@@ -15727,14 +15899,6 @@
    ],
    "locations": [
     {
-     "name": "Charlotte, North Carolina, US",
-     "lat": 35.23,
-     "lon": -80.84,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "North Carolina, US",
      "lat": 35.6,
      "lon": -79.4,
@@ -15748,7 +15912,7 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [
     "Tract"
    ],
@@ -16074,7 +16238,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [

@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -157,12 +158,13 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Atlanta"
     }
    ],
    "states": [
@@ -170,7 +172,8 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Atlanta",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -198,7 +201,8 @@
      "lon": -85.448,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -308,7 +312,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -343,7 +348,8 @@
      "lon": -84.283,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     },
     {
      "name": "Georgia, US",
@@ -419,14 +425,6 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -440,7 +438,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -464,6 +462,15 @@
    ],
    "locations": [
     {
+     "name": "Sterling, Virginia, US",
+     "lat": 39.0062,
+     "lon": -77.4286,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Northern Virginia"
+    },
+    {
      "name": "Virginia, US",
      "lat": 37.5,
      "lon": -78.9,
@@ -477,7 +484,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -752,7 +759,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Illinois, US",
@@ -869,7 +877,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Illinois, US",
@@ -914,7 +923,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     },
     {
      "name": "Alabama, US",
@@ -1239,12 +1249,13 @@
    ],
    "locations": [
     {
-     "name": "Austin, Texas, US",
-     "lat": 30.27,
-     "lon": -97.74,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Austin"
     }
    ],
    "states": [
@@ -1252,7 +1263,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Austin",
    "companies": [
     "Meta"
    ],
@@ -1282,7 +1294,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Illinois, US",
@@ -1299,7 +1312,9 @@
    "state": "IL",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "STACK"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -1319,12 +1334,13 @@
    "tags": [],
    "locations": [
     {
-     "name": "Chicago, Illinois, US",
-     "lat": 41.88,
-     "lon": -87.63,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Chicago"
     }
    ],
    "states": [
@@ -1332,7 +1348,8 @@
    ],
    "state": "IL",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Chicago",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1457,7 +1474,8 @@
      "lon": -87.255,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Indiana, US",
@@ -1514,6 +1532,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Agincourt Data Center",
    "cluster_id": "41dd29e8845da9b9",
    "cluster_title": "Indiana's city of Valparaiso pulls the plug on Agincourt data center project"
   },
@@ -1750,7 +1769,8 @@
      "lon": -95.37,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Houston"
     },
     {
      "name": "Texas, US",
@@ -1793,7 +1813,8 @@
      "lon": -98.49,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Antonio"
     },
     {
      "name": "Austin, Texas, US",
@@ -1801,7 +1822,8 @@
      "lon": -97.74,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -1839,6 +1861,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Global Data Center",
    "investment_usd_b": 0.3,
    "cluster_id": "94492f86e754c9a2",
    "cluster_title": "Global data center giant pays $300 million for land in East Valley"
@@ -1886,7 +1909,8 @@
      "lon": -87.6248,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -1900,6 +1924,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "South Side Data Center",
    "investment_usd_b": 0.04,
    "cluster_id": "581da7e59fa4e236",
    "cluster_title": "Scott Greenberg plots $40M Near South Side data center after scrapping E-sports plan"
@@ -1947,7 +1972,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -2036,6 +2062,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Hickory Hill Data Center",
    "cluster_id": "7f94d218281f2c6b",
    "cluster_title": "Bitcoin miner expands capacity/power use with Hickory Hill data center"
   },
@@ -2158,7 +2185,8 @@
      "lon": -88.4473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Illinois, US",
@@ -2180,6 +2208,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Two Data Center",
    "cluster_id": "b251948da55575a5",
    "cluster_title": "Two data center campuses totaling 38 buildings proposed in Yorkville, Illinois"
   },
@@ -2300,7 +2329,8 @@
      "lon": -95.37,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Houston"
     }
    ],
    "states": [
@@ -2336,7 +2366,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -2396,7 +2427,8 @@
      "lon": -88.4473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -2554,6 +2586,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "High-tech Data Center",
    "cluster_id": "99573702003f0047",
    "cluster_title": "High-tech data center opens at Region 16 in partnership with Duos Edge AI, FiberLight"
   },
@@ -2629,7 +2662,8 @@
      "lon": -87.6248,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -2946,7 +2980,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -2984,7 +3019,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -3317,12 +3353,13 @@
    ],
    "locations": [
     {
-     "name": "Georgia, US",
-     "lat": 32.7,
-     "lon": -83.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Adairsville, Georgia, US",
+     "lat": 34.3687,
+     "lon": -84.9341,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -3330,7 +3367,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3354,7 +3391,7 @@
      "lat": 39.09,
      "lon": -77.64,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -3362,8 +3399,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3440,7 +3477,8 @@
      "lon": -86.4669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -3475,7 +3513,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -3512,7 +3551,8 @@
      "lon": -86.4669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -3658,6 +3698,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Abilene AI campus",
    "capacity_mw": 1200,
    "cluster_id": "9c3310b848d0ab1d",
    "cluster_title": "Crusoe expands Abilene AI campus to 1.2 GW"
@@ -3792,7 +3833,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     },
     {
      "name": "Georgia, US",
@@ -3862,7 +3904,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -4054,14 +4097,6 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -4075,7 +4110,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4140,7 +4175,8 @@
      "lon": -93.62,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Des Moines"
     }
    ],
    "states": [
@@ -4354,7 +4390,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -4509,7 +4546,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -4545,7 +4583,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -5214,7 +5253,8 @@
      "lon": -83.3671,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -5687,7 +5727,8 @@
      "lon": -83.3671,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -5949,6 +5990,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Record-low Data Center",
    "cluster_id": "2376a9f7936779b1",
    "cluster_title": "Record-low data center vacancy fuels modern-day “gold rush”"
   },
@@ -5971,7 +6013,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -6006,7 +6049,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -6287,7 +6331,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -6323,7 +6368,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -6411,7 +6457,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -6450,7 +6497,8 @@
      "lon": -97.94,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -6716,7 +6764,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     },
     {
      "name": "Tennessee, US",
@@ -6733,7 +6782,9 @@
    "state": "TN",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "RadiusDC"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -6903,6 +6954,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Surry Data Center",
    "cluster_id": "d754a2abbfcbf970",
    "cluster_title": "Developer of Surry data center project enters Chapter 11 ban..."
   },
@@ -6951,7 +7003,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -7021,6 +7074,15 @@
    ],
    "locations": [
     {
+     "name": "West Jordan, Utah, US",
+     "lat": 40.6097,
+     "lon": -111.9391,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Salt Lake City"
+    },
+    {
      "name": "Utah, US",
      "lat": 39.3,
      "lon": -111.7,
@@ -7034,7 +7096,7 @@
    ],
    "state": "UT",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
     "Novva"
    ],
@@ -7370,7 +7432,8 @@
      "lon": -86.78,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Nashville"
     }
    ],
    "states": [
@@ -7379,7 +7442,9 @@
    "state": "TN",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "RadiusDC"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -7808,7 +7873,8 @@
      "lon": -77.405,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     },
     {
      "name": "Virginia, US",
@@ -7826,7 +7892,8 @@
    "county": "Henrico County, Virginia, US",
    "location_precision": "county",
    "companies": [
-    "Iron Mountain"
+    "Iron Mountain",
+    "DC Blox"
    ],
    "utilities": [],
    "investors": [],
@@ -7888,7 +7955,8 @@
      "lon": -77.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -7988,14 +8056,6 @@
    ],
    "locations": [
     {
-     "name": "Des Moines, Iowa, US",
-     "lat": 41.59,
-     "lon": -93.62,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Iowa, US",
      "lat": 42.1,
      "lon": -93.5,
@@ -8009,7 +8069,7 @@
    ],
    "state": "IA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [
     "Edged"
    ],
@@ -8126,12 +8186,13 @@
    ],
    "locations": [
     {
-     "name": "Iowa, US",
-     "lat": 42.1,
-     "lon": -93.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Ankeny, Iowa, US",
+     "lat": 41.7297,
+     "lon": -93.6058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Des Moines"
     }
    ],
    "states": [
@@ -8139,7 +8200,7 @@
    ],
    "state": "IA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8434,12 +8495,13 @@
    ],
    "locations": [
     {
-     "name": "Illinois, US",
-     "lat": 40.0,
-     "lon": -89.2,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Aurora, Illinois, US",
+     "lat": 41.7606,
+     "lon": -88.3201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -8447,7 +8509,7 @@
    ],
    "state": "IL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Edged"
    ],
@@ -8455,8 +8517,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "92cf539e1853f5e1",
-   "cluster_title": "Edged data center opens in Aurora"
+   "cluster_id": "b335a08e6b6b55bf",
+   "cluster_title": "New data center, built for sustainability, opens in Aurora"
   },
   {
    "id": "219a1bc3dbbff511",
@@ -8476,7 +8538,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -8574,7 +8637,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -8636,7 +8700,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [

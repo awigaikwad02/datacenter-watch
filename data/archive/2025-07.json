@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -58,7 +59,8 @@
      "lon": -121.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     },
     {
      "name": "California, US",
@@ -253,7 +255,8 @@
      "lon": -95.37,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Houston"
     },
     {
      "name": "Dallas, Texas, US",
@@ -261,7 +264,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Waco, Texas, US",
@@ -307,7 +311,8 @@
      "lon": -88.06,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -343,7 +348,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -624,7 +630,9 @@
    "county": null,
    "location_precision": "state",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "LG&E"
+   ],
    "investors": [],
    "builders": [],
    "suppliers": [],
@@ -871,7 +879,7 @@
      "lat": 38.7,
      "lon": -77.48,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -879,8 +887,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Prince William County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Iron Mountain"
    ],
@@ -949,6 +957,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Projected Data Center",
    "cluster_id": "7e893c6ec1e7a0ff",
    "cluster_title": "Projected data center growth spurs PJM capacity prices by factor of 10"
   },
@@ -1205,6 +1214,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Wyoming AI Data Center",
    "cluster_id": "0f2d91d3ccb92709",
    "cluster_title": "Power usage in Wyoming AI data center could eclipse consumption of the state's human residents by 5x — tenant of colossal investment remains a mystery"
   },
@@ -1293,6 +1303,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "PCIe Gen6 Data Center",
    "cluster_id": "adf1c251a9365682",
    "cluster_title": "Micron unveils 9650 SSD, the first PCIe Gen6 data center drive with up to 28 GB/s read speeds"
   },
@@ -1424,7 +1435,8 @@
      "lon": -77.46,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Virginia, US",
@@ -1655,6 +1667,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New Data Center",
    "cluster_id": "ba706afeb5096f8c",
    "cluster_title": "New data center rules proposed in New Castle County after resident outcry"
   },
@@ -1677,7 +1690,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Virginia, US",
@@ -1856,7 +1870,8 @@
      "lon": -87.9243,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -1957,6 +1972,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Northland Data Center",
    "cluster_id": "002cdd49ccbcfdd2",
    "cluster_title": "Tech giant's Northland data center plans spark debate on incentives, energy use"
   },
@@ -2005,7 +2021,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -2077,7 +2094,8 @@
      "lon": -82.534,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -2174,7 +2192,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -2184,7 +2203,9 @@
    "county": null,
    "location_precision": "city",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "LG&E"
+   ],
    "investors": [],
    "builders": [],
    "suppliers": [],
@@ -2210,7 +2231,8 @@
      "lon": -97.74,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -2360,7 +2382,8 @@
      "lon": -97.4094,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -2377,7 +2400,9 @@
    "state": "TX",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Blueprint"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -2646,7 +2671,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -2733,6 +2759,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "O’Fallon Data Center",
    "cluster_id": "1114e8e5c57ca53a",
    "cluster_title": "Mastercard breaks ground on offgrid solar project to power O’Fallon data center in Missouri"
   },
@@ -3429,7 +3456,8 @@
      "lon": -97.4094,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -3464,7 +3492,8 @@
      "lon": -96.7,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -3753,7 +3782,8 @@
      "lon": -83.0,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -3854,12 +3884,13 @@
    ],
    "locations": [
     {
-     "name": "Illinois, US",
-     "lat": 40.0,
-     "lon": -89.2,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Mount Prospect, Illinois, US",
+     "lat": 42.0664,
+     "lon": -87.9373,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -3867,7 +3898,7 @@
    ],
    "state": "IL",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3923,6 +3954,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Kilimanjaro Telecom Data Center",
    "cluster_id": "2638932fdb73b511",
    "cluster_title": "Tanzania’s communications minister opens Kilimanjaro Telecom data center in Uganda"
   },
@@ -3981,7 +4013,8 @@
      "lon": -97.312,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -4309,11 +4342,23 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Adairsville, Georgia, US",
+     "lat": 34.3687,
+     "lon": -84.9341,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4531,6 +4576,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Converge Data Center",
    "cluster_id": "4fd8ce5ce2f4ee66",
    "cluster_title": "Converge data center in Caloocan gets Tier III certification"
   },
@@ -4891,7 +4937,8 @@
      "lon": -83.838,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -5266,6 +5313,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Caloocan Data Center",
    "cluster_id": "82376a37a5af9be8",
    "cluster_title": "Converge’s Caloocan data center starts operational testing"
   },
@@ -5551,7 +5599,8 @@
      "lon": -123.1107,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -5683,7 +5732,8 @@
      "lon": -97.312,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -5742,6 +5792,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "A.I Data Center",
    "cluster_id": "4378ef234aa84f7f",
    "cluster_title": "More details shared on plans to repurpose former Homer City power plant as A.I data center"
   },
@@ -5783,7 +5834,8 @@
      "lon": -93.13,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -5944,7 +5996,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -6122,12 +6175,13 @@
    "tags": [],
    "locations": [
     {
-     "name": "Austin, Texas, US",
-     "lat": 30.27,
-     "lon": -97.74,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Austin"
     }
    ],
    "states": [
@@ -6135,7 +6189,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Austin",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6233,7 +6288,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     },
     {
      "name": "Nevada, US",
@@ -6679,11 +6735,23 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Hobart, Indiana, US",
+     "lat": 41.5323,
+     "lon": -87.255,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6938,7 +7006,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -7146,6 +7215,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Buckinghamshire Data Center",
    "cluster_id": "42746ca8aaa16dcf",
    "cluster_title": "Angela Rayner greenlights twice-rejected Buckinghamshire data center"
   },
@@ -7272,7 +7342,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -7289,7 +7360,9 @@
    "state": "OH",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "EdgeConneX"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -7565,6 +7638,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "AEP Data Center",
    "cluster_id": "11cd2760bcdde849",
    "cluster_title": "Ohio regulators approve AEP data center interconnection rules"
   },
@@ -7744,7 +7818,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     },
     {
      "name": "California, US",
@@ -7812,7 +7887,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -8090,12 +8166,13 @@
    "tags": [],
    "locations": [
     {
-     "name": "Reno, Nevada, US",
-     "lat": 39.53,
-     "lon": -119.81,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Nevada, US",
+     "lat": 39.3,
+     "lon": -116.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Reno"
     }
    ],
    "states": [
@@ -8103,7 +8180,8 @@
    ],
    "state": "NV",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Reno",
    "companies": [
     "Novva"
    ],
@@ -8313,6 +8391,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Indy Data Center",
    "cluster_id": "d879e3a3d81fde7d",
    "cluster_title": "Company behind proposed Indy data center revealed in new documents"
   },
@@ -8334,7 +8413,8 @@
      "lon": -87.91,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Wisconsin, US",
@@ -8403,7 +8483,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -8546,6 +8627,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Denton AI Data Center",
    "investment_usd_b": 9.0,
    "cluster_id": "54fc1959e4128563",
    "cluster_title": "Core Scientific, which has a Denton AI data center, will be sold to N.J.-based CoreWeave in $9B deal"
@@ -8568,7 +8650,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -8582,6 +8665,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New Data Center",
    "cluster_id": "ab00f4413f420449",
    "cluster_title": "New data center regulations approved by Mesa leaders"
   },
@@ -8603,7 +8687,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Beaver Dam, Wisconsin, US",
@@ -8652,7 +8737,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Beaver Dam, Wisconsin, US",
@@ -8746,7 +8832,8 @@
    "county": null,
    "location_precision": "city",
    "companies": [
-    "Google"
+    "Google",
+    "DC Blox"
    ],
    "utilities": [],
    "investors": [],
@@ -8861,7 +8948,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -8921,7 +9009,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -8993,7 +9082,8 @@
      "lon": -119.53,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     },
     {
      "name": "Nevada, US",
@@ -9098,7 +9188,8 @@
      "lon": -84.225,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -9133,7 +9224,8 @@
      "lon": -77.48,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -9285,7 +9377,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -9597,7 +9690,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -9860,6 +9954,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "SK-AWS Ulsan AI Data Center",
    "cluster_id": "91ee72bcc8c6ee0d",
    "cluster_title": "SK-AWS Ulsan AI Data Center to be Key Hub of AI Superhighway – SK telecom newsroom"
   },
@@ -9921,7 +10016,8 @@
      "lon": -85.448,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -9937,7 +10033,7 @@
    "suppliers": [],
    "investment_usd_b": 6.0,
    "cluster_id": "821f39705c05b0cb",
-   "cluster_title": "$6B Oldham County data center project scrapped - Louisville Business First"
+   "cluster_title": "Plans for $6B data center in Oldham County scrapped amid pushback"
   },
   {
    "id": "63b21ef7fd135ca6",
@@ -9957,7 +10053,8 @@
      "lon": -83.613,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     },
     {
      "name": "Michigan, US",
@@ -10059,12 +10156,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Dumfries, Virginia, US",
+     "lat": 38.5676,
+     "lon": -77.328,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -10072,7 +10170,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -10101,7 +10199,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -10133,20 +10232,13 @@
    ],
    "locations": [
     {
-     "name": "Louisville, Kentucky, US",
-     "lat": 38.25,
-     "lon": -85.76,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Oldham County, Kentucky, US",
      "lat": 38.4,
      "lon": -85.448,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -10154,7 +10246,7 @@
    ],
    "state": "KY",
    "county": "Oldham County, Kentucky, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -10162,7 +10254,7 @@
    "suppliers": [],
    "investment_usd_b": 6.0,
    "cluster_id": "821f39705c05b0cb",
-   "cluster_title": "$6B Oldham County data center project scrapped - Louisville Business First"
+   "cluster_title": "Plans for $6B data center in Oldham County scrapped amid pushback"
   },
   {
    "id": "94d8422b84f8712d",
@@ -10183,7 +10275,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -10218,7 +10311,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -10254,7 +10348,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -10312,7 +10407,8 @@
      "lon": -85.448,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -10350,7 +10446,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Licking County, Ohio, US",
@@ -10358,7 +10455,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -10660,7 +10758,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -10734,7 +10833,8 @@
      "lon": -85.448,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -10799,12 +10899,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -10812,7 +10913,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Tract"
    ],
@@ -10878,12 +10979,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Reston, Virginia, US",
+     "lat": 38.9687,
+     "lon": -77.3411,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -10891,7 +10993,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "CoreSite"
    ],
@@ -10953,12 +11055,13 @@
    ],
    "locations": [
     {
-     "name": "Virginia, US",
-     "lat": 37.5,
-     "lon": -78.9,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -10966,7 +11069,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11080,6 +11183,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Indy Data Center",
    "cluster_id": "b4a7a321bf7c34b5",
    "cluster_title": "Previously unnamed company behind proposed Indy data center named in new documents"
   },
@@ -11102,7 +11206,8 @@
      "lon": -86.51,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -11130,11 +11235,23 @@
    "tags": [
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Wyandotte County, Kansas, US",
+     "lat": 39.114,
+     "lon": -94.766,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
+   "county": "Wyandotte County, Kansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11162,7 +11279,8 @@
      "lon": -85.448,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [

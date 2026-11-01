@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -190,7 +191,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Arizona, US",
@@ -302,7 +304,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -394,7 +397,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -491,7 +495,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -581,7 +586,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Arizona, US",
@@ -760,7 +766,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -1030,12 +1037,13 @@
    ],
    "locations": [
     {
-     "name": "Idaho, US",
-     "lat": 44.4,
-     "lon": -114.6,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
     }
    ],
    "states": [
@@ -1043,7 +1051,7 @@
    ],
    "state": "ID",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1072,7 +1080,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -1239,7 +1248,8 @@
      "lon": -87.82,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -1386,7 +1396,8 @@
      "lon": -87.82,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -1487,6 +1498,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Multibillion-dollar Data Center",
    "cluster_id": "fb18a42c3f0ae62e",
    "cluster_title": "Multibillion-dollar data center projects to watch"
   },
@@ -1558,6 +1570,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "North Valleys Data Center",
    "cluster_id": "900e8ea9851182f7",
    "cluster_title": "City Council denies North Valleys data center appeal after multiple messy meetings"
   },
@@ -1681,7 +1694,8 @@
      "lon": -87.82,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Wisconsin, US",
@@ -1865,7 +1879,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -2053,7 +2068,8 @@
      "lon": -87.82,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -2238,11 +2254,14 @@
    "state": "CA",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Prologis"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Navy Yard Data Center",
    "investment_usd_b": 0.016,
    "cluster_id": "f9a269226a57aa57",
    "cluster_title": "Prologis sells Navy Yard data center to California firm for $16M"
@@ -2520,7 +2539,8 @@
      "lon": -87.91,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -2983,7 +3003,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -3085,6 +3106,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "ASEAN Data Center",
    "cluster_id": "a7a937ca9f8ebe2f",
    "cluster_title": "Maybank estimates ASEAN data center growth at 20 percent revenue CAGR by 2028"
   },
@@ -3177,7 +3199,8 @@
      "lon": -77.4083,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -3486,7 +3509,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -3721,7 +3745,9 @@
    "county": null,
    "location_precision": "state",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "LG&E"
+   ],
    "investors": [],
    "builders": [],
    "suppliers": [],
@@ -3910,7 +3936,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -4234,14 +4261,6 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -4255,7 +4274,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4565,7 +4584,8 @@
      "lon": -106.73,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Albuquerque"
     },
     {
      "name": "New Mexico, US",
@@ -4659,12 +4679,13 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Atlanta"
     }
    ],
    "states": [
@@ -4672,7 +4693,8 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Atlanta",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4701,7 +4723,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     },
     {
      "name": "Kentucky, US",
@@ -4747,7 +4770,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -4806,15 +4830,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -4850,7 +4867,8 @@
      "lon": -77.46,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Virginia, US",
@@ -4867,12 +4885,16 @@
    "state": "VA",
    "county": "Stafford County, Virginia, US",
    "location_precision": "county",
-   "companies": [],
+   "companies": [
+    "STACK"
+   ],
    "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
    "capacity_mw": 1000,
    "cluster_id": "162ef9ac342215dc",
-   "cluster_title": "Stack plans 1GW campus in Stafford County, Virginia",
-   "filtered": true
+   "cluster_title": "Stack plans 1GW campus in Stafford County, Virginia"
   },
   {
    "id": "a0a7309ba4482cf2",
@@ -4980,7 +5002,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -5025,7 +5048,9 @@
    "state": "TN",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "TECfusions"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -5196,7 +5221,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -5282,7 +5308,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     },
     {
      "name": "Kentucky, US",
@@ -5360,7 +5387,9 @@
    "county": null,
    "location_precision": null,
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "LG&E"
+   ],
    "investors": [],
    "builders": [],
    "suppliers": [],
@@ -5385,7 +5414,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -5395,7 +5425,9 @@
    "county": null,
    "location_precision": "city",
    "companies": [],
-   "utilities": [],
+   "utilities": [
+    "LG&E"
+   ],
    "investors": [],
    "builders": [],
    "suppliers": [],
@@ -5421,7 +5453,8 @@
      "lon": -87.255,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -5534,7 +5567,8 @@
      "lon": -96.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -5564,12 +5598,13 @@
    ],
    "locations": [
     {
-     "name": "Pittsburgh, Pennsylvania, US",
-     "lat": 40.44,
-     "lon": -79.99,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Pittsburgh"
     }
    ],
    "states": [
@@ -5577,8 +5612,11 @@
    ],
    "state": "PA",
    "county": null,
-   "location_precision": "city",
-   "companies": [],
+   "location_precision": "state",
+   "location_note": "near Pittsburgh",
+   "companies": [
+    "TECfusions"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -5687,6 +5725,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "As Data Center",
    "cluster_id": "c8969692c6e42fd9",
    "cluster_title": "As data center boom continues, Va. legislators broach new regulations"
   },
@@ -5817,6 +5856,7 @@
    "county": null,
    "location_precision": "state",
    "companies": [
+    "Prologis",
     "Skybox"
    ],
    "utilities": [],
@@ -5846,7 +5886,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -5936,7 +5977,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -5974,7 +6016,8 @@
      "lon": -82.8591,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -6057,7 +6100,9 @@
    "state": "PA",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "TECfusions"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -6154,6 +6199,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Global Data Center",
    "cluster_id": "00368ea192cf839a",
    "cluster_title": "Global data center demand surges despite supply and power constraints"
   },
@@ -6176,7 +6222,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -6212,7 +6259,8 @@
      "lon": -121.49,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Sacramento"
     },
     {
      "name": "California, US",
@@ -6257,7 +6305,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -6374,7 +6423,8 @@
      "lon": -88.4473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -6388,6 +6438,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Fifth Data Center",
    "cluster_id": "edfa97b6f21760b8",
    "cluster_title": "Fifth data center planned for Yorkville would border residential area"
   },
@@ -6553,7 +6604,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -6596,7 +6648,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -6654,7 +6707,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     },
     {
      "name": "Nevada, US",
@@ -6733,7 +6787,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     },
     {
      "name": "Minnesota, US",
@@ -6750,7 +6805,9 @@
    "state": "MN",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Oppidan"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -6828,7 +6885,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -7051,6 +7109,7 @@
    "county": null,
    "location_precision": null,
    "companies": [
+    "Fleet Data Centers",
     "Tract"
    ],
    "utilities": [],
@@ -7146,7 +7205,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Wisconsin, US",
@@ -7191,7 +7251,8 @@
      "lon": -93.1436,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -7230,6 +7291,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Multinational Data Center",
    "investment_usd_b": 10.0,
    "cluster_id": "393a0771dd26d443",
    "cluster_title": "Multinational data center company to build $10 billion campus in Meridian"
@@ -7288,14 +7350,6 @@
    ],
    "locations": [
     {
-     "name": "Pittsburgh, Pennsylvania, US",
-     "lat": 40.44,
-     "lon": -79.99,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Pennsylvania, US",
      "lat": 40.9,
      "lon": -77.8,
@@ -7309,8 +7363,10 @@
    ],
    "state": "PA",
    "county": null,
-   "location_precision": "city",
-   "companies": [],
+   "location_precision": "state",
+   "companies": [
+    "TECfusions"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -7400,7 +7456,8 @@
      "lon": -106.65,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Albuquerque"
     },
     {
      "name": "El Paso, Texas, US",
@@ -7445,7 +7502,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -7506,7 +7564,8 @@
      "lon": -93.1436,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -7651,7 +7710,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -7687,7 +7747,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -7771,7 +7832,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -7850,7 +7912,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -7955,7 +8018,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -8126,7 +8190,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -8255,11 +8320,23 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
@@ -8288,15 +8365,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -8859,7 +8929,8 @@
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -8968,14 +9039,6 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -8989,14 +9052,14 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "436910e63d38094f",
-   "cluster_title": "$17bn 'Project Sail' data center campus proposed in Atlanta, Georgia"
+   "cluster_id": "139e6aaa9d955125",
+   "cluster_title": "1.9 million sq ft data center campus proposed outside Atlanta, Georgia"
   },
   {
    "id": "cfc5d0923322a66d",
@@ -9097,6 +9160,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "West Feliciana Data Center",
    "investment_usd_b": 2.5,
    "cluster_id": "d0106df983029dd2",
    "cluster_title": "$2.5 billion West Feliciana data center approved with 'aggressive timeline to build'"
@@ -9263,20 +9327,13 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Coweta County, Georgia, US",
      "lat": 33.35,
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -9284,7 +9341,7 @@
    ],
    "state": "GA",
    "county": "Coweta County, Georgia, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9365,7 +9422,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     },
     {
      "name": "Georgia, US",
@@ -9429,12 +9487,13 @@
    "tags": [],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Atlanta"
     }
    ],
    "states": [
@@ -9442,7 +9501,8 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Atlanta",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9497,7 +9557,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -9598,7 +9659,8 @@
      "lon": -97.312,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -9647,11 +9709,23 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Hobart, Indiana, US",
+     "lat": 41.5323,
+     "lon": -87.255,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],

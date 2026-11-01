@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -78,12 +79,13 @@
    ],
    "locations": [
     {
-     "name": "Idaho, US",
-     "lat": 44.4,
-     "lon": -114.6,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
     }
    ],
    "states": [
@@ -91,7 +93,7 @@
    ],
    "state": "ID",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
@@ -192,7 +194,8 @@
      "lon": -77.59,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     },
     {
      "name": "Virginia, US",
@@ -275,7 +278,8 @@
      "lon": -77.916,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -580,29 +584,21 @@
    ],
    "locations": [
     {
-     "name": "Kansas City, Missouri, US",
-     "lat": 39.1,
-     "lon": -94.58,
+     "name": "Wyandotte County, Kansas, US",
+     "lat": 39.114,
+     "lon": -94.766,
      "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
-    "KS",
-    "MO"
+    "KS"
    ],
-   "state": "MO",
-   "county": null,
-   "location_precision": "city",
+   "state": "KS",
+   "county": "Wyandotte County, Kansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -905,7 +901,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     },
     {
      "name": "North Carolina, US",
@@ -949,7 +946,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -998,6 +996,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Upper Burrell Data Center",
    "capacity_mw": 2000,
    "cluster_id": "bc1fc1d67e70494b",
    "cluster_title": "Upper Burrell data center to use natural gas for more than 2 gigawatts of power generation"
@@ -1020,7 +1019,8 @@
      "lon": -84.84,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -1055,7 +1055,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -1174,6 +1175,15 @@
    ],
    "locations": [
     {
+     "name": "Greenfield, Indiana, US",
+     "lat": 39.785,
+     "lon": -85.7694,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Indianapolis"
+    },
+    {
      "name": "Indiana, US",
      "lat": 39.9,
      "lon": -86.3,
@@ -1187,7 +1197,7 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1310,6 +1320,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New York-based Data Center",
    "investment_usd_b": 1.0,
    "cluster_id": "8c13d2927b3a14d3",
    "cluster_title": "New York-based data center developer plans $1B project in West Jefferson"
@@ -1369,7 +1380,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     },
     {
      "name": "Atlanta, Georgia, US",
@@ -1377,7 +1389,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -1536,7 +1549,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -1667,6 +1681,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Vitro Sta. Rosa Data Center",
    "cluster_id": "97a5094b101f3fe2",
    "cluster_title": "PLDT formally opens AI-ready Vitro Sta. Rosa data center"
   },
@@ -1781,14 +1796,6 @@
    ],
    "locations": [
     {
-     "name": "Indianapolis, Indiana, US",
-     "lat": 39.77,
-     "lon": -86.16,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Indiana, US",
      "lat": 39.9,
      "lon": -86.3,
@@ -1802,7 +1809,7 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1895,7 +1902,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -2067,6 +2075,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Sta. Rosa Data Center",
    "cluster_id": "b0fdbe74ce49b875",
    "cluster_title": "PLDT launches Sta. Rosa data center"
   },
@@ -2240,7 +2249,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -2568,7 +2578,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Kosciusko County, Indiana, US",
@@ -2932,7 +2943,8 @@
      "lon": -93.1669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -2978,9 +2990,7 @@
    "state": "MI",
    "county": null,
    "location_precision": "source",
-   "companies": [
-    "Fermi America"
-   ],
+   "companies": [],
    "utilities": [
     "DTE Energy"
    ],
@@ -3033,7 +3043,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -3116,7 +3127,8 @@
      "lon": -85.773,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -3320,7 +3332,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Arizona, US",
@@ -3548,7 +3561,8 @@
      "lon": -87.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -3588,7 +3602,8 @@
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -3623,7 +3638,8 @@
      "lon": -96.778,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -3698,7 +3714,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -3767,6 +3784,15 @@
    ],
    "locations": [
     {
+     "name": "Greenfield, Indiana, US",
+     "lat": 39.785,
+     "lon": -85.7694,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Indianapolis"
+    },
+    {
      "name": "Indiana, US",
      "lat": 39.9,
      "lon": -86.3,
@@ -3780,7 +3806,7 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3807,7 +3833,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -4026,7 +4053,8 @@
      "lon": -85.773,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -4059,7 +4087,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "CleanArc"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -4141,12 +4171,13 @@
    ],
    "locations": [
     {
-     "name": "Charlotte, North Carolina, US",
-     "lat": 35.23,
-     "lon": -80.84,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Charlotte"
     }
    ],
    "states": [
@@ -4154,7 +4185,8 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Charlotte",
    "companies": [
     "Microsoft"
    ],
@@ -4225,6 +4257,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Hague Data Center",
    "cluster_id": "78d3281f643f9d67",
    "cluster_title": "Data Facilities DC launches first phase of Hague data center expansion"
   },
@@ -4270,7 +4303,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -4415,7 +4449,8 @@
      "lon": -85.448,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     }
    ],
    "states": [
@@ -4747,7 +4782,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Arizona, US",
@@ -4831,7 +4867,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -5433,7 +5470,8 @@
    "county": null,
    "location_precision": null,
    "companies": [
-    "Cerebras"
+    "Cerebras",
+    "Bit Digital"
    ],
    "utilities": [],
    "investors": [],
@@ -5654,7 +5692,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Atlanta, Georgia, US",
@@ -5662,7 +5701,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -6128,6 +6168,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Ohio AI Data Center",
    "investment_usd_b": 1.0,
    "cluster_id": "7ea3ed53fc83f61b",
    "cluster_title": "Microsoft is shelving plans for a $1 billion Ohio AI data center as analysts puzzle over relationship with OpenAI"
@@ -6375,7 +6416,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -6734,7 +6776,8 @@
      "lon": -88.4473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -6770,7 +6813,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -6892,7 +6936,8 @@
      "lon": -77.3703,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -6906,6 +6951,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Iron Horse Data Center",
    "cluster_id": "d6f75452c6e7346a",
    "cluster_title": "Revamped proposal pitched for Iron Horse data center project’s Hanover side"
   },
@@ -7094,7 +7140,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -7170,7 +7217,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -7255,7 +7303,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -7293,6 +7342,15 @@
    ],
    "locations": [
     {
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    },
+    {
      "name": "Idaho, US",
      "lat": 44.4,
      "lon": -114.6,
@@ -7306,8 +7364,10 @@
    ],
    "state": "ID",
    "county": null,
-   "location_precision": "state",
-   "companies": [],
+   "location_precision": "city",
+   "companies": [
+    "Diode Ventures"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -7335,7 +7395,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -7382,7 +7443,9 @@
    "state": "TX",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Oppidan"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -7536,7 +7599,7 @@
      "lat": 37.56,
      "lon": -77.4,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -7544,8 +7607,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Henrico County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7667,11 +7730,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7840,12 +7915,13 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Atlanta"
     }
    ],
    "states": [
@@ -7853,7 +7929,8 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Atlanta",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7917,7 +7994,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Virginia, US",
@@ -7997,29 +8075,21 @@
    ],
    "locations": [
     {
-     "name": "Kansas City, Missouri, US",
-     "lat": 39.1,
-     "lon": -94.58,
+     "name": "Wyandotte County, Kansas, US",
+     "lat": 39.114,
+     "lon": -94.766,
      "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "state",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
-    "KS",
-    "MO"
+    "KS"
    ],
-   "state": "MO",
-   "county": null,
-   "location_precision": "city",
+   "state": "KS",
+   "county": "Wyandotte County, Kansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8176,6 +8246,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "DOE Data Center",
    "cluster_id": "3c486da82ec67e22",
    "cluster_title": "Chris Wright elaborates on DOE data center build-out, job cuts"
   },
@@ -8220,12 +8291,13 @@
    ],
    "locations": [
     {
-     "name": "Colorado, US",
-     "lat": 39.0,
-     "lon": -105.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Golden, Colorado, US",
+     "lat": 39.7555,
+     "lon": -105.2211,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -8233,7 +8305,7 @@
    ],
    "state": "CO",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8297,12 +8369,13 @@
    ],
    "locations": [
     {
-     "name": "Idaho, US",
-     "lat": 44.4,
-     "lon": -114.6,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
     }
    ],
    "states": [
@@ -8310,7 +8383,7 @@
    ],
    "state": "ID",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8363,7 +8436,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -8466,7 +8540,9 @@
    "state": "IN",
    "county": "Kosciusko County, Indiana, US",
    "location_precision": "county",
-   "companies": [],
+   "companies": [
+    "Prologis"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -8541,7 +8617,8 @@
      "lon": -112.07,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Arizona, US",
@@ -8782,7 +8859,8 @@
      "lon": -85.76,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Louisville"
     },
     {
      "name": "Kentucky, US",
@@ -8851,7 +8929,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -8881,29 +8960,31 @@
    ],
    "locations": [
     {
-     "name": "Austin, Texas, US",
-     "lat": 30.27,
-     "lon": -97.74,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Minnesota, US",
      "lat": 46.3,
      "lon": -94.3,
      "level": 2,
      "precision": "state",
      "country": "US"
+    },
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Austin"
     }
    ],
    "states": [
     "MN",
     "TX"
    ],
-   "state": "TX",
+   "state": "MN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Austin",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8931,7 +9012,8 @@
      "lon": -84.283,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     },
     {
      "name": "Georgia, US",

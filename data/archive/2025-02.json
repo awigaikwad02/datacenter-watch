@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -153,7 +154,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -251,6 +253,15 @@
    ],
    "locations": [
     {
+     "name": "Apple Valley, Minnesota, US",
+     "lat": 44.7319,
+     "lon": -93.2177,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Minneapolis"
+    },
+    {
      "name": "Minnesota, US",
      "lat": 46.3,
      "lon": -94.3,
@@ -264,9 +275,10 @@
    ],
    "state": "MN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [
-    "Apple"
+    "Apple",
+    "Oppidan"
    ],
    "utilities": [],
    "investors": [],
@@ -319,7 +331,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -391,7 +404,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -423,16 +437,29 @@
     "Operations",
     "Environment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Aurora, Illinois, US",
+     "lat": 41.7606,
+     "lon": -88.3201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New Data Center",
    "cluster_id": "b335a08e6b6b55bf",
    "cluster_title": "New data center, built for sustainability, opens in Aurora"
   },
@@ -786,7 +813,9 @@
    "state": "VA",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "TECfusions"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -1024,7 +1053,8 @@
      "lon": -98.03,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -1203,7 +1233,8 @@
      "lon": -86.4669,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -1427,12 +1458,13 @@
    ],
    "locations": [
     {
-     "name": "San Antonio, Texas, US",
-     "lat": 29.42,
-     "lon": -98.49,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near San Antonio"
     }
    ],
    "states": [
@@ -1440,7 +1472,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near San Antonio",
    "companies": [
     "Microsoft"
    ],
@@ -1472,7 +1505,8 @@
      "lon": -93.8852,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Des Moines"
     }
    ],
    "states": [
@@ -1521,7 +1555,9 @@
    "state": "VA",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "TECfusions"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -1640,7 +1676,8 @@
      "lon": -97.1331,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -1749,7 +1786,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Virginia, US",
@@ -2326,7 +2364,8 @@
      "lon": -90.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Memphis"
     }
    ],
    "states": [
@@ -2400,7 +2439,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Oklahoma, US",
@@ -2654,7 +2694,8 @@
      "lon": -87.91,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Wisconsin, US",
@@ -2761,7 +2802,8 @@
      "lon": -77.59,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -2847,7 +2889,8 @@
      "lon": -95.37,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Houston"
     }
    ],
    "states": [
@@ -3384,6 +3427,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Plano-based Data Center",
    "cluster_id": "01fce3d60912900d",
    "cluster_title": "Plano-based data center firm to build new campus in southern D-FW"
   },
@@ -3488,7 +3532,8 @@
      "lon": -98.49,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Antonio"
     },
     {
      "name": "Texas, US",
@@ -3535,7 +3580,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -3631,16 +3677,17 @@
      "lat": 38.2,
      "lon": -77.66,
      "level": 3,
-     "precision": "city",
-     "country": "US"
+     "precision": "county",
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Spotsylvania County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -3693,7 +3740,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Dallas, Texas, US",
@@ -3701,7 +3749,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -3745,7 +3794,8 @@
      "lon": -77.56,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -3943,7 +3993,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -3979,7 +4030,8 @@
      "lon": -77.405,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -4219,7 +4271,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -4228,7 +4281,9 @@
    "state": "NV",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Colovore"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -4351,7 +4406,8 @@
      "lon": -97.1417,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Texas, US",
@@ -4373,6 +4429,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "North Texas Data Center",
    "cluster_id": "4c8cdc978560c4ad",
    "cluster_title": "North Texas data center company to build new facility in Mansfield"
   },
@@ -4528,7 +4585,8 @@
      "lon": -84.84,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -4629,7 +4687,8 @@
      "lon": -93.13,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4667,7 +4726,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     },
     {
      "name": "Nevada, US",
@@ -4684,7 +4744,9 @@
    "state": "NV",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Colovore"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -4709,7 +4771,7 @@
      "lat": 37.56,
      "lon": -77.4,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -4717,8 +4779,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Henrico County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Iron Mountain"
    ],
@@ -4794,7 +4856,8 @@
      "lon": -77.44,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -4832,7 +4895,8 @@
      "lon": -84.84,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -4865,7 +4929,7 @@
      "lat": 37.56,
      "lon": -77.4,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -4873,8 +4937,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Henrico County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4973,7 +5037,8 @@
      "lon": -84.84,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -5008,7 +5073,7 @@
      "lat": 37.56,
      "lon": -77.4,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -5016,8 +5081,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Henrico County, Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Iron Mountain"
    ],
@@ -5125,6 +5190,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Louisiana AI Data Center",
    "cluster_id": "512f773c69fc7000",
    "cluster_title": "Environmental groups move to block power supply for Meta’s planned Louisiana AI data center"
   },
@@ -5322,14 +5388,6 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -5343,7 +5401,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5368,7 +5426,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -5544,7 +5603,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Virginia, US",
@@ -5582,12 +5642,13 @@
    ],
    "locations": [
     {
-     "name": "Georgia, US",
-     "lat": 32.7,
-     "lon": -83.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "South Fulton, Georgia, US",
+     "lat": 33.5926,
+     "lon": -84.6729,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -5595,7 +5656,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5648,7 +5709,8 @@
      "lon": -97.94,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -5772,7 +5834,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -5887,12 +5950,13 @@
    ],
    "locations": [
     {
-     "name": "Milwaukee, Wisconsin, US",
-     "lat": 43.04,
-     "lon": -87.91,
+     "name": "Germantown, Wisconsin, US",
+     "lat": 43.2286,
+     "lon": -88.1104,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -6243,7 +6307,8 @@
      "lon": -97.94,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -6257,6 +6322,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Gas-powered Data Center",
    "cluster_id": "b43b7a0b9f7c6a26",
    "cluster_title": "Gas-powered data center campus planned in San Marcos"
   },
@@ -6400,7 +6466,8 @@
      "lon": -112.58,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -6462,7 +6529,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     },
     {
      "name": "Virginia, US",
@@ -6479,7 +6547,9 @@
    "state": "VA",
    "county": "Loudoun County, Virginia, US",
    "location_precision": "county",
-   "companies": [],
+   "companies": [
+    "STACK"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -6564,7 +6634,8 @@
      "lon": -86.446,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -6676,7 +6747,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -6751,7 +6823,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -6822,7 +6895,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -6909,7 +6983,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Patmos"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -7093,11 +7169,23 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Sugar Grove, Illinois, US",
+     "lat": 41.7614,
+     "lon": -88.4437,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7187,7 +7275,8 @@
      "lon": -86.51,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -7319,7 +7408,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -7557,14 +7647,6 @@
    ],
    "locations": [
     {
-     "name": "Columbus, Ohio, US",
-     "lat": 39.96,
-     "lon": -83.0,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Ohio, US",
      "lat": 40.3,
      "lon": -82.8,
@@ -7578,7 +7660,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [
     "Amazon"
    ],
@@ -7680,7 +7762,8 @@
      "lon": -87.91,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -7854,6 +7937,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "ICN10 Data Center",
    "cluster_id": "e707eb2102ce8c6d",
    "cluster_title": "Digital Realty enhances service stability at ICN10 data center with dual cooling - CHOSUNBIZ"
   },
@@ -7920,7 +8004,8 @@
      "lon": -87.91,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     },
     {
      "name": "Wisconsin, US",
@@ -7969,7 +8054,8 @@
      "lon": -84.77,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -8003,7 +8089,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Prologis"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -8096,6 +8184,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New Data Center",
    "cluster_id": "e8755e13c210245c",
    "cluster_title": "New data center approved in Douglas County will add hundreds of jobs"
   },
@@ -8272,7 +8361,8 @@
      "lon": -86.446,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -8347,7 +8437,8 @@
      "lon": -86.446,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     },
     {
      "name": "Indiana, US",
@@ -8390,7 +8481,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -8671,6 +8763,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "STAMP Data Center",
    "cluster_id": "8d14d9cfba951238",
    "cluster_title": "IDA considering massive subsidies for STAMP data center"
   },
@@ -8729,7 +8822,8 @@
      "lon": -82.483,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -8791,7 +8885,8 @@
      "lon": -86.446,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -8822,6 +8917,15 @@
    ],
    "locations": [
     {
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    },
+    {
      "name": "Idaho, US",
      "lat": 44.4,
      "lon": -114.6,
@@ -8835,8 +8939,10 @@
    ],
    "state": "ID",
    "county": null,
-   "location_precision": "state",
-   "companies": [],
+   "location_precision": "city",
+   "companies": [
+    "Diode Ventures"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -8857,14 +8963,6 @@
    ],
    "locations": [
     {
-     "name": "Richmond, Virginia, US",
-     "lat": 37.54,
-     "lon": -77.44,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Virginia, US",
      "lat": 37.5,
      "lon": -78.9,
@@ -8878,7 +8976,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [
     "Tract"
    ],
@@ -8944,7 +9042,8 @@
      "lon": -96.8,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [

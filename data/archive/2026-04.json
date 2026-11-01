@@ -22,6 +22,7 @@
    "state": "The main state (from the most precise place), or absent.",
    "county": "Archive only. The county or parish named, as 'Name County, State, US'.",
    "location_precision": "Archive only. city, county, state, or source (only the outlet's home state was known).",
+   "location_note": "Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it.",
    "companies": "Operators: companies that own, develop or run data centers (fetch_news.COMPANIES).",
    "utilities": "Utilities and grid operators named (fetch_news.UTILITIES).",
    "investors": "Investors named (fetch_news.INVESTORS).",
@@ -60,7 +61,8 @@
      "lon": -83.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -260,7 +262,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Beale Infrastructure"
+   ],
    "utilities": [],
    "investors": [
     "Blue Owl"
@@ -369,7 +373,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -404,7 +409,8 @@
      "lon": -95.7908,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -506,19 +512,20 @@
    ],
    "locations": [
     {
-     "name": "Johnson County, Missouri, US",
-     "lat": 38.744,
-     "lon": -93.806,
+     "name": "Johnson County, Kansas, US",
+     "lat": 38.883,
+     "lon": -94.824,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
-    "MO"
+    "KS"
    ],
-   "state": "MO",
-   "county": "Johnson County, Missouri, US",
+   "state": "KS",
+   "county": "Johnson County, Kansas, US",
    "location_precision": "county",
    "companies": [],
    "utilities": [],
@@ -684,7 +691,8 @@
      "lon": -94.9686,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     },
     {
      "name": "Kansas, US",
@@ -701,13 +709,15 @@
    "state": "KS",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "Beale Infrastructure"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 3.0,
-   "cluster_id": "149923f0943cbd07",
+   "cluster_id": "1182b6ff8e06e4ab",
    "cluster_title": "Beale Infrastructure Unveils Plans for $3B Data Center Campus in De Soto, Kansas"
   },
   {
@@ -1291,7 +1301,8 @@
      "lon": -93.13,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -1419,7 +1430,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -1454,7 +1466,8 @@
      "lon": -95.7908,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -1577,7 +1590,8 @@
      "lon": -95.7908,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -1695,7 +1709,8 @@
      "lon": -83.025,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -1780,12 +1795,13 @@
    ],
    "locations": [
     {
-     "name": "Michigan, US",
-     "lat": 44.3,
-     "lon": -85.4,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Saline, Michigan, US",
+     "lat": 42.1667,
+     "lon": -83.7816,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -1793,7 +1809,7 @@
    ],
    "state": "MI",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [
     "DTE Energy"
@@ -2076,6 +2092,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Scrapped Data Center",
    "cluster_id": "a4fcf36be7586c5c",
    "cluster_title": "Scrapped data center in Okeechobee County mirrors rising opposition to data centers in South Florida"
   },
@@ -2230,6 +2247,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Northern Nevada Data Center",
    "cluster_id": "66fa7992c12837fb",
    "cluster_title": "Why a Northern Nevada data center wants to build its own temporary natural gas power plant"
   },
@@ -2320,20 +2338,21 @@
    ],
    "locations": [
     {
-     "name": "Missouri, US",
-     "lat": 38.4,
-     "lon": -92.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Gardner, Kansas, US",
+     "lat": 38.8108,
+     "lon": -94.9272,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
-    "MO"
+    "KS"
    ],
-   "state": "MO",
+   "state": "KS",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2596,7 +2615,7 @@
      "lat": 38.7,
      "lon": -77.48,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     }
    ],
@@ -2604,13 +2623,14 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Prince William County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Gateway Data Center",
    "cluster_id": "006ce813dd98d455",
    "cluster_title": "UPDATE: After Compass gives up legal fight, Prince William's Digital Gateway data center project in peril"
   },
@@ -2816,6 +2836,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Bonner Data Center",
    "cluster_id": "dd092895efc0c547",
    "cluster_title": "Missoula resident starts petition opposing Bonner data center"
   },
@@ -2876,7 +2897,8 @@
      "lon": -87.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -2933,7 +2955,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -2985,6 +3008,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Botetourt Data Center",
    "cluster_id": "b578149c9badab37",
    "cluster_title": "Google faces opposition to Botetourt data center"
   },
@@ -3069,14 +3093,16 @@
    "state": "KS",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Beale Infrastructure"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 3.0,
    "cluster_id": "1182b6ff8e06e4ab",
-   "cluster_title": "Beale Infrastructure Announces Hyperscale Kansas Data Center Campus, Advancing $3 Billion Infrastructure Investment"
+   "cluster_title": "Beale Infrastructure Unveils Plans for $3B Data Center Campus in De Soto, Kansas"
   },
   {
    "id": "817d9d649785ae49",
@@ -3176,7 +3202,8 @@
      "lon": -97.7625,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -3282,7 +3309,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -3510,6 +3538,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Gov. Mills’ Data Center",
    "cluster_id": "cf8f21c274e9656d",
    "cluster_title": "Efforts to override Gov. Mills’ data center moratorium veto unsuccessful"
   },
@@ -3725,7 +3754,8 @@
      "lon": -93.7941,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -4091,6 +4121,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Eastside Data Center",
    "cluster_id": "3f8635c458653082",
    "cluster_title": "Eastside data center developer faces questions about project"
   },
@@ -4107,11 +4138,23 @@
     "Environment",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kuna, Idaho, US",
+     "lat": 43.4918,
+     "lon": -116.4201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4142,7 +4185,8 @@
      "lon": -95.0877,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     },
     {
      "name": "De Soto, Kansas, US",
@@ -4150,7 +4194,8 @@
      "lon": -94.9686,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -4215,11 +4260,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Glendale, Arizona, US",
+     "lat": 33.5386,
+     "lon": -112.186,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Phoenix"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4394,7 +4451,8 @@
      "lon": -86.8025,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -4527,7 +4585,8 @@
      "lon": -87.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -4868,7 +4927,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -4907,6 +4967,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Perry Data Center",
    "cluster_id": "bf1151dc1c849ad5",
    "cluster_title": "Developer presents tax abatement , PILOT programs for proposed Perry data center"
   },
@@ -5018,11 +5079,23 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Birmingham, Alabama, US",
+     "lat": 33.5207,
+     "lon": -86.8025,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Birmingham"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5063,6 +5136,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "As Data Center",
    "cluster_id": "111d5032c8c629ab",
    "cluster_title": "As data center moratoriums stack up, some 1,500 square miles in Michigan are off-limits"
   },
@@ -5122,7 +5196,8 @@
      "lon": -83.7409,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -5354,7 +5429,8 @@
      "lon": -86.8025,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -5405,6 +5481,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "South Texas Data Center",
    "investment_usd_b": 14.0,
    "cluster_id": "27c8c4e00e9ec73f",
    "cluster_title": "UK firm delays $14B South Texas data center project amid pushback"
@@ -5529,6 +5606,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Los Alamos-backed Data Center",
    "investment_usd_b": 1.2,
    "cluster_id": "5de5e4da893e4ede",
    "cluster_title": "The fight against a $1.2 billion U-M and Los Alamos-backed data center continues"
@@ -5784,7 +5862,8 @@
      "lon": -93.7941,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -5815,12 +5894,13 @@
    ],
    "locations": [
     {
-     "name": "Pittsburgh, Pennsylvania, US",
-     "lat": 40.44,
-     "lon": -79.99,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Pittsburgh"
     }
    ],
    "states": [
@@ -5828,7 +5908,8 @@
    ],
    "state": "PA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Pittsburgh",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5871,6 +5952,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New AI Data Center",
    "capacity_mw": 9000,
    "cluster_id": "94b2ed1e7a1fb285",
    "cluster_title": "New AI data center in Utah will generate and consume more than twice the amount of power the entire state uses — Kevin O'Leary's 9 Gigawatt Utah data center campus approved"
@@ -6407,6 +6489,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Brookfield-backed Data Center",
    "cluster_id": "be9e5e45b1079ed5",
    "cluster_title": "Brookfield-backed data center firm confidentially files for IPO"
   },
@@ -6462,7 +6545,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -6638,7 +6722,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -6647,7 +6732,9 @@
    "state": "IN",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "DC Blox"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -6828,6 +6915,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Chatham Data Center",
    "cluster_id": "e507a32d547612bc",
    "cluster_title": "Bradley-led firm sues over Chatham data center moratorium"
   },
@@ -7084,7 +7172,6 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "investment_usd_b": 1.0,
    "cluster_id": "efc6cb2c9241b3af",
    "cluster_title": "Texas is giving data centers more than $1 billion in tax breaks each year"
   },
@@ -7310,7 +7397,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -7383,7 +7471,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -7598,6 +7687,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "South Annville Twp. Data Center",
    "cluster_id": "874394165d1a61dd",
    "cluster_title": "A mom’s perspective on the proposed South Annville Twp. data center | opinion"
   },
@@ -7969,6 +8059,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "We Energies’ Data Center",
    "cluster_id": "ab52ab8eb564a171",
    "cluster_title": "State regulators change We Energies’ data center rate proposal to protect customers"
   },
@@ -7991,7 +8082,8 @@
      "lon": -90.2,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -8242,7 +8334,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -8301,7 +8394,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -8651,7 +8745,8 @@
      "lon": -87.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -8862,6 +8957,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Okee-One Data Center",
    "cluster_id": "eba5590392c96344",
    "cluster_title": "Vote by Okeechobee County commissioners kills controversial Okee-One data center project"
   },
@@ -9103,7 +9199,8 @@
      "lon": -81.69,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -9258,6 +9355,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Okee-One Data Center",
    "cluster_id": "eba5590392c96344",
    "cluster_title": "Vote by Okeechobee County commissioners kills controversial Okee-One data center project"
   },
@@ -9432,7 +9530,8 @@
      "lon": -83.613,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -9573,7 +9672,8 @@
      "lon": -122.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     },
     {
      "name": "Maine, US",
@@ -10005,7 +10105,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -10139,7 +10240,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     },
     {
      "name": "Alabama, US",
@@ -10457,7 +10559,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -10582,7 +10685,8 @@
      "lon": -87.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -10638,6 +10742,15 @@
    ],
    "locations": [
     {
+     "name": "Castle Rock, Colorado, US",
+     "lat": 39.3722,
+     "lon": -104.8561,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
+    },
+    {
      "name": "Colorado, US",
      "lat": 39.0,
      "lon": -105.5,
@@ -10651,7 +10764,7 @@
    ],
    "state": "CO",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -10683,6 +10796,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Butte Data Center",
    "cluster_id": "05f471afe80b7b2b",
    "cluster_title": "Butte data center land deal halted after REC Silicon buys the property"
   },
@@ -11067,7 +11181,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -11106,7 +11221,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -11172,7 +11288,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     },
     {
      "name": "Oklahoma, US",
@@ -11534,6 +11651,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Emergent Data Center",
    "cluster_id": "78177fbc5335b84e",
    "cluster_title": "San Angelo to hold special meeting on proposed Skybox/Emergent data center April 22"
   },
@@ -11592,7 +11710,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -11655,7 +11774,8 @@
      "lon": -83.613,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -11885,7 +12005,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -11939,6 +12060,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "AI-ready Data Center",
    "cluster_id": "d725573c2210c983",
    "cluster_title": "‘Hiding in plain sight’: An AI-ready data center is coming to a Miami neighborhood"
   },
@@ -11963,6 +12085,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Ravenna OKs Data Center",
    "cluster_id": "71467a1c4d79e3a4",
    "cluster_title": "'Locusts and leeches on our resources.' Ravenna OKs data center ban"
   },
@@ -12201,7 +12324,8 @@
      "lon": -91.075,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -12358,7 +12482,8 @@
      "lon": -97.7942,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -12455,6 +12580,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Sarcoxie Data Center",
    "cluster_id": "d74c511edb35f0a0",
    "cluster_title": "Community meeting to discuss proposed Sarcoxie data center"
   },
@@ -12599,7 +12725,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -12634,7 +12761,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -12813,7 +12941,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -12919,7 +13048,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -12955,7 +13085,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -13053,7 +13184,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -13089,7 +13221,8 @@
      "lon": -97.62,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Hutto, Texas, US",
@@ -13097,7 +13230,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -13217,7 +13351,8 @@
      "lon": -119.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Reno"
     }
    ],
    "states": [
@@ -13250,7 +13385,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -13311,7 +13447,8 @@
      "lon": -91.075,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -13468,7 +13605,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     },
     {
      "name": "Oklahoma, US",
@@ -13650,7 +13788,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     },
     {
      "name": "Oklahoma, US",
@@ -13754,7 +13893,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -13908,7 +14048,8 @@
      "lon": -121.89,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     },
     {
      "name": "Pittsburg, California, US",
@@ -13953,7 +14094,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -13993,7 +14135,8 @@
      "lon": -81.8017,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     },
     {
      "name": "Florida, US",
@@ -14274,6 +14417,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Unexpected Data Center",
    "cluster_id": "3beefef74a0cbed1",
    "cluster_title": "Unexpected data center component causes council committee to vote against proposed annexation"
   },
@@ -14333,7 +14477,8 @@
      "lon": -86.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Birmingham"
     }
    ],
    "states": [
@@ -14443,7 +14588,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     }
    ],
    "states": [
@@ -14504,7 +14650,8 @@
      "lon": -83.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -14542,7 +14689,8 @@
      "lon": -90.2,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -14578,7 +14726,8 @@
      "lon": -90.2,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -14625,7 +14774,8 @@
      "lon": -121.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -14734,7 +14884,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -15019,7 +15170,8 @@
      "lon": -90.2,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -15033,6 +15185,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Armory Data Center",
    "investment_usd_b": 3.0,
    "cluster_id": "a97dbb88035459ac",
    "cluster_title": "St. Louis clears data center permit for $3 billion Armory 'Innovation District'"
@@ -15203,12 +15356,13 @@
    ],
    "locations": [
     {
-     "name": "Rochester, Michigan, US",
-     "lat": 42.6806,
-     "lon": -83.1338,
+     "name": "Rochester Hills, Michigan, US",
+     "lat": 42.6584,
+     "lon": -83.1499,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -15316,7 +15470,8 @@
      "lon": -86.0797,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -15330,6 +15485,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "East Whiteland Data Center",
    "cluster_id": "ef47fedab0c364a5",
    "cluster_title": "Builder cuts plans for size of proposed East Whiteland data center in half"
   },
@@ -15428,7 +15584,8 @@
      "lon": -121.95,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "San Jose"
     }
    ],
    "states": [
@@ -15494,7 +15651,6 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "investment_usd_b": 0.077,
    "cluster_id": "300f8354c77ecb5e",
    "cluster_title": "NY county giving JPMorganChase $77 million in tax breaks for creating just 1 job at data center"
   },
@@ -15555,7 +15711,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -15617,7 +15774,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -15779,12 +15937,13 @@
    ],
    "locations": [
     {
-     "name": "Missouri, US",
-     "lat": 38.4,
-     "lon": -92.5,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
     }
    ],
    "states": [
@@ -15792,7 +15951,7 @@
    ],
    "state": "MO",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15863,7 +16022,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -15899,7 +16059,8 @@
      "lon": -88.0834,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Plainfield, Illinois, US",
@@ -15907,7 +16068,8 @@
      "lon": -88.204,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -15943,7 +16105,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -16249,7 +16412,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -16314,7 +16478,6 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "investment_usd_b": 0.077,
    "cluster_id": "a2b765fa2216243c",
    "cluster_title": "This Data Center Is Getting a $77 Million Tax Break to Create One Job"
   },
@@ -16488,7 +16651,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -16502,6 +16666,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "East Charlotte Data Center",
    "cluster_id": "77d4e558ef6db4e9",
    "cluster_title": "East Charlotte data center delayed. Could city council consider a total ban?"
   },
@@ -16666,7 +16831,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -16717,6 +16883,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Lawrenceburg Data Center",
    "cluster_id": "5ac545038f13de87",
    "cluster_title": "Lawrenceburg data center sparks transparency, environmental concerns among residents"
   },
@@ -16739,7 +16906,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -16810,7 +16978,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -16874,11 +17043,23 @@
     "New Announcement",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16905,7 +17086,8 @@
      "lon": -97.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -17021,6 +17203,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Potomac Data Center",
    "cluster_id": "a8e7c7a50f3e406c",
    "cluster_title": "Potomac data center would sap more power than Baltimore. It says that’s good for the grid."
   },
@@ -17141,7 +17324,8 @@
      "lon": -97.52,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Oklahoma City"
     }
    ],
    "states": [
@@ -17177,7 +17361,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -17316,7 +17501,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -17525,6 +17711,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Trump-branded AI Data Center",
    "cluster_id": "4d01a5efa8739b9b",
    "cluster_title": "Trump-branded AI data center megaproject stalls, CEO departs"
   },
@@ -17668,7 +17855,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -17823,7 +18011,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -17858,7 +18047,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -17958,7 +18148,8 @@
      "lon": -112.0069,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Salt Lake City"
     }
    ],
    "states": [
@@ -18109,6 +18300,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New Wisconsin Data Center",
    "cluster_id": "487511b2e953bf64",
    "cluster_title": "New Wisconsin data center approved as utilities face scrutiny over electric costs"
   },
@@ -18186,6 +18378,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Western N.Y. Data Center",
    "cluster_id": "a173840efcea23cc",
    "cluster_title": "Massive Western N.Y. data center plan sparks heated debate, claims of mis­in­for­mation"
   },
@@ -18207,7 +18400,8 @@
      "lon": -77.3703,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -18221,6 +18415,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Mountain Road Data Center",
    "cluster_id": "aa69b05b017694bd",
    "cluster_title": "Hanover planning commission recommends approving Mountain Road data center"
   },
@@ -18307,7 +18502,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -18369,7 +18565,8 @@
      "lon": -81.697,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -18431,7 +18628,8 @@
      "lon": -77.3703,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -18467,7 +18665,8 @@
      "lon": -77.3703,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -18687,6 +18886,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Rowan Data Center",
    "cluster_id": "b3a9db357fd825b5",
    "cluster_title": "Temple approves third Rowan data center at nearly 8-hour meeting, recall planned"
   },
@@ -18746,7 +18946,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -18849,16 +19050,29 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lowell, Indiana, US",
+     "lat": 41.2914,
+     "lon": -87.4206,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Lowell-area Data Center",
    "cluster_id": "fb92e2d0e32574a2",
    "cluster_title": "Developers answer questions about potential Lowell-area data center"
   },
@@ -18988,7 +19202,8 @@
      "lon": -83.613,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -19002,6 +19217,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "UMich Data Center",
    "cluster_id": "1cf2fd90d051a22a",
    "cluster_title": "Ypsilanti Township proposes water moratorium that could block planned UMich data center"
   },
@@ -19276,7 +19492,8 @@
      "lon": -83.613,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -19692,6 +19909,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "South Annville Data Center",
    "cluster_id": "cd7beb8ff8029bc6",
    "cluster_title": "Commissioners hear concerns about South Annville data center proposal"
   },
@@ -19790,7 +20008,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -19853,7 +20072,8 @@
      "lon": -83.0,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -19885,12 +20105,13 @@
    ],
    "locations": [
     {
-     "name": "Ohio, US",
-     "lat": 40.3,
-     "lon": -82.8,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Hilliard, Ohio, US",
+     "lat": 40.03,
+     "lon": -83.16,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -19898,7 +20119,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20038,7 +20259,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -20052,6 +20274,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Seattle AI Data Center",
    "cluster_id": "345574ec4d84ec84",
    "cluster_title": "Seattle AI data center boom could strain power supply, raise rates"
   },
@@ -20074,7 +20297,8 @@
      "lon": -87.4206,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Indiana, US",
@@ -20204,14 +20428,6 @@
    ],
    "locations": [
     {
-     "name": "Pittsburgh, Pennsylvania, US",
-     "lat": 40.44,
-     "lon": -79.99,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Pennsylvania, US",
      "lat": 40.9,
      "lon": -77.8,
@@ -20225,7 +20441,7 @@
    ],
    "state": "PA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20268,6 +20484,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "West Rockhill AI Data Center",
    "cluster_id": "684535befe782afb",
    "cluster_title": "See residents protest proposed West Rockhill AI data center"
   },
@@ -20407,7 +20624,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -20611,6 +20829,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Rumored Data Center",
    "cluster_id": "aee53118c484654e",
    "cluster_title": "Rumored data center sparks concerns in Bradley County"
   },
@@ -20671,6 +20890,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Annville Twp. PA Data Center",
    "cluster_id": "0841fcc019ef8330",
    "cluster_title": "Joe Eisenhauer talks about proposed South Annville Twp. PA data center"
   },
@@ -20690,7 +20910,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Prologis"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -20804,7 +21026,8 @@
      "lon": -77.44,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Richmond"
     }
    ],
    "states": [
@@ -20910,7 +21133,8 @@
      "lon": -83.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -21236,7 +21460,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -21333,7 +21558,8 @@
      "lon": -81.8017,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -21762,7 +21988,8 @@
      "lon": -81.8017,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -22115,7 +22342,8 @@
      "lon": -81.8017,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -22129,6 +22357,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Fort Meade AI Data Center",
    "cluster_id": "b278175718d013c0",
    "cluster_title": "Fort Meade AI data center project hits roadblock over new water rules"
   },
@@ -22490,7 +22719,8 @@
      "lon": -88.4473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -22525,7 +22755,8 @@
      "lon": -82.8591,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -22641,11 +22872,23 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lowell, Indiana, US",
+     "lat": 41.2914,
+     "lon": -87.4206,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -22821,6 +23064,7 @@
    "suppliers": [
     "Dell"
    ],
+   "name_hint": "Bernie Sanders’ AI Data Center",
    "cluster_id": "04358eaa5ca4e014",
    "cluster_title": "Dell CEO on Bernie Sanders’ AI data center moratorium proposal: ‘That’s not a great idea'"
   },
@@ -22917,7 +23161,8 @@
      "lon": -82.8591,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -23817,7 +24062,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "EdgeConneX"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -23866,7 +24113,8 @@
      "lon": -82.81,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     },
     {
      "name": "Ohio, US",
@@ -23883,7 +24131,9 @@
    "state": "OH",
    "county": null,
    "location_precision": "city",
-   "companies": [],
+   "companies": [
+    "EdgeConneX"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -24316,11 +24566,23 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -24393,11 +24655,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -24592,7 +24866,8 @@
      "lon": -81.8017,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     },
     {
      "name": "Florida, US",
@@ -24914,7 +25189,8 @@
      "lon": -81.8017,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     }
    ],
    "states": [
@@ -24986,7 +25262,8 @@
      "lon": -122.68,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Portland"
     }
    ],
    "states": [
@@ -25213,6 +25490,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "STAMP Data Center",
    "cluster_id": "4292a16c51ad2aac",
    "cluster_title": "STAMP data center proposal faces new scrutiny as report challenges economic claims"
   },
@@ -25255,18 +25533,30 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fort Meade, Florida, US",
+     "lat": 27.7523,
+     "lon": -81.8017,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "755ec2b2ceea298b",
-   "cluster_title": "Fort Meade unanimously approves controversial data center deal despite fierce public pushback"
+   "cluster_id": "5f77b0133a0a731b",
+   "cluster_title": "Fort Meade approves deal for Florida's first hyperscale data center"
   },
   {
    "id": "2497caee4950400a",
@@ -25313,7 +25603,7 @@
      "lat": 38.7,
      "lon": -77.48,
      "level": 3,
-     "precision": "city",
+     "precision": "county",
      "country": "US"
     },
     {
@@ -25329,8 +25619,8 @@
     "VA"
    ],
    "state": "VA",
-   "county": null,
-   "location_precision": "city",
+   "county": "Prince William County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25357,7 +25647,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -25737,7 +26028,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -26015,7 +26307,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -26487,7 +26780,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -26613,7 +26907,8 @@
      "lon": -77.64,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Northern Virginia"
     }
    ],
    "states": [
@@ -26627,6 +26922,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Two Data Center",
    "cluster_id": "ca8286d0bf4b3e88",
    "cluster_title": "Two data center buildings proposed on 87-acre site in Loudoun County"
   },
@@ -26775,7 +27071,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -27030,7 +27327,8 @@
      "lon": -84.39,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     },
     {
      "name": "Georgia, US",
@@ -27225,7 +27523,8 @@
      "lon": -88.4473,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -27355,7 +27654,8 @@
      "lon": -83.05,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -27757,12 +28057,13 @@
    ],
    "locations": [
     {
-     "name": "Minnesota, US",
-     "lat": 46.3,
-     "lon": -94.3,
-     "level": 2,
-     "precision": "source",
-     "country": "US"
+     "name": "Carver, Minnesota, US",
+     "lat": 44.7636,
+     "lon": -93.6258,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Minneapolis"
     }
    ],
    "states": [
@@ -27770,7 +28071,7 @@
    ],
    "state": "MN",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -27865,7 +28166,8 @@
      "lon": -112.58,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     }
    ],
    "states": [
@@ -28392,7 +28694,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -28573,7 +28876,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -28888,7 +29192,8 @@
      "lon": -122.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Seattle"
     }
    ],
    "states": [
@@ -28921,7 +29226,9 @@
    "state": null,
    "county": null,
    "location_precision": null,
-   "companies": [],
+   "companies": [
+    "Beale Infrastructure"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -29038,7 +29345,9 @@
    "state": "GA",
    "county": null,
    "location_precision": "state",
-   "companies": [],
+   "companies": [
+    "Prologis"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -29064,7 +29373,8 @@
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -29127,7 +29437,8 @@
      "lon": -83.0,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -29164,7 +29475,8 @@
      "lon": -97.7942,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     },
     {
      "name": "Hood County, Texas, US",
@@ -29172,7 +29484,8 @@
      "lon": -97.833,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -29244,7 +29557,8 @@
      "lon": -97.7942,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -29578,6 +29892,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Micro Data Center",
    "cluster_id": "e5d9efbf62254d71",
    "cluster_title": "Micro data center launches in Lawrence"
   },
@@ -29657,7 +29972,8 @@
      "lon": -97.62,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Hutto, Texas, US",
@@ -29665,7 +29981,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -29814,6 +30131,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New AI Data Center",
    "cluster_id": "a68f30704a2ff64d",
    "cluster_title": "AI data center project breaks ground near Abernathy"
   },
@@ -30033,7 +30351,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -30108,6 +30427,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Landmark Data Center",
    "cluster_id": "83025d6a9f044994",
    "cluster_title": "Landmark data center moratorium passes Maine Legislature"
   },
@@ -30521,7 +30841,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -30535,6 +30856,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Eldorado Valley Data Center",
    "cluster_id": "46299d1fb5aa1cb6",
    "cluster_title": "Eldorado Valley data center plan divides Boulder City as proposal moves forward"
   },
@@ -30630,7 +30952,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -30660,20 +30983,13 @@
    ],
    "locations": [
     {
-     "name": "St. Louis, Missouri, US",
-     "lat": 38.63,
-     "lon": -90.2,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
-    },
-    {
      "name": "Festus, Missouri, US",
      "lat": 38.2206,
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -30774,6 +31090,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Riverside Avenue Data Center",
    "cluster_id": "7f6c75feef78831b",
    "cluster_title": "Inland Wetlands approves permit for Riverside Avenue data center"
   },
@@ -30796,7 +31113,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -30828,12 +31146,13 @@
    ],
    "locations": [
     {
-     "name": "Dallas, Texas, US",
-     "lat": 32.78,
-     "lon": -96.8,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Dallas"
     }
    ],
    "states": [
@@ -30841,7 +31160,8 @@
    ],
    "state": "TX",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Dallas",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31009,7 +31329,8 @@
      "lon": -97.7942,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -31396,7 +31717,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -31440,7 +31762,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -31709,7 +32032,8 @@
      "lon": -84.76,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Atlanta"
     }
    ],
    "states": [
@@ -31801,7 +32125,8 @@
      "lon": -81.69,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Cleveland"
     }
    ],
    "states": [
@@ -31944,6 +32269,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "S. Annville Twp. Data Center",
    "cluster_id": "2e20ae821550615f",
    "cluster_title": "LebTown Exclusive: S. Annville Twp. data center developer reveals project details"
   },
@@ -32003,7 +32329,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -32124,7 +32451,8 @@
      "lon": -81.8017,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tampa"
     },
     {
      "name": "Florida, US",
@@ -32192,7 +32520,8 @@
      "lon": -97.7942,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -32491,7 +32820,8 @@
      "lon": -97.33,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -32568,7 +32898,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -32665,7 +32996,8 @@
      "lon": -97.7942,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -32695,12 +33027,13 @@
    ],
    "locations": [
     {
-     "name": "Atlanta, Georgia, US",
-     "lat": 33.75,
-     "lon": -84.39,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Atlanta"
     }
    ],
    "states": [
@@ -32708,7 +33041,8 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Atlanta",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -32737,7 +33071,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -32833,7 +33168,8 @@
      "lon": -90.3959,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "St. Louis"
     }
    ],
    "states": [
@@ -32988,7 +33324,8 @@
      "lon": -111.83,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Phoenix"
     },
     {
      "name": "Arizona, US",
@@ -33033,7 +33370,8 @@
      "lon": -97.599,
      "level": 3,
      "precision": "county",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     },
     {
      "name": "Texas, US",
@@ -33112,7 +33450,8 @@
      "lon": -97.5467,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Austin"
     }
    ],
    "states": [
@@ -33143,12 +33482,22 @@
    ],
    "locations": [
     {
+     "name": "Commercial Point, Ohio, US",
+     "lat": 39.7684,
+     "lon": -83.0571,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    },
+    {
      "name": "Ashville, Ohio, US",
      "lat": 39.7156,
      "lon": -82.953,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -33187,6 +33536,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Temple Data Center",
    "cluster_id": "8343fff0c0be98c0",
    "cluster_title": "Temple data center construction underway with community partnerships"
   },
@@ -33518,6 +33868,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Gods Data Center",
    "cluster_id": "0cd5a29843c31db6",
    "cluster_title": "Proposed Garden of the Gods data center sparks heated community forum on Colorado Springs' Westside"
   },
@@ -33553,6 +33904,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Trump-backed Data Center",
    "cluster_id": "553930d00cb2083f",
    "cluster_title": "Wisconsin town revolts against a Trump-backed data center project"
   },
@@ -33576,7 +33928,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -33648,7 +34001,8 @@
      "lon": -85.7769,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -33683,7 +34037,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -33819,7 +34174,8 @@
      "lon": -87.88,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Milwaukee"
     }
    ],
    "states": [
@@ -34210,6 +34566,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Pa. Data Center",
    "cluster_id": "27a61922907ff0dc",
    "cluster_title": "Developer of proposed Pa. data center campus renews transparency pledge"
   },
@@ -34425,7 +34782,8 @@
      "lon": -85.7769,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -34486,7 +34844,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -34724,7 +35083,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -34950,6 +35310,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Downtown Lansing Data Center",
    "cluster_id": "55ea4b3d9e4d1cce",
    "cluster_title": "Company behind Downtown Lansing data center project withdraws application, officials say"
   },
@@ -35170,7 +35531,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -35319,11 +35681,23 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -35474,7 +35848,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -35510,7 +35885,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -35551,6 +35927,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "KC Data Center",
    "cluster_id": "1bf8d3cbbed4eea4",
    "cluster_title": "Oracle inherited KC data center incentives, but hasn't touched them"
   },
@@ -35631,7 +36008,8 @@
      "lon": -87.63,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     }
    ],
    "states": [
@@ -35769,7 +36147,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -35805,7 +36184,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -35881,7 +36261,8 @@
      "lon": -88.0834,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Chicago"
     },
     {
      "name": "Illinois, US",
@@ -36014,7 +36395,8 @@
      "lon": -97.7942,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
     }
    ],
    "states": [
@@ -36078,6 +36460,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Modern Data Center",
    "cluster_id": "a1961a82a6ac6517",
    "cluster_title": "Modern data center sustainability: 5 best practices to consider"
   },
@@ -36188,6 +36571,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Bonner Data Center",
    "cluster_id": "35472aadbe7e2c1a",
    "cluster_title": "What’s next for the proposed Bonner data center?"
   },
@@ -36366,7 +36750,9 @@
    "state": "IN",
    "county": null,
    "location_precision": "source",
-   "companies": [],
+   "companies": [
+    "Metrobloks"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -36514,7 +36900,8 @@
      "lon": -83.7409,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Detroit"
     }
    ],
    "states": [
@@ -36593,6 +36980,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Jay Data Center",
    "cluster_id": "c457c63b6545732f",
    "cluster_title": "Proposed Jay data center would not require local approval under plan"
   },
@@ -36944,7 +37332,8 @@
      "lon": -114.8325,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     }
    ],
    "states": [
@@ -36994,6 +37383,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "One Data Center",
    "cluster_id": "8924592793fec9ba",
    "cluster_title": "One data center project ‘unchanged’ while another ‘doesn’t make sense’ after rejected incentives"
   },
@@ -37011,12 +37401,13 @@
    ],
    "locations": [
     {
-     "name": "Indianapolis, Indiana, US",
-     "lat": 39.77,
-     "lon": -86.16,
-     "level": 3,
-     "precision": "city",
-     "country": "US"
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Indianapolis"
     }
    ],
    "states": [
@@ -37024,7 +37415,8 @@
    ],
    "state": "IN",
    "county": null,
-   "location_precision": "city",
+   "location_precision": "state",
+   "location_note": "near Indianapolis",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37120,7 +37512,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -37737,11 +38130,32 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Sugar Grove, Illinois, US",
+     "lat": 41.7614,
+     "lon": -88.4437,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    },
+    {
+     "name": "Aurora, Illinois, US",
+     "lat": 41.7606,
+     "lon": -88.3201,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -38033,11 +38447,23 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Hobart, Indiana, US",
+     "lat": 41.5323,
+     "lon": -87.255,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -38128,7 +38554,8 @@
      "lon": -104.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Denver"
     }
    ],
    "states": [
@@ -38213,6 +38640,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Martindale Brightwood Data Center",
    "cluster_id": "99704424c4dd5c1c",
    "cluster_title": "Martindale Brightwood data center moves ahead despite resident outcry"
   },
@@ -38262,6 +38690,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Martindale-Brightwood Data Center",
    "cluster_id": "71181b01d87b8632",
    "cluster_title": "Controversial data center is approved for Martindale-Brightwood"
   },
@@ -38349,7 +38778,8 @@
      "lon": -86.16,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Indianapolis"
     }
    ],
    "states": [
@@ -38363,6 +38793,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Martindale-Brightwood Data Center",
    "cluster_id": "92731a0c6753bd26",
    "cluster_title": "Indianapolis city leaders vote to approve Martindale-Brightwood data center"
   },
@@ -38387,7 +38818,8 @@
      "lon": -95.99,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Tulsa"
     },
     {
      "name": "Oklahoma, US",
@@ -38432,7 +38864,8 @@
      "lon": -82.6743,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Columbus"
     }
    ],
    "states": [
@@ -38467,7 +38900,8 @@
      "lon": -80.84,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Charlotte"
     }
    ],
    "states": [
@@ -38576,6 +39010,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "New Data Center",
    "cluster_id": "90dd4a2bdbd22912",
    "cluster_title": "New data center planned in Colorado Springs sparks concerns from community"
   },
@@ -38744,6 +39179,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "OKs Data Center",
    "cluster_id": "48cdf55e963dd135",
    "cluster_title": "Council OKs data center agreement"
   },
@@ -38777,6 +39213,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Martindale Brightwood Data Center",
    "cluster_id": "f19a00f121083b32",
    "cluster_title": "Martindale Brightwood data center overwhelmingly passes"
   },
@@ -39137,6 +39574,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
+   "name_hint": "Martindale Brightwood Data Center",
    "cluster_id": "2d5b053869ed34e1",
    "cluster_title": "Inside the MDC vote on Martindale Brightwood data center"
   },
@@ -39254,7 +39692,8 @@
      "lon": -115.14,
      "level": 3,
      "precision": "city",
-     "country": "US"
+     "country": "US",
+     "metro": "Las Vegas"
     },
     {
      "name": "Michigan, US",
