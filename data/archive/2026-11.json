@@ -39,8 +39,77 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 17,
+ "count": 20,
  "items": [
+  {
+   "id": "7c12fcce7ac064d0",
+   "title": "Report finds Iowa is Midwest leader in data center development, investment",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZGJ4R1J1LUJCLXVtM3l5X2NJd0dVMU9zX0h2YW91YURXS2Rjb0luZzlHaXRSTU5oY2JSSW1hMTJBYkl5TTdvb0hENGhyX0dQWmFPY0lLWlhTdkFnRWRLbU5fTnozcGFrOWVLZXFtLUdRUnpIQlUzc0F4SjRoYzhXV2x3VEpxdG00U3ByaG1VOFRSYmZ5NXFkLTM1dThxRUEwSUxF?oc=5",
+   "source": "KIWA Radio",
+   "published": "2026-11-01T14:18:34+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Iowa, US",
+     "lat": 42.1,
+     "lon": -93.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bab82d369f497979",
+   "cluster_title": "CSI report finds Iowa is Midwest leader in data center development"
+  },
+  {
+   "id": "57d8e754bac8ab31",
+   "title": "Tennessee has 60+ data centers. Does your county have one?",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN29sZno4Z0N6T2RBelN4T1hiRC0xR0wzb3d1VEw0RzBWeEt2MUVKOV9hN1NDa1lUWndDMWhaRlNOb3IxVVBSRTZMdVFmRHNOdVpFV3diYzJVbThLR0lMc3Ezdk1Bbk1YSE5YUmx3ajlrdWF2eXVITGZXbGRxYjliVG9rZ0hOTXRXOTIyYU4tRWxXZTVoUFBYUUx1UHo0d9IBowFBVV95cUxNelNFbHBUSFZwNzZvYlR4R2lMQTBKNElGeU90WVdFemw0NV94ZUFmN1d0LU8yaXJkU3Z1UWJ4eG03aGE3WEpaS2VCV0syOUVQRFJadGc4SGdRRWxrZlFmRkg3ZGFZZmtUYUhUV0lqQTE0cnZLeHBVekpYVlQ1REhfdDVRazc3NDVqSE5BejJHVER1eGFtWXFDMkNENU42dnZXTHNJ?oc=5",
+   "source": "WKRN News 2",
+   "published": "2026-11-01T14:01:17+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "57d8e754bac8ab31",
+   "cluster_title": "Tennessee has 60+ data centers. Does your county have one?"
+  },
   {
    "id": "3506ff8bd282e534",
    "title": "Google runs AI model on satellite chip, advancing orbital data center ambitions",
@@ -66,6 +135,31 @@
    "suppliers": [],
    "cluster_id": "3506ff8bd282e534",
    "cluster_title": "Google runs AI model on satellite chip, advancing orbital data center ambitions"
+  },
+  {
+   "id": "450bb45228bcf916",
+   "title": "Readers split over city plan for data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMDFzMWZWQ29sc1AwQS1uSVVBV21uR09ma0N5QXJEYllTQ2JyV2tFT3hidGctOHdFcmJSNXdGRDVOU2F2Um5fSmtobnUwQ3JiX1VQSVJ0TDZjbVUtdWVweC1NeWdPQ0ZVYm5VNU5HYkkxOGhOckZlVEs3MTUtYTJncW8yNzQ0MUpNRVN5a2hlZGVJd04xYnRZRERldThjQW9RUzF4Wi1ESQ?oc=5",
+   "source": "San Diego Union-Tribune",
+   "published": "2026-11-01T13:03:39+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "450bb45228bcf916",
+   "cluster_title": "Readers split over city plan for data center moratorium"
   },
   {
    "id": "386acecb6285f62c",
