@@ -750,14 +750,38 @@ window.RR = (function () {
       html: '<svg class="pin-rack" viewBox="0 0 20 25" style="--tone:' + tone + '" aria-hidden="true"><rect class="body" x="1" y="1" width="18" height="23" rx="4"/><rect class="slot" x="5" y="6" width="10" height="2.4" rx="1.2"/><rect class="slot" x="5" y="11.3" width="10" height="2.4" rx="1.2"/><rect class="slot" x="5" y="16.6" width="10" height="2.4" rx="1.2"/></svg>',
     });
   }
-  /** Marker cluster layer used by both maps; clustering stops at zoom 8. */
+  /**
+   * Projects grouped by their exact point, in list order. Records that share a point (several projects
+   * in one town) become one place marker instead of a stack of identical pins.
+   * @returns {object[][]} groups; most have one project
+   */
+  function pointGroups(list) {
+    const by = new Map();
+    list.forEach((p) => { const k = p.lat + "," + p.lon; if (!by.has(k)) by.set(k, []); by.get(k).push(p); });
+    return [...by.values()].map((g) => g.sort((a, b) => b.curated - a.curated || (b.capacity_mw || 0) - (a.capacity_mw || 0)));
+  }
+  /**
+   * Pin for a point with several projects: a ring with the number of projects.
+   * @param {object[]} group the projects at the point
+   * @param {boolean} [sel] draw the selected (highlighted) version
+   */
+  function placeIcon(group, sel) {
+    const tone = group.some((p) => p.status === "Operational") ? status("Operational").tone : status(group[0].status).tone;
+    return window.L.divIcon({ className: sel ? "pin-sel" : "", iconSize: [24, 24],
+      html: '<div class="pin-place" style="--tone:' + tone + '"><span>' + group.length + "</span></div>" });
+  }
+  /**
+   * Marker cluster layer used by both maps; clustering stops at zoom 8. A cluster's number is the number
+   * of projects inside it (a place marker counts its projects), so it matches what clicking through reaches.
+   * Spiderfying is off: records on one point are a single place marker with its own list.
+   */
   function clusterGroup() {
     return window.L.markerClusterGroup({
-      showCoverageOnHover: false, maxClusterRadius: 44, spiderfyOnMaxZoom: true, disableClusteringAtZoom: 8,
+      showCoverageOnHover: false, maxClusterRadius: 44, spiderfyOnMaxZoom: false, disableClusteringAtZoom: 8,
       // Approximate (state-level) markers carry options.approx; their stories are shown as a small "~N" line.
       iconCreateFunction: (c) => {
         let n = 0, a = 0;
-        c.getAllChildMarkers().forEach((m) => { if (m.options.approx) a += m.options.approx; else n++; });
+        c.getAllChildMarkers().forEach((m) => { if (m.options.approx) a += m.options.approx; else n += m.options.count || 1; });
         if (!n) { const s = Math.round(Math.min(56, 28 + Math.sqrt(a) * 5)); return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="bubble" title="' + a + ' projects, location unavailable">~' + a + "</div>" }); }
         const s = (n < 10 ? 34 : n < 30 ? 40 : 46) + (a ? 8 : 0);
         return window.L.divIcon({ className: "", iconSize: [s, s], html: '<div class="cluster' + (a ? " has-apx" : "") + '"' + (a ? ' title="' + n + " sites, plus " + a + ' projects with location unavailable"' : "") + ">" + n + (a ? '<small class="apx" aria-label="plus ' + a + ' approximate">~' + a + "</small>" : "") + "</div>" });
@@ -833,7 +857,8 @@ window.RR = (function () {
   // Public API: window.RR.
   return {
     REPO, DAY, icon, mark, esc, ago, fmtDate, dayKey, dayLabel, fmtMW, fmtMoney, fmtN, debounce, store, reducedMotion,
-    STATES, CATS, STATUS, CANCELLED, PRECISION, defaultVisible, statusSince, completedDate, stories, approxBubbles, approxLayer, cat, status, companyInfo, companyTone, letters,
+    STATES, CATS, STATUS, CANCELLED, PRECISION, defaultVisible, statusSince, completedDate, stories, approxBubbles, approxLayer, cat, status,
+    pointGroups, placeIcon, companyInfo, companyTone, letters,
     news, archive, archiveSince, projects, freshness, live, shell, ready, hideLoader, reveal, countUp, toast, tip, copy, share, saved, trapFocus, miniBars,
     newsTags, newsCard, ticker, loadLeaflet, baseMap, pinIcon, clusterGroup, legendHTML, summary, US,
   };

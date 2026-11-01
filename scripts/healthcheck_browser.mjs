@@ -256,6 +256,7 @@ async function radar(p, base) {
   const moved = await p.$eval("#detailTitle", (e) => e.textContent).catch(() => "");
   check("Old /atlas link redirects to Rack Radar with the project", new URL(p.url()).pathname === "/radar" && moved === proj.name,
     `${new URL(p.url()).pathname}${new URL(p.url()).hash} -> ${moved || "no panel"}`);
+  await kcCluster(p, base);
   const withNews = REG.filter((r) => !r.curated && r.news.length > 1 && r.precision !== "state" && r.confidence !== "low" && r.status !== "Cancelled / Blocked")[0];
   if (withNews) {
     await p.goto(base + "/radar#project=" + encodeURIComponent(withNews.id)); await p.waitForTimeout(2200);
@@ -272,6 +273,63 @@ async function radar(p, base) {
  * browser_checked_at and overall, and prints a table.
  * @returns {number} 1 when any browser check failed, else 0
  */
+/**
+ * Kansas City cluster: zoomed out so the metro is one cluster, its badge must equal the number of
+ * distinct projects a visitor reaches by clicking it, clicking any clusters inside, and opening each
+ * place marker's list ("N projects at <place>"). Guards against stacked pins and spiderfy rings.
+ */
+async function kcCluster(p, base) {
+  await p.goto(base + "/radar"); await p.waitForTimeout(2500);
+  await p.evaluate(() => window.RR_RADAR.map.setView([39.1, -94.58], 6, { animate: false }));
+  await p.waitForTimeout(800);
+  const start = await p.evaluate(() => {
+    const { cluster } = window.RR_RADAR;
+    let target = null;
+    cluster.eachLayer((m) => { const ll = m.getLatLng(); if (Math.abs(ll.lat - 39.1) < 0.02 && Math.abs(ll.lng + 94.58) < 0.02) target = m; });
+    if (!target) return null;
+    const par = cluster.getVisibleParent(target);
+    if (!par || !par.getAllChildMarkers) return { badge: null };
+    const b = par.getBounds().pad(0.05);
+    window.__kc = { s: b.getSouth(), w: b.getWest(), n: b.getNorth(), e: b.getEast() };
+    const r = par._icon.getBoundingClientRect();
+    return { badge: parseInt(par._icon.textContent, 10), x: r.x + r.width / 2, y: r.y + r.height / 2 };
+  });
+  if (!start || start.badge === null) { check("Rack Radar Kansas City cluster: badge equals reachable projects", false, "", "no Kansas City cluster at zoom 6"); return; }
+  await p.mouse.click(start.x, start.y); await p.waitForTimeout(900);
+  // Click any cluster still inside the Kansas City box until only markers are left (at most 5 rounds).
+  for (let i = 0; i < 5; i++) {
+    const next = await p.evaluate(() => {
+      const { cluster } = window.RR_RADAR, k = window.__kc, out = [];
+      cluster._featureGroup.eachLayer((l) => {
+        const ll = l.getLatLng();
+        if (l.getAllChildMarkers && ll.lat > k.s && ll.lat < k.n && ll.lng > k.w && ll.lng < k.e && l._icon) {
+          const r = l._icon.getBoundingClientRect(); out.push([r.x + r.width / 2, r.y + r.height / 2]);
+        }
+      });
+      return out[0] || null;
+    });
+    if (!next) break;
+    await p.mouse.click(next[0], next[1]); await p.waitForTimeout(900);
+  }
+  const ids = await p.evaluate(async () => {
+    const { cluster, map } = window.RR_RADAR, k = window.__kc, seen = new Set();
+    const visible = [];
+    cluster.eachLayer((m) => { const ll = m.getLatLng(); if (ll.lat > k.s && ll.lat < k.n && ll.lng > k.w && ll.lng < k.e && cluster.getVisibleParent(m) === m) visible.push(m); });
+    for (const m of visible) {
+      if (m.options.count) {
+        m.fire("click");
+        await new Promise((r) => setTimeout(r, 150));
+        document.querySelectorAll(".rr-pop .pop-item").forEach((b) => seen.add(b.dataset.id));
+        map.closePopup();
+      } else {
+        seen.add(m.options.title + "@" + m.getLatLng().lat + "," + m.getLatLng().lng);
+      }
+    }
+    return [...seen].length;
+  });
+  check("Rack Radar Kansas City cluster: badge equals reachable projects", ids === start.badge, `badge ${start.badge}, reachable ${ids}`);
+}
+
 function report() {
   const file = path.join(ROOT, "data/health.json");
   let doc = { checks: [] };

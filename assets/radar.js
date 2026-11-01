@@ -19,6 +19,9 @@
   // True when the project was reported complete in the last two years.
   const recentlyCompleted = (p) => { const d = R.completedDate(p); return !!d && Date.now() - new Date(d).getTime() <= TWO_YEARS; };
   let all = [], news = [], map, cluster, approx = null, markers = {}, sel = null, releaseSheet = null;
+  // Points with several projects: key "lat,lon" -> projects; groupOf: project id -> its key; atPlace: the
+  // point whose list is open ("N projects at <place>"), shown in a popup and at the top of the list.
+  let groups = {}, groupOf = {}, atPlace = null;
   R.shell("/radar", "Rack Radar");
   $("#fitBtn").innerHTML = R.icon("focus");
   $("#sheetClose").innerHTML = R.icon("x");
@@ -105,11 +108,47 @@
   // Shortens long detected-project names (headline text) to 80 characters.
   const short = (t) => (t.length > 80 ? t.slice(0, 78) + "…" : t);
   // City- and county-level sites are pins; state-level ones are summed into one approximate bubble per state.
-  /** Markers are made once per project id and reused from `markers`. */
+  /**
+   * Single-project markers are made once per id and reused from `markers`. Projects that share an exact
+   * point become one place marker (rebuilt each time, since filters change who is there); every project
+   * id at that point maps to it, so selecting any of them zooms to it.
+   */
   function drawMarkers(list) {
     cluster.clearLayers();
-    cluster.addLayers(list.filter((p) => p.curated || !p.approx).map((p) => (markers[p.id] = markers[p.id] || marker(p))));
+    groups = {}; groupOf = {};
+    const layer = R.pointGroups(list.filter((p) => p.curated || !p.approx)).map((g) => {
+      if (g.length === 1) return (markers[g[0].id] = markers[g[0].id] instanceof window.L.Marker && !markers[g[0].id].options.count ? markers[g[0].id] : marker(g[0]));
+      const key = g[0].lat + "," + g[0].lon, m = placeMarker(key, g);
+      groups[key] = g;
+      g.forEach((p) => { markers[p.id] = m; groupOf[p.id] = key; });
+      return m;
+    });
+    cluster.addLayers(layer);
+    if (atPlace && !groups[atPlace]) atPlace = null;
     approx.set(list);
+  }
+  /** One marker for several projects on the same point; clicking it lists them. */
+  function placeMarker(key, g) {
+    const m = window.L.marker([g[0].lat, g[0].lon], { icon: R.placeIcon(g, g.some((p) => p.id === sel)), count: g.length, title: g.length + " projects at " + g[0].place, keyboard: true, riseOnHover: true });
+    m.bindTooltip("<b>" + g.length + " projects</b><small>" + R.esc(g[0].place) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -12] });
+    m.on("click", () => showPlace(key));
+    return m;
+  }
+  /** Rows for a place's projects: name, company, status; each opens the project's panel. */
+  function placeRows(g, cls) {
+    return g.map((p) => '<button class="' + cls + '" data-id="' + R.esc(p.id) + '"><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" +
+      R.esc(p.company || p.companies.join(", ") || "Company not named") + " · " + R.esc(R.statusSince(p)) + "</small></button>").join("");
+  }
+  /** Opens "N projects at <place>": a popup on the map and a block at the top of the list. */
+  function showPlace(key) {
+    const g = groups[key];
+    if (!g) return;
+    atPlace = key;
+    renderList();
+    window.L.popup({ className: "rr-pop", maxWidth: 320, minWidth: 230, autoPanPaddingTopLeft: [16, 120], autoPanPaddingBottomRight: [16, 90] })
+      .setLatLng([g[0].lat, g[0].lon])
+      .setContent('<div class="pop-head"><b>' + g.length + " projects at " + R.esc(g[0].place) + '</b><small>same point on the map</small></div><div class="pop-list">' + placeRows(g, "pop-item") + "</div>")
+      .openOn(map);
   }
 
   // A "Location unavailable" bubble lists its projects; each one opens the detail panel.
@@ -136,11 +175,14 @@
     const cur = list.filter((p) => p.curated), mw = cur.reduce((a, p) => a + (p.capacity_mw || 0), 0);
     $("#miniStats").innerHTML = [[list.length, "Projects"], [mw ? (mw / 1000).toFixed(1) : "0", "GW curated"], [list.filter((p) => p.status === "Under construction").length, "Building"], [new Set(list.map((p) => p.state)).size, "States"]]
       .map((c) => "<div><b>" + c[0] + "</b><span>" + c[1] + "</span></div>").join("");
+    const g = atPlace && groups[atPlace];
+    const placeBlock = g ? '<div class="place-list" role="group" aria-label="' + g.length + " projects at " + R.esc(g[0].place) + '"><div class="pl-head"><b>' + g.length + " projects at " + R.esc(g[0].place) +
+      '</b><button class="link-btn" id="clearPlace">Close</button></div>' + placeRows(g, "proj-card pl-row") + "</div>" : "";
     if (!shown.length) {
-      $("#list").innerHTML = '<div class="empty">' + R.icon("map") + "<b>" + (list.length ? "Nothing in this part of the map" : "No projects match") + "</b>" + (list.length ? "Zoom out, or untick “Only what's in view”." : "Loosen a filter or reset them.") + "</div>";
+      $("#list").innerHTML = placeBlock + '<div class="empty">' + R.icon("map") + "<b>" + (list.length ? "Nothing in this part of the map" : "No projects match") + "</b>" + (list.length ? "Zoom out, or untick “Only what's in view”." : "Loosen a filter or reset them.") + "</div>";
       return;
     }
-    $("#list").innerHTML = shown.map((p) => {
+    $("#list").innerHTML = placeBlock + shown.map((p) => {
       const who = p.curated ? p.company : (p.source || "News") + " · " + R.ago(p.published);
       return '<button class="proj-card" data-id="' + R.esc(p.id) + '"' + (sel === p.id ? ' aria-current="true"' : "") + ' style="--tone:' + R.status(p.status).tone + '">' +
         '<span class="sdot' + (p.curated ? "" : " auto") + '" aria-hidden="true"></span><span><b>' + R.esc(p.curated ? p.name : short(p.name)) + "</b><small>" + R.esc(p.place) + (p.approx ? " · location unavailable" : "") + " · " + R.esc(R.statusSince(p)) + "</small><small>" + R.esc(who || "") + (p.stories > 1 ? " · " + p.stories + " sources" : "") + "</small></span>" +
@@ -222,7 +264,7 @@
   /** Switches a project's pin between normal and highlighted. */
   function setPin(id, on) {
     const p = all.find((x) => x.id === id), m = markers[id];
-    if (p && m) m.setIcon(R.pinIcon(p, on));
+    if (p && m) m.setIcon(groupOf[id] ? R.placeIcon(groups[groupOf[id]], on) : R.pinIcon(p, on));
   }
   /**
    * Opens the detail panel for project id: sets #project=<id> in the hash, starts the archive search,
@@ -377,7 +419,10 @@
       const nb = document.querySelector('#statusChips [data-status="' + s + '"]');
       if (nb) { nb.classList.add("pop"); nb.focus(); }
     });
-    $("#list").addEventListener("click", (e) => { const b = e.target.closest(".proj-card"); if (b) select(b.dataset.id, "list"); });
+    $("#list").addEventListener("click", (e) => {
+      if (e.target.closest("#clearPlace")) { atPlace = null; renderList(); return; }
+      const b = e.target.closest(".proj-card"); if (b) select(b.dataset.id, "list");
+    });
     $("#fitBtn").addEventListener("click", () => { close(); map.flyToBounds(R.US.view, { duration: R.reducedMotion() ? 0 : 0.8 }); });
     document.querySelectorAll(".js-filters").forEach((b) => b.addEventListener("click", openSheet));
     $("#sheetClose").addEventListener("click", closeSheet);
@@ -407,6 +452,12 @@
     }
     if (h.get("state")) { f.state = h.get("state").toUpperCase(); changed(); fitTo(filtered()); }
     if (h.get("project")) setTimeout(() => select(h.get("project"), "hash"), 250);
+    // #at=lat,lon (from the Overview map): zoom to a point with several projects and open its list.
+    if (h.get("at") && groups[h.get("at")]) {
+      const g = groups[h.get("at")];
+      map.setView([g[0].lat, g[0].lon], 9);
+      setTimeout(() => showPlace(h.get("at")), 300);
+    }
   }
 
   // Start-up: load projects, news and Leaflet together, then build the map.
@@ -418,6 +469,8 @@
     cluster = R.clusterGroup();
     map.addLayer(cluster);
     approx = R.approxLayer(map, cluster, approxList);
+    // For the browser health check: the map and cluster layer, read-only use.
+    window.RR_RADAR = { map, cluster, groups: () => groups };
     bind();
     update();
     readHash();

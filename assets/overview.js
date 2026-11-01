@@ -106,7 +106,15 @@
     if (!pulseLayers) return;
     const { cl, approx } = pulseLayers;
     cl.clearLayers();
-    cl.addLayers(recent.filter((p) => p.curated || !p.approx).map((p) => {
+    // Projects on the same point are one marker with a count; it opens that place's list on Rack Radar.
+    cl.addLayers(R.pointGroups(recent.filter((p) => p.curated || !p.approx)).map((g) => {
+      const p = g[0];
+      if (g.length > 1) {
+        const m = window.L.marker([p.lat, p.lon], { icon: R.placeIcon(g), count: g.length, title: g.length + " projects at " + p.place, keyboard: true });
+        m.bindTooltip("<b>" + g.length + " projects</b><small>" + R.esc(p.place) + "</small>", { className: "rr-tip", direction: "top", offset: [0, -12] });
+        m.on("click", () => { location.href = "/radar#at=" + encodeURIComponent(p.lat + "," + p.lon); });
+        return m;
+      }
       const m = window.L.marker([p.lat, p.lon], { icon: R.pinIcon(p), title: p.curated ? p.name : p.place, keyboard: true });
       m.bindTooltip("<b>" + R.esc(p.curated ? p.name : p.place) + "</b><small>" + R.esc(R.statusSince(p)) + (p.capacity_mw ? " · " + R.fmtMW(p.capacity_mw) : "") + "</small>", { className: "rr-tip", direction: "top", offset: [0, -10] });
       m.on("click", () => { location.href = "/radar#project=" + encodeURIComponent(p.id); });
