@@ -43,6 +43,8 @@ MAX_CATEGORY_SHARE = 0.30
 MIN_LOCATED_SHARE = 0.55
 MAX_GENERAL_SHARE = 0.10   # headlines no topic rule matched
 MAX_POLICY_SHARE = 0.20
+MAX_DUPLICATE_PINS = 0.20  # records stacked with a likely duplicate (was 40.9% before 2026-11-01, 6.3% after)
+MAX_SHARED_PINS = 0.20     # any records stacked on one point (42% after the 2026-11-01 fix; a warning, see DECISIONS)
 MAX_PAGE_BYTES = 300 * 1024
 MIN_MONTH_ITEMS = 20
 MAX_NEWS_BYTES = 3 * 1024 * 1024
@@ -363,9 +365,38 @@ def registry(ctx):
     import registry as rg
     got = rg.selftest()
     ok = len(got) == 1 and len(got[0]["news"]) == 3 and [h["status"] for h in got[0]["status_history"]] == ["Announced", "Under construction", "Operational"]
+    shared, dup, n = stacked_pins(recs)
+    soft = "warn" if ctx == "update" else "fail"
+    check("Likely duplicate pins under 20%", "pass" if dup <= MAX_DUPLICATE_PINS else soft, f"{100 * dup:.1f}% of {n} pins",
+          "records at the same exact point with the same operator, or both anonymous: see docs/RUNBOOK.md, 'Fix a project record'")
+    check("Pins sharing an exact point under 20%", "pass" if shared <= MAX_SHARED_PINS else "warn", f"{100 * shared:.1f}% of {n} pins",
+          "different operators in one city share its point (headlines name the city, not the site); the map groups them")
     check("Registry status machine self-test", "pass" if ok else "fail",
           " -> ".join(h["status"] for h in got[0]["status_history"]) if len(got) == 1 else f"{len(got)} records",
           f"{got[0]['id']}, {len(got[0]['news'])} news" if got else "")
+
+def stacked_pins(records):
+    """(share of pinned records that share an exact point with another, share that share it with a
+    likely duplicate: the same operator, or both without one). Umbrellas and records known only to
+    a state are left out: the map shows those as 'Location unavailable', not as pins."""
+    pins = [r for r in records if not r.get("hidden") and not r.get("umbrella") and r.get("precision") in ("city", "county")
+            and isinstance(r.get("lat"), (int, float))]
+    at = {}
+    for r in pins:
+        at.setdefault((r["lat"], r["lon"]), []).append(r)
+    shared = dup = 0
+    for group in at.values():
+        for r in group:
+            others = [o for o in group if o is not r]
+            if not others:
+                continue
+            shared += 1
+            if any(set(o.get("companies", [])) & set(r.get("companies", [])) or not (o.get("companies") or r.get("companies"))
+                   for o in others):
+                dup += 1
+    n = len(pins) or 1
+    return shared / n, dup / n, len(pins)
+
 
 def curated():
     """data/projects.json: required fields present, a known status and state, coordinates inside the U.S."""
@@ -485,11 +516,14 @@ def site():
     missing = sorted(p for p in sm_paths if not resolve(p))
     reg = load(DATA / "registry.json").get("records", []) if (DATA / "registry.json").is_file() else []
     project_pages = {p.parent.name for p in (ROOT / "projects").glob("*/index.html")}
-    want_pages = {f"/projects/{d}/" for d in project_pages}
+    want_pages = {f"/projects/{r['id']}/" for r in reg if not r.get("hidden") and r["id"] in project_pages}
     base = {"/", "/newsroom", "/radar", "/companies", "/learn", "/methodology"}
     missing_base = sorted(base - sm_paths)
     unlisted = sorted(want_pages - sm_paths)
-    hidden_pages = sorted(r["id"] for r in reg if r.get("hidden") and r["id"] in project_pages)
+    # A merged record keeps a forwarding page (registry.redirect_page); any other hidden record has none.
+    hidden_pages = sorted(r["id"] for r in reg if r.get("hidden") and r["id"] in project_pages
+                          and not (r.get("merged_into") and "http-equiv=\"refresh\"" in
+                                   (ROOT / "projects" / r["id"] / "index.html").read_text(encoding="utf-8")))
     check("Sitemap matches pages", "fail" if off or missing or missing_base or unlisted or hidden_pages else "pass",
           f"{len(locs)} entries (6 site pages + {len(want_pages)} project pages)",
           "; ".join(filter(None, [f"linked but not in sitemap: {off}" if off else "",

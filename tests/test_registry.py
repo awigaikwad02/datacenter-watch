@@ -27,7 +27,7 @@ NOW = datetime.now(timezone.utc)
 
 @pytest.fixture
 def run(tmp_path, monkeypatch):
-    """run(headlines, overrides=[]) -> records. headlines: (title, days_ago) pairs, each run separately
+    """run(headlines, overrides=[]) -> records. headlines: (title, days_ago[, outlet]) tuples, each run separately
     in date order like successive hourly runs; the registry file persists between calls."""
     (tmp_path / "projects.json").write_text('{"projects": []}')
     monkeypatch.setattr(reg, "PROJECTS_FILE", tmp_path / "projects.json")
@@ -38,9 +38,10 @@ def run(tmp_path, monkeypatch):
         """Tag the headlines and run the registry once per headline in date order; returns the records."""
         (tmp_path / "overrides.json").write_text(json.dumps({"operations": list(overrides)}))
         items = []
-        for title, days in headlines:
+        for h in headlines:
+            title, days, source = (h + ("Test Journal",))[:3]
             it = {"id": fn.make_id(title), "title": title, "link": "https://example.com/" + fn.make_id(title),
-                  "source": "Test Journal", "published": (NOW - timedelta(days=days)).isoformat(timespec="seconds")}
+                  "source": source, "published": (NOW - timedelta(days=days)).isoformat(timespec="seconds")}
             assert fn.tag_item(it, GAZ, GEO), title
             it["cluster_id"] = it["id"]
             items.append(it)
@@ -162,3 +163,85 @@ def test_records_are_never_deleted(run):
                 overrides=[{"op": "hide", "id": next(iter(ids))}])
     assert ids <= set(later)
     assert later[next(iter(ids))]["hidden"]
+
+
+# ---- Anonymous records, creation guards, relocation (Kansas City, 2026-11-01) ----
+KC = "KSHB 41 Kansas City"
+
+
+def test_anonymous_headlines_with_close_figures_are_one_record(run):
+    r = only(run([("$2 billion data center planned in Olathe, Kansas", 40),
+                  ("$2.2 billion data center approved in Olathe, Kansas", 5)]))
+    assert len(r["news"]) == 2
+
+
+def test_figures_far_apart_keep_anonymous_records_apart(run):
+    recs = run([("$2 billion data center planned in Olathe, Kansas", 40),
+                ("$9 billion data center proposed in Olathe, Kansas", 5)])
+    assert len([r for r in live(recs) if r["news"]]) == 2
+
+
+def test_only_anonymous_record_in_town_takes_a_figureless_headline(run):
+    r = only(run([("$1 billion data center proposed in Lenexa, Kansas", 40),
+                  ("Data center plan in Lenexa, Kansas moves forward with new site plan", 5)]))
+    assert len(r["news"]) == 2
+
+
+def test_anonymous_headline_joins_operator_record_with_same_figure(run):
+    r = only(run([("Nebius breaks ground on $150 billion data center in Independence, Missouri", 40, KC),
+                  ("Independence approves $150 billion data center bonds for hyperscale project", 5, KC)]))
+    assert len(r["news"]) == 2 and r["companies"] == ["Nebius"]
+
+
+def test_anonymous_record_takes_the_operator_of_a_later_headline(run):
+    r = only(run([("Independence approves hyperscale AI data center, issues $150 billion in bonds", 40, KC),
+                  ("$150 billion Independence AI data center breaks ground, barricades protesters", 30, KC),
+                  ("Nebius breaks ground on AI data center in Independence amid community opposition", 30, KC)]))
+    assert len(r["news"]) == 3 and r["companies"] == ["Nebius"] and r["status"] == "Under construction"
+
+
+def test_question_headline_never_starts_a_project(run):
+    recs = run([("Kansas City proposes new $2 billion water treatment plant. Is it connected to data center development?", 5, KC)])
+    assert not [r for r in live(recs) if r["news"]]
+
+
+def test_body_weighing_a_restriction_joins_the_project_instead(run):
+    recs = run([("Miami County Commission considers pause on data center construction following nearby $1B proposal", 40, KC)])
+    assert not [r for r in live(recs) if r["news"]]
+    r = only(run([("Rural Miami County, Kansas, residents respond to $1 billion data center proposal", 41, KC)]))
+    assert r["location"] == "Miami County, Kansas, US"
+
+
+def test_not_a_data_center_never_starts_a_project(run):
+    recs = run([("Entergy breaks ground on $800 million substation to serve data center in Olathe, Kansas", 5)])
+    assert not [r for r in live(recs) if r["news"]]
+
+
+def test_policy_story_without_operator_or_name_starts_nothing(run):
+    recs = run([("De Soto, Kansas, approves $700m data center", 5)])
+    assert not [r for r in live(recs) if r["news"]]
+
+
+def test_anonymous_record_names_are_distinct(run):
+    recs = run([("$2 billion data center planned in Olathe, Kansas", 40),
+                ("$9 billion data center proposed in Olathe, Kansas", 5)])
+    names = sorted(r["name"] for r in live(recs) if r["news"])
+    assert names[0] != names[1] and all("Olathe data center ($" in n and "proposed" in n for n in names)
+
+
+def test_relocate_moves_record_and_logs_an_event():
+    it = {"id": "h1", "title": "Data center planned in Liberty", "published": "2026-03-24T00:00:00+00:00",
+          "locations": [{"name": "Liberty, Missouri, US", "lat": 39.2, "lon": -94.4, "precision": "city", "country": "US"}]}
+    rec = {"id": "x", "name": "x", "location": "Kansas City, Missouri, US", "lat": 39.1, "lon": -94.58, "precision": "city",
+           "news": [{"id": "h1", "title": it["title"], "published": it["published"]}], "companies": []}
+    assert reg.relocate({"x": rec}, {"h1": it}) == 1
+    assert rec["location"] == "Liberty, Missouri, US" and rec["location_events"][0]["type"] == "Moved to Liberty"
+    assert reg.relocate({"x": rec}, {"h1": it}) == 0   # nothing more to do the second time
+
+
+def test_set_location_override_is_never_moved_back():
+    it = {"id": "h1", "title": "t", "published": "2026-03-24T00:00:00+00:00",
+          "locations": [{"name": "Liberty, Missouri, US", "lat": 39.2, "lon": -94.4, "precision": "city", "country": "US"}]}
+    rec = {"id": "x", "location": "Platte County, Missouri, US", "precision": "county", "location_locked": True,
+           "news": [{"id": "h1", "title": "t", "published": it["published"]}]}
+    assert reg.relocate({"x": rec}, {"h1": it}) == 0

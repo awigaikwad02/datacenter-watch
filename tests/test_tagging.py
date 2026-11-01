@@ -329,3 +329,55 @@ def test_ambiguous_town_needs_a_state():
 def test_outlet_home_state_is_a_last_resort():
     it = tag("County board approves data center rules", "WSMV")
     assert it["state"] == "TN" and it["location_precision"] == "source"
+
+
+# ---- Metros: suburbs, reference cities, split-state names (2026-11-01) ----
+PLACES = [
+    ("Independence approves hyperscale AI data center, issues $150 billion in bonds", "KSHB 41 Kansas City", "Independence, Missouri, US"),
+    ("Liberty approves $229 million in tax breaks for huge new $1.4 billion data center", "Kansas City Star", "Liberty, Missouri, US"),
+    ("600MW data center campus proposed outside Kansas City, Kansas", "Data Center Dynamics", "Wyandotte County, Kansas, US"),
+    ("Kansas City, Kansas, planning commission advances proposed $12.6B data center", "Kansas Reflector", "Wyandotte County, Kansas, US"),
+    ("$100 billion data center planned north of Kansas City airport to pave the way for newcomers", "KCTV", "Platte County, Missouri, US"),
+    ("Rural Miami County, Kansas, residents respond to $1 billion data center proposal", "KSHB 41 Kansas City", "Miami County, Kansas, US"),
+    ("Second hyperscale data center moves forward in De Soto amid petition efforts to ban development", "KSHB 41 Kansas City",
+     "De Soto, Kansas, US"),
+    ("Clay County leaders consider 12-month moratorium on data center permitting", "firstcoastnews.com", "Clay County, Florida, US"),
+    ("Olathe data center plan advances", "Johnson County Post", "Olathe, Kansas, US"),
+    ("Circling Back: What Now for Quantum Loophole and the Quantum Frederick Data Center Campus?", "Test Outlet", "Frederick, Maryland, US"),
+]
+
+
+@pytest.mark.parametrize("title,source,place", PLACES)
+def test_metro_place(title, source, place):
+    it = tag(title, source)
+    assert it["locations"][0]["name"] == place
+
+
+@pytest.mark.parametrize("title", [
+    "Data center planned near Kansas City",
+    "These 7 Kansas City-area data centers advanced in 2025",
+])
+def test_reference_city_is_not_the_place(title):
+    it = tag(title, "Reuters")
+    assert it["location_precision"] == "state" and it["location_note"] == "near Kansas City"
+
+
+@pytest.mark.parametrize("title,source", [
+    ("Oakland University moves forward with AI data center project", "ClickOnDetroit | WDIV Local 4"),
+    ("Jones digs in on data center moratorium, presses Tuberville on finances", "BirminghamWatch"),
+    ("Weather-related data center outage led to US TikTok issues, Oracle says", "Test Outlet"),
+    ("Daily Herald opinion: Aurora action raises awareness of data center guardrails", "Daily Herald"),
+])
+def test_suburb_names_that_are_not_places(title, source):
+    it = tag(title, source)
+    assert not it or not any(l["name"].startswith(("University", "Jones", "Oracle", "Herald")) for l in it["locations"])
+
+
+def test_tax_break_is_not_the_investment():
+    assert fn.extract_numbers("Liberty approves $229 million in tax breaks for huge new $1.4 billion data center") == {"investment_usd_b": 1.4}
+
+
+def test_lowercase_project_name_in_sentence_case():
+    gaz, _ = fn.load_gazetteer()
+    assert fn.name_hint("Independence AI data center to move forward after city approves $6.2B tax breaks", gaz) == "Independence AI Data Center"
+    assert fn.name_hint("The Kansas City data center plan advances", gaz) is None

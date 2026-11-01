@@ -68,6 +68,7 @@ One headline. A field with no value is left out.
 | `state` | The main state (from the most precise place), or absent. |
 | `county` | Archive only. The county or parish named, as 'Name County, State, US'. |
 | `location_precision` | Archive only. city, county, state, or source (only the outlet's home state was known). |
+| `location_note` | Archive only. Why the place is only a state: the headline names a metro's core city as a reference point ('near Kansas City'), so the project is somewhere around it. |
 | `companies` | Operators: companies that own, develop or run data centers (fetch_news.COMPANIES). |
 | `utilities` | Utilities and grid operators named (fetch_news.UTILITIES). |
 | `investors` | Investors named (fetch_news.INVESTORS). |
@@ -147,6 +148,9 @@ One project. Detected records are built from headlines; curated ones also copy d
 | `builders` | Builders named in the record's headlines. |
 | `suppliers` | Suppliers named in the record's headlines. |
 | `name_hints` | Project names seen in the record's headlines; a headline with the same name in the same state matches. |
+| `location_events` | Place corrections: {date, type 'Moved to <place>', headline_id, from} when re-tagged headlines name a better place (shown on the timeline). |
+| `location_locked` | true when a set_location override placed the record; it is never moved automatically. |
+| `hidden_reason` | Why the registry hid a record itself: 'not a project: ...' when none of its headlines may start a project (a question, a body weighing a restriction, something other than a data center). |
 
 ## status.json
 
