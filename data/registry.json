@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-02T16:41:49+00:00",
+ "updated": "2026-11-02T17:41:48+00:00",
  "count": 703,
  "visible": 598,
  "records": [
@@ -54660,6 +54660,15 @@
      "published": "2026-07-31T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "6596fc3caec8c169"
+    },
+    {
+     "id": "f53483d49d43da43",
+     "title": "SpaceXAI launching two additional data center campuses in Mississippi to further expand Colossus 2",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUWVxVk5HSVNyU2EyNS1lUDVCM3BjTlRYd2xRM1VNc0d3ek9aRWhTcl9TLWNyZ3dOSjBKX3BiR2JUQ0NCRmlUNERwZU13SnRjaHdDOHZYZm01ZGtyODlMNm1EWTRmeVZ5WkpxSVRWM0ZvOVllcWtoVTN2M0l1RTg4ODRMdmlMaWxyU0ZwcnF6bDZ4TnRQQjZrSGNveEJFRFJGWW9xTWg5QVhBQ0NRMUtDWXpEc3B1TmdqSWNIS2FlRnZmckZITDlfYTlTamt6Y21vSGdqdHlHZjl5UQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-02T17:12:54+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "f53483d49d43da43"
     }
    ],
    "first_seen": "2026-01-08T08:00:00+00:00",
@@ -54682,12 +54691,17 @@
      "date": "2026-03-10T07:00:00+00:00",
      "type": "Approval",
      "headline_id": "83f4396c88d47642"
+    },
+    {
+     "date": "2026-11-02T17:12:54+00:00",
+     "type": "Expansion",
+     "headline_id": "f53483d49d43da43"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 20.0,
-   "last_news": "2026-07-31T07:00:00+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-02T17:12:54+00:00",
+   "sources_count": 5,
    "confidence": "low",
    "hidden": false,
    "investors": [],
