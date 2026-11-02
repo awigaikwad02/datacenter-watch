@@ -39,8 +39,133 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 129,
+ "count": 135,
  "items": [
+  {
+   "id": "4f2b2f2d26d05f0e",
+   "title": "Envision Deploys 800V DC Power System at AI Data Center",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQamxuZHFEUVNNWC1pektMakRkV0lSTVUxbm1xUHVabVp6N0lRbkhKTXc2c3pVYmFocW92RTk5eWtBdFdqMmR1MFNZNjlKeW9qQ2dSNmRqeHFMdF8tdnlldndPR0E0MlR6UWhqQ1ZxOTh4a0VrNmZvZk12VkZ5Yko0Qw?oc=5",
+   "source": "the Electrical Distributor magazine",
+   "published": "2026-11-02T16:30:15+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "488b623d080aae36",
+   "cluster_title": "Envision Deploys SST-Based 800V DC Power at Ulanqab AI Data Center"
+  },
+  {
+   "id": "63b045ca6e9fda83",
+   "title": "What happened to Marshalltown’s data center ordinance?",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWVpnWS1Rc2VXVXZtLVZvNXR0LTBoX0ZBT09JRGt4QjV5Wm5EaEhEdW52RjVNY1VDTVkzY2d4WDZabTVTMG44SUs0WHVmdVZzOWJiWFRrbE9vUDZRN3lXb3AyQ3FGZ0dCNVBvdjJOUFBRMFpfUDJ5ejdBQUMwcFl6UExoLVJPOTFyTlo3TUxJMWJzX0piMmRZUS0wTWRYVEtnOFRBb0FCRUhBUXBlQUJPSkhB?oc=5",
+   "source": "Times Republican",
+   "published": "2026-11-02T16:26:41+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Marshalltown, Iowa, US",
+     "lat": 42.0494,
+     "lon": -92.908,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "63b045ca6e9fda83",
+   "cluster_title": "What happened to Marshalltown’s data center ordinance?"
+  },
+  {
+   "id": "63f7259d1e663001",
+   "title": "Data center opponents march to Mayor Craig Greenberg’s home",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB5LXRHNE5NRmlrWlFNM2QzUkFQQk1uWW44aHFvVTlWZ3V3SXpKVUVkTUswdzdhQWtYbDUzT3RleEI3OXEybnN5XzNFV05zUnAwelY3d0UzSHpmRmpZaGR2RUFrZ0kwamp4Q1VrdEl0VEpvcC1kSjF4VDhtdS0?oc=5",
+   "source": "Spectrum News",
+   "published": "2026-11-02T16:09:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "63f7259d1e663001",
+   "cluster_title": "Data center opponents march to Mayor Craig Greenberg’s home"
+  },
+  {
+   "id": "e16352946f5b60ac",
+   "title": "Judge won’t dismiss lawsuit over xAI data center pollution in Mississippi",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUUhhM3I5NFJraGZMalRKWmlmRUtGajlMY1RYdmE5RzJETW8wSkYxS2dPRDBkbURoYVdXandOT1BhSGlSYjhPM1FUNEJlOS1zLXhyRUJZbUhzWUd0aFJFemdubUpSaWhMY240SElvYy04QWx2dnFESzRtTllPOEhVRldONDhZLTNfUkNqMWh6czdpZ28ta2trLVNKeUdoSlE3MFFCYTY5ai1ybnlSXzM1LWFfYw?oc=5",
+   "source": "Baltimore Sun",
+   "published": "2026-11-02T16:07:09+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Mississippi, US",
+     "lat": 32.7,
+     "lon": -89.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "xAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e16352946f5b60ac",
+   "cluster_title": "Judge won’t dismiss lawsuit over xAI data center pollution in Mississippi"
+  },
   {
    "id": "ca525a6c191ff04a",
    "title": "Samsung SDS, LG CNS Expand AI Data Centers",
@@ -94,6 +219,30 @@
    "suppliers": [],
    "cluster_id": "df0b6b4f55c37d0d",
    "cluster_title": "‘A major risk to the global economy’: BofA warns about the AI boom the day before a midterm vote framed around data-center backlash"
+  },
+  {
+   "id": "96c9c92b9494b704",
+   "title": "Who Hates Data Centers More? It’s a Question at the Center of One of Pa.’s Critical Legislative Races",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQY21YZGxudk9rRk9xdmQyNDRNTUVjYnVhZWJfeUx4WGhPM2hTaEJWd05uVEtxczZoMjYxRTJEY3dDd01rVVBXSEpNdTV2NGV5X3QyemxndjE5VTVhRFgtSVljNmhpc1NTemY2aG9GOVA5ODk1SnJDcmt6ZVhra1ZkUFJDOWM3b2pWT2RZaHVEbzQ5RVk4LW1oeXBMVm1vNVRUVndCOHNIX09IRHFNcXFPajZCWDl1cFJoaFFuTGpGOHlqSElMVjhEUkdNcXQ1aTJwSmRRQXdDM3Zhamg1OW5hYXVzbDRwbUtNMzBqcXliUQ?oc=5",
+   "source": "exploreJefferson",
+   "published": "2026-11-02T15:30:38+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "96c9c92b9494b704",
+   "cluster_title": "Who Hates Data Centers More? It’s a Question at the Center of One of Pa.’s Critical Legislative Races"
   },
   {
    "id": "6a9df67aa2a7e6cc",
@@ -925,6 +1074,45 @@
    "suppliers": [],
    "cluster_id": "0e720ade147deb90",
    "cluster_title": "ERCOT Interconnection Queue: Gas Up 85.5% in a Year Amid Texas Data Center Boom"
+  },
+  {
+   "id": "d9ba3684994b2e46",
+   "title": "Google data center wins approval in Minnesota after protests delay council vote twice",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMFZPb0VvSlZySjczYTZpd1dlZE85STMteWtpc3EzalF2OWFGbW1RZkRmb2dNVko3NDR0OEFxdXpWU1BWSVVXVXRIMDlXSWpUWEdqT3VHVm40MGdvMXVTV3RDUkRvVHFYVUZ3Nl8wREFZTkZoYWdCUEhmQVZNT0lzZnhvMTZqWk1vY2FUZkYwOA?oc=5",
+   "source": "Yahoo",
+   "published": "2026-11-02T13:00:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0947bf15d251439e",
+   "cluster_title": "Google data center wins approval in Minnesota after protests delay council vote twice — 200-acre project moves forward despite opposition from local residents, tech giant scales down project and drops $80 million tax break request"
   },
   {
    "id": "c89601de311d9ebb",
