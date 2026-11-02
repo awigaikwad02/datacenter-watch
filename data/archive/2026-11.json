@@ -39,8 +39,108 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 40,
+ "count": 45,
  "items": [
+  {
+   "id": "939936c733fdeac4",
+   "title": "Louisville data center protesters march to Mayor Craig Greenberg's home",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQbFd0S2hfNjI5ZlprR3BvSWhZNXhPc3FEYTNwemtyb25ZTHRxbXN0bkh4WHhGZDdEWTBnSVZwLXktc0N0MUdVSkpNOXBkak1Sd3J4aGxJUzVUZk1OTUliSzFwbU93aHBJUThWaV9yeWsxQnJZT3pkdkFfWm4yVlVzUVBIQUVLZDFJLVNGWGMyYXFCSWNLSG1aT2hkNkx5R1YzeEE2OXl1LVdsMktYNE50UkVTM3lJanhDNU44b1FhREdiMzBSSUZjelVSMmpxd2ZXWU9PUmFnS3ZiV21lR3E4dTBRVGtua21OdkxB?oc=5",
+   "source": "The Courier-Journal",
+   "published": "2026-11-02T00:13:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Louisville, Kentucky, US",
+     "lat": 38.25,
+     "lon": -85.76,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Louisville"
+    }
+   ],
+   "states": [
+    "KY"
+   ],
+   "state": "KY",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "939936c733fdeac4",
+   "cluster_title": "Louisville data center protesters march to Mayor Craig Greenberg's home"
+  },
+  {
+   "id": "4b04134756a6a49f",
+   "title": "Public comments on proposed Amazon data center in Walla Walla County ask for oversight",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbk00NERIWkdYa0NEb3M4aGtnRUVNVTMyRHpDNS04VTRYeGNESjVIbU5RTXlTckw0RzZYSFlOVmxIWmJ1RXZiQkUtSE9EWmFwczRLVGoycWFsSkJ1U3ZzSjFKd3E0QVFGcGx0NFNCam5KdVp5U2QxMWVPSTJZOEpjZDlvTkpyX0dFd0tUQWo2OVNXRlk1VG0zVTNodV80Zw?oc=5",
+   "source": "The Spokesman-Review",
+   "published": "2026-11-01T23:24:39+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Walla Walla County, Washington, US",
+     "lat": 46.229,
+     "lon": -118.479,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": "Walla Walla County, Washington, US",
+   "location_precision": "county",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f4ce9cde3046bb4f",
+   "cluster_title": "Public comments on proposed Amazon data center in Walla Walla County ask for oversight"
+  },
+  {
+   "id": "319e2170f6db84a0",
+   "title": "My town passed a data-center moratorium, and yours can, too",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaHM2S3JEaXFrM0ZFNWVYR29QMkVQay1HZ1F2M3I2OTdLQ2tObzJxZzdwU0RNV09uSWVPMDBDS3JGODRlVFBVU0xMdGlfTEFTVTNKMldaQThJNHk5Z1lBUlpsdkkzT1lGNUY4Z1pOWmZ1dEpNU3Iwcm0wcWZBbVRFaU1NNE9BYnBvUF81OW5ZUXZob1Rjc3JTOUdtVEFmT18x?oc=5",
+   "source": "Your Valley",
+   "published": "2026-11-01T22:00:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "319e2170f6db84a0",
+   "cluster_title": "My town passed a data-center moratorium, and yours can, too"
+  },
   {
    "id": "e38ae5ce7619ade9",
    "title": "Could a data center bearing Trump's name help turn Texas blue?",
@@ -75,6 +175,45 @@
    "suppliers": [],
    "cluster_id": "e38ae5ce7619ade9",
    "cluster_title": "Could a data center bearing Trump's name help turn Texas blue?"
+  },
+  {
+   "id": "50f317582dbb3d86",
+   "title": "Google offers deal for 780 MW data center in Minnesota — OilPrice",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZTJUVFUxWXI3OTRuUGNKWEN1LUxNTWZDZElWQ0tpaGszZk9OT1ptS0pTbTlaT01vUmJpbkhRV1VJZWFILUNvSGtoZG9iYlpsNmxJRXJMUXc4VHlkQUI1YnRkRm5kNU50cFJzRllsSHp0RDJSUGlfN1BzWW00T3lpbWlCZ2FHQ2huNlR3WFRXc01mVjlMUENQdUFEbFlTRWdDbnhldmNmWGpoZF81UXQ3MjhLay02QQ?oc=5",
+   "source": "UA.NEWS",
+   "published": "2026-11-01T20:22:21+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 780,
+   "cluster_id": "50f317582dbb3d86",
+   "cluster_title": "Google offers deal for 780 MW data center in Minnesota — OilPrice"
   },
   {
    "id": "7e589be9a364544d",
@@ -1068,6 +1207,35 @@
    "suppliers": [],
    "cluster_id": "99f9e5ab1ab8a30d",
    "cluster_title": "Many Pennsylvania communities are wary of data centers — and some concerns are existential"
+  },
+  {
+   "id": "e1b2f65d38feb8b4",
+   "title": "MYDCD focuses on data center construction and engineering services, benefiting from the sustained growth in AI, cloud computing, and global data center demand, which offers substantial long-term industry expansion potential. The company has a solid orde",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYlY3cllIWGJ5dnFhb3o4YjFTMkhucmlxdGpKMk1RRXlUcEg0RDVIMWl1cmtUeGZONUwtRkY4UTN1bEx4aDQzb2ZuU2VXNDdseDlRRjJnYlI1djJTSDQzcVlRM2I3V01rbkFHUE5RZUFTbGNBTERQQjM0d3d2NVF5X2RIOWtNbXpXOHNrYVZpQVA4NllsWnU4STlYX3dXS09Xc1pMN3Q2cHMyWjdUQnBJZ3gwV1BDWkFyakNCT1MtaFNyem5lRmRDZkFmYXhoRjl1?oc=5",
+   "source": "Moomoo",
+   "published": "2026-11-01T07:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Construction",
+    "Expansion",
+    "Power / Utility",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e1b2f65d38feb8b4",
+   "cluster_title": "MYDCD focuses on data center construction and engineering services, benefiting from the sustained growth in AI, cloud computing, and global data center demand, which offers substantial long-term industry expansion potential. The company has a solid orde"
   },
   {
    "id": "fb4a78326c8048ae",
