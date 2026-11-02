@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-10",
- "count": 4430,
+ "count": 4435,
  "items": [
   {
    "id": "8bd7db1ac460069d",
@@ -2216,6 +2216,31 @@
    "suppliers": [],
    "cluster_id": "ba7f67b20284f7bc",
    "cluster_title": "Local governments in Colorado enact moratoriums on data center development"
+  },
+  {
+   "id": "d4da5797cb6b49f3",
+   "title": "Big Tech Data Center Spending Tops $720B [2026]",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaU5tTlBpLVNRMGZpTXVIVkF6cGVzVlpmOXdtdnpTZ3RsUld1c0E2UDA0dUxrV3B2YVFMLW8zSXFVaXRxRVRKd2ZCTnRfaDhyQzBudVlRZFhMWnV6ZEhGdkxTdVN1NXVkWEFaTmhuREM4dUxOYU5YQ21UcUZ4R0pDUmJjSzNDSTRoV0dLQkQ4Q3I?oc=5",
+   "source": "https://tech-insider.org/",
+   "published": "2026-10-31T06:51:56+00:00",
+   "feed": "Google News: Data center power",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 720.0,
+   "cluster_id": "d4da5797cb6b49f3",
+   "cluster_title": "Big Tech Data Center Spending Tops $720B [2026]"
   },
   {
    "id": "39e399a4df4c203e",
@@ -7416,6 +7441,39 @@
    "cluster_title": "Latest ‘Inside Appalachia’ Explores Data Center Debate, This West Virginia Morning"
   },
   {
+   "id": "fd6aa086cee265af",
+   "title": "Spanberger seeks tighter controls on Virginia data centers",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN0lZWjVmTWtZczdsbUlqNGpvOVZ0cV9HOWRPbklQcFgwZDhWSlo5TXYxT0syY3hGQWxLQVUzQThDMEFFakJDM0NPUzk5UEI1eXJ5NXRTOXFEaGhaMGJaR2ltZ3pybU5FUDdrNmd4eU1NQXRoa0lDb1BkUWg5a3l3T1V5NG9WMkNiSjIxbDVfb1FFTl9F?oc=5",
+   "source": "Richmond Times-Dispatch",
+   "published": "2026-10-30T14:13:09+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fd6aa086cee265af",
+   "cluster_title": "Spanberger seeks tighter controls on Virginia data centers"
+  },
+  {
    "id": "2f60350af7c100f4",
    "title": "Firm asks Delhi Township to delay vote opposing data center proposal",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQkVUaUxqaGtnOTFxOHNfN2t6UVRRZ1YxVTJnaVI0OFd3WldqUnlZZm1vZFpsai1ROHlvb3JzRndsY3NOMmFKN1ZmZDMyNU5TckM5T2pWZ2tySXZibFZISm53N3hqNjVOVDUzMk9EdzNqb25jeV9IMGV3NDJXMHo3U2lMWUZjMmNjVU9CLVFPUGk0LXdxMEFjd2tmSmwteWdjVDlTd2ZJUHRZMmpGM3RNWnhvSUptU1UyZ2J6M1JQcmZFQ1llR2Z3b1VQVTlSTTUwai1UVXNXYU9fUTM5RXc?oc=5",
@@ -11489,6 +11547,30 @@
    "suppliers": [],
    "cluster_id": "87ddb9db88c9e4c1",
    "cluster_title": "Hermantown announces changes for City Hall prior to rescheduled Data Center meeting"
+  },
+  {
+   "id": "2e3b7bbb912691a7",
+   "title": "These data centers hold Putin’s AI aspirations. They’re big targets.",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNY096UF95YS1VTHNuLWh5SlFybHNrVGpTUEYyU3R4YWM1emdsYkFGalo0UjA4MjlRaTJrVkFQa0FyekFVZ0cyZ1BCU0x1QTB0YVVWd1l3U0p2VjM3MWo3ZW12Vm83SFV6bFZ5YjFsX1pUakhkdjFRZWloeFRxN2lZTDlnN1doZnBXc0RzZ0JfNWc4bGdEdmJiQlVMRHJNem9pMTdGWlRR?oc=5",
+   "source": "The Washington Post",
+   "published": "2026-10-29T22:45:11+00:00",
+   "feed": "Google News: West",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2e3b7bbb912691a7",
+   "cluster_title": "These data centers hold Putin’s AI aspirations. They’re big targets."
   },
   {
    "id": "cb3698741fcaede7",
@@ -22972,6 +23054,31 @@
    "cluster_title": "OKC approves first mega-data center with strict zoning terms"
   },
   {
+   "id": "6b20e961cb10eec9",
+   "title": "From Cooling to Backup Power, Data Center Demand Is Showing Up in Quarterly Results",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV24taWs5RFhXdHhTWkt5VWZHS0FMQ3VzVDdjWGlYenQ2WWFZbGViZ2FUY1Byd0hFZkxjMEp3ZjlWS0tuSGo4alZRemNjZkt1ekJ0aFJ6bkdCVHBwY1Y3ZnZpMS1qSUpieWNCUU5WWlY1enpMRDBnOWM1MXBValZTenZLR3hjUEVVS0tXUmtpazJpaUlCSlp3TVIzM19IS3BFbXJhaEo1b2xYa1Jpbk9kdjJtMGQ4VTc2cHcwa3R3LXFaSlVXbzZpU3cwZjBuSmwzdHJhOQ?oc=5",
+   "source": "PR Newswire",
+   "published": "2026-10-28T19:37:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6b20e961cb10eec9",
+   "cluster_title": "From Cooling to Backup Power, Data Center Demand Is Showing Up in Quarterly Results"
+  },
+  {
    "id": "08cd82f0be8c3b09",
    "title": "Radnor Twp. Considers Data Center Restrictions: Are They Strong Enough?",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQanB3SmJtakx5LWpuLVdEb2ZaWWFyRVJwa3VOUEFRLS1FQVlFdjRYYWVRVnk0czRjNUVUamJQUzNHM28taHEtSnhCQ0R6ckVVYURxRFNreWp6RGZrd3J3d213RllFdVdLRUh3blIwSERPbEdvNFdZZUdBSldtZEtoVDMxbk1xYVRVMmoxV2NIbGxhZEVuOVVDZzJORTI2ZWFEVXdrRWZkeGNvZ9IBuwFBVV95cUxNc3k4N2RDcnF4QnNyUVg3V1R4Z2Y5aWhRRVpnQ1lwTHZoMUVFTTI2ZVdYNy12Y0tUcVV3OUdmaHFWZVV2RHRVTllxU2hnZEhPdWw2QVZ5TXp1ekIybjlrREdrWG5lVExFV0VYa1RlREEwNzdzaUs5ZXMtRkdJaDU3MDVEeEthVmdxRkI2cnV3d1F2YXI2RlZ1c2RudU43VWJER2VyaFJ0ZUVJa25wc3ctcFdPZnN4V3d0clBj?oc=5",
@@ -28558,6 +28665,41 @@
    "suppliers": [],
    "cluster_id": "6f59cdb36376f71f",
    "cluster_title": "Township opens quasi‑judicial hearing on proposed Smithfield data center; record left open"
+  },
+  {
+   "id": "a5d4548e3905e120",
+   "title": "Maryland Gov. Moore issues order to oversee, regulate data center development",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQV2RQUzZwWE9vQ2lNekRQNzBNYWpKVHh5NmJlQ3dkaHhBWlV6anh3MExZQWFhdG1ROTdPTl83SXh4bE0tOGV5X3lkRVVMNzJQNWU0N19paW9LbjFsNDc2aHlxV25xUlIxRGlxYjYzcktwbGp1SWtSN2RNTjFKbnc0b0xLYklaMFZ5Ql9KZTRSbXRfajBScGlhQW5DcmtVUXBBVHpaRENNUTZTUUZxWktmZ0hVZzhmRlZ1d0E?oc=5",
+   "source": "Daily Energy Insider",
+   "published": "2026-10-28T07:00:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Maryland, US",
+     "lat": 39.0,
+     "lon": -76.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a5d4548e3905e120",
+   "cluster_title": "Maryland Gov. Moore issues order to oversee, regulate data center development"
   },
   {
    "id": "b651e0147e9c3c0d",
