@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 49,
+ "count": 51,
  "items": [
   {
    "id": "ff97a6f1afdfcd93",
@@ -262,6 +262,31 @@
    "suppliers": [],
    "cluster_id": "e38ae5ce7619ade9",
    "cluster_title": "Could a data center bearing Trump's name help turn Texas blue?"
+  },
+  {
+   "id": "891e16be65014ff2",
+   "title": "D.C. to BC: The Political Fallout of America’s Data Center Boom",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRVhuZnlycVJiUnBUWVFDdkJWTkx3b0NqbXpLREduWTJRMEVmNTZvbndKd1A3UDFKbGFhX1BMdjUwV2JwVVdMa3N4bERoMnNWak9SQmNuWjNHdlFyS19PcENZS3l4S3l4STZrQ3NhM21rU1JUbTFjNW9rR3o3WnNXLVpYYlRDbEhlRzFJY1h6X3VpZFllT19hYTFXeXVra1E?oc=5",
+   "source": "The Heights",
+   "published": "2026-11-01T20:58:36+00:00",
+   "feed": "Google News: Data center",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "891e16be65014ff2",
+   "cluster_title": "D.C. to BC: The Political Fallout of America’s Data Center Boom"
   },
   {
    "id": "50f317582dbb3d86",
@@ -495,6 +520,42 @@
    "suppliers": [],
    "cluster_id": "98824fb0861fc0a5",
    "cluster_title": "With Rapid Advances in AI, Future Data Center Load Profile Uncertain"
+  },
+  {
+   "id": "7476549c6d537d2c",
+   "title": "How a small Wisconsin city scuttled a secretive $1.6bn datacenter project",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVmlUSm8td0phVGg2eTdHNnVtUFVZNTVKQ1JfVmYtNjBIamJKSDBJZV9TaC1oVWJsWW0yOGZDN19hNkwyVXpwSXZkNm1BRHQ2SmFnOVFqVHMzSEtKOWd0elJmaHZldEpfcld3RGV5Njdwb2xZeURncDQzcTQ3bzhueUxjNHlFeU8tZlR5MFdibGVsMHdkM1k5Z0xQZHYxMVNIbWQw?oc=5",
+   "source": "The Guardian",
+   "published": "2026-11-01T17:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 1.6,
+   "cluster_id": "7476549c6d537d2c",
+   "cluster_title": "How a small Wisconsin city scuttled a secretive $1.6bn datacenter project"
   },
   {
    "id": "8b14034d3a2f5cd8",
