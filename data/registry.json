@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-02T10:40:35+00:00",
+ "updated": "2026-11-02T11:40:35+00:00",
  "count": 701,
  "visible": 596,
  "records": [
@@ -15793,6 +15793,15 @@
      "published": "2026-10-31T15:52:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "d1adb7ae88032c66"
+    },
+    {
+     "id": "437c7956a08106f1",
+     "title": "55 opposed, 5 in favor: Hermantown council unanimously approves Google's Data Center",
+     "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSDBPTXRvTEhXWFhKSUkwQ2lwYTRqXzFvdU5za3piN0NzeDJLYUNUcVBZU01oSGx6aEo3U2tUeF9Za1ZFVXVfaExiaURZSUY4NEVfTDFyTGMzODdFUkxIc0Yza1JtNWwxa3l2U2VsMEFEVFFsb2s2dDJhdW9YV3Fncm4tcEkzem82TWpZamg3QmxzU0k1Rl9aZlowcGJsMVRpaV9oTmNxakFPWUktR2VPZ1NsRWo3MzZkalRQd2pVeVltZ0Y4UzlnSDNfMDhWRFlaMXJYenY0bEcwWXE2SDN3d0paLWp1RkpTLVFxLWxsS0JSM2FXbjVPZjE2QVM?oc=5",
+     "source": "fox21online.com",
+     "published": "2026-11-02T03:18:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "437c7956a08106f1"
     }
    ],
    "first_seen": "2026-02-24T08:00:00+00:00",
@@ -15848,12 +15857,17 @@
      "date": "2026-10-31T13:57:16+00:00",
      "type": "Approval",
      "headline_id": "08f4493871dc01aa"
+    },
+    {
+     "date": "2026-11-02T03:18:00+00:00",
+     "type": "Approval",
+     "headline_id": "437c7956a08106f1"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-31T15:52:00+00:00",
-   "sources_count": 17,
+   "last_news": "2026-11-02T03:18:00+00:00",
+   "sources_count": 18,
    "confidence": "high",
    "hidden": false
   },

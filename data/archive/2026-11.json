@@ -39,8 +39,240 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 75,
+ "count": 85,
  "items": [
+  {
+   "id": "80bb9059ad6b72f3",
+   "title": "Wisconsin utility Alliant Energy expects to sign 1GW of data center supply contracts in next six months",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSkRhMU1NRnlncTMtaU9aVEZwcEstdmhrT1VoU3hVVW9lMnppZV9FcHJfakNKQW9vb0YwY3lGbFJwZVlqeUctWFFuSnJwQkMxUXhlMkswbXhmWlI5SjJVcFktQUhfcW5tWjNfRkg1UzJXeFB1SUlrQUg2TUUtMmxFOWtmRTR1TDZPUG1yWkJWbm5VYlZtdlhFX1lQTGdVcWNncWhscDdxcHY5LTZIa016MnpiZU5WWEJFbTE1aEVoMURIcUhyUXNOYjBVeEVlMVdzcHdWcEhoNVNkRmRYamxGVA?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-02T11:27:08+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [
+    "Alliant Energy"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 1000,
+   "cluster_id": "80bb9059ad6b72f3",
+   "cluster_title": "Wisconsin utility Alliant Energy expects to sign 1GW of data center supply contracts in next six months"
+  },
+  {
+   "id": "9b584b88490b80d1",
+   "title": "New data center plans fuel fights in Goochland, Henrico, Chesterfield",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWlhlR05QcXVUb0Mza3BvcEwtY2NRMFNxTUFXVjdVckFyZ0ZWQjNsRlF6blZaVHl5eGY3RmJMdzcwZDdiUlViTmhPYVBoM0JnOHVpQXNYak9GdkVhRmNobXlVV25qNVZ5M3ZZVG5JbXNOSXJEYmJHZ3VnOEcyc2JjVzhEU1VVSmg5U3dVcGdxWVlnZzNyTG01NA?oc=5",
+   "source": "Axios",
+   "published": "2026-11-02T11:26:57+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Goochland, Virginia, US",
+     "lat": 37.6843,
+     "lon": -77.8853,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
+    },
+    {
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
+    },
+    {
+     "name": "Henrico County, Virginia, US",
+     "lat": 37.56,
+     "lon": -77.4,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Henrico County, Virginia, US",
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "New Data Center",
+   "cluster_id": "9b584b88490b80d1",
+   "cluster_title": "New data center plans fuel fights in Goochland, Henrico, Chesterfield"
+  },
+  {
+   "id": "d28ea4f02140dd62",
+   "title": "Larimer County is tackling data center rules by listening to the public. Over 7,000 have responded so far.",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPc2x2eElJZm1FYTdxVzFhaGpVa3hubzItdTA2bVBuTjJzUlZSNXE5b2U3bVhpcFhySWJSZGN5cVgyWml6dnlJWTRucUc3ajhrUnQ4WTBpbnhJWU02Uk5yWTdUMktld0IzaWdKeVk0M2dYcUdEd2lHRnFsbkJ4ajBub2F4NlBjc0tLUElrTkNqbUxGTGktM0k1TG1CMlZBOGlNdGpGLXNuY1BMUkU5RXhKUzdBb0hUaGlLWlRwU2hwYV82VVBKY09qSV9IODlieUJGWERNcDl3?oc=5",
+   "source": "The Colorado Sun",
+   "published": "2026-11-02T11:08:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Larimer County, Colorado, US",
+     "lat": 40.666,
+     "lon": -105.461,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": "Larimer County, Colorado, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d28ea4f02140dd62",
+   "cluster_title": "Larimer County is tackling data center rules by listening to the public. Over 7,000 have responded so far."
+  },
+  {
+   "id": "b4de7f25ece1e299",
+   "title": "We need a sensible moratorium on data centers in Memphis | Opinion",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTVhWRjZpSm4zajZxWFB5ZDQ1MnlKbjhzNG1OenlNQmx4UXdnSlBnUXI4Mi1ZVEFsaEctM2xVTnpuZ1pGZVZIM1JIckw2YjNoX1JuazQ4TXhKc3ZkUzhnT213eHd6QXZ6Si1pZjh3V18tMEU5ZUJrTDJQN2FIU3BKMDRlbXNYZEF3RHR3NlFLVVI0Nnc1ZG54SzhLb3ZBWTdTLUpMUnA4S0hUZ2hGYUpQeHp5ODlBV0w3aHVFNWpHTVZHanl5Nl9VRjNLRVRLRnd1LXVN?oc=5",
+   "source": "The Commercial Appeal",
+   "published": "2026-11-02T11:08:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Memphis, Tennessee, US",
+     "lat": 35.15,
+     "lon": -90.05,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Memphis"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b4de7f25ece1e299",
+   "cluster_title": "We need a sensible moratorium on data centers in Memphis | Opinion"
+  },
+  {
+   "id": "98f0d0a15172beae",
+   "title": "ServerDomes breaks ground on domed data center campus outside El Paso, Texas",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRVRKX1MzY2VTR0lreEczNHBxTlNvb1hDRmVCa3VrcUMzVHZqdkNxOWljZFF4enFpTEdWZnBPRE0zWDlQOHNXRTJYbDlueDBfVTcxNHpoSS1KMjNwaXlJbkhFMVVBVTZueXN0N2lRRi1vSHA2WlBEczRJLWNVekQ4QXNBVXJCeEc0djZ3TU43Rll2MkRsV2pSNG9uUzRYNFRlYU8xX3VIZnNJclZkOXZNRW1MY3ZwVnFTYU5N?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-02T11:06:40+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction"
+   ],
+   "locations": [
+    {
+     "name": "El Paso, Texas, US",
+     "lat": 31.76,
+     "lon": -106.49,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "98f0d0a15172beae",
+   "cluster_title": "ServerDomes breaks ground on domed data center campus outside El Paso, Texas"
+  },
+  {
+   "id": "07de861c89fa9c72",
+   "title": "Massillon to consider data center dividend that would pay residents",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTFBTajJkd3ZnbG1YNHBlclNLQXgwWU1kRkNiallwVUk3dHhjSkxLWkN6X3h4VEQ5MzhudnhrMVo1cGFsX2lkRmpJeU1INm9BVDBKSzZEdFhDRm9XNV9hRDBNOEVkbkRjcGJScjlyQ09jT1lJNDM5RTlLMjIxSTNoQWZNMHdyeHFVcGJZaFNaX2pWX3VId2hYYzZ2ZnhjV3hUc2NsSTNkNFo5RXREd3dpcHJIbmNPZjNIajZYUUpIQTVGNDROVlB5TzZGT0xldU5saE9OdFNjZnNFSEhBa3BWbmdDWmU?oc=5",
+   "source": "Canton Repository",
+   "published": "2026-11-02T10:45:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "07de861c89fa9c72",
+   "cluster_title": "Massillon to consider data center dividend that would pay residents"
+  },
   {
    "id": "c484ebf2c88e165c",
    "title": "Vantage Makes Headway on $3bn Powhatan Technology Park Data Center Campus in Virginia",
@@ -141,6 +373,59 @@
    "cluster_title": "How data centers became a flashpoint in the Shapiro-Garrity race for Pa. governor"
   },
   {
+   "id": "4e23c7e787221a39",
+   "title": "From Trenton to Grove City, data centers are on Ohio ballots this election",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWEpxNlRFTm9BbXRsb1g3Ym1BNlNwN2NWYm9MR1FyN0JScV9SYkY3cEp5NTF3OFViZjVmZE9Ma2lHaE03TGZEUVR4UkdaSWIxd3M4MTNXR0JjYmllcnBVZHJQdDhocTVHc2pEVjFzdFRBV3BlLTViWVBEWFZveTAwdlRha3k2ZWczVFUtQ1FNSEtNOEJZNm1TdmJjSW9nV210Uml2U0dtb29zUXpEUXg2cmd6ZDZlRm1wNXQxSTdQZm1xVlkyQ0JrSkpZX0FYal9LWmc?oc=5",
+   "source": "The Statehouse News Bureau",
+   "published": "2026-11-02T10:00:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Grove City, Ohio, US",
+     "lat": 39.8815,
+     "lon": -83.093,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    },
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    },
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4e23c7e787221a39",
+   "cluster_title": "From Trenton to Grove City, data centers are on Ohio ballots this election"
+  },
+  {
    "id": "a6c94c0c678c72e2",
    "title": "El-Sayed Issues Data Center Warning As Voters Are ‘Deathly Afraid’",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObEZ5czdVbm9nUTVGMDZPdjhIRTkzWXh1di10TVJpR3prYTFkMHhLaDJVVW5aNU5vWG1rdEdNN0ZJTlNWZ0xiWXVpOE0wdUZPczFld1ZweVBiLXNfQ2ZMbExnSE8tbkpLSy03blpLRGFFVVJxVEJsd0pCb1phdUp2SldJNXdDbVJBdzVoOGFIdl81MFducWtBU1hsMW9lX2dmOXpKaVQzcndjMzBhQVE1SG0tRUxKenRVYm5ZYg?oc=5",
@@ -163,6 +448,30 @@
    "suppliers": [],
    "cluster_id": "a6c94c0c678c72e2",
    "cluster_title": "El-Sayed Issues Data Center Warning As Voters Are ‘Deathly Afraid’"
+  },
+  {
+   "id": "1328310308a133ad",
+   "title": "Data Centers May Actually Be A Net Positive For Their Communities",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT3puV0ZYTVBjN0dBM2hGSnNjYzJMVVBPZjJjSnNkX2RHbDJlREdaV3YwTFhvVVFEazk2aHBhLWd3cXBFNlp2LVZIanlhU2lYcy0teER3WjU5Ym4wdXFjVHd6dktjandkNlJJWWdOQmRYSUVueS1LZjJ5dzd0MDJoVERqYldtVFdsOVVoRWdkSlo2YWMwVHRvV2h0ZG9zMG93a3NfdVVuNGZFdmVUSmNwQ080TER0dXNMSm5MU1VIYk5OMkFBQmt1VXhfVUM3VHZrRGJZ0gG2AUFVX3lxTE14YWdQOS1zY1p3NHh1V2tFZ2tpX2syNjUybUJ4cFJhQllOMkNFa3BYZnM2dG9ya1pNaG9malgxaFRDTHFHdGVWSzc5RUd3R3ozS1ZKRVJxdDlSOElCMkZYTV96SGlvY2tCUFM1eWl4Y0tETGl5OEo0QjE2VEVPMzk1TU1tSGJqMVNSRU1nN0ZmMndBR2RYNjFhU0RqU2IxekpqQlpkWmJEZzZSalZtU3l2d3RWY3JB?oc=5",
+   "source": "NewsRadio 740 KTRH",
+   "published": "2026-11-02T09:30:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1328310308a133ad",
+   "cluster_title": "Data Centers May Actually Be A Net Positive For Their Communities"
   },
   {
    "id": "ff48fc11937b0046",
@@ -512,6 +821,45 @@
    "suppliers": [],
    "cluster_id": "38df98b732aa9582",
    "cluster_title": "Questions remain after city council tightens oversight of data centers with 9-2 vote"
+  },
+  {
+   "id": "437c7956a08106f1",
+   "title": "55 opposed, 5 in favor: Hermantown council unanimously approves Google's Data Center",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSDBPTXRvTEhXWFhKSUkwQ2lwYTRqXzFvdU5za3piN0NzeDJLYUNUcVBZU01oSGx6aEo3U2tUeF9Za1ZFVXVfaExiaURZSUY4NEVfTDFyTGMzODdFUkxIc0Yza1JtNWwxa3l2U2VsMEFEVFFsb2s2dDJhdW9YV3Fncm4tcEkzem82TWpZamg3QmxzU0k1Rl9aZlowcGJsMVRpaV9oTmNxakFPWUktR2VPZ1NsRWo3MzZkalRQd2pVeVltZ0Y4UzlnSDNfMDhWRFlaMXJYenY0bEcwWXE2SDN3d0paLWp1RkpTLVFxLWxsS0JSM2FXbjVPZjE2QVM?oc=5",
+   "source": "fox21online.com",
+   "published": "2026-11-02T03:18:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Hermantown, Minnesota, US",
+     "lat": 46.8069,
+     "lon": -92.2382,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "437c7956a08106f1",
+   "cluster_title": "55 opposed, 5 in favor: Hermantown council unanimously approves Google's Data Center"
   },
   {
    "id": "ff97a6f1afdfcd93",
@@ -1664,6 +2012,31 @@
    "suppliers": [],
    "cluster_id": "450bb45228bcf916",
    "cluster_title": "Readers split over city plan for data center moratorium"
+  },
+  {
+   "id": "8231d8d8eead6acd",
+   "title": "Bedford residents continue to ask board for data center ban",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHhfRF85TTJ2NGZDSGllNkxqVFFKSlJwVkZSZ2VvZWl1cTdKQzh1N3R4azFvV2NHNnFKNWV5VFdmSDZTS2IzdllHZm9yOXExWWo2MHJlR0k4YUduWVR2bFVFSGR0Z3NTeXJTdU94dGpkankxRnF5RGtzWldFdGY5YlhjNG1mOTl5eHpYY3hseFJ1VHdhekU3c1otUmNDcjJ0VVRhQXhDbw?oc=5",
+   "source": "Lynchburg News and Advance",
+   "published": "2026-11-01T12:45:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8231d8d8eead6acd",
+   "cluster_title": "Bedford residents continue to ask board for data center ban"
   },
   {
    "id": "78d581465300df18",
