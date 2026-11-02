@@ -39,8 +39,90 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 158,
+ "count": 171,
  "items": [
+  {
+   "id": "50b29ba3bd79b302",
+   "title": "Polls: NJ voters oppose data centers, especially locally",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBOYjNRTWJLaTJfMFZnYnBjN3gyOHVMNUV6bHV0ZzAwVTB4WHNjTWNwVk1pLUY1TlYxLVprTDBIMDc4b05ibThHZ0Rqd0JPRU14Vk5pTXJlSDFXeUxKanBEMDgwTk5ERTNz?oc=5",
+   "source": "NJBIZ",
+   "published": "2026-11-02T19:31:55+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "50b29ba3bd79b302",
+   "cluster_title": "Polls: NJ voters oppose data centers, especially locally"
+  },
+  {
+   "id": "39a8bce7bff22013",
+   "title": "Pickens County weighs data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb0FIZkM4aWNmcUpKQmNFUVB3NlJfc3gtTTdtOHp1dnlDSVdESTNkQlNVclpxREdmaUJlMEYtOTFmSXp6QnhMcmR0bjBzVUFNZDVXWHlaVFRxbnlXUVlyclFVSm5kWXZuQ2lWWFFkWkxFb3hWeDM1TDE2SUV5MzVWWWlwVWY1MFhvQnp3ZGRGbXJzWlhpUWllbjNYTmR0Tll3VEREY2tUQkM4R19fVjdtd2x6YUFxSFBQSnI4TGtVWnllWW5CUE0wTWxfOE8yc21DblFJeC1WX1FyazV2X213?oc=5",
+   "source": "Greenville Online",
+   "published": "2026-11-02T19:16:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "39a8bce7bff22013",
+   "cluster_title": "Pickens County weighs data center moratorium"
+  },
+  {
+   "id": "8a6758ce7b6c702b",
+   "title": "Data center projects may fill up Linn County landfill much sooner than expected",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOR2NvNHVibFFTLTRrYTFzZDRRMFhVeE91LU9VM2lETE02ekJraXNLbWhNTW55NVFka3NqUmZJbjlseHZualFUclVxdW4wYVV0d1AxdzRFQWtDbjB4enVJV29xTG1rY0QtR1VwUjYwY1FUV0QzejhFb1g0NnpuTlBUZnBoemh0dU16M19xUGYzUHB6dWpxbFN6cXRNbUtnOUZfQzlXU2YwSVgtaXdTOVNfdHlGUkNaU1pC?oc=5",
+   "source": "Radio Iowa",
+   "published": "2026-11-02T19:04:52+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Linn County, Iowa, US",
+     "lat": 42.079,
+     "lon": -91.599,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": "Linn County, Iowa, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8a6758ce7b6c702b",
+   "cluster_title": "Data center projects may fill up Linn County landfill much sooner than expected"
+  },
   {
    "id": "5bb60f58c574258d",
    "title": "OpenAI Plans Data Center Rebrand To Make Projects Palatable To Voters",
@@ -152,6 +234,32 @@
    "suppliers": [],
    "cluster_id": "7d7b87aaa6033b33",
    "cluster_title": "OpenAI pitches data center power plants as a way to protect nearby areas"
+  },
+  {
+   "id": "f71bd3d44c8b6c95",
+   "title": "The tech industry is investing in mega gas plants to power their data centers",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeGtwdTdHSFItR1U5SmZJck9sOTIyVzlPRTBMbG5YaTBTdnF1bVJnUmdLcUZtelJyclVmaHhnbUNvQkRuUjJud0Z3bGVjYTZuTHFHNGJLZEM0UHFqaVdrQ0xBZFduMFB3VU9BeTNwS0FBamxaMHFtTW9jSXNTRDRqdDU3eUQtem1pdTVhajlXZVhzNEpmbDFrSFFJVFRKY0RPLWJEUDBjNXAwTGJMSGVyYmw0UXE?oc=5",
+   "source": "The Washington Post",
+   "published": "2026-11-02T18:00:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f71bd3d44c8b6c95",
+   "cluster_title": "The tech industry is investing in mega gas plants to power their data centers"
   },
   {
    "id": "da07f9fd2db206ac",
@@ -377,6 +485,43 @@
    "cluster_title": "SpaceXAI launching two additional data center campuses in Mississippi to further expand Colossus 2"
   },
   {
+   "id": "c09ba14f89bb67ff",
+   "title": "Data centers, government transparency drive Bastrop County judge race",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX2lwUUdfbzEwbXRZM3hMWHBQT1pPdklHS3VBODJmQVl1MGVjUkNUVUFPYzJPbW1pdU5lUXRxeU91V3ZhSXE4WFlUSXBZQmt5TUxyS2ZFYld4YlJLb0ZvdnhmclFfSi1CUUwzc1JLTHpKVF9QUERycDZXS2tKTnRNdlR2ZTZQcUdRdU9iSllfSGQydWxxcG5nclp3Y2EtWlNWcVpFQk9qUkktbW9UNlJBUFI5eGY0dFdNbFHSAb8BQVVfeXFMTVZxbXBXRTh3V0g1a3dZbjZnQTFmWXBoOTYyejg3aER3OU9UenJyTmpmYTVjMkxEaHdMWC1SM2VTR3hYTzUxSW90SG5KeTRBTjJ2QnRWN1doT0JkV1RnSjU4d2pETEh1WnRnMm1IeXA1d3NNOEdsZUJmMnpvMzdudDAySE9ZRlJHNG8yV2VCcURRamZ4MFM2c2YtOHlqUnNXZlQ3bHBlMklMRkxua0pVblBFbWJucnU1UVhEU0otSDA?oc=5",
+   "source": "KXAN Austin",
+   "published": "2026-11-02T17:07:18+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Bastrop County, Texas, US",
+     "lat": 30.104,
+     "lon": -97.312,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Austin"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Bastrop County, Texas, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c09ba14f89bb67ff",
+   "cluster_title": "Data centers, government transparency drive Bastrop County judge race"
+  },
+  {
    "id": "d4b72925c7936fa7",
    "title": "Memphis opts for short-term data center pause instead of one-year moratorium",
    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZS1IMWJsTzR4OWx2d2VDaTI4bUNzY3phNHBuUTdBQ29RczZneDEzUDhhRDFQSGg4dmZ6SVNTQl9PVVQ3b3Y5eEl6cklwTHJ5OEsxS081Z3dhNENxNzB3WU10RkJUa2tPT0MyOU9fTXhGZVFEZnRwUHBodk9vSWdfdGQzSEpxVUxpZ29nWk16RFBBN29XdUNObmVkcTRWa1k3aXhEZXA1aUR3ZHduaEQwX3l1bkhhdFc2Znk0bklsU19oZEZ0OU1mNHJSRjJNUDVVX3JIS25lZzNNc3VFX2gyN1Zha3VEV1dKODJjZHBB?oc=5",
@@ -411,6 +556,41 @@
    "suppliers": [],
    "cluster_id": "d4b72925c7936fa7",
    "cluster_title": "Memphis opts for short-term data center pause instead of one-year moratorium"
+  },
+  {
+   "id": "8007a752de280783",
+   "title": "Louisiana tightens data center tax break requirements",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdHRkWUx1WU5XZEtwQ1VLdlBfdGpOWkNsa1ROQWlzZTE1eUllRGFWVUgydW1SUm5BdnRGUUZ3cVZGckFncmV0YV9mSWlaLThVTnVJajRtaEhBQzktckxtU2dXWVBVb3d4N2xEZmw4M215R2wtOV9SbmN0bEoxQmxvbV95YV9lbWo3R0k2dndrQjloQ3FvS0HSAZsBQVVfeXFMUDNJOHRab2xmeHAxTy0zWEFPQWNVS1BOQXNaTW1NUUZUZU5VX25DVlR0eF8xQ01jYnkyazBCRTh6Q0tMMHdCQ29oYXE4cjhkdVFHUXpORy1WakdzYW00THRURmc2TDdEM3lLN2RjZGtHTUZkVG5zTFdQU3hYV1hoeEttRHprUDREOGx4d3hKX0JhdHpKcXNWd3dIWWc?oc=5",
+   "source": "The Center Square",
+   "published": "2026-11-02T16:44:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Louisiana, US",
+     "lat": 31.1,
+     "lon": -92.0,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "LA"
+   ],
+   "state": "LA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8007a752de280783",
+   "cluster_title": "Louisiana tightens data center tax break requirements"
   },
   {
    "id": "4d108dd0c0bafdde",
@@ -448,6 +628,31 @@
    "investment_usd_b": 0.003,
    "cluster_id": "4d108dd0c0bafdde",
    "cluster_title": "Revealed: Pro-AI Data Center Group Spending At Least $2.54M on TV Ads to Influence Ohio Election"
+  },
+  {
+   "id": "7d69c1fa8938ca1e",
+   "title": "Williams faces earnings test as data center power push accelerates",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOd2xWVlY3VkJfdzU4OHBSQ3BHMUNzLWQ0ZEdGRVlZTnN3RHY4b0twV1F4VDloSFFxUnlzbGswRzMxdl9sT25aaG1naFRkdVc2bm1nQ3h2b0pUdmhNeEtHemV3clVLVmhKN2NWM2d1TmR1dWl1LUU5cV9QSEJEVXdKbWx6emRsb1RYbGxvOTNpWUFQNV9nVHlXQ0NRVjY2MEtxWDNzT0I4TTZWNVJqY2I0Q05WVjhjanVSNmRz?oc=5",
+   "source": "Investing.com",
+   "published": "2026-11-02T16:42:23+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7d69c1fa8938ca1e",
+   "cluster_title": "Williams faces earnings test as data center power push accelerates"
   },
   {
    "id": "217cf175654eb08f",
@@ -714,6 +919,33 @@
    "cluster_title": "Carrier leverages new chillers to grow data center business"
   },
   {
+   "id": "5cc19043e64f00be",
+   "title": "OpenAI to reduce data center power usage during peak demand",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRWZUb21mOFBONE9MbWJuM3g1Y2FWYk9VSFBGd0p6MVVhMmVETEd6bGxjUkJQQ0FoVEFkamRHLTVQSkZ0dzBZNG5UYkVRM0xsOC1IalRxSXVvdksteEdFaE13dEVQYThFWGRqNGdxSGcxa1dQdXBrZkNyT0dsTzY4UlFuOHhCTWQwSjlLdkowMlY3THVNLVdKVXl1VXBZeHdPYUFyTXBTdUp0ampwV2hXdm9PT1VNcWVLOTMwdS1wVQ?oc=5",
+   "source": "TradingView",
+   "published": "2026-11-02T15:52:22+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5cc19043e64f00be",
+   "cluster_title": "OpenAI to reduce data center power usage during peak demand"
+  },
+  {
    "id": "ca525a6c191ff04a",
    "title": "Samsung SDS, LG CNS Expand AI Data Centers",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcnAxdTRWRVJpTFVNVklCYTRHdUtTM3NOYjY0TXNUMVo3Uk5YT3VuYXFGRVo3YkNpUHp1YXhHZDNEZzk5UWNhM3BILWhORjB5YUFHaTJfSWhEa3hZTnNpeVZmd0pzVWVBenE5WVVGQ2VoNHZVZnNOdGo0MHVNWW5UZ3hJbFRxQk5D?oc=5",
@@ -737,6 +969,32 @@
    "suppliers": [],
    "cluster_id": "15c812e7c24f5771",
    "cluster_title": "Samsung SDS, LG CNS Expand AI Data Center Businesses"
+  },
+  {
+   "id": "e88c0167025d4e1a",
+   "title": "Can FLEX's EPC Power Deal Deepen Its AI Data Center Growth Advantage?",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPd3hoYlA2NUhSTFczUFV3Q29OdGJ3WTdJakNvTjk2Rmxxak1hTUwxU2RSQXhudXo3amppUVVkUjlLNndJbGdxbHVXTF9LTEdOWUVrYmFZMkh1MVB5R1ZhZk5xRk5KZ2c5a1hDVm41MFFselVzXzhfWENQV3djbTR4Umt4QWpmWjN6RUxHRU9QTXNZUGNQTUdYSXMyQjlFR1BMd1NGblE5ZUlCV01wZVU3NjdmR3JPLTQtOTlCZHoyckp3Zw?oc=5",
+   "source": "TradingView",
+   "published": "2026-11-02T15:33:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e88c0167025d4e1a",
+   "cluster_title": "Can FLEX's EPC Power Deal Deepen Its AI Data Center Growth Advantage?"
   },
   {
    "id": "df0b6b4f55c37d0d",
@@ -982,6 +1240,34 @@
    "suppliers": [],
    "cluster_id": "b07c2c0c2e47698b",
    "cluster_title": "St. Louis Research Data Center Opens at WashU"
+  },
+  {
+   "id": "61c99582a2ed367b",
+   "title": "OpenAI launches grid flexibility program for data center campuses",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOakllZTFrUDFwWmo2ZklZRy0wbldycGxZTGJ1cWF0NzNibGx5aW5MVTlJZEF0U1ZTX1JVdTdNeTVJMThTWGV2T2htUGdjckRBNUFQR25Sam56ZzZrbWZjS1gtZnNSUUg0SzY1N0RsNUhQXy13bXBrMy1LVEhrVThJeWtYZmJqSDA5UHNaR095MVlXaGtha2FKWTJsZHU5R2JLMUx6TDB2aW1abWpZSEQ5RU5GZzhFcUxtY2RJR190ek85UQ?oc=5",
+   "source": "StreetInsider",
+   "published": "2026-11-02T15:05:07+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "61c99582a2ed367b",
+   "cluster_title": "OpenAI launches grid flexibility program for data center campuses"
   },
   {
    "id": "e14f2363b9bb2bb8",
@@ -1632,6 +1918,31 @@
    "cluster_title": "Utah’s largest school district is splitting into three. A long-term tax deal with a data center won’t benefit them equally."
   },
   {
+   "id": "e08fc1d4ab61ac95",
+   "title": "Envision deploys an 800V DC solid-state transformer power system at its AI data center",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeG9qTUFXXzZfaVBDWVA3aEFKcjMyWDA0NWNUWFp1cHBMdXpIOWFjNTBiQXhBQlZ2d2FXMWswX0tONGVraGJqWE5vakFiMldwcjE4MjZRRG1UV3VYaVo3OTBISmlQX0VNN0ExbFRjRHJEakxheDRucmpCOHNlOWxMb0JORTBEY3Q5SzdmZkVsYmpxRnBEM01DWTlyTkQydHVGczdqcHJwdm9nR3BPekNfMGFB?oc=5",
+   "source": "energynews.pro",
+   "published": "2026-11-02T13:00:57+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "488b623d080aae36",
+   "cluster_title": "Envision Deploys SST-Based 800V DC Power at Ulanqab AI Data Center"
+  },
+  {
    "id": "0947bf15d251439e",
    "title": "Google data center wins approval in Minnesota after protests delay council vote twice — 200-acre project moves forward despite opposition from local residents, tech giant scales down project and drops $80 million tax break request",
    "link": "https://news.google.com/rss/articles/CBMimANBVV95cUxPaFFqdUw4TVNaRnlITjlpZUliMmh4SkRrTmxMLWRVeUxHS2ZLenFpRWwtbkRLRlpLNC03N3BBS0JGT203enVTcHZiREZ1R2xxUTlMQlU1WkUyRUdDRHVKMXNjOVF3ZU9LZkM1Z01tYnR5bzB5dnRhaV80MWdTX2FMTnF3Q0hmYU1iSWpSdGhrRXJWaFZOSTVzcklreWd2NUo2UXhDdlNZZF9WOXlaUFlIM0EwdTFIWmc5ZmpLQU9nSW4xSGU0QnVLdk80MGI0VkVTalk2bnhudFgzaTBfT3NFRmprc2Uta05yM1lFSTI2ZEFuaER3VVFkVDBkY0VvdFRmMWFuLWpJZF9aTDBkamN5cnhoMWNXenR4bHZNWFY0R1prcy1UYnNud1p1YjVPejFpVXNDcVVxOFl4TzdOeTEteVRaOHFuQnFVQjgzanJXUkNYNTZsbTlYeElFajhIR2tMMmc3ZmNhTHJEOWZYSGJvbXR4TVJBeHpFVkh6cGtBU0x5LWEwN1Rra0F3bmFCQ2tmRjFOeFZ6UWk?oc=5",
@@ -1784,6 +2095,41 @@
    "suppliers": [],
    "cluster_id": "3038ff0513a664cd",
    "cluster_title": "Salem Township Approves 4,466-Acre Data Center Overlay District in Northeast Pennsylvania"
+  },
+  {
+   "id": "e6805cb01cf89bc4",
+   "title": "Can data centers produce water instead of consuming it? UT researchers think so",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVFFpRkVrdkN1dm54YlVocU5OdWM2T0dyWVVaOTV0UWxNajFoNVJoVjVZRWtIUlFraW5HVWMtME5qcXBQMmRac3Bic1ZEWHVoU2t2YUgyYVl0dlpYMWRud3paWDJLeHVDdG9ndks4Yzg2UEw2T2R2cmRoaWUzeTFXenFWZ2RNTzZsa0JZT2VRdjN4UUI2U0JvUUNkUWVtS255c251N3gtLVFBcmlEOXfSAa4BQVVfeXFMTVRRaUZFa3ZDdXZueGJVaHFOTnVjNk9HcllVWjk1dFFsTWoxaDVSaFY1WUVrSFJRa2luR1VjLTBOanFwUDJkWnNwYnNWRFh1aFNrdmFIMmFZdHZaWDFkbnd6WlgyS3h1Q3RvZ3ZLOGM4NlBMNk9kdnJkaGllM3kxV3pxVmdkTU82bGtCWU9lUXYzeFFCNlNCb1FDZFFlbUtueXNudTd4LS1RQXJpRDl3?oc=5",
+   "source": "KXAN Austin",
+   "published": "2026-11-02T12:48:20+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Environment",
+   "tags": [
+    "Environment"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e6805cb01cf89bc4",
+   "cluster_title": "Can data centers produce water instead of consuming it? UT researchers think so"
   },
   {
    "id": "c89601de311d9ebb",
@@ -2442,6 +2788,32 @@
    "suppliers": [],
    "cluster_id": "6ccfeb943d597dcd",
    "cluster_title": "South Bend mayor talks data center investment, Colfax Corner project"
+  },
+  {
+   "id": "913899ad73ebcc6b",
+   "title": "Weekly Recap: AI data center stake and share repurchases resume",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMDlUY2ZkOGZwdTJGd1dicUlRaFdfMzVmQ3Z1T2hidXZuSi11dDZCaVFKM2xzNHVPcUdWV0lfMzV5ZExaTEhYNVZfUC1xei1aRVF1cHdxdVZZc1NUQzkwaFBvdnFpOU9zT0dvVUtyR2NfRzYtZVFoV00zMDhTN184TkZyd2J1VldKWkZzbHJOOWVfV0ZBbVFsNjg1S0FuWXR3eGJVbHM0aHpxMnNLbnZUR1lQbmlzVnNXcWhqbEI5Z3hOUQ?oc=5",
+   "source": "TradingView",
+   "published": "2026-11-02T11:00:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "913899ad73ebcc6b",
+   "cluster_title": "Weekly Recap: AI data center stake and share repurchases resume"
   },
   {
    "id": "0e9e59e290c09856",
