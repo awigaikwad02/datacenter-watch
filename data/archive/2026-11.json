@@ -39,8 +39,273 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 104,
+ "count": 116,
  "items": [
+  {
+   "id": "fb05e80ab4bdd923",
+   "title": "How did land in Texas thought to be for a park become site for data center?",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUzUtalZlQUZMclFTblFpVGZ6SlJBTHJtVkpfRWZILU05UUZQTDdNUVp1Vi14V0Rtay1oSV9TWjA2OXVSdHZnZHBwU2tiN3JfMUdlb3VWSENUQnBDU1l4QkN1OHZab3ByRnN6X2lhRUlDNEFhWDdTLUEwWDZvMmlhVXBuVmNhc2JMNG5zbFBlaDMxNGMzVXJNS1F4TGlJMEthNTB1WmtBRVZSOU5leGFjZndJak94dw?oc=5",
+   "source": "Baltimore Sun",
+   "published": "2026-11-02T14:36:53+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fb05e80ab4bdd923",
+   "cluster_title": "How did land in Texas thought to be for a park become site for data center?"
+  },
+  {
+   "id": "8901b2f25fb4ae29",
+   "title": "Harmony Data Center Ordinance Recommended by P & Z",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRHNSZWw2amNiSnZqNHhpMnVMQ2YtUDJaUlJJWUtzT0V0MXE0UUV2emZyOXc0SWd0SGRzMDdYaTZORy1sT0JMVUtDeUpSQnFHZ2Q3aEN5cU5UMllaWURETGhhN0cyeGZVdjM1UkROak1qTC10cExERUwzNWc4ZFlqNmstanRneFQ0WnNV?oc=5",
+   "source": "Fillmore County Journal",
+   "published": "2026-11-02T14:31:18+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8901b2f25fb4ae29",
+   "cluster_title": "Harmony Data Center Ordinance Recommended by P & Z"
+  },
+  {
+   "id": "29d47ec555300ff7",
+   "title": "Google's Project Suncatcher runs first workload on orbital TPU, but company admits space data centers cost 100x more than terrestrial",
+   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOYnBUclo4TlZPWml0WHl2bFdGclQ2eldmTUdCbzFFR2diUk5HTTBLRVpYRXVfc2cxaG5od3lqQlNKaUYzTGpYVjVBdzRNMWotX0RkeTk5bDhYWnAxUkhyMUdFQWdvMnNRb1pnV1A5QU52X0ltVTJqeHZrWXBURjMwU1p1M0NSb3c2c3pMZjY2R2lEeHZnOTJhUzBQVzVFY2V0ODBwd2NnN2FmMVlrZWg4d3hzdnRMVWZxZUJJWkFkV20zVnQ4WGk3M2VlLU9ubUFTZHZCcW9oVVNGaG1FZjlUaUpvUWN2aUU1aTd3aFlXZHdUMnhQX19oWGFWVml0SmJaS0xDQ25R?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-02T14:26:56+00:00",
+   "feed": "Google News: Data center power",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Suncatcher",
+   "cluster_id": "29d47ec555300ff7",
+   "cluster_title": "Google's Project Suncatcher runs first workload on orbital TPU, but company admits space data centers cost 100x more than terrestrial"
+  },
+  {
+   "id": "ece8b5d071b64637",
+   "title": "Altman Says AI Efficiency Has Risen as Data Center Power Use Is Forecast to Rise",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE45bG1jRzFLdE11bTdlOU4zR2dhYUF6ZTI3NlZzR2xBaUExZnlJdmNxRXJjOHFJQVI3T1k4b21CWk53MjVDdnpnQVNzWnlIX04xbE0tQkQyWE95SVU?oc=5",
+   "source": "www.tokenpost.com",
+   "published": "2026-11-02T14:22:22+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ece8b5d071b64637",
+   "cluster_title": "Altman Says AI Efficiency Has Risen as Data Center Power Use Is Forecast to Rise"
+  },
+  {
+   "id": "421eb1f900212ecc",
+   "title": "Envision claims world first with 800 V DC architecture for AI data center",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYnRpZGFBMEFITExXWFBQeXhCbVdMc2NsLXo2VkhyYkNud1RyS3VqMjJLTTZwUncxa1A0R2dhbWpMQ0lZWC1ZUG5tVkMzTldmRkdfeEh4UWVNOXBPbXZXWUFTb09VS0NrbnFSRzhiU3R1TmF3ZmVSbE9CbDZwYlltVHEtM3YxTV9sVWx3S3lvQTBidVpUTlhzaG1NdFBpZXBoMmxGYUNqaUxUM3FNRXhueHVPdw?oc=5",
+   "source": "pv magazine Global",
+   "published": "2026-11-02T14:14:56+00:00",
+   "feed": "Google News: Data center power",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "421eb1f900212ecc",
+   "cluster_title": "Envision claims world first with 800 V DC architecture for AI data center"
+  },
+  {
+   "id": "9c6a14761b072965",
+   "title": "GE Vernova order backlog hits $197bn as data center demand drives gas turbine sales",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdGN3TlhYNHcwYXJmUU0zNzJISkJveDI5ZTdyVXRnZlR5UkNJTk5QTW1aSDhVV1VtdTVCSUM1cFlFcUFJZkZLVi02MWlMa2w3Z2w3cVFjTVhTdURTQzFEcE1YdkY3aktXUmNpOU9XUVJobVZnYU1OQnc3T2ZOdUc1MW5KQ0dXdTRTdi04azJCLUV6N1RpZ2hQYk1SaWxqOU9ESHEtTnpwZDdiSEpMSWtSRzBFT1dtWDZJSENqSEhGbW80SmNN?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-02T14:06:56+00:00",
+   "feed": "Google News: Data center",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "GE Vernova"
+   ],
+   "investment_usd_b": 197.0,
+   "cluster_id": "9c6a14761b072965",
+   "cluster_title": "GE Vernova order backlog hits $197bn as data center demand drives gas turbine sales"
+  },
+  {
+   "id": "b5c7583c553af872",
+   "title": "‘Hoodwinked:’ New Mexico bill aimed at microgrids paves way for data center development",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNmY0REJNSkNUZHVtV3ZDajJxYjdSV3dSc3lZdzlWRkRteEYtWFRMamloSGg1eFU5MGZTZTVvZ1hVelBPMHBCZ2t2djRQNzlWUW0zRm5kVlNDRzg2c1IwaU53OE5qb09mS1hxMmhqMTBZbUZPOWRIN2J0NGVTX2dCams1M0Q3cFU2SzgxT2FOaVZiQkxrc2sxZm9wQTU1ME9wU0dfZ1JUYWZuSFlJbDlmQVRfMkFZcG1GZGZBbnphZThodw?oc=5",
+   "source": "Planetizen",
+   "published": "2026-11-02T14:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "New Mexico, US",
+     "lat": 34.4,
+     "lon": -106.1,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NM"
+   ],
+   "state": "NM",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b5c7583c553af872",
+   "cluster_title": "‘Hoodwinked:’ New Mexico bill aimed at microgrids paves way for data center development"
+  },
+  {
+   "id": "30c7361654be8ac4",
+   "title": "OpenAI Pledges Data Center Power Cuts, Up to 1 GW in Georgia",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRGxhVVpqUGVISkdoTUd2M3V5OU1oZk81d1pmX2xqTW1Ub1NQV3J2LUllU1g4ajR4SlJaRGxJWHRwS2Vsa2JfSl9QSWVNVi1uVldjT1NRUHUtN1dkNzNnOTRrMGpVQWFWRVpkYnA1cVVla3Q1bmV6ZmhTRmxWczIxZU5GTnhOaS1XMFJiUVNhWjc?oc=5",
+   "source": "FourWeekMBA",
+   "published": "2026-11-02T13:54:33+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 1000,
+   "cluster_id": "b132dd95f34f559c",
+   "cluster_title": "OpenAI Pledges Data Center Power Cuts, Up to 1 GW in Georgia"
+  },
+  {
+   "id": "cd1bf90c66162a9a",
+   "title": "OpenAI vows to reduce electricity use at US data center campuses during extreme weather or power emergencies - Axios",
+   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNUktDSGVaSFd0SWJyeVVKdVVNcUhNNXRiX3BiNkNEWlFRbWNRUzl5Q0RjdkhFZkM5Vm1XNlg3b0oyX1pHQ0hRZkk5UmVRSmZFME0xQnhhZVpVcDVTVTVCanJ2ejZmS1hyV0t3a0xDeDNTM01jWjBMc003enM4U1Vac2VVdENuMU5vYURpdzlHUXdKeG1uaXJCWmZtQlc0UE1teTJ0RXBOc2Z1dXoycVY4NTBUQUh1ckltaU9oQjBkWGFUUG51eUJmd1Z2V1FydEZLVzh2cVliNVFabVI3Q3dnX1RuWXdLcTZ2RmV4WWwyOTNOVFgzX1pLU0JFd3dRTGZwVTZ3NE1KelVWRzZCRWJNZThn?oc=5",
+   "source": "TradingView",
+   "published": "2026-11-02T13:48:40+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cd1bf90c66162a9a",
+   "cluster_title": "OpenAI vows to reduce electricity use at US data center campuses during extreme weather or power emergencies - Axios"
+  },
   {
    "id": "b132dd95f34f559c",
    "title": "OpenAI pledges data center power cuts",
@@ -69,6 +334,32 @@
    "cluster_title": "OpenAI pledges data center power cuts"
   },
   {
+   "id": "99c9591ad269e101",
+   "title": "Eco Wave Power Completes First Phase of AI-Powered Digital Twin, Advancing Intelligent Wave Energy and Future AI Data Center Applications",
+   "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQQV9VSk5rYzBEa0NuZjY3VjZycTNhMHpjMC1YNk1JWGwtcW8xUG5lUngyTzJ0YlZLRkl2SmlNOEIzU0twdV9DS0kwVjVrZUI0d3ZMSkpCUS1RNnp0MFVBOUc5M0VnS01oZ1BxS3lkX1NLRTNES3FQYkFrTHFBWnI1SWNfTHMtQWNIUEw1VDNvR25JaGJELUx3OHdVTTF5VHlnajB3ZUtsOTU1YlJMbGhVVG5MRXAzbWhpU0VsSDdFaWxEUy1WT0tkVWFxR0szXzVtdVpJcGVyWUJCZFJQeTN6cUpiOVZwZUpkaXMxSUUxQnFzSjdaUTJjSDVfT3BZNjJoNktzNl8yN1Y4WGpxWDVzZ2Jrcnc3azFpN2NUTVc1VlgyWGc?oc=5",
+   "source": "Morningstar",
+   "published": "2026-11-02T13:30:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "99c9591ad269e101",
+   "cluster_title": "Eco Wave Power Completes First Phase of AI-Powered Digital Twin, Advancing Intelligent Wave Energy and Future AI Data Center Applications"
+  },
+  {
    "id": "77cfe5b15d205daf",
    "title": "Here’s The Full List Of Data Center Bans On Midterm Ballots",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWmxCMTNfaGptS0drb0VIYkdRWjBsbXdCRXZkSkVwMUdURFZTeWVxWFRmelpqRFhRT2I4NlV1N3FkR2ROa1pIeWpRbTZHUnNMRkJfeVUwYTh4cHVidzVOWGZQLTJKWVFCTGQ2UEdQSkFHYlNIVlg4ZUN1ZTNYWWdnMWNYNzBLSzE4Zm1WckhHcVhsZEV5U0FmLTBfZ1E0YWdGYWc3YUNtUDhRVzhRY2c?oc=5",
@@ -93,6 +384,56 @@
    "suppliers": [],
    "cluster_id": "77cfe5b15d205daf",
    "cluster_title": "Here’s The Full List Of Data Center Bans On Midterm Ballots"
+  },
+  {
+   "id": "ba125604275ec217",
+   "title": "Here’s Where Data Center Bans Are On The Ballot (Full List)",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVmlDamlqWHlEMS1rNUR3VjhZNlBEZ2ZoeE9hWUw4bkdhNWZKa3plZDQ1MjVvRXM3VHpyUVRHQWU0QU9OMEp5MExtdnJUQzRPNEVLdGIzVGRxQ1BkeWZKTEFiYUViY3NGSjRxbXBveVh2b0xpalhSbC1YeWlPR2M5RmUwX0g1NFhxRmRaQmZNMG9hV1E?oc=5",
+   "source": "Yahoo",
+   "published": "2026-11-02T13:21:31+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "77cfe5b15d205daf",
+   "cluster_title": "Here’s The Full List Of Data Center Bans On Midterm Ballots"
+  },
+  {
+   "id": "9a7d17012c799293",
+   "title": "Radnor introduces ordinance to regulate data centers",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNT014RFFBU19XUTV5MGpjSjZRbTRIMzBNVFNzYmxHQXlWSlh2bXB3MmdycmRrc0JJaUpSMkRtRXZKcmJCNDRQeHB6akNNdTdPek03QmdRbjlaN0sybTR3Q0wzM3A2LUljM0pia2JMeEJsVUg1WXJsWUJid2VOV3EzTW9LY3k4S2RqcFdiU3VfdGVVdDhQb0xNb3BpQjhJZw?oc=5",
+   "source": "Mainline Media News",
+   "published": "2026-11-02T13:18:20+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9a7d17012c799293",
+   "cluster_title": "Radnor introduces ordinance to regulate data centers"
   },
   {
    "id": "7722ca2eed4c9c22",
