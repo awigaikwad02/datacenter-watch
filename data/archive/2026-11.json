@@ -39,8 +39,45 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 51,
+ "count": 54,
  "items": [
+  {
+   "id": "b0dccc0c41f71be5",
+   "title": "Chesterfield halts future data center development",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVVB0dzQtRnhfdktCZ0RJc2hab3BuYjd1N1lrUVQyVmw5aGRCX3NVYW1TWjhtZ2V3MWhfOUZMdWppcFZLbnhEX1ZWdC1RQlNIdVZGRGNsVkFVdWZ3VlEwZFNBQVlNUWI0QjhHY3FIMnNHdXdaWGNwWThwbGhMT2QxbjAxWmx5SXd2bFFLNUtHbWRCdVJBWUgw?oc=5",
+   "source": "Virginia Business",
+   "published": "2026-11-02T05:04:36+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Chesterfield, Virginia, US",
+     "lat": 37.3771,
+     "lon": -77.5058,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Richmond"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b0dccc0c41f71be5",
+   "cluster_title": "Chesterfield halts future data center development"
+  },
   {
    "id": "ff97a6f1afdfcd93",
    "title": "Carolina Curious: How is the fight over data centers reshaping North Carolina politics?",
@@ -77,6 +114,32 @@
    "suppliers": [],
    "cluster_id": "ff97a6f1afdfcd93",
    "cluster_title": "Carolina Curious: How is the fight over data centers reshaping North Carolina politics?"
+  },
+  {
+   "id": "3872f7fc29878510",
+   "title": "Where gubernatorial candidates stand on placing statewide moratoriums on AI data centers",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUW5kbFR1VHVBTFNVWGx3OVZSa0dFb3pRemJZMGxqdk1iY2djZVBwWk85ektHMnpTbzVtYXZMbkRublVJeWJnRVpGeTNwTHRPRnFSMmVkZ3NQQjkxZFhvX0ZPajdORVRHSlR1Vm1MS283OGtJZ2dvNlBPWi1qSlFwV0tuYVRPM0JGaFNfaUpaUXZYY2c3UFE4VFlsSjFPRXZpa0JuZU1TRTJsTGI0aEE?oc=5",
+   "source": "MTSU Sidelines",
+   "published": "2026-11-02T02:17:56+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3872f7fc29878510",
+   "cluster_title": "Where gubernatorial candidates stand on placing statewide moratoriums on AI data centers"
   },
   {
    "id": "378b0d64b5fadc7e",
@@ -202,6 +265,33 @@
    "suppliers": [],
    "cluster_id": "f4ce9cde3046bb4f",
    "cluster_title": "Public comments on proposed Amazon data center in Walla Walla County ask for oversight"
+  },
+  {
+   "id": "542afdef831f6699",
+   "title": "Daikin Introduces Coolant Distribution Unit for AI Data Center Cooling",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNnhzdUVfcmlIWkhaZHVZMXZxcHhfUjNWUFBJdnM4cnVSNk01ZE1NZjdRUmNSdURsVHh2ZGNYcFgzSUpEb3V4YkVoOVI1MEIyR3AyUnFqbXdzNWlUaTFFUEFHaWpBSHU0NFpCYmU3UU9iRzk5dm9ONDZkb3lMUXlJdnZDanhfclJVczU4MWVJNmFmdk9IUHdXX2psUzhxS2VzdlE?oc=5",
+   "source": "Refindustry",
+   "published": "2026-11-01T23:20:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Daikin"
+   ],
+   "cluster_id": "542afdef831f6699",
+   "cluster_title": "Daikin Introduces Coolant Distribution Unit for AI Data Center Cooling"
   },
   {
    "id": "319e2170f6db84a0",
