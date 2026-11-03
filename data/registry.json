@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-03T22:49:09+00:00",
+ "updated": "2026-11-03T23:49:10+00:00",
  "count": 703,
  "visible": 598,
  "records": [
@@ -23312,6 +23312,15 @@
      "published": "2026-10-19T09:51:42+00:00",
      "stage_signal": "Announced",
      "cluster_id": "bbbd03e4ba5675f6"
+    },
+    {
+     "id": "fe518734cb34328b",
+     "title": "Microsoft’s Indiana Data Center Advances as Groundwater Approval and Air Permit Review Move Forward",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOYUFiMkVTR1hPbmEzVDhYa2JpOUhHbjNseTdjRWowT0NVa2QtVlhxVmtNOEQ4cTBwYm5HWDlERHF1M284MXJWTWpMMkNtdzFOWF83YnBMdnVNYWowSk5LQ2R4ZmlOTWEzbjhHSERSTkwycnEwSzRYV3E4cEF5MWFoamstZ2R5azBzcDlwbDVmWTM1Rmh2UUxycHpaX19hUDFxODQ5Q2xMNnpPWFNHLXkxNzcxSk5RRVZSelpvZzAxdU1hUURHSEU0eDJtNGM0VTh3aUE?oc=5",
+     "source": "Construction Review",
+     "published": "2026-11-03T11:47:03+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "fe518734cb34328b"
     }
    ],
    "first_seen": "2026-04-23T07:00:00+00:00",
@@ -23339,12 +23348,17 @@
      "date": "2026-10-19T09:51:42+00:00",
      "type": "Power deal",
      "headline_id": "db44daa25ec68629"
+    },
+    {
+     "date": "2026-11-03T11:47:03+00:00",
+     "type": "Approval",
+     "headline_id": "fe518734cb34328b"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-19T09:51:42+00:00",
-   "sources_count": 5,
+   "last_news": "2026-11-03T11:47:03+00:00",
+   "sources_count": 6,
    "confidence": "low",
    "hidden": false,
    "investors": [],
