@@ -39,8 +39,100 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 275,
+ "count": 284,
  "items": [
+  {
+   "id": "ef01a35a089224e1",
+   "title": "California city fends off data center developer’s sabotage claims",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZmdEYlprODBTT28xRlV1RW1STkdnU3RYMEM3eFNRcUtNcXNOTkdfWUdlRnlObTc5NW55LVhCZ1FJT0dyRUFZclNHNHlSUmtwZGV4M0U3dmE4cUtkVEpvQWUwOEk1RW9kT0pVWk9aZ2JuMDByeGxaLXJGeDFUU0pPc3djOGtnS0RicDkwSXA2MUlXbTMyWTN1R2V0anQ?oc=5",
+   "source": "Courthouse News",
+   "published": "2026-11-03T05:07:29+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ef01a35a089224e1",
+   "cluster_title": "California city fends off data center developer’s sabotage claims"
+  },
+  {
+   "id": "f00c9b2416da14d0",
+   "title": "Martin implements data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWnhVczBtQmloM1BESGF5cTU4SU01aEZLNkdPQVhKWC1QVnJ0MG5INTlrd0hpUkt0TlpIMGQxSEZKcDRhcl9nU0wwU1ZIemFpUzNQaXo2eWo0bkwwdUYzSlZHam9pcHVGUkt2QWxhdUEzNnlWM0Y4RV9uaDRwbkV0QXpWUGRqZXFlNl9aOTVEZFp5S3BuR1h4cWV4MWVERjVqWXljbEJvMWZGSE5KVi1kZlpfYkJYTFZhelBZQ0Vn?oc=5",
+   "source": "Hometown News Treasure Coast",
+   "published": "2026-11-03T05:00:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f00c9b2416da14d0",
+   "cluster_title": "Martin implements data center moratorium"
+  },
+  {
+   "id": "b2cd962b62962d2f",
+   "title": "Pickens County council holds first reading on six-month data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdE00c0xjckhTUEF1SXR1dGZyLXFjWVFGUWg1czNoYW5iMnVCUXpYLWQ1OG5MODJjcFBZZVNJNFZOcnNmZkJYdTc5cHg5d1FTNno1QURld0hmTEF3Q1JVa3NEVXpHUTlOQmFjRzA3dnFEdWoxXzd6MUltRkJwTlZPM3ZQbDhKeVRzWGltbGhmQ2FOZUVrUVBoLVl5VHhZcWpxMWJEcjFFbmZmZkRNbWh6UjB1T3NsUdIBygFBVV95cUxPdEtjMGpJeE4xMFQzWklNelhYWGZVZ3h6WTV6TTVEZlQxdndkWkJkOUZxRDRYYl9tRi0zM25tTnpwTHkxRkJyaXhPQjBMSmU5SHRaNXV5a0U3bjVXd242RmVkWGJTUm9QdTYyUmtCTlFhNjFVTTlRQXppYmhORXlSWkJ2V3JWV3pZTldlSFQ3a0RiVXViMTdXcDcyUzlSSHhPRWxEdXkzSUNDYVRVOWE3eE1pZEloZDE3SW5wdVpOWklyZ0pUTlh3LTh3?oc=5",
+   "source": "FOX Carolina News",
+   "published": "2026-11-03T04:41:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Pickens County, South Carolina, US",
+     "lat": 34.888,
+     "lon": -82.726,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SC"
+   ],
+   "state": "SC",
+   "county": "Pickens County, South Carolina, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b2cd962b62962d2f",
+   "cluster_title": "Pickens County council holds first reading on six-month data center moratorium"
+  },
   {
    "id": "20041b41bee7ea30",
    "title": "Milton sets Jan. 4 hearing on proposed data center ban",
@@ -65,6 +157,45 @@
    "suppliers": [],
    "cluster_id": "20041b41bee7ea30",
    "cluster_title": "Milton sets Jan. 4 hearing on proposed data center ban"
+  },
+  {
+   "id": "cb0f4cfa31566fab",
+   "title": "Effingham County to vote on OpenAI data center site plan",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONHFCZEk2TWpZeUw1NDBqSmVtYXZSOENNVEFUZ0lGc1FFZjJvQUhnbWdnbFlLU0dyenM3VVJqU1RTaURWaUJrejIzYmpyN0JLMVNkZnp0UUU1N0o5dW1tYWhMX3Vja3ZSTzdpNVh1ZUVKWXF4eHJmRXpzem5pV0gwN3hYdDVxN1BvaEtj0gGfAUFVX3lxTE1RamwtTzlLUE9TcWRqQjVJU1lnTEtlclpDR2s3R0N4MzhKeHEycHlOSlo1TUVsRHFiTnY4Tm5wSEdXOHRyTW04d2tNSUROTk5aSlUzSGhPc1Z0STcwWUk5OFdScjR6ZlFKVmRYUHpSUnY3V3VLblowYTR3QU94cFpFZ0Y2T3RjX2d3ZEcyMGIwV3NpQV9tX0pDVFFZZzNLTQ?oc=5",
+   "source": "WTOC",
+   "published": "2026-11-03T04:40:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cb0f4cfa31566fab",
+   "cluster_title": "Effingham County to vote on OpenAI data center site plan"
   },
   {
    "id": "1077b267b15be3c0",
@@ -138,6 +269,68 @@
    "cluster_title": "Pickens Co. council holds first reading of proposed data center moratorium"
   },
   {
+   "id": "5576bae6eb05bb43",
+   "title": "Estherville city council advances data center rules to public hearing",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVGUyYy10MzJYTXI5bnV0akM0R24zYXlRaWR2NFVqSlZJallJUFhCU3hCdkNyeTdYd214X3FaRktXSC1ubWF1R1lDU3p4YWVBRWNXOXN2ZXFiNWw2d3RIdlNOcDlwUHRjbDRkT3hOQ1Y2YkJPaGV1cFJtZnJJa0gtVXVXVnBER0RsNmt3QUpRVWNOLUlNR3h6TTNJNnc0aW560gG0AUFVX3lxTFA4YXNHaE4wdlo1Wjd6UU9rNWhGYjkxSDRnamx4azlka29jTlRVeWhiZjlmd2x3bmk5UV9PWW5OMEgtc0UxOEFfTmx4Rl9VQTE3RW1sUnFCODFhc3NyUklZVzVrMnphWG1zZUhFdWxUV1RRR3ZNSkk3eGd6Y3VfQ2o0dFNtV05icnFvYkJuRF9GbHZSaHBFMFhsMXJJTE8wRGY1YlZKNmVMdmx3a3N0bzlySUFDMQ?oc=5",
+   "source": "KTIV",
+   "published": "2026-11-03T04:11:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Iowa, US",
+     "lat": 42.1,
+     "lon": -93.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5576bae6eb05bb43",
+   "cluster_title": "Estherville city council advances data center rules to public hearing"
+  },
+  {
+   "id": "d7b340f4e65883d8",
+   "title": "Amazon revealed as land buyer for possible data center development in West Richland",
+   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOazhNM05uanVUdFR6Vmlid1Y5MFpod0xtRWZhUk9qNzlWU0RjMVZwall3TDBHMEtleklrVXdJREpkY0ZKMmZBTHB5SlQ4WXExSXJxTkZyN2oyWllhRGNJamRpTnNheFVTQlRlcWZtTEYtV0hPdFFCYnVmNHZKakZ3YUJMSmRmdUR0a1BOYWRHbVlqbTVsZGE2UVNjUkhvVk9LZjFIcG50bm0zQndnUUhIRGg5eGFqR0dHdEo1d0g1UTV0LXJxa2N4U2ZXWjJmdGNwRGp0X1FEZ3E2Yzhld05ZZy0yRXZTTFJFOVhHWVoxUTExX0tOQk5oWVhB?oc=5",
+   "source": "Nonstop Local News",
+   "published": "2026-11-03T04:00:05+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d7b340f4e65883d8",
+   "cluster_title": "Amazon revealed as land buyer for possible data center development in West Richland"
+  },
+  {
    "id": "0e0f49b9a34e290c",
    "title": "Three Kansas communities to decide on data center bans this election",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQ0dKdUI0NVhvWW1TYk8xYzhzd3luVXhVQ3pBUXdmOVJ5NnppUnRneldVRFNZVXBNQzhPQVpxdTM3MTJEbHhkVEZ2bEF0UjBWOUpMS0RfcVZuLU5LX1NxRFhRR3JyeTg0VEpyT1Nxd3hyaFlHVlY4Tnh1cF9lOUh5UktxME1mOFZiSUd2SUF3S1VZRDFteG51Y1NRONIBrwFBVV95cUxPNFFMWVUzX0V4UWpITmNBMHFQQ29WU1o3YUVnb21fem1QeUZoN3pCaXcxN04wOEx6SHJpcmJORXRmVFBhaktHdHFVTjlEbklFc2VBeVgxRC13TDhHVE9zcjZRcFZtTHJGZlY3SzQtdUJ6NUg3UGxVankyMHlhREhBX2syYk9VeHFJUXNyQjJ5Ri1LQzNMSXg4MHYwRVJOZjF5Mk9vQ3NKdFItVUVXR2dJ?oc=5",
@@ -209,6 +402,28 @@
    "suppliers": [],
    "cluster_id": "73a0465b28c36aaa",
    "cluster_title": "Data center bans on the ballot in three Kansas cities"
+  },
+  {
+   "id": "ecea9446f2d85cf2",
+   "title": "Healthy voter turnout in Mason County attributed to data centers",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcFN1RVhWWUotdXJJNmJ5MXVuSkVhcEJOdDVONFZjNkkyZGtiY01XakJQMEFVa3RLbkxVSHFlMTlOVEQ3RWQ1YURRbWFfdkVKMDlkQVlONWxSQjhfa2M5emtab1RJbnRNZmNsS2ZMaUV4Y3lPSkhRWHFhcGRidlBoODFsYTdJX0tNbDhLczUxS2hFY05GQjZzYjZB?oc=5",
+   "source": "WCHS",
+   "published": "2026-11-03T03:21:30+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ecea9446f2d85cf2",
+   "cluster_title": "Healthy voter turnout in Mason County attributed to data centers"
   },
   {
    "id": "67fcf09575000c09",
@@ -2112,6 +2327,41 @@
    "cluster_title": "ON Semiconductor Q3 2026: AI data center revenue surges 175%, outlook raised"
   },
   {
+   "id": "9cb4a51f8b31b741",
+   "title": "News | Long-time data center broker boomerangs back to Cushman's Phoenix office",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVXlqSUFXY2owdEQtTkhTakVRU25YbXlGVElOeE9EYlJKRnJrRjc3cVlnUDhuM1RYRnZzYXhVT1lwd2VoWkFmQndJeC1RdnJPSlNtZE4xUzJWVHVCQWlIY3dEWGRmVGF2cnZnSzVjakdTY3E1RkhUWENablFnQ3d5aV9TQkVrelczSzJra3V4R1BvU0xTZzc3SFZlRDhrQ2ZLakhWS0dQMnlSZThXWWFTT1Vn?oc=5",
+   "source": "CoStar",
+   "published": "2026-11-02T21:24:58+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Phoenix, Arizona, US",
+     "lat": 33.45,
+     "lon": -112.07,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Phoenix"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Long-time Data Center",
+   "cluster_id": "9cb4a51f8b31b741",
+   "cluster_title": "News | Long-time data center broker boomerangs back to Cushman's Phoenix office"
+  },
+  {
    "id": "425463086f9e8fe6",
    "title": "Amazon's $2 Billion Ohio Data Center Hangs on Sunbury Ballot as 41 Measures Test AI Buildout",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5fUUtId19rZDNkbGJEbWV2UjJIYnluZWx4NnptdHNHdmN2MXlTeWlBeVNPdnM5dF9LenVWX09NZDdFMFl2MnRqRW80RUNQVDZzVGY5eW1EbHQ4TVJFeU5qQ252aHlvTlNILXRudWxiRlRUeWQyOHc?oc=5",
@@ -2296,6 +2546,41 @@
    "suppliers": [],
    "cluster_id": "1aab261bbb1177e3",
    "cluster_title": "Data Center Spending Spurs Non-Residential Construction for Sixth Consecutive Month"
+  },
+  {
+   "id": "36f1e2e440b3d8bd",
+   "title": "City of Madison sets meeting schedule for data center plan",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbXQwdm5iUlhPaGhPYm1fVmRIN01SNGZCWGtEMmwwdUgzUy1CNFdnMXBYc2o0OVlmekExb3RJdXliY0xybWJGdmRaVTFxR2RKTEluT0xFdDdpYTJIa25USXJPOHBNQkJ0Y2pmMW42XzJ3SkRYb0pmV0tuYzMyaVppTUkyQmJPVGNs?oc=5",
+   "source": "In Business Madison",
+   "published": "2026-11-02T20:20:11+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "36f1e2e440b3d8bd",
+   "cluster_title": "City of Madison sets meeting schedule for data center plan"
   },
   {
    "id": "5b2d929f3f361036",

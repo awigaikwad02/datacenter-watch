@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 482,
+ "count": 484,
  "items": [
   {
    "id": "e22ded6c22a6e761",
@@ -17,6 +17,19 @@
    "source": "WSMV",
    "published": "2026-11-03T04:14:00+00:00",
    "state": "TN",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "4f7fdec1fbd29ec5",
+   "title": "Proposed data center draws a packed crowd to Massillon City Council",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAtU1ZfdTB2Qk1tbWx2cndBSDRTYVFBTWk1NjVJVlF0UG1mUXczVzhMZWJxN19jbzJHOTYwS1VVZ0NPdDdfSU9WcERYTGtmR3FCVVE3RjUwbmY4cWQwcmpTaHNCSTBSM0VnMEppQndQQ3dZSEFRYzByeGRZRU5NUQ?oc=5",
+   "source": "Lexington Herald Leader",
+   "published": "2026-11-03T02:13:00+00:00",
+   "state": "KY",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -126,6 +139,19 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "36f1e2e440b3d8bd",
+   "title": "City of Madison sets meeting schedule for data center plan",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbXQwdm5iUlhPaGhPYm1fVmRIN01SNGZCWGtEMmwwdUgzUy1CNFdnMXBYc2o0OVlmekExb3RJdXliY0xybWJGdmRaVTFxR2RKTEluT0xFdDdpYTJIa25USXJPOHBNQkJ0Y2pmMW42XzJ3SkRYb0pmV0tuYzMyaVppTUkyQmJPVGNs?oc=5",
+   "source": "In Business Madison",
+   "published": "2026-11-02T20:20:11+00:00",
+   "state": "WI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "da07f9fd2db206ac",
@@ -960,19 +986,6 @@
    "reason": "no operator, and only a state"
   },
   {
-   "id": "ababe222d5a70ce9",
-   "title": "Franklin County residents urge planning commission to address data center concerns",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM2YwTGVjVnJ5UzhxNjRQeHpGNThCWXNLZVNLQk1Qemx4SEFXZEotZlBkbjByekhUQ1NZWkE0UmtIMm9xM1hnVlJCdXhyYmVqSFlZZm8wX3dabU9zMmRZTVU2T1UtT3RyNzE5RXlvbURiSERCTkpaQ2ZlM1VRNEwxam41dURYMFNHSm5LUjB4bERqV0FfRlQxYi12V0NsclM2aFJoRk5kS0lybjBvdEdpY0lVSTZDNW8?oc=5",
-   "source": "WSET",
-   "published": "2026-10-29T10:41:08+00:00",
-   "state": "VA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
-  },
-  {
    "id": "053f7b4c573258c2",
    "title": "Michigan Voters Split on Candidate Solutions to Data Center Proposals",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaXFCLTg4LUFDaXdQWWlBTGdqaXlOTDVjdG55dDk0QlNsNlhMTU5RVWhwaEk5YzgxRjZFQXRBUlZlTUlMbmJvQ1VBbDdpcmJjWkVmNHNiRFhsX3BocVVPQ0VOVnZ6MktQRzNTMEFhZkZxaGpFdk01ci1nN3pueElEVkRSVThLREU?oc=5",
@@ -1088,6 +1101,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "a policy story with no operator or project name"
+  },
+  {
+   "id": "ababe222d5a70ce9",
+   "title": "Franklin County residents urge planning commission to address data center concerns",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaEMxZkpqSkkxOUt5WFJzNmc5V3ZwR09Cd1JjR1hIQ21vTVJQNkJUSmU3ZDZoMzJkMjNibzU0TWlNbUM3TEg1M2xLNHNzRWJsRl9BTmR1S211eGxqRmF1RXNwSm0wRHZjZUxXQlhWX2Vfb010Y0Zhc0tFZmdZUnpicFNLUmxlVmJ2cDR0S2Fac0haUnZQUWVmamtqVzlZX1Zfb0RZbl8zWWlURElwN3JN?oc=5",
+   "source": "WSET",
+   "published": "2026-10-29T02:43:51+00:00",
+   "state": "VA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "9bbd54743d776db5",
