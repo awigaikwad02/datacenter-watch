@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-03T12:46:23+00:00",
+ "updated": "2026-11-03T13:46:23+00:00",
  "count": 703,
  "visible": 598,
  "records": [
@@ -54737,6 +54737,15 @@
      "published": "2026-11-02T17:12:54+00:00",
      "stage_signal": "Expansion",
      "cluster_id": "f53483d49d43da43"
+    },
+    {
+     "id": "217247964a57f552",
+     "title": "$659M SpaceXAI Colossus 2 Expansion Adds Two Mississippi Data Center Campuses",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMkprTHJaWXREbjBVTUlFNVRXM1poMlRTVDIwdkUybWM5MmRKNGI5eGpxZVNVWVFvaUpBYzVOS1p4bXV0U2o0dFpLWWgtVkxKYVFOQTk3ejFoT1M5YWdNcnJndWNVTU9VTkV4SGM0MUpiSlctNlF6dExBTUZ2LWpSa2xOcmxvVjAyU0VZTDliM1pWZ0h6NnpWNWhJcmJMVEJGWkdiUFN4ck9ORVR6QV9mWW5VNzk?oc=5",
+     "source": "Construction Review",
+     "published": "2026-11-03T10:01:56+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "f53483d49d43da43"
     }
    ],
    "first_seen": "2026-01-08T08:00:00+00:00",
@@ -54764,12 +54773,17 @@
      "date": "2026-11-02T17:12:54+00:00",
      "type": "Expansion",
      "headline_id": "f53483d49d43da43"
+    },
+    {
+     "date": "2026-11-03T10:01:56+00:00",
+     "type": "Expansion",
+     "headline_id": "217247964a57f552"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 20.0,
-   "last_news": "2026-11-02T17:12:54+00:00",
-   "sources_count": 5,
+   "last_news": "2026-11-03T10:01:56+00:00",
+   "sources_count": 6,
    "confidence": "low",
    "hidden": false,
    "investors": [],
