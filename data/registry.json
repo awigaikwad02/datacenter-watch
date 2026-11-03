@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-03T05:43:56+00:00",
+ "updated": "2026-11-03T06:43:57+00:00",
  "count": 703,
  "visible": 598,
  "records": [
@@ -15879,6 +15879,15 @@
      "published": "2026-11-02T13:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "0947bf15d251439e"
+    },
+    {
+     "id": "2602d0158f770064",
+     "title": "Residents remain vocal following Hermantown's Google data center approval",
+     "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOaXpLdWdldk00elZEMUNoS0tFY01SSHRsX0kzWVdHcFhTd3RoUlVpeDlGV2ZjaVMzRTVUUWZyUWtBMU5CWV92d1NiR2dqOUFSRDRmUEhUQ3JpZFZfcDBoOXJNVmpweWtOWXFZSDNGWGNXb2NacFBxMU5ZTjFrN0RoWFZaYlhNMEhCcnphcG9BSTBFci1wWkYwdGl1QTEyM1ZseDZJTloyVWtEeVhJcURjVzVXbkVlT0NLRURFRjZYcFo4U3FSdEhVcVVBd1ppRTZjWW9mZFo2SV92dFBTM2lxeXBsNVNzUWdiNnJqZzZkdFNJQVk?oc=5",
+     "source": "fox21online.com",
+     "published": "2026-11-03T02:57:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "2602d0158f770064"
     }
    ],
    "first_seen": "2026-02-24T08:00:00+00:00",
@@ -15939,11 +15948,16 @@
      "date": "2026-11-02T03:18:00+00:00",
      "type": "Approval",
      "headline_id": "437c7956a08106f1"
+    },
+    {
+     "date": "2026-11-03T02:57:00+00:00",
+     "type": "Approval",
+     "headline_id": "2602d0158f770064"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-02T13:00:00+00:00",
+   "last_news": "2026-11-03T02:57:00+00:00",
    "sources_count": 20,
    "confidence": "high",
    "hidden": false
