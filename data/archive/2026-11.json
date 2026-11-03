@@ -39,8 +39,72 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 260,
+ "count": 268,
  "items": [
+  {
+   "id": "67fcf09575000c09",
+   "title": "Aurora mayor shares alternative plan if data center moratorium fails",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcU5RdHZmQjMxX1g3Q3N2V19WT01LTjZxSE40YXFPd0ZHWFJjRW4yUkVvUTRsSEJjZzZ0aFlRRUQyQTFvVjV2dHVzQWRndm03RF9HR0VDQjJYcVNRQ3h2YXlRZjBwVHNaS1VIREFlTmNfMVZmOTlGMGliX1BlRmgtUWtreUJncGFyeGpNU3g0NjNldmhpWnZmMFNGRGl0dl9vcVhoT2RzdllVWVdu?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-03T02:59:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "67fcf09575000c09",
+   "cluster_title": "Aurora mayor shares alternative plan if data center moratorium fails"
+  },
+  {
+   "id": "2c46c9d22347a54d",
+   "title": "Amazon is behind a $264M Washington state ranch deal. Up to 21 data centers are planned",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ3NTQlZwa1k1UnJCRHhRZE9rSFlCNGtCREh3ZzNIMzVhcWNWempZX2cxOHAweG13UlVvMkl1SVROZXZmYV9oajhYbWlqNk40N2tYbnJQSUhOSlh1YktVTm5PcUd4aHVPS0FYQmNfQ3FpU0lqSTNSZ1RYSUNFbDRSNTNXUGVZSXd4Wi1uaTRkLU9Ed1U?oc=5",
+   "source": "Yahoo",
+   "published": "2026-11-03T02:24:00+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.264,
+   "cluster_id": "2c46c9d22347a54d",
+   "cluster_title": "Amazon is behind a $264M Washington state ranch deal. Up to 21 data centers are planned"
+  },
   {
    "id": "52ea472b873246fa",
    "title": "Bulloch County Data Center Committee recommends moratorium extension",
@@ -271,6 +335,33 @@
    "cluster_title": "Data Centers Lift SE ConstructionTech: 5 Buyers [2026]"
   },
   {
+   "id": "155d9c4bfffd3e94",
+   "title": "Ellington considers data center moratorium amid concerns over water, energy use and farmland",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPaHRwT3FCeEJRd1JuNzNGYkNERGlxYkQtLWJzTWF2WlpxWERCVE01RmRzak1Eb1FpZmRWQzN0MElqUkN6bHRNQnlGOWRRYkR5dl9zRlBGdXVuVXhNdktOUzk2RWNpd3BXYXB6bjRQVDN3bFlNcDk2ZVdHOVJCSW1MT21qNjBLTEVjWVNlU0pmRnJybExhUmZRX25BY2Y5aVhJcjdIRTBrTThJU2ZBa0Y0allzZ2FtV0gyZG9wNk1qVTZUdGFObFFnTl9YMHBEMlNYLU04c2hQSDNyMTJlNDhidGw4VlFqTnpEcXNuQUZLcFhBQWp5OGlBX2x2cWxWazVHRUtSZ21VTGNvak1yTlEtNWkyUEdUNXBOVTJZ?oc=5",
+   "source": "fox61.com",
+   "published": "2026-11-03T01:41:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Power / Utility",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "155d9c4bfffd3e94",
+   "cluster_title": "Ellington considers data center moratorium amid concerns over water, energy use and farmland"
+  },
+  {
    "id": "3d6bc15fd6e2c436",
    "title": "Onsemi Matches The Whisper But Raises The Bar: AI Data Center Growth And Margin Gains Contrast With An Automotive Pullback",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbmwzT19qekpLS3Vad0Vyd0dCMHdCS2xWSTdVQ1NQR2w0WVNydmhXT1lRRzFvR1JUTndLU3FRb3BKOTQ0ZTl3QkJEdUJKUElFSVBxM2ZZX3BpaVl5TVJuQUotYVdHcW5QaFVoUE1LQWhyMmRVZm5ZOVgtQXFqN1RVajlVdjUyRm5QcnhJRGlPb0dCb2RZS1lfcW5TTUNzM19uWWZ0S1ZRdXV6Y3VqeThnUExEQjlLOWtTNDNWbVVVbWtvaTZQZ09yS3I0QTRGc3dlbjdGQnBGT0tfUkh0bTlKbW1IbjBjTkE?oc=5",
@@ -396,6 +487,70 @@
    "cluster_title": "Gillette forum reveals varying perspectives on data center development"
   },
   {
+   "id": "3bb9593fdc6adb59",
+   "title": "'We don't know anything' | Eatonton neighbors shocked to find out about proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVEJzZDhZUktGSXh3Q25DY0g1aV9hOEE1dTctOU9wVEdKTmVybnBhTUxvaUk5UU5zNE9Fa3NnYXBlT21GdEFUQnNtQ3Z1bDlyOUFZTmMzUmFodTc3X3lDWkdyY0FQLWppd1JFT3BQNGRZQkF3M0RjVGVnc245cXh4S3Zic2x4UmJ3Sm9aQ19feENQVE9hYkFiVWZLdGtWUlhtMUFwdmZybzNHR0t3T0h6ZHFUdHVqeUdtOW1ZSzlOSEFBZS0xQVh1RXNuWkQ2eDJ0alE3X3ktNWRQSlBNUC1pWg?oc=5",
+   "source": "13WMAZ",
+   "published": "2026-11-03T01:05:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "230eacefdac81efd",
+   "cluster_title": "Eatonton neighbors shocked to find out about proposed data center"
+  },
+  {
+   "id": "346f7c9e3d570b8f",
+   "title": "Holly Ridge residents weigh leaving homes as Meta Data Center construction disrupts community",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVjRkc19VVEVnUks0d3hkLVZSa1pqS2xYODA0ckV5cmVkN21oWHUtYnV3MXBSak1JX3VuRk1Ic09YaXNlVzlMZWhEa1J1OWRQaGMxdkpkYUxQLXA4Tlg1dXNabncxTHdnb0tBNlNpYzRSQmE1U2ZNUlBSaHl0SGgyWURhck0yZ01SSXBtV211bl92bDA1bHN5Vm51MGVqdFdlcXhzSlZtODZ2bDU5TzBPQnotOTkzMk1zNGloeWd6R0bSAdQBQVVfeXFMTlJ0aVRNTVAyNDlsNEp4T1Y5dFNiVVhUYWJtWmd1alFFZkNMelJRdk9LMkxSZzJ2MWNGRFdocDZBaFh3eF9LazBWYU4xNGV2TmNZeElYMXdaZmtqYUdiNnBKMHJIY1pKblFrQmFYVklneDZmanZWYkxoN04xSmwwRHZCaFhyU2FzSzBmMVVQOU5lejFUTTZfQTFITnFUUThJT1F1c29lMFlxeTVJVjllWDNqWXg5Q3h0ZFI3Y2laS2ZnUXM0dG5XTThVZWthMGpjVnRLS0c?oc=5",
+   "source": "KNOE",
+   "published": "2026-11-03T00:50:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Meta"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "346f7c9e3d570b8f",
+   "cluster_title": "Holly Ridge residents weigh leaving homes as Meta Data Center construction disrupts community"
+  },
+  {
    "id": "c329057d3856041f",
    "title": "Lawsuit claims Botetourt County’s data center agreement with Google is invalid",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUDF2RHEzTkJwbFFLeXJYS0JBbVNtdjJnSDR0emVHS3Qwcnp5aXNzZ1dNR3Y0ZzdqU29hdHhYVE9KLXRGam14dWZhN1ZBWTNsX2NUd1I5aGpBdE5tRHI2TmJ3NFJmZHJUOWFtaFJkX3ZUNVo1b0tSX2NaZzZUUE5zLTNQNVhXempzWllsbWlZZENzdExrdTB1bG12V3poMGhqNmktQlllNmNRV044YnpoYUxuTDk?oc=5",
@@ -432,6 +587,33 @@
    "suppliers": [],
    "cluster_id": "8d5893537f3e649b",
    "cluster_title": "Lawsuit alleges FOIA violations with Google data center agreement in Botetourt County"
+  },
+  {
+   "id": "158c30c6a29eab84",
+   "title": "Oracle : Our commitment to openness in AI data center communities",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdzdQRXU3ZHVla0tSUS1OTWQyX2h2MHhwTndwX1NIY3Y0UzNKUGpYT2hoZlVibHYxUXBLZlRMdC15SVIzVVhvNkYzb0k3YVZEOG1kNWVlaFAtVlctTGIzUFdOdVVveW9QNUdabFVobDhscGpFRHFLYWJGbEx4bWw0ak45WnNDSzNnZ0lCUGg3YXFlc2E1RGk2OUN6ZU1JWFlLbkFWdE1jbVNNY1hrbGRub1dMTlpWcVE?oc=5",
+   "source": "www.marketscreener.com",
+   "published": "2026-11-03T00:40:06+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Oracle"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "158c30c6a29eab84",
+   "cluster_title": "Oracle : Our commitment to openness in AI data center communities"
   },
   {
    "id": "467f7077e193efa2",
@@ -581,6 +763,42 @@
    "suppliers": [],
    "cluster_id": "2c8642e4b14c6058",
    "cluster_title": "Why today’s data center construction is a distinct property risk"
+  },
+  {
+   "id": "b992f2aa9f4fd99d",
+   "title": "Caddo Nation announces 10-year moratorium on large-scale data centers across tribal lands",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQW03a2NhQnl1OVVWamhJZDY4TC1sZkJpS2ZDbGx2Y1JyUGstajFaWXlWR3hJam5Pb1VyUWtESml4WkdhbUFidVhUUFJQX1NjMXdmQ0lYM20waTJ2bTFkeG9NbGNaMzFTNXpuSk15bEQ5c2lRbUhfc2h0Q0hINTdtb2hpbTYxUFZXVWc?oc=5",
+   "source": "News 9",
+   "published": "2026-11-03T00:18:55+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Oklahoma, US",
+     "lat": 35.6,
+     "lon": -97.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b992f2aa9f4fd99d",
+   "cluster_title": "Caddo Nation announces 10-year moratorium on large-scale data centers across tribal lands"
   },
   {
    "id": "25764361c389214b",
@@ -4974,6 +5192,28 @@
    "suppliers": [],
    "cluster_id": "6063393dd8206589",
    "cluster_title": "High risk, high reward: managing corruption risk in the global data center boom"
+  },
+  {
+   "id": "5f0c43896f9c2c8a",
+   "title": "Let's set the example in data center governance",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQkJ5S2wxeXFuX0ZDUFpYbTlxeUpiME5jVmZhbkJpdlIzd2RZQWJzNEtlSE94NndCRDQyNDZlbmNWeGc5TVVIb09QZGRXUjE0bUhPT3JwWEpjVUJNMWdEUTEtRVktd3N2R2pnZFZrVmYyeHF4NVdScm0xdEhURWtHckxVT1ZodWNGUExONkxxSE51Qmx3cXJVcHdOZlJ0RDFVZm9LYUtYT0phelUyNzZRcWgtTUdaSDhabUtIS1hkOWtnR2lfUHplcU9zb0NJRnpJMy05MGdrNXMwNHp0cWpwSnFkc2NfYVZfRkdqMA?oc=5",
+   "source": "Clinton Herald",
+   "published": "2026-11-02T12:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5f0c43896f9c2c8a",
+   "cluster_title": "Let's set the example in data center governance"
   },
   {
    "id": "e28ec797bd4aa7e4",

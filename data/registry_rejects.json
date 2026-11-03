@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 478,
+ "count": 481,
  "items": [
   {
    "id": "857c73570f1cd3ed",
@@ -21,6 +21,32 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "3bb9593fdc6adb59",
+   "title": "'We don't know anything' | Eatonton neighbors shocked to find out about proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVEJzZDhZUktGSXh3Q25DY0g1aV9hOEE1dTctOU9wVEdKTmVybnBhTUxvaUk5UU5zNE9Fa3NnYXBlT21GdEFUQnNtQ3Z1bDlyOUFZTmMzUmFodTc3X3lDWkdyY0FQLWppd1JFT3BQNGRZQkF3M0RjVGVnc245cXh4S3Zic2x4UmJ3Sm9aQ19feENQVE9hYkFiVWZLdGtWUlhtMUFwdmZybzNHR0t3T0h6ZHFUdHVqeUdtOW1ZSzlOSEFBZS0xQVh1RXNuWkQ2eDJ0alE3X3ktNWRQSlBNUC1pWg?oc=5",
+   "source": "13WMAZ",
+   "published": "2026-11-03T01:05:00+00:00",
+   "state": "GA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "b992f2aa9f4fd99d",
+   "title": "Caddo Nation announces 10-year moratorium on large-scale data centers across tribal lands",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQW03a2NhQnl1OVVWamhJZDY4TC1sZkJpS2ZDbGx2Y1JyUGstajFaWXlWR3hJam5Pb1VyUWtESml4WkdhbUFidVhUUFJQX1NjMXdmQ0lYM20waTJ2bTFkeG9NbGNaMzFTNXpuSk15bEQ5c2lRbUhfc2h0Q0hINTdtb2hpbTYxUFZXVWc?oc=5",
+   "source": "News 9",
+   "published": "2026-11-03T00:18:55+00:00",
+   "state": "OK",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -703,7 +729,7 @@
    "id": "c7ba6f3e074cc2be",
    "title": "Out of state developer looks to build northwest Ohio data center",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVEdLRWd2QzRYcG10aUpFTkNqT2c4bEVXcFpFdzRDd3h2ZExTUWEwMThWLUNKYXdXMXV0Ymk3OEtiQzlmWEJlRlAxWVNJTGxDalVOWnhUX2NZb0ZuLUIzdnd2ckNtZ2QzNS1LWGNwSVBOdGhWMXM1WG9iVnZGVkNuc01MVGI2M1BOMlRGcUY0eHdUcEJXX0lGeV8teWV4WC0tN3F4SEpWWXNKTVJOazVjbWRVaVhQdHlVUFNnc0o1WGdYcXRUS1JxZkIyamJlc2xmMTBiM0dILXhYNXM?oc=5",
-   "source": "WTOL",
+   "source": "wtol.com",
    "published": "2026-10-29T22:44:00+00:00",
    "state": "OH",
    "companies": [],
@@ -921,19 +947,6 @@
    "reason": "no operator, and only a state"
   },
   {
-   "id": "ababe222d5a70ce9",
-   "title": "Franklin County residents urge planning commission to address data center concerns",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM2YwTGVjVnJ5UzhxNjRQeHpGNThCWXNLZVNLQk1Qemx4SEFXZEotZlBkbjByekhUQ1NZWkE0UmtIMm9xM1hnVlJCdXhyYmVqSFlZZm8wX3dabU9zMmRZTVU2T1UtT3RyNzE5RXlvbURiSERCTkpaQ2ZlM1VRNEwxam41dURYMFNHSm5LUjB4bERqV0FfRlQxYi12V0NsclM2aFJoRk5kS0lybjBvdEdpY0lVSTZDNW8?oc=5",
-   "source": "WSET",
-   "published": "2026-10-29T10:41:08+00:00",
-   "state": "VA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
-  },
-  {
    "id": "053f7b4c573258c2",
    "title": "Michigan Voters Split on Candidate Solutions to Data Center Proposals",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaXFCLTg4LUFDaXdQWWlBTGdqaXlOTDVjdG55dDk0QlNsNlhMTU5RVWhwaEk5YzgxRjZFQXRBUlZlTUlMbmJvQ1VBbDdpcmJjWkVmNHNiRFhsX3BocVVPQ0VOVnZ6MktQRzNTMEFhZkZxaGpFdk01ci1nN3pueElEVkRSVThLREU?oc=5",
@@ -1049,6 +1062,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "a policy story with no operator or project name"
+  },
+  {
+   "id": "ababe222d5a70ce9",
+   "title": "Franklin County residents urge planning commission to address data center concerns",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaEMxZkpqSkkxOUt5WFJzNmc5V3ZwR09Cd1JjR1hIQ21vTVJQNkJUSmU3ZDZoMzJkMjNibzU0TWlNbUM3TEg1M2xLNHNzRWJsRl9BTmR1S211eGxqRmF1RXNwSm0wRHZjZUxXQlhWX2Vfb010Y0Zhc0tFZmdZUnpicFNLUmxlVmJ2cDR0S2Fac0haUnZQUWVmamtqVzlZX1Zfb0RZbl8zWWlURElwN3JN?oc=5",
+   "source": "WSET",
+   "published": "2026-10-29T02:43:51+00:00",
+   "state": "VA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "9bbd54743d776db5",
@@ -1608,6 +1634,19 @@
    "suppliers": [],
    "precision": "city",
    "reason": "a policy story with no operator or project name"
+  },
+  {
+   "id": "fbb74879e461d5c2",
+   "title": "Data center development proposed for Delhi Charter Township",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNUlROVpQNFAyQ0tFSzctVU1PS2NuVVlJWnppVl9GRUtOVWRFdndQT0pPMEJwblNLMzI3Qms5NzFPRHhKLWJYek9tX196N1FZYUV2VE12SDVVektsSmpNb2tHTFp1U0xPTEdnWURvZDNhRVg0ZlVjR1BlemcwZ1U5OVktS1RKWEcyLVo2cDdLXzNvb09WeWtuVG5JX21QVWo4WnRNTVhUeDl3ODRkaWwzbXFhYXBLaWV1ZmF1Vg?oc=5",
+   "source": "WKAR",
+   "published": "2026-10-27T21:00:00+00:00",
+   "state": "MI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "42ba477ad1a8762e",
