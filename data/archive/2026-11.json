@@ -39,8 +39,130 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 410,
+ "count": 417,
  "items": [
+  {
+   "id": "645566e8edf8d8fb",
+   "title": "City Council votes for new data center regulations",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNb2NBRGVGc0RtN2NEdVNfX2MzWEs0Ym13UV9QX1ctSnhxQmVWQWxwSFFCbEZXaWJxdkxjeXVaaE1RWDRaWmhxRW4yX05yaVV4MkJ2M0RIeGl4ajV3R1hrWklWTkt1ME5ZTEllOEItNFNBSXdKeUFpRm16UGhMc1N1NldxcUpnUnEwQ2E0UERIREo4LVU?oc=5",
+   "source": "The Paisano",
+   "published": "2026-11-03T20:08:10+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "645566e8edf8d8fb",
+   "cluster_title": "City Council votes for new data center regulations"
+  },
+  {
+   "id": "edfe9a357376802e",
+   "title": "St. Johns County bans data centers for at least a year",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IUzlodW5sRFFDaDFZV0JudTJ3RFo2MG5pNHpEeDhUTng1bmdPNXZvOFlob0FnS2stUGpQYkd6ZlNSR0R2eWtocFZrYzNIR25EWHY3bzNKV2cycExQeXlSWGF2c1NEOTg?oc=5",
+   "source": "JaxToday",
+   "published": "2026-11-03T20:07:52+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "St. Johns County, Florida, US",
+     "lat": 29.901,
+     "lon": -81.441,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "St. Johns County, Florida, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "edfe9a357376802e",
+   "cluster_title": "St. Johns County bans data centers for at least a year"
+  },
+  {
+   "id": "bc079f4d45ecb3d3",
+   "title": "DCF Show: Can AI Unlock Data Centers' Stranded Megawatts?",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSks4ZjdPX09PTlB4N3pwdllxNUh6M1J3M3A2SFlVQ3FXX3V3VjFRQmNYZ3BHdi0za0V6amdwUkpmNlRBdUVVWEp4dGUwWF9jVnlGenNMQVd5c3RVOGtJbDdLQkVBdmRPUnpBUnJoTmo1TTFxQnRtbmV1WXpvV3lQTjBYUk9TT2p1Vk8tVHFOZ3lZRDMyVXhFRU9lZkxpTHl2bXkxcTAxZ1AzdUpRYlltRjRMSQ?oc=5",
+   "source": "Data Center Frontier",
+   "published": "2026-11-03T20:04:20+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bc079f4d45ecb3d3",
+   "cluster_title": "DCF Show: Can AI Unlock Data Centers' Stranded Megawatts?"
+  },
+  {
+   "id": "f6f0e9f57970d650",
+   "title": "Clinton Township Board passes data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMk1CeDdMY2thRGVVM0Z1c2R5c0JWWWFYZ1ktTXZjR0JFTTNUc1FCYmxPdkZmRVpuWE1KZXBNSFhwRDJZQU9UbkhOSWktem5QMmRuMDY1Rjhtc1BKTzdMT01jMldoYkxzUHVYMzQ4ZWxJYWt1YkNSenBvNUw5TFAzUXY0eEFkZWF1NEIzaTJhTUhueGN2a0tabERLVWJLSnA4REoza3d0QQ?oc=5",
+   "source": "C & G Newspapers",
+   "published": "2026-11-03T19:58:29+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Clinton Township, Michigan, US",
+     "lat": 42.587,
+     "lon": -82.9199,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f6f0e9f57970d650",
+   "cluster_title": "Clinton Township Board passes data center moratorium"
+  },
   {
    "id": "875275165e9a66b1",
    "title": "KY economic incentive board creates new requirements for data centers tax breaks",
@@ -213,6 +335,30 @@
    "cluster_title": "Warrick County commission president issues statement after data center forum"
   },
   {
+   "id": "e03b52f8e90daff5",
+   "title": "Lansing explores zoning ban on data centers",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdFhNdVhKdGVISFFWWm5ibHNoQ1RuWGY4ZDRvV0lROUluZjQ0aUktaUZyU09ZWWtHemEwRy1rNTZWRE9pSVEzNy1yWHkxVjdvTVBGVXg3bVZnWW9RUFdfR1htaFZrQW1PNHVQT3M1QnRrNlVzVXVZYjluU0hPR3Ztblk2bkNtVkY5QjhNV3FicFB2Zw?oc=5",
+   "source": "Tompkins Weekly",
+   "published": "2026-11-03T18:18:15+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e03b52f8e90daff5",
+   "cluster_title": "Lansing explores zoning ban on data centers"
+  },
+  {
    "id": "97699a3fe84320df",
    "title": "ECL CSC1 35MW AI Data Center Fully Leased as Demand for Inference",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQlpFR25NRDIzTHJZNVR0VnllVVZBV0ZfelhuaTVuZlZTbVlSMElJN19DMUl1dmplZ3luYnkwWThiTVlrd2ZIdEd6Z3VXa0hsM0hCTXlfUjFISUtLY2xMNTNYaW1OLVMwTnlQdV8td19yMGZLRFdFX2lOeXBmZ1dJd0ZHWHpRUDV4TmVUYW9ZUVRGMlBJdDlqN3dpTFczVnBuWWp6RUdVOFZDVG1SMWlIWEFlU3ZrQQ?oc=5",
@@ -263,6 +409,30 @@
    "suppliers": [],
    "cluster_id": "eb65df5ff931b0c5",
    "cluster_title": "AI Data Center Jitters Aren’t Slowing Williams’ Power Generation Ambitions"
+  },
+  {
+   "id": "1998bc01c78a0ebc",
+   "title": "AI Data Center Jitters Aren’t Slowing Williams’ Pipeline Business",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPODVhUUhQQUlTZjVHSS1xU1AzYk1QZi1hUUhScFFXQWJTdDRLYi1Ndm1OYWlnVE9EZVU5Vkc0UE1RQnkwSDJVdkMwVkJYM2JwNENTN2N6NmNKMURSZDJHNVV0eHZYLUZRNzJPdzBxdEJiWndKVWJBNXFRWVltYzR3RjBLS0hUUFhOdXU0V1RxcXdKcXBsRFhLZnRR?oc=5",
+   "source": "Barron's",
+   "published": "2026-11-03T18:04:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1998bc01c78a0ebc",
+   "cluster_title": "AI Data Center Jitters Aren’t Slowing Williams’ Pipeline Business"
   },
   {
    "id": "62b6d000cc18334d",
@@ -1440,6 +1610,31 @@
    "suppliers": [],
    "cluster_id": "2f1bd378c7ace338",
    "cluster_title": "Citizens seek to control data center developments"
+  },
+  {
+   "id": "e85f02d82f84a3fe",
+   "title": "Pinnacle West Capital Q3 2026: Data Center Surge Drives Earnings Beat",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc1JCd3p2UkxCLWdONmFmTWgwVmtGUVhvOG9lM2RoQzBJSkI2SWZiZnpXN0VudnBlVEx1dFBVWDRVWDhONjQ0NDZEbnRYVDU5cnFyR1dob0hHMHJYSlBuUjJIZHhMaHhJX21ma1cxLUFNV3ZWZkgxdXNvdGd3aEtxVm52WVBuZHhVbkltekc1X3hlQW9ZZTVEcmZHMjZjQQ?oc=5",
+   "source": "24/7 Wall St.",
+   "published": "2026-11-03T13:39:03+00:00",
+   "feed": "Google News: West",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e85f02d82f84a3fe",
+   "cluster_title": "Pinnacle West Capital Q3 2026: Data Center Surge Drives Earnings Beat"
   },
   {
    "id": "da9689d8b57c4c7d",
