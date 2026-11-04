@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-04T09:51:17+00:00",
+ "updated": "2026-11-04T10:51:16+00:00",
  "count": 703,
  "visible": 598,
  "records": [
@@ -7803,6 +7803,15 @@
      "published": "2026-10-23T15:53:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "278c984acd35b46f"
+    },
+    {
+     "id": "efec908f58b14015",
+     "title": "Amazon's US$2 billion Ohio data center plan faces new hurdle as voters approve ban",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONkpVd3hFckZYckprZ0JCZU03d2YzUHlxTktGRjJ6dVpaZWZlQURWaUM2TlhSdmdxR2Z0ZXloNEJyU3Y3aVRoWXRDNXVQSUNDdHpVOGZFb1dSbjlRVXNUWVF1ZnFGQlpRcGJXX0ZXU3ZCMFJPb2JPQjJPcDNqSUhWX1JHTzE5OWxqZ19oclFTdFhQY3gx?oc=5",
+     "source": "digitimes",
+     "published": "2026-11-04T09:27:12+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "efec908f58b14015"
     }
    ],
    "first_seen": "2024-11-21T08:00:00+00:00",
@@ -7860,12 +7869,17 @@
      "date": "2026-04-15T07:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "63eda9db9ba4855d"
+    },
+    {
+     "date": "2026-11-04T09:27:12+00:00",
+     "type": "Approval",
+     "headline_id": "efec908f58b14015"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 10.0,
-   "last_news": "2026-10-23T15:53:00+00:00",
-   "sources_count": 14,
+   "last_news": "2026-11-04T09:27:12+00:00",
+   "sources_count": 15,
    "confidence": "low",
    "hidden": false,
    "investors": [],
