@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-04T17:53:33+00:00",
- "count": 703,
- "visible": 598,
+ "updated": "2026-11-04T18:53:35+00:00",
+ "count": 704,
+ "visible": 599,
  "records": [
   {
    "id": "amazon-georgia",
@@ -19099,6 +19099,56 @@
    "last_news": "2026-01-20T08:00:00+00:00",
    "sources_count": 3,
    "confidence": "high",
+   "hidden": false
+  },
+  {
+   "id": "lambda-lowndes-county-al-2026",
+   "name": "Lambda Lowndes County data center",
+   "company": "Lambda",
+   "companies": [
+    "Lambda"
+   ],
+   "location": "Lowndes County, Alabama, US",
+   "state": "AL",
+   "county": "Lowndes County, Alabama, US",
+   "city": null,
+   "lat": 32.156,
+   "lon": -86.65,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "d335ef5b38398cca",
+     "title": "Lambda Plans Alabama AI Data Center Campus in Lowndes County",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQUVfWk1pY1hOYU9JRWpVazFydHVlSWljOVQtem5PVmRiZHN6cjVMSWVGZzdCeTQtU3FUYzdlNjFpcTJiSkE4OE9iUVpNaXdJTllyVkNZbm5DZmZueXBZbjVXQ1pJbm1WWUFXVmc3OHp0Vnk2NWJTZWdQX0lVMnU0SzgtQmRnV3NHQ3c?oc=5",
+     "source": "Unite.AI",
+     "published": "2026-11-04T15:37:01+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d335ef5b38398cca"
+    }
+   ],
+   "first_seen": "2026-11-04T15:37:01+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-04T15:37:01+00:00",
+     "status": "Announced",
+     "headline_id": "d335ef5b38398cca"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-11-04T15:37:01+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
    "hidden": false
   },
   {
