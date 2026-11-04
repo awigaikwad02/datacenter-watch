@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-04T22:54:53+00:00",
+ "updated": "2026-11-04T23:54:53+00:00",
  "count": 704,
  "visible": 599,
  "records": [
@@ -50341,6 +50341,15 @@
      "published": "2026-10-13T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "439ed63aef5a0a70"
+    },
+    {
+     "id": "1ca82449dc72ddc1",
+     "title": "3 Spartanburg County data center projects move closer to approval",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT0NBdEFOWThCTWhkLXcxcTNQR01uNmlPZjB4Mm04b29nb09MdVlhd25ud2JWdjdNdmd5S2o3TjM0TV8wbFVMWGtOenNoWDBFbjlEZ0F5V2U0ZW0zcGk1eVZHT3dkZUxJaGdHaUFIV3RuQl9iaFprd0FKVTM1cjZGVlduWGRvZDlWOVVFTWtLSS00MzZBSFFfWUZ5QVR4N0xfb3ZfVtIBuAFBVV95cUxOR0ZFUzA0YlExeGhzM3pKZ3VsY08tZksycG5xak5Ca09YREFVWW42Ymo0Nm9vbnB3LXMxNlZVS1RhTUtTN2cxdkJNWWtiRUVTRDY5VGMtMm81MmR1a1FKalFPdEJJUER5NGVKRjRMekJCY2dMb1NrNG00ZXZCajJpem5KZS1fWWw1Y3pEWTlITzZhSm96TWNzNFNkS01JaUVJTGdVc0JYMkRTeWVXZzlxYW1Sa1FsU3h1?oc=5",
+     "source": "FOX Carolina News",
+     "published": "2026-11-04T23:06:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1ca82449dc72ddc1"
     }
    ],
    "first_seen": "2026-01-13T08:00:00+00:00",
@@ -50363,11 +50372,16 @@
      "date": "2026-08-25T07:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "207c02b7c28d7071"
+    },
+    {
+     "date": "2026-11-04T23:06:00+00:00",
+     "type": "Approval",
+     "headline_id": "1ca82449dc72ddc1"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 3.0,
-   "last_news": "2026-10-13T07:00:00+00:00",
+   "last_news": "2026-11-04T23:06:00+00:00",
    "sources_count": 6,
    "confidence": "medium",
    "hidden": false,
