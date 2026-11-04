@@ -39,8 +39,128 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 477,
+ "count": 486,
  "items": [
+  {
+   "id": "afee017419d9147d",
+   "title": "Data Center Devs Struggle with Conflicting Desires: Speed to Power and ‘Five 9s’",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLWd2c2twNmdmUmExZ0E3R1BuaG5HQ1JabGtmQmdoU2tBemIwd2ZJajl6TnZuNXFWSDNONW9PRGMtRDJBRTFCMk16ekpyTEdKYlo0RWZhT2s5d1lUalB5OHoxQ3NXcXZGLXFhSW95N181TzE0Yzd5aHVrZnYtSzEtQmJxZUp4T1czZWtVRkFaWGlSckRuUjczb2JvQVRaMmszZ1U3YQ?oc=5",
+   "source": "RTO Insider",
+   "published": "2026-11-04T01:09:20+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "afee017419d9147d",
+   "cluster_title": "Data Center Devs Struggle with Conflicting Desires: Speed to Power and ‘Five 9s’"
+  },
+  {
+   "id": "3b2a761a4e0540ae",
+   "title": "Early voting shows Trenton data center measure passing",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSU5yQi1NZDJYYU1xZ1l5eUE1N2dpTFZ3QzBvWWZDbll3cFJJdEsyMGl5QUdUcHdQN1ZjN2t3bGRsSHNfRkYzVFFZdy1mclhlN1hnbExKNDUwWWFlWGNsdEtFVFgxQ0FkSl9MTHZscUU0SmJ3YUxNdjgtdU4tczdPVTBuX2NyYkdYM0dHRjJudXNuVGwyS0RLZ2RTSEhtanE5NUY3anhpXzAzbmVYaTBSYXlUTlNDZUlLc2NfbU4wOGRHZ1JPZVh3bEdxSDhRNWFIV0JIcF9tMDRxOU4tVUJfcHBlWQ?oc=5",
+   "source": "Journal-News.com",
+   "published": "2026-11-04T00:48:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3b2a761a4e0540ae",
+   "cluster_title": "Early voting shows Trenton data center measure passing"
+  },
+  {
+   "id": "3d7aec72ab77ace6",
+   "title": "Stratos Data Center Will Emit Air Pollution That’s Linked to Premature Deaths and Health Economic Damages for Utah & States Downwind",
+   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNM3ZveWdzQVBjMHlHTVpZZUNKbTVLTHdPM2lkbWtPSmxXRXlsTFlieXplTVltMmwwT2tqaUU5YWdYcDBmV1JqUzRCTk9yVE8wXzZFa28xRThscVFPLXUzMnZQWjZUdG9ueHdGOHpCOC1IemQxeXNyNlE4YW5qV3VYb1hsb214OC1XTXFZamJjd0E2b1RxclRodjFSS2RwYXdSNTFTdlJSRTVyLVVvS3pqVVUzTWxxeFRaUEdCdENtLXp5SGFJTDFNV3B3OVZncGlITFlHeElNV2V0bzIzZktkR2p4N3l0Wjl3M0VmQkN0VXc3NFNFLV9JNk5TOA?oc=5",
+   "source": "CleanTechnica",
+   "published": "2026-11-04T00:31:10+00:00",
+   "feed": "Google News: West",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Environment"
+   ],
+   "locations": [
+    {
+     "name": "Utah, US",
+     "lat": 39.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "UT"
+   ],
+   "state": "UT",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3d7aec72ab77ace6",
+   "cluster_title": "Stratos Data Center Will Emit Air Pollution That’s Linked to Premature Deaths and Health Economic Damages for Utah & States Downwind"
+  },
+  {
+   "id": "6b016f42000955b2",
+   "title": "Columbus-area communities vote on data center issues: live results",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaFBnVWctaDY1VVhZMFpORTBOdXlQUVZxNHoyQVhTOUJCNnh5UWxNNlR4azltTmEzV0VwcTF6eXRkcTh0VmhGV1lkdkRkUElyNGVTMVhZeGxGdDdyQnVrYVJKdmpTS0tTeFNjbS1FbHpNVDYzS3llbl9DcEhid2F4TWppZi16UFFscUJJTHhjc1dObENxUzhKbzZMRjNDU2F1Rm8xUW1QY3hwLTZlUDN6Zm5ESzdQb2vSAbwBQVVfeXFMTTVRNkxOY05wZ0lGMURURktiRDVkYVVzZVB4bG92X1VHNm9UYzFfYndDN2FTc01maTlDX2RtV0lyTzdTbUJVaTVxNDhtVTZCa3RzMV8xUGEtWjktaG41U0hYcUFONmRRTXZiekJIYjhZcUlidFdvZjllby11WDRRY3FfSGZ0TlJWTV9QcUNKUW5kUGdnb2RpSUNwZDFmZWJpcTlHWjR1aFFhNmwxb1QxMFdqZ3F2aWpMRXJ1OUs?oc=5",
+   "source": "NBC4 WCMH-TV",
+   "published": "2026-11-04T00:30:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Columbus"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "location_note": "near Columbus",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6b016f42000955b2",
+   "cluster_title": "Columbus-area communities vote on data center issues: live results"
+  },
   {
    "id": "4cc8481e6265f540",
    "title": "Cass County restricts hyperscale data centers",
@@ -103,6 +223,41 @@
    "suppliers": [],
    "cluster_id": "56b4506540635b06",
    "cluster_title": "AI Data Centers Have a PR Problem. OpenAI Is Proposing a Rebrand"
+  },
+  {
+   "id": "4a80c46b628bf883",
+   "title": "Topeka mayor says staffers had unauthorized meeting about data center",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeHZIQTN0dXJwNzBEYkdnS0lQTlRvWDZOM3YtVUs3WW1yc1RqQmlJNUVwYV9xRkxMcUVrSUR4Q0dNT2NVM2xoQm5vMVJKZklfa2V6czZlWlRoYW95SDJHRUZIOVlYYlpzdzc2dFNWLXFVRmxTa1VjMVpEblhIdUVDRFBIbC05aTNjVk90SGFaaTRXRTNRcHRYVVdJZjFGOTFveHNKdGNMTEVtaDRtcVg5eUNVR1ExNjVZLVdFdEc3OE9OSUlLMmV3SFpjRnpwUlhG?oc=5",
+   "source": "The Topeka Capital-Journal",
+   "published": "2026-11-03T23:56:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Topeka, Kansas, US",
+     "lat": 39.0483,
+     "lon": -95.678,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4a80c46b628bf883",
+   "cluster_title": "Topeka mayor says staffers had unauthorized meeting about data center"
   },
   {
    "id": "07fb28f6825a3566",
@@ -507,6 +662,41 @@
    "investment_usd_b": 0.264,
    "cluster_id": "03b48375faf57585",
    "cluster_title": "AWS emerges as buyer behind $264M West Richland data center land deal"
+  },
+  {
+   "id": "0d9995b8525e56d0",
+   "title": "Data centers on the minds of voters in Virginia's 6th Congressional District on Election Day",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPc3l6SjNNaExITVA3QnI4SVVkNjY4a0M2TEpsRFpOWmFmOWhjZzNGOFpuN2VCSnlNZUxiTFhxUUJqZHM4di1YMXp6TDZHSXJhaEJtd29Ec2hJXzYwelNEY1psSnBubUx6LUpaQ2pjN2dNY2ZUMUxKSmVzVnFTVnl3VVFLQTV1d19aM0tVY0RFb3FLdVd2b19mZ3g4RVhpZmVLMGtsdXlIWm10VGpXcnJNUF85b3VNMFNMT2F0aS01bmF1b2hEVXlabmk5dUpPYjNhVlE?oc=5",
+   "source": "WSLS",
+   "published": "2026-11-03T22:23:10+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0d9995b8525e56d0",
+   "cluster_title": "Data centers on the minds of voters in Virginia's 6th Congressional District on Election Day"
   },
   {
    "id": "84decdf7fbd3e064",
@@ -1562,6 +1752,30 @@
    "suppliers": [],
    "cluster_id": "ebfbdb903b776dc8",
    "cluster_title": "How a Pennsylvania Town Both Fights, Supports Data Centers"
+  },
+  {
+   "id": "a16c064d8cf3076c",
+   "title": "Orrick Adds TJ Kuban As Partner To Expand Data Center And Digital Infrastructure Practice",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMXUwblpvX0J6bVk2SDQyU083eHNFYWJMakJnRTRFbXd0RjBFZ1dIS1BZY0xtUGhBVllKY3ZzcnpWSFRFSE9wdkVHSV9vRVVXdVBPTTU5TktpWXM5d3AwV2xfczhjbUJIR2xlWmdnR1ZKeWQ5TnZ6QUpFVTJWWEFXNWIzd0tDdGhpcVJZRkJ3ZTVwcTZnNG5MZUdmbVNSUmFlVVpkN0NwdXJSVlNLVHc?oc=5",
+   "source": "Pulse 2.0",
+   "published": "2026-11-03T19:30:22+00:00",
+   "feed": "Google News: West",
+   "category": "Expansion",
+   "tags": [
+    "Expansion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a16c064d8cf3076c",
+   "cluster_title": "Orrick Adds TJ Kuban As Partner To Expand Data Center And Digital Infrastructure Practice"
   },
   {
    "id": "6876953604361df1",
@@ -11876,6 +12090,32 @@
    "cluster_title": "Weekly Recap: AI data center stake and share repurchases resume"
   },
   {
+   "id": "b383d5c50bc8fdd7",
+   "title": "Weekly Recap: Q2 results beat estimates and AI data center product debut",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTUMxQnZEU2hXYzY4b0xXNzRJNnFsRVA1ZFgxSmNYaDlMQ1c0WHZLcFE1T1c0V3pDQ25Fd1RBbG5SSld2OS1CLU1EcUp1cHpxWnUtNEozQUdmV0tTS2wwQW5rYUJGbDZoOThBOTI0cTY3M196cTVEd3dMYVJGT1hZVHp2SkpOZ01wMU50YjhoLTNSVGFnU2JQVmxzVHBxa3gzOTg3ZE5YdF9iSl9HSnlDWVhzYjdfQ3FuM1BoQ2QxS3ZMYWdGbjlsbVQzTzl5Zw?oc=5",
+   "source": "TradingView",
+   "published": "2026-11-02T11:00:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b383d5c50bc8fdd7",
+   "cluster_title": "Weekly Recap: Q2 results beat estimates and AI data center product debut"
+  },
+  {
    "id": "0e9e59e290c09856",
    "title": "Oregon updates data center website ahead of Issue 25 vote",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWTZ6VllUSlBHYXBkaGtEaUZUSzFEdFNDeUNVTkZnVWhrRGN4S1UtcDhIZEpaX0xiMlFZdmQ3NzBqOW1oemlFSkNDNkF1T3RBZmt2YzVseVVUMkJJTWx6d1VfT2h4dmVqOGRiMS1LUFlqRWpUYmZianBVVGRxUHRMNzRsVjRKc3k1Y2t1ajZQMVBVZjhwQ0M2cnQ0aTFBS0hEWGJZQmY1RF9hdlhEUjhySmowaFhDR3phN3JnY2VETHNqY0dDVldXMU1HQ0VBSFhvWFZJ?oc=5",
@@ -14612,6 +14852,31 @@
    "suppliers": [],
    "cluster_id": "1285ca6e87e74ecc",
    "cluster_title": "OKC approves first mega-data center with strict zoning terms"
+  },
+  {
+   "id": "fd774806e390681f",
+   "title": "IORE to Sell All 151.21 Bitcoin (BTC) to Fund AI Data Center Push",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjaXlhVUpnVlpReDhpa1NlazVOUF83bWI0NFVURjh6bS1sZHRUNFdjVHhfYjVjeGR6UWtaSEJ6VDU5MWVHNkRXRWNrSjkwV3FPQTJZRGJCOXU?oc=5",
+   "source": "Cryptonews.net",
+   "published": "2026-11-01T00:36:16+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fd774806e390681f",
+   "cluster_title": "IORE to Sell All 151.21 Bitcoin (BTC) to Fund AI Data Center Push"
   },
   {
    "id": "8d2e6a2d058ed918",
