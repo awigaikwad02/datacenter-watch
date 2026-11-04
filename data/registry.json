@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-03T23:49:10+00:00",
+ "updated": "2026-11-04T00:49:10+00:00",
  "count": 703,
  "visible": 598,
  "records": [
@@ -14665,6 +14665,15 @@
      "published": "2026-10-22T03:06:44+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1c04d8b2cf0af119"
+    },
+    {
+     "id": "e96f1db806ac33af",
+     "title": "Lawsuit challenges Botetourt County’s Google data center approval",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdXRKR2wyUWRUYWRPYkp4QTFfY0F3UnFOeUFRRHNiOUNGazJGVTNfdVZ5eW9qZWd2SklVekgtN2RVdzluanFqM2tTdzB3RlJ1cW1IcDJsT1hXaFZjR0pDTHpLeDZhZ0ViS0tsc1REajc3WDdTWmtJZmtJaVdSR2tPbWhtNzVxSG1fTXlTZnRDWGU5ZFZJcENoN0Jyd19IOTA2cUJBeEdDa9IBrAFBVV95cUxNYldvYU8zc1k3U3ZsWWgtTHJZTGhYbm9MRGw0d3h4RXJrd0EtYWNWS0EtaTkyNXJmT1dYVDYxVFB4aFEyQnFBSzlNUW5vdlhUTjJCYm45WHhvTTYtZXhZRWE0Q0J0bVZkb0NtaHhMdm1VdV9oOURDUGxiMEUxM29KUjJuT2RuSTRsYVZuaWR2T0ZDdk5GQnlmTDNRN3JnM19NSTBvZllYc2ZiWS1l?oc=5",
+     "source": "WFXRtv",
+     "published": "2026-11-03T12:36:06+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3a5e75b07d435019"
     }
    ],
    "first_seen": "2025-06-24T07:00:00+00:00",
@@ -14682,12 +14691,17 @@
      "date": "2026-07-28T07:00:00+00:00",
      "type": "Approval",
      "headline_id": "c3dca8211bae26bb"
+    },
+    {
+     "date": "2026-11-03T12:36:06+00:00",
+     "type": "Approval",
+     "headline_id": "e96f1db806ac33af"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-22T03:06:44+00:00",
-   "sources_count": 7,
+   "last_news": "2026-11-03T12:36:06+00:00",
+   "sources_count": 8,
    "confidence": "high",
    "hidden": false,
    "investors": [],
