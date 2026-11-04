@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-04T14:52:25+00:00",
+ "updated": "2026-11-04T15:52:23+00:00",
  "count": 703,
  "visible": 598,
  "records": [
@@ -9010,6 +9010,15 @@
      "published": "2026-11-03T02:24:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "2c46c9d22347a54d"
+    },
+    {
+     "id": "7cf7e340356242c8",
+     "title": "Amazon plans its first data centers in Washington state as residents raise concerns",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObEZ2VnM2RFdfOUJoU3lDb1ZnSWhMNV9TemtnOTc1SWpnTlZ1ZHg5ZVUyMTlsN0ZLXzRtN09ZUlhzaFM4d3RhSXczRzA0cUcySXkzZWVqOXNWc19FRU5MQWY1RWwtUkJsY0xYYnRDdGttSE1MaV9PVjVHRGVHVW1Rc2xfcEZ4YjlURnNNQ3VwTHUzc0VDa2VScWgwV2lLZjZ5Vzd5NjBKb0VqempyT2hEcXJ2NGw?oc=5",
+     "source": "GeekWire",
+     "published": "2026-11-04T15:46:43+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7cf7e340356242c8"
     }
    ],
    "first_seen": "2025-06-09T07:00:00+00:00",
@@ -9041,7 +9050,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.264,
-   "last_news": "2026-11-03T02:24:00+00:00",
+   "last_news": "2026-11-04T15:46:43+00:00",
    "sources_count": 6,
    "confidence": "low",
    "hidden": false,
@@ -11000,23 +11009,52 @@
      "published": "2025-10-29T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "d3cf84c25eaeefb8"
+    },
+    {
+     "id": "2b6f1bc2a8000444",
+     "title": "IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears; Nebius Dips 2%",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdFRJQ3lxY0hWQU8zd3luLUpLZkFVVWNMZVpFU292Y3VrdUNYT0I2alF2UWRiRm8wYkxpUVdteXJINmNoZXBWa1YyZjBwNkNPaXNENUpkLVY4ZFAxRU5OYjhzbVRMTnVwX0xpM28wejN5MHJlRW9OLVlFNXhzZFh6Z3hFY1NwRVRpTG9HcHMyOGd2VktfS05UV3dWYXZvbUo5cWFYQlpQLTRKeUNxdHhyeENSTFhqQTJHM01mUjdGSURyeG82VGNEYVlwSjBBNkFtTFE2Sko1Y0RoUQ?oc=5",
+     "source": "24/7 Wall St.",
+     "published": "2026-11-04T15:02:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "2b6f1bc2a8000444"
+    },
+    {
+     "id": "14d7d0a2ab6cfb32",
+     "title": "Texas Blue Wave Could Threaten 27% Of Planned U.S. Data Center Power. Here's What It Means For CoreWeave, Iren, Nebius And Other Neocloud Stocks",
+     "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOYS04UzRTMEdzYmkwc000VFhrQ082VkRLOGZ4MFgwdWNkU3Z3SnNUV2F4TkxDSnJkMmx0Z2JJNE9CUnVSVXdiZnB1U2tjM1ZQZnVySGE4VmtTSTU2eGI2MEN0b19fQVBaTE5wZDZlUDBRV3llR3lSQ2dNeFBzaVJHZ3VvOU9uOFZ6OG5pblphU3ViU2k3YS1SbFJZRW9zUGdWUVhYZWw0eUI2Tks3SVdkRlF6OFpMYklTQlhIX1pwaDZJRXlPWmNJME16a09OTW9MS2RULW5ZLW9JeVZqQjJkaEZRV1lsOFk0bm14Nk01Q2lmUVpxR01qSDJiLUFfSHZiVVVPRFFkeG5BZ3dXeDA4?oc=5",
+     "source": "24/7 Wall St.",
+     "published": "2026-11-04T15:39:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "14d7d0a2ab6cfb32"
     }
    ],
    "first_seen": "2025-10-29T07:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2025-10-29T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "d3cf84c25eaeefb8"
+    },
+    {
+     "date": "2026-11-04T15:02:00+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "2b6f1bc2a8000444"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-04T15:02:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "2b6f1bc2a8000444"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2025-10-29T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-11-04T15:39:00+00:00",
+   "sources_count": 2,
    "confidence": "low",
    "hidden": false,
    "investors": [],
