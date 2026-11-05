@@ -39,8 +39,376 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 952,
+ "count": 968,
  "items": [
+  {
+   "id": "9ce4ac8480773c75",
+   "title": "Swatara Township approves major Dauphin County data center project",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMDB6dzZKdEI4ZDNGY0lUanhHS1JMYW5SUDhyRlprd0pNSUg1MlRkVHQ1ano4dVYxX1BJR2NfSEZ3VmFFY2FtVHQyWFc4ZVpsVDdDVUtoTENFdzRxVHZydENVVTloZGRXcEh1ZHc3blprOHVXd2xNektyVjd3YVF0alZrcjJfclJxX3pSblJDeHNkWDc0TWYyZ3VDRWRUb1lQQkhISk8wQ0xHQW85bzc2bTlVTQ?oc=5",
+   "source": "PennLive.com",
+   "published": "2026-11-05T11:41:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Dauphin County, Pennsylvania, US",
+     "lat": 40.416,
+     "lon": -76.778,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": "Dauphin County, Pennsylvania, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9ce4ac8480773c75",
+   "cluster_title": "Swatara Township approves major Dauphin County data center project"
+  },
+  {
+   "id": "c8035d03fec0c3e6",
+   "title": "AWS proceeds with data center project in Walla Walla, Washington",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMzk4Qnd0azdFT051ZHQ2S2tnckZtTHNKWE5yMlFGNUpsM183clZEZ0l3VHNGU3l3MVB0N2JKemRpMTUteFZnbGcyY2IzUW5jc2hOZ3FkZ01PTndBUEJrd2dCVHltYmFsaVFzWVd1ZTVjeHZpMTlxWUR5ZEhnRENOamlJeGN5dDlCMDgzX2xmY1pFelNoNDJ0WllSOTVLVm9aSmNuMUYzVHU2UWs?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-05T11:38:13+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Walla Walla, Washington, US",
+     "lat": 46.0646,
+     "lon": -118.343,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c8035d03fec0c3e6",
+   "cluster_title": "AWS proceeds with data center project in Walla Walla, Washington"
+  },
+  {
+   "id": "dc2421affdf464cb",
+   "title": "SpaceX plans to build more data center compute than Google's entire lifetime capacity in just 1.5 years — analysts say target is realistic, SpaceX to build staggering 10 gigawatts of compute in 2027 alone",
+   "link": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxNeklOLXBSWVZyb2JITFRDS01CU29FdV94VmRwbEQzaE51LUJISHpfZTU3b29IdWowYm5YblJ3dHgwS3ZFanFWU0drcXNMODlYdFRvWWw4bzdhQVNwYndqNFE4OHZoTFA5eUJ0NnQtUHdkd0I5MnN2Vm82NWc2b0wtT1ZrdXZxVGRwMWxELWVYMEdBUVgtYklHdnoyeHBTV2tOZC1tdEs3d3NOaktycFJaZ19GaGo1Z3VmOWI3Vk9EZERueDF5MGRieXdqODduazRsbndXVklTb2FvX21Ta1pwX3FnUEFQbGFkVm1YbmlXWVVoQi14bWxQRmlncEpFT1JQcFlsQWlSMkNlcVFtRmNRNDBoQ21LTmUzYlNYSjBhSU5LeXB1TDd4R3FVak9KMWRiQjBFZmFoZExNVnVjcVFFU1hzU0hPLUZSdXpQVWtQQW43bVhncFRzb3dwUFVzMjl1a25jVUJtMDlQcWI2emtnRVFB?oc=5",
+   "source": "Tom's Hardware",
+   "published": "2026-11-05T11:30:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Markets / Earnings",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 10000,
+   "cluster_id": "dc2421affdf464cb",
+   "cluster_title": "SpaceX plans to build more data center compute than Google's entire lifetime capacity in just 1.5 years — analysts say target is realistic, SpaceX to build staggering 10 gigawatts of compute in 2027 alone"
+  },
+  {
+   "id": "0edc5e2c6db1d67b",
+   "title": "Ohio is the epicenter of data center pushback",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83WUhuampNUzRXbWVhc0d2RjQ4bXV4SGh6Z0RoUXdOMHF3T3VRbmNpV0dLQVdzeXJvcVpvd1l1dmdXcWczdlpfYVBacjhXN181d2F6MmFEb1paZWNOTVJkc21xVkM4VEEtREM2OGE1TzNxNHpjV005Z19sNkNmdw?oc=5",
+   "source": "Axios",
+   "published": "2026-11-05T11:24:02+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0edc5e2c6db1d67b",
+   "cluster_title": "Ohio is the epicenter of data center pushback"
+  },
+  {
+   "id": "9eab18d616a0d623",
+   "title": "AI, data-center stocks slip as Democratic sweep clouds expansion plans",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVVFVWVUwWmVwQXRLMTV2ZFBIV3dpR1VBUTU4dnhfUW5SN3BwcGZraXF1YTFDMmx2TjZFOTVBTWNqc09zTV9VbE1faDJ5Y294THA0YlFkTlZmX3AzWDJacm96Um1YQ0htd2FLRmJFTlpvLWVhQ0pXdUtyLVh0ZTRESzBJNW1fZ2lrTVBkUEIzejF2VUVLeGdyQWxDazczTmNWQWdOMXIybTR2T0x5OWFGNWMyU256bUhRME54eXBlTQ?oc=5",
+   "source": "Reuters",
+   "published": "2026-11-05T11:23:43+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Expansion",
+    "Markets / Earnings",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9eab18d616a0d623",
+   "cluster_title": "AI, data-center stocks slip as Democratic sweep clouds expansion plans"
+  },
+  {
+   "id": "8f1354b2ae2ac184",
+   "title": "Jackson Commissioners hear data center concerns, select school architect",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSGoxNHRWY2l6S0dhQmVhSEI1WDhQTUZ0Y05nS01ERjlNd2tia0hCRURJTURDc1h1ZFQzSUZ2NzFSeC1xUGxvQzNydXhueFFDZkwyaFU0VlBsYmFPLVA3VHM0Uy1zWlVodmxGTF91QkNWTVE5cGpRa0lRUmtNdTgxdUR1Y0lPWFZpUFhZbk9XMVctdXBZT2l0LXQ0UXM5M0RkYmhlTjNmYkZKX081TV80?oc=5",
+   "source": "Highlandsnews.com",
+   "published": "2026-11-05T11:22:51+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8f1354b2ae2ac184",
+   "cluster_title": "Jackson Commissioners hear data center concerns, select school architect"
+  },
+  {
+   "id": "8debaba7d74ef74b",
+   "title": "Tech giants offer cash and concessions as voters back data center curbs 43-1",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeC1NSk9QeWdSal8zSUNNUmhQQWpLMC0zZUFyejZMSGFHbHQybFYzSVVUdHFQV3ZJQkJSd1ZCUndWNzZmTWx6WU5nTlNUV3ZGc0UtR0xnMjcxZFdEaWVCR0w1VGFxdXRlZHZ0MkhpTUpQTFFpQWh0aG1JV3p3OHNJV2xR?oc=5",
+   "source": "Mezha.net",
+   "published": "2026-11-05T11:15:41+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "888961722c94576d",
+   "cluster_title": "Tech giants turn to cash, concessions for AI rebrand after voters pummeled data centers 43-1"
+  },
+  {
+   "id": "ebf5b95ece0a7abb",
+   "title": "LETTER: Make Ephrata’s data center promise measurable",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQ1ZaN21lZzRTME9VSXl1d2hPcFR5Q2t2TTFBN0p1TmMxenZuVjVfNG54WGZ6LW5YamtPZ0xQZUJMaG5kN2NtRDd5ZXRkT0d1QjQ1WGdBbWRjQ0s3QWh4Mlh5STY4R0stQlk1ZXJIdGxzcjkwcUthS1hzYkw5d1JuTFdIQjlYSG1zUER0alItSUp4ZEgyRklUTk9hOUxLQ1JpbTVv?oc=5",
+   "source": "Columbia Basin Herald",
+   "published": "2026-11-05T11:03:40+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ebf5b95ece0a7abb",
+   "cluster_title": "LETTER: Make Ephrata’s data center promise measurable"
+  },
+  {
+   "id": "bccddb56b9522417",
+   "title": "America got the anti-data-center wave it voted for. Here come the economic consequences",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45eE5aUXhYMVFkZ0lRNzk1UTdrUkFYYkxGdHVVMlE3dm9OaXAyQ3ZSWGl5ZmZueUd3SXgxU1BLNUE4Zm1sUy1WaGdpb05aZDZHbHhmT2EteGRpWmFZdFJCUGxWSTQxWW90VEdVZVBHZDZUYWs?oc=5",
+   "source": "CNN",
+   "published": "2026-11-05T11:00:15+00:00",
+   "feed": "Google News: Data center",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bccddb56b9522417",
+   "cluster_title": "America got the anti-data-center wave it voted for. Here come the economic consequences"
+  },
+  {
+   "id": "b4c330f33b162828",
+   "title": "OpenAI is trying to make data centers into Chilean sea bass. Good luck!",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSUxxT1lPWVpwYjBxX2cyc3ZHTGNEVXBxTElvMXJJMU9tS2x0WlpaN2dLM09WOEVlc1k0czRPcnIySS1FLUM0cDZ2N1loZ1hQTFUtU2J4SDkwRkI3cU13aHJTM2Vhd0cya3ZvcE9xU3p4bEIxVzlyb19JdXJXSVRxc2FJYzFBbkF0SXp2OTkwTnFLWHY5SkhrMXRWU3pYcVlD?oc=5",
+   "source": "Business Insider",
+   "published": "2026-11-05T11:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b4c330f33b162828",
+   "cluster_title": "OpenAI is trying to make data centers into Chilean sea bass. Good luck!"
+  },
+  {
+   "id": "20fb4cb835b30398",
+   "title": "Texas governor-elect Gina Hinojosa promises continued data center moratorium, further legislation",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRHVfdDV1UDRUWlRpSHVELVEwQ0l4TkkxUG54TmlpZDJ0bWZ2WS0wUHFid3NEUDlycnBTRVNfQmN2Wk5wbDNMbVlvclhVWDdWWmdIWk11WlZWZERLcW04UUFUWHhBTlJjV1VIZkE5bFZXMnBVSzVqT3NKVE1fQ2dtZ08ySG14cHE3cktjNXpua0NHblRpWFA1Wk14d1JWN291WWFUUERxTl9WX2JDU3dnM3dHVE1EdldVM3ZDWkhWT0FNUTFOcjB1NXJlaVp6dkpuMVQ5WEtqcw?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-05T10:58:09+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "20fb4cb835b30398",
+   "cluster_title": "Texas governor-elect Gina Hinojosa promises continued data center moratorium, further legislation"
+  },
+  {
+   "id": "fed88d9b71fb7249",
+   "title": "DCD Connect Virginia 2026 Draws Data Center Leaders to Discuss AI Infrastructure",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSzhPVHMwenRVeUZsUVNnbHFuR25tYnJZdWpUdTJaZk5kTlQ3UTlqWlkyeFZOdkJWZXlhMkYxbm1qc2s1dzNHdjhodTJ0OXYycmc2TlVGSE9mWk05QzhjTG84OUt4b3IxYnZ3MFFCbnpqX2dRdDVaWE9VT08zRDNGR1RsenhKOGNKMEVYNkQ2Vk03elY2VXRaU0VYLXc1WFIweHB4TWZWOXlDZw?oc=5",
+   "source": "Inside Towers",
+   "published": "2026-11-05T10:56:30+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fed88d9b71fb7249",
+   "cluster_title": "DCD Connect Virginia 2026 Draws Data Center Leaders to Discuss AI Infrastructure"
+  },
   {
    "id": "62d65ffce6c3d25c",
    "title": "OpenAI Pledges to Pay Data Center Power Costs After Voter Revolt",
@@ -92,6 +460,30 @@
    "suppliers": [],
    "cluster_id": "888961722c94576d",
    "cluster_title": "Tech giants turn to cash, concessions for AI rebrand after voters pummeled data centers 43-1"
+  },
+  {
+   "id": "ccc87350412b2d43",
+   "title": "Midterm Election 2026: We Need to Learn to Love the Local Data Center",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOHRtSE02M0tnSW9GdGxJVzJNbjE5SzMtZ1JmdzktSUJZaDg4SWpCN3V6REdYZkdnbmUtV1JSVTQxZi1oUEpyUkFJUHUyUkNsYzFyX0tid3dZWFhONjRaZTdRSFRUcU5kVm1VeEJ1dFpOX3JKVXhLU3haWGpUX3RtZXVUc014NmJicmswa1dMZGtnUW0xSmRrRkRKUk9UOHc0aXJnM1Q1QTQ2TnZtbXgxOVlIZ1pYdExoVFV4cmFDYw?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-11-05T10:30:19+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ccc87350412b2d43",
+   "cluster_title": "Midterm Election 2026: We Need to Learn to Love the Local Data Center"
   },
   {
    "id": "cd2b7e602afbfb47",
@@ -774,6 +1166,41 @@
    "suppliers": [],
    "cluster_id": "2eddc22299a757a6",
    "cluster_title": "AI Data Center projects stopped"
+  },
+  {
+   "id": "63156aa6ad48087a",
+   "title": "Conneaut one of several Ohio communities to limit data centers",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQ2NCN0thQ0loMXlXQUpyaDBwd3RiS1YtU21KanREME5mN2FKanFZQzNGbENNYUQyVEd5WjZzMVNBek4yR2ZpamdEUUxMS09TYjBFcUNrbWZFVjA0OWJITWdLQWttbEhxLWNqZlIyVGNsYlZWRmdZMnU1RllBbEpnTWNzMzl2U0p1MmY4a1Npc21jRExWUjNyY0wzdUcxVTFOYWxZZXpweDVXU29pOG5qTkFFXzBmLW1DSU80Mzd0cXV5ZC1qb1ZnbTVUemNHME1HQS13WEhpVG5GV0tC?oc=5",
+   "source": "Star Beacon",
+   "published": "2026-11-05T05:30:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "63156aa6ad48087a",
+   "cluster_title": "Conneaut one of several Ohio communities to limit data centers"
   },
   {
    "id": "5cae59bfbc341741",
@@ -3005,6 +3432,28 @@
    "cluster_title": "Voters reject big data centers statewide"
   },
   {
+   "id": "1512ca88b96c3af1",
+   "title": "Qualcomm's data center business barely offsetting losses in smartphones: Seaport's Jay Goldberg",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU285NkRrNDVLd1VIQmsyT0trMUhWX1psY3VVbG01TXRBT3ZZbWhhMmpJejFwX0R3S3NrQi14YXhTbTI0aVRZd3RVWS1zU1BPYTNQeHo1bDNELXZNSUh5clgxVzNwSjdBSGlHbHBuOHNpenhXSUV0UVlFRVFkLVAzSUJOa1VUOGYxZjg4U0FSUkFvcFdDRkdrR244SGZyMlBDYk1Pa2JKZ2h2M1k3QnJ4MGlSM19OdExqRzB1SGdhTUhmbnpzSUEtS2RDcEFSWVZj?oc=5",
+   "source": "CNBC",
+   "published": "2026-11-04T22:06:37+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1512ca88b96c3af1",
+   "cluster_title": "Qualcomm's data center business barely offsetting losses in smartphones: Seaport's Jay Goldberg"
+  },
+  {
    "id": "144c182afa99eace",
    "title": "Voters overwhelmingly reject data centers in their communities on Election Day",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUUtQdHctYTl2dEVHZFRmN09NS1FrUGxFcm84ckFGT3FtWXJPRlYyZUxxR3I4bkFQQVJ5dXFoT0lQdV9VbjhRV08xWmlBZUJEbS15NDNfaW8zZXBhWWgzWEd6ZTIzV1N4ZXMzZ0pnZk16VFhQUkc3MDYtNEtKN3lxSENYR0s4M2xmTE41cEZzVUZlNFF1VTBxcVNnYU1vZ0RaTnU3VnZuM2NXMERZcUpDMm5aNjRLTVlfZWRXOFZyWUFSSkpJcEFYZE9oS0o?oc=5",
@@ -3054,6 +3503,43 @@
    "suppliers": [],
    "cluster_id": "6510a505ceee4d3c",
    "cluster_title": "Just how important is the AI and data center backlash?"
+  },
+  {
+   "id": "b2b22be42bce5663",
+   "title": "All 5 Chesapeake council winners say they oppose data centers. What could that mean going forward?",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNnoxQlJfek9zQ2NZdGNSVk0xelY0UkthOGFhdG5PaVViNjVsVWdZbXpBTThhTDBQbWRNenpsNmJpVkpoWkU2clc5b0hoLUFNUTdpR0Z2V0JaLXRTQURkSVQzdjROSzZvRXZ5Q3VjWDZIZlExYkF5NVhGeFh6MjhLMVBaTHZuc1BXajVLVEFKRHAwOVRWVkNDLXVjYjF3aGt1TE1YdmhCVzh1TVpqZEJxOEFiQ3B5bGpMNnBVUlh2bXpfZ0h1b1ZDWDdFbnRjT0xFSUVObVFfY1ZPb3BqcS1xUlZxYVg?oc=5",
+   "source": "WTKR",
+   "published": "2026-11-04T21:58:37+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Chesapeake, Virginia, US",
+     "lat": 36.819,
+     "lon": -76.2749,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b2b22be42bce5663",
+   "cluster_title": "All 5 Chesapeake council winners say they oppose data centers. What could that mean going forward?"
   },
   {
    "id": "4f7a374656749962",
