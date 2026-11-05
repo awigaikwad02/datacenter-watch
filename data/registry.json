@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-05T07:56:15+00:00",
+ "updated": "2026-11-05T08:56:15+00:00",
  "count": 705,
  "visible": 600,
  "records": [
@@ -24311,6 +24311,15 @@
      "published": "2026-11-02T17:02:35+00:00",
      "stage_signal": "Announced",
      "cluster_id": "2b388884db135406"
+    },
+    {
+     "id": "5cae59bfbc341741",
+     "title": "Microsoft will not expand Texas data center deal with UK's Nscale, source says",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3YxSi01QlpvU2xqQVk1TUZQVTdjQnlqOUZwaFUzZ2txZHBJaHZ5bTVNOXpRZGV0czNzQkRCamNqNXZ2cUFoZ1JsV1l0cGFKazh4SXpjSlJ0Q1pMR0IyVWhfQkZlbTAtWFJ1ZERpbDdfNzZqaVlZUjg2a2RKNlRfS0N4OFMwSmpERG9EWng5MC1XXy1ENURJMUNWTTEyR3Q0UkE3WnRSMVJmVDAwdlJoVDhXa0h1YXpyYjBR?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-05T05:11:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "5cae59bfbc341741"
     }
    ],
    "first_seen": "2024-12-18T08:00:00+00:00",
@@ -24338,12 +24347,17 @@
      "date": "2026-07-02T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "387cce2fa415fdc9"
+    },
+    {
+     "date": "2026-11-05T05:11:00+00:00",
+     "type": "Expansion",
+     "headline_id": "5cae59bfbc341741"
     }
    ],
    "capacity_mw": 2000,
    "investment_usd_b": null,
-   "last_news": "2026-11-02T17:02:35+00:00",
-   "sources_count": 7,
+   "last_news": "2026-11-05T05:11:00+00:00",
+   "sources_count": 8,
    "confidence": "low",
    "hidden": false,
    "investors": [],
