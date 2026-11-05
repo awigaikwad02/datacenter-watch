@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-05T16:59:03+00:00",
+ "updated": "2026-11-05T17:59:02+00:00",
  "count": 705,
  "visible": 600,
  "records": [
@@ -18289,6 +18289,24 @@
      "published": "2026-10-09T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "8f92743c509eb88e"
+    },
+    {
+     "id": "7e525ba57e75ea22",
+     "title": "Alphabet's Google Plans $17 Billion Investment in Wyoming Data Center",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeFlFcTZtNnFFTmJfZFdPQUlFN1JFOExOV01jREdocW1IT1pxMkN0NUpSRnp5WTF6dW9FbTFRYTB5cFN2TTZYOXl6R2tiUnVWODU0d0FEc2loOHRSNC1YX0lfZlk5M2dyNzdTcmp6Wm1CNGFXUUNaSzhKZXN2QnlKd25rYmtPXzRfbE5NV0RQY1dIb0hRbFc2ak90a2xFN1hXMGw2OEhCT0c?oc=5",
+     "source": "Moomoo",
+     "published": "2026-11-05T17:38:44+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7e525ba57e75ea22"
+    },
+    {
+     "id": "3fe1ce4ee0c4ec13",
+     "title": "Google Plans Its First Wyoming Data Center with Carbon-Capture Power",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVVRHMDRJRUxmd3J0WFlDRVVtcXNUbS1TNFhTMzJzTjhFWFUxWjh6dkhTUGRYZXZLaFpTdzc2TG93RzEzdm5wTFo1NHhUd1duc0k0YWVkc0M2MEZHTWRydDN6eklwSjNhV21EU080dmduVzNGUGFZNUVQX25QR2N1RjdIekJ6QjY3bVl3em1pWnpJekN5?oc=5",
+     "source": "Unite.AI",
+     "published": "2026-11-05T17:50:03+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ef2164b42b952d97"
     }
    ],
    "first_seen": "2026-10-08T12:00:05+00:00",
@@ -18303,9 +18321,9 @@
    ],
    "events": [],
    "capacity_mw": 2100,
-   "investment_usd_b": 1.8,
-   "last_news": "2026-10-09T07:00:00+00:00",
-   "sources_count": 2,
+   "investment_usd_b": 17.0,
+   "last_news": "2026-11-05T17:50:03+00:00",
+   "sources_count": 4,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -24322,6 +24340,15 @@
      "cluster_id": "2b388884db135406"
     },
     {
+     "id": "1d2475561d232f31",
+     "title": "Microsoft declines option to expand Texas data center deal with Nscale, source says",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3YxSi01QlpvU2xqQVk1TUZQVTdjQnlqOUZwaFUzZ2txZHBJaHZ5bTVNOXpRZGV0czNzQkRCamNqNXZ2cUFoZ1JsV1l0cGFKazh4SXpjSlJ0Q1pMR0IyVWhfQkZlbTAtWFJ1ZERpbDdfNzZqaVlZUjg2a2RKNlRfS0N4OFMwSmpERG9EWng5MC1XXy1ENURJMUNWTTEyR3Q0UkE3WnRSMVJmVDAwdlJoVDhXa0h1YXpyYjBR?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-05T05:11:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "2b388884db135406"
+    },
+    {
      "id": "5cae59bfbc341741",
      "title": "Microsoft will not expand Texas data center deal with UK's Nscale, source says",
      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3YxSi01QlpvU2xqQVk1TUZQVTdjQnlqOUZwaFUzZ2txZHBJaHZ5bTVNOXpRZGV0czNzQkRCamNqNXZ2cUFoZ1JsV1l0cGFKazh4SXpjSlJ0Q1pMR0IyVWhfQkZlbTAtWFJ1ZERpbDdfNzZqaVlZUjg2a2RKNlRfS0N4OFMwSmpERG9EWng5MC1XXy1ENURJMUNWTTEyR3Q0UkE3WnRSMVJmVDAwdlJoVDhXa0h1YXpyYjBR?oc=5",
@@ -24401,7 +24428,7 @@
     {
      "date": "2026-11-05T05:11:00+00:00",
      "type": "Expansion",
-     "headline_id": "5cae59bfbc341741"
+     "headline_id": "1d2475561d232f31"
     },
     {
      "date": "2026-11-05T09:26:27+00:00",
