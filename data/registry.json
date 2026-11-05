@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-05T20:00:17+00:00",
- "count": 705,
- "visible": 600,
+ "updated": "2026-11-05T21:00:17+00:00",
+ "count": 706,
+ "visible": 601,
  "records": [
   {
    "id": "amazon-georgia",
@@ -18361,6 +18361,24 @@
      "published": "2026-11-05T19:51:20+00:00",
      "stage_signal": "Announced",
      "cluster_id": "ef2164b42b952d97"
+    },
+    {
+     "id": "a3fb9aa1afd2824f",
+     "title": "Google unveils $17B investment for 1st data center in US state of Wyoming",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRldvNkhMSnBxd0tkbTNnRUdoQmk5WlBoVnVoOTVJaE45V3M4VEg1SHA4X1ZxUlUzOEEzZ0pnTExaTmxOMHVwTXVLbHdOdWZ2THB3cHpVWmtlZWYtWDlvbVlyREVIN3F1ZmFPMWduNE53Rk9yMXFrUWdseXA2UW1OQWN1VFdTX0I3VFZveHlvUnhMT0l6ZGY4aWdEYkpRTk51WVhLQ0RaYmJEaVZZTVRGSmJ2TWE?oc=5",
+     "source": "Anadolu Ajansı",
+     "published": "2026-11-05T20:07:19+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ef2164b42b952d97"
+    },
+    {
+     "id": "c39cc5d4071d1cca",
+     "title": "Google plans $17 billion Wyoming data center amid rising threats of curbs",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSXNTLVJtQV9yc3AzLTh3VGlkVkl5M1ZmMmhjOHkzSGtCWTctUHhwMkhaaHZvLTVhUXNMdmgyNGFYVldhN2RrM0FtUVRRcnBFYnV4Zkxwa0NaRjNOSlJha1RoZ0tWeHVZaTlFb0tQdjUtMTAwNm5XdERkSDVWSjhQc1pYSjV4azVJZVYteF9zb0VCbFA5OEtUZXhnbGhLQTBZUXlkNlJpUGR1RTY4TGRzQVFWLXQ?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-05T20:47:44+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ef2164b42b952d97"
     }
    ],
    "first_seen": "2026-10-08T12:00:05+00:00",
@@ -18376,8 +18394,8 @@
    "events": [],
    "capacity_mw": 2100,
    "investment_usd_b": 17.0,
-   "last_news": "2026-11-05T19:51:20+00:00",
-   "sources_count": 9,
+   "last_news": "2026-11-05T20:47:44+00:00",
+   "sources_count": 11,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -26105,6 +26123,15 @@
      "published": "2026-11-05T05:06:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "cb0f4cfa31566fab"
+    },
+    {
+     "id": "311b56dfa77c28f8",
+     "title": "Effingham County commissioners delay vote on data center site plan",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLWhITklobmpfaXE5NjB4Q2FqSWpNYlliVFZDekVHdG5kLS1QaXEyRzltSDE1R3BBZGlwb0tDZGJOdlhmUXRnaEo5R2xMV21haVZiazFWQ1NBR2lRMEF5N3o4akgzdlFiRlNOWUVmblZ0ZGZQVS1nQUpwRVNLd0dTckFQeEZrd1NLOWhFZENmNFJ2STgtUk9ZcEZNbHY0ZHJZSUhmMmxnTWwtSDJwb3fSAbMBQVVfeXFMTXh1VzFtSVJNWU4tN0FweTg0VzA5YzNmVXVVM29WSjdOQ2Y4UFdlR2JteE5kZDdPc1dIdDQ1SjJEeDZTYkZtQVVVRENMV0RFT05TbjNpQU96Q1hZRFdKTGI2b3lDaEM0ZmM1blVkY0RUSFVtaEtKOWNLdV9rSGlwTXY4bXN0dEs0UXdBOUVuU1lVNFJINlNmR09iYUFDWHp2c1NtNFVsNXd2bUdGRlh2b2lyemM?oc=5",
+     "source": "WSAV-TV",
+     "published": "2026-11-05T20:32:41+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "cb0f4cfa31566fab"
     }
    ],
    "first_seen": "2026-07-22T07:00:00+00:00",
@@ -26120,7 +26147,7 @@
    "events": [],
    "capacity_mw": 3200,
    "investment_usd_b": 20.0,
-   "last_news": "2026-11-05T05:06:00+00:00",
+   "last_news": "2026-11-05T20:32:41+00:00",
    "sources_count": 5,
    "confidence": "high",
    "hidden": false,
@@ -33994,9 +34021,11 @@
   },
   {
    "id": "site-chantilly-va-2025",
-   "name": "Chantilly data center ($100M, under construction 2025)",
-   "company": "",
-   "companies": [],
+   "name": "Amazon Chantilly data center",
+   "company": "Amazon",
+   "companies": [
+    "Amazon"
+   ],
    "location": "Chantilly, Virginia, US",
    "state": "VA",
    "county": null,
@@ -34025,6 +34054,15 @@
      "published": "2026-10-09T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "0a98ba2ebbfef728"
+    },
+    {
+     "id": "28cc9f6ee9a5241e",
+     "title": "Amazon pays nearly $100M for Chantilly property where it plans a data center",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS2VSTEhNY2xrSFZMWFFlSmVzb3pJS09WYTlOTjBPaUg5cENKNl90Z1BJNlBWZWVmT2FMM2Q5d25vUFU2ZzdBelNTWG9TSlFqQ2RxbGJ1X1JQM3Y3emVWdGEwb05HSFJPbEJvQ3hyZGxidHc2a0tFcjB4SHVQU2xCV0pYVUhHYVVvNXFiMGNVQnRPelk?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-11-05T20:25:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "28cc9f6ee9a5241e"
     }
    ],
    "first_seen": "2025-10-10T07:00:00+00:00",
@@ -34044,9 +34082,9 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 0.1,
-   "last_news": "2026-10-09T07:00:00+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "last_news": "2026-11-05T20:25:00+00:00",
+   "sources_count": 2,
+   "confidence": "high",
    "hidden": false
   },
   {
@@ -51340,6 +51378,60 @@
    "confidence": "low",
    "hidden": true,
    "merged_into": "site-tonawanda-ny-2026"
+  },
+  {
+   "id": "site-trenton-oh-2026",
+   "name": "Trenton data center (25 MW, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Trenton, Ohio, US",
+   "state": "OH",
+   "county": null,
+   "city": "Trenton, Ohio, US",
+   "lat": 39.4809,
+   "lon": -84.4577,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "9f77763b4264cbf8",
+     "title": "Trenton voters approve Issue 17, limiting new data centers to 25 megawatts",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaGxMUEdhZzdwQVl0U0Z1eHktd1ZqcXNDQnk3RjZSeHlocUJrT1ZYWDFtTDdNemJlSTN3YnFMV3lOWTBoNmNqNXVZcDNHWTJtX0JBQXBvXzhJbEJPNkZKLXdZdGZHdDFueTA3RGpVXzRlNW5wcXd2UDN4QXYwbkM0WHJ3U0tRbFFOZi1kZ0tDNWdjNVlqRGhka0VKc05tRVlIODg0Vk1PdWdoZG9kWkpVejMtZkNQU0FPQkMtcTJ3b3RxYXJoY0NZVnBCUEhRX241djZPSXlxc1NmUQ?oc=5",
+     "source": "WCPO 9 Cincinnati",
+     "published": "2026-11-04T20:17:58+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "9f77763b4264cbf8"
+    }
+   ],
+   "first_seen": "2026-11-04T20:17:58+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-04T20:17:58+00:00",
+     "status": "Announced",
+     "headline_id": "9f77763b4264cbf8"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-04T20:17:58+00:00",
+     "type": "Approval",
+     "headline_id": "9f77763b4264cbf8"
+    }
+   ],
+   "capacity_mw": 25,
+   "investment_usd_b": null,
+   "last_news": "2026-11-04T20:17:58+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-troup-county-ga-2025",

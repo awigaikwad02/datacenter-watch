@@ -39,8 +39,513 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 1137,
+ "count": 1166,
  "items": [
+  {
+   "id": "c39cc5d4071d1cca",
+   "title": "Google plans $17 billion Wyoming data center amid rising threats of curbs",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSXNTLVJtQV9yc3AzLTh3VGlkVkl5M1ZmMmhjOHkzSGtCWTctUHhwMkhaaHZvLTVhUXNMdmgyNGFYVldhN2RrM0FtUVRRcnBFYnV4Zkxwa0NaRjNOSlJha1RoZ0tWeHVZaTlFb0tQdjUtMTAwNm5XdERkSDVWSjhQc1pYSjV4azVJZVYteF9zb0VCbFA5OEtUZXhnbGhLQTBZUXlkNlJpUGR1RTY4TGRzQVFWLXQ?oc=5",
+   "source": "Reuters",
+   "published": "2026-11-05T20:47:44+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Construction",
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 17.0,
+   "cluster_id": "ef2164b42b952d97",
+   "cluster_title": "Google to invest $17B in Wyoming data center"
+  },
+  {
+   "id": "20a8865ee1704f62",
+   "title": "Data centers will start running on 800 VDC power as early as 2027",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSjY4dkJ3TU8yeG1CSGw1dmd1d0EzNEJRMUxOR1Utb3p2bkhpZTRWOXNEWEZ3cHJEUDFJc3NMUDhFVjZJUkxQLXFfYkhHNlRLeEJIc2tubUI1OV9vLTNHeGltZ2FuSU5CSDJjc0NweVRTaXdKNlQ1cDVRS3Mtb0tBSU5GQXdfQWpxYjUwX1hXN3BYNmJNeFR4dEY3ei1kVDFIdENz?oc=5",
+   "source": "Latitude Media",
+   "published": "2026-11-05T20:40:42+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "20a8865ee1704f62",
+   "cluster_title": "Data centers will start running on 800 VDC power as early as 2027"
+  },
+  {
+   "id": "2b2a0b5d51b05379",
+   "title": "Niles city council votes to extend data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOVZ2WFhuWG5zSXdBQ1pRTWgzUGs5TVY2QVNZcndpdlF6RkFGcENtUGhPQWdkOEJGRnFRLUY1RVlYNkZjYlZOWjRoampsT29rbi1KdDQ5N3JTVVVmX000WmdONFI4aXJSODZ4XzFPdTVYWXRKaFdBMG1FRmJpWjBFd3M1U0x3YWlUTGdJTS1hY3EwdDhfNThXTDdBRnFTOEJscVBHNFNoMWlHcDB2MXdxUDlMWVZSTmp0RWhzYVVCaFBvc0NJVE1LVzFoNHRxY2ZfckNOMWpqQjUzYWt1?oc=5",
+   "source": "WFMJ",
+   "published": "2026-11-05T20:37:01+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Niles, Ohio, US",
+     "lat": 41.1828,
+     "lon": -80.7654,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2b2a0b5d51b05379",
+   "cluster_title": "Niles city council votes to extend data center moratorium"
+  },
+  {
+   "id": "5c7e1de4ad8f8495",
+   "title": "Voters Approve New Data Center Restrictions",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbFRUdUJBNHhjYkpNYkFOcHhkODQwN1hoVXdUQkJmUTVtcFNreXRsZlN6TkhvWlRaTGJRaDlfUi1Jc1JIQmZpVDR3TVpWMUlEOFRQQkx2TXlna3lUaUVKUGtYZkxxT0xMdmJidjNUWGFlVFdGZW9TOGM2SGRBNXF0WTFzdkhqZlZUckh0WHR0WG4walk?oc=5",
+   "source": "Environmental Protection Online",
+   "published": "2026-11-05T20:35:25+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "705b67f3fcceba48",
+   "cluster_title": "Voters Approve Data Center Restrictions in Dozens of Communities"
+  },
+  {
+   "id": "311b56dfa77c28f8",
+   "title": "Effingham County commissioners delay vote on data center site plan",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLWhITklobmpfaXE5NjB4Q2FqSWpNYlliVFZDekVHdG5kLS1QaXEyRzltSDE1R3BBZGlwb0tDZGJOdlhmUXRnaEo5R2xMV21haVZiazFWQ1NBR2lRMEF5N3o4akgzdlFiRlNOWUVmblZ0ZGZQVS1nQUpwRVNLd0dTckFQeEZrd1NLOWhFZENmNFJ2STgtUk9ZcEZNbHY0ZHJZSUhmMmxnTWwtSDJwb3fSAbMBQVVfeXFMTXh1VzFtSVJNWU4tN0FweTg0VzA5YzNmVXVVM29WSjdOQ2Y4UFdlR2JteE5kZDdPc1dIdDQ1SjJEeDZTYkZtQVVVRENMV0RFT05TbjNpQU96Q1hZRFdKTGI2b3lDaEM0ZmM1blVkY0RUSFVtaEtKOWNLdV9rSGlwTXY4bXN0dEs0UXdBOUVuU1lVNFJINlNmR09iYUFDWHp2c1NtNFVsNXd2bUdGRlh2b2lyemM?oc=5",
+   "source": "WSAV-TV",
+   "published": "2026-11-05T20:32:41+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cb0f4cfa31566fab",
+   "cluster_title": "Effingham County to vote on OpenAI data center site plan"
+  },
+  {
+   "id": "e51839cddef32727",
+   "title": "Texas data centers face political uncertainty after election shakeup, but development boom isn’t over",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNaGVaUzJyOW5nNXh6eVdtblUxaVFCMnVYWDQ3WExtUkhZZjVQVm9TemNiUkpQdHpmNVJHcjFfcmlyT3ZseUJZWDhnWE5YejM0cm9scjZuVkdIYTZFYkJ3R1hiVGJ0VXhRNDY3Yl9WVllwb0JxTi1HdG1TM3owVjZXLXU0ck9uVm9RQkVUY3hiUmtfYkhDdzR4QmtMckpmeE01ZS1JejNKMkFaWExIMFQ2WEhkQWFrZGozdXB1ZG83S3dNdFBCNlRoMnNOQVF0MzJmdUhvZzBIUUvSAd4BQVVfeXFMTnV0SVFxUGtSVm5WUzIxd19mTUZnUmFLRG5QZGdIUk93UGlRVlVuVFpmcWRfblp4U3FnTGhhVFMtaktyMDlTbWFieFNGRHZiSldvZzBmekE3ODd5NnBmUkRhYnlaemVqU2IxT0daMDVad0E4bGxKWVdyYmpKb05wVjVJVVctZjNPYmV4YlZ0anJsdGlucm16R0NuX3hiV0IybWNxZ01vWE5HVnJFekd0RkJCZlZNamwxLVBiOGVyaHZVdW9EdTBCVDJZTW1SWEF4emp3ZnZrRmJoaERNRC1B?oc=5",
+   "source": "KXAN Austin",
+   "published": "2026-11-05T20:31:28+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e51839cddef32727",
+   "cluster_title": "Texas data centers face political uncertainty after election shakeup, but development boom isn’t over"
+  },
+  {
+   "id": "ac2de0660e9ff599",
+   "title": "Breakingviews - COMMENTARY: Global muscle will sift puny data center providers",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUzg3YURZNERwb1hwT3hJcXBKQmJjVUdDUHJ5RWEzMkJOeVpEWDFMWGU5b293aDJIYnJjVHBIZS1HcGFkZlJuS3hEMHJ1b210VUM2OENnbFZFbUxzaDJhOXEycFQ4YW9vbWllOE0taUNPN2h4YmhGMl9oZTBCYkhyYmxIcW81RWVGTHpaRm10VWZsVmZjQ0V5amQzR3BVb2VfMGtwQkFhd25sc0oyZnYyQw?oc=5",
+   "source": "Reuters",
+   "published": "2026-11-05T20:31:10+00:00",
+   "feed": "Google News: Data center",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ac2de0660e9ff599",
+   "cluster_title": "Breakingviews - COMMENTARY: Global muscle will sift puny data center providers"
+  },
+  {
+   "id": "f96e04e6ee1270da",
+   "title": "Data center opponents gain power in midterm elections",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQmNxSEE5ZjhPVGVONFFDbWlqLWVzbDBHcV9nUlNuSElweWgzUkg3cE91N2pmX0MwRGJwVC01VUd4X2ZlMVFCa1RyamRtN1NEbUxnMkEtR2FQdVJOQ08ya1J6Mm9FYnZtUGEwX1FaTUZiOEFjeVRyNThBVTI2UHdkWGdDQnRpUTVsNVVrQm81NTlnZw?oc=5",
+   "source": "The Daily Reporter",
+   "published": "2026-11-05T20:29:49+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Community",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f96e04e6ee1270da",
+   "cluster_title": "Data center opponents gain power in midterm elections"
+  },
+  {
+   "id": "28cc9f6ee9a5241e",
+   "title": "Amazon pays nearly $100M for Chantilly property where it plans a data center",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS2VSTEhNY2xrSFZMWFFlSmVzb3pJS09WYTlOTjBPaUg5cENKNl90Z1BJNlBWZWVmT2FMM2Q5d25vUFU2ZzdBelNTWG9TSlFqQ2RxbGJ1X1JQM3Y3emVWdGEwb05HSFJPbEJvQ3hyZGxidHc2a0tFcjB4SHVQU2xCV0pYVUhHYVVvNXFiMGNVQnRPelk?oc=5",
+   "source": "The Business Journals",
+   "published": "2026-11-05T20:25:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Chantilly, Virginia, US",
+     "lat": 38.8943,
+     "lon": -77.4311,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Northern Virginia"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.1,
+   "cluster_id": "28cc9f6ee9a5241e",
+   "cluster_title": "Amazon pays nearly $100M for Chantilly property where it plans a data center"
+  },
+  {
+   "id": "4063f06803caafff",
+   "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG85QmJuZGVEWUIxSW4ybHJPVmN2RmR2VjBTdnkydmZSOGV6YllsWEUtbVpYclRTSWhQS09EZGxJSllyY0otS1QtQVdVY3BhY0ZqMWxfR25WeWo3Q3d5LUg5dVZrUGRneGh2LTRBQjY3SERxNTdLaXNkaU9VaHVPb0lKQW10WmvSAYwBQVVfeXFMTWdsc2pjdEpUS1NXdWRzcld3SFp2eVBhWkU2NWNOTXRsUS1WbTNRVlg3S0ZRalhiYnR5WTNKQUxiR1JXNkI3b3ItbnBsZkdoZE9lbWJkVFB1eTFwMFluVFNobUtfLU1sTUJPSlRVSU1IUnRhYXFPVzNEc0NRempsZGM3MTFTVFZSUGUzS0Y?oc=5",
+   "source": "CNBC",
+   "published": "2026-11-05T20:16:52+00:00",
+   "feed": "Google News: Data center",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4063f06803caafff",
+   "cluster_title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'"
+  },
+  {
+   "id": "a3fb9aa1afd2824f",
+   "title": "Google unveils $17B investment for 1st data center in US state of Wyoming",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRldvNkhMSnBxd0tkbTNnRUdoQmk5WlBoVnVoOTVJaE45V3M4VEg1SHA4X1ZxUlUzOEEzZ0pnTExaTmxOMHVwTXVLbHdOdWZ2THB3cHpVWmtlZWYtWDlvbVlyREVIN3F1ZmFPMWduNE53Rk9yMXFrUWdseXA2UW1OQWN1VFdTX0I3VFZveHlvUnhMT0l6ZGY4aWdEYkpRTk51WVhLQ0RaYmJEaVZZTVRGSmJ2TWE?oc=5",
+   "source": "Anadolu Ajansı",
+   "published": "2026-11-05T20:07:19+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 17.0,
+   "cluster_id": "ef2164b42b952d97",
+   "cluster_title": "Google to invest $17B in Wyoming data center"
+  },
+  {
+   "id": "13d68a9bc903c0a3",
+   "title": "Texas Didn’t Run from the Oil Boom. It Shouldn’t Run from Data Centers Now",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOX2pOaFFGSGc3V3lSYUlCUGhMQllhS1dIRGNhb3JkSk5kRFdES2xMYWVjRjl4aTExLVh3ZVdOYU41dU5RMjJyYkY4Rk4wc0szYjZzRTJKTFlmSXlsY0drZVF0MFdqM3JobHhZdGVmcXVTa0RTZDFERWlnRkJSOWRtbnZVd2labTZHUzJscTBlM3I5VXo2RV9sdEpfc0h5ck5nbjJ5UFNaeThMV28?oc=5",
+   "source": "Goldwater Institute",
+   "published": "2026-11-05T20:07:09+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "13d68a9bc903c0a3",
+   "cluster_title": "Texas Didn’t Run from the Oil Boom. It Shouldn’t Run from Data Centers Now"
+  },
+  {
+   "id": "288db18fb425bc85",
+   "title": "Dade County commissioner calls for 90-day data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOX1NFY3c3ck5yUzBpdGtKcmQwbGFSc0VjWFdWbVJUaXNIdmp1dTEzTW0wSXJES3pJTmtoRWNKVWlsQjdlbnUwek5GbWVaQVFPX09SVVdZOFh1d1lwemxyckxIX2FadGFUTDR5Rk05QXg0UVdoVVoyMXdqd3VDR0tMc1pPWjIxOEpGWWZVczFLS1FYcmVUVlR5T1VSSUd1NS1XRFRqMmIwOW9Hajh0WjhvTFk2cnBYVWN1WlBIZklQUGtibFQ3aDFBcndfYWhsSFI4S1BiVlIwTHIyMG9qd3QxdnBJSm5lQXM?oc=5",
+   "source": "Local 3 News",
+   "published": "2026-11-05T20:06:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "288db18fb425bc85",
+   "cluster_title": "Dade County commissioner calls for 90-day data center moratorium"
+  },
+  {
+   "id": "e9b27b28d4100780",
+   "title": "Watch AI, Data Center Worries Sink Tech Stocks",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSFNfWGdxaHc5RjVLWEx2cE5XNlR0bmVLd0pWQjFVQVI5cm5zOWdEMHlidjFIZjJWVEhBaEkxZE9rQmdYa3lwQ0wxaWV1Y3dzVVpRVks5RjVJbFZVbTdlVXZyMlpYZGtlTFNkakJOMkFSUUFPUFVFaTJRS2Z0dkE3cjI5VHJBWFZRa1dvS3piYVhKV2hEeWRDZ21n?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-11-05T20:04:18+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Community",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e9b27b28d4100780",
+   "cluster_title": "Watch AI, Data Center Worries Sink Tech Stocks"
+  },
+  {
+   "id": "7ac89f2829140177",
+   "title": "Effingham County delays decision on proposed OpenAI data center once again",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaDdNdkRxbzdETFF0QVRaZjZZd0hQWTV5cGstN0Y3T0UwTEFNajVBTjcxYjdRVksyUlREc1VrZGtDLWNtaWcxUWgyekh4MTJoNU1BZG40YVRNQ1pCN0dHM3Vpb0poa29zTkNKbElSVTFodlYyanRrcFIzbTBPa1ZKcGRYWTNsTFYwOC1PbnhQTGo?oc=5",
+   "source": "WJCL",
+   "published": "2026-11-05T20:02:29+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7ac89f2829140177",
+   "cluster_title": "Effingham County delays decision on proposed OpenAI data center once again"
+  },
+  {
+   "id": "f596a3bb2b7f83dc",
+   "title": "OpenAI Pledges to Give Locals More Say in Data Center Projects",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcEdYY1M2QU5OdnpSQU1ZcmUtNGozMDZYZGE1b202TVM1QjhpNy1INHRLZlZ2RmRORC1iY3dBRUR5OWhoYm1wR1NIbklRcTVLcTR4bEFmUzhQRXRnYTkxaTlnS0p4UHRBVmstRllPZlh3RXczTnhpM0p6WUxEbEZLbWtXUnVuUQ?oc=5",
+   "source": "The New York Times",
+   "published": "2026-11-05T19:59:03+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f596a3bb2b7f83dc",
+   "cluster_title": "OpenAI Pledges to Give Locals More Say in Data Center Projects"
+  },
   {
    "id": "b0bca74375f1679d",
    "title": "Google Details $17B Wyoming Data Center Plan as AI Stocks Sell Off",
@@ -83,6 +588,72 @@
    "cluster_title": "Google to invest $17B in Wyoming data center"
   },
   {
+   "id": "7e09a582f3914c25",
+   "title": "Google Bets $17 Billion On A Wyoming Data Center",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVXhVSlk4ZEZJclFLUDRGVUphaTdVekFwZzRjTU92RllKQUpnMnZseDJNYzJUSkx3STF6XzU1Q3o0dFdQYkFqcFRwUUJSd3lBQms0SGZsa0Z4RTdEVmlwMEgtQXhMZTh4bzRXOEdQNHc5bXBwOFRaOGZLSWt4NXBTX1F3?oc=5",
+   "source": "Finimize",
+   "published": "2026-11-05T19:50:16+00:00",
+   "feed": "Google News: West",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 17.0,
+   "cluster_id": "ef2164b42b952d97",
+   "cluster_title": "Google to invest $17B in Wyoming data center"
+  },
+  {
+   "id": "b980fdbbad38ec6f",
+   "title": "Nvidia’s Workaround For Data Center Backlash: Retrofitting Old Telephone Buildings",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdk42anJHNXZZdl9CY3ZJRGRNODcxR2x5V2tleWNwVkNvSWZaaWN4cW9RUEM3OVo1U0RTWTFoUjV2a3lGZXFHRkpjOGR2OVF2enNVYWpEMTloMVFEMDNLOW00Ul82THNXaTBua3U4c0VKV0lSWEVRZk9IVWVZblRtd3V6TjJUVG1DaUF3WEtfSU9oTE4wODdEN3UtT2dGc3RFMTFyWGpqSTM5UHdTdF84R1R4MmR0NHc?oc=5",
+   "source": "The Information",
+   "published": "2026-11-05T19:47:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "cluster_id": "b980fdbbad38ec6f",
+   "cluster_title": "Nvidia’s Workaround For Data Center Backlash: Retrofitting Old Telephone Buildings"
+  },
+  {
    "id": "1b48941d9a688cf7",
    "title": "‘Compute Campuses’ Data Center Rebrand Kicks Off Big Tech’s Attempt To Woo Democratic Congress",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbG1rYWtMbC1MQjlVOElwWGN3RUpnYXNMc0tQMDhEcV9FeFlINk9mLTI1c1NBaGpnTzJ6b0RpQjhlSkxCQWZ1eEhzMFhReDJMRjVzWmZ0VXZ5VzhJZ2ZyYTlpZ2s4Um1QOXZjVzZqLThIR2wwVVBBMmRQZ3ZaeGE0SkRONDFQMEllandhQ1N5NUJ2amdMVHREWk5ybnRONUh3ajM5UGM2NndBRE1KdDVxOE5reWkyRDlTWG1ETGpobGZ2cW1rODlGRXhheXJnUGJUT1dmSDc0dTUwS25lbUE?oc=5",
@@ -106,6 +677,33 @@
    "suppliers": [],
    "cluster_id": "1b48941d9a688cf7",
    "cluster_title": "‘Compute Campuses’ Data Center Rebrand Kicks Off Big Tech’s Attempt To Woo Democratic Congress"
+  },
+  {
+   "id": "1cf23e9d9ab0a0e5",
+   "title": "SpaceX Stock Tumbles. A 6-Gigawatt AI Data Center Is Drawing Backlash",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOUM2cHVBdnJrT0NuQ1AtMUp2bS03cTJFdzZYSmtsU0VjTWY1LUtqeUJnQWlNbUMtWmxiRnV2ekJET25Md25UX0NpcUE0cGljY3V0ek5FQV9WSk5RN1AxYlA5dG03ZXB2MTV1M3VXU0x3WGJCTlktd2pteTVDUFNLemZFSm1KQVpDNnVJeUJ4SnJDWGxxX2toc2FBS1pBVmVQdW1BQVgzYXE1NTl2YlN3YmJNMTZHdjV2VkVmSE9UbHFNYldtMV9n?oc=5",
+   "source": "TradingView",
+   "published": "2026-11-05T19:32:57+00:00",
+   "feed": "Google News: West",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Power / Utility",
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1cf23e9d9ab0a0e5",
+   "cluster_title": "SpaceX Stock Tumbles. A 6-Gigawatt AI Data Center Is Drawing Backlash"
   },
   {
    "id": "0045e8c1699707ee",
@@ -357,6 +955,30 @@
    "suppliers": [],
    "cluster_id": "4b2120e189955d49",
    "cluster_title": "Wyoming’s Data Center Debate Runs Through Its Water Supply"
+  },
+  {
+   "id": "400382dff2a8d359",
+   "title": "The election’s data center glitch",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQd3pXS1Qta0VDTjdPdld3cVAyejVxSk5uUWxpSmxNeWdMMlB1V3RnNlNGS0tOVTJnZC1BcU1zOWtnZ3NzQkxTdlBXSDVFWkJtNzlvaFhjZFV3M296QllYbkl0U2lXZ2pyODNMYkRERlNJbDFYQVR1RE8wN1l5YjBYeGF5Y3lsOFpDa2RENzVmNXdfZmxyT1ZlR0NNRC1pNm5RT3lPQ3VBdnFJTnM3UnN0NVdjOVVIdw?oc=5",
+   "source": "Politico",
+   "published": "2026-11-05T18:38:20+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "400382dff2a8d359",
+   "cluster_title": "The election’s data center glitch"
   },
   {
    "id": "f569d9311eae12a4",
@@ -1745,6 +2367,34 @@
    "cluster_title": "South Texas city pauses data center plans after public pushback"
   },
   {
+   "id": "c0b1365c5a9c5f2b",
+   "title": "Apple Proposes Seven-Series Senior Notes Amid AI Data-Center Buildout",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOS2xFLUFIOEFNUXFNdzJIb0RWU1JxOEY5UXNNc054NXVOcjVzQ1piWkVIVThnR0N3WGRoZldISWhzV09TXzgzZW1PRXB6QWZWVGNBOWVNZXNQSl9RS1JFc2NNaUNOSEhKbkk5QXJMaEt0eWd4THZ2TGg2OUNEOUZ2TE5DV1VTVnJEeXZpSHd0eVNpLWVvLWc?oc=5",
+   "source": "Unite.AI",
+   "published": "2026-11-05T16:34:02+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Construction",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Apple"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c0b1365c5a9c5f2b",
+   "cluster_title": "Apple Proposes Seven-Series Senior Notes Amid AI Data-Center Buildout"
+  },
+  {
    "id": "6e8a868485573b18",
    "title": "West Virginia Stays Red, But Data Center Backlash Costs GOP Seats",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMG1LR0dMcWQxemIwSTBXTGRqTV9hc1VjUDh6SXFJSTFlX1BjMFpUelJnU2dxT0t0LTVidGZpZzJQcHllRi1nZXFRNlZvZ21MWkNrUk41SWVBR3ZjdjRwZGJvRlg3LVdRc3lpVmtNcldCWVpDTzVqQUV0MmMxbnNBVGFOR0phTUZOeHFDOF9QUy00TGJLYlU2bjBRbXdGWU9XZDJMcTlB?oc=5",
@@ -1857,6 +2507,32 @@
    "suppliers": [],
    "cluster_id": "5a84efef0c4f432d",
    "cluster_title": "Nasdaq plunges into correction territory as Dem wins threaten data centers — and AI giants rush to stem fallout"
+  },
+  {
+   "id": "919e166458adeb5b",
+   "title": "Nasdaq Plunges Into Correction as Democrats Prepare Crackdown on Data Centers",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjZwV1NWdDZEX2E0aTlPYVEwZmk1V1FqUkdwX3hYaWxzdmg4OGlmTGJzaXlZV2lGSjNmeXFfbmhaUll5ME83RlF4QW5VYkN2a1lTam13RjNOdUFlMDRVa2Y1S1pCb3h3WTFNbDRWdHVrdVJESlNzYkpNREtRb3NDaFZjbndFb2FHUmpHZmFjOHcwVmtXZzd6NlZR?oc=5",
+   "source": "Realtor.com",
+   "published": "2026-11-05T16:25:42+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "919e166458adeb5b",
+   "cluster_title": "Nasdaq Plunges Into Correction as Democrats Prepare Crackdown on Data Centers"
   },
   {
    "id": "373d846cac56e293",
@@ -2703,6 +3379,41 @@
    "cluster_title": "Buffalo Township takes first step toward a data center ordinance"
   },
   {
+   "id": "f7b1ca099bd6cc3c",
+   "title": "Buffalo Township takes 1st step toward a data center ordinance",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNkY4QmZoaEhCMlhMQUV6bUVkRXFlal9VV05Mbm9ETUg5Z0VzR09kbmFCRzBRWF9aVFY4VkJSamJaWjhkVklHQUNMSXRZaFkydXdEOUNPNzh0QlB1TVQ3LXNvT2ZSZGpYR3lJNXFrVGVtM0RDMzNQeEN2ZGI1M2NTRVUyS2JlTXRNeDFzU2MyVTlCcVFnaE5fRVlmbWVxamc0UUlmcElWXy1XRlF3WVgtajJXcw?oc=5",
+   "source": "TribLIVE.com",
+   "published": "2026-11-05T15:18:40+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "79da722b65976b02",
+   "cluster_title": "Buffalo Township takes first step toward a data center ordinance"
+  },
+  {
    "id": "17b96eabd45e770e",
    "title": "Mapping Data Center Development Using Urban’s Spatial Equity Data Tool",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVFFmbkY0VlBxZ0o1SnZTUC1PUjlUZnVDV3JEenJueTFnQXQ5ZUViTkdIaFJ3SmhNLW44Mm15Q0xkQ3NoQ0lSMXNkZ0lFbl94QlhuT3ktb2c0UHZkaU9WXzZSVXFhYl9XYkVld216V0M4MGJmcGtfbTRnSXlGNExYUERoUFpSRVljeUdfYmVfUVZMX2ZnWGlUT3JOV0NyM081enNDeg?oc=5",
@@ -2996,6 +3707,41 @@
    "cluster_title": "IT Services Stocks to Buy on Weakness Amid Data Center Construction Volatility"
   },
   {
+   "id": "32da3b2802e370fe",
+   "title": "Swatara Township greenlights large data center project after commissioner vote",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOQXY1Q19WcE4wQnhSQzJOdktiaExmNnRhSjJSRGZTUW1ZNXV1Z0tHbjRQZ1Rhc3dtb0plTnVuRlhic2dUaUNtdVg4R1RjaFdnU0ZTd2VIOVV6d2VRQjdCaUxXWEJ0WldyT0oyTWVUT3dvQVdqTDhySng3cWRmS1QyVXRZMElHV2U2QmRYZ3hZTUlBN0l0dndBYi1DWGhFaFk1NnQxaU5QZV9YTVplMEFZaFJHTENNTkc4Q3dIRVktZTNVM1YxclhZdm5vQWI2VjNWb3JUSktTT2U2T0ZLdmY5Y0dvaEp3NE9DRThaLWxmSQ?oc=5",
+   "source": "WHP Harrisburg",
+   "published": "2026-11-05T14:17:27+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "32da3b2802e370fe",
+   "cluster_title": "Swatara Township greenlights large data center project after commissioner vote"
+  },
+  {
    "id": "89fd51b707120e3d",
    "title": "Charlotte data center debate raises questions about growth and resources",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaVZwam9iOG96dWRJcTFTcmR0R1ZzNWt3NnFtSDVGczl1MGVUZmQxSUl4bnRHYXM5QVpYRVhxTGhXbkJhQm81ME1CcmFYWU1JR3J0akRYM1ZkM0dsVDdsel8zSFBzNzhjTzdoOFphZTdnOFVwcFhtZ29UNzRnVS1lUVh2NURkNFNZNkhUMFhEeDdMaFdjRE80d2UzMDZDOHd3YnlOdU9MUEVUQ0dPSC01VDVISGQ?oc=5",
@@ -3212,6 +3958,30 @@
    ],
    "cluster_id": "747154da439d8af2",
    "cluster_title": "AMD's Record Data-Center Quarter Collides With a Washington Worry"
+  },
+  {
+   "id": "092a538658b285cd",
+   "title": "Data centers lose at ballot box",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1GY3NXN1lTNWlnV2ZQSnZDQnI2c09oMnRqNVlMLU4tMW53Q2NiSTdlTjBIRElQMmlSREF6S3VacFIzU3VJa3l1M3UyNWpiWXRsOWFjTzFEX2tSS0NvMlhhQlBUYzRKekIzWEVsTXJhWnZmU3Y1YngwVUxxZEVIQQ?oc=5",
+   "source": "Light Reading",
+   "published": "2026-11-05T13:36:50+00:00",
+   "feed": "Google News: West",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "092a538658b285cd",
+   "cluster_title": "Data centers lose at ballot box"
   },
   {
    "id": "9be819591ad59eef",
@@ -4564,6 +5334,42 @@
    "suppliers": [],
    "cluster_id": "ccc87350412b2d43",
    "cluster_title": "Midterm Election 2026: We Need to Learn to Love the Local Data Center"
+  },
+  {
+   "id": "02d35bed738caf8b",
+   "title": "Lawsuit challenges $33B data center in Lowndes County",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNOWZkWHdDOG4yTWFqRUpkbEJTZ3VudlJRdWh3XzhkaWpNY0poV0FrZlVqUzRZeWZZcmtpSFMzLVNBVUw5VjFEVTAwU3N6U2RObTN4VlNiNXQwcGphamNlME5aY3Bvbmw4U2dVTG9pQ21zVUJ2M3hRRzRseHpNWHdiZ3dFcE0zX3VoaHJjbFVlak9lZw?oc=5",
+   "source": "WSFA",
+   "published": "2026-11-05T10:23:43+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Lowndes County, Alabama, US",
+     "lat": 32.156,
+     "lon": -86.65,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
+   "county": "Lowndes County, Alabama, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 33.0,
+   "cluster_id": "a2579c66f761b7ea",
+   "cluster_title": "Lawsuit challenges $33B data center in Lowndes County"
   },
   {
    "id": "4082b01e51cd467c",
@@ -9418,6 +10224,45 @@
    "suppliers": [],
    "cluster_id": "87beb7442b9d6975",
    "cluster_title": "Burgin council members paid a price for their data center support. They weren’t the only ones."
+  },
+  {
+   "id": "9f77763b4264cbf8",
+   "title": "Trenton voters approve Issue 17, limiting new data centers to 25 megawatts",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaGxMUEdhZzdwQVl0U0Z1eHktd1ZqcXNDQnk3RjZSeHlocUJrT1ZYWDFtTDdNemJlSTN3YnFMV3lOWTBoNmNqNXVZcDNHWTJtX0JBQXBvXzhJbEJPNkZKLXdZdGZHdDFueTA3RGpVXzRlNW5wcXd2UDN4QXYwbkM0WHJ3U0tRbFFOZi1kZ0tDNWdjNVlqRGhka0VKc05tRVlIODg0Vk1PdWdoZG9kWkpVejMtZkNQU0FPQkMtcTJ3b3RxYXJoY0NZVnBCUEhRX241djZPSXlxc1NmUQ?oc=5",
+   "source": "WCPO 9 Cincinnati",
+   "published": "2026-11-04T20:17:58+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 25,
+   "cluster_id": "9f77763b4264cbf8",
+   "cluster_title": "Trenton voters approve Issue 17, limiting new data centers to 25 megawatts"
   },
   {
    "id": "0be205fa91d0370f",
@@ -16043,6 +16888,58 @@
    "suppliers": [],
    "cluster_id": "0c75238e23e33aaf",
    "cluster_title": "Roaring Spring resident hosts meeting to air data center concerns"
+  },
+  {
+   "id": "88cc50de11a9f18c",
+   "title": "How Democrats’ midterm sweep will rewire energy and data center policy",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT3NESTNROVhSMW1kcjdtTzRwQW1OWGVDcmtvUUFiRkpMeDhkNmhBZTR0SzRQaURNRFFOSkpTN3pSSEl2M1VtQ1UzMHBERnh1WldqalRZdDJnd0JTaVdTaVcxcklXQjk3T21JWlROd0JMc2JKX0YyWTFJa3RTR1duZHE2MzhsSE5GcHBhNHBmOHVJTnpqLWlhWW1kUzJqSXdNTTlFQmM0Qlk?oc=5",
+   "source": "Latitude Media",
+   "published": "2026-11-04T08:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Politics",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "88cc50de11a9f18c",
+   "cluster_title": "How Democrats’ midterm sweep will rewire energy and data center policy"
+  },
+  {
+   "id": "ad0ab1fcedd6837d",
+   "title": "Voters just proved how much they hate data centers",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZExFZUpCUlUyTTBqeENyQ3hsSTBQT0lZR0hjRGczaU5zZk9WWlpBb25VQ2U4SDJPRExyYWNMQWJydFJydnZyVkt6OFZjS1Q5Q2lWWnpxdzhJQTVwTEU4MTdCM09obEhtRERaRTFOaExqVEF1MElZTlR6WWpUeTlyTDhvazF2cFlZdjlCMDlWNA?oc=5",
+   "source": "Latitude Media",
+   "published": "2026-11-04T08:00:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ad0ab1fcedd6837d",
+   "cluster_title": "Voters just proved how much they hate data centers"
   },
   {
    "id": "6eb138d102a5f527",
