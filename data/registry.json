@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-05T13:59:03+00:00",
+ "updated": "2026-11-05T14:59:02+00:00",
  "count": 705,
  "visible": 600,
  "records": [
@@ -19127,6 +19127,15 @@
      "published": "2026-11-04T15:37:01+00:00",
      "stage_signal": "Announced",
      "cluster_id": "d335ef5b38398cca"
+    },
+    {
+     "id": "cb0ef6d73738c8ee",
+     "title": "Lambda announces plans for $33.1 billion data center campus in Lowndes County",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZVpSLXhfclNOWEk2T21OM04zMVJtSk9MeDhielNmN3dqU2pPLWFLWENHZTVsQ3Z0aml6ZHJ2SmY5MmZtNkM1cTZFQXIyTTdrRGt4ZE1hamdCOUpYV3B3SVpZRGRjSC1hU1NPSFdOYnMwQkRFQnQ0enR3NFljQ0ZzazZjazFhcnc5SHEwNUtBb0dDSy1FTFNRd2lkNVZGTXVsemhoWkczY2o0YkY0MTVpeFpn?oc=5",
+     "source": "Alabama Political Reporter",
+     "published": "2026-11-05T13:54:26+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d335ef5b38398cca"
     }
    ],
    "first_seen": "2026-11-04T15:37:01+00:00",
@@ -19145,10 +19154,10 @@
    ],
    "events": [],
    "capacity_mw": null,
-   "investment_usd_b": null,
-   "last_news": "2026-11-04T15:37:01+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "investment_usd_b": 33.1,
+   "last_news": "2026-11-05T13:54:26+00:00",
+   "sources_count": 2,
+   "confidence": "high",
    "hidden": false
   },
   {
