@@ -39,8 +39,119 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 892,
+ "count": 900,
  "items": [
+  {
+   "id": "d6d386f901f5e14a",
+   "title": "Across Southwest Ohio, voters pushed back against data centers — and politicians who support them",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQYnJvUkNGODdHakhHeFJJMncyTW81RFBEZ09XWUpOVlpOSDVFUi1qb3hzU3VTLURNM0Q4N19Od3NSYUNSMHYxRlJUVE0tRUp4Tk5vclIxdGRLaGd6TmN1UXAyVi0wc19Wb1lYS01MMVU1QUVIY2xfeUZmWlQ2bU54aVBTY0NvQ3pDS1FCUHhkaGtZNHE4ZzJyczZtRzZkZDNTaWIwUlBqN0NTOGpENDZtejV5YkJiTXlvamdrSGQyMGZ5eVByc0RVb1dBbHJ0YnNPWEFadWszeXhHOFJQam5qSlUtdzJkZw?oc=5",
+   "source": "WYSO Public Radio",
+   "published": "2026-11-05T03:38:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d6d386f901f5e14a",
+   "cluster_title": "Across Southwest Ohio, voters pushed back against data centers — and politicians who support them"
+  },
+  {
+   "id": "d2ede125e0206de9",
+   "title": "Data center concerns help shape Texas Agriculture Commissioner election",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNcEZXU2N0b2dPSEV6RWk3bjZEanliZ194UTBvLWZ5WnJPOUVRdjZnQk5Mc3BmQnhIMmZQdGM3Mjc0TGNkY005R0JpeW11bG16a3BBdmpfNWwwMXVEVFowNm1jX2VkWjl5cE5fYWJGY2R5cTZhZV9uZDk0cXJ2VUFPSVpZSlRYektuWnpzQ1dVNmctNmtUZWFWN2V5Z2VsV0k4ZTF0ZE0xNHdSeEt3MVdzbnp4NEtTbGRZaUo5Ym43dzE0X0lFRzRpY3AtQWlyam1odFVieHByLUUtTFcwa3BIbF80S2tnUHB1ZmlR?oc=5",
+   "source": "KVUE",
+   "published": "2026-11-05T03:08:57+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d2ede125e0206de9",
+   "cluster_title": "Data center concerns help shape Texas Agriculture Commissioner election"
+  },
+  {
+   "id": "308b848c55aa2871",
+   "title": "Get Off of My Cloud – Texas Moratorium on Data Center Grid Connections Disrupts U.S. Project Pipeline",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd0JYNUt6S0djRWV0OFZEblhtRHk1QkVfWGVSSllZNm9nSzR4LW9VVnp6QWV1Z3NLQlRxcExtZG5ucEZONEhwaDA0X19BWFU5RldmTlRZY2M3MTF4Qll2N3J2TEotQVBYYUREcXVQYjdoLXhmQlp0Q1MyQm1tMlRCdS1Jb2h5aHBJajIzc0hXVUp2Q1F5alY3S0lyYVQ2U3Rkem1Rd3RqQkoyaTdRbEcyblViRQ?oc=5",
+   "source": "RBN Energy",
+   "published": "2026-11-05T03:01:40+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Pipeline",
+   "cluster_id": "308b848c55aa2871",
+   "cluster_title": "Get Off of My Cloud – Texas Moratorium on Data Center Grid Connections Disrupts U.S. Project Pipeline"
+  },
   {
    "id": "515d66fb77534057",
    "title": "Midterm Voters Sent Data Centers a Message",
@@ -470,6 +581,79 @@
    "cluster_title": "Texas Data Center Boom Faces 13 GW Power Struggle"
   },
   {
+   "id": "57afef3d53c1f758",
+   "title": "13 GW At Immediate Risk As Texas Data Center Developers Face New Power Struggle",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVnlKRjNYWThMc2lZYWtHcFVybFNqZnQ4NGVaOU1xT0l1S01oeFJsb01KbTlHN2VkUWhVQTE2emZlNUw0dkx3Zm5vUlpGSVNsVXRQSU1pb1NQRjNWS0Njazh5WUo5Tm9MTTlBR2MycFNINEdqMlhrSHB5OVhBMVBIdjVPdE4zN1lpR0NNTnhuZUFfTGZiWHBjRmo3b243UmJ2UGxBakFnb3JPbWxzZHBVbXNOVy13NDE1OGdQd095dk40eU9oa0ZPTjNmelVOQ3FwbHFWdUFvbnU4UjRqSElWdQ?oc=5",
+   "source": "Bisnow",
+   "published": "2026-11-05T00:36:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 13000,
+   "cluster_id": "57afef3d53c1f758",
+   "cluster_title": "13 GW At Immediate Risk As Texas Data Center Developers Face New Power Struggle"
+  },
+  {
+   "id": "50f23b20e43c23a7",
+   "title": "Energy costs, data center pollution have large impact on midterm elections",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcXhic09mMVNxSzRrSUdpWDFIT3V0Ui04TzFEVEtjNkotY1Vyb1l2ci1TU1RtQTdRT0Q0M1NuX2JyemZKbDV5LUhrSkN4N3Y5QmUwLVNmYTdpNDFKZ2ZvNjNBZE53VGFsdVhfR3ZmRnZLVWI0R3ZlcEZHdmVXZUJqVlRySzJhdFdrVFNCSXBKRXJpV2VjRC1jRkotbjFlWjE4REdwbDl3?oc=5",
+   "source": "WBAY",
+   "published": "2026-11-05T00:27:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Power / Utility",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "50f23b20e43c23a7",
+   "cluster_title": "Energy costs, data center pollution have large impact on midterm elections"
+  },
+  {
    "id": "21b7b1939826502d",
    "title": "Newly elected PSC member supports data center moratorium",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRjBHRXZPbG5KRHBmVzdZSkhwY1I3VHBPN29lRGZWOUN5aUNRZzA4SGVWQktSdWFZczdMSGpsZmZaR2VpR3pNSVFleHhyUGtoUllhR0tySDU5eDN4dVhRWGNSM3hsT0FaV2dZclcwVWtGdldKV3dmS09McWJZY1dsWHBIWjdqdV9lTkMzR2I2MmNKX194M2JJSnBuQlFTeXNoR01xODd6TTFLS0pIZ1JYdTdRcnpFRTRq0gHMAUFVX3lxTFBxb0x5MkZhUjBkMV90N1R3STlGOWVaekpfUFpOUWpudC1PZ2gtc3FuSjB5X1VtV0c1eUZHT3ZOSVI1V2JVdnpHbEFfaThhWTZJd1V0dVllYS1manNMN1FqQU9tY255OHczSEEzYVRmTVpNQkczWGVGSDdhb01pTWpjeTk3ZEJKNy1iQXpOV3ZXQzFuRl9EajhQc1cxOGtoQUZ6UXVjRHVVV201LTNLN1Z6Q2xOalFaZEtiekFsbnBCbWVGWUNVMWFKM3AyWQ?oc=5",
@@ -751,6 +935,47 @@
    "suppliers": [],
    "cluster_id": "b2016604675ab916",
    "cluster_title": "Citizen-led effort ends in landslide win for Ottawa hyperscale data center ban"
+  },
+  {
+   "id": "4a39f60101cf0583",
+   "title": "Incumbents lose in Hermantown, St. Louis County races amid data center turmoil",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZmhwZjFTYkVwX3U5OWhQcjhOUW5kcEtwY0dEd29iUlB6WXpkcEJCRFF4WS1ReXZGQVJKSmtrQm9nY1ZkNTFfaVhlTHN5SzVzdFlreThWamlqSngzUkFsY2t1SjNvanBKT0E2bTItUnhyT1ZQcndDaU9sTkJsT0RVVTRBSXFyREZDZjdGMUpNTmdnVnBTT0xmczFWcDA2Z1ZjdHFjNEs1dmxNOFJoVTVkUEdBdjhOY1Vybmc?oc=5",
+   "source": "KAXE",
+   "published": "2026-11-04T23:31:10+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Hermantown, Minnesota, US",
+     "lat": 46.8069,
+     "lon": -92.2382,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "St. Louis County, Minnesota, US",
+     "lat": 47.599,
+     "lon": -92.469,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": "St. Louis County, Minnesota, US",
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4a39f60101cf0583",
+   "cluster_title": "Incumbents lose in Hermantown, St. Louis County races amid data center turmoil"
   },
   {
    "id": "9cf9120706fd8ec4",
@@ -1992,6 +2217,32 @@
    "suppliers": [],
    "cluster_id": "b6a87929746ed63b",
    "cluster_title": "Arm beats second-quarter revenue estimates on AI and data-center demand"
+  },
+  {
+   "id": "705b67f3fcceba48",
+   "title": "Voters Approve Data Center Restrictions in Dozens of Communities",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkR0dGpmRkRwVzFKSkJHWUNOX08tTHlENXhqQTdqdlQxYWVydjk0Q2xaQmpPUGItOTg0cXY3X2U4Tzl5ZFdTUnlKZ29uWC1nVlpxUWNON29YT3k5dHhVMHFIWFFDaU1XZVc1aXpzcXNhTVBfM2FoR3VacnlnWWJvS2Z1Y0ZqN05iSG1LR2EtbkhEa0F0VG1mWnJVZnpwcEFIMVU1NVBUeWJKUURqb2ZZ?oc=5",
+   "source": "Successful Farming",
+   "published": "2026-11-04T21:13:20+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "705b67f3fcceba48",
+   "cluster_title": "Voters Approve Data Center Restrictions in Dozens of Communities"
   },
   {
    "id": "fb1e064fb93d2499",
@@ -3888,6 +4139,44 @@
     "Land Acquisition",
     "Deals / Investment",
     "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 1.4,
+   "cluster_id": "6464177bc7cd925e",
+   "cluster_title": "In a Pennsylvania town, 194 families have assembled 4,466 acres for a potential $1.4 billion data-centre deal; officials approved new zoning, but the land sale and proposed $12 million hospital are not final"
+  },
+  {
+   "id": "252befb60717474b",
+   "title": "In a Pennsylvania town, 194 families have assembled 4,466 acres for a potential $1.4 billion data-centre",
+   "link": "https://news.google.com/rss/articles/CBMihwNBVV95cUxQcW9wOXV3dFJ4NlJRWWxVY0ExZEdLZEwtLU5YUXV2QW9PVXhONlNxY09GVi1UQmhxZG9vemhlUHFobWZHN3RSU194OW92akh2bF9MUnhaTE1YYTFITm9LR0xvZ19GZXVYd2I3MFN1U09HeFFORHQ4N2RsLVFMQTMzT1ZHbmlzT3JTVUsxN2E4LUJ6ZjdlVE9wSVFQdnhhLV8yR2hLT0FvOXh4REVHUmQwbDNadVh4VUdLWjZ0Q0dacThrOF9lVFBLbG5pS1JITmlldUoyZk1UWnJTZ3BIZmU3RWpPUnZyamJqRTlkNi01enU5Rzh5VThWTGRwdFQ5MUFtbEljLVIxVUtMeDNaOGpJOElzVGtBbjlhZ3ZjUkxQeUtsVHpCZ2hFWmptLUdBQUhPaFRyR1lDNFRYa2xOajYyVW5wSkdETzQxT2RVMDFxWnZmSUxUd01uNW4zckdrVzljOXpaNENlMGwzalhEOENNYm8zUlNKYlVERWVXLVc4c0d0ODM2SUNJ0gGMA0FVX3lxTFBsV3F1c1hCTDZsNEt0bGFwVlN4SDBPNWZsQ3NZdV9qaEw2ZTk0d0d6MmwwYktrTEp4WlVqX3VTU3NSUW9qTHZpbzhVMk5fenVxXzBvT3BDdWs5MmxBOWFSVm5qaXRLSFVFbnBQVmluVUxaSVpoemxnX0U0Rlp2MUtKbFUzOVNNVVZDWFF3d25uR19TTERBZ1E1bV93OHozcVFYelFVSDBobnN5dDhOY3ZlVEZDeVVHMzh2TlBueXcxc1p2ZlAycE5PckpoQXBRckZKZDVGd2JKTDA0dXlTSUJPWm5pX01JUHhWSlBGb3hUY3ZQSFJFVmJ3dGZCTUs4U2lFVnpLZDE2V2ctVmo4UVBHaVVrSmxJWkpkQm4yZUxnVmJGcXRnY2JTVUlzUGs4VDJwUjFlTlJnVkc3Tk9sOTFFeWQzdnhucUZkR0l4OGdlWEtaUWYwMDhUZ1pHRTJ2U0VFako0MGNlQmJScGhHNkc2dHNUaEczSUZEVHF0RkZESmxRYXc4djUxaU5Teg?oc=5",
+   "source": "The Times of India",
+   "published": "2026-11-04T18:00:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Land Acquisition",
+    "Deals / Investment"
    ],
    "locations": [
     {
