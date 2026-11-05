@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-05T09:57:37+00:00",
+ "updated": "2026-11-05T10:57:36+00:00",
  "count": 705,
  "visible": 600,
  "records": [
@@ -24320,16 +24320,48 @@
      "published": "2026-11-05T05:11:00+00:00",
      "stage_signal": "Expansion",
      "cluster_id": "5cae59bfbc341741"
+    },
+    {
+     "id": "c2ae95679f177467",
+     "title": "After Pulling Deal For Nscale’s UK Data Center, Microsoft Rejects Texas Expansion Option: Report",
+     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNbXVOcFdadThNU1VnX1VvN1djV19Jdm5CVGFGbFBxQ21WS2YxbmRvSzV5V3JWVGFHNE5kUTBPc2lKazZKVkp1aG03WEl5TTViUGloczB0MDlZZWE2OUYxU2I5WVZPemNkTWpGSG1iR0JOTnFOLWFudmJQN1dLSVVjcWlNY3JaN1BoX2t2OVZJdUtMSGtLbjFhRWhWNnRsd0J5ZTFOV2cxbEpyb3U2Sm1fSFJYeGFCUFpzZWhWaWhPUmx2dmRJNndWMlM1dTB0NUdlbFMtcURaU2llV3BVZHd2VnpSam51dw?oc=5",
+     "source": "Stocktwits",
+     "published": "2026-11-05T09:26:27+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "5cae59bfbc341741"
+    },
+    {
+     "id": "724f21bad0aee27d",
+     "title": "Microsoft Won’t Expand Texas Data Center Nscale Pact",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPX2J5dmY0aERHV3RLMUoySkMwZHg1Sk1HQTBKU2JQYlkxZUFlZEdodlZvVmpJWXlLMzdvd1NacXhoekRQT3VLRkloMUlKX3ZQWGpDdHJtMXpiTkp6eGdHZndKRVUtN1AwLV9TS0p1SmNBN0dVSjZLTERTWER2b00tM0N1blBfczNxYWhBdi1WdVJNUndDYTB3?oc=5",
+     "source": "TradingPedia",
+     "published": "2026-11-05T09:51:37+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "5cae59bfbc341741"
+    },
+    {
+     "id": "cd2b7e602afbfb47",
+     "title": "Microsoft Nscale Texas: 1.2GW Data Center Option Dropped [2026]",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMkpwWnN0dzQybnBBaWM5NjFubFdneXJzTEgzeXcxRFphZFpLZWIzY3ZaaHRSalNCOG9vb1NPU3VRQ0gwamdrcFFkTWRYUXozMWlrVTYyMmZzbFRKWVFBMWtuUWMxTzVOMzZ0QTNyc2xGSno2N21zYkJIUHV3V2VBZ1Zta2lpSE5KQkVF?oc=5",
+     "source": "https://tech-insider.org/",
+     "published": "2026-11-05T10:21:57+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "5cae59bfbc341741"
     }
    ],
    "first_seen": "2024-12-18T08:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2024-12-18T08:00:00+00:00",
      "status": "Announced",
      "headline_id": "dd969b5548e79edf"
+    },
+    {
+     "date": "2026-11-05T09:26:27+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "c2ae95679f177467"
     }
    ],
    "events": [
@@ -24352,12 +24384,17 @@
      "date": "2026-11-05T05:11:00+00:00",
      "type": "Expansion",
      "headline_id": "5cae59bfbc341741"
+    },
+    {
+     "date": "2026-11-05T09:26:27+00:00",
+     "type": "Cancelled",
+     "headline_id": "c2ae95679f177467"
     }
    ],
    "capacity_mw": 2000,
    "investment_usd_b": null,
-   "last_news": "2026-11-05T05:11:00+00:00",
-   "sources_count": 8,
+   "last_news": "2026-11-05T10:21:57+00:00",
+   "sources_count": 11,
    "confidence": "low",
    "hidden": false,
    "investors": [],
