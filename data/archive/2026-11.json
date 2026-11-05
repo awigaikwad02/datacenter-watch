@@ -39,8 +39,324 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 857,
+ "count": 871,
  "items": [
+  {
+   "id": "48157f05ebac33e0",
+   "title": "SpaceX may be behind proposed data center in Cochise County",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcVFFWWRWbzVHLXhHRk9uVmN1MnBwMU5HQ0ZSeDdMRkM3STBLOGYtQXFJZ1d2MG9RVmVWbmZCaDNIODBtd3F5LWpKUFZKdVJTZGhGem9EWE5VNDdTcm9INFhjVkttbEFJSnZ0cW9Pdk5vYkxObERwVG1pMFN0UlZXREVMWDBlR29nbGRLWGZrSVl0eDA?oc=5",
+   "source": "KOLD",
+   "published": "2026-11-05T00:44:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Cochise County, Arizona, US",
+     "lat": 31.878,
+     "lon": -109.751,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": "Cochise County, Arizona, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "02437603f82a0dc8",
+   "cluster_title": "New proposed data center in Cochise County"
+  },
+  {
+   "id": "ad89749c6995d4ad",
+   "title": "Ohio voters reject data center developments across multiple communities",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWHNoRkp3b1N6cW9BNUwzUHE2ckU3RkpRTGRwZGRycEFYdnFLN19wWC1hdGh2VEhVUFVHVGlMWXM5SVRkSjYtLXpISm5udnpidmdzcEo4S3VFZ0lMOTN1TGQxZC1weU5QRi1FdHItb0doVVVPMjZnenZlM3FIa1dYdFFiM1lkaVZKQkVmMzczOXJtN1NZVFdmT2FwcENnTnVpRmUzMG9ZdW5sRWtUQXgyNGswb0NLY1RfM0wwNk5wU1hUNExITnZlWFA3N0FtakE4LXJUMzdWUXJZYXo4bk41bVpqUTVqTGkySWdlVWF5ZC1SME1QQVE?oc=5",
+   "source": "10TV",
+   "published": "2026-11-05T00:44:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ad89749c6995d4ad",
+   "cluster_title": "Ohio voters reject data center developments across multiple communities"
+  },
+  {
+   "id": "4c777f996fd94b3c",
+   "title": "Texas Data Center Boom Faces 13 GW Power Struggle",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVnlKRjNYWThMc2lZYWtHcFVybFNqZnQ4NGVaOU1xT0l1S01oeFJsb01KbTlHN2VkUWhVQTE2emZlNUw0dkx3Zm5vUlpGSVNsVXRQSU1pb1NQRjNWS0Njazh5WUo5Tm9MTTlBR2MycFNINEdqMlhrSHB5OVhBMVBIdjVPdE4zN1lpR0NNTnhuZUFfTGZiWHBjRmo3b243UmJ2UGxBakFnb3JPbWxzZHBVbXNOVy13NDE1OGdQd095dk40eU9oa0ZPTjNmelVOQ3FwbHFWdUFvbnU4UjRqSElWdQ?oc=5",
+   "source": "Bisnow",
+   "published": "2026-11-05T00:36:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 13000,
+   "cluster_id": "4c777f996fd94b3c",
+   "cluster_title": "Texas Data Center Boom Faces 13 GW Power Struggle"
+  },
+  {
+   "id": "21b7b1939826502d",
+   "title": "Newly elected PSC member supports data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRjBHRXZPbG5KRHBmVzdZSkhwY1I3VHBPN29lRGZWOUN5aUNRZzA4SGVWQktSdWFZczdMSGpsZmZaR2VpR3pNSVFleHhyUGtoUllhR0tySDU5eDN4dVhRWGNSM3hsT0FaV2dZclcwVWtGdldKV3dmS09McWJZY1dsWHBIWjdqdV9lTkMzR2I2MmNKX194M2JJSnBuQlFTeXNoR01xODd6TTFLS0pIZ1JYdTdRcnpFRTRq0gHMAUFVX3lxTFBxb0x5MkZhUjBkMV90N1R3STlGOWVaekpfUFpOUWpudC1PZ2gtc3FuSjB5X1VtV0c1eUZHT3ZOSVI1V2JVdnpHbEFfaThhWTZJd1V0dVllYS1manNMN1FqQU9tY255OHczSEEzYVRmTVpNQkczWGVGSDdhb01pTWpjeTk3ZEJKNy1iQXpOV3ZXQzFuRl9EajhQc1cxOGtoQUZ6UXVjRHVVV201LTNLN1Z6Q2xOalFaZEtiekFsbnBCbWVGWUNVMWFKM3AyWQ?oc=5",
+   "source": "WSB-TV",
+   "published": "2026-11-05T00:26:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "21b7b1939826502d",
+   "cluster_title": "Newly elected PSC member supports data center moratorium"
+  },
+  {
+   "id": "591cacbca0b7109f",
+   "title": "Virginia voters backed candidates seeking strict data center regulations",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQTWY2YVFtMVVOWWl1dEx1SkhTVHpzWDMyZnBGWU1TRmJkam5ILUJKUEoyV2tfM2hySmIwTUozbi1GQV9PSFVkWmJ1MWhkZmxxaFU1UnUzN08wZEFKTnFheGRHckdkYXFUT2M3UU1uZUp5dVdtVTQ2REtBMmFNM0tvalJ5cGFzQW1OV1dlNndVT0pJUzRZUUdLS1BPbWxXaHdfeWVwc0twUTZqdldLbmNjWG9FT1c1bV9TaFRyUG8tVEhxUUVFdnFKNzR5d3NwNGtzSkg4RzBfTGtHZ3htak51TmdmeVdsT3NYdmZMTlVucGZyeXBXUXB6Zw?oc=5",
+   "source": "WJLA",
+   "published": "2026-11-05T00:23:58+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "591cacbca0b7109f",
+   "cluster_title": "Virginia voters backed candidates seeking strict data center regulations"
+  },
+  {
+   "id": "efc1e4627d722171",
+   "title": "Midterm Data Center Backlash Puts AI Expansion Plans at Risk",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTXRMTTFVVTdoWU5ySUZrbmk5Y3pWdWVqa01qbDdoN1B5cm13cG90bFFUbDM0TEg3OEMyREVleUpuVkhzYWl1VkI3cXhpNnBoQnkwSm5HYkZYOXFOV1FyT2J3czBmMWVRSkNOOU9iSFpWWXdHeC1ucFJxYXpzYkJnelZZQzhsYWc4OVRhaTdLVmNTTGlpeHR2cmk5MWlYbTBldnEw?oc=5",
+   "source": "BankInfoSecurity",
+   "published": "2026-11-05T00:13:37+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Expansion",
+    "Community",
+    "AI Infrastructure",
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "efc1e4627d722171",
+   "cluster_title": "Midterm Data Center Backlash Puts AI Expansion Plans at Risk"
+  },
+  {
+   "id": "46dcac597a9acb03",
+   "title": "Ousted by a data center fight",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5QSnVjMmZXQWZIX3FqZzZwWlVJZWUtOHVCQzFKdG13c3JtekFneDNHR21EOFo0Q2U4eGRyZ2VEZW5rZFBMTkQyeG5MZUFUTEVLcF9fNnpUdHkxODVUZXRJQUstc2FPSkdkNkc3ZTBudC1oQQ?oc=5",
+   "source": "Oklahoma Energy Today",
+   "published": "2026-11-05T00:01:11+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "46dcac597a9acb03",
+   "cluster_title": "Ousted by a data center fight"
+  },
+  {
+   "id": "14d8f7ac83cb1476",
+   "title": "Generational Change in Texas Politics Could Affect 765-kV Lines, Data Centers",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9XdnFPbEdhRF9uX29XR1otMGh1SVRDQTlrdEFsQ1ZTa2NrRUpvWENrTFBuVTdYeEI3Z3RaY0p0RzIxOXpBdUJGU1RrM3BXbmdxMU9pYWJHTnh5WE9KdzVmUUIxXy13Q0toWXVTc2NZVUdDdw?oc=5",
+   "source": "RTO Insider",
+   "published": "2026-11-04T23:54:04+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "14d8f7ac83cb1476",
+   "cluster_title": "Generational Change in Texas Politics Could Affect 765-kV Lines, Data Centers"
+  },
+  {
+   "id": "6e5b575cdea756b7",
+   "title": "Texans elect Democrat governor who vowed to freeze data center construction",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTlo0bmlwUGlodHFMUlRfQmNrM0dZV2tPSlFlTEtKSmhMbFNuazU3TGJuSWFNRVg5c2VPMUppTHAzR2FlcldyRHhzQ2s4VVFZVlhWNzZpaU1lWEVlSXFWVFdHV1B4dlVyeElLZy1UZWdjMUFGWlNHOTRaaElJeHNPYTNHSlltUVBrQU5VTXlOWE4tMVdiaXJXbWsyaW40d1ljZ1Y1UVhWN3dJSGpubHQxZ196Z3ZTZUZaeHM3ZkJzaVNCdw?oc=5",
+   "source": "BizPac Review",
+   "published": "2026-11-04T23:53:40+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6e5b575cdea756b7",
+   "cluster_title": "Texans elect Democrat governor who vowed to freeze data center construction"
+  },
+  {
+   "id": "c21a7b0570104802",
+   "title": "Data centers were on the ballot across the nation. They got crushed",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc2Z4bm1fQ1NLcEVzNG56SjNjQVRnVVdsSmpqVFMtczBJdGhyYVctQk5laDhObk9qSjBCM29MTnU0TDM4ZmxSc01kNl85djJqRGRPZXdETFhXaEV0YldSV00zd0NUYlZrMkZRNkNyMi00UFNweFY0bF80SjRqRGJ1X2dSZm9NYkR1Rm10S3AtMEtqem9ubjB0Z1pfV3Rodw?oc=5",
+   "source": "USA Today",
+   "published": "2026-11-04T23:40:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c21a7b0570104802",
+   "cluster_title": "Data centers were on the ballot across the nation. They got crushed"
+  },
   {
    "id": "6ef5a2b42e1b9c7d",
    "title": "Viewpoints: America’s data center backlash takes political hold",
@@ -128,6 +444,76 @@
    "cluster_title": "Data center opposition is forging unlikely bipartisan alliances in Alabama"
   },
   {
+   "id": "98b2a3d7cac98d6e",
+   "title": "Commentary: One data center in Shenandoah County — and only one",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOc1pqWGJ1RUl0azFEbVhrTVB4TDdpNW9UMGs2WjZ5cDdBWmtndGFMekdOQVV4b0lxaWtvVXB5bUkwSFJiTlB4SUhjY21LYzFWLXlEcndsQWdzclE5QmtrZzAzWl9OVmFROU9zaGlHNElLamJzNEZqeUU1YmJSS2hfNWV2Yks3eXdKSFJpMGNvS3B0SUtlTkdXVElQUUVTcFhCMEJ4eU1hdldVY01xSm1mMjZLLXNDd0pNMXo1d1NhRmNnUC1NWWpjU0h0SUd5WHFBcFc0dFJqYWxfZw?oc=5",
+   "source": "The Northern Virginia Daily",
+   "published": "2026-11-04T23:26:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Shenandoah County, Virginia, US",
+     "lat": 38.858,
+     "lon": -78.572,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Shenandoah County, Virginia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "98b2a3d7cac98d6e",
+   "cluster_title": "Commentary: One data center in Shenandoah County — and only one"
+  },
+  {
+   "id": "512c54751025278d",
+   "title": "Commissioners discuss Posey County Data Center ordinances",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRk9SV0pWQW1jUmFtaWQ1bWdiSkdKRDFYWl8zQXJ2c1pvcEVtSGZnc2cxVExEenVzbmxHYU1XQU1QTndldjhoUWNodWpfWGIwOUs2a0pfTExZN2VFWldxUnBRdzRIeWpqeGp4R1hPN1hkUXpxNE13LWExdGhnXzltbHUxRW45WjlyRjc4cWJEM1RoMTg4azJvWGVuaznSAaIBQVVfeXFMT1Nmc1ZFMWFab0locWdkZVlJUkdzMXFCYngtM1ZsdERGWnp1a216aUo5TWNmYy1aWW8wNjdrT1A4MklWbUxLVFkyWFdDSzI3Y3dsVFp1a0lIYmxzTWZIZFRaeDdQa3hfd2FQT24yTjhoek1Vc2FraVFDeU5QQi14US1PM3psT0V4U3NGWGgxWVZ0VFBhTWgyZmRFT2U3Sms5ZlN3?oc=5",
+   "source": "Eyewitness News (WEHT/WTVW)",
+   "published": "2026-11-04T23:10:20+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Posey County, Indiana, US",
+     "lat": 38.02,
+     "lon": -87.869,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "Posey County, Indiana, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "512c54751025278d",
+   "cluster_title": "Commissioners discuss Posey County Data Center ordinances"
+  },
+  {
    "id": "954cd86d25a94804",
    "title": "This tiny North Dakota town was the only place to vote against restricting data centers",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQWs4NUozc3M0cFdWSnE0OGs1TDk4d1R0V0RoXzc5MVQyUjZvOEE4MzMxZnFlbW9mLWxUT3pyYTJlVU9raFVncHBBSXhzSHZjaXBDZzhZdG00S1BnUWs1Q1pJanRyNkxOTUhQYlR3OURXWU1zTVZSNU5tSVZqaHdoTlFELU40RTZRVnNyYk0tQlk5Yi1iTjdmdlgtQ2ZYQkE?oc=5",
@@ -163,6 +549,41 @@
    "cluster_title": "This tiny North Dakota town was the only place to vote against restricting data centers"
   },
   {
+   "id": "dc168d4914cefc19",
+   "title": "Boulder County could rewrite data center regs",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWjBzM0FJekRQeGllX25VSkVXQ3RWbExRLVNXQ1BuQ19nTWIzR0llR2htM0IwZ2pyOUx3VTdic0VVdnhzS2xsU2pVQ1FSbkF4WjZPcHhrR25aWTdJdkJTbGlBYS12Z1g0cGQ3bU0tWUo0YXY2NG9nSnZMeVdETkdObG9tUQ?oc=5",
+   "source": "BizWest",
+   "published": "2026-11-04T23:07:01+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Boulder County, Colorado, US",
+     "lat": 40.093,
+     "lon": -105.36,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": "Boulder County, Colorado, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dc168d4914cefc19",
+   "cluster_title": "Boulder County could rewrite data center regs"
+  },
+  {
    "id": "bd47c0340127be54",
    "title": "Supercomputer business building $33B Black Belt data center",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbEtaQ1FjSXFoSHRHb2NsbUxzdEljX0hfWEFSNkJIQXk4YzQyY2tVSi1kNnNjdC1uTzJpdDZ5WkxEZEF5RWVDYzcwakRmRjFkVzFfclF2aXdrd1JKREx4Mkd3SV9CZ1p0N0VUQ0RoeDl6Q010QmNfYkNNN2JzckRkc0xSMnpQOXVqaDFLVDNTcDFUZjM1RV9MZmpEWUVvbEtlVEt5ckdTTFVGZXB5?oc=5",
@@ -187,6 +608,30 @@
    "investment_usd_b": 33.0,
    "cluster_id": "bd47c0340127be54",
    "cluster_title": "Supercomputer business building $33B Black Belt data center"
+  },
+  {
+   "id": "f9877e963e258d0e",
+   "title": "Data centers score worse than Republicans in Election Day rout",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBXNGFYMG1kTzNfcXQ5c2ZzTUlZc0lIM2ZDdTdJOElnazVHYW1pWmVhTFFkaXo2Z0ZTc0JoZDNpVGNhd0NWN1REMUY2Q2JsRnNSVVhhSzdCNFRvOWJQb09HQjRXNEo0MDU1Ylg3VmhLbW5sNmFvaUY2aw?oc=5",
+   "source": "SFGATE",
+   "published": "2026-11-04T23:06:11+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f9877e963e258d0e",
+   "cluster_title": "Data centers score worse than Republicans in Election Day rout"
   },
   {
    "id": "1ca82449dc72ddc1",
