@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-05T12:57:37+00:00",
+ "updated": "2026-11-05T13:57:37+00:00",
  "count": 705,
  "visible": 600,
  "records": [
@@ -25372,6 +25372,15 @@
      "published": "2026-10-23T09:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "429610931e489ac0"
+    },
+    {
+     "id": "dd1729cb5cb6b0ac",
+     "title": "Spartanburg County Council approves NorthMark data center agreement, amid alleged legal threat",
+     "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQMGRocVNvS0NzTG9LQVRkSTl6aDZFSDRvX1hwQW40YllBU0pPdUlxS0hQempWQXNUbFVDdXdaejJiNkdNeUxqbXR1OTdDZFd5WkozcTI2N0hGM1ByY1hKUVYtYWJmMkZmMjdHdzNHcmlIU2dhSmczZTRsREltSlJiQWt3MlB6WW9MamdvOTdwLXhRU3pOcHQyRUpHenF3dWlvRGpWZVhoNzRDajluQmxLTzlhUEpZZUFkWWJYNE1jRkNJamk5QXVveDB1NGRCY1BhSjl4WUVsLXNfVWp0V1VyM0xOUGFWRnRHN25ENE5rRkZLa2c?oc=5",
+     "source": "Post and Courier",
+     "published": "2026-11-05T10:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "dd1729cb5cb6b0ac"
     }
    ],
    "first_seen": "2026-10-20T15:30:00+00:00",
@@ -25405,11 +25414,16 @@
      "date": "2026-10-23T09:00:00+00:00",
      "type": "Approval",
      "headline_id": "724d62a79cd480e9"
+    },
+    {
+     "date": "2026-11-05T10:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "dd1729cb5cb6b0ac"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-23T09:00:00+00:00",
+   "last_news": "2026-11-05T10:00:00+00:00",
    "sources_count": 2,
    "confidence": "high",
    "hidden": false
