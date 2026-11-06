@@ -11,27 +11,27 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "checked_at": "2026-11-06T06:58:26+00:00",
+ "checked_at": "2026-11-06T19:30:34+00:00",
  "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 3h",
    "status": "fail",
-   "value": "6h 56m ago",
-   "detail": "2026-11-06T00:02:11Z"
+   "value": "7h 25m ago",
+   "detail": "2026-11-06T12:04:54Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "7/8 succeeded, 1 superseded, avg 2301s",
+   "value": "8/8 succeeded, 0 superseded, avg 2292s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-11-06T00:01:19+00:00, 3 new"
+   "detail": "run at 2026-11-06T12:03:51+00:00, 15 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -60,13 +60,13 @@
   {
    "name": "news.json updated within 3h",
    "status": "fail",
-   "value": "6h 57m ago",
-   "detail": "2026-11-06T00:01:19+00:00"
+   "value": "7h 26m ago",
+   "detail": "2026-11-06T12:03:51+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "5249 items, 0 problems",
+   "value": "5250 items, 0 problems",
    "detail": ""
   },
   {
@@ -84,8 +84,8 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: New Announcement 16.6%",
-   "detail": "New Announcement 873, Policy / Permits 865, Community 580, Power / Utility 454, General 392, AI Infrastructure 330, Politics 294, Deals / Investment 253, Cancelled / Blocked 249, Construction 198, Environment 187, Markets / Earnings 185, Analysis / Opinion 157, Expansion 90, Economy / Jobs 76, Operations 35, Land Acquisition 31"
+   "value": "top: New Announcement 16.7%",
+   "detail": "New Announcement 879, Policy / Permits 839, Community 577, Power / Utility 455, General 394, AI Infrastructure 336, Politics 301, Deals / Investment 257, Cancelled / Blocked 237, Construction 200, Markets / Earnings 191, Environment 189, Analysis / Opinion 162, Expansion 92, Economy / Jobs 75, Operations 34, Land Acquisition 32"
   },
   {
    "name": "General under 10% of headlines",
@@ -96,14 +96,14 @@
   {
    "name": "Policy / Permits under 20% of headlines",
    "status": "pass",
-   "value": "16.5%",
+   "value": "16.0%",
    "detail": ""
   },
   {
    "name": "At least 55% of headlines located",
    "status": "fail",
-   "value": "2845/5249 (54.2%)",
-   "detail": "with a company: 647"
+   "value": "2825/5250 (53.8%)",
+   "detail": "with a company: 662"
   },
   {
    "name": "No non-U.S. locations in headlines",
@@ -114,7 +114,7 @@
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "22579 ids, 0 in two months",
+   "value": "22686 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -126,7 +126,7 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "28 month(s), 22579 headlines, earliest 2019-11-18",
+   "value": "28 month(s), 22686 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
@@ -162,7 +162,7 @@
   {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "2327 attached headlines, 0 missing",
+   "value": "2330 attached headlines, 0 missing",
    "detail": ""
   },
   {
@@ -216,7 +216,7 @@
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "701 pages, 3787 KB",
+   "value": "701 pages, 3788 KB",
    "detail": ""
   },
   {
@@ -306,7 +306,7 @@
   {
    "name": "Tests pass (pytest)",
    "status": "pass",
-   "value": "251 passed in 1.20s",
+   "value": "251 passed in 1.24s",
    "detail": ""
   },
   {
@@ -490,5 +490,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-11-06T06:59:47+00:00"
+ "browser_checked_at": "2026-11-06T19:31:59+00:00"
 }
