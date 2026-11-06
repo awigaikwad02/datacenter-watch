@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-05T23:00:16+00:00",
+ "updated": "2026-11-06T00:00:16+00:00",
  "count": 706,
  "visible": 601,
  "records": [
@@ -18388,6 +18388,15 @@
      "published": "2026-11-05T20:47:44+00:00",
      "stage_signal": "Announced",
      "cluster_id": "ef2164b42b952d97"
+    },
+    {
+     "id": "17bcce44d15c46b5",
+     "title": "Google plans $17 billion Wyoming data center amid rising threats of curbs By Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaS1zdHFycE1qZTNIYWpCZ1I1aDZHOUFXNU8tb21uVVdFWF91V2xMd0FsZTZ0YU1JQ3dlLVJPemZDTVF0VUUtS3Axc1M5emxXREYwdjhXUWZVSW13ZWh3eHVFc05MNVlsRlVXYmhaRnkxc0MxWjMyNFhRSDdPTE1udnVkZUdCdlJERDBtTTlNVGtUM0I4c1JnU0JhQzhZaWdTUFhCWTlSY1lfd3FiVlFkWUJ3Y3ZTMHU4M18zZE9hdDJ0UEg1VUEyNg?oc=5",
+     "source": "Investing.com",
+     "published": "2026-11-05T21:11:15+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ef2164b42b952d97"
     }
    ],
    "first_seen": "2026-10-08T12:00:05+00:00",
@@ -18403,8 +18412,8 @@
    "events": [],
    "capacity_mw": 2100,
    "investment_usd_b": 17.0,
-   "last_news": "2026-11-05T20:47:44+00:00",
-   "sources_count": 11,
+   "last_news": "2026-11-05T21:11:15+00:00",
+   "sources_count": 12,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -54779,6 +54788,15 @@
      "published": "2026-10-26T00:50:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "86e9dc22be5d5cbd"
+    },
+    {
+     "id": "c23d54be7a62c12f",
+     "title": "Vantage Data Centers says it will not move forward after Oregon voters approve Issue 25 ban",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSmpsMFhOTVl1eWRoVkNPSU1aRW5ZYnpXQ2pWSlIxdWhOdk40b21jc1JhTFFGVkNxRlJMNUFoQkpKWE5WWjl5QjlKU2FNWUhlSjUwZUw3eERnZm80eVR3T1VnNDYtaGJxUENJbHVQaXU5dGxyTjdTdTN2Ti1CWHJLZ2NMXy1ZLW9zWXNYcG9laVJzQ1kzOTMzRnJOZ21QWC1IbHZjRXNQanZ0bUFlWEFUMVBVQkt5aHFrZ1BaRW5sOXhfa0nSAdcBQVVfeXFMT0tMZ1VCOS1GQWthN0VfR3dqek96S2RMdTgxZlVmczdnWHQ5cXRYbVIwaWpBSk5QWUIzUFNvZnUzcGxTUWJyRGhIemQxWHpsM014SHRkQjF5QThPSHlNUDRmdXFxNmFHLUhTSVJ0OWtMTTRQNEh2RHVxdUREb01Pem9DNzBsdU05ajkwTnIwUG90X0t0X0Ezd1ZMMzVUQUJIRFdJV1RtNnlDbUk5R3FNS3c4WlFKMkR0dTRUOTdidTZJcHdlUFBBUDVGc2JTY0Z4S3A0RXBjME0?oc=5",
+     "source": "WTVG",
+     "published": "2026-11-05T23:34:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "c23d54be7a62c12f"
     }
    ],
    "first_seen": "2026-07-29T07:00:00+00:00",
@@ -54791,10 +54809,16 @@
      "headline_id": "70638cf9b2e2e4ef"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-05T23:34:00+00:00",
+     "type": "Approval",
+     "headline_id": "c23d54be7a62c12f"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-26T00:50:00+00:00",
+   "last_news": "2026-11-05T23:34:00+00:00",
    "sources_count": 2,
    "confidence": "low",
    "hidden": false,
