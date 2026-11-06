@@ -39,8 +39,48 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 1301,
+ "count": 1309,
  "items": [
+  {
+   "id": "73f770bef4c8aef0",
+   "title": "Google to launch $17 billion data center initiative in Wyoming",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFYyT05meEJnRHFEYmpocUdGbzF3VUV0ZDd1bEhILURTSU5SR1dXZllVYlpxQU81bC1KZkJtWEZtc1ZWRHp4QldTTFRkV1BXSi1GUUtudURuTTZfa05rVTBmMC0ySTc1aGN2ckllWFhTUmV5aWY2X2xSS29Ec2ttbVFNLXp5MzMwYWcwRGVWRlo2ZUlPemFwZnY2aTFZMEFtRnh6YlhqVUpic0U?oc=5",
+   "source": "Türkiye Today",
+   "published": "2026-11-06T07:48:23+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 17.0,
+   "cluster_id": "eddfb40ac01c934a",
+   "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]"
+  },
   {
    "id": "09ef721c88b37c84",
    "title": "Cecil moves toward enacting data center ordinance",
@@ -64,6 +104,94 @@
    "suppliers": [],
    "cluster_id": "09ef721c88b37c84",
    "cluster_title": "Cecil moves toward enacting data center ordinance"
+  },
+  {
+   "id": "82d06902df0373b4",
+   "title": "Equinix points to smaller facilities as scrutiny of U.S. data center construction grows",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HNDBiSzZqajdvczRvWERUR0FfNU5YM2tJTnBGV2xwOFFSSDhSRkE4OTJTdWVZd19wdEU1cjlnWGltQnhsSzRkRjRoT05SRmhGOC1ZV0NRZjd1aS1IOGxmR1NwMzdhT3R0ekhSU0Y5XzdRQTJRYTVyaEZKRdIBgAFBVV95cUxQbEdNX2g0RkduTmM0bXZzV0FIamp3QU1qTW5mVElUQTNFTmp3cnA5YVRPd2FyS2lmYkwza2E0MWdQNDBwOVFHd1ZFb1V6SjJzbHNYbW1iREUweXE1UXNSbE9DUm5pbWhudkNHRWxRbkR4WVFqQ2RSUWpyY2FiSF95Mw?oc=5",
+   "source": "CNBC",
+   "published": "2026-11-06T07:23:02+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Equinix"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "82d06902df0373b4",
+   "cluster_title": "Equinix points to smaller facilities as scrutiny of U.S. data center construction grows"
+  },
+  {
+   "id": "7d492417619cf888",
+   "title": "Ohio Voters Push Back Against The AI Data Center Boom",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOX1pYQlUwYlhfbTRwQjVwa1BOYXFkMXJKNFVLNmFGS09MSVlETEw3d0U5VXJWeGlxaE5yaEZyVTMtMXhOZElIVm51cEJXcjA1dnhwcE04TzR0dThqWnlqbi1kelRPZlBGNHFpUzlYRXdfUDN4M0pGbHVKVDN3Tm5IQg?oc=5",
+   "source": "CIO Africa",
+   "published": "2026-11-06T07:10:05+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure",
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "23e3aefacff896d5",
+   "cluster_title": "Central Ohio voters push back against data centers on multiple issues"
+  },
+  {
+   "id": "b14d63c64b60638e",
+   "title": "A Data Center Sparked Outrage in This NJ Congressman’s District. Then He Lost Reelection.",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1UYnpJcVBHQmRqaVJoNHRRR2tDTzRxOU5RZF9yWUEtOUNRYWpNeWZ0T0lsbnpFNVRRQ05ONU44djhGX0REZmNDTHJwWWJhTEk0MzE0Z0U4aWhYNUh3ajduY2NmY2tOSHNyR29JWkVwTkJOQzhNT1BPeFJuOA?oc=5",
+   "source": "New Jersey Digest",
+   "published": "2026-11-06T07:04:49+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b14d63c64b60638e",
+   "cluster_title": "A Data Center Sparked Outrage in This NJ Congressman’s District. Then He Lost Reelection."
   },
   {
    "id": "153b7d8272abdacf",
@@ -401,6 +529,44 @@
    "suppliers": [],
    "cluster_id": "1b3d4c4857b21dab",
    "cluster_title": "After Playing the Villain in the Midterms, Data Center Operators Regroup and Plan to Smile More"
+  },
+  {
+   "id": "da33002888e072ca",
+   "title": "Settlement reached in legal battle over proposed Westlake data center",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vT0dOSmx1WGhkUWw4VXpLeFJpT2ZyOHhxXzVaOWlia3pMLXNhRHlBa0FYdDAxdk1NQWFFOEVsVkdRRzFBRWtjQ3hzbG5reEhDZUN0VEhGNzZhdEJlcDJvZ0I0UnlRUnBGb05laHVNNNIBb0FVX3lxTE5JczY0MTBNY1o3cld4U1ZCR1piLWt3RmV5WnZWald2UlBleGNCZUp2aWVXbnR0ajNCczdwcnZuTnhOTEdydmhpeWJyNHV0aWJYWVBsd3N4NUp5cGltRnZXc1ZuX2hOY0VoVlBVZTloTQ?oc=5",
+   "source": "Fort Worth Star-Telegram",
+   "published": "2026-11-06T04:56:57+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Westlake, Texas, US",
+     "lat": 32.9912,
+     "lon": -97.195,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "26637b98506850e2",
+   "cluster_title": "Keller, Westlake reach agreement over proposed data center lawsuit"
   },
   {
    "id": "d183c46d277bec55",
@@ -951,6 +1117,41 @@
    "cluster_title": "Plans for data center in Pittsburg draws community backlash"
   },
   {
+   "id": "ad631bae590b653d",
+   "title": "Mount Airy commissioners vote to let data center moratorium expire",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYThDSzdsc1dWVXk4YlBhTEJveVBzbDVhMUc3XzRuNjdoQ1BoVzYtejA4c0ZKYkUtT0NIbW1RYlJlRzdoeUVXV09tNTlBdlVNTXVEbW9PNTVVX3FQdEtOUnJ0YVlIMnVHUDkwbVFzM0gwZnV3SE5TU3FlM0JIVmpfdHk0WllUanFC?oc=5",
+   "source": "WXII",
+   "published": "2026-11-06T02:52:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ad631bae590b653d",
+   "cluster_title": "Mount Airy commissioners vote to let data center moratorium expire"
+  },
+  {
    "id": "4dc8d2054ebbb7d5",
    "title": "Data center moratorium extended in Camden County; draft ordinance released for review",
    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxON2FLVHpXOVdrSWdvLW5tV1UyOWQ4bW1wZURhUHlBdVdTMFFRT0pGajVVTTZQUVZaR091bDlOVks0MFpYU2FMdHJtSDFZSnQ2LTZHUmVYX3A3dWljYURCMVdvMU1VTTM1SlJXTVlKTnRlMVlOclRMLXBZSjJQTDVMRzRicWZSbk1vSDd3U0hrNUpRcGl0WVRRT1R2QkRsbFMzVmJCb2tVLWJ3QTVrLXhnV3V6WklPZVFtbk5OT3BMaUxVWk4tSEQ2SkY5cmNNODFVOHZtdFdHRktYTXhnZmhmT010Q2h0Zw?oc=5",
@@ -1308,6 +1509,33 @@
    "suppliers": [],
    "cluster_id": "0dd3fb5a29608a0c",
    "cluster_title": "Why Arizona saw surge in data center tax break requests"
+  },
+  {
+   "id": "68fb5942311f24f0",
+   "title": "Midterm \"Blue Wave\" Spurs Democrats to Call for National Data Center Moratorium; AI Chip Stocks Slump",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9UMFNvMWNtdkpfWnIwSnVoUEg5YXN5RnJhZnl1S25nZHdGaWItSDFUTHMxZHh2MWI3TnA5dmY0dVhQRURabVpZYk9QblBfcVpsZ2xuV1pnRnIzdTlOdVZmT1c3VTUzaXBJNDlfQy1zMm9wV3FSZ3c?oc=5",
+   "source": "BigGo Finance",
+   "published": "2026-11-06T01:06:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "AI Infrastructure",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "68fb5942311f24f0",
+   "cluster_title": "Midterm \"Blue Wave\" Spurs Democrats to Call for National Data Center Moratorium; AI Chip Stocks Slump"
   },
   {
    "id": "604b94579a720d4c",
@@ -2981,6 +3209,42 @@
    "suppliers": [],
    "cluster_id": "276905cdd2fb0916",
    "cluster_title": "Several Maine towns approve data center moratoriums on local ballots"
+  },
+  {
+   "id": "7455bda09d7d84a2",
+   "title": "Bly Road closure near Independence data center leaves residents fearing winter travel hazards",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPVWNoUHRoTGdMaXFMbVMxc203MWViWEZiUkxTRVVqVjVFNVU4UkV3VHdlc1BUTTZOOTlVakJPb2NVNTRib0Z5VThXOWpQQXU0WmRGWF8yUW00SU9IV3lsU0VjdHdiTmx3MU5DenVNeFFjVnNZb0dqdXZkUWxxeXpNaWFEWW9tLXYyWXEwTjhCelMzYmpCNFduX2JvRkwwQjVQX2JYRlZXZFBKOGZ2UW5adVdvNllOZjRvVHVhRHZiQXo4Q1NmcndEN1VZWDJWeFZjUk5VNG5DSkp0TDRaZVdkTTRtaXJWNjZyUXc?oc=5",
+   "source": "KSHB 41 Kansas City",
+   "published": "2026-11-05T21:08:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Independence, Missouri, US",
+     "lat": 39.0911,
+     "lon": -94.4155,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7455bda09d7d84a2",
+   "cluster_title": "Bly Road closure near Independence data center leaves residents fearing winter travel hazards"
   },
   {
    "id": "3ad6c7d5b6449247",
