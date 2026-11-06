@@ -39,8 +39,178 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 1328,
+ "count": 1339,
  "items": [
+  {
+   "id": "6350806e9f6d1ed5",
+   "title": "Google announces $17bn data center campus in Cheyenne, Wyoming",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTmVlYlJuVDI3NzlQR2JxbFBza3l0NVZRTXFMcm1DeGtDVk9WbVhJWGhFRXlIUDQ3c1VuWDBBRklnQVVjXy1Ea3NaT0FCajQ2R3ZrWWkyRDM0SkdSaUZQbkJsYzJSZkkxVjN3eUtTM3E2dXJpS1lWS1pJVjV1RktVWFFLR0l3aWEtdmtjeEtrMWpGalBRUUNTWnczTGdDWlkyZ3Zidk5pbw?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-06T12:00:37+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Cheyenne, Wyoming, US",
+     "lat": 41.14,
+     "lon": -104.82,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 17.0,
+   "cluster_id": "eddfb40ac01c934a",
+   "cluster_title": "Google announces $17bn data center campus in Cheyenne, Wyoming"
+  },
+  {
+   "id": "32d1ede95f919414",
+   "title": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5VRnh3cDJ6eTN1VU1lTjI2VFo5dUFLRm14SG5FcXRWcVFHWG51aWgzUk5MNVFUWTE2Ul9ZLXNWV05EUGhKUVZpSTVGbi1BZU5EZTRFU3BxQ3RvRXdJTUV1WWc3ZWFoaWV3cENjQk1uTkUxVndm0gF6QVVfeXFMUDh5OWZHUVR2NXRMZDJJOVdxLURfYmVheVFmdzlSSVh4UUpkMTVnUDM2cFpNc3VsdmdVVVFZbG1QWGxBM0xLdGppeUdxMHZEa29aRzhKLTVsUUJ0MGd0YnM0bUR0ejl5bmNlYV9RTXRDenVBaS1Ja0dLb2c?oc=5",
+   "source": "CNBC",
+   "published": "2026-11-06T11:24:52+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.5,
+   "cluster_id": "32d1ede95f919414",
+   "cluster_title": "AI debt concerns grow as ING reportedly seeks buyers for $500 million of data center loans"
+  },
+  {
+   "id": "8ee333ca9b4515a1",
+   "title": "Why Amazon and Other AI Data Center Stocks are Post-Midterm Winners",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTmFWemxsVHJERmFRb0lsaExBZnpqQ2JQSmVqSzFFM2Zra1JRa3A0R3Z1WFg2UWtqWV9fUm85T050ZEV0SllCNlVFb0wzLUZ1dWF3RU5aR1Job2V1WTZMbnMzeGxZZWh5Q1QzY1dhczBCYnZuaVdqaGM0ckR4UzZud1JoUXNfdw?oc=5",
+   "source": "Barron's",
+   "published": "2026-11-06T11:15:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "AI Infrastructure",
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8ee333ca9b4515a1",
+   "cluster_title": "Why Amazon and Other AI Data Center Stocks are Post-Midterm Winners"
+  },
+  {
+   "id": "2293c52a161364a5",
+   "title": "Nasdaq Falls 5.5% Two Days After Democrats' Sweep as Investors Weigh Fears of a Slower AI Data Center Buildout",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVmJIclNJTVE3MEFUcVNnU2Z6Rkl6T1F2UWpCU09xYmlJYktsSTJ6dDdleUZFUmx1UDVPdDRUSXV0d2NPUXRPM2FWVVMwWnc0RDVEZW16U290cFd0VGZzR2M2ejg3TUp0RWt0UDNIMEQzVU8yMERkaEF2eVlUbGpXMkE4RnQwbEhpSXpYaVNRMEtUQl9BaGc0?oc=5",
+   "source": "Northeast Times",
+   "published": "2026-11-06T11:08:15+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Markets / Earnings",
+    "Deals / Investment",
+    "AI Infrastructure",
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2293c52a161364a5",
+   "cluster_title": "Nasdaq Falls 5.5% Two Days After Democrats' Sweep as Investors Weigh Fears of a Slower AI Data Center Buildout"
+  },
+  {
+   "id": "21a61cc09f3cb1ba",
+   "title": "DTE to sell non-utility business to fund grid upgrades, data center growth",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5USEVNd2d2OC1BdmowaGJnTGlqSlMtRDlZQ3RwSk13SE8zdHFQVW10cW1wZFFQMFE3cXA0Q3Y3LVM1THhaeE01dVFYMlh4cU5LTFNzZmVhQ082ZmxKT0k3RG0yTGNSWTdCeUtBOXFySjRCODFPYWVnR253?oc=5",
+   "source": "Planet Detroit",
+   "published": "2026-11-06T11:00:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [
+    "DTE Energy"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "21a61cc09f3cb1ba",
+   "cluster_title": "DTE to sell non-utility business to fund grid upgrades, data center growth"
+  },
   {
    "id": "1054486d6b53db95",
    "title": "Anthropic Data Center Project Advances in Kentucky",
@@ -201,6 +371,43 @@
    "cluster_title": "Concerns about an additional proposed data center site voiced at Asylum Township meeting"
   },
   {
+   "id": "ad7b4efaef51bd18",
+   "title": "As Data Centers Move In, Iowa Residents Fight Plans For a New Gas Plant",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRmphUFFyRWRETF85RTRjLUJtcTRpcXRaYWVMZ3BCbFRjTVlncEpCWTdOTjdsblVLSVpZZE1jRnBuMjlXOVBOUzN0WDVZdEVaMDZyMGRrSDRwc1l6MTV2eEtLbS1QaVVrdW1WSHVkMDlCSDJ0aUJpaXRRenZjVGhUU0VibDg1X3g2Y1lIUGxORWxobWM1LUwtQmVoaFc3STFuTFlN?oc=5",
+   "source": "Inside Climate News",
+   "published": "2026-11-06T09:55:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Iowa, US",
+     "lat": 42.1,
+     "lon": -93.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ad7b4efaef51bd18",
+   "cluster_title": "As Data Centers Move In, Iowa Residents Fight Plans For a New Gas Plant"
+  },
+  {
    "id": "fc04021d82735af6",
    "title": "AI Data Center State Policy: 5 Levers, $17B Bet [2026]",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVFVFMkRkcFJpSjN2RmlncHMwdGVDODJpM0ZmTHRoME1kV05TS1MweUJmVm5GNFVXNnI3VW1aN0hPUWx5aS1KU0ZVWlVyU09kNk1SWWg2bmJuWENielQ5TksyVnlGYy00WUJjZ3RnZXA3ejd2V05EWUhweFM0dkdLY1VzVW0yNk56ZmJB?oc=5",
@@ -253,6 +460,34 @@
    "suppliers": [],
    "cluster_id": "0d82470801f55837",
    "cluster_title": "Pause Pledges Hit 41% of Data Center Plans, All of OpenAI’s"
+  },
+  {
+   "id": "2bb67c448ec5c20b",
+   "title": "OpenAI pledges to end data center secrecy agreements amid US public opposition",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeWlnTlNJckdrWlNoTEs2ZnNqQXdwQjZrSkpIaFRsTjdiMWZMYXBkWURrN25UNmwwYUlDNE5iMmFRNmgyaDBNRVdmQ0xLOFVqNFo2ZnlFdGN4OHp4d2VwTE1nbG16d185eW5OM0N3VXEzaWxVVFZFVXBpZ0Yxa0dhNlFCN3VpamlWUEpjaDluQ2E2enR1UVprZC1mb3BEVW5qLW10WWJaZW1mQXFERktOOXpCMkU1YjF0TDUwOHdtNmNSUE9MX2xKSjdR?oc=5",
+   "source": "Anadolu Ajansı",
+   "published": "2026-11-06T08:59:36+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2bb67c448ec5c20b",
+   "cluster_title": "OpenAI pledges to end data center secrecy agreements amid US public opposition"
   },
   {
    "id": "702c5fe9ae382873",
@@ -1068,6 +1303,35 @@
    "cluster_title": "Texas is done with data centers until further notice, new governor says"
   },
   {
+   "id": "6a935df71dd53ea4",
+   "title": "Equinix bets on data center demand with $7 Billion capex push amid AI spending jitters",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQT1Fpd2pKNElZZGd1MFhrbWNKbDVweU1yc29UaE4yNmFrOGJPVW1YZ1AzX1pvVWlET1NOSTAtcEtScjdoakZLSnNPQzVhSm1mbExNVGowcXpzNVVqTEFTYmozTmxYempsVDVuOUwtZUY2TG1EQko1dExvUmpvT3NjOTZhRXZQNWF3WlhoenYxdzlJX09pV0oyaXFvVzdweVJ3MU1manl3SnJsanBjdmc?oc=5",
+   "source": "CNBC",
+   "published": "2026-11-06T04:15:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Equinix"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 7.0,
+   "cluster_id": "6a935df71dd53ea4",
+   "cluster_title": "Equinix bets on data center demand with $7 Billion capex push amid AI spending jitters"
+  },
+  {
    "id": "de191145758a892d",
    "title": "Guilford County leaders consider data center moratorium after residents seek more time",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXQ3VVVUSXMyZmdwTkw1eENCNkpQM0pMZVMwOERyVEJEQ2k3RmRPOG5mNTFDN1BTMmxqQWRLRW5hUHdsd1JwNjdvbWtYYjVkZGNfV0h5NW1WYV9NX3hWSHJ3XzNlVXgyRnlKaGNVYjdCbjZGZ3RXNWlVUEFUTVVKdXo2aXhVSlRZeWVwZlY1UHJOVjctckVKVGhENTRIZlcxejJ2R0E5UG5CSVY0QUJjLTVxTUpXdw?oc=5",
@@ -1626,6 +1890,46 @@
    "cluster_title": "Advocacy groups appeal second environmental review of Hermantown data center"
   },
   {
+   "id": "e47cb11c589ec551",
+   "title": "Democratic Landslide in US Midterms Sparks Data Center Regulation Fears; Meta Says Texas Governor-Elect Requested Meeting After Taking Office",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE82VjNNUEpDSGZYOWlGemtFZXJvM0VOZDV0MmNWdUs2RGlOS3pNdkFCdzVvOFI5YXRFbVF1SXZkV1Z0NXVlaVJVaXVFbTYzRmREVFcteHRvYzQwdi04LV9BVFppeFYwTDBNWjh6STQwYmpHMWFjZXc?oc=5",
+   "source": "BigGo Finance",
+   "published": "2026-11-06T02:36:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Meta"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e47cb11c589ec551",
+   "cluster_title": "Democratic Landslide in US Midterms Sparks Data Center Regulation Fears; Meta Says Texas Governor-Elect Requested Meeting After Taking Office"
+  },
+  {
    "id": "a73378736f66df9a",
    "title": "Google to power Wyoming data center with 702 MW gas project, capture most emissions",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLVEwZ1Eta193ak9wemxSVTU3YThHV3hRV3lPel9iUW9kZ01jN1ZzU3JtZDJLNGNJdmdaRlRJNXVRbklZY1FqSE5hMFYzZUJvVXdMWEZaRmlyNGdMUzBNWk1mUG5PdUJxSHFzeW9mYkhTYU9yOWVna2N5VEd6LXF3ZjFuOG5nQ05qY2hMLVJlMmZTbHAtTUMzNEozcUllb2ZB?oc=5",
@@ -1861,6 +2165,42 @@
    "investment_usd_b": 17.0,
    "cluster_id": "eddfb40ac01c934a",
    "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]"
+  },
+  {
+   "id": "1f0b76e816c34185",
+   "title": "Colossus 2 in Memphis just named most powerful data center on the planet",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUjZKTEZhQk1teXd3cnV6WFpCNlpMLVRqcTZ6LUZXVFpyeGRIbEdRUFd1UG82LVljZTA2bnJISEZoLVhDSGU5TGlDZDl4V0QwcS1NZVMzX0hJV3RCTDlYX01DWWYtd2hwWi1FRnoySEpBRlY3MVc0dlNERUJ5VGNneHF2c0lYSEpDeHdFZWVVOWlwT0trYUk4MlYzRUc4SVF5QXlURGp4aVRyZTZx?oc=5",
+   "source": "Action News 5",
+   "published": "2026-11-06T01:40:12+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Memphis, Tennessee, US",
+     "lat": 35.15,
+     "lon": -90.05,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Memphis"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "xAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1f0b76e816c34185",
+   "cluster_title": "Colossus 2 in Memphis just named most powerful data center on the planet"
   },
   {
    "id": "e7315e3d00ca0673",
@@ -2802,6 +3142,47 @@
    "suppliers": [],
    "cluster_id": "81112f4b4305b53b",
    "cluster_title": "Ten Ohio communities vote to ban large data centers as Amazon project continues in Fayette County"
+  },
+  {
+   "id": "e1267d0d7e126668",
+   "title": "Google to Invest $17 Billion in Wyoming Data Center Amid Rising Regulatory Pressure",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZzAwaFdKUmlKLWE2NWw5bWx5TTZrT2lhZVMtMldDbks1Vm5vcG9rZG5RTU51RUtSeF9YSEdYVDhaaVZTcnEwTHBIdHhPWUF2cDNDQTJmS0FEcUstcmltV3EzRkI0Z3QtcmRhNFNKQmw3NjFrcnR2dVpTR05SSUNTS3ZtVmRmVWlkTm5YLWs0X1o2WnFXYm1YOVZIdUttVkpPUzNjQ1ZYcGZ2RGxMZXc?oc=5",
+   "source": "KuCoin",
+   "published": "2026-11-05T23:23:43+00:00",
+   "feed": "Google News: West",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Deals / Investment",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 17.0,
+   "cluster_id": "eddfb40ac01c934a",
+   "cluster_title": "Google announces $17bn data center campus in Cheyenne, Wyoming"
   },
   {
    "id": "1c67a06a19229d6e",
