@@ -11,21 +11,21 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "checked_at": "2026-11-06T19:30:34+00:00",
+ "checked_at": "2026-11-07T06:11:08+00:00",
  "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 3h",
    "status": "fail",
-   "value": "7h 25m ago",
+   "value": "18h 6m ago",
    "detail": "2026-11-06T12:04:54Z"
   },
   {
    "name": "Workflow runs (last 10)",
-   "status": "pass",
-   "value": "8/8 succeeded, 0 superseded, avg 2292s",
-   "detail": ""
+   "status": "fail",
+   "value": "6/8 succeeded, 0 superseded, avg 4527s",
+   "detail": "failed: Update data center news, Update data center news"
   },
   {
    "name": "Feeds all returned data (status.json)",
@@ -60,7 +60,7 @@
   {
    "name": "news.json updated within 3h",
    "status": "fail",
-   "value": "7h 26m ago",
+   "value": "18h 7m ago",
    "detail": "2026-11-06T12:03:51+00:00"
   },
   {
@@ -306,7 +306,7 @@
   {
    "name": "Tests pass (pytest)",
    "status": "pass",
-   "value": "251 passed in 1.24s",
+   "value": "251 passed in 2.38s",
    "detail": ""
   },
   {
@@ -378,8 +378,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 7h ago",
-   "detail": "expected Updated 7h ago or Updated 7h ago, title \"The data has not changed for more than 3 hours (last update Nov 6, 2026)\""
+   "value": "Updated 18h ago",
+   "detail": "expected Updated 18h ago or Updated 18h ago, title \"The data has not changed for more than 3 hours (last update Nov 6, 2026)\""
   },
   {
    "name": "Browser: /radar @1280px loads cleanly",
@@ -490,5 +490,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-11-06T19:31:59+00:00"
+ "browser_checked_at": "2026-11-07T06:12:51+00:00"
 }
