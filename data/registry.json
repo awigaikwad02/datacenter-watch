@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-06T12:04:16+00:00",
- "count": 706,
- "visible": 601,
+ "updated": "2026-11-13T16:52:11+00:00",
+ "count": 715,
+ "visible": 609,
  "records": [
   {
    "id": "amazon-georgia",
@@ -2632,6 +2632,15 @@
      "published": "2026-07-28T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "9410552c1eba5e74"
+    },
+    {
+     "id": "ac1402d036298575",
+     "title": "Who's behind $13 billion data center plan East of El Paso?",
+     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOLUx6YndrU1RaR1Y1RkM3ZURYWGFCYXpIb2dTdUhDeHNEeUotVm1wMDRMOXlEOFVfYjJkRzNFVTR5VUxxRWNGTzR2MTB3NlJSeGZLRnFmQURYaTlNSDd0S3IyMlNmQ1NnYTV0SENkamhpc1NuUXFEeE01UGltZWFhMEE0QXZXeVpKMHFzenpHZmIyQ0c3Ymg1UmlrSFc2R2ZRZ2VlSVRGVTlsYnhtd3VCZlpncUVQNndodWJSZFVCaVhIbzQ5bW5IZW15NXFVV1VOeXBHdXFwMHdUWUNUSHluYTZsNTNKLWJPeUtvU3p2Wl9KenJNbll4SVMwekp5TzRzWmpN?oc=5",
+     "source": "El Paso Times",
+     "published": "2026-11-13T01:42:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ac1402d036298575"
     }
    ],
    "first_seen": "2025-10-01",
@@ -2681,7 +2690,7 @@
    ],
    "capacity_mw": 1000,
    "investment_usd_b": 14.0,
-   "last_news": "2026-07-28T07:00:00+00:00",
+   "last_news": "2026-11-13T01:42:00+00:00",
    "sources_count": 12,
    "confidence": "high",
    "hidden": false,
@@ -6528,6 +6537,24 @@
      "published": "2026-06-03T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "8b2014a0a5304611"
+    },
+    {
+     "id": "3321acbab58b3b19",
+     "title": "Amazon breaks ground on $7 billion data center in Northwest Indiana",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdHJTaktvemdPNVhnSVE3OG83ZDRkeEVaTzFvbFpPTXRHVTlTMDZ4UUoxcnRzSGJxOWJkQTVRc05lZm1PV3lJR3AxQkhMQVhFV3dPSjRldHY2a195YjVjbE5MNERLU05waGIxdEJwaFNuWWlIaW9wZEdhRldCaEs1U0ZkaG95SjZt?oc=5",
+     "source": "nwitimes.com",
+     "published": "2026-11-13T00:54:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "3321acbab58b3b19"
+    },
+    {
+     "id": "992909dc1c061b5e",
+     "title": "PHOTOS | Amazon breaks ground on new data center in Northwest Indiana",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT3RHRklmQkR5WjVWem9JbVpkSVVjc1dzTWFqajlIUEx4QUJ1MWg1QjEzVHlBMGFqSTZWX0k3WlJyRWlWdGwwbWFaRzgzN2xXMFNIcVhPV0E3a19UaDJESmY4dmFmeWpFWGMwQlc4Zk15Zm5nQWRnYjgwSWhiZFVHclpIQlprOGtQNEsyVw?oc=5",
+     "source": "nwitimes.com",
+     "published": "2026-11-13T02:03:57+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "3321acbab58b3b19"
     }
    ],
    "first_seen": "2024-10-04T07:00:00+00:00",
@@ -6554,7 +6581,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 15.0,
-   "last_news": "2026-06-03T07:00:00+00:00",
+   "last_news": "2026-11-13T02:03:57+00:00",
    "sources_count": 14,
    "confidence": "low",
    "hidden": false,
@@ -9037,6 +9064,24 @@
      "published": "2026-11-04T15:46:43+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7cf7e340356242c8"
+    },
+    {
+     "id": "a7703aba0824fa62",
+     "title": "Proposed Amazon data center near Tri-Cities gets pushback from residents",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVnJpdWhibVNmdVpnbWVjVFp5b1hEdkRSNjJMZUdoWkVoU1VKbm14WDcwVnJ0OERJVFowcmhnai1hSWxkNDlfY2ZfRDF1eHItQzNWMi1WZ3pfRm9SaVd3Wkl0VmRiSE9RUmpqa1lydHZoMWlJVWRoQ0psLXRqckJ5RV9MMGhrYW9zQnBsYUhlNV9wUGtJYTQxdjB5cjhvN0NWaDRVQVgxNjZ3S0tUandTZjZTREtUX1lkX1E?oc=5",
+     "source": "The Seattle Times",
+     "published": "2026-11-12T15:03:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "a7703aba0824fa62"
+    },
+    {
+     "id": "87d25df7848f9562",
+     "title": "‘Water for life, not data’: Amazon data center plan draws Eastern Washington protests",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObmVFUTRuTUxqMHU2ZTdPaF9KRVFyLWEyWXEteGl6VXFxZ096VERXd1RYbnFuLUY3X2c5MmsxaGUyNVZJNUhsOVEtb1lmc3V5Rm9janhjcmFaLVhEZkN0S0xtQmxPaFJidnRNUFVLMUJWWUpwNWZnOEx3eV9CX3BVYWU3aWhycDJNNUdobGFNTlFvVEkzbHlTVktTTE52TXlUZzkyZUxlU0VzeURUeVN2REdB?oc=5",
+     "source": "GeekWire",
+     "published": "2026-11-12T17:51:58+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "87d25df7848f9562"
     }
    ],
    "first_seen": "2025-06-09T07:00:00+00:00",
@@ -9068,8 +9113,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.264,
-   "last_news": "2026-11-04T15:46:43+00:00",
-   "sources_count": 6,
+   "last_news": "2026-11-12T17:51:58+00:00",
+   "sources_count": 7,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -14025,6 +14070,56 @@
    "hidden": false
   },
   {
+   "id": "fluidstack-wythe-county-va-2026",
+   "name": "Fluidstack Wythe County data center",
+   "company": "Fluidstack",
+   "companies": [
+    "Fluidstack"
+   ],
+   "location": "Wythe County, Virginia, US",
+   "state": "VA",
+   "county": "Wythe County, Virginia, US",
+   "city": null,
+   "lat": 36.917,
+   "lon": -81.079,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "36e9545984c871f1",
+     "title": "Fluidstack begins construction of 99-acre data center campus in Wythe County, Virginia",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd3pHSmdTcWJTLUJCWnh0Q2tqT214cGlKQjBXNXY3aktadWxxcDVkWjJrTFNHMGZSQ1V5TllEN0RYUHRXYjFCdFE3RTNlbDg0M3VmVDFvSGk0OGpkY1RwVzRsQk9wb3BlVGNUUjJwUHVTS1dUbXFIMDlPbUhFQ1RRbHhlM1BQQVJKSG45R2FwdDJ1SXdWREtES1JBaFRyVUtYUy1LOXNTMWFQVVZvUXVpa0ZZekMzcWFNZnZsaHA4dnZIMFdwOHEwQw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-10T16:23:05+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "36e9545984c871f1"
+    }
+   ],
+   "first_seen": "2026-11-10T16:23:05+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-11-10T16:23:05+00:00",
+     "status": "Under construction",
+     "headline_id": "36e9545984c871f1"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-11-10T16:23:05+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "galaxy-digital-tx-unnamed",
    "name": "Galaxy Digital, Texas (site not yet named)",
    "company": "Galaxy Digital",
@@ -16816,10 +16911,21 @@
      "published": "2026-10-21T03:46:33+00:00",
      "stage_signal": "Announced",
      "cluster_id": "06d24bd03e2f3d88"
+    },
+    {
+     "id": "8749e96fd2915abb",
+     "title": "Nessel scrutinizes DTE plans for Google data center in Van Buren Twp.",
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWlZJRExlWWhONFFBZlMzYWYtbkhROUR1NlVRVXdyeVRMTUFoUlJGSE44UklxMzlvNGxodExLZFdLWUJiMXlrdkVWZkY1V3d1SF9Pc0NWQk4wcUdhMTAzWTg5dHRxWkRHbWgxWGNiS00xMlFaWmNuVmpvc1ZLeURfNldLaHducGREVElObDMxbjFPUUwzQkhVbS1BUmQtNVVtblRGNDVsNkpuWHZKbzA5QmhxeVZVS2JfQVhhUWdHX2VqdVgwRjh1ZmhWRkE2ekdseURJTXB4aUxVbHlDQy1DTW1PalRreGUzZzI2a1V4Rl8?oc=5",
+     "source": "The Detroit News",
+     "published": "2026-11-13T05:02:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "8749e96fd2915abb"
     }
    ],
    "first_seen": "2026-04-16T07:00:00+00:00",
-   "utilities": [],
+   "utilities": [
+    "DTE Energy"
+   ],
    "status": "Under construction",
    "status_history": [
     {
@@ -16842,8 +16948,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-21T03:46:33+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-13T05:02:00+00:00",
+   "sources_count": 5,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -17657,6 +17763,62 @@
    "name_hints": []
   },
   {
+   "id": "google-san-jose-ca-2026",
+   "name": "Google San Jose data center",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "San Jose, California, US",
+   "state": "CA",
+   "county": null,
+   "city": "San Jose, California, US",
+   "lat": 37.34,
+   "lon": -121.89,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "04ed6f57f159dc49",
+     "title": "Google data center could be approved before San Jose sets standards",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQ2NTUmRQVV9VWS11bmNUWURBMFFucHFVaHNtbllYV0dPWkt5WEZzTnF1MzdDZ1VzaTVqY3dCTzQzUDQxeWFMOEdRazQxc1kxRm9xcERJbFZlMFprX1dUZVFGRENBZkNyQTNONjg2NFNwS29PVDVaNy0wcUJsVHk1TXZCSjFFNHlEWFQyOVcxQU5GaDZUYzZzT21TaV9Vdw?oc=5",
+     "source": "San José Spotlight",
+     "published": "2026-11-09T16:14:42+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "04ed6f57f159dc49"
+    }
+   ],
+   "first_seen": "2026-11-09T16:14:42+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-09T16:14:42+00:00",
+     "status": "Announced",
+     "headline_id": "04ed6f57f159dc49"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-09T16:14:42+00:00",
+     "type": "Approval",
+     "headline_id": "04ed6f57f159dc49"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-11-09T16:14:42+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "google-sc-unnamed",
    "name": "Google, South Carolina (site not yet named)",
    "company": "Google",
@@ -18424,6 +18586,24 @@
      "published": "2026-11-06T12:00:37+00:00",
      "stage_signal": "Announced",
      "cluster_id": "eddfb40ac01c934a"
+    },
+    {
+     "id": "7d0063765054c06a",
+     "title": "Google Plans $17B Wyoming Data Center",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfZG5kZkg2RHdXSkEzR045SVNXbzdZcjFWcTR6NkJCZzltSmNLR2E0R1IyYXpvZkJ6SmpPVzFJVmNtTUx6RHBRMjVIaU1DRmU5Nk41dWphZWlsU1N2TE5ZZ2RiQlN4QjQ?oc=5",
+     "source": "the Electrical Distributor magazine",
+     "published": "2026-11-06T17:10:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "eddfb40ac01c934a"
+    },
+    {
+     "id": "6a1967ff5b2b1d40",
+     "title": "Google Plans A $17 Billion Wyoming Data Center Run On Fuel-Cell Power",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbm4yRElHM1BrZUtWQjhmUGpKZHhYMW9oU3cwd0JydmJ2bHRWaDRmNlRCeEpsZUNmdHhiYlp1MHk1cXVzanEyeW51Y2ctNkFXa0p3MURIZGdZcWZ4ei1PMmRLZzZVTUYwaTJlQWwwMHJMbWRvVnJHWWJXbG1lc3ZfQ2c0MzhnNkRWeFpNdkhrQnVnanZiQzExX2ppSktkNVpPWlYwWVRmelExWjlxa3pvbjhtQU9uV2p4dUNVag?oc=5",
+     "source": "Forbes",
+     "published": "2026-11-07T15:16:25+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "eddfb40ac01c934a"
     }
    ],
    "first_seen": "2026-10-08T12:00:05+00:00",
@@ -18439,8 +18619,8 @@
    "events": [],
    "capacity_mw": 2100,
    "investment_usd_b": 17.0,
-   "last_news": "2026-11-06T12:00:37+00:00",
-   "sources_count": 15,
+   "last_news": "2026-11-07T15:16:25+00:00",
+   "sources_count": 17,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -23581,6 +23761,15 @@
      "published": "2026-11-03T11:47:03+00:00",
      "stage_signal": "Announced",
      "cluster_id": "fe518734cb34328b"
+    },
+    {
+     "id": "b931df007a4b0444",
+     "title": "Sound wall for Microsoft data center in Granger approved by county leaders",
+     "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPd3hjbGJjamxrUXpScmJjQjZrcXNxU0c5UkRSR0NydHAzbGJrbmxTd19pNXJhQUdFSTZ0dTVHNlpGcFBZcjBCdDlLRVR3Q05WYnIxRDFpa09jSGdLVE04RXZjamRzalFnbFVBSHFNUkFvTlprcUxUbmJTRUhpYVVMUm9QdDdZbGo2UFZseDUtN3pPOGsxeHlORFJMV2VCOXNfcmY1RHFSUUlhbjk4NXdtdkV5Q0Rlc0Fhd0ZTUlBPYzMteUpfWEVXUTFwVnJFX3IxaTgxblp2eHBjS1JIbHViVElVc1NEUWZwWGZKS2w0TjgtaVd1TXN1SURmZnJFNjc5MWtqaUJ1QWJGUDVn?oc=5",
+     "source": "WSBT",
+     "published": "2026-11-12T23:47:32+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b931df007a4b0444"
     }
    ],
    "first_seen": "2026-04-23T07:00:00+00:00",
@@ -23613,11 +23802,16 @@
      "date": "2026-11-03T11:47:03+00:00",
      "type": "Approval",
      "headline_id": "fe518734cb34328b"
+    },
+    {
+     "date": "2026-11-12T23:47:32+00:00",
+     "type": "Approval",
+     "headline_id": "b931df007a4b0444"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-03T11:47:03+00:00",
+   "last_news": "2026-11-12T23:47:32+00:00",
    "sources_count": 6,
    "confidence": "low",
    "hidden": false,
@@ -25958,6 +26152,15 @@
      "published": "2026-08-27T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7965ceabe79e9929"
+    },
+    {
+     "id": "c14ef1e9d4fa833f",
+     "title": "OpenAI accused of racketeering, conspiracy over Georgia data center plan",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPd1NRRlJ6ZXFSNjM2NzNraEJPR3k2TnhubzM3aVJkSV9DNWJUNDBrVlVDYmIzbXQxWHpsWW5wZTdiSzFFckU2aUs4Y2gxUzdzWnR4V3NISkFrSlhOakNwN2d3VnRPcW85b0R6OXExYUVwMlNhckpTbzhTZ2d1TGpGRFZJcFl0STBRZ19qTTZiWlVvY3lNWGN3V0hQUm1EM3lVUTlNZG9SdGNBaUN1LVZfOVVuNnRReWthY2NQN0gtNlJnaWZlckJGNNIB3AFBVV95cUxOR19OS2JaaDVpYUpNVGlFU0ltazlERG8xcW9CMExrYVZWeVRCZGlJdkUwT3pxSjlHdjFwUVM3ZzZGeFJ5Q0cySmdPWEFOcnNLRHhYNWVXcWtPU2hKTHB1Vmdpd1l5V3ZYUmhJUGRPdG9STHBETi1UR3dQOEhhY2IxcjFQRVhoVllrMl9jYUR2T0phMlExUjRTTVRrOFN2bTlDamR6ZzQ4T3hQc2p4YTY4X3VaZXRsOUlBSmhGR09NV0ZFWHdsUndnRzRxclFpdXRMQm9xZDdUUUZwTWtS?oc=5",
+     "source": "WSB-TV",
+     "published": "2026-11-09T15:43:11+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "c14ef1e9d4fa833f"
     }
    ],
    "first_seen": "2026-07-22T07:00:00+00:00",
@@ -25992,8 +26195,8 @@
    ],
    "capacity_mw": 3200,
    "investment_usd_b": 30.0,
-   "last_news": "2026-08-27T07:00:00+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-09T15:43:11+00:00",
+   "sources_count": 5,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -26177,6 +26380,15 @@
      "published": "2026-11-05T20:32:41+00:00",
      "stage_signal": "Announced",
      "cluster_id": "cb0f4cfa31566fab"
+    },
+    {
+     "id": "0bb698b591ac9590",
+     "title": "OpenAI faces civil racketeering charges over $30bn data center planned in Effingham County, Georgia",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPT3pza3llYTc2Y20zbUFmSUlEVGN6a0FrQTFicVNBT1Vla0ZJZ3V6blV1UHVCekxzSzBjSVllMGc2U2ZyY2ZvN0l5RkNLS0Iyc0JHdi1kRVgzc3VwUnhFLXA5VzQxMTRwVmxoS0xhSV9lRHV5WVlYWG9qaEctTHpGb0NXelU0Q0JNUTV2X0ppcU1rRmNXcl9RcjUybHNyZlJrN21acHlNdm1ZYUtUWWxWS2ktM1A3a0N1c3BCeDFISEdrQkd1MEFZUmJvNTZ2NG5rcU9CZVVmNWE?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-12T15:49:09+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "0bb698b591ac9590"
     }
    ],
    "first_seen": "2026-07-22T07:00:00+00:00",
@@ -26191,8 +26403,8 @@
    ],
    "events": [],
    "capacity_mw": 3200,
-   "investment_usd_b": 20.0,
-   "last_news": "2026-11-05T20:32:41+00:00",
+   "investment_usd_b": 30.0,
+   "last_news": "2026-11-12T15:49:09+00:00",
    "sources_count": 5,
    "confidence": "high",
    "hidden": false,
@@ -33383,7 +33595,7 @@
   },
   {
    "id": "site-boise-id-2025",
-   "name": "Boise data center (10 MW, proposed 2025)",
+   "name": "Boise data center (10 MW, cancelled 2025)",
    "company": "",
    "companies": [],
    "location": "Boise, Idaho, US",
@@ -33414,23 +33626,61 @@
      "published": "2026-09-23T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "3976f27f95156d56"
+    },
+    {
+     "id": "649b69a659cd8f8e",
+     "title": "Boise Mayor Lauren McLean Proposes Data Center Moratorium",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNc3ZveU1lVmx5aUZKOGd1cmtBNHMwY2ptbjhwV3AzZmRYRzlfTlM0R1oydURBUEIydXhOREFPSGNaSXduT1NVVl92SU1yeVJ3LVktLV80SmVwcy1RdkJTamh4QVc0dTF1aFdrZDhrZ2RvQWZna1REb0k5U2t4bkRFb1lmQ0ZDSnF5TkJNdWFNTDNkeDhaQ2huVEo2RHZYRHlmR3U2bUlCcWxLN09KNm5nMA?oc=5",
+     "source": "City of Boise",
+     "published": "2026-11-07T00:16:15+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "649b69a659cd8f8e"
+    },
+    {
+     "id": "883e301e20451979",
+     "title": "Boise City Council approves 6-month moratorium on large data center construction",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSUNOSG03MFByMXJEOGhlTmxEYVBfbG9fS3pUM2lySUNsaWw4V18tZ0lScmlNTDR4MzA2R3dwQWVZaGpQZThiNmI0dmlKaVRmRFZ4ZnB1bUMtc3JtTXhncFFZdTRBdzh2WFRCYlh5NWNOWUFOczNnbDJKeUtsakxYQkFiSENBZ3JnX0Y2YmFxbXFfUHNoc1V1RGwxV0M2dnlvbG1oWjJjUFkxWVkyVFVXUHBESjN0aTh2a09vQw?oc=5",
+     "source": "Idaho Capital Sun",
+     "published": "2026-11-11T04:50:49+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "883e301e20451979"
+    },
+    {
+     "id": "3a337a20b3b66c20",
+     "title": "Idaho city approves 6-month moratorium on large data center construction",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQb2xfN2g2WUhXOEJ1MjNxREo4YWd1TmtGVDA5M2lkd0JCWUlyYlRyTWFyMUp3UkJKVExSRVVuODBaWWl3bzhoY3NNakRJcmZIYm9fUWE2NWxaQlRxdEtiZ2R3NFNhd3lfR2l3dHVla2ozeFdZY2FaZ2t6LUY2Z3JoTVNUQXdYcWtaYkNPZXlkT3h6S0VEN002cDhOamN0ZDVtM3VWLWliMXdvZWNDUGowaEg5dXNPLUtreTl3?oc=5",
+     "source": "East Idaho News",
+     "published": "2026-11-11T18:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "883e301e20451979"
     }
    ],
    "first_seen": "2025-05-06T07:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2025-05-06T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "cde1e5d7e9d0e73f"
+    },
+    {
+     "date": "2026-11-11T04:50:49+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "883e301e20451979"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-11T04:50:49+00:00",
+     "type": "Cancelled",
+     "headline_id": "883e301e20451979"
+    }
+   ],
    "capacity_mw": 10,
    "investment_usd_b": null,
-   "last_news": "2026-09-23T07:00:00+00:00",
-   "sources_count": 2,
+   "last_news": "2026-11-11T18:00:00+00:00",
+   "sources_count": 5,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -33568,6 +33818,102 @@
      "from": "Boise, Idaho, US"
     }
    ]
+  },
+  {
+   "id": "site-boone-county-wv-2026",
+   "name": "Boone County data center ($9.65B, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Boone County, West Virginia, US",
+   "state": "WV",
+   "county": "Boone County, West Virginia, US",
+   "city": null,
+   "lat": 38.023,
+   "lon": -81.71,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "68dba320de4467e4",
+     "title": "State certifies proposed $9.65 billion data center development in Boone County",
+     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNa0R6T3pYQkZWQ3lFRUtvc0tmLU9UeTNMX1VUU01taTktTHdXTTlITkRPQmY1amZqR0o2UmJ3dGNLM0FsVTNSenJ2czFLTjVBRWR0b0FlTnZFR2I5bjI5aDNsYnk1UGpPYkRBVk52ZHFsVGxsbjJqUzVnWi1TT1RnRlQ3UjdMN1FfdDc3dFlxUlZWOW1rRWNtc2hLMVJZdG1DQ3dtZG4tUTBJRlluMWg3eERaYS1ESFdVVVhUeGNyZFRJNXpUdV9IaHc1ZGdNOVgxVnVWaV9QQldrUkNMcExyLUxVbGFlOHh4c2VWTmNkZ2J3TWNm?oc=5",
+     "source": "WV News",
+     "published": "2026-11-09T13:07:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "68dba320de4467e4"
+    }
+   ],
+   "first_seen": "2026-11-09T13:07:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-09T13:07:00+00:00",
+     "status": "Announced",
+     "headline_id": "68dba320de4467e4"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 9.65,
+   "last_news": "2026-11-09T13:07:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "site-boston-ma-2026",
+   "name": "Boston data center ($16B, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Boston, Massachusetts, US",
+   "state": "MA",
+   "county": null,
+   "city": "Boston, Massachusetts, US",
+   "lat": 42.36,
+   "lon": -71.06,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "654fd0e4ca3e7569",
+     "title": "Boston 25 News. . A proposed $16B data center project is already sparking backlash in Sutton. The Kraft Group along with the Unified Global Packing Group want to build the 10-building campus off Boston and Providence Roads in Sutton.",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUXJRWGdNcTlwUUJXLWtYRXJpUDVVelZVQ1BmYnJIUy1rMWpHVXE3MUdSQUR0ajR0dUpqQ2pCcUJHcUJoa1lDcW55OFB5MXl2eHMyR1NPcHk4SzJNLUFvZDJyWlNhUU9wcVo3NGg3MVNjUFNKemJyQjFKaEswOWMxZnBQVjNwZURkMUNvYzBrODdzLVVhR01xRUVfNmVPZC0zY0JIcDI4bVVzUDBTNlN1LWNHSDN4NHBnY2R2M2pPdjRDVzJDU0pCMk1lcmZWYTFSZFNTckRXZzBxR1U?oc=5",
+     "source": "Facebook",
+     "published": "2026-11-12T00:32:46+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "654fd0e4ca3e7569"
+    }
+   ],
+   "first_seen": "2026-11-12T00:32:46+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-12T00:32:46+00:00",
+     "status": "Announced",
+     "headline_id": "654fd0e4ca3e7569"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 16.0,
+   "last_news": "2026-11-12T00:32:46+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-brandon-ms-2025",
@@ -35769,6 +36115,63 @@
    "hidden": false
   },
   {
+   "id": "site-cochise-county-az-2026",
+   "name": "Cochise County data center (6,000 MW, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Cochise County, Arizona, US",
+   "state": "AZ",
+   "county": "Cochise County, Arizona, US",
+   "city": null,
+   "lat": 31.878,
+   "lon": -109.751,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "26c05e55c83c4f1e",
+     "title": "SpaceX is behind a proposed 6 GW AI data center campus in Cochise County, Arizona",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUTZOSUZSM1A4WmNady1zNUtzYUFHRGlDdExRRkRZQmRQVHBlTFpqajBoa0F5MXV6WU96a0NTY3ZkU3J5MXFYQjVtQUltalczdWlOb2oxOU9vRWlYTEFXbS1WWDM3bnZ1cllQREpPOVM4dldxV2dZbk9Nb0F0Tm9IUVBNOHpBMXBVMkdoZF91Wm1COHF5ZTNCVlpWTnNwVFlZTEU4?oc=5",
+     "source": "MLQ.ai",
+     "published": "2026-11-07T14:02:34+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "02437603f82a0dc8"
+    },
+    {
+     "id": "0c3c53edca0777e1",
+     "title": "SpaceX is behind proposed data center in Cochise County",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNS2szd1h4MnRlR3psb3cwU1BoUXRPM0xvbGR6RTVhUkpXVGJoaUdsZk5lT3dKV2dlN1V6T002TzhDUXBOcmdOcHV5aWpXNFpDR3pUVG9ZQkF5VDJfcjF0VG1nY1Z1QnBLdlNKN0xJdndsbmNHd09QSVlFYm5ya1VhZV9NSEY1aUp2VlhqZlZUUWVZbnV6blllZHVNZkZuWjgzM0hTMA?oc=5",
+     "source": "KJZZ",
+     "published": "2026-11-10T13:28:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "02437603f82a0dc8"
+    }
+   ],
+   "first_seen": "2026-11-07T14:02:34+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-07T14:02:34+00:00",
+     "status": "Announced",
+     "headline_id": "26c05e55c83c4f1e"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 6000,
+   "investment_usd_b": null,
+   "last_news": "2026-11-10T13:28:00+00:00",
+   "sources_count": 2,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "site-columbia-sc-2026",
    "name": "Columbia data center ($4M, proposed 2026)",
    "company": "",
@@ -37175,6 +37578,15 @@
      "published": "2026-08-24T17:30:04+00:00",
      "stage_signal": "Announced",
      "cluster_id": "3694b3546ca4a7cf"
+    },
+    {
+     "id": "bcb651b5f6661ec1",
+     "title": "DeKalb data center proposals stall amid debate over studies",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPX2F4Yk9WN1ZTVGZuZjdUaW40MjRVOUx0LXdQaW9FcFd5OHVrTjdtVVQ1YnRFNTd4cE9KZUdxdWZ6M3VkeF9GMFlnRG9tQm1TS056cFYtTmF5c2JZV3QtaXcwcWpmNlA0eVZtRWh4WEFZVHZrdzhmX1pQalZ5cXQ4RjJmUEMtY0ZBdmhKenJpdWlNVUVCdXhpX1FXYWdTRFpiX090aDlYMEJNYWhScEdOT0JNZ01wYVBTWEh5ZV92cFpwQVZycTJwa0RuNDVtV1pEelA0Q3A1LTAtWXF1X3kzY0hB?oc=5",
+     "source": "decaturish.com",
+     "published": "2026-11-11T01:24:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "bcb651b5f6661ec1"
     }
    ],
    "first_seen": "2025-09-02T07:00:00+00:00",
@@ -37206,7 +37618,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 1.6,
-   "last_news": "2026-08-24T17:30:04+00:00",
+   "last_news": "2026-11-11T01:24:00+00:00",
    "sources_count": 6,
    "confidence": "medium",
    "hidden": false,
@@ -39095,6 +39507,54 @@
    "name_hints": []
   },
   {
+   "id": "site-fairfield-al-2026",
+   "name": "Fairfield data center ($150M, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Fairfield, Alabama, US",
+   "state": "AL",
+   "county": null,
+   "city": "Fairfield, Alabama, US",
+   "lat": 33.4859,
+   "lon": -86.9119,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "392f09cd3202af54",
+     "title": "$150 million Fairfield data center plan advances, residents push back",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbE5EbTRpbnZiQjhoNHUtZ3NORVRFNTktaElNWTRMWWJKemd2NGRJQ1VWbTA2eDJUbm54WXFHd05QMkoybmVsaWlSZ2hxeXVIT3RjTTRCRVBKTDVPaTBDUW5GTXlITVBtUDVDTzJkSzRRZDMxSDZaSVVVZXRpUDN3c1kxMmJSdW5mQlMyQ095bmtiaWxLaEU0VjRESlBucnFaV3hnQ0FGd3hINDlubEdLaEl2MzNrUk9iaG1Z?oc=5",
+     "source": "AL.com",
+     "published": "2026-11-11T18:31:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "392f09cd3202af54"
+    }
+   ],
+   "first_seen": "2026-11-11T18:31:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-11T18:31:00+00:00",
+     "status": "Announced",
+     "headline_id": "392f09cd3202af54"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 0.15,
+   "last_news": "2026-11-11T18:31:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "site-fargo-nd-2025",
    "name": "Fargo data center ($3B, under construction 2025)",
    "company": "",
@@ -40464,6 +40924,54 @@
    "hidden": false
   },
   {
+   "id": "site-georgetown-tx-2026",
+   "name": "Georgetown data center ($1B, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Georgetown, Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": "Georgetown, Texas, US",
+   "lat": 30.6327,
+   "lon": -97.6772,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "7fafcfc5ee56e3e3",
+     "title": "$1B data center planned for Georgetown, Texas",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTE9FRzBsemNQM252bVNJVG1QZXRWcUFIY3Jzemo2bFpxcXphY0lLSE02R1hjZExseDJSMV9xTzA3c2xVV2lEVTNkdVFtNFJjbmE2aHNYLWpxLWp3X1lLNGJhQ2JmOElvMi1jWDRHaUFWczl5ZDJkNXQ5MHBuRWlqZ2o4MDV5Z2dEMTQwRHg0cEdqMWlQRmZrVkYzUWI2QXlh?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-11-12T19:44:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7fafcfc5ee56e3e3"
+    }
+   ],
+   "first_seen": "2026-11-12T19:44:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-12T19:44:00+00:00",
+     "status": "Announced",
+     "headline_id": "7fafcfc5ee56e3e3"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 1.0,
+   "last_news": "2026-11-12T19:44:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "site-glasscock-county-tx-2026",
    "name": "Glasscock County data center (100 MW, proposed 2026)",
    "company": "",
@@ -40663,6 +41171,54 @@
    "builders": [],
    "suppliers": [],
    "name_hints": []
+  },
+  {
+   "id": "site-grove-city-oh-2026",
+   "name": "Grove City data center ($6.9B, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Grove City, Ohio, US",
+   "state": "OH",
+   "county": null,
+   "city": "Grove City, Ohio, US",
+   "lat": 39.8815,
+   "lon": -83.093,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "d0e018604c3d378a",
+     "title": "Grove City voters add new hurdle to $6.9 billion data center plan",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWjd1OE1MLXZvWk9leVU0d0hjWHFRc2MzUUgweERPUUh6ekhHNEk2S01tUlE3SENxbmVQUXZIc2wzM0pFYUIzRHhxVGtJMk9BZ1VmWi1aaWFIUlBnYUh2U1VISmE5eTA4aUlhZTVQN3dhdEtzWEV5dXFtcTNoY2YtRzl0eG13a3B3Tk5IdkI2OUhNeVVsR05JUDJrX3Bwd1JqbUNVc3pMaFJyc0VU?oc=5",
+     "source": "Cleveland.com",
+     "published": "2026-11-11T20:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d0e018604c3d378a"
+    }
+   ],
+   "first_seen": "2026-11-11T20:00:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-11T20:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "d0e018604c3d378a"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 6.9,
+   "last_news": "2026-11-11T20:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-hall-county-ga-2025",
@@ -43533,11 +44089,21 @@
      "published": "2026-10-29T17:15:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1b3e6a36455a2bf3"
+    },
+    {
+     "id": "268cbd3da7fa19f2",
+     "title": "Lansing-area data center plan dead two weeks after it was announced",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZVJtbjMydVhESVMxa2xacy1DZ0hXTW9EMFoxeWV3Yi1sYWFzdzB1YVU5VmtLb1VaNGc0UVBhZGUwUUxCV0lHcVNPTmNlMWtsQy1DTGVIQUNGWnQ0OE9FeUdjRExobEE0UmtadS1UakM0WHNzNVZ4X2FpalZ0WkotUUVxZW5qMmwwNDNWMzJzbFU2Y05XNEpheTdISTgwMUYtSFl6OTFpdEJhWklUeGJ1aWxTRC1zZDU2alVfalp1SEJaMnpXZ29ETzFJR2U?oc=5",
+     "source": "The Detroit News",
+     "published": "2026-11-11T15:49:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "268cbd3da7fa19f2"
     }
    ],
    "first_seen": "2025-11-05T08:00:00+00:00",
    "name_hints": [
-    "Downtown Lansing Data Center"
+    "Downtown Lansing Data Center",
+    "Lansing-area Data Center"
    ],
    "utilities": [],
    "investors": [],
@@ -43565,8 +44131,8 @@
    ],
    "capacity_mw": 700,
    "investment_usd_b": null,
-   "last_news": "2026-10-29T17:15:00+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-11T15:49:00+00:00",
+   "sources_count": 5,
    "confidence": "medium",
    "hidden": false
   },
@@ -46262,6 +46828,15 @@
      "published": "2026-10-14T05:07:04+00:00",
      "stage_signal": "Announced",
      "cluster_id": "c2be0c91d7729364"
+    },
+    {
+     "id": "18eedd0adfd0481b",
+     "title": "Minneapolis City Council narrowly approves data center ordinance that adds regulations",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSVdjNlBOWjJ0ZTNzUkI4bmJMN1dxRXg5anBQbWRWVk1hM1htSGU0Rk5uNmNsc3ZHNlNETkh4YktMTjVBOXRod0g3V2xEcHBzY3pxTXRhVVJfNU1jWkJPWEtYTU5sR19vWGNLVWxQY0MyZ2NMWlAwUXFLWTBtUGQyOHVtOXNRLVQ1VUtSOWVYNURRdzBtV0VZdDVwUHlFZGtsekZQb3dWV2FZYzhzb1drTU5FRWtNRVNQR0FzemRCODc?oc=5",
+     "source": "5 EYEWITNESS NEWS",
+     "published": "2026-11-13T00:16:48+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "1702b665f86cac48"
     }
    ],
    "first_seen": "2025-08-06T07:00:00+00:00",
@@ -46284,11 +46859,21 @@
      "date": "2026-05-26T07:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "fa99fa3e25a2426a"
+    },
+    {
+     "date": "2026-11-13T00:16:48+00:00",
+     "type": "Expansion",
+     "headline_id": "18eedd0adfd0481b"
+    },
+    {
+     "date": "2026-11-13T00:16:48+00:00",
+     "type": "Approval",
+     "headline_id": "18eedd0adfd0481b"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.4,
-   "last_news": "2026-10-14T05:07:04+00:00",
+   "last_news": "2026-11-13T00:16:48+00:00",
    "sources_count": 10,
    "confidence": "medium",
    "hidden": false,
@@ -51367,6 +51952,15 @@
      "published": "2026-06-03T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "cc421e69ee719f1b"
+    },
+    {
+     "id": "3934fc61de1679fc",
+     "title": "Tonawanda Seneca Nation calls on New York State to stop construction of proposed data center",
+     "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPeHlVWmFkVms4UzFhUVRta2ZQekRhV3dmcy1qTVdMeHRKeFBvVVJoNGRqa1lVQndNczI2RG0xTlFBcjJJUTRmOHBTdVhmcUY2dGg3bWVYa3RSQXA2RVR3QkUydE8wVGExM1hvNFB3SkUtTkhCdlFJZ01NcHdQcW1JMmRHMGxJUUlqRXV1TktIRnFCeUdtYkxpeWVWSHRSNkdVSHpPZGJ6TlJtMTFCZ1gtVmdmTUppZVhrZHpZeXRIa2c3NW5fQTR4MG84OWpSSW10OG4zTWFEQlh6Wk5SY1RaRURER3M1SE1nWE1JaWl3S29fVzVtZi1oUUR1ZC1Lb2txZjItQkFyQS1CQUtz?oc=5",
+     "source": "WGRZ",
+     "published": "2026-11-11T21:09:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3934fc61de1679fc"
     }
    ],
    "first_seen": "2026-05-20T07:00:00+00:00",
@@ -51386,7 +51980,7 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 2.0,
-   "last_news": "2026-06-03T07:00:00+00:00",
+   "last_news": "2026-11-11T21:09:00+00:00",
    "sources_count": 3,
    "confidence": "medium",
    "hidden": false
@@ -51783,6 +52377,15 @@
      "published": "2024-10-25T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "b42c8fa202a7c7de"
+    },
+    {
+     "id": "4fc38b45d656eebd",
+     "title": "Walla Walla reacts to data center plans",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRDhyS2ZvQkRfZ0hjLWlyZnFEQnNtTk5xUGpDcmNYLWprR0FMYnFrV0dES28wLTJ1Q1BpRHY2ODlIb2hXQlhPWGFxSUgzcFFlODEtdGkwbUhoeDNQQUJZOHNFSGMzNVN4WjQxdVprTE12ZDRkTWR1cmhCQms3bjJfNDNfSTJPRm5OTm9ZTm5DSVdmVVVCSU1LSEFTdDBxZElEWWdhLS1XejljUVBFem9yMWIwNDF3OVlUYXAwZi1CTlZ1QklyV0pR?oc=5",
+     "source": "AppleValleyNewsNow.com",
+     "published": "2026-11-10T19:27:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "4fc38b45d656eebd"
     }
    ],
    "first_seen": "2024-10-22T07:00:00+00:00",
@@ -51802,8 +52405,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 4.8,
-   "last_news": "2024-10-25T07:00:00+00:00",
-   "sources_count": 2,
+   "last_news": "2026-11-10T19:27:00+00:00",
+   "sources_count": 3,
    "confidence": "medium",
    "hidden": false
   },
@@ -52979,6 +53582,41 @@
    "notes": "",
    "umbrella": true,
    "umbrella_company": "Soluna",
+   "news": [],
+   "first_seen": "2025-05-23T07:00:00+00:00",
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hints": [],
+   "status": "Announced",
+   "status_history": [],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": null,
+   "sources_count": 0,
+   "confidence": "low",
+   "hidden": true,
+   "merged_into": "soluna-willacy-county-tx-2026"
+  },
+  {
+   "id": "soluna-willacy-county-tx-2026",
+   "name": "Soluna Willacy County data center",
+   "company": "Soluna",
+   "companies": [
+    "Soluna"
+   ],
+   "location": "Willacy County, Texas, US",
+   "state": "TX",
+   "county": "Willacy County, Texas, US",
+   "city": null,
+   "lat": 26.471,
+   "lon": -97.658,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
    "news": [
     {
      "id": "e000ac4c930e4e53",
@@ -53015,14 +53653,23 @@
      "published": "2026-10-14T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "8e017ff457f8f1ea"
+    },
+    {
+     "id": "88aa0c516872ae8e",
+     "title": "Soluna Holdings Eyes Nearly $4 Billion AI Data Center Expansion in Willacy County",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOR1Qta2Y3RlkxQ0hzYjRoeHJySnI5X2FhSlBxRmRzR005c1VVMmZKaDdyMGdVeHQ0NTR1N3BQTFdCdUozSUlEcWh1YnhYYWlDM1p2VlhiUzBma2RzdFJ0RzV2aVl3YWo0emNwVVhyWHJtb3hmVUFsNERoMktReVVYcXRyMmV2Q0JtcnBlS1laY3NWUWFJQm91OG5JNUYzWHlqaVoweF9WSmJjbE9QMWR6cGlnQk9paFZvekxhZ2lBTXVMdw?oc=5",
+     "source": "Rio Grande Guardian",
+     "published": "2026-11-13T15:23:05+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "88aa0c516872ae8e"
     }
    ],
    "first_seen": "2025-05-23T07:00:00+00:00",
+   "name_hints": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hints": [],
    "status": "Under construction",
    "status_history": [
     {
@@ -53036,12 +53683,18 @@
      "headline_id": "251362972470707c"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-13T15:23:05+00:00",
+     "type": "Expansion",
+     "headline_id": "88aa0c516872ae8e"
+    }
+   ],
    "capacity_mw": 112,
-   "investment_usd_b": 0.02,
-   "last_news": "2026-10-14T07:00:00+00:00",
-   "sources_count": 3,
-   "confidence": "low",
+   "investment_usd_b": 4.0,
+   "last_news": "2026-11-13T15:23:05+00:00",
+   "sources_count": 4,
+   "confidence": "high",
    "hidden": false
   },
   {
