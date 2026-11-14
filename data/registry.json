@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-14T05:26:31+00:00",
- "count": 732,
- "visible": 615,
+ "updated": "2026-11-14T05:54:12+00:00",
+ "count": 733,
+ "visible": 616,
  "records": [
   {
    "id": "amazon-georgia",
@@ -9190,6 +9190,15 @@
      "published": "2026-11-12T17:51:58+00:00",
      "stage_signal": "Announced",
      "cluster_id": "87d25df7848f9562"
+    },
+    {
+     "id": "b4571c44700d8eb7",
+     "title": "What to know about Amazon's West Richland open house for data center megaplex plans",
+     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNTmFBNnQyUDQzcGxhLUttTFFiOWZQWW1feHA4WEJwbkR6UlBSRHBseTdxREd4cnl4RmVDNTJQMHV4SUdhYThYd1Bwcm9TR3N5allFdVdpRXljeEhfYmR0eGxBaUhaaTE2SmhQSUY5WmJUMVM0QUUtYV9ITlAxSjdJUUJjUVZVZG9TV0NFVHhERC1TN0pVem1OWXJ2MzhnSFJtT2ZBRThGclBUTmFWSXVQUVJfR3RROV9SbzdoN0lzMkZjb0g2VnJ5Y3VVSEIteEVlVkxTMzA3N1JIdGViVUc2elhucG9HeUtWdTBxLW9hZFBWMGpfUGhsWkF0Umc4U0J3dkE?oc=5",
+     "source": "AppleValleyNewsNow.com",
+     "published": "2026-11-13T19:03:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b4571c44700d8eb7"
     }
    ],
    "first_seen": "2025-06-09T07:00:00+00:00",
@@ -9217,8 +9226,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.264,
-   "last_news": "2026-11-12T17:51:58+00:00",
-   "sources_count": 6,
+   "last_news": "2026-11-13T19:03:00+00:00",
+   "sources_count": 7,
    "confidence": "high",
    "hidden": false
   },
@@ -25046,6 +25055,62 @@
    ]
   },
   {
+   "id": "microsoft-st-joseph-county-in-2026-2",
+   "name": "Microsoft St. Joseph County data center",
+   "company": "Microsoft",
+   "companies": [
+    "Microsoft"
+   ],
+   "location": "St. Joseph County, Indiana, US",
+   "state": "IN",
+   "county": "St. Joseph County, Indiana, US",
+   "city": null,
+   "lat": 41.616,
+   "lon": -86.29,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "5bfc6774f1f3d527",
+     "title": "St. Joseph County Board of Zoning Appeals approves sound wall for Microsoft data center",
+     "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPd3hjbGJjamxrUXpScmJjQjZrcXNxU0c5UkRSR0NydHAzbGJrbmxTd19pNXJhQUdFSTZ0dTVHNlpGcFBZcjBCdDlLRVR3Q05WYnIxRDFpa09jSGdLVE04RXZjamRzalFnbFVBSHFNUkFvTlprcUxUbmJTRUhpYVVMUm9QdDdZbGo2UFZseDUtN3pPOGsxeHlORFJMV2VCOXNfcmY1RHFSUUlhbjk4NXdtdkV5Q0Rlc0Fhd0ZTUlBPYzMteUpfWEVXUTFwVnJFX3IxaTgxblp2eHBjS1JIbHViVElVc1NEUWZwWGZKS2w0TjgtaVd1TXN1SURmZnJFNjc5MWtqaUJ1QWJGUDVn?oc=5",
+     "source": "WSBT",
+     "published": "2026-11-12T23:47:32+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "5bfc6774f1f3d527"
+    }
+   ],
+   "first_seen": "2026-11-12T23:47:32+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-12T23:47:32+00:00",
+     "status": "Announced",
+     "headline_id": "5bfc6774f1f3d527"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-12T23:47:32+00:00",
+     "type": "Approval",
+     "headline_id": "5bfc6774f1f3d527"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-11-12T23:47:32+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "microsoft-tx-unnamed",
    "name": "Microsoft, Texas (site not yet named)",
    "company": "Microsoft",
@@ -36802,6 +36867,15 @@
      "published": "2026-10-21T18:15:35+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "499a1f6754bac454"
+    },
+    {
+     "id": "bfdb1146b07c0b37",
+     "title": "Data center proposed within Cleveland's Union Trust Building, Ohio",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcTV5Wm5NWm9JS3I2T1FFZ2k3bDgzbkZ2WDBRVmEyYzBrdFBXTUppS2lrcmJxUVRJbFc0MzhhdHVUQ3lkOVJvS2N0UnRTaDJzek1NQkR3YUozdjFxei1zSlgzWjFxN3dEeFB3eVB2WC12OUxuS0V3eTYyVUVaSnJEbHZRa1NQLW92SVBHaEJMbWxyZFhWODc5YUV5T2k5emFUN1N4TG9sQTlyVFRF?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-11T12:17:30+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "bfdb1146b07c0b37"
     }
    ],
    "first_seen": "2026-04-08T07:00:00+00:00",
@@ -36833,8 +36907,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 1.6,
-   "last_news": "2026-10-21T18:15:35+00:00",
-   "sources_count": 12,
+   "last_news": "2026-11-11T12:17:30+00:00",
+   "sources_count": 13,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -42836,6 +42910,15 @@
      "cluster_id": "c5b8a526b7696130"
     },
     {
+     "id": "e9b9c03ce0bc9ee3",
+     "title": "Some Georgetown residents concerned about proposed 28-acre data center by Northeast Inner Loop",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUzVlcEEtb1ZEY3d3RU1LczJlZ2FUY19DQ09iT3NQU2U2M0VDT1F1X192WTZGdnBYRUxYNXYxeHEwRmRiTUx6d09QSW5hRFJEdlJkbjA2bnYtdV80Zmd1UjluOVpiUDBLbXZoZUJnRnhjYXY2cVR2WFpxWHNmTzVlZS1pOTc3Zks5RDlRTThJcTNhdEdpb1llb3djLWFqYktnYnBLYlc5VWhKYmh5X1MtMFFyaU4yUC05RGxwSWNySGp1ZnNoNHJwNTJjYzNWS0lRX1EtYUw0TWpZZktV?oc=5",
+     "source": "KVUE",
+     "published": "2026-11-12T15:24:54+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "c5b8a526b7696130"
+    },
+    {
      "id": "7fafcfc5ee56e3e3",
      "title": "$1B data center planned for Georgetown, Texas",
      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTE9FRzBsemNQM252bVNJVG1QZXRWcUFIY3Jzemo2bFpxcXphY0lLSE02R1hjZExseDJSMV9xTzA3c2xVV2lEVTNkdVFtNFJjbmE2aHNYLWpxLWp3X1lLNGJhQ2JmOElvMi1jWDRHaUFWczl5ZDJkNXQ5MHBuRWlqZ2o4MDV5Z2dEMTQwRHg0cEdqMWlQRmZrVkYzUWI2QXlh?oc=5",
@@ -43811,6 +43894,15 @@
      "published": "2026-10-09T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "6cd663e591bc3eee"
+    },
+    {
+     "id": "ed7967c86f7af269",
+     "title": "ServerDome plans $13B data center complex in Hudspeth County",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMTUwR0xhRDJWM1pGVWdxN2V5RTZPXzk0TnRGSDdobm1tV2hMbE1aMnB5dUdNeF9EMWdnUUJMVWpna0x6akZBV0o3NmkzX1pzSTFRWTUyMUhvNEczSkR4OUR4Y3AwYWRuak5PNG00b2ZLOU52OFJpdTNzcXRaRXJkV2RSVHdlUmNNQVUyeUI3ZFRrZTdBczJBaW4zbnNWN0x3RWRoVUZzc0ZJRVhkVWxQMkhvM3BYbzA?oc=5",
+     "source": "El Paso Times",
+     "published": "2026-11-13T14:57:23+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ed7967c86f7af269"
     }
    ],
    "first_seen": "2026-10-09T07:00:00+00:00",
@@ -43826,8 +43918,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 15.0,
-   "last_news": "2026-10-09T07:00:00+00:00",
-   "sources_count": 2,
+   "last_news": "2026-11-13T14:57:23+00:00",
+   "sources_count": 3,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -49354,6 +49446,33 @@
      "published": "2026-11-13T00:16:48+00:00",
      "stage_signal": "Expansion",
      "cluster_id": "1702b665f86cac48"
+    },
+    {
+     "id": "720b434a73a5afff",
+     "title": "Minneapolis City Council approves new data center limits and regulations",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPamtmVnJFSWhtR2Vsa0RHU1BFZzdlWDNVd3JPMU1VRjRDSUdPY1o5cU94LTdDeFQ0cmQzQ213SHJ1ZnZ1QmtSRmV3dERBSllTY2tYM3VqMmEzN0tsc0ZnUVlRclJEeTBiXzNWMVlySlM5SmJVcjFXcGtxaDBGM1dfY1l6WGJoTzhMVFNHemcyMUh0ZkJSeGV3TjBPQW51cUZia2FseW9PdWVIRC1DQnRLY1kzWVJudGk0RXlOMnp3OA?oc=5",
+     "source": "MPR News",
+     "published": "2026-11-13T17:41:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1702b665f86cac48"
+    },
+    {
+     "id": "d283492193164d2d",
+     "title": "News | SpaceX boosts data center investment in Arizona, Texas; Kraft Group plans campus near Boston; Minneapolis limits development",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRmoyeUFCTDhiZ0VYclRWWGU0ZEs5QlV3WEd0OEJGeW8tdUlSQzVDNHphSkFyY1M3aVY1TGdCakdEVTlKcWItbnI3bThYWUxTdUI0anBzeHZwa05UTjE3eXZJNzlMUUFVM1ZRVWx5MWZkajN4NHk0dEczSUsxQzJxVm5XV1gteWVUaTRxRXBrTzJnYnFTVG9uaUFmR0JGQXAwRGxZNzdRdjNmRzY3UGNuRXdNWGFHUUtjcjNHX3UyZno5MFhJZExMcHljQ0p5Q05pRnJRdXdhTmFJdw?oc=5",
+     "source": "CoStar",
+     "published": "2026-11-14T00:08:08+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d283492193164d2d"
+    },
+    {
+     "id": "5741f5b1c48f39a8",
+     "title": "Minneapolis environmentalist, planner unhappy with approved data center regulations",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVkNxVlpydkEwT0lucWxWWXo0b3VOQ3ZONGRzbzhRaFZybWwxTnVEVmlCZWJTcEwzYklwWEZndkJXWnBxWTlxS3hERVJzNklsUHB0Tk11QVJJTE5NZVBXT2l6RUxXbzJ2ZG9fQUY1MzBxc3VtbnUyUDZNNEZsdjVVWl9NWG1wakxfSTF3Y3pVR2l0a1I3VlhGcENLMGIzd2ExRmJKQlBvUG8zYjlRb2JKQTFrMFpkLTVVTW04VzVjR1o?oc=5",
+     "source": "CBS News",
+     "published": "2026-11-14T00:18:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "5741f5b1c48f39a8"
     }
    ],
    "first_seen": "2025-08-06T07:00:00+00:00",
@@ -49386,12 +49505,17 @@
      "date": "2026-11-13T00:16:48+00:00",
      "type": "Approval",
      "headline_id": "18eedd0adfd0481b"
+    },
+    {
+     "date": "2026-11-14T00:18:00+00:00",
+     "type": "Approval",
+     "headline_id": "5741f5b1c48f39a8"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.4,
-   "last_news": "2026-11-13T00:16:48+00:00",
-   "sources_count": 10,
+   "last_news": "2026-11-14T00:18:00+00:00",
+   "sources_count": 12,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -53637,6 +53761,15 @@
      "published": "2026-10-21T21:35:41+00:00",
      "stage_signal": "Announced",
      "cluster_id": "b331f10b7153c16a"
+    },
+    {
+     "id": "aaf770724ffca530",
+     "title": "Mahan and 4 Council Allies Propose ‘Emergency Action’ to Halt New Data Centers in San Jose Until Rules Are in Place",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSUNISDdnVm9RT1lwcmV2QkoxcHZJTWhNeTFmVXFuOE94OE1LcnVLMS00bVVlY21McnpQeTFGWU55VF8ybHgwWUxXNzB0YjBHQ0ZJUzRCOFBRNEpPU3ZWTllVeHdUaVZ2WmxVWlZUeThoSE5VcmtrZFNIcnlMSGk5dFNJM1VwUU9IRmFweUJsVm5yeWNzdjZMZUZPcVA5dnpzNWdGS0xySERsaVpiU1NsX3M0SXp3TGVxLTNiQ3hqWVlVUVZkVzBOZklSR3EyMWh6YzV4LUZkOGZfaWpvaHgtVXNCXzJjTWNz?oc=5",
+     "source": "San Jose Inside",
+     "published": "2026-11-13T20:02:57+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "aaf770724ffca530"
     }
    ],
    "first_seen": "2024-11-14T08:00:00+00:00",
@@ -53680,8 +53813,8 @@
    ],
    "capacity_mw": 200,
    "investment_usd_b": null,
-   "last_news": "2026-10-21T21:35:41+00:00",
-   "sources_count": 9,
+   "last_news": "2026-11-13T20:02:57+00:00",
+   "sources_count": 10,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -55098,10 +55231,21 @@
      "published": "2026-11-13T02:03:57+00:00",
      "stage_signal": "Under construction",
      "cluster_id": "3321acbab58b3b19"
+    },
+    {
+     "id": "071c35281fa7dc27",
+     "title": "Amazon breaks ground on $7B Wheatfield data center campus",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV2NkVFRnZUZ3TXlEVmZ2aEVoS3lkZmFNRTdsLVJaVExiWWVWY2ZOMU5QdFNTc19zVUxrejR5aWxRMFRYaVV5cFpiVDNfeG5qeVJTRUlNRGJPZHcxR2NzUWp1RDItQUlHSnFyMUR1ajdZT3hnMFNVR2pKcFZXaHNjYWdlUmhKb0VmanVOZ3dlb0lVbGwxTlg4NjBORzVZTXJCYnMzU0lR?oc=5",
+     "source": "Inside INdiana Business",
+     "published": "2026-11-13T17:32:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "3321acbab58b3b19"
     }
    ],
    "first_seen": "2024-10-04T07:00:00+00:00",
-   "name_hints": [],
+   "name_hints": [
+    "Wheatfield Data Center"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -55153,7 +55297,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 15.0,
-   "last_news": "2026-11-13T02:03:57+00:00",
+   "last_news": "2026-11-13T17:32:00+00:00",
    "sources_count": 14,
    "confidence": "high",
    "hidden": false
