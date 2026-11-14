@@ -2,6 +2,3 @@ __pycache__/
 *.pyc
 .DS_Store
 node_modules/
-
-# Written only when the health check is run by hand (no scheduled health check since 2026-11-14).
-data/health.json

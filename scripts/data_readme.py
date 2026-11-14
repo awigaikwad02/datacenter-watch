@@ -179,9 +179,8 @@ FILES = {
     },
     "health.json": {
         "path": "data/health.json",
-        "writer": "scripts/healthcheck.py and scripts/healthcheck_browser.mjs, when run by hand",
-        "about": "Written only when the health check is run by hand (python scripts/healthcheck.py); not committed. "
-                 "There is no scheduled health check since 2026-11-14.",
+        "writer": "scripts/healthcheck.py and scripts/healthcheck_browser.mjs, every 6 hours",
+        "about": "The latest full health check. 'Health check failed' issue opens when overall is fail.",
         "fields": {
             "checked_at": "When the Python checks ran.",
             "browser_checked_at": "When the browser checks ran.",

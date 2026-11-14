@@ -1,8 +1,5 @@
 # The Rack Report: health check
 
-> **2026-11-14:** the scheduled health check workflow was removed (docs/DECISIONS.md, decision 16).
-> The checks below can still be run by hand.
-
 > **Current state (2026-10-29).** The audit below is the original one from 2026-10-25 and is kept
 > as a record. Since then:
 > - The health check runs every **6 hours** (not daily) and also checks: the no-AI ground rule

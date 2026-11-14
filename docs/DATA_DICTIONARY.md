@@ -170,9 +170,9 @@ A short report of the last update run, shown on the Methodology page and checked
 ## health.json
 
 - **Path:** `data/health.json`
-- **Written by:** scripts/healthcheck.py and scripts/healthcheck_browser.mjs, when run by hand
+- **Written by:** scripts/healthcheck.py and scripts/healthcheck_browser.mjs, every 6 hours
 
-Written only when the health check is run by hand (python scripts/healthcheck.py); not committed. There is no scheduled health check since 2026-11-14.
+The latest full health check. 'Health check failed' issue opens when overall is fail.
 
 | Field | Meaning |
 |---|---|

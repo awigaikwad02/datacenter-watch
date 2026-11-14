@@ -152,14 +152,3 @@ operator, or both anonymous): 40.9% before, 6.3% after. The share of pins sharin
 (41% after) is a warning, not a failure, until finer locations exist (needs a decision: see the
 2026-11-01 report).
 
-## 16. No scheduled health check (2026-11-14)
-
-The 6-hourly health check workflow was removed at the owner's request: from 2026-11-07 it failed on
-every run, because GitHub moved its runners to Ubuntu 26.04, which the pinned Playwright browser does
-not support, and each failure updated the "Health check failed" issue. What remains: the hourly
-loop runs the data checks and the tests before every commit (so bad data is still never published),
-the watchdog opens "Site data stopped updating" when the data is more than 6 hours old and closes
-it when the data is fresh, and the full check (`scripts/healthcheck.py`,
-`scripts/healthcheck_browser.mjs`) can be run by hand. To bring it back, restore
-`.github/workflows/healthcheck.yml` from git history with `runs-on: ubuntu-24.04`.
-

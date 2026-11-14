@@ -2,9 +2,8 @@ name: Freshness watchdog
 
 # Every 2 hours: how old is data/news.json "updated"?
 #   older than 3 hours: start the update loop (it skips itself if one is already running)
-#   older than 6 hours: also open or update the "Site data stopped updating" issue, which emails the owner
-#   fresh again (under 3 hours): close that issue
-# This is the only scheduled alert; the full health check runs by hand (docs/RUNBOOK.md).
+#   older than 6 hours: also open or update the "Health check failed" issue, which emails the owner
+# The health check workflow closes that issue again on its next passing run.
 on:
   schedule:
     - cron: "41 */2 * * *"
@@ -33,13 +32,10 @@ jobs:
             echo "Older than 3 hours: starting the update loop"
             gh workflow run update.yml --ref main
           fi
-          TITLE="Site data stopped updating"
-          num=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number,title \
-                --jq ".[] | select(.title == \"$TITLE\") | .number" | head -n 1)
-          if [ "$hours" -lt 3 ] && [ -n "$num" ]; then
-            gh issue close "$num" --comment "Data is fresh again (updated $hours hours ago). Closing."
-          fi
           if [ "$hours" -ge 6 ]; then
+            TITLE="Health check failed"
+            num=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number,title \
+                  --jq ".[] | select(.title == \"$TITLE\") | .number" | head -n 1)
             body="The site's data has not been refreshed for $hours hours (data/news.json \"updated\"). The watchdog started the update workflow; if this stays open, see docs/RUNBOOK.md, \"The data stopped updating\". Checked $(date -u +'%Y-%m-%d %H:%M UTC')."
             if [ -n "$num" ]; then gh issue comment "$num" --body "$body"; else gh issue create --title "$TITLE" --body "$body"; fi
           fi

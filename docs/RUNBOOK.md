@@ -30,14 +30,11 @@ says the data has not been refreshed for N hours (opened by the watchdog after 6
 3. If a **Backfill news** run is in progress, the loop waits for it (they share a lock). Either let
    it finish or cancel it (Actions → the run → Cancel); the backfill resumes later where it stopped.
 
-The issue ("Site data stopped updating") closes itself when the watchdog sees fresh data.
+The issue closes itself when the next full health check passes.
 
 ## A health check failed
 
-The full health check is not scheduled any more (it kept failing on GitHub's newest runner,
-before checking anything); run it by hand when you want it. The hourly loop still runs its data
-part (`--context update`) before every commit. **You notice:** the loop log says
-`the data health check failed`, or your own run shows FAIL rows.
+**You notice:** an issue "Health check failed" with a table of checks.
 
 Find the FAIL rows. Common ones:
 
@@ -53,8 +50,8 @@ Find the FAIL rows. Common ones:
 | Browser: ... | A page errors, a link breaks, or accessibility regressed | The detail column names the page; reproduce with `node scripts/healthcheck_browser.mjs` |
 | Check crashed: ... | A check itself threw an error | The detail is the Python error; usually a data file with an unexpected shape |
 
-Run it yourself: `python scripts/healthcheck.py --no-write`, and for the pages
-`node scripts/healthcheck_browser.mjs`.
+Run it yourself: Actions → **Health check** → Run workflow, or locally
+`python scripts/healthcheck.py --no-write`.
 
 ## A test failed
 
