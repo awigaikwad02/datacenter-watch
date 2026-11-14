@@ -39,8 +39,77 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2136,
+ "count": 2145,
  "items": [
+  {
+   "id": "5bbf2cb434805831",
+   "title": "SpaceX data center could disrupt famous Arizona birding area",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMnRUUzNqTGx2clVhOFlpV0VFZVBoSUxWOGdQRHJwOW9pNk1CWlE4bmhMUFZRdGl2c096UDJvUTVSVEJvMnZ6SThTS0ZQWDRSS1pnWEw0YS0xQkhLOHJueE1CMmZxb3BwLUFrS2pRZ0pUck9Gcml0cG9XbEw5eGdmWXZrUTFoZGRfdkgzczh0MTZKQmRLNmc?oc=5",
+   "source": "Arizona Daily Star",
+   "published": "2026-11-14T13:30:00+00:00",
+   "feed": "Google News: West",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "SpaceX Data Center",
+   "cluster_id": "5bbf2cb434805831",
+   "cluster_title": "SpaceX data center could disrupt famous Arizona birding area"
+  },
+  {
+   "id": "69526cb855d16dd9",
+   "title": "Massive data center approved on Mormon church's historic Texas ranch",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZzRKOXpUTS1jSC0tQU1UNG1vVlRheHV4dTMzQW40ZE9sQTIwdWpCdkMzc2ZPZ2ljV1RfQ1g0aDkzZFdpMHJ3XzRJcG8yNE5VLTM5M2FidGZrelQtRm5TOUZrOFBqYVRzS051X1Nua0Q0bUpOTmpYck05MWpiUVM3Z2FB?oc=5",
+   "source": "Chron",
+   "published": "2026-11-14T13:10:03+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "69526cb855d16dd9",
+   "cluster_title": "Massive data center approved on Mormon church's historic Texas ranch"
+  },
   {
    "id": "5113900132caaa33",
    "title": "The anti-data center activist helping China keep Maryland poor",
@@ -353,6 +422,41 @@
    "suppliers": [],
    "cluster_id": "68e884fbc409fda5",
    "cluster_title": "Jack Karns: Recent election spells slowdown for data center growth"
+  },
+  {
+   "id": "e5683535275d2aa4",
+   "title": "Data center industry reacts to Ohioans’ rejections at the ballot box",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdHE0REp5bzlRQldZRnVQUDA5ajhLZWV0TmhtS2Y4bThvLU51M2s0bFEwWDdncG1WYjVQWVJqZjFiWC1DelVXRnJkLVRFXzhvdG5Xa09QRkJYQUhWNXNsMHNoM25zYW96Smd5dG5UVDBVU3NjQThEaWVwRjhTRXk1Vkh2eW51MmE1RjdCaXAxb3pKWkh6ZVNqUDRsSWlFNUhGV0E5WkdVeDhCakdEVFVOc1UwMjBZRVV5OVR5MmdjMjBjY0poUm5zU2ZWSk9KTVZUNS1wOWJQY9IB1wFBVV95cUxQdHE0REp5bzlRQldZRnVQUDA5ajhLZWV0TmhtS2Y4bThvLU51M2s0bFEwWDdncG1WYjVQWVJqZjFiWC1DelVXRnJkLVRFXzhvdG5Xa09QRkJYQUhWNXNsMHNoM25zYW96Smd5dG5UVDBVU3NjQThEaWVwRjhTRXk1Vkh2eW51MmE1RjdCaXAxb3pKWkh6ZVNqUDRsSWlFNUhGV0E5WkdVeDhCakdEVFVOc1UwMjBZRVV5OVR5MmdjMjBjY0poUm5zU2ZWSk9KTVZUNS1wOWJQYw?oc=5",
+   "source": "NBC4 WCMH-TV",
+   "published": "2026-11-14T06:30:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e5683535275d2aa4",
+   "cluster_title": "Data center industry reacts to Ohioans’ rejections at the ballot box"
   },
   {
    "id": "9208228d3e731fb0",
@@ -3276,6 +3380,41 @@
    "suppliers": [],
    "cluster_id": "02b66d530b9c4ac6",
    "cluster_title": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear"
+  },
+  {
+   "id": "3f3ea6f16a420a59",
+   "title": "Approved data center site in Bethlehem | PHOTOS",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQ19mM0dTSlM3dTlRWWVVUGpLR2p1bUZrdGhwNHNuOVlkLUNkdTk2V0g1a3ZfSmVocmJlN1Jpakk2NjllRmwxdURxQkZzTlRQTzVaWmNXd2ZycExaS1J3M1dYaGxHVnN3SE1fczEybXdRbDFrUDhFV19Yd2xjMmdINkJ5UHRfQQ?oc=5",
+   "source": "The Morning Call",
+   "published": "2026-11-13T16:52:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Bethlehem, Pennsylvania, US",
+     "lat": 40.6259,
+     "lon": -75.3705,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3f3ea6f16a420a59",
+   "cluster_title": "Approved data center site in Bethlehem | PHOTOS"
   },
   {
    "id": "0da78e79a75d0a7e",
@@ -15946,6 +16085,45 @@
    "cluster_title": "Rochester considering temporary ban on data center development"
   },
   {
+   "id": "c9e5f831a6266015",
+   "title": "AI infrastructure company buys property in Fairfield after announcing data center plans",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeWp5WGpBT0NPY3Y2Q1lmbC1wRGxUT0dUaTloUDhMV1VyQXJjSkFHeTBBYVhuM05sMEJLcERtblUySEV2ZXdFZkhzSDRwV0Y2bnJoQ1BVYlV3RHBuWlNZelJlSWZ0THNwX2dKaGxhOEw4aE1zOFI2UDBiMUlObGtiZDdNbGVteGg2UzFlV1ltZThwcTB6cGxRdERVTzhQamM4XzFVME1xempUcWxxMzBndnpTbXJQRGlP0gHMAUFVX3lxTFBkU3ZlLUI3RllOR0QzU3ZkM1B1SUZGUFppZDVxSWthV3BjOXQtdkI0V2IyQTc4MWZoN1BrWUVUM3ZNdE5mZ25xWTJldHNyV0Q2RktOUmF2akRXVXF2NVRKQnJHMVlvaW9VQXFsR3BHTVZMbkxtWHJxUFNKajA1dWR6bmlFOGdoOE9tYVdxR3QxTFY0V3dGcjFFRUVKdTlJSWZaNVJkZjJhODFlczVWcHNyOUI4MERzODBsYWJBYVdqMWxLdUdhbGpSekF2WA?oc=5",
+   "source": "WBRC 6 News",
+   "published": "2026-11-11T17:19:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Land Acquisition",
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Fairfield, Alabama, US",
+     "lat": 33.4859,
+     "lon": -86.9119,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Birmingham"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c9e5f831a6266015",
+   "cluster_title": "AI infrastructure company buys property in Fairfield after announcing data center plans"
+  },
+  {
    "id": "6d142f07d31ba3be",
    "title": "Cherokee County residents protest proposed data center",
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZHJwSS1CbDFISFhVeVJOOTRYc3hRTGVCR09Td3NIQlZsUy1KOFBGT0FSVFdWWmNDV2FLR01kbHNuUTl0LUdTLUhDTzQ1c2pLT1B3aFRSQVpVNGlXbnh3WHpQZTYybkR2X3pFckNOdnhWSmNrQlM4T2RndFM1TTJiZWZUbEFqdXJoeHppdUZ4WWxZMkQyZllQZm1TVTVFaS1zM1ZnNHcyczh4cTFkQUFZWFEyMkZtLVBIWDZpaWtybEVmX0IxYk9rUE8xckxndjg4dmZHbHpYcw?oc=5",
@@ -18696,6 +18874,41 @@
    "cluster_title": "Township near Jackson passes regulations that limit data center noise, water use"
   },
   {
+   "id": "9e86a427fdb31ea7",
+   "title": "2 Dubuque County supervisors favor data center moratorium following commission recommendation",
+   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxORFI3RjJpS090NHhYWTZDdUF2VnZUNEJVeVRMaG81RnJNS2ZjMzhVcEp0T0JSWThfZkgxbVZxcXhYbU5ic0lxY3pDeUdxTGtfYnNTNkZPOGM3b2x0N2lNZXVSRHJxRFc2TFVrRmRkSThZV09naEh0NmREZ01EMFB2Y2VLVGdDWk5Kc0xfRmU4bVJwNWpPTlNnWFotamRUMjV1clNOclFSbXNGdGZfRVBIRE9OTUc3OV9mS28zWGlUSkVldnFRYm5jM0RMSDJFMkpWc0c1REZjZ1Y5Q2ZrY1NUaTZtR1NaTTNkV21wUDlNVnRpUjU4UFlpTl9GTVphbGhRRkNTdVhn?oc=5",
+   "source": "manchesterpress.com",
+   "published": "2026-11-11T02:08:26+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Dubuque County, Iowa, US",
+     "lat": 42.468,
+     "lon": -90.882,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": "Dubuque County, Iowa, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9e86a427fdb31ea7",
+   "cluster_title": "2 Dubuque County supervisors favor data center moratorium following commission recommendation"
+  },
+  {
    "id": "6f3e1b07486e86ce",
    "title": "Texas Lawmakers File to Repeal the Data Center Sales Tax Exemption",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2JKbWo4cVRUbFZNalpfT3JEUXhGRDdnQzN0TFdFTk1BdkhZYk1OS3ZIM2xzbWxhSjV1WDhKUkpZV1NTRUt0cVc3RUViNDRmNE9BemxRRURDQVhwd3poOUxGenVpenFjaVZRbjVTTFRKQzZrcUxTVWJ2Q2RxMzE2dTd0ZWo3dkNkUktqR29kNWJYOGRBWFVVZFZ5cENRQVlOMVBXTGVUaFI2WjRYWExrQmlhNElHaVBaZDNz?oc=5",
@@ -19837,6 +20050,44 @@
    "cluster_title": "Data center restrictions pass in Saginaw Township and Romulus"
   },
   {
+   "id": "5231b10aa3340e6e",
+   "title": "Beaufort County Council expands potential data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbExpN2czdFRZSVc3eVUyMjQ2aEl6U2dqQWtrZ3RINDlXeFFWdDVlM2x3MnBZR3RTUk9sQTRPTTNfYUt5eno5VjE0b05GV29QdGxPUno4Q1pFS1h0RnVEcm1tdXRhcFA0T0VNMjVCdHhxOERvR1dTRXVnaEowMnBqdEppU1M2YWFuNjQwS0VxMThSNkZPeHZ6VlF1OUhwQ0hFQk9MWnB30gGrAUFVX3lxTE0xSk83Q3R6amU1WEpJRml1NkNIaC00WWNqQXNDTzhkSFlhZzE4Z1pyTUlEQnNGVmRsWUNGS0lPcFdrWlQ3UFhKNUtPRkJ6c25tZzVyRHhiQmVScGVwc1pYR0tSWml1Nlo2LUVmcjgtX09PTXRpRHMya0JSZDFmRTVFWHZYaDVZcFVOZnVHYmg1M1ExRDlzNWZCM0ZKRE1oRzRkTzl4MUxZMVBrZw?oc=5",
+   "source": "WSAV-TV",
+   "published": "2026-11-10T21:28:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement",
+    "Expansion",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5231b10aa3340e6e",
+   "cluster_title": "Beaufort County Council expands potential data center moratorium"
+  },
+  {
    "id": "683cff70e8c210b5",
    "title": "Data Center lawsuit scheduled for January; new council may issue own moratorium",
    "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPdVYxYkt3WmkyM0w4NEYxbFV2VzV6X1lLc2d3eTVfSUdybHN0N08xOEdCc01MT2dHVGtuWEhaSkVLTElWZXIzTi01cFFvaWdLRW1RZV9Eb2V2UERCSFYzbFVYeGxSaXp6Qk05NHNYemhab284MDhDZHVPV2RVYzlxQnFfQjJjaXdDa29BYXU1WHFKVVpGN05UbmZoczN1ZFc5SDBmdHZGVDVLWXNSR3hEcWJlSV9HUlBRdnFwRUNodV9UNGloMDgyanRXTUpPS0VWRDg1a2k3bkhOQy1VcUZ4NVZpR1h4dWlrUjN3WlM1TVplZUtrdzgzbXQyTDh4TkJrRHFPdmhpVWxyUHo3djRmWGlDZkp3YkFiSWkydmdNQkR4U0dWcVlB?oc=5",
@@ -20965,6 +21216,40 @@
    "suppliers": [],
    "cluster_id": "e05a07a81d5cd8e7",
    "cluster_title": "Venture Global raises its earnings forecast and boosts its AI data center strategy"
+  },
+  {
+   "id": "3639bce93979429c",
+   "title": "Minneapolis looks to crack down on data centers",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTWVQNkNfVG1pTU5nRmZqSEVNa25PcDAtOVVCdE02TnFEeF9xNXBSU08xaEZIeDlQZHMzaGIyTzRaRE1FTFU5aTZ0RERjOFpVdndXYXVYV1RTc3NWaVZNemFKLTFXSXRQc0Zwb3g1LUtvSUhRWkpkb0FMN1VwdEM5MFY0R3lWTENVY2wyR0FYWQ?oc=5",
+   "source": "Star Tribune",
+   "published": "2026-11-10T15:06:22+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Minneapolis, Minnesota, US",
+     "lat": 44.98,
+     "lon": -93.27,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Minneapolis"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3639bce93979429c",
+   "cluster_title": "Minneapolis looks to crack down on data centers"
   },
   {
    "id": "fec175d3291af1d0",
@@ -24693,6 +24978,41 @@
    "suppliers": [],
    "cluster_id": "2608e467b2343f37",
    "cluster_title": "Greene Township proposes zoning rules for potential data centers"
+  },
+  {
+   "id": "7ab750c9691444b2",
+   "title": "Texas economist talks ties between data center development, stock market",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdDdVdVdKUkVIaEkwRzI2RDJXOVIyc0hVTnExRDVqbUxPeElDWDE4RkxCRkxJMDNGc1ByZUpNcXdXMnphNmE1NGl6TmNYNUZyTW1KZzkyOXB6cTAwUFlYVnB2TVdLaDVoMm5JRjZCYUhMeEhPbG1vekM3WDRoeE1uWVFyaWZYSTNIQXdfQnpiTkZSQlBzMUV5R0I2NXJJVnV1WVHSAaoBQVVfeXFMTUlHTGhBSDB3SEoxWDZEQ2xpekRxU3NtZ0x6QmtmazBENVhma0Uwc1A4ai1mNWM1d1h3UjdvT21XemFTa1dIY3drTElTaE9lQURMWF9SOUZkU18takdhUUwyS1NYYVdIck9ST0UzUTA5cGFicHQ0NDNLRGZ5d3o0QVk5MU84RVByWFkzUzExYjdfSkptLW80czVEWWtfWWV4dlFiazhIQUJEWVE?oc=5",
+   "source": "NBC 5 Dallas-Fort Worth",
+   "published": "2026-11-08T01:07:26+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7ab750c9691444b2",
+   "cluster_title": "Texas economist talks ties between data center development, stock market"
   },
   {
    "id": "3101b9f2d3ff14bb",
