@@ -11,27 +11,27 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "checked_at": "2026-11-14T05:55:43+00:00",
+ "checked_at": "2026-11-14T13:39:16+00:00",
  "overall": "pass",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 3h",
    "status": "pass",
-   "value": "1m ago",
-   "detail": "2026-11-14T05:54:36Z"
+   "value": "42m ago",
+   "detail": "2026-11-14T12:57:11Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "7/7 succeeded, 0 superseded, avg 2600s",
+   "value": "8/8 succeeded, 0 superseded, avg 25s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-11-14T05:53:54+00:00, 147 new"
+   "detail": "run at 2026-11-14T12:56:09+00:00, 12 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -54,19 +54,19 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "2124 KB",
+   "value": "2136 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 3h",
    "status": "pass",
-   "value": "1m ago",
-   "detail": "2026-11-14T05:53:54+00:00"
+   "value": "43m ago",
+   "detail": "2026-11-14T12:56:09+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "3649 items, 0 problems",
+   "value": "3672 items, 0 problems",
    "detail": ""
   },
   {
@@ -85,12 +85,12 @@
    "name": "No category above 30%",
    "status": "pass",
    "value": "top: New Announcement 16.7%",
-   "detail": "New Announcement 608, Policy / Permits 532, Community 433, Power / Utility 323, General 277, Politics 269, AI Infrastructure 231, Deals / Investment 212, Construction 138, Markets / Earnings 126, Analysis / Opinion 121, Environment 116, Cancelled / Blocked 108, Expansion 58, Economy / Jobs 56, Land Acquisition 26, Operations 15"
+   "detail": "New Announcement 614, Policy / Permits 536, Community 436, Power / Utility 324, General 276, Politics 271, AI Infrastructure 232, Deals / Investment 212, Construction 135, Markets / Earnings 127, Analysis / Opinion 121, Environment 117, Cancelled / Blocked 109, Expansion 61, Economy / Jobs 59, Land Acquisition 27, Operations 15"
   },
   {
    "name": "General under 10% of headlines",
    "status": "pass",
-   "value": "7.6%",
+   "value": "7.5%",
    "detail": ""
   },
   {
@@ -102,19 +102,19 @@
   {
    "name": "At least 55% of headlines located",
    "status": "pass",
-   "value": "2044/3649 (56.0%)",
+   "value": "2055/3672 (56.0%)",
    "detail": "with a company: 412"
   },
   {
    "name": "No non-U.S. locations in headlines",
    "status": "pass",
-   "value": "0 of 3640 items",
+   "value": "0 of 3663 items",
    "detail": ""
   },
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "23437 ids, 0 in two months",
+   "value": "23483 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -126,7 +126,7 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "28 month(s), 23437 headlines, earliest 2019-11-18",
+   "value": "28 month(s), 23483 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
@@ -162,7 +162,7 @@
   {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "2707 attached headlines, 0 missing",
+   "value": "2710 attached headlines, 0 missing",
    "detail": ""
   },
   {
@@ -216,7 +216,7 @@
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "728 pages, 4083 KB",
+   "value": "728 pages, 4085 KB",
    "detail": ""
   },
   {
@@ -306,7 +306,7 @@
   {
    "name": "Tests pass (pytest)",
    "status": "pass",
-   "value": "251 passed in 1.93s",
+   "value": "251 passed in 2.38s",
    "detail": ""
   },
   {
@@ -378,8 +378,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 3m ago",
-   "detail": "expected Updated 3m ago or Updated 2m ago, title \"Data last updated Nov 14, 2026\""
+   "value": "Updated 44m ago",
+   "detail": "expected Updated 44m ago or Updated 43m ago, title \"Data last updated Nov 14, 2026\""
   },
   {
    "name": "Browser: /radar @1280px loads cleanly",
@@ -490,5 +490,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-11-14T05:57:17+00:00"
+ "browser_checked_at": "2026-11-14T13:40:50+00:00"
 }
