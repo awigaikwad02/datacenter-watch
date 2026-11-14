@@ -39,8 +39,44 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2175,
+ "count": 2179,
  "items": [
+  {
+   "id": "a12648a1badd7340",
+   "title": "How data centers lost in the midterm elections",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdHpRS3RpbzBCSmpTTVAzclRURjBsOXA0MEdFcGhOQzlFODlFR1pSSG5KbHpwUlZrUkpESVRiVVZtd0Rtd18wMExJMjRLU3RyRVA5SzVzT2Y5S1RRT24ycVJHMTd0YW1qaEZ1UUZLTmphWVdYUXZoQ0ZPa21kb0ItWmd3?oc=5",
+   "source": "FOX 2 Detroit",
+   "published": "2026-11-14T20:38:24+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "945e3d39127c3aa1",
+   "cluster_title": "How data centers lost in the midterm elections"
+  },
   {
    "id": "2ed6a6e065746028",
    "title": "Data center trade association launches to make Alabama ‘nationally competitive hub for digital infrastructure investment’",
@@ -1054,6 +1090,42 @@
    "suppliers": [],
    "cluster_id": "f6afc0134c80acb7",
    "cluster_title": "Controversial Westlake data center proposal could move forward after settlement with Keller, homeowners"
+  },
+  {
+   "id": "613176f9cbff0fab",
+   "title": "Judge hears arguments in challenge to PAX-1 data center in Cumberland County",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSmh3NDRvbjMzeGx2N3VmTnlZREJaQ3dmWERkakM4dlExWUpNcElDbXg0S2Fmb3hNMi1sb0NFdG44aDBSNlJsb0lNRm9pQWdWdjBfSnpvM1RtdGZRdXVtSmk0cTRGbkhkM0lzM3R2WnlWTERqd2RUNGFmRXd2QTc1VG5IcjlVMDJrTFdRLW1OTEVNT1RlRl9DZ2ZrczRTYWNT?oc=5",
+   "source": "WGAL",
+   "published": "2026-11-14T02:58:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Cumberland County, Pennsylvania, US",
+     "lat": 40.164,
+     "lon": -77.266,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": "Cumberland County, Pennsylvania, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "PAX-1 Data Center",
+   "cluster_id": "30474fff919fa30d",
+   "cluster_title": "Judge hears arguments in challenge to PAX-1 data center in Cumberland County"
   },
   {
    "id": "72242390a328db23",
@@ -9000,6 +9072,42 @@
    "cluster_title": "Loss of data center causes Oregon to tighten its budget for next year"
   },
   {
+   "id": "a6a34ce16d2b0c62",
+   "title": "Data center developer files federal lawsuit challenging ban in Trenton",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbHZvNWN2ZGVrX25tczNQdnJyWjY5NjNjZVNPRFBYdXU1bGE3ckhRWG5SVzBtLUJ1TllaOS16dHJ6cjRMYXA5MTZCM2NBUGttdVotVEpOZkhmLWNNUm1VZDhBcV9YbzJnMmg4emRJVFBueXZ4ZjlwODdpZ2ZRVzhVbWVjTVNHOE13UHQxMHc5YkU?oc=5",
+   "source": "Journal-News.com",
+   "published": "2026-11-12T21:52:29+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a6a34ce16d2b0c62",
+   "cluster_title": "Data center developer files federal lawsuit challenging ban in Trenton"
+  },
+  {
    "id": "07cb0e4d881ca6db",
    "title": "Mass. group tries to get data center restriction question on 2028 ballot",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR0NFWjNKMWNPbVpuWE9MWERhS0g5aTJDU01xY0k4UHdDdkM3Ymd1Z3JqTUd2cUZHa2hLcjhNQkRjLTlNTDFHRnp4dk12NGMzbkdraEtYSU5Xemhla1NrRHhmSXJiU2dFR3FPbXNtLXJkQk5WTWhUaVVudk5zUUlZdEtVWXNvVHJlV19pa1hfYkZFQkNrVW51Z2o1V1Z3TmZkRU93SFVLSWRDT1RtRmJCZ2tnakTSAcgBQVVfeXFMTTNfUm01QW9CaENzSTllZWpvQzJEMGczaFlaYVVUNk1MOF9pSWxkZWNGSnd4U25Gd3NYRTlTX3U5eGVLaUFnLV9GRzZDa29scXI1X3ZueU9LaEY0WXkxWTEzOFBxVnkzLUVSQTI1aHpyRklmMHl4YV9DaEV5cDBZNG5YY2VQNFNETEFIdUdtWVE5aG9sUVRzLVZFVHEtdEExd3dlTndCQVBRZU43SWZVWi1TX3NfMWJuNDRiNXl6QjBTYXkyYVlmVTU?oc=5",
@@ -12477,6 +12585,32 @@
    "investment_usd_b": 0.5,
    "cluster_id": "ebf57a464e5385bc",
    "cluster_title": "Utah Startup Torus Raises $500M for Prefab AI Data Center Built to Skip Grid Queue"
+  },
+  {
+   "id": "8095a5d86221d0b6",
+   "title": "Meta Details Multi-Year Deals for AI Data Center Supply Chains",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObVlIeGRoeURoMUUtQXo3Sm1nU2tPZ3RBMXk2ZTBHUFB5N1RjWkFSVld0QnQ1S3lXNjROaEdPaHNWQ0x4Qmh1WTlaLXdzamc4cEVsQWFTUV9KQmU4b2ZFZG9femg1dHFzWVhZZDB4Nms1T3M1UjhpQXZkcnBVR2lTTnhSQ2QzM3JEa2Y4eA?oc=5",
+   "source": "Unite.AI",
+   "published": "2026-11-12T12:26:01+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Meta"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8095a5d86221d0b6",
+   "cluster_title": "Meta Details Multi-Year Deals for AI Data Center Supply Chains"
   },
   {
    "id": "e5030845cb057bcd",
