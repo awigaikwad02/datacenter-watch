@@ -14,8 +14,8 @@ import weekly_summary as ws  # noqa: E402
 
 def test_summary_renders_without_history():
     text = ws.summary(None)
-    heads = [h for h in ("## Needs you", "## This week", "## Projects", "## Headlines that started no project", "## Health") if h in text]
-    assert heads == ["## Needs you", "## This week", "## Projects", "## Headlines that started no project", "## Health"]
+    heads = [h for h in ("## Needs you", "## This week", "## Projects", "## Headlines that started no project") if h in text]
+    assert heads == ["## Needs you", "## This week", "## Projects", "## Headlines that started no project"]
 
 
 def test_summary_renders_with_a_ref():

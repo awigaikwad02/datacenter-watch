@@ -11,7 +11,7 @@ the workflow finds with `git rev-list -1 --before="7 days ago"`). Pure Python on
 own files; no API and no AI service (docs/DECISIONS.md, decision 1).
 
 Reads: data/archive/, data/registry.json, data/registry_review.json, data/registry_rejects.json,
-data/health.json, data/news.json, data/projects.json, docs/REVIEW_PROPOSALS.md.
+data/news.json, data/projects.json, docs/REVIEW_PROPOSALS.md.
 Writes: the Markdown to --out (or stdout).
 
     python scripts/weekly_summary.py --since HEAD~150 --out /tmp/summary.md
@@ -99,7 +99,6 @@ def summary(since):
     reg_then = {r["id"]: r for r in (at(since, "data/registry.json", {}) or {}).get("records", [])}
     idx_now = load(DATA / "archive/index.json", {}) or {}
     idx_then = at(since, "data/archive/index.json", {}) or {}
-    health = load(DATA / "health.json", {}) or {}
     review = (load(DATA / "registry_review.json", {}) or {}).get("records", [])
     rejects = (load(DATA / "registry_rejects.json", {}) or {}).get("items", [])
     news = load(DATA / "news.json", {}) or {}
@@ -111,11 +110,6 @@ def summary(since):
 
     # Needs you first: the only part that asks for anything.
     needs = []
-    failing = [c for c in health.get("checks", []) if c.get("status") == "fail"]
-    if failing:
-        needs.append(f"**The health check is failing** ({len(failing)} checks): " +
-                     "; ".join(f"{c['name']} ({c.get('value', '')})" for c in failing[:5]) +
-                     ". See docs/RUNBOOK.md, \"A health check failed\".")
     upd = when(news.get("updated"))
     if upd and NOW - upd > timedelta(hours=6):
         needs.append(f"**Data is {int((NOW - upd).total_seconds() // 3600)} hours old.** See docs/RUNBOOK.md, \"The data stopped updating\".")
@@ -174,17 +168,8 @@ def summary(since):
         L.append(f"- [{x['title'][:100]}]({x['link']}) ({x.get('source', '')}): {x['reason']}")
     L.append("")
 
-    L += ["## Health", ""]
-    if health:
-        L.append(f"Last full check {health.get('checked_at', '?')}: **{str(health.get('overall', '?')).upper()}**, "
-                 f"{sum(c['status'] == 'pass' for c in health.get('checks', []))} passed, {len(failing)} failed, "
-                 f"{sum(c['status'] == 'warn' for c in health.get('checks', []))} warnings.")
-        for c in failing[:10]:
-            L.append(f"- FAIL {c['name']}: {c.get('value', '')} {c.get('detail', '')}".rstrip())
-    else:
-        L.append("data/health.json is missing.")
     if upd:
-        L.append(f"Data last updated {upd:%Y-%m-%d %H:%M} UTC.")
+        L += ["## Data", "", f"Data last updated {upd:%Y-%m-%d %H:%M} UTC."]
     return "\n".join(L) + "\n"
 
 

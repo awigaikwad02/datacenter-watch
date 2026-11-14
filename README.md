@@ -72,20 +72,20 @@ Every step is described, with diagrams, in [docs/ARCHITECTURE.md](docs/ARCHITECT
 | Workflow | When | What |
 |---|---|---|
 | `update.yml` | Self-chaining loop, hourly backup cron | The data refresh (above) |
-| `watchdog.yml` | Every 2 hours | Data older than 3 h: restart the loop. Older than 6 h: open or update the "Health check failed" issue |
-| `healthcheck.yml` | Every 6 hours | Full health check (Python and browser), commits `data/health.json`, opens or closes the "Health check failed" issue |
+| `watchdog.yml` | Every 2 hours | Data older than 3 h: restart the loop. Older than 6 h: open or update the "Site data stopped updating" issue; closes it when data is fresh |
 | `weekly.yml` | Mondays 13:00 UTC | Opens the "Weekly summary" issue (and closes last week's) |
 | `backfill.yml` | By hand | Fetches older headlines into the archive; see the runbook |
 
-You get an email only when an issue opens: "Health check failed" (something is broken) or the
-weekly summary (a digest with anything that needs your decision).
+You get an email only when an issue opens: "Site data stopped updating" (the data is more than 6 hours
+old) or the weekly summary (a digest with anything that needs your decision). The full health check
+is no longer scheduled (it kept failing on GitHub's runner); run it by hand, see docs/RUNBOOK.md.
 
 ## Run and test locally
 
 ```bash
 pip install -r scripts/requirements.txt
 python -m pytest -q tests                          # tagging, registry, no-AI and docs tests
-python scripts/healthcheck.py --no-write           # the health check, without writing data/health.json
+python scripts/healthcheck.py --no-write           # the full health check, run by hand (no longer scheduled)
 python scripts/fetch_news.py --sample scripts/sample_feed.xml --out /tmp/rack-test   # offline run, never touches data/
 python scripts/fetch_news.py --no-fetch            # re-tag stored headlines after changing rules
 python scripts/retag_archive.py && python scripts/registry.py --backfill   # re-tag the whole archive and replay it

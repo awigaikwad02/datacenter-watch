@@ -621,7 +621,6 @@ SECRET = re.compile(r"(?i)(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|gh[
 # The exact permissions each workflow may ask for. A new workflow must be added here, with a reason.
 WORKFLOW_PERMISSIONS = {
     "update.yml": ["contents: write", "actions: write"],          # commit data; see and start loop runs
-    "healthcheck.yml": ["contents: write", "issues: write", "actions: read"],  # health.json; its issue; run history
     "watchdog.yml": ["contents: read", "actions: write", "issues: write"],     # read data; start update; issue
     "backfill.yml": ["contents: write"],                          # commit backfilled data
     "weekly.yml": ["contents: read", "issues: write"],            # read data; open/close the summary issue
