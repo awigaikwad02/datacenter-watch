@@ -1441,11 +1441,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1811,11 +1822,22 @@
     "Community",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4655,11 +4677,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5270,8 +5303,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "3ff744fef9b60d4b",
-   "cluster_title": "45-day data center moratorium passed in Monterey Park, California, with more permanent regulations to come"
+   "cluster_id": "0fb27ca8196ff5e0",
+   "cluster_title": "Amid its Data Center debate, Monterey Park installs 45-day moratorium"
   },
   {
    "id": "e0a975cc531ea16a",
@@ -6602,11 +6635,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Monterey Park, California, US",
+     "lat": 34.0625,
+     "lon": -118.1228,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7052,11 +7096,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8683,11 +8738,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11566,11 +11632,22 @@
     "Power / Utility",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Microsoft",
     "Meta"
@@ -14608,11 +14685,23 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Whitehall, Pennsylvania, US",
+     "lat": 40.3612,
+     "lon": -79.9909,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15348,11 +15437,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Stark County, Ohio, US",
+     "lat": 40.814,
+     "lon": -81.367,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": "Stark County, Ohio, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15499,11 +15599,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -17488,18 +17599,30 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Roswell, Georgia, US",
+     "lat": 34.0232,
+     "lon": -84.3616,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "72fbb8739d15db94",
-   "cluster_title": "Roswell enacts moratorium on new data centers"
+   "cluster_id": "704009d873c60774",
+   "cluster_title": "City of Roswell’s new leaders approve moratorium on data centers"
   },
   {
    "id": "9d0310b710e1ac64",
@@ -18547,11 +18670,22 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19431,11 +19565,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Saginaw, Michigan, US",
+     "lat": 43.4195,
+     "lon": -83.9508,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19717,6 +19862,14 @@
    ],
    "locations": [
     {
+     "name": "Pulaski County, Arkansas, US",
+     "lat": 34.77,
+     "lon": -92.313,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    },
+    {
      "name": "Connecticut, US",
      "lat": 41.6,
      "lon": -72.7,
@@ -19726,11 +19879,12 @@
     }
    ],
    "states": [
+    "AR",
     "CT"
    ],
-   "state": "CT",
-   "county": null,
-   "location_precision": "state",
+   "state": "AR",
+   "county": "Pulaski County, Arkansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -22160,11 +22314,22 @@
     "Analysis / Opinion",
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -22384,7 +22549,8 @@
    "suppliers": [],
    "investment_usd_b": 4.0,
    "cluster_id": "b6a45afecdfa580e",
-   "cluster_title": "Vistra Stock Jumps After $4 Billion Power Deal Targets AI Data Centers"
+   "cluster_title": "Vistra Stock Jumps After $4 Billion Power Deal Targets AI Data Centers",
+   "filtered": true
   },
   {
    "id": "e4a4c54e117179ef",
@@ -23978,11 +24144,22 @@
     "New Announcement",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],

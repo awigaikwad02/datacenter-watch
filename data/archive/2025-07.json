@@ -2803,11 +2803,22 @@
     "Deals / Investment",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5495,11 +5506,22 @@
     "New Announcement",
     "Operations"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5863,11 +5885,22 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7269,6 +7302,14 @@
    ],
    "locations": [
     {
+     "name": "Portsmouth, Virginia, US",
+     "lat": 36.8354,
+     "lon": -76.2983,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Virginia, US",
      "lat": 37.5,
      "lon": -78.9,
@@ -7282,7 +7323,7 @@
    ],
    "state": "VA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8614,11 +8655,23 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "CoreWeave",
     "Core Scientific"

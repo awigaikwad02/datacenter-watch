@@ -634,11 +634,22 @@
     "Deals / Investment",
     "Economy / Jobs"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Springfield, Ohio, US",
+     "lat": 39.9242,
+     "lon": -83.8088,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1715,11 +1726,23 @@
     "Power / Utility",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6207,11 +6230,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],

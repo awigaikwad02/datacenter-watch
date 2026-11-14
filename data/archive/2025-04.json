@@ -2573,15 +2573,6 @@
    ],
    "locations": [
     {
-     "name": "Leesburg, Virginia, US",
-     "lat": 39.12,
-     "lon": -77.56,
-     "level": 3,
-     "precision": "city",
-     "country": "US",
-     "metro": "Northern Virginia"
-    },
-    {
      "name": "Kosciusko County, Indiana, US",
      "lat": 41.244,
      "lon": -85.861,
@@ -2591,12 +2582,11 @@
     }
    ],
    "states": [
-    "IN",
-    "VA"
+    "IN"
    ],
-   "state": "VA",
+   "state": "IN",
    "county": "Kosciusko County, Indiana, US",
-   "location_precision": "city",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3862,11 +3852,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4512,11 +4513,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],

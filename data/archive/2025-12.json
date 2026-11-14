@@ -125,7 +125,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "6fdfe8acd594064d",
-   "cluster_title": "Elon Musk’s xAI buys third data center to expand its supercomputer clusture"
+   "cluster_title": "Elon Musk’s xAI buys third data center to expand its supercomputer clusture",
+   "filtered": true
   },
   {
    "id": "597c878c31885790",
@@ -1189,11 +1190,22 @@
     "Environment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Carbon County, Pennsylvania, US",
+     "lat": 40.918,
+     "lon": -75.71,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": "Carbon County, Pennsylvania, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1548,11 +1560,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "TeraWulf"
    ],
@@ -4957,8 +4980,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ee2d171d31fb0720",
-   "cluster_title": "Lewiston City Council rejects AI data center proposal amid public outcry"
+   "cluster_id": "9ca85efde98ad8c4",
+   "cluster_title": "Lewiston city councilors unanimously vote down AI data center proposal"
   },
   {
    "id": "8978e0a6686de2d8",
@@ -5262,8 +5285,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "0a233f15766b045e",
-   "cluster_title": "DeKalb County's proposed data center regulations explained"
+   "cluster_id": "25dca23112b7a020",
+   "cluster_title": "DeKalb County considering regulations on data centers"
   },
   {
    "id": "6c539e3e3f962a49",
@@ -6144,11 +6167,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6208,11 +6242,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6548,11 +6593,22 @@
     "Analysis / Opinion",
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6810,11 +6866,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lewiston, Maine, US",
+     "lat": 44.1003,
+     "lon": -70.2148,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7527,8 +7594,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ee2d171d31fb0720",
-   "cluster_title": "Lewiston City Council rejects AI data center proposal amid public outcry"
+   "cluster_id": "9ca85efde98ad8c4",
+   "cluster_title": "Lewiston city councilors unanimously vote down AI data center proposal"
   },
   {
    "id": "ab814f5483ea460e",
@@ -8958,11 +9025,22 @@
     "Environment",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9082,11 +9160,22 @@
     "Economy / Jobs",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Springfield, Ohio, US",
+     "lat": 39.9242,
+     "lon": -83.8088,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Crusoe"
    ],
@@ -9170,18 +9259,29 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lewiston, Maine, US",
+     "lat": 44.1003,
+     "lon": -70.2148,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "050e69ffb9205ac1",
-   "cluster_title": "Lewiston weighs data center proposal for vacant Bates Mill 3"
+   "cluster_id": "64df642566e8be3a",
+   "cluster_title": "Lewiston to decide on A.I. data center for Bates Mill property"
   },
   {
    "id": "40e61e0e4f37ec6e",
@@ -9992,11 +10092,22 @@
     "New Announcement",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11380,11 +11491,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "DeKalb County, Georgia, US",
+     "lat": 33.768,
+     "lon": -84.225,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "DeKalb County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15688,11 +15811,22 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Springfield, Ohio, US",
+     "lat": 39.9242,
+     "lon": -83.8088,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15966,11 +16100,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19169,11 +19314,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19823,11 +19979,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Monterey Park, California, US",
+     "lat": 34.0625,
+     "lon": -118.1228,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],

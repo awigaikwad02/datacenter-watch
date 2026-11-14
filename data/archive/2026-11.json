@@ -1099,11 +1099,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rochester, Minnesota, US",
+     "lat": 44.0216,
+     "lon": -92.4699,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2028,7 +2039,8 @@
    "suppliers": [],
    "investment_usd_b": 5.0,
    "cluster_id": "5e10d4d56f0c59df",
-   "cluster_title": "Data Centers Could Add $5 Billion to $10 Billion in Costs to PJM Capacity Auction"
+   "cluster_title": "Data Centers Could Add $5 Billion to $10 Billion in Costs to PJM Capacity Auction",
+   "filtered": true
   },
   {
    "id": "2541fc915cb6a381",
@@ -2393,11 +2405,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Bethlehem, Pennsylvania, US",
+     "lat": 40.6259,
+     "lon": -75.3705,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3824,8 +3847,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 74.0,
-   "cluster_id": "eea522af5e8e0d09",
-   "cluster_title": "SpaceX advances $74B of new data center projects in Texas and Arizona"
+   "cluster_id": "3838047500e34aa4",
+   "cluster_title": "SpaceX to invest $74B into data center construction projects in Texas, Arizona"
   },
   {
    "id": "ce30a1c95c90c410",
@@ -4488,7 +4511,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "7f621c0248f76cc4",
-   "cluster_title": "Cisco Stock: Cisco Earnings, Revenue Top Estimates On AI Data Center Growth"
+   "cluster_title": "Cisco Stock: Cisco Earnings, Revenue Top Estimates On AI Data Center Growth",
+   "filtered": true
   },
   {
    "id": "e45c96274fb5dd39",
@@ -4535,7 +4559,8 @@
    "suppliers": [],
    "investment_usd_b": 74.0,
    "cluster_id": "8bc3045388d8fa1e",
-   "cluster_title": "SpaceX Releases Vision and $74 Billion Phase 1 AI Data Center Plans in Texas and Arizona"
+   "cluster_title": "SpaceX Releases Vision and $74 Billion Phase 1 AI Data Center Plans in Texas and Arizona",
+   "filtered": true
   },
   {
    "id": "d614e30f102b9f49",
@@ -5706,7 +5731,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d8b3da749ee75bda",
-   "cluster_title": "AI Data Centers Are Raising Factory Electric Bills. You Could End Up Paying for It Twice"
+   "cluster_title": "AI Data Centers Are Raising Factory Electric Bills. You Could End Up Paying for It Twice",
+   "filtered": true
   },
   {
    "id": "8bc3045388d8fa1e",
@@ -6008,7 +6034,8 @@
    "suppliers": [],
    "investment_usd_b": 74.0,
    "cluster_id": "eea522af5e8e0d09",
-   "cluster_title": "SpaceX advances $74B of new data center projects in Texas and Arizona"
+   "cluster_title": "SpaceX advances $74B of new data center projects in Texas and Arizona",
+   "filtered": true
   },
   {
    "id": "abf810167ece549c",
@@ -6543,11 +6570,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6646,7 +6684,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "1dc88b99b3bbcfd9",
-   "cluster_title": "Meta Is Handing Its AI Data Center Buildout to an Amazon Veteran"
+   "cluster_title": "Meta Is Handing Its AI Data Center Buildout to an Amazon Veteran",
+   "filtered": true
   },
   {
    "id": "9085e22e5454bc30",
@@ -7315,11 +7354,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7704,11 +7754,11 @@
    ],
    "locations": [
     {
-     "name": "Ohio, US",
-     "lat": 40.3,
-     "lon": -82.8,
-     "level": 2,
-     "precision": "source",
+     "name": "Rossford, Ohio, US",
+     "lat": 41.6098,
+     "lon": -83.5644,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -7717,7 +7767,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7750,7 +7800,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "7692dc78b23ac150",
-   "cluster_title": "Post-Midterm Data Center Construction Panic Overblown? Bernstein Estimates: Two-Thirds of Planned Projects Were Never Feasible to Begin With"
+   "cluster_title": "Post-Midterm Data Center Construction Panic Overblown? Bernstein Estimates: Two-Thirds of Planned Projects Were Never Feasible to Begin With",
+   "filtered": true
   },
   {
    "id": "6710b46571e5ddf3",
@@ -7875,11 +7926,22 @@
     "Analysis / Opinion",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9250,6 +9312,14 @@
      "level": 3,
      "precision": "city",
      "country": "US"
+    },
+    {
+     "name": "Sutton, Massachusetts, US",
+     "lat": 42.1501,
+     "lon": -71.7629,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
     }
    ],
    "states": [
@@ -9606,11 +9676,22 @@
     "New Announcement",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Maine, US",
+     "lat": 45.4,
+     "lon": -69.2,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9657,11 +9738,22 @@
     "Construction",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9757,7 +9849,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b3f82f2beef45f62",
-   "cluster_title": "Data Center Gas Plans Could Lift US Power Emissions, BNEF Warns"
+   "cluster_title": "Data Center Gas Plans Could Lift US Power Emissions, BNEF Warns",
+   "filtered": true
   },
   {
    "id": "81868fca9a1e5a1b",
@@ -11172,11 +11265,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rochester, Minnesota, US",
+     "lat": 44.0216,
+     "lon": -92.4699,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11276,7 +11380,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "afd5f94595856d76",
-   "cluster_title": "Applied Digital Rallies 8% as CoreWeave's Results Revive the AI Data Center Trade; Cipher Digital Jumps 10%, IREN Surges 9%"
+   "cluster_title": "Applied Digital Rallies 8% as CoreWeave's Results Revive the AI Data Center Trade; Cipher Digital Jumps 10%, IREN Surges 9%",
+   "filtered": true
   },
   {
    "id": "03eb8ac13178a59c",
@@ -11769,6 +11874,14 @@
    ],
    "locations": [
     {
+     "name": "Sutton, Massachusetts, US",
+     "lat": 42.1501,
+     "lon": -71.7629,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Massachusetts, US",
      "lat": 42.3,
      "lon": -71.8,
@@ -11782,7 +11895,7 @@
    ],
    "state": "MA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12945,11 +13058,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Idaho, US",
+     "lat": 44.4,
+     "lon": -114.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13113,11 +13237,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Cromwell, Connecticut, US",
+     "lat": 41.5951,
+     "lon": -72.6454,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CT"
+   ],
+   "state": "CT",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13140,11 +13275,22 @@
     "Power / Utility",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13688,11 +13834,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
@@ -14845,11 +15002,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -14962,7 +15130,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0af93691d7bde104",
-   "cluster_title": "AZIO AI Holdings (NASDAQ: AZIO) Confirms Atlas One Data Center Designed to Operate Independently of Texas Power Grid"
+   "cluster_title": "AZIO AI Holdings (NASDAQ: AZIO) Confirms Atlas One Data Center Designed to Operate Independently of Texas Power Grid",
+   "filtered": true
   },
   {
    "id": "ad7502d2d40e7e2f",
@@ -16006,7 +16175,8 @@
    "suppliers": [],
    "capacity_mw": 13000,
    "cluster_id": "f6e6aecdc03e1083",
-   "cluster_title": "Texas Data Center Moratorium: 13 GW at Risk [2026]"
+   "cluster_title": "Texas Data Center Moratorium: 13 GW at Risk [2026]",
+   "filtered": true
   },
   {
    "id": "2fc9747b5300170b",
@@ -16654,6 +16824,14 @@
    ],
    "locations": [
     {
+     "name": "Rossford, Ohio, US",
+     "lat": 41.6098,
+     "lon": -83.5644,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Ohio, US",
      "lat": 40.3,
      "lon": -82.8,
@@ -16667,7 +16845,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16688,18 +16866,29 @@
     "New Announcement",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "South Bend, Indiana, US",
+     "lat": 41.6834,
+     "lon": -86.25,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "d84e7a52e44bfcb5",
-   "cluster_title": "Company says proposed South Bend energy center would differ from traditional data center"
+   "cluster_id": "30d37502fed32eae",
+   "cluster_title": "Florida company seeks property in South Bend for proposed data center development"
   },
   {
    "id": "8676c308a6a0206b",
@@ -17613,8 +17802,8 @@
    ],
    "suppliers": [],
    "investment_usd_b": 4.0,
-   "cluster_id": "d8fc8e41666f231c",
-   "cluster_title": "Fluor Wins EPC Contract for Kentucky Data Center Campus"
+   "cluster_id": "4f7a374656749962",
+   "cluster_title": "Fluor Signs EPC Contract with TeraWulf for Large-Scale Data Center Campus in Kentucky"
   },
   {
    "id": "c14ef1e9d4fa833f",
@@ -18571,7 +18760,8 @@
     "Vertiv"
    ],
    "cluster_id": "3101b9f2d3ff14bb",
-   "cluster_title": "Texas Data Center Freeze: Is Vistra a Better Buy Than Vertiv?"
+   "cluster_title": "Texas Data Center Freeze: Is Vistra a Better Buy Than Vertiv?",
+   "filtered": true
   },
   {
    "id": "2be2fd77fd2c60f5",
@@ -18672,6 +18862,14 @@
    ],
    "locations": [
     {
+     "name": "South Bend, Indiana, US",
+     "lat": 41.6834,
+     "lon": -86.25,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Florida, US",
      "lat": 28.6,
      "lon": -82.4,
@@ -18681,11 +18879,12 @@
     }
    ],
    "states": [
-    "FL"
+    "FL",
+    "IN"
    ],
-   "state": "FL",
+   "state": "IN",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -18732,7 +18931,7 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
+   "cluster_id": "344b3f6dcd63eb8a",
    "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
@@ -18949,7 +19148,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "eddfb40ac01c934a",
+   "cluster_id": "344b3f6dcd63eb8a",
    "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
@@ -19071,11 +19270,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19373,7 +19583,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "eddfb40ac01c934a",
+   "cluster_id": "344b3f6dcd63eb8a",
    "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
@@ -19411,7 +19621,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "eddfb40ac01c934a",
+   "cluster_id": "344b3f6dcd63eb8a",
    "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
@@ -19450,7 +19660,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "eddfb40ac01c934a",
+   "cluster_id": "344b3f6dcd63eb8a",
    "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
@@ -19729,7 +19939,7 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
+   "cluster_id": "344b3f6dcd63eb8a",
    "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
@@ -19853,8 +20063,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
-   "cluster_title": "Google announces $17bn data center campus in Cheyenne, Wyoming"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "32d1ede95f919414",
@@ -20358,8 +20568,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
-   "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "09ef721c88b37c84",
@@ -20536,8 +20746,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
-   "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "09b26fdb7bd34437",
@@ -20674,8 +20884,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
-   "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "afc2c273707f686f",
@@ -20761,11 +20971,22 @@
    "tags": [
     "Politics"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -21574,11 +21795,11 @@
    ],
    "locations": [
     {
-     "name": "North Carolina, US",
-     "lat": 35.6,
-     "lon": -79.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Mount Airy, North Carolina, US",
+     "lat": 36.4993,
+     "lon": -80.6073,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -21587,7 +21808,7 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -21608,11 +21829,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -21695,7 +21927,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e47cb11c589ec551",
-   "cluster_title": "Democratic Landslide in US Midterms Sparks Data Center Regulation Fears; Meta Says Texas Governor-Elect Requested Meeting After Taking Office"
+   "cluster_title": "Democratic Landslide in US Midterms Sparks Data Center Regulation Fears; Meta Says Texas Governor-Elect Requested Meeting After Taking Office",
+   "filtered": true
   },
   {
    "id": "a73378736f66df9a",
@@ -21795,7 +22028,8 @@
    "suppliers": [],
    "investment_usd_b": 15.0,
    "cluster_id": "7a03d6dfbf656930",
-   "cluster_title": "AI data center firm IREN delays Microsoft AI deliveries, plans $15 billion spending push"
+   "cluster_title": "AI data center firm IREN delays Microsoft AI deliveries, plans $15 billion spending push",
+   "filtered": true
   },
   {
    "id": "1b927a8cb5b6f977",
@@ -21931,8 +22165,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
-   "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "1f0b76e816c34185",
@@ -22029,7 +22263,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "636e8ef658964a12",
-   "cluster_title": "WATCH: 107 data center projects approved for tax breaks despite three-year moratorium"
+   "cluster_title": "Arizona approved 107 data center tax breaks before moratorium"
   },
   {
    "id": "c5bca2dc926d59c1",
@@ -22092,7 +22326,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "68fb5942311f24f0",
-   "cluster_title": "Midterm \"Blue Wave\" Spurs Democrats to Call for National Data Center Moratorium; AI Chip Stocks Slump"
+   "cluster_title": "Midterm \"Blue Wave\" Spurs Democrats to Call for National Data Center Moratorium; AI Chip Stocks Slump",
+   "filtered": true
   },
   {
    "id": "604b94579a720d4c",
@@ -22759,7 +22994,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "663adf372fe2666c",
-   "cluster_title": "Carroll County extends data center ban through 2028"
+   "cluster_title": "Carroll County extends data center development pause through 2028"
   },
   {
    "id": "c23d54be7a62c12f",
@@ -22811,11 +23046,22 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Microsoft",
     "Amazon"
@@ -22949,8 +23195,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "eddfb40ac01c934a",
-   "cluster_title": "Google announces $17bn data center campus in Cheyenne, Wyoming"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "1c67a06a19229d6e",
@@ -23052,11 +23298,22 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -23452,8 +23709,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "7b1f3b3808559064",
@@ -23730,8 +23987,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "3ef4fbea6cfae94a",
@@ -23796,7 +24053,8 @@
    "suppliers": [],
    "investment_usd_b": 17.0,
    "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_title": "Google to invest $17B in Wyoming data center",
+   "filtered": true
   },
   {
    "id": "276905cdd2fb0916",
@@ -23893,7 +24151,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "663adf372fe2666c",
-   "cluster_title": "Carroll County extends data center ban through 2028"
+   "cluster_title": "Carroll County extends data center development pause through 2028"
   },
   {
    "id": "7e54574adb89bce1",
@@ -23983,18 +24241,29 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Cromwell, Connecticut, US",
+     "lat": 41.5951,
+     "lon": -72.6454,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CT"
+   ],
+   "state": "CT",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "40a64c3bfd1a33d3",
-   "cluster_title": "Cromwell considers data center moratorium as proposed project draws concern"
+   "cluster_id": "426c4cd404526e82",
+   "cluster_title": "Cromwell considers moratorium to pause new data center developments"
   },
   {
    "id": "2466597cb1663a67",
@@ -24029,7 +24298,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "663adf372fe2666c",
-   "cluster_title": "Carroll County extends data center ban through 2028"
+   "cluster_title": "Carroll County extends data center development pause through 2028"
   },
   {
    "id": "663adf372fe2666c",
@@ -24043,18 +24312,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Carroll County, Maryland, US",
+     "lat": 39.563,
+     "lon": -77.022,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
+   "county": "Carroll County, Maryland, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "663adf372fe2666c",
-   "cluster_title": "Carroll County extends data center ban through 2028"
+   "cluster_title": "Carroll County extends data center development pause through 2028"
   },
   {
    "id": "11db819054bf30c3",
@@ -24081,7 +24361,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "11db819054bf30c3",
-   "cluster_title": "American Electric Power’s Dividend Has a Data Center Tailwind. How Safe Is It?"
+   "cluster_title": "American Electric Power’s Dividend Has a Data Center Tailwind. How Safe Is It?",
+   "filtered": true
   },
   {
    "id": "c39cc5d4071d1cca",
@@ -24121,8 +24402,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "0e42d4567e557c36",
@@ -24263,8 +24544,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "cb0f4cfa31566fab",
-   "cluster_title": "Effingham County to vote on OpenAI data center site plan"
+   "cluster_id": "7527e22fe74c4a91",
+   "cluster_title": "Effingham County to Vote on OpenAI Data Center Plan on Election Day"
   },
   {
    "id": "e51839cddef32727",
@@ -24504,8 +24785,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "13d68a9bc903c0a3",
@@ -24605,11 +24886,22 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
    "companies": [
     "OpenAI"
    ],
@@ -24617,8 +24909,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "7ac89f2829140177",
-   "cluster_title": "Effingham County delays decision on proposed OpenAI data center once again"
+   "cluster_id": "7527e22fe74c4a91",
+   "cluster_title": "Effingham County to Vote on OpenAI Data Center Plan on Election Day"
   },
   {
    "id": "f596a3bb2b7f83dc",
@@ -24749,8 +25041,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "7e09a582f3914c25",
@@ -24789,7 +25081,8 @@
    "suppliers": [],
    "investment_usd_b": 17.0,
    "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_title": "Google to invest $17B in Wyoming data center",
+   "filtered": true
   },
   {
    "id": "8358449a777bf0ca",
@@ -24958,7 +25251,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "1cf23e9d9ab0a0e5",
-   "cluster_title": "SpaceX Stock Tumbles. A 6-Gigawatt AI Data Center Is Drawing Backlash"
+   "cluster_title": "SpaceX Stock Tumbles. A 6-Gigawatt AI Data Center Is Drawing Backlash",
+   "filtered": true
   },
   {
    "id": "177b703eb00ecb78",
@@ -25102,8 +25396,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "30451911d201fc6b",
@@ -25177,11 +25471,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rapid City, South Dakota, US",
+     "lat": 44.0805,
+     "lon": -103.231,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SD"
+   ],
+   "state": "SD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25227,7 +25532,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "cd243beea0e6378e",
-   "cluster_title": "Market Chatter: Oracle's New Mexico Data Center Project Faces Air Permit Delay"
+   "cluster_title": "Market Chatter: Oracle's New Mexico Data Center Project Faces Air Permit Delay",
+   "filtered": true
   },
   {
    "id": "3690efe9f27fae04",
@@ -25265,11 +25571,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rapid City, South Dakota, US",
+     "lat": 44.0805,
+     "lon": -103.231,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SD"
+   ],
+   "state": "SD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25471,7 +25788,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d6178a7c06c029f3",
-   "cluster_title": "Onsemi’s AI Data Center Sales Reportedly Grew 175%. Is That the Chip Stock’s New Story?"
+   "cluster_title": "Onsemi’s AI Data Center Sales Reportedly Grew 175%. Is That the Chip Stock’s New Story?",
+   "filtered": true
   },
   {
    "id": "9ce6606996c6d207",
@@ -25536,7 +25854,8 @@
    "suppliers": [],
    "investment_usd_b": 17.0,
    "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_title": "Google to invest $17B in Wyoming data center",
+   "filtered": true
   },
   {
    "id": "4feeb3fd6f3e1903",
@@ -25588,7 +25907,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "c57c0b9161786527",
-   "cluster_title": "Meta Warns US Data Center Builds Will Get 'Harder' After Midterms, Weighs Building Abroad"
+   "cluster_title": "Meta Warns US Data Center Builds Will Get 'Harder' After Midterms, Weighs Building Abroad",
+   "filtered": true
   },
   {
    "id": "d4117638dbc30bb1",
@@ -25599,11 +25919,22 @@
    "feed": "Google News: Data center",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Louisiana, US",
+     "lat": 31.1,
+     "lon": -92.0,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "LA"
+   ],
+   "state": "LA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25649,8 +25980,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "5cff8c8efad68f30",
+   "cluster_title": "Alphabet's Google Advances $17 Billion Wyoming Data Center as Regulatory Tightening May Strengthen Cloud Giants' Compute Advantage"
   },
   {
    "id": "551751309f4ae342",
@@ -25688,8 +26019,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "9585b80547aee53b",
@@ -25754,8 +26085,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "cd243beea0e6378e",
-   "cluster_title": "Market Chatter: Oracle's New Mexico Data Center Project Faces Air Permit Delay"
+   "cluster_id": "7990a6f94b762ee7",
+   "cluster_title": "Oracle's New Mexico Data Center Project Faces Air Permit Delay"
   },
   {
    "id": "da66e45df1e9a684",
@@ -25795,7 +26126,8 @@
    "suppliers": [],
    "investment_usd_b": 17.0,
    "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_title": "Google to invest $17B in Wyoming data center",
+   "filtered": true
   },
   {
    "id": "a5ef9ed31d4f12d0",
@@ -25858,8 +26190,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "a6dcf447807d5e1f",
@@ -25959,8 +26291,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "bd29914a64889393",
@@ -25998,7 +26330,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2b388884db135406",
-   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze"
+   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze",
+   "filtered": true
   },
   {
    "id": "1f786b52b6422339",
@@ -26071,7 +26404,8 @@
    "suppliers": [],
    "investment_usd_b": 17.0,
    "cluster_id": "7e525ba57e75ea22",
-   "cluster_title": "Alphabet's Google Plans $17 Billion Investment in Wyoming Data Center"
+   "cluster_title": "Alphabet's Google Plans $17 Billion Investment in Wyoming Data Center",
+   "filtered": true
   },
   {
    "id": "35db160ab3804d29",
@@ -26146,7 +26480,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "cd243beea0e6378e",
-   "cluster_title": "Market Chatter: Oracle's New Mexico Data Center Project Faces Air Permit Delay"
+   "cluster_title": "Market Chatter: Oracle's New Mexico Data Center Project Faces Air Permit Delay",
+   "filtered": true
   },
   {
    "id": "a97d3aeed67a0224",
@@ -26172,7 +26507,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "a97d3aeed67a0224",
-   "cluster_title": "SpaceX Shares Slide Below IPO Price as Democratic Sweep Rattles AI Data Center Trade"
+   "cluster_title": "SpaceX Shares Slide Below IPO Price as Democratic Sweep Rattles AI Data Center Trade",
+   "filtered": true
   },
   {
    "id": "0a65372b69407179",
@@ -26270,8 +26606,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 17.0,
-   "cluster_id": "ef2164b42b952d97",
-   "cluster_title": "Google to invest $17B in Wyoming data center"
+   "cluster_id": "344b3f6dcd63eb8a",
+   "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
   },
   {
    "id": "3e102b01ee2c5733",
@@ -26369,8 +26705,8 @@
    ],
    "suppliers": [],
    "investment_usd_b": 4.0,
-   "cluster_id": "d8fc8e41666f231c",
-   "cluster_title": "Fluor Wins EPC Contract for Kentucky Data Center Campus"
+   "cluster_id": "4f7a374656749962",
+   "cluster_title": "Fluor Signs EPC Contract with TeraWulf for Large-Scale Data Center Campus in Kentucky"
   },
   {
    "id": "6960b3a99fdfd7f6",
@@ -26547,7 +26883,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "4d64e8407abf80a5",
-   "cluster_title": "Applied Digital Plunges 17%, Cipher Digital Sinks 14%, TeraWulf Tumbles 13% as Texas Data Center Fears Deepen"
+   "cluster_title": "Applied Digital Plunges 17%, Cipher Digital Sinks 14%, TeraWulf Tumbles 13% as Texas Data Center Fears Deepen",
+   "filtered": true
   },
   {
    "id": "e2560e3435300402",
@@ -26609,7 +26946,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b12ade57e1ff8d42",
-   "cluster_title": "Texas Data-Center Politics Put The AI Buildout On Pause"
+   "cluster_title": "Texas Data-Center Politics Put The AI Buildout On Pause",
+   "filtered": true
   },
   {
    "id": "4270cd990e094b29",
@@ -27151,8 +27489,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "67bd003657f22749",
-   "cluster_title": "Opponents sue Hermantown again over Google data center"
+   "cluster_id": "59200485964ab26b",
+   "cluster_title": "Advocacy groups appeal second environmental review of Hermantown data center"
   },
   {
    "id": "0df53ef7af9376d1",
@@ -27215,7 +27553,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0df3d08dbc183c92",
-   "cluster_title": "SpaceX and Tesla Sink 9% as Texas Election Fallout Threatens Musk's Data Center Plans; Rocket Lab and AST SpaceMobile Tumble 13%"
+   "cluster_title": "SpaceX and Tesla Sink 9% as Texas Election Fallout Threatens Musk's Data Center Plans; Rocket Lab and AST SpaceMobile Tumble 13%",
+   "filtered": true
   },
   {
    "id": "d01c74c389cb521b",
@@ -27495,7 +27834,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ca86b95e3cad45b5",
-   "cluster_title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays"
+   "cluster_title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
+   "filtered": true
   },
   {
    "id": "9ae8b7fab3e1ec99",
@@ -27579,8 +27919,8 @@
     "Fluor"
    ],
    "suppliers": [],
-   "cluster_id": "d8fc8e41666f231c",
-   "cluster_title": "Fluor Wins EPC Contract for Kentucky Data Center Campus"
+   "cluster_id": "4f7a374656749962",
+   "cluster_title": "Fluor Signs EPC Contract with TeraWulf for Large-Scale Data Center Campus in Kentucky"
   },
   {
    "id": "c869d3f15eecfc85",
@@ -27699,11 +28039,22 @@
     "Community",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Louisiana, US",
+     "lat": 31.1,
+     "lon": -92.0,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "LA"
+   ],
+   "state": "LA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28138,7 +28489,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "cb65644b7f85952b",
-   "cluster_title": "Data Center Construction Starts Lag 6 Months Behind, Report Says"
+   "cluster_title": "Data Center Construction Starts Lag 6 Months Behind, Report Says",
+   "filtered": true
   },
   {
    "id": "8a3c1d0d24f89052",
@@ -28283,11 +28635,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Cromwell, Connecticut, US",
+     "lat": 41.5951,
+     "lon": -72.6454,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CT"
+   ],
+   "state": "CT",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28348,7 +28711,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "90b6c4b929f4e020",
-   "cluster_title": "IT Services Stocks to Buy on Weakness Amid Data Center Construction Volatility"
+   "cluster_title": "IT Services Stocks to Buy on Weakness Amid Data Center Construction Volatility",
+   "filtered": true
   },
   {
    "id": "32da3b2802e370fe",
@@ -29150,7 +29514,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "489b39be39ec2fdd",
-   "cluster_title": "OpenAI to Cover Full Data Center Power Costs, Responding to Headwinds as 40 of 41 Ballot Measures Oppose Projects"
+   "cluster_title": "OpenAI to Cover Full Data Center Power Costs, Responding to Headwinds as 40 of 41 Ballot Measures Oppose Projects",
+   "filtered": true
   },
   {
    "id": "7c2fed1f92b33868",
@@ -29262,11 +29627,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -29306,7 +29682,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "4797e0d0e163e9ee",
-   "cluster_title": "Manufactured consent: Paid social media posters are being recruited to promote Wisconsin data center"
+   "cluster_title": "Paid posters are being recruited to promote Port Washington data center on social media platforms"
   },
   {
    "id": "a48510e7c1e45ebf",
@@ -29440,7 +29816,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "9e1ce08b21437107",
-   "cluster_title": "DTE Energy announces strategic sale of its non-utility DTE Vantage business; reports third quarter accomplishments including advancing data center growth that delivers unprecedented customer affordability benefits and filing long-term generation plan"
+   "cluster_title": "DTE Energy announces strategic sale of its non-utility DTE Vantage business; reports third quarter accomplishments including advancing data center growth that delivers unprecedented customer affordability benefits and filing long-term generation plan",
+   "filtered": true
   },
   {
    "id": "9ce4ac8480773c75",
@@ -29582,7 +29959,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "9eab18d616a0d623",
-   "cluster_title": "AI, data-center stocks slip as Democratic sweep clouds expansion plans"
+   "cluster_title": "AI, data-center stocks slip as Democratic sweep clouds expansion plans",
+   "filtered": true
   },
   {
    "id": "dc2421affdf464cb",
@@ -29789,7 +30167,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "6a50397bb8e557b8",
-   "cluster_title": "OpenAI pledges no NDAs, protection from power costs in data center deals"
+   "cluster_title": "OpenAI pledges no NDAs, protection from power costs in data center deals",
+   "filtered": true
   },
   {
    "id": "ebf5b95ece0a7abb",
@@ -29854,7 +30233,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2b388884db135406",
-   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze"
+   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze",
+   "filtered": true
   },
   {
    "id": "bccddb56b9522417",
@@ -30061,7 +30441,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "1b9bc6029642c6fd",
-   "cluster_title": "AI Data Center Restrictions Win Big in US Midterms: 46 of 47 Ballot Measures Back Construction Limits"
+   "cluster_title": "AI Data Center Restrictions Win Big in US Midterms: 46 of 47 Ballot Measures Back Construction Limits",
+   "filtered": true
   },
   {
    "id": "62d65ffce6c3d25c",
@@ -30237,7 +30618,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2b388884db135406",
-   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze"
+   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze",
+   "filtered": true
   },
   {
    "id": "cd2b7e602afbfb47",
@@ -30440,11 +30822,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Cromwell, Connecticut, US",
+     "lat": 41.5951,
+     "lon": -72.6454,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CT"
+   ],
+   "state": "CT",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -30464,11 +30857,22 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -30764,7 +31168,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5cae59bfbc341741",
-   "cluster_title": "Microsoft will not expand Texas data center deal with UK's Nscale, source says"
+   "cluster_title": "Microsoft will not expand Texas data center deal with UK's Nscale, source says",
+   "filtered": true
   },
   {
    "id": "77c6aea442931bf3",
@@ -31073,7 +31478,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "399a49869d68e78f",
-   "cluster_title": "US Midterm Election Upset Could Stall 62.2 GW of Data Center Construction Planned for 2028"
+   "cluster_title": "US Midterm Election Upset Could Stall 62.2 GW of Data Center Construction Planned for 2028",
+   "filtered": true
   },
   {
    "id": "24943c548ba96909",
@@ -31097,7 +31503,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "24943c548ba96909",
-   "cluster_title": "AI Data-Center Risk: Infrastructure Selloff or Application-Layer Opportunity?"
+   "cluster_title": "AI Data-Center Risk: Infrastructure Selloff or Application-Layer Opportunity?",
+   "filtered": true
   },
   {
    "id": "53a38ad60ad3f280",
@@ -31110,11 +31517,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31148,7 +31566,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "48183f6284aad936",
-   "cluster_title": "Nasdaq Futures Slip As Data Center Plans Face Pushback"
+   "cluster_title": "Nasdaq Futures Slip As Data Center Plans Face Pushback",
+   "filtered": true
   },
   {
    "id": "0c702ca062d41423",
@@ -31217,7 +31636,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2eddc22299a757a6",
-   "cluster_title": "AI Data Center projects stopped"
+   "cluster_title": "AI Data Center projects stopped",
+   "filtered": true
   },
   {
    "id": "63156aa6ad48087a",
@@ -31232,6 +31652,14 @@
    ],
    "locations": [
     {
+     "name": "Conneaut, Ohio, US",
+     "lat": 41.9476,
+     "lon": -80.5542,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Ohio, US",
      "lat": 40.3,
      "lon": -82.8,
@@ -31245,7 +31673,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31356,8 +31784,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2b388884db135406",
-   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze"
+   "cluster_id": "5cae59bfbc341741",
+   "cluster_title": "Microsoft will not expand Texas data center deal with UK's Nscale, source says"
   },
   {
    "id": "af746ece92df95a4",
@@ -31412,7 +31840,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "af746ece92df95a4",
-   "cluster_title": "Ezra Klein: Democrats Won Kansas, Texas and Iowa With Candidates Who Fit Their States — and the AI Data Center Boom Is Next"
+   "cluster_title": "Ezra Klein: Democrats Won Kansas, Texas and Iowa With Candidates Who Fit Their States — and the AI Data Center Boom Is Next",
+   "filtered": true
   },
   {
    "id": "4f8b67abe40d2f97",
@@ -31485,8 +31914,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "cb0f4cfa31566fab",
-   "cluster_title": "Effingham County to vote on OpenAI data center site plan"
+   "cluster_id": "7527e22fe74c4a91",
+   "cluster_title": "Effingham County to Vote on OpenAI Data Center Plan on Election Day"
   },
   {
    "id": "23cfde6ef7e1fea0",
@@ -31526,6 +31955,14 @@
    ],
    "locations": [
     {
+     "name": "Conneaut, Ohio, US",
+     "lat": 41.9476,
+     "lon": -80.5542,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Ohio, US",
      "lat": 40.3,
      "lon": -82.8,
@@ -31539,7 +31976,7 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31779,7 +32216,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "4d4edf08a79b9774",
-   "cluster_title": "What does the Democratic midterm sweep mean for Softbank’s U.S. data center plans?"
+   "cluster_title": "What does the Democratic midterm sweep mean for Softbank’s U.S. data center plans?",
+   "filtered": true
   },
   {
    "id": "d6d386f901f5e14a",
@@ -32052,7 +32490,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "25764361c389214b",
+   "cluster_id": "13128589c7ac0138",
    "cluster_title": "Scarborough Town Council unanimously approves ban on data centers"
   },
   {
@@ -33058,11 +33496,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -33539,8 +33988,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 2.0,
-   "cluster_id": "64e873e289f3b1a3",
-   "cluster_title": "Sunbury Voters Approve Ban That Complicates Amazon’s $2B Data Center Plan"
+   "cluster_id": "efec908f58b14015",
+   "cluster_title": "Amazon's US$2 billion Ohio data center plan faces new hurdle as voters approve ban"
   },
   {
    "id": "a2579c66f761b7ea",
@@ -33576,7 +34025,7 @@
    "suppliers": [],
    "investment_usd_b": 33.0,
    "cluster_id": "a2579c66f761b7ea",
-   "cluster_title": "Lawsuit challenges $33B data center"
+   "cluster_title": "Lawsuit challenges $33B data center in Lowndes County"
   },
   {
    "id": "e16d7c0bf3f75716",
@@ -35106,11 +35555,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -35152,8 +35612,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "60105d173577833d",
-   "cluster_title": "Casey County Fiscal Court approves data center moratorium"
+   "cluster_id": "b246a41fe974dead",
+   "cluster_title": "Casey County Fiscal Court to hold meeting on data centers"
   },
   {
    "id": "87beb7442b9d6975",
@@ -35287,7 +35747,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "79bfdb6d0dba0ba8",
-   "cluster_title": "AI Data Center Backlash Is Real. The Blue Wave Takes Out Energy Stocks. -- Barrons.com"
+   "cluster_title": "AI Data Center Backlash Is Real. The Blue Wave Takes Out Energy Stocks. -- Barrons.com",
+   "filtered": true
   },
   {
    "id": "af750c227c4f6f08",
@@ -36019,11 +36480,11 @@
    ],
    "locations": [
     {
-     "name": "Georgia, US",
-     "lat": 32.7,
-     "lon": -83.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Eatonton, Georgia, US",
+     "lat": 33.3268,
+     "lon": -83.3885,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -36032,7 +36493,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36077,11 +36538,22 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "El Dorado, Arkansas, US",
+     "lat": 33.2076,
+     "lon": -92.6663,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36113,7 +36585,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "3c81a68429dac3c8",
-   "cluster_title": "SEALSQ x Eco Wave Power: 2-Firm AI Data Center Deal [2026]"
+   "cluster_title": "SEALSQ x Eco Wave Power: 2-Firm AI Data Center Deal [2026]",
+   "filtered": true
   },
   {
    "id": "fe5f8c4a09b1139d",
@@ -36358,7 +36831,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "8814ead9b7797473",
-   "cluster_title": "Iron Mountain earnings ahead as AI data center demand builds"
+   "cluster_title": "Iron Mountain earnings ahead as AI data center demand builds",
+   "filtered": true
   },
   {
    "id": "793266c665fbfd04",
@@ -36415,7 +36889,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2900c0336c3c9c92",
-   "cluster_title": "Texas Pacific faces test with earnings amid data center push"
+   "cluster_title": "Texas Pacific faces test with earnings amid data center push",
+   "filtered": true
   },
   {
    "id": "3838ec6cd1158d43",
@@ -36468,11 +36943,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37647,11 +38133,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37793,7 +38290,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "1ef80c1c7c07da60",
-   "cluster_title": "Intel Just Delivered Its Strongest Data Center Growth in 15 Years. Its Comeback Is Gaining Momentum"
+   "cluster_title": "Intel Just Delivered Its Strongest Data Center Growth in 15 Years. Its Comeback Is Gaining Momentum",
+   "filtered": true
   },
   {
    "id": "cc0b9d5ad58fe92b",
@@ -37971,11 +38469,22 @@
     "Economy / Jobs",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Lowndes County, Alabama, US",
+     "lat": 32.156,
+     "lon": -86.65,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
+   "county": "Lowndes County, Alabama, US",
+   "location_precision": "county",
    "companies": [
     "Lambda"
    ],
@@ -37984,8 +38493,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 33.1,
-   "cluster_id": "f153cc4a8e7266a6",
-   "cluster_title": "Lambda announces $33.1 billion AI data center in Lowndes County, largest economic development project in county history"
+   "cluster_id": "d335ef5b38398cca",
+   "cluster_title": "Lambda Plans Alabama AI Data Center Campus in Lowndes County"
   },
   {
    "id": "40e25e8c05181fe9",
@@ -38117,7 +38626,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e52724be68f687bf",
-   "cluster_title": "\"Blue Trade\" Sends First Solar And Sunrun Soaring While Data Center Stocks Slump As Investors Weigh Democrats' Big Night"
+   "cluster_title": "\"Blue Trade\" Sends First Solar And Sunrun Soaring While Data Center Stocks Slump As Investors Weigh Democrats' Big Night",
+   "filtered": true
   },
   {
    "id": "1d6dd6069db36f2b",
@@ -38595,7 +39105,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "14d7d0a2ab6cfb32",
-   "cluster_title": "Texas Blue Wave Could Threaten 27% Of Planned U.S. Data Center Power. Here's What It Means For CoreWeave, Iren, Nebius And Other Neocloud Stocks"
+   "cluster_title": "Texas Blue Wave Could Threaten 27% Of Planned U.S. Data Center Power. Here's What It Means For CoreWeave, Iren, Nebius And Other Neocloud Stocks",
+   "filtered": true
   },
   {
    "id": "d335ef5b38398cca",
@@ -39031,7 +39542,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ea51f140f0751c8d",
-   "cluster_title": "Wall St set for higher open as Democrats win Congress; data center stocks slide"
+   "cluster_title": "Wall Street rallies after Dems win Congress; data center stocks slide"
   },
   {
    "id": "2b6f1bc2a8000444",
@@ -39073,7 +39584,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2b6f1bc2a8000444",
-   "cluster_title": "IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears; Nebius Dips 2%"
+   "cluster_title": "IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears; Nebius Dips 2%",
+   "filtered": true
   },
   {
    "id": "7f06604e850ae028",
@@ -39099,7 +39611,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ea51f140f0751c8d",
-   "cluster_title": "Wall St set for higher open as Democrats win Congress; data center stocks slide"
+   "cluster_title": "Wall St set for higher open as Democrats win Congress; data center stocks slide",
+   "filtered": true
   },
   {
    "id": "9825b5f260231fe5",
@@ -39147,11 +39660,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -39386,7 +39910,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ea51f140f0751c8d",
-   "cluster_title": "Wall St set for higher open as Democrats win Congress; data center stocks slide"
+   "cluster_title": "Wall Street rallies after Dems win Congress; data center stocks slide"
   },
   {
    "id": "218d4efa37309057",
@@ -39596,7 +40120,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5ee4fe9442dfec1c",
-   "cluster_title": "Tesla, SpaceX Drop 4%+ on Texas Data Center Pause [2026]"
+   "cluster_title": "Tesla, SpaceX Drop 4%+ on Texas Data Center Pause [2026]",
+   "filtered": true
   },
   {
    "id": "901e62c9c5baf5ec",
@@ -39995,7 +40520,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "37021392e2e683ef",
-   "cluster_title": "Cipher Mining sinks 17% as Texas election puts AI data-center expansion at risk"
+   "cluster_title": "Cipher Mining sinks 17% as Texas election puts AI data-center expansion at risk",
+   "filtered": true
   },
   {
    "id": "86f5c6deec0f9ba9",
@@ -40152,7 +40678,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "abf4def778756470",
-   "cluster_title": "Texas, Ohio and Georgia data center risks after Democratic election wins"
+   "cluster_title": "Texas, Ohio and Georgia data center risks after Democratic election wins",
+   "filtered": true
   },
   {
    "id": "deec692dbf35e757",
@@ -40342,7 +40869,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "639a91121e6ae5d2",
-   "cluster_title": "CoreWeave IREN and Nebius Stocks Sink as Election Results Spark AI Data Center Fears"
+   "cluster_title": "CoreWeave IREN and Nebius Stocks Sink as Election Results Spark AI Data Center Fears",
+   "filtered": true
   },
   {
    "id": "9e6ee7ddcd7ed83b",
@@ -40625,7 +41153,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d3c3261b419fc75f",
-   "cluster_title": "AI data center stocks dip, renewables surge after Democrat sweep in US midterm elections By Reuters"
+   "cluster_title": "AI data center stocks dip, renewables surge after Democrat sweep in US midterm elections By Reuters",
+   "filtered": true
   },
   {
    "id": "8dd7c3b1ee9f7838",
@@ -40667,11 +41196,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -40792,7 +41332,8 @@
     "Bloom Energy"
    ],
    "cluster_id": "fb1e2160ef59fb2e",
-   "cluster_title": "Bloom Energy stock may benefit from data center power rules, Mizuho says"
+   "cluster_title": "Bloom Energy stock may benefit from data center power rules, Mizuho says",
+   "filtered": true
   },
   {
    "id": "6bbbcf35a6a85345",
@@ -40979,11 +41520,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -41053,7 +41605,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "a6b5decb154fa165",
-   "cluster_title": "Blue Wave Washes Over AI Buildout as Texas Moratorium Threat Sinks Data Center Stocks"
+   "cluster_title": "Blue Wave Washes Over AI Buildout as Texas Moratorium Threat Sinks Data Center Stocks",
+   "filtered": true
   },
   {
    "id": "159da71df5e2c70b",
@@ -41393,7 +41946,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5f12ea331c90eefe",
-   "cluster_title": "Texas Data Centers’ 25% Share Faces Hinojosa Pause [2026]"
+   "cluster_title": "Texas Data Centers’ 25% Share Faces Hinojosa Pause [2026]",
+   "filtered": true
   },
   {
    "id": "bf7129fe37be43e3",
@@ -41455,7 +42009,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "3c75d0cd74176a8b",
-   "cluster_title": "AI data center stocks drop as Democrats sweep U.S. midterms"
+   "cluster_title": "AI data center stocks drop as Democrats sweep U.S. midterms",
+   "filtered": true
   },
   {
    "id": "b7a62ad1a7f022cb",
@@ -41885,7 +42440,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d568f63efb18f936",
-   "cluster_title": "AI stocks tied to Texas data center boom slide after Hinojosa win"
+   "cluster_title": "AI stocks tied to Texas data center boom slide after Hinojosa win",
+   "filtered": true
   },
   {
    "id": "5b2b4b5f9fc49624",
@@ -41921,7 +42477,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d568f63efb18f936",
-   "cluster_title": "AI stocks tied to Texas data center boom slide after Hinojosa win"
+   "cluster_title": "AI stocks tied to Texas data center boom slide after Hinojosa win",
+   "filtered": true
   },
   {
    "id": "b85d5963dc57ccb6",
@@ -41956,8 +42513,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b85d5963dc57ccb6",
-   "cluster_title": "ELECTION 2026: Voters decide to ban data centers, recall Urbana mayor"
+   "cluster_id": "e98ffd797d16b145",
+   "cluster_title": "Urbana data center ban, mayor recall passing in early results"
   },
   {
    "id": "0c75238e23e33aaf",
@@ -42073,11 +42630,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -42147,7 +42715,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "3f8fb02ab6fb96a9",
-   "cluster_title": "Texas Goes Blue: What Gina Hinojosa's Win Means For AI Data Centers And Stocks Like MSFT, AMZN, GOOGL, CRWV"
+   "cluster_title": "Texas Goes Blue: What Gina Hinojosa's Win Means For AI Data Centers And Stocks Like MSFT, AMZN, GOOGL, CRWV",
+   "filtered": true
   },
   {
    "id": "bfee449d751af4ab",
@@ -42185,7 +42754,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "bfee449d751af4ab",
-   "cluster_title": "Democratic Party Sweeps Midterms; Texas Flip Sparks AI Data Center Divestment Fears, Nasdaq Futures Fall 2%"
+   "cluster_title": "Democratic Party Sweeps Midterms; Texas Flip Sparks AI Data Center Divestment Fears, Nasdaq Futures Fall 2%",
+   "filtered": true
   },
   {
    "id": "671bb09a94243fb6",
@@ -42396,7 +42966,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d50a52fe2828a854",
-   "cluster_title": "Texas Political Shift Deals Blow to AI Infrastructure as Democratic Governor-Elect Moves to Pause Data Center Approvals"
+   "cluster_title": "Texas Political Shift Deals Blow to AI Infrastructure as Democratic Governor-Elect Moves to Pause Data Center Approvals",
+   "filtered": true
   },
   {
    "id": "884530c39f58e955",
@@ -42447,11 +43018,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Grove City, Ohio, US",
+     "lat": 39.8815,
+     "lon": -83.093,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -42496,11 +43079,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -42521,11 +43115,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -42556,8 +43161,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "78d75f5a969e75df",
-   "cluster_title": "Emporia voters approve high-impact data center prohibition"
+   "cluster_id": "51b42127bf700512",
+   "cluster_title": "El Dorado voters approve ban on data centers, battery energy storage systems"
   },
   {
    "id": "1a2d98c9bdb1132b",
@@ -42910,8 +43515,8 @@
    "builders": [],
    "suppliers": [],
    "name_hint": "Hubbard Data Center",
-   "cluster_id": "1bab324cb126109f",
-   "cluster_title": "DECISION 2026: Hubbard data center ban passes"
+   "cluster_id": "446502c787ecf5f9",
+   "cluster_title": "Decision 2026: Data center ban passes in Hubbard"
   },
   {
    "id": "b57c46ca8018f374",
@@ -43422,11 +44027,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -43598,11 +44214,22 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
    "companies": [
     "OpenAI"
    ],
@@ -43628,11 +44255,11 @@
    ],
    "locations": [
     {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "source",
+     "name": "El Dorado, Kansas, US",
+     "lat": 37.8172,
+     "lon": -96.8623,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -43641,14 +44268,14 @@
    ],
    "state": "KS",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "34b85ddf29c756cf",
-   "cluster_title": "Voters approve ban on high-impact data centers in El Dorado, Emporia"
+   "cluster_id": "51b42127bf700512",
+   "cluster_title": "El Dorado voters approve ban on data centers, battery energy storage systems"
   },
   {
    "id": "51b42127bf700512",
@@ -43665,11 +44292,11 @@
    ],
    "locations": [
     {
-     "name": "Kansas, US",
-     "lat": 38.5,
-     "lon": -98.4,
-     "level": 2,
-     "precision": "source",
+     "name": "El Dorado, Kansas, US",
+     "lat": 37.8172,
+     "lon": -96.8623,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -43678,7 +44305,7 @@
    ],
    "state": "KS",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -43733,11 +44360,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Morgan County, Illinois, US",
+     "lat": 39.716,
+     "lon": -90.201,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
+   "county": "Morgan County, Illinois, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -43889,8 +44527,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "cb0f4cfa31566fab",
-   "cluster_title": "Effingham County to vote on OpenAI data center site plan"
+   "cluster_id": "7527e22fe74c4a91",
+   "cluster_title": "Effingham County to Vote on OpenAI Data Center Plan on Election Day"
   },
   {
    "id": "dc5bbfad59bdf719",
@@ -43903,18 +44541,30 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "dc5bbfad59bdf719",
-   "cluster_title": "Trenton data center ban passes with nearly 80% of the vote"
+   "cluster_id": "0fddbbd14f946e3b",
+   "cluster_title": "Ohio Supreme Court orders Trenton vote on data center ban"
   },
   {
    "id": "173d59e4290916c3",
@@ -43956,18 +44606,29 @@
     "Economy / Jobs",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Topeka, Kansas, US",
+     "lat": 39.0483,
+     "lon": -95.678,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "452047acda920874",
-   "cluster_title": "Topeka mayor says city employees held unauthorized meeting over proposed data center"
+   "cluster_id": "4a80c46b628bf883",
+   "cluster_title": "Topeka mayor says staffers had unauthorized meeting about data center"
   },
   {
    "id": "d63494399e4933c0",
@@ -44030,8 +44691,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "0e94648dec4fe352",
-   "cluster_title": "Olyphant cancels Thursday meeting to consider data center agreement"
+   "cluster_id": "d29d1d073c29b59c",
+   "cluster_title": "UPDATE: Olyphant cancels Thursday meeting to consider data center agreement"
   },
   {
    "id": "614846b2758e41dc",
@@ -44095,11 +44756,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -44305,11 +44977,23 @@
    "feed": "Google News: Data center",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -44963,11 +45647,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -45000,7 +45695,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "dad2f614afca099c",
-   "cluster_title": "Arista Networks Nearly Doubles 3Q Profit on AI Data-Center Demand -- Update"
+   "cluster_title": "Arista Networks Nearly Doubles 3Q Profit on AI Data-Center Demand -- Update",
+   "filtered": true
   },
   {
    "id": "615b4c8423c147e5",
@@ -45013,11 +45709,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -45083,11 +45790,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -45292,11 +46010,22 @@
     "Land Acquisition",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -45304,10 +46033,9 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hint": "West Richland Data Center",
    "investment_usd_b": 0.264,
-   "cluster_id": "03b48375faf57585",
-   "cluster_title": "AWS emerges as buyer behind $264M West Richland data center land deal"
+   "cluster_id": "3de91e24cde64c47",
+   "cluster_title": "Amazon will build up to 21 data centers on West Richland land it paid $264M for"
   },
   {
    "id": "0d9995b8525e56d0",
@@ -45476,8 +46204,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "afad2655a451f55e",
-   "cluster_title": "WhiteFiber Buys Two North Carolina Sites for Data Center Retrofits"
+   "cluster_id": "1a331da1f92b0a14",
+   "cluster_title": "WhiteFiber Acquires Two North Carolina Sites for $60 Million Data Center Expansion"
   },
   {
    "id": "28f174af9872978f",
@@ -45609,7 +46337,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "1547a27dc76b4c45",
-   "cluster_title": "Everus Construction Q3 revenue beats on data center demand"
+   "cluster_title": "Everus Construction Q3 revenue beats on data center demand",
+   "filtered": true
   },
   {
    "id": "dc144959d753cae5",
@@ -45752,7 +46481,8 @@
    "suppliers": [],
    "investment_usd_b": 0.06,
    "cluster_id": "30a46a79db3048fc",
-   "cluster_title": "WhiteFiber Completes $60 Million North Carolina Property Acquisition for Data Center Development"
+   "cluster_title": "WhiteFiber Completes $60 Million North Carolina Property Acquisition for Data Center Development",
+   "filtered": true
   },
   {
    "id": "00c2524fb36f8479",
@@ -46641,11 +47371,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -46801,11 +47542,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -46987,7 +47739,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "62b6d000cc18334d",
-   "cluster_title": "Applied Digital Surges 9% as AI Data Center Stocks Rebound From Financing Jitters; IREN Jumps 9%, Nebius Climbs 7%"
+   "cluster_title": "Applied Digital Surges 9% as AI Data Center Stocks Rebound From Financing Jitters; IREN Jumps 9%, Nebius Climbs 7%",
+   "filtered": true
   },
   {
    "id": "74090a5f0324e29a",
@@ -47015,7 +47768,8 @@
     "GE Vernova"
    ],
    "cluster_id": "74090a5f0324e29a",
-   "cluster_title": "GE Vernova Rallies 7% as Bernstein Calls Election-Day Data Center Fears Overblown; Eaton Climbs 6%, Vertiv Gains 5%"
+   "cluster_title": "GE Vernova Rallies 7% as Bernstein Calls Election-Day Data Center Fears Overblown; Eaton Climbs 6%, Vertiv Gains 5%",
+   "filtered": true
   },
   {
    "id": "5d90848e3e5fd187",
@@ -47569,8 +48323,8 @@
    "builders": [],
    "suppliers": [],
    "name_hint": "Boyce Data Center",
-   "cluster_id": "8b0f72381e2f506e",
-   "cluster_title": "NSU hosts Applied Digital rep for briefing on Boyce data center construction"
+   "cluster_id": "51627a02c70616b3",
+   "cluster_title": "Northwestern State Unviersity hosts Applied Digital rep for briefing on Boyce data center construction"
   },
   {
    "id": "d87f473a9904b5bd",
@@ -47958,7 +48712,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e0e183de52e68c43",
-   "cluster_title": "Cipher Digital Soars 11% as AI Data Center Stocks Rebound After Price-Target Selloff; IREN Jumps 10%, TeraWulf Surges 9%"
+   "cluster_title": "Cipher Digital Soars 11% as AI Data Center Stocks Rebound After Price-Target Selloff; IREN Jumps 10%, TeraWulf Surges 9%",
+   "filtered": true
   },
   {
    "id": "eb692d3ab5daf27e",
@@ -48023,8 +48778,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "fb05e733083c0b96",
-   "cluster_title": "xAI uses eight converted jet turbines to power a Mississippi data center"
+   "cluster_id": "f360fe7b49448aae",
+   "cluster_title": "Elon Musk's xAI installs eight converted jet engines to power Mississippi data center — permits allow 25 percent higher limit for pollutants, concerns raised over carbon monoxide"
   },
   {
    "id": "9a303c44955e9747",
@@ -48139,7 +48894,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "15d058537b38ab8d",
-   "cluster_title": "ON Q3 Earnings Beat Estimates, Strong AI Data Center Aids Top Line"
+   "cluster_title": "ON Q3 Earnings Beat Estimates, Strong AI Data Center Aids Top Line",
+   "filtered": true
   },
   {
    "id": "f360fe7b49448aae",
@@ -48483,7 +49239,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "f7837e86d793dd9e",
-   "cluster_title": "ET: Q3 growth lifted guidance as data center, power and export demand drove expansion"
+   "cluster_title": "ET: Q3 growth lifted guidance as data center, power and export demand drove expansion",
+   "filtered": true
   },
   {
    "id": "2f1bd378c7ace338",
@@ -48530,7 +49287,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e85f02d82f84a3fe",
-   "cluster_title": "Pinnacle West Capital Q3 2026: Data Center Surge Drives Earnings Beat"
+   "cluster_title": "Pinnacle West Capital Q3 2026: Data Center Surge Drives Earnings Beat",
+   "filtered": true
   },
   {
    "id": "da9689d8b57c4c7d",
@@ -48664,7 +49422,8 @@
    "suppliers": [],
    "capacity_mw": 0,
    "cluster_id": "2df90b0ea5b26222",
-   "cluster_title": "QumulusAI Contracts 0.5 MW of Data Center Capacity in Columbia, South Carolina"
+   "cluster_title": "QumulusAI Contracts 0.5 MW of Data Center Capacity in Columbia, South Carolina",
+   "filtered": true
   },
   {
    "id": "f889edb8251ed952",
@@ -48967,18 +49726,29 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b54e694cc1222d20",
-   "cluster_title": "Estherville Sets Public Hearing for Proposed Data Center Ordinance"
+   "cluster_id": "5576bae6eb05bb43",
+   "cluster_title": "Estherville city council advances data center rules to public hearing"
   },
   {
    "id": "ba5613cffa722633",
@@ -49266,7 +50036,8 @@
    "suppliers": [],
    "investment_usd_b": 0.051,
    "cluster_id": "9717d95c05f2686a",
-   "cluster_title": "Hyperscale Data Held Approximately $50.6 Million of Bitcoin, Cash and Restricted Cash as of November 1, 2026"
+   "cluster_title": "Hyperscale Data Held Approximately $50.6 Million of Bitcoin, Cash and Restricted Cash as of November 1, 2026",
+   "filtered": true
   },
   {
    "id": "0fe8de2d01d21352",
@@ -49589,11 +50360,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "OpenAI"
    ],
@@ -49601,8 +50383,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "cb0f4cfa31566fab",
-   "cluster_title": "Effingham County to vote on OpenAI data center site plan"
+   "cluster_id": "7527e22fe74c4a91",
+   "cluster_title": "Effingham County to Vote on OpenAI Data Center Plan on Election Day"
   },
   {
    "id": "e83038d000eccfca",
@@ -50132,7 +50914,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "47e75ad04f4291e8",
-   "cluster_title": "Nidec Data Center Cooling: 13K+ CDUs, 90 Years [2026]"
+   "cluster_title": "Nidec Data Center Cooling: 13K+ CDUs, 90 Years [2026]",
+   "filtered": true
   },
   {
    "id": "67e54b04e2c086b3",
@@ -50157,7 +50940,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "67e54b04e2c086b3",
-   "cluster_title": "Drax Plots A 1-GW AI Data Center At Its Power Station"
+   "cluster_title": "Drax Plots A 1-GW AI Data Center At Its Power Station",
+   "filtered": true
   },
   {
    "id": "5ba23afbf5e84988",
@@ -50314,7 +51098,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2d32b79e35b67735",
-   "cluster_title": "U.S. Midterms to Decide Fate of $2.5 Trillion in AI Data Center Investment as Governor Races Emerge as Wild Card"
+   "cluster_title": "U.S. Midterms to Decide Fate of $2.5 Trillion in AI Data Center Investment as Governor Races Emerge as Wild Card",
+   "filtered": true
   },
   {
    "id": "e80e06b8f89d0d98",
@@ -50485,11 +51270,22 @@
    "feed": "Google News: Local approvals",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Mason County, West Virginia, US",
+     "lat": 38.768,
+     "lon": -82.027,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": "Mason County, West Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -50521,7 +51317,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "555a099da6a47c10",
-   "cluster_title": "ON Q3 deep dive: AI data center and industrial gains offset automotive supply shifts"
+   "cluster_title": "ON Q3 deep dive: AI data center and industrial gains offset automotive supply shifts",
+   "filtered": true
   },
   {
    "id": "ef01a35a089224e1",
@@ -50781,8 +51578,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "cb0f4cfa31566fab",
-   "cluster_title": "Effingham County to vote on OpenAI data center site plan"
+   "cluster_id": "7527e22fe74c4a91",
+   "cluster_title": "Effingham County to Vote on OpenAI Data Center Plan on Election Day"
   },
   {
    "id": "1077b267b15be3c0",
@@ -50868,11 +51665,11 @@
    ],
    "locations": [
     {
-     "name": "Iowa, US",
-     "lat": 42.1,
-     "lon": -93.5,
-     "level": 2,
-     "precision": "source",
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -50881,7 +51678,7 @@
    ],
    "state": "IA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -50902,11 +51699,22 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -50914,8 +51722,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "d7b340f4e65883d8",
-   "cluster_title": "Amazon revealed as land buyer for possible data center development in West Richland"
+   "cluster_id": "3de91e24cde64c47",
+   "cluster_title": "Amazon will build up to 21 data centers on West Richland land it paid $264M for"
   },
   {
    "id": "cf507efc5a7dae22",
@@ -50928,11 +51736,23 @@
    "tags": [
     "Environment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Core Scientific"
    ],
@@ -51150,11 +51970,22 @@
    "feed": "Google News: Local approvals",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Mason County, West Virginia, US",
+     "lat": 38.768,
+     "lon": -82.027,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": "Mason County, West Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51435,11 +52266,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Massillon, Ohio, US",
+     "lat": 40.7967,
+     "lon": -81.5215,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51578,7 +52420,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "7d63eaa13595102f",
-   "cluster_title": "Data Centers Lift SE ConstructionTech: 5 Buyers [2026]"
+   "cluster_title": "Data Centers Lift SE ConstructionTech: 5 Buyers [2026]",
+   "filtered": true
   },
   {
    "id": "155d9c4bfffd3e94",
@@ -51669,7 +52512,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "25280559f3049f42",
+   "cluster_id": "b6247e3a5437f9a7",
    "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
@@ -51712,11 +52555,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51736,18 +52590,29 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "02437603f82a0dc8",
-   "cluster_title": "Data center campus proposed in Cochise Co."
+   "cluster_title": "New proposed data center in Cochise County"
   },
   {
    "id": "83e2c4bd55f95317",
@@ -51783,11 +52648,22 @@
    "feed": "Google News: Data center policy",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51810,11 +52686,11 @@
    ],
    "locations": [
     {
-     "name": "Georgia, US",
-     "lat": 32.7,
-     "lon": -83.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Eatonton, Georgia, US",
+     "lat": 33.3268,
+     "lon": -83.3885,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -51823,7 +52699,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51895,8 +52771,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "8d5893537f3e649b",
-   "cluster_title": "Lawsuit alleges FOIA violations with Google data center agreement in Botetourt County"
+   "cluster_id": "3a5e75b07d435019",
+   "cluster_title": "Botetourt County sued over data center agreement"
   },
   {
    "id": "158c30c6a29eab84",
@@ -52123,11 +52999,11 @@
    ],
    "locations": [
     {
-     "name": "Maine, US",
-     "lat": 45.4,
-     "lon": -69.2,
-     "level": 2,
-     "precision": "source",
+     "name": "Westbrook, Maine, US",
+     "lat": 43.677,
+     "lon": -70.3712,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -52136,7 +53012,7 @@
    ],
    "state": "ME",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -52229,11 +53105,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Microsoft"
    ],
@@ -52340,7 +53227,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "58a4e37b13c81642",
-   "cluster_title": "onsemi Q3 2026 slides: AI data center surges as auto softens"
+   "cluster_title": "onsemi Q3 2026 slides: AI data center surges as auto softens",
+   "filtered": true
   },
   {
    "id": "67e16ab0ae778f2b",
@@ -52355,11 +53243,11 @@
    ],
    "locations": [
     {
-     "name": "South Carolina, US",
-     "lat": 33.9,
-     "lon": -80.9,
-     "level": 2,
-     "precision": "source",
+     "name": "Pickens, South Carolina, US",
+     "lat": 34.8835,
+     "lon": -82.7074,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -52368,7 +53256,7 @@
    ],
    "state": "SC",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -52426,11 +53314,11 @@
    ],
    "locations": [
     {
-     "name": "Georgia, US",
-     "lat": 32.7,
-     "lon": -83.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Eatonton, Georgia, US",
+     "lat": 33.3268,
+     "lon": -83.3885,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -52439,7 +53327,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -52613,8 +53501,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "8d5893537f3e649b",
-   "cluster_title": "Lawsuit alleges FOIA violations with Google data center agreement in Botetourt County"
+   "cluster_id": "3a5e75b07d435019",
+   "cluster_title": "Botetourt County sued over data center agreement"
   },
   {
    "id": "60d0b4fde63bf537",
@@ -52828,8 +53716,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "f870022b7882fdd9",
-   "cluster_title": "Federal Judge Denies Motion by xAI to Dismiss NAACP Lawsuit Against Data Center"
+   "cluster_id": "2185ad2f4d5feb51",
+   "cluster_title": "Federal Judge Rejects xAI’s Attempt to Dismiss NAACP Lawsuit Over Data Center Pollution"
   },
   {
    "id": "8c210ec06bec026c",
@@ -53000,11 +53888,22 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -53012,9 +53911,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hint": "West Richland Data Center",
-   "cluster_id": "c003d84041b41f7e",
-   "cluster_title": "Amazon announces plans for West Richland data center"
+   "cluster_id": "3de91e24cde64c47",
+   "cluster_title": "Amazon will build up to 21 data centers on West Richland land it paid $264M for"
   },
   {
    "id": "60122f2b411b8d4c",
@@ -53153,11 +54051,22 @@
     "Economy / Jobs",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -53165,9 +54074,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hint": "West Richland Data Center",
-   "cluster_id": "8a6b7059013c20ff",
-   "cluster_title": "Amazon proposes West Richland data center campus with potential for 21 buildings, 1,000 jobs"
+   "cluster_id": "3de91e24cde64c47",
+   "cluster_title": "Amazon will build up to 21 data centers on West Richland land it paid $264M for"
   },
   {
    "id": "19404308bb468f93",
@@ -53217,11 +54125,22 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -53256,7 +54175,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e29ba7a7fd73f45d",
-   "cluster_title": "Bernstein: Data Center Politics Overblown, Creating AI Infrastructure Buying Window"
+   "cluster_title": "Bernstein: Data Center Politics Overblown, Creating AI Infrastructure Buying Window",
+   "filtered": true
   },
   {
    "id": "b0a653237efa7dd0",
@@ -53405,7 +54325,8 @@
    "suppliers": [],
    "investment_usd_b": 0.6,
    "cluster_id": "db3903653c138d1c",
-   "cluster_title": "Onsemi to acquire Ferric for $600M in cash; raises 2030 AI data center revenue target"
+   "cluster_title": "Onsemi to acquire Ferric for $600M in cash; raises 2030 AI data center revenue target",
+   "filtered": true
   },
   {
    "id": "907de344c1c53418",
@@ -53431,7 +54352,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "907de344c1c53418",
-   "cluster_title": "ON Semiconductor Q3 2026: AI data center revenue surges 175%, outlook raised"
+   "cluster_title": "ON Semiconductor Q3 2026: AI data center revenue surges 175%, outlook raised",
+   "filtered": true
   },
   {
    "id": "9cb4a51f8b31b741",
@@ -53493,7 +54415,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "820c3454f950fccd",
-   "cluster_title": "ON: AI data center demand surged as earnings growth outpaced revenue growth"
+   "cluster_title": "ON: AI data center demand surged as earnings growth outpaced revenue growth",
+   "filtered": true
   },
   {
    "id": "425463086f9e8fe6",
@@ -53543,7 +54466,8 @@
    "suppliers": [],
    "investment_usd_b": 2.0,
    "cluster_id": "425463086f9e8fe6",
-   "cluster_title": "Amazon's $2 Billion Ohio Data Center Hangs on Sunbury Ballot as 41 Measures Test AI Buildout"
+   "cluster_title": "Amazon's $2 Billion Ohio Data Center Hangs on Sunbury Ballot as 41 Measures Test AI Buildout",
+   "filtered": true
   },
   {
    "id": "06cb0737b8047972",
@@ -53642,11 +54566,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Northampton, Massachusetts, US",
+     "lat": 42.3251,
+     "lon": -72.6412,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MA"
+   ],
+   "state": "MA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -54100,8 +55035,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "af4ff7b4aedd2f96",
-   "cluster_title": "Data centers continue to drive nonresidential spending higher in September"
+   "cluster_id": "04f8dd6779e8d660",
+   "cluster_title": "News Releases | ABC: Data Centers Continue to Drive Nonresidential Spending Higher in September"
   },
   {
    "id": "ae77e74500ff1421",
@@ -54128,7 +55063,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ae77e74500ff1421",
-   "cluster_title": "Billionaire Investor Bets on Ares Management as It Eyes AI Data Center, Power Financing"
+   "cluster_title": "Billionaire Investor Bets on Ares Management as It Eyes AI Data Center, Power Financing",
+   "filtered": true
   },
   {
    "id": "8a6758ce7b6c702b",
@@ -54244,8 +55180,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "af4ff7b4aedd2f96",
-   "cluster_title": "Data centers continue to drive nonresidential spending higher in September"
+   "cluster_id": "04f8dd6779e8d660",
+   "cluster_title": "News Releases | ABC: Data Centers Continue to Drive Nonresidential Spending Higher in September"
   },
   {
    "id": "5bb60f58c574258d",
@@ -54294,8 +55230,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "af4ff7b4aedd2f96",
-   "cluster_title": "Data centers continue to drive nonresidential spending higher in September"
+   "cluster_id": "04f8dd6779e8d660",
+   "cluster_title": "News Releases | ABC: Data Centers Continue to Drive Nonresidential Spending Higher in September"
   },
   {
    "id": "27be2ccd0e26e430",
@@ -54733,8 +55669,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2b388884db135406",
-   "cluster_title": "Chevron keeps Microsoft data center timeline despite Texas permit freeze"
+   "cluster_id": "837e366c29654a1f",
+   "cluster_title": "Chevron Keeps Microsoft Data Center Timeline Despite Texas Pause"
   },
   {
    "id": "d4b72925c7936fa7",
@@ -54867,7 +55803,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "7d69c1fa8938ca1e",
-   "cluster_title": "Williams faces earnings test as data center power push accelerates"
+   "cluster_title": "Williams faces earnings test as data center power push accelerates",
+   "filtered": true
   },
   {
    "id": "217cf175654eb08f",
@@ -55074,7 +56011,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0e90157e06f13bc4",
-   "cluster_title": "Top Machinery & Electricals Stocks Amid Data Center Political Risks"
+   "cluster_title": "Top Machinery & Electricals Stocks Amid Data Center Political Risks",
+   "filtered": true
   },
   {
    "id": "7d944c9ff701cc80",
@@ -55333,7 +56271,8 @@
    "capacity_mw": 702,
    "investment_usd_b": 17.0,
    "cluster_id": "eddfb40ac01c934a",
-   "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]"
+   "cluster_title": "Google’s $17B Wyoming Data Center: 702 MW Plan [2026]",
+   "filtered": true
   },
   {
    "id": "5cc19043e64f00be",
@@ -55360,7 +56299,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5cc19043e64f00be",
-   "cluster_title": "OpenAI to reduce data center power usage during peak demand"
+   "cluster_title": "OpenAI to reduce data center power usage during peak demand",
+   "filtered": true
   },
   {
    "id": "af1bb61cd66bf103",
@@ -55398,7 +56338,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "af1bb61cd66bf103",
-   "cluster_title": "Franklin Electric upgraded at D.A. Davidson on AI data center, rare-earths growth"
+   "cluster_title": "Franklin Electric upgraded at D.A. Davidson on AI data center, rare-earths growth",
+   "filtered": true
   },
   {
    "id": "ca525a6c191ff04a",
@@ -55484,7 +56425,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e88c0167025d4e1a",
-   "cluster_title": "Can FLEX's EPC Power Deal Deepen Its AI Data Center Growth Advantage?"
+   "cluster_title": "Can FLEX's EPC Power Deal Deepen Its AI Data Center Growth Advantage?",
+   "filtered": true
   },
   {
    "id": "df0b6b4f55c37d0d",
@@ -56501,7 +57443,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "cd1bf90c66162a9a",
-   "cluster_title": "OpenAI vows to reduce electricity use at US data center campuses during extreme weather or power emergencies - Axios"
+   "cluster_title": "OpenAI vows to reduce electricity use at US data center campuses during extreme weather or power emergencies - Axios",
+   "filtered": true
   },
   {
    "id": "b132dd95f34f559c",
@@ -56528,7 +57471,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b132dd95f34f559c",
-   "cluster_title": "OpenAI pledges data center power cuts"
+   "cluster_title": "OpenAI Pledges Data Center Power Cuts, Up to 1 GW in Georgia"
   },
   {
    "id": "99c9591ad269e101",
@@ -56579,8 +57522,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "77cfe5b15d205daf",
-   "cluster_title": "Here’s The Full List Of Data Center Bans On Midterm Ballots"
+   "cluster_id": "17e4ad63d37f5db8",
+   "cluster_title": "Map: Where Data Centers Are on the Ballot"
   },
   {
    "id": "ba125604275ec217",
@@ -56605,8 +57548,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "77cfe5b15d205daf",
-   "cluster_title": "Here’s The Full List Of Data Center Bans On Midterm Ballots"
+   "cluster_id": "17e4ad63d37f5db8",
+   "cluster_title": "Map: Where Data Centers Are on the Ballot"
   },
   {
    "id": "9a7d17012c799293",
@@ -56619,11 +57562,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Radnor, Pennsylvania, US",
+     "lat": 40.0462,
+     "lon": -75.3599,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -57721,7 +58675,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "913899ad73ebcc6b",
-   "cluster_title": "Weekly Recap: AI data center stake and share repurchases resume"
+   "cluster_title": "Weekly Recap: AI data center stake and share repurchases resume",
+   "filtered": true
   },
   {
    "id": "b383d5c50bc8fdd7",
@@ -57747,7 +58702,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b383d5c50bc8fdd7",
-   "cluster_title": "Weekly Recap: Q2 results beat estimates and AI data center product debut"
+   "cluster_title": "Weekly Recap: Q2 results beat estimates and AI data center product debut",
+   "filtered": true
   },
   {
    "id": "0e9e59e290c09856",
@@ -57795,11 +58751,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Massillon, Ohio, US",
+     "lat": 40.7967,
+     "lon": -81.5215,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -58288,7 +59255,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ea51f140f0751c8d",
-   "cluster_title": "Wall St set for higher open as Democrats win Congress; data center stocks slide"
+   "cluster_title": "Wall Street rallies after Dems win Congress; data center stocks slide"
   },
   {
    "id": "c56ad493f3ea5f9f",
@@ -58573,11 +59540,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59894,11 +60872,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59982,11 +60971,22 @@
     "Power / Utility",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Berwick, Pennsylvania, US",
+     "lat": 41.0545,
+     "lon": -76.2333,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -60390,7 +61390,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e1b2f65d38feb8b4",
-   "cluster_title": "MYDCD focuses on data center construction and engineering services, benefiting from the sustained growth in AI, cloud computing, and global data center demand, which offers substantial long-term industry expansion potential. The company has a solid orde"
+   "cluster_title": "MYDCD focuses on data center construction and engineering services, benefiting from the sustained growth in AI, cloud computing, and global data center demand, which offers substantial long-term industry expansion potential. The company has a solid orde",
+   "filtered": true
   },
   {
    "id": "fb4a78326c8048ae",
@@ -60523,8 +61524,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "312160d8faae461e",

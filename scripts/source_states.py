@@ -29,10 +29,21 @@ MIN_HEADLINES = 5
 MIN_LOCATED = 3
 SHARE = 0.8
 NOT_LOCAL = {"Crusoe", "Entergy", "McGuireWoods", "WUSA9", "DC News Now", "Applied Digital Corporation (APLD)",
-             "Pipeline and Gas Journal", "The Gazette", "The Mercury", "Leader Publications"}
+             "Pipeline and Gas Journal", "The Gazette", "The Mercury", "Leader Publications",
+             "Appalachian Voices"}
 FIXED = {
     "Portland Press Herald - Maine Sunday Telegram": "ME", "Columbus Ledger-Enquirer": "GA",
     "decaturish.com": "GA", "WCBD News 2": "SC", "WTVG": "OH", "Maryland Matters": "MD",
+    "The GW Hatchet": "DC", "WTAP": "WV",
+    # Added 2026-11-14: local outlets whose headlines name an ambiguous town and no state.
+    "Post Bulletin": "MN", "kaaltv.com": "MN", "KROC-AM": "MN", "KOTA Territory News": "SD",
+    "WJCL": "GA", "Effingham Herald": "GA", "Journal-News.com": "OH", "Springfield News-Sun": "OH",
+    "WOSU Public Media": "OH", "WCHS": "WV", "Daily Hampshire Gazette": "MA", "WEEK 25 News Now": "IL",
+    "WAND": "IL", "Alton Telegraph": "IL", "Jacksonville Journal-Courier": "IL", "Arkansas Business": "AR",
+    "KARK": "AR", "Sioux County Radio": "IA", "San Diego Union-Tribune": "CA", "NBC 7 San Diego": "CA",
+    "San Gabriel Valley Tribune": "CA", "Capital Gazette": "MD", "The Citizens' Voice": "PA",
+    "Delco Times": "PA", "Denton Record-Chronicle": "TX", "Hutch Post": "KS", "Tompkins Weekly": "NY",
+    "WNDU": "IN", "The Fayetteville Observer": "NC",
 }
 
 

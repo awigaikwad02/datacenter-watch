@@ -904,11 +904,23 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Medina County, Texas, US",
+     "lat": 29.355,
+     "lon": -99.11,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "San Antonio"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Medina County, Texas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],

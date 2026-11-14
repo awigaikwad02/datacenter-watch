@@ -2006,11 +2006,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2055,18 +2066,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Hill County, Texas, US",
+     "lat": 31.991,
+     "lon": -97.131,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Hill County, Texas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "3f45a848af63dca7",
-   "cluster_title": "Hill County commissioners table discussion on lawsuit over data center moratorium"
+   "cluster_id": "4369967887bf97fe",
+   "cluster_title": "$100M lawsuit filed against Hill County officials over data center moratorium"
   },
   {
    "id": "87f5a54f85b60a35",
@@ -2314,8 +2336,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 0.1,
-   "cluster_id": "29183246f32cb5cc",
-   "cluster_title": "Data center developer files lawsuit over ‘illegal’ moratorium in Hill County, Texas"
+   "cluster_id": "4369967887bf97fe",
+   "cluster_title": "$100M lawsuit filed against Hill County officials over data center moratorium"
   },
   {
    "id": "98c968aac95ba094",
@@ -3012,11 +3034,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3130,8 +3163,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "29183246f32cb5cc",
-   "cluster_title": "Data center developer files lawsuit over ‘illegal’ moratorium in Hill County, Texas"
+   "cluster_id": "4369967887bf97fe",
+   "cluster_title": "$100M lawsuit filed against Hill County officials over data center moratorium"
   },
   {
    "id": "29410a3abf0efdc7",
@@ -5024,18 +5057,29 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "99354a8565a99400",
-   "cluster_title": "Putnam County residents continue to voice concerns over proposed data center"
+   "cluster_title": "Residents voice concerns over proposed Upper Merion data centers"
   },
   {
    "id": "f8ec917ceadfb5e7",
@@ -5048,11 +5092,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Jackson, Mississippi, US",
+     "lat": 32.2988,
+     "lon": -90.1848,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6216,11 +6271,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -6228,8 +6294,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "7f5dfbdeedf0b71d",
-   "cluster_title": "Judge Grants Temporary Restraining Order to Halt Construction of Google Data Center in Pine Island"
+   "cluster_id": "56c7a4984749ce35",
+   "cluster_title": "Judge halts construction of Pine Island’s hyperscale data center"
   },
   {
    "id": "829c09636d2ba0f4",
@@ -6429,18 +6495,29 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eastport, Maine, US",
+     "lat": 44.9045,
+     "lon": -66.9844,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "830eabe5324be8e1",
-   "cluster_title": "Eastport residents push City Council to oppose underwater AI data center"
+   "cluster_title": "Eastport residents push City Council to oppose DeepGreen’s underwater AI data center"
   },
   {
    "id": "769605e0e16d1df9",
@@ -6477,7 +6554,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "830eabe5324be8e1",
-   "cluster_title": "Eastport residents push City Council to oppose underwater AI data center"
+   "cluster_title": "Eastport residents push City Council to oppose DeepGreen’s underwater AI data center"
   },
   {
    "id": "29a2087737628bd5",
@@ -7082,11 +7159,22 @@
    "tags": [
     "Cancelled / Blocked"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7164,11 +7252,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Pulaski County, Arkansas, US",
+     "lat": 34.77,
+     "lon": -92.313,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
+   "county": "Pulaski County, Arkansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7504,11 +7603,23 @@
     "New Announcement",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Whitehall, Pennsylvania, US",
+     "lat": 40.3612,
+     "lon": -79.9909,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7811,7 +7922,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "99354a8565a99400",
-   "cluster_title": "Putnam County residents continue to voice concerns over proposed data center"
+   "cluster_title": "Residents voice concerns over proposed Upper Merion data centers"
   },
   {
    "id": "6cb8ede300d70253",
@@ -7957,11 +8068,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11801,11 +11923,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Microsoft"
    ],
@@ -12659,11 +12792,22 @@
     "Deals / Investment",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Arkansas, US",
+     "lat": 34.9,
+     "lon": -92.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12897,11 +13041,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Stark County, Ohio, US",
+     "lat": 40.814,
+     "lon": -81.367,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": "Stark County, Ohio, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16756,11 +16911,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16934,11 +17100,11 @@
    ],
    "locations": [
     {
-     "name": "Maine, US",
-     "lat": 45.4,
-     "lon": -69.2,
-     "level": 2,
-     "precision": "source",
+     "name": "Westbrook, Maine, US",
+     "lat": 43.677,
+     "lon": -70.3712,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -16947,7 +17113,7 @@
    ],
    "state": "ME",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -17598,11 +17764,22 @@
     "Construction",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Hill County, Texas, US",
+     "lat": 31.991,
+     "lon": -97.131,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Hill County, Texas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -17734,11 +17911,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -18534,11 +18722,22 @@
     "New Announcement",
     "Deals / Investment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -18597,11 +18796,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Conway, Arkansas, US",
+     "lat": 35.0887,
+     "lon": -92.4421,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19650,11 +19860,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19794,11 +20015,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19926,11 +20158,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -22188,11 +22431,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -23436,11 +23690,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25671,11 +25936,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25914,11 +26190,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Northampton County, Pennsylvania, US",
+     "lat": 40.755,
+     "lon": -75.306,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": "Northampton County, Pennsylvania, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],

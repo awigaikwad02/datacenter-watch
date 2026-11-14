@@ -59,7 +59,9 @@ def main():
             by_name[c["name"]].append(c)
     gaz_doc = json.loads(fn.GAZ_FILE.read_text(encoding="utf-8"))
     have = set(gaz_doc)
-    names = [n for n in by_name if n not in have and n not in DENY and len(n) > 3
+    # Organisation names are never towns here ("Iron Mountain" is the operator, not the Michigan town).
+    orgs = set(fn.COMPANY_ORDER) | fn.CONTEXT_ONLY | {n for lst in (fn.INVESTORS, fn.BUILDERS, fn.SUPPLIERS, fn.UTILITIES) for n, _ in lst}
+    names = [n for n in by_name if n not in have and n not in DENY and n not in orgs and len(n) > 3
              and (" " in n or n.lower() not in words)]
     rx = {n: re.compile(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])") for n in names}
 

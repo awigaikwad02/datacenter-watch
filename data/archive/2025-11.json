@@ -5102,11 +5102,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6267,11 +6278,22 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Warren County, Mississippi, US",
+     "lat": 32.357,
+     "lon": -90.848,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
+   "county": "Warren County, Mississippi, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -6579,8 +6601,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 3.0,
-   "cluster_id": "ce9be9d8a5db342a",
-   "cluster_title": "Amazon plans to invest at least $3 billion in Warren County, Mississippi, for next-generation data center campus"
+   "cluster_id": "dbe484b510ceda4d",
+   "cluster_title": "Amazon announces $3 billion data center planned for Warren County"
   },
   {
    "id": "395c4928fdf58d7f",
@@ -6655,8 +6677,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 3.0,
-   "cluster_id": "ce9be9d8a5db342a",
-   "cluster_title": "Amazon plans to invest at least $3 billion in Warren County, Mississippi, for next-generation data center campus"
+   "cluster_id": "dbe484b510ceda4d",
+   "cluster_title": "Amazon announces $3 billion data center planned for Warren County"
   },
   {
    "id": "aac473c02300d379",
@@ -6709,8 +6731,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 3.0,
-   "cluster_id": "ce9be9d8a5db342a",
-   "cluster_title": "Amazon plans to invest at least $3 billion in Warren County, Mississippi, for next-generation data center campus"
+   "cluster_id": "dbe484b510ceda4d",
+   "cluster_title": "Amazon announces $3 billion data center planned for Warren County"
   },
   {
    "id": "ddb1a89f2108a143",
@@ -7134,8 +7156,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 3.0,
-   "cluster_id": "ce9be9d8a5db342a",
-   "cluster_title": "Amazon plans to invest at least $3 billion in Warren County, Mississippi, for next-generation data center campus"
+   "cluster_id": "dbe484b510ceda4d",
+   "cluster_title": "Amazon announces $3 billion data center planned for Warren County"
   },
   {
    "id": "986736ff261c4c9a",
@@ -7409,8 +7431,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 3.0,
-   "cluster_id": "ce9be9d8a5db342a",
-   "cluster_title": "Amazon plans to invest at least $3 billion in Warren County, Mississippi, for next-generation data center campus"
+   "cluster_id": "dbe484b510ceda4d",
+   "cluster_title": "Amazon announces $3 billion data center planned for Warren County"
   },
   {
    "id": "55cf63c404a343ce",
@@ -14664,11 +14686,22 @@
     "New Announcement",
     "Deals / Investment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -15364,11 +15397,22 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Beaver Dam, Wisconsin, US",
+     "lat": 43.4578,
+     "lon": -88.8373,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
@@ -17163,11 +17207,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -18099,11 +18154,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -24157,11 +24223,23 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],

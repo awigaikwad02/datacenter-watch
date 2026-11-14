@@ -1149,7 +1149,8 @@
    "suppliers": [],
    "investment_usd_b": 800.0,
    "cluster_id": "68e33315042d557b",
-   "cluster_title": "AI Data Center Spending Rushes Toward $800 Billion"
+   "cluster_title": "AI Data Center Spending Rushes Toward $800 Billion",
+   "filtered": true
   },
   {
    "id": "2e4b60d7ff002c2f",
@@ -1522,11 +1523,22 @@
     "Analysis / Opinion",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3857,7 +3869,8 @@
    "suppliers": [],
    "capacity_mw": 1500,
    "cluster_id": "ccb26532cc8c79d9",
-   "cluster_title": "Bitcoin miner Core Scientific shifts to AI with 1.5GW data center push"
+   "cluster_title": "Bitcoin miner Core Scientific shifts to AI with 1.5GW data center push",
+   "filtered": true
   },
   {
    "id": "e30e9c28683e049e",
@@ -7030,11 +7043,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Morgan County, Illinois, US",
+     "lat": 39.716,
+     "lon": -90.201,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
+   "county": "Morgan County, Illinois, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8530,11 +8554,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Alabama, US",
+     "lat": 32.8,
+     "lon": -86.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8676,11 +8711,22 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Putnam County, West Virginia, US",
+     "lat": 38.508,
+     "lon": -81.911,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": "Putnam County, West Virginia, US",
+   "location_precision": "county",
    "companies": [
     "Google"
    ],
@@ -8850,11 +8896,22 @@
     "Land Acquisition",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Lowndes County, Alabama, US",
+     "lat": 32.156,
+     "lon": -86.65,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
+   "county": "Lowndes County, Alabama, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9781,11 +9838,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Cass County, Indiana, US",
+     "lat": 40.762,
+     "lon": -86.347,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "Cass County, Indiana, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -11366,11 +11434,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16135,11 +16214,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Monterey Park, California, US",
+     "lat": 34.0625,
+     "lon": -118.1228,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -17627,11 +17717,22 @@
     "Analysis / Opinion",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -18265,7 +18366,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "530415025847634a",
-   "cluster_title": "Energy Focus shares surge 254% on upbeat multi-year data center project update | EFOI Stock News"
+   "cluster_title": "Energy Focus shares surge 254% on upbeat multi-year data center project update | EFOI Stock News",
+   "filtered": true
   },
   {
    "id": "487511b2e953bf64",
@@ -19608,11 +19710,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20225,11 +20338,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20535,18 +20659,30 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Sunbury, Ohio, US",
+     "lat": 40.2426,
+     "lon": -82.8591,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "d17f3a2cc17b8734",
-   "cluster_title": "Sunbury City Council passes moratorium on data centers"
+   "cluster_id": "08d7698cadc4d795",
+   "cluster_title": "Sunbury council puts moratorium on data center development until 2027"
   },
   {
    "id": "dd5e52b85494212c",
@@ -23521,11 +23657,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "New York, US",
+     "lat": 42.9,
+     "lon": -75.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -24976,11 +25123,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25508,11 +25666,22 @@
     "Environment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Putnam County, West Virginia, US",
+     "lat": 38.508,
+     "lon": -81.911,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": "Putnam County, West Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -27768,11 +27937,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Massillon, Ohio, US",
+     "lat": 40.7967,
+     "lon": -81.5215,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28483,11 +28663,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31628,7 +31819,8 @@
    "suppliers": [],
    "investment_usd_b": 25.0,
    "cluster_id": "a211b32eca067b24",
-   "cluster_title": "News | Amazon nearly doubles Mississippi data center investment"
+   "cluster_title": "News | Amazon nearly doubles Mississippi data center investment",
+   "filtered": true
   },
   {
    "id": "c95997313d514817",
@@ -33101,11 +33293,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -33526,11 +33729,22 @@
     "Construction",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -34617,11 +34831,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36809,11 +37034,23 @@
     "Community",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],

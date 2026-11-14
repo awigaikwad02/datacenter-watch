@@ -993,6 +993,14 @@
      "metro": "Portland"
     },
     {
+     "name": "Berwick, Maine, US",
+     "lat": 43.2659,
+     "lon": -70.8645,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Maine, US",
      "lat": 45.4,
      "lon": -69.2,
@@ -3615,11 +3623,22 @@
     "Community",
     "Politics"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kansas, US",
+     "lat": 38.5,
+     "lon": -98.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3713,11 +3732,22 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3834,11 +3864,22 @@
     "Construction",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5297,11 +5338,22 @@
     "New Announcement",
     "Environment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5732,11 +5784,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Alabama, US",
+     "lat": 32.8,
+     "lon": -86.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5925,11 +5988,11 @@
    ],
    "locations": [
     {
-     "name": "Arkansas, US",
-     "lat": 34.9,
-     "lon": -92.4,
-     "level": 2,
-     "precision": "source",
+     "name": "El Dorado, Arkansas, US",
+     "lat": 33.2076,
+     "lon": -92.6663,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -5938,13 +6001,12 @@
    ],
    "state": "AR",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hint": "El Dorado Data Center",
    "cluster_id": "b8112b2eb4b236ee",
    "cluster_title": "Florida-based firm details plans for El Dorado data center"
   },
@@ -6821,11 +6883,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9177,11 +9250,22 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9299,11 +9383,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -10061,11 +10156,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13991,11 +14097,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -14602,11 +14719,22 @@
     "Construction",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Microsoft"
    ],
@@ -15334,18 +15462,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2ca4864ad510157e",
-   "cluster_title": "Boone County commissioners approve 1-year moratorium on data centers"
+   "cluster_id": "2b71ee6e5189f474",
+   "cluster_title": "Commissioners approve 180-day data center moratorium"
   },
   {
    "id": "804f3cc1ae3f8afa",
@@ -15404,8 +15543,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2ca4864ad510157e",
-   "cluster_title": "Boone County commissioners approve 1-year moratorium on data centers"
+   "cluster_id": "2b71ee6e5189f474",
+   "cluster_title": "Commissioners approve 180-day data center moratorium"
   },
   {
    "id": "8fc1872286f4b0cc",
@@ -19165,11 +19304,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "New York, US",
+     "lat": 42.9,
+     "lon": -75.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19213,11 +19363,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Cumberland County, North Carolina, US",
+     "lat": 35.049,
+     "lon": -78.827,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
+   "county": "Cumberland County, North Carolina, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19345,11 +19506,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "New York, US",
+     "lat": 42.9,
+     "lon": -75.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20014,11 +20186,23 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Parker, Colorado, US",
+     "lat": 39.5186,
+     "lon": -104.7614,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20548,7 +20732,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d8320edc94d5089d",
-   "cluster_title": "Amazon announces multibillion-dollar data center investment in Missouri"
+   "cluster_title": "Amazon announces multibillion-dollar data center investment in Missouri",
+   "filtered": true
   },
   {
    "id": "966d4e476dbbd887",
@@ -25233,11 +25418,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Conway, Arkansas, US",
+     "lat": 35.0887,
+     "lon": -92.4421,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [
     "Entergy"
@@ -27166,11 +27362,23 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "DeKalb County, Georgia, US",
+     "lat": 33.768,
+     "lon": -84.225,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "DeKalb County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28325,11 +28533,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Stark County, Ohio, US",
+     "lat": 40.814,
+     "lon": -81.367,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": "Stark County, Ohio, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28423,11 +28642,22 @@
     "Operations",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Clinton, Mississippi, US",
+     "lat": 32.3415,
+     "lon": -90.3218,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -28931,18 +29161,30 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "622b0e3bd08f3c0f",
-   "cluster_title": "Scarborough Town Council approves data center moratorium"
+   "cluster_id": "84975feb30ee67bd",
+   "cluster_title": "12-month data center moratorium approved in Nassau County"
   },
   {
    "id": "0e85bc4710348747",
@@ -30325,18 +30567,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "New York, US",
+     "lat": 42.9,
+     "lon": -75.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "c37e3add1361c229",
-   "cluster_title": "Flint City Council approves one-year data center moratorium"
+   "cluster_title": "State approves one-year moratorium on data center permits"
   },
   {
    "id": "991454b6eb03a9f4",
@@ -30503,7 +30756,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "c37e3add1361c229",
+   "cluster_id": "95d279110fe9bec7",
    "cluster_title": "Flint City Council approves one-year data center moratorium"
   },
   {
@@ -30805,7 +31058,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "08fac70e5652e716",
-   "cluster_title": "Elon Musk Reveals Details For SpaceX-Tesla Orbiting Data Center"
+   "cluster_title": "Elon Musk Reveals Details For SpaceX-Tesla Orbiting Data Center",
+   "filtered": true
   },
   {
    "id": "b586170ab2d08a6a",
@@ -31676,8 +31930,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9a808566fe1813a0",
-   "cluster_title": "Here’s what’s next after Flint council approves 12-month data center moratorium"
+   "cluster_id": "6b63008d4d06b391",
+   "cluster_title": "Flint city council approves data center moratorium"
   },
   {
    "id": "b246b204333086da",
@@ -33083,18 +33337,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "622b0e3bd08f3c0f",
-   "cluster_title": "Scarborough Town Council approves data center moratorium"
+   "cluster_id": "6b63008d4d06b391",
+   "cluster_title": "Flint city council approves data center moratorium"
   },
   {
    "id": "25a3c01aee9b80ad",
@@ -35535,11 +35800,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36097,11 +36373,23 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36998,11 +37286,22 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eastport, Maine, US",
+     "lat": 44.9045,
+     "lon": -66.9844,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37657,11 +37956,22 @@
     "Deals / Investment",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nelson County, Virginia, US",
+     "lat": 37.787,
+     "lon": -78.884,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Nelson County, Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -40039,11 +40349,22 @@
     "Environment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -41029,11 +41350,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -41438,18 +41770,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Hill County, Texas, US",
+     "lat": 31.991,
+     "lon": -97.131,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Hill County, Texas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "109b807657abd5a6",
-   "cluster_title": "Hill County Commissioners Court rescinds moratorium on data center development"
+   "cluster_title": "Hill County Commissioners Court rescinds moratorium on data center in the wake of lawsuit"
   },
   {
    "id": "159c96c2d371a24a",
@@ -41484,7 +41827,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "109b807657abd5a6",
-   "cluster_title": "Hill County Commissioners Court rescinds moratorium on data center development"
+   "cluster_title": "Hill County Commissioners Court rescinds moratorium on data center in the wake of lawsuit"
   },
   {
    "id": "249e73517584acd1",
@@ -41732,7 +42075,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "109b807657abd5a6",
-   "cluster_title": "Hill County Commissioners Court rescinds moratorium on data center development"
+   "cluster_title": "Hill County Commissioners Court rescinds moratorium on data center in the wake of lawsuit"
   },
   {
    "id": "1d5d8f7864d4d177",
@@ -46108,11 +46451,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -46585,11 +46939,22 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Stark County, Ohio, US",
+     "lat": 40.814,
+     "lon": -81.367,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": "Stark County, Ohio, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -46743,11 +47108,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -46955,11 +47331,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -47309,7 +47696,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "95915c6a06419ca7",
-   "cluster_title": "Fluence Jumps 42% As AI Data Center Partnership Opens New Opportunity"
+   "cluster_title": "Fluence Jumps 42% As AI Data Center Partnership Opens New Opportunity",
+   "filtered": true
   },
   {
    "id": "2c18979dfc4021ab",
@@ -48222,11 +48610,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Allentown, Pennsylvania, US",
+     "lat": 40.6084,
+     "lon": -75.4902,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -49096,11 +49495,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -50233,11 +50643,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51749,11 +52170,23 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51885,11 +52318,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Cass County, Indiana, US",
+     "lat": 40.762,
+     "lon": -86.347,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "Cass County, Indiana, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51980,11 +52424,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -52078,18 +52533,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Westbrook, Maine, US",
+     "lat": 43.677,
+     "lon": -70.3712,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "06b75a0e9a4ffd0b",
-   "cluster_title": "Reno City Council to debate data center moratorium, possible future regulations"
+   "cluster_id": "a4b98deea6bdb7d1",
+   "cluster_title": "Westbrook City Council approves 180-day data center moratorium"
   },
   {
    "id": "f897546034ea2347",
@@ -52103,11 +52569,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],

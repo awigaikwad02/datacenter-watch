@@ -389,11 +389,22 @@
    "tags": [
     "Deals / Investment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Huntington, West Virginia, US",
+     "lat": 38.4192,
+     "lon": -82.4451,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -498,8 +509,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ce89191f68adbf71",
-   "cluster_title": "BROADBAND DEVELOPMENT | Alpha Technologies to build large data center in Huntington"
+   "cluster_id": "38d86ae12917b303",
+   "cluster_title": "Alpha Technologies to invest $10M for data center headquarters in Huntington"
   },
   {
    "id": "d826d1ebe67e57c5",

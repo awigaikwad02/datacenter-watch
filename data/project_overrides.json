@@ -1,4 +1,23 @@
 {
  "_readme": "Corrections to data/registry.json, applied by scripts/registry.py after matching on every run. Each operation is idempotent. Ops: {\"op\":\"merge\",\"from\":ID,\"into\":ID} | {\"op\":\"rename\",\"id\":ID,\"name\":TEXT} | {\"op\":\"set_status\",\"id\":ID,\"status\":STATUS,\"date\":\"YYYY-MM-DD\"} | {\"op\":\"set_location\",\"id\":ID,\"lat\":N,\"lon\":N,\"location\":\"Place, State, US\",\"precision\":\"city|county|state\"} | {\"op\":\"hide\",\"id\":ID} | {\"op\":\"alias\",\"id\":ID,\"alias\":TEXT} | {\"op\":\"split\",\"id\":ID,\"headline_ids\":[ID,...],\"new_id\":ID}. See README.",
- "operations": []
+ "operations": [
+  {
+   "op": "split",
+   "id": "aws-west-richland-wa-2026",
+   "headline_ids": [
+    "f7c0a7eda09c3264",
+    "9ea8cb72e01ea1f8",
+    "e6a2f6fdba8d6ddc",
+    "ee84fd47302eefe6",
+    "f4ce9cde3046bb4f",
+    "4b04134756a6a49f"
+   ],
+   "new_id": "aws-walla-walla-move-2026"
+  },
+  {
+   "op": "merge",
+   "from": "aws-walla-walla-move-2026",
+   "into": "aws-walla-walla-county-wa-2026"
+  }
+ ]
 }

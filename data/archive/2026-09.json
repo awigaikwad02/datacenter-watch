@@ -539,11 +539,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Mississippi, US",
+     "lat": 32.7,
+     "lon": -89.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -2570,7 +2581,8 @@
    "suppliers": [],
    "capacity_mw": 300,
    "cluster_id": "b9bd893225855019",
-   "cluster_title": "Iron Mountain Targets 300MW Data Center Pipeline as ALM Growth Accelerates"
+   "cluster_title": "Iron Mountain Targets 300MW Data Center Pipeline as ALM Growth Accelerates",
+   "filtered": true
   },
   {
    "id": "5a891568138c3727",
@@ -2819,11 +2831,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Janesville, Wisconsin, US",
+     "lat": 42.6828,
+     "lon": -89.0187,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4046,11 +4069,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4731,18 +4765,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Janesville, Wisconsin, US",
+     "lat": 42.6828,
+     "lon": -89.0187,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "12d0644a8a90b88d",
-   "cluster_title": "Spartanburg County Council passes data center moratorium with several amendments"
+   "cluster_id": "daf0a0f9d754a0cf",
+   "cluster_title": "Janesville City Council passes data center moratorium"
   },
   {
    "id": "7bf4359d8bd7c511",
@@ -5234,11 +5279,23 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Core Scientific"
    ],
@@ -5519,11 +5576,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6195,7 +6263,8 @@
    "name_hint": "Project Jupiter",
    "investment_usd_b": 165.0,
    "cluster_id": "b83a8a10efa2749f",
-   "cluster_title": "Oracle Declares Force Majeure on $165 Billion Project Jupiter Data Center"
+   "cluster_title": "Oracle Declares Force Majeure on $165 Billion Project Jupiter Data Center",
+   "filtered": true
   },
   {
    "id": "eb9f8a73659acc98",
@@ -11359,11 +11428,22 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12298,11 +12378,22 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -12806,11 +12897,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13434,8 +13536,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "512d7801c751c52a",
-   "cluster_title": "Texas Governor Freezes All State Data Center Permits Pending Grid Audit"
+   "cluster_id": "b8376d1196ddc6fb",
+   "cluster_title": "Texas is halting all data center environmental permits amid grid audit"
   },
   {
    "id": "ebba177dd8e07831",
@@ -14456,7 +14558,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "512d7801c751c52a",
-   "cluster_title": "Texas Governor Freezes All State Data Center Permits Pending Grid Audit"
+   "cluster_title": "Texas Governor Freezes All State Data Center Permits Pending Grid Audit",
+   "filtered": true
   },
   {
    "id": "4c0e2c2ea9e604d3",
@@ -16598,11 +16701,22 @@
     "Power / Utility",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -17755,7 +17869,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "74d0b71e969bbbc8",
-   "cluster_title": "Texas Halts All New Data Center Permits, Putting Brakes on AI Infrastructure Expansion"
+   "cluster_title": "Texas Halts All New Data Center Permits, Putting Brakes on AI Infrastructure Expansion",
+   "filtered": true
   },
   {
    "id": "1f5eacba5cb46f27",
@@ -18569,7 +18684,6 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hint": "Salisbury Data Center",
    "cluster_id": "cb8c9b02c07dada3",
    "cluster_title": "Salisbury data center moratorium"
   },
@@ -19509,11 +19623,22 @@
     "Expansion",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19544,7 +19669,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "025a542aa067f326",
-   "cluster_title": "Hyundai E&C Signs Main Contract for Pohang AI Data Center, Cutting Structural Work to 2 Months"
+   "cluster_title": "Hyundai E&C Signs Main Contract for Pohang AI Data Center, Cutting Structural Work to 2 Months",
+   "filtered": true
   },
   {
    "id": "f33769ea5d87ea6a",
@@ -20021,11 +20147,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20585,7 +20722,8 @@
     "AMD"
    ],
    "cluster_id": "4f3ea44b1547e927",
-   "cluster_title": "AMD Unveils 2023–2027 Data Center Networking Roadmap, Taking Aim at NVIDIA's Supernode Architecture"
+   "cluster_title": "AMD Unveils 2023–2027 Data Center Networking Roadmap, Taking Aim at NVIDIA's Supernode Architecture",
+   "filtered": true
   },
   {
    "id": "8286742c43220f42",
@@ -21540,11 +21678,22 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -23264,11 +23413,22 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Northampton, Massachusetts, US",
+     "lat": 42.3251,
+     "lon": -72.6412,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MA"
+   ],
+   "state": "MA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -24150,11 +24310,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25647,11 +25818,22 @@
     "Deals / Investment",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -26050,11 +26232,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Port Angeles, Washington, US",
+     "lat": 48.1181,
+     "lon": -123.4307,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -26511,11 +26704,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Plymouth Township, Pennsylvania, US",
+     "lat": 40.1,
+     "lon": -75.28,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -29848,11 +30052,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -33676,11 +33891,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -34558,11 +34784,22 @@
     "Power / Utility",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37307,11 +37544,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37710,11 +37958,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Boone County, Iowa, US",
+     "lat": 42.037,
+     "lon": -93.93,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": "Boone County, Iowa, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37770,11 +38029,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -38767,11 +39037,30 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Chillicothe, Ohio, US",
+     "lat": 39.3331,
+     "lon": -82.9824,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Stark County, Ohio, US",
+     "lat": 40.814,
+     "lon": -81.367,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": "Stark County, Ohio, US",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -40576,11 +40865,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eastport, Maine, US",
+     "lat": 44.9045,
+     "lon": -66.9844,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -41725,7 +42025,8 @@
    "suppliers": [],
    "investment_usd_b": 0.7,
    "cluster_id": "43d87b45e6e68494",
-   "cluster_title": "Oracle Reportedly Expands Restructuring Plan by $700M As AI Data Center Costs Mount"
+   "cluster_title": "Oracle Reportedly Expands Restructuring Plan by $700M As AI Data Center Costs Mount",
+   "filtered": true
   },
   {
    "id": "4637e75cd3015302",
@@ -44420,11 +44721,22 @@
    "tags": [
     "Cancelled / Blocked"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Duluth, Minnesota, US",
+     "lat": 46.7833,
+     "lon": -92.1066,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -46704,11 +47016,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -47152,11 +47475,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -47405,18 +47739,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "46685a676f5b2b4a",
-   "cluster_title": "Port Angeles Moves Toward Moratorium on Data Centers"
+   "cluster_id": "11ec81364f362869",
+   "cluster_title": "Beaufort County moves toward temporary data center moratorium"
   },
   {
    "id": "23789d89e424113a",
@@ -49715,11 +50060,23 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "DeKalb County, Georgia, US",
+     "lat": 33.768,
+     "lon": -84.225,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "DeKalb County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -51478,11 +51835,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Northampton, Massachusetts, US",
+     "lat": 42.3251,
+     "lon": -72.6412,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MA"
+   ],
+   "state": "MA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -53124,11 +53492,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eastport, Maine, US",
+     "lat": 44.9045,
+     "lon": -66.9844,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -53301,7 +53680,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0f941989f969e67d",
-   "cluster_title": "Patagonia Draws Data Center Investment Frenzy as Power and Tax Incentives Attract Investors"
+   "cluster_title": "Patagonia Draws Data Center Investment Frenzy as Power and Tax Incentives Attract Investors",
+   "filtered": true
   },
   {
    "id": "6d0e3faf54fa0c61",
@@ -55355,11 +55735,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rapid City, South Dakota, US",
+     "lat": 44.0805,
+     "lon": -103.231,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SD"
+   ],
+   "state": "SD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
@@ -56101,11 +56492,22 @@
     "New Announcement",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Allentown, Pennsylvania, US",
+     "lat": 40.6084,
+     "lon": -75.4902,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -56126,11 +56528,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -56416,11 +56829,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
    "companies": [
     "OpenAI"
    ],
@@ -56895,11 +57319,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -57140,11 +57575,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -57408,7 +57854,8 @@
    "suppliers": [],
    "investment_usd_b": 6.5,
    "cluster_id": "f406aca01deb4ff1",
-   "cluster_title": "Blue Owl Capital Readies $6.5 Billion Data Center REIT for Public Listing"
+   "cluster_title": "Blue Owl Capital Readies $6.5 Billion Data Center REIT for Public Listing",
+   "filtered": true
   },
   {
    "id": "0ae64e6ea97f4fcc",
@@ -58980,11 +59427,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59331,11 +59789,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Mason County, West Virginia, US",
+     "lat": 38.768,
+     "lon": -82.027,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": "Mason County, West Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59617,11 +60086,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59642,11 +60122,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wilmington, Ohio, US",
+     "lat": 39.4453,
+     "lon": -83.8285,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -60026,11 +60517,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
    "companies": [
     "OpenAI"
    ],
@@ -60649,11 +61151,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Port Angeles, Washington, US",
+     "lat": 48.1181,
+     "lon": -123.4307,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -61605,11 +62118,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -64531,11 +65055,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Alabama, US",
+     "lat": 32.8,
+     "lon": -86.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -64957,11 +65492,22 @@
    "feed": "Backfill: cancelled",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -65052,11 +65598,22 @@
    "tags": [
     "Environment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kansas, US",
+     "lat": 38.5,
+     "lon": -98.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -65696,7 +66253,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "fd8b03f33ef45ef4",
-   "cluster_title": "SB Energy, Integrated Data Center And Power Infrastructure Company, Files for Nasdaq Global Select Market and Nasdaq Texas IPO"
+   "cluster_title": "SB Energy, Integrated Data Center And Power Infrastructure Company, Files for Nasdaq Global Select Market and Nasdaq Texas IPO",
+   "filtered": true
   },
   {
    "id": "70b4e7775eb5eed3",

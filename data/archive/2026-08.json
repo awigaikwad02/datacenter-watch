@@ -559,11 +559,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eastport, Maine, US",
+     "lat": 44.9045,
+     "lon": -66.9844,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1483,11 +1494,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1582,11 +1604,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "St. Joseph County, Indiana, US",
+     "lat": 41.616,
+     "lon": -86.29,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "St. Joseph County, Indiana, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5426,11 +5459,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "OpenAI"
    ],
@@ -6327,11 +6371,22 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6946,11 +7001,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Bethlehem, Pennsylvania, US",
+     "lat": 40.6259,
+     "lon": -75.3705,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8013,11 +8079,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8461,11 +8538,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8578,11 +8666,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9150,11 +9249,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -9174,11 +9284,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -10314,7 +10435,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b7aa03cea8542ffd",
-   "cluster_title": "How Your State's AI Data-Center 'Moratorium' Really Works"
+   "cluster_title": "How Your State's AI Data-Center 'Moratorium' Really Works",
+   "filtered": true
   },
   {
    "id": "304d776458ce60f9",
@@ -11499,18 +11621,29 @@
     "Power / Utility",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Elkhart, Indiana, US",
+     "lat": 41.682,
+     "lon": -85.9767,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2daec1b6f205a75b",
-   "cluster_title": "Elkhart City Council casts unanimous vote for moratorium on data centers, battery storage facilities"
+   "cluster_id": "f0e90a7cab9ef957",
+   "cluster_title": "Elkhart city council unanimously passes data center moratorium"
   },
   {
    "id": "87c7eff79bf32d42",
@@ -14667,11 +14800,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -18674,7 +18818,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "9bf2e33674af7122",
-   "cluster_title": "A Single Meta Data Center Will Require \"8 Million Miles of Fiber.\" These Stocks Are Cashing In On the 802 Data Centers Currently Under Construction"
+   "cluster_title": "A Single Meta Data Center Will Require \"8 Million Miles of Fiber.\" These Stocks Are Cashing In On the 802 Data Centers Currently Under Construction",
+   "filtered": true
   },
   {
    "id": "793fe8e039466a43",
@@ -19004,11 +19149,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eastport, Maine, US",
+     "lat": 44.9045,
+     "lon": -66.9844,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -23924,11 +24080,22 @@
     "New Announcement",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25525,7 +25692,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d9c03d95b65531b1",
-   "cluster_title": "AI Data Center Financing Costs Surge as Blackstone's QTS Bond Prices at 7.2% Yield"
+   "cluster_title": "AI Data Center Financing Costs Surge as Blackstone's QTS Bond Prices at 7.2% Yield",
+   "filtered": true
   },
   {
    "id": "2aeaf42d62ee397c",
@@ -25609,11 +25777,22 @@
     "Expansion",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -25782,7 +25961,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "034ffbd667f29343",
-   "cluster_title": "NBIS Stock Dips Premarket: Nebius Clears Hurdle For Microsoft Deal As Vineland Approves Data Center Expansion"
+   "cluster_title": "NBIS Stock Dips Premarket: Nebius Clears Hurdle For Microsoft Deal As Vineland Approves Data Center Expansion",
+   "filtered": true
   },
   {
    "id": "6423a7dbf84ac594",
@@ -26854,11 +27034,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -27450,11 +27641,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -27476,11 +27678,22 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -30898,7 +31111,8 @@
    ],
    "investment_usd_b": 250.0,
    "cluster_id": "18f7ff9cb7bd3fc7",
-   "cluster_title": "Exclusive | Nvidia Downsizes Plans for $250 Billion Guarantee of OpenAI Data Center"
+   "cluster_title": "Exclusive | Nvidia Downsizes Plans for $250 Billion Guarantee of OpenAI Data Center",
+   "filtered": true
   },
   {
    "id": "04c1dc65104474aa",
@@ -31571,7 +31785,8 @@
    ],
    "investment_usd_b": 120.0,
    "cluster_id": "338b2a52fff16614",
-   "cluster_title": "Nvidia cuts planned OpenAI data center guarantee to below $120 billion - WSJ"
+   "cluster_title": "Nvidia cuts planned OpenAI data center guarantee to below $120 billion - WSJ",
+   "filtered": true
   },
   {
    "id": "ee7d15474b223c35",
@@ -31834,7 +32049,8 @@
    "suppliers": [],
    "investment_usd_b": 10.0,
    "cluster_id": "f3e9ab1b9e4471b0",
-   "cluster_title": "This $10 Billion ETF Owns the Companies Wiring America’s $68 Billion Data Center Boom"
+   "cluster_title": "This $10 Billion ETF Owns the Companies Wiring America’s $68 Billion Data Center Boom",
+   "filtered": true
   },
   {
    "id": "84340460953a7450",
@@ -32368,11 +32584,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -33376,11 +33603,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -33440,18 +33678,29 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Eastport, Maine, US",
+     "lat": 44.9045,
+     "lon": -66.9844,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ME"
+   ],
+   "state": "ME",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2c0d26ed74c2846b",
-   "cluster_title": "Eastport Council unanimously adopts moratorium on DeepGreen underwater data center proposal"
+   "cluster_id": "bddff5909fbd06e4",
+   "cluster_title": "Eastport united in opposition to underwater data center proposal"
   },
   {
    "id": "a1d9f2df8167f12e",
@@ -33742,11 +33991,23 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "DeKalb County, Georgia, US",
+     "lat": 33.768,
+     "lon": -84.225,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "DeKalb County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -34182,11 +34443,22 @@
     "Power / Utility",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -34515,11 +34787,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37699,11 +37982,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -38316,11 +38610,22 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Montgomery, Alabama, US",
+     "lat": 32.3668,
+     "lon": -86.3,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Meta"
    ],
@@ -38664,8 +38969,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 1.0,
-   "cluster_id": "688157c7105eb58a",
-   "cluster_title": "Meta launches $1 billion fund supporting data center communities"
+   "cluster_id": "9805babd8ae049f5",
+   "cluster_title": "Meta launches $1B fund to support data center communities including Montgomery"
   },
   {
    "id": "25e9a325f423807f",
@@ -40467,11 +40772,22 @@
    "tags": [
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -41856,15 +42172,6 @@
    ],
    "locations": [
     {
-     "name": "Mustang, Oklahoma, US",
-     "lat": 35.3842,
-     "lon": -97.7245,
-     "level": 3,
-     "precision": "city",
-     "country": "US",
-     "metro": "Oklahoma City"
-    },
-    {
      "name": "Taylor, Texas, US",
      "lat": 30.5708,
      "lon": -97.4094,
@@ -41875,10 +42182,9 @@
     }
    ],
    "states": [
-    "OK",
     "TX"
    ],
-   "state": "OK",
+   "state": "TX",
    "county": null,
    "location_precision": "city",
    "companies": [],
@@ -43329,11 +43635,22 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -44382,11 +44699,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -45979,11 +46307,22 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "OpenAI"
    ],

@@ -2390,7 +2390,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "e84419a27dc4cbd5",
-   "cluster_title": "DeepSeek plans one gigawatt AI data center in Inner Mongolia - Bloomberg"
+   "cluster_title": "DeepSeek plans one gigawatt AI data center in Inner Mongolia - Bloomberg",
+   "filtered": true
   },
   {
    "id": "96e07654d8080d62",
@@ -4155,11 +4156,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "St. Joseph County, Indiana, US",
+     "lat": 41.616,
+     "lon": -86.29,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "St. Joseph County, Indiana, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7407,11 +7419,22 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "OpenAI"
    ],
@@ -7558,11 +7581,22 @@
     "Deals / Investment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Meta"
    ],
@@ -7722,7 +7756,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "1680e3f38162b43d",
-   "cluster_title": "Sorry, AI Bears: Meta, Microsoft, and Google Lead Record Data Center Demand"
+   "cluster_title": "Sorry, AI Bears: Meta, Microsoft, and Google Lead Record Data Center Demand",
+   "filtered": true
   },
   {
    "id": "3c95b3406d6125bd",
@@ -8439,11 +8474,22 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "OpenAI"
    ],
@@ -8451,8 +8497,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "884394bc1ca905a5",
-   "cluster_title": "OpenAI Effingham Data Center Open House: What to Expect"
+   "cluster_id": "c3336dcf3607e6a6",
+   "cluster_title": "OpenAI announces plans for a new data center campus in Effingham County"
   },
   {
    "id": "d56936e99447922f",
@@ -9034,11 +9080,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13766,11 +13823,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -14026,11 +14094,11 @@
    ],
    "locations": [
     {
-     "name": "North Carolina, US",
-     "lat": 35.6,
-     "lon": -79.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Mount Airy, North Carolina, US",
+     "lat": 36.4993,
+     "lon": -80.6073,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -14039,7 +14107,7 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -14714,7 +14782,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ebb572a614a9271b",
-   "cluster_title": "Why New York’s Data Center Ban Could Rewrite the Future of the AI Revolution"
+   "cluster_title": "Why New York’s Data Center Ban Could Rewrite the Future of the AI Revolution",
+   "filtered": true
   },
   {
    "id": "b380e9112a7842e9",
@@ -14728,11 +14797,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kansas, US",
+     "lat": 38.5,
+     "lon": -98.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16011,11 +16091,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Allentown, Pennsylvania, US",
+     "lat": 40.6084,
+     "lon": -75.4902,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16292,18 +16383,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Springfield, Ohio, US",
+     "lat": 39.9242,
+     "lon": -83.8088,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "df96b4775130b63a",
-   "cluster_title": "Lansing passes 6-month data center moratorium"
+   "cluster_id": "fe46cb779d1eb819",
+   "cluster_title": "Springfield passes 6-month moratorium on data centers"
   },
   {
    "id": "270c89daa99cc51a",
@@ -19139,11 +19241,22 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20101,11 +20214,22 @@
     "Deals / Investment",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Hill County, Texas, US",
+     "lat": 31.991,
+     "lon": -97.131,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Hill County, Texas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -20297,11 +20421,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Topeka, Kansas, US",
+     "lat": 39.0483,
+     "lon": -95.678,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -22992,11 +23127,23 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Whitehall, Pennsylvania, US",
+     "lat": 40.3612,
+     "lon": -79.9909,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28453,7 +28600,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0f96d63a8732925b",
-   "cluster_title": "Google, Amazon Increase Data-Center Capacity Plans"
+   "cluster_title": "Google, Amazon Increase Data-Center Capacity Plans",
+   "filtered": true
   },
   {
    "id": "6034d30b9d06b0a9",
@@ -28466,11 +28614,22 @@
    "tags": [
     "Land Acquisition"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28796,11 +28955,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wilmington, Ohio, US",
+     "lat": 39.4453,
+     "lon": -83.8285,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -30103,7 +30273,8 @@
    "suppliers": [],
    "investment_usd_b": 13.0,
    "cluster_id": "3103b01fe73ce538",
-   "cluster_title": "Meta Breaks Ground on a C$13 Billion Data Center"
+   "cluster_title": "Meta Breaks Ground on a C$13 Billion Data Center",
+   "filtered": true
   },
   {
    "id": "8e8d69f0dad52555",
@@ -30410,11 +30581,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31270,11 +31452,23 @@
     "Economy / Jobs",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Whitehall, Pennsylvania, US",
+     "lat": 40.3612,
+     "lon": -79.9909,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Pittsburgh"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -31467,7 +31661,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b2ed5d6e11f512a8",
-   "cluster_title": "MARA Stock Leads Digital Rally On Data Center Development Plans. Bitcoin Rises."
+   "cluster_title": "MARA Stock Leads Digital Rally On Data Center Development Plans. Bitcoin Rises.",
+   "filtered": true
   },
   {
    "id": "c46c6b9143be7f22",
@@ -36807,11 +37002,22 @@
     "Construction",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37300,11 +37506,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Jackson, Mississippi, US",
+     "lat": 32.2988,
+     "lon": -90.1848,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -39191,18 +39408,29 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Chillicothe, Ohio, US",
+     "lat": 39.3331,
+     "lon": -82.9824,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "78ced8a7b803171e",
-   "cluster_title": "Data center and more new tenants expected for shuttered Chillicothe paper mill site"
+   "cluster_id": "a1c8c26d37043874",
+   "cluster_title": "Plans for former Chillicothe paper mill site include data center"
   },
   {
    "id": "42cbf055a3ed74ea",
@@ -40642,11 +40870,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rapid City, South Dakota, US",
+     "lat": 44.0805,
+     "lon": -103.231,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SD"
+   ],
+   "state": "SD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -41587,11 +41826,22 @@
     "Environment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
@@ -42447,11 +42697,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],

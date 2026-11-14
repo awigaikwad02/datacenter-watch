@@ -268,8 +268,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "e0b0b181623d9abd",
-   "cluster_title": "DeKalb Residents Push for Data Center Transparency Rules"
+   "cluster_id": "ebcef7f7438ef2a0",
+   "cluster_title": "How some DeKalb residents are mobilizing to push local government for greater transparency over data centers"
   },
   {
    "id": "56f293363554525c",
@@ -539,7 +539,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "bb115920735b9877",
-   "cluster_title": "West Virginia AI Data Center Fight: 2 Sites, $45B [2026]"
+   "cluster_title": "West Virginia AI Data Center Fight: 2 Sites, $45B [2026]",
+   "filtered": true
   },
   {
    "id": "bb115920735b9877",
@@ -576,7 +577,8 @@
    "suppliers": [],
    "investment_usd_b": 45.0,
    "cluster_id": "bb115920735b9877",
-   "cluster_title": "West Virginia AI Data Center Fight: 2 Sites, $45B [2026]"
+   "cluster_title": "West Virginia AI Data Center Fight: 2 Sites, $45B [2026]",
+   "filtered": true
   },
   {
    "id": "266bcd075afb3c59",
@@ -641,11 +643,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Amherst, Massachusetts, US",
+     "lat": 42.3672,
+     "lon": -72.5185,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MA"
+   ],
+   "state": "MA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -862,7 +875,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ed5f4d31ca9cff59",
-   "cluster_title": "Amazon Is Borrowing Against Its Own Data Center Gear to Fund More Data Centers"
+   "cluster_title": "Amazon Is Borrowing Against Its Own Data Center Gear to Fund More Data Centers",
+   "filtered": true
   },
   {
    "id": "b42e4c125228136a",
@@ -1014,7 +1028,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "947e95c08119346c",
-   "cluster_title": "Abbott's Permit Pause Puts Texas Data Centers on Ice, Nudges Developers Elsewhere"
+   "cluster_title": "Abbott's Permit Pause Puts Texas Data Centers on Ice, Nudges Developers Elsewhere",
+   "filtered": true
   },
   {
    "id": "d1adb7ae88032c66",
@@ -1052,8 +1067,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "d1adb7ae88032c66",
-   "cluster_title": "Hermantown approves controversial Google Data Center during late night meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "e87402251d57d869",
@@ -1090,8 +1105,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "d1846039d9f78622",
@@ -1169,11 +1184,22 @@
     "Analysis / Opinion",
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -1276,7 +1302,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "25280559f3049f42",
+   "cluster_id": "b6247e3a5437f9a7",
    "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
@@ -1615,7 +1641,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "f4ce9cde3046bb4f",
-   "cluster_title": "Public comments on proposed Amazon data center ask for oversight"
+   "cluster_title": "Public comments on proposed Amazon data center in Walla Walla County ask for oversight"
   },
   {
    "id": "c50377d052476a0a",
@@ -1826,8 +1852,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "7f51a361cce330ce",
@@ -2540,8 +2566,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "3d5eca80d232390e",
@@ -2688,7 +2714,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "393f842e71b82b89",
-   "cluster_title": "PJM Seeks March Capacity Auction for Data Centers"
+   "cluster_title": "PJM Seeks March Capacity Auction for Data Centers",
+   "filtered": true
   },
   {
    "id": "70de80f7b638a060",
@@ -2947,11 +2974,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3183,8 +3221,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "ed77d62804c025e9",
@@ -3256,11 +3294,22 @@
    "tags": [
     "Politics"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3576,8 +3625,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "e0a14006b41ace52",
@@ -3628,11 +3677,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rapid City, South Dakota, US",
+     "lat": 44.0805,
+     "lon": -103.231,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SD"
+   ],
+   "state": "SD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -3700,8 +3760,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "826d2708029f6c20",
-   "cluster_title": "Data center developer sues Pulaski County over new regulations"
+   "cluster_id": "f704787e279b00ac",
+   "cluster_title": "Pulaski County Quorum Court to vote on whether to override Judge Barry Hyde’s veto of data center regulations"
   },
   {
    "id": "166178f27fff7939",
@@ -4087,11 +4147,22 @@
    "tags": [
     "Politics"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4148,11 +4219,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4506,8 +4588,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "61b89d259981c24b",
@@ -4520,11 +4602,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Pulaski County, Arkansas, US",
+     "lat": 34.77,
+     "lon": -92.313,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
+   "county": "Pulaski County, Arkansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -4721,18 +4814,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Pulaski County, Arkansas, US",
+     "lat": 34.77,
+     "lon": -92.313,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
+   "county": "Pulaski County, Arkansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "80ab8c8f7bd89dfd",
-   "cluster_title": "Data center firm sues Pulaski County 3 days after new regulations passed in Quorum Court"
+   "cluster_id": "f704787e279b00ac",
+   "cluster_title": "Pulaski County Quorum Court to vote on whether to override Judge Barry Hyde’s veto of data center regulations"
   },
   {
    "id": "64840c880d6258da",
@@ -5253,7 +5357,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ed0b1b1e8f0b0607",
-   "cluster_title": "Chevron: Kilby Data Center Still on Track for 2028"
+   "cluster_title": "Chevron: Kilby Data Center Still on Track for 2028",
+   "filtered": true
   },
   {
    "id": "825eebfa9ea4ad47",
@@ -5556,11 +5661,23 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Alton, Illinois, US",
+     "lat": 38.8906,
+     "lon": -90.1843,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "St. Louis"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -5671,7 +5788,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0dd7735ab14dea60",
-   "cluster_title": "[Dominion Energy Q3 2026 Earnings Call] Dominion Lifts Full-Year Outlook as Data Center Pipeline Tops 54 GW, CVOW Reaches 85% Complete"
+   "cluster_title": "[Dominion Energy Q3 2026 Earnings Call] Dominion Lifts Full-Year Outlook as Data Center Pipeline Tops 54 GW, CVOW Reaches 85% Complete",
+   "filtered": true
   },
   {
    "id": "b1594cd2a91cd091",
@@ -5770,11 +5888,22 @@
     "New Announcement",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -6318,8 +6447,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "348d20139075e249",
-   "cluster_title": "Data center developer sues Pulaski County over new regulations"
+   "cluster_id": "f704787e279b00ac",
+   "cluster_title": "Pulaski County Quorum Court to vote on whether to override Judge Barry Hyde’s veto of data center regulations"
   },
   {
    "id": "3434e17c1ea03f27",
@@ -6719,8 +6848,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "348d20139075e249",
-   "cluster_title": "Data center developer sues Pulaski County over new regulations"
+   "cluster_id": "f704787e279b00ac",
+   "cluster_title": "Pulaski County Quorum Court to vote on whether to override Judge Barry Hyde’s veto of data center regulations"
   },
   {
    "id": "380dcfb63cb8ea65",
@@ -7506,11 +7635,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -7986,11 +8126,11 @@
    ],
    "locations": [
     {
-     "name": "Iowa, US",
-     "lat": 42.1,
-     "lon": -93.5,
-     "level": 2,
-     "precision": "source",
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -7999,7 +8139,7 @@
    ],
    "state": "IA",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8117,11 +8257,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Port Angeles, Washington, US",
+     "lat": 48.1181,
+     "lon": -123.4307,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8470,11 +8621,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -8680,7 +8842,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "cdf60239e9dd882c",
-   "cluster_title": "Dominion Energy Q3 2026: Data Center Demand Lifts Results, Merger Hangs in the Balance"
+   "cluster_title": "Dominion Energy Q3 2026: Data Center Demand Lifts Results, Merger Hangs in the Balance",
+   "filtered": true
   },
   {
    "id": "0f78c581f080b401",
@@ -8748,7 +8911,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "25280559f3049f42",
+   "cluster_id": "b6247e3a5437f9a7",
    "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
@@ -8852,7 +9015,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "9456f57c45112fa2",
-   "cluster_title": "Yangtze Optical Fibre And Cable: AI data-center demand and stronger product mix drove sharp revenue and profit growth"
+   "cluster_title": "Yangtze Optical Fibre And Cable: AI data-center demand and stronger product mix drove sharp revenue and profit growth",
+   "filtered": true
   },
   {
    "id": "63c862a8a284bddd",
@@ -8874,7 +9038,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "63c862a8a284bddd",
-   "cluster_title": "A Data Center Offers Her Household $10,000. Keeping the Cash Could Put Her Medicaid Home Care at Risk"
+   "cluster_title": "A Data Center Offers Her Household $10,000. Keeping the Cash Could Put Her Medicaid Home Care at Risk",
+   "filtered": true
   },
   {
    "id": "4396fd83bf619030",
@@ -9368,7 +9533,8 @@
     "Nvidia"
    ],
    "cluster_id": "4fdb28eaf058dcb3",
-   "cluster_title": "AM Markets Need to Know: Nvidia backs AI data center, Amazon's Prime Video turns profitable, and more"
+   "cluster_title": "AM Markets Need to Know: Nvidia backs AI data center, Amazon's Prime Video turns profitable, and more",
+   "filtered": true
   },
   {
    "id": "e6c5c0a462ab998e",
@@ -9701,7 +9867,8 @@
    "name_hint": "Project Rattled",
    "investment_usd_b": 2.0,
    "cluster_id": "30671aec93b90322",
-   "cluster_title": "Data Center Rules Hang in the Balance as Voters in 10 US States Head to Polls; Amazon's approximately $2 Billion Project Rattled"
+   "cluster_title": "Data Center Rules Hang in the Balance as Voters in 10 US States Head to Polls; Amazon's approximately $2 Billion Project Rattled",
+   "filtered": true
   },
   {
    "id": "4e293b94aba24796",
@@ -10175,7 +10342,8 @@
     "Nvidia"
    ],
    "cluster_id": "8cb7a9a1094627af",
-   "cluster_title": "Nvidia Weighs Credit Backstop for Nscale Data Center as AI Chip Stocks Slide"
+   "cluster_title": "Nvidia Weighs Credit Backstop for Nscale Data Center as AI Chip Stocks Slide",
+   "filtered": true
   },
   {
    "id": "d006bab9d3d61a17",
@@ -10285,7 +10453,8 @@
     "Nvidia"
    ],
    "cluster_id": "bcad710346325ef5",
-   "cluster_title": "NVDA Stock Drops: Nvidia May Back Data Center Loan Its Own Customer, Analyst Sees Little Impact From Intel’s Weak Report"
+   "cluster_title": "NVDA Stock Drops: Nvidia May Back Data Center Loan Its Own Customer, Analyst Sees Little Impact From Intel’s Weak Report",
+   "filtered": true
   },
   {
    "id": "089a5c2ec72eac6a",
@@ -10516,7 +10685,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "8292d1a41b27508f",
-   "cluster_title": "Hyundai Is Building A 9 Trillion Won AI Data Center Hub"
+   "cluster_title": "Hyundai Is Building A 9 Trillion Won AI Data Center Hub",
+   "filtered": true
   },
   {
    "id": "b701998ecf0e9a5c",
@@ -10615,7 +10785,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "f647b87a289b4147",
-   "cluster_title": "TECO Makes Second Appearance at Hon Hai Tech Day, Pitches 40-Foot Container Modular Data Center for AI Infrastructure Orders"
+   "cluster_title": "TECO Makes Second Appearance at Hon Hai Tech Day, Pitches 40-Foot Container Modular Data Center for AI Infrastructure Orders",
+   "filtered": true
   },
   {
    "id": "4b3bd55f549916c5",
@@ -10700,7 +10871,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "35cb635a4b2e680b",
-   "cluster_title": "Musk's SpaceX Offers to Buy 418 Homes Near Mississippi Data Center, With a Lawsuit Waiver Attached"
+   "cluster_title": "Musk's SpaceX Offers to Buy 418 Homes Near Mississippi Data Center, With a Lawsuit Waiver Attached",
+   "filtered": true
   },
   {
    "id": "904f342078226820",
@@ -10730,7 +10902,8 @@
     "Nvidia"
    ],
    "cluster_id": "904f342078226820",
-   "cluster_title": "Nvidia weighs billions in credit guarantees for Nscale’s Anthropic data center - report"
+   "cluster_title": "Nvidia weighs billions in credit guarantees for Nscale’s Anthropic data center - report",
+   "filtered": true
   },
   {
    "id": "7de466e8372f6811",
@@ -11443,7 +11616,8 @@
     "Nvidia"
    ],
    "cluster_id": "08ef2c28e32ddb2a",
-   "cluster_title": "Nvidia Looks To Backstop Nscale’s AI Data Center Debt"
+   "cluster_title": "Nvidia Looks To Backstop Nscale’s AI Data Center Debt",
+   "filtered": true
   },
   {
    "id": "d28f6807226cb400",
@@ -11624,11 +11798,11 @@
    ],
    "locations": [
     {
-     "name": "Ohio, US",
-     "lat": 40.3,
-     "lon": -82.8,
-     "level": 2,
-     "precision": "source",
+     "name": "Rossford, Ohio, US",
+     "lat": 41.6098,
+     "lon": -83.5644,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -11637,14 +11811,14 @@
    ],
    "state": "OH",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "12b5c4a97adf432d",
-   "cluster_title": "Rossford residents have questions about proposed data center"
+   "cluster_id": "48a260ef123cd90b",
+   "cluster_title": "'I have great concerns': Rossford resident questions proposed data center"
   },
   {
    "id": "64bd8407ca451a66",
@@ -12077,8 +12251,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "71d7f0f3eb2517dc",
-   "cluster_title": "Savannah seeks public input on proposed data center ordinance, leaders weigh in"
+   "cluster_id": "ebee735326aaddb6",
+   "cluster_title": "City of Savannah seeks public input on proposed data center rules"
   },
   {
    "id": "d1e9bddc741e26b4",
@@ -12388,11 +12562,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rossford, Ohio, US",
+     "lat": 41.6098,
+     "lon": -83.5644,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -13029,7 +13214,8 @@
    "suppliers": [],
    "investment_usd_b": 28.0,
    "cluster_id": "4e0c9949a89e343f",
-   "cluster_title": "NiSource Data Center Plan: $28B Capital, $7B Power [2026]"
+   "cluster_title": "NiSource Data Center Plan: $28B Capital, $7B Power [2026]",
+   "filtered": true
   },
   {
    "id": "83c4af1db2825a29",
@@ -13935,11 +14121,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Salisbury, Maryland, US",
+     "lat": 38.3607,
+     "lon": -75.5994,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -14074,11 +14271,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
    "companies": [
     "OpenAI"
    ],
@@ -14920,8 +15128,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2ce5d21c5b077bb1",
-   "cluster_title": "OKC council okays zoning for major data center project"
+   "cluster_id": "1285ca6e87e74ecc",
+   "cluster_title": "OKC approves first mega-data center with strict zoning terms"
   },
   {
    "id": "dd8e246609e24d47",
@@ -14955,7 +15163,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "25280559f3049f42",
+   "cluster_id": "b6247e3a5437f9a7",
    "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
@@ -15103,7 +15311,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2139ed8c49ed2494",
-   "cluster_title": "Press Release: Sara Jacobs and Allies Announce Bill to Block NAVWAR Data Center Construction"
+   "cluster_title": "Press Release: Sara Jacobs and Allies Announce Bill to Block NAVWAR Data Center Construction",
+   "filtered": true
   },
   {
    "id": "f1e853756fd183d7",
@@ -15402,7 +15611,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "79c925a5b39b100d",
-   "cluster_title": "Aon CEO warns AI data center insurance risks could threaten financing"
+   "cluster_title": "Aon CEO warns AI data center insurance risks could threaten financing",
+   "filtered": true
   },
   {
    "id": "e5b6244409c70e01",
@@ -15440,11 +15650,22 @@
     "Economy / Jobs",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Newport, Pennsylvania, US",
+     "lat": 40.4779,
+     "lon": -77.1305,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16028,8 +16249,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "d6d176c0ec4b050c",
-   "cluster_title": "Washington County Data Centers Resolution"
+   "cluster_id": "8ce91133cfe541d0",
+   "cluster_title": "Washington County passes data center resolution amid community concerns"
   },
   {
    "id": "7db5a4174f3fd87d",
@@ -16065,7 +16286,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -16240,11 +16461,23 @@
    "feed": "Google News: Midwest",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Grove City, Ohio, US",
+     "lat": 39.8815,
+     "lon": -83.093,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Columbus"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16339,11 +16572,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16496,11 +16740,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -16521,19 +16776,30 @@
     "Power / Utility",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Grenada, Mississippi, US",
+     "lat": 33.769,
+     "lon": -89.8084,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 0.5,
-   "cluster_id": "efe40c1354f09508",
-   "cluster_title": "Marwynn signs MOU to study Grenada AI data center project"
+   "cluster_id": "d2d86fe488336326",
+   "cluster_title": "Marwynn plots up to $500m AI data center and solar farm in Grenada"
   },
   {
    "id": "e04d124bd1b0c3aa",
@@ -16868,11 +17134,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -16896,11 +17173,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -17148,7 +17436,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0babe3038b9b01e3",
-   "cluster_title": "SpaceX Wins Target Lift On AI, Data Center Growth. But Is It A Buy?"
+   "cluster_title": "SpaceX Wins Target Lift On AI, Data Center Growth. But Is It A Buy?",
+   "filtered": true
   },
   {
    "id": "5d2de2d5c6ee001e",
@@ -17183,7 +17472,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ebee735326aaddb6",
+   "cluster_id": "5d2de2d5c6ee001e",
    "cluster_title": "Fulton County Seeks Input On Proposed Data Center Rules"
   },
   {
@@ -17872,7 +18161,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "28f6af9539f4271d",
-   "cluster_title": "Marvell’s Lumentum Bid Is a Bet That Light, Not Copper, Wins the AI Data Center"
+   "cluster_title": "Marvell’s Lumentum Bid Is a Bet That Light, Not Copper, Wins the AI Data Center",
+   "filtered": true
   },
   {
    "id": "c5daf90e01207777",
@@ -18179,11 +18469,22 @@
    "tags": [
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Colorado, US",
+     "lat": 39.0,
+     "lon": -105.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -18315,7 +18616,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b7048bad2e64af2c",
-   "cluster_title": "AI data center boom faces backlash at US ballot box"
+   "cluster_title": "AI data center boom faces backlash at US ballot box",
+   "filtered": true
   },
   {
    "id": "b7048bad2e64af2c",
@@ -18975,8 +19277,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "6eec893d20d65ef7",
-   "cluster_title": "Data center health worries animate midterm campaigns"
+   "cluster_id": "740054fdd51d9e8c",
+   "cluster_title": "KFF HEALTH NEWS: Data Center Health Worries Animate Midterm Campaigns"
   },
   {
    "id": "0244c5bbb541f518",
@@ -19229,7 +19531,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "f91654fc8a770fd1",
-   "cluster_title": "Datacenter buildout fears to soften post-midterms: Klay Group"
+   "cluster_title": "Datacenter buildout fears to soften post-midterms: Klay Group",
+   "filtered": true
   },
   {
    "id": "5714f2ad372af325",
@@ -19254,7 +19557,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5714f2ad372af325",
-   "cluster_title": "STMicroelectronics Raised Its 2026 AI Data Center Target"
+   "cluster_title": "STMicroelectronics Raised Its 2026 AI Data Center Target",
+   "filtered": true
   },
   {
    "id": "703b1843d71e3906",
@@ -19414,7 +19718,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "6b3b25f69a8d90b8",
-   "cluster_title": "ITI’s 5 Data Center Pledges Target Power Bills [2026]"
+   "cluster_title": "ITI’s 5 Data Center Pledges Target Power Bills [2026]",
+   "filtered": true
   },
   {
    "id": "aa2db73ea46814e9",
@@ -19572,11 +19877,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19671,11 +19987,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Kansas, US",
+     "lat": 38.5,
+     "lon": -98.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -19743,7 +20070,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "55926ccb86cce93d",
-   "cluster_title": "Equinix: Construction Headwinds Boost Data-Center Value"
+   "cluster_title": "Equinix: Construction Headwinds Boost Data-Center Value",
+   "filtered": true
   },
   {
    "id": "b59cd38c16e3233b",
@@ -20212,11 +20540,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -21248,6 +21587,14 @@
    ],
    "locations": [
     {
+     "name": "Rossford, Ohio, US",
+     "lat": 41.6098,
+     "lon": -83.5644,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Florida, US",
      "lat": 28.6,
      "lon": -82.4,
@@ -21257,17 +21604,17 @@
     }
    ],
    "states": [
-    "FL"
+    "FL",
+    "OH"
    ],
-   "state": "FL",
+   "state": "OH",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hint": "Rossford Data Center",
    "cluster_id": "0598747334702e27",
    "cluster_title": "Florida developer seeks approval for Rossford data center"
   },
@@ -21726,7 +22073,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d628ca7567dcffba",
-   "cluster_title": "Banks Put Off Selling Anthropic Data Center Debt"
+   "cluster_title": "Banks Put Off Selling Anthropic Data Center Debt",
+   "filtered": true
   },
   {
    "id": "c13dab96a5a2152e",
@@ -22431,8 +22779,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "2880a921fd3ae0c9",
-   "cluster_title": "Fiber, broadband projects by Oregon highways on hold after Kotek data center order - Oregon Public Broadcasting - OPB"
+   "cluster_id": "60a750fff4028873",
+   "cluster_title": "Fiber, broadband projects by Oregon highways on hold after Kotek data center order"
   },
   {
    "id": "eb8fbaffffbfd59d",
@@ -22541,7 +22889,8 @@
    "suppliers": [],
    "name_hint": "Anthropic-tied Texas Data Center",
    "cluster_id": "a170554d6a7dbc3d",
-   "cluster_title": "Banks Shelve Bond Sale for Anthropic-Tied Texas Data Center"
+   "cluster_title": "Banks Shelve Bond Sale for Anthropic-Tied Texas Data Center",
+   "filtered": true
   },
   {
    "id": "c7592d982b53781a",
@@ -23410,11 +23759,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "OpenAI"
    ],
@@ -23610,7 +23970,8 @@
    "suppliers": [],
    "investment_usd_b": 15.0,
    "cluster_id": "900553bb97be4458",
-   "cluster_title": "UPS Eyes $15 Billion AI Data Center Logistics Opportunity"
+   "cluster_title": "UPS Eyes $15 Billion AI Data Center Logistics Opportunity",
+   "filtered": true
   },
   {
    "id": "7eb42452de056573",
@@ -23938,11 +24299,22 @@
    "feed": "Google News: Data center policy",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Jackson, Mississippi, US",
+     "lat": 32.2988,
+     "lon": -90.1848,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -23960,18 +24332,29 @@
    "feed": "Google News: Data center",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Jackson, Mississippi, US",
+     "lat": 32.2988,
+     "lon": -90.1848,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "81b825cf9150dcab",
-   "cluster_title": "Jackson business leaders urged to base data center opinions ‘on the facts’"
+   "cluster_id": "fa15deb1e8ca38af",
+   "cluster_title": "Jackson leaders urged to ignore data center misinformation"
   },
   {
    "id": "33d9225d7e4be45c",
@@ -24046,11 +24429,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Radnor, Pennsylvania, US",
+     "lat": 40.0462,
+     "lon": -75.3599,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -24351,11 +24745,22 @@
     "Power / Utility",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Massachusetts, US",
+     "lat": 42.3,
+     "lon": -71.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MA"
+   ],
+   "state": "MA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -24411,7 +24816,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "6b3b25f69a8d90b8",
-   "cluster_title": "ITI’s 5 Data Center Pledges Target Power Bills [2026]"
+   "cluster_title": "ITI’s 5 Data Center Pledges Target Power Bills [2026]",
+   "filtered": true
   },
   {
    "id": "de491916657bbaa7",
@@ -25377,18 +25783,29 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "ebee735326aaddb6",
-   "cluster_title": "Fulton County Seeks Input On Proposed Data Center Rules"
+   "cluster_title": "City of Savannah seeks public input on proposed data center rules"
   },
   {
    "id": "e8f91bef3dd2cb10",
@@ -25752,8 +26169,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "fe7890c00cd69d27",
@@ -26077,7 +26494,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "eab846e28050e650",
-   "cluster_title": "Sterling Construction faces earnings test on data center boom"
+   "cluster_title": "Sterling Construction faces earnings test on data center boom",
+   "filtered": true
   },
   {
    "id": "bba2914f98dedd8e",
@@ -26186,8 +26604,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "b8ce0e7449374501",
@@ -26270,7 +26688,8 @@
    "suppliers": [],
    "investment_usd_b": 0.5,
    "cluster_id": "efe40c1354f09508",
-   "cluster_title": "Marwynn signs MOU to study Grenada AI data center project"
+   "cluster_title": "Marwynn signs MOU to study Grenada AI data center project",
+   "filtered": true
   },
   {
    "id": "1602548e16e0ebae",
@@ -26306,11 +26725,22 @@
     "Construction",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -26343,7 +26773,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "32e6d4dff0c4e717",
-   "cluster_title": "Api Group set to report earnings amid data center sell-off"
+   "cluster_title": "Api Group set to report earnings amid data center sell-off",
+   "filtered": true
   },
   {
    "id": "be7805ebe51f8845",
@@ -26569,11 +27000,22 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Grenada, Mississippi, US",
+     "lat": 33.769,
+     "lon": -89.8084,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -26778,11 +27220,23 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Denton, Texas, US",
+     "lat": 33.2148,
+     "lon": -97.1331,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -27151,7 +27605,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "f4f239686be53d39",
-   "cluster_title": "AI Data Center Supplier Amphenol Jumps On Earnings Beat"
+   "cluster_title": "AI Data Center Supplier Amphenol Jumps On Earnings Beat",
+   "filtered": true
   },
   {
    "id": "c98a895aeede2ced",
@@ -27630,8 +28085,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "1caa1b28786b7a57",
-   "cluster_title": "Big Win for Wisconsin: Lawsuit Settlement Forces Statewide Data Center Review"
+   "cluster_id": "2e6882638974e244",
+   "cluster_title": "Big Win for Wisconsin: Lawsuit Settlement Forces Statewide AI Data Center Review"
   },
   {
    "id": "3740f797aca6b0ba",
@@ -27851,7 +28306,8 @@
     "Vertiv"
    ],
    "cluster_id": "e1c067aa9f082ee0",
-   "cluster_title": "Vertiv stock surges as AI data center demand fuels higher outlook"
+   "cluster_title": "Vertiv stock surges as AI data center demand fuels higher outlook",
+   "filtered": true
   },
   {
    "id": "89e964c1ae6662c3",
@@ -28140,7 +28596,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0423eea733676f13",
-   "cluster_title": "Flex (FLEX) Q2 2027 Earnings Beat Fueled by AI Data Center Boom"
+   "cluster_title": "Flex (FLEX) Q2 2027 Earnings Beat Fueled by AI Data Center Boom",
+   "filtered": true
   },
   {
    "id": "91fe3bb8267d540f",
@@ -28215,11 +28672,23 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Alton, Illinois, US",
+     "lat": 38.8906,
+     "lon": -90.1843,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "St. Louis"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28328,8 +28797,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "c9b0ba9ba51e7408",
-   "cluster_title": "Hyperscale Data engages Newmark for Michigan data center debt"
+   "cluster_id": "fb5cf11a3e2096d8",
+   "cluster_title": "Hyperscale Data engages Newmark for Michigan data center debt By Investing.com"
   },
   {
    "id": "77a22b1730884f1c",
@@ -28402,8 +28871,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "c9b0ba9ba51e7408",
-   "cluster_title": "Hyperscale Data engages Newmark for Michigan data center debt"
+   "cluster_id": "fb5cf11a3e2096d8",
+   "cluster_title": "Hyperscale Data engages Newmark for Michigan data center debt By Investing.com"
   },
   {
    "id": "c9b0ba9ba51e7408",
@@ -28439,7 +28908,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "c9b0ba9ba51e7408",
-   "cluster_title": "Hyperscale Data engages Newmark for Michigan data center debt"
+   "cluster_title": "Hyperscale Data engages Newmark for Michigan data center debt",
+   "filtered": true
   },
   {
    "id": "203a36a9eec7d57e",
@@ -28536,7 +29006,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "00cdeb0a901c20f8",
-   "cluster_title": "Hyperscale Data, Inc. (GPUS) Seeks Long-Term Debt for Michigan AI Data Center"
+   "cluster_title": "Hyperscale Data, Inc. (GPUS) Seeks Long-Term Debt for Michigan AI Data Center",
+   "filtered": true
   },
   {
    "id": "da8446c2aefebdf6",
@@ -28905,11 +29376,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -28964,6 +29446,14 @@
    ],
    "locations": [
     {
+     "name": "Eatonton, Georgia, US",
+     "lat": 33.3268,
+     "lon": -83.3885,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -28977,7 +29467,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -29265,11 +29755,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -29996,18 +30497,29 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Mountain Home, Idaho, US",
+     "lat": 43.133,
+     "lon": -115.6912,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "a7bedb3ec3360cb8",
-   "cluster_title": "Mountain Home City Council passes emergency moratorium on data center projects after packed public meeting"
+   "cluster_id": "cf17badc8d5fa764",
+   "cluster_title": "Mountain Home pauses data center projects following packed city hall"
   },
   {
    "id": "776b39b96706549d",
@@ -30214,11 +30726,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Conneaut, Ohio, US",
+     "lat": 41.9476,
+     "lon": -80.5542,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -30275,11 +30798,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Mountain Home, Idaho, US",
+     "lat": 43.133,
+     "lon": -115.6912,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -30643,18 +31177,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Pulaski County, Arkansas, US",
+     "lat": 34.77,
+     "lon": -92.313,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
+   "county": "Pulaski County, Arkansas, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "50d85c0ed012e174",
-   "cluster_title": "Pulaski County justices override judge’s veto of data center regulations"
+   "cluster_id": "f704787e279b00ac",
+   "cluster_title": "Pulaski County Quorum Court to vote on whether to override Judge Barry Hyde’s veto of data center regulations"
   },
   {
    "id": "7b2a54c535e3745a",
@@ -31397,18 +31942,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "79c569f67a5530ac",
-   "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
+   "cluster_title": "San Diego City Council to vote on data center moratorium this week"
   },
   {
    "id": "a75a4d41d28fbd01",
@@ -31495,18 +32051,29 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lincoln, Idaho, US",
+     "lat": 43.513,
+     "lon": -111.9644,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "2b19b7521f9e8fe3",
-   "cluster_title": "Data center eyed for desert where Lava Ridge wind project stalled"
+   "cluster_title": "Data center eyed for Jerome, Lincoln desert where Lava Ridge stalled"
   },
   {
    "id": "39eebf5392bbf06d",
@@ -31627,18 +32194,29 @@
     "New Announcement",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Idaho, US",
+     "lat": 44.4,
+     "lon": -114.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "2b19b7521f9e8fe3",
-   "cluster_title": "Data center eyed for desert where Lava Ridge wind project stalled"
+   "cluster_title": "Data center eyed for Jerome, Lincoln desert where Lava Ridge stalled"
   },
   {
    "id": "016ea0c494ee84d4",
@@ -33027,18 +33605,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "79c569f67a5530ac",
-   "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
+   "cluster_title": "San Diego City Council to vote on data center moratorium this week"
   },
   {
    "id": "e61fc028a474adaa",
@@ -33106,7 +33695,7 @@
    "builders": [],
    "suppliers": [],
    "name_hint": "Contentious Hermantown Data Center",
-   "cluster_id": "25280559f3049f42",
+   "cluster_id": "b6247e3a5437f9a7",
    "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
@@ -34073,7 +34662,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2dcd45d44c788bb2",
-   "cluster_title": "Applied Digital Jumps 10% as Data Center Stocks Rebound; Riot Climbs 7%, Core Scientific Gains 4%"
+   "cluster_title": "Applied Digital Jumps 10% as Data Center Stocks Rebound; Riot Climbs 7%, Core Scientific Gains 4%",
+   "filtered": true
   },
   {
    "id": "0abb80eb87757cae",
@@ -34429,7 +35019,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "48079e7831f26cee",
-   "cluster_title": "Two Chip Stocks Upgraded To Buy On AI Data-Center Business"
+   "cluster_title": "Two Chip Stocks Upgraded To Buy On AI Data-Center Business",
+   "filtered": true
   },
   {
    "id": "127de9fb71897141",
@@ -34896,8 +35487,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "e925fc6cbde205bf",
@@ -35202,7 +35793,8 @@
     "Vertiv"
    ],
    "cluster_id": "9cde6e65b595016c",
-   "cluster_title": "Vertiv Expands AI Data Center Footprint: Can It Beat APH and SMCI?"
+   "cluster_title": "Vertiv Expands AI Data Center Footprint: Can It Beat APH and SMCI?",
+   "filtered": true
   },
   {
    "id": "b70545bff91220e9",
@@ -35361,7 +35953,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "088a4bd17de4152f",
-   "cluster_title": "Wolfspeed Highlights AI Data Center Growth, Silicon Carbide Roadmap at Annual Meeting"
+   "cluster_title": "Wolfspeed Highlights AI Data Center Growth, Silicon Carbide Roadmap at Annual Meeting",
+   "filtered": true
   },
   {
    "id": "acf0e4e0862681f2",
@@ -35478,8 +36071,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "00cc57c5b2a542a4",
@@ -35492,11 +36085,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Radnor, Pennsylvania, US",
+     "lat": 40.0462,
+     "lon": -75.3599,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -35553,11 +36157,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36154,11 +36769,11 @@
    ],
    "locations": [
     {
-     "name": "Arkansas, US",
-     "lat": 34.9,
-     "lon": -92.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Van Buren, Arkansas, US",
+     "lat": 35.4368,
+     "lon": -94.3483,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -36167,7 +36782,7 @@
    ],
    "state": "AR",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36226,7 +36841,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ee98dd160076b20a",
-   "cluster_title": "Flex earnings on deck as AI data center growth takes spotlight"
+   "cluster_title": "Flex earnings on deck as AI data center growth takes spotlight",
+   "filtered": true
   },
   {
    "id": "ca92325d8b261c1d",
@@ -36457,7 +37073,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "72c594ff2cb80525",
-   "cluster_title": "Galaxy Digital Q3 Beats Estimates on AI Data-Center Push"
+   "cluster_title": "Galaxy Digital Q3 Beats Estimates on AI Data-Center Push",
+   "filtered": true
   },
   {
    "id": "3e6c98a98e7d8fdb",
@@ -36485,7 +37102,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "3e6c98a98e7d8fdb",
-   "cluster_title": "Galaxy Digital beats in Q3 as AI data-center pivot adds cash"
+   "cluster_title": "Galaxy Digital beats in Q3 as AI data-center pivot adds cash",
+   "filtered": true
   },
   {
    "id": "7b435cef6e11e999",
@@ -36630,11 +37248,23 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -36853,7 +37483,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d3f5022a0f69ecd4",
-   "cluster_title": "Allegro launches products for AI data center power systems"
+   "cluster_title": "Allegro launches products for AI data center power systems",
+   "filtered": true
   },
   {
    "id": "e95a66d0da58d34f",
@@ -37482,8 +38113,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "b91dee0934a191ea",
-   "cluster_title": "Data center opponents shut down Hermantown City Council meeting"
+   "cluster_id": "b6247e3a5437f9a7",
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "6f215ca49793a6a4",
@@ -37499,6 +38130,14 @@
    ],
    "locations": [
     {
+     "name": "Eatonton, Georgia, US",
+     "lat": 33.3268,
+     "lon": -83.3885,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Georgia, US",
      "lat": 32.7,
      "lon": -83.4,
@@ -37512,7 +38151,7 @@
    ],
    "state": "GA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -37558,7 +38197,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "25280559f3049f42",
+   "cluster_id": "b6247e3a5437f9a7",
    "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
@@ -38432,7 +39071,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -38675,7 +39314,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -39189,7 +39828,8 @@
    "suppliers": [],
    "investment_usd_b": 28.0,
    "cluster_id": "4e0c9949a89e343f",
-   "cluster_title": "NiSource Data Center Plan: $28B Capital, $7B Power [2026]"
+   "cluster_title": "NiSource Data Center Plan: $28B Capital, $7B Power [2026]",
+   "filtered": true
   },
   {
    "id": "4710aceac5ee59a5",
@@ -39692,18 +40332,29 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Mountain Home, Idaho, US",
+     "lat": 43.133,
+     "lon": -115.6912,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "0222542b6f0da845",
-   "cluster_title": "Mountain Home neighbors raise concerns over proposed data center as zoning rules currently prohibit it"
+   "cluster_id": "98bb6299d4d42ecd",
+   "cluster_title": "Mountain Home neighbors voice concerns over possible data center project"
   },
   {
    "id": "331f813c5d1e0b02",
@@ -40003,11 +40654,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Google"
    ],
@@ -40016,7 +40678,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b6247e3a5437f9a7",
-   "cluster_title": "\"Shut it down!\" protestors postpone council's vote on proposed Google Data Center"
+   "cluster_title": "Google data center vote postponed in Hermantown following two hours of protests"
   },
   {
    "id": "1e85817f624b3408",
@@ -40100,7 +40762,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -40291,11 +40953,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Mountain Home, Idaho, US",
+     "lat": 43.133,
+     "lon": -115.6912,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -40598,7 +41271,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -40766,18 +41439,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "West Virginia, US",
+     "lat": 38.6,
+     "lon": -80.6,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "967de9769a311631",
-   "cluster_title": "Public hearing input used in massive data center state waters application decision"
+   "cluster_title": "Public hearing input used in Mason County data center state waters permit decision"
   },
   {
    "id": "7580c35ecd541a82",
@@ -40790,18 +41474,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Mason County, West Virginia, US",
+     "lat": 38.768,
+     "lon": -82.027,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WV"
+   ],
+   "state": "WV",
+   "county": "Mason County, West Virginia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "967de9769a311631",
-   "cluster_title": "Public hearing input used in massive data center state waters application decision"
+   "cluster_title": "Public hearing input used in Mason County data center state waters permit decision"
   },
   {
    "id": "04c472c47be4a121",
@@ -40873,7 +41568,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -40985,11 +41680,23 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Nassau County, Florida, US",
+     "lat": 30.611,
+     "lon": -81.801,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Jacksonville"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": "Nassau County, Florida, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -41132,7 +41839,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -41454,7 +42161,8 @@
    "suppliers": [],
    "investment_usd_b": 4.25,
    "cluster_id": "b3ee1be1e7ebe395",
-   "cluster_title": "AirTrunk Secures A$4.25 Billion Green Loan For SYD3 Data Center Campus"
+   "cluster_title": "AirTrunk Secures A$4.25 Billion Green Loan For SYD3 Data Center Campus",
+   "filtered": true
   },
   {
    "id": "78e113e41ce4c35c",
@@ -41470,6 +42178,14 @@
    ],
    "locations": [
     {
+     "name": "Lafayette, Colorado, US",
+     "lat": 39.9936,
+     "lon": -105.0897,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Colorado, US",
      "lat": 39.0,
      "lon": -105.5,
@@ -41483,7 +42199,7 @@
    ],
    "state": "CO",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -42339,7 +43055,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -43108,11 +43824,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Newport, Pennsylvania, US",
+     "lat": 40.4779,
+     "lon": -77.1305,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -44371,11 +45098,22 @@
     "Environment",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "St. Joseph County, Indiana, US",
+     "lat": 41.616,
+     "lon": -86.29,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "St. Joseph County, Indiana, US",
+   "location_precision": "county",
    "companies": [
     "Amazon"
    ],
@@ -44383,7 +45121,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "668052cb81fe7247",
+   "cluster_id": "fbbb6097b2dbe43d",
    "cluster_title": "Amazon presents water plans for new data center in St. Joseph County"
   },
   {
@@ -44662,7 +45400,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "f11121a8f402f2ec",
-   "cluster_title": "TeraWulf Jumps 7% as CEO Pushes Back on Stranded Data Center Fears; Cipher Digital Rises 3%, Applied Digital Edges Higher"
+   "cluster_title": "TeraWulf Jumps 7% as CEO Pushes Back on Stranded Data Center Fears; Cipher Digital Rises 3%, Applied Digital Edges Higher",
+   "filtered": true
   },
   {
    "id": "7613f823acf87027",
@@ -44709,18 +45448,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Morgan County, Illinois, US",
+     "lat": 39.716,
+     "lon": -90.201,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
+   "county": "Morgan County, Illinois, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
-   "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
+   "cluster_id": "5d3320eea64bd846",
+   "cluster_title": "Morgan County extends moratorium on data centers for six months"
   },
   {
    "id": "5ea097fca0daab82",
@@ -45185,7 +45935,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "ea020084f72af888",
-   "cluster_title": "CenterPoint Energy earnings on deck as Texas data center boom looms"
+   "cluster_title": "CenterPoint Energy earnings on deck as Texas data center boom looms",
+   "filtered": true
   },
   {
    "id": "ff7931848a789abb",
@@ -45800,7 +46551,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "b71c4ee6631adb7b",
-   "cluster_title": "Enphase Energy And Infineon Announce World’S First 900 V Gan Bidirectional Switch Devices For Ai Data Center Solid-State Transformers"
+   "cluster_title": "Enphase Energy And Infineon Announce World’S First 900 V Gan Bidirectional Switch Devices For Ai Data Center Solid-State Transformers",
+   "filtered": true
   },
   {
    "id": "217180d8dcd50348",
@@ -46051,8 +46803,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "efc5de7c25655b44",
-   "cluster_title": "Cadence Design Systems Launches Sovereign AI Data Center in Munich"
+   "cluster_id": "6e10272455cbe1fc",
+   "cluster_title": "Cadence launches sovereign AI data center in Munich"
   },
   {
    "id": "212dee894bc331dd",
@@ -46117,7 +46869,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "fb65ef6c8104fe1d",
-   "cluster_title": "Is Money for AI Data Centers Drying Up? Here’s Who Could Come Out on Top."
+   "cluster_title": "Is Money for AI Data Centers Drying Up? Here’s Who Could Come Out on Top.",
+   "filtered": true
   },
   {
    "id": "0173534d8c07d91d",
@@ -46253,7 +47006,8 @@
    "suppliers": [],
    "investment_usd_b": 0.005,
    "cluster_id": "0acfdab64bd51bc2",
-   "cluster_title": "Valor Energy Announces $5.0 Million Private Placement To Support Planned AI Data Center Development"
+   "cluster_title": "Valor Energy Announces $5.0 Million Private Placement To Support Planned AI Data Center Development",
+   "filtered": true
   },
   {
    "id": "9c75b51533b385bb",
@@ -46406,7 +47160,8 @@
    "suppliers": [],
    "investment_usd_b": 0.005,
    "cluster_id": "fc3579217169d5ae",
-   "cluster_title": "Valor Energy Inc. Announces $5 Million Private Placement to Support Proposed Youngstown AI Data Center Acquisition and Conversion"
+   "cluster_title": "Valor Energy Inc. Announces $5 Million Private Placement to Support Proposed Youngstown AI Data Center Acquisition and Conversion",
+   "filtered": true
   },
   {
    "id": "04c251a3066c8111",
@@ -46494,7 +47249,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "0146e23274b1a962",
-   "cluster_title": "Weekly Recap: Shift to data-center revenue and 99.873% ELCC rating"
+   "cluster_title": "Weekly Recap: Shift to data-center revenue and 99.873% ELCC rating",
+   "filtered": true
   },
   {
    "id": "b597f5004d3d9c29",
@@ -46661,7 +47417,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "bf876744b65f7141",
-   "cluster_title": "Bimergen Energy Subsidiary Files for Texas Retail Electric Provider Certification to Serve Data Center Customers"
+   "cluster_title": "Bimergen Energy Subsidiary Files for Texas Retail Electric Provider Certification to Serve Data Center Customers",
+   "filtered": true
   },
   {
    "id": "02f90b78b8ffa062",
@@ -47399,11 +48156,22 @@
     "Politics",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -47423,11 +48191,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -47680,7 +48459,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5a536a1c8ebe369c",
-   "cluster_title": "HD Hyundai Construction Equipment Q3 Operating Profit Up 24% on Data Center Engines, but Net Income Plunges 98% on FX Losses"
+   "cluster_title": "HD Hyundai Construction Equipment Q3 Operating Profit Up 24% on Data Center Engines, but Net Income Plunges 98% on FX Losses",
+   "filtered": true
   },
   {
    "id": "521d96b3a6159378",
@@ -47889,18 +48669,29 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "c3bb5fcd7616acc6",
-   "cluster_title": "Aurora council to vote on indefinite data center moratorium"
+   "cluster_id": "79c569f67a5530ac",
+   "cluster_title": "San Diego City Council to vote on data center moratorium this week"
   },
   {
    "id": "b5a6e7592d17830a",
@@ -47985,7 +48776,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -48092,7 +48883,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -48128,7 +48919,7 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "79c569f67a5530ac",
+   "cluster_id": "7640af00a3c22402",
    "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
   },
   {
@@ -50896,7 +51687,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "79c569f67a5530ac",
-   "cluster_title": "Charlotte City Council to vote on extending data center moratorium"
+   "cluster_title": "San Diego City Council to vote on data center moratorium this week"
   },
   {
    "id": "e1b73aa52dc0bb50",
@@ -50987,7 +51778,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "c9aea82a70674d59",
-   "cluster_title": "A Union Is Championing Data Centers Near Washington, D.C."
+   "cluster_title": "A Union Is Championing Data Centers Near Washington, D.C.",
+   "filtered": true
   },
   {
    "id": "7b82870996b8c0cf",
@@ -51071,7 +51863,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "7d3067d9acab3415",
-   "cluster_title": "4 Data Center REITs With Growing Dividends and an AI Tailwind"
+   "cluster_title": "4 Data Center REITs With Growing Dividends and an AI Tailwind",
+   "filtered": true
   },
   {
    "id": "e4ac2b1a85556f61",
@@ -51240,7 +52033,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "a6fea71a977606d9",
-   "cluster_title": "WULF Stock Hits Six-Month Weekly Low As TeraWulf Secures Larger Credit Line For AI Data Center Expansion"
+   "cluster_title": "WULF Stock Hits Six-Month Weekly Low As TeraWulf Secures Larger Credit Line For AI Data Center Expansion",
+   "filtered": true
   },
   {
    "id": "54d0cc4885c5ef19",
@@ -51304,7 +52098,8 @@
    "suppliers": [],
    "capacity_mw": 25,
    "cluster_id": "36aea132b5ace4dc",
-   "cluster_title": "Maryland Data Centers: HB 1534 Warning, 25 MW Rule [2026]"
+   "cluster_title": "Maryland Data Centers: HB 1534 Warning, 25 MW Rule [2026]",
+   "filtered": true
   },
   {
    "id": "6bc07484307efc7b",
@@ -51600,7 +52395,8 @@
    "suppliers": [],
    "investment_usd_b": 0.427,
    "cluster_id": "4dcb4800f32005a3",
-   "cluster_title": "Amazon Just Walked Away From a $427 Million Data Center Plan After Neighbors Fought Back"
+   "cluster_title": "Amazon Just Walked Away From a $427 Million Data Center Plan After Neighbors Fought Back",
+   "filtered": true
   },
   {
    "id": "e1dc4cde93879c6c",
@@ -51711,8 +52507,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "c23850792c147771",
+   "cluster_title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county"
   },
   {
    "id": "4af1733842d81d80",
@@ -52486,17 +53282,27 @@
    "feed": "Google News: Data center",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Cromwell, Connecticut, US",
+     "lat": 41.5951,
+     "lon": -72.6454,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CT"
+   ],
+   "state": "CT",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hint": "Cromwell Data Center",
    "cluster_id": "a1ab50c39ee6b096",
    "cluster_title": "Documents show Cromwell data center discussion dates back over a year"
   },
@@ -52920,8 +53726,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 0.427,
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "92b35c877943f719",
+   "cluster_title": "Amazon walks away from $427 million Virginia data center deal"
   },
   {
    "id": "5a44c1b13015cef5",
@@ -54014,7 +54820,8 @@
    "suppliers": [],
    "investment_usd_b": 0.005,
    "cluster_id": "d23b9a1a91fa3630",
-   "cluster_title": "Valor Energy Seeks $5 Million in Private Stock Placement to Fund AI Data Center Projects"
+   "cluster_title": "Valor Energy Seeks $5 Million in Private Stock Placement to Fund AI Data Center Projects",
+   "filtered": true
   },
   {
    "id": "1f8727ae9e68fed7",
@@ -54865,7 +55672,8 @@
     "Nvidia"
    ],
    "cluster_id": "0ba3c90d08cb921d",
-   "cluster_title": "Schneider Electric Teams Up with Nvidia to Build AI Data Center Power Gear in as Little as 6 Months"
+   "cluster_title": "Schneider Electric Teams Up with Nvidia to Build AI Data Center Power Gear in as Little as 6 Months",
+   "filtered": true
   },
   {
    "id": "162a6eed2b990aa1",
@@ -55370,11 +56178,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
@@ -55383,7 +56202,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "796b084234b697b7",
-   "cluster_title": "Amazon policy VP Shannon Kellogg discusses responsible data center growth on Good Day Dayt"
+   "cluster_title": "Amazon policy VP Shannon Kellogg discusses responsible data center growth on Good Day Dayton"
   },
   {
    "id": "9cd27d186b2b7420",
@@ -55398,11 +56217,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Dayton, Ohio, US",
+     "lat": 39.7589,
+     "lon": -84.1916,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -55411,7 +56241,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "796b084234b697b7",
-   "cluster_title": "Amazon policy VP Shannon Kellogg discusses responsible data center growth on Good Day Dayt"
+   "cluster_title": "Amazon policy VP Shannon Kellogg discusses responsible data center growth on Good Day Dayton"
   },
   {
    "id": "8774f701a8ea15e6",
@@ -56556,7 +57386,8 @@
    "suppliers": [],
    "investment_usd_b": 6.0,
    "cluster_id": "e52168e3ba1823ae",
-   "cluster_title": "Short Sellers Just Made $6 Billion Betting Against AI Data Center Stocks"
+   "cluster_title": "Short Sellers Just Made $6 Billion Betting Against AI Data Center Stocks",
+   "filtered": true
   },
   {
    "id": "bb97e20893e84ddd",
@@ -57450,11 +58281,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Cromwell, Connecticut, US",
+     "lat": 41.5951,
+     "lon": -72.6454,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CT"
+   ],
+   "state": "CT",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -57510,7 +58352,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "515c4082ab2d7d15",
-   "cluster_title": "How Everpure Is Winning Over Hyperscalers In The AI Data Center Race"
+   "cluster_title": "How Everpure Is Winning Over Hyperscalers In The AI Data Center Race",
+   "filtered": true
   },
   {
    "id": "105e9690dc51e262",
@@ -58486,11 +59329,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59163,7 +60017,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "684968986d1dac21",
-   "cluster_title": "AI Data Center Infrastructure: 5 Core Services [2026]"
+   "cluster_title": "AI Data Center Infrastructure: 5 Core Services [2026]",
+   "filtered": true
   },
   {
    "id": "0c5c9c90315ec0ed",
@@ -59176,11 +60031,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59198,11 +60064,22 @@
    "feed": "Google News: Data center announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -59629,7 +60506,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "30b53377428d0ec6",
-   "cluster_title": "SK Telecom’s AI Data Center Arm Goes Hunting For Capital"
+   "cluster_title": "SK Telecom’s AI Data Center Arm Goes Hunting For Capital",
+   "filtered": true
   },
   {
    "id": "1ede61791e988a7d",
@@ -59765,7 +60643,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d3b240a13c38cf3c",
-   "cluster_title": "New Wall for AI Data Center Construction: Cable Supply Capacity Tightens, 3 Years to Bring New Lines Online"
+   "cluster_title": "New Wall for AI Data Center Construction: Cable Supply Capacity Tightens, 3 Years to Bring New Lines Online",
+   "filtered": true
   },
   {
    "id": "e5735e04e403ad4f",
@@ -60169,6 +61048,14 @@
    "tags": [],
    "locations": [
     {
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Iowa, US",
      "lat": 42.1,
      "lon": -93.5,
@@ -60182,7 +61069,7 @@
    ],
    "state": "IA",
    "county": null,
-   "location_precision": "state",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -60332,7 +61219,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "fbbb6097b2dbe43d",
-   "cluster_title": "Amazon presents on data center water resource usage"
+   "cluster_title": "Amazon presents water plans for new data center in St. Joseph County"
   },
   {
    "id": "bac955de87b98753",
@@ -60643,7 +61530,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "c6ff4722dd4f9a1c",
-   "cluster_title": "Facing pushback on data centers, tech giants are promising hosts more money and fewer secrets"
+   "cluster_title": "Facing pushback on data centers, tech giants are promising more money, fewer secrets"
   },
   {
    "id": "c73dea0628eb1f64",
@@ -61642,8 +62529,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "c23850792c147771",
+   "cluster_title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county"
   },
   {
    "id": "3c04fe8cf7449ceb",
@@ -62053,18 +62940,29 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "c6ff4722dd4f9a1c",
-   "cluster_title": "Facing pushback on data centers, tech giants are promising hosts more money and fewer secrets"
+   "cluster_title": "Facing pushback on data centers, tech giants are promising more money, fewer secrets"
   },
   {
    "id": "d3222df80c350c65",
@@ -62387,7 +63285,8 @@
    "suppliers": [],
    "investment_usd_b": 0.24,
    "cluster_id": "83228dc2e3d75cdc",
-   "cluster_title": "MXL: AI data-center demand drove 72% Q3 revenue growth; Q4 revenue guided to $240M–$260M"
+   "cluster_title": "MXL: AI data-center demand drove 72% Q3 revenue growth; Q4 revenue guided to $240M–$260M",
+   "filtered": true
   },
   {
    "id": "1dddf723e559a4cd",
@@ -62533,11 +63432,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Colorado, US",
+     "lat": 39.0,
+     "lon": -105.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Vantage"
    ],
@@ -62559,11 +63469,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Colorado, US",
+     "lat": 39.0,
+     "lon": -105.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Vantage"
    ],
@@ -63247,11 +64168,22 @@
     "Deals / Investment",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -64589,7 +65521,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "5f274645688eab67",
-   "cluster_title": "Short Sellers Are Testing AI Data Center Darlings’ Debt Story"
+   "cluster_title": "Short Sellers Are Testing AI Data Center Darlings’ Debt Story",
+   "filtered": true
   },
   {
    "id": "54830f419c7e4b5e",
@@ -64923,7 +65856,8 @@
    "suppliers": [],
    "investment_usd_b": 6.0,
    "cluster_id": "b4359efbeb81dcee",
-   "cluster_title": "Short sellers gain $6bn amid AI data center stock selloff"
+   "cluster_title": "Short sellers gain $6bn amid AI data center stock selloff",
+   "filtered": true
   },
   {
    "id": "f8aa42c40d648379",
@@ -65386,11 +66320,22 @@
    "feed": "Google News: Data center",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -65914,7 +66859,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "16d00b06434d2341",
-   "cluster_title": "QuantumScape CEO Says AI Data Center Customers Want Batteries 'In Volume' As Company Ramps Up Production"
+   "cluster_title": "QuantumScape CEO Says AI Data Center Customers Want Batteries 'In Volume' As Company Ramps Up Production",
+   "filtered": true
   },
   {
    "id": "6a7eedc04e6a0519",
@@ -65965,11 +66911,22 @@
    "feed": "Google News: Data center",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -66263,7 +67220,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "418224cc7f138256",
-   "cluster_title": "American Fusion? Advances Texatron? Commercialization With Four New Texas Data Center Proposals, New Research Facility, Planned North Texas Research Campus And Investment Banking Negotiations"
+   "cluster_title": "American Fusion? Advances Texatron? Commercialization With Four New Texas Data Center Proposals, New Research Facility, Planned North Texas Research Campus And Investment Banking Negotiations",
+   "filtered": true
   },
   {
    "id": "a778fcd1b0e66445",
@@ -67045,7 +68003,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "94c3b1f4a0ddafd6",
-   "cluster_title": "United Microelectronics, AP Memory Partner on AI Data Center Power Solutions"
+   "cluster_title": "United Microelectronics, AP Memory Partner on AI Data Center Power Solutions",
+   "filtered": true
   },
   {
    "id": "f32488d4d9a9c224",
@@ -67201,7 +68160,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "c6ff4722dd4f9a1c",
-   "cluster_title": "Facing pushback on data centers, tech giants are promising hosts more money and fewer secrets"
+   "cluster_title": "Facing pushback on data centers, tech giants are promising more money, fewer secrets"
   },
   {
    "id": "a5d9682715f22511",
@@ -69066,7 +70025,8 @@
    "suppliers": [],
    "investment_usd_b": 0.427,
    "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers",
+   "filtered": true
   },
   {
    "id": "1a345d205de6e07f",
@@ -69957,8 +70917,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "6c34de3783ae6833",
-   "cluster_title": "Data center proposed for old Alton Steel site"
+   "cluster_id": "4842e7c8d0b61bdf",
+   "cluster_title": "Former Alton Steel property would become a data center under TerraWatt plan"
   },
   {
    "id": "5d38a0249b23038a",
@@ -70491,11 +71451,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -71287,18 +72258,30 @@
    "feed": "Google News: AI and hyperscale",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Alton, Illinois, US",
+     "lat": 38.8906,
+     "lon": -90.1843,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "St. Louis"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "6d9c5f8355290eb2",
-   "cluster_title": "Data center proposed for former Alton Steel site"
+   "cluster_id": "4842e7c8d0b61bdf",
+   "cluster_title": "Former Alton Steel property would become a data center under TerraWatt plan"
   },
   {
    "id": "b3fdc0cc458ec2aa",
@@ -71309,18 +72292,30 @@
    "feed": "Google News: AI and hyperscale",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Alton, Illinois, US",
+     "lat": 38.8906,
+     "lon": -90.1843,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "St. Louis"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "6d9c5f8355290eb2",
-   "cluster_title": "Data center proposed for former Alton Steel site"
+   "cluster_id": "4842e7c8d0b61bdf",
+   "cluster_title": "Former Alton Steel property would become a data center under TerraWatt plan"
   },
   {
    "id": "bfb3bae3d05a9f7b",
@@ -71515,8 +72510,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "c23850792c147771",
+   "cluster_title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county"
   },
   {
    "id": "285c322274318492",
@@ -71554,8 +72549,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "c23850792c147771",
+   "cluster_title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county"
   },
   {
    "id": "2e108d0d76276915",
@@ -71947,7 +72942,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "2767cc02d2cd33f2",
-   "cluster_title": "AI Data Center Building Spree Lifts US Warehouse Rents to $10.55 per Square Foot"
+   "cluster_title": "AI Data Center Building Spree Lifts US Warehouse Rents to $10.55 per Square Foot",
+   "filtered": true
   },
   {
    "id": "ef96201338d790d8",
@@ -72137,8 +73133,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "c23850792c147771",
+   "cluster_title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county"
   },
   {
    "id": "3c44e6736ee291c5",
@@ -72187,11 +73183,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
-   "county": null,
-   "location_precision": null,
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -72357,7 +73364,8 @@
    "suppliers": [],
    "name_hint": "Texas AI Data Center",
    "cluster_id": "519ecb91454f6eb1",
-   "cluster_title": "Applied Digital rises as new Texas AI data center deal, bullish analyst call, and insider buying lift sentiment"
+   "cluster_title": "Applied Digital rises as new Texas AI data center deal, bullish analyst call, and insider buying lift sentiment",
+   "filtered": true
   },
   {
    "id": "ade2ea8ab2f42a62",
@@ -73447,11 +74455,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -73866,11 +74885,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -74464,7 +75494,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "efc5de7c25655b44",
-   "cluster_title": "Cadence Design Systems Launches Sovereign AI Data Center in Munich"
+   "cluster_title": "Cadence Design Systems Launches Sovereign AI Data Center in Munich",
+   "filtered": true
   },
   {
    "id": "479224b9f53b331c",
@@ -74870,7 +75901,8 @@
    "suppliers": [],
    "capacity_mw": 50,
    "cluster_id": "05e3bbc8f824f676",
-   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas"
+   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas",
+   "filtered": true
   },
   {
    "id": "07531c59eff309e2",
@@ -75124,7 +76156,8 @@
     "Nvidia"
    ],
    "cluster_id": "6be9fb91cc175f28",
-   "cluster_title": "Vertiv, NVIDIA partner on AI data center deployment approach"
+   "cluster_title": "Vertiv, NVIDIA partner on AI data center deployment approach",
+   "filtered": true
   },
   {
    "id": "b0f3c94b449d73b9",
@@ -75164,7 +76197,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "05e3bbc8f824f676",
-   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas"
+   "cluster_title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas",
+   "filtered": true
   },
   {
    "id": "5f7bce955718a2ad",
@@ -75548,7 +76582,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "8c1e789bbbfad3ec",
-   "cluster_title": "Arista Networks Vs. Cisco Systems: Modern AI Data Center Networking vs. Legacy Enterprise Switch Leader"
+   "cluster_title": "Arista Networks Vs. Cisco Systems: Modern AI Data Center Networking vs. Legacy Enterprise Switch Leader",
+   "filtered": true
   },
   {
    "id": "cd5199e906a1ac5e",
@@ -75789,8 +76824,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "c23850792c147771",
+   "cluster_title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county"
   },
   {
    "id": "cc6ffdafab27461c",
@@ -76512,11 +77547,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Fayetteville, North Carolina, US",
+     "lat": 35.0527,
+     "lon": -78.8784,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -76647,7 +77693,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "1c1d32f66e0549dc",
-   "cluster_title": "AWS Launches Grid AI Agents as Queue Hits 438 GW [2026]"
+   "cluster_title": "AWS Launches Grid AI Agents as Queue Hits 438 GW [2026]",
+   "filtered": true
   },
   {
    "id": "3731591a7a333897",
@@ -80211,7 +81258,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "06a3f05f94624a74",
-   "cluster_title": "AI data center projects boost US warehouse demand and rents, real estate company JLL says"
+   "cluster_title": "AI data center projects boost US warehouse demand and rents, real estate company JLL says",
+   "filtered": true
   },
   {
    "id": "7d0e32083cc09da7",
@@ -80501,8 +81549,8 @@
    "builders": [],
    "suppliers": [],
    "name_hint": "Loudoun campus",
-   "cluster_id": "ed18adfbe69a6b24",
-   "cluster_title": "Amazon Donates 25 Acres of GWU Campus to Loudoun, Pledges No Data Centers"
+   "cluster_id": "c23850792c147771",
+   "cluster_title": "Amazon scraps data center plan for GW's Loudoun campus, pivots to mixed-use in deal with county"
   },
   {
    "id": "ed18adfbe69a6b24",
@@ -81818,11 +82866,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rapid City, South Dakota, US",
+     "lat": 44.0805,
+     "lon": -103.231,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SD"
+   ],
+   "state": "SD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -83044,8 +84103,8 @@
    "builders": [],
    "suppliers": [],
    "investment_usd_b": 45.0,
-   "cluster_id": "c9044999ba946dc1",
-   "cluster_title": "Anthropic Could Double Down On Nscale’s West Virginia Data Center"
+   "cluster_id": "48d14c713ece8ab6",
+   "cluster_title": "$45bn+ West Virginia Data Center Project Advances as Anthropic–Nscale Deal Talks Continue"
   },
   {
    "id": "68a42bde0f074fe5",
@@ -84901,11 +85960,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -87170,7 +88240,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "53bb67e7c4ece1e4",
-   "cluster_title": "Jim Cramer Has a Warning for AI Data Center Investors Ahead of MSFT, GOOGL and AMZN Earnings: ‘Too Early to Say That the Coast Is Clear’"
+   "cluster_title": "Jim Cramer Has a Warning for AI Data Center Investors Ahead of MSFT, GOOGL and AMZN Earnings: ‘Too Early to Say That the Coast Is Clear’",
+   "filtered": true
   },
   {
    "id": "efcb6e0e469d96c4",
@@ -87644,11 +88715,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Allentown, Pennsylvania, US",
+     "lat": 40.6084,
+     "lon": -75.4902,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -88055,11 +89137,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -88118,6 +89211,14 @@
    ],
    "locations": [
     {
+     "name": "Westbrook, Maine, US",
+     "lat": 43.677,
+     "lon": -70.3712,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Portland, Oregon, US",
      "lat": 45.52,
      "lon": -122.68,
@@ -88128,9 +89229,10 @@
     }
    ],
    "states": [
+    "ME",
     "OR"
    ],
-   "state": "OR",
+   "state": "ME",
    "county": null,
    "location_precision": "city",
    "companies": [],
@@ -88949,7 +90051,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "bd01c3fed0f59f89",
-   "cluster_title": "Google Confirmed as Wood Haven Data Center Bidder"
+   "cluster_title": "Google Confirmed as Wood Haven Data Center Bidder",
+   "filtered": true
   },
   {
    "id": "9a2d688b85488d8b",
@@ -90459,7 +91562,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "c9044999ba946dc1",
-   "cluster_title": "Anthropic Could Double Down On Nscale’s West Virginia Data Center"
+   "cluster_title": "Anthropic Could Double Down On Nscale’s West Virginia Data Center",
+   "filtered": true
   },
   {
    "id": "992a0e72942cf6ad",
@@ -91818,7 +92922,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d963a9b605d63c6e",
-   "cluster_title": "Semtech Gains as Investors Reassess Raised Outlook and AI Data Center Targets"
+   "cluster_title": "Semtech Gains as Investors Reassess Raised Outlook and AI Data Center Targets",
+   "filtered": true
   },
   {
    "id": "9dab64ad4bdda5b6",
@@ -94109,11 +95214,22 @@
    "tags": [
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Clarksville, Arkansas, US",
+     "lat": 35.4715,
+     "lon": -93.4666,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -96992,11 +98108,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -99158,11 +100285,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -100305,11 +101443,11 @@
    ],
    "locations": [
     {
-     "name": "North Carolina, US",
-     "lat": 35.6,
-     "lon": -79.4,
-     "level": 2,
-     "precision": "source",
+     "name": "Mount Airy, North Carolina, US",
+     "lat": 36.4993,
+     "lon": -80.6073,
+     "level": 3,
+     "precision": "city",
      "country": "US"
     }
    ],
@@ -100318,7 +101456,7 @@
    ],
    "state": "NC",
    "county": null,
-   "location_precision": "source",
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -100398,11 +101536,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Iowa, US",
+     "lat": 42.1,
+     "lon": -93.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -106079,11 +107228,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Newport, Pennsylvania, US",
+     "lat": 40.4779,
+     "lon": -77.1305,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -106991,7 +108151,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "3adfd32a895ee0f2",
-   "cluster_title": "The AI Data Center Race Heats Up: Three Winners Getting Paid Now, One Waiting for Next Year"
+   "cluster_title": "The AI Data Center Race Heats Up: Three Winners Getting Paid Now, One Waiting for Next Year",
+   "filtered": true
   },
   {
    "id": "16872afce0fd5b41",
@@ -107017,8 +108178,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "19fa321d4dbc6cd5",
-   "cluster_title": "Flex completes acquisition of EPC Power for data centers"
+   "cluster_id": "16872afce0fd5b41",
+   "cluster_title": "Flex Completes Acquisition of EPC Power, Expanding Power Conversion Capabilities for AI Data Centers and Grid Applications"
   },
   {
    "id": "4555b79248e73ce3",
@@ -107597,6 +108758,14 @@
      "metro": "Portland"
     },
     {
+     "name": "Berwick, Maine, US",
+     "lat": 43.2659,
+     "lon": -70.8645,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
      "name": "Maine, US",
      "lat": 45.4,
      "lon": -69.2,
@@ -107711,7 +108880,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "19fa321d4dbc6cd5",
-   "cluster_title": "Flex completes acquisition of EPC Power for data centers"
+   "cluster_title": "Flex completes acquisition of EPC Power for data centers",
+   "filtered": true
   },
   {
    "id": "e7f4f216f36ff240",
@@ -107945,11 +109115,23 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Amazon"
    ],
@@ -110638,11 +111820,22 @@
     "Community",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Meta"
    ],
@@ -110759,11 +111952,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -110819,11 +112023,22 @@
     "Deals / Investment",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -110941,11 +112156,22 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Allentown, Pennsylvania, US",
+     "lat": 40.6084,
+     "lon": -75.4902,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -113488,7 +114714,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "941287ee0c1e95d1",
-   "cluster_title": "Tower Semiconductor, Semtech expand partnership for AI data center demand"
+   "cluster_title": "Tower Semiconductor, Semtech expand partnership for AI data center demand",
+   "filtered": true
   },
   {
    "id": "c274126c9849a094",
@@ -113727,11 +114954,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Topeka, Kansas, US",
+     "lat": 39.0483,
+     "lon": -95.678,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -116134,11 +117372,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -116529,7 +117778,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "86e44ce257a661e0",
-   "cluster_title": "Gorilla Sinks 9% as Data Center Pivot Keeps Selling Off; BigBear.ai Dips, Palantir Slips"
+   "cluster_title": "Gorilla Sinks 9% as Data Center Pivot Keeps Selling Off; BigBear.ai Dips, Palantir Slips",
+   "filtered": true
   },
   {
    "id": "c3b44ed9cb42bf4e",
@@ -117171,7 +118421,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "d496ab97ed3362a0",
-   "cluster_title": "FERC rejects most of PJM's temporary curtailment plan to manage data centers"
+   "cluster_title": "FERC rejects most of PJM's temporary curtailment plan to manage data centers",
+   "filtered": true
   },
   {
    "id": "da594ec66e8288b6",
@@ -117553,7 +118804,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "765fbf3f9f476a39",
-   "cluster_title": "Rochester Area Chamber of Commerce voices support for controversial Pine Island data center"
+   "cluster_title": "Rochester Area Chamber of Commerce Throws Its Support Behind Pine Island Data Center Project"
   },
   {
    "id": "3c17d977f0e39d2d",
@@ -117629,11 +118880,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Rapid City, South Dakota, US",
+     "lat": 44.0805,
+     "lon": -103.231,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "SD"
+   ],
+   "state": "SD",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -119092,7 +120354,8 @@
    "suppliers": [],
    "investment_usd_b": 39.5,
    "cluster_id": "a6a63041ad3af158",
-   "cluster_title": "Bernstein: AI Data Center Investment Reaches Up to $39.5 Billion per GW — Depreciation Is the Biggest Burden"
+   "cluster_title": "Bernstein: AI Data Center Investment Reaches Up to $39.5 Billion per GW — Depreciation Is the Biggest Burden",
+   "filtered": true
   },
   {
    "id": "39b6d20292e1a096",
@@ -119907,7 +121170,8 @@
    "suppliers": [],
    "capacity_mw": 100,
    "cluster_id": "34215579ee1a2b3b",
-   "cluster_title": "Gorilla eyes 100 MW portfolio after first U.S. data center LOI"
+   "cluster_title": "Gorilla eyes 100 MW portfolio after first U.S. data center LOI",
+   "filtered": true
   },
   {
    "id": "627059843a5581ce",
@@ -120445,11 +121709,22 @@
     "New Announcement",
     "Environment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -121286,11 +122561,22 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -121422,7 +122708,8 @@
    "suppliers": [],
    "capacity_mw": 100,
    "cluster_id": "84052e34a022a666",
-   "cluster_title": "Gorilla Technology Plans First US Data Center Deal, Targets Over 100MW AI Infrastructure"
+   "cluster_title": "Gorilla Technology Plans First US Data Center Deal, Targets Over 100MW AI Infrastructure",
+   "filtered": true
   },
   {
    "id": "5690bff0b0dc0c2f",
@@ -121524,18 +122811,29 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "a4afaae88161da83",
-   "cluster_title": "Urbana council takes no action on proposed data center settlement"
+   "cluster_id": "0b7db30e962e1332",
+   "cluster_title": "Urbana mayor reveals proposed settlement in $1B data center dispute"
   },
   {
    "id": "6a6875b50e91c24e",
@@ -121614,11 +122912,22 @@
     "AI Infrastructure",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Colorado, US",
+     "lat": 39.0,
+     "lon": -105.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -122002,11 +123311,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -123100,11 +124420,22 @@
     "New Announcement",
     "Deals / Investment"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Newport, Pennsylvania, US",
+     "lat": 40.4779,
+     "lon": -77.1305,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -124294,11 +125625,22 @@
     "New Announcement",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -125368,18 +126710,29 @@
     "Cancelled / Blocked",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Massachusetts, US",
+     "lat": 42.3,
+     "lon": -71.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MA"
+   ],
+   "state": "MA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "91046bbb83c0b9ec",
-   "cluster_title": "Oakland City Council approves 45-day moratorium on new data centers"
+   "cluster_id": "3f8db0ebebf5959b",
+   "cluster_title": "Easthampton approves 18-month moratorium on data centers"
   },
   {
    "id": "72493c6ed5ceab40",
@@ -125956,7 +127309,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "28f4d2a7c1abcbc9",
-   "cluster_title": "Elice Group Completes Trademark Registration for Modular AI Data Center 'PMDC'"
+   "cluster_title": "Elice Group Completes Trademark Registration for Modular AI Data Center 'PMDC'",
+   "filtered": true
   },
   {
    "id": "f5b0bd801b72be58",
@@ -127340,11 +128694,22 @@
    "tags": [
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Hanover, Pennsylvania, US",
+     "lat": 39.8007,
+     "lon": -76.983,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -129835,7 +131200,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "54ce849c1af84213",
-   "cluster_title": "Sunpower - Breaks Ground On Solar System For Ai Data Center In Reno, Nevada"
+   "cluster_title": "Sunpower - Breaks Ground On Solar System For Ai Data Center In Reno, Nevada",
+   "filtered": true
   },
   {
    "id": "4d7967e4ffc6ab54",
@@ -129880,8 +131246,8 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "54ce849c1af84213",
-   "cluster_title": "Sunpower - Breaks Ground On Solar System For Ai Data Center In Reno, Nevada"
+   "cluster_id": "4d7967e4ffc6ab54",
+   "cluster_title": "SunPower Breaks Ground on Solar Project for New AI Data Center in Reno, Nevada"
   },
   {
    "id": "db5374c7f1b69cf9",
@@ -130107,11 +131473,22 @@
     "New Announcement",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Urbana, Ohio, US",
+     "lat": 40.1084,
+     "lon": -83.7524,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -130510,18 +131887,29 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "South Bend, Indiana, US",
+     "lat": 41.6834,
+     "lon": -86.25,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "9f22ffc668880acb",
-   "cluster_title": "South Bend unveils draft data center framework, says neighborhoods must come first"
+   "cluster_id": "80ce7b24f59cd7ba",
+   "cluster_title": "City of South Bend announces new data center framework"
   },
   {
    "id": "3d1f43608e108115",
@@ -130773,11 +132161,22 @@
    "tags": [
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -131036,18 +132435,37 @@
    "feed": "Backfill: announced",
    "category": "General",
    "tags": [],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Rochester, Minnesota, US",
+     "lat": 44.0216,
+     "lon": -92.4699,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
    "cluster_id": "765fbf3f9f476a39",
-   "cluster_title": "Rochester Area Chamber of Commerce voices support for controversial Pine Island data center"
+   "cluster_title": "Rochester Area Chamber of Commerce Throws Its Support Behind Pine Island Data Center Project"
   },
   {
    "id": "91282f4ce17a555a",
@@ -131505,11 +132923,22 @@
     "Policy / Permits",
     "Analysis / Opinion"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Bethlehem, Pennsylvania, US",
+     "lat": 40.6259,
+     "lon": -75.3705,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -132819,11 +134248,30 @@
     "New Announcement",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pine Island, Minnesota, US",
+     "lat": 44.2013,
+     "lon": -92.6463,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Rochester, Minnesota, US",
+     "lat": 44.0216,
+     "lon": -92.4699,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [
     "Google"
    ],
@@ -132832,7 +134280,7 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "765fbf3f9f476a39",
-   "cluster_title": "Rochester Area Chamber of Commerce voices support for controversial Pine Island data center"
+   "cluster_title": "Rochester Area Chamber of Commerce Throws Its Support Behind Pine Island Data Center Project"
   },
   {
    "id": "0fca80684014fc29",
@@ -133284,11 +134732,22 @@
     "New Announcement",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -134046,18 +135505,29 @@
    "tags": [
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Newport, Pennsylvania, US",
+     "lat": 40.4779,
+     "lon": -77.1305,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "cluster_id": "506dc40f8c32c7e4",
-   "cluster_title": "Hundreds crowd Newport Twp. meeting over data center concerns"
+   "cluster_id": "36e29f970feecf22",
+   "cluster_title": "Newport Township residents voice concerns to Township Commissioners about 15 proposed data centers"
   },
   {
    "id": "30231f7093f269f1",
@@ -136122,11 +137592,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Newport, Pennsylvania, US",
+     "lat": 40.4779,
+     "lon": -77.1305,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "city",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -136968,7 +138449,8 @@
    "suppliers": [],
    "capacity_mw": 75,
    "cluster_id": "a8a879d514bfa70f",
-   "cluster_title": "Applied Digital Spikes 7% as Another 75 MW Comes Online at Polaris Forge 1; IREN Advances 6%"
+   "cluster_title": "Applied Digital Spikes 7% as Another 75 MW Comes Online at Polaris Forge 1; IREN Advances 6%",
+   "filtered": true
   },
   {
    "id": "bec1e61546b60f6e",
@@ -137693,11 +139175,22 @@
     "Power / Utility",
     "AI Infrastructure"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -138106,11 +139599,22 @@
     "AI Infrastructure",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [
     "Amazon"
    ],
@@ -138647,7 +140151,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "90e3964bca48495d",
-   "cluster_title": "Toshiba plans to double AI data center hard drive production, Evercore comments"
+   "cluster_title": "Toshiba plans to double AI data center hard drive production, Evercore comments",
+   "filtered": true
   },
   {
    "id": "58f10914c0ef5722",
@@ -138864,11 +140369,22 @@
     "New Announcement",
     "Power / Utility"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Florida, US",
+     "lat": 28.6,
+     "lon": -82.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -139659,7 +141175,8 @@
    "suppliers": [],
    "investment_usd_b": 1.75,
    "cluster_id": "f727707c6379c9ef",
-   "cluster_title": "nVent Completes $1.75 Billion Acquisition of Maverick Power to Expand Data Center Power Distribution Offerings"
+   "cluster_title": "nVent Completes $1.75 Billion Acquisition of Maverick Power to Expand Data Center Power Distribution Offerings",
+   "filtered": true
   },
   {
    "id": "81ff60ca54aa3d03",
@@ -139852,11 +141369,22 @@
    "tags": [
     "New Announcement"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Colorado, US",
+     "lat": 39.0,
+     "lon": -105.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -140201,11 +141729,22 @@
     "New Announcement",
     "Community"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
@@ -140991,11 +142530,22 @@
     "Environment",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],

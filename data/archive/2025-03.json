@@ -5169,7 +5169,8 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "fef4fa1df2494dcc",
-   "cluster_title": "NV5 Completes Acquisition of Herman Cx to Enhance Data Center Commissioning Capabilities"
+   "cluster_title": "NV5 Completes Acquisition of Herman Cx to Enhance Data Center Commissioning Capabilities",
+   "filtered": true
   },
   {
    "id": "a33ea943e7cba9ad",
@@ -7527,7 +7528,8 @@
    "suppliers": [],
    "capacity_mw": 300,
    "cluster_id": "e96a3d8707828879",
-   "cluster_title": "Nvidia-Backed Nebius Stock Rallies On Plans For New 300MW Data Center In New Jersey: Retail’s Elated"
+   "cluster_title": "Nvidia-Backed Nebius Stock Rallies On Plans For New 300MW Data Center In New Jersey: Retail’s Elated",
+   "filtered": true
   },
   {
    "id": "427b404cf59291e1",
@@ -8842,11 +8844,22 @@
     "Community",
     "Policy / Permits"
    ],
-   "locations": [],
-   "states": [],
-   "state": null,
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
    "county": null,
-   "location_precision": null,
+   "location_precision": "source",
    "companies": [],
    "utilities": [],
    "investors": [],
