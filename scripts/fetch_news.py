@@ -61,7 +61,7 @@ MONTH_RE = re.compile(r"^\d{4}-\d{2}$")
 NEWS_MAX_AGE_DAYS = 90
 # data/news.json keeps 90 days when that fits in NEWS_MAX_BYTES, otherwise the last 30 days.
 # There is no item cap; older headlines live in data/archive/ and the Newsroom loads them on demand.
-NEWS_WINDOW_DAYS = (90, 30)
+NEWS_WINDOW_DAYS = (90, 30, 21, 14)
 NEWS_MAX_BYTES = int(2.5 * 1024 * 1024)
 # Exit code for "Google is rate limiting us: skip this cycle and try again next hour".
 EXIT_BACKOFF = 75
