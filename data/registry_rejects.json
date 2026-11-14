@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 525,
+ "count": 526,
  "items": [
   {
    "id": "4fccaa80a079766e",
@@ -204,6 +204,19 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "0cb4cbb9d001c5d2",
+   "title": "Kevin O'Leary says election results good news for data centers like his planned in Utah",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPNFRadVVWa0NNYWpGRzFBSGpfaDlSdDVwb1F4a3ZQWms0dHRaMXBmVVpKQWt4d2xHYUlNYjItTWUtS215aFg1aFZ2N0huQjVPc0UxS2tKV0x5TmNWdGdONXdFRE5RRzRWV3daQmNRUmhSRUFYc05IOWpXTFlnNjY2ak5DdTlEY1lJSk0yS1ZNaUcyQzdOOTdZY1FEeWpCZkhOc3dNTlpWVXU3NEEwdjAyOUZUb04?oc=5",
+   "source": "KUTV",
+   "published": "2026-11-13T04:26:39+00:00",
+   "state": "UT",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "628997b1f31915f7",
@@ -801,6 +814,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "3659936e2b4c321b",
+   "title": "Developer: Proposed Alliance data center site needs remediation",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOHE4cEhTSnJSX21HMHlFRm9MTmVCMlpvYmNGZnBXQUJXR05Ja3JESUhyVFZLdWJHbllkYnlfZ0x4VjN5aml4eENudFZLXzZwS0VyN1hTRjhmalN0YXJwdUs2bGdLR3NrdElDRHdtRGFFZUU2OFd6cGFpUDl6VDhobFRJV19TT3hjOVRiaU9PWlR5SjV4dGpEOVJLZjVMZ0liVWJaTm5hQWI2akNNY3RHbUpqZ3NwOFdwaGNKbm0wRTZueFpIRDhsZ1dGTUwycE9JSjNtczBLUEFhdw?oc=5",
+   "source": "Canton Repository",
+   "published": "2026-11-11T15:55:00+00:00",
+   "state": "OH",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -6823,19 +6849,6 @@
    "suppliers": [],
    "precision": "county",
    "reason": "a policy story with no operator or project name"
-  },
-  {
-   "id": "e966f985992c2854",
-   "title": "US DoD seeks partner to build $4bn \"mission critical facility\" and data center in Alabama",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV3RtVjJqMTNVSmd1cENrVzBkb0pEUUJkaHRKQmt3b2FCb2F3X2Y2YlYyRS15bm8xTUdmM3MyZDZLcS1jWmRPaVNzNzA2dFhrb2d5OWJvYWRxaHlySDFfMjVfV3BzWUVKMUhpQkZOOVZVeUN6MzNrdS01RTl6djc4NHZBdFlUU3JFT19SN3QwMkYtZHVlNG1HZ1d5cWVTTlIyRlhHMmwxZzlLa0duNlpycmM2cTdDX3paRjgxZXFtRjJOY0Ficm95NThR?oc=5",
-   "source": "Data Center Dynamics",
-   "published": "2026-10-15T08:36:09+00:00",
-   "state": "AL",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
   }
  ]
 }
