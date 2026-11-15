@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2275,
+ "count": 2280,
  "items": [
   {
    "id": "1daeb61cc3ded17e",
@@ -8661,6 +8661,41 @@
    "cluster_title": "From Data Centers to \"AI Compute\": How Big Tech and Washington Are Rewriting the Rules While Hillsboro Plays Catch-Up"
   },
   {
+   "id": "0ab4b48e708123ce",
+   "title": "14 News Investigates: County by county look at Tri-State data centers",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZlFUYTZzZlVjMUlkdVppRlVXT1FzeXQtY1AwOVBYQTQ3OEJsb3RjU0gzWjN3YlIwMTBJUTVUaVcyMjgxYjgxU3JGNjNNOUYtd1pTRmY2NjlnMElwZ3Z2N3hhMWhwNHQyTzFVZHhCU0VEa1JpN3JHQWxia29tTDNpc1dvMU11aXgwOHJzNlFRelhNVS1WclZIT3A3VzJfUUdqTHM4WmI1TFVPQQ?oc=5",
+   "source": "14 News",
+   "published": "2026-11-13T06:30:56+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0ab4b48e708123ce",
+   "cluster_title": "14 News Investigates: County by county look at Tri-State data centers"
+  },
+  {
    "id": "c69264ab8b4de814",
    "title": "Fairfax sets public hearing on proposed data center moratorium",
    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON0ZaUkE0MlEyNnZNTWJ3SEpUM0dTaGRlU0dobjVRelRKNjdGLXc4Tk9yUWVGSGQ2dVBsVFpPNXBZLXJWd05JNWJoaTNpd3VWSjFVd3RKWTZSWlFEQ0x4MWJLYktHZmRIa2xtclFobnp6N3BvUzJYS09wc29rZXVVd0tBSTgyNGJTSUVsbDdfemc0VzV6WHhF?oc=5",
@@ -10932,6 +10967,41 @@
    "suppliers": [],
    "cluster_id": "85a5f3fb011230d3",
    "cluster_title": "Data center concerns ramp up in rural Iowa"
+  },
+  {
+   "id": "e9bc9a433805d372",
+   "title": "Site Preparation Underway at New Era’s Texas Data Center Project",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nOGdicUJ6Q1EteW95alN4N05yc0ZjVFE0MFktYlRuVnlaNTlNa3JHbUFIbWY0SlY3dG9MNFdyeHpBektWY3ozTW5GODM5akVGLUcwNjB6UnU?oc=5",
+   "source": "TOKENPOST",
+   "published": "2026-11-12T22:46:17+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e9bc9a433805d372",
+   "cluster_title": "Site Preparation Underway at New Era’s Texas Data Center Project"
   },
   {
    "id": "140b5297dcc94884",
@@ -15075,6 +15145,46 @@
    "cluster_title": "Meta Details Multi-Year Deals for AI Data Center Supply Chains"
   },
   {
+   "id": "0021b5becfd65cec",
+   "title": "Georgia Residents Challenge OpenAI’s $20 Billion Data Center Project",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzc2NxYm5wc2JFdjBGcHpmM1pueGRzZDVsR3o2ZTZoX0lLc0IxWUZ1NUhVWEhHV1B1bVdVekFkcE9LSmFJYnM0SzJWdHRfblp1MkRLby1hRmREX1E?oc=5",
+   "source": "TOKENPOST",
+   "published": "2026-11-12T12:22:29+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 20.0,
+   "cluster_id": "2f0932d7fb08a11b",
+   "cluster_title": "Georgia residents sue OpenAI over $20 billion data center deal"
+  },
+  {
    "id": "e5030845cb057bcd",
    "title": "Headlines: Oklahoma aerospace industry, data center moratorium & Thunder back-to-back losses",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPODk1V3RBZ0NQQTdJMlVoTGtwNkk4RmE5TG1KMUlDQ0lGdU5iTlhuUnBBUTRuZXR1Zkc3TjlvOHNYeFFTQ05XVHFjZU1KSHJTX1BfMUEya1FUYXE5ZElhZkhYOUUzNXRjbzc5WGJaU3NUVm8xMlRQUVVsdFFiTzlYRTRLOEVYNHc0emZab3AweTUyeC1Rb3FlcVA5ckJlWW1CaGd5TWpkbU5kdTN5YlhySVpwZVlYcTNGWnQzRzRsa0lIVTFsWkJEQUFR?oc=5",
@@ -15943,6 +16053,42 @@
    "suppliers": [],
    "cluster_id": "ba7d6d2a6c9ac659",
    "cluster_title": "Why a North Dakota town backed AI data center development"
+  },
+  {
+   "id": "b5f2936884e5cbb8",
+   "title": "GUEST VIEW: Data centers in Ector County: What ‘Project Landman’ means for taxpayers",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUTBDQUR0WkRGSGRsTGFGenhWN3Q5eDFWM2lTVldYekpDajhOelFnYURxTlNjSGh6MWxwb3pRaWl2MnREMVpZU1BZU1otLVYwNTFrMXhaOXFTN2pvLWRrUmhRc3JubjM1UWlRZUxpLWJ3T1g2U3Q2clcxYzZHZ2pmRVRtTUdleFNRUktiYzZwcWRveUNkYUJvZGxGdVFWQnE1dkczVXRXMmZ6OTVmTVNvSmdQcw?oc=5",
+   "source": "Odessa American",
+   "published": "2026-11-12T08:00:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Ector County, Texas, US",
+     "lat": 31.869,
+     "lon": -102.543,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Ector County, Texas, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Landman",
+   "cluster_id": "b5f2936884e5cbb8",
+   "cluster_title": "GUEST VIEW: Data centers in Ector County: What ‘Project Landman’ means for taxpayers"
   },
   {
    "id": "e2a43136c02aca06",
@@ -18085,6 +18231,41 @@
    "cluster_id": "b3f82f2beef45f62",
    "cluster_title": "Data Center Gas Plans Could Lift US Power Emissions, BNEF Warns",
    "filtered": true
+  },
+  {
+   "id": "6c0e26fb30a77240",
+   "title": "Developer wants to expand Anne Arundel County data center",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOVlneFJYS0Y3QmN4WXBSS293ek5wSWRQYnVYbEpURElJTjhrVUtjR3Z1NEZqODljV0NkRzg5OWR3MlBVQkQtY1ppUjVPRjNRMnVubVMyWHRtZ05qTUw0QjZtcWVMbnc3MWJrTUduWXdyeFpRVjJDZm1MSzV4Zm5iTFY5OExxemhYbVdRbUY1OFFsZkxiZUU1RTBtUjJIUUk?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-11T21:52:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Expansion",
+   "tags": [
+    "Expansion"
+   ],
+   "locations": [
+    {
+     "name": "Anne Arundel County, Maryland, US",
+     "lat": 39.007,
+     "lon": -76.604,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
+   "county": "Anne Arundel County, Maryland, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "adb8422c7fefa6fc",
+   "cluster_title": "Developer of data center in Anne Arundel County wants to expand to double in size"
   },
   {
    "id": "bda048034ca34b14",
