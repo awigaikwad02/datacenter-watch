@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-15T11:08:28+00:00",
+ "updated": "2026-11-15T12:08:27+00:00",
  "count": 733,
  "visible": 616,
  "records": [
@@ -17747,6 +17747,15 @@
      "published": "2026-09-08T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1452b6bbb1a02ff7"
+    },
+    {
+     "id": "5a9b7759eccdf9b6",
+     "title": "Lawmakers fight regulatory approval of Google data center power plan",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM2Ztc2QzQlJuTzMwWS02Tk4xdHlqZGF3ZDVXd2JNaW5pY2FZaHRBczdtV0cxenNuMmcwcmhVWE9GMGhQT1JGWGROa1dpVnFoU19oejJUekZjdGlvYWh5eXBUQWpvUEJPRzZSaXR1R3BjSWphTzlJMDFkdU1oS0JtdWNzbWlTRUxyNUdJZUFfaVpGcWNLRjNUZjJfa2otb0dfVVZJVXZmNFlSWGFkQnFyYnQ3RG43dmJxQU1fc19CZw?oc=5",
+     "source": "The Oklahoman",
+     "published": "2026-11-15T11:20:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "5a9b7759eccdf9b6"
     }
    ],
    "first_seen": "2025-03-12T07:00:00+00:00",
@@ -17774,11 +17783,16 @@
      "date": "2025-08-19T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "a8ac483effe9e004"
+    },
+    {
+     "date": "2026-11-15T11:20:00+00:00",
+     "type": "Approval",
+     "headline_id": "5a9b7759eccdf9b6"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 9.0,
-   "last_news": "2026-09-08T07:00:00+00:00",
+   "last_news": "2026-11-15T11:20:00+00:00",
    "sources_count": 9,
    "confidence": "low",
    "hidden": false,

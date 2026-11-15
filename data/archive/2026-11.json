@@ -39,8 +39,75 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2222,
+ "count": 2226,
  "items": [
+  {
+   "id": "5a9b7759eccdf9b6",
+   "title": "Lawmakers fight regulatory approval of Google data center power plan",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM2Ztc2QzQlJuTzMwWS02Tk4xdHlqZGF3ZDVXd2JNaW5pY2FZaHRBczdtV0cxenNuMmcwcmhVWE9GMGhQT1JGWGROa1dpVnFoU19oejJUekZjdGlvYWh5eXBUQWpvUEJPRzZSaXR1R3BjSWphTzlJMDFkdU1oS0JtdWNzbWlTRUxyNUdJZUFfaVpGcWNLRjNUZjJfa2otb0dfVVZJVXZmNFlSWGFkQnFyYnQ3RG43dmJxQU1fc19CZw?oc=5",
+   "source": "The Oklahoman",
+   "published": "2026-11-15T11:20:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility",
+    "Community",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Oklahoma, US",
+     "lat": 35.6,
+     "lon": -97.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
+   "county": null,
+   "location_precision": "source",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5a9b7759eccdf9b6",
+   "cluster_title": "Lawmakers fight regulatory approval of Google data center power plan"
+  },
+  {
+   "id": "ec47093c3b6d9225",
+   "title": "Questions raised over potential Luke data center",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQi1IQ205MlctYnQ3MXQ0ODAzNFNldjFEZm9oMW5VY2NseHQyQ0JYeklRRVBral9BUmRpa29vNS1GT3ZEYjV6enVwWUtaNWU3WEhZTGhBa04xLWhJNTdOazlHQV84bmdURW5SRDR5UGg2WEdMaXdZdHJsdUtkUF9YcXJrTVZ1SEF3RnhWZURPYjVTZ19IR0RNNW5GWkROdXBPZE85TUFHWnFEOUY4R2FSTnZndElLUmpzVDZaaVZfWkhiUzQtOGRXc19YWTU5NWx2X1NzVXA5V3Q?oc=5",
+   "source": "The Cumberland Times-News",
+   "published": "2026-11-15T11:15:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Luke Data Center",
+   "cluster_id": "ec47093c3b6d9225",
+   "cluster_title": "Questions raised over potential Luke data center"
+  },
   {
    "id": "3039a5751b1f9344",
    "title": "The age of hyperscale data centers has arrived in Colorado. Regulations are still lagging.",
@@ -105,6 +172,39 @@
    "cluster_title": "Anxious about AI: Polls show Americans oppose data centers, have fears about machine learning"
   },
   {
+   "id": "49c12cc084ad0013",
+   "title": "It’s time to reimagine the data center debate: Evan Meisler",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWHJob1pSLTlWalUxWWJKMVMwNEpkRmFsYkQyTUdlLVh0ZHdRN09DZ05DRkY3b1VlQkpqVEE4Vk9EY1lMR04xamRIQ2Y5TGg0YWgxNng2dGgwa3dsYVFBLTB6RUs1clFWZWI3MU9XbVRac28xZFVnOXZiMHdfV0drZ2cxZTUzblFPWldEb2pSQko3Y0lFdjBLcEpnLTF4LThUT1ItQk9kQQ?oc=5",
+   "source": "Cleveland.com",
+   "published": "2026-11-15T10:35:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "49c12cc084ad0013",
+   "cluster_title": "It’s time to reimagine the data center debate: Evan Meisler"
+  },
+  {
    "id": "10fef23c6dc9ebd1",
    "title": "JACOB STEWART | Data center tax breaks give rural Indiana leverage over Big Tech",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYzhQR2Q0c25PdGVUSmVDdTlEeUNSRk8zb1VyMGdOUnd1V3ZyMXF0ZFpXdTIybjVwaG5oUHhOZWVXZ0I3OGtvaGN5VUZFUHI4VWk1SE5GamJ5VVg4UndpVFlaMklnbG13SERQcGNYZmc1My1OU2NOb3FZdlVGT1BPdjd4bTI?oc=5",
@@ -140,6 +240,42 @@
    "suppliers": [],
    "cluster_id": "bc7baff1782eb21e",
    "cluster_title": "Data center tax breaks give rural Indiana leverage over Big Tech | Opinion"
+  },
+  {
+   "id": "348fd71da623c227",
+   "title": "A must-do list for NC cities and counties that have a data center moratorium | Opinion",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82eHpLVTNoaU1PME84QU1lckFxR3RzOUw3WDdpMWpGM3V2SnNwcHVYRV81bUlMbmZuT295R1M0b2ZCeTJmRHJUVTk4YjlCZ2wyRVlmdUhQUXdRQkhzMVBrTzYwbEwyLTFNY2RsVzktbzjSAXBBVV95cUxPcnFDWlBDMDRVXzRER0Q1cloya09YZjJkeV9BdHVtTF91MUFEWmVOV21VMDFBWU9nTDJEcUREYzRfWnNTMG12MHpGYWE5MU1RTk5lNjZPTTdSVUk1bGlpZ3k2d2FlaWNhRklqYmtydDZN?oc=5",
+   "source": "Charlotte Observer",
+   "published": "2026-11-15T10:00:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "348fd71da623c227",
+   "cluster_title": "A must-do list for NC cities and counties that have a data center moratorium | Opinion"
   },
   {
    "id": "c34326df56ffcee9",
