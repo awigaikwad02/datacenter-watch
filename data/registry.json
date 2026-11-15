@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-15T06:07:00+00:00",
+ "updated": "2026-11-15T07:07:01+00:00",
  "count": 733,
  "visible": 616,
  "records": [
@@ -30853,7 +30853,7 @@
    "city": null,
    "lat": 34.4,
    "lon": -106.1,
-   "precision": "source",
+   "precision": "state",
    "curated": false,
    "verified": false,
    "notes": "",
@@ -31054,6 +31054,12 @@
      "type": "Moved to New Mexico",
      "headline_id": "a3843735b33bab14",
      "from": "Doña Ana, New Mexico, US"
+    },
+    {
+     "date": "2026-11-15",
+     "type": "Moved to New Mexico",
+     "headline_id": "0e3078eb2ff9c25a",
+     "from": "New Mexico, US"
     }
    ],
    "capacity_mw": null,
@@ -31092,6 +31098,12 @@
      "type": "Moved to New Mexico",
      "headline_id": "a3843735b33bab14",
      "from": "Doña Ana, New Mexico, US"
+    },
+    {
+     "date": "2026-11-15",
+     "type": "Moved to New Mexico",
+     "headline_id": "0e3078eb2ff9c25a",
+     "from": "New Mexico, US"
     }
    ]
   },

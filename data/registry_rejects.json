@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 529,
+ "count": 531,
  "items": [
   {
    "id": "8a052c5679f4522e",
@@ -498,6 +498,19 @@
    "source": "The New York Times",
    "published": "2026-11-12T19:29:19+00:00",
    "state": "AZ",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "59556ddcaa8065e3",
+   "title": "SpaceX (SPCX) Stock: Plans $24 Billion Data Center as Texas Weighs New Rules",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeWVaV2ozQzJJRVpRWHd4N0tSaDZNbmJOdUFtTVowOWlsTFR4M2d1Rm5oRTI3Ui1Gb05NWHluNzlZX1lELUEzT0M5eFZoUmRLUGdWVWV4cWxUdUotc3Q3dFYzTUpaaGVPb2pJWl9xMkZXSkNSU1VQR3ZzYVIwN2xIcXpvSDVmZzc4WlBOWEtIU1pmcDdwejhKd2tGQng?oc=5",
+   "source": "Blockonomi",
+   "published": "2026-11-12T19:23:16+00:00",
+   "state": "TX",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -1413,6 +1426,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "73549a9555dc8cb0",
+   "title": "SpaceX Bets Big on Texas – Plans $24B Data Center and Gas Plant",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbXg0eTZkMDhGamlscWdxTThSemhIa2thb1BMODdXSUZXMFNETFJTZi1NZ1JmODBJRzdTMjlmOHhKMEFPN3JNY1FtQmkwWW9VU3pXUnVvMEJiZGhzeW5CSGpvYlBHcXFUOERiTVRydHI5a1ZlQTZQZFZZcXhuQnQwZ2J5MW5WTWVQLVoxVUJ2UklUdUxa?oc=5",
+   "source": "TipRanks",
+   "published": "2026-11-10T08:00:29+00:00",
+   "state": "TX",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "a0cd4a904b880b08",
