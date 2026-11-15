@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-15T12:09:52+00:00",
+ "updated": "2026-11-15T13:09:52+00:00",
  "count": 733,
  "visible": 616,
  "records": [
@@ -17120,6 +17120,15 @@
      "published": "2026-11-13T05:02:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "8749e96fd2915abb"
+    },
+    {
+     "id": "fff343c2ca38950b",
+     "title": "Construction begins at Google hyperscale data center despite backlash",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQm5IYWFGbjU4emhEMkpKeGROakhVVGtCUU1xTEFzeTBqeUJTSnpBT291MTUtYjBFRmM4MGZSejZnblpnLWttcEZ5Sms0c1JTbHF5ODlxckEyYU9lSFI0X05QUjFPWHNreGFLSG5jeGlEcTFsLWVFaXNOLWdRazNnSElqRktCdFNuTmhLeXI1dXR1SWlmY252UVdFWDg1aGxuWkM0bzNuT3ZHQklxU3g5S2xDbFpzWU1i?oc=5",
+     "source": "MLive.com",
+     "published": "2026-11-15T13:00:00+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "fff343c2ca38950b"
     }
    ],
    "first_seen": "2026-04-16T07:00:00+00:00",
@@ -17148,7 +17157,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-13T05:02:00+00:00",
+   "last_news": "2026-11-15T13:00:00+00:00",
    "sources_count": 5,
    "confidence": "low",
    "hidden": false,
@@ -25105,6 +25114,15 @@
    "notes": "",
    "news": [
     {
+     "id": "29077bba2c0640ef",
+     "title": "St. Joseph County board approves sound wall around Microsoft data center",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWW5ZWURYcmpNSDdSVTdJTEhGUm9PV0VDVzBvSm5NLVhPUzd1UElQZC16aW9IbGU0Q3NMSW5uWkdJeTNLQkhtMzhlakU3YjVpZ05NbTlFWVpPSVVUNzFuemVtZlMzWHl2Rkw2SWp5QUlieVhiRnZPSlVnc19pd1NoNkp6al9RYU00RWtRZk5YMTRxNHdYMWdWT2pzdFIwSFZBTzQ1bXpwWdIBuwFBVV95cUxOd3RiazdJSEJUbW41LVVDYUtUMVQwSDJPQkF5dHNlX1lSTW9Pb0pIWU9oaGhJVHZ6Y3VXcnhxNlkwaTFlQVNlSjd5SjM0S0pSYWp4VkxLYVV6c0RDVXBEWVk0YWY0ZEdvUUNEOXpFc09FdloxWENyYWQ1am5FbWVJdDJvZWo2RlpBbDd2VkloUHFsam5KRHZEaW9mUWhRanZLY1JtcmQ0N1hndi13ODhtR0FVbUJXOUpvcU1J?oc=5",
+     "source": "WNDU",
+     "published": "2026-11-12T23:47:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "29077bba2c0640ef"
+    },
+    {
      "id": "5bfc6774f1f3d527",
      "title": "St. Joseph County Board of Zoning Appeals approves sound wall for Microsoft data center",
      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPd3hjbGJjamxrUXpScmJjQjZrcXNxU0c5UkRSR0NydHAzbGJrbmxTd19pNXJhQUdFSTZ0dTVHNlpGcFBZcjBCdDlLRVR3Q05WYnIxRDFpa09jSGdLVE04RXZjamRzalFnbFVBSHFNUkFvTlprcUxUbmJTRUhpYVVMUm9QdDdZbGo2UFZseDUtN3pPOGsxeHlORFJMV2VCOXNfcmY1RHFSUUlhbjk4NXdtdkV5Q0Rlc0Fhd0ZTUlBPYzMteUpfWEVXUTFwVnJFX3IxaTgxblp2eHBjS1JIbHViVElVc1NEUWZwWGZKS2w0TjgtaVd1TXN1SURmZnJFNjc5MWtqaUJ1QWJGUDVn?oc=5",
@@ -25114,7 +25132,7 @@
      "cluster_id": "5bfc6774f1f3d527"
     }
    ],
-   "first_seen": "2026-11-12T23:47:32+00:00",
+   "first_seen": "2026-11-12T23:47:00+00:00",
    "name_hints": [],
    "utilities": [],
    "investors": [],
@@ -25123,23 +25141,23 @@
    "status": "Announced",
    "status_history": [
     {
-     "date": "2026-11-12T23:47:32+00:00",
+     "date": "2026-11-12T23:47:00+00:00",
      "status": "Announced",
-     "headline_id": "5bfc6774f1f3d527"
+     "headline_id": "29077bba2c0640ef"
     }
    ],
    "events": [
     {
-     "date": "2026-11-12T23:47:32+00:00",
+     "date": "2026-11-12T23:47:00+00:00",
      "type": "Approval",
-     "headline_id": "5bfc6774f1f3d527"
+     "headline_id": "29077bba2c0640ef"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
    "last_news": "2026-11-12T23:47:32+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "sources_count": 2,
+   "confidence": "high",
    "hidden": false
   },
   {

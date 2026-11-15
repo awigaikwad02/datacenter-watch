@@ -39,8 +39,133 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2227,
+ "count": 2236,
  "items": [
+  {
+   "id": "b970245e170b4028",
+   "title": "Data centers, AI were factors in election results, candidates and experts say",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYUVzdHo1WXBNMEVvQkRzX3d4Wmt6UkVpUE9kV2pDUTFja2lEZ2M0QnRoOUFGM2NOLWxaNlp2Y0RYcVFCVlY0dmJmMHZ0b1k4cGJEUHhIR1RQMWRsZGVJWnk2VHEtTzhsNDJTbEFxUWJxS281bnE5YkF3Zm9NUXo3M0ZhbHJySGtIVF9jcF9fRkVPeGh4YUhIR1pCc0IyQUlsajBka2hVYUo2Uk1uWEgxN0lJeS1JOWpxcXc?oc=5",
+   "source": "Chicago Tribune",
+   "published": "2026-11-15T13:00:09+00:00",
+   "feed": "Google News: Midwest",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b970245e170b4028",
+   "cluster_title": "Data centers, AI were factors in election results, candidates and experts say"
+  },
+  {
+   "id": "4e453cc15d039780",
+   "title": "St. Cloud is latest Minnesota city to consider new rules for data centers",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUkk2NDlTSjFQa0VHa1dzZ3hmMmxaMlROczhReUV5UlFKcDBzeFNpVTVvdlU4RndHYkVFbUpVa1J1MEd2QnQyeFhnQzhoUTRPOVRaaDBZT3NFVHAwNG9lVm9RLWdIUE5NQlUwTl9IMGYzWjRTSGRlb0pDUzBJdG5QZ041UTcwbTlrbEJMRHhKQQ?oc=5",
+   "source": "MPR News",
+   "published": "2026-11-15T13:00:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4e453cc15d039780",
+   "cluster_title": "St. Cloud is latest Minnesota city to consider new rules for data centers"
+  },
+  {
+   "id": "fff343c2ca38950b",
+   "title": "Construction begins at Google hyperscale data center despite backlash",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQm5IYWFGbjU4emhEMkpKeGROakhVVGtCUU1xTEFzeTBqeUJTSnpBT291MTUtYjBFRmM4MGZSejZnblpnLWttcEZ5Sms0c1JTbHF5ODlxckEyYU9lSFI0X05QUjFPWHNreGFLSG5jeGlEcTFsLWVFaXNOLWdRazNnSElqRktCdFNuTmhLeXI1dXR1SWlmY252UVdFWDg1aGxuWkM0bzNuT3ZHQklxU3g5S2xDbFpzWU1i?oc=5",
+   "source": "MLive.com",
+   "published": "2026-11-15T13:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fff343c2ca38950b",
+   "cluster_title": "Construction begins at Google hyperscale data center despite backlash"
+  },
+  {
+   "id": "e7d7d7932f2d7b6c",
+   "title": "Speed to Power Shapes AI Data Center Energy Costs",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTEJiMmZMXzB5bVZFUk5Zb014NzNrUU5PY0l3WlE2UWQwa3VIc19VQ1c2QVlrTVBCNjNZLWRKN3NudU8xVy1RRS1FNm5yZlN6UnpPMk1yMUlyeHEtN0JiNkFLYkJMOHB3cThITVRtNm1CNTViQ192dml2Q0dYN2txeVhOaw?oc=5",
+   "source": "CASRAI",
+   "published": "2026-11-15T12:28:15+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e7d7d7932f2d7b6c",
+   "cluster_title": "Speed to Power Shapes AI Data Center Energy Costs"
+  },
   {
    "id": "5a9b7759eccdf9b6",
    "title": "Lawmakers fight regulatory approval of Google data center power plan",
@@ -170,6 +295,30 @@
    "suppliers": [],
    "cluster_id": "7750cdb68382acf5",
    "cluster_title": "Anxious about AI: Polls show Americans oppose data centers, have fears about machine learning"
+  },
+  {
+   "id": "da559db67e6bc038",
+   "title": "The Column: Tewksbury starts the data center talk",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQV0JEZ0N2VlNmcUt1NVJaeVg1UG45TVlSc00tU1VZb21FR3hwbUFYRzU1MnRYWmlDZktvQVg4Z0NNdEtGTTVtdkxnV0FwSXV3Ui1Wa0NyeUhGQ2NYcWI3LWtYX2UwR19WMmJDVUlTZWUtbjI3bzhFaFJUMFhLY2NaQkhDSmJJZTNURWpTOElVNA?oc=5",
+   "source": "Lowell Sun",
+   "published": "2026-11-15T10:44:38+00:00",
+   "feed": "Google News: Data center",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "da559db67e6bc038",
+   "cluster_title": "The Column: Tewksbury starts the data center talk"
   },
   {
    "id": "49c12cc084ad0013",
@@ -1801,6 +1950,42 @@
    "suppliers": [],
    "cluster_id": "143420e36715f817",
    "cluster_title": "North Dakota town supports a data center"
+  },
+  {
+   "id": "ee4f7b2f33718d21",
+   "title": "Elkhart County advances proposed data center regulations",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTGl6VzlzVHFKLUhfQl9vU3hrZXptclAwNVQ4WEV6aE1zR2dfR0dlM1lVXzNrRHp0SGVabF9hcjh2S3k4V0prSjNQbEJ0WnY4Qmk1dWpHN2lCMGpFZzdnRUxkVHdsTk1pa2NKME5mR3hDUV92cFprTmxBNmhabFA0VXYybVlDNk5NaHFSbGVfM3NCRlZBS0E?oc=5",
+   "source": "95.3 MNC",
+   "published": "2026-11-14T02:00:51+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Elkhart County, Indiana, US",
+     "lat": 41.598,
+     "lon": -85.859,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "Elkhart County, Indiana, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ee4f7b2f33718d21",
+   "cluster_title": "Elkhart County advances proposed data center regulations"
   },
   {
    "id": "e03e1f9c75668894",
@@ -9451,6 +9636,44 @@
    "cluster_title": "St. Joseph County Board of Zoning Appeals approves sound wall for Microsoft data center"
   },
   {
+   "id": "29077bba2c0640ef",
+   "title": "St. Joseph County board approves sound wall around Microsoft data center",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWW5ZWURYcmpNSDdSVTdJTEhGUm9PV0VDVzBvSm5NLVhPUzd1UElQZC16aW9IbGU0Q3NMSW5uWkdJeTNLQkhtMzhlakU3YjVpZ05NbTlFWVpPSVVUNzFuemVtZlMzWHl2Rkw2SWp5QUlieVhiRnZPSlVnc19pd1NoNkp6al9RYU00RWtRZk5YMTRxNHdYMWdWT2pzdFIwSFZBTzQ1bXpwWdIBuwFBVV95cUxOd3RiazdJSEJUbW41LVVDYUtUMVQwSDJPQkF5dHNlX1lSTW9Pb0pIWU9oaGhJVHZ6Y3VXcnhxNlkwaTFlQVNlSjd5SjM0S0pSYWp4VkxLYVV6c0RDVXBEWVk0YWY0ZEdvUUNEOXpFc09FdloxWENyYWQ1am5FbWVJdDJvZWo2RlpBbDd2VkloUHFsam5KRHZEaW9mUWhRanZLY1JtcmQ0N1hndi13ODhtR0FVbUJXOUpvcU1J?oc=5",
+   "source": "WNDU",
+   "published": "2026-11-12T23:47:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "St. Joseph County, Indiana, US",
+     "lat": 41.616,
+     "lon": -86.29,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "St. Joseph County, Indiana, US",
+   "location_precision": "county",
+   "companies": [
+    "Microsoft"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "29077bba2c0640ef",
+   "cluster_title": "St. Joseph County board approves sound wall around Microsoft data center"
+  },
+  {
    "id": "d50fbafe051d62ab",
    "title": "FPI NEWS: How the data center debate impacted Indiana’s election",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSXFOYTUydkRDdEtfcDVtc3dlNm5TYjcyaWNzMlRWZmJ4VW45MVFMMlYzZXNoR21Dczl2aWtleEFHVzZkUFZXaGZ6WTZnSTF6S2E3YUljSXlEaHQ5MXNibnNxMVNTRlBoTTBGcS1yMkZOVHZsU1NfOVIwbENFaV9fcjh2Z1Bsel9temxSUm9vQUxYTU9D?oc=5",
@@ -11794,6 +12017,43 @@
    "suppliers": [],
    "cluster_id": "333f74aa305f3ffe",
    "cluster_title": "Boulder County approves restrictions on data centers; state lawmakers weighing how far to go in changing new transgender laws, senior leader resigns from state Human Services department"
+  },
+  {
+   "id": "1b4a190ea708cfa9",
+   "title": "14 News Investigates: How Clarksville is doing with a data center?",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaXQyMlRtY2NnTmxscWpDenZBbGNaWjl3TUNtMy1NWEZ2RFpYSmlvV283S250MTJMOGNwN0VuNEhRSFhvRDNYTldRZ1dLRDAwbmM2Ry1pRkZ1dmxxcVozTmpuZDNrVEdqV21oSlhUOHpRczdXMnUyX29IVzZZYVVqbWZ1NnQtVHhfVWJFM1pSVkl0X2drX0swdHowaEhIZl9BV0d4OE1B?oc=5",
+   "source": "14 News",
+   "published": "2026-11-12T17:40:53+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Clarksville, Indiana, US",
+     "lat": 38.2967,
+     "lon": -85.76,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Louisville"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1b4a190ea708cfa9",
+   "cluster_title": "14 News Investigates: How Clarksville is doing with a data center?"
   },
   {
    "id": "eb076ca06b90cc2d",
@@ -25101,6 +25361,45 @@
    "suppliers": [],
    "cluster_id": "30d37502fed32eae",
    "cluster_title": "Florida company seeks property in South Bend for proposed data center development"
+  },
+  {
+   "id": "0d87044416f6ffaf",
+   "title": "'I don't like them' | AI data center backlash fueled election votes as Bottoms plans project pause",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNX3o1SWI5bDNWX2Nka1BiejAwX0FDM1pha3BGakwtOFFkLXlTeENlQ25xcmV6YklsLU9ZenJCUmRYX0RVZy02bHdqcUI5c1ZVdUZpNkF1c2VyNkFCbHgzUzNRTjJxZmY4S2NjbGptUFpaRnA1bGxOU0p2QU43V0dnUE5kTENYUDRpQ1ZGaDdNM3RqWXVYWWZDWmo5U3hkOVdub0ZiNXJjNTlHUGZxTE1RLUpnUHBOa1E2OG1EOU5YVFoyblZnYTlrRFBHWmJHZ3dwNUNiWUY2NDNYb1pCcXRvMlpqeTVMVWlZamhCMXc1Yw?oc=5",
+   "source": "13WMAZ",
+   "published": "2026-11-09T23:55:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "AI Infrastructure",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0d87044416f6ffaf",
+   "cluster_title": "'I don't like them' | AI data center backlash fueled election votes as Bottoms plans project pause"
   },
   {
    "id": "8676c308a6a0206b",
