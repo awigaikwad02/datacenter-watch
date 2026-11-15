@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 526,
+ "count": 528,
  "items": [
   {
    "id": "8a052c5679f4522e",
@@ -73,6 +73,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "0ef0a3a6c4ef63e2",
+   "title": "Richland Township approves temporary bans on new data centers, battery energy storage developments",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcjVOUEJOQVZEZVJndkhSc2VsWURFUk9ESlhId2RRdVJjTkUxZ3NjZDZuZ2JVcXZEdDRCdkhsem9KbUtKZ2o2MDRsTHhrUDVkZnY2eFc3cC1zb0JpbjV2YnpKM0xIOTV3VzR0alN0TXpHeENfVHZJUlMwbk1VMGhkeDJqeC01dW1qa2ZYaU1meWZtX29lUEQ5MHlib3d3TkF4TXpGZG1WTU1IbjUwY1NYUERhdlpVeVZxMlV0N3J0S0puWlE?oc=5",
+   "source": "FOX 17 West Michigan News",
+   "published": "2026-11-13T21:38:16+00:00",
+   "state": "MI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -464,6 +477,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "a policy story with no operator or project name"
+  },
+  {
+   "id": "61c449498a08f288",
+   "title": "Bethlehem Planning Commission discusses plans for proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxOMk5CbEdkcXM0aHNSOXEzTjl5WUtlbElIa2FETDhlTjROV1phYUtQQUZnWUo1dHVQZjhFbWg3bEp6QnpwT0d1cnkzWFVGN09oSEtTaGxhbHJ2YVN4NXpsM1pYVWlvWXlNOUtTa1FPUXZUUFNtdU1YSDdNa0hVV1hYVW5YckN4Ql9BenE5NE9taW9mUEhWUDJSWERYRlZyWGI0bW9LSXNPb2hZTTdQNzVoX2hTTkVOU3FVYnVDZ0hCTkQ3bUJjbUkyQk4wd3NYdS02UjFEd0NpWXJ0RDZWdWxlbXJVeTJDVzBrNy1kVVNYM2FCMWtwRy1ORVJkZ3lXU3RxLWlLV3lPdENzREVzd1lrT1BackpEcnRFam1acVpR?oc=5",
+   "source": "WFMZ.com",
+   "published": "2026-11-13T00:00:00+00:00",
+   "state": "PA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "303d0bc6c0a4d5c9",
