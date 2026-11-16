@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-16T22:17:23+00:00",
+ "updated": "2026-11-16T23:17:39+00:00",
  "count": 734,
  "visible": 617,
  "records": [
@@ -29092,10 +29092,21 @@
      "published": "2026-11-16T16:04:35+00:00",
      "stage_signal": "Announced",
      "cluster_id": "d5f972bf57f4e892"
+    },
+    {
+     "id": "3781024b139b73ed",
+     "title": "Prologis sues Trenton over voter-approved data center restrictions as Project Mila construction continues",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbmg3Ql9sYnJDR2RDZ1g5WHFIN0x1UHhCMzIzc3JEMVgyWFQtNGNybUdIX19kU0E4akVfVmZqUVJuQlZFclk2eHNISHNSSkZic3lES1UxN3czQ2NoQUxWUEdjUkxBMVRRX24yTFRiMkVUang5Ui1Eam01dWRCdUZFdTJJWTZJRWhUWE1CTXZsVy1Zam5SWjU4RFVhU3lfbUlTUUZMVDBiaXBNMWFYNXpBSkVra3RCV1Z0ZjA3c3J0S1dsWXRpVHFPbjgyd05xSGU3NktaOC1NVEJMdw?oc=5",
+     "source": "WCPO 9 News",
+     "published": "2026-11-16T21:54:15+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3781024b139b73ed"
     }
    ],
    "first_seen": "2026-03-02T08:00:00+00:00",
-   "name_hints": [],
+   "name_hints": [
+    "Project Mila"
+   ],
    "utilities": [],
    "investors": [],
    "builders": [],
@@ -29127,8 +29138,8 @@
    ],
    "capacity_mw": 250,
    "investment_usd_b": null,
-   "last_news": "2026-11-16T16:04:35+00:00",
-   "sources_count": 3,
+   "last_news": "2026-11-16T21:54:15+00:00",
+   "sources_count": 4,
    "confidence": "high",
    "hidden": false
   },
