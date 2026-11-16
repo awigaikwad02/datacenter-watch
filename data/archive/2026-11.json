@@ -39,8 +39,214 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2351,
+ "count": 2363,
  "items": [
+  {
+   "id": "7fe8d79d11017390",
+   "title": "AWS breaks ground on a $7 billion data center campus in Indiana",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdVN0bms0dE95dmV1YlZUQ1VQOTRhMUhzVi1OaVFJdGhmRVViZG1Kbmdvbzl0X1R3Y0g1ZHZUSnNnLU1qSlJqUlEtYnVUSURKMEdSSzg0TDVDLWhIaHZrQ2R5bDZEOW9TbXo0QVlOV2Z2NjQtcHJBTzhFRFVucmFFZk5uRnNUNGJTdy00?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-16T10:06:44+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 7.0,
+   "cluster_id": "3321acbab58b3b19",
+   "cluster_title": "Amazon breaks ground on $7 billion data center in Northwest Indiana"
+  },
+  {
+   "id": "cf09bff07ecd6475",
+   "title": "Congress Looks to Charge Data Centers Billions in Sweeping Energy Plan",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcUtuUVhUVjkxenZMWnZNQWx1OG9CbF8yT1VyZ1ZFOFJvTGpYSHZvaEVyWmJDWEV3bUNfMkpxOVV2OTczS011UEtkLWFjNDdqODFITVc4T1VFV0wzZy1rNTNkWGhGblVkaW5TcVEtdEkxWDJ6MUE2Y1pCVlRKS2hiNFZpVFhWQXItWFpWVU5QeXh4TFV5dFBLbWl3?oc=5",
+   "source": "The New York Times",
+   "published": "2026-11-16T10:02:16+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility",
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cf09bff07ecd6475",
+   "cluster_title": "Congress Looks to Charge Data Centers Billions in Sweeping Energy Plan"
+  },
+  {
+   "id": "6638593c9f5fab82",
+   "title": "Effingham County to decide on OpenAI data center",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQd1lXam5NbnE4WXN2M1EyQks0N0xQYVczc3BtdVhnWnUyVDRqMjdQUURVOTItcy00LVltRk5wWXZqOHJSb3FhY2dMV2NMMjFzRDZ5YjNRcVZiN1lPd3hRbTdJNThudE9xM01RZVQ2cEtTSTlKaW1kZFNHS2ViOExoTkcyNThQa1pJamloMUhyYXF6U1Z0T1BLWlRpVThUTU0wM0hDWFNkVmpickhmV3puLQ?oc=5",
+   "source": "Savannah Morning News",
+   "published": "2026-11-16T10:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Effingham County, Georgia, US",
+     "lat": 32.367,
+     "lon": -81.342,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Effingham County, Georgia, US",
+   "location_precision": "county",
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6638593c9f5fab82",
+   "cluster_title": "Effingham County to decide on OpenAI data center"
+  },
+  {
+   "id": "3d0b6bb8dca7ad41",
+   "title": "How will Georgia's data center deluge fare after midterm elections?",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9CRTItMEgxYnNlODJieEViRU83MEZxVkktNWFkS21MdGZvdW5mM0FiOGxUaFNRSkp1OWl1Y1NURVRXTkNMNFVaR3ZBMThEaERaMWZQT2tNclFEV2pQMU5jVVl3b3VYOFVwNVpz?oc=5",
+   "source": "The Atlanta Journal-Constitution",
+   "published": "2026-11-16T10:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3d0b6bb8dca7ad41",
+   "cluster_title": "How will Georgia's data center deluge fare after midterm elections?"
+  },
+  {
+   "id": "8b89d6825dd7553b",
+   "title": "NextNRG says it's not building a traditional data center in South Bend",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUjZJa0FaX3IxNWtEVWhlVXdfemRVcVM0cmZOU25lRDZ3Sm9OYkllNXlpaWFwc2JLNVg0UVJ3NkpMaG9RTHFrYlZpTDVsS0tTU1Nfc0lma3diSGZ0MEFYZXI3SUNuMlY1a0VVa0lFNkg1UktWdVBLSnNWd3dYY3ZlN0IyNjd4U2x5aHd0REVTZThONFJ2ZmN5RVZsUENJa3dqNko1bkhRYWRjN3JQUXJfQ3FtVUpqSnBwbHpuN3FEVkwzTFZ5VkVxc3JEanR2dUdiSUE?oc=5",
+   "source": "South Bend Tribune",
+   "published": "2026-11-16T09:58:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "South Bend, Indiana, US",
+     "lat": 41.6834,
+     "lon": -86.25,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8b89d6825dd7553b",
+   "cluster_title": "NextNRG says it's not building a traditional data center in South Bend"
+  },
+  {
+   "id": "95e68db25682fe34",
+   "title": "Not all data centers are the same. Auburndale’s is a good example",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdmNWSHhVbEtTSFBWN2UtX3hCdHZ6emJkM2pMa19UcGhIbHowU2NMQUdJeE1Eck80Y3VybFJOd0xMd2JnQUFqRS1rQ0hxbzFON3JzaElUNjhaR2tYRV91Vy1VLVhKV1Q5TUdKZFZwb0doVU0wTFZrN2E4Yzh0TVNGaXNsYmJTX09HNXlaRkdIdldMYV9JQ0p0Y3NyVzd0ZFRWMGxuTHRjSVVjVE0t?oc=5",
+   "source": "Florida Politics",
+   "published": "2026-11-16T09:47:31+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Auburndale, Florida, US",
+     "lat": 28.0653,
+     "lon": -81.7887,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tampa"
+    }
+   ],
+   "states": [
+    "FL"
+   ],
+   "state": "FL",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "95e68db25682fe34",
+   "cluster_title": "Not all data centers are the same. Auburndale’s is a good example"
+  },
   {
    "id": "f78776a1215d6d7c",
    "title": "Will Ohio lawmakers pass data center legislation during lame duck?",
@@ -529,6 +735,31 @@
    "cluster_title": "Farm Advocates Question AI Data Centers' Water Demands"
   },
   {
+   "id": "dc7d11277555eebc",
+   "title": "Hyosung Heavy Industries to Supply Power Equipment to SKT's AI Data Center",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qNmU5OU1pcThFR3Vfazg0UUdqRkdEelNreWlvM1p5NUJzLWdUMXZjRmlUOTJUUGNUT04zYWVadTlDeUFmTzdvLThpdDNLMjVHVUFibFFlX1Y?oc=5",
+   "source": "파이낸셜뉴스",
+   "published": "2026-11-16T04:47:39+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dc7d11277555eebc",
+   "cluster_title": "Hyosung Heavy Industries to Supply Power Equipment to SKT's AI Data Center"
+  },
+  {
    "id": "5f38fe76e3d65a9c",
    "title": "SK Telecom, Hyosung Heavy Industries Partner on GW-Class AI Data Center",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQalBNN2NBM0RHTXQ5RzZORUFlSElTRDAtVEs1LVUydmxoa0JfUWg5VzJ3Wk5MYmthWk5SLUtXLXFmVjZmNnJRTjExQWU0YkZueGltaXRlN1pld05ESUNGcnh1YURFd01mT3FiUldBbDk0ckRpWER2amJEZXU0QUFqRTVIWVpFM1di?oc=5",
@@ -601,6 +832,31 @@
    "suppliers": [],
    "cluster_id": "b58b83b25d289f6c",
    "cluster_title": "LS ELECTRIC to Supply Switchgear for US AI Data Center Expansion"
+  },
+  {
+   "id": "ca0c4ddb237fbf74",
+   "title": "Hyosung Heavy Industries and SK Telecom to Collaborate on AI Data Center Power Business",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE43NUdfWlBIaU9lYlAzZ21WdDZ6WDRZdXV5NmQwMFdTUU9yZElWNVlVZ0hyQ3FXZ2ZoTzc5Nk5oX2tYdDhIWkJiVkZYS042Rko5QlZoZUM0ZWlNZzNqdHZVc3lraUQ4TjYtY0ZxN2JVeVM?oc=5",
+   "source": "머니투데이",
+   "published": "2026-11-16T02:55:34+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ca0c4ddb237fbf74",
+   "cluster_title": "Hyosung Heavy Industries and SK Telecom to Collaborate on AI Data Center Power Business"
   },
   {
    "id": "edc02a4b9c42d12e",
@@ -1388,6 +1644,43 @@
    "suppliers": [],
    "cluster_id": "2a7a211f182a0e36",
    "cluster_title": "Lenox Township to consider rezoning of land. Some think it's a data center"
+  },
+  {
+   "id": "45c003447e636059",
+   "title": "Data center carbon disclosure gaps make AI boom’s climate impact tough to assess",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONDh1eDBfTTBVMzZBQ1ZrMmNSQUhSMG02S0RHdzFOcm56NHFvVm9lTEJWX016c0g4Y3FfNEZUSFdEY3ZYTXMwcjFMZ1lZaVFQdWFMM181ZHR4WDAwSU5JU3RQSk1JYUdRZENVaTlqMEQyWW5aZnRTejRVcEl4a1BOOGRJRzNnaDkwWnJVMzV6WWJvbnYtNFdSb0R0ZjFnb2ZOb0ZHbmtTYnp1T2pFeFo0dmwzb1NZMzlfaHc?oc=5",
+   "source": "The Seattle Times",
+   "published": "2026-11-15T14:00:05+00:00",
+   "feed": "Google News: Data center",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "45c003447e636059",
+   "cluster_title": "Data center carbon disclosure gaps make AI boom’s climate impact tough to assess"
   },
   {
    "id": "b970245e170b4028",
@@ -2437,6 +2730,31 @@
    "suppliers": [],
    "cluster_id": "032c1fb01d8192a6",
    "cluster_title": "Fort Meade mayor faces audit over travel expenses to tour data center"
+  },
+  {
+   "id": "ad0c4ee7f52f1560",
+   "title": "How Much Does It Cost To Build A Data Center?",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB4YWc4bGVaR3dSQ3ZyT2U1cDJaOWNpbk9aWnVaWDJHbFBwVzhwNEdkSXRNOXF0VmlvbUNqTWZQU3RkSEQzYWFtUlBZY3BIVU5wd183WVRJWVFydXJyazhQWGVOUVZrZWIwV2V4UDlENk4?oc=5",
+   "source": "BGR",
+   "published": "2026-11-14T16:17:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ad0c4ee7f52f1560",
+   "cluster_title": "How Much Does It Cost To Build A Data Center?"
   },
   {
    "id": "35c8f50369646470",
@@ -4589,6 +4907,30 @@
    "suppliers": [],
    "cluster_id": "2f07b0e428b90cbc",
    "cluster_title": "10 years, still not open. Latest on the orange data center off I-4 just north of Orlando"
+  },
+  {
+   "id": "dd065fba60dd517d",
+   "title": "Bradley County School Board takes action on proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeGUycE1ocFo5aE9wRjI1TUhWV0VHZ3VMZklodnpIMTFyQ0lJenJBcDI1Y0trMGo2LWxybzB3SVgwNTVfb1B2eHc0aWFoTXg4NHdsaGgwek9YanRRdHdaaWFnNkZvNmlteWxQaE16UDhGZTlBb1QtMWVjekU1VkRrV1hMTVI3YjFFbHlTNXRIMA?oc=5",
+   "source": "WDEF",
+   "published": "2026-11-13T23:16:35+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dd065fba60dd517d",
+   "cluster_title": "Bradley County School Board takes action on proposed data center"
   },
   {
    "id": "90173e2dcd2447f4",
@@ -28257,6 +28599,31 @@
    "suppliers": [],
    "cluster_id": "a0cd4a904b880b08",
    "cluster_title": "Shelby County commissioner hosts town hall on proposed data center ordinance"
+  },
+  {
+   "id": "856fc845c51040a2",
+   "title": "Bolivar city council discusses possible data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVnZ2c1Q1cTJ2M2dZYTdSU24tMk9xMGltSnVWblJ0MWZjZWtPaXpTVlNWbFVoUzJhc1Zxdmw3ODFmVlNsajduMnpWZVNFaGd0TzBKWm5NaUJDTDF4OVZJY25XMFBMelNjdWt5RExmbV94ZzZVS3VtRFJXelFvRFVRZW1vNVFsV3RwVEw1YUtGQ0hZRHM1blk0UFFPYnZYNzFkazdMaEln?oc=5",
+   "source": "wbbjtv.com",
+   "published": "2026-11-10T04:49:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "856fc845c51040a2",
+   "cluster_title": "Bolivar city council discusses possible data center moratorium"
   },
   {
    "id": "a096173a2c1762b9",
