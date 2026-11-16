@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-16T14:15:55+00:00",
+ "updated": "2026-11-16T15:15:55+00:00",
  "count": 733,
  "visible": 616,
  "records": [
@@ -29065,6 +29065,15 @@
      "published": "2026-03-02T08:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1b81ba3e0792d6fe"
+    },
+    {
+     "id": "21dde4bfd9437796",
+     "title": "Prologis sues Ohio's Trenton city after residents vote against data centers",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYy1oalZIWE5UR2k5UnpUWjEtcnZEN2pOX0hvOXdtNXJKLTZxd2VwWVdQYzhVLVRHYURtaWJoNmFnb1ZreS1BNlBxbTFjdUoxZ0RHWWdoMU5SYXF0dDkxSTFFM0VVYnBwU3dhNS1sNEFNU2UtQk1fX0N1WkZ5THpuQjdYanFkcVNZdHBUUXZmT19VYU4tWUNNanJMMnlNUnVNb2pIOWZTaHRKNloxYXNOVXJxYnpIY3NTTUE?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-16T14:23:15+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "21dde4bfd9437796"
     }
    ],
    "first_seen": "2026-03-02T08:00:00+00:00",
@@ -29073,20 +29082,31 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2026-03-02T08:00:00+00:00",
      "status": "Announced",
      "headline_id": "1b81ba3e0792d6fe"
+    },
+    {
+     "date": "2026-11-16T14:23:15+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "21dde4bfd9437796"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-16T14:23:15+00:00",
+     "type": "Cancelled",
+     "headline_id": "21dde4bfd9437796"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-03-02T08:00:00+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "last_news": "2026-11-16T14:23:15+00:00",
+   "sources_count": 2,
+   "confidence": "high",
    "hidden": false
   },
   {
@@ -54921,6 +54941,15 @@
      "published": "2026-10-07T07:00:00+00:00",
      "stage_signal": "Under construction",
      "cluster_id": "0686f27d72d58d09"
+    },
+    {
+     "id": "0ccdea3bfd2adabe",
+     "title": "3 Spartanburg Co. data center projects up for final approval",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQLXBTbDdEbmROdmZlSkQ4ODdwekNZc3lIeUtwcGZEcVM1bUszRDhQajVPWWZ6Zi0tR1Zrek1IUERQWGo4c1g1NFNfSVdWYlU1dnFFZXI4OUpsRDhWMTcxVVNyN1RKaHRoeExQS0U1d0NDbGlXSlk3VWE3SUt4U1p5TUUyWjVKcXlodW9xTWNvONIBlAFBVV95cUxNbEZHMHF1TjlRWG5TSU1hVTdoWHlZcVVtX05zWjczbUhEdFY2cVl2V3hQQlZsanN2RWFVTnRjb192Q2NvV3lfR2FNU0U0RTltNS1GMU45SHBPZDhZU1RGTWo3WERsdnM4NldkRGVMb2dGWUwwU1BERnJrelJERmNUYWRsRXF3dG1vcUo3VEhibGN2cVVM?oc=5",
+     "source": "WSPA 7News",
+     "published": "2026-11-16T14:23:31+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "0ccdea3bfd2adabe"
     }
    ],
    "first_seen": "2025-03-05T08:00:00+00:00",
@@ -54970,11 +54999,16 @@
      "date": "2026-10-07T07:00:00+00:00",
      "type": "Revived",
      "headline_id": "0686f27d72d58d09"
+    },
+    {
+     "date": "2026-11-16T14:23:31+00:00",
+     "type": "Approval",
+     "headline_id": "0ccdea3bfd2adabe"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 3.0,
-   "last_news": "2026-10-07T07:00:00+00:00",
+   "last_news": "2026-11-16T14:23:31+00:00",
    "sources_count": 5,
    "confidence": "medium",
    "hidden": false
