@@ -39,8 +39,329 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2508,
+ "count": 2523,
  "items": [
+  {
+   "id": "ac9ac414b84d19b6",
+   "title": "Over 400 American AI Data Centers Use As Much Electricity As Wisconsin, Michigan, or Indiana",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTjBKZDNFYVdNcW9uazdTM1QxM2tSM1cxNEM5SGQ1ODVGZnNYS1NsLXZPRE1SSDJMcnhDS0k3ZlcxdElFTmdLTnEtRGR5WDJCRTc5QkVhTVc4YzBvQURKY1hPZlhEMVJWb25Cb1plUlh6a2VoTXpsVXdoU1pJeHlqaHloaDE5WklvWHR3UFFtSlo?oc=5",
+   "source": "Time Magazine",
+   "published": "2026-11-16T19:03:11+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN",
+    "MI",
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ac9ac414b84d19b6",
+   "cluster_title": "Over 400 American AI Data Centers Use As Much Electricity As Wisconsin, Michigan, or Indiana"
+  },
+  {
+   "id": "166d5643f63c6f8f",
+   "title": "Umatilla, county file petition over data center permit suspension",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMWVndXZGQnpKanlvMDlkejFSQ3ZNV2lDTS1SZUNyd1l1U3lvaUFLLTdMWlJnOFVTa2xNcnBuSVJrTm9xa2U5bGltd2NyZm5QeERRai1RWVVRbVBCdi0ta1ZPUFB2bnZpMVBmNWR5T0g1ZTczV2kyOFRYYXNuOVR1VE9pcGJnZHVmRFhfb1o3RVlscEFNcDlUbDdTeEI4cGJtX2hLWA?oc=5",
+   "source": "East Oregonian",
+   "published": "2026-11-16T18:48:23+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "166d5643f63c6f8f",
+   "cluster_title": "Umatilla, county file petition over data center permit suspension"
+  },
+  {
+   "id": "746d9457fbf5a9c2",
+   "title": "Johnson Creek considering edge data center proposed by RadiusDC; Open house set for Nov. 18",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOenZYTTZfcG1hOFVKMF8teHBjc0NfNGdfV3pGTjN3WTZBenhQS2gxWWlybFlWT2FfMkpxQXA5TXBzVTM3dlU5NFM0cGt3OVR5bGpJR2JJWDBZRUU5V3BpTFVSTElMS3N2blljR1BfY29rd1Q2ak90WTY5bmZjOEtrMC1kZF8wRTJQTFBjYXhpSTN4QXl6TkpndHgtZDNZWnA0cGNCM0NIRC1HcWNKY2U5M1F4WWNDVWtzTUhPWlpsMkhOWWwtbk5YRGV5M0JSM3pjTkluWnA4dUZabThjWXpYckRrWGlMTWR2WTZCeklRWVdLYUpUeWRUdHloTXRjeHJJWFNv?oc=5",
+   "source": "wdtimes.com",
+   "published": "2026-11-16T18:45:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "RadiusDC"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "746d9457fbf5a9c2",
+   "cluster_title": "Johnson Creek considering edge data center proposed by RadiusDC; Open house set for Nov. 18"
+  },
+  {
+   "id": "efde14a06fd9941b",
+   "title": "The first study of AI data centers’ climate pollution is here—and it’s a massive undercount",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBlbjBqczIzR0hQLUpjYzJpR1pOUVpfeGJMLTBmbXpTNEFZT3pLUC1XM2w4aW8yR0lYbHJ2TFVWa0tISklXekh0bGxZRHRnVW8xeGtiSlI4QUF2QlpiSDVHR0lRN2FFSklq?oc=5",
+   "source": "HEATED | Emily Atkin",
+   "published": "2026-11-16T18:43:38+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "efde14a06fd9941b",
+   "cluster_title": "The first study of AI data centers’ climate pollution is here—and it’s a massive undercount"
+  },
+  {
+   "id": "033543f6939cd188",
+   "title": "Hillsboro may extend data center freeze by 6 months",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYy1UdVZhcl9pZ3I1UnIyMWpDNC1mRGJHSEVEV0Y3Z2FXUG9JcTlldlo1aUMzbDJrLWRIT1kyUHhPWno2cGliYkQyblpjS2lMdklMMzR5bW1sSWd1WjVPbS1MQVo3bFlERnJGMUtsZmgyaUdRMGNXeTNPVWRvWGNWdTJ1UDUzSGE3VEhpVEp3ODBTYzYwam93Z01sWEE1cFdvQW5yWk5xMlEwUkMtMV9fUHRfMTNRekxwd2dncVZjZFBTWllWSkRNTjU0ZWNjLXVuT3FWV2RPWDkxRXBXclNaZQ?oc=5",
+   "source": "OregonLive.com",
+   "published": "2026-11-16T18:38:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Hillsboro, Oregon, US",
+     "lat": 45.52,
+     "lon": -122.99,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Portland"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "033543f6939cd188",
+   "cluster_title": "Hillsboro may extend data center freeze by 6 months"
+  },
+  {
+   "id": "c2553037aa90fb2d",
+   "title": "Dade County Industrial Development Authority Unanimously Rescinds Letter of Intent for Proposed Data Center",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYTZjcTAycDBfYVh6Wm1NZkVYaDlKZjU1MjZwZG5jMHhYYVduaDBJSkdzQzNCUGFQaUxoZmRBXzY4bjdwSHY0U1RVUkxUeHBIeHBsMm41X1FTSWp0NHU2Qmh2V2VFZHJzeGFrQld1SHdnZF9pUEVrbEZ3OEpSeU1JNHlTb1JKckMtay1LeEVQTkxxU2FTZjBJVWFFMVRMb2M2bVVwSGN4aVJmN2JNNDkzZE03OHllWFVxaC0xRmpaQkNBMmRRbFVFeTFGVk1FZ1Z0dmRDbjFfQzFTdkU?oc=5",
+   "source": "Discover Dade",
+   "published": "2026-11-16T18:35:22+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c2553037aa90fb2d",
+   "cluster_title": "Dade County Industrial Development Authority Unanimously Rescinds Letter of Intent for Proposed Data Center"
+  },
+  {
+   "id": "14e643f4d4bcdc7a",
+   "title": "Scandal-plagued Texas lawmaker quits 54 days early for data center work",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNXFzTjFWemxremgxRjhaR0FYYXlDQ0w4QnRhSDcyZGxXMThYZkFGMEZMQ2VFQzYzTkRBbTlZbXI0VHRreGFhREtNWjBuQ0RYdG1uV1hPb3ZkZ1B3LU1HVjlwM0hQTERhUHNCT0s3ZTRJck1sMFRLdlY5d3lfZ0dTSFNQRWVXYThRM0E?oc=5",
+   "source": "Chron",
+   "published": "2026-11-16T18:33:45+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "14e643f4d4bcdc7a",
+   "cluster_title": "Scandal-plagued Texas lawmaker quits 54 days early for data center work"
+  },
+  {
+   "id": "bc0e9a882b04afb8",
+   "title": "Hearing Nov. 18 weighs data center, housing plan for KPMG site",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdVcwd0ZLWjEtWEtyNURUenU1TnpOcHh0SEdBMUVLUFgtYnM0WURKX3dtdlYzV29TMkh6STBqTnctc3pLT054UGRFQVA0enRtaDlpQl9QRm1YNFVKQ0VaNG82Y19fMkpvLXZTeGFhb2szRHU3LUE4S2thODZ3Ym9OTnBNQ1ZxSjVKUzNtYU5YLWU?oc=5",
+   "source": "Pascack Press & Northern Valley Press",
+   "published": "2026-11-16T18:32:20+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Economy / Jobs",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bc0e9a882b04afb8",
+   "cluster_title": "Hearing Nov. 18 weighs data center, housing plan for KPMG site"
+  },
+  {
+   "id": "69ae74b2571e5888",
+   "title": "Virginia cashing in on data centers",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBma0lTM2lKUUxLYkpYV3hKbGc1dENBUkEtcWNnYTlOUS1BZFIzbU53NEFUU2kwcmNvQzBRYktxMXlzdFpXNTdlWFZVY0FmRzh0Wklwclp4QTQ3R2p5anJPVldEczgybk1yc2JWNjZGVEJLOG5w?oc=5",
+   "source": "Bond Buyer",
+   "published": "2026-11-16T18:21:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "69ae74b2571e5888",
+   "cluster_title": "Virginia cashing in on data centers"
+  },
+  {
+   "id": "19fc0d93fb7ce214",
+   "title": "Virginia residents say nearby data center lights shine through their blackout curtains",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQkRuLVFET1JHang0UXVPZEZNRUltUnhPTU1XZW9zTmlhVFpLZmVzQTEzU0tzamNKeTc1aGhmS09Yd0t0bEdsczNfQkZSQmVKc3RzVmQ3bXZfTXVrYl9uV0FtNDBQXzRKQzJMVFhxV0dNRVl2cU1vMm1ldVBHZ05YYkhoNk00M0lNZEV2WA?oc=5",
+   "source": "The Cool Down",
+   "published": "2026-11-16T18:20:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "19fc0d93fb7ce214",
+   "cluster_title": "Virginia residents say nearby data center lights shine through their blackout curtains"
+  },
   {
    "id": "39bf9634fcf80b18",
    "title": "Data center boom revives debate over how to plan Wisconsin’s energy future 2026",
@@ -209,6 +530,33 @@
    "cluster_title": "What would responsible data center development in Wyoming require?"
   },
   {
+   "id": "d28ea9c5d77e9f1c",
+   "title": "Paramus Discusses Data Center Ban Proposal with Environmental Commission: What's Next?",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTWVEc2NmVzlGWi1vQlBfcS1FUDA2N3RtTWxJRlh3bDY5enk3NS0xRGNKUnNrTHYtQlJ6Uk1VTFFSYi0xa0h3aXZRN0pHUm1qWlUtaU1MN2tSQnBjLVZXUi1qVnBBcllnWHZoakc1X0U0NmNsVHd2VEEyZ0xXb0ktN0dNVmFrSVdObmZrbnVadmJIQ0diNEJYaDcwUTVmNjkwXzJxVmlyY3BubFpMOE5zUV9CN1VPV2haLUw5bDdGbkxvRFdHcjcyeVBVUXo1RUFfYWNabU01dHJISFVpWDJBanN3ZmdIQQ?oc=5",
+   "source": "TAPinto",
+   "published": "2026-11-16T17:33:11+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Environment",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d28ea9c5d77e9f1c",
+   "cluster_title": "Paramus Discusses Data Center Ban Proposal with Environmental Commission: What's Next?"
+  },
+  {
    "id": "ebd27876c6bb48eb",
    "title": "Alton To Consider Data Center Moratorium As Public Opposition Continues",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaVlTQTQtQy16dFd1UFBaSU9uYmJSNkhkSUhnY1lwLVFvTVA3Q01PRUluNUZIUlZ5c0o4V0FCTmZoYTFPYUlpMVl5U3JJWU5VdkNHWng1d1NwZlE3NDJ4VWVFNjlvejZ3cGpDR0dCMFV2NGhiaUZ0T2hJR3JTV2stTWRpdjJDbEYzQllaSEFwX196UnFKeUxxdllLbTZldm9XYmprTl9IRnhQNDFoN0g2Rm1jbVBhY1k1UlBuZVh0SQ?oc=5",
@@ -244,6 +592,52 @@
    "suppliers": [],
    "cluster_id": "ebd27876c6bb48eb",
    "cluster_title": "Alton To Consider Data Center Moratorium As Public Opposition Continues"
+  },
+  {
+   "id": "37f4bf241df96af2",
+   "title": "SpaceXAI Started Southaven Data Center Construction Without Water Permits, Mississippi Alleges",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdDNxMzFfV2t6bVkwbUxZM3ExUXZOWTYxTW9YakRuRm12Tzh0VE1UU3JYSDFmY2VONnVNdlEwd3U1MC1wVDgzYUFsU2FFZnJxWUVTUDJIVkZFb2l5bVVCRF9mUnpTLUtyUFhHbHl5b2FBR3FUd0VMTGt5d0UtZGpFclZqT3F5Q1lOdWVIbnpRR1dXdE0wVVhGZG9ieEd6d2tfeTI1djNXdF9Zc2V5NmFfeTAzOHR1YmkyTGxsZWcwcHFyMTg?oc=5",
+   "source": "Broadband Breakfast",
+   "published": "2026-11-16T17:24:24+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Environment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Southaven, Mississippi, US",
+     "lat": 34.99,
+     "lon": -90.01,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Memphis"
+    },
+    {
+     "name": "Mississippi, US",
+     "lat": 32.7,
+     "lon": -89.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MS"
+   ],
+   "state": "MS",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "37f4bf241df96af2",
+   "cluster_title": "SpaceXAI Started Southaven Data Center Construction Without Water Permits, Mississippi Alleges"
   },
   {
    "id": "95ae70ae5ebc8e9a",
@@ -1278,6 +1672,32 @@
    "cluster_title": "Just 400 US Data Centers Use More Electricity Than Michigan"
   },
   {
+   "id": "cbb4b378311dfc9c",
+   "title": "Hyperscale data centers’ energy consumption, carbon emissions newly estimated by researchers",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZzd0S3YxcW5NSEE0eGp3cFFSeGZmQV96SnFGQWptc2J4ajJYb3h0cEI3ZmdhSHVFZ0FtZlk4NjRNNzZZUnRMSXhBeHlfN0UxZzNqcHRqLVRnNUlTZlRaeGZIdGJkVzlEY2JKY2poRTJLZ1B2Y082aUZMZ2dmOHhmTl90M3MtT3JWREppbmVhQ01RZFNINnpiM2ZBWGlvX3NGTlduX0FFNG0teTFWTnJ0OGdCRzdRdGlWeFdvTHV3?oc=5",
+   "source": "Harvard T.H. Chan School of Public Health",
+   "published": "2026-11-16T16:00:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cbb4b378311dfc9c",
+   "cluster_title": "Hyperscale data centers’ energy consumption, carbon emissions newly estimated by researchers"
+  },
+  {
    "id": "7a0804f557a93689",
    "title": "Spartanburg County to consider final vote on data center project deal",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOX0pWVmJrZmZzNjB2NmRneDRYaWZFUUNGSUVqNGF1TmxIQ0pCOHA1Y3VxbzA2OXh2VWN2RUVqRTlqT3NHalNnWDNKYWVWUm5DOTRDWkZpNHAxWHhQcXY0UGVqQWhRTFZpaGpkUXd4dTVIaFkxQmpNZm0tMnlaazY0eko1T2F2UmMxODFqVk5BZkJfSHBSZkRaTGJOV1h0SlJPczFKOUk2Y2F6UHE4X1ozZ1ZJY3ZHS203VGN3RmRVR0JQS0VtcGFsWTg0Nk1ydw?oc=5",
@@ -1311,6 +1731,31 @@
    "suppliers": [],
    "cluster_id": "7a0804f557a93689",
    "cluster_title": "Spartanburg County to consider final vote on data center project deal"
+  },
+  {
+   "id": "1de20f8255e5c98c",
+   "title": "Carbon Emissions of Biggest U.S. Data Centers Already Rival Entire Countries, Study Reveals",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZDd0S0d2cHBIYVB2cEdqWnJPY1RsNUtYRERsS2FMbHliakxRQ0dObzVJUlg2aFJIM25EY2dKT1FoRlBVLXZ5REpod3hJQ2t5RVRaTTBjbEdPT1ZKd2U5QnlVTzJ5aWhxVHNmbU52cjNXQ2QzaUZjU0V5UUU3dzRmbHpNVGNYbENfelNFVkY3RVZPaDJWMlFLa0pSenJrR2E2QXR3?oc=5",
+   "source": "The New York Times",
+   "published": "2026-11-16T15:56:26+00:00",
+   "feed": "Google News: Data center",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1de20f8255e5c98c",
+   "cluster_title": "Carbon Emissions of Biggest U.S. Data Centers Already Rival Entire Countries, Study Reveals"
   },
   {
    "id": "67023b4ec841e8a5",
@@ -1787,6 +2232,41 @@
    "investment_usd_b": 5.0,
    "cluster_id": "5727fe5495fedb68",
    "cluster_title": "Blackstone REIT to Buy Amazon Data Centers in $5 Billion Deal"
+  },
+  {
+   "id": "76c1d170279b3f69",
+   "title": "Ohio lawmakers weigh data center legislation during lame duck",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZjZTVzk4eGVTTmprUm80RWVEX3VNQ2JodWtaaGxfVzVUeThYcVdjZ0RwREt2UVJ5TVhydWViZ3YxZ2ZfclhCSmFvYXJiam96UFVpYUNoeFJjVWNfVzNFcXpOM2R3WFZMX3F1dHFta01nNUxDTC12elJSOVNMZHpVVzcyMHlncnRzSWhUQktSc0F3RG8?oc=5",
+   "source": "Crain's Cleveland",
+   "published": "2026-11-16T14:45:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f78776a1215d6d7c",
+   "cluster_title": "Will Ohio lawmakers pass data center legislation during lame duck?"
   },
   {
    "id": "5e35d0fcc4c72278",
