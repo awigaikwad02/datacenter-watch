@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-16T08:13:26+00:00",
+ "updated": "2026-11-16T09:14:45+00:00",
  "count": 733,
  "visible": 616,
  "records": [
@@ -17138,6 +17138,15 @@
      "published": "2026-11-15T13:00:00+00:00",
      "stage_signal": "Under construction",
      "cluster_id": "fff343c2ca38950b"
+    },
+    {
+     "id": "295654d353f92a2c",
+     "title": "Google begins construction on 'Project Cannoli' data center in Michigan",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTDlPMzM3X1RNQllBUDVTMWxXaEZlTmxHVUdQaDZNVUNXVGlOajk4MWwyaUNiREt0ejFydlNuelhUcHlNaGpMOTJQam51VzZ4MDFWWkJRN3liUjdsYVVERWJkeXRoN0lJakhKRm5MVGlyUUxXSGhJNzhiWERsdExkN0xfdnhjaUludnpmVGNuN01VOUR3TWRfMjFuS1NpZnBIUzY3ZEJqZDlqTS1MUTFJXzNUZnA0Vnht?oc=5",
+     "source": "NewsBytes",
+     "published": "2026-11-16T08:58:52+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "fff343c2ca38950b"
     }
    ],
    "first_seen": "2026-04-16T07:00:00+00:00",
@@ -17166,14 +17175,16 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-15T13:00:00+00:00",
-   "sources_count": 5,
+   "last_news": "2026-11-16T08:58:52+00:00",
+   "sources_count": 6,
    "confidence": "low",
    "hidden": false,
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hints": []
+   "name_hints": [
+    "Project Cannoli"
+   ]
   },
   {
    "id": "google-mn-unnamed",
@@ -55347,6 +55358,15 @@
      "published": "2026-11-13T17:32:00+00:00",
      "stage_signal": "Under construction",
      "cluster_id": "3321acbab58b3b19"
+    },
+    {
+     "id": "f257cfe9ea054093",
+     "title": "AWS breaks ground on $7bn data center in Indiana",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdkl6eHhwOG1kNmpIWlV6YURITG11eDhvUjdfSFBuY2h5ZmM1TVhmaTNVS3hUZ0J3RjZyVHZLZDVJenRmVl94TTNnenRWejNpcTd4alQyaGV2VGdsUFV1YUhBRUxaS3hLN1FQLXh5RUhhN2hZQkM4NXZ3OWlmeWlucDNJY2dWOEM0VWxJNmpxdENKU3MtbHc?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-16T08:23:06+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "3321acbab58b3b19"
     }
    ],
    "first_seen": "2024-10-04T07:00:00+00:00",
@@ -55404,7 +55424,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 15.0,
-   "last_news": "2026-11-13T17:32:00+00:00",
+   "last_news": "2026-11-16T08:23:06+00:00",
    "sources_count": 14,
    "confidence": "high",
    "hidden": false
