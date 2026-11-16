@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-16T20:17:39+00:00",
- "count": 733,
- "visible": 616,
+ "updated": "2026-11-16T21:17:35+00:00",
+ "count": 734,
+ "visible": 617,
  "records": [
   {
    "id": "amazon-georgia",
@@ -24610,6 +24610,15 @@
      "published": "2026-10-26T11:42:23+00:00",
      "stage_signal": "Announced",
      "cluster_id": "17100e9397209452"
+    },
+    {
+     "id": "5c16e7eae18eed1d",
+     "title": "About $700 million is planned for an Ohio AI data center, but financing is not committed",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSnVvQjZ3cDF3c3ZBN1ltZ2pQT2FONmpmZ09ZQlpPUzBVSmZDMWZPWnFFVWxPNjlaaGRaZVdLbU1JekNpSnplSEtyQmg5UC1ZT0lrWVRfb29oUVhaRzZyTHFSV1hFUEJrZzFsSHl1RnNiQXJYR2xqdHBmY1dKeXcwamc4NnpzZmp1ak1pSnpFM2pnWWNCdllzbnV6RVp2RDBLcDZLTFR3SDlweHBPVV9VYWF6Xzg4OEha?oc=5",
+     "source": "Stock Titan",
+     "published": "2026-11-16T20:50:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "5c16e7eae18eed1d"
     }
    ],
    "first_seen": "2024-10-30T07:00:00+00:00",
@@ -24630,8 +24639,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
-   "last_news": "2026-10-26T11:42:23+00:00",
-   "sources_count": 5,
+   "last_news": "2026-11-16T20:50:00+00:00",
+   "sources_count": 6,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -57632,6 +57641,60 @@
    "investment_usd_b": 0.091,
    "last_news": "2026-04-15T07:00:00+00:00",
    "sources_count": 5,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "site-youngstown-oh-2026",
+   "name": "Youngstown data center (18 MW, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Youngstown, Ohio, US",
+   "state": "OH",
+   "county": null,
+   "city": "Youngstown, Ohio, US",
+   "lat": 41.0998,
+   "lon": -80.6495,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "653fd9b14126d8d0",
+     "title": "Valor Energy Inc. Closes Acquisition of 18MW Computing Center in Youngstown, Ohio, Accelerating AI Data Center Expansion",
+     "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPbnFGaFFBU3VJc3Z2YUJqaTdxcWpZMml6WUZ3Ri1EUVl4dFFJX1ZlanV0U1BKMVZoNzBzZ3g5VHB5ZnBHN2h6LUJ6aWlBUzJJMFRIV1BpTDljSU1wWTIxeGNLcDZiaEhPdVVqS2ZKRW5FZldGYnhWek55VGNfYjJPY3ZRUDZpeHdFbW0xZXBIZDNfRVFSblhzQ09RZUtENjBoRXRoSjEtdFdGZTJUTHRnQXgta3VVMTJGblhHaEdsTDdtcGNXV1gtaHpzcUtvWjdxbTgzdFlzandQUlFvVkQ4RjUxNjZNLXR6MVJXaUFObTBsUkdrTFBhWHlXWkl3NHFlVDQ0M3lsUGhUVmQyVFBQQnFHRDFlcm9MVHBB0gGgAkFVX3lxTE9YZE5rMm9JaVpkOTltMFhlb3BRNk1wcVgydTk3dFJTalY1cGN5cXdqZHp2UkNqWVp6cm1sd0pfTVFfS3BVZENBbEYxRlRSWVlSeGJ5SnFhR1hKdExDc2tuZDdfOVdWZGUzM0wwSXhlSG9JS3Jxei1WY0duWkkzbGNyNEJHS2ppWDJaQ1JxSmVITnh5amJSSWZ1TTVIRldxVHVHMDhEM0lUWFYxV2ZRZmtkMzc3bkV4TFJ3YkVMZUtBcGFaTDBWZXhPUlVTaGwzMWhLQTA4cWgtaTdJdVNJZXQtNzJ6eVQySkVISldEVmdIRGhrSk5kaXo0d280dkdpMExOM1RHWjZueFRMb2p2NHFoV3ZwUWlma3ZZaUtRcmR6LQ?oc=5",
+     "source": "The Manila Times",
+     "published": "2026-11-16T20:52:01+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "653fd9b14126d8d0"
+    }
+   ],
+   "first_seen": "2026-11-16T20:52:01+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-16T20:52:01+00:00",
+     "status": "Announced",
+     "headline_id": "653fd9b14126d8d0"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-16T20:52:01+00:00",
+     "type": "Expansion",
+     "headline_id": "653fd9b14126d8d0"
+    }
+   ],
+   "capacity_mw": 18,
+   "investment_usd_b": null,
+   "last_news": "2026-11-16T20:52:01+00:00",
+   "sources_count": 1,
    "confidence": "medium",
    "hidden": false
   },
