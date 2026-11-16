@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2306,
+ "count": 2311,
  "items": [
   {
    "id": "a23bb1515374fbc1",
@@ -116,6 +116,28 @@
    "suppliers": [],
    "cluster_id": "028e2b4cbf741999",
    "cluster_title": "Where Developers Want To Lease Public Lands For Data Centers"
+  },
+  {
+   "id": "8932d61aa9058b37",
+   "title": "Can SF handle any new data centers?",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9tR0E0LTBXZGljbTFLY2lOVUp0aWE3UGhod2gzeGVXeTRxckt0c245Skdvb2JDbDdramxMeWEyR1Z2NkllOF9JdmpicTdmdVNjMDZlUVhHWWxhdVBJc1VWM3gyeE82WVlLZV9VdjhPVzI?oc=5",
+   "source": "48 Hills",
+   "published": "2026-11-16T01:08:47+00:00",
+   "feed": "Google News: Data center power",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8932d61aa9058b37",
+   "cluster_title": "Can SF handle any new data centers?"
   },
   {
    "id": "f3299e03773db323",
@@ -1980,6 +2002,32 @@
    "suppliers": [],
    "cluster_id": "1702b665f86cac48",
    "cluster_title": "Minneapolis council weighs future of data centers"
+  },
+  {
+   "id": "702d63f9336b4ae2",
+   "title": "SpaceX Overhauls AI Data Center Construction Model: Slows Expansion, Prioritizes Reliability",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVUxWMnBIZ3ZrTk5MbzRYZVBYbzE4V2laZ0x0ekpsRVprYS1LOW4wTmQ1SHk0MDRKb3VTemJYcHM4VUJMWDJjSEdKandoeTlOZVZNLUdhUnJENDM3QWtSckMyQjNVY0t4X2NtbGx5Skt0TzVqTzlsNjk4bE5WNkh5UzRfNUltSDhoWWh4RkxNZEdxdk9Zd1J2RlVnUmRQMkNHRFBSbDh2b3VFcm9jc3h4TGNSS2dIcnBSZnBJ?oc=5",
+   "source": "富途牛牛",
+   "published": "2026-11-14T10:19:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Expansion",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "702d63f9336b4ae2",
+   "cluster_title": "SpaceX Overhauls AI Data Center Construction Model: Slows Expansion, Prioritizes Reliability"
   },
   {
    "id": "07e4973082e22dcb",
@@ -6518,6 +6566,43 @@
    "cluster_title": "ComEd Expanding Local Power Grid To Meet Data Center Surge"
   },
   {
+   "id": "4c8b0eb60f2ec884",
+   "title": "Judge strikes down requirements for $3.09B Midtown data center after developer sues city",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNd0R1RjNCQ0FWYVFBQVFJS3RmZ3E4SWoxZjQtXzFhSVZveFczRHdOcDh0aURSZWJJS1FFandmV3R0bndfSEloSWZFdWtGTWhqLXZzenV2VFFlQU9sTlMySGVlUmVjYzlxTkg0WmRFRjhOVTZBSVY0WmFwNU1ZM1phQV96UXg0cThfd2d5V3NIZmJCMjBHdmYwUzRkdGhtWGJER2xEM1I2ekI2WFRtY2JzbERCX2NiNlh4NS0zM0NxRWw0eEhBNnVrTGI1d0VJaGVHeFFzeW04ZWtFcVJmSGNZaFhickw5TzRKT25CWWtRU1BSWEFaSDJaTmlTMWI3UGExaW84?oc=5",
+   "source": "KSDK",
+   "published": "2026-11-13T16:20:59+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Missouri, US",
+     "lat": 38.4,
+     "lon": -92.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Midtown Data Center",
+   "investment_usd_b": 3.09,
+   "cluster_id": "4c8b0eb60f2ec884",
+   "cluster_title": "Judge strikes down requirements for $3.09B Midtown data center after developer sues city"
+  },
+  {
    "id": "5f8ba48db7bdcb56",
    "title": "Cushman adds Florida executive; Panattoni boosts global data center group; Transwestern fortifies California, DC teams",
    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOREJZU0p0dFl4S3I2TjV0ckUxWTY2QzdFdWQ3N1owUndCcDlTaWZzSGFibFI1eTFJRjI4X29mQVk1aE4tdFl4aVVicXR5MUdCMXN1SkpVaEdrSlhDWEVfeEpkRDVPNWFTWmxacWtQR0hjRUJud1VHS05zSDdoRGdpaFA0a2FfVy02eEJLOTZaMFpMY0hzSmFkXzVhQ2F5eS1VUjgySWRxdThHY0QtMUhXcDlGeWdIM3ZwVjJXa1QwNHlIVmxsaGY0eFEyT0pHOFd5angtVUFnd3lHUQ?oc=5",
@@ -7978,6 +8063,43 @@
    "suppliers": [],
    "cluster_id": "fe4067f7cbd4b5d1",
    "cluster_title": "Ballot question would put major restrictions on data centers, as Kraft Group proposes Sutton data campus"
+  },
+  {
+   "id": "dcf328907ff0e8b6",
+   "title": "Boise enacts 6-month moratorium on large data centers",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaW9Ua1l4RVluaERIZ2dYUEoxT2hZNk8xcmxLSGNjdTk4OGpqYS16RUhxMDVPUF9PUThMZS1fSGlDVGVVZUgwVzVqaXBVel91NU90a3dfdjg0NURHQkJzRmNyT3otRUQtNzFCN0dvSi0yUG12cHpfUHlCSDh0eWhVZXVHZzhma0FLVXFjTjA3all0ejJWTWYxeDRaaUFYblUwTzQ5YzBYQXY2VTFoU3NlTVF1V2F2V0Rydm1zYjluVElyTmNiNV9ZaDVmbDQ1U2p3cUc4dlBOVG12dHpURTVHdFM5MA?oc=5",
+   "source": "Post Register",
+   "published": "2026-11-13T11:30:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Boise, Idaho, US",
+     "lat": 43.62,
+     "lon": -116.21,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Boise"
+    }
+   ],
+   "states": [
+    "ID"
+   ],
+   "state": "ID",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f6abfb90b815ac4b",
+   "cluster_title": "Boise to consider data center moratorium"
   },
   {
    "id": "8a2fbf5732aba911",
@@ -29103,6 +29225,36 @@
    "investment_usd_b": 17.0,
    "cluster_id": "344b3f6dcd63eb8a",
    "cluster_title": "AEP, Google Advance $4 Billion Fuel-Cell Project to Power Cheyenne Data Centers"
+  },
+  {
+   "id": "6ddf9325d6a1cbd8",
+   "title": "Anthropic signs $3.4bn gas generator deal to support 1.7GW of data center power",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNekVlS01IOEp5Ynp4T1EyTnVOTjV5ejU1azNkSmlnNGsxakJRWEFXOHhhU19fWmZlSWlZMEhCajBLS185ZG9yaVJ1d2NOMWV3OVpnVjRUeGY5ZkZ0TklNcF9NNXRra0NDZEotV19jajhPQ3BMNXdpaW15MVdVN2x4TlR2amtSZy1kb1BraHFwNXU1Mk5wUjZrcHRkcU8yRlZ4WnQ3Q3pYelFiTkRPWmlrYU1sMl8yZk1IRy1ycQ?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-09T13:33:44+00:00",
+   "feed": "Google News: Data center",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Anthropic"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 1700,
+   "investment_usd_b": 3.4,
+   "cluster_id": "6ddf9325d6a1cbd8",
+   "cluster_title": "Anthropic signs $3.4bn gas generator deal to support 1.7GW of data center power"
   },
   {
    "id": "7fa0f89561283eef",
