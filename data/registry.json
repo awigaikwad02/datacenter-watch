@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-16T15:15:55+00:00",
+ "updated": "2026-11-16T16:15:56+00:00",
  "count": 733,
  "visible": 616,
  "records": [
@@ -29074,6 +29074,15 @@
      "published": "2026-11-16T14:23:15+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "21dde4bfd9437796"
+    },
+    {
+     "id": "d5f972bf57f4e892",
+     "title": "Prologis sues Trenton, Ohio, to keep building a 250 MW Amazon data center after voters approve a ban",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWUJpU19JVVRKUWJtSnluckdmX05rUHZ5TGhCUXRyTURRYzE0eVFPd0Z2Zm9jQkRmVlhfR0xpbDl1ei1HSjFqNXRnVENKd2M3aF93N18zZC1uWER1ZThBWkM1dFhMSVpRWkQ1LTZfSXZHZmZ3VU1lMlY3RkRNSldETmdmZ19jODZsR0c4TzVNTHFheXNfRTJ2ZXRZZWtjRFRMdm13WkRSSVp3TmdmN3VLVGNET3RjQy1qdlQw?oc=5",
+     "source": "MLQ.ai",
+     "published": "2026-11-16T16:04:35+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "d5f972bf57f4e892"
     }
    ],
    "first_seen": "2026-03-02T08:00:00+00:00",
@@ -29100,12 +29109,17 @@
      "date": "2026-11-16T14:23:15+00:00",
      "type": "Cancelled",
      "headline_id": "21dde4bfd9437796"
+    },
+    {
+     "date": "2026-11-16T16:04:35+00:00",
+     "type": "Approval",
+     "headline_id": "d5f972bf57f4e892"
     }
    ],
-   "capacity_mw": null,
+   "capacity_mw": 250,
    "investment_usd_b": null,
-   "last_news": "2026-11-16T14:23:15+00:00",
-   "sources_count": 2,
+   "last_news": "2026-11-16T16:04:35+00:00",
+   "sources_count": 3,
    "confidence": "high",
    "hidden": false
   },
@@ -38988,6 +39002,15 @@
      "published": "2026-10-29T02:19:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7865b7d8fab34ed7"
+    },
+    {
+     "id": "a9e1b0e76520f665",
+     "title": "Core Scientific files for a $1.3 billion data center building near Dallas at the campus where AMD plans to lease 110 megawatts",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPT0Z2X0poS2t4ZXNjQzlJbEZEby1UTkhEby0xbDlIMjJqTVBSdUZueGdWWkJlaXhjTk5icUQ1eHI3bm5PVFZsUlRaeGlhZnJ2SkxxeGhZSkhPMS13UnZNYkdzSkN2dDJtTDJ6MHE1SGluLW1TSGdHNkxvQklPMi13ZWxkR3p3NGVXQlNyMFNtSm42TUVWOFVya0xIQmtzTTNOVXh4OUYwNnduYnhnRERoZE5BelR3c3ZPemhyTVlxRDFmZ3F6Z2lRanB5dnlXc09ySkJvNUtvSHhHUkFUaUE?oc=5",
+     "source": "MLQ.ai",
+     "published": "2026-11-16T16:04:42+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "a9e1b0e76520f665"
     }
    ],
    "first_seen": "2024-11-21T08:00:00+00:00",
@@ -38995,7 +39018,9 @@
    "utilities": [],
    "investors": [],
    "builders": [],
-   "suppliers": [],
+   "suppliers": [
+    "AMD"
+   ],
    "status": "Announced",
    "status_history": [
     {
@@ -39018,8 +39043,8 @@
    ],
    "capacity_mw": 1500,
    "investment_usd_b": 6.1,
-   "last_news": "2026-10-29T02:19:00+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-16T16:04:42+00:00",
+   "sources_count": 5,
    "confidence": "high",
    "hidden": false
   },
@@ -43055,6 +43080,15 @@
      "published": "2026-11-12T19:44:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7fafcfc5ee56e3e3"
+    },
+    {
+     "id": "7e922f99a0dc168a",
+     "title": "28-acre Georgetown data center: Residents push back against proposal",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeVhHN2xXLTFsVzQ1ZmJSOVBjY2lJZDFxWHk1RnRRWkdSU1haUDdFTWdSM3BvMHl1Q3hoTUxaOEprM0p1RmVISC0yX0JYY052SGp4M3dTVzJDbDhWc3BjQUtRVldtdVJZWllSdVFTc0VhbUJYVmVzNVl1Xzk3NEJOR0VxUjJYY29CNk5WaUtGRko5RnVrSTlJY29PYUoyWVpO?oc=5",
+     "source": "FOX 7 Austin",
+     "published": "2026-11-16T13:42:47+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7e922f99a0dc168a"
     }
    ],
    "first_seen": "2026-11-12T00:05:39+00:00",
@@ -43074,8 +43108,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
-   "last_news": "2026-11-12T19:44:00+00:00",
-   "sources_count": 2,
+   "last_news": "2026-11-16T13:42:47+00:00",
+   "sources_count": 3,
    "confidence": "medium",
    "hidden": false
   },
