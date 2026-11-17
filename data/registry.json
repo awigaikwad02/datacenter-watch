@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-17T00:19:31+00:00",
+ "updated": "2026-11-17T01:19:18+00:00",
  "count": 734,
  "visible": 617,
  "records": [
@@ -14942,6 +14942,15 @@
      "published": "2026-11-03T12:36:06+00:00",
      "stage_signal": "Announced",
      "cluster_id": "3a5e75b07d435019"
+    },
+    {
+     "id": "e7eb64fe08dad11e",
+     "title": "Judge questions how Botetourt County approved Google data center deal",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb1JDSFY5Njk1LVotVVRzQ0pmWUdWazh4VlZuVjh1M0Nta2E1a2ViU2hiaGxteEZ3LV9qU0tfY09DOXY2WmkxMnJiNHl5aWFTMm1yTGwyWTl0NzlCY01IUFhCTzNMdTBkMmhXb3NHekoxc3hPaVJBbFplSk9NdTg0dXg3bmFnbEdOTWVGT2dUSXRXVGlHMW5MUHg3RWZZQUF6R3plNHVR0gG6AUFVX3lxTE16cmRRUW9IM2Rxa3hKVm9LNVhiNGx1eXZfR2lJMlROazFNaG9lTjJpdnJiZVVHLXNoVzgyS0JRc3ZxSWdFaFNEYWpDcVJndEVnRHlTM3g1RmZQbkJXSFVzWWdBWUFqeGZpMGV1Z1hnc1VEdU5rOFFndWRuaUZLWU1ocGRCSUdaZXlEQVFLc1d3MFVmR0RQc2pNZ0JncnppMzVMdXUtQm5wQXpvY0llNmZBaldKZlJsRDJjUQ?oc=5",
+     "source": "WDBJ7",
+     "published": "2026-11-16T23:45:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "e7eb64fe08dad11e"
     }
    ],
    "first_seen": "2025-06-24T07:00:00+00:00",
@@ -14964,11 +14973,16 @@
      "date": "2026-11-03T12:36:06+00:00",
      "type": "Approval",
      "headline_id": "e96f1db806ac33af"
+    },
+    {
+     "date": "2026-11-16T23:45:00+00:00",
+     "type": "Approval",
+     "headline_id": "e7eb64fe08dad11e"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-03T12:36:06+00:00",
+   "last_news": "2026-11-16T23:45:00+00:00",
    "sources_count": 8,
    "confidence": "high",
    "hidden": false,
@@ -37358,6 +37372,15 @@
      "published": "2026-11-10T13:28:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "02437603f82a0dc8"
+    },
+    {
+     "id": "7e4ff6d7eae59fe0",
+     "title": "SpaceX plans $50B data center campus in Cochise County",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR1RyUGg3aFJXSVpObHRsb2wwbnplQWNmVDRvRy1saDZfT044OWplc2JRMTQtYU1DVkd4SkJia0FidFNhdjZBV29pWVlIMUlENXc1VXJNc2NpRDNpYkZZeGF3c0g2M2RwZEo1dkNMYW9OX0hteWJ5Rkg4VE1SaS1Hd0N4YkYxMUFYWXFvZEV6eGjSAaQBQVVfeXFMTjdtdXJjUDh0VFhFOVdjd1J5ajh0WlpHOUJyX1VCZ0FzZFJIa200MTJ6dzNqMGtwZWVUaTlZZkUzb0pqZU1VbGNrdGhwTGdjTlFxMnVDZ3Q3QTdZZlZuV25LRjMtZ3A1OERUUTh6all2N05jNVZsSzJrd05DZGRlSUZrVnZ0T0pXSG9HbERaaUR4SG95UTFPT1JjeXVWNkJkSHVaWEg?oc=5",
+     "source": "AZ Family",
+     "published": "2026-11-17T00:55:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7e4ff6d7eae59fe0"
     }
    ],
    "first_seen": "2026-11-03T01:08:00+00:00",
@@ -37378,8 +37401,8 @@
    ],
    "events": [],
    "capacity_mw": 6000,
-   "investment_usd_b": null,
-   "last_news": "2026-11-10T13:28:00+00:00",
+   "investment_usd_b": 50.0,
+   "last_news": "2026-11-17T00:55:00+00:00",
    "sources_count": 5,
    "confidence": "medium",
    "hidden": false
