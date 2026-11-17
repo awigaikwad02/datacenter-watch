@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-17T13:22:07+00:00",
- "count": 734,
- "visible": 617,
+ "updated": "2026-11-17T14:22:07+00:00",
+ "count": 735,
+ "visible": 618,
  "records": [
   {
    "id": "amazon-georgia",
@@ -55068,6 +55068,15 @@
      "published": "2026-11-16T14:23:31+00:00",
      "stage_signal": "Announced",
      "cluster_id": "0ccdea3bfd2adabe"
+    },
+    {
+     "id": "1ee117aea275d770",
+     "title": "Spartanburg Co. council approves six data center agreements",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1CU3VLMi1uRDRNb0tFZUFhTS1LTkZZSEZJWml2ajFnSHY2bkdMWUw2UjNhSVBwbDVmcS1PYzdYXzZBOThrM2wxY2JZY0dVR19Tai1BQkxiOW1LQTBLUWhjaGg0dWF0ZVlMUDEweVZCSF9VT1I0cnfSAXtBVV95cUxNN1ZXbURlWE5lMF9KVC1OVkNqLTl4WmtaMUVTS0RDY0FIaFFoUDBEWVFWaG9HTXo1NVVPTGZLSzBFR3Bvdnpyd3hUYmRJcEtYUldBd193Z25hZFVaQzhXUHJob2pHMFI0SzExN2RuVkJZQThhTnRJSTBlb1U?oc=5",
+     "source": "WSPA 7News",
+     "published": "2026-11-17T04:26:12+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "1ee117aea275d770"
     }
    ],
    "first_seen": "2025-03-05T08:00:00+00:00",
@@ -55122,11 +55131,16 @@
      "date": "2026-11-16T14:23:31+00:00",
      "type": "Approval",
      "headline_id": "0ccdea3bfd2adabe"
+    },
+    {
+     "date": "2026-11-17T04:26:12+00:00",
+     "type": "Approval",
+     "headline_id": "1ee117aea275d770"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 3.0,
-   "last_news": "2026-11-16T14:23:31+00:00",
+   "last_news": "2026-11-17T04:26:12+00:00",
    "sources_count": 5,
    "confidence": "medium",
    "hidden": false
@@ -56058,6 +56072,54 @@
    "capacity_mw": null,
    "investment_usd_b": 0.042,
    "last_news": "2025-03-28T07:00:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
+   "id": "site-sutton-ma-2026",
+   "name": "Sutton data center ($16B, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Sutton, Massachusetts, US",
+   "state": "MA",
+   "county": null,
+   "city": "Sutton, Massachusetts, US",
+   "lat": 42.1501,
+   "lon": -71.7629,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "c8b527435fbfc51b",
+     "title": "Sutton, Massachusetts residents fighting $16 billion data center proposed by Kraft Group",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdDdNQnlIUjdsbl9Ld3BqMDZ2c3l1by1va01pQXVkc1RQei01d2VVNFB4SnY1TzFiUkI4QzdVV2x6QVlyZGdobFBPSmdwMzNfM1k0TXRMaS1ZTG9QU3BtSTg1UlNrVlgwa09feW1tdmxtdWVEX2tNOWNBWWs5Tk8zU3M0b2ZKSmFZ?oc=5",
+     "source": "CBS News",
+     "published": "2026-11-17T13:54:41+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "c8b527435fbfc51b"
+    }
+   ],
+   "first_seen": "2026-11-17T13:54:41+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-17T13:54:41+00:00",
+     "status": "Announced",
+     "headline_id": "c8b527435fbfc51b"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 16.0,
+   "last_news": "2026-11-17T13:54:41+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
