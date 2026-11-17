@@ -39,8 +39,538 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2793,
+ "count": 2820,
  "items": [
+  {
+   "id": "7d587d88b796674d",
+   "title": "St. Cloud rejects new rules for data centers, moves closer to moratorium",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaDFST1VnQ3lKbXhwZ2VuQUtacmVDd2RxRk80U05NdUVSWmZHdWpiRGVmT01zX0d0NVBwMl9xa1RxTy1LRWZBQlc4TTQxUVdPc0NpTWlNYUhyOURhTnlvQnU3MWwxRGttTG1RNzB5TXg5LXVBY09PeW5YRHBrY0M1NjZFZVcxUXFYRlNwZEFKWWdlSWY2TXdFQXB1N1ZwX2xKMDNwc19uTXUzcGRRb05oaQ?oc=5",
+   "source": "MPR News",
+   "published": "2026-11-17T15:18:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7ac4a108a948857a",
+   "cluster_title": "St. Cloud moves closer to data center moratorium"
+  },
+  {
+   "id": "cb08bc9ae5fc7dfe",
+   "title": "Green Charter Township approves six-month data center moratorium extension",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUEJWTm1WXzhJczUzV2Rzbm44UkFYamdHNFVGUzNzYmdfT1Y0cVB3Yk0tRnpHXzRTVGlsZlpaSG56dVNjcHlhWkQ2MFNJTC1FN2VTMlpkY0xwaFc4enJSZ0x4VVFia3JPeFNuSXhfTnV6eWpVX2VnMHAtcEljT0NodTlXMnVuMERQNWxabHFId2MxZ01rajhtTmRzQWUxMVE?oc=5",
+   "source": "Big Rapids Pioneer",
+   "published": "2026-11-17T15:12:34+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cb08bc9ae5fc7dfe",
+   "cluster_title": "Green Charter Township approves six-month data center moratorium extension"
+  },
+  {
+   "id": "41def7d966768eb8",
+   "title": "Giga Energy Inks 10-Year, $1B Lease on Project Marl, a 60MW AI Data Center in Hunt County, TX",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQc1NSYUVJOGVCU00yYXM4dmxwRUpTWUJjU280aTI5SGlWT0gxUnVDRDRQTTVZa3hHOHlHOU1SMVJjdXZKRVBvRzhyMFcwM0lwYW41OGdES0hibjlfUGltMWVWZFhUTXczWFhRYnhxMjBVZnUtM18xUmk3Z2NoWkV6eVdobGNuVnN3SXBYNndlSnI5bFhSYU1fdWtGUkh2cGtJUmZXODR0WVNRUWY1UHNacU5CWENZN1ZOc1pDaXJhaTJZVjJrRnN0VlJJcmNnN1QydFpNSXpZajdhNUJHMjBDczV3?oc=5",
+   "source": "markets.businessinsider.com",
+   "published": "2026-11-17T15:12:27+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Hunt County, Texas, US",
+     "lat": 33.124,
+     "lon": -96.085,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    },
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Hunt County, Texas, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Marl",
+   "capacity_mw": 60,
+   "investment_usd_b": 1.0,
+   "cluster_id": "9998a14c92e091af",
+   "cluster_title": "Giga Energy signs $1 billion lease for Hunt County data center"
+  },
+  {
+   "id": "3767bda2f5834773",
+   "title": "Aurora Mayor Mike Coffman takes proposal to delay accepting new data center applications off table",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNd0Fkb3BRMGx6MlpGXzV2YjdaUjhtUURPdUVYeDFpZ0pVbzVSTlk0eXl1ckNtX2JQNUhjWXdBaEpYOVpya01wRTZaaEVvd1A0OWxPZnV3OTFLWktCeEdXSTQzajYyaUdjS2g1QVkwR25sMlpMbFd2eWlpRU5ZSlF1d3A5em9oZTZVLWYyLU12Z2VNbjg2R0NwUFEyckZWR2FSLUZFd0NXZG9oSlJIajJHaEtEOVVTSlFkOVA2R0EyV3Y2bVhONl9rN0JhVXIwZHlyWTRkZg?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-17T15:05:00+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3767bda2f5834773",
+   "cluster_title": "Aurora Mayor Mike Coffman takes proposal to delay accepting new data center applications off table"
+  },
+  {
+   "id": "3bb32d20b9adc543",
+   "title": "OU researcher focuses on factors drawing data centers to communities",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSVduY3JUUExkY0lzUzZWVkk4dlpTa0hhc1dWZ3l3OXU1Rk1VR3E4Y0d5TzctblhGYkdoUVBwNEs1andydWhzeWNhMXZ5ZU1xUDZfOEJtN29fTXNURERBczZYVWRxOGExZi1VNndMOTlnd3lPc2FXM0hCR0RjcUd0a21POE54YmdTcllpS3NzNjMwWC1neE5zeWRQR2Z5M0E?oc=5",
+   "source": "KOKH",
+   "published": "2026-11-17T15:01:31+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Oklahoma, US",
+     "lat": 35.6,
+     "lon": -97.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3bb32d20b9adc543",
+   "cluster_title": "OU researcher focuses on factors drawing data centers to communities"
+  },
+  {
+   "id": "e022d02713e93c78",
+   "title": "Giga Energy signs $1 billion lease for Hunt County data center",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQTlMtR0pwYzh2UWRxYnlZSTB2YmlfS3AyN1A4cld5LWNvWE1JVFlNODJXbFFSSkIwRjVUQUh0NTBPOXVDSlV6U041TEdWNDZmdVU3RXV5YWh6Sm5DYUM1N2x1WnVCTk1ILVJKRURGV2hFZ2VleDFBeXJEaHZRc2Rod183SmZnSmZadkNFLU5yc0dWdUZ3Qkk3anBnODd4ZlBSWHA1Rkl1S1F2aUQzTGQ3aHVNc1M3Rk1WdzdrYW9oRlA2b0xmaGFqNjZySWJSeVJaRmlJMEN4WmJBdm1fcDVXZXQtRjRIS3J3NXMySlRxc2xuNTNQQm95Zw?oc=5",
+   "source": "Royse City Herald-Banner",
+   "published": "2026-11-17T15:00:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Hunt County, Texas, US",
+     "lat": 33.124,
+     "lon": -96.085,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": "Hunt County, Texas, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 1.0,
+   "cluster_id": "9998a14c92e091af",
+   "cluster_title": "Giga Energy signs $1 billion lease for Hunt County data center"
+  },
+  {
+   "id": "86360bf0e4f3b163",
+   "title": "Google signs a 50 MW deal for superhot geothermal power from Quaise for its Oregon data centers",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWpzeDdaZTdXNVp3RzNkM2lSWlc4VWNyOE1CX29SWHZNdDFyRHFKaktVWjJWSzNuNzFManFmbVN3WUlGWkl5c0NEQl9Da2c1S0xBRXR5WXZsM0k5ZnNwNUdOSVRZeTk5b1Q1Z0NRMlUxTmdMM01wQnlpNkR4UXFxRkhmTE5UUE12U2N4emViWTZMT1U5VTBhd25NcnM0WFVOdElJS1pFbmViSVpZel82cEFzbmNEMnc?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-17T14:56:06+00:00",
+   "feed": "Google News: West",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Oregon, US",
+     "lat": 43.9,
+     "lon": -120.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 50,
+   "cluster_id": "f977e6f022d35c72",
+   "cluster_title": "Google inks 50MW geothermal PPA with Quaise in Oregon"
+  },
+  {
+   "id": "4f8215834cd735f8",
+   "title": "Dalton City Council tables data center moratorium indefinitely",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTzgxY0FBQXl3Q1RMZ01HRTNpX0dfQ1RERGkzRTVRT29FWjFhX0RvV1BXNi1MaEtnMnV4R0VHRDFjdTA5VTJ6emUzb1Z1X29uMmEyWFJEQWdaeXJHcEVOZ0NXbXViU1VqUEhEUUpfR3dkNXg2UVl1WU95dm5XZ1kyZjZ3enlqbzhxS2pZQXBhV3ZkelcwNkJZUWY4dm1ZVllOYWthSnBobGR1NXBSa2dzRA?oc=5",
+   "source": "Chattanooga Times Free Press",
+   "published": "2026-11-17T14:55:32+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4f8215834cd735f8",
+   "cluster_title": "Dalton City Council tables data center moratorium indefinitely"
+  },
+  {
+   "id": "f8815e1189b9967d",
+   "title": "No moratorium on future data centers after board deadlocks",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaV9CR1AwWjFUblRFS0I4TENfNEhwNXI0QkdycTVoQmhneXE0S1BjQjl0Y0kwMXQ0QzZFd19PN3VmWnNHaWtKcXJKTk1IOHNpUFlWVDctcUpFOHFiVmg3NmZvaWdtMnh0QkNoWWZ0Sl9mdHFCbW04WHdTdGlDLTZrTm04UVZRelZFT0VfUThwWDlmbkw1V1NPSXo2Y3hZQQ?oc=5",
+   "source": "RRSpin",
+   "published": "2026-11-17T14:53:04+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f8815e1189b9967d",
+   "cluster_title": "No moratorium on future data centers after board deadlocks"
+  },
+  {
+   "id": "370af9eae26f032d",
+   "title": "NYSE parent ICE launches tool to assess data-center construction delays",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNT2QyeWlhdFpHSmxnNjh5WEc3Y2RhTVl3amZ2cEl2SjQtMVJvU0J3emg5VG1xb3NoWHhtYU1sTXVUSVhZUWNXVlhXLXNtNXlDaUgyMG5Yd0s2N3J0ODdLYzRnSE5sVllZb25DWnNZUk9ibFVQbVpuYmRha3UxNXhXT3NyLVhOdjNLTloyNW1ZazVDaWU1TmN4NDNtLUxfTHNCMkIybWxwd2ppdEFiNHoyLUk5aVBFRVdtYkxXMVJROElhelRkUXZET1FvekFhOG12RmNsaEJNQnl1NFhoSnpMZjBTczRhNUViZFFJcUlPbWZPbHhzLU5GanBGSkdfNUdG?oc=5",
+   "source": "The Lufkin Daily News",
+   "published": "2026-11-17T14:50:52+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Construction"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "18f20a848d14735e",
+   "cluster_title": "ICE Launches New Tool to Quantify Data Center Construction Risk"
+  },
+  {
+   "id": "e8717111418a1ab2",
+   "title": "Validity challenge involving data center and Plymouth Township's zoning code opened hearing process",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeHlCWG1DREtHVTkwdmZLLURnTUtlN21QbnMyRGtyNENoVHFwUXpMb3c2cGQxNHM3Um4xWGlWeUJRN3R5VWRnVTNnbnY5M29sbmRTUWtOdm56Slh3S3pfdWdkNmVIdXNmTzB3VkdnVjdGWE1vbmZlY1NDX0s2TDVRSFYtaml4TWYyT3JOMXhmVDJxVXFhS21GZUVDNzdGTGRjLTMweWtYUks5V244SHVzSUlpWDIzYlRuUVBhWUl4ZEl4RzRtalJ3?oc=5",
+   "source": "MoreThanTheCurve",
+   "published": "2026-11-17T14:36:45+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Operations",
+   "tags": [
+    "Operations",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Plymouth Township, Pennsylvania, US",
+     "lat": 40.1,
+     "lon": -75.28,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e8717111418a1ab2",
+   "cluster_title": "Validity challenge involving data center and Plymouth Township's zoning code opened hearing process"
+  },
+  {
+   "id": "dd5deeaf05e40f5d",
+   "title": "HSBC Sold a $300m Loan for the Construction of a New Mexico Data Center",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUkZabkEyQ3VRQWpvZkhTRmI1S3d5Tk1BNDFuR0JWdmVNbG00NUtETGxVVVJvU08tR3Z1UlI4U1BoZVA1cHFHdTJnd0xfbWplV0EwYzdVbnZvOTR6ckhuR29pLVBzWXp6OXhnN00zUEhOZFoxVlBsSDBHWTFoWUFUNngyZ3VVbjRaLUdvYi0tYi1NTkpLMnlSNzlqX2lDOE9ldnRnX09FdWUtUDJSQ3VEU01fdU9CbWxQMXowNjFpcmw?oc=5",
+   "source": "www.marketscreener.com",
+   "published": "2026-11-17T14:36:13+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Deals / Investment"
+   ],
+   "locations": [
+    {
+     "name": "New Mexico, US",
+     "lat": 34.4,
+     "lon": -106.1,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NM"
+   ],
+   "state": "NM",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.3,
+   "cluster_id": "dd5deeaf05e40f5d",
+   "cluster_title": "HSBC Sold a $300m Loan for the Construction of a New Mexico Data Center"
+  },
+  {
+   "id": "f977e6f022d35c72",
+   "title": "Google inks 50MW geothermal PPA with Quaise in Oregon",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQlhVSFpVQjgxTGVpcXBxR0tfTnl1RnhRdWdXRS1kRFNDYzVOb243dG8xQUJqSkt2eWlXWGpTZEhlTnB0bkNTRlpQNy1RUU1LRUVfT2RyVi1GRWNJcVlxaC1MYTNwTldveGd2RlI1NUV4bWdiWU5vbGxwTDVGMmpKSDNzNjhfQjh4WWxqM0dwZFEzX25qVGRuYnFHQmlxdw?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-17T14:34:16+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Oregon, US",
+     "lat": 43.9,
+     "lon": -120.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 50,
+   "cluster_id": "f977e6f022d35c72",
+   "cluster_title": "Google inks 50MW geothermal PPA with Quaise in Oregon"
+  },
+  {
+   "id": "b30364e56d148ee7",
+   "title": "US data center emissions rival entire countries",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdG1BVG96YzREQ3VrcjQ0UGN1VzNrby1UeVFLNWE1ZGRmcVNoXzVqdEhFTmN1Smd0Q050TFZCbmpIT29PU2p6ZDN1RnVBRnluNHNYVG4ySE1PbGdWaEY3bDdLNEkxY3ZpWThWdkpjS0RZelliX2NSa2k3NVV1cUFYbHRZM0ZyemkxZjFMblAxTm8yNUk?oc=5",
+   "source": "Yahoo",
+   "published": "2026-11-17T14:29:35+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Environment",
+   "tags": [
+    "Environment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b30364e56d148ee7",
+   "cluster_title": "US data center emissions rival entire countries"
+  },
+  {
+   "id": "c0ea1a3a867f9806",
+   "title": "Amazon's big Washington data center plans face growing resistance",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNY0VVUTF6RTF1ekRrZjdjTVVPYUM2bnZnZ1hudzJVNWVLOW9Ucm5tblotUjM5cy0zR3UteGJEcmdBMWZ5X3JfXzRjcFQxNUhnVVdTazdoLW5IRldFcVdIMXA4U1NWSXRZOUN4bnJjTjM3TFl2cDh2ekhfTDU1ZmRqNUl2QW1XTzRsZklPU2FRanRhSlNydENOZnQ1NE1odFJ1WHc?oc=5",
+   "source": "Axios",
+   "published": "2026-11-17T14:26:31+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c0ea1a3a867f9806",
+   "cluster_title": "Amazon's big Washington data center plans face growing resistance"
+  },
+  {
+   "id": "a2ae03e9b6169ff1",
+   "title": "Bloomington's Planning Commission recommends extending data center moratorium by a year",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUmR4Wmxybl9ONXFYYjdKcXFhV1A1aVhEWDVYWlFsdGd0WkpSTURxX3JMMVJmZHBmLUh0aWlHUHRJUHc1c1NHZ1A2N3J4eTRCN2tpWE15bHZveWUwUHlFOUY4VXhwYzl5Q3BaS2VSdEpqdTZXWERwLVFpbWRtNmZzNkNiZHZrMkdSNlV4TE5yS25KQTRnSTZVVU05WlBwTnhxa3dKeWZoSDl3bE81eHJGZ0JoNjB3Rks4OWducElaalY5bVFyN2tJNg?oc=5",
+   "source": "WGLT",
+   "published": "2026-11-17T14:25:18+00:00",
+   "feed": "Google News: Data center",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "439159b79f531e67",
+   "cluster_title": "FNSB Planning Commission recommends data center moratorium"
+  },
   {
    "id": "ae4ed8d891553b7e",
    "title": "Los Gatos Planning Commission does not move forward with data center ban",
@@ -268,6 +798,32 @@
    "cluster_title": "HSBC sold a slice of an Oracle-linked data center construction loan at a steep discount"
   },
   {
+   "id": "86839d179f17cb25",
+   "title": "St. Cloud Council Votes 4-3 Against Data Center Rules, Eyes One-year Moratorium",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9CclNVcXR3WFRGUktzYnNRNVVJaVQ0akZqY2FTUERVTWtyVXNGNzdOZVViVFROUm14QmYyWHpLRnptTUk3SlVjbFBLQU91SnNwZW1mbGxfbw?oc=5",
+   "source": "WJON",
+   "published": "2026-11-17T13:48:10+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7ac4a108a948857a",
+   "cluster_title": "St. Cloud moves closer to data center moratorium"
+  },
+  {
    "id": "0c9f39e3cd9ddb1c",
    "title": "Public invited to tour site of proposed data center in Cromwell",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNkRWbkpEbTBlOXVqblo0WlE3RlpJOTQwZHR5a3JrZmhNVnNHM1duMklYeUZOQzhNbFh2b2dxcHVyWFRDenNSTXJ3amFNT2M0WTA1MEhzcXFURWdrWWNRa2V0QnhFM0xVYk02dWFXb0tocDVReXc4aHNicXFYNnR3cld1a2szR01hS1RDMmNoQ1F6X3lzMmNESHNmbm1LclBHajUxYldmSWlTNERwWWx0TmhR0gG3AUFVX3lxTFBIMHFObkxlT3phaHZrd0U3NjlZZDZpUnRLOUpYVnlTRkExM1AwdFdTcjNJdHJIZTJHckNURUZ3RWJEMEZmVkVsdVc2UWxYS19qc01mRUJqWmJ3ZktxeFQ2YXVRcklSTzJfUVhrcUpRRnFaWHY0WGRDazlDMUtPbFVPcjlJVy1sWURNYU5XTHpKUm1lOWpuRkxIc194cFVhRFowd0tKSkFVUy10T2w0dnluWWV1QXRWMA?oc=5",
@@ -418,6 +974,33 @@
    "cluster_title": "ICE Launches New Tool to Quantify Data Center Construction Risk"
   },
   {
+   "id": "adae39b09fa8e4a9",
+   "title": "Vertiv Advances 800 VDC Power Architectures to Support Growing AI Data Center Demands",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWnN4RmswcjlLNjJPcFFPVlZBYkhCV3ZTR1VoOWtMSGVzWEJQWmRlTVZFdEJ3cm85Qmk5QTFTYjdFR1o1NzgzQlZfMzk4LXJOMjl5VjhTakt3SUlaRDM4TmM2N1pmcXgwdDZPT29mb0M5UjlmZjB3bDNLRjFlcFpVX1p5ekVPQmVPYmRtci0zeTR0WFlhczVIaXlERjNEOGxFTU53WVkwRkduNVlvc1A5YVdwWVhHZFFiU2J2elVIaVVwSy1FMDJic2RweThPc3k1bjl5OVdtREY?oc=5",
+   "source": "PR Newswire",
+   "published": "2026-11-17T13:31:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Vertiv"
+   ],
+   "cluster_id": "adae39b09fa8e4a9",
+   "cluster_title": "Vertiv Advances 800 VDC Power Architectures to Support Growing AI Data Center Demands"
+  },
+  {
    "id": "18f20a848d14735e",
    "title": "ICE Launches New Tool to Quantify Data Center Construction Risk",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdXVNcjhvYjVBc185V19kb0xtV2hwTkxYcFpXbUZkb1Btcmh3ZHFPY1FfN1AxQnhHM2RnaVhDeFRYX1pFMFk2RmxaU05HX2hHOWZEWi10RC1RODg3TzZFUXB5akZtWldkN1JfX0VaTEJ1Tm1WR1BXQUZ3cHN4a0FWbjdMZkhPRTR2T2hscjByV2J0ZmtiSzh1YjJxMzk5di1aNm93bUdkRGl0ODUxcmVqTFd3?oc=5",
@@ -441,6 +1024,43 @@
    "suppliers": [],
    "cluster_id": "18f20a848d14735e",
    "cluster_title": "ICE Launches New Tool to Quantify Data Center Construction Risk"
+  },
+  {
+   "id": "12f2ce498f697b0f",
+   "title": "Hearing set for Tuesday in Georgetown regarding potential data center",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORHdmY3hmUVQ2SHk5WVdsbGpZa2hpV3g5REdMUl9zQjZZVUs4MV9sZC05b21Xa2lKZUFtZGRHOTZsVmdNVFZFQTZmTDhWRzBZTVBoV3pxcUhyWXJNTVZVTlMwdVJtQWxoamlZQ2lWWVJlbUtia3Y3Y0lhRlh5Yl9fZHRWQ1V4dFd0UmZjYVNhR0M2aDNhVWM5aUdtVk5wQ3ZSVTlPMFg1R2ZNQW9OTHRvWnhjZDMxUXowY0g3OGI5X1BEdkhMVHlaeE5JUlJZSG5PUjc4S1JuOXdVTWgt?oc=5",
+   "source": "KVUE",
+   "published": "2026-11-17T13:26:07+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Georgetown, Texas, US",
+     "lat": 30.6327,
+     "lon": -97.6772,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Austin"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "12f2ce498f697b0f",
+   "cluster_title": "Hearing set for Tuesday in Georgetown regarding potential data center"
   },
   {
    "id": "ac357f2fdb7724ea",
@@ -679,6 +1299,31 @@
    "cluster_title": "Data Center High-density Power Market to Hit $42B by 2030"
   },
   {
+   "id": "6fccb93fdee9f233",
+   "title": "Hamburg enacts moratorium on large-scale data centers",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeEZsVjRwQ2hObzM3NGwySFBHZWQ3ZU1sQ1NSOWw3RWxCOXFndF9uNnZWNDZTX3pmN3JaYVZHb2VZbGZUTm9USGhTdEdjS1F6TFVnVVctOG1Ic21MZEhYbTYwanRiVnd0SFIzMEtfTVpXU0VTUXVtc0RXcGFWNTAwZmFKUXQ4OVdmak9JbQ?oc=5",
+   "source": "Buffalo News",
+   "published": "2026-11-17T13:00:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6fccb93fdee9f233",
+   "cluster_title": "Hamburg enacts moratorium on large-scale data centers"
+  },
+  {
    "id": "adab8d71cc1b505c",
    "title": "Why a Data Center Slowdown Would Reach Utilities and Electrical Suppliers Before Chipmakers",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XcmZsSldEVlVsdm9lMGdBRE1tSU10THF1NWdoZzI2QWIwWHNvVm8zY1k4cGoyNWxvVXZnLTF4TjBIelUzQVhuS3FPTlQtLTNoSC1TM01TZWcyRmdJQXFnbFFVYWREVGw4QlpBQnd2eWNfci1SV3o5QU9jcUFiUkE?oc=5",
@@ -824,6 +1469,32 @@
    "suppliers": [],
    "cluster_id": "a48b0281308f5acb",
    "cluster_title": "Asheville seeks public input on data center regulations"
+  },
+  {
+   "id": "5fc1f68bf48a6613",
+   "title": "St. Cloud holds off on data center changes, moratorium discussion planned",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMW4tQVdPUkQ3QTRoZ0hjNWltcEhHclF2LTRWd0ZDdEZ3NDcwejRNbTl3cjMyMWpnaHNMN0dTTExpWkR0TzA0RjBfMEE1bC1BZWhES19qYW9VWTlnUEpjVEQzcFptMWN3OVVtblRxVGY1ZTNZLVkyek9lTTl5ZmIzMzVoeG1PTkU2aWpid1ZqZlRhWkdiLTY0QUVIbDBWU09QYVdCOHFBYnZpOFVvN2JZ?oc=5",
+   "source": "St. Cloud Live",
+   "published": "2026-11-17T12:34:09+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5fc1f68bf48a6613",
+   "cluster_title": "St. Cloud holds off on data center changes, moratorium discussion planned"
   },
   {
    "id": "43c8a2b501d9692f",
@@ -1332,6 +2003,31 @@
    "cluster_title": "Connecticut discusses banning new data centers"
   },
   {
+   "id": "212b123d15dcbefd",
+   "title": "Data Centers Loomed Large Over the 2026 Midterms. Did Their Presence Make a Difference in How Voters Cast Their Ballots?",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxORzVBbFBhZ3dzVnhMWlZoSExJRDNEUUNWY1Y0bTRGRlhUMnJCOVFuc0ZhUmQ0QmlCV1dUWFJhcFNOaFdsTFp3QzFOa2RCUFpIa3cxSGFEWlpFV3ZkbVBBY2tXVXNqLXBUek5ENEFmLW9CUFlBbzB1SzNjRGFuTGN3UXRzSDBlMm9GOVZWMG9JSHJ3Vm11VzZhT2RVWml4RXJQVEYzdGNqQ2RCaTFWR19PcEhfUmlRUEVacmNDdW5hRXR1bFpCMV9Rcjg0Q1Q4UW5IQnhJS0szUjVPbThCZFBCQjVpZlZOVzZ0bFE?oc=5",
+   "source": "The Daily Yonder",
+   "published": "2026-11-17T11:00:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "212b123d15dcbefd",
+   "cluster_title": "Data Centers Loomed Large Over the 2026 Midterms. Did Their Presence Make a Difference in How Voters Cast Their Ballots?"
+  },
+  {
    "id": "250afc27a6a0a7ca",
    "title": "WV leaders set data center and nuclear concerns aside during, after legislative session",
    "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQWmdidFBfekVpcmhSa3RvOGdMaDdGZVFEVTA1clpoX1liNGZWaGhid3N4YWxnMVhORC05SlZBWW1BNXc0c2pNUWxlU0cxTGV6MjJONEVMbDFqN041RFFLMV9NY01QdTJXUjFBVTNOcjQtam1Yb2tlYndFNjNGdzZsSjhPclVVelNzZ1hld1IyVks1NFN5T2lEdmlleHdscEtNdnVqeDRxOFFOeGJCRjdRcXc1bDhLY3R1dWVpMVZJdnFwUmJvWllwWFpKUndkSFRJLW5xN1VPbUJheURtSmhJSnVqZFZXNDcyOFY2RjFSWm0tODNtbTR0MUU0cVZlY1JXNTJEYW4tYTV3MGQ5VzlfZjJET2pudXZTWkhmMm1yQQ?oc=5",
@@ -1640,6 +2336,43 @@
    "cluster_title": "How Oldham County became among first in Kentucky to ban big data centers | Exclusive"
   },
   {
+   "id": "1ef7f2077cb0f939",
+   "title": "Valor Energy Pledges $700M Investment in Youngstown Data Center",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV1kzODlUVlhCbnkzTnlrRU1ZU0FZWUxoa2ZUWW5pb1pnRGpFZzFoa3BqS1dUcjJwSEpYREMtVDRGYlZrSEM0dlpSaVdCaXMtdUE3dGZuUHVEWXdzV1BWRHF5TENidG1RMXVFNzIyNnlobF9XdHhGSTdGYnVWejRoWmE4dTVNSjJXVWJVZ2ZGMzlxTTZLUHE0WFFEdWU?oc=5",
+   "source": "Business Journal Daily",
+   "published": "2026-11-17T10:02:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Youngstown, Ohio, US",
+     "lat": 41.0998,
+     "lon": -80.6495,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.7,
+   "cluster_id": "653fd9b14126d8d0",
+   "cluster_title": "Valor Energy Inc. Closes Acquisition of 18MW Computing Center in Youngstown, Ohio, Accelerating AI Data Center Expansion"
+  },
+  {
    "id": "56d83bc8a8598987",
    "title": "$100,000 pay, very little training. The data center jobs no one knows about",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5POU82ME0zTTB3VDE0N0lCQXBZZVpmR0NmTV9vVmF5RVd6WDREODVMdEVaNTR4QndCTlBmclc1T3hET0dPSUIxNWZiek9wMlFVRVoxS2daQjdjc0M3NUpGcmpMLTlnN3pJZTF3bl80Q3hpQQ?oc=5",
@@ -1929,6 +2662,30 @@
    "cluster_title": "Proposed $500M+ 'Project Apollo' Data Center in Wapakoneta, Ohio in Council Consideration"
   },
   {
+   "id": "13e23f883af67abf",
+   "title": "‘Blue Wave’ Midterms to Postpone Some Data Centers",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ3Y0S2hyT1dfdWxwc09sWW9qWE9qcW5KdWZjMVAxbnViOEU4bnQzRnRmMGh6SXVnT2hRVHVwdWFFRUFBUG9YRDZDYXc2aDVVWXNfS3ROWHQ4ZXlrZ0pCSmdYdTNFTmlvblVkbEh5MGdHc043YnVMUDY2WGsxWlV2X0FZVjlnU1F2?oc=5",
+   "source": "East Daley",
+   "published": "2026-11-17T09:00:03+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Politics",
+   "tags": [
+    "Politics"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "13e23f883af67abf",
+   "cluster_title": "‘Blue Wave’ Midterms to Postpone Some Data Centers"
+  },
+  {
    "id": "8a67cf0990d7b334",
    "title": "Harvard study estimates magnitude of U.S. data center pollution as climate talks unveil clean AI pledge",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVm0yR1RjVlBmY1BIc3l3UDVSQTZ3R09yR1N3Ti1OUTJMSWQ1bFl0TkE2V0ZZa3QyTDNzS3BTcHh4dTVFRlMtVllwQ1NUTjhFVHpEd0RPeVNqeDJEYkFvRF9aT3pyU3ZadEUyaTlEaEx0RTNBVlYtOGpEVDNxS08zNlpocUtRLWo2bF9yV3dUUENoMG4tM3I0ODZHLXhqMGhJTHYyaXYwNUNFSmJqWUNSbFhoN0tORnVLNEpPeg?oc=5",
@@ -2064,6 +2821,32 @@
    "suppliers": [],
    "cluster_id": "af1d00640778caec",
    "cluster_title": "Apache Axis CVE-2026-90436: Unauthenticated RCE in Confluence Data Center — Prepare Now"
+  },
+  {
+   "id": "90d1805f7c09849c",
+   "title": "Enlight and Shemen plan 150MW data center at Haifa port site",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsM1Z6TW1QM3pQV0dQdWd3SXRKSi0yZ3BDSVF6U2ZoUUpvZVRSLW5PdVNQeXlwX3czSnpMbF9OTUw3WHNvUXhsUnZuc0NVZzdMTkx5RU4wNXFvUHRvUVVNUEhaU1J2UEE?oc=5",
+   "source": "CTech",
+   "published": "2026-11-17T08:26:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 150,
+   "cluster_id": "90d1805f7c09849c",
+   "cluster_title": "Enlight and Shemen plan 150MW data center at Haifa port site"
   },
   {
    "id": "13399608e481e997",
@@ -2455,6 +3238,30 @@
    "investment_usd_b": 1.35,
    "cluster_id": "b52bcc6025de1577",
    "cluster_title": "Riverbank residents raise concerns over proposed $1.35 billion data center"
+  },
+  {
+   "id": "f963147557f135c4",
+   "title": "Data center developer completes Youngstown purchase",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeXI2c2dUeWw0MDloNG1XalRqQ3lJdGpOMlJQSkppRDdWemhMRUxQNGxzRU1TbXl5WjVnMzVmaEdGbFFMOU8xaEtmcWJHOFUyaW1zRVpFd25yb3gyb196ZHZPMjdtd2h4TnNiRUNUOWVBOVB0bVR1VjFTZ2ZyUklkX1IzcEU3ejVWR0t5OGdJTjAxWHgyQzhfcVVpZGRjSWFudWdNRg?oc=5",
+   "source": "Tribune Chronicle",
+   "published": "2026-11-17T06:56:57+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f963147557f135c4",
+   "cluster_title": "Data center developer completes Youngstown purchase"
   },
   {
    "id": "2c1328bfe0aab59e",
@@ -12265,6 +13072,30 @@
    "suppliers": [],
    "cluster_id": "59d2fa387c41de4e",
    "cluster_title": "Not seeing slowdown in AI data center buildout: Skanska CEO"
+  },
+  {
+   "id": "39586f43edb241a9",
+   "title": "The best investment in human intelligence is cheaper than a data center",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUXpNVzlMaEtSZ1dGNktMR25BNWstVVVNM2YwdC1GUXhxbDlrdDNveWUyZk1Fa3ZEWWItOTJCR2ZiVXpyd3h6dmFQTWJxSlFrNS1LRU1vRUl2NFlqM0dnMFItOEQ2WVhjekpULWNHZ014bHpscVdVb19RcWxlYmNkaDZ5NDl6OXJnbThFYXhBVE9ieEswNjJjX1BhZTRHb3QzMUJmZWlhbmE?oc=5",
+   "source": "Devex",
+   "published": "2026-11-16T08:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "39586f43edb241a9",
+   "cluster_title": "The best investment in human intelligence is cheaper than a data center"
   },
   {
    "id": "0d48736be42a67a5",
