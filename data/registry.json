@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-17T19:24:45+00:00",
+ "updated": "2026-11-17T20:24:44+00:00",
  "count": 736,
  "visible": 619,
  "records": [
@@ -52689,6 +52689,15 @@
      "published": "2026-10-26T22:34:54+00:00",
      "stage_signal": "Announced",
      "cluster_id": "39452046a168b5a0"
+    },
+    {
+     "id": "65fa48a4221bdf6a",
+     "title": "Judge denies Wendell Griffen’s request to intervene in AVAIO’s lawsuit over Pulaski County data center regulations",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYkRYZ1psUXBJRjhQYVh2YldOcE5kZE40aXRMbFdMUnlYaUYyZ2ZxTTVyTDRET09YTkM5WW50YWhtVHNLRFFLNmduaExrajhQcDlxR01saUxxemplUDlZeG9UdVl4NDZaaXkwWWpnUnhRQkFHUjFPRERDZkFFdjBxejRyanJmR05Ubk12RG9WZjE3eUU?oc=5",
+     "source": "The Arkansas Democrat-Gazette",
+     "published": "2026-11-17T19:29:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "068bea76060d01fc"
     }
    ],
    "first_seen": "2026-01-12T08:00:00+00:00",
@@ -52729,7 +52738,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 6.0,
-   "last_news": "2026-10-26T22:34:54+00:00",
+   "last_news": "2026-11-17T19:29:00+00:00",
    "sources_count": 4,
    "confidence": "medium",
    "hidden": false,
@@ -57853,7 +57862,7 @@
   },
   {
    "id": "site-youngstown-oh-2026",
-   "name": "Youngstown data center (18 MW, proposed 2026)",
+   "name": "Youngstown data center ($700M, proposed 2026)",
    "company": "",
    "companies": [],
    "location": "Youngstown, Ohio, US",
@@ -57874,6 +57883,33 @@
      "source": "The Manila Times",
      "published": "2026-11-16T20:52:01+00:00",
      "stage_signal": "Expansion",
+     "cluster_id": "653fd9b14126d8d0"
+    },
+    {
+     "id": "1226b666f1cfbeb7",
+     "title": "Valor Energy Plans $700 Million AI Data Center Conversion in Youngstown, Ohio",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWktPR0thUEhvQ0c1Ml85YTd4UW1nWlRHcklMVU1fUVBKUGFUU21YVTRkbW10bUJkY09TSVVDSG1iVVNNdUltbTI1dVR6UW5Xa3UyTlpNRmNtMk05aHdsc09xMW1BRmNUWVJTS2cwRFpoMzlrZEVGVC15S0NyV0hLbE15Y3pxajBtWWdjMUJob2h6dHYwQ2hNQ2h6U2ZHRlBMSXNkWXZWM0Q2ZkNmanF2bDVtbw?oc=5",
+     "source": "Construction Review",
+     "published": "2026-11-17T07:49:52+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "653fd9b14126d8d0"
+    },
+    {
+     "id": "790d3b217643af81",
+     "title": "Chamber, union applaud $700M Youngstown data center plan",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQam5sLWdiR0dwcXRBY0NFaldsejFUYmdCRnFsT2pacDFxRVo0VkhCR2Z3d1dNd2tUY2R4TFRKTUQwUVBRTFNMMHpTNEtNY1dDMXlJcUF2MWtMQVQwSXFrOWUzUmhQZ3dwZzZhQU1adEZxU3gzUzk4Z016R2RyeDNJODNrTko4b2x2SjNzSl9ZNmZFSmc0WFFyeFNTSFVxNExVdGdIRzUwN1dSTVJvV3R6V2pJWmdIdzRUa2RIeEJNLUN1TzVqTVNsWFVGcHZIU3J4cEtQUHVkVjA4MGZqRk5TT2NWRzBsR2c?oc=5",
+     "source": "WFMJ",
+     "published": "2026-11-17T17:09:53+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "790d3b217643af81"
+    },
+    {
+     "id": "5b1cfb914b36fc14",
+     "title": "Valor Plans $700M Youngstown Data Center; Stifel Celebrates New Canfield Location",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVW1kYnFpMFhfUlAwV2ZtRW1PaE11MXIxQnBWQTRyNXlFc2sxZnRfUzdERG5sakhhOUhiNWZranVySldsZHRaQmJfTlBWeXJpZW9KNkNzQ3BUSkNWa05sbm1LV2FIRXRBUlZ0bDdUdnpyWXlrQUVwajhaZ3NkaGJ2Y1kzUm93NWtzQzFLcDduM1FybkNsRWl5Yl9pa0dpYmpPTmpFVjlkVFljSm03bDN2S2g2SQ?oc=5",
+     "source": "Business Journal Daily",
+     "published": "2026-11-17T18:30:00+00:00",
+     "stage_signal": "Announced",
      "cluster_id": "653fd9b14126d8d0"
     }
    ],
@@ -57899,9 +57935,9 @@
     }
    ],
    "capacity_mw": 18,
-   "investment_usd_b": null,
-   "last_news": "2026-11-16T20:52:01+00:00",
-   "sources_count": 1,
+   "investment_usd_b": 0.7,
+   "last_news": "2026-11-17T18:30:00+00:00",
+   "sources_count": 4,
    "confidence": "medium",
    "hidden": false
   },
