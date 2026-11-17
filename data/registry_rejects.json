@@ -8,8 +8,21 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 554,
+ "count": 556,
  "items": [
+  {
+   "id": "c85ee2d5379dc9ef",
+   "title": "Broken Arrow City Council extends data center moratorium through June 2027",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNemVhbEx3YzFOMUh5enM1OTZ3eVNEenJqUmxoUlQzMEpnXzVoMFRlcldtdGJMeXJPcXZYaXVVWjNja0VBdkpuTWpyREdVSzEtVUIyaG1iVWotLUJlTTRhd2dKcTVlZllqN1BHcFhKUk9DSjJuMlhFaEp5MkdZWVpwMHN0SzVhUlhDTENtdzZVUTFoODFKeHo0cnB1TFZWWDh6TFlqdFVXVWo1LWdoMkNNMlpNaEYzd2R5V3BJUjBpUms?oc=5",
+   "source": "News On 6",
+   "published": "2026-11-17T03:43:02+00:00",
+   "state": "OK",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
+  },
   {
    "id": "fedefbc45387c3c3",
    "title": "Oregon PUC OKs Pacific Power’s Plan to Shield Customers from Data Center Costs",
@@ -74,6 +87,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "38c1fed98562f481",
+   "title": "Oregon weighs next steps after losing proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbTFKUTRTSmRNRUZPbGNKblh1T0V2OHFBYldDMXZFYV9OVUsxVTlmYUFncE1CTkdXRXE1aW5sMkptZUlaUnJzb3B1Tkd5MmM5WmhFZF9TME9vYUpFZUhLbHlINFBxb3JuV0N5dG9RaFd3cDhSWnVuYUxpOWxQdzVMMWhOdEl6TFVYaU5XcGlVWm5tQXNGekRuVnRzTTF2eHZOZV8tUnpFQXJ3R0VXMGdiYzREaWhRck1YbTNLeGlERkdZNGVVR3haMnN3OUZwZ3IwT1kxSQ?oc=5",
+   "source": "wtol.com",
+   "published": "2026-11-16T23:22:00+00:00",
+   "state": "OR",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "a5448f4537ac8db5",
@@ -5172,6 +5198,19 @@
    "reason": "no operator, code name or figure"
   },
   {
+   "id": "6dabab7233dca99c",
+   "title": "Kirksville City Council unanimously approves data center regulations",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONERTcV9CNkxnNU9rdDFOOXdUMk5xVlpZbmdMSk5CZ1V2bjJWNDhFb3lDRHFVS28yRFRjTnN4ekRKbHdLTUZLMGlhVVhmX3JzTXNtcGcza0s2WGFZV2Jtc1h3SXVzRWtOaWdQWXd3elR1bVYzclRnN25UUEJjRFE5US1iMGFNZWFsdkVDd3YtekdGRzF6d0d2UWVWSDN2RGtwMUp1V3BFd28tbE1BOWlMTVBFZjE2c2dEYkUtTW95Vi0wcjlGRm9EU21ka2ZadTF1UGZuUE9DNGdWa3M4Q2IyQThyclI?oc=5",
+   "source": "KTVO",
+   "published": "2026-10-27T07:15:57+00:00",
+   "state": "MO",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "a policy story with no operator or project name"
+  },
+  {
    "id": "dc34212872c652de",
    "title": "Airway Heights meeting draws crowd over proposed data center rules",
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRk1mY051UzV2LUxFVFZYUFlMSU9mQ3Z3VHJxUzJSaTZTdjZQcVMtV28tc21EM1prRzV0dGxTNjZWQm41dmFTdEc3dzJ3UklxUEhObDd1U012dVBNY3lwVjZ6eDBMRG44bmtvZzk1R0hERGdoTjZvajU2Vk44bkdrZmZwVUhhMzBLRERxYzBENXVNQl9QYkF3ZU9BMjVqNEtueFJjVl93ck9rWkxyZG94cVhZR2NucFVjUnA4MVllX0RFenZIdGlCYmFQVnlGT2I2N0dCVUUtT0k?oc=5",
@@ -5226,7 +5265,7 @@
   {
    "id": "badc30592f1a85fb",
    "title": "Georgetown extends data center moratorium to June 2027",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYzZZa0xLYlM1bXBqZDZDakIxV1BBTnd4UGxMaDJfQnk1Z2JVb0YwLURkV2l1aklsYXlKb1ljelJvM0FIS1pLMnFqSkF6eHZIdEE3cjZaS29odXVobVRWblZ0dkFYRnVnYjJUakN5dWxfNm0xMUtpUURsVlQ0enpJWnc0cUxwRG9ZUklvcNIBoAFBVV95cUxPT1NwOWw4TEo2OU9idW1fZzhGcDBibEswQTBGMUxyNndWaWdETkFsaGQ3Y3c5WUlXZWlXUmRpOUpzcXZMaThIVVRwaDFkeFdOM1ZKTzlITkJBVGI0MEN5Yk1SdHNKdExuQ29UOGpCclV3d1ZnWUxfcmpMMVlFWDRlSkJKN2FsSXVfTXB2YUY3V1V1SkJISUZMYkxVa0dPanZy?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYzZZa0xLYlM1bXBqZDZDakIxV1BBTnd4UGxMaDJfQnk1Z2JVb0YwLURkV2l1aklsYXlKb1ljelJvM0FIS1pLMnFqSkF6eHZIdEE3cjZaS29odXVobVRWblZ0dkFYRnVnYjJUakN5dWxfNm0xMUtpUURsVlQ0enpJWnc0cUxwRG9ZUklvcA?oc=5",
    "source": "WKYT",
    "published": "2026-10-27T02:41:00+00:00",
    "state": "KY",
@@ -5247,19 +5286,6 @@
    "builders": [],
    "suppliers": [],
    "precision": "county",
-   "reason": "a policy story with no operator or project name"
-  },
-  {
-   "id": "6dabab7233dca99c",
-   "title": "Kirksville City Council unanimously approves data center regulations",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONERTcV9CNkxnNU9rdDFOOXdUMk5xVlpZbmdMSk5CZ1V2bjJWNDhFb3lDRHFVS28yRFRjTnN4ekRKbHdLTUZLMGlhVVhmX3JzTXNtcGcza0s2WGFZV2Jtc1h3SXVzRWtOaWdQWXd3elR1bVYzclRnN25UUEJjRFE5US1iMGFNZWFsdkVDd3YtekdGRzF6d0d2UWVWSDN2RGtwMUp1V3BFd28tbE1BOWlMTVBFZjE2c2dEYkUtTW95Vi0wcjlGRm9EU21ka2ZadTF1UGZuUE9DNGdWa3M4Q2IyQThyclI?oc=5",
-   "source": "KTVO",
-   "published": "2026-10-27T02:27:00+00:00",
-   "state": "MO",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
    "reason": "a policy story with no operator or project name"
   },
   {
