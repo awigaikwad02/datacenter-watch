@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-17T20:24:44+00:00",
+ "updated": "2026-11-17T21:24:45+00:00",
  "count": 736,
  "visible": 619,
  "records": [
@@ -49767,6 +49767,15 @@
      "published": "2026-11-14T10:25:03+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1702b665f86cac48"
+    },
+    {
+     "id": "f2445ac4544c5d15",
+     "title": "Minneapolis City Council halts new data center developments until November",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSzZHYWVRVjByLW5sNnNHTE9Ma3dpeTBwTmtHcGo3WlBUWUNLODJHQjVCek5mTmRhSmZlbEJRVUs2OGp3UXlKN0dBdHBRcVF3UW9QS2luV1BJc3V0Mm9IOVppeGc5ZXBiZ19yZldNSC1vc0Q5N3lqUFptMGlwTEhudnM4RXUtNWxCQ1R6TDY4NUFpNU9OU3U4STkyS0JfVFRFcnFwZnpQSjZtRnMtT1d2YQ?oc=5",
+     "source": "The Minnesota Daily",
+     "published": "2026-11-16T08:00:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "f2445ac4544c5d15"
     }
    ],
    "first_seen": "2025-08-06T07:00:00+00:00",
@@ -49808,8 +49817,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.4,
-   "last_news": "2026-11-14T10:25:03+00:00",
-   "sources_count": 12,
+   "last_news": "2026-11-16T08:00:00+00:00",
+   "sources_count": 13,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
