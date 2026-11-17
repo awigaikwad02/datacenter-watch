@@ -39,8 +39,450 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 2730,
+ "count": 2749,
  "items": [
+  {
+   "id": "a0662f43b4ce8ec0",
+   "title": "Estherville Approves First Reading of Data Center Ordinance",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc1NyUkxaSEdhTC1vRkRkTVJ3WDZsRUZlZEppVzhVR1JyakY4emI4Y2pERU9iSVVCWjg0MEFKb1E5SjJwUEh5ZjNVeUlBb2xDMzFUb0JBbzdQd3BlVFk4Mm1fZmotbmZqdzBLekxqSmJqSGpKVnY0YnV0ZHd0dWpkaWtoUFc1Y1A3SUNVMFEtcGNCYTNINy1FUGN6eEJpZEtRMnNR?oc=5",
+   "source": "Northwest Iowa Now",
+   "published": "2026-11-17T11:13:13+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a0662f43b4ce8ec0",
+   "cluster_title": "Estherville Approves First Reading of Data Center Ordinance"
+  },
+  {
+   "id": "372d3d75ed788d1f",
+   "title": "The AI data center boom is sapping the strength of the Top500",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQekNYYlRhRExFbnNnZmVOMjNGWmdpVHJJRlhzNmJHVXY1Y3lMclVaZXNSUy1WbHliR0lFWkRkanJrdG1Ed0pKXzY2U3g5eFFUc0oxUHZaUUxYYmhFNWhUd1ItNmJHeGhQaXd2RGktVDFPZkJqdFVJZE1BT1pNMmpxNW90d0xrUjRoTFVRZVBRSG56X2VyeFBMUXZ0MnV1QU0?oc=5",
+   "source": "IT Pro",
+   "published": "2026-11-17T11:07:06+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "372d3d75ed788d1f",
+   "cluster_title": "The AI data center boom is sapping the strength of the Top500"
+  },
+  {
+   "id": "ce85d295a75121a3",
+   "title": "Texas local governments giving up more than $1 billion to data centers",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdlM3VldFUm5UdFR6U1YxR1haTm5CY1NMd2J1OEpwQmk3LTQ2R0Nfa2JZZnFDblNCQ2FqWG5IdzlQelhrT3FQcHF5WjVYQTNhOWd4Q1RGYlRRRmVaTzJ3cC1mYnFlaXdLZEE0UEFDbC1tMGdTTVpEVHJXM1FiazZfZ3pKOWpRRF9JdzgyNUxn?oc=5",
+   "source": "The Texas Tribune",
+   "published": "2026-11-17T11:06:30+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 1.0,
+   "cluster_id": "ce85d295a75121a3",
+   "cluster_title": "Texas local governments giving up more than $1 billion to data centers"
+  },
+  {
+   "id": "60ac7e769034c094",
+   "title": "Power Moves: How grid delays and shortages will shape the next wave of data centers",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOTlJdVNGeHI1MlR6Wmt3VU5LUUVUeF85TXhLaVdob3RkV2ZTRlRaSTBzZ0Q0NHF5VjNJQzkxVnpWSmt2YWNWTFhBWVFvWkhsVE5lMEVfX0UwX0NiZF94WldCSEZoUjNNS0RjMUJPeklYakhvUlFJd0pUdjhINWxZOWVVeGtLSl9mQnRlTWVkWmktaWhXdS1ZZTJZbkxjZFJ5b0RLRk5GNzF4X2xjeUVNSEdpWlNtLTEtbDVZMnlwNHJGSE52RGNCeUNrM1JTUQ?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-17T11:01:50+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "60ac7e769034c094",
+   "cluster_title": "Power Moves: How grid delays and shortages will shape the next wave of data centers"
+  },
+  {
+   "id": "5cbe5bf5e6b56317",
+   "title": "Letters: Illinois lawmakers should make data centers shoulder their own costs",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNa2ZES0FDVy1BUzlmRFlfOFJ4amFhWmUyaGxLRkVjSlNaOFdYV3NVSDFfc2R0ZEFDTmM3RHlKX090WGhJdHQxT2lWcy1iYW5maFdwZUJMZ2wtbUZqcWJfY2dfcjVZVzkwZkUxbjVRN3BMdzVVOF9fZ0p1ejNCdTg0VGY2UHVOOFUzaEJTR05hSXFpYWc?oc=5",
+   "source": "Chicago Tribune",
+   "published": "2026-11-17T11:00:43+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5cbe5bf5e6b56317",
+   "cluster_title": "Letters: Illinois lawmakers should make data centers shoulder their own costs"
+  },
+  {
+   "id": "1e2125693dadb7b0",
+   "title": "Opinion | AI is sending the Cap Times pro-data center op-eds",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQREtWeUNlTXp0VlNnLWVtOVVrWkhjR3NWY0JKQnFpZGdmbGV6Tlg0TjhkNnJDaU53SlBQNDk0TnhrXzVoSE1JUWo4ekFJUlRRN3lPU1gtdEdmekh5WDJMclJYMG10WUdaa2NmbkRoMDdBajhSdWM3TWdrQ2tsa2FQQ0JObGdOS3U4dWFhbzQ0bzU3TnFSU1JUN0JZSGhvMjRpS2REam1iUXA4NkI0dU9KdFgwNnlCZ3pZaUNablN2Vzh5eWFXb0tQNWJvd1ZwdTVLS1RnV244MkNSSmdILVUzOUJJNVFnN2M1?oc=5",
+   "source": "The Cap Times",
+   "published": "2026-11-17T11:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1e2125693dadb7b0",
+   "cluster_title": "Opinion | AI is sending the Cap Times pro-data center op-eds"
+  },
+  {
+   "id": "02cbb8bf3fd2f038",
+   "title": "Maryland lawmakers likely to rein in data centers in 2027 session",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOY1U2dnJtNEVLNFZob1JMUV9SS1ZSTmtTWmcyZDB2dEpxM3lOQzgyeW0tVVgyLTVBcW9OelhqWFZPbmREM0pIbW96S0V6OVhOd0ptVHgyMHQ4UURzV2lrYWxOZU5fTVV1TDN3THg4VXdldnNReFFmbHdpY1REeUJMQzJGWFV5QVdORk4tSllxRklTNG4zZ01FTEFJMlNoY0dsQy1LcUtjUFRkbjZpaVM2aEFyR0lkUnlCX2paU2NwMWhCMzB0T2ZxcHFuN183NFIxeGtTNjFGMF96eEhyYUpyWkljRnNmOWlvRFE?oc=5",
+   "source": "Bay Journal",
+   "published": "2026-11-17T11:00:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Maryland, US",
+     "lat": 39.0,
+     "lon": -76.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "02cbb8bf3fd2f038",
+   "cluster_title": "Maryland lawmakers likely to rein in data centers in 2027 session"
+  },
+  {
+   "id": "250afc27a6a0a7ca",
+   "title": "WV leaders set data center and nuclear concerns aside during, after legislative session",
+   "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQWmdidFBfekVpcmhSa3RvOGdMaDdGZVFEVTA1clpoX1liNGZWaGhid3N4YWxnMVhORC05SlZBWW1BNXc0c2pNUWxlU0cxTGV6MjJONEVMbDFqN041RFFLMV9NY01QdTJXUjFBVTNOcjQtam1Yb2tlYndFNjNGdzZsSjhPclVVelNzZ1hld1IyVks1NFN5T2lEdmlleHdscEtNdnVqeDRxOFFOeGJCRjdRcXc1bDhLY3R1dWVpMVZJdnFwUmJvWllwWFpKUndkSFRJLW5xN1VPbUJheURtSmhJSnVqZFZXNDcyOFY2RjFSWm0tODNtbTR0MUU0cVZlY1JXNTJEYW4tYTV3MGQ5VzlfZjJET2pudXZTWkhmMm1yQQ?oc=5",
+   "source": "Charleston Gazette-Mail",
+   "published": "2026-11-17T10:45:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "250afc27a6a0a7ca",
+   "cluster_title": "WV leaders set data center and nuclear concerns aside during, after legislative session"
+  },
+  {
+   "id": "da581d7e974ac965",
+   "title": "DCD Talks: Data center safety in the age of AI with Ken Boyce, UL Solutions",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPM2pyV0QwVWEtWFdFcDktQUsydW5hRjNEb3g2S1dLQzZkZ2ZyZzE4NWU1NUJxRXg0UGxFVmc0a0hLQTMxWmVtdnRHc3VpRFA4QkNJQUR1S2lEbzAtRDNRYmVUQ05iaUNEYkxMVXBUTFJJMFRaUWdLSHFKZDQtdHJUSEhidFlIQ3ZCNndrMVdFSWhEWktaUDMtZmh4UzUtTThDNHNHVXFPMDJscUVtNTdZampGTnFLV0MtUzhKQ29FcFplZ3FtQVF2czdxWi0tUW44?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-17T10:44:08+00:00",
+   "feed": "Google News: Data center",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "da581d7e974ac965",
+   "cluster_title": "DCD Talks: Data center safety in the age of AI with Ken Boyce, UL Solutions"
+  },
+  {
+   "id": "cb5c8a63d19b31fd",
+   "title": "Potential data center worries Georgetown residents living nearby",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeFhIR2dPSU9VdzVOcUUtczk4elhCTkpMZkdWaWRQbGJLVEttX1hLMUYyQ2hpYVAybzN1b2pzaDhJeTRmdVJzb2RpM0pSUHZQSlp6MkNxMXQ1TkZ5Z2c3MUVRWW9zNmVydzBSQTZfY3pKSXgyVzZ3SDdwLWhsRGd1a0lmYVNBc0hBN2p4U3JFakdlWTYxa3RqZW5OY0V4Zjk4enBEU1pHa2FFSEJS?oc=5",
+   "source": "Austin American-Statesman",
+   "published": "2026-11-17T10:41:43+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Georgetown, Texas, US",
+     "lat": 30.6327,
+     "lon": -97.6772,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Austin"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cb5c8a63d19b31fd",
+   "cluster_title": "Potential data center worries Georgetown residents living nearby"
+  },
+  {
+   "id": "6b133c6c1fafd34f",
+   "title": "PJM asks FERC to halve grid studies for data centers to about a year and show states what their upgrades cost",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQS2ZfSC1OcW5oRkdRY2Z6dWc3Q1VteDJSSDB5SngxRHEtM3M3SFFHOXE1ODRMOUFLNmtNcVZJZno1R3cyS0s3d3NRczNQUmV1MXpSbGd6OHQ1X0xoLUlmMFJNUk5pNVRKenVuNHlhZ1VPZ1o4UlhZeFlEbmEtd3d1eXNzRGNPTXFERHpRNVpnQmVGNk82M0tvQnJ4dWtVX2dacEZPczNVY3dLSlduTjFsM2k5UXZDQUFUNXR4WkRZaEtRZmxhY21ROXRR?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-17T10:35:47+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [
+    "PJM"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6b133c6c1fafd34f",
+   "cluster_title": "PJM asks FERC to halve grid studies for data centers to about a year and show states what their upgrades cost"
+  },
+  {
+   "id": "b3043af7cb699315",
+   "title": "Democrats in Washington Move to Ban Data Centers on Public Lands",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ1BmWkxTbjNBVXlMRGQ2d2JLQ3lQUkRfVVB0YXdfWmV3NHFfM1R5QV9GNV82bnhiYlR2WW4zUmdSY1I3U1pZTm1XbU5IakNOVnltSWd0b2pWMEtHaDhqbmdNYTJjTlBkbFZVdTlDRU9Ia2tBREE2S253WWZybHFHQ0VKT2o?oc=5",
+   "source": "ProPublica",
+   "published": "2026-11-17T10:30:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Washington, US",
+     "lat": 47.4,
+     "lon": -120.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b3043af7cb699315",
+   "cluster_title": "Democrats in Washington Move to Ban Data Centers on Public Lands"
+  },
+  {
+   "id": "f6931f928af7cf8b",
+   "title": "Data center policy dominated the midterms. The 'Virginia of Europe' is the latest battleground",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE00SzhVODRUYUhoZlA1V3RWMTJLUE5vckdlTjVlTUUyNmdzbXdaa1JiR0hPbVc5T3lIVktXeXZ3Q0Y0bjhBMUhoRWFmZ3pGWURCSld4QzMyMW5NVmhPUVBNQWR5Zjc3elAyZlk5d2Y0Q01vVEFkMlppNUJB0gF_QVVfeXFMTVNqNmQwYW1ZcXNxYWNjd2dCYXdFVzNrejJYYm9BRUpkQmlqZ2lWSzZMRnM0ZzRoVXBIZjBLYnJHZ1prcGtjRWRjVkd5WkpFUHlhTFk0RDFoajdzVE5WYlZTVG4tMW1HN0FJU0hfMkdoMWFpMks2NFplc2dTVWNSSQ?oc=5",
+   "source": "CNBC",
+   "published": "2026-11-17T10:25:54+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f6931f928af7cf8b",
+   "cluster_title": "Data center policy dominated the midterms. The 'Virginia of Europe' is the latest battleground"
+  },
+  {
+   "id": "82e57a89b8ecff83",
+   "title": "$100,000 pay, very little training: The data center jobs no one knows about | CNN Business",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5POU82ME0zTTB3VDE0N0lCQXBZZVpmR0NmTV9vVmF5RVd6WDREODVMdEVaNTR4QndCTlBmclc1T3hET0dPSUIxNWZiek9wMlFVRVoxS2daQjdjc0M3NUpGcmpMLTlnN3pJZTF3bl80Q3hpQQ?oc=5",
+   "source": "CNN",
+   "published": "2026-11-17T10:02:07+00:00",
+   "feed": "Google News: Data center",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "56d83bc8a8598987",
+   "cluster_title": "$100,000 pay, very little training. The data center jobs no one knows about"
+  },
   {
    "id": "e84f0ecdc049446c",
    "title": "How Oldham County became among first in Kentucky to ban big data centers | Exclusive",
@@ -348,6 +790,33 @@
    "cluster_title": "Proposed $500M+ 'Project Apollo' Data Center in Wapakoneta, Ohio in Council Consideration"
   },
   {
+   "id": "8a67cf0990d7b334",
+   "title": "Harvard study estimates magnitude of U.S. data center pollution as climate talks unveil clean AI pledge",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVm0yR1RjVlBmY1BIc3l3UDVSQTZ3R09yR1N3Ti1OUTJMSWQ1bFl0TkE2V0ZZa3QyTDNzS3BTcHh4dTVFRlMtVllwQ1NUTjhFVHpEd0RPeVNqeDJEYkFvRF9aT3pyU3ZadEUyaTlEaEx0RTNBVlYtOGpEVDNxS08zNlpocUtRLWo2bF9yV3dUUENoMG4tM3I0ODZHLXhqMGhJTHYyaXYwNUNFSmJqWUNSbFhoN0tORnVLNEpPeg?oc=5",
+   "source": "NBC News",
+   "published": "2026-11-17T08:39:18+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Environment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9ebcf58ae9be8434",
+   "cluster_title": "Study estimates magnitude of US data center pollution as climate talks unveil clean AI pledge"
+  },
+  {
    "id": "ea81c47f85041943",
    "title": "Judge asks for final legal briefs before deciding whether Botetourt County violated open-meetings law in greenlighting data center",
    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNTEg0X2Q3NEpfVVh4UEVlQzRUdl9WN0ZVZUFyWEJzMXp5eG1TLVBiNkhKZGRPOWdwcGFzV1ZLOG56RGxXTnV6REVSMkh3Q1JXUEpqeWNYSGRqS2hEY04xMW1qMF8tV2pRSkh1cjBHNDlMTmNuR085YWRwYy1PblVqbDdkV0NBalVkVU11YmRvSVdXTlpuZGNWNkZrSklMWkNHTEE3b0NSOFVZaW9EMVhGWDhoVE5EbGVsS3AxUmR6SVZ5YXNPR0Z4ZTNHMURFUjhDd0pHLU1QN2luaVU3R2NSMTZybUg3VW5MajBoeW16NkROYWFWcV9NNmJldw?oc=5",
@@ -534,6 +1003,32 @@
    "suppliers": [],
    "cluster_id": "6fc971f4eb933a53",
    "cluster_title": "Texas data centers face a December limbo as ERCOT's Batch Zero review meets a change of governor: what it means"
+  },
+  {
+   "id": "53bf38cd57ae1278",
+   "title": "Super Micro Among Data Center Firms That Bought Influence in Trumpworld",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUThyZ2dHdXBoOTBtVE9VRGxXVjA0ME9BUFhteldwWTRtQkZRdWxCSVRHOGlFdXlQMVNDU3ExeG9TcENHVTI5Wm9Vdm9zWjR4NFNWcFJvTkdZZlMwX0tJMWNlbnh1S0lWQ20yTE1GSFhfVHFrckpyTkNyX3Yxb09wWjZCMTJabzF6OHRuMFREM21xeWNuNkxzNDZ6cHdDQQ?oc=5",
+   "source": "https://dominotheory.com/",
+   "published": "2026-11-17T08:04:43+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Supermicro"
+   ],
+   "cluster_id": "53bf38cd57ae1278",
+   "cluster_title": "Super Micro Among Data Center Firms That Bought Influence in Trumpworld"
   },
   {
    "id": "5cee7991d8558ea6",
@@ -8437,6 +8932,41 @@
    "cluster_title": "Marvell and Penguin Solutions Collaborate to Address Data Center AI Memory and Accelerate Inference at Scale"
   },
   {
+   "id": "32bb981752b2c218",
+   "title": "Marvell and Penguin Solutions team up on AI data center memory",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNHhBRHoxcGRlbGtMeGNBc3RxWmE0bUZ5czkwTkJHRmJ3Q281OUd4UkwtUWczbFRGWldiczZLWGRFSUgyX3R0azVHbkRWYlFIeTgwNmRyMnhINjVhQ2xKZWZ4dVRmdGtGQXRGYjJ3M08tTXlpMExGWjVqZ0JpTjlpcGQxdmFMX25WTV9NOUdsYXY0WDZMVmxfbXhTLVJXb3hEWjVjbFZrQVZKOW5nNTdPS0JNRFJrUFRmYmRBSHlR?oc=5",
+   "source": "StreetInsider",
+   "published": "2026-11-16T14:05:02+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Marvell, Arkansas, US",
+     "lat": 34.5557,
+     "lon": -90.9129,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "32bb981752b2c218",
+   "cluster_title": "Marvell and Penguin Solutions team up on AI data center memory"
+  },
+  {
    "id": "9005be20308a045f",
    "title": "Bill introduced to ban data center development on some federally-owned land in US",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWkM5Y2d0Ri1wZUlseVo2NEdIVWtrZTJJTTlMTFpYdkxHZmFqeHhNVkZjWl9INVRTM0dNc3dpRG1UTmluRUNwc2dwaUVFWko3bDNCN2sxMmhPdU5hWWhJWHgyOVVFdzZtdTNFdWFRcTFMak80SlRLdks1Y19tbGNJaG9uN0c4cmpoX0hfMEo4bEhWR0NWUlFlcDh2Y3ZBUUNwOW9CbUtyaDl1M2Q2bWZ3aXNSMGY5SjA5MjVFTmdDVVNCZ3M?oc=5",
@@ -10131,6 +10661,32 @@
    "suppliers": [],
    "cluster_id": "95e68db25682fe34",
    "cluster_title": "Not all data centers are the same. Auburndale’s is a good example"
+  },
+  {
+   "id": "355a7e4a2323aad5",
+   "title": "AI data center growth fuels copper demand: Can HG regain momentum?",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORzhWMUR3OGdsclpRV1NfbFdFTXM1R2VKQXViWkdjTFY0V1dNSkhkUUd6YmppZDFZc3NtV3ZmUVZSTDJOb245c3hRdzkzcmZjcExFaEg2a0xydEp1cVpZdC0taHE4eFdnRGYyOGNLUUZNM0VCQUtGNHJVdm1ZajZ0QlhEMTRIR1UxQ1lKYW5SSTF4dw?oc=5",
+   "source": "Traders Union",
+   "published": "2026-11-16T09:25:28+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "355a7e4a2323aad5",
+   "cluster_title": "AI data center growth fuels copper demand: Can HG regain momentum?"
   },
   {
    "id": "f78776a1215d6d7c",
@@ -21522,6 +22078,32 @@
    "investment_usd_b": 198.0,
    "cluster_id": "2541fc915cb6a381",
    "cluster_title": "U.S. Data Center Projects Face $198 Billion Setback Amid Local Opposition"
+  },
+  {
+   "id": "eb219f08c92cf342",
+   "title": "Data Center Power Market worth $52.43 billion by 2031",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1WcEpteFZJNlEyUjhkbzVFYWRlenhuekliVEF3NjBRT3EtOFV5ZklPTTZHcVF2WFNjYk56bUpOWE9XanU3S1AyWTdsQnJlVk0temQ3QnFyZWt2X2kySWhvVUplXzhYd2pJRHEtcGQ1QlM0Rnk2MnBLaW9URW14c1U?oc=5",
+   "source": "MarketsandMarkets",
+   "published": "2026-11-13T08:00:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 52.43,
+   "cluster_id": "eb219f08c92cf342",
+   "cluster_title": "Data Center Power Market worth $52.43 billion by 2031"
   },
   {
    "id": "387e8e33e8d522ea",

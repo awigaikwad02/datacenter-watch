@@ -8,8 +8,47 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 564,
+ "count": 566,
  "items": [
+  {
+   "id": "a0662f43b4ce8ec0",
+   "title": "Estherville Approves First Reading of Data Center Ordinance",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc1NyUkxaSEdhTC1vRkRkTVJ3WDZsRUZlZEppVzhVR1JyakY4emI4Y2pERU9iSVVCWjg0MEFKb1E5SjJwUEh5ZjNVeUlBb2xDMzFUb0JBbzdQd3BlVFk4Mm1fZmotbmZqdzBLekxqSmJqSGpKVnY0YnV0ZHd0dWpkaWtoUFc1Y1A3SUNVMFEtcGNCYTNINy1FUGN6eEJpZEtRMnNR?oc=5",
+   "source": "Northwest Iowa Now",
+   "published": "2026-11-17T11:13:13+00:00",
+   "state": "IA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "a policy story with no operator or project name"
+  },
+  {
+   "id": "b3043af7cb699315",
+   "title": "Democrats in Washington Move to Ban Data Centers on Public Lands",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ1BmWkxTbjNBVXlMRGQ2d2JLQ3lQUkRfVVB0YXdfWmV3NHFfM1R5QV9GNV82bnhiYlR2WW4zUmdSY1I3U1pZTm1XbU5IakNOVnltSWd0b2pWMEtHaDhqbmdNYTJjTlBkbFZVdTlDRU9Ia2tBREE2S253WWZybHFHQ0VKT2o?oc=5",
+   "source": "ProPublica",
+   "published": "2026-11-17T10:30:00+00:00",
+   "state": "WA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "0e6ba1fc07c993c4",
+   "title": "Lowell Township leaders review proposed ordinance for potential data center developments",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPUklmVjNGa0pNaC14ZWwzZFpvZGxGQi1LTWltQ0ZLQ1RZVDFoVnBxWGpCSEl4RGZ1YzJweFpsd0p2UUJuLWxsdW5OTjJiS2E0ZUd0RFJyM0RPWFhKZm9YMjJTaEdyWjRuZmJ3UV9KVmR2Mi1sZ2dPaXBsUGdkUnNEa3BnT1Fvdk52QTR5UU53OXk2aG54VXo4ekRmaWZEZjZSRlhtTF93ejFBSDBxUmpJTmZOR2hPekYwU3NBV0R4bGJ6cXVYMGhVc0J2Z0dWYW1jV0FYRmtqWTF1ZzRxTzU2T1VveDJsaFhMWDRxR2o4d3AxTDN3VjB3?oc=5",
+   "source": "FOX 17 West Michigan News",
+   "published": "2026-11-17T10:03:48+00:00",
+   "state": "MI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
+  },
   {
    "id": "60568b45f9435727",
    "title": "Proposed $500M+ 'Project Apollo' Data Center in Wapakoneta, Ohio in Council Consideration",
@@ -87,19 +126,6 @@
    "suppliers": [],
    "precision": "state",
    "reason": "no operator, and only a state"
-  },
-  {
-   "id": "0e6ba1fc07c993c4",
-   "title": "Lowell Township leaders review proposed ordinance for potential data center developments",
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPUklmVjNGa0pNaC14ZWwzZFpvZGxGQi1LTWltQ0ZLQ1RZVDFoVnBxWGpCSEl4RGZ1YzJweFpsd0p2UUJuLWxsdW5OTjJiS2E0ZUd0RFJyM0RPWFhKZm9YMjJTaEdyWjRuZmJ3UV9KVmR2Mi1sZ2dPaXBsUGdkUnNEa3BnT1Fvdk52QTR5UU53OXk2aG54VXo4ekRmaWZEZjZSRlhtTF93ejFBSDBxUmpJTmZOR2hPekYwU3NBV0R4bGJ6cXVYMGhVc0J2Z0dWYW1jV0FYRmtqWTF1ZzRxTzU2T1VveDJsaFhMWDRxR2o4d3AxTDN3VjB3?oc=5",
-   "source": "FOX 17 West Michigan News",
-   "published": "2026-11-17T04:32:48+00:00",
-   "state": "MI",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "no operator, code name or figure"
   },
   {
    "id": "31d5e173c13b1041",
@@ -222,7 +248,7 @@
    "id": "38c1fed98562f481",
    "title": "Oregon weighs next steps after losing proposed data center",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbTFKUTRTSmRNRUZPbGNKblh1T0V2OHFBYldDMXZFYV9OVUsxVTlmYUFncE1CTkdXRXE1aW5sMkptZUlaUnJzb3B1Tkd5MmM5WmhFZF9TME9vYUpFZUhLbHlINFBxb3JuV0N5dG9RaFd3cDhSWnVuYUxpOWxQdzVMMWhOdEl6TFVYaU5XcGlVWm5tQXNGekRuVnRzTTF2eHZOZV8tUnpFQXJ3R0VXMGdiYzREaWhRck1YbTNLeGlERkdZNGVVR3haMnN3OUZwZ3IwT1kxSQ?oc=5",
-   "source": "wtol.com",
+   "source": "WTOL",
    "published": "2026-11-16T23:22:00+00:00",
    "state": "OR",
    "companies": [],
