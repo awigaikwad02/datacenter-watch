@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-17T17:23:26+00:00",
- "count": 735,
- "visible": 618,
+ "updated": "2026-11-17T18:23:25+00:00",
+ "count": 736,
+ "visible": 619,
  "records": [
   {
    "id": "amazon-georgia",
@@ -28171,6 +28171,58 @@
    "builders": [],
    "suppliers": [],
    "name_hints": []
+  },
+  {
+   "id": "patmos-al-unnamed",
+   "name": "Patmos, Alabama (site not yet named)",
+   "company": "Patmos",
+   "companies": [
+    "Patmos"
+   ],
+   "location": "Alabama, US",
+   "state": "AL",
+   "county": null,
+   "city": null,
+   "lat": 32.8,
+   "lon": -86.8,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "Patmos",
+   "news": [
+    {
+     "id": "7274925b0cd047d3",
+     "title": "Patmos plans 50MW data center outside Birmingham, Alabama",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSURVN1J3X3dSTjBrZGo0bGE2Ni1ZT3V6Q1FQcGthb01ka29ReE5wRGVoWllTRHhBVFFzZFpobU5OZmU4TmlCMWhJMUNpbFUyQ3ZqMnBtRmZoT1dmY21PVTBRU2M0bnBWOUZTaU9UTm1TZk1NYlBjZ2pLb0pxZnNUQjNrS1pjSVNQMUxMNjlBX05XTWVsMkpyRHNvVHU2M1RyY2c?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-17T17:29:18+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7274925b0cd047d3"
+    }
+   ],
+   "first_seen": "2026-11-17T17:29:18+00:00",
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hints": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-17T17:29:18+00:00",
+     "status": "Announced",
+     "headline_id": "7274925b0cd047d3"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 50,
+   "investment_usd_b": null,
+   "last_news": "2026-11-17T17:29:18+00:00",
+   "sources_count": 1,
+   "confidence": "low",
+   "hidden": false
   },
   {
    "id": "patmos-independence-mo-2026",
