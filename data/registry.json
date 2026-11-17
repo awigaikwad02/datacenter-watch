@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-17T04:19:26+00:00",
+ "updated": "2026-11-17T04:20:48+00:00",
  "count": 734,
  "visible": 617,
  "records": [
@@ -54824,6 +54824,15 @@
      "published": "2026-11-04T23:06:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1ca82449dc72ddc1"
+    },
+    {
+     "id": "51ddc2d3d7a0b2b4",
+     "title": "Spartanburg County council give final & first approvals to multiple data center projects",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNcWlKWERDaVE0cHluRzIxYXUzUTZ1ZUZDRkctNi10SzRMdTczejFBazNRbXhyS3NKUWxQZW1sUk9DU01VSm5xWHRnZDVDZ2daVFBIeUg5dEN5b0RGZmQ2YzBTcWhSbmtXUmJRb1BYMWc1YjVzUXY0ZVFJNjVvcDNqTERONUxJZWQtS25NTThCSzVDYmRqWTRvMDNrbTJRUWdTWHdIb0hWbjNZOFZnNzR6WU4yQVJBVExwbDJSV3NKNkFsaXgxWEhQeQ?oc=5",
+     "source": "FOX Carolina News",
+     "published": "2026-11-17T04:15:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "51ddc2d3d7a0b2b4"
     }
    ],
    "first_seen": "2026-01-13T08:00:00+00:00",
@@ -54856,11 +54865,16 @@
      "date": "2026-11-04T23:06:00+00:00",
      "type": "Approval",
      "headline_id": "1ca82449dc72ddc1"
+    },
+    {
+     "date": "2026-11-17T04:15:00+00:00",
+     "type": "Approval",
+     "headline_id": "51ddc2d3d7a0b2b4"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 3.0,
-   "last_news": "2026-11-04T23:06:00+00:00",
+   "last_news": "2026-11-17T04:15:00+00:00",
    "sources_count": 6,
    "confidence": "medium",
    "hidden": false,
