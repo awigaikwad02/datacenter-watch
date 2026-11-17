@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 576,
+ "count": 577,
  "items": [
   {
    "id": "481366713178b6ff",
@@ -34,6 +34,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "city",
+   "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "db28bdf74e11923a",
+   "title": "St. Louis County Board to discuss road and infrastructure projects related to proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeWpVVlNfYlQ3allTVHhlLVpKUDloRXJLUkJmdnY1dlhEcWZhMjFYaTE0dk1JelNMbHNiTGxKa1NnbGdyRmhNS256dkpSNzlCZkpjbHBkaUV1QkFzc29OU3l5cjBvMm5jVTMtUFBpSDliZmVldzZmbDhUMXEtTG5oQldnS0phT1FsRXFfZi1oWDBLOUlIX043UkM1M1NJaHdWTXctZXNJS19xSFFuMWhWN2Q1bnlqMV9yVDRxT29lMWQxSU1QYmNvOFFxcw?oc=5",
+   "source": "WDIO.com",
+   "published": "2026-11-17T14:47:40+00:00",
+   "state": "MN",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
    "reason": "no operator, code name or figure"
   },
   {
@@ -145,7 +158,7 @@
    "title": "A second data center is proposed in Bethlehem. What we know about the plans",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOEdnVjFUR0xqbFVTX1ZuUGFBZGI2M3o5MW91QW1xYzUyMFJnbTVSY293RVNsbVVwd0FPdEZiaWY2TDcyRmpFbXgzcHh3aG9YUjljNzRtX09FclZhVWlwa1pMVExsaDlzbmMxdW5iVllISXlOSzdGNkpqOFg2WlJIYW8yWTgzN0hIUE9EdEJTYk5lS3NIT1paUlJaM1dlcWRJRnU4eVl5Q1lZS19C?oc=5",
    "source": "The Morning Call",
-   "published": "2026-11-17T12:01:55+00:00",
+   "published": "2026-11-17T12:03:33+00:00",
    "state": "PA",
    "companies": [],
    "builders": [],
@@ -178,19 +191,6 @@
    "suppliers": [],
    "precision": "state",
    "reason": "no operator, and only a state"
-  },
-  {
-   "id": "0e6ba1fc07c993c4",
-   "title": "Lowell Township leaders review proposed ordinance for potential data center developments",
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPUklmVjNGa0pNaC14ZWwzZFpvZGxGQi1LTWltQ0ZLQ1RZVDFoVnBxWGpCSEl4RGZ1YzJweFpsd0p2UUJuLWxsdW5OTjJiS2E0ZUd0RFJyM0RPWFhKZm9YMjJTaEdyWjRuZmJ3UV9KVmR2Mi1sZ2dPaXBsUGdkUnNEa3BnT1Fvdk52QTR5UU53OXk2aG54VXo4ekRmaWZEZjZSRlhtTF93ejFBSDBxUmpJTmZOR2hPekYwU3NBV0R4bGJ6cXVYMGhVc0J2Z0dWYW1jV0FYRmtqWTF1ZzRxTzU2T1VveDJsaFhMWDRxR2o4d3AxTDN3VjB3?oc=5",
-   "source": "FOX 17 West Michigan News",
-   "published": "2026-11-17T10:03:48+00:00",
-   "state": "MI",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "no operator, code name or figure"
   },
   {
    "id": "60568b45f9435727",
@@ -258,10 +258,23 @@
    "reason": "no operator, and only a state"
   },
   {
+   "id": "0e6ba1fc07c993c4",
+   "title": "Lowell Township leaders review proposed ordinance for potential data center developments",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPUklmVjNGa0pNaC14ZWwzZFpvZGxGQi1LTWltQ0ZLQ1RZVDFoVnBxWGpCSEl4RGZ1YzJweFpsd0p2UUJuLWxsdW5OTjJiS2E0ZUd0RFJyM0RPWFhKZm9YMjJTaEdyWjRuZmJ3UV9KVmR2Mi1sZ2dPaXBsUGdkUnNEa3BnT1Fvdk52QTR5UU53OXk2aG54VXo4ekRmaWZEZjZSRlhtTF93ejFBSDBxUmpJTmZOR2hPekYwU3NBV0R4bGJ6cXVYMGhVc0J2Z0dWYW1jV0FYRmtqWTF1ZzRxTzU2T1VveDJsaFhMWDRxR2o4d3AxTDN3VjB3?oc=5",
+   "source": "FOX 17 West Michigan News",
+   "published": "2026-11-17T04:45:30+00:00",
+   "state": "MI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
+  },
+  {
    "id": "6d214d46c1ebe048",
    "title": "City of Oregon decides future of land for previously proposed data center",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNX1dtYVo3M3pSY2ZTaUV6ZXVMSjhoQlZVbGNSRmpOc3hrVkNyWGRCdVBrVmxDekE4Uk9MT195R3N3N2dZanlVZS1IZXVKNTVzQXNVbnBEblRLYlVDa0sydVIyNUZCSkxTdVQySGZnaXpoUDQ4WmhPc2tFQ0N1VVNiQnhad0tLa2otS29zZnJ0VVAwNTZqeWVZMDVQU09UbWh6LU0wa0YyWUhyNm1CXzJNRjJ1NTZRa0l3TW9RSjRzN0FxS0kwRFB0Ymo4LU9CNkIwLXlPSDZDbWlxV08tOU5hdU9jLTV0bms?oc=5",
-   "source": "wtol.com",
+   "source": "WTOL",
    "published": "2026-11-17T04:35:00+00:00",
    "state": "OR",
    "companies": [],
@@ -5406,19 +5419,6 @@
    "reason": "no operator, and only a state"
   },
   {
-   "id": "1928bf40d2d432da",
-   "title": "FracTracker Alliance: A.I. Data Center Developers Propose 12.5 GW Of Natural Gas-Fired Power Plants To Feed 12 Data Center Projects In Southwest PA",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTnpfNUlHNVJJcXNRcjgxOFUtUmlQX1h5dFdqSWlpUWRkbTQ3YVZ0ZFozXzJnckVCbEFWS2c1MkVGV3BzOUk3WjVPY1Bzb2hnYjV0YVUtNWFuNVdRaUZRZm5WdElkMm9TVHdfeXFSZW11SlpxNnZkRVVnSjNhRVQ5cjNubkdnRVFsZVJBb0drSXk?oc=5",
-   "source": "PA Environment Digest Blog",
-   "published": "2026-10-27T15:58:12+00:00",
-   "state": "PA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
-   "reason": "no operator, and only a state"
-  },
-  {
    "id": "d2eec774f569e6ec",
    "title": "New Kent planning board sounds off on data center guidelines",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTmFuWDJYY2h6MEJNenFVa1lyS254Y0FoSFdSbjdKQV9wTE1NaHBZZWNCNTFSajMxVWRPbWFoV1FiUmtWN1hHR1hyX2F3S0pTWWcyenMwc28tUjFnZU1wdWRtbXNpMFdoaHAwdmpRdktsdTRldFlNRXdUWXlyVVp4bEFzV2tQNlR6NUF3UWp0SUxuMzc2M1NrN2ZvYVI2SklZ?oc=5",
@@ -5469,6 +5469,19 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "1928bf40d2d432da",
+   "title": "FracTracker Alliance: A.I. Data Center Developers Propose 12.5 GW Of Natural Gas-Fired Power Plants To Feed 12 Data Center Projects In Southwest PA",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTnpfNUlHNVJJcXNRcjgxOFUtUmlQX1h5dFdqSWlpUWRkbTQ3YVZ0ZFozXzJnckVCbEFWS2c1MkVGV3BzOUk3WjVPY1Bzb2hnYjV0YVUtNWFuNVdRaUZRZm5WdElkMm9TVHdfeXFSZW11SlpxNnZkRVVnSjNhRVQ5cjNubkdnRVFsZVJBb0drSXk?oc=5",
+   "source": "PA Environment Digest Blog",
+   "published": "2026-10-27T09:58:16+00:00",
+   "state": "PA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "6dabab7233dca99c",
