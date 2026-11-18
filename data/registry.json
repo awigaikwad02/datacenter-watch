@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T12:28:19+00:00",
- "count": 737,
- "visible": 620,
+ "updated": "2026-11-18T13:28:19+00:00",
+ "count": 738,
+ "visible": 621,
  "records": [
   {
    "id": "amazon-georgia",
@@ -7823,6 +7823,15 @@
      "published": "2026-11-11T00:52:38+00:00",
      "stage_signal": "Announced",
      "cluster_id": "c8d3464cfd2f5758"
+    },
+    {
+     "id": "d31f651ee1243a55",
+     "title": "Amazon's $17 Billion AI Data Center Expansion in Ohio Faces Vote",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWk5NWmhOWm9CSkNKM3ZTX2JDM1JWbnRXNFNGNXd0UEpBWTZVTTljbWtQRVNtWGN0U1dXRWdDMTVYczBMMGhNUW9vSldaNVpXYmx5Y3B2MTdNcGI5OUJsa3NZZUtBcmZ3dHc1U05QWmdNQXZBRm1DOGJiSnVvczBrREJ3UDBqbnJRM2wwaTJJUTRZQXBHWVAyMk1NRXQ4Y241aVRINE1SaHRZS3JvNFJra2JVZ1p1UHFEQ0c2aTlqdlpVUQ?oc=5",
+     "source": "GuruFocus",
+     "published": "2026-11-18T12:43:19+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "d31f651ee1243a55"
     }
    ],
    "first_seen": "2024-11-21T08:00:00+00:00",
@@ -7885,12 +7894,17 @@
      "date": "2026-11-04T09:27:12+00:00",
      "type": "Approval",
      "headline_id": "efec908f58b14015"
+    },
+    {
+     "date": "2026-11-18T12:43:19+00:00",
+     "type": "Expansion",
+     "headline_id": "d31f651ee1243a55"
     }
    ],
    "capacity_mw": null,
-   "investment_usd_b": 10.0,
-   "last_news": "2026-11-11T00:52:38+00:00",
-   "sources_count": 18,
+   "investment_usd_b": 17.0,
+   "last_news": "2026-11-18T12:43:19+00:00",
+   "sources_count": 19,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -26968,6 +26982,15 @@
      "published": "2026-11-12T15:49:09+00:00",
      "stage_signal": "Announced",
      "cluster_id": "0bb698b591ac9590"
+    },
+    {
+     "id": "6d32344f03c0bae9",
+     "title": "Effingham County approves OpenAI data center site plan, delays vote on future applications",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSENYNTNIaWQtZGVzZWp0NXgxeFFma1J1eS1BNmsyX01fUVEtcmczdnc5cGxfSFZWcTJMMF9GNXl2OXB1OC03VUtQUWJtTkZpUDU5c3BHcmw2ZVl5eUl2ZEVmLTNxemtkUzVfVHNSdEU0cTR2LVBCVTUwWFV6aVZfM1ZUYm45NzhkbU55MTZnOTBMNUdWUGVDVGdmSE5TemNqcmNJYmxn0gG6AUFVX3lxTE16eEQtT1BHb2t4SnZfdE82ajN3WDFlLThHR09jbVNYVlJYVjNzUUZMdE1sOTgyVW1WRFctVkxKTlhFeGxIcjFySDM1SmRlcHJ0QlVueUFzV0Y2d0pyOGwzZE9GaTIwdWpydW9nOGs0azAxZnNaeDE5azRvS1VLbUZ5NWlwQ3Z3RnQwVGljS0dvRzVfY055TmdEeFpHeFN6bGtRQWRsNi1GNUNCOWxaWTFaR05EOUxHLTZDdw?oc=5",
+     "source": "WTOC",
+     "published": "2026-11-18T01:30:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6d32344f03c0bae9"
     }
    ],
    "first_seen": "2026-07-22T07:00:00+00:00",
@@ -26994,6 +27017,11 @@
      "headline_id": "7965ceabe79e9929"
     },
     {
+     "date": "2026-11-18T01:30:00+00:00",
+     "type": "Approval",
+     "headline_id": "6d32344f03c0bae9"
+    },
+    {
      "date": "2026-11-01",
      "type": "Moved to Georgia",
      "headline_id": "b482ac08f76d9f1d",
@@ -27008,7 +27036,7 @@
    ],
    "capacity_mw": 3200,
    "investment_usd_b": 30.0,
-   "last_news": "2026-11-12T15:49:09+00:00",
+   "last_news": "2026-11-18T01:30:00+00:00",
    "sources_count": 12,
    "confidence": "high",
    "hidden": false,
@@ -27175,6 +27203,15 @@
      "published": "2026-10-27T17:27:54+00:00",
      "stage_signal": "Announced",
      "cluster_id": "dcf5155fb8ada120"
+    },
+    {
+     "id": "236d8a6388f348f9",
+     "title": "Site plan for giant OpenAI data center approved on Georgia coast",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9HM3hpcVNzc2c4bVBmRGlVeDlKczZyLVQ1eEJYRVdVQjZMcVNVN3gtelphdHpMeWE5UEx6S1pWZnpyNy1PcGNfNS1kTUJBUFlNMUo2bDRhN1plTnFYc01PVTBDa2I2T1c3REppYldweXVZQjB5?oc=5",
+     "source": "The Atlanta Journal-Constitution",
+     "published": "2026-11-18T12:42:44+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "236d8a6388f348f9"
     }
    ],
    "first_seen": "2026-08-14T07:00:00+00:00",
@@ -27189,11 +27226,17 @@
      "headline_id": "988880b331c407d8"
     }
    ],
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-18T12:42:44+00:00",
+     "type": "Approval",
+     "headline_id": "236d8a6388f348f9"
+    }
+   ],
    "capacity_mw": null,
    "investment_usd_b": 20.0,
-   "last_news": "2026-10-27T17:27:54+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-18T12:42:44+00:00",
+   "sources_count": 5,
    "confidence": "low",
    "hidden": false,
    "investors": [],
@@ -44347,6 +44390,54 @@
    "suppliers": [],
    "name_hints": [],
    "merged_into": "site-hudspeth-county-tx-2026"
+  },
+  {
+   "id": "site-hunt-county-tx-2026",
+   "name": "Hunt County data center ($1B, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Hunt County, Texas, US",
+   "state": "TX",
+   "county": "Hunt County, Texas, US",
+   "city": null,
+   "lat": 33.124,
+   "lon": -96.085,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "2469775482611cb9",
+     "title": "Giga Energy secures $1bn lease for 60MW data center in Hunt County, Texas",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa2txNHg5Z3FOVXhUejhjdm5fNGVDMmlmbzBGc1JHaWh5anNCYkdIczA2X1JCNUNTQk1nTm9wQWhIWGEtUEtnQjlJRkhEckZUeGdJVi1mVmVxNWpvU2JVX2NMRVJBVnAyVm9KdWdSa0pTbXY4UGpMdHZOdkRSR3FmSGVWQm93SVlhWEpLZWFNek9DYUx0cVZtdTBFMG1OUjg3blIwRV91VG9UakdVeFNCZE1scE9tZw?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-18T12:45:15+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "e022d02713e93c78"
+    }
+   ],
+   "first_seen": "2026-11-18T12:45:15+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-18T12:45:15+00:00",
+     "status": "Announced",
+     "headline_id": "2469775482611cb9"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 60,
+   "investment_usd_b": 1.0,
+   "last_news": "2026-11-18T12:45:15+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-hutto-tx-2024",
