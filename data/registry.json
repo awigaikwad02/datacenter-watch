@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T01:25:59+00:00",
+ "updated": "2026-11-18T02:25:59+00:00",
  "count": 737,
  "visible": 620,
  "records": [
@@ -54158,13 +54158,22 @@
      "published": "2026-11-13T20:02:57+00:00",
      "stage_signal": "Announced",
      "cluster_id": "aaf770724ffca530"
+    },
+    {
+     "id": "10b08f3a0d1fdb64",
+     "title": "San Jose enacts temporary data center moratorium",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbHN1OEVSRGlNclNGdU5tRmxDTV82WjkwbWtPNUFMazNXeHpCZmVWMHgxTXY0U0dxaU9YZlNLRjdJc055ODFLbTNrSWE3bHE5NFBqMF8yR0lMalR0VWVwdFBBSmZyTkExdGRaZzVlaVBiT1pJbnd4QmtnNjhseFFCelJKank?oc=5",
+     "source": "San José Spotlight",
+     "published": "2026-11-18T02:14:56+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "10b08f3a0d1fdb64"
     }
    ],
    "first_seen": "2024-11-14T08:00:00+00:00",
    "utilities": [
     "PG&E"
    ],
-   "status": "Operational",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2024-11-14T08:00:00+00:00",
@@ -54180,6 +54189,11 @@
      "date": "2026-01-21T08:00:00+00:00",
      "status": "Operational",
      "headline_id": "e67dad657f2e551b"
+    },
+    {
+     "date": "2026-11-18T02:14:56+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "10b08f3a0d1fdb64"
     }
    ],
    "events": [
@@ -54197,11 +54211,16 @@
      "date": "2026-10-21T21:35:41+00:00",
      "type": "Approval",
      "headline_id": "b331f10b7153c16a"
+    },
+    {
+     "date": "2026-11-18T02:14:56+00:00",
+     "type": "Cancelled",
+     "headline_id": "10b08f3a0d1fdb64"
     }
    ],
    "capacity_mw": 200,
    "investment_usd_b": null,
-   "last_news": "2026-11-13T20:02:57+00:00",
+   "last_news": "2026-11-18T02:14:56+00:00",
    "sources_count": 10,
    "confidence": "medium",
    "hidden": false,
