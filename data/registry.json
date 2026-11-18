@@ -58,8 +58,8 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T19:29:51+00:00",
- "count": 740,
+ "updated": "2026-11-18T20:29:52+00:00",
+ "count": 741,
  "visible": 623,
  "records": [
   {
@@ -21731,6 +21731,117 @@
    ]
   },
   {
+   "id": "meta-licking-county-oh-2026",
+   "name": "Meta Licking County data center",
+   "company": "Meta",
+   "companies": [
+    "Meta"
+   ],
+   "location": "Licking County, Ohio, US",
+   "state": "OH",
+   "county": "Licking County, Ohio, US",
+   "city": null,
+   "lat": 40.092,
+   "lon": -82.483,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "6423a7dbf84ac594",
+     "title": "Piqua approves Meta data center deal despite protests",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVnFWN0g4aGM3czJtZE1PLTI4bUtlamx4XzA0d1dkWUtkelB2Q3dzeHlsNS1HQm1MSkdrYmZwS250S0tMcEFrZER4eFNJTzg3RVpCV0xONzAyTTFUYlhDempGVm9vUTdmemxZTU1JeFRISzNGQVNITU1MUWlKRDBZWGFiMUJPNGVhdWN3ejdRSDBtUmg3a0pyWFJnWmJtOEx2eDlqdXM5cXN5QdIBrwFBVV95cUxNRzNTMmk3UE5LRk9ucERQOU5xTm5pd1VhOHAwZWxEdW5UbHZPcUNJNkRkMHFOeTJUN09SWDlUWkNrRm03RWRaVFFTNHhCd2g1dHhMbm9aWmkyTTZEakd4amYwejdzZEpldTZmTnZ5WkpycWY0ZW56d1pzQzRfaUVZSDRRNTZIZU5jVWJ3eUdmYkpNWWF2VVJvZ0N5OFE0VkNTNE0wX1lnNm1TSjZLWHlz?oc=5",
+     "source": "WDTN.com",
+     "published": "2026-08-18T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6423a7dbf84ac594"
+    },
+    {
+     "id": "b42fe1dd2a7a86e6",
+     "title": "Meta revealed as company behind proposed Piqua data center; pledges $8M to emergency services",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNTQ5WWpJZjNwUzVBbDU3OElNTk5ELVk2eGtDeVVxXzB3VkIzS2g3UjNmMkV5ZVJGTzdZMkNzU2dhNFRfblgwdmRrdnRhSk0xR05kejN3a1hVOUNDbkxFa2lrQkR5bVNoUENKYkxsNnNtbmtadnZ6U0FVanFzVXhmZW4zVHFVbnNIbWN1M3RYa0NYMm1Ga2lmclJUV2NLeUVrRVBZQVV6d3lENkFwSlpzOFkxWEdpQ3RBcHI5cHNDLWhUcDg5ak9OY0ZIR1llRy1uclVubHlyYXA5MWFuOHfSAfIBQVVfeXFMTS1yNzdzMmxXQ2c1cXNxRGpEQVdjRHZpNmlPMWdKSTBOVGJFWmh2SXdQU1RhOVdFU1lROHU2MkFxd24tbGxSUGJucWpleDQtZno4ZFgtcFp5NWpYTDhieTJyQWxVMGM3SHR6OWJJLVM2dXJtVXI2NFZJQmtabENhXzB0YkRadFg3RS0yTzBhdmpleGxmMDZJSWNVZnFBekdQRU5xaXBoQWcyWUxBb0pPRnllczRRVGtjVkc5TVJCaUhjcWdBbUJSM3d1akJhdXhCSG84YWNaQVVUOTZ1Z3hRUDEwOVB6d1NpZXdnNUVVWWc1VGc?oc=5",
+     "source": "WHIO TV",
+     "published": "2026-08-18T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b42fe1dd2a7a86e6"
+    },
+    {
+     "id": "0bc1d7c43b38b154",
+     "title": "Ohio city approves 30-year power deal for Meta data center after $8 million public safety pledge",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQThtcmV5OS1oR0ZUWEE0TGR2ZzZtWGh1a0w0aWlxTWdFWGlLYjNwUHA3dk1XQ2JpXzV5NlhoeTdja2JidG9lQnNlVUgtVDUyMGI4d0Rma1NLTzZrTURFMmM4VjVSQS1iYjdWUHNHM3BUY280RXdKRng2cVZoQWpNUVc0NHNJU09I?oc=5",
+     "source": "Yahoo",
+     "published": "2026-09-03T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "0bc1d7c43b38b154"
+    },
+    {
+     "id": "9260e88c59693a5d",
+     "title": "Meta announced as partner in 2,000-acre controversial Maysville data center",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNGdCOVQwSUNTYjFwYi1ZWE1XdS1XY2JaWC04czItQjBqZmNjSWRGV3pmX1l1bE9BbWtORVlNVHV5a3M2YjQtWlEzYjU0cWJQb2lWNGVuZU85TXhPODZKNTFTQlhWemU5VENoUm9MeVlqVEJRVmpWRy1MbUNENEpKUzRjMDJfQXgtWGpidzRRamF3TlhQZGI2QlNMMDZ2RURnaWpYMko2eTJrX2o4RWo0LVpScUZwOHBpUGV3?oc=5",
+     "source": "WCPO 9 Cincinnati",
+     "published": "2026-10-13T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "9260e88c59693a5d"
+    },
+    {
+     "id": "3e2da20a04ff631d",
+     "title": "Meta to build 'hyperscale facility' in NKY; would be largest data center in state",
+     "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPcDZhSWFDbWt6RzlLelRVVFI5Qzd6QUg2VnJCdG9tMEs5ZU5JdktfUmtVMWFJcTRPa2N4RVJhNDctQnZ2ZWxxYUFVOFctVHEwX25hZk1DMmItVW05N0NDTzQ5NWZhenc5TzBsVXBLU1VFMnVPMFZwRXNzeFV5NTUzbF9adTNZYy00cFpER0dCOFBvVS1VZE9zTUQ3U1RNWVFZWnI5RGYzSmhnZm5wX0NtWUt1d29ZUmVqZmwtcFZITDF5R0JMZThCRi1SWXBLRjlqeGN0aUJ4d2lQRWVncXRvclRXLWZEOW5UT2RyZVJOMmpxdmdjMVd0S204dGJzRkFjNHJFeUtHRTdURTJNZVIzOFQ5dkE3dkJkRzRGVVM0TG1BQ29hWE5XYVNpeWozOThidFRuYW1CRTg0MDJPbzJXZk15RlNzbUFn?oc=5",
+     "source": "WKRC",
+     "published": "2026-10-14T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3e2da20a04ff631d"
+    },
+    {
+     "id": "b6cf2b348073a19f",
+     "title": "Meta data center proposal on Monday agenda for Licking County Planning Commission",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONFAzVVFPRURPbHEzLWp2UVJTbS16NDNtdU5QbTFPV0lCVFBMb3JPbDNrOUt1V1JtaW8xc3RuRmF2anRLRWdJTHl3LVJ6WW15MzEwUlhnOUlLQ1JqWlRLQlcyTmdOcDltNERWSnZVZlhzTzZGLXZLLXl2U0tyR1RtZ1p4LWlNSl95RXIyUkUySlJvMHlsVWwtRHBtTkVkbmU4Wml4NWp6QWhHeXJRVXFjWGlIY1NIVlRXbVE?oc=5",
+     "source": "The Reporting Project",
+     "published": "2026-11-18T20:12:57+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b6cf2b348073a19f"
+    }
+   ],
+   "first_seen": "2026-08-18T07:00:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-08-18T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "6423a7dbf84ac594"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-08-18T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "6423a7dbf84ac594"
+    },
+    {
+     "date": "2026-09-03T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "0bc1d7c43b38b154"
+    },
+    {
+     "date": "2026-09-03T07:00:00+00:00",
+     "type": "Power deal",
+     "headline_id": "0bc1d7c43b38b154"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 0.008,
+   "last_news": "2026-11-18T20:12:57+00:00",
+   "sources_count": 6,
+   "confidence": "high",
+   "hidden": false
+  },
+  {
    "id": "meta-los-angeles-ca-2026",
    "name": "Meta Texas data center",
    "company": "Meta",
@@ -22311,90 +22422,23 @@
    "notes": "",
    "umbrella": true,
    "umbrella_company": "Meta",
-   "news": [
-    {
-     "id": "6423a7dbf84ac594",
-     "title": "Piqua approves Meta data center deal despite protests",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVnFWN0g4aGM3czJtZE1PLTI4bUtlamx4XzA0d1dkWUtkelB2Q3dzeHlsNS1HQm1MSkdrYmZwS250S0tMcEFrZER4eFNJTzg3RVpCV0xONzAyTTFUYlhDempGVm9vUTdmemxZTU1JeFRISzNGQVNITU1MUWlKRDBZWGFiMUJPNGVhdWN3ejdRSDBtUmg3a0pyWFJnWmJtOEx2eDlqdXM5cXN5QdIBrwFBVV95cUxNRzNTMmk3UE5LRk9ucERQOU5xTm5pd1VhOHAwZWxEdW5UbHZPcUNJNkRkMHFOeTJUN09SWDlUWkNrRm03RWRaVFFTNHhCd2g1dHhMbm9aWmkyTTZEakd4amYwejdzZEpldTZmTnZ5WkpycWY0ZW56d1pzQzRfaUVZSDRRNTZIZU5jVWJ3eUdmYkpNWWF2VVJvZ0N5OFE0VkNTNE0wX1lnNm1TSjZLWHlz?oc=5",
-     "source": "WDTN.com",
-     "published": "2026-08-18T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "6423a7dbf84ac594"
-    },
-    {
-     "id": "b42fe1dd2a7a86e6",
-     "title": "Meta revealed as company behind proposed Piqua data center; pledges $8M to emergency services",
-     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNTQ5WWpJZjNwUzVBbDU3OElNTk5ELVk2eGtDeVVxXzB3VkIzS2g3UjNmMkV5ZVJGTzdZMkNzU2dhNFRfblgwdmRrdnRhSk0xR05kejN3a1hVOUNDbkxFa2lrQkR5bVNoUENKYkxsNnNtbmtadnZ6U0FVanFzVXhmZW4zVHFVbnNIbWN1M3RYa0NYMm1Ga2lmclJUV2NLeUVrRVBZQVV6d3lENkFwSlpzOFkxWEdpQ3RBcHI5cHNDLWhUcDg5ak9OY0ZIR1llRy1uclVubHlyYXA5MWFuOHfSAfIBQVVfeXFMTS1yNzdzMmxXQ2c1cXNxRGpEQVdjRHZpNmlPMWdKSTBOVGJFWmh2SXdQU1RhOVdFU1lROHU2MkFxd24tbGxSUGJucWpleDQtZno4ZFgtcFp5NWpYTDhieTJyQWxVMGM3SHR6OWJJLVM2dXJtVXI2NFZJQmtabENhXzB0YkRadFg3RS0yTzBhdmpleGxmMDZJSWNVZnFBekdQRU5xaXBoQWcyWUxBb0pPRnllczRRVGtjVkc5TVJCaUhjcWdBbUJSM3d1akJhdXhCSG84YWNaQVVUOTZ1Z3hRUDEwOVB6d1NpZXdnNUVVWWc1VGc?oc=5",
-     "source": "WHIO TV",
-     "published": "2026-08-18T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "b42fe1dd2a7a86e6"
-    },
-    {
-     "id": "0bc1d7c43b38b154",
-     "title": "Ohio city approves 30-year power deal for Meta data center after $8 million public safety pledge",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQThtcmV5OS1oR0ZUWEE0TGR2ZzZtWGh1a0w0aWlxTWdFWGlLYjNwUHA3dk1XQ2JpXzV5NlhoeTdja2JidG9lQnNlVUgtVDUyMGI4d0Rma1NLTzZrTURFMmM4VjVSQS1iYjdWUHNHM3BUY280RXdKRng2cVZoQWpNUVc0NHNJU09I?oc=5",
-     "source": "Yahoo",
-     "published": "2026-09-03T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "0bc1d7c43b38b154"
-    },
-    {
-     "id": "9260e88c59693a5d",
-     "title": "Meta announced as partner in 2,000-acre controversial Maysville data center",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNGdCOVQwSUNTYjFwYi1ZWE1XdS1XY2JaWC04czItQjBqZmNjSWRGV3pmX1l1bE9BbWtORVlNVHV5a3M2YjQtWlEzYjU0cWJQb2lWNGVuZU85TXhPODZKNTFTQlhWemU5VENoUm9MeVlqVEJRVmpWRy1MbUNENEpKUzRjMDJfQXgtWGpidzRRamF3TlhQZGI2QlNMMDZ2RURnaWpYMko2eTJrX2o4RWo0LVpScUZwOHBpUGV3?oc=5",
-     "source": "WCPO 9 Cincinnati",
-     "published": "2026-10-13T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "9260e88c59693a5d"
-    },
-    {
-     "id": "3e2da20a04ff631d",
-     "title": "Meta to build 'hyperscale facility' in NKY; would be largest data center in state",
-     "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPcDZhSWFDbWt6RzlLelRVVFI5Qzd6QUg2VnJCdG9tMEs5ZU5JdktfUmtVMWFJcTRPa2N4RVJhNDctQnZ2ZWxxYUFVOFctVHEwX25hZk1DMmItVW05N0NDTzQ5NWZhenc5TzBsVXBLU1VFMnVPMFZwRXNzeFV5NTUzbF9adTNZYy00cFpER0dCOFBvVS1VZE9zTUQ3U1RNWVFZWnI5RGYzSmhnZm5wX0NtWUt1d29ZUmVqZmwtcFZITDF5R0JMZThCRi1SWXBLRjlqeGN0aUJ4d2lQRWVncXRvclRXLWZEOW5UT2RyZVJOMmpxdmdjMVd0S204dGJzRkFjNHJFeUtHRTdURTJNZVIzOFQ5dkE3dkJkRzRGVVM0TG1BQ29hWE5XYVNpeWozOThidFRuYW1CRTg0MDJPbzJXZk15RlNzbUFn?oc=5",
-     "source": "WKRC",
-     "published": "2026-10-14T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "3e2da20a04ff631d"
-    }
-   ],
+   "news": [],
    "first_seen": "2026-08-18T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [
-    {
-     "date": "2026-08-18T07:00:00+00:00",
-     "status": "Announced",
-     "headline_id": "6423a7dbf84ac594"
-    }
-   ],
-   "events": [
-    {
-     "date": "2026-08-18T07:00:00+00:00",
-     "type": "Approval",
-     "headline_id": "6423a7dbf84ac594"
-    },
-    {
-     "date": "2026-09-03T07:00:00+00:00",
-     "type": "Approval",
-     "headline_id": "0bc1d7c43b38b154"
-    },
-    {
-     "date": "2026-09-03T07:00:00+00:00",
-     "type": "Power deal",
-     "headline_id": "0bc1d7c43b38b154"
-    }
-   ],
+   "status_history": [],
+   "events": [],
    "capacity_mw": null,
-   "investment_usd_b": 0.008,
-   "last_news": "2026-10-14T07:00:00+00:00",
-   "sources_count": 5,
+   "investment_usd_b": null,
+   "last_news": null,
+   "sources_count": 0,
    "confidence": "low",
-   "hidden": false,
+   "hidden": true,
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hints": []
+   "name_hints": [],
+   "merged_into": "meta-licking-county-oh-2026"
   },
   {
    "id": "meta-omaha-ne-2024",
