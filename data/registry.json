@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T20:29:52+00:00",
+ "updated": "2026-11-18T20:31:24+00:00",
  "count": 741,
  "visible": 623,
  "records": [
@@ -57011,6 +57011,15 @@
      "published": "2026-11-04T20:17:58+00:00",
      "stage_signal": "Announced",
      "cluster_id": "9f77763b4264cbf8"
+    },
+    {
+     "id": "0ddea32ca5d6655f",
+     "title": "Developer sues Trenton over voter-approved data center ban",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPb3pzX1phWDJzRkY3MldJZF9obGJVVWRuWUkybTFFUl91NzZoeTM4ZzlCU0FXTFNMTDZyOXdIcFlIWDRLbU1HX3Y0Rm91d1UtRU9vbkNBRzN0SXRUVlNnWlJ2cDZlUnhpMlhVV0dlUV9pWXU4b1dXY0Y2dHNTTjJnUGYxQzUyekhjWEtQQzU2OFVNS0hjSlJxclpmeG0?oc=5",
+     "source": "Ideastream",
+     "published": "2026-11-13T20:43:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "a6a34ce16d2b0c62"
     }
    ],
    "first_seen": "2025-10-29T07:00:00+00:00",
@@ -57042,12 +57051,17 @@
      "date": "2026-11-04T20:17:58+00:00",
      "type": "Approval",
      "headline_id": "9f77763b4264cbf8"
+    },
+    {
+     "date": "2026-11-13T20:43:00+00:00",
+     "type": "Approval",
+     "headline_id": "0ddea32ca5d6655f"
     }
    ],
    "capacity_mw": 25,
    "investment_usd_b": null,
-   "last_news": "2026-11-04T20:17:58+00:00",
-   "sources_count": 2,
+   "last_news": "2026-11-13T20:43:00+00:00",
+   "sources_count": 3,
    "confidence": "medium",
    "hidden": false
   },
