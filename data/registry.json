@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T18:29:52+00:00",
- "count": 739,
- "visible": 622,
+ "updated": "2026-11-18T19:29:51+00:00",
+ "count": 740,
+ "visible": 623,
  "records": [
   {
    "id": "amazon-georgia",
@@ -51275,6 +51275,62 @@
    "name_hints": []
   },
   {
+   "id": "site-northern-virginia-va-2026",
+   "name": "Northern Virginia data center ($780M, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Northern Virginia, Virginia, US",
+   "state": "VA",
+   "county": null,
+   "city": "Northern Virginia, Virginia, US",
+   "lat": 39.0,
+   "lon": -77.5,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "65f440f61a5c3b51",
+     "title": "Blue Owl in $780M Deal Expands in Northern Virginia's Data Center Market",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSVhMUk9EdmJQN0ZLbXRmeFBGNjF1RXBZU2FINGFjbmxoQXg5elJfZ2FGNGMtbnVKekp4S2ZDNUV6eG9IVUpvVmVTVGhZREU4N0xQTTEzc3JlbFNUWGRqNURMSml0SHBvYWdEd0VRdXNHQXc2MExET3pQTW9Ga01TdUs1cHlHU3U2YWxmNmlWZEpLb3hpMnBLa0JCYzVwU2xka2s3SQ?oc=5",
+     "source": "Globest",
+     "published": "2026-11-18T19:03:19+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "93b5acd56643878a"
+    }
+   ],
+   "first_seen": "2026-11-18T19:03:19+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [
+    "Blue Owl"
+   ],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-18T19:03:19+00:00",
+     "status": "Announced",
+     "headline_id": "65f440f61a5c3b51"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-18T19:03:19+00:00",
+     "type": "Expansion",
+     "headline_id": "65f440f61a5c3b51"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 0.78,
+   "last_news": "2026-11-18T19:03:19+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "site-oklahoma-city-ok-2025",
    "name": "Cerebras Oklahoma City data center",
    "company": "Cerebras",
@@ -51401,6 +51457,15 @@
      "cluster_id": "c29e3a7771bc0f23"
     },
     {
+     "id": "373e6ca383cf16f7",
+     "title": "Olyphant council settles lawsuit with ERCOR Triboro LLC over proposed data centers",
+     "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNMUtabUpRZ3hiN2xXMTc4SURRYjZQejB3Q05mX1JmNHMtWVZfWlNUNEJYVTZlMEpKMnAwUk5JRndUUFEtN1FINThGN09ZZ1pYbjFMTTJ6RXlnTV9LUlBlLXI1Z202cHdEd291bE94UXZ3ZzdWVzZDZkxnREVmZkdya2lGTHZwc1FfMkNtYTloSlJWWTFhOTU4Wjl2a2tKT3dOaF9kYzhPMDlFblhHOUxLaTdKRjlfby13SDNXZWRhNzdBYzUtT0FJMlQxWjBuUkFzUkNjQ3hLeXpNb3FxYWFJMWZlZ24wd3g4TlEyX0lrMVpGNFR6OHd4eG1yMm5TR2NZVVVaMU92bU9RMld4dklyRFU1S0tTZlNzbXNLTW5fa284aXdXU2c?oc=5",
+     "source": "WNEP",
+     "published": "2026-11-18T04:49:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "373e6ca383cf16f7"
+    },
+    {
      "id": "4d313876fb15b522",
      "title": "Olyphant council approves $101M settlement, advances Project Triboro data center",
      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbFdKWUNvdlJfRE5aNW1fazc1ZHo4VmdILXFkTWdOWlFBTGJfZE1IVmswRm1oQzZjUkFnUmJmUUpBOWVmMC1VXzIxU3hka0JYYzJiZWc3SVFWdnE2TjNta2Z5NnB2TVNYVHlUWTVsQnpXbE1sZ1hpSjFVQ3JzRWVxM3BrM1BzTGJWQlJQdmNoSFpQRU0zdkxfdHlQQlkyXzRVdjJsWTBmNlBtVTA?oc=5",
@@ -51445,7 +51510,7 @@
    "capacity_mw": null,
    "investment_usd_b": 0.101,
    "last_news": "2026-11-18T16:19:03+00:00",
-   "sources_count": 2,
+   "sources_count": 3,
    "confidence": "medium",
    "hidden": false
   },
