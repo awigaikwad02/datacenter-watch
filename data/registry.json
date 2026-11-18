@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T22:31:31+00:00",
+ "updated": "2026-11-18T23:31:34+00:00",
  "count": 741,
  "visible": 623,
  "records": [
@@ -59242,6 +59242,24 @@
      "published": "2026-11-18T17:20:57+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "494fa50d558df088"
+    },
+    {
+     "id": "8182807117ea97c4",
+     "title": "Loudoun Board Pauses Legislative Data Center & Substation Applications",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5HTm00U0g0TUk3YmliaTBDOTlLT3pwTV9XSVFCYXJxWDVOR3BSYm93ZVJPM240aHpqenBqdnc3MnNURGFRZ2JVemRDU2MwS2E3cnZtdmRTblRzaDAwczlJ?oc=5",
+     "source": "Loudoun County (.gov)",
+     "published": "2026-11-18T20:01:41+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "eb6d14d006a2db9f"
+    },
+    {
+     "id": "db0293b77e6accac",
+     "title": "Loudoun pauses data center applications for 12 months",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SVmJxblJfSmMxLWdwRjdWemsyS0E3Q2xPVGhFdmwwOUFnRVRPYnNKS1kybGVfUWRWNzBvZmxseFNid1JVd1ljeHBONl9Tc2d3Zkx5eVNUNkVIcE5RdmZsdzU4TE4tdXlocmlpU1M4ZUFTTENrak85UG8yXzJPYjA?oc=5",
+     "source": "Virginia Business",
+     "published": "2026-11-18T22:41:40+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "494fa50d558df088"
     }
    ],
    "first_seen": "2025-02-11T08:00:00+00:00",
@@ -59282,8 +59300,8 @@
    ],
    "capacity_mw": 1000,
    "investment_usd_b": 10.0,
-   "last_news": "2026-11-18T17:20:57+00:00",
-   "sources_count": 10,
+   "last_news": "2026-11-18T22:41:40+00:00",
+   "sources_count": 12,
    "confidence": "high",
    "hidden": false
   },
