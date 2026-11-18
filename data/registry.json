@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T14:28:19+00:00",
+ "updated": "2026-11-18T15:28:20+00:00",
  "count": 738,
  "visible": 621,
  "records": [
@@ -55396,6 +55396,15 @@
      "published": "2026-11-17T04:26:12+00:00",
      "stage_signal": "Announced",
      "cluster_id": "1ee117aea275d770"
+    },
+    {
+     "id": "1fff94e464d25f43",
+     "title": "Spartanburg Co. Council gives final approval to 3 data center agreements, advances 3 more",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNzRwaVlyR3drYW5xVjF5NmthY2tCa3hCSHZkZ3hrS0dMV0pKVnBzVERiME5YRGotQTFPczE0ZFpoT3Nwa2l2cHRZX1JtUnZUV3c2d3I2X0FwSTBaMmtPcDV6THMtYzJKVG5YT3FjQ2VvUmUtOXYzVy16QU5mbE9CYnhoaVVaTlYzMER0RXFRWU5US0xVY2pEYzF2TW9qQll5VDFGSUpYT1p4UWt3UXdQVFZMdWtKUWItX3NvalZCYlNOUdIB1gFBVV95cUxQeWpGSFBjLXNsM3dUNlRraDFVWG96NENRYTZPVUxGNkUyamhLdldBaE9peUlZeklndDgtb1VxVlJwRk9ub01MLWpWbzdKSzR4LVlKSjIyQmg4aVRPS29kT1dwTnVyZ3VRemF2eGZYck5JZC1fdUlDZGI3YnZueGxvdlAtOTFvZUJLRFc1MV8yWVM1UmFnbUdHbktQNng2eG9WQXl4LXl0NlpqVlNNX2ZZM0syNVFrRHZ1OHhVNnBFenVJWUxWb1dwQm92S2hQaTc1dWxaVkp3?oc=5",
+     "source": "FOX Carolina News",
+     "published": "2026-11-18T05:10:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "0ccdea3bfd2adabe"
     }
    ],
    "first_seen": "2025-03-05T08:00:00+00:00",
@@ -55455,11 +55464,16 @@
      "date": "2026-11-17T04:26:12+00:00",
      "type": "Approval",
      "headline_id": "1ee117aea275d770"
+    },
+    {
+     "date": "2026-11-18T05:10:00+00:00",
+     "type": "Approval",
+     "headline_id": "1fff94e464d25f43"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 3.0,
-   "last_news": "2026-11-17T04:26:12+00:00",
+   "last_news": "2026-11-18T05:10:00+00:00",
    "sources_count": 5,
    "confidence": "medium",
    "hidden": false
@@ -57895,15 +57909,15 @@
   },
   {
    "id": "site-yorkville-il-2026",
-   "name": "Fifth Data Center (Yorkville)",
+   "name": "Fifth Data Center (Stickney)",
    "company": "",
    "companies": [],
-   "location": "Yorkville, Illinois, US",
+   "location": "Stickney, Illinois, US",
    "state": "IL",
    "county": null,
-   "city": "Yorkville, Illinois, US",
-   "lat": 41.6411,
-   "lon": -88.4473,
+   "city": "Stickney, Illinois, US",
+   "lat": 41.8214,
+   "lon": -87.7828,
    "precision": "city",
    "curated": false,
    "verified": false,
@@ -58109,6 +58123,12 @@
      "date": "2026-04-15T07:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "a1d30575b6a21149"
+    },
+    {
+     "date": "2026-11-18",
+     "type": "Moved to Stickney",
+     "headline_id": "51206dad87435644",
+     "from": "Yorkville, Illinois, US"
     }
    ],
    "capacity_mw": null,
@@ -58116,7 +58136,15 @@
    "last_news": "2026-11-18T04:13:55+00:00",
    "sources_count": 6,
    "confidence": "medium",
-   "hidden": false
+   "hidden": false,
+   "location_events": [
+    {
+     "date": "2026-11-18",
+     "type": "Moved to Stickney",
+     "headline_id": "51206dad87435644",
+     "from": "Yorkville, Illinois, US"
+    }
+   ]
   },
   {
    "id": "site-youngstown-oh-2026",
@@ -58944,6 +58972,15 @@
      "published": "2026-11-18T12:19:39+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "eb6d14d006a2db9f"
+    },
+    {
+     "id": "7dccb0408fd2db25",
+     "title": "Loudoun County adopts a pause of up to a year on new data center and substation approvals",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMXZJckNVUk41UG0tMHk0U0lpMDl1OFg4UVRxOEZGU2pOSjRNcVY1anAxekFUZDk1QTNkLUNFWmFIeEttRDJhNUh1bll1MVVXeTkyR1hFMERVUE5lU1JjSFZuX25VNzh3MjRQSnp6VS00S2k0MThMYzI2Y1htODJaSFRZdk05c2g4QUJMN3pYbDZlN2JsajZPZE11ZkZPa3BVdDdrclZXZk1oQ01BNE1J?oc=5",
+     "source": "MLQ.ai",
+     "published": "2026-11-18T15:07:50+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "eb6d14d006a2db9f"
     }
    ],
    "first_seen": "2025-02-11T08:00:00+00:00",
@@ -58984,8 +59021,8 @@
    ],
    "capacity_mw": 1000,
    "investment_usd_b": 10.0,
-   "last_news": "2026-11-18T12:19:39+00:00",
-   "sources_count": 8,
+   "last_news": "2026-11-18T15:07:50+00:00",
+   "sources_count": 9,
    "confidence": "high",
    "hidden": false
   },
