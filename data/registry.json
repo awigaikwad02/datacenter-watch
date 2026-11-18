@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T03:26:00+00:00",
+ "updated": "2026-11-18T04:25:59+00:00",
  "count": 737,
  "visible": 620,
  "records": [
@@ -58765,11 +58765,29 @@
      "cluster_id": "eb6d14d006a2db9f"
     },
     {
+     "id": "b1c4e16957e0395a",
+     "title": "Loudoun Supervisors Halt New Data Center Approvals For Up To One Year",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSEIzakxFMmJDeUJ3M0MwNmhnLVlVMC1oWmFKSjEzUWxmOVZxaVRQZVJIRC1kWlJ3a0gzNmthaWRHbmFyT2s5WEI2WmhudzlUZmZldWlJbWhCQzhPUkdjeG9qSV9BajJzRHhpTG9SVmFXWU5NVWJvd0JSQkZ6bzdTQ21QWlVLZG9WckJpczFpSEUwTWJ3MEtLT0JMNEotbm9WcWZObUkzLVVFNGxVczlmVDBCZTFoaVY3VFE?oc=5",
+     "source": "Bisnow",
+     "published": "2026-11-18T02:58:17+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b1c4e16957e0395a"
+    },
+    {
      "id": "cd97eb8fdf28e3b0",
      "title": "Loudoun County leaders approve 10-month pause on data center applications",
      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNM3dpTlM2WkJXR1V4NWZLT2JVME5VajFrbUttaFh0ZmNUd2tkWm5HWHBaZHlIWWNXdW5KNmkyRUJvVXdhNThQZHNNV1B1Y1Y1MU9XbnZfQldPeU9hRUpDMTJRY0RWajA4N1hpS2RfejJBYWJiMWh5VmFKa3NtTUNYVWpYSE9DV2xNZXFqVktBREtGbFdwUkZkVW1ZQ0lia00?oc=5",
      "source": "FOX 5 DC",
      "published": "2026-11-18T03:06:52+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "eb6d14d006a2db9f"
+    },
+    {
+     "id": "8573b47a76c602c3",
+     "title": "Loudoun enacts 12-month pause on legislative data center, substation applications",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWWdYNEtJTTZzdmY3SUlaQ2xIUEU0NkxtMjh3aHpiYjBvaE5IUThCNlY2SnRUUDhxN3JWRWFMNzgwVHNUSzdwU0hVeWdSTjNqbVZVWWFXMWZISDNRSEpWTWIxbl9oWnMxbDlSQXJtRW90eld6UHBtdWgwdEFGdU5YMFVocGxIX2pjY1pHai0ySDI?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-11-18T03:36:00+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "eb6d14d006a2db9f"
     }
@@ -58803,12 +58821,17 @@
      "date": "2026-09-15T07:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "6fdf2962a1608758"
+    },
+    {
+     "date": "2026-11-18T02:58:17+00:00",
+     "type": "Approval",
+     "headline_id": "b1c4e16957e0395a"
     }
    ],
    "capacity_mw": 1000,
    "investment_usd_b": 10.0,
-   "last_news": "2026-11-18T03:06:52+00:00",
-   "sources_count": 6,
+   "last_news": "2026-11-18T03:36:00+00:00",
+   "sources_count": 8,
    "confidence": "high",
    "hidden": false
   },
