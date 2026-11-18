@@ -39,8 +39,344 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 3128,
+ "count": 3141,
  "items": [
+  {
+   "id": "8b6c923e05539792",
+   "title": "SpaceX seeks tax breaks for $24B data center after land backlash",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSU5RNTlQZHBtYWpsOFA2UVN4bjhkM0J4NzZVMXFYMjQ0Z0VpenJUbFVIVWxEejRYOWlJeTd6eGlRcEpvbFQyQ0RQUjNvcE1Saks2OHVVRHY5OUN4blE2aVNnMzlyaDNBQmxRNTJPUUgwcUw0NUlwZFlmbE43bXdwSk1wWjFqd3R6cHlCbXlXcU9FNS1FS3VQMG85NVNQejdjOXZvSQ?oc=5",
+   "source": "MySA",
+   "published": "2026-11-18T12:11:15+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 24.0,
+   "cluster_id": "8b6c923e05539792",
+   "cluster_title": "SpaceX seeks tax breaks for $24B data center after land backlash"
+  },
+  {
+   "id": "0daa2ffec9965459",
+   "title": "Red Oak data center expansion approved despite community pushback",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMENJYXBVLWFsQTIyeHgydHdsdGFJVnktY19odGZfNUk5U0xiajh2cGxqNlRsODRlaUkyaUtfbUVEQmJsUGVrZjBVRXRkbUphTlpSbjFJRkVWX0dOMGN4TElGU3U5YU1TeUdYX2dMcGxzcm9mczFqZ25TRFRoaktMNjItNzNjd3hsVnN1cFMyazhubHZhLW16MjNEUQ?oc=5",
+   "source": "FOX 4 News Dallas-Fort Worth",
+   "published": "2026-11-18T12:10:42+00:00",
+   "feed": "Google News: Data center",
+   "category": "Expansion",
+   "tags": [
+    "Expansion",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Red Oak, Texas, US",
+     "lat": 32.52,
+     "lon": -96.8,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Dallas-Fort Worth"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2b2db7ccbc53b613",
+   "cluster_title": "Red Oak residents push back against plans for more data centers"
+  },
+  {
+   "id": "81a280473929185c",
+   "title": "Lancaster County Data Center Task Force talks water regulations, usage disclosures",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPY0JnMTEtRXNEd1M4OU5LODMtTXBnUmtWdzFXX0pBVzhnNEpueDJYVm9SWGZiRm1BQVpzX081SXpZX0VsZG5RUzNZcGkzVHEtaGdxRUlOZ1hMc210bDFoT2JmRzJucEQ0UmtiN29seEtKYTFYUXlmUWFWS2pxOWgycFFjUlpqS0hjbS1SaHhYVVlncDdnT0t2TVVlV3ZnaDZNWkNxZm80aWhCZzhRWHdnWEpxMm14LVpjUThpVlR5UEdBT2kteHE0ZHZVYjE1eEM0SXc?oc=5",
+   "source": "Nebraska Public Media",
+   "published": "2026-11-18T12:08:49+00:00",
+   "feed": "Google News: Data center",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Lancaster County, Nebraska, US",
+     "lat": 40.784,
+     "lon": -96.688,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NE"
+   ],
+   "state": "NE",
+   "county": "Lancaster County, Nebraska, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "81a280473929185c",
+   "cluster_title": "Lancaster County Data Center Task Force talks water regulations, usage disclosures"
+  },
+  {
+   "id": "1c0d8093fd9bc368",
+   "title": "‘Infrastructure problem of Biblical proportions’: Electrical, water demands of proposed Lehigh Valley hyperscale data center questioned",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOW1reE1oZFdQaVhlejNBRjlELTJYODc2bVZjWTNreV85NGpxZThVQXFfa0c0Ukl0amMxLTkydmljUVhkd3NiSVpmNXV0WDNuRWdjelR4T0pJcmVnSmhTUEgtaVpQeG5kRzM5cnBYZmV2WEE5ZlhOd3FWVEk0cVFnSkx1N1RxaWQ4WktF?oc=5",
+   "source": "The Morning Call",
+   "published": "2026-11-18T12:02:07+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Environment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1c0d8093fd9bc368",
+   "cluster_title": "‘Infrastructure problem of Biblical proportions’: Electrical, water demands of proposed Lehigh Valley hyperscale data center questioned"
+  },
+  {
+   "id": "2c84514d4dbbe94e",
+   "title": "Arizona’s data center tax break cost spikes 40% to record $56M",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQX3YzRFdCaTZ6bGpvSW01NTFRUkE1UHZ4MzZOZHdCaTdnOEtIaUg3bmF5M3B0OEQwdHdLblp5NGFtLUdUcGJqQ202ajZ5SjJ2NV82Zk5rbzNVQWtzZkRlcmhUaWRiNlNDa21MM1lYaUp1Z21hOWE1aGJlejAtbFZuQjlJemt6TkR4LVhVT2IwNkRPOHZ6b09JbVpELURZdFBMUlk4QmFqZkZUZklfXzd0eFhlWEpOSlFKWWhNMnl4T09Kb2VY?oc=5",
+   "source": "The Arizona Republic",
+   "published": "2026-11-18T12:02:00+00:00",
+   "feed": "Google News: West",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.056,
+   "cluster_id": "2c84514d4dbbe94e",
+   "cluster_title": "Arizona’s data center tax break cost spikes 40% to record $56M"
+  },
+  {
+   "id": "4faed3b4be0f5425",
+   "title": "Data center values outstrip insurance capacity as AI build-out accelerates",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVNndWtxZGc2dDNnUmNJUTZRRXBfREdLdVZOTkk4RHp3TXphcGJqMkFFN3JLU29lTE1nSFl6eUhBbGkxaVNjWjBsVnFwMHIzZDVvRE5vQ3c4cHNuaE5LUkEtMVgxakdjU2FFRElhMk1OcmJGQVNPV3Z2N0loMXRZTnpXS21xVE5ZYVVGbm03QmVLS0xvU1A2ZTA5YWNWeXdyX1JlWDFPQWRUdlFNUEE3UkNmS0w0RUxEcTRJME40R2hSY2NxaTJtb2g2b3FySE80Zldlbmw0WFQ?oc=5",
+   "source": "Insurance Business",
+   "published": "2026-11-18T12:01:35+00:00",
+   "feed": "Google News: Data center",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4faed3b4be0f5425",
+   "cluster_title": "Data center values outstrip insurance capacity as AI build-out accelerates"
+  },
+  {
+   "id": "460ff95a202b38f0",
+   "title": "SpaceX data center raises concerns over water, wildlife in Cochise County | Letter",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUVVEcFdlLURvS1QxMFBOSlBteG1SWnBmRzlGQm83cXdqajZtU0tEalhOSVE1RXd2eFk1ZzRpaTc4VmN3WDA2ZUlqQ3NQVi15cnFYZUJ6Rk9Ndm0xdTlGNl9vTFpBQVN3S2hZUE82SlpLM0IzUWZvQjl2YXlKYWNmOTBiU3ZYZVZRaFVvaQ?oc=5",
+   "source": "Arizona Daily Star",
+   "published": "2026-11-18T12:00:00+00:00",
+   "feed": "Google News: West",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Environment",
+    "Community",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Cochise County, Arizona, US",
+     "lat": 31.878,
+     "lon": -109.751,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": "Cochise County, Arizona, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "SpaceX Data Center",
+   "cluster_id": "460ff95a202b38f0",
+   "cluster_title": "SpaceX data center raises concerns over water, wildlife in Cochise County | Letter"
+  },
+  {
+   "id": "18a2a4f5a9cb0a2d",
+   "title": "Debate Over Data Center Incentives",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PYlFEZHh6Q191QWE0M1pUM000TkctWFAtdF9uNjV0TFo5anZnQWxydnVHTmZubW9yc050a0VCQy15NnNVV0xIdmg3d2dXZHRRenZWX01Tbk90VEVEcWMxOFY4encybi1RcU5ZdTdQOA?oc=5",
+   "source": "EastTexasRadio.com",
+   "published": "2026-11-18T11:58:32+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "18a2a4f5a9cb0a2d",
+   "cluster_title": "Debate Over Data Center Incentives"
+  },
+  {
+   "id": "dfb821734ccdfc9f",
+   "title": "Ferguson data center opponents need to gather 98 more valid signatures by Monday",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5xSV9NN2h2V2I0YllaQlVIcWdNbG9MN1ZrT21WNmtrYWtOY1B1SU9IQm5sZGhlYVNnVDgxcF9YT0Ftby1iN21UNXNydm1LbUVuTW42UXBCcWxZamR0VE5yVWNVdlpqZDc1TW9Paw?oc=5",
+   "source": "St. Louis Magazine",
+   "published": "2026-11-18T11:50:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Missouri, US",
+     "lat": 38.4,
+     "lon": -92.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Ferguson Data Center",
+   "cluster_id": "dfb821734ccdfc9f",
+   "cluster_title": "Ferguson data center opponents need to gather 98 more valid signatures by Monday"
+  },
+  {
+   "id": "07397acf76fc13b0",
+   "title": "NVIDIA sales, profit more than double as AI data center business booms",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUEFLbXVCeDhkMEJ2akp3MUtvR0gzZW5rTkJmSnJqdUI3MHU3TVZGbEdMQUJjV3F1SGFlQUFicXFzS2ZOR1NtUngtZGF1WjdQYzF4TTB2emlpa19hY3pOYnFNeEFSTF9WaUhMVGVJSEpGaXdNNXZwazRXZ0VmY3BuVHd1eHd2LXRmME1DLW9KeHJsMmvSAZgBQVVfeXFMTTB4T1MwaV93VmdQNGV6Z3VkZS1sbjRISG9NSFFCNG92Y0lvVE9GTkpRWEJwTC00N3BkcnI3YkYxaHpFbGNmUVo1ZTF0WXNBczJ2TXMtaWR6ZUtQMjZ2VGw1dmhSbm5lSUZ4cTdWRnVWb25wVUlZbFRhNkNja3Qwd3dudHdrdTZZSEZGWmtlSWVjaVE2Z1NsVjk?oc=5",
+   "source": "upi",
+   "published": "2026-11-18T11:43:56+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "cluster_id": "07397acf76fc13b0",
+   "cluster_title": "NVIDIA sales, profit more than double as AI data center business booms"
+  },
   {
    "id": "713457bc03a0f84a",
    "title": "Residents push back against massive AI data center in New Jersey",
@@ -893,6 +1229,42 @@
    "suppliers": [],
    "cluster_id": "b097925930f5da76",
    "cluster_title": "Gratitude Expressed for Wheeling’s Proposed Data Center Regulations"
+  },
+  {
+   "id": "4d313876fb15b522",
+   "title": "Olyphant council approves $101M settlement, advances Project Triboro data center",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbFdKWUNvdlJfRE5aNW1fazc1ZHo4VmdILXFkTWdOWlFBTGJfZE1IVmswRm1oQzZjUkFnUmJmUUpBOWVmMC1VXzIxU3hka0JYYzJiZWc3SVFWdnE2TjNta2Z5NnB2TVNYVHlUWTVsQnpXbE1sZ1hpSjFVQ3JzRWVxM3BrM1BzTGJWQlJQdmNoSFpQRU0zdkxfdHlQQlkyXzRVdjJsWTBmNlBtVTA?oc=5",
+   "source": "fox56.com",
+   "published": "2026-11-18T06:12:46+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Olyphant, Pennsylvania, US",
+     "lat": 41.4684,
+     "lon": -75.603,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Triboro",
+   "cluster_id": "4d313876fb15b522",
+   "cluster_title": "Olyphant council approves $101M settlement, advances Project Triboro data center"
   },
   {
    "id": "0a65d627d8e01200",
@@ -3143,6 +3515,42 @@
    "cluster_title": "Rare look inside Port Washington's $15M AI data center project drawing mixed reactions"
   },
   {
+   "id": "eb621d4f0391304f",
+   "title": "Rare look inside Wisconsin's $15B AI data center project drawing mixed reactions",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZ0tRY2sycTlVLXZZdVBMRmNkaDNScWswZU9SemVwcTlRT3dTUDdxWTJNdVNRRDhoX1ZlNS1fV0toQVBLbk93ZnZaOEN0Rnl2UV9tVF9mdHNxVkQ3V1R2Vk9nbGEyWElHWFNtcFdGZUxfb21FRWNQWWNHa2dIUXBuaFJKVVg?oc=5",
+   "source": "WISN",
+   "published": "2026-11-18T01:12:07+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 15.0,
+   "cluster_id": "324ad7006d1c90cf",
+   "cluster_title": "Rare look inside Port Washington's $15M AI data center project drawing mixed reactions"
+  },
+  {
    "id": "550937d996742b75",
    "title": "Data center task force leans toward lower threshold, farmland and aquifer limits as county ordinance nears the finish line",
    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRDBBQ1M1akM1UXZoNVVZUkdObmpveXd1c2x5dEhZNUpETkdfWWVKdFVERndLcEE5U1ktWlhpYXd1bFl3YmFwaGgwSTVJVWc2dXdKdGF2d0psdkhORWg0RHd3MmpnVHprLTZpOWxTRHI2UXF0WUlVWUpTYkpHRVJEWWJDcGZqRzJuZGxZS0RhaEs0TmQ0SkNJWm12LUZBQk9xcXBMWHlqMEZfUk1kMVh0emJVbFAtX3NNczdFc01nemtmZnhiVENsM282aUtPRk1MQzR5V1VsaFBqa2JfV3hRTA?oc=5",
@@ -3471,6 +3879,41 @@
    "suppliers": [],
    "cluster_id": "4243f5d9d3183239",
    "cluster_title": "'Would not bring this back': Bellevue officials pull the plug on data center proposal, mayor-elect brings other ideas"
+  },
+  {
+   "id": "1795dc8c1a526857",
+   "title": "Talks continue over proposed data center in Cromwell",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcnlheUUtb2RZUy1LOGhnVFl3TUMtcUFMTkl1ODNLdUlCYk54WC1kQlFYdV9jU1EyVkJ2eW1uMjA5NVBfMlpsenVKVENFcHdfcWJwUXlYSVEzM2xSMkZKRGlZM0NFOTE0Z0FCZllQNFp0TW52Um1pNHhvVHY4STl1UmJaZTVXd0hfM2R3d0RHWGxnZw?oc=5",
+   "source": "WFSB",
+   "published": "2026-11-18T00:36:21+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Cromwell, Connecticut, US",
+     "lat": 41.5951,
+     "lon": -72.6454,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CT"
+   ],
+   "state": "CT",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1795dc8c1a526857",
+   "cluster_title": "Talks continue over proposed data center in Cromwell"
   },
   {
    "id": "78a3008dbf403dda",
