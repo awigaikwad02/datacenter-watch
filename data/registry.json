@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T17:29:53+00:00",
+ "updated": "2026-11-18T18:29:52+00:00",
  "count": 739,
  "visible": 622,
  "records": [
@@ -43371,6 +43371,15 @@
      "published": "2026-11-18T04:13:19+00:00",
      "stage_signal": "Announced",
      "cluster_id": "4b9c5b4eac1a7ad4"
+    },
+    {
+     "id": "b155e88a21044288",
+     "title": "Georgetown Commission Opposes Proposed Data Center - KLBJ-AM - Austin, TX",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQk9hdEVndWx2eVlHNUFrZUFudS15TTJ6bDdrbUlwdnlreWUydnNldG4xZkdkWFNDb1ZvZkZWOGxHZ21YZTNOU19jbjFKazJfS0x6MFJFc3pkZl9TN1VqVDdjLVJURjNHQUNHTG9jd3A3eG5fdVJOeVJFTngzZzN6eU1OaEdnWXdSTzFVZWEyTGU1d0E2UzZPZmZNblNMUQ?oc=5",
+     "source": "KLBJ-AM - Austin, TX",
+     "published": "2026-11-18T16:58:44+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b155e88a21044288"
     }
    ],
    "first_seen": "2026-11-12T00:05:39+00:00",
@@ -43390,8 +43399,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
-   "last_news": "2026-11-18T04:13:19+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-18T16:58:44+00:00",
+   "sources_count": 5,
    "confidence": "medium",
    "hidden": false
   },
@@ -54400,6 +54409,15 @@
      "published": "2026-11-18T02:14:56+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "10b08f3a0d1fdb64"
+    },
+    {
+     "id": "2dd93883a24bef58",
+     "title": "San Jose pauses data center approvals until rules take effect next month",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ha0lwWU9zamRyM2JySHF5bE9aRWlXdHpIRVhZZ2U2ZUdHOEpxdEJXYjkzMldlUTA5MVlpYTdONXl6VHhucEhlU2FWLXdKYTBqN2ZfM3NBUmhMTmxGaElmZE9kaHpDTkdISm5CRXFIUzVCQVVR?oc=5",
+     "source": "The Mercury News",
+     "published": "2026-11-18T17:22:53+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "2dd93883a24bef58"
     }
    ],
    "first_seen": "2024-11-14T08:00:00+00:00",
@@ -54449,11 +54467,16 @@
      "date": "2026-11-18T02:14:56+00:00",
      "type": "Cancelled",
      "headline_id": "10b08f3a0d1fdb64"
+    },
+    {
+     "date": "2026-11-18T17:22:53+00:00",
+     "type": "Approval",
+     "headline_id": "2dd93883a24bef58"
     }
    ],
    "capacity_mw": 200,
    "investment_usd_b": null,
-   "last_news": "2026-11-18T02:14:56+00:00",
+   "last_news": "2026-11-18T17:22:53+00:00",
    "sources_count": 10,
    "confidence": "medium",
    "hidden": false,
