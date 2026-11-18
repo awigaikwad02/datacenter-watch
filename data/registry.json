@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T15:29:52+00:00",
- "count": 738,
- "visible": 621,
+ "updated": "2026-11-18T16:29:51+00:00",
+ "count": 739,
+ "visible": 622,
  "records": [
   {
    "id": "amazon-georgia",
@@ -36682,7 +36682,7 @@
   },
   {
    "id": "site-clarksville-ar-2026",
-   "name": "Clarksville data center ($55B, proposed 2026)",
+   "name": "Clarksville data center ($55B, under construction 2026)",
    "company": "",
    "companies": [],
    "location": "Clarksville, Arkansas, US",
@@ -36722,6 +36722,15 @@
      "published": "2026-10-08T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "d499d5c15756ca86"
+    },
+    {
+     "id": "814abfd43f7bcec2",
+     "title": "Multi-billion dollar data center under construction in Clarksville",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeUZzX1RlRm9TaTlmQzNJMWduVWtZSDhDbTRZbXlYclhSaVlFSUg4NVo1SkZ5UXhkcnNlbXV2QndjNkxzSV9ubVZYZUdOdHJpNEhUN2lUUnZFVUt2SUUyaXpxX3ROeHl6Y25LT3dmSVdBRU0wcjVxTjg3VVZNdG1NNU84ZEhxWEtWUUJSakVnbjk0RnNadExMSkFB?oc=5",
+     "source": "KATV",
+     "published": "2026-11-18T16:28:29+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "814abfd43f7bcec2"
     }
    ],
    "first_seen": "2026-07-30T07:00:00+00:00",
@@ -36730,12 +36739,17 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "status": "Announced",
+   "status": "Under construction",
    "status_history": [
     {
      "date": "2026-07-30T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "d2e386ea4000ff6e"
+    },
+    {
+     "date": "2026-11-18T16:28:29+00:00",
+     "status": "Under construction",
+     "headline_id": "814abfd43f7bcec2"
     }
    ],
    "events": [
@@ -36747,8 +36761,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 55.0,
-   "last_news": "2026-10-08T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-11-18T16:28:29+00:00",
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false
   },
@@ -51351,6 +51365,80 @@
    "confidence": "low",
    "hidden": true,
    "merged_into": "site-louisville-ky-2025"
+  },
+  {
+   "id": "site-olyphant-pa-2026",
+   "name": "Project Triboro (Olyphant)",
+   "company": "",
+   "companies": [],
+   "location": "Olyphant, Pennsylvania, US",
+   "state": "PA",
+   "county": null,
+   "city": "Olyphant, Pennsylvania, US",
+   "lat": 41.4684,
+   "lon": -75.603,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "c29e3a7771bc0f23",
+     "title": "Olyphant approves controversial data center settlement, $101 million deal",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaUpWMmdXME8ySG5oNC1McHJ1MVZpTGZVem1iSkVwSzRTZVNCSnFFTmpXZDRGdUtIVHJnQ3VIVVRwdjRmc0xnektMVGlXVlFVZUE3a091TURyLXFTNEg3OFZ4VzBscktGVEZqV21hb1B2OTMzbjRXSi1odGptdkNrSnpaVTd1WlFJcTdiTU00YnpBVmRMY2lNOE9YU3NocHJqTmdzek1BYmNfYzVlTmhxeUUyZEh1dzA?oc=5",
+     "source": "Scranton Times-Tribune",
+     "published": "2026-11-18T04:34:35+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "c29e3a7771bc0f23"
+    },
+    {
+     "id": "4d313876fb15b522",
+     "title": "Olyphant council approves $101M settlement, advances Project Triboro data center",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbFdKWUNvdlJfRE5aNW1fazc1ZHo4VmdILXFkTWdOWlFBTGJfZE1IVmswRm1oQzZjUkFnUmJmUUpBOWVmMC1VXzIxU3hka0JYYzJiZWc3SVFWdnE2TjNta2Z5NnB2TVNYVHlUWTVsQnpXbE1sZ1hpSjFVQ3JzRWVxM3BrM1BzTGJWQlJQdmNoSFpQRU0zdkxfdHlQQlkyXzRVdjJsWTBmNlBtVTA?oc=5",
+     "source": "fox56.com",
+     "published": "2026-11-18T06:12:46+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "4d313876fb15b522"
+    },
+    {
+     "id": "08844deee7fc79a6",
+     "title": "Data center opponents react to Olyphant’s approval of settlement, CBA",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPV21yc0ZvX3lHcHdkT09LZTV6Y0hyNTRmcEo5T3U2SVRUMzhPLVlsaHRBbld4ZVl0TzBIMkpHc1BfVFNUMXI4MGlncjZZOXJuTkw1NmVKNFNLUVF4N0dQeFoySDBsTzFQYVZLS08yTjRtb0wwRUQtNW9MVEpPUmcwWHFpSHQ2a3VLOHhrNThFQVVjZ283dlV5VnllV1F3Zlc3amZOQy1ETGlWS1hMdmRKM2VB?oc=5",
+     "source": "Scranton Times-Tribune",
+     "published": "2026-11-18T16:19:03+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "08844deee7fc79a6"
+    }
+   ],
+   "first_seen": "2026-11-18T04:34:35+00:00",
+   "name_hints": [
+    "Project Triboro"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-18T04:34:35+00:00",
+     "status": "Announced",
+     "headline_id": "c29e3a7771bc0f23"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-18T04:34:35+00:00",
+     "type": "Approval",
+     "headline_id": "c29e3a7771bc0f23"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 0.101,
+   "last_news": "2026-11-18T16:19:03+00:00",
+   "sources_count": 2,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-omaha-ne-2025",
