@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-18T23:31:34+00:00",
+ "updated": "2026-11-19T00:31:26+00:00",
  "count": 741,
  "visible": 623,
  "records": [
@@ -48469,6 +48469,15 @@
      "published": "2026-11-16T23:35:29+00:00",
      "stage_signal": "Announced",
      "cluster_id": "e17f713566f99c0a"
+    },
+    {
+     "id": "7ebcb4b3e442fd13",
+     "title": "Noise, water and power studies required for proposed South Augusta data center",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLXIzd0pmSmJJb2d3OGJwN2x4d2otVFMyNkZWUHFhYWxTRXQ4aUdWOF91OVVYQUw5bHpKSmgtRFNUMGpkSmN6dl9fdWpUV3A1c29PMXNSRUNLdmpMTE5rbFFMVmtaOGtKcVpJaE9OMl9GeVNJWVRIemMyZkFyNHkzajdWNWllTVBzdzFTU0ZBc2kwdHlsN0QySWNjVGVGemhUMDhKbQ?oc=5",
+     "source": "WRDW",
+     "published": "2026-11-19T00:02:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7ebcb4b3e442fd13"
     }
    ],
    "first_seen": "2025-04-09T07:00:00+00:00",
@@ -48506,7 +48515,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
-   "last_news": "2026-11-16T23:35:29+00:00",
+   "last_news": "2026-11-19T00:02:00+00:00",
    "sources_count": 3,
    "confidence": "medium",
    "hidden": false,
@@ -48514,7 +48523,8 @@
    "builders": [],
    "suppliers": [],
    "name_hints": [
-    "Project Azalea"
+    "Project Azalea",
+    "South Augusta Data Center"
    ],
    "location_events": [
     {
