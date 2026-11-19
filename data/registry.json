@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-19T16:36:48+00:00",
+ "updated": "2026-11-19T17:36:48+00:00",
  "count": 741,
  "visible": 623,
  "records": [
@@ -57090,6 +57090,15 @@
      "published": "2026-11-13T20:43:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "a6a34ce16d2b0c62"
+    },
+    {
+     "id": "018d50111dae38a5",
+     "title": "Trenton approved first data center building, major infrastructure before ban",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNXzl2bEphQUQtQlFmNzM3Y2tXdVdWR0FXc3BjYnBCaTlPNXpFU2lJRi15bTl6RmQ2NWNuc0lpTjBYRlFOUHJ1blNnT2ZUelNwTjV3bjF2RENuWlFxUEZwVnZOZEQ5VWUxak1ibEJEVl9fTHRHY19rR0Zua3VCdXF5MnNpbkQ5RTRhemF3ZTRaTXQtQjJybHFQSW1YeDAxSW0wajlpZzhfZkJUUDlRMW9LMXJqYmFSd2lNUEJVLVR0UjdvS1RIWVk2ZDcyU2s?oc=5",
+     "source": "Cleveland.com",
+     "published": "2026-11-19T12:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "9826423eaed1e276"
     }
    ],
    "first_seen": "2025-10-29T07:00:00+00:00",
@@ -57126,12 +57135,17 @@
      "date": "2026-11-13T20:43:00+00:00",
      "type": "Approval",
      "headline_id": "0ddea32ca5d6655f"
+    },
+    {
+     "date": "2026-11-19T12:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "018d50111dae38a5"
     }
    ],
    "capacity_mw": 25,
    "investment_usd_b": null,
-   "last_news": "2026-11-13T20:43:00+00:00",
-   "sources_count": 3,
+   "last_news": "2026-11-19T12:00:00+00:00",
+   "sources_count": 4,
    "confidence": "medium",
    "hidden": false
   },
