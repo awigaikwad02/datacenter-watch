@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-19T15:35:42+00:00",
+ "updated": "2026-11-19T16:35:41+00:00",
  "count": 741,
  "visible": 623,
  "records": [
@@ -41505,6 +41505,15 @@
      "published": "2026-10-07T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "b35b890c750cf827"
+    },
+    {
+     "id": "f354eec68a8458de",
+     "title": "Enid City Commission approves annexing land for potential data center",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLU9EdWZlc25OLVU2SHYtb1RodjJXeUZ4b1ZOMGdvOGs1LWN0RmtrQnpYNU1Tal9qY0F2S2VBOEh1Qy1YaHFLRHlBaktUdk4tbE1Wb2lLSG9rUWRQWVZ5eVN0ZTRRX2Y1RGctR2hNX0FwWENodWYzSEk1ZDlyZEFHZjlIUHhJc1BGcmV4X1pMeHlkWjJ5amhMaE4taERPbjjSAaQBQVVfeXFMTVNoWm9Pbl9rLTI2a291NjFyem1DazUwcDYyTGNwZHJ3YXk2WWhDTXZ2bVhrdF9TTlJ1TDJaTEM5NDhjSlBMNUd0V2R0UGo2VE42akx5TF9EWjFvQnlVamVUTzZPRFNQSjIzRVRzallydVVRVHlYM3pvTkRfQjkxajhvMjBrODFnWGdLSE92SmNMWFh3NVVYbUsyeDJScjR0d28xaTY?oc=5",
+     "source": "KFOR",
+     "published": "2026-11-19T04:01:35+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "f354eec68a8458de"
     }
    ],
    "first_seen": "2026-09-08T07:00:00+00:00",
@@ -41534,11 +41543,16 @@
      "date": "2026-10-06T07:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "91282f4ce17a555a"
+    },
+    {
+     "date": "2026-11-19T04:01:35+00:00",
+     "type": "Approval",
+     "headline_id": "f354eec68a8458de"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 35.0,
-   "last_news": "2026-10-07T07:00:00+00:00",
+   "last_news": "2026-11-19T04:01:35+00:00",
    "sources_count": 7,
    "confidence": "medium",
    "hidden": false
