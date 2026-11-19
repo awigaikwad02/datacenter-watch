@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-19T20:36:48+00:00",
+ "updated": "2026-11-19T21:36:49+00:00",
  "count": 742,
  "visible": 624,
  "records": [
@@ -21801,6 +21801,15 @@
      "published": "2026-11-18T20:12:57+00:00",
      "stage_signal": "Announced",
      "cluster_id": "b6cf2b348073a19f"
+    },
+    {
+     "id": "ad26ad6682c61886",
+     "title": "Planned Meta data center in NKY means mobile home park residents must move",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMnZYaV9RUzVib2puTEpPZnNPNzY4MDlLWUVzVlF2b2lUTVRGRktod3lYanNvdW5jZUdUamllTkc0UnNUNFBMOVhLazZ6ZmpZdlppTldkNmp1anNHS29kOG5pdzRfaDQySVRNc3NaZlRlcm85TVE5ODVIRU5QeXFpRUZBZE1UOGMyVWZvWWNrS2xrX29qVzBaQ0JGOXJxQjc0V0tpeFJULWk?oc=5",
+     "source": "FOX19 | Cincinnati",
+     "published": "2026-11-19T19:38:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ad26ad6682c61886"
     }
    ],
    "first_seen": "2026-08-18T07:00:00+00:00",
@@ -21836,8 +21845,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.008,
-   "last_news": "2026-11-18T20:12:57+00:00",
-   "sources_count": 6,
+   "last_news": "2026-11-19T19:38:00+00:00",
+   "sources_count": 7,
    "confidence": "high",
    "hidden": false
   },
@@ -37664,11 +37673,21 @@
      "published": "2026-11-17T08:10:11+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7e4ff6d7eae59fe0"
+    },
+    {
+     "id": "c0cb803ccadeec6c",
+     "title": "Arizona AG raises concerns over proposed SpaceX data center in Cochise County",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdzdSWi1DdFFMci1EVnhxeWV5UTIwU2Z5YjVaOU5uYVY5ckdPcFlWSXUtdS1zOW12NWZuaE1YSTZNU0J4dkRRaUlFZlo4N0E4Mk1VY1BaaXFtLThaTmxDMG9aX29RSFJNZldrQURqVy1sQ1ZCMkpfdGRUcHRVWmlzNlNSSUcxYWFybjltcTlaZExCZFNPMVhVdTZjYkdSRUVZUXNQb2ktQ2VlTWZiZzRLSlpseHdWdw?oc=5",
+     "source": "KGUN 9",
+     "published": "2026-11-19T20:53:31+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "460ff95a202b38f0"
     }
    ],
    "first_seen": "2026-11-03T01:08:00+00:00",
    "name_hints": [
-    "Cochise Co. Data Center"
+    "Cochise Co. Data Center",
+    "SpaceX Data Center"
    ],
    "utilities": [],
    "investors": [],
@@ -37685,8 +37704,8 @@
    "events": [],
    "capacity_mw": 6000,
    "investment_usd_b": 50.0,
-   "last_news": "2026-11-17T08:10:11+00:00",
-   "sources_count": 6,
+   "last_news": "2026-11-19T20:53:31+00:00",
+   "sources_count": 7,
    "confidence": "medium",
    "hidden": false
   },

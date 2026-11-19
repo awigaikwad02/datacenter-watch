@@ -8,8 +8,47 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 646,
+ "count": 649,
  "items": [
+  {
+   "id": "6461589618c688cc",
+   "title": "Ohio approves two large power plants exclusively for data centers",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSm9wT0VXSU9iV1VyRUNkcDlQbDZWWFFJcXR4ektFMHpabmVZd1FhbEFwNFpzLUoxeTM4VWhSOXQ3ajVKSkpFc2o4V3pNMG1RNTRteXB1dmxtTlhvaVBFbDBCMGlXRFJrSlF6dms1WEx1T0p0WlROMXdVTzNYNmYwNjc2LWZRM1RPNWhDZVNhOEpvXzg?oc=5",
+   "source": "Signal Ohio",
+   "published": "2026-11-19T21:15:51+00:00",
+   "state": "OH",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "about something other than the data center"
+  },
+  {
+   "id": "da4391a86c4e486e",
+   "title": "1-year data center moratorium proposed for Jacksonville",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1MYTFtdDFfa0t5cEZZcHptaUw2cDFVX21sNk1kYkpmbVJNdGF4V0ZnUy1ScXV0d1JXbnpFTTczX1FNbV82VHNQV2dxVVpsNFptcDlxOXJLS0ZuYzBIUU9wR0VCb01ZUnlCRUlJX3BSZjdXT3J4Y2E4?oc=5",
+   "source": "Jacksonville Today",
+   "published": "2026-11-19T21:00:31+00:00",
+   "state": "FL",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "a875b857107fab4e",
+   "title": "How much electricity will a Lehigh Valley hyperscale data center campus use? Questions linger over plans",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYUpTcVFKSDFoY0xydndhYlFSY3EtamhETm1MWHhWNk5SWm9mVnJ5eEFoLXBCWElRc3lxSkdyTjhhclpzRjQtSlZxY2ZfNExWTXN6YnNhNTUxbjZRVjVzR2QwWE1QN2NoNzY5VE1UZ2NXUmI0cHJadExHYzJXM2JId0E2WWpJRmNlalhva0lad0dVaU5WZDFfSy1LeURrU1dSZDZIdE1ZMDZmNDQ5RmZhdGVnZkhTLWtHTUNiQlFXbWp3Uy15Nmxla1VsTVpzbzZzMzdN?oc=5",
+   "source": "The Morning Call",
+   "published": "2026-11-19T20:53:21+00:00",
+   "state": "PA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
+  },
   {
    "id": "dcf7d03a794281d9",
    "title": "News | Giga Energy lands AI lease for speculative Texas data center",
@@ -100,6 +139,19 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "03915b83a2ff4d89",
+   "title": "Rural Virginia says ‘no’ to data center expansion, threats to water resources",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ2ZDRU9mdTR1MU9xdDVZUzA5QkhzdXNkUnFRaVRHTTFIdXVqZ01oSG5zTHNLa1NWRGI5QVM4WkpoOW02aDRqWHBnM3hsMUZGdFZRY2w1LVZqclp1Q1hGUnpQWEpYdmlBV1I2T1ZNakZ2amZhS3VZMW1mbi1ZRlI5bUQ3aGZpLU3SAYcBQVVfeXFMUENmQ0VPZnU0dTFPcXQ1WVMwOUJIc3VzZFJxUWlUR00xSHV1amdNaEhuc0xzS2tTVkRiOUFTOFpKaDltNmg0alhwZzN4bDFGRnRWUWNsNS1WanJadUNYRlJ6UFhKWHZpQVdSNk9WTWpGdmpmYUt1WTFtZm4tWUZSOW1EN2hmaS1N?oc=5",
+   "source": "WRIC ABC 8News",
+   "published": "2026-11-19T14:17:38+00:00",
+   "state": "VA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "4474093d89d0e194",
@@ -325,9 +377,9 @@
   {
    "id": "efd340b40eddda93",
    "title": "What the incoming Michigan governor, legislature plan to do about data centers",
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQc29QU3c1TGs3VzZyeURBa0F1VjgzSzBfLW1Gd3dSUTlWS0R4T0hueXc2M0l6dGZaeG1EV0NSRm4wM2JJUi15OUJQMnIyOWc2X1pMQXZKVEs0bDBtNmpkVHVYYzVGazZsVEwxVTdKZUxaWWFnMXlhUUx5dVA4Z0loejkxZjJPSEN0alB3R3FleC1LTVVxNGRobkhBeXZwZll0djJGblNxR0Q0UGpjSGUyaHhtZklzcm5RdEtBenctOUVURmxPYlR6b3hqc0xYT1JwTHBUYzh6VHh6NHphOTJiV0txSkVaUnctVXgtMk9tdGJuM29oZU9kSF9Dd3o?oc=5",
-   "source": "WSMH",
-   "published": "2026-11-18T23:32:47+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNN1Z1X2FoRzk2MlRpcHd4RVZtZ3I5MFdIbGxUbkNWS0p3blc5aU9QaFUxMlVhN3ExSzFLQXpkd3ZXMVhhdldaVmdocWQxR19vZGNGYlJvY04yZExKUkhMMk5ZaFR0SENHcTFWSmhtTEZBNUcyQ1g0OHdIMExQQUNxOTVWbVZkTFNHLUJqOU5jb1FqVEx5TXJmaFFPLVBkTW9XWGp4UVZFdEJfN1VWMk1oY0stMWttZ2UwN3VBZEZnVVVZQQ?oc=5",
+   "source": "WWMT",
+   "published": "2026-11-18T23:33:40+00:00",
    "state": "MI",
    "companies": [],
    "builders": [],
@@ -337,7 +389,7 @@
   },
   {
    "id": "8b2907c03e09e786",
-   "title": "Texas Starts Approving Data Centers Again — Including For SpaceX",
+   "title": "Texas Starts Approving Data Centers Again — Including for SpaceX",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb0ZmOElxT0pSMW1rWVpydm1DMExJVzNfQ3FkS3M3VXM5dVNsamI2bTh5RTBhNGtiMnB2Y0VxVXpJdkN2NnJYOTlYOVBIZFJYbWpILWdaX1RZM0luX1IyRVNjR25YSlVieG5qZ3VNR2RlTWhNLWJSZUp0OGV5ejlkaXB3QQ?oc=5",
    "source": "Barron's",
    "published": "2026-11-18T22:38:00+00:00",
@@ -364,9 +416,9 @@
   {
    "id": "1795dc8c1a526857",
    "title": "Talks continue over proposed data center in Cromwell",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNS2RWRFVCbnFUMm91NFAyTzRZcUxpYkt3WF9TMzFRNVd0QnFHdmwtcUJabkl0VWV1d1lNa1BBeGQyd3loTUVIVUwxMFBKWGlGNWdjUktlbVlybEU4M3h1SGNpYUJySzVxSXMtWnlseUctYWJiWHhPVkZ5OW9FS1pCdUd5TDBocUxqTGJIRVhtWFR4V2lwMWFF?oc=5",
-   "source": "AZ Family",
-   "published": "2026-11-18T22:14:08+00:00",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcnlheUUtb2RZUy1LOGhnVFl3TUMtcUFMTkl1ODNLdUlCYk54WC1kQlFYdV9jU1EyVkJ2eW1uMjA5NVBfMlpsenVKVENFcHdfcWJwUXlYSVEzM2xSMkZKRGlZM0NFOTE0Z0FCZllQNFp0TW52Um1pNHhvVHY4STl1UmJaZTVXd0hfM2R3d0RHWGxnZw?oc=5",
+   "source": "WFSB",
+   "published": "2026-11-18T22:11:30+00:00",
    "state": "CT",
    "companies": [],
    "builders": [],
@@ -424,19 +476,6 @@
    "builders": [],
    "suppliers": [],
    "precision": "source",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "6e83f340dd96d51d",
-   "title": "Data center boom revives debate over how to plan Wisconsin’s energy future",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNcmg4Vzh1eFc5c1I5WVhBYV9PcUtPZnZqbFhXRlZXREhua2dIRldFalZOVmZmNWZCTGRUMjdVX09QZzdmR1FQbndsdW1NSjdmWS1naTR5bDhHRWpRQUpBd2d2SHNjSUhHN3Y0bnJCaDJLbkpnTWRnZ1l3eXZQU1o5enkxWnlsN2RINlR2dlZjTUVDSmdNVDNLdUJXQWd2VjIxTmJEY0hZQmJEbEJ0OEZlUHVvM3VVOUdfLXc?oc=5",
-   "source": "Wausau Pilot & Review",
-   "published": "2026-11-18T20:30:00+00:00",
-   "state": "WI",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
    "reason": "no operator, and only a state"
   },
   {
@@ -750,6 +789,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "11f57e7ea0f7dc50",
+   "title": "NC regulators approve Duke Energy rate increases, data center protections",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYkdHTXhvellacmR1RW1hUnZuLTlHcTlpS01YdWRlbzFkY0lJd05qX25EOHhWWlpUUjNhYTZWbXJDRE9SaDlGNTVmR0EwMVhuVkR2cUtpbHRQcm04dmZGdmo5ZnpUT3lCNVg3Y3JKTVlQVmFobWl0bDJiTWVMb2lHc1cwWGl0aTMtUWtnZFRSTG55ZEl6eHlFYm1vTWdyNlRhVF9aNld0SQ?oc=5",
+   "source": "WLOS",
+   "published": "2026-11-18T08:00:00+00:00",
+   "state": "NC",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "843b008992584a37",
@@ -1943,6 +1995,19 @@
    "source": "Thomasnet",
    "published": "2026-11-16T12:54:54+00:00",
    "state": "TX",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "6e83f340dd96d51d",
+   "title": "Data center boom revives debate over how to plan Wisconsin’s energy future",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNay1WM2luZGd1NEhPNHdDa2NwbTA0YVJNM0FzTkpyazZYM015TzdabUhsSklOTGtvdzJKWEZnWnJOWUdnYnJQamVWRExWcnF2blZZcmtVVW5aU1pudjRPVktEUTRfbHZLTlJHZlJXcHN4UHQxYWhvbU4ycDVPbjZ0bTdjbUlEMlBTUHlLbE02Vjl2S0JyMDh1b3RCaThFUFNpZUVjdzFjbGtlYVlvZk5YUTBoNVJtbUctWmpzdTA3dw?oc=5",
+   "source": "Wisconsin Watch",
+   "published": "2026-11-16T12:00:00+00:00",
+   "state": "WI",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -5721,7 +5786,7 @@
   },
   {
    "id": "8b3bab97efea4631",
-   "title": "Did Salisbury approve a data center before moratorium? Officials disagree.",
+   "title": "Did Salisbury approve a data center before moratorium? Officials disagree",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQlJQVWJzM3hTaEs3U2ZaUEgxTF9TeENwZkxfaFdGbTVSdy1vc1NIcmVuWUZhc296bE1Hd2lHNms5cHlXVmNpZXB1RHJ5UTZBcE52SEhMZVRINmx0dzlSSS1zTGR5THpBUGNVaEZtZFdmWFpkY0NiRVVlYnpYbndsT19wcFdCa3VE?oc=5",
    "source": "Capital Gazette",
    "published": "2026-10-29T20:31:29+00:00",
@@ -8380,32 +8445,6 @@
    "source": "Axios",
    "published": "2026-10-20T21:57:44+00:00",
    "state": "CA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "no operator, code name or figure"
-  },
-  {
-   "id": "4315e2ad43d45502",
-   "title": "The Kansas Town That Sued Its Own Residents to Build a Data Center",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRzBfNExYZG9PekNvTUpWeXZ4aExTY3hDeFVQZjVtTDlkR1IzcG9MRzVqSkVleXRJa05hRVBFallGSUw4U0xrMm5JYzFtWFAyeTJDdkh6RkpKUWxNWjBQbFV6aUd5ajZ0WTQ4cnZmS05uNTBzb1Y0LVlWelMxQTRfNG9fdjZheml4dU4tdksxSTJWUjBXeVREcHg4NzFudE5NSDFRSmdR?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-20T21:24:00+00:00",
-   "state": "KS",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "dd517be5508fe652",
-   "title": "Hundreds attend forum on Rapid City’s proposed data center ordinance",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX2ptalR5SGtYMDBaWFhjV1RvWnRacWp1T01fSC1EMmpLM3RpWmN5cVpsNktnY3BoczJmZWtVZnYzQWJ2SnRKdFJkOFQ0bElsaGRqTmVMcHQ5WFdXYUx2WGxFaWdzdldoblNTcWhseFAwaFNkVkExNjlmT1hPUEdDNmF1R19Dem8xWS1rdlgzTEtGcU9LbjY5WmhRMzdNZ3BK0gG0AUFVX3lxTE14dXJ0SnAyd3JZZkxIY1F6dmRFMFJ5V2dscGR1MEtlVmFaR2dKQUNSTXFhRkNTVWx1Rkg1TmYzeG9uTnh4cVQwT3NoVW1EczU4Y0VHWDl2Rlo0bnVlNmJnVkRMZFFGVmdMWUZQalRxWk1mem8wX2pYejFoR0xtUzZMbVpnU1lpckRGNTFqNm1oYXlWNElBTlZSX0x5ckJOYzFMSXIyNkc5d1MxWGo3LTJzYWxlTw?oc=5",
-   "source": "KOTA Territory News",
-   "published": "2026-10-20T21:00:00+00:00",
-   "state": "SD",
    "companies": [],
    "builders": [],
    "suppliers": [],
