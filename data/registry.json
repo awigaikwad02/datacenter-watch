@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-19T19:36:50+00:00",
- "count": 741,
- "visible": 623,
+ "updated": "2026-11-19T20:36:48+00:00",
+ "count": 742,
+ "visible": 624,
  "records": [
   {
    "id": "amazon-georgia",
@@ -31116,6 +31116,60 @@
    "last_news": "2026-11-05T18:50:43+00:00",
    "sources_count": 2,
    "confidence": "high",
+   "hidden": false
+  },
+  {
+   "id": "site-abilene-tx-2026",
+   "name": "Abilene data center ($160M, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Abilene, Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": "Abilene, Texas, US",
+   "lat": 32.45,
+   "lon": -99.73,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "80c3e547dc646c07",
+     "title": "Abilene data center campus eyes $160M expansion",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbGIwNEpTaWQyY1d0dGsyZUF0RDFnaHI1LUZIbDNwLUVsdHBkejQ2YnJ0YUZuMGEteUNOWU5KY0VjRDRWYmFoR3lMZnZCaWtscElLQTRtM1doVFZUbl9vQXBVam5yVTRrb0xDNVFVSFRXNWFHRDFYN2RfZjZVYW1ab0J1UDRFLUVkY0ExYTBMQkpnQmhuRlBKb0tkTzR3UnFWYlZuM3VxX2toTjhCYzNDOWRUS1I2WVVE?oc=5",
+     "source": "Abilene Reporter-News",
+     "published": "2026-11-19T20:10:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "80c3e547dc646c07"
+    }
+   ],
+   "first_seen": "2026-11-19T20:10:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-19T20:10:00+00:00",
+     "status": "Announced",
+     "headline_id": "80c3e547dc646c07"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-19T20:10:00+00:00",
+     "type": "Expansion",
+     "headline_id": "80c3e547dc646c07"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 0.16,
+   "last_news": "2026-11-19T20:10:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
    "hidden": false
   },
   {
