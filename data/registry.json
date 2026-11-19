@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-19T05:33:08+00:00",
+ "updated": "2026-11-19T06:33:08+00:00",
  "count": 741,
  "visible": 623,
  "records": [
@@ -55436,6 +55436,15 @@
      "published": "2026-11-17T04:18:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "cf379d38ed44c7d2"
+    },
+    {
+     "id": "b0f5bc7cbb4135ea",
+     "title": "Proposed Wade Hampton Boulevard data center would use 5 megawatts, far less than Spartanburg County projects",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTXhGaDVzUUhEbGJtVWhkUmluV2VOVVk3ZUlYUHJBZl95Y0hCTXY4ZjE2N0h2bU1GNlVLSkRId0JHU0MwbnJtdHh5VWtEU2NadW0xY19oYVJaMGNucElRYmN5RzZtbU81VFV2RGpZWlBRYUU2eDBya0EyNWlsOXlCNVJxV2lBV21TZHNhcjU5a0dPMEhDUUpyR1dvQU16RmxvSDc0VXVRa056ZXdNblVWWWsydDlOX3BqelBGX3lMa2hOb21Ha0huSzdjNU40VGpleFpvRVVFQ3BkYjVzemNncdIB9AFBVV95cUxNNzFPMkQ3aEUzQlMxZjJTSk9ObU1tR3E3ZnFIQlF5SEJwa1FHSWcwM0ZzR1NyUFFfTkZ4SXlKRGdUV0ZhVkJ1Wlp6c285STk1X1lUT1pDeDhfR19UTTRuODRSRkxhVGpfb3AwZWNPQ014SkJ6RWJYOUdMN1o3dHkzWG04OHM0X1BCVllWYmFTQUVSWnRiSFhXRXQ3MXZIX2xtaTBSZGZobDQ2ckRfTTQteVBBZWZ5V1ZLNHh6U01ZQWtwalFReDg0b2I1bFV1ZEV1N2VTMTR4ZlB2ZVdVenFyZ1JFVXpseUg3NUZsY2xyQnlwSkNv?oc=5",
+     "source": "FOX Carolina News",
+     "published": "2026-11-19T05:39:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b0f5bc7cbb4135ea"
     }
    ],
    "first_seen": "2026-01-13T08:00:00+00:00",
@@ -55475,9 +55484,9 @@
      "headline_id": "51ddc2d3d7a0b2b4"
     }
    ],
-   "capacity_mw": null,
+   "capacity_mw": 5,
    "investment_usd_b": 3.0,
-   "last_news": "2026-11-17T04:18:00+00:00",
+   "last_news": "2026-11-19T05:39:00+00:00",
    "sources_count": 6,
    "confidence": "medium",
    "hidden": false,
@@ -55485,7 +55494,8 @@
    "builders": [],
    "suppliers": [],
    "name_hints": [
-    "New Data Center"
+    "New Data Center",
+    "Wade Hampton Boulevard Data Center"
    ]
   },
   {
