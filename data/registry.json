@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-20T12:42:07+00:00",
- "count": 742,
- "visible": 624,
+ "updated": "2026-11-20T13:42:07+00:00",
+ "count": 743,
+ "visible": 625,
  "records": [
   {
    "id": "amazon-georgia",
@@ -13182,6 +13182,56 @@
    "name_hints": [
     "Northern Virginia campus"
    ]
+  },
+  {
+   "id": "edgecore-reno-nv-2026",
+   "name": "EdgeCore Reno data center",
+   "company": "EdgeCore",
+   "companies": [
+    "EdgeCore"
+   ],
+   "location": "Reno, Nevada, US",
+   "state": "NV",
+   "county": null,
+   "city": "Reno, Nevada, US",
+   "lat": 39.53,
+   "lon": -119.81,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "d7b9eb6809f8c26d",
+     "title": "EdgeCore launches Reno data center, tops out second building on campus",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNTB1eGRRQnhLRUcwbnlkc0xzR3laaGRBMkU4R1c5UWg1M0ZFd1JDTTQwU242N0k1WTUtc28tQk45RFZueHhBVmxqSURaZGNkaVFibldoR2RyVTBMdFAxM1Z6b2NWU1AyeVFuQVFCeGtTVEt1R3dzLWZBSThlSE9mc213TXF0bFFfODZiUUh0S1JfOHpmdzhYV2ZndHVDSjk2ZDRhYTFzSjBySS1Db0h4NHhuNA?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-20T12:47:25+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "d7b9eb6809f8c26d"
+    }
+   ],
+   "first_seen": "2026-11-20T12:47:25+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Under construction",
+   "status_history": [
+    {
+     "date": "2026-11-20T12:47:25+00:00",
+     "status": "Under construction",
+     "headline_id": "d7b9eb6809f8c26d"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-11-20T12:47:25+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "edgecore-silicon-valley-ca-2025",
@@ -60398,6 +60448,15 @@
      "published": "2026-11-04T18:05:57+00:00",
      "stage_signal": "Announced",
      "cluster_id": "9faeea8b76852704"
+    },
+    {
+     "id": "8053a4a05e3e64da",
+     "title": "TeraWulf starts construction at Kentucky data center campus",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZTlDa3p6ZDRnWXNSenloSEFfZjVvcW02Y0E5QTNKYjFlUHhmSlRBa2V3THVjaUtLdk1xeGZIX2podTBGUkZUamFHdHZtUkt6bjJfMFhmb2NqWXFpY0hmaEZNVnl0VlFqN3gxdnJYc2QyUlc4MUZkQzVrek5vall3bzY3Ui1QNEgzV055SU9jV3hLV0w3SldMaERoNTZ4LWZSZElMajln?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-20T12:07:24+00:00",
+     "stage_signal": "Under construction",
+     "cluster_id": "8053a4a05e3e64da"
     }
    ],
    "first_seen": "2026-10-05T07:00:00+00:00",
@@ -60406,12 +60465,17 @@
    "builders": [],
    "suppliers": [],
    "name_hints": [],
-   "status": "Announced",
+   "status": "Under construction",
    "status_history": [
     {
      "date": "2026-10-05T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "e4b4e46c829bb142"
+    },
+    {
+     "date": "2026-11-20T12:07:24+00:00",
+     "status": "Under construction",
+     "headline_id": "8053a4a05e3e64da"
     }
    ],
    "events": [
@@ -60433,8 +60497,8 @@
    ],
    "capacity_mw": 1000,
    "investment_usd_b": null,
-   "last_news": "2026-11-04T18:05:57+00:00",
-   "sources_count": 4,
+   "last_news": "2026-11-20T12:07:24+00:00",
+   "sources_count": 5,
    "confidence": "low",
    "hidden": false
   },
