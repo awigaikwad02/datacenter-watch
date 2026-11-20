@@ -8,8 +8,36 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 645,
+ "count": 648,
  "items": [
+  {
+   "id": "e3fcb91c888cb0d5",
+   "title": "AMD set to lease planned 5C data center in Pennsylvania",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTU92VWZXdmRSZWg0WlQ2S1k5Z0h1cGlyZXh4MTByTEZrd3YwMTN4OUxKeVdnQy1JR2lfcnZ0Y3FBczdxQ3lRb3hCbjRhWUlLQ0JNazJQNUg2Q0Uzc3JRenVaMmFsSDBfM1c4dHRSeXhfQWNpV0kzNDJiVTJHTGk0dURBelk4MFVUTTF1UmNfMFVsYUtYaldidVpUYUJUazJW?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-20T15:22:32+00:00",
+   "state": "PA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [
+    "AMD"
+   ],
+   "precision": "state",
+   "reason": "names only a builder or supplier"
+  },
+  {
+   "id": "c2887609974fe58d",
+   "title": "Data Center Watch: U-M Approves Computing Center as Township Opposition Continues",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdE83dFEzSWRVNzQzNFFWM1JiR19sakhBNkU4WnRVM3UyYjlFaXVJMlBhdFR4MGh3RzBHeTVQaTRaRzIzNGxxVjNsajZBZzVyMjEtMHpsbEpUZ3dmOUhES011RW5jMENXTzNVNTVIb2tUMndIWUg1VFhSV0ZRRUhPaDlRd2NvdVJKN3h3RDgydVpLYzAzZi0yWXlhNjFNMlhVNDBra1lSS1YwN1RZaVE?oc=5",
+   "source": "The Sun Times News",
+   "published": "2026-11-20T12:32:39+00:00",
+   "state": "MI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
+  },
   {
    "id": "91495c8df768c26e",
    "title": "What to know about SpaceX's massive, proposed data center in southeastern Arizona",
@@ -125,6 +153,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "0e31f0f9da6c6e00",
+   "title": "Cedar Creek neighbors fear noise and heat as data center, gas plant plan advances",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORF81dzFzWERWb1RqUFVyNFFvXzJSUFM2VllOdHlWMXZ0c01mMzNWLWFGcjFrMGhYQnVXVXdqMnoyMzdNWDlKVFhCdmNqNHY0RFJrZHI2c2s5MVJ5WDZ0ckdOT3diWUJsczJpVWh6YWRVaEVOSldSdDlrMlhuem9ra0JtcFdsdFEtdVNzM09UUmVIVEJUazQwcXFLb285cFpPMXlxQk9BY1drTDVnNkp1d3g0aw?oc=5",
+   "source": "KEYE",
+   "published": "2026-11-20T03:26:13+00:00",
+   "state": "TX",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -5657,8 +5698,8 @@
   {
    "id": "1b422626e4dd7e86",
    "title": "Texas residents say $15 billion data center plans caught them off guard: 'We didn't even know'",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONTFhR3o0bTdiMmVzeGozQWJXQzZuSU5TMlg1Nmo4SVlUNmpweUF4UUFFejMyNXVMSTVWM2h5eHJhSDVyVkR3RUlUSDlHX25yMkJsTUJETzJoQUsxTVNtakVUWlBLeGR6YmVUN3Zpc3Z0WUwzN2p0emtSVEhZVmZYaFF6dmF3cXJV?oc=5",
-   "source": "The Cool Down",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUFlGUEFIY0VJdmZ0NzFuRy1UcDZfUlZndmp1MjRXQm1nWWNvV2FMZVF1RkhlMGtrWWtOVC0tV2lfN1ByTDUtOVJqNmd4MTVtZlE3UkRNZThKcHlPSll5anhNczVYbVNZV2stOUYxMml6a2lXaVhpQkYtdjFGWENXMlV6ZE1abFQzTTd3Z1d3?oc=5",
+   "source": "Yahoo",
    "published": "2026-10-30T14:05:00+00:00",
    "state": "TX",
    "companies": [],
@@ -5681,6 +5722,19 @@
    "reason": "a policy story with no operator or project name"
   },
   {
+   "id": "cc3348c32eb78c06",
+   "title": "Restrictions announced ahead of Hermantown data center meeting",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUl9PVHZGb0t4SWpDNk9GNExZYXJpUml4UXlkR1ZKeU45LVlmOVJ2RFAzamhxOV9FcENUamVUSGZnaHNjalJQYXdLRlFiWnNIbmVVcm9MeWJsNDdjUVprUUMyODg5ZmVTWnFGOUZnM3NhYTlwTlRhTWtsN0tWWWNjYkFCYzFTVVk5aWpRWmdCUUQ2T2YyTFBiUVlqQzBSaDhhWlNFRlVhVmYwM3M?oc=5",
+   "source": "Duluth News Tribune",
+   "published": "2026-10-30T13:45:34+00:00",
+   "state": "MN",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
+  },
+  {
    "id": "dc1c0023d478dbce",
    "title": "Port Angeles Planning Commission gets first look at data center rules",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFdra210ajJQZXZ0am5sRElSQW9EUmRWVmxvQ05ibHdjdUlOYkNVWXE2bEplbmtTeW9VWVU4aFVBQ1VLZlk4cVMwX2xYOGNJVWp5dm8yX2tZNlI0b3ZCV2Rhd0REbjRILXhHejNLN3diS2tEZzluM2ZMWEVTWmFrZ0tKZnVWS1RUSjMwSDVEYUNYdV85MFhXR2RaUDl5RTZHdjFnU21OekFpcURrUHhDdEZfTQ?oc=5",
@@ -5692,19 +5746,6 @@
    "suppliers": [],
    "precision": "city",
    "reason": "a policy story with no operator or project name"
-  },
-  {
-   "id": "cc3348c32eb78c06",
-   "title": "Restrictions announced ahead of Hermantown data center meeting",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUl9PVHZGb0t4SWpDNk9GNExZYXJpUml4UXlkR1ZKeU45LVlmOVJ2RFAzamhxOV9FcENUamVUSGZnaHNjalJQYXdLRlFiWnNIbmVVcm9MeWJsNDdjUVprUUMyODg5ZmVTWnFGOUZnM3NhYTlwTlRhTWtsN0tWWWNjYkFCYzFTVVk5aWpRWmdCUUQ2T2YyTFBiUVlqQzBSaDhhWlNFRlVhVmYwM3M?oc=5",
-   "source": "Duluth News Tribune",
-   "published": "2026-10-30T13:42:00+00:00",
-   "state": "MN",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "no operator, code name or figure"
   },
   {
    "id": "b87fdca13ee55a3e",
