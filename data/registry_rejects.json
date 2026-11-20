@@ -8,8 +8,34 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 650,
+ "count": 648,
  "items": [
+  {
+   "id": "32c3785deb1a58e4",
+   "title": "Madison proposing full ban on hyperscale data center construction",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQazdwdDlDYjNOOXJNa2MwY2FPSUYtQllLSmJqNVZwNHo5Y2p1TWh0VkVNbm81dXFOcHRBS292VDZFN1czME8tejlmT3l0N2lJcEdRSWc5eW9sRFVFTjE2LXduWXpRM3FFQUxYSmYwVnlZRFY5aEpWZzRUazRDQ2Q1Xzhuc1hBN2NBek9waGhHNWE4YnBOeTcySFRsbW1jZVhv?oc=5",
+   "source": "WTMJ",
+   "published": "2026-11-20T20:15:30+00:00",
+   "state": "WI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "fbcaa2f9eec3beee",
+   "title": "Proposed Elbert County data center impacts could be felt outside community if built",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTEdBYUJSNnY2bzNPN3NKZUNPQ3NhS2VfdUVIQ2Zhd1VSc0tHbFF2b1hvRXRIeFVNMWUtN21qRXgtRTduZE96RWR3TGVfM3FQSkYybDFiWGxXMGZWRFQtM2JvNHlRcmZ4WHktQ19jTzM2NXhzQ3RUYkE0V0hINktEc2RuRGdScWhyWFNXUG9DbW1ZZHA4N2FsOUtBWkQ4bnNPbFMwS0hMVlg3QVozRXlQTWx1RGZ2NHF1aDFsR1ZyS0o?oc=5",
+   "source": "Denver7",
+   "published": "2026-11-20T16:16:22+00:00",
+   "state": "CO",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
+   "reason": "no operator, code name or figure"
+  },
   {
    "id": "e3fcb91c888cb0d5",
    "title": "AMD set to lease planned 5C data center in Pennsylvania",
@@ -128,19 +154,6 @@
    "suppliers": [],
    "precision": "state",
    "reason": "about something other than the data center"
-  },
-  {
-   "id": "fbcaa2f9eec3beee",
-   "title": "Proposed Elbert County data center impacts could be felt outside community if built",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTEdBYUJSNnY2bzNPN3NKZUNPQ3NhS2VfdUVIQ2Zhd1VSc0tHbFF2b1hvRXRIeFVNMWUtN21qRXgtRTduZE96RWR3TGVfM3FQSkYybDFiWGxXMGZWRFQtM2JvNHlRcmZ4WHktQ19jTzM2NXhzQ3RUYkE0V0hINktEc2RuRGdScWhyWFNXUG9DbW1ZZHA4N2FsOUtBWkQ4bnNPbFMwS0hMVlg3QVozRXlQTWx1RGZ2NHF1aDFsR1ZyS0o?oc=5",
-   "source": "Denver7",
-   "published": "2026-11-20T04:42:14+00:00",
-   "state": "CO",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
   },
   {
    "id": "3473774aee8e9083",
@@ -561,7 +574,7 @@
   {
    "id": "9c934a4930064459",
    "title": "Utahns don’t want data centers, but they are coming. Here is how state lawmakers plan to get ‘only the best projects.’",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQX2t5bVhCWGJudEdZVWtUeHdQdndIaUNEYUZEWHlxTkpTQTZUZkt1MWNJUXNkLWo1VG1Ra2kyVThOMHFyeVRlbXlNUERSQk5UcFhBV3BNZUlZSDUySzd0eFhRNVBoUWUwUzljb1RjVEpvSGJ5cmpPSkJYRmR2alJPSWtJZw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORHhQeVNRdGZvWDJFOUEyeUkxRHhPWGtCbnZydVh2OEx0cjl3X1hiN3BRS29XazNtVXhwazlhTWdyWFB0bkpzckhDTkRnSEE3QXdmZ19VeHJHVmxVN3Z2YjRBdVdIZk9DSzRVOFRrOHhqZTJGVG44WHZhaWxjZjVibzF3?oc=5",
    "source": "The Salt Lake Tribune",
    "published": "2026-11-19T13:00:44+00:00",
    "state": "UT",
@@ -8426,45 +8439,6 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
-  },
-  {
-   "id": "2eae4584f4bd7eb6",
-   "title": "Starke County approves data center ban",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaFg1djhrYXdfSEVSNmlnT0JaTjdIamZ6Uk01WEZsMXBNeV9yWDZQNUQ1WGpJWV9lSEh1VlFMQ3FpenNhd0I1RTZwMy1HaGxSZzVYNzNHSklpVWFoRWotRG9sQTFhbHoyR0JjRHZKUWgwRk03SUpma2czQ1pSUkdDOVFBeGIzRlE?oc=5",
-   "source": "WVPE",
-   "published": "2026-10-21T20:36:00+00:00",
-   "state": "IN",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "a policy story with no operator or project name"
-  },
-  {
-   "id": "63988451b08286fc",
-   "title": "Planning Commission endorses new construction rules, postpones data center regulations",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUUxDQk1Mc3FncGZzUkdYeFQyTnBmRnM1aGQyajZkU0JyRl80V0J1OWt1a2hPMlJYT0t3QW1pUVg0dlliZkJaODVjQ3dLQXk5MzFoN3RKRWJ5MDh1VTlqU01RaV90b1ROTmNSaUJSa1ltOFNOb2xXcTRCWExaQ3o2Y2FWNUg3ODR1aTkxLTRDUE80Y05QWEFmU3lSNWliRFNidTd5UmNHV2xOazlsUTFyNm5TNHpzLVRlbk95YzhQeE0yVWdTaGg0cHdITENvZw?oc=5",
-   "source": "Cap City News",
-   "published": "2026-10-21T20:27:21+00:00",
-   "state": "WY",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "1af03a3ffba51fe1",
-   "title": "Ohio High Court Keeps Proposed $3.6B Data Center on Ice",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVzUybEliN2M5UG9mb2hxWGlLRkxEWXV1VEk1Q3RjNEdIbF9QNWxWVzgzY2x5b29yUnppUGFEU0tYdWIxM0JZS25naVRFdWFBbGtycVhqQnlZSXhkdDJla3llc0kzV1RiUU1lUjdPQ2laU09VOVk4VEJkYUZwZXNfUGxOOTFCZ2RaWHJRQ21IZ2NFQQ?oc=5",
-   "source": "Engineering News-Record",
-   "published": "2026-10-21T20:23:00+00:00",
-   "state": "OH",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
   }
  ]
 }
