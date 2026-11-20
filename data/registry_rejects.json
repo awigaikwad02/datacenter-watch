@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 640,
+ "count": 639,
  "items": [
   {
    "id": "33a33928cc0bd1b7",
@@ -99,6 +99,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "9095d566df0ba773",
+   "title": "Two data center power plants approved despite resident pushback",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNaE5sYWJ3SHJueFF1VGg4b2kxT0NMSm9JUFRPejMwLW1mTHdORUxqYTkwSUtLRmd6Z2V0MFRrc1JxV04yTmJTbHEyV2dpcDVyamdmSlRtSzhkclk3RXY5T29UcTZwZ1ZSWjZub2NVakdmRnYzVTIxb1NoWWd5TDBBTXl2WGMydXlTZk5hWTVKWGZCQWptY01YOC12SHZ6Snk0czJtSTZPd2cwT1drLW9wMlI5VElQbDhhRGpfT3dOOUVJMEpS0gHEAUFVX3lxTE1oTmxhYndIcm54UXVUaDhvaTFPQ0xKb0lQVE96MzAtbWZMd05FTGphOTBJS0tGZ3pnZXQwVGtzUnFXTjJOYlNscTJXZ2lwNXJqZ2ZKVG1LOGRyWTdFdjlPb1RxNnBnVlJaNm5vY1VqR2ZGdjNVMjFvU2hZZ3lMMEFNeXZYYzJ1eVNmTmFZNUpYZkJBam1jTVg4LXZIdnpKeTRzMm1JNk93ZzBPV2stb3AyUjlUSVBsOGFEal9Pd045RUkwSlI?oc=5",
+   "source": "NBC4 WCMH-TV",
+   "published": "2026-11-19T17:30:00+00:00",
+   "state": "OH",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -403,9 +416,9 @@
   {
    "id": "efd340b40eddda93",
    "title": "What the incoming Michigan governor, legislature plan to do about data centers",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNN1Z1X2FoRzk2MlRpcHd4RVZtZ3I5MFdIbGxUbkNWS0p3blc5aU9QaFUxMlVhN3ExSzFLQXpkd3ZXMVhhdldaVmdocWQxR19vZGNGYlJvY04yZExKUkhMMk5ZaFR0SENHcTFWSmhtTEZBNUcyQ1g0OHdIMExQQUNxOTVWbVZkTFNHLUJqOU5jb1FqVEx5TXJmaFFPLVBkTW9XWGp4UVZFdEJfN1VWMk1oY0stMWttZ2UwN3VBZEZnVVVZQQ?oc=5",
-   "source": "WWMT",
-   "published": "2026-11-18T23:33:40+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQc29QU3c1TGs3VzZyeURBa0F1VjgzSzBfLW1Gd3dSUTlWS0R4T0hueXc2M0l6dGZaeG1EV0NSRm4wM2JJUi15OUJQMnIyOWc2X1pMQXZKVEs0bDBtNmpkVHVYYzVGazZsVEwxVTdKZUxaWWFnMXlhUUx5dVA4Z0loejkxZjJPSEN0alB3R3FleC1LTVVxNGRobkhBeXZwZll0djJGblNxR0Q0UGpjSGUyaHhtZklzcm5RdEtBenctOUVURmxPYlR6b3hqc0xYT1JwTHBUYzh6VHh6NHphOTJiV0txSkVaUnctVXgtMk9tdGJuM29oZU9kSF9Dd3o?oc=5",
+   "source": "WSMH",
+   "published": "2026-11-18T23:32:47+00:00",
    "state": "MI",
    "companies": [],
    "builders": [],
@@ -418,7 +431,7 @@
    "title": "Texas Starts Approving Data Centers Again — Including for SpaceX",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb0ZmOElxT0pSMW1rWVpydm1DMExJVzNfQ3FkS3M3VXM5dVNsamI2bTh5RTBhNGtiMnB2Y0VxVXpJdkN2NnJYOTlYOVBIZFJYbWpILWdaX1RZM0luX1IyRVNjR25YSlVieG5qZ3VNR2RlTWhNLWJSZUp0OGV5ejlkaXB3QQ?oc=5",
    "source": "Barron's",
-   "published": "2026-11-18T22:38:00+00:00",
+   "published": "2026-11-18T22:39:39+00:00",
    "state": "TX",
    "companies": [],
    "builders": [],
@@ -8307,32 +8320,6 @@
    "suppliers": [],
    "precision": "state",
    "reason": "no operator, and only a state"
-  },
-  {
-   "id": "e50fd5579f84d524",
-   "title": "Somerset County commissioners unanimously approve new data center ordinance",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYVRna2o5cThEUUk0ZjM5Q0JYYWI4aDE5SW9FUV81djVPaUFFdmFhN2dCMmdRMURjSW1WbjFpaFZYM3J2MkhzMllMMGEyR0FQR3RoNU9YU1hJWkdvem1RbmdyVElCSFhlS3hhdmp2enZSSUx0S0ltZzRhVk1oTzhrLVdiVFZHMzJSeUQ4S3lzZzlmc3REbElUTk10S1VlLUJjNHVNSi1ZVVo?oc=5",
-   "source": "WJAC",
-   "published": "2026-10-21T01:19:42+00:00",
-   "state": "PA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "a policy story with no operator or project name"
-  },
-  {
-   "id": "89dbf7b8a3434442",
-   "title": "Palm Beach County said no to Project Tango expansion, but data center space still triples",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbF9ySjRuSDBtVTdWSEhWaFFIdC14OU9VVW9oREE1TzhQV3JhQUNkbkR4UHFkT0pJYzlWX3F6aVd0T0t4Y3RjU0E0dXhVSDBhblhBYVFxWGtvRDlaYy1sT25ncVptaW1iQzNGWk5ma200bGxYeWNRdm04OWdka3FDemhHYkVIV2lONnJWeXpsLWduc0NwLW9FSjFhM3l2X0Nmd2lqZWFNNXAyc1dQSWdJRUdLdlI4Mk41V3o4d0YxSGh5RFNSdUN1eVl1RXg?oc=5",
-   "source": "WPTV",
-   "published": "2026-10-21T01:11:26+00:00",
-   "state": "FL",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
   }
  ]
 }
