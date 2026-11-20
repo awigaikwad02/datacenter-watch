@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-20T03:39:12+00:00",
+ "updated": "2026-11-20T04:39:12+00:00",
  "count": 742,
  "visible": 624,
  "records": [
@@ -54687,6 +54687,15 @@
      "published": "2026-11-18T21:57:04+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "10b08f3a0d1fdb64"
+    },
+    {
+     "id": "4ec4840fc4a4c651",
+     "title": "San Jose Planning Commission wants authority to approve large data centers",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaHZwdzNxRUJpLXB6c0cwVkF2OExuQ0dBbDhSbi1TY2cwWmFfMnl4RzlNeE1MdVZHT0R3dE9PaFF5cGI5SnVtY2JET1ZrZk9keXBIMXJtOUlKSnpnQVZkUVgxWjVwbmNObjVzMmZwLXRoVUszbTNob1RNY2RMalVYelhhQjloZEt5TGJtbjFwdkZuVG5h?oc=5",
+     "source": "The Mercury News",
+     "published": "2026-11-19T23:59:19+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "4ec4840fc4a4c651"
     }
    ],
    "first_seen": "2024-11-14T08:00:00+00:00",
@@ -54741,11 +54750,16 @@
      "date": "2026-11-18T17:22:53+00:00",
      "type": "Approval",
      "headline_id": "2dd93883a24bef58"
+    },
+    {
+     "date": "2026-11-19T23:59:19+00:00",
+     "type": "Approval",
+     "headline_id": "4ec4840fc4a4c651"
     }
    ],
    "capacity_mw": 200,
    "investment_usd_b": null,
-   "last_news": "2026-11-18T21:57:04+00:00",
+   "last_news": "2026-11-19T23:59:19+00:00",
    "sources_count": 10,
    "confidence": "medium",
    "hidden": false,
