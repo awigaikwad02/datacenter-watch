@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 638,
+ "count": 636,
  "items": [
   {
    "id": "d39cf069e402afc5",
@@ -22,6 +22,19 @@
    "suppliers": [],
    "precision": "state",
    "reason": "no operator, and only a state"
+  },
+  {
+   "id": "7197f66a4919132d",
+   "title": "Mountain Home data center developer challenges city’s moratorium, saying it may not have been approved legally",
+   "link": "https://news.google.com/rss/articles/CBMitAJBVV95cUxNbGRseFNqdnFwMEMyMWNWaTdwYWhlWVNseWlNdXFEelowZlZyLWxjVVJzTWJmY0g1bkRLUWRFcVliX1dzZHc3NFNyWmRGaUhkdjEtaW1iRHloUFcwNnNCc2RmcFYxT0N0bFNTVnlwaXNrWW5iMnZieWhJUHRmWEg1am1xUXlNaHprVEZIeU9US3dyeEhQLXluNkdjSmtwdjdnQkUwY2hQV2lWamdVN1dpZGVBTlBuRUJuc0I5eXNzZU1NWDR4cjhGOXFjM0ZaZ1Baa3BRWWFzdjk2RVB6QXlkbFpYejN3YmU0RjloU3duUGhwSUxUNl8xdVh0bHNQVmZsUVdkRnNRSk9oZjU4MGMzMUNhb2tydzZnTTN5YW5rME5qaWRGSEZxTGdadk9pM1VZVVphWA?oc=5",
+   "source": "KTVB",
+   "published": "2026-11-20T01:09:00+00:00",
+   "state": "ID",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "a policy story with no operator or project name"
   },
   {
    "id": "33a33928cc0bd1b7",
@@ -8267,45 +8280,6 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "340d4d9314735ab3",
-   "title": "Snyder outlines plans for 7th term, addresses data center ad",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNlEtSmlmbk9NQ19zbWN6aVhHazJWYjVHMUhYVzQ3ak54QmstNGIzTDNUbS1oVzRNYlBFeWJvcjBISTBseDRKT1FULXFFdllNNXJ2TnRfYkJXbWlOeUZPdWJIYUl4QkJhS2tUNlpkLUxCcHA2RXY5RkI3S3VKUnExVGdUN1p0anZoNVkxRVBnMl9RZ9IBpgFBVV95cUxOdEQ3UlF2UXNqRjR0M0pEWmF3VF9fNjB4UGVNWFBpb3VRZmxUR1B2QllCMGxVUjFTdTRaSU1OTjN0VUtiM3FvVlVEbEF5VlhXQ1R1ODlWZjJ0RHpqTnBBYkZPYlJ6TlRKVUpHaV9KcV9kWE9LeFJjZ1BVVTdlTDIwMmRTRmkwNEhTQkhNRlpzc3lJMDhKS09ySXB0cW04THdsX0taZkRn?oc=5",
-   "source": "WSAW",
-   "published": "2026-10-21T03:32:00+00:00",
-   "state": "WI",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "4f6920dc34883eef",
-   "title": "UPDATE: Texas halts online environmental permit filing amid data center review",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOWjJ5aGU5WEpIR0lSTF9DQXl3MUVLSDhRZW9mQVJraDZLemhMUmZ1cjUxbl9DVThiX0xPZzJNdS1LazREWHd2bXNpMVFGVkdvMFNUT3RLREU2NjdTUC1TNDVPQkMxN2dpM2pPVy1jaktrYnh4V00wX1VYYURWSXFBUzN3R0tQSUMzQkhCck1xWWRkTWNodzZJSnJhN0tLMmVSNHdMMXJUNTVldjRCLTNGLWdWb21JUkE2bHRYVWkxVDNPOFVQb2QwOG5rQXhPVDFZcE5PZXhCZmNLcnpiTzBkTVJpU1UzbUpBaFJOVw?oc=5",
-   "source": "Community Impact Newspaper",
-   "published": "2026-10-21T03:20:00+00:00",
-   "state": "TX",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "acd797f11b1089e8",
-   "title": "Upper Burrell Planning Commission OKs proposed data center ordinance; township supervisors must approve",
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMlVMc1NncThjTVBBRVZhNC01TXBPX2pUYnpDMFdrZTdOYXFXZUFBLWxSTUpqWDR0YVBBWl9CdDhJWTZQNjlKUV9uakNBTk9GTTRUVmxNZS1RbmR3eWd6SW1OZXppNEhDZlFQRlVpMTRmalpzZjdJeXI3bU83NEh1OEhSbndySzI2NHpOMFRFSzFCWVo0dFBfZjI1ZTdyZS1HWWNTTTJ3d0otU0gzTWJaTHR0NEVLTEh6UGxDSkNLMF9fd3MyRTNEQXhYeHhSVlZVeUJzeTBEaGd5djBNNEhRTFcwWDQ4Zw?oc=5",
-   "source": "TribLIVE.com",
-   "published": "2026-10-21T02:55:45+00:00",
-   "state": "PA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
    "reason": "no operator, and only a state"
   }
  ]
