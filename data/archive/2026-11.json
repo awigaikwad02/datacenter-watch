@@ -39,8 +39,41 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 3732,
+ "count": 3738,
  "items": [
+  {
+   "id": "c699f1b554711634",
+   "title": "Pa. consumer advocate files complaint aimed at forcing data centers to pay fair share",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTmNBZFF4NVRCMG1KSWk5N0wzZnI3MlpYQXpvcEx3MkFyVWJjQUtjZnRlMEE3RktTVkZreWRta2NjdmNQVXA4VE5PYXRDTUFEY0hMSWpHMXhWMnJFb0FDdFg3NHRDNGxCY3ZldzJpdUl1Z3hFQ0RycTl5eXVKQnFjZlJWQnBlajdjUDNSOVdHU3JmQUVPXzFYZ3kxYTNwNHZqTk9jb2hic0hKMDFWdkRoQ3V2cHBmVFh2V2t1T2I3SDREMGcxdnFqSw?oc=5",
+   "source": "Scranton Times-Tribune",
+   "published": "2026-11-20T05:02:26+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "195ebe0f1da02c0b",
+   "cluster_title": "Pa. consumer advocate files complaint aimed at forcing data centers to pay their fair share"
+  },
   {
    "id": "3897ce3082a14d7c",
    "title": "Franklin County supervisors seek more data center answers, begin administrator search",
@@ -115,6 +148,80 @@
    "cluster_title": "University of Michigan Board of Regents approves controversial research computing and data center"
   },
   {
+   "id": "55e4fc3bc75a295b",
+   "title": "De Soto City Council hears from residents on potential data center",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdmZaTXFva1hOdVQzUm5WZy1aUGo4N1VNaEtTSy1Ta1E2YjQ1Ri1ubS1OVVBtMGhtc0IwRENhS3dGakpDZ1lsVEhIOElCUklUb2pkb1AyVjQzMTloNGxJTjRjZEJhWkp5NHlrdGozWUJBY3lWdE1OcTl0d25xakZJQmhWYm1jUGR6LU9JaVMtQ2ZjcFJuUFlraGZn0gGfAUFVX3lxTE5tenVvRVdMWFZrczIyZE1IMkVLN3BTQkE0ZmZFRFV6eEZpZExmQ3VrdkR0RTFTSXlIX1dZYmdLUnphcjlfOG5VeDl6b0hPQzhxa3hUTFp5ZXFQeGxwRFBZWUZRMUs3Nkg4dWg1Sm93a3dIRXFfdEJnMF9FS0o4THk1Z2FoRkVLRmtpYlFqQmVBdWZPTTVXQjBXTzNrVGpoRQ?oc=5",
+   "source": "FOX4KC.com",
+   "published": "2026-11-20T04:19:18+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "De Soto, Kansas, US",
+     "lat": 38.9792,
+     "lon": -94.9686,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "55e4fc3bc75a295b",
+   "cluster_title": "De Soto City Council hears from residents on potential data center"
+  },
+  {
+   "id": "fbcaa2f9eec3beee",
+   "title": "Proposed Elbert County data center impacts could be felt outside community if built",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTEdBYUJSNnY2bzNPN3NKZUNPQ3NhS2VfdUVIQ2Zhd1VSc0tHbFF2b1hvRXRIeFVNMWUtN21qRXgtRTduZE96RWR3TGVfM3FQSkYybDFiWGxXMGZWRFQtM2JvNHlRcmZ4WHktQ19jTzM2NXhzQ3RUYkE0V0hINktEc2RuRGdScWhyWFNXUG9DbW1ZZHA4N2FsOUtBWkQ4bnNPbFMwS0hMVlg3QVozRXlQTWx1RGZ2NHF1aDFsR1ZyS0o?oc=5",
+   "source": "Denver7",
+   "published": "2026-11-20T04:16:22+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Elbert County, Colorado, US",
+     "lat": 39.287,
+     "lon": -104.137,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": "Elbert County, Colorado, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fbcaa2f9eec3beee",
+   "cluster_title": "Proposed Elbert County data center impacts could be felt outside community if built"
+  },
+  {
    "id": "2b34bf347728e25a",
    "title": "Hinojosa calls for data center moratorium as Perry files Senate bill",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQc1dfbHM0cmdrSU1LRk5TTWJxSlA1a05odFVqX0pvejZZSmNKQk8xa1BGdW1wTmpiakdlQURsNmtKYk95dHBIRFRxbnZkbVlyRmtZZk5GZTd6YS1LNjhMWkluYTlQd3IxQjdCOGhBa2phOE8xSjFKYnJMd2ZWVVVtakFka2hZZUUyekd1cU5uckdjbVNBb01JbEpn0gGuAUFVX3lxTFA1U1drWkVCc1hWa3RRUU1ZWTYtcWIzVTBUaFEzbDhHbkpJOTIyZEpwQk45OEs3eXBFUldreEI4WnZ5Z1pEZnZzU0dabVFSOEg0alcyNjdxX2l4c3VTRjNQM1FySmRBWjE5Qy1qOFNUZy1vQTd5bU14YUU2bjRTbk5wNm93cGpTWjRnZXNVckdDS0ZGdHJxX0dQVHVBMDZMYlIwSGNFRk5LT1ZGbGQtQQ?oc=5",
@@ -148,6 +255,49 @@
    "suppliers": [],
    "cluster_id": "2b34bf347728e25a",
    "cluster_title": "Hinojosa calls for data center moratorium as Perry files Senate bill"
+  },
+  {
+   "id": "eec0d28ddb97cbea",
+   "title": "Colorado's Elbert County considers rezoning request for large data center",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPejRJMmZ1QkJocm5EYjJyRjFValBLM1pmM3NNMGlRUVVfQThvc1VHYk5OLWJWXzVhVzBQeHhyTzhuVDd2VkV5aXo1Um5xNV9YOTJrNFJQZE5Pa2lrZU9kZzdFUm9VdU5tYkMtZjRwMFNhYV9zY1lDamlZeWNFVmxzRTh6RThsQ3pCRXJYektpNi11dw?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-20T04:10:00+00:00",
+   "feed": "Google News: West",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Elbert County, Colorado, US",
+     "lat": 39.287,
+     "lon": -104.137,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    },
+    {
+     "name": "Colorado, US",
+     "lat": 39.0,
+     "lon": -105.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": "Elbert County, Colorado, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2c2f8ac1d357e924",
+   "cluster_title": "Colorado's Elbert County considers rezoning request for large data center"
   },
   {
    "id": "ea25455172b9ab32",
@@ -400,6 +550,42 @@
    "suppliers": [],
    "cluster_id": "83293557c7df2840",
    "cluster_title": "Senate to vote on bill to speed up permitting reviews, force data centers to pay for energy costs"
+  },
+  {
+   "id": "3993aa70af053f22",
+   "title": "Appleton, Wisconsin, approves 12-month data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRlF4dFNQaXI0bHZYYm9WOUdGeG9FSHpzNjZYclE0MlpBT3dpSkhqU0s0dmdfSnZVekJTSUlCMXNQOEZFZ25xTWpKX2tkN21UOHFTUVJnYXdGc2pHUzJRVGtTMTRCMTQ4YS0yNXh5cHJHYVRsVE1zMWNZcS0xZ0VHaGc3TWo4Y3MtRWJqZWIxYmFhS0R3?oc=5",
+   "source": "Finance & Commerce",
+   "published": "2026-11-20T02:47:45+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3993aa70af053f22",
+   "cluster_title": "Appleton, Wisconsin, approves 12-month data center moratorium"
   },
   {
    "id": "2c2f8ac1d357e924",
@@ -1451,6 +1637,31 @@
    "feed": "Google News: West",
    "category": "Policy / Permits",
    "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1d1510264e9b776b",
+   "cluster_title": "Washington County Quorum Court to discuss data center moratorium"
+  },
+  {
+   "id": "5d73f5c0b566f49e",
+   "title": "Washington County Quorum Court approves data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVWJQOG9RQ0JzZzNVYXdHc1Z3ckUydHRuTUtmSWNteHlYSmhiSTFNcXR0OEhvREs5Nng5Q3RKNVVHR0lxYi1iZ2lVVUg4aVdfMFdVWTlYZjJPNmRZRW5wS0pKemVXVUVJeDVIdHdaQVZZeFpzaHNBcjJtbUFudW5NZ1dlU1YxSUU3eWl2Z0dLdnBFT1hfdDFKZ080Z2Z3aE54TkNvSTdOeWxKclJCWXQ3LXpvNU5PMzhX0gG-AUFVX3lxTE9kbThZc0lpVDNfc0tGaVZQZDJQUkFqeU81WGxOeFpOaDFwQWY2N0llYk1aMTU4Y2ZpQ3hZQzdOLW5lOTlyTUpOSEFTRWl2Y3h0S2ZWNk5tVnpHT3QyZ1haWFltVEJyYkZ6ZzhPNnNudGMxbFFyZ2MtN0VoUzFBaWo5azd4MWZXaUI0ZzZSajJRWEQxdzd4aFBmM3NSRHUzWTZvSWRvM1U2U3ZMT3ZVUk4tRW84UnlDb3RwWGFDNXc?oc=5",
+   "source": "KNWA FOX24",
+   "published": "2026-11-19T22:31:12+00:00",
+   "feed": "Google News: West",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
     "Policy / Permits"
    ],
    "locations": [],
