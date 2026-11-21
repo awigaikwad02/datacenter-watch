@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4006,
+ "count": 4008,
  "items": [
   {
    "id": "1d56af0d7114f893",
@@ -1635,6 +1635,49 @@
    "suppliers": [],
    "cluster_id": "d395520eb953a743",
    "cluster_title": "The Freakout Over the Data Center Loophole That Wasn’t"
+  },
+  {
+   "id": "c12fb5e3da8b483a",
+   "title": "Dubuque County key in Peosta data center regulation, city leaders, attorney say",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLUhOVi0xUF9QZjh5d0FNUUJaeENFa0JBTlFOaWRsZ2dTRHZYbDRaY3hFVGJBUC1uenBLdTJDbDhvejJ0S2otS0pZVWduOEtIRzlkZFJEYW5uZFhuQUtkT0ZLSlRxT2tiaURiQlpMamlfNnV0NWxQNndyVW5PLUdkaUJwVlFuVUZEOGwwZ0pNRFMybERsNWNnQ0NZX3A?oc=5",
+   "source": "TelegraphHerald.com",
+   "published": "2026-11-20T21:30:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Peosta, Iowa, US",
+     "lat": 42.4506,
+     "lon": -90.8504,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Dubuque County, Iowa, US",
+     "lat": 42.468,
+     "lon": -90.882,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": "Dubuque County, Iowa, US",
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c12fb5e3da8b483a",
+   "cluster_title": "Dubuque County key in Peosta data center regulation, city leaders, attorney say"
   },
   {
    "id": "8f75acf28dddac0a",
@@ -42030,6 +42073,30 @@
    "suppliers": [],
    "cluster_id": "068bea76060d01fc",
    "cluster_title": "Pulaski County Judge-elect Wendell Griffen asks to intervene in AVAIO’s lawsuit over data center rules"
+  },
+  {
+   "id": "a1a75fb4a2cd6ebd",
+   "title": "PJM Fast Energization Cuts Data Center Wait to 1 Year",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOT1NTQTN3cEVpYTVBSEI4X1N4UUY0ZDZHbjRMYVNsMnFOTllzUUxZZmtfUVNnLWFmekJqcjFzdE9XU3Izay14V2gyVzVVc25JY1ZXdEhhS1M1RUNSOWZtWENYVDZmUE5SaS1QcTVPM0haODRDeERIQlFnSVhYeFhtcXVQU1hIakYxanhpSmNtRjlJdw?oc=5",
+   "source": "explainx.ai",
+   "published": "2026-11-17T00:00:00+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [
+    "PJM"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a1a75fb4a2cd6ebd",
+   "cluster_title": "PJM Fast Energization Cuts Data Center Wait to 1 Year"
   },
   {
    "id": "e8dca178f5a28e18",
