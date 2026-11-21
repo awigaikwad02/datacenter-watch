@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 640,
+ "count": 641,
  "items": [
   {
    "id": "c962cf1c5fb9ca04",
@@ -348,6 +348,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "fd56aaaaa1d03b96",
+   "title": "Hopkins County approves data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ2E5NDRGbmRJVmJnUlhNZ0d2eTZDTnU2WnVTdGlYaU9wWHdzRVZVLWlBdHAwSTZ5bGFnY0llNEU4eFM5bW44MnBlTlVHVUVZZVhScUk3SUhNVmFQdHlvZXp6OWIwb2Vpd0xUNVdXZkZWRmFGdGx4bWc4WldJTnI3anJCMk5UcEZBSkxzd2VObTc0Y05pVVR0N3BLWHdIYlZzVDJSOVJzZkJUbTZtelJES9IBtgFBVV95cUxNd1JmS1VyZWN2eUo5R3BOUE44V0xyMERicDRDTDJwUUUtYUpxMC1idVhtbGFoZG1fUjRGRHItMU5EWTQ3RUIzSWdwLUZ6LU9kbmpKVTJ5VURIdklNeWxDdUxKZEZPYkRrV29QUlBrdy1MVWV0QWRSa19URmZNa2tJWjViVDBGbGNNVGVTZTFURDg1cUFDc0JNMGFOdjhxeEdPazZMTFZrV1QyVHFHcnM4MlRhMkJyZw?oc=5",
+   "source": "Eyewitness News (WEHT/WTVW)",
+   "published": "2026-11-20T03:36:56+00:00",
+   "state": "IN",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
