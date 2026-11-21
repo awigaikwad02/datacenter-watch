@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-21T14:49:05+00:00",
+ "updated": "2026-11-21T15:49:05+00:00",
  "count": 745,
  "visible": 625,
  "records": [
@@ -16547,6 +16547,15 @@
      "cluster_id": "46863e897bf1a782"
     },
     {
+     "id": "e926a88c080855db",
+     "title": "Lea County approves $130 billion Google data center deal",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeXlkemRkMTB3bTBWNFY0cm55eFFvRndNZUhUazlWUk5DbTBBNm51SWhSRlFWUWhQcGpPS0RzZ1F6THhNQ1Vfa0ViZDRtT3gwdGUzM2hoQmVXemxjMlQ4dFZXYzB6b2JsTC1TYkl5RnJhWGZSRldYTVA5QmNMa3VJNUFUdFJKdkJFRGs0UldEdmN0OTBQc2hsSkFqYw?oc=5",
+     "source": "Albuquerque Journal",
+     "published": "2026-11-20T23:49:49+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "e926a88c080855db"
+    },
+    {
      "id": "b9aeef959ac0611b",
      "title": "Lea County approves $130B Google data center bonds near Hobbs amid concerns",
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZmN3Q005V0tySkQ1SGdwQjhla0FyY0tNcFYyWTBIX0t5VHFPUXBSdzh1bDJ1M2hzUWJadHp4UUNrZ0RITXR2ZzhOdjcwZjJXRkl0LW5hVDRQRXBpRlBCenRfTVljVUN5TDg0Z2djaDhsRXBJdFE1c2hkOXUzOHoxcW9kS2U4am1SN3VyZ0JDS3N1Yy1KR1pPRWVzRW9UWGR6TXhOVFY4MllqUQ?oc=5",
@@ -16572,6 +16581,11 @@
    ],
    "events": [
     {
+     "date": "2026-11-20T23:49:49+00:00",
+     "type": "Approval",
+     "headline_id": "e926a88c080855db"
+    },
+    {
      "date": "2026-11-21T06:00:09+00:00",
      "type": "Approval",
      "headline_id": "b9aeef959ac0611b"
@@ -16580,7 +16594,7 @@
    "capacity_mw": null,
    "investment_usd_b": 130.0,
    "last_news": "2026-11-21T06:00:09+00:00",
-   "sources_count": 2,
+   "sources_count": 3,
    "confidence": "high",
    "hidden": false
   },
