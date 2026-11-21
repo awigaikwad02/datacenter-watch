@@ -58,8 +58,8 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-21T09:47:48+00:00",
- "count": 744,
+ "updated": "2026-11-21T10:47:48+00:00",
+ "count": 745,
  "visible": 625,
  "records": [
   {
@@ -16520,6 +16520,71 @@
    "hidden": false
   },
   {
+   "id": "google-hobbs-nm-2026",
+   "name": "Google Hobbs data center",
+   "company": "Google",
+   "companies": [
+    "Google"
+   ],
+   "location": "Hobbs, New Mexico, US",
+   "state": "NM",
+   "county": "Lea County, New Mexico, US",
+   "city": "Hobbs, New Mexico, US",
+   "lat": 32.7026,
+   "lon": -103.136,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "46863e897bf1a782",
+     "title": "Google announces it is ‘exploring’ a potential data center in rural New Mexico county",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUWhzWUR0SXR1UEFocjlaWnZlZzNlWkNRR0F3U1E0TERMRU1LLVlScU4xNS1oWVBXNFB1ZXBFU2NPelF4bk02dUxLWEpucUoxbnA4X2lYZGc3c241QUNGTVp0MkR0NkdRVVlyNFZnaFo3bGNLVUFsb2RBNzlGVVlpNDNoSGk4ZXkwVEhadlVJMHNibmVFLUJRSzBQc3Fja2MtUWRoTVNHcWlhWHN5N0VpTFRvNGZjMDg?oc=5",
+     "source": "Source New Mexico",
+     "published": "2026-09-15T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "46863e897bf1a782"
+    },
+    {
+     "id": "b9aeef959ac0611b",
+     "title": "Lea County approves $130B Google data center bonds near Hobbs amid concerns",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZmN3Q005V0tySkQ1SGdwQjhla0FyY0tNcFYyWTBIX0t5VHFPUXBSdzh1bDJ1M2hzUWJadHp4UUNrZ0RITXR2ZzhOdjcwZjJXRkl0LW5hVDRQRXBpRlBCenRfTVljVUN5TDg0Z2djaDhsRXBJdFE1c2hkOXUzOHoxcW9kS2U4am1SN3VyZ0JDS3N1Yy1KR1pPRWVzRW9UWGR6TXhOVFY4MllqUQ?oc=5",
+     "source": "KOB 4",
+     "published": "2026-11-21T06:00:09+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b9aeef959ac0611b"
+    }
+   ],
+   "first_seen": "2026-09-15T07:00:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-09-15T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "46863e897bf1a782"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-21T06:00:09+00:00",
+     "type": "Approval",
+     "headline_id": "b9aeef959ac0611b"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": 130.0,
+   "last_news": "2026-11-21T06:00:09+00:00",
+   "sources_count": 2,
+   "confidence": "high",
+   "hidden": false
+  },
+  {
    "id": "google-ia-unnamed",
    "name": "Google, Iowa (site not yet named)",
    "company": "Google",
@@ -17655,38 +17720,23 @@
    "notes": "",
    "umbrella": true,
    "umbrella_company": "Google",
-   "news": [
-    {
-     "id": "46863e897bf1a782",
-     "title": "Google announces it is ‘exploring’ a potential data center in rural New Mexico county",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUWhzWUR0SXR1UEFocjlaWnZlZzNlWkNRR0F3U1E0TERMRU1LLVlScU4xNS1oWVBXNFB1ZXBFU2NPelF4bk02dUxLWEpucUoxbnA4X2lYZGc3c241QUNGTVp0MkR0NkdRVVlyNFZnaFo3bGNLVUFsb2RBNzlGVVlpNDNoSGk4ZXkwVEhadlVJMHNibmVFLUJRSzBQc3Fja2MtUWRoTVNHcWlhWHN5N0VpTFRvNGZjMDg?oc=5",
-     "source": "Source New Mexico",
-     "published": "2026-09-15T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "46863e897bf1a782"
-    }
-   ],
+   "news": [],
    "first_seen": "2026-09-15T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [
-    {
-     "date": "2026-09-15T07:00:00+00:00",
-     "status": "Announced",
-     "headline_id": "46863e897bf1a782"
-    }
-   ],
+   "status_history": [],
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-09-15T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": null,
+   "sources_count": 0,
    "confidence": "low",
-   "hidden": false,
+   "hidden": true,
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hints": []
+   "name_hints": [],
+   "merged_into": "google-hobbs-nm-2026"
   },
   {
    "id": "google-ny-unnamed",
