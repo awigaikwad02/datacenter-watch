@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-21T19:50:28+00:00",
+ "updated": "2026-11-21T20:50:28+00:00",
  "count": 745,
  "visible": 625,
  "records": [
@@ -16521,18 +16521,18 @@
   },
   {
    "id": "google-hobbs-nm-2026",
-   "name": "Google Hobbs data center",
+   "name": "Google Lea County data center",
    "company": "Google",
    "companies": [
     "Google"
    ],
-   "location": "Hobbs, New Mexico, US",
+   "location": "Lea County, New Mexico, US",
    "state": "NM",
    "county": "Lea County, New Mexico, US",
-   "city": "Hobbs, New Mexico, US",
-   "lat": 32.7026,
-   "lon": -103.136,
-   "precision": "city",
+   "city": null,
+   "lat": 32.79,
+   "lon": -103.412,
+   "precision": "county",
    "curated": false,
    "verified": false,
    "notes": "",
@@ -16598,6 +16598,12 @@
      "date": "2026-11-21T03:41:15+00:00",
      "type": "Approval",
      "headline_id": "7c4b5486c3c0266b"
+    },
+    {
+     "date": "2026-11-21",
+     "type": "Moved to Lea County",
+     "headline_id": "e926a88c080855db",
+     "from": "Hobbs, New Mexico, US"
     }
    ],
    "capacity_mw": null,
@@ -16605,7 +16611,15 @@
    "last_news": "2026-11-21T06:00:09+00:00",
    "sources_count": 4,
    "confidence": "high",
-   "hidden": false
+   "hidden": false,
+   "location_events": [
+    {
+     "date": "2026-11-21",
+     "type": "Moved to Lea County",
+     "headline_id": "e926a88c080855db",
+     "from": "Hobbs, New Mexico, US"
+    }
+   ]
   },
   {
    "id": "google-ia-unnamed",
