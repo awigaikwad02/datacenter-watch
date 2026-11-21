@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4064,
+ "count": 4067,
  "items": [
   {
    "id": "a3cf95985eb68803",
@@ -5769,6 +5769,39 @@
    "suppliers": [],
    "cluster_id": "6b7b9fd16c31b26a",
    "cluster_title": "US Senate passes bill requiring data centers to pay more for grid infrastructure"
+  },
+  {
+   "id": "91986b8fb9595749",
+   "title": "Virginia Data Centers: 518 Facilities Across 30 Counties",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBNDNMc01DVFRnNnh4R2ZYZ2I0LTliV25hQzA3bWZTLXF4V0d0amxDeGY4WjFJS05tQmpfSHBac3l6clpWRFJtdzhMaUNXcFdDUV9tVEhJN1hrbUVlZUNzSEtn?oc=5",
+   "source": "Electric Choice",
+   "published": "2026-11-20T15:17:56+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "91986b8fb9595749",
+   "cluster_title": "Virginia Data Centers: 518 Facilities Across 30 Counties"
   },
   {
    "id": "e6316856d4676733",
@@ -12537,6 +12570,31 @@
    "suppliers": [],
    "cluster_id": "3256061a21150c7f",
    "cluster_title": "Port Deposit debates a temporary data center moratorium"
+  },
+  {
+   "id": "c6080f98c44bcaac",
+   "title": "On edge: Residents voice concerns over proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQU0NkV082ZWFXcWZKRXJCVDlCTUthLXJWZi1HSHhiN2VESFVYTndfajZOWkJvalNkelRQWlNfU0JQcEpNcHdQRklxQkVfMUxDeVQ5WlhkZ0FSLTgzb0ZaZWR3eTRpd3BfUTdNSEJwZlVyT3Zpdl8xZ3B3eExKNTFoblNneFpDV0xwYm1KYmswZi00c2JoZGotSHg4Sm9idFBTVnRDbGZiT2xmVEdiOXZYQ3piQ21UTUhqc21tazJoQ1NEV2J1ZzhnQlNqRzhSbDRxbm8xUjVjMjdfTDA?oc=5",
+   "source": "wdtimes.com",
+   "published": "2026-11-19T18:00:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c6080f98c44bcaac",
+   "cluster_title": "On edge: Residents voice concerns over proposed data center"
   },
   {
    "id": "83685daec7b30ff1",
@@ -36835,6 +36893,34 @@
    "suppliers": [],
    "cluster_id": "a09ec6a1011e11bb",
    "cluster_title": "2 hurt after ATV hits portable toilet at Red Oak data center site"
+  },
+  {
+   "id": "4b23a25983bf9540",
+   "title": "PJM Asked FERC to Cut Grid Studies to 12 Months. Data-Center Groups Say It Could Take Longer",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNODk0RTd4S0pqc0NzS3pjVjlRczRHcVhjeU85NmxIZkNMTWFwNkRWa0pJQmFIZnd3eTBEbUhCbURUWEpaejh6LTZQYWNrRjFRWVkwSFQtYU5pbHNrblBRZ3U4WDZWenR2MUdLbllyYmRLZGV4cXZrQUQyR2pBQVRkSE00dzIwNFR0RGxhc2FrVE1GQVo4SE5fYUpiN01nZG5DYnZUdDI0YUllRTY4c05VUS1xUUl5TEgzMVAwNm5xVHhhcUY3TzRyUnVmbXREWVg2ZUVyTVBhQQ?oc=5",
+   "source": "Energy News Beat",
+   "published": "2026-11-17T16:41:14+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [
+    "PJM"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4b23a25983bf9540",
+   "cluster_title": "PJM Asked FERC to Cut Grid Studies to 12 Months. Data-Center Groups Say It Could Take Longer"
   },
   {
    "id": "c43f8d9227c09bee",
