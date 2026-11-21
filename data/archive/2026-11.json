@@ -39,8 +39,80 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4075,
+ "count": 4078,
  "items": [
+  {
+   "id": "77eea929b39d5fb5",
+   "title": "Texas Regulators Resume Data Center Permit Reviews",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWDhxdEZOODlzdi11Q19DYzEwdnlkeFEtbG1rQm9NTHlQSFU5aVhrR1ByNmx4cEV0dVB5dlIxRjJfajRKZGV4YkR0d2IxeVJ5M0lHNU94UWdQdFNrS2UzRzEySjF4dl9OeWNIeVpYOEJoeG8yWGFTR2RNT0NpSFFSeGRVSHR6V0hsbU5UVzNB?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-21T22:08:58+00:00",
+   "feed": "Google News: U.S. grid operators",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "77eea929b39d5fb5",
+   "cluster_title": "Texas Regulators Resume Data Center Permit Reviews"
+  },
+  {
+   "id": "125b2688e0b88b8c",
+   "title": "Inside the federal push for a $6 billion data center",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa2V2YmpWSW10c3hBS1VTMTNLMXJNYU1ReHRSVnZwWFpLOHd1MTBGR0cwSWdhZXU1VDl3WXVtcmxtN2NqNk5VZnl3MWYtam8yS1gxUDJ0SmhVUkV2VExtTy1GYmw0YlRybzByY2hIaHJPYUlJa0VienF4Y25aRzZOSjNzdnBLMkppTjRCSXVFbDZQamxyaVV6V0JTb2VVZw?oc=5",
+   "source": "Arkansas Times",
+   "published": "2026-11-21T22:07:07+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Arkansas, US",
+     "lat": 34.9,
+     "lon": -92.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AR"
+   ],
+   "state": "AR",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 6.0,
+   "cluster_id": "125b2688e0b88b8c",
+   "cluster_title": "Inside the federal push for a $6 billion data center"
+  },
   {
    "id": "22ca653b7001a64c",
    "title": "Trump Threatens Major Tax on Overseas AI Data Centers",
@@ -18977,6 +19049,48 @@
    "suppliers": [],
    "cluster_id": "17d7b779a6c57898",
    "cluster_title": "Auburndale considers moratorium on future data centers after major pushback"
+  },
+  {
+   "id": "f1edbc1d631560d1",
+   "title": "Protesters urge Louisiana regulators to reject Entergy plan for Meta data center",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ0NpWUxNdlM0VVo3Z0tjaXNzX2ZxTk1DVWc5dXZwNXIzblplMXZLUUJmOXNhYUdlVk9lR1JDd1RWVkkyRzRtU1NfRjlQaWFncGVwLW9MWmwwTGFQNzlDY0w4ek9YSXFqSXdzTF9IUUJxcjZIZ0dkVnR2ZzIxVDRCa2hfWjg4cGNYQ0ppbXRocmRpdndIc1l1dEV4Snp0SkNiNUZDV0R3?oc=5",
+   "source": "Yahoo",
+   "published": "2026-11-19T03:03:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Louisiana, US",
+     "lat": 31.1,
+     "lon": -92.0,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "LA"
+   ],
+   "state": "LA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Meta"
+   ],
+   "utilities": [
+    "Entergy"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f1edbc1d631560d1",
+   "cluster_title": "Protesters urge Louisiana regulators to reject Entergy plan for Meta data center"
   },
   {
    "id": "77bee8a2280c3308",
