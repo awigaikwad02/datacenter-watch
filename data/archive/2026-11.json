@@ -39,8 +39,71 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4000,
+ "count": 4006,
  "items": [
+  {
+   "id": "1d56af0d7114f893",
+   "title": "(LEAD) Lee visits AI data center construction site in Ulsan",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qQldUMjZIbFMzNXYwSmJXbkg4R01ZSi1jMGphRUc2bUZCWG9CVGlHd3BLUFpLUnZQRGZxTXVVVnVjQXZfTHBhTnFHZlpQNXNYMDZOSUlsYzRnQQ?oc=5",
+   "source": "Yonhap News Agency",
+   "published": "2026-11-21T05:38:06+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8bfa8e08854f3572",
+   "cluster_title": "Lee visits AI data center construction site"
+  },
+  {
+   "id": "9c338c4ab75ab15c",
+   "title": "'The farm's not for sale' | 2,000-acre data center coming to rural Kentucky county",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVEtrbU9WQ09OcDdldjlUejRmYWt5ZFMwLV9kYmQxS2dlcEI4dHhkdmxVazJsRW9rVEdtNF9LZnZLeVI0VXM2SDYzcXNINWpBNy1sMlMzTzNxeGhDOFVRY3BMMDNvcHZobjQ4ZEtEbjEzZENKN0p4eEl5WE5rTUt4VTFORmItTExjUXhKYkc0R2hwaDV2YnJIZ3ptWmZ3MXdBVWtjVENUYW43S2JvUHd0OWtaVHV2Xy1CWHh6QVctV2dCM1k?oc=5",
+   "source": "11Alive.com",
+   "published": "2026-11-21T04:46:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Land Acquisition",
+    "Deals / Investment",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Kentucky, US",
+     "lat": 37.5,
+     "lon": -85.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "KY"
+   ],
+   "state": "KY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "58fdfaa8507e1773",
+   "cluster_title": "'The farm's not for sale' | 2,000-acre data center coming to this rural Kentucky county"
+  },
   {
    "id": "965bf74313cd1fc9",
    "title": "Why Fort Stockton residents are taking their concerns about data centers to Austin",
@@ -389,6 +452,45 @@
    "suppliers": [],
    "cluster_id": "0161324ce3772334",
    "cluster_title": "Pulaski County data center lawsuit hearing focuses on proposed agreement, Justice of the Peace Julie Blackwood gives testimony"
+  },
+  {
+   "id": "417870bd422c9869",
+   "title": "Amazon meets public over West Richland data center plan. Here’s how it went",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE54VjM5aVRuY3V4WVpLOEVDTlRjM3F3eDlEckh0SjZURG9LbDRWV1dpZDJpZnNPRFh5Vy1lZkZRbTdwV0tVU0VfZ1hBVkF1MDRLdmJaU0JMeGRKN0NGTnhFQVl4X3dBM3c0bUtfRTlSeW1wUdIBckFVX3lxTE8zbk9SaERnYVZPdWtwcmE3OHlLYkcyZXdZRmlZQzVvQzdobWxGTXJPVVlaRERydDh1NnItTWJSSGpWSmZ2RE41emZMSVBiS0JfNzRmd0ZTYmJMVDBpZ1NLMmRnaVBVS1JBd29YcE1zX1liUQ?oc=5",
+   "source": "Tri-City Herald",
+   "published": "2026-11-21T01:30:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "West Richland, Washington, US",
+     "lat": 46.3043,
+     "lon": -119.3614,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b4571c44700d8eb7",
+   "cluster_title": "What to know about Amazon's West Richland open house for data center megaplex plans"
   },
   {
    "id": "8eb39214ae026668",
@@ -868,6 +970,32 @@
    "cluster_title": "News | Market, regulatory shifts could slow data center spending; Senate passes energy bill to speed projects; US construction costs jump"
   },
   {
+   "id": "2b94bf366dffeff9",
+   "title": "News | Shifts in market, regulation could slow data center spending; Senate passes energy bill to speed projects; US construction costs jump",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWjFJT21BcG13MlpRLXdSYVdFeE9MUXgyTnFHdWdvU2d6eXFEN1dGRnRDeFJ2MUp2Z2RRX2gzbmppbm9ZdTdDVk1QRG1faTZEZVlGT201QURhUXBqWjFMeEpnM0EtLTdpM08wZ0RoMVNkRzFqWHNjUEZqWE8zQWtlZjB6eEZKVW9icFY5S1ZIUk45MDNZeUlmV3BTSDBlOHNJOThFRGVXTm1iaGRsenFnbUVlSHVmU21vdV94bkNkRDE3LUZUNXg3c0pkS1RNQl9RVFgtU01pUHRDdw?oc=5",
+   "source": "CoStar",
+   "published": "2026-11-20T23:26:40+00:00",
+   "feed": "Google News: Data center",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Power / Utility",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2b94bf366dffeff9",
+   "cluster_title": "News | Shifts in market, regulation could slow data center spending; Senate passes energy bill to speed projects; US construction costs jump"
+  },
+  {
    "id": "ed6ff91d27110121",
    "title": "As plans for a Carbon County data center and nuclear reactors advance, residents push to be heard",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU2E4TnlBRm0xUWVvN1dkdF80NDN6SHd0a21SUzZoU1lPSzl4OUdBb2RhVnU5bXdMUEZJT3VkSFVfYVlUR1RhMkZzb1NkSGdXaE1RTmpBa0pGVjBsQ1JpM1ZDcHBBN3haZ2FzR0stTjZKc2Ffa1lXNllqcV83RmJtMnJWQmoybmdSaXZ4ZWpCd3Y5YXVidkJxTGJDZ3RuTG11XzhwUTNR?oc=5",
@@ -1095,6 +1223,41 @@
    "suppliers": [],
    "cluster_id": "fa269e97aacf2a31",
    "cluster_title": "The AI data center building boom"
+  },
+  {
+   "id": "bebc030579da224b",
+   "title": "Winona County looks to close zoning gap on data center development",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUndzc01MQ2xaNjBlTl9kRktXaEhvVXhtRS1rZmx3aEhJU2tOa19LNjhKWWtrVnBKOU9GcXZZZ3hibzgxQW54WXVNZ2w0NFIwdUVOcWhiUnZaeldnd18xR2hyMVFNUHV1cThRdDdoWnFJd2h6enR0RjlYTWx1eHVDWWJBd1VrN3g1ZGphaTVWbldYV3JrMnN1anZod3p6X1Y1MlFQZ2tVQS1XdFJKTWhRLVpHTFhEb0l6alhXN0xnVXdyNlY0Y2VzY3o2UHg5WUctM1l5S1Fhd2RNbkkyNURXLU5wVllKQlVkQ3c?oc=5",
+   "source": "WXOW",
+   "published": "2026-11-20T22:17:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Winona County, Minnesota, US",
+     "lat": 43.987,
+     "lon": -91.778,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": "Winona County, Minnesota, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bebc030579da224b",
+   "cluster_title": "Winona County looks to close zoning gap on data center development"
   },
   {
    "id": "fbf6ffc6f5f93d5e",
@@ -10175,6 +10338,42 @@
    "suppliers": [],
    "cluster_id": "c83afc3966642136",
    "cluster_title": "‘They should be subsidizing the ratepayers’: NC governor says data center subsidies should be rolled back"
+  },
+  {
+   "id": "9674ec34c0e36f5f",
+   "title": "Oregon has more hyperscale data centers than all but one US state, study finds - Oregon Public Broadcasting - OPB",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBCd2dOQXNYV2MyZjFDZEFFM21oY05XXzJsTHVLU3FpeTljVS1lSldoYmhfY2NhM1Y3WC1mMzF6SmV3TG5pd1lWdXQycnlJQkJINHZlQTYzbDNHNnlMZEdwczBhMDgtX19vY0xtM215MXpzMm0tTWF1RFlR?oc=5",
+   "source": "Oregon Public Broadcasting - OPB",
+   "published": "2026-11-19T19:38:23+00:00",
+   "feed": "Google News: Data center power",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Oregon, US",
+     "lat": 43.9,
+     "lon": -120.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5965bfc95ae8c589",
+   "cluster_title": "Oregon has more hyperscale data centers than all but one U.S. state, study finds"
   },
   {
    "id": "ad26ad6682c61886",
