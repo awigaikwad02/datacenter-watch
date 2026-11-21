@@ -58,8 +58,8 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-21T01:44:55+00:00",
- "count": 743,
+ "updated": "2026-11-21T02:44:56+00:00",
+ "count": 744,
  "visible": 625,
  "records": [
   {
@@ -12494,6 +12494,76 @@
    "name_hints": []
   },
   {
+   "id": "digital-realty-de-soto-ks-2026",
+   "name": "Digital Realty De Soto data center",
+   "company": "Digital Realty",
+   "companies": [
+    "Digital Realty"
+   ],
+   "location": "De Soto, Kansas, US",
+   "state": "KS",
+   "county": null,
+   "city": "De Soto, Kansas, US",
+   "lat": 38.9792,
+   "lon": -94.9686,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "f409f40e5073e3e1",
+     "title": "Digital Realty plans 600MW campus in Kansas, acquires investment firm Columbia Capital",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaVNUMFctNk14dGdHXzUwUWllQjFOX1VyYzQ5OXBkVjVHUWdhdzJmUFltV3BSNm84bldKMlRGbFVtRDZ2Nm51WXl3bWVEeUdKbnd2QS1TSXJVRE94bG13YWd2SHRYaHFGWFpTbXBlS1ZlY2pIemZXc2VsY3JyUXlYN3I5TzhNUEp0bmtsWDZYOV90VHBNeXJQM1FvdnNDOWNxOUdQbXN0el9FOXpYZ2VVSk13ZXRaNzBacVNwUWFKMGF1eWpkUWRGOQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-06-22T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "f409f40e5073e3e1"
+    },
+    {
+     "id": "921bc615ec779ae5",
+     "title": "Digital Realty pauses De Soto incentive talks for $7.5B data center - Kansas City Business Journal",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQa3dMd3lvNEhIX01TZnRLT1JBRlFhYmEzcHZ2cVBWUTdIc3JFR05hLWZ2cWdoYjZGdUdPUDlzX3Y4TWFhZ1dPOFpoZDkxbVFUcFZWNGc1eEZUODR6RlJ4dzdkcldQQ1dIbXBzX2JQLVNaR2lrVFNIUG9TUG5KaTl6MEwwTWdfZ1BkbWs5aGhZVmRUUWxkc25EVUtLQlQyMGE3Q3VzQjdTNW4zQkpk?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-11-20T20:32:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "921bc615ec779ae5"
+    }
+   ],
+   "first_seen": "2026-06-22T07:00:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Cancelled / Blocked",
+   "status_history": [
+    {
+     "date": "2026-06-22T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "f409f40e5073e3e1"
+    },
+    {
+     "date": "2026-11-20T20:32:00+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "921bc615ec779ae5"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-11-20T20:32:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "921bc615ec779ae5"
+    }
+   ],
+   "capacity_mw": 600,
+   "investment_usd_b": 7.5,
+   "last_news": "2026-11-20T20:32:00+00:00",
+   "sources_count": 2,
+   "confidence": "high",
+   "hidden": false
+  },
+  {
    "id": "digital-realty-in-unnamed",
    "name": "Digital Realty, Indiana (site not yet named)",
    "company": "Digital Realty",
@@ -12638,38 +12708,23 @@
    "notes": "",
    "umbrella": true,
    "umbrella_company": "Digital Realty",
-   "news": [
-    {
-     "id": "f409f40e5073e3e1",
-     "title": "Digital Realty plans 600MW campus in Kansas, acquires investment firm Columbia Capital",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaVNUMFctNk14dGdHXzUwUWllQjFOX1VyYzQ5OXBkVjVHUWdhdzJmUFltV3BSNm84bldKMlRGbFVtRDZ2Nm51WXl3bWVEeUdKbnd2QS1TSXJVRE94bG13YWd2SHRYaHFGWFpTbXBlS1ZlY2pIemZXc2VsY3JyUXlYN3I5TzhNUEp0bmtsWDZYOV90VHBNeXJQM1FvdnNDOWNxOUdQbXN0el9FOXpYZ2VVSk13ZXRaNzBacVNwUWFKMGF1eWpkUWRGOQ?oc=5",
-     "source": "Data Center Dynamics",
-     "published": "2026-06-22T07:00:00+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "f409f40e5073e3e1"
-    }
-   ],
+   "news": [],
    "first_seen": "2026-06-22T07:00:00+00:00",
    "utilities": [],
    "status": "Announced",
-   "status_history": [
-    {
-     "date": "2026-06-22T07:00:00+00:00",
-     "status": "Announced",
-     "headline_id": "f409f40e5073e3e1"
-    }
-   ],
+   "status_history": [],
    "events": [],
-   "capacity_mw": 600,
+   "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-06-22T07:00:00+00:00",
-   "sources_count": 1,
+   "last_news": null,
+   "sources_count": 0,
    "confidence": "low",
-   "hidden": false,
+   "hidden": true,
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hints": []
+   "name_hints": [],
+   "merged_into": "digital-realty-de-soto-ks-2026"
   },
   {
    "id": "digital-realty-seattle-wa-2026",
