@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-22T21:58:02+00:00",
+ "updated": "2026-11-22T22:58:02+00:00",
  "count": 745,
  "visible": 625,
  "records": [
@@ -9054,6 +9054,15 @@
      "published": "2026-11-01T23:24:39+00:00",
      "stage_signal": "Announced",
      "cluster_id": "f4ce9cde3046bb4f"
+    },
+    {
+     "id": "45df88d6a22d7f05",
+     "title": "Walla Walla County officials seeking public comment on proposed Amazon data center",
+     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOR0YyYXFIaC1DR3dIM2p1Y0VtcW1MNXlsbjl5NjZjOWxoNnRrWURCTGR3Wk01OEd2ZDRsSzZuVXM3RGZScFVnVUNEWVRBNFRsWkhUTGN3LVg0aDBaWE5FMXNNVTF3UmtCZ2U3R0dpTTJpRF9DbFktRHpJb3NfVUJuMFhfTUxkc25GWFBUNHBlZjM0ZWtCaGdmMEl1SXh5dTZxOXNDb3pmOGE0SEdmbFhobUhRSlRWQlZHTHBDbXV4RzRTQUNjZDEtS09uTmJaaUlRUEFhbVJveV92NktmenZkQk5leE1TLUZ5em1kR2ZlaEU5SkdlUmNGQzBqczhtZkhFb2c?oc=5",
+     "source": "AppleValleyNewsNow.com",
+     "published": "2026-11-20T22:52:31+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "45df88d6a22d7f05"
     }
    ],
    "first_seen": "2026-02-12T08:00:00+00:00",
@@ -9085,8 +9094,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.036,
-   "last_news": "2026-11-01T23:24:39+00:00",
-   "sources_count": 5,
+   "last_news": "2026-11-20T22:52:31+00:00",
+   "sources_count": 6,
    "confidence": "high",
    "hidden": false,
    "investors": [],
@@ -45318,6 +45327,15 @@
      "published": "2026-09-09T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "b7699868320f67b8"
+    },
+    {
+     "id": "d22bc6799a015996",
+     "title": "Imperial County extends data center pause",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFFWM2t6dzBndkY2aGNSR0pxcldEeUtQYUVVd2s4MzhjNWxfSWthODQ4LWotbUdrbVQ4NENzNVFTa2dLMjhpdko1bWtFUUNROXQzemd5endlQzc1bEdLc1FwZnF3d3VSMGE4MmVnZ2dQdExXQXkxdW51SWRWTzJZRk53bzhGWjVDamdZaWRKMTVDcVp6TVZfYmNZV2MtLVJORVYzZjN3?oc=5",
+     "source": "KYMA",
+     "published": "2026-11-20T19:03:19+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "d22bc6799a015996"
     }
    ],
    "first_seen": "2026-01-21T08:00:00+00:00",
@@ -45349,8 +45367,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 2.94,
-   "last_news": "2026-09-09T07:00:00+00:00",
-   "sources_count": 5,
+   "last_news": "2026-11-20T19:03:19+00:00",
+   "sources_count": 6,
    "confidence": "medium",
    "hidden": false,
    "investors": [],
@@ -57573,6 +57591,15 @@
      "published": "2026-11-19T12:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "9826423eaed1e276"
+    },
+    {
+     "id": "6809bfaf3fbcaf45",
+     "title": "What Trenton had already approved before voters banned large data centers",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODRkaG1LYklOUWRSb3BMZFNaX2cwWjJfR3dHSmhHRDliSVFsdFZKTDFwX1hmSG9xVFNLSk82X1Zfb2ZGaUp3R29URVMydWZkYkN2TVZNME9IN0tkdDB0VS1sZ3hSOGVJVEdTZ1FCRjFHZXFvVzdSZUlnWFRQc2stM2g0MXJMS2s1NklMY0ZEZDZjWlE3OVFNQUpwa0ZRaFJqOXo2REVkMGVnNG9PczBfWG11dFViUmRpTnc?oc=5",
+     "source": "Cleveland.com",
+     "published": "2026-11-22T22:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "6809bfaf3fbcaf45"
     }
    ],
    "first_seen": "2025-10-29T07:00:00+00:00",
@@ -57614,11 +57641,16 @@
      "date": "2026-11-19T12:00:00+00:00",
      "type": "Approval",
      "headline_id": "018d50111dae38a5"
+    },
+    {
+     "date": "2026-11-22T22:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "6809bfaf3fbcaf45"
     }
    ],
    "capacity_mw": 25,
    "investment_usd_b": null,
-   "last_news": "2026-11-19T12:00:00+00:00",
+   "last_news": "2026-11-22T22:00:00+00:00",
    "sources_count": 4,
    "confidence": "medium",
    "hidden": false

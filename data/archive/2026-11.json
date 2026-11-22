@@ -39,8 +39,153 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4162,
+ "count": 4171,
  "items": [
+  {
+   "id": "0e999cd978b31ca3",
+   "title": "New York firm seeks to build a 14-megawatt data center southeast of Sacramento",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBZaWprdTNjQ0Q0U0QxTWsxTG16blJ5aHYtc1ZJUDZuSXZZVjBlYkljWHROb2ZxWWJOcFRnaXVmLTJKd2RVZDFUTEFpdUpFNjE0cWdQSlNURnVCNW9RV0MweGNTQzA2MzdhY3fSAWpBVV95cUxOc2FyTmxyUXpVNV8wMUZuQ1Vsc3hwajdSdWE2RmtiS3JPendWWXFfQ2NfSEVEZ28tOWY1d2R1UElTNmNRdVROdEl6ZEtTdGFZQWx1Q19zODhaVUVDdVp6V1NDTWZOcHVzLUZ3?oc=5",
+   "source": "Sacramento Bee",
+   "published": "2026-11-22T22:30:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "New York, US",
+     "lat": 42.9,
+     "lon": -75.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Sacramento"
+    }
+   ],
+   "states": [
+    "CA",
+    "NY"
+   ],
+   "state": "NY",
+   "county": null,
+   "location_precision": "state",
+   "location_note": "near Sacramento",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0e999cd978b31ca3",
+   "cluster_title": "New York firm seeks to build a 14-megawatt data center southeast of Sacramento"
+  },
+  {
+   "id": "998eb29fe0ab75fb",
+   "title": "Alton City Council data center moratorium faces legal hurdle",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNlVfZVlaRnBQYS1tVmFlODZOajBhOUZVdlN4R0ZIaUY4ZWI5OHlKcFpheFV3Unh3ZTJSWEZIa01VVXYxQXEtblJIY0ZxLXY2TXM0ZHpRc2dERThmdDNyNzBDNm9aWmxDVy1ZTTh4VUFfVENSV0pOMmVldUFnSzVCb1REUmxraDZlYll1R0I1SmdWOXZKRW9GRDhUd3BHUndYSmFpLTAtalM?oc=5",
+   "source": "Alton Telegraph",
+   "published": "2026-11-22T22:20:14+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "998eb29fe0ab75fb",
+   "cluster_title": "Alton City Council data center moratorium faces legal hurdle"
+  },
+  {
+   "id": "6809bfaf3fbcaf45",
+   "title": "What Trenton had already approved before voters banned large data centers",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODRkaG1LYklOUWRSb3BMZFNaX2cwWjJfR3dHSmhHRDliSVFsdFZKTDFwX1hmSG9xVFNLSk82X1Zfb2ZGaUp3R29URVMydWZkYkN2TVZNME9IN0tkdDB0VS1sZ3hSOGVJVEdTZ1FCRjFHZXFvVzdSZUlnWFRQc2stM2g0MXJMS2s1NklMY0ZEZDZjWlE3OVFNQUpwa0ZRaFJqOXo2REVkMGVnNG9PczBfWG11dFViUmRpTnc?oc=5",
+   "source": "Cleveland.com",
+   "published": "2026-11-22T22:00:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Trenton, Ohio, US",
+     "lat": 39.4809,
+     "lon": -84.4577,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Cincinnati"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6809bfaf3fbcaf45",
+   "cluster_title": "What Trenton had already approved before voters banned large data centers"
+  },
+  {
+   "id": "6d91c2a8a6eb3779",
+   "title": "Hanover Township cancels Dec. 9 public hearing on proposed data center overlay district",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQjZ1X2p2Qm50WmswS2lVWHhfUkxndlRIUXRKQ1pzbVA0ZFFXWkMxZ2piMlZQUHJwZDMxVklrNHk3REE3Tko5YWxPUmNJaEh3bGY4Z19MTDRfTVhiYkl6TlBMTVhWUmJOT1I4S2xQaUdCNTRNNkc1Y3hXZnZnR0RtZlFWNnFUNWZRZWVYbTZPS281MDJRLWxod21YbVFLeVY2UmdpYjZYd09tdDBHMk13dEZNQnlhdjJVeHVXTUdhSUV2SVprOXc?oc=5",
+   "source": "Times Leader",
+   "published": "2026-11-22T21:30:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Hanover, Pennsylvania, US",
+     "lat": 39.8007,
+     "lon": -76.983,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6d91c2a8a6eb3779",
+   "cluster_title": "Hanover Township cancels Dec. 9 public hearing on proposed data center overlay district"
+  },
   {
    "id": "b40288cd42a2e6ac",
    "title": "Prologis project faces Trenton’s new data center power threshold",
@@ -255,6 +400,32 @@
    "builders": [],
    "suppliers": [],
    "cluster_id": "13275ec52152c9c5",
+   "cluster_title": "Missouri considers data center moratorium amid Big Tech backlash"
+  },
+  {
+   "id": "f299812af2286d9d",
+   "title": "Why data centers are at the center of the Big Tech backlash",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWTNBaC1WOGhDSkJyX2VaSFFmaDlkZDFpY1RMbk9ueW1JNFplaWllNzZ0djlDNFNkbVZENnFkTU1UaXVyZU9YXzU3V200OFVSYUQ0R2lZUDNtUktiem5YaGNvc1A4c3M2MThLdzFSaDh6a29DT2FoeTRROW9xWUd3eW0zd3hDQV9wbG9paFU4VkQ5a3lzMGo0S2tn?oc=5",
+   "source": "TechCrunch",
+   "published": "2026-11-22T18:08:43+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f299812af2286d9d",
    "cluster_title": "Missouri considers data center moratorium amid Big Tech backlash"
   },
   {
@@ -547,6 +718,31 @@
    "suppliers": [],
    "cluster_id": "66083c823c7282e5",
    "cluster_title": "Minneapolis City Council fails to override mayor's veto over data centers"
+  },
+  {
+   "id": "217f81a4f09726b2",
+   "title": "From proposal to power-up: Declo’s data center plans",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOUxfbmtCZC1VelNCNTJzZXJKR2JuZEdHd1ZFSUtVQXdPSGZtX2NvaDVybTdUOUZDdURPTzBiMWx0M0E1OHpnREZpQ1Zfa3FzSHZDLU9Ea2FHRnZMYzR3TzBVdmJqSmkxU3BVbmw5UWRVMzl5UEs0UVo5ZUhoVjMxcUxuX1JiYk9SRUJEYg?oc=5",
+   "source": "Twin Falls Times-News",
+   "published": "2026-11-22T15:00:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "217f81a4f09726b2",
+   "cluster_title": "From proposal to power-up: Declo’s data center plans"
   },
   {
    "id": "51fdd5050ebcda8e",
@@ -4434,6 +4630,45 @@
    "cluster_title": "Rapid City residents call for action on data centers as city works on new rules"
   },
   {
+   "id": "45df88d6a22d7f05",
+   "title": "Walla Walla County officials seeking public comment on proposed Amazon data center",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOR0YyYXFIaC1DR3dIM2p1Y0VtcW1MNXlsbjl5NjZjOWxoNnRrWURCTGR3Wk01OEd2ZDRsSzZuVXM3RGZScFVnVUNEWVRBNFRsWkhUTGN3LVg0aDBaWE5FMXNNVTF3UmtCZ2U3R0dpTTJpRF9DbFktRHpJb3NfVUJuMFhfTUxkc25GWFBUNHBlZjM0ZWtCaGdmMEl1SXh5dTZxOXNDb3pmOGE0SEdmbFhobUhRSlRWQlZHTHBDbXV4RzRTQUNjZDEtS09uTmJaaUlRUEFhbVJveV92NktmenZkQk5leE1TLUZ5em1kR2ZlaEU5SkdlUmNGQzBqczhtZkhFb2c?oc=5",
+   "source": "AppleValleyNewsNow.com",
+   "published": "2026-11-20T22:52:31+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Walla Walla County, Washington, US",
+     "lat": 46.229,
+     "lon": -118.479,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": "Walla Walla County, Washington, US",
+   "location_precision": "county",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "45df88d6a22d7f05",
+   "cluster_title": "Walla Walla County officials seeking public comment on proposed Amazon data center"
+  },
+  {
    "id": "0537509e38a98bc5",
    "title": "CITY MEETING: Salem councilors to hold public hearings on data center code amendments, North Waterfront URA",
    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNDhBb21PZ3BHUktBdTA2T0tjY3VpbEE5LUJYUFhVN0dHVzdFQlp0TDFncDJHRzFmZ1QwUzFJUkZHUjRYSGs0dHl4cG9pZWNfM3lzMWxKU1Z5c3dDSkk5dDlnSlZEa3d5V01iZ0gtQk5BX3QzZWMtY2dRS3VkcjBVY1VOa2dTbVlwSWVaNVNsSEU4WUR1MGdwanlQTGVLd3FOQ1UwTkJhellMYXlpTEhjM3gxaTlmd2trQmNDOTNrSUFPRXlzY3Nfa00wUkF2UUljUmpic0lRSnNZdjU2RlBEag?oc=5",
@@ -6459,6 +6694,42 @@
    "suppliers": [],
    "cluster_id": "134081f616363b59",
    "cluster_title": "Mayor Mobolade rejects new data center proposal near airport"
+  },
+  {
+   "id": "d22bc6799a015996",
+   "title": "Imperial County extends data center pause",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFFWM2t6dzBndkY2aGNSR0pxcldEeUtQYUVVd2s4MzhjNWxfSWthODQ4LWotbUdrbVQ4NENzNVFTa2dLMjhpdko1bWtFUUNROXQzemd5endlQzc1bEdLc1FwZnF3d3VSMGE4MmVnZ2dQdExXQXkxdW51SWRWTzJZRk53bzhGWjVDamdZaWRKMTVDcVp6TVZfYmNZV2MtLVJORVYzZjN3?oc=5",
+   "source": "KYMA",
+   "published": "2026-11-20T19:03:19+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Imperial County, California, US",
+     "lat": 33.04,
+     "lon": -115.366,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
+   "county": "Imperial County, California, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d22bc6799a015996",
+   "cluster_title": "Imperial County extends data center pause"
   },
   {
    "id": "223192b5152e6975",
@@ -9135,6 +9406,40 @@
    "suppliers": [],
    "cluster_id": "f0c1bea0eeec6abd",
    "cluster_title": "Post-Election Permitting Risks More Data Center Delays and Financing"
+  },
+  {
+   "id": "7b290e73fadad4d3",
+   "title": "Special data center meeting called for Vanderburgh County",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMkV1TFRfVUJ3WG9oZkZKOXB5TEx2a2wwei0yTGVsOG9XZ1YzQ294NnJGQnVSMVAzNHFhNWIyeTlxUkpyeVlLa3VIZGV4Sk9JTC1tb01zZXJPMU9GZDhfQ3dhWXYyY0xrTEdvc0ZjTS1Ia0FBbmt1U3Y1RkROZXREMFdzN1Z1ZWlfbzFmMU8zX2pPSTZHdHJwbFFSeUfSAaIBQVVfeXFMTUJoT3VKa2k3c0tzWF9sQm5pNV9pb2FOc2xCMEpVaXlycU1YRFh0X0U5d2lnNnpGcHVIYXBPdHZhM0xmZGdrUVYxdFFPOGo3ZjcwVF8xSmhLVFFzQ2RsYW1BQ2lfbzBIR2x5RFQ5TUdCalRrWmo4Zk9oWjFVQVp6MEdIWjdFM0Z4aGljc1Rza1RMMEJVR1BFR2JOVk9nMUZIalJn?oc=5",
+   "source": "Eyewitness News (WEHT/WTVW)",
+   "published": "2026-11-20T12:19:37+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Vanderburgh County, Indiana, US",
+     "lat": 38.029,
+     "lon": -87.585,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "Vanderburgh County, Indiana, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Special Data Center",
+   "cluster_id": "7b290e73fadad4d3",
+   "cluster_title": "Special data center meeting called for Vanderburgh County"
   },
   {
    "id": "7b761169383007b8",
