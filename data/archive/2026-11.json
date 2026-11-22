@@ -39,8 +39,76 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4092,
+ "count": 4095,
  "items": [
+  {
+   "id": "e83993eba8319256",
+   "title": "🧭 Blackstone’s $5B AWS Buy, TensorWave’s 457MW OpenAI Deal, Enlight Haifa JV",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1YQlRKOGJieDlaN1VQRlhZSlJjRktjY29scjlYVHphM0psUFhGSldYLW0tb0sySEdnZGJrckZ2M2ZtWXUyMEJhT3l3UzVOekpFWTdxekJodTNKeXdqMG15RjYzbHg1ZWstUk5UaUlkRUhaSmt0dlJfUXp4WmE?oc=5",
+   "source": "Global Data Center Hub",
+   "published": "2026-11-22T02:00:44+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Amazon",
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [
+    "Blackstone"
+   ],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 457,
+   "investment_usd_b": 5.0,
+   "cluster_id": "e83993eba8319256",
+   "cluster_title": "🧭 Blackstone’s $5B AWS Buy, TensorWave’s 457MW OpenAI Deal, Enlight Haifa JV"
+  },
+  {
+   "id": "bf0fb505d60383aa",
+   "title": "HB 1273 Would Pause Texas Data Centers for Two Years",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQclh6SXhfbzZ0WHl4MzZBSEpaakpreFd4RExYWTJSYmFnVmNCbmlyTXVQUTlPVlNvaDV5bVJCNGV0OFc3bkZ4cFNQa3FLb196M0FqQTVreWJvRW5QYTBGS0poamxTTGRlLVc0bEc3LVhvZi1UbW5TVFVQWmw4X25aMW9FRmxaQQ?oc=5",
+   "source": "The Texas Dispatch",
+   "published": "2026-11-22T02:00:37+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bf0fb505d60383aa",
+   "cluster_title": "HB 1273 Would Pause Texas Data Centers for Two Years"
+  },
   {
    "id": "ee84ff1cfc2d90be",
    "title": "‘It’s just out of control’: Metro Atlanta residents say data center approvals leave out their input",
@@ -2124,6 +2192,42 @@
    "investment_usd_b": 0.011,
    "cluster_id": "f155be48e3377a11",
    "cluster_title": "Homeowners accuse Phoenix of \"backroom deals\" in $11 million data center claim"
+  },
+  {
+   "id": "1129a4647a0cbb2d",
+   "title": "Ahwatukee residents seek $11M to stop data center",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5vZVhhNzFqUExxa0RFN25wY29tSmQ0NjFnWmwzbmI5SVhtc2R6UGsyYU5zQnpKNlVQNy1IaF9ucHF4WE1JbXg3eW5VaHo0emdhQnYzNnQ2NlZYazViaFNyLWJPVkFNUdIBa0FVX3lxTE9kMEtCVm5mVzc3cXlEZHlhZnpXdEpvZ3NpblZxVENIUTEzVTExZ2pGR2ZPaTMzRXNvMExfbEhwbEZfR05vYTlPNFR4ZFJhQjNDSlRVQ2VobWNKb0ZzY0R4SVBCWHd0WE05RUUw?oc=5",
+   "source": "FOX 10 Phoenix",
+   "published": "2026-11-21T00:40:46+00:00",
+   "feed": "Google News: West",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.011,
+   "cluster_id": "1129a4647a0cbb2d",
+   "cluster_title": "Ahwatukee residents seek $11M to stop data center"
   },
   {
    "id": "32d44a0d749a4e76",
