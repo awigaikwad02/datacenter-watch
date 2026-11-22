@@ -39,8 +39,55 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4115,
+ "count": 4119,
  "items": [
+  {
+   "id": "d1edadb38c957368",
+   "title": "Elon Musk's SpaceX is betting $74 billion on AI data centers. Texas and Arizona want to know who pays for the power",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdloySTJONWxBb2FZbXlwLVJaLU1ocUV6dzZjWU1pV2NUZEFaOEJBVFB6cjhxZWhvbE9jUi1XMWRNYXd2T0MwLTJMam1zUlJTZjZ6aU01bGpfVG9lZVlHRE1mNlNfWmdweHZMb2FyVUt5OERDd2xweW5kWkRUUWt1dzI5bnZ6VHVkTGx0d0ZlVlFQUQ?oc=5",
+   "source": "Fortune",
+   "published": "2026-11-22T11:25:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ",
+    "TX"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 74.0,
+   "cluster_id": "d1edadb38c957368",
+   "cluster_title": "Elon Musk's SpaceX is betting $74 billion on AI data centers. Texas and Arizona want to know who pays for the power"
+  },
   {
    "id": "187f4f24ddf825fa",
    "title": "Proposed Hawaii County data centers ban advances",
@@ -201,6 +248,28 @@
    "suppliers": [],
    "cluster_id": "4d126d5a5a4f8521",
    "cluster_title": "Amazon Workers Push Back Against Data Centers"
+  },
+  {
+   "id": "7ba43d110f7392f4",
+   "title": "The Data Center Engineering Stack: Owners, EPCs, System Integrators, and Suppliers",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY2NveGpNRkRGaE5oaDlBek9SN1U1SmpRWkt2SlJOa3E2YV9BZlBmVGdMRk1mYU1mTnY3eHh6bjRLdTE4SEtGMFB5cExWZDM1VExqblRuUVJGTE43YkxscF9uTVRjRTdNSjBjTkI1a2dtMldPTFNsRG5Gd1lFTXBoc2FxdzJtVlNlUXBlZm1IT3BKSUNYbTFFSmJnbzVKaDZ0cDJFZE9CelBYWmd3NWRyYVpYZUdaaWFR?oc=5",
+   "source": "ARC Advisory Group",
+   "published": "2026-11-22T05:54:14+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7ba43d110f7392f4",
+   "cluster_title": "The Data Center Engineering Stack: Owners, EPCs, System Integrators, and Suppliers"
   },
   {
    "id": "dc113b5f1465dd52",
@@ -39191,6 +39260,44 @@
    "cluster_title": "Data Center Boom Raises New Pollution Concerns"
   },
   {
+   "id": "f51b1b9baa17ead0",
+   "title": "Study estimates magnitude of US data center pollution as climate talks unveil clean AI pledge - Oregon Public Broadcasting - OPB",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZkhOc0dHc0FwaGJUNTM5WDdETHIwQmN3YjhMRXRFOXE4cjd5NVA2ZWhPajJTWWFtY3Rpb01wUHN3TmowYkxOcXhBaU1rRU0yRmJQc3hvYjFma2xwMkpFVFZZZ191THpUZ2U1U2ExTW1wZXhvRzREWEtJOHVWUGprT0Vudi1ocHVvb0tkWXdkd3poM0lzQXk2RXU5NGthUzV3NXdEZm9OckVZTUVCQ2JIZVV6c1paWFdmdVF6dnBMV3huemNibkppVG9BUmpYQQ?oc=5",
+   "source": "Oregon Public Broadcasting - OPB",
+   "published": "2026-11-17T15:52:26+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Environment",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Oregon, US",
+     "lat": 43.9,
+     "lon": -120.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9ebcf58ae9be8434",
+   "cluster_title": "Study estimates magnitude of US data center pollution as climate talks unveil clean AI pledge - Oregon Public Broadcasting - OPB"
+  },
+  {
    "id": "0f8b44c7b70a4355",
    "title": "Data center developer behind Oracle project pitches a second site near Lansing",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZUFNdk4zMnI2bHg3anNoeWQwbXhHWGtadEFYY1pEMmh2NXBMcXhhMWlKQ0psd005cTU1dXZmT2lhWG44RmVLZERDaklfV3M0ZDBoZnhTbjltZ2hsdFY5TDFUcVFsbjNiRElmWnAyUU5qellLV1kxaVNPZ2tVRkFfUEh2dFZWelVsZTh3VzBvanNyRWhId2VseTlR?oc=5",
@@ -53123,6 +53230,30 @@
    "suppliers": [],
    "cluster_id": "95e68db25682fe34",
    "cluster_title": "Not all data centers are the same. Auburndale’s is a good example"
+  },
+  {
+   "id": "a2be6b1e234628b5",
+   "title": "How the movement against data centers has gone global",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZXVSc1FIa0JhMVN4b2RhNGJxcThTbUhNVFFwNkFERDdFRFk3dXBoZ1lQaENWcTJmaWxHZkpzWlFXNkdGd25FZHZlT3NEbEhPaW9XU3pQcE84VlZzZVNFQmJ1Qko0WXRKZW0yVUVWVlZYLWRvOGNaYmFodS1OWDNRS1pFUnRPWEp4X3ZhUl82RmtDTUV4el9MSDR6aEFzT0VmYlZveU5KbE5ZN1QtdEE?oc=5",
+   "source": "NPR",
+   "published": "2026-11-16T09:44:39+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a2be6b1e234628b5",
+   "cluster_title": "How the movement against data centers has gone global"
   },
   {
    "id": "355a7e4a2323aad5",
