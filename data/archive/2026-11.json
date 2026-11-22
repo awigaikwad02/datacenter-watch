@@ -39,8 +39,34 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4154,
+ "count": 4156,
  "items": [
+  {
+   "id": "5402fa4b1ed74a35",
+   "title": "Georgetown P&Z sides with residents, rejects data center proposal near Inner Loop",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaEtJWVZCLVU3c0JiY3dDLVFfdTRaNFRDdlN2OFlwaURjUFZQeERFZU1nVG5TY0trbjNiZE5aZ0JlX0tIS0R5bHg2Q2o0VHdWcEt3YVRRTUFON1I5OVJNQmRUUGhPTDliNldIbXc1QVpOQ3gzTW5JY3NoNnh6OTk0MmRncUpieTlYeVNBeU9MNG41cDJGMFBwTThucWRjMl9VYm1DeThmcm1KQjBYUWVHaTd4SEZPdw?oc=5",
+   "source": "Williamson County Sun",
+   "published": "2026-11-22T19:32:35+00:00",
+   "feed": "Google News: Data center",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement",
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5402fa4b1ed74a35",
+   "cluster_title": "Georgetown P&Z sides with residents, rejects data center proposal near Inner Loop"
+  },
   {
    "id": "576c5e8a6f5bf548",
    "title": "How Amazon Plays the Long, Expensive Data Center Game That Neoclouds Can’t",
@@ -430,6 +456,54 @@
    "suppliers": [],
    "cluster_id": "19aa36c69cab92d5",
    "cluster_title": "State of Texas: Agriculture commissioner-elect Clayton Tucker pushes for new data center rules"
+  },
+  {
+   "id": "8dfae0a67ad4096d",
+   "title": "SpaceX's $74 billion AI data center plan faces December 9 votes in Texas and Arizona",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOHFqcFFIXzNBcUpvbmpYVHJScW5WYWgwdXI0MHl0SnV1cWxwWlIyRFZNWHNGVjBqNjhGRHFYbXY5WndBSTk3ZC05WG4tVW9SRTR0SGh1dEUwQ0R1R3JYUmlGT2VJT1hyT2FiSlM4TXFkbk5qVjAzVEVXMjlMb3F1OU1ONGx4bkQxMHY4ODBfYUpQOXZEMXRRWUo5VjVkWlJCYS1scjFn?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-22T13:50:03+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    },
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ",
+    "TX"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 74.0,
+   "cluster_id": "8dfae0a67ad4096d",
+   "cluster_title": "SpaceX's $74 billion AI data center plan faces December 9 votes in Texas and Arizona"
   },
   {
    "id": "1305ca130ad5bf3b",

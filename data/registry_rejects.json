@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 621,
+ "count": 620,
  "items": [
   {
    "id": "6e83f340dd96d51d",
@@ -17,6 +17,19 @@
    "source": "Milwaukee Neighborhood News Service",
    "published": "2026-11-22T18:00:00+00:00",
    "state": "WI",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "8dfae0a67ad4096d",
+   "title": "SpaceX's $74 billion AI data center plan faces December 9 votes in Texas and Arizona",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOHFqcFFIXzNBcUpvbmpYVHJScW5WYWgwdXI0MHl0SnV1cWxwWlIyRFZNWHNGVjBqNjhGRHFYbXY5WndBSTk3ZC05WG4tVW9SRTR0SGh1dEUwQ0R1R3JYUmlGT2VJT1hyT2FiSlM4TXFkbk5qVjAzVEVXMjlMb3F1OU1ONGx4bkQxMHY4ODBfYUpQOXZEMXRRWUo5VjVkWlJCYS1scjFn?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-22T13:50:03+00:00",
+   "state": "AZ",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -92,7 +105,7 @@
    "id": "db761987bb3dfffb",
    "title": "Texas lawmakers signal plans to repeal state tax exemption for data centers",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNX2RrM0lyb2dFMDNJT1VhUnJjMWNoZFQ5LW40Z1g3WFRDTFBpcWdsVkt4VTJLLUhzVXkzTVVIOWszNDJjVlZEWHpoVUZJRFV0LXh0OG5aTS1Ydy1GYWZHTmJSVmNQLWp0M1RBNDI2dEtsaE8yNmZXbjdmN1QxdkM0QmpnMHR0ZEgzemVJV0NQN2FDemdvTmhBU2wyV0hDWnBpdktFb3g5UnpzSEsyUGVEbWQzcXJyMjgwYXRyXzJCblpCNHhUaGdFeVoyYVREUkVIQnVF?oc=5",
-   "source": "Community Impact",
+   "source": "Community Impact Newspaper",
    "published": "2026-11-21T05:50:55+00:00",
    "state": "TX",
    "companies": [],
@@ -8060,32 +8073,6 @@
    "suppliers": [],
    "precision": "state",
    "reason": "no operator, and only a state"
-  },
-  {
-   "id": "2a97ecd6a342dd81",
-   "title": "Suffolk approves temporary ban on data centers",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTGpYSzBuUkF2a0ZFcVNtT1lFbWx1aURRbE1wRnU1SHFDcU5faXFVWHdWcU84THpLa3p5VWRXckpnTy1RNlBfNG91TkFJckhwZ2pkanI5bklpQzFYX1lPcEpiV0Y4TjJJZXFyb2RxMngzYzgxdnF6YUk5aE5VTjhmMEh3?oc=5",
-   "source": "Virginia Business",
-   "published": "2026-10-23T19:18:22+00:00",
-   "state": "VA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "a policy story with no operator or project name"
-  },
-  {
-   "id": "a4910db6910d9fff",
-   "title": "Palm Beach County Commission Votes Against Hiring AI Data Center Consultant",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSE14cUJDR3ZFTTBRZWNBaHd2aG5lRVhCZzU2U0Zrcl9JMVZWM1cxOWZ6U0d5R2V3TXprdXhMQzA1M3hMWko0aW53RG5xejJVNk91N0JnZkNjVmpPT25xTUhWZ1Z4dVYyR3VsN2JKazJYWUxPVXc1Q00wY185NGVBaWZ0aDc2bHU2TnJ6VC0tSVFuaFNYaW1lQm8yZ0VfMzBfQXI2VVlvWENHcG9lQjBTU19NdXQwcVJsVU5PYk0xaGtyRm12c21WSkpnZzI4NURCQjRqaGpnWVTSAcMBQVVfeXFMT2NvMXdBczZWR3ZTTEw5NEVkUXNnS3NpdFBPWVMwVlhqNmtTM1VqMWhibGVRX1k3MzgzaUVjX1Nmdnl4Y0JscW84OC1uMURoMjB0ZnJKaHlxZmdUYXo4X3gwWUxyYkNnR21OVXlycmRDNVhHdnF3MzZtUlVFcDBNdWdaMmxaVFVTQWMtN1JKZnhrbDJwVkhIbHFrcXM2aDBzd2gyeEdQLVJJc1JTX1dVMFpKZ2lJMzh5Vk5WYnRfVmppRGJN?oc=5",
-   "source": "WIOD",
-   "published": "2026-10-23T19:02:00+00:00",
-   "state": "FL",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
   }
  ]
 }
