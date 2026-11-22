@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-22T15:56:27+00:00",
+ "updated": "2026-11-22T16:56:25+00:00",
  "count": 745,
  "visible": 625,
  "records": [
@@ -7850,6 +7850,15 @@
      "published": "2026-11-18T12:43:19+00:00",
      "stage_signal": "Expansion",
      "cluster_id": "d31f651ee1243a55"
+    },
+    {
+     "id": "3ec247b9e170ef3d",
+     "title": "Amazon Faces $17 Billion Data Center Setback as Employees and Ohio Voters Challenge AI Expansion",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5zajl6Nm9GLU1nbks4ZVdaYm96dWd3UzZTMWJWc1lDYkZ0bTlfamM2b2VCWGZVZEt5MlRVaFVaQnMxZWhWcEJZb3VoREhWWU56elZoaUxZaDlJdk8wVjducGJ1anRvV1hzSndLTmpQaDlUdHA0Y2I0aU9RWHdwZw?oc=5",
+     "source": "Hokanews",
+     "published": "2026-11-22T16:01:00+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "d31f651ee1243a55"
     }
    ],
    "first_seen": "2024-11-21T08:00:00+00:00",
@@ -7917,12 +7926,17 @@
      "date": "2026-11-18T12:43:19+00:00",
      "type": "Expansion",
      "headline_id": "d31f651ee1243a55"
+    },
+    {
+     "date": "2026-11-22T16:01:00+00:00",
+     "type": "Expansion",
+     "headline_id": "3ec247b9e170ef3d"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 17.0,
-   "last_news": "2026-11-18T12:43:19+00:00",
-   "sources_count": 19,
+   "last_news": "2026-11-22T16:01:00+00:00",
+   "sources_count": 20,
    "confidence": "low",
    "hidden": false,
    "investors": [],

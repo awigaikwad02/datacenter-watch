@@ -39,8 +39,74 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4137,
+ "count": 4142,
  "items": [
+  {
+   "id": "d713543f3e4f5cc1",
+   "title": "A ‘mismatch in timing’: Data center power demand is growing 19% a year. The grid is growing 2%",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pZnBhS29uX2hUdC1qZFNPNm95bXYyR3FKTTI3MDlpekltUFNUN2dNMW9walJCbTVLeXluQ0NIaHBhOE83d014UzR6cmN6VnFmMUNwUFFVM01nMzFvQWlwTVp3Ri1pdGllU1I2VXhteUxkbUFpSUE?oc=5",
+   "source": "Fortune",
+   "published": "2026-11-22T16:34:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d713543f3e4f5cc1",
+   "cluster_title": "A ‘mismatch in timing’: Data center power demand is growing 19% a year. The grid is growing 2%"
+  },
+  {
+   "id": "3ec247b9e170ef3d",
+   "title": "Amazon Faces $17 Billion Data Center Setback as Employees and Ohio Voters Challenge AI Expansion",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5zajl6Nm9GLU1nbks4ZVdaYm96dWd3UzZTMWJWc1lDYkZ0bTlfamM2b2VCWGZVZEt5MlRVaFVaQnMxZWhWcEJZb3VoREhWWU56elZoaUxZaDlJdk8wVjducGJ1anRvV1hzSndLTmpQaDlUdHA0Y2I0aU9RWHdwZw?oc=5",
+   "source": "Hokanews",
+   "published": "2026-11-22T16:01:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Expansion",
+   "tags": [
+    "Expansion",
+    "Deals / Investment",
+    "Economy / Jobs",
+    "AI Infrastructure",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 17.0,
+   "cluster_id": "d31f651ee1243a55",
+   "cluster_title": "Amazon's $17 Billion AI Data Center Expansion in Ohio Faces Vote"
+  },
   {
    "id": "5e1d2ef87c0e3585",
    "title": "Minneapolis Data Center Moratorium Ends After Veto Override Fails",
@@ -418,6 +484,30 @@
    "investment_usd_b": 74.0,
    "cluster_id": "d1edadb38c957368",
    "cluster_title": "Elon Musk's SpaceX is betting $74 billion on AI data centers. Texas and Arizona want to know who pays for the power"
+  },
+  {
+   "id": "3e8faac0b277b36f",
+   "title": "Stein Says Data Centers Need No Public Incentives",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcjEtdk02dWFTLXFvZDZ0S0NJc2x5VUkteXBpQ255YnNaV21Ibmh3TUFSYVJzb2JLeXBxNXBPWXpQNEJITGQtR1l4Q2xGY1dhcWhmU0FRaDM3ckNXdzRXN1FNSVdHT0hiMWRycmtDY1NOcDlLTmxTQWlFa0IwRW5PT3RYSWtFdkJfWkdRU3Blb3U?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-22T10:34:52+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3e8faac0b277b36f",
+   "cluster_title": "Stein Says Data Centers Need No Public Incentives"
   },
   {
    "id": "187f4f24ddf825fa",
@@ -1415,6 +1505,31 @@
    "cluster_title": "The Biz Week That Was: Data center gets tax break, tech outage, and luxury apts among highlights"
   },
   {
+   "id": "95a53faa84dfb48a",
+   "title": "Data center dispute lands on March hearing",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAwUk1ER292MUlQREdyMENrVkozOXZDWk5ndTdoQkw5UUFxOE5tUTVyaUdhdE5OWU0wZGVrMW1sU1VOUHUwTzY3WUlXOFdRVlFEYThJY3MxUEI4YThsd3BvN3NTRDRmQWFReERRZUZldEQyNnZkbDd0TA?oc=5",
+   "source": "Pascack Press & Northern Valley Press",
+   "published": "2026-11-21T17:52:45+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "95a53faa84dfb48a",
+   "cluster_title": "Data center dispute lands on March hearing"
+  },
+  {
    "id": "a26809871a473757",
    "title": "Wise up to the socialists and communists allegedly fueling 'grassroots' data center protests",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOURJRW9DbzNGWWMybldwaFdpUTI4LWJjVmJlT1Q5b1BrUjh2Ry1zakpIVDMtMVU1eEpqNWgwTUY4ZWUtWV9xaGxiS2k5MkpfTzQtVDMtbnVTbWtQaFVFY0Q2akhfMWRQV2JCX0NWTUp1U3NTTjBCeF9ZZzB3YWpkQl9Ca0szeGl5VTB6WFpRSEQ5RXdoUHBxQVBVVTBJNDgwUkxyQ1Fuc1hRdHlla3BvTjlnMFZvU2psOVhRRw?oc=5",
@@ -1771,6 +1886,42 @@
    "suppliers": [],
    "cluster_id": "a53ac85b367835c9",
    "cluster_title": "Data centers are improving lives for Maryland’s laborers | GUEST COMMENTARY"
+  },
+  {
+   "id": "fe3db95a9653816c",
+   "title": "Township vigilant to monitor data center, power plant plans",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVEZ4ekgyNFBYVFNqdVh0ZUJJN1ZXRDZfVHpVVnNfZGhlR1Mzb04yMFA2TTR4WmpwVGhlS1NGMjlndGNaamdtQ29xNTRQZUV0bkFvcGR0cUsyazVaRFVTak9zQnpzcEgyMVZYX0dRTEFPdlJNSjhLUUF2eFpLQmxMaUpIbzh6ZkRQTHZ1MWljVG92cUNTNWVKajZLS2hIR2VTbmI2eFVzalBILWMxcVVTU1pqZUYyZw?oc=5",
+   "source": "PennLive.com",
+   "published": "2026-11-21T13:15:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fe3db95a9653816c",
+   "cluster_title": "Township vigilant to monitor data center, power plant plans"
   },
   {
    "id": "6413f3a0372e52de",
