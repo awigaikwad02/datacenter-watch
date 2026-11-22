@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-22T00:51:54+00:00",
+ "updated": "2026-11-22T01:51:54+00:00",
  "count": 745,
  "visible": 625,
  "records": [
@@ -32655,6 +32655,15 @@
      "published": "2026-09-10T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "05f701a1b37df10e"
+    },
+    {
+     "id": "ee84ff1cfc2d90be",
+     "title": "‘It’s just out of control’: Metro Atlanta residents say data center approvals leave out their input",
+     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxONkpLc0toU3dQNmdPY0w0Sk9wSEFaaG5rcDF3T3AwUTNkWmE5UWFJWUhxMmxnbzEyY0JRc0hjM1lsdkFfZGs1T25oamljbDRJcmlhdkk3WmNSUTB1SFBhQ1h0OUgxRXhiN29nazVPUXp6cU4tcENibU9WMTRjcXREeDl0S2xLaTJYT0lOcF93MS03eDNyTFhTZkl4c1d3b19UWnFQX2pUM3lSSS1ldTdUM1JzVV9YQ0JxYVBFdk1CS1VNTVdfRkotdGUyZUVUb3pTTWNNWVllb2FUSTZTQmhsbHNpdzAwbVg2U2Jmd0pYMFlVNmY5aHl3ODc1UjZpUWt5a2M00gGXAkFVX3lxTE1UOHlvUldOdWJmanpIUFRBbmEzemhkZTFBSnNwUHFLOWw5dnU3X2RKY0ZhdVNNTmFVcDlEamdjT3FhaWkweG1yQkpMOF9YcHhyb3hzV0lGeGRZXzN2cGliSEgtOFVQUXB3aXF4Mk8tbDRaUi0yMVZfd1VWQzN4eUNZWHA3MWRyTXc2SkNyS2JkLTJLZUNDWmp3MWkyNThHLU05VUZZQUo3emdMdU1OOWtWUE5pN3h4Y2wzOS05N2gyTTZ4QTlWX2hIQTc4bDRoNl9FWEdOTWlfcWlkMnVsMHdKVzRTNmY4YUFkSzVQTHg3TkVQcE42WHUxVkdld2ExSjJXNDJtSDNibzVsSE9BazU4QXA0MkVlQQ?oc=5",
+     "source": "WSB-TV",
+     "published": "2026-11-22T01:37:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ee84ff1cfc2d90be"
     }
    ],
    "first_seen": "2024-11-20T08:00:00+00:00",
@@ -32687,11 +32696,16 @@
      "date": "2026-08-17T07:00:00+00:00",
      "type": "Approval",
      "headline_id": "658c7076b49edc98"
+    },
+    {
+     "date": "2026-11-22T01:37:00+00:00",
+     "type": "Approval",
+     "headline_id": "ee84ff1cfc2d90be"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 17.0,
-   "last_news": "2026-09-10T07:00:00+00:00",
+   "last_news": "2026-11-22T01:37:00+00:00",
    "sources_count": 9,
    "confidence": "medium",
    "hidden": false,
@@ -51941,6 +51955,15 @@
      "published": "2026-11-18T21:27:12+00:00",
      "stage_signal": "Announced",
      "cluster_id": "36f1f646d27527d5"
+    },
+    {
+     "id": "cdb1c96889861053",
+     "title": "Scranton Times Editorial: Olyphant Boro Approval Of $101 Million Data Center Settlement Without Real Public Input Was A Bad Night For The Democratic Process And Appalling",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcnBfUXROcW0zeDF3dnVHdXpPbHVZZnBDSlhneTdJMTZlQlF6TTJKMkVCUDZNb2xVTVl5ckVvY242ei1OYXpvRW1yYWxQcWJhdXZTTlRqX0ZkYkxVam9vb3RTZ1hDaDZMc2pmWjRWNXJHNmN4Q1lMbEZJbGVNMFpLRkZxWVdMRW4wSWl3MmJGV3hfa3Nr?oc=5",
+     "source": "PA Environment Digest Blog",
+     "published": "2026-11-20T13:53:19+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "cdb1c96889861053"
     }
    ],
    "first_seen": "2026-11-18T04:34:35+00:00",
@@ -51964,12 +51987,17 @@
      "date": "2026-11-18T04:34:35+00:00",
      "type": "Approval",
      "headline_id": "c29e3a7771bc0f23"
+    },
+    {
+     "date": "2026-11-20T13:53:19+00:00",
+     "type": "Approval",
+     "headline_id": "cdb1c96889861053"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.101,
-   "last_news": "2026-11-18T21:27:12+00:00",
-   "sources_count": 3,
+   "last_news": "2026-11-20T13:53:19+00:00",
+   "sources_count": 4,
    "confidence": "medium",
    "hidden": false
   },
