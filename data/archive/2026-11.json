@@ -39,8 +39,385 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4379,
+ "count": 4393,
  "items": [
+  {
+   "id": "a3d9b4924841b3ee",
+   "title": "Data Center Energy Use Soaring Nationally",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTHhxUm80dTdZR3NHclhiSGtNcnpmX0tOTzJmc1hMSkd1UFpmUFlKRUc0SjBjM2N5QTZNQUZYV1k4UlRON01XWUV3aHB0WGNyZW4tYURMTGJ1cjhzWVg4ajVNaExKSkxKdDVpalBZTnI5N0tGSEJudWJ0TDh4Y2hwYkNPdnhtR0xyWmZRWmo0d3dpZVVS?oc=5",
+   "source": "Conduit Street Blog",
+   "published": "2026-11-23T21:02:36+00:00",
+   "feed": "Google News: Data center",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Maryland, US",
+     "lat": 39.0,
+     "lon": -76.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a3d9b4924841b3ee",
+   "cluster_title": "Data Center Energy Use Soaring Nationally"
+  },
+  {
+   "id": "f4c44216f89f52ad",
+   "title": "Lawmakers demand scrutiny over Kraft Group’s $16B Sutton data center proposal",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNVRGcWt5d0dkbEtGWXVSYkdIbUd4ajU2NmcxMHZ1TDZMdXhhRzZSRG1ubTd6Q0V2RHN1clNHd201alN6Y1BMbkNlSFNTSnJTSjhQb0dkQ3IyNUdHbjZYQmVydXp1YnFnYnk5YllUU2xleU1NNGdNREYybEt2bllTVTFGX1hfaEdGUHdQNE1aemZTOGhKOFF5UHRXdmNMU0R0SUtVR2ZhYlUzUQ?oc=5",
+   "source": "Worcester Business Journal",
+   "published": "2026-11-23T20:48:09+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 16.0,
+   "cluster_id": "f4c44216f89f52ad",
+   "cluster_title": "Lawmakers demand scrutiny over Kraft Group’s $16B Sutton data center proposal"
+  },
+  {
+   "id": "74a8a9588b9df74b",
+   "title": "1,415 homes proposed in Columbia County where Byrd Farms data center denied",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSG1pTWJIM1gweFpHd2w4R00tMG9OdllDR3FLdUw2Sk4zTWk2V19kSWFPU3gzWkVfMTlwSnJvOWd3bWVZTmQtNlFNZzc1U1dDYVZVM3dzZEMtdzF1T05sQUNaTkZhai1Rb1hMekFTaVlZaFE0ZG1lUE9UXzR4SDhGYzFpVHlyNTlYVkVIRGo5aW9fTUttRndXWnk4VzBwOW9FZ1RWNGdfONIBuwFBVV95cUxNUzZxc01kWkVqM29lRzlxOUVSUXFaWk1xY3FLTkxEeGt2NWtlZlpqZXZHRF9CQnAzczJ0U0Z3ZnF0bU4wdlJTOEdSdElGbkVFTnBSOTNuR2ZqQ2xlZ0FiVEUtWUpTQkxnWXFWczNyQk5xZWFHTWY5bGw2Y1huMTdkeFhWbHJDUE1JRTBDbkdpQy1hbVFmSV9teVkydHp1MzhNMFMwSWFxUUtnVlQxTzQ4eFZwa2ZNVE1JNTRN?oc=5",
+   "source": "WRDW",
+   "published": "2026-11-23T20:42:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Columbia County, Georgia, US",
+     "lat": 33.544,
+     "lon": -82.264,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Columbia County, Georgia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Byrd Farms Data Center",
+   "cluster_id": "74a8a9588b9df74b",
+   "cluster_title": "1,415 homes proposed in Columbia County where Byrd Farms data center denied"
+  },
+  {
+   "id": "575024d85d944f2c",
+   "title": "Judge rules Botetourt County Google data center deal violated law, halts construction",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUThYaWVjbTFTRS1PQ3R6aV92cHQ1Vl9GcjJ5NWtBc0hyaDVyV0YzOF92MHJYZjFCVklaQXZnaEw3ZV84cHZPLWE1eTJiZnVxUVF6Nzl5Ukg1Z0I0UERTYUtsM3N1SDM1YVJRY1hfMjVHQ3kzeGd3Q3RJS1lDODlyVUhpNU1GUlFweUE0aHdpUl9SQjRzYmktTGxxcTNLclR6QWhKRUJISjRwRGpxTS1Lc1VKT2ljV3R0S2N0c3BOUE4wM3Zl?oc=5",
+   "source": "WSET",
+   "published": "2026-11-23T20:28:54+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Construction",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Botetourt County, Virginia, US",
+     "lat": 37.556,
+     "lon": -79.813,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Botetourt County, Virginia, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "575024d85d944f2c",
+   "cluster_title": "Judge rules Botetourt County Google data center deal violated law, halts construction"
+  },
+  {
+   "id": "3a8eec2e13a0519b",
+   "title": "Elon Musk Wants In-N-Out's 'Aces' for Data-Center Jobs. They Have the 1 Trait He Values Most",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWGszYkxNaGZ0cFRoRDhLOS1hM0JJRWNsME5Gc3l0SVgyRDJTZXhkY0phenBKdGwwaGo1c01NU1lDelJuOHJNdkdJTUdNYkVQWDV6WWFDN0Z6NDNaNVI2eGY5dEk1SHc0OVdLRWJiUFlSUEVVLVdSd24wdlpwajEzNk9wdnE4VFludEtId3BZU2o2T1A1ZGZOTVI3ZFE5VTR0ZzNrM3dRMVh1T3dPN0RiUGlMdG8?oc=5",
+   "source": "Inc.com",
+   "published": "2026-11-23T20:24:53+00:00",
+   "feed": "Google News: Data center",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3a8eec2e13a0519b",
+   "cluster_title": "Elon Musk Wants In-N-Out's 'Aces' for Data-Center Jobs. They Have the 1 Trait He Values Most"
+  },
+  {
+   "id": "f9ef2eefd446befe",
+   "title": "Pasture or Processing Power? What Big Tech’s Rural Data Center Boom Means for Cattle Country",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVGJyMTY3RFphNTBTanZTb0JLV0VsVk1Xc1lzaTZaWnpDeW0zaEIxYWJxenR5VTRiYktISFdzN2taSWd0ak5zUU9MN25KWEdhMHJhR2VkS211QmF5UW1NQ000NFpDWk9ISFZsal9aR0UxZVhJT0lfQVNsS1ViaXB6OUhFQ2tySGJXQXE3T1VqRnRCalF2X1pLZkNhd25sQzYtQXNmbGlwZVBpRVd4dkFvZzV6cGhUZw?oc=5",
+   "source": "Drovers Magazine",
+   "published": "2026-11-23T20:23:51+00:00",
+   "feed": "Google News: Data center",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Community",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f9ef2eefd446befe",
+   "cluster_title": "Pasture or Processing Power? What Big Tech’s Rural Data Center Boom Means for Cattle Country"
+  },
+  {
+   "id": "c45d03e7c40c26ae",
+   "title": "Judge blocks Google $3B data center campus in Botetourt",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeHBrSy0tTkdtQ0s5RzJEWE9mdEdGMFVzYzlZdWR1YkdvQ0tqY2VZME5aN01nT2pzaWVwVFcxdHpYOFdRN1ZLWnNoYjJTQkk0Z2ZPdkFLR25GS3NyMnVZR1pYZDQycHFoNld0ZnhvNGdGYVd0WVN6Nlo5MlJISTFuM19lWUpYLVgxMWpGMQ?oc=5",
+   "source": "Virginia Business",
+   "published": "2026-11-23T20:23:05+00:00",
+   "feed": "Google News: Data center",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 3.0,
+   "cluster_id": "c45d03e7c40c26ae",
+   "cluster_title": "Judge blocks Google $3B data center campus in Botetourt"
+  },
+  {
+   "id": "91f91b3519ba1bb7",
+   "title": "Elk Grove Backs tax Break for $588M Data Center Campus",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYm9NRDNHSldwMjdfRG1aemNwRVhQcTcxT1lMVlp4UHl6aGp2cEtsRnVaTDBTMVdwUTlxenZiYW9rOHBrOUg1NFFoQXdyS2JWWGJDaXdMejgwYVN3aHJxS2k0cEdIMUkxSTk5RU93aDI3SGdOZUNyU252bzE5UHg3TU4zdjRiZm9ydW1uQkxoNjZSOGlQSkNlQlZMZ2d5Zw?oc=5",
+   "source": "The Real Deal",
+   "published": "2026-11-23T20:17:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Elk Grove, California, US",
+     "lat": 38.4088,
+     "lon": -121.3716,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Sacramento"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.588,
+   "cluster_id": "91f91b3519ba1bb7",
+   "cluster_title": "Elk Grove Backs tax Break for $588M Data Center Campus"
+  },
+  {
+   "id": "6407507f645fdff2",
+   "title": "Loudoun Board Seeks More Data Center Controls in General Assembly Wish List",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQX3dva3lxOXpSYTVwY01hdVNfcmZxTFoyUlpoS3pxeENaTXUyNmhUY0thX2UzN1lVZjhIa0dkNXFqemVnZnlTRk1vNk9OUDRHVGxwRVZvYV9lWk4tRW1sUVYtNHZNeXdSN1VXVGwzR0ZhZVk1ZkRkX2liNHZyYnRaRmtXUHRyY05NZWJPZkxMZTNpWmFWTE56T0Y1LWl1OVU1NTFObmJkbm1ibGVYcWwtZXE4eWItcVduOEt5SnNsQmdXZmxKaldPcmZ1XzQ5bm0zUGFBMjJGSFNlVFN2dWFKelZydWFWenlidGsybzhn?oc=5",
+   "source": "LoudounNow.com",
+   "published": "2026-11-23T20:17:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Loudoun County, Virginia, US",
+     "lat": 39.09,
+     "lon": -77.64,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6407507f645fdff2",
+   "cluster_title": "Loudoun Board Seeks More Data Center Controls in General Assembly Wish List"
+  },
+  {
+   "id": "7b5a4ee372fe5279",
+   "title": "NASA eyes Moffett Field in Mountain View for massive data center",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT3J4cTZ2TzloVlNrbDIxYzdTRU4yNGFmT1l1RmVNRHdrRG1uR2ZKNk9NWXJ3NTlDQ29kWHNyMHJIZUQzcHU4Q0lTZG5EZVNHU1Bub1FTWjJUTVlhRnU4QU5lU0lkVnJpZE1fMzFxeFlMX3JHWVFHR0xKbkRhY213WnUwbjA5MzBoQjhuaTRBNDlUdktueHlQV01R?oc=5",
+   "source": "San José Spotlight",
+   "published": "2026-11-23T20:04:52+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Mountain View, California, US",
+     "lat": 37.386,
+     "lon": -122.0838,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "San Jose"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d6b7950a9eea1094",
+   "cluster_title": "NASA eyes Moffett Field in Mountain View for massive data center"
+  },
+  {
+   "id": "affe079c051e1700",
+   "title": "University of Michigan Approves $1.25 Billion Data Center for Nuclear Weapons Research",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeUpJTENBM19pZmdpcE9mRXVRejN5Ni1DS0dsbllGdGZSa1hrOWlRVHVfSFdaZGc3aW9LaDdnU1JJVjVUUUZWSzk3OXhDVUt0T2htQlhLb1dycWhIeC1zY2hKLVprVWNiS3RxQ2VZVURHd010N0tSNFNCUF9Sd0lPeEFkdC13M0ho?oc=5",
+   "source": "Mezha.net",
+   "published": "2026-11-23T20:04:51+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 1.25,
+   "cluster_id": "affe079c051e1700",
+   "cluster_title": "University of Michigan Approves $1.25 Billion Data Center for Nuclear Weapons Research"
+  },
   {
    "id": "6cf4aa69cced002f",
    "title": "University Approves Nuclear Weapons Data Center, Township Vows to Fight On",
@@ -66,6 +443,32 @@
    "suppliers": [],
    "cluster_id": "6cf4aa69cced002f",
    "cluster_title": "University Approves Nuclear Weapons Data Center, Township Vows to Fight On"
+  },
+  {
+   "id": "7b75829e6d01b670",
+   "title": "Aon launches $300 million data center surety program",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYm1yRWI1eGlnVWlmUVp3TmR0QmtORklVUnpjeFJBOUlTUkd5Qk5EbUZrOUhsdllDeWtXaV95TElmZVkxcFRKRHZ6aHBKZXBrRVRVa0RKRndVaUJoZXZ3Yk5ENHEzZDlCWFZrWTNjS3dScHl4SFpVRUdyUlI0REVoYWpKOURrWTFMOXY3RHh4QQ?oc=5",
+   "source": "Business Insurance",
+   "published": "2026-11-23T19:42:23+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.3,
+   "cluster_id": "7b75829e6d01b670",
+   "cluster_title": "Aon launches $300 million data center surety program"
   },
   {
    "id": "5492b22f33775162",
@@ -1000,6 +1403,31 @@
   {
    "id": "424e11420e33a82f",
    "title": "The largest data center construction projects and trends to watch",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcUN0Njl1S3FWcHlMcmF4NUJNN19WeHB1UWtKeDAyUmVDZjl4ejg3d0NPVW90T1FsNGZYNGU1cFdVVlpGRnFqcjd6SEFUQ3lZeU5KakROMko2NGVPRzZjdTB4cTA2Z05uR21tVnFKdXdXa0xrME5HSWNFTlJzN08xd2VMN095YnhpUGxETVA5bElnZHh6OHQ5LW9oVmF5RWZRMkEyWjd6ejdTbXhTTG1FSmQ1YTZyN3J3RGh5WWFoY3h5ejkx?oc=5",
+   "source": "Equipment World",
+   "published": "2026-11-23T17:18:16+00:00",
+   "feed": "Google News: Data center",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "424e11420e33a82f",
+   "cluster_title": "The largest data center construction projects and trends to watch"
+  },
+  {
+   "id": "19d40c5230dc4d6c",
+   "title": "Data Center Construction Boom: Largest Projects, 6 Trends to Watch in 2027",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcUN0Njl1S3FWcHlMcmF4NUJNN19WeHB1UWtKeDAyUmVDZjl4ejg3d0NPVW90T1FsNGZYNGU1cFdVVlpGRnFqcjd6SEFUQ3lZeU5KakROMko2NGVPRzZjdTB4cTA2Z05uR21tVnFKdXdXa0xrME5HSWNFTlJzN08xd2VMN095YnhpUGxETVA5bElnZHh6OHQ5LW9oVmF5RWZRMkEyWjd6ejdTbXhTTG1FSmQ1YTZyN3J3RGh5WWFoY3h5ejkx?oc=5",
    "source": "Equipment World",
    "published": "2026-11-23T17:18:16+00:00",
@@ -1993,6 +2421,30 @@
    "suppliers": [],
    "cluster_id": "53e0ceae3027851c",
    "cluster_title": "Quincy City Council to consider pause on data center development"
+  },
+  {
+   "id": "0cab6248dd8f47d3",
+   "title": "Chaos in the early days of data center policies",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQd19hemFlSm4tWEplOUEyaTlzWHlfZmJGNWZBQy1UcUlFUmF0eWZVbXRKMmI2dms1cFNGMzl3b2lVaEFzcWhmMmI0NHl5S2FQS0pwTzcxU0YyM25sUV82T0E5OFBFazlRcUo1T29ialNIWnlrTTY2aDVPaU1YbGx5QlBqQUI2M0RUUG15RXdUZmhnbzlkNngtRXpjNFhMTTdNZnZlMjYxUUJqZlNmb2JXc2RqTUR3djZBNTZxcmdibFQ3UQ?oc=5",
+   "source": "The University of Kansas",
+   "published": "2026-11-23T14:44:28+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0cab6248dd8f47d3",
+   "cluster_title": "Chaos in the early days of data center policies"
   },
   {
    "id": "cbf0b8da7321ed6d",

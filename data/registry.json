@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-23T20:03:40+00:00",
+ "updated": "2026-11-23T21:03:40+00:00",
  "count": 746,
  "visible": 626,
  "records": [
@@ -15129,16 +15129,30 @@
      "published": "2026-11-16T23:45:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "e7eb64fe08dad11e"
+    },
+    {
+     "id": "575024d85d944f2c",
+     "title": "Judge rules Botetourt County Google data center deal violated law, halts construction",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUThYaWVjbTFTRS1PQ3R6aV92cHQ1Vl9GcjJ5NWtBc0hyaDVyV0YzOF92MHJYZjFCVklaQXZnaEw3ZV84cHZPLWE1eTJiZnVxUVF6Nzl5Ukg1Z0I0UERTYUtsM3N1SDM1YVJRY1hfMjVHQ3kzeGd3Q3RJS1lDODlyVUhpNU1GUlFweUE0aHdpUl9SQjRzYmktTGxxcTNLclR6QWhKRUJISjRwRGpxTS1Lc1VKT2ljV3R0S2N0c3BOUE4wM3Zl?oc=5",
+     "source": "WSET",
+     "published": "2026-11-23T20:28:54+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "575024d85d944f2c"
     }
    ],
    "first_seen": "2025-06-24T07:00:00+00:00",
    "utilities": [],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2025-06-24T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "8d8f9f349cc78dd5"
+    },
+    {
+     "date": "2026-11-23T20:28:54+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "575024d85d944f2c"
     }
    ],
    "events": [
@@ -15156,11 +15170,16 @@
      "date": "2026-11-16T23:45:00+00:00",
      "type": "Approval",
      "headline_id": "e7eb64fe08dad11e"
+    },
+    {
+     "date": "2026-11-23T20:28:54+00:00",
+     "type": "Cancelled",
+     "headline_id": "575024d85d944f2c"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-16T23:45:00+00:00",
+   "last_news": "2026-11-23T20:28:54+00:00",
    "sources_count": 8,
    "confidence": "high",
    "hidden": false,
@@ -15903,6 +15922,15 @@
      "published": "2026-10-29T22:22:02+00:00",
      "stage_signal": "Announced",
      "cluster_id": "c25ec01788ff6ff4"
+    },
+    {
+     "id": "c45d03e7c40c26ae",
+     "title": "Judge blocks Google $3B data center campus in Botetourt",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeHBrSy0tTkdtQ0s5RzJEWE9mdEdGMFVzYzlZdWR1YkdvQ0tqY2VZME5aN01nT2pzaWVwVFcxdHpYOFdRN1ZLWnNoYjJTQkk0Z2ZPdkFLR25GS3NyMnVZR1pYZDQycHFoNld0ZnhvNGdGYVd0WVN6Nlo5MlJISTFuM19lWUpYLVgxMWpGMQ?oc=5",
+     "source": "Virginia Business",
+     "published": "2026-11-23T20:23:05+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "c45d03e7c40c26ae"
     }
    ],
    "first_seen": "2025-08-27T07:00:00+00:00",
@@ -15914,12 +15942,17 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2025-08-27T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "09a156f623a8f9ed"
+    },
+    {
+     "date": "2026-11-23T20:23:05+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "c45d03e7c40c26ae"
     }
    ],
    "events": [
@@ -15932,6 +15965,11 @@
      "date": "2025-08-29T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "74c9ec19c54362a0"
+    },
+    {
+     "date": "2026-11-23T20:23:05+00:00",
+     "type": "Cancelled",
+     "headline_id": "c45d03e7c40c26ae"
     },
     {
      "date": "2026-11-01",
@@ -15960,7 +15998,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 9.0,
-   "last_news": "2026-10-29T22:22:02+00:00",
+   "last_news": "2026-11-23T20:23:05+00:00",
    "sources_count": 14,
    "confidence": "high",
    "hidden": false,
