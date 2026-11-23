@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-23T10:00:47+00:00",
+ "updated": "2026-11-23T11:00:45+00:00",
  "count": 745,
  "visible": 625,
  "records": [
@@ -21853,6 +21853,15 @@
      "published": "2026-11-19T03:03:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "f1edbc1d631560d1"
+    },
+    {
+     "id": "65901bcff8a366e2",
+     "title": "Meta data center expansion reshapes business activity and daily life in rural Louisiana",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaHRsNnNsMFc1OTV4MWdJbXQ2dGxzYmdGSkV1Szd3anRCeGR3RVJZRHlROWwtYU5DT3M1NGxLRXR3WHZ4WnhsSDVOemliWTY0ZHA2SnduZkVLRnhhbUVWZXVPdTFkMjd3OFpSUFFsVnR0TFota214TnJ5UlpsemktcDZTVFlZMWl1VkoxSDNyOElCcm9j?oc=5",
+     "source": "Traders Union",
+     "published": "2026-11-23T10:26:04+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "65901bcff8a366e2"
     }
    ],
    "first_seen": "2024-11-19T08:00:00+00:00",
@@ -21972,12 +21981,17 @@
      "date": "2026-10-08T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "0f42e8ac9a9f1ebb"
+    },
+    {
+     "date": "2026-11-23T10:26:04+00:00",
+     "type": "Expansion",
+     "headline_id": "65901bcff8a366e2"
     }
    ],
    "capacity_mw": 5000,
    "investment_usd_b": 50.0,
-   "last_news": "2026-11-19T03:03:00+00:00",
-   "sources_count": 46,
+   "last_news": "2026-11-23T10:26:04+00:00",
+   "sources_count": 47,
    "confidence": "low",
    "hidden": false,
    "investors": [
