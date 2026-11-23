@@ -39,8 +39,45 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4209,
+ "count": 4211,
  "items": [
+  {
+   "id": "96f20839c319221d",
+   "title": "Amazon Data Center Project in Pennsylvania (AMZN)",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORGNJZGtqNk9HdV9yR2NKaUVURG1XWXRSSHNKZ2ltMU1jMjRSel9PaURXb3YxU1NOM21DcmJqRzkwTTk5TjdQRWxMQTVUTG4xRmhXeFprNTRfVkI0dThsbENWOFJocmtGZ1BpaWdhUWRDeVNjSjlSSmpQMXZCWC1UTFV2bUpMMEY5dVhIR3VkNA?oc=5",
+   "source": "GuruFocus",
+   "published": "2026-11-23T09:59:43+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "96f20839c319221d",
+   "cluster_title": "Amazon Data Center Project in Pennsylvania (AMZN)"
+  },
   {
    "id": "002f61bd0def768c",
    "title": "Keel Clears Final State Environmental Permit for Sharon Data Center",
@@ -65,6 +102,30 @@
    "suppliers": [],
    "cluster_id": "002f61bd0def768c",
    "cluster_title": "Keel Clears Final State Environmental Permit for Sharon Data Center"
+  },
+  {
+   "id": "2b4b132a437fc677",
+   "title": "Want 24 7 clean power for data centers? Try giant heat batteries.",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY05BYy1KZ3hJU3k1bVVFRXV6cTB0VHhfSktFRWJMeW1sVkFrRlJfclJQSVhRQjhvRFFJdzVxdVp2emszR0pLVUo2TEtnakhMVGdETTZCSS1oazZCU3hJblBSN0JwejVwWVhVQUhoa3JqNEJWLU5YdTV6TU9SaXlVSTZrZEQ1LUdSNWNCQQ?oc=5",
+   "source": "Canary Media",
+   "published": "2026-11-23T08:30:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2b4b132a437fc677",
+   "cluster_title": "Want 24 7 clean power for data centers? Try giant heat batteries."
   },
   {
    "id": "478a4baa0115b47d",
