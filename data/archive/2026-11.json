@@ -39,8 +39,115 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4192,
+ "count": 4196,
  "items": [
+  {
+   "id": "d0b2ba49e898aeb8",
+   "title": "Broken Arrow extends data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBhQ0xOQjRFT25xZTlHdlg0Z1NteVYxMTJkS2k1Njg0SC1xQmNpZ2YwcFdwOFlkT2FIcmVsdXAyNmNpNjk3MzRpV0s0ZENzbE5Ed09zMEV6RlNNVV96VFdTSzExMV9MX29aZlgtVWZLeF84S2NLOUE?oc=5",
+   "source": "Broken Arrow Sentinel",
+   "published": "2026-11-23T05:08:07+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Broken Arrow, Oklahoma, US",
+     "lat": 36.0526,
+     "lon": -95.7908,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Tulsa"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d0b2ba49e898aeb8",
+   "cluster_title": "Broken Arrow extends data center moratorium"
+  },
+  {
+   "id": "f8723ef7d286daaa",
+   "title": "Data centers in southeast Michigan",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNmktZU9iZWxUbl8tWnh5Ukp2RWVjS1JLc1lkRTh1bnJna0V2SnN6Q2JQSHV0dThub25zSTQ2VV8zRHphZlhZbGgzc2hNUEdfaUxrVUFaWnFoQzZzYm9Ec1hBamhXc083andoTjIxZ25ZWENpdF9HUzdIVnAxcWNMNjRZb3lMZE5XRUhqR3ZiUWZaOGJ2LVk1by14TXRCcjFrbjRYX29SOWM0ejlKZ2xrbU9FMjZLTUNWVXhaMw?oc=5",
+   "source": "The Detroit News",
+   "published": "2026-11-23T05:02:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f8723ef7d286daaa",
+   "cluster_title": "Data centers in southeast Michigan"
+  },
+  {
+   "id": "c73867ad6cdfd1e6",
+   "title": "As data center moratoriums expire, some Metro Detroit cities hit pause again",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUzJnQ3ZYMkVab001cU1Hc2h2Y3VNMnFnVTQ3NFNGMXI1ZDcyYmNrbzhQdVR2M0tBSGluX2VGUUhqTFdQOXBqTmhmUF9DeTZNNXpORFoxX21RWnVyZnJjVnJNTWRZaG5mV2o4d1Fzc0pGR2Vqa0pwVUgtQjZIUmpOMWFORnlnMVFRSXhkWUNuWG9xVGNyaVctSDExWXZlUjZjZW95Y0dHM2N3R0U1MjRINHo1ZzU2NW84bndjT2s3SFNYdmZ6YzhKNHdMMUdweElCVmFrYVhPeUtXSUk?oc=5",
+   "source": "The Detroit News",
+   "published": "2026-11-23T05:02:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Detroit, Michigan, US",
+     "lat": 42.33,
+     "lon": -83.05,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Detroit"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "As Data Center",
+   "cluster_id": "c73867ad6cdfd1e6",
+   "cluster_title": "As data center moratoriums expire, some Metro Detroit cities hit pause again"
+  },
   {
    "id": "9862e51b034d82c5",
    "title": "Blue Owl Closes $780 Million Deal for 54-Megawatt Data Center in Northern Virginia",
@@ -30246,6 +30353,41 @@
    "suppliers": [],
    "cluster_id": "646f32857614046e",
    "cluster_title": "Hillsboro City Council extends data center moratorium by 6 months"
+  },
+  {
+   "id": "3c09cb23fcebe5e5",
+   "title": "The data center boom made Texas farmland worth more on paper",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSXlUZ0trRWM2ejhHZnpxcDY5M1hfaEd1UHhRZWJ2ZUY4YkQyTU1mWUhVbzdrblF3Ym1GSW1LRmNMZ0xwc3cwLUFmbURLbnVFQVFydjg4N1FraTVpN3I2SXotcXJiNDl6TjFFTllSX1ZTNFdNQUw4b2h2d3IyelVmVEpldjZreWdTcURab1k4LWVGX2piQkU4RmF1VdIBoAFBVV95cUxOTlk2TnMwRm1xX1FSelNSMnZySEo4TUZ4NVN3SnFWa3pORU1wSUhjZFlFckhIMmJhWnFyM1JBSG5ya1ZrVUtZdDlPVHFPTUlTNkFJTW9sWkN4dzVOSHkzWjlRUFlScnlaVUwxblJudmc4UjZFSXZvaVhqTUJuampOSzE5SWFOMk1vOWpUZktMN2djdFA5LUp6YU1lWDEzdHc5?oc=5",
+   "source": "Mineral Wells Area News",
+   "published": "2026-11-18T13:15:04+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3c09cb23fcebe5e5",
+   "cluster_title": "The data center boom made Texas farmland worth more on paper"
   },
   {
    "id": "ce513c2a2ea01831",
