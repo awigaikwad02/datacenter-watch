@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-23T18:03:41+00:00",
+ "updated": "2026-11-23T19:03:41+00:00",
  "count": 746,
  "visible": 626,
  "records": [
@@ -17450,18 +17450,32 @@
      "published": "2026-11-16T08:58:52+00:00",
      "stage_signal": "Under construction",
      "cluster_id": "fff343c2ca38950b"
+    },
+    {
+     "id": "b0cca7d175e932ab",
+     "title": "Construction halted on large Google data center in Michigan over permitting issue",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeE1rNGotbmxyYzhQc0t1REZwdWxjN1N6d3p5QUVwWDNsSlZvQ3B5aDdYS3FYaTlIcDZLWjdSd2dpbUlUNWwxeEFlVnZHODZrZ19RSTdWQzFuMzJIRE9CQzQzbXgtSWczV3ZGbm1xWEFVTW9FeTUyQkNmbHhPVnVjZWZvZkFncFBmcXVVbm5QU3R0cTV4Q3hFTDdWWmxIN09RY0NHS2RWOEszQlhvSHdlSXAta1V0dVp3SW5NOWpicXJWVXpsZEpTMQ?oc=5",
+     "source": "MLive.com",
+     "published": "2026-11-23T18:20:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "b0cca7d175e932ab"
     }
    ],
    "first_seen": "2026-04-16T07:00:00+00:00",
    "utilities": [
     "DTE Energy"
    ],
-   "status": "Under construction",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2026-04-16T07:00:00+00:00",
      "status": "Under construction",
      "headline_id": "6e62565badcab58a"
+    },
+    {
+     "date": "2026-11-23T18:20:00+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "b0cca7d175e932ab"
     }
    ],
    "events": [
@@ -17474,11 +17488,16 @@
      "date": "2026-10-17T14:32:00+00:00",
      "type": "Approval",
      "headline_id": "a23c6d5cf26715bb"
+    },
+    {
+     "date": "2026-11-23T18:20:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "b0cca7d175e932ab"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-16T08:58:52+00:00",
+   "last_news": "2026-11-23T18:20:00+00:00",
    "sources_count": 6,
    "confidence": "low",
    "hidden": false,
@@ -22084,6 +22103,15 @@
      "published": "2026-11-19T19:38:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "ad26ad6682c61886"
+    },
+    {
+     "id": "99ec3b81dabd96d3",
+     "title": "Licking County planners recommend approval of plan for Meta data center in Jersey Township – with conditions",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNW1SeElJYkR0OWxFT3JnMnJPaHNtbmh6ZHVpODJkVkN0bzhDT3o4UmUxV2hLZDF5WXhYSm1LVTA2Um5lNXB1el9rYkVTZ0lDMFBNam95ZEloLXNUeHhTempLVmR3LVZlZkhxQl9HcjNOSE9UNzFxWS1NQUw2ME9RVExRcUNaSEEzY21ObGpyTHlsQzdJaVFnTW1JNWlMM01zV1JqcVhRd0VEUEZSazdkaUZpcm5Zc2c5YVZvRVRNMG0ySFVNYno0eV9Rb2hWNVlrLTlkOU16emRYYjA?oc=5",
+     "source": "The Reporting Project",
+     "published": "2026-11-23T15:39:17+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "99ec3b81dabd96d3"
     }
    ],
    "first_seen": "2026-08-18T07:00:00+00:00",
@@ -22115,11 +22143,16 @@
      "date": "2026-09-03T07:00:00+00:00",
      "type": "Power deal",
      "headline_id": "0bc1d7c43b38b154"
+    },
+    {
+     "date": "2026-11-23T15:39:17+00:00",
+     "type": "Approval",
+     "headline_id": "99ec3b81dabd96d3"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": 0.008,
-   "last_news": "2026-11-19T19:38:00+00:00",
+   "last_news": "2026-11-23T15:39:17+00:00",
    "sources_count": 7,
    "confidence": "high",
    "hidden": false
@@ -59128,6 +59161,15 @@
      "published": "2026-11-17T18:30:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "653fd9b14126d8d0"
+    },
+    {
+     "id": "ab8a5414d744fa7f",
+     "title": "Who’s Behind Youngstown’s Proposed $700M Data Center?",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc1RaTExyVGg0YnN0U1lHZEFHZjJPRU9SeHhrWE1VUnltY2VwbXpjSExOeDdCUmNfT2lVNXNLZ2RvRWk1bHFQbDQ2ZkpUVjlZVmlJUV9QTUE4RVlpM21wMFU1a2EzLWljOE9LeTBvWDV1WXRHSDRXNk0yM1VvM2tOeFZyUHFpZjQ4Qk9ZSXBybGFZTEdW?oc=5",
+     "source": "Business Journal Daily",
+     "published": "2026-11-23T18:28:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "ab8a5414d744fa7f"
     }
    ],
    "first_seen": "2026-11-16T20:52:01+00:00",
@@ -59153,7 +59195,7 @@
    ],
    "capacity_mw": 18,
    "investment_usd_b": 0.7,
-   "last_news": "2026-11-17T18:30:00+00:00",
+   "last_news": "2026-11-23T18:28:00+00:00",
    "sources_count": 4,
    "confidence": "medium",
    "hidden": false
