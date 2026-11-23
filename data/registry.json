@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-23T13:02:26+00:00",
- "count": 745,
- "visible": 625,
+ "updated": "2026-11-23T14:02:12+00:00",
+ "count": 746,
+ "visible": 626,
  "records": [
   {
    "id": "amazon-georgia",
@@ -32433,6 +32433,54 @@
    "hidden": false
   },
   {
+   "id": "site-ashville-oh-2026",
+   "name": "Ashville data center (800 MW, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Ashville, Ohio, US",
+   "state": "OH",
+   "county": null,
+   "city": "Ashville, Ohio, US",
+   "lat": 39.7156,
+   "lon": -82.953,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "63b28857ec3674d3",
+     "title": "REX Plans Short Pipe to Feed 800 MW Ashville, OH Data Center Plant",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEZ1amVqbjJCODM4cm1NaXZkUW9QNFQ4TFE3YUx2TXpzTmYwSEdROXVDWmVnclR0b0ZYV2J5cDdNODZUWWJkSDdXZXVyaFdZeUM4Tmc2TFBRdUkzVXhtamFEOFpvQnNKNDNoVlZSOW11Y2RSWnpkZTlwX3czU2NWcGpXN3VTeEJRdm5oR2dReGpMcWxBSnUtNHhaZWhCN0VjX2VvOFc1NA?oc=5",
+     "source": "Marcellus Drilling News",
+     "published": "2026-11-23T11:32:12+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "63b28857ec3674d3"
+    }
+   ],
+   "first_seen": "2026-11-23T11:32:12+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-23T11:32:12+00:00",
+     "status": "Announced",
+     "headline_id": "63b28857ec3674d3"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 800,
+   "investment_usd_b": null,
+   "last_news": "2026-11-23T11:32:12+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "site-atlanta-ga-2024",
    "name": "DC Blox Georgia data center",
    "company": "DC Blox",
@@ -38042,6 +38090,15 @@
      "published": "2026-11-21T14:30:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "dd58d30bebde20bd"
+    },
+    {
+     "id": "76c0b0ed6cdfe5bb",
+     "title": "SpaceX Details $50 Billion Arizona Data Center Plans",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xTS1la2ZVNTdfeWFYV0o4U19RODNUZVdDYnNxdWxHRHloSHlpRktXRFFlU0tFQWpIUEFKeHZSUG9wb1p2ckVwUjZSTzVjZHJWQnJ6QWk5Z0cteVcwNEhYS3VyYksyQkF4amc?oc=5",
+     "source": "Peradaban.id",
+     "published": "2026-11-22T16:06:04+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "7e4ff6d7eae59fe0"
     }
    ],
    "first_seen": "2026-11-03T01:08:00+00:00",
@@ -38064,8 +38121,8 @@
    "events": [],
    "capacity_mw": 6000,
    "investment_usd_b": 50.0,
-   "last_news": "2026-11-21T14:30:00+00:00",
-   "sources_count": 9,
+   "last_news": "2026-11-22T16:06:04+00:00",
+   "sources_count": 10,
    "confidence": "medium",
    "hidden": false
   },
