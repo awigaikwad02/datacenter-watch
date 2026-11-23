@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-23T22:05:07+00:00",
- "count": 747,
- "visible": 626,
+ "updated": "2026-11-23T23:05:07+00:00",
+ "count": 748,
+ "visible": 627,
  "records": [
   {
    "id": "amazon-georgia",
@@ -43984,6 +43984,54 @@
    "hidden": false
   },
   {
+   "id": "site-fridley-mn-2026",
+   "name": "Fridley data center ($4.8B, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "Fridley, Minnesota, US",
+   "state": "MN",
+   "county": null,
+   "city": "Fridley, Minnesota, US",
+   "lat": 45.0861,
+   "lon": -93.2633,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "3efc38bd08d76d9d",
+     "title": "Blackstone-backed developer eyes $4.8B data center campus at former BAE Systems site in Fridley",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSzFjY2VVRlh1cE5yZlR3OUQtMzVqb3dYN1FjbmdDVkpOVXVaSmZYazhFbXh5Um5kRExTU1Z0SC03MlpjRjRpYmhlSkZjT3J4LUt3VFFpVUkzMTFURzZ2Q3Y2UUJ2a0FNYXV5eWdOMUZRNTVLQ0x0ZThIVU8teVVjdU9QeTVYcDhhZlc2RVZFTHhqbURldlAxU29UdnloZGphbXFFMUpIWmVmY3ZmMVE?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-11-23T22:34:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3efc38bd08d76d9d"
+    }
+   ],
+   "first_seen": "2026-11-23T22:34:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-23T22:34:00+00:00",
+     "status": "Announced",
+     "headline_id": "3efc38bd08d76d9d"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": 4.8,
+   "last_news": "2026-11-23T22:34:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
+  },
+  {
    "id": "site-georgetown-tx-2026",
    "name": "Georgetown data center ($1B, proposed 2026)",
    "company": "",
@@ -49165,6 +49213,15 @@
      "id": "652069a666972c73",
      "title": "Planning Commission to hear data center proposal in south Augusta today",
      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcHpkQnBQczduU1RZZ1VKc2t2VUV6VUktTDlFcmpMaEtKa2tmU0RPRkVxbUdsRC1oZEtmcF9WRWFCVXQ1cE1zclp5Z2xCd2hqRXF2XzRlcUF0ZXpKYXJ4bHpfNEphLXE2NEZ3Y213TzZpSDhZRlIxNFh0LWxucUY3OUdFMUZBaEo2MVRpRVl6ejBUS0VJQTRySVQwT21JeVnSAbMBQVVfeXFMTTZyMkxBVVAwdFZrRDc2M3BaRmhzZlBiNVA3anpHNE5FNXlLRnhWWDNBRG4yZGx2aXpJbmthcUhmTDhXOUp5WGxDcFFNelVpeXA5OWNTTlFKcENqZnBCYjZuSU9uWXEzMDIyQnRsWFR2ejRUS2c3Ujd0M3kxbVQyX2Y4UFREdjhNVHJPR05DVEZkZHNKejE4YnVqSlBHaFd2b3BJSEk0SG1WMTNsd2kzcHhWblU?oc=5",
+     "source": "WRDW",
+     "published": "2026-11-23T16:05:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "652069a666972c73"
+    },
+    {
+     "id": "758ea17efde2c8ff",
+     "title": "Planning Commission hears data center proposal in south Augusta",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcHpkQnBQczduU1RZZ1VKc2t2VUV6VUktTDlFcmpMaEtKa2tmU0RPRkVxbUdsRC1oZEtmcF9WRWFCVXQ1cE1zclp5Z2xCd2hqRXF2XzRlcUF0ZXpKYXJ4bHpfNEphLXE2NEZ3Y213TzZpSDhZRlIxNFh0LWxucUY3OUdFMUZBaEo2MVRpRVl6ejBUS0VJQTRySVQwT21JeVk?oc=5",
      "source": "WRDW",
      "published": "2026-11-23T16:05:00+00:00",
      "stage_signal": "Announced",
