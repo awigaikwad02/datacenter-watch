@@ -58,8 +58,8 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-23T21:05:07+00:00",
- "count": 746,
+ "updated": "2026-11-23T22:05:07+00:00",
+ "count": 747,
  "visible": 626,
  "records": [
   {
@@ -15138,6 +15138,24 @@
      "published": "2026-11-23T20:28:54+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "575024d85d944f2c"
+    },
+    {
+     "id": "44580eef55138088",
+     "title": "Judge halts Google data center construction in Botetourt County, orders public hearing",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQX0F5OV9LWFlwTnhKOVB3Zm1BaDFjMHhXdzlEVjFHbGZqTkZvaVJsRkxWRUtmQUw5WjhPUjN4Q1NvbmJzUEZrRkplOXBHX1JDNE9zMFo0VUFSOXFfenhKWWM0U2lJa2doenN6T252TktxREUxMlFTZFVvRnRSbW00YXdOMDMtWkFEYktxaWdncFNiYmlKc0x0YkY1bU9vSmI4Wi14TGplS2xRY2lXX3MxWWpqNTdTbTNtNTRSSGRqYw?oc=5",
+     "source": "Cardinal News",
+     "published": "2026-11-23T21:01:26+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "575024d85d944f2c"
+    },
+    {
+     "id": "823710c61890ca6e",
+     "title": "Judge Rules Against Botetourt County in Google Data Center Deal; Construction Must Stop",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRmt0VTBjUHVEVnJwY1dEQXdaSjh2R25Wb0tIOE0yWFlnbXFULXZWY1lqRTNlUHFKSzdKYXkwU0ZTdHlXYnZudTNqT1FIanZfTUlGQ3lNYWRWamJfNGUzVEdfbE5JQktNZVJwSWkzNTB2ZHVRcElBMERSZjU4dlVfbUNNZk4tLTJ1LTR3emJhbm5vV0Q2UG9UcEJhRl91d2h2eVhoTWNTdFE1QmpGZGxRc0p2RnhUNldxREJKMzJaMlc?oc=5",
+     "source": "WDBJ7",
+     "published": "2026-11-23T21:44:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "575024d85d944f2c"
     }
    ],
    "first_seen": "2025-06-24T07:00:00+00:00",
@@ -15179,7 +15197,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-23T20:28:54+00:00",
+   "last_news": "2026-11-23T21:44:00+00:00",
    "sources_count": 8,
    "confidence": "high",
    "hidden": false,
@@ -19660,24 +19678,22 @@
    "hidden": false
   },
   {
-   "id": "iren-tx-unnamed",
-   "name": "IREN, Texas (site not yet named)",
+   "id": "iren-nolan-county-tx-2026",
+   "name": "IREN Nolan County data center",
    "company": "IREN",
    "companies": [
     "IREN"
    ],
-   "location": "Texas, US",
+   "location": "Nolan County, Texas, US",
    "state": "TX",
-   "county": null,
+   "county": "Nolan County, Texas, US",
    "city": null,
-   "lat": 31.5,
-   "lon": -99.3,
-   "precision": "state",
+   "lat": 32.304,
+   "lon": -100.405,
+   "precision": "county",
    "curated": false,
    "verified": false,
    "notes": "",
-   "umbrella": true,
-   "umbrella_company": "IREN",
    "news": [
     {
      "id": "3a4bfb44733c5e5a",
@@ -19705,14 +19721,23 @@
      "published": "2025-03-17T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "d84dd29bcb623f7f"
+    },
+    {
+     "id": "782b7335ae0a1048",
+     "title": "IREN Nolan County and Scurry County Data Center Plans",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNzJSNjYxVkxxdno2SUVvVldabFVQaXBjc3RsdkxCYVZ6bGVERHFEbHozTUZrSnNvNDk4TDgxQk1XSk0wU2R3TWFnaFNnZDd2VGhrWmxlT2ViVlowR3pJWTVGTEhHSWpPRmhVRWpqOHFsZWw4MEVSQ0J1bEpMU3dHV0xzamlDY2xwRGNvMWlJanh5MVlQOXc?oc=5",
+     "source": "Northwise",
+     "published": "2026-11-22T19:17:25+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "782b7335ae0a1048"
     }
    ],
    "first_seen": "2025-03-10T07:00:00+00:00",
+   "name_hints": [],
    "utilities": [],
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "name_hints": [],
    "status": "Announced",
    "status_history": [
     {
@@ -19730,10 +19755,47 @@
    ],
    "capacity_mw": 2750,
    "investment_usd_b": null,
-   "last_news": "2025-03-17T07:00:00+00:00",
-   "sources_count": 3,
-   "confidence": "low",
+   "last_news": "2026-11-22T19:17:25+00:00",
+   "sources_count": 4,
+   "confidence": "high",
    "hidden": false
+  },
+  {
+   "id": "iren-tx-unnamed",
+   "name": "IREN, Texas (site not yet named)",
+   "company": "IREN",
+   "companies": [
+    "IREN"
+   ],
+   "location": "Texas, US",
+   "state": "TX",
+   "county": null,
+   "city": null,
+   "lat": 31.5,
+   "lon": -99.3,
+   "precision": "state",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "umbrella": true,
+   "umbrella_company": "IREN",
+   "news": [],
+   "first_seen": "2025-03-10T07:00:00+00:00",
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hints": [],
+   "status": "Announced",
+   "status_history": [],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": null,
+   "sources_count": 0,
+   "confidence": "low",
+   "hidden": true,
+   "merged_into": "iren-nolan-county-tx-2026"
   },
   {
    "id": "iron-mountain-austin-tx-2026",
@@ -49098,6 +49160,15 @@
      "published": "2026-11-19T00:02:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7ebcb4b3e442fd13"
+    },
+    {
+     "id": "652069a666972c73",
+     "title": "Planning Commission to hear data center proposal in south Augusta today",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcHpkQnBQczduU1RZZ1VKc2t2VUV6VUktTDlFcmpMaEtKa2tmU0RPRkVxbUdsRC1oZEtmcF9WRWFCVXQ1cE1zclp5Z2xCd2hqRXF2XzRlcUF0ZXpKYXJ4bHpfNEphLXE2NEZ3Y213TzZpSDhZRlIxNFh0LWxucUY3OUdFMUZBaEo2MVRpRVl6ejBUS0VJQTRySVQwT21JeVnSAbMBQVVfeXFMTTZyMkxBVVAwdFZrRDc2M3BaRmhzZlBiNVA3anpHNE5FNXlLRnhWWDNBRG4yZGx2aXpJbmthcUhmTDhXOUp5WGxDcFFNelVpeXA5OWNTTlFKcENqZnBCYjZuSU9uWXEzMDIyQnRsWFR2ejRUS2c3Ujd0M3kxbVQyX2Y4UFREdjhNVHJPR05DVEZkZHNKejE4YnVqSlBHaFd2b3BJSEk0SG1WMTNsd2kzcHhWblU?oc=5",
+     "source": "WRDW",
+     "published": "2026-11-23T16:05:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "652069a666972c73"
     }
    ],
    "first_seen": "2025-04-09T07:00:00+00:00",
@@ -49135,7 +49206,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 1.0,
-   "last_news": "2026-11-19T00:02:00+00:00",
+   "last_news": "2026-11-23T16:05:00+00:00",
    "sources_count": 3,
    "confidence": "medium",
    "hidden": false,
