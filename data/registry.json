@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-24T16:09:25+00:00",
+ "updated": "2026-11-24T17:09:29+00:00",
  "count": 749,
  "visible": 628,
  "records": [
@@ -44067,6 +44067,15 @@
      "published": "2026-11-23T22:34:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "3efc38bd08d76d9d"
+    },
+    {
+     "id": "b3ab952f13a4b0b1",
+     "title": "Investment company wants to build $4.8B data center campus in Fridley",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc0RiRDB1YUY3Y1gwUm1PSG0wNmlyMmtUbTZiWlF4SjlUMExmdUFzZnZGWWxrZ0FTbWJTakJoQk5kWXJHV252S1ZiZUZDdlp1XzlHcnZjOG8yeWgtUXI5OC1aU0FrdVF3TUUzV3lPeFJUdkZzdlZoVlV2UkZTVzNVcm01aVFVck9YM1RGaVJfQ2I5djZsLUFKdFBJN0x6UjVyVXo2YTVGeUxhMU4zQ2Q5S2xXVGQ?oc=5",
+     "source": "Bring Me The News",
+     "published": "2026-11-24T16:23:26+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "b3ab952f13a4b0b1"
     }
    ],
    "first_seen": "2026-11-23T22:34:00+00:00",
@@ -44086,8 +44095,8 @@
    "events": [],
    "capacity_mw": null,
    "investment_usd_b": 4.8,
-   "last_news": "2026-11-23T22:34:00+00:00",
-   "sources_count": 1,
+   "last_news": "2026-11-24T16:23:26+00:00",
+   "sources_count": 2,
    "confidence": "medium",
    "hidden": false
   },
@@ -61960,6 +61969,15 @@
      "published": "2026-11-24T02:07:44+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "2e172ff61ea248bb"
+    },
+    {
+     "id": "784333b97b81021c",
+     "title": "Vantage drops plans for Trident data center after Colorado's Aurora City passes moratorium",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNkR4dTdiMlEtUnVQejl5YldXS25xNE1EbTVKb0EzdGpDVjBGZ3VocmZLWkpKaTROUldkYURsMVRjQzdhSGF0djVxY3ZIUXRiZ0d6UFppVnltcUVYQlk5cVl0dS1rSWM5cUlLeW5YcmVxOUNOVkpReHJWZ3hhb0VMbE4tbC1sQlFtRDdkR3JlaFVfYmtTNTR3d1pGRFkyM3F1SDZHTXBUeWxPbFlGTlk0TWhPOFN3TmxiT2N5ODVlUS1BSWo3YkE4eVhDcXpSUQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-24T17:02:51+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "2e172ff61ea248bb"
     }
    ],
    "first_seen": "2026-09-14T07:00:00+00:00",
@@ -61997,8 +62015,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-24T02:07:44+00:00",
-   "sources_count": 3,
+   "last_news": "2026-11-24T17:02:51+00:00",
+   "sources_count": 4,
    "confidence": "high",
    "hidden": false
   },
