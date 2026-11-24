@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T15:09:24+00:00",
+ "updated": "2026-11-24T16:09:24+00:00",
  "_readme": {
   "about": "The months available in the archive, for the Newsroom's 'Include archive' switch.",
   "written_by": "scripts/fetch_news.py (write_archive_index)",
@@ -12,16 +12,16 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "total": 25955,
+ "total": 25967,
  "earliest": "2019-11-18T08:00:00+00:00",
- "latest": "2026-11-24T15:04:21+00:00",
+ "latest": "2026-11-24T15:52:49+00:00",
  "months": [
   {
    "month": "2026-11",
-   "count": 4608,
+   "count": 4620,
    "file": "data/archive/2026-11.json",
    "earliest": "2026-11-01T00:09:00+00:00",
-   "latest": "2026-11-24T15:04:21+00:00"
+   "latest": "2026-11-24T15:52:49+00:00"
   },
   {
    "month": "2026-10",
