@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-24T21:11:29+00:00",
+ "updated": "2026-11-24T22:11:29+00:00",
  "count": 749,
  "visible": 628,
  "records": [
@@ -15587,18 +15587,32 @@
      "published": "2026-10-15T23:07:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "307ee0dc0aa2c6e9"
+    },
+    {
+     "id": "aec7c3e52f641048",
+     "title": "Wayne County halted construction on Google's massive data center project after finding work lacked proper permits. See link below ⬇️ 📸 Provided by Van Buren Township",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObjVZYm54MmgyUXJhZE91Y2NuSUpVQVdnWDZkZTNYMC1vYW1PQ3A4eWl5OHVick1uX0EwNUE0Ml85TEl1TWR1d25lNmhxdFF0M2s2TmJIS3pibWlkVDNEY05IVHp5ZXRMdm82dHk2S1J0NFJkZlAwc1dXNExOUEtBWVprb1p1YjlZSVpqQmZ0cmcyaG5oYVJPMFlLUUh6SVFjeEVucms4cXZPTmFaRWZZMGkyZk9GZFlOYWhRak5jaElEUmZEaUR0czI1eHp6RWdLdExnYW5DZVpoRXhwTWdpMQ?oc=5",
+     "source": "Facebook",
+     "published": "2026-11-24T21:00:26+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "aec7c3e52f641048"
     }
    ],
    "first_seen": "2025-12-12T08:00:00+00:00",
    "utilities": [
     "DTE Energy"
    ],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2025-12-12T08:00:00+00:00",
      "status": "Announced",
      "headline_id": "4abbf776570b6cad"
+    },
+    {
+     "date": "2026-11-24T21:00:26+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "aec7c3e52f641048"
     }
    ],
    "events": [
@@ -15628,6 +15642,11 @@
      "headline_id": "3341742539179499"
     },
     {
+     "date": "2026-11-24T21:00:26+00:00",
+     "type": "Cancelled",
+     "headline_id": "aec7c3e52f641048"
+    },
+    {
      "date": "2026-11-01",
      "type": "Moved to Van Buren Township",
      "headline_id": "18c4e33fa9b54c63",
@@ -15636,8 +15655,8 @@
    ],
    "capacity_mw": 1000,
    "investment_usd_b": null,
-   "last_news": "2026-10-15T23:07:00+00:00",
-   "sources_count": 8,
+   "last_news": "2026-11-24T21:00:26+00:00",
+   "sources_count": 9,
    "confidence": "high",
    "hidden": false,
    "investors": [],
