@@ -39,8 +39,184 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4589,
+ "count": 4608,
  "items": [
+  {
+   "id": "c5a6505d35960e89",
+   "title": "Do you live near data centers? Are they a good neighbor or a nightmare?",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPb01EMEhGWXdUV1J2SlYtNnprcUhfMmxmczhUS0x0VnhEd01Hb2NYbmI0bWItQ2l6X2dXdVFST2VmcmlZZ0ozY0lXMXA5U3h5VnVKa0I4M3B2QmxtYWN3ZHNHeGJnUWVhYVRzNGF4LWFmQXRxeWlzdTFmcmZoaGdYRThhMFJYTzdGaHI4M0JiR0VRSDFVY3c?oc=5",
+   "source": "San Antonio Express-News",
+   "published": "2026-11-24T15:04:21+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c5a6505d35960e89",
+   "cluster_title": "Do you live near data centers? Are they a good neighbor or a nightmare?"
+  },
+  {
+   "id": "6677acee14964fa1",
+   "title": "Aurora approves data center moratorium, Vantage abandons location",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSkhIVVZtakZ5SEUzeEIwWjhEeTNnSEVGTFY0QTJnMzYxOUx5SEd0eHZ3U2tkT09HZWlqQ21sNUJaVHFQMDNqdTlXRVoxd05IUmFiMXZvRWxsQUZtZjlWSVgwVTVZUldnN0NXb2hrVUJkSVExbk1lbjJfQnRBU05jOWdHVWNVWExuMWV6UHVCUkEyZVVXRlg3eXhiZzZOSEtZYTFz?oc=5",
+   "source": "The Business Journals",
+   "published": "2026-11-24T14:30:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Vantage"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6677acee14964fa1",
+   "cluster_title": "Aurora approves data center moratorium, Vantage abandons location"
+  },
+  {
+   "id": "eb24f4f521ecfe64",
+   "title": "Estherville Adds Stricter Noise Restrictions to Proposed Data Center Ordinance",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUG5SR004ZmxBdTRpU282YWlheVFrVkJDYkYzWTZtMnVvbHNMeTctNlNWT0dvTzdBVzRXTXFBbkRkemFpdjVFamtZU19Jd0FQZkh3ZzJ0U3F5SWdfOUVaeVBGNEJXQ25sYkJuSmxRaC1IdkM0czB4UHI2b3JBSFBGZ0pCd2JPRVRTcEN1UmQzZDg4QnlDMjlJbWpWNmJjVEExVWZoWUFtOTRVYWJsMmktck5rVnJ3ZFNsMS03cw?oc=5",
+   "source": "Northwest Iowa Now",
+   "published": "2026-11-24T14:26:15+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Expansion",
+    "Environment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "eb24f4f521ecfe64",
+   "cluster_title": "Estherville Adds Stricter Noise Restrictions to Proposed Data Center Ordinance"
+  },
+  {
+   "id": "65602eb6483cba92",
+   "title": "Cushman & Wakefield: Data Center-Related U.S. Industrial Leasing Surges 113% to 50 Million Square Feet",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTDRELVJLNHpwOXc2d2VFWlpURmJpU3g0dExnRDZ4NjRwcDBkWWJfZlNTR1FSOUtPOUtRamE3b1RQb0N3dUljanFvTS1XZm9haTNFM09XYVk1NWtWNkgteFlHaUI5MGRCRGtibnVvQk01dk9pWTB5cnloZlBkSEZqNGcwVy05V1JHQjdQZF9ra2laMTR3ckQwNDZycHRYd0lSdmVZWVFBUl9JREFZcW8tak1mbHRyMk11Mkw1SGM4d19MSVpHUXJxNEtMQWlLeFdiVUE?oc=5",
+   "source": "citybiz",
+   "published": "2026-11-24T14:24:05+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "65602eb6483cba92",
+   "cluster_title": "Cushman & Wakefield: Data Center-Related U.S. Industrial Leasing Surges 113% to 50 Million Square Feet"
+  },
+  {
+   "id": "6e899b1d90525906",
+   "title": "The Data Center Financing Gap: Five-Year Servers, 30-Year Buildings",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYXJLWnFDNFFnVnpsV1Z1SE1Wci1VdWJKMkJTOWRtbHBHQUFTWG1vSjIxRUhtUlZ4SEpnOGZ1ODJIV2lqRF81RVZUdDhzQ1BlNFZtZ29tRXRFM0tIaHJueVFMSThScTRDWnNVc1FHRndKSWVxOEY0NnVpczhPY08wZk9xTl9oY0dpb0xXdG02UXRlZ2tWU1B3WTB2dVFUaGlwNXZRZFB3Q3o3bXJrY0U3WUhpMjZDSW1xc3BSZWgyVlM4OEpT?oc=5",
+   "source": "Forbes",
+   "published": "2026-11-24T14:12:07+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "6e899b1d90525906",
+   "cluster_title": "The Data Center Financing Gap: Five-Year Servers, 30-Year Buildings"
+  },
+  {
+   "id": "acc20f57f8448a0e",
+   "title": "Amazon Backs Data-Center Disclosure Rules While Expanding Satellite and AI Footprint",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQN3k2dXlDWW84MkVFcTVJOS1KaE84MXdtcTNzaW1BbjZDaEo2Nm5EMDJBRnZsWXZXcTVLdjQ4M0I5TmNHbWZKaU9SbXZtNHFtcExWMFdkNlJzbWlwV3k4bDNlb1BZMmhMU0VUWHdGWDNLTnhzN2NLTS1OR1g0WU9ycy15MFJxRXVKZ3QxVWxoR1RRYzk3bDd0Rm1hSjR2VWgtaW9QLThQWHZqVWdOakpEZ2lfVlRYbjhYQXA1eVFfX080dmNNRHhMZk81V0x2cDcyenE4UC1CSHRPQWJmR1o2RE5oTm4yXy1kQ0hzRA?oc=5",
+   "source": "ad-hoc-news.de",
+   "published": "2026-11-24T14:11:30+00:00",
+   "feed": "Google News: West",
+   "category": "Expansion",
+   "tags": [
+    "Expansion",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "acc20f57f8448a0e",
+   "cluster_title": "Amazon Backs Data-Center Disclosure Rules While Expanding Satellite and AI Footprint"
+  },
   {
    "id": "1ac44e283adb1c94",
    "title": "Applied Digital completes 75 MW phase at North Dakota data center By Investing.com",
@@ -144,6 +320,114 @@
    "cluster_title": "Solar, storage suppliers double down on AI data center bets"
   },
   {
+   "id": "15ce1396be528cf9",
+   "title": "Guest column: Will data centers use up all of our water?",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOU1plTDIzN3JEeUhPV2lrOHdVRGJjNkg0dmp0YlVuMHlVMlhNZk9EWk80Ty1GQ3RzRUlBTkZaNjE5UXdzMFFibEFXMmRqdVRfNVcxWUpETjhGQ3pNdWppV1FYM1dNdGNZZ0ZkSjJrQlFxUXh3Y2luT001OEZlOTBXbDUwNzg1NXZuODBFMGtSVXdFSzhJN1ZfVmR3?oc=5",
+   "source": "InForum",
+   "published": "2026-11-24T13:48:35+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion",
+    "Environment"
+   ],
+   "locations": [
+    {
+     "name": "North Dakota, US",
+     "lat": 47.5,
+     "lon": -100.5,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ND"
+   ],
+   "state": "ND",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "15ce1396be528cf9",
+   "cluster_title": "Guest column: Will data centers use up all of our water?"
+  },
+  {
+   "id": "8376bc2e8d250dad",
+   "title": "Oregon Lawmakers Have Big Plans Regarding Data Centers",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNFNtbmZDeGxKTlRkUV80Sy1ncE1LLXZGVlFLTFpoSzgtRWw0dUk5WWh5djBZd19jTU5EaGs4aWVzby0wUW54WFM5QlVvRUFGWWwyam0zNWFycktyNnVHRkJScFhpQk1mdFBOSEhSOC1TWUZHTXJvNUtLS2JhYnlRdQ?oc=5",
+   "source": "FM News 101 KXL",
+   "published": "2026-11-24T13:41:00+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Oregon, US",
+     "lat": 43.9,
+     "lon": -120.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8376bc2e8d250dad",
+   "cluster_title": "Oregon Lawmakers Have Big Plans Regarding Data Centers"
+  },
+  {
+   "id": "e3121dfc2e128d4a",
+   "title": "Stokes County commissioners approve agreement with developer of proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOWTdUU1dHUHB3QTNfd3NfanFWVHUyZVpPR0NLSDRNNUdNNlhad2dJZkdEQlNkemxKTjZiMEg4S0dGNGJPTVM5eHpnTWIwQUV4Q1BYb09lQVVtdkxXTzg2aGZ2ZmhUQUdFb1diWGlfRGdxNHN6Y0hQaE9odjRFMkwyTnEwWVlUckpSYmR2cndtcTFUZFZOVll2TllmR2tXc2Ezb3FTaFplc25ySVRkbHJwRU9fQjNOZGVxc28tMHQzdDAxWXJ5ZnZpN0MybGpKS3JYVmdlOWhucnRQVUV3TDQwcURoSXpMbXdxOEcxRk5EcnlPUzRLTWZpdEJzeTJzU0pZQUE?oc=5",
+   "source": "wfmynews2.com",
+   "published": "2026-11-24T13:35:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Stokes County, North Carolina, US",
+     "lat": 36.402,
+     "lon": -80.24,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
+   "county": "Stokes County, North Carolina, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e3121dfc2e128d4a",
+   "cluster_title": "Stokes County commissioners approve agreement with developer of proposed data center"
+  },
+  {
    "id": "c09eeab78d14f940",
    "title": "Providence Mayor Smiley Signs Data Center Executive Order",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeWpLMmlHUF9vRUJab2tBU3Z3NGpTV3o3WUdzbnlaT0w1M082YXJDSlk3bUZyamdSeEtiaklaWElObDRqTEVVVjE0QzRvZ3FpdEZkb3hQZmtGRTFqaVhmZXRKbXYwOVF1M0F1ekZiSUR6M2tqa21GaVBLbl9neWlHTTQ3U2t6M3pWN0s3Ni1zMlp0QVpT?oc=5",
@@ -179,6 +463,45 @@
    "cluster_title": "Providence Mayor Smiley Signs Data Center Executive Order"
   },
   {
+   "id": "fcfbd647af79cf89",
+   "title": "Applied Digital Delivers Initial 25 MW at Harwood AI Data Center Campus",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOTRTMUF0WEFQUnhZTzhfbkQwbkMyXzFhT252U2VBRXhPVDdxZks3M3M5cGhNc3NBVWlfN0wwMWJpVzZER05jVzJUTW1tYkMwS3V1b1F1bW16Y01nOHRuTFJaTWpZNkt1clFwV1loQi00bUFvNjhuVzYyMUlZcTJpVGxNVGpjV1hoSDZJVlgzSlpIUzBQenJiOGpmNA?oc=5",
+   "source": "TheEnergyMag",
+   "published": "2026-11-24T13:29:17+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Harwood, Maryland, US",
+     "lat": 39.3208,
+     "lon": -76.6112,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Applied Digital"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 25,
+   "cluster_id": "fcfbd647af79cf89",
+   "cluster_title": "Applied Digital Delivers Initial 25 MW at Harwood AI Data Center Campus"
+  },
+  {
    "id": "976e130392c01ddd",
    "title": "Cogent Communications offloads more data centers for $35M as CEO moves to pay down debt",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQzVYOXhHM0ltMVJBTmhQQUtaY19XRU1Cb3g3dnkxQW5nMXhRVTI2dWZsQVl6aFVMYnB1OC1xZ0NXYnlPVUtnc1RMRVlIaUxoNWFhVlpKTWkwZ0l3R3QzQ1dJU1g5dnNyclpxOUN0RlVkbWRMa0UyaFhYdTdVbUdSR1BoVzRhRmEyMVA1eWdZRkctX2sxOXlxcEVkcWpzS3M?oc=5",
@@ -202,6 +525,79 @@
    "investment_usd_b": 0.035,
    "cluster_id": "976e130392c01ddd",
    "cluster_title": "Cogent Communications offloads more data centers for $35M as CEO moves to pay down debt"
+  },
+  {
+   "id": "1aa9e54afe8584d3",
+   "title": "NewYork GreenCloud submits application to build 14.4MW biomass powered data center in Ione, California",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQT210bHNjdDBZM041aEZncmxLSERkbjhVX0pLd2Z4SHlWN191a0lhWk5wOVVWa04xb3lRb09qNllCLWdoZ0xrUElyT2FEeW1hb1dYbTlBcXZOamstQmZWdXBRaVg1UElBaHA4LVVkNUZhaTlsaThkX1VyTFhfdFR1cC1DRWhYa292ZlZtV1JIT2RyMWhLRWxzUU10cUxWMnp3cmE5N3M3M2U2eFhnMnVfTS10OTRIVFJOZmRrUWR3bXRxODNmZDNhbWtjOGtUNzFGbDZNQnlPTlFfazly?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-24T13:22:43+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 14,
+   "cluster_id": "1aa9e54afe8584d3",
+   "cluster_title": "NewYork GreenCloud submits application to build 14.4MW biomass powered data center in Ione, California"
+  },
+  {
+   "id": "0a3f7f7007cb012d",
+   "title": "Judge sets Jan. 12 vote on Project Sail rezoning, data center ban",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeExXRGwzeVBDSnFsc3QtTXlmeHlvbDJPbTNMT2dWWXd3UGRhQWQtYTlEY1F5UTNCdEFteXk1eExMbm1kMThWUTRzNVVWVFJQbkhuWmZFaW03WDkwMDd1WTRkM3U2dnJQSGloZWVTOENEOUNJUF9QX0lXX2xQX0gtWWc1Ri1pN3ZvNlVZSFk0czJTUFlOY2JIZ0hqM3J5WDNCWmpNMEtITGN1VTF5TWs4VTNLb3o1aTZ5d3pEQkJNWFY5ano3UE5mcmZKNmdZYS1TdHVZYlg2QjBpUFVkWEpFbg?oc=5",
+   "source": "The Newnan Times-Herald",
+   "published": "2026-11-24T13:21:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Sail",
+   "cluster_id": "0a3f7f7007cb012d",
+   "cluster_title": "Judge sets Jan. 12 vote on Project Sail rezoning, data center ban"
   },
   {
    "id": "b0ae6f92013b6ca0",
@@ -1081,6 +1477,31 @@
    "cluster_title": "SiTime Targets Data Center Bandwidth Upgrades with Two New Clock Families"
   },
   {
+   "id": "1c116bfee5bcf300",
+   "title": "“Build and Face Resident Backlash, Stop and Risk Losing Dominance”: U.S. Data Center Investment Dilemma Tests Technological Supremacy and Financial Market Stability",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1tdEJtd3QyMVJOOGY0N0ZPaFhldm5sUkd6SjVmRWlldmV6S1c5TFFIQ2V6ZWdWNHc1aWhweVNFUzVyYkFIWGwweExDVzJTZS1ac2VxcGVYRQ?oc=5",
+   "source": "https://economy.ac/",
+   "published": "2026-11-24T07:42:11+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1c116bfee5bcf300",
+   "cluster_title": "“Build and Face Resident Backlash, Stop and Risk Losing Dominance”: U.S. Data Center Investment Dilemma Tests Technological Supremacy and Financial Market Stability"
+  },
+  {
    "id": "94c24c71d6146867",
    "title": "Small data center facility proposed in Hanover",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdVZXQm5ldGZWaGtKOXpKVjFiWTZ3Z0xYY3liTVdrQUc0NXdXZ1dxR3VnVGs2cFBTVXdHWDFza3gybC1qMGZsYXNzVVlzODM4ck1HRUFmLXlPQnY3S0EzX0YzV0tpSmEwUnVxVG1OLU9jYWxITjNwYTdtbUJMUk8yVzlaczE3cVVjbnRvdHk2RFVWcWRHLURaX1o5cXA?oc=5",
@@ -1927,6 +2348,120 @@
    "suppliers": [],
    "cluster_id": "c75eb267b4f3ff48",
    "cluster_title": "Three new data centers, part of 'Manassas Tech Park II,' pit..."
+  },
+  {
+   "id": "b8482ab6272921bd",
+   "title": "Photo: Microsoft Fairwater data center and construction near Mt. Pleasant, Wisconsin - MPW20261123818",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOT1lBbzJNd2pDbUEwdFB5Z2JpUGJXLUlnalZOeWNEOW5rMGs1VHkxX0hRTFduTVFXMnNDQTZxNVFFZUEyN1BleXdDVjhsdWZkN1d0aU81X2xtNEwxbEpObUtLN0U3clFzdmZMeS1hNDZQMTRicW9pTS1ONWxhVlZpUnZCeUc2LVNsZE9ucTBRU3l2bHFQdUxRcWh3YTZOX2VKWmNQekZINTVRcVR2aHdzYzFDRlN5RUgxdTk3R001UTBsbjVyWkFtczFUdDdqSVpGN05KdDluUlJDWUd6LUZXRHJTQ1U?oc=5",
+   "source": "UPI.com",
+   "published": "2026-11-24T02:50:26+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Microsoft"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9e6737ef7cf722d4",
+   "cluster_title": "Photo: Microsoft Fairwater data center and construction near Mt. Pleasant, Wisconsin - MPW20261123805"
+  },
+  {
+   "id": "19b14517c8808b24",
+   "title": "Photo: Microsoft Fairwater data center and construction near Mt. Pleasant, Wisconsin - MPW20261123817",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQWVpBd1VtUlFIYmdlV3h1LW90dU9ZMG9LSUtpWTNOelo3RVhPTXNIc01hN3BBQkxBSnc5ZU1kdzhkSURfLVFCbmtpZWRaNlVQUVpqRlMySXJWV0J4NF9YOVpHNDVLUTUzZXhGNVFDOVlWSlRESVZuS2duRXhzMjJMdmZtVzJIT25RTnRMaGd5UFVEYTBJbVphdm1ITFc0SFY4WmxHSDQ3LTJmeFMySXgxSjJldDFYZWYtQUxzNWlPcDRKVW4wWWdYY1M3YTlYa1djOUd1WXhmcW5xekJvN2wyUm9jVzA?oc=5",
+   "source": "UPI.com",
+   "published": "2026-11-24T02:50:23+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Microsoft"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9e6737ef7cf722d4",
+   "cluster_title": "Photo: Microsoft Fairwater data center and construction near Mt. Pleasant, Wisconsin - MPW20261123805"
+  },
+  {
+   "id": "9e6737ef7cf722d4",
+   "title": "Photo: Microsoft Fairwater data center and construction near Mt. Pleasant, Wisconsin - MPW20261123805",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNG02Wjc2UzJVOEo2dWpaX2FXdnpaV2VTd0NLeTNwVkZET1ZkVkVUUU1odHczb3BjcFJsYXRlVlh4S0habWZZUGR0UzZlUFB2Skp6WTZjWnRzSTFyYllSWDc4UHpHa1hzeWRNSWM4THRQbmR4ckc2ZUVXZTRVdVBNOFpNMG5fVWI5aTM0ZXF5cWlXWmZkZUxQM1dTeEhtTWdiejB3YkFReUk0WFdYc19GWjI2LUpfYXhoN0xXYXlQNnNIbVlNbHhoU0VRaUpCbTAtQUNJb2RMeHhUUjk0V3gwUUJXSXI?oc=5",
+   "source": "UPI.com",
+   "published": "2026-11-24T02:50:10+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Microsoft"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9e6737ef7cf722d4",
+   "cluster_title": "Photo: Microsoft Fairwater data center and construction near Mt. Pleasant, Wisconsin - MPW20261123805"
   },
   {
    "id": "818919a2c859c14e",
@@ -6725,6 +7260,42 @@
    "cluster_title": "A turbine core built for both a 42-megawatt data center generator and a 40,000-pound-thrust supersonic jet engine lit on its second try on the Colorado plains and spun to 6,500 rpm with nearly 2,000 sensors watching, a first for the largest jet engine a startup h"
   },
   {
+   "id": "46b3131c12d6921d",
+   "title": "Stark Power: Tax, job figures for Mandan data center are projections, not promises",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMURtcWUxTkFXc1kxUlRkQktrMUoyZFdWOWRvdExObzAxdnRzYnM3bU9kb1licFlSWTlaS3E2eUlqNFVHR3ppbkJSZG5OSnAwRC1TMkRtOE1KTTFJZUtjd1hRSVpjcTNIMDBVWEtRX2JaMVlDeTMxWWtwMW5DMEdjOV9zeV9BMnFpT0FISjlWR0U1YXp4Q1JsLVY0VQ?oc=5",
+   "source": "The Bismarck Tribune",
+   "published": "2026-11-23T17:30:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Mandan, North Dakota, US",
+     "lat": 46.8267,
+     "lon": -100.8896,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ND"
+   ],
+   "state": "ND",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "46b3131c12d6921d",
+   "cluster_title": "Stark Power: Tax, job figures for Mandan data center are projections, not promises"
+  },
+  {
    "id": "ac4586f9a790b1a7",
    "title": "Waterloo city officials seek input from residents on data center proposals",
    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQbDRiaEFPNUVLbnpyaFJoMkZsd1Z2bXY5QjBzTmZCYXowbDM0LXZibTVnTFBlYlRyUTFId0IwSHpvM1R2emVwbUxPQkNWZDdNVTcyNVd0cEZBbXM4X1J6elVlNzhEV1kxUXNIU0wtUk9TU1VUUDY1QThjNUV1NDZOOVBkdzd3bVB3QjFmM3RmTXJUeDRWMzN2b1dHV1BHcU8zY1k0WmJ0OFRnUG5JMDZpb0JMRmhRRm1iRDNINmNRNDhOTXhROEZXVjhhWkp6WGRNTHNFRHZhWVZfX1E4YUhlTVZvc28?oc=5",
@@ -10709,6 +11280,44 @@
    "suppliers": [],
    "cluster_id": "f5015a74177ebe54",
    "cluster_title": "The Fastest Path to AI Compute: Modernizing Existing DOD Facilities Into Modular Data Centers"
+  },
+  {
+   "id": "fb1aa30367b4d19c",
+   "title": "Musk Calls His $440 Million Midterm Bet “Pretty Foolish.” Texas’s New Governor Ran on a Data Center Moratorium",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSW1rMFpKM1hiR295T2xuNndwdnVaUGFfTHBtX2dYc0s1eVh0Q0hWSmw4U1UtSVhPeUMzX2VjZzZOX201ZHJNRE1WV084SXhObEFXYVN1VGc5TlktaXRORFdlajZIR3l0TEtRcHl2ZHZGb2pmZ3pZbVFkRWZCckNyRGRpdHhCU0VwZWc?oc=5",
+   "source": "TIKR.com",
+   "published": "2026-11-23T08:00:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.44,
+   "cluster_id": "fb1aa30367b4d19c",
+   "cluster_title": "Musk Calls His $440 Million Midterm Bet “Pretty Foolish.” Texas’s New Governor Ran on a Data Center Moratorium"
   },
   {
    "id": "dea66c079e7766a0",
@@ -44731,6 +45340,28 @@
    "suppliers": [],
    "cluster_id": "125e56b81de928ab",
    "cluster_title": "The economic impact of data centers: a cost-benefit analysis"
+  },
+  {
+   "id": "bdf2977cd103661f",
+   "title": "Two ways big bets on data centers might affect you (Two Indicators) : Planet Money",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMVVUcE5yaF9fVWRjSngtdjJUWjNrZGNFczZzWmR5NzFaUElpRTBSYnVBQ1lWek5yWnBwSlpqVFVBOHB6T3gtQ004ZHNtSDJsbm5XQ3hoOWNVb3BJRnNzclR0Y3VMQmxBenNTTjcyS0VIbmhtSGxYNEliUW8tYkhBOUVmZm4?oc=5",
+   "source": "NPR",
+   "published": "2026-11-18T08:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bdf2977cd103661f",
+   "cluster_title": "Two ways big bets on data centers might affect you (Two Indicators) : Planet Money"
   },
   {
    "id": "3ec84b7241f7f190",
