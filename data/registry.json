@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-24T02:06:27+00:00",
+ "updated": "2026-11-24T03:06:26+00:00",
  "count": 749,
  "visible": 628,
  "records": [
@@ -16678,6 +16678,15 @@
      "published": "2026-11-23T23:54:27+00:00",
      "stage_signal": "Announced",
      "cluster_id": "34cfc20f173634bf"
+    },
+    {
+     "id": "66596d9e7dbbd620",
+     "title": "NMDOJ opens investigation into process surrounding Google data center project in Lea County",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbHZVTWFKSVVLSkk4TDREbm9lbTZvcTgwYTJFbGtKUjRVLXVWMXByZXhpT05vZkZpR1hKNFZ5cjk4TjZ0dlhMbFh1N1Y4T1lHLTNXcXR2VmhTRjBESG9HcXlaTmlTeENiTU45cUdyU1B1cWRfcUx0ZTNvelN3MkdOenlkX3RLQl82WlVtakNIa2NMci1ZQ0NUMWllUEVjQXRFcDk0Rms5NXktYjF0b1Z3TEpodk0zdGg2cVM5aGZ6dm5qeGFyOE1mYdIBzgFBVV95cUxPdkhGSW1XLUV1VEZvVlh3Y0RaMXZmV01XeGo1cnBHb09jdnBUNGhTOUN6ZHJaUmh3OGdYWjhZUVd1dkF4Ykw1amVMbXlxdk13YnhwUlJMM0IyVG5yWExUX3l2bVhKZlpadnM1UWJyUlphYm1fZWpqLVFTUm1nd0RpY0VFdEFDUmxrSU0wT3lUZzUzS2RlTVJDTkd1Qzd4WkZ2MnpJcEMxcE9INkMxV2ZTYkVZNDZZRWRiSHZQZDF5dGllcGMwOUd3NXRTanBLUQ?oc=5",
+     "source": "KRQE",
+     "published": "2026-11-24T02:16:08+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "66596d9e7dbbd620"
     }
    ],
    "first_seen": "2026-09-15T07:00:00+00:00",
@@ -16686,12 +16695,17 @@
    "investors": [],
    "builders": [],
    "suppliers": [],
-   "status": "Announced",
+   "status": "Operational",
    "status_history": [
     {
      "date": "2026-09-15T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "46863e897bf1a782"
+    },
+    {
+     "date": "2026-11-24T02:16:08+00:00",
+     "status": "Operational",
+     "headline_id": "66596d9e7dbbd620"
     }
    ],
    "events": [
@@ -16719,7 +16733,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 130.0,
-   "last_news": "2026-11-23T23:54:27+00:00",
+   "last_news": "2026-11-24T02:16:08+00:00",
    "sources_count": 4,
    "confidence": "high",
    "hidden": false,
@@ -61878,6 +61892,15 @@
      "published": "2026-11-24T01:04:00+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "2e172ff61ea248bb"
+    },
+    {
+     "id": "ac5d7df9cf2a1406",
+     "title": "Vantage drops Aurora location for Trident Data Center",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaDFlYU9vUjZZaTR5d3Bra3l2eGdBalNjZ21NdGs0NnJqMmhLXzNPR1ZKSVRncDhFOFh4YmN5WGlSdndkd2NkSG1vOUF4XzUwZDAwUDFMXzhQenlRd19nSjVIdnFMSDNqN05ydTdVSTlJb0NIWVQxZU1jVHloTVlHaXZ3RUlaeVRIdkt2S21ycTdFaGxGU3VPVmpxNA?oc=5",
+     "source": "Denver Gazette",
+     "published": "2026-11-24T02:02:41+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "2e172ff61ea248bb"
     }
    ],
    "first_seen": "2026-09-14T07:00:00+00:00",
@@ -61915,9 +61938,9 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-24T01:04:00+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "last_news": "2026-11-24T02:02:41+00:00",
+   "sources_count": 2,
+   "confidence": "high",
    "hidden": false
   },
   {
