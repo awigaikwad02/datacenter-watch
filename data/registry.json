@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-24T17:11:35+00:00",
+ "updated": "2026-11-24T18:11:30+00:00",
  "count": 749,
  "visible": 628,
  "records": [
@@ -19131,18 +19131,32 @@
      "published": "2026-10-19T18:09:04+00:00",
      "stage_signal": "Announced",
      "cluster_id": "5276c8c874decc34"
+    },
+    {
+     "id": "db6eee958b2f2730",
+     "title": "Wayne County halts work on Google data center site",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxON0tuSk1ISktOUGdjbFZWMmNfTmUyNmxLMDZiZW9ydC1RT3dFa2R0Mno5QWY5UVA3dWZCbXE4Zmo0ckhMenVQbHVCOTFzQlNxOVVoU2wwakp5WUExckNFYm13blhLRU9zczNfWUxOU21hMHM0TUJJTEV6LTk5MTlSYm50dW1tUHRRV3JFdENEUXYxcWhfWk9BczExemUxb1JrT19vQmlwVzhpcG0wZWpXQkEzRHA4bDl5b1pzbnVpWTR1UmtFSFZyZ0tUNnpUWGc?oc=5",
+     "source": "Detroit Free Press",
+     "published": "2026-11-24T17:32:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "db6eee958b2f2730"
     }
    ],
    "first_seen": "2026-10-02T07:00:00+00:00",
    "utilities": [
     "DTE Energy"
    ],
-   "status": "Announced",
+   "status": "Cancelled / Blocked",
    "status_history": [
     {
      "date": "2026-10-02T07:00:00+00:00",
      "status": "Announced",
      "headline_id": "5a5d24321ae83367"
+    },
+    {
+     "date": "2026-11-24T17:32:00+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "db6eee958b2f2730"
     }
    ],
    "events": [
@@ -19160,12 +19174,17 @@
      "date": "2026-10-19T18:09:04+00:00",
      "type": "Approval",
      "headline_id": "5276c8c874decc34"
+    },
+    {
+     "date": "2026-11-24T17:32:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "db6eee958b2f2730"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-10-19T18:09:04+00:00",
-   "sources_count": 3,
+   "last_news": "2026-11-24T17:32:00+00:00",
+   "sources_count": 4,
    "confidence": "high",
    "hidden": false,
    "investors": [],
