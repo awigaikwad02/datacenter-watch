@@ -39,8 +39,44 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4504,
+ "count": 4513,
  "items": [
+  {
+   "id": "1ea0c99fa44d67cb",
+   "title": "Johnson Creek board delays vote on proposed data center",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQazJOY1NIdEFSbUVSMzZKcld1OG5TaUpSREVXWDlOX2UxMC1zNFM4LW9kNnF2djZGUHVJV3d4amlienJ0Y1I1UHIxLVltUGpPTkQ5QVFvc1AwNGtkR1BGSmprQVR2OGFaYXp5UmlpUEQwYzU4ZzBpamtPZE5iUGtKaUV3akVaTC0teWticklpNVpoYmh0anB1SA?oc=5",
+   "source": "WISN",
+   "published": "2026-11-24T04:34:36+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1ea0c99fa44d67cb",
+   "cluster_title": "Johnson Creek board delays vote on proposed data center"
+  },
   {
    "id": "209edce9eaf1f7b5",
    "title": "Aurora approves data center halt as giant Trident project abandons contentious site for hyperscale facility",
@@ -924,6 +960,72 @@
    "name_hint": "Trident Data Center",
    "cluster_id": "2e172ff61ea248bb",
    "cluster_title": "Vantage drops proposed Trident data center site in Aurora"
+  },
+  {
+   "id": "ff7236007f27b141",
+   "title": "Aurora City Council passes moratorium as Vantage drops proposed Trident data center site",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWVc2T3JRcm5MOHNNYzVLYUhRWHE3YnJpMV9oZFlsYVpNLTN4WEZyQzNmYUFXZmxKaWxOcXI4Nnl6NzRiaEE4ZlFWa2RjSG9qRFBjTFU2WmV5eFUwemVKODQybGFsMlpBa0RoYzJwd3MyWTJRYXVyYVIxb1d1aGZ2a19xOHFSQmxrelJJRVl4Q1Q3c25FZktoZGVzSFVpR2JpcnZPQkx4WUdZMnJXQ254eGxUZkpZdi10V2w1dzVaQWcwTGEzYTFWZWppblRKSmszcVlRZDlRLU83MEk?oc=5",
+   "source": "9News",
+   "published": "2026-11-24T01:04:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Aurora, Colorado, US",
+     "lat": 39.7294,
+     "lon": -104.8319,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Vantage"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Trident Data Center",
+   "cluster_id": "2e172ff61ea248bb",
+   "cluster_title": "Vantage drops proposed Trident data center site in Aurora"
+  },
+  {
+   "id": "d49ca7ffe7995094",
+   "title": "Lincoln County Commissioners hear final state data center task force report",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeFZXMjZISGdkX05QNW1udkgtS3JIQWFIaWtINTE2TW1sX1JHejAzajh6dmdLcXphVFNGaDZDTVBsSERFRmVvOThqTThjN0luZ2prRHA4bkhTbEJuazR4SV92NnRmZVZtUjlVcUllRG5tZ1lDRk8tVXRRTDU5ZzBtRi1qYlltRmRiZ2ZGd0U0SUFRTkFtNmZkOEE4a3VlMWQxVDFjaUhhakprb3gtTGM4Rm1zNNIBxwFBVV95cUxPWmhjTHJiME15aFJOYVVZbTN0R3RHMk9KQmJ2SGxGWGRKM2tnUkdCUmtrZVpVMEthc193NnFQVzdybmxqbVIyVTFvNTl2bjVVa3FkX1JNS3B2a3FCNjZvTDBsV1d5d2VmNlJXdk9KNVBERHVkeWZCNU9iVzVTZHU2ZEMyNkZQYlphckxkZ0EzMUhKUEtEN2lHZzZxRzdmb01GYW83UUkzSDdsMjAxZVp3dGZyQTRVclNydmhKcFVGQ1JPRk5JM3BB?oc=5",
+   "source": "KNOP",
+   "published": "2026-11-24T01:00:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d49ca7ffe7995094",
+   "cluster_title": "Lincoln County Commissioners hear final state data center task force report"
   },
   {
    "id": "ca8a352b09489bab",
@@ -2676,6 +2778,42 @@
    "cluster_title": "Harvard study: Data center climate emissions are worse than previously thought"
   },
   {
+   "id": "d5ae6bcf3d361c7c",
+   "title": "Developer of Wildcat Ridge data center sues to overturn Archbald’s denial",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQekNXbl8weUJ0bVJqMVlnbng1dDhVaktlelVDVm1vT3o4RHFtbjZOYTVnVGhvbW9idEstSkZkYUZyb3BEa1VCM29yd243NXBPRmtSZk1sUkwyWThwVnhKcjEwT3NHV2RuQmgxODZ2T2xxVTB1d3RlOFU1akRJVkhHLXZqbHN5dmxJXzNCbERuLWtrY0xRNjJxb1Zna1BZRjhUWHVKQ25NUUxNa3FRNkdQTVZDMkpQaHAt?oc=5",
+   "source": "Scranton Times-Tribune",
+   "published": "2026-11-23T21:20:14+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Archbald, Pennsylvania, US",
+     "lat": 41.4948,
+     "lon": -75.5369,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Wildcat Ridge Data Center",
+   "cluster_id": "a9c3a076df71af4c",
+   "cluster_title": "Data center developer appeals Archbald Borough Council's decision to deny zoning for the Wildcat Ridge Data Center"
+  },
+  {
    "id": "79bcdf608e1e6de5",
    "title": "How data center backlash could put banks’ AI bets under pressure",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVGtnZURmZGpMV2hEdzBKWC13VzE3elN4a1NsNFhFbXdNYzdURUpReXp4a254NEVHUEZzMTd3d2RGcjBHUFU2amlaWFUzMHNjRV90UHpRSFZMT3JMZ3k2UXFGU2lraTVnd0JOTWhuRXRyVXlidktQdjU1UU9QRldEY09ZNGZNcEF3UGxDT1FUNWdHREprS3U2a0hqdDZlZjFh?oc=5",
@@ -2957,6 +3095,32 @@
    "cluster_title": "Data centers flood Black communities without residents having a say"
   },
   {
+   "id": "320db1219bd54add",
+   "title": "Data center surge powering questions of who pays electricity bills",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtLUg3eTVRdnpPMGJwMUdhZ1NEWW91OU83VTQ0LXlfdEtWeV9IRlozU1dWdTdxZXBJVk84S0otd1BCRjVkeEVKeVN3TTRLN2d3dlVVUE9QSFlFWVIyRnFmZQ?oc=5",
+   "source": "Federal Reserve Bank of Dallas",
+   "published": "2026-11-23T20:50:16+00:00",
+   "feed": "Google News: Data center",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "320db1219bd54add",
+   "cluster_title": "Data center surge powering questions of who pays electricity bills"
+  },
+  {
    "id": "f4c44216f89f52ad",
    "title": "Lawmakers demand scrutiny over Kraft Group’s $16B Sutton data center proposal",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNVRGcWt5d0dkbEtGWXVSYkdIbUd4ajU2NmcxMHZ1TDZMdXhhRzZSRG1ubTd6Q0V2RHN1clNHd201alN6Y1BMbkNlSFNTSnJTSjhQb0dkQ3IyNUdHbjZYQmVydXp1YnFnYnk5YllUU2xleU1NNGdNREYybEt2bllTVTFGX1hfaEdGUHdQNE1aemZTOGhKOFF5UHRXdmNMU0R0SUtVR2ZhYlUzUQ?oc=5",
@@ -3150,6 +3314,33 @@
    "investment_usd_b": 3.0,
    "cluster_id": "c45d03e7c40c26ae",
    "cluster_title": "Judge blocks Google $3B data center campus in Botetourt"
+  },
+  {
+   "id": "b40158c6eb2088e4",
+   "title": "An Asset or a Liability: How Data Center Policy Will Shape ERCOT’s Future",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQeXBHdmZSdmpRYjJtNVJiLWkxWmN2Sm9LM25vdmNqM2NVd25ab2FNZHJUN1JuUEJMRXNyTmNUOWJhbm5EYU1yS2RfNTZqOGZZZFJuTmJlY2xDNVZfc1ZWREY0aXFfejJfd0stT2hzZ252eTJPV1NhRTNrMG9HaUZqVHRDY1V2M3JwYkcwVWRObkJHOUp4QW1nMGh1RlJFM0IwT3c?oc=5",
+   "source": "Texas Public Policy Foundation",
+   "published": "2026-11-23T20:19:42+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [
+    "ERCOT"
+   ],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b40158c6eb2088e4",
+   "cluster_title": "An Asset or a Liability: How Data Center Policy Will Shape ERCOT’s Future"
   },
   {
    "id": "91f91b3519ba1bb7",
@@ -4472,6 +4663,31 @@
    "cluster_title": "Abbott reopens Texas data center permitting as he nears office exit"
   },
   {
+   "id": "bc264f328614d50c",
+   "title": "Windsor Township reviews proposal for two data centers on 190 acres",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcjJ2VFJ4ajlIZkFtV0VsTUdpcExoRDVZSGhQbWFFSzJnajctQlF1bDcxd0hiMXdBUnpnWGpQUTZVUTBscTVQZFc4YTVqZnU0QWxLS2k4S0dTUElUY25Ld1BEdWUzUnFnNmpMOEZqX3RjWW93N04xOWJlSWYwSk1lSDJRU0lzNTNlV2M5MG94ZFhjaFFXSEY3LWhJOA?oc=5",
+   "source": "Spectrum Noticias",
+   "published": "2026-11-23T17:21:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Land Acquisition"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bc264f328614d50c",
+   "cluster_title": "Windsor Township reviews proposal for two data centers on 190 acres"
+  },
+  {
    "id": "78a2900191859b62",
    "title": "Before Paramus Sets a Data Center Power Threshold, Verify What the Numbers Mean",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOYjZQazcxOHBOLWctTDljVVF6WUZzNG5hWDhPcHZYWVRzdlJBQnU2Y3pkOUt2Nm9kSXlzbElUWnp1cGZOQ1A1NWx4T2x1b3RtWTFqM3VjWGtlZWJkOGQ4SE9QbGgzUkVsNENKRGg2SFhVNGk3STA2Sk95Y21lYjVSTW4yYnlvc0RwSXhDa2E4dUw1MzZwQWNoUWpBbldfQjYyZWU5dVVFRFMzcmxPZ2dLdE5reEdZV21sdzhUMFZWbzNwdHJHYVFiZ0M4M3dGZ3Z4bGE4ZnlzVTdVR0Q1em1TVi02Q1h5c3h5Rmx3NkQzWQ?oc=5",
@@ -5221,6 +5437,30 @@
    "cluster_title": "Planning Commission to hear data center proposal in south Augusta today"
   },
   {
+   "id": "38fdc2b619d9a37b",
+   "title": "SOAR AI files 8-K/A adding AI data center risk factors and...",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZW9WTjVTWTV6VDZxVTBIa29OcDEwaU52NktfcmNxV2Z3dzZWWnZmQnpiZjNURVdTR2FiZXktMGpydm55UW1OYU1sU3RpXzNqZzZ6NzJwMEZGcVhzMElmaEhkbDNtV1UzOFYtN2FKcTlKNmtiVHdkR3pVVU1yeDdaMXA4Y0FPRG94MFRrZnVZdkJwc2MzZDhSRWNfcDU?oc=5",
+   "source": "Quantisnow",
+   "published": "2026-11-23T16:00:43+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "38fdc2b619d9a37b",
+   "cluster_title": "SOAR AI files 8-K/A adding AI data center risk factors and..."
+  },
+  {
    "id": "37817e26cfe83e66",
    "title": "6.5 GW of Texas data center load faces December 10 ERCOT Batch Zero decision: Needham",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93LXVzcTdXYV9nT2RVMGhCd0FGMnVVUWJSdzlDQ2d5dUx6WVNTdHZhcVQ1NVRMUEptenlmdlQ4cGY1bWNPZDhMSktUWk1FMmRfSmc2d1pzVXZJUFc1WVY4elVycVRwNVd4NzlVcjdfNA?oc=5",
@@ -5706,6 +5946,31 @@
    "suppliers": [],
    "cluster_id": "9f80f51c3fb4d72d",
    "cluster_title": "Augusta Township to Consider Six-Month Data Center Pause"
+  },
+  {
+   "id": "1a847f56d407c10c",
+   "title": "South Brunswick data center fuels growing regional backlash",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWkJEYlc0VVlvUWxqaTB1emJ5MVVBV3NUdGlmVEUyVWJRbTRHaWxLTkZpZV9qNG9yUFJpVXZPeVQtVW1iQjRNdWMwdzBYeGUwa1pmQkhMd0kwbGRzUGNnUXZ3cGNNNHItcE83ejNlX1dBUWtJNnJ2WWQySXdnMmZEakloQkJSSjRTMUYtSkIxaWlvenRZYmxoWXRxN2NPaGNIN3c?oc=5",
+   "source": "princetoninfo.com",
+   "published": "2026-11-23T14:55:08+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "South Brunswick Data Center",
+   "cluster_id": "1a847f56d407c10c",
+   "cluster_title": "South Brunswick data center fuels growing regional backlash"
   },
   {
    "id": "53e0ceae3027851c",
