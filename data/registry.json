@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-23T23:05:07+00:00",
+ "updated": "2026-11-24T00:05:09+00:00",
  "count": 748,
  "visible": 627,
  "records": [
@@ -16669,6 +16669,15 @@
      "published": "2026-11-21T06:00:09+00:00",
      "stage_signal": "Announced",
      "cluster_id": "b9aeef959ac0611b"
+    },
+    {
+     "id": "34cfc20f173634bf",
+     "title": "AG investigates Google data center approvals in Lea County",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPak91bEVZc1MxaTBybG1UWkRGLXhPQ215WHVBM1NRd3RmZ0QybTR0XzJULUtvaDJLM1JoZmY3QVVUakZwT0NGNGtJOTF6T0FhNEhKNzFFVFM3Rkp3cC1ockNXVkw4N3pISEVfWWhkOUhneDROTVlreDY1RWRvdHp4UXNPbjc3Y05vTkpzU0VIZDhMaEhJOUdVR0NaOA?oc=5",
+     "source": "Albuquerque Journal",
+     "published": "2026-11-23T23:54:27+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "34cfc20f173634bf"
     }
    ],
    "first_seen": "2026-09-15T07:00:00+00:00",
@@ -16697,6 +16706,11 @@
      "headline_id": "7c4b5486c3c0266b"
     },
     {
+     "date": "2026-11-23T23:54:27+00:00",
+     "type": "Approval",
+     "headline_id": "34cfc20f173634bf"
+    },
+    {
      "date": "2026-11-21",
      "type": "Moved to Lea County",
      "headline_id": "e926a88c080855db",
@@ -16705,7 +16719,7 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": 130.0,
-   "last_news": "2026-11-21T06:00:09+00:00",
+   "last_news": "2026-11-23T23:54:27+00:00",
    "sources_count": 4,
    "confidence": "high",
    "hidden": false,

@@ -39,8 +39,498 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4429,
+ "count": 4451,
  "items": [
+  {
+   "id": "34cfc20f173634bf",
+   "title": "AG investigates Google data center approvals in Lea County",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPak91bEVZc1MxaTBybG1UWkRGLXhPQ215WHVBM1NRd3RmZ0QybTR0XzJULUtvaDJLM1JoZmY3QVVUakZwT0NGNGtJOTF6T0FhNEhKNzFFVFM3Rkp3cC1ockNXVkw4N3pISEVfWWhkOUhneDROTVlreDY1RWRvdHp4UXNPbjc3Y05vTkpzU0VIZDhMaEhJOUdVR0NaOA?oc=5",
+   "source": "Albuquerque Journal",
+   "published": "2026-11-23T23:54:27+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Lea County, New Mexico, US",
+     "lat": 32.79,
+     "lon": -103.412,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NM"
+   ],
+   "state": "NM",
+   "county": "Lea County, New Mexico, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "34cfc20f173634bf",
+   "cluster_title": "AG investigates Google data center approvals in Lea County"
+  },
+  {
+   "id": "9b33fef0c62721fe",
+   "title": "County Commission passes first reading of data center regulation ordinance",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOQy15VzI4akZJbmNoNUptdW9Cenh2UURpQlBEcEFSbU54ZGZESmlselJ5UHNkeExrdXlOUmhXRm85Y1ZXYVBkcWFTMVRrYTBGZ2RpWXczazJELWExUUFZWTRJNHA2UVVYYWpJNVp3NHZ2a1RSZldZQ2dsV25SQjdReHA0UXVUODJJTEFlNEZfOEFCMUxhQVh5QjhuampUTWxsTG04Rk1MeGRRc1I3THpJbTZDNm1sbUEzNnZIN1JMNWdnRGNPckR2cnNpb1VWNXZJSkM0VDMwMUNTdGJvck54aElyUUJJQzE5SGJlOUFqS3B3S2doNVE?oc=5",
+   "source": "localmemphis.com",
+   "published": "2026-11-23T23:52:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Tennessee, US",
+     "lat": 35.9,
+     "lon": -86.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9b33fef0c62721fe",
+   "cluster_title": "County Commission passes first reading of data center regulation ordinance"
+  },
+  {
+   "id": "be38dd8e0ed3f26a",
+   "title": "'Project volt': Selma planning board to consider data center proposal",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON0h5ckRrUVczcnlMQVk3c2pyLW45dnV5MjV3MWpJSmhOSVYwSlNiTzVIVFRZLUlVbHRfR1F0MHkwVWtNdU92U05zSlYxQmdua2ViYWZUdlpwcGVIdEVVZGZaWmpyTmo1SjR4WE1LTEJkYlpEN0tScjExT3g1UVloNkx1WGtndmlWMHNBRUpnZzJrOGJabEZB?oc=5",
+   "source": "WRAL",
+   "published": "2026-11-23T23:43:24+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "be38dd8e0ed3f26a",
+   "cluster_title": "'Project volt': Selma planning board to consider data center proposal"
+  },
+  {
+   "id": "db4b3ce9e7616d4f",
+   "title": "Ohio EPA dismisses citizen effort to delay data center progress",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNM0J1YWRocVg5QmxZRThoMlVmSjQ0aWVaSkg4M0pEVDVuMHpjLWFFbnNiOGxNQ1JsQ0hoNDhtTDZGQ1pMVS02aXZ0cUZVUmtlcERLcThMRHZwTFpMNjdjMHNyUFFsLWluMXA5MGxUMXd6MkJMMWw5MWRGZUpLRzdCeF9GWTJ6UlluM3pFWUlSeWE4LU5UX1dySmtGZkY1bGRNQkpvalZIZmVaRHZvZ0toYUdJd2ZiY3A5T2dpOVpmM25KU1dEX05KNUVBUmdUNWo2TlNjRWtBdThuelhrLTdoTDVJWkY?oc=5",
+   "source": "WFMJ",
+   "published": "2026-11-23T23:25:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "db4b3ce9e7616d4f",
+   "cluster_title": "Ohio EPA dismisses citizen effort to delay data center progress"
+  },
+  {
+   "id": "07acf8404105e834",
+   "title": "Applied Digital Secures $5.4 Billion AI Data Center Lease with Hyperscaler",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSThjM00tUExUMWxvdkF6NDFDVHR2VlIxbmtydW1yQlMxVEQ5WmducnlVU3VXQXhEWGdRbzNLNlJHclk3RVVtY1ZuUDNUVVU0VWl6SktXQTVGRk9GRW1ub1M0SzBrTGMxVW11RFdxaDRITEtPVVRVRVY1TXZBV3dGeE1BUURjUHBCVHJqY3huR2RuQ2pIMEMzenhuRy1WNUh4b0pKZ00tQ3Q4RnJfaVZtUy16cEg0Nk1uSGo5cXplLXFfdl8tazZr?oc=5",
+   "source": "The Fast Mode",
+   "published": "2026-11-23T23:23:46+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Applied Digital"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 5.4,
+   "cluster_id": "e4350834464ed285",
+   "cluster_title": "Applied Digital signs $5.4 billion AI data center lease with hyperscaler"
+  },
+  {
+   "id": "8d064f33e61e6a67",
+   "title": "1,415 homes proposed in Columbia County where data center was denied",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRlZMMWJ4RXdlQWpZWjF4cUFjN3pHcE10MDZBdXpGYWtaS2J0OW9BMUtFTklGQXEwMDktOEc2MmRPUjJtVXgzOXlTSWI0YnZQOS1SNndJY3V0OWt0QmJoLVYzUjE0YjlFUkRyejZCQlJUWDBSbGNjU053UFE5UVFOa1JLaFhjSUxzNFFQbXZ0ay1NSERtOHF1aVROdUt2YkFTdlFoSzVn?oc=5",
+   "source": "WRDW",
+   "published": "2026-11-23T23:23:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Columbia County, Georgia, US",
+     "lat": 33.544,
+     "lon": -82.264,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Columbia County, Georgia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "74a8a9588b9df74b",
+   "cluster_title": "1,415 homes proposed in Columbia County where Byrd Farms data center denied"
+  },
+  {
+   "id": "72208a750489f53c",
+   "title": "Early data show the air around Meta’s Louisiana data center is above EPA limits",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZnFwaExkb28xQ3JPMlc1TGZlcm5IOUJhUnViMTNiTGV0by10MVQyWGI1U0pKUVJhTGlVNXR6X0cwVVU4Ymxzd3BISEVSLTRqaVZqRnZ2Q2owREVud0xjLTZpcmprMHk4WFN5WDEyT0NYQXRISHdHMTlKUVBGc2VrWllEMGgzalIwcUhFVS1FRlhIWVBlWmdKSURuNzNqM2xBNTZacDhNNlBtYm5neGJDYkdFb1BOQ2pEU016cEc0M05Fdw?oc=5",
+   "source": "WWNO",
+   "published": "2026-11-23T23:21:57+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Louisiana, US",
+     "lat": 31.1,
+     "lon": -92.0,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "LA"
+   ],
+   "state": "LA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Meta"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "72208a750489f53c",
+   "cluster_title": "Early data show the air around Meta’s Louisiana data center is above EPA limits"
+  },
+  {
+   "id": "d4df34cb679933b3",
+   "title": "NC puts more financial risk on data centers to protect your electric bill",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcTk0NHg5UElfb3V3Q1dldllOMnliMklLX29zU1U2bVpwMFNvRGNPUFhtN1ZORHBtNzVpSkcxUXRQMW9kTGJfSG9temFYZnNidEluQ3BLWWtxVzFQdkpQeVZvTXFCWW5YNzBKVTBaZTZsNnBqUXNZMUJLNXgwMWJkTzhSREtaZmcxeEJLZmgyYUxUdHdGTWtrNF9Jcndfek5UX2k4?oc=5",
+   "source": "WRAL",
+   "published": "2026-11-23T23:11:22+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "North Carolina, US",
+     "lat": 35.6,
+     "lon": -79.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NC"
+   ],
+   "state": "NC",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d4df34cb679933b3",
+   "cluster_title": "NC puts more financial risk on data centers to protect your electric bill"
+  },
+  {
+   "id": "e53f9171a1bd26ec",
+   "title": "Texas Lawmakers Target Data Center Tax Breaks, But One Big Divide Remains",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWXc1T3JfRHZQYndRX0s2U2pwdTBWbXAxUUdTMEJrQUU1LXdTNmNpTmhtQ25OaXdMUHlGQmNvczNnbHdQMkEyU2htcTl0QkhWa2NiazRUdldFc2RwZmZlOHBVRl9qWUFwTGQ5Z2dVSHZsS1BaUFJvQzFCV3g2bVoybW5XeThTLUpfTXNzZFdXRFJpdU4yMnB0UE9OQQ?oc=5",
+   "source": "The Daily Caller",
+   "published": "2026-11-23T23:11:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e53f9171a1bd26ec",
+   "cluster_title": "Texas Lawmakers Target Data Center Tax Breaks, But One Big Divide Remains"
+  },
+  {
+   "id": "3037d6583a836bc7",
+   "title": "Judge orders construction to stop on Google data center in Botetourt County",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVmlZTFgtUDJyRVh2VnFhb1NDNVNBUlF5THlJMk1lRFVWZXpGel84MkprWU1ZN1hXOTFWaHFWSkhJX21GaUZUelZHRE1lUzFTcmp1V21KUXFPWVdNajBOb2FqMTZmVkRsaXd4eEN4a1ZIbTZUVk0zdkdDWTMxUmo3NGJqREx3OFBDOUpWeThERlg4aHhMb1FXbV9wY1NIeGVkenfSAbYBQVVfeXFMTl9VTGRJUExTX2hfNjAwWWxnVTJ3YkthR0FmNEF6YzBmMTNUVkhWTkFIZFZETnk4TE9jZEVTRTFJQk5fSExqYXk1U09objV2ZDFlTzJpcWx6c01jZTNBM1lwU244Ui1mQ0RSa21qX3JjV1VhS2szdDVFWVEwZ25GbmVlVkw3a3B3dUJ5anR5VzJEZGhHNmROMzBFaUlYcW5xV1RsRnZHRTJVV3VqVkQyVEJPbkl5aFE?oc=5",
+   "source": "WDBJ7",
+   "published": "2026-11-23T23:10:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Botetourt County, Virginia, US",
+     "lat": 37.556,
+     "lon": -79.813,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Botetourt County, Virginia, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c45d03e7c40c26ae",
+   "cluster_title": "Judge rules Botetourt County Google data center deal violated law, halts construction"
+  },
+  {
+   "id": "cf99a559ff31bdbf",
+   "title": "Residents raise concerns over Brewer’s proposed data center ordinance",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTjN6TWNGaDFkYjU2WFVwRW5Ra3Ywek03UDhVUTRWS3lYN0JtUHU5bkM4OTgxaHZBQURSQTg5T0ZCLVpCRnhSa0JGc0t2TDdfZ1ByR052bHB3Y0p4NWJjalg0VzJJNE5kb0RXZWpqdWY5UnhPc25obUxvcEVnLWhrcmZFVVNWUFYzVnFfMVlxdXZYTFRSa2J5U3Y0UVlaWFRFS0HSAbYBQVVfeXFMUDJpNlZrR1JCVE93ZUZvcENITkZZX2gwU1dZdy1ic3d0U2RMWDNJUHZZR0E0cHF5YVNHWm1RRm0xMzJuOFlXVkFXR2IxRjZRYjZEZWwxaUpTSmJJQWItMHZMSEZtN1phYy1udjNpaldGR3ViQ0o2ekFNU29QdzVGMVZuRDhMSXBPT1ZyTGotSEZEMnltc2c4U2V6a25Eam9BdnBZbUpOYlN4ay1HcGNyM0FNM2QwLWc?oc=5",
+   "source": "WABI",
+   "published": "2026-11-23T23:09:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cf99a559ff31bdbf",
+   "cluster_title": "Residents raise concerns over Brewer’s proposed data center ordinance"
+  },
+  {
+   "id": "3fc5b94797f7a71d",
+   "title": "Column: Virginia can develop responsible oversight for data centers",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTXVybEFCX3NhcndNNi1TYTZlWVBVZGE0eWkyczZaLXdTSWlWNmlmVFlJdDNQckdOTnBvVENYaUJrUzg3UVZ4RHliQlRONF9mYVpkS1hEX2lJV1MtRXlqUFJqSXk2TzRrVmc5Q0hoMWRuTWxLb3FNRTBsMmNYOS1iRkZCX0x3VXpJcjFjb0hzSWVLcmM1clpJRnhWRUZJTVVXekl0Wk95b1ExUQ?oc=5",
+   "source": "The Virginian-Pilot",
+   "published": "2026-11-23T23:07:44+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3fc5b94797f7a71d",
+   "cluster_title": "Column: Virginia can develop responsible oversight for data centers"
+  },
+  {
+   "id": "d8259980bb50c324",
+   "title": "Data center action one question facing Ohio lawmakers during lame duck",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPczI1WkZpcWRMNzByd0IzdjV5STROdGdHZUxxOW9hRy01UlZ3MVBudmhOczZEUV9LZjZCSm95SUpGcE10S19MUURkMUZ2R1ZtYVB0YzFyeEw3d1lQVy1sT2RuNHA5ZmhmNXRNcXFjOTl3aEdiQllONFFSUzhYSEt5YWh4bXNka294ZW1KNndGNXRKaEJzMVJzcG9uanRJTmRWTFg3ZA?oc=5",
+   "source": "WYSO Public Radio",
+   "published": "2026-11-23T23:02:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d8259980bb50c324",
+   "cluster_title": "Data center action one question facing Ohio lawmakers during lame duck"
+  },
+  {
+   "id": "33e79beb2cd2f86a",
+   "title": "Confusion over Augusta data center zoning labels",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbnR6REgxdVlzcV9Cb2Z2bWh3d3lITlpJcnYwZ2dHYm5oMFFleXAtN2ZNYnRhZ0NYUVh5NU1TYTd2ekt4c1hYZl9FbmpWSkJaRTRDTWxlUDRGU0Z5bmhKZmx2RlFmN21RcFZoQVN5MVVUMmdEbjhtWDNUTVZuWWNkM3pHQWtoZnBn0gGcAUFVX3lxTE1wSzRjQ2Q3djc5ZEhQT2JkN28xekZ4bWpmTHllYUF2MWFPb2lSQVprUlpnR0l3UjdxMXRmbHgyNG42eGlnZEROZV9QLU4taDJfaTBWN2lUcV9OQVN3Vzl0OUVydjlzNDJwRWhfZ3IwVmJKYlhNbXppWnk0bk9XSVBaYm81WXd3V3JMX0J3RUM2OEN5cEZkODNOaGQ4eQ?oc=5",
+   "source": "WRDW",
+   "published": "2026-11-23T23:00:40+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Augusta, Georgia, US",
+     "lat": 33.471,
+     "lon": -81.9748,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "33e79beb2cd2f86a",
+   "cluster_title": "Confusion over Augusta data center zoning labels"
+  },
   {
    "id": "2f97808e339a1315",
    "title": "Wuehler reports on Pillen task force as data-center fears persist",
@@ -138,6 +628,41 @@
    "cluster_title": "Middle Tennessee county commissioners to vote on data center moratorium"
   },
   {
+   "id": "b5a99d2196e3df7c",
+   "title": "Kimley-Horn joins multi-billion-dollar project at Frank Williams Farm site as data center questions continue",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxONHFBUTBxblhpRHBnNXJfdlhfMW9YemVmQU9hQ2NDOTdOQW5qWkp2NU5fc09hclpPR0Fiby03clpzcVpCb2hsTXBkOU5tUEs0d29saDVyYXcyaTBkQmQ4TENxcVVsRHpVdHhJaEU0TW9WY3hCQ2JzT1lNbVhGYWFQZU53TGtyNEJPb2hFV0o4WE5UZDNZbGVRUEdrbDlyZUdLWElPclA4SWEwNkNSTlphdGRtNGVGOEtFR0MxVUhqMlB1WS1WbjNpVW9Razh5Sk92VWpkcmdHQmdNQ2NQU1hzSzFSM19ZWnB3V2hxSGFMc3ZDRVRi?oc=5",
+   "source": "WTKR",
+   "published": "2026-11-23T22:44:24+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b5a99d2196e3df7c",
+   "cluster_title": "Kimley-Horn joins multi-billion-dollar project at Frank Williams Farm site as data center questions continue"
+  },
+  {
    "id": "25f899b0b7f71568",
    "title": "Bly Road completion set for December as Independence data center construction continues",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZXRMMTFVVTlrLW9VeHZqVFRiZkxTNklaSDl2amJNZVR6czJQU29VUHJ2a3d4cTB2SDlZZkV4dVBzcUZaZWRaNDdacTl3M1U5eE1UYVE4RFZUWjJibzFWQkFNOFNoaXkyai05SC1vemFTeEtpY1czNmp4c0pvS2JTUzNVUzZZZFVQcGhQUTlDWEVDUXJrUWZhTEhmbDllZU91Ym9OWklVdktvSzBDa0Q0TVp30gG3AUFVX3lxTFB2SGlzS1gyZS0wMnJFdDVxYTZzMGk0eVEwc1Q4eTg0NllNYlo0MU1fb3E5ZDh5YllqcWVuT0k3TXhCc1drWVNKRk5zbS1FbkNjbmJMaS1CS3hOU1ZHU01mWUpMNmNTdm5PUHdCaFIyaldyY0loaGRNTTE0ZjdMWUdyWFNJTG1uMzVxQjlIaWJ2ODNLQ2o5SE1sN2lnV3ptdFVvWjNhWVBDVlgwMVZ6eVF3V19hSExyNA?oc=5",
@@ -172,6 +697,41 @@
    "suppliers": [],
    "cluster_id": "25f899b0b7f71568",
    "cluster_title": "Bly Road completion set for December as Independence data center construction continues"
+  },
+  {
+   "id": "9f913fe033452a00",
+   "title": "'Struggling communities don’t need more struggles\": Prichard residents oppose data centers",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcUQwNkFpeWRMTzFpR1FveG1LTENfLURjSl9idjlvQUtqWkZRVU5mYjBhVFB0VmZGMERPTG41djF5dzgwVFBhaHVYcDRuUkxuYmNxSG9XakswREhmSU5ERTVLN0loMi04WGRSX0F4NWhfRlJvNUxuTFJZZDRYbXdKSlgzVHd1ZGxUNFE1djRoMnB3NTZ6SEJxd3IzNXVwRFRuVWU1R0FvX0hfMG5aMFZzbjYycDI2WTg?oc=5",
+   "source": "NBC 15 WPMI",
+   "published": "2026-11-23T22:37:29+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Prichard, Alabama, US",
+     "lat": 30.7388,
+     "lon": -88.0789,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9f913fe033452a00",
+   "cluster_title": "'Struggling communities don’t need more struggles\": Prichard residents oppose data centers"
   },
   {
    "id": "3efc38bd08d76d9d",
@@ -316,6 +876,42 @@
    "cluster_title": "Wayne County orders halt on Google data center construction"
   },
   {
+   "id": "f045bc4c90f5b85e",
+   "title": "Ohio Voters Favor Regulation Over Data Center Bans",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1uX2lWbEhJaVN1bmtkTVRRTEFyQXJZVXlHaU52VWxCMHFra3dnN2c4N3llZFBqcDFKdjZvMjNYZVd3SUhNUjNLYVYwX2xSLVpMV0p6RVJtblhDN2o5ay1wbTFZMEpiWDhwQVNXbkhaOVA2OG5uMkNZ?oc=5",
+   "source": "State Affairs Pro",
+   "published": "2026-11-23T22:22:26+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f045bc4c90f5b85e",
+   "cluster_title": "Ohio Voters Favor Regulation Over Data Center Bans"
+  },
+  {
    "id": "9a9460816b338926",
    "title": "A Data Center Boom Fuels Hotel Development",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMGRfSHNMRDdGUThPY0JZSGFaMEk5SUxZZWxGVDFRMGc3QVpPcHJubTR0YTJSaUFDM2FNRVFKNHhCd1A3VW5XS3htb1ZHSTZucDVfTEhYbzVpRFZ2Q1dDZ0x4eWhSb0wyQ2dUZllXekI4TV9TaDlNRk52Z3FTWFVkNEFR?oc=5",
@@ -338,6 +934,32 @@
    "suppliers": [],
    "cluster_id": "9a9460816b338926",
    "cluster_title": "A Data Center Boom Fuels Hotel Development"
+  },
+  {
+   "id": "7631c993694da5c3",
+   "title": "Compressors and Generators Market To 2035: Data Center Backup Power Demand Drives Growth - News and Statistics",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaVg2c1RTQVRsdWY2NHppZkRfaTJUT0hOVWZsVDBTSG91NDRuV1RRYjBaTXJyd0pXck1qbVU1eFhuYnJaLUFIM05ueEJRYzJmdl82T051blphSWxxUmgxeURwQjhaeWtrY1JoUWx3Ny1zcThLUm0zNnYyempMdEY5VGxHMHBmLS1JOGs3NHlYdWVjNk9kdFYxOXZuY2dEVXVsN3pIeHVZSHpLa3B0Q29PTWdsaHZ5OWhDeGljVzdZRmtXZk1R?oc=5",
+   "source": "IndexBox",
+   "published": "2026-11-23T22:16:05+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Power / Utility",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7631c993694da5c3",
+   "cluster_title": "Compressors and Generators Market To 2035: Data Center Backup Power Demand Drives Growth - News and Statistics"
   },
   {
    "id": "39cb7a49d431022b",
@@ -1855,6 +2477,30 @@
    "cluster_title": "Construction halted on large Google data center in Michigan over permitting issue"
   },
   {
+   "id": "33b69d02d04cca50",
+   "title": "Off-grid costs will push data centers back to utilities: Mitsubishi Heavy Industries CEO",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxON2pfNE9YcFVOU0syWnpvQkNCbEwybW5IQm02WVd0M0pxVTZFdnJJUVhvMXBSQ2dsNVk5N3JGeXExTk5tMTJkY1NNY3Z0a2t4dUFXOGY2Ulk5ejlDS2oxeHFCcnVVTTV4Q2duUmlHTkN1SDluc203VUpiM3ZrRWs0WEZsVkkxU3VXODBLVm1yTQ?oc=5",
+   "source": "Utility Dive",
+   "published": "2026-11-23T18:19:27+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "33b69d02d04cca50",
+   "cluster_title": "Off-grid costs will push data centers back to utilities: Mitsubishi Heavy Industries CEO"
+  },
+  {
    "id": "f7c31d3fede7b845",
    "title": "Brewer protesters urge council to reject data center rules",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMG9iYlhkbEZoT1N1RWQ1X0t4LWhCdmhkNl9iMEZVZGg3OTJTc3ViOExrZ21yMUtRVnBZSXBRc1FJY2FNWl91YmtwaWF6bWtkZm4wbElYTkU2Y1lWd1RKZUpaekswY1RlWVBkMHRCS1VLTHA3NkJwWkF0akY5UHlwa1dzSUhZSGhSQUJXTXNSaFd1ZEdpUlJsTDBDcGxEODZRVXJPSWxPTURBYWM?oc=5",
@@ -2159,6 +2805,32 @@
    "suppliers": [],
    "cluster_id": "f758dd3f39736df8",
    "cluster_title": "A turbine core built for both a 42-megawatt data center generator and a 40,000-pound-thrust supersonic jet engine lit on its second try on the Colorado plains and spun to 6,500 rpm with nearly 2,000 sensors watching, a first for the largest jet engine a startup h"
+  },
+  {
+   "id": "ac4586f9a790b1a7",
+   "title": "Waterloo city officials seek input from residents on data center proposals",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQbDRiaEFPNUVLbnpyaFJoMkZsd1Z2bXY5QjBzTmZCYXowbDM0LXZibTVnTFBlYlRyUTFId0IwSHpvM1R2emVwbUxPQkNWZDdNVTcyNVd0cEZBbXM4X1J6elVlNzhEV1kxUXNIU0wtUk9TU1VUUDY1QThjNUV1NDZOOVBkdzd3bVB3QjFmM3RmTXJUeDRWMzN2b1dHV1BHcU8zY1k0WmJ0OFRnUG5JMDZpb0JMRmhRRm1iRDNINmNRNDhOTXhROEZXVjhhWkp6WGRNTHNFRHZhWVZfX1E4YUhlTVZvc28?oc=5",
+   "source": "KWWL",
+   "published": "2026-11-23T17:25:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ac4586f9a790b1a7",
+   "cluster_title": "Waterloo city officials seek input from residents on data center proposals"
   },
   {
    "id": "af9e0d461221b238",
@@ -4593,6 +5265,31 @@
    "suppliers": [],
    "cluster_id": "0cf1170248b44720",
    "cluster_title": "Some Texas bitcoin-mining power could shift to AI data centers if a tenant and timeline are confirmed."
+  },
+  {
+   "id": "d13a197fbfa16c20",
+   "title": "The data center backlash is here. What happens now?",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ER3JjMzl0TTJROWctb0U3UnoybzZmanZPX3NBeWVzRmpILVUyX2p0UXFFOG5SUGNhQjZYU3RyV0F1RWxlVmxXVGQ5QXI0QXh2d2x2SjUwZ29YMmpnNmpsRGZHTnlkMGZ0ZE9fb3JTNno0TTJwY2NnQmxR?oc=5",
+   "source": "Stanford Institute for Economic Policy Research (SIEPR)",
+   "published": "2026-11-23T12:00:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d13a197fbfa16c20",
+   "cluster_title": "The data center backlash is here. What happens now?"
   },
   {
    "id": "7211502b22f3c4a8",
@@ -9827,6 +10524,42 @@
    "suppliers": [],
    "cluster_id": "fe3db95a9653816c",
    "cluster_title": "Township vigilant to monitor data center, power plant plans"
+  },
+  {
+   "id": "33d798ec0cb6faa1",
+   "title": "Dueling data center rules heading to Findlay Council",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUGNWOTk2T2FxU2pTSTQ0QTdaRnpDcVk4b3NGTmQ2cE44bGRPZ1pMRzVObnFQRmRZQzIzbEw5UlVpMEVoZ09aRDlLQ01OUkwtT0tCNVNKbktDVG1mOXNnQjJkSFFDWjJtbHFIcmFMYTZtYzlRelRQa0NfWGtBRkY0UXZhdDdhSW1uTm1LeG5EVGx1QWc?oc=5",
+   "source": "Findlay News | The Courier",
+   "published": "2026-11-21T13:00:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Findlay, Ohio, US",
+     "lat": 41.0442,
+     "lon": -83.6499,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Dueling Data Center",
+   "cluster_id": "33d798ec0cb6faa1",
+   "cluster_title": "Dueling data center rules heading to Findlay Council"
   },
   {
    "id": "6413f3a0372e52de",
