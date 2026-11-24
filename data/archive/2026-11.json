@@ -39,8 +39,252 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4467,
+ "count": 4480,
  "items": [
+  {
+   "id": "7f16da14368ee1c8",
+   "title": "Judge orders halt to construction on Google data center in Botetourt County",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMzRlUmF1ZUI5TjZ4SDk3UGlBaEtiRzNFRkRJNnRMd3VZYm0zdzhiOTFQVjAzcEFoOV9PNjFzZDktY1RKckxFWHA1SkoyeWFGaktBYVlfazFISk9ZaER3dzR2YU9FWm1ycWtzLUd4WFgyYXZJUnljT3dEOXE1bWNNNHpJTWh1N0swZHIxZ0IwaW5TaHp0UUMzaFI1M2t3SmtEUVJCUTVwM05WNXBJbklB?oc=5",
+   "source": "Augusta Free Press",
+   "published": "2026-11-24T01:49:50+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Botetourt County, Virginia, US",
+     "lat": 37.556,
+     "lon": -79.813,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Botetourt County, Virginia, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c45d03e7c40c26ae",
+   "cluster_title": "Judge halts Google data center construction in Botetourt County, orders public hearing"
+  },
+  {
+   "id": "9c26122289f92a15",
+   "title": "Alabama tightens data center contract reviews as critic questions customer protections",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUXRjckRLWXhVWXNvdGJYakI2V0E2QVBJUVB4dVJSeXl2cURuQmZDNVdEV3VheXRBRzRrRThfcnRTbXRMRW9GZEJIWF8xUnEzb19Uem9UaVBHU1V4SGlHV2JFRHhTVmFhajZHQVR0SXZFMDNwaVFUMG5VQ3dpd2dUWGI5d3h4Ul8wUVBWcHpPeVU4N2VsQnZfcHVoT1YzUG9Ed1pRZVR0TjVwWl9fTVRZY2xPMmtYNFVzbjE0TmsxUWFMY0syWE1nTFNEZTh3N3dU?oc=5",
+   "source": "BizPac Review",
+   "published": "2026-11-24T01:23:41+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Alabama, US",
+     "lat": 32.8,
+     "lon": -86.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9c26122289f92a15",
+   "cluster_title": "Alabama tightens data center contract reviews as critic questions customer protections"
+  },
+  {
+   "id": "a1b3b4ad30c6dc01",
+   "title": "In Depth: Why Oklahomans should prepare to see more data center proposals",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdTQ3MUVEcmJaRVdtakkybWZQTWhOMUh3WjJqYVR0Uk92b0RIU0hjaHU4YS1UX3dRdXZXaUdyZGhGR1hteWRFWFpkQUlnNkRPR28yMlBqelpwN3loVTJxN0xTTW16T0RWM3l3LWJZcDdmTktBM3drQnpveGJ4eGE0WTJlcEVzMUoweEF2bDRIaW9YdkVUQk12VU1zejRMR3g1OEhJRWtIUQ?oc=5",
+   "source": "KOKI FOX 23",
+   "published": "2026-11-24T01:21:19+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a1b3b4ad30c6dc01",
+   "cluster_title": "In Depth: Why Oklahomans should prepare to see more data center proposals"
+  },
+  {
+   "id": "09b970601a4016d2",
+   "title": "Could outer space be the solution to Texas' growing data center concerns?",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNbzhoTWpBa3gxVkN2bUVsV2xfa3oyR2Qzbm5NZlZyU3JDYzJmWHVUckdYYXNEUGRNYnA3X3JpbUpRODJUZ2FORldYV3hETDdFTU1rQmNlb0hZaDl1NDNiNWs4czJTRDNxNzZnNWNGT2NwUWJKamdzaG5tVzZCd2U5RlNUWG91MzExY2gtbzRHaDB6NGJRQVg0bWpFVk5JcnpRcUZUOHZYNG5UYWZ2TW1PSUVEWm56cmF0NFJxU1ZMQS1ZZVFqV1VlSk5EUWhhMmNVcFR5anhrWU83aHZESnRXWjFvRDdURHBPTGZMdlgwdw?oc=5",
+   "source": "KHOU",
+   "published": "2026-11-24T01:18:09+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "09b970601a4016d2",
+   "cluster_title": "Could outer space be the solution to Texas' growing data center concerns?"
+  },
+  {
+   "id": "8172e68b1738ae85",
+   "title": "Data center permits in Texas are back under review",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSXdNVk5HRFhQVC1aOWRob2ZpcGpUeHUwSmNsUGowNFoyZndNNzYxQ1phTVZhSW9yM1JqVm0wbkdKQ2sxNXpwbVBPUHNHQ1Y0XzhRTGc3VEtRQWEzbHgxVGFKR0Y3WHE3a2dkU2FZOEdWUUg2N1dIVzRhLUs3el9XT21Hc3B0VXVka1pKUTM3cWw?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-24T01:13:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8172e68b1738ae85",
+   "cluster_title": "Data center permits in Texas are back under review"
+  },
+  {
+   "id": "8be7fe15e6077e21",
+   "title": "Governor Sherrill's Ponders Data Center \"Faustian Bargain'",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUFgtdFI5LUlyRU53M1R5aVVKN2tWT21OYzZEZC02dVV4dFUxWE1md3BGd2hVSDNWN0kwa0o3c25CTElNMjR4ODBsbDQ2S2pYZWZmOHlmYzNxUUxZT29BODh1c1JsNFdabHhFNG9iV0NBeGQtMUE0YjVfZUx6QzFIc3FfcW1zd3UwUWc?oc=5",
+   "source": "Insider NJ",
+   "published": "2026-11-24T01:12:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Sherrill, New York, US",
+     "lat": 43.0737,
+     "lon": -75.5982,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8be7fe15e6077e21",
+   "cluster_title": "Governor Sherrill's Ponders Data Center \"Faustian Bargain'"
+  },
+  {
+   "id": "2e172ff61ea248bb",
+   "title": "Vantage drops proposed Trident data center site in Aurora",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWVc2T3JRcm5MOHNNYzVLYUhRWHE3YnJpMV9oZFlsYVpNLTN4WEZyQzNmYUFXZmxKaWxOcXI4Nnl6NzRiaEE4ZlFWa2RjSG9qRFBjTFU2WmV5eFUwemVKODQybGFsMlpBa0RoYzJwd3MyWTJRYXVyYVIxb1d1aGZ2a19xOHFSQmxrelJJRVl4Q1Q3c25FZktoZGVzSFVpR2JpcnZPQkx4WUdZMnJXQ254eGxUZkpZdi10V2w1dzVaQWcwTGEzYTFWZWppblRKSmszcVlRZDlRLU83MEk?oc=5",
+   "source": "9News",
+   "published": "2026-11-24T01:04:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Aurora, Colorado, US",
+     "lat": 39.7294,
+     "lon": -104.8319,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Vantage"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Trident Data Center",
+   "cluster_id": "2e172ff61ea248bb",
+   "cluster_title": "Vantage drops proposed Trident data center site in Aurora"
+  },
   {
    "id": "ca8a352b09489bab",
    "title": "Forest Grove considers new restrictions on data centers near schools and homes",
@@ -101,6 +345,30 @@
    "suppliers": [],
    "cluster_id": "42a8a6dd4353d841",
    "cluster_title": "Petersburg Assembly votes to broaden proposed moratorium on data center permits"
+  },
+  {
+   "id": "26b61f2c05ee8220",
+   "title": "Foley mill demolition has Perry searching for new industry; data center possible",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOM25jdkZvblRGOHZnV0NIWHdreEpaY0J2emRWUEp2RzRReWhUc3RNOEREbE0zd0JwdzNIU1BRQTE2dVZmazJKZXdiYXRFUUZEVzJYcUxFdFlvcnhqV3dvWHpvbzN4Q1o4Y0JwNlhTT1ZmMW9zR3pfcnRLUWF3WkpuU2FjaEF5QkVFVWFHLTlhT1FyOHFkSTVUUkZHSHpiZmVHWFoxMjNZdFNRWkU?oc=5",
+   "source": "wtwcfox",
+   "published": "2026-11-24T00:20:42+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "26b61f2c05ee8220",
+   "cluster_title": "Foley mill demolition has Perry searching for new industry; data center possible"
   },
   {
    "id": "5da1998c02a10320",
@@ -341,6 +609,41 @@
    "suppliers": [],
    "cluster_id": "be38dd8e0ed3f26a",
    "cluster_title": "'Project volt': Selma planning board to consider data center proposal"
+  },
+  {
+   "id": "0f78058fe8ab3f44",
+   "title": "How Does Oklahoma Compare to Other States in Data Center Growth?",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVGhpN1VFSGtEN2xNbkpkanJYTWU5bFlnZzhFSzJTSnh3dU9pMDR6REJod1dJRWpZSi1FT2pOYmtncGN6NXVrVktveWFITWhGdTl6VzBjTmptcHd2OTdRaThVT2VMaEZiWXhZallmYWtrMGZoMU5wcXZhdzZJdzA0SjE2elh4NTRMTjk0Tg?oc=5",
+   "source": "News On 6",
+   "published": "2026-11-23T23:35:15+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Oklahoma, US",
+     "lat": 35.6,
+     "lon": -97.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OK"
+   ],
+   "state": "OK",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0f78058fe8ab3f44",
+   "cluster_title": "How Does Oklahoma Compare to Other States in Data Center Growth?"
   },
   {
    "id": "7e12bc9ee7eace5f",
@@ -782,6 +1085,42 @@
    "cluster_title": "Confusion over Augusta data center zoning labels"
   },
   {
+   "id": "0635661f7178b490",
+   "title": "Commissioners vote on Warrick Co. data center ordinance",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORm1vWlduTzlHcXJVYjJkZ3FOcXQzb1dvV3ZDUDJOX0FJSHdvb01vU0w0SU5lVHZYLUtCT2x2ajVMRmo4QXNVYWRMNWJqT3gycGZlUWR5T0ZRYWQ5Vy0xWUQ5UG5VZEZTYlVTbmZnSkpma09uei1vU0V1anNsdGJjQklQX1JjQ3dLT3pMX3lXNA?oc=5",
+   "source": "14 News",
+   "published": "2026-11-23T22:57:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Indiana, US",
+     "lat": 39.9,
+     "lon": -86.3,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Warrick Co. Data Center",
+   "cluster_id": "0635661f7178b490",
+   "cluster_title": "Commissioners vote on Warrick Co. data center ordinance"
+  },
+  {
    "id": "2f97808e339a1315",
    "title": "Wuehler reports on Pillen task force as data-center fears persist",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZFFGQklNYjNUNWZTeFZTYkp2UEVmbU01Z3dOSjNPQzN5YW16R0xSU1c2VHlHekN1Ni1Nb1AtYTJMTTFVVEx1NmNEZTREZWZSS2tjMEkzeDNQR3k0SUFSVXlHT2RTaHlwR3BfMFVOSVhSSTNpM0F3U1JpNEZYbjU1dk93TlJpQS1TRXZjY0R0Tm45a1hNc2Y3ek1tZjI?oc=5",
@@ -1184,6 +1523,42 @@
    "suppliers": [],
    "cluster_id": "9a9460816b338926",
    "cluster_title": "A Data Center Boom Fuels Hotel Development"
+  },
+  {
+   "id": "57dd8ebbdc156519",
+   "title": "Alabama city extends data center moratorium",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdVpnZlYxdk9Yb1RhTEVHbHVZMVJwTUdNU0dwaGlFZDBDcjdrWFRnNk5PczRLUlN4aXNLVnV2Y0ViVlRuTkJ4X3h4SWJad25kN0h2dG85OGpJZk5nTVdiTE1sbXl5YThQa21PbmRXamIzaFExU1QyeFZNejFMVEYyZXVHX2FvMG5EWUNCY2NCNA?oc=5",
+   "source": "alabamas42.com",
+   "published": "2026-11-23T22:17:07+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Alabama, US",
+     "lat": 32.8,
+     "lon": -86.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AL"
+   ],
+   "state": "AL",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "57dd8ebbdc156519",
+   "cluster_title": "Alabama city extends data center moratorium"
   },
   {
    "id": "7631c993694da5c3",
@@ -4339,6 +4714,43 @@
    "cluster_title": "Licking County planners recommend approval of plan for Meta data center in Jersey Township – with conditions"
   },
   {
+   "id": "081df8ddecd600a7",
+   "title": "Texas Navigates Grid Reliability, Data Center Expansion, And Capital Investment Amid Rapid Energy Transformation",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxObjBqUzRaQWZLNzNHYzEzVjlJU1ROMXhkd0UxYkdCSFZJam9YNWpqQUpxQW5JZjNnVnljRFBzOE1kZlNJbjR3dkdKZkJMeU44MVZHT0M3Rmg2aTZzNDd2b3NPS3NiN0tXMVVjWXp4dkROMEdUZ1VpaWloUlgwRXV5ekoyQ2UyVXdKd0JDVENEdjVUMUFDTE1ILW9PcVQwWjlLTUVfdFp0OHV1OHRablQ2X1lrR1RMQWUteWJIdXc0WmdpczVTS0xGZmtmclFIa1R6YkY3cnQ1aVdRRXJDdEJ4QU9BMWt1Qm0yUTlHSm1IdnBWWWtxT1RQODJNam9vZ3FVUFVuQlMzNTY5QzVOUlcyQVBIZWJya0ZIdEd3?oc=5",
+   "source": "Legal 500",
+   "published": "2026-11-23T15:30:32+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Expansion",
+   "tags": [
+    "Expansion",
+    "Deals / Investment",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "081df8ddecd600a7",
+   "cluster_title": "Texas Navigates Grid Reliability, Data Center Expansion, And Capital Investment Amid Rapid Energy Transformation"
+  },
+  {
    "id": "ae8145fd2da4d2da",
    "title": "Why Land Use Is the Dumbest Argument in the Data Center Fight",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTjJmeXpxdkZuQmwxbVIzdUJlSHA1UGNjUXZDZGtMTGFFNkU3NF9seWJlLVJERTdDUHBXN3JuUU1oZkJLT1JMQk9aRGhYNTllbm1uTFpwUndsSzJEbFM4MTJnNGZhR1BxT09LaVlHNXNzaHFSYkUwZGVPSTBrS0NxbndydVlkQk1xR3NRQ1ViRmM2S0NKRzdIbG1vYmEzZTZIQ2hfNGE0SlpVeE1MTE5BUFRBcEZQUFkyNWhWWEctbnVjX2s?oc=5",
@@ -6983,6 +7395,28 @@
    "suppliers": [],
    "cluster_id": "4fb6dac5d41d61dd",
    "cluster_title": "How large Ohio data center could cost people their property"
+  },
+  {
+   "id": "dea66c079e7766a0",
+   "title": "A serious discussion on data centers will happen on December 2 in Hagerstown – don’t miss it",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMEpnWGdhSVpqWGlOekdYd3A0ZUdzbDQ3a0lhV1JSSTZUZ0pZMHVnR2dSbnFkWmlmNTU3MTVkUElGajlHYnBha0VBazZIQm9xWXNmSHlNOFFCQ296eF9NY3FHclRtVk4wekRCUVQtamYtbkplUWxNbnZHU1J5b3o5d1pDRnV3dTBFV2RIMGM3bFNCZWJubmhNaWs3eDdBRWZWSHhaU2F4a1FjdlEteUU2Njc0dWVweFl1Zy00?oc=5",
+   "source": "Tri-State Alert",
+   "published": "2026-11-23T07:55:15+00:00",
+   "feed": "Google News: West",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dea66c079e7766a0",
+   "cluster_title": "A serious discussion on data centers will happen on December 2 in Hagerstown – don’t miss it"
   },
   {
    "id": "f306ff2168377dc9",

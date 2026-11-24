@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-24T01:05:09+00:00",
- "count": 748,
- "visible": 627,
+ "updated": "2026-11-24T02:05:08+00:00",
+ "count": 749,
+ "visible": 628,
  "records": [
   {
    "id": "amazon-georgia",
@@ -61842,6 +61842,83 @@
      "from": "San Antonio, Texas, US"
     }
    ]
+  },
+  {
+   "id": "vantage-aurora-co-2026",
+   "name": "Vantage Aurora data center",
+   "company": "Vantage",
+   "companies": [
+    "Vantage"
+   ],
+   "location": "Aurora, Colorado, US",
+   "state": "CO",
+   "county": null,
+   "city": "Aurora, Colorado, US",
+   "lat": 39.7294,
+   "lon": -104.8319,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "18294fb8e99b563d",
+     "title": "Aurora city council approves data center regulation",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR0Z2WDR4d3dYQktfNjAydjVTYkVnTEFJLThBeU4wTFd5cWIyX1FJM2pVeWpDcEhxMk45TnBnOEtnemwtTE90bENFVjlhQ2M3aG9tSlY1OFV4TVBuNk53aU10QlJNeEpUd0dmQXJyeFVzcEJ5ejUzMnZ1UTlyNXV6MTNkUVFoTmxCSnB2alVobHAtWjk5NWlrYWdxOFROOEg0dXlyeEpaemlHQlBMYTJwR3RFbEFxejV2TDdNUUlkMXZpTjQtNm02ZXY3NDBFbWQ1?oc=5",
+     "source": "9News",
+     "published": "2026-09-14T07:00:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "18294fb8e99b563d"
+    },
+    {
+     "id": "2e172ff61ea248bb",
+     "title": "Vantage drops proposed Trident data center site in Aurora",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWVc2T3JRcm5MOHNNYzVLYUhRWHE3YnJpMV9oZFlsYVpNLTN4WEZyQzNmYUFXZmxKaWxOcXI4Nnl6NzRiaEE4ZlFWa2RjSG9qRFBjTFU2WmV5eFUwemVKODQybGFsMlpBa0RoYzJwd3MyWTJRYXVyYVIxb1d1aGZ2a19xOHFSQmxrelJJRVl4Q1Q3c25FZktoZGVzSFVpR2JpcnZPQkx4WUdZMnJXQ254eGxUZkpZdi10V2w1dzVaQWcwTGEzYTFWZWppblRKSmszcVlRZDlRLU83MEk?oc=5",
+     "source": "9News",
+     "published": "2026-11-24T01:04:00+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "2e172ff61ea248bb"
+    }
+   ],
+   "first_seen": "2026-09-14T07:00:00+00:00",
+   "name_hints": [
+    "Trident Data Center"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Cancelled / Blocked",
+   "status_history": [
+    {
+     "date": "2026-09-14T07:00:00+00:00",
+     "status": "Announced",
+     "headline_id": "18294fb8e99b563d"
+    },
+    {
+     "date": "2026-11-24T01:04:00+00:00",
+     "status": "Cancelled / Blocked",
+     "headline_id": "2e172ff61ea248bb"
+    }
+   ],
+   "events": [
+    {
+     "date": "2026-09-14T07:00:00+00:00",
+     "type": "Approval",
+     "headline_id": "18294fb8e99b563d"
+    },
+    {
+     "date": "2026-11-24T01:04:00+00:00",
+     "type": "Cancelled",
+     "headline_id": "2e172ff61ea248bb"
+    }
+   ],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-11-24T01:04:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "vantage-oh-unnamed",
