@@ -39,8 +39,151 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4513,
+ "count": 4523,
  "items": [
+  {
+   "id": "8322046399fd5244",
+   "title": "Aurora passes partial data center moratorium as Trident data center cancels site plan",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdTkxQ3NqckwxY0Z1akdxeGt1czJ5S05VakVZTWlHQ21rWWhnV3AyZGhMb2Qwb0ZfdmR6dlc2bDE3VFhSTEJZWGV1ZUpSbl9iRXVxakpPWUlMbGZqdTRFZjctSUVHbTZKaVlCM0xENzJpSlgwTjROT1dlUkxmdmwtSm0tYU5acDlLYXVWbGRHTWRRS05COGp4cGc0TzFyaVFza2dSZDZiQTB2b3Q1SUFZ?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-24T05:17:00+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Trident Data Center",
+   "cluster_id": "8322046399fd5244",
+   "cluster_title": "Aurora passes partial data center moratorium as Trident data center cancels site plan"
+  },
+  {
+   "id": "398ff24e6aa53048",
+   "title": "Ohio lawmakers take another run at ending lucrative data center tax breaks",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOS3BKYVg5aGpwaU05cFMxem9MR25HNTdoWnBkZFFYckVkY1NMTWpRTTJuM21VVS14eDh5ME9Bcko3X3ZoMUwxSmxwTWp2TlNNNDVPdzAtcWZlZnpHbDR0R3ZkWk9ReG9rWXAwZmlQbTJ4UnhvSUJ4SlpPM25meFdjeGxaeW5DN2RFaC1QSjJCY19uVlh2TkRn?oc=5",
+   "source": "WOWO",
+   "published": "2026-11-24T05:12:46+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "398ff24e6aa53048",
+   "cluster_title": "Ohio lawmakers take another run at ending lucrative data center tax breaks"
+  },
+  {
+   "id": "0f5f4c6eb3f57e62",
+   "title": "Virginia judge voids Botetourt County's Google data center approval and orders construction stopped",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONlVMRllBT3lMVklpeHZ5bGs3aEJnVmRCT3VfRlg1cWVtSE92amlDYVNmYjBTLTJROXFHcXNCbnh0Uy03eVZ5TElHUG1rNG1odk9kMG9YVkVweFZ4emFKdW5KZU1CMG1HUmw4M0VVQVpUZ1Zwd1BEaEdTVGwtQm9VZnRYRWlSMUNrMkptYlJySTlnd1FtdHZJdVpoQmUzaTYzYkh6UU1jeXg4REhyLWd2ZWpxZDM2TVpQZ0xF?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-24T05:04:52+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Construction",
+   "tags": [
+    "Construction",
+    "AI Infrastructure",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Botetourt County, Virginia, US",
+     "lat": 37.556,
+     "lon": -79.813,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    },
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Botetourt County, Virginia, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "44580eef55138088",
+   "cluster_title": "Judge halts Google data center construction in Botetourt County, orders public hearing"
+  },
+  {
+   "id": "2a1c034358e6bb1d",
+   "title": "UMich data center location could contain Native American artifacts or human remains, state office says",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWHAzLUdZbHI4QXRGZ2Z5OGstc0tZV1ZuV0NzWEZxMTlXcGVOaF9xTndhU3Fnc2Mwc0RaeDNwWHFqdnItRkxrVHE3UGl3QmhtYmgybzlRWjBPbWhaTzU4MFRQckROV2NvX0phSDFSVVpWNEh1bmFnSVFIUlBwU09BM1FFOUpUeWJIRzJTMFNQaEx3SkUzbXJTM2lwclp0T3EwS0VPZHpTdjhwVXVCNk55bWQ5X2VlMndqY2xRaE1sMHVoNHBGT0t5bVJ5X2NoRml4M0J2MDVVa3NyUUttNklfRWpyQkhudzA?oc=5",
+   "source": "The Michigan Daily",
+   "published": "2026-11-24T05:02:57+00:00",
+   "feed": "Google News: Midwest",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "UMich Data Center",
+   "cluster_id": "2a1c034358e6bb1d",
+   "cluster_title": "UMich data center location could contain Native American artifacts or human remains, state office says"
+  },
   {
    "id": "1ea0c99fa44d67cb",
    "title": "Johnson Creek board delays vote on proposed data center",
@@ -227,6 +370,42 @@
    "cluster_title": "Residents react to Google data center pause in Botetourt County"
   },
   {
+   "id": "14102ba9e22ada37",
+   "title": "Utah Bill to Curb MIDA Data Center Power Heads to Session",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTXFJTXZLcERLVGo0YXJaRVh2YmhFNWl5VlpncHNfWlF6UWhvNThhTHdmS3dtWmtMaXAwTXdubWVULTdTN3VmRWVGWDY5QTlNTDBFRDFldHBYc21VUTR2bzYtajdaQlV3cHhhQTFYR2JSc3Z1VV9zQUlVdVh0bjUydWJUMUQteE95SFJBVVowWQ?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-24T03:15:25+00:00",
+   "feed": "Google News: West",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Utah, US",
+     "lat": 39.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "UT"
+   ],
+   "state": "UT",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "14102ba9e22ada37",
+   "cluster_title": "Utah Bill to Curb MIDA Data Center Power Heads to Session"
+  },
+  {
    "id": "2f6be481850dd514",
    "title": "Dade County commissioners cancel Monday meeting on proposed data center amid protest",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZWgwd2FKX1hlLWwzSEcwUl8xOTVQT002MjFqRnRzd2JpMFJsSmdmYU1oMmxFYWszSEY0UUpmNDJ6bG5QSDA1c05HMjY2a0xqa2lVSVMxLUI4S3J1YnNTeG0xLXNWMjl5Nk1pV0RoOTZzSXFLX0FjYTl5VllYNjFMVFBDa1dLMDdkYk5jemlrT1k2LTdfclRoUTZBZDhFNHlkVlhKR0hoMEd1cmJXeXJOV1pPM3g2RDhoeWVVdw?oc=5",
@@ -332,6 +511,41 @@
    "suppliers": [],
    "cluster_id": "818919a2c859c14e",
    "cluster_title": "Rockford City Council panel delays data center talks"
+  },
+  {
+   "id": "aec1051e4e8b367b",
+   "title": "Estherville Planning and Zoning Commission approves changes to data center ordinance",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNTVRZTJhTmJWeXllZGk1c2JoY2lwX0ZHb2xicmhNYUF2R0tQeDVmb1lkUFoxYnRubmgyeGI2ZGZYTklGVkJ2R3MxSjlRRWJBTnNoWEZWVzVaVjBWSGlLMllxNXg4ekQtc0RXRGUxaE1UODZid2c0RUozakR5LWNNajBPQms0N3VsbGViOFU1SU94QkJibEZnZkdORXpPREJCSktCT09XNnhkMmFoS0Q0dnBzcEEtcm1fM3l4czBhONIBxAFBVV95cUxNZUFZZ0FlVlJBb3ktQ3dpaFVZMFA5VHJHclo1c3hwOFJ6ZlIwdVJkMWNONlgzZGxPVkItbnUtc1FWMU9haGFjeTQyUlJEZTdPUWxFbHdSem5DX1Z2ZTNmc1luX1VSUnJ6cFJsZHBHRThUQmpFVEJ6Y0c5cnlqMUFDU1BIbHRpYUwzYldoU0wyd2VXVFB0WklLNjJnUi1NclZlUVhDOWs4d3RDa3JVT3RwOXNoOTRERGV1MV92cF9QT1h6dVpo?oc=5",
+   "source": "KCAU 9 News",
+   "published": "2026-11-24T02:40:06+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Estherville, Iowa, US",
+     "lat": 43.4016,
+     "lon": -94.8328,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IA"
+   ],
+   "state": "IA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "aec1051e4e8b367b",
+   "cluster_title": "Estherville Planning and Zoning Commission approves changes to data center ordinance"
   },
   {
    "id": "ddc50256cf5b2f9c",
@@ -2262,6 +2476,30 @@
    "cluster_title": "Judge blocks Google $3B data center campus in Botetourt"
   },
   {
+   "id": "dccd28264b0f3e81",
+   "title": "Borough Council revises tree removal and replacement ordinance; introduces municipal building renovations and data center ordinance",
+   "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOQ1FYVnZYNEFxdy1kaVdxVnhJaGZURUdlSUpDdWg5aUJDY0NjV3NxeTBsWVlPV21aWVhvTEZ5R0F4YU1lM3I1N1NJdnQtVkp3TDZyQ19jTmhWNTlOcFZHUDVJTnU3M05vUFYzRVdKaHZZS0hXelJwUTRlSHNFZ1BPLVBpUWdJU0N5eHBHb1hvRDYxRExyaVY1OHhmWndTbGNuQlVTRld4LWx4Rk01cktQSUEzbXJyTkY1OGt5RUdYSFljenc2b0Qydmg2dTdiU2l1ZDRNR0dMM2pqRDNmY2R5Znc3VWtsbmRmdUhpZTJTWTY3aElkdmZJWUZQdTBpVXBCYmdWOWhCN2NmMkVla05mRlV6WlAxdUt1S2NUejA0am9fMm9xbjVpNkRxVk80VkZpRDV4YzZzaGc1eUhrVy13MkpYZFI?oc=5",
+   "source": "New Jersey Hills Media Group",
+   "published": "2026-11-23T22:30:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dccd28264b0f3e81",
+   "cluster_title": "Borough Council revises tree removal and replacement ordinance; introduces municipal building renovations and data center ordinance"
+  },
+  {
    "id": "e6854a0decbe24ce",
    "title": "Wayne County orders halt on Google data center construction",
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORmdhV1l0X01LVDBYNm5RSzFDY0N0X1dpaV85NHU0MXFJOGVEOEluS0ZMby0xUDZRSkN0bUdCNlNyaVJETnc5UTUtS1B0ZUFoQ3BqZjhEUFZzNWRMeU9BT1ZyV1hrd2kzUkhUX3BoelNLeGl5R3ZBQzdBSzNJLTlfZmZVN081cHpmVk1KSHVtV1Z3cGZESVozRGZDQXZZQmJoMEtpTkFNVlVqNVJmaDUwYWR2TlF0akNWVU5lLWtxR3Y3RFd4cUtEVFhtVUdmT1hJbElRQXAwTXY?oc=5",
@@ -2492,6 +2730,43 @@
    "suppliers": [],
    "cluster_id": "db5ec0668f756084",
    "cluster_title": "King George County data center fight turns into a battle over water"
+  },
+  {
+   "id": "62e6fba0455d0073",
+   "title": "Judge rules in data center FOIA lawsuit, orders construction halted",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRXpHRWlsZXNsYzZES3RZWlQ4aWpSUDNzYm9wSVFaOVBDLTgtUUNESzRPazQ0LXZSSExYcEJ4VXN1WTZhWFp5MF83dHhDclMzNktMRHBxQnk0cWsxTHpwN1BjbllyZzJGS2NJQ1ZmcnBMbGJiUXJpbkU5QmFIVTQ4YnJjcmt3MUZMR0FWOVN2MWJab3lRck9CWkM3WWJTQkVTRWIxbG9R?oc=5",
+   "source": "WVTF",
+   "published": "2026-11-23T22:01:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Construction",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "62e6fba0455d0073",
+   "cluster_title": "Judge rules in data center FOIA lawsuit, orders construction halted"
   },
   {
    "id": "2650379d443294b9",
@@ -7773,6 +8048,30 @@
    "cluster_title": "Report: 3 Wisconsin data centers account for 70% of growth in peak electricity demand"
   },
   {
+   "id": "817d3244aae4cc31",
+   "title": "Fact Check: Nature video features authentic data center sound from separate recording",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVk1wYW4zSnlzN25HZmJJazlRUGZHWFhGai1IblJxNDRWWTQzUG5KTUh0czNwbFRTZGl5LWlBRHFGcHVaQVpaQkxSaklqS3NNWlBMaXlQbmF5OVo0aUMybTRzbWQ5RGhrXzhxazRiaVFneHU0MjJJanJfa3RkbnJ5WUZjVWNBb3BzT1JUazZabw?oc=5",
+   "source": "Yahoo",
+   "published": "2026-11-23T11:00:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Analysis / Opinion",
+   "tags": [
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "817d3244aae4cc31",
+   "cluster_title": "Fact Check: Nature video features authentic data center sound from separate recording"
+  },
+  {
    "id": "bdc1583b7a49793f",
    "title": "Oracle’s “Big Permitting Win” Proves the Data Center Backlash Hasn’t Won Yet",
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdUEtNlkyb0NIVWtMa3RkM2RqZm9UYmlmUnFUcWNrLVJTU0hlN1pIMkhydlVTVVVINnAxX2JkN1VyY01semFGbF9NRDhJT0hNWnB6eUdVbW0wajlvMVRKMmxsalpmMDVIV2IzVkNTaW5ibTF0UVhhMWFnaThmYVJsY0QyeFdCR1lCX19YVFRoUlBkT1lfYmUtdHdubldWOUFIMy1QbXRXOGlyUWd0bVMwNHY1X1U0azBPcU1jQkVXSEZCLU5raHJFVlFfRXA1eS1UZUIzblRR?oc=5",
@@ -8203,6 +8502,42 @@
    "investment_usd_b": 74.0,
    "cluster_id": "2709ee0cda60ccdf",
    "cluster_title": "In apparent first, South Texas county rejects tax break for SpaceX data center"
+  },
+  {
+   "id": "39d7efced68a5879",
+   "title": "Hyperscale Data Names William B. Horne Co-Executive Chairman Alongside Milton \"Todd\" Ault III",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcnBCUmxCMk45STJFc1ZZMTZXTnJZWWVBQnRmbE1LOGR3U2d2dG80Q3VudDVxamY1ek5DX2ZPVUUybFFxdFRHenl2bFU5VXpfeGRWNVlya2YzOVFJYjU4UXZub0kwVUlVZEVjNnppdHVjcnpTOEcxLUJDcjJkVHhlNndYNGZNUXZ3bmJtYV9pcE9hRXZ5RkNFNmxFS3lPZlBJdXZHakgtX1NaWUV1WHZTQURIVFBRVW51R3Fv?oc=5",
+   "source": "Quantisnow",
+   "published": "2026-11-23T10:05:42+00:00",
+   "feed": "Google News: Midwest",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Ault, Colorado, US",
+     "lat": 40.5825,
+     "lon": -104.7319,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "39d7efced68a5879",
+   "cluster_title": "Hyperscale Data Names William B. Horne Co-Executive Chairman Alongside Milton \"Todd\" Ault III"
   },
   {
    "id": "df6a6fc641ca2723",

@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-24T05:06:27+00:00",
+ "updated": "2026-11-24T06:06:27+00:00",
  "count": 749,
  "visible": 628,
  "records": [
@@ -15156,6 +15156,15 @@
      "published": "2026-11-23T21:44:00+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "575024d85d944f2c"
+    },
+    {
+     "id": "0f5f4c6eb3f57e62",
+     "title": "Virginia judge voids Botetourt County's Google data center approval and orders construction stopped",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONlVMRllBT3lMVklpeHZ5bGs3aEJnVmRCT3VfRlg1cWVtSE92amlDYVNmYjBTLTJROXFHcXNCbnh0Uy03eVZ5TElHUG1rNG1odk9kMG9YVkVweFZ4emFKdW5KZU1CMG1HUmw4M0VVQVpUZ1Zwd1BEaEdTVGwtQm9VZnRYRWlSMUNrMkptYlJySTlnd1FtdHZJdVpoQmUzaTYzYkh6UU1jeXg4REhyLWd2ZWpxZDM2TVpQZ0xF?oc=5",
+     "source": "MLQ.ai",
+     "published": "2026-11-24T05:04:52+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "44580eef55138088"
     }
    ],
    "first_seen": "2025-06-24T07:00:00+00:00",
@@ -15193,12 +15202,17 @@
      "date": "2026-11-23T20:28:54+00:00",
      "type": "Cancelled",
      "headline_id": "575024d85d944f2c"
+    },
+    {
+     "date": "2026-11-24T05:04:52+00:00",
+     "type": "Approval",
+     "headline_id": "0f5f4c6eb3f57e62"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-23T21:44:00+00:00",
-   "sources_count": 8,
+   "last_news": "2026-11-24T05:04:52+00:00",
+   "sources_count": 9,
    "confidence": "high",
    "hidden": false,
    "investors": [],
