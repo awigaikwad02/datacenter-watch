@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 651,
+ "count": 652,
  "items": [
   {
    "id": "be38dd8e0ed3f26a",
@@ -48,6 +48,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "94c24c71d6146867",
+   "title": "Small data center facility proposed in Hanover",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdVZXQm5ldGZWaGtKOXpKVjFiWTZ3Z0xYY3liTVdrQUc0NXdXZ1dxR3VnVGs2cFBTVXdHWDFza3gybC1qMGZsYXNzVVlzODM4ck1HRUFmLXlPQnY3S0EzX0YzV0tpSmEwUnVxVG1OLU9jYWxITjNwYTdtbUJMUk8yVzlaczE3cVVjbnRvdHk2RFVWcWRHLURaX1o5cXA?oc=5",
+   "source": "TelegraphHerald.com",
+   "published": "2026-11-24T07:00:00+00:00",
+   "state": "IA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "b8152f035e1dead3",
@@ -1170,19 +1183,6 @@
    "reason": "no operator, code name or figure"
   },
   {
-   "id": "9095d566df0ba773",
-   "title": "Two data center power plants approved despite resident pushback",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVFhVTkNocGNLVW9yOFlyTTIzYXRUWnFlRHJXZG5SYkpJSnNQd0RsbWRxMUg2OWdUM3I4d0xvbmFyNkdwNGRqREhjVU0wamJVa2RRcnZ4dTNXV0xtQzd2a1ZPRy1CTmxzVVdMYkJ4SjJvX3hwbTg1Smt4NkxQUm9GZXpaQXBzRW1GNXFPLU1IRUVzOGh2WXJWRm1BM01QRldUTDNJQktJT0xCRUR2UEJ0Tm5Id0pZZzNPZ2hVWnZ0c9IBxAFBVV95cUxNaE5sYWJ3SHJueFF1VGg4b2kxT0NMSm9JUFRPejMwLW1mTHdORUxqYTkwSUtLRmd6Z2V0MFRrc1JxV04yTmJTbHEyV2dpcDVyamdmSlRtSzhkclk3RXY5T29UcTZwZ1ZSWjZub2NVakdmRnYzVTIxb1NoWWd5TDBBTXl2WGMydXlTZk5hWTVKWGZCQWptY01YOC12SHZ6Snk0czJtSTZPd2cwT1drLW9wMlI5VElQbDhhRGpfT3dOOUVJMEpS?oc=5",
-   "source": "NBC4 WCMH-TV",
-   "published": "2026-11-19T22:30:00+00:00",
-   "state": "OH",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
-   "reason": "no operator, and only a state"
-  },
-  {
    "id": "a3791cf04545cc39",
    "title": "Legislation impacting Data Center expansion could be a focus when the legislature reconvenes",
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSk4zYUZOdDhPSWoxNFRIcllodTRKUFMxTVFSNW82Q3ZmNHFWSGNIQmxqcEtFVjRjdFRFaEpVOS1VRDZIR3o5aERSeFpUczd6MjdMYVVFMkJZQlZhNkpfNlk5Tmdjak81bUtvSm5VQjlVaXVBNEVVeVRUWnh0RlJYN2F6el94V2VoZUN0dkdWaUhqT05WRlBkWGdSdkhObkF5al9Cb3lHV0FVVVVmMUV5cUtzNTJ0TmRMcjFvbkxlNzFIVC03UXpSSjVQVGFhX2xw?oc=5",
@@ -1310,6 +1310,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "9095d566df0ba773",
+   "title": "Two data center power plants approved despite resident pushback",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNaE5sYWJ3SHJueFF1VGg4b2kxT0NMSm9JUFRPejMwLW1mTHdORUxqYTkwSUtLRmd6Z2V0MFRrc1JxV04yTmJTbHEyV2dpcDVyamdmSlRtSzhkclk3RXY5T29UcTZwZ1ZSWjZub2NVakdmRnYzVTIxb1NoWWd5TDBBTXl2WGMydXlTZk5hWTVKWGZCQWptY01YOC12SHZ6Snk0czJtSTZPd2cwT1drLW9wMlI5VElQbDhhRGpfT3dOOUVJMEpS0gHEAUFVX3lxTE1oTmxhYndIcm54UXVUaDhvaTFPQ0xKb0lQVE96MzAtbWZMd05FTGphOTBJS0tGZ3pnZXQwVGtzUnFXTjJOYlNscTJXZ2lwNXJqZ2ZKVG1LOGRyWTdFdjlPb1RxNnBnVlJaNm5vY1VqR2ZGdjNVMjFvU2hZZ3lMMEFNeXZYYzJ1eVNmTmFZNUpYZkJBam1jTVg4LXZIdnpKeTRzMm1JNk93ZzBPV2stb3AyUjlUSVBsOGFEal9Pd045RUkwSlI?oc=5",
+   "source": "NBC4 WCMH-TV",
+   "published": "2026-11-19T17:30:00+00:00",
+   "state": "OH",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -1887,8 +1900,8 @@
   {
    "id": "0405bb7b530be750",
    "title": "Leaked Ohio bill could allow AI data center companies to seize private land for their buildouts using eminent domain law — proposed law would expand list of beneficiaries",
-   "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPWDhxendxcDVzRVNBaFVyZDZlZVNUSFhhb3F4TDYzM2tRQ05JQkFtVUw4YTNfV25oSWszcnNNVHVESDlyaU95RFc2SFJnaUZvTU5kRXg0MkJkeFZGU01FakRqRGlDYUpfRFhUN3dWYmZNekZMWGd0dkxfYkNZTGg5MjljbXlJa3FJc2E4VC05SnhlbjFBREo4SDhQT3RfMnFJUVM3V0R4UUV2UWFDNEVVS2Z6X3p5S3V4Vm1RZXg2V3JVRno2LUlVV1dIMGRwZS1Ca2MzNy1IbGNpUW8yS1JnU1lfSVVvYTkzMnFoa0M3a0FXME1oMXF4RmtXTEZza0tZZmN3R2pUV1o2amJSd3JKNEVzYUdKNlB4WW1PZmRpdjJTUTJtdnBVb0NTY0lEbGlKeGs5MGhUZ080ejc3d3FWRk82OWdLeDA?oc=5",
-   "source": "Tom's Hardware",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUk9wU1hoWlE0MTV4TEZxZDh3MjZEajRUT1Q1T3JMQUFlLXdRUldqc3ZLU0d5djFGMVhSY1lOSjRJb1FBS1N1Q1d0dUozdHMwNDR5WkNCS1p6ZldtbXpxNEdEQmx3M2xXRWw1RGVZa2RZcFJybUtBcWJPU0paQmVQVEVhcmNCOVo0cEg5a2FGcnZuUQ?oc=5",
+   "source": "Yahoo",
    "published": "2026-11-18T15:30:00+00:00",
    "state": "OH",
    "companies": [],
@@ -2080,19 +2093,6 @@
    "reason": "no operator, and only a state"
   },
   {
-   "id": "0538782b17a589c7",
-   "title": "Spotsylvania County board approves 550-acre data center site despite fierce opposition",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNR2tKSDBnS09BbWdlV2JQOUVSQlRiS1JBNzFHSTdscjhmUS1VUHJBQ0pwQ3dvd1k2Y0s3ZzgxRG16eVByY3c2MXpEX2dFa3dST21QUWVBNHJaZHFOd2Q2enUtejhGVW53ZGFIZTA1UmF5bzRLXy16WFozLUl4RGp2UHZZbE5SblNCeGp5U3IxVTZldGtSMnlLZDFFNEJCazJiM2t3d1VadVNZQjB0OWpUdWY4ZEw?oc=5",
-   "source": "WJLA",
-   "published": "2026-11-18T08:57:24+00:00",
-   "state": "VA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
-  },
-  {
    "id": "11f57e7ea0f7dc50",
    "title": "NC regulators approve Duke Energy rate increases, data center protections",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYkdHTXhvellacmR1RW1hUnZuLTlHcTlpS01YdWRlbzFkY0lJd05qX25EOHhWWlpUUjNhYTZWbXJDRE9SaDlGNTVmR0EwMVhuVkR2cUtpbHRQcm04dmZGdmo5ZnpUT3lCNVg3Y3JKTVlQVmFobWl0bDJiTWVMb2lHc1cwWGl0aTMtUWtnZFRSTG55ZEl6eHlFYm1vTWdyNlRhVF9aNld0SQ?oc=5",
@@ -2249,6 +2249,19 @@
    "suppliers": [],
    "precision": "source",
    "reason": "no operator, and only a state"
+  },
+  {
+   "id": "0538782b17a589c7",
+   "title": "Spotsylvania County board approves 550-acre data center site despite fierce opposition",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNR2tKSDBnS09BbWdlV2JQOUVSQlRiS1JBNzFHSTdscjhmUS1VUHJBQ0pwQ3dvd1k2Y0s3ZzgxRG16eVByY3c2MXpEX2dFa3dST21QUWVBNHJaZHFOd2Q2enUtejhGVW53ZGFIZTA1UmF5bzRLXy16WFozLUl4RGp2UHZZbE5SblNCeGp5U3IxVTZldGtSMnlLZDFFNEJCazJiM2t3d1VadVNZQjB0OWpUdWY4ZEw?oc=5",
+   "source": "WJLA",
+   "published": "2026-11-18T03:05:55+00:00",
+   "state": "VA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "77a086d8e3c07d99",
