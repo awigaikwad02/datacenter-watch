@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-25T09:15:48+00:00",
+ "updated": "2026-11-25T10:15:51+00:00",
  "count": 749,
  "visible": 628,
  "records": [
@@ -17603,6 +17603,15 @@
      "published": "2026-11-24T10:00:00+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "b0cca7d175e932ab"
+    },
+    {
+     "id": "f163fbaff00aebdd",
+     "title": "Project Cannoli: Construction Halted at $2bn Google Data Center in Van Buren Township, Michigan",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUXA3VHVLM2RtQUQtY1VSS0MxOXMzeUlrbFZWcGVFV3k5ODAtVTNCcGFXYnljTWNDSWtxZ2F6dkFub0xNNi1RNlhVa2JTelpOaVdnd2w5ODVuMGFwcnVxclBySjhkYjQ4Zk5YZlBqUTEtelR6dDNXWU85WTYycEJPMTFHVDFjZGhGNlFjYzlPRms3dUdCSjh5MFJtaDBxV1Z5VWlLQnNlTFV1eHJsREJyN2VwRFNzQXZMZ0ZwVTFlcWJ3V2ladUVIODNR?oc=5",
+     "source": "Construction Review",
+     "published": "2026-11-25T09:33:45+00:00",
+     "stage_signal": "Cancelled / Blocked",
+     "cluster_id": "f163fbaff00aebdd"
     }
    ],
    "first_seen": "2026-04-16T07:00:00+00:00",
@@ -17640,9 +17649,9 @@
     }
    ],
    "capacity_mw": null,
-   "investment_usd_b": null,
-   "last_news": "2026-11-24T10:00:00+00:00",
-   "sources_count": 6,
+   "investment_usd_b": 2.0,
+   "last_news": "2026-11-25T09:33:45+00:00",
+   "sources_count": 7,
    "confidence": "low",
    "hidden": false,
    "investors": [],

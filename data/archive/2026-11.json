@@ -39,8 +39,157 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4790,
+ "count": 4796,
  "items": [
+  {
+   "id": "e9e1d55d94fa3545",
+   "title": "Ohio Consumer Advocates Challenge Data Center Power Auction",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdENocWVRcWlTUUgyUGNwUHQzbERKLXd3Yld0REdaQzhVbWVCdld2Yy12WWRfRDdpdTltOHhGS2J1UXk0WDlkYTBVcFIyUkdGQVJIZkl0Y0huV01jZHhBVUlHZkpfNG53bVlxbFFCd3lvS1BNXzFUNkRGVVFjZkpmMkRCNXNIS051bVZWSVEyUQ?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-25T10:03:05+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "e9e1d55d94fa3545",
+   "cluster_title": "Ohio Consumer Advocates Challenge Data Center Power Auction"
+  },
+  {
+   "id": "45a4ecc12e88baa3",
+   "title": "Data Centers Worsen Air Quality, Even Over Long Distances",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOV2VPNU1uREJ3di1wNWpmUDVGem9TYmVvV0tscEpIcmltamVETUM4ZDQ1Tk03Y0xuYUdfclYyQ3lHbkMyR0RCR21GZFkxcERhY0Y0dkJZaTdqMHRVeG0tTEM1NVB5SEg3UVc2MFp5SC1uRFZxR1ltYlJZY1dKR2d0OWtFZFlaMTM4M0ZsQWh0V2k2TkZBU05lWk1BNDdFNS1QSUJGYjRqUl84QQ?oc=5",
+   "source": "Technology Networks",
+   "published": "2026-11-25T09:44:05+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Environment",
+   "tags": [
+    "Environment"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "45a4ecc12e88baa3",
+   "cluster_title": "Data Centers Worsen Air Quality, Even Over Long Distances"
+  },
+  {
+   "id": "f163fbaff00aebdd",
+   "title": "Project Cannoli: Construction Halted at $2bn Google Data Center in Van Buren Township, Michigan",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUXA3VHVLM2RtQUQtY1VSS0MxOXMzeUlrbFZWcGVFV3k5ODAtVTNCcGFXYnljTWNDSWtxZ2F6dkFub0xNNi1RNlhVa2JTelpOaVdnd2w5ODVuMGFwcnVxclBySjhkYjQ4Zk5YZlBqUTEtelR6dDNXWU85WTYycEJPMTFHVDFjZGhGNlFjYzlPRms3dUdCSjh5MFJtaDBxV1Z5VWlLQnNlTFV1eHJsREJyN2VwRFNzQXZMZ0ZwVTFlcWJ3V2ladUVIODNR?oc=5",
+   "source": "Construction Review",
+   "published": "2026-11-25T09:33:45+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Construction",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Van Buren Township, Michigan, US",
+     "lat": 42.22,
+     "lon": -83.49,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Cannoli",
+   "investment_usd_b": 2.0,
+   "cluster_id": "f163fbaff00aebdd",
+   "cluster_title": "Project Cannoli: Construction Halted at $2bn Google Data Center in Van Buren Township, Michigan"
+  },
+  {
+   "id": "e5da5673633f9ed0",
+   "title": "Nvidia Backs OpenAI With $105 Billion Ohio Data Center Guarantees",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTkRhYS0ya0ZqWWFBcU52dDVmekthTVlQOG9fSlk5N0JuSVNDNnRFYTJVT2ZoQnhJU1VVajZjYnhHT3M5SGxFZV9UeF9CSXFtOVlXT2twZGx5VDU3X0V6RjlhcDFrQzJUZEt3eU10VGdtUHFwTm5nU3pEQ0tTVlpMV3R2eThlY2dHSzdiektGQmhwZw?oc=5",
+   "source": "Dataconomy",
+   "published": "2026-11-25T09:19:47+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "OpenAI"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Nvidia"
+   ],
+   "investment_usd_b": 105.0,
+   "cluster_id": "e5da5673633f9ed0",
+   "cluster_title": "Nvidia Backs OpenAI With $105 Billion Ohio Data Center Guarantees"
+  },
   {
    "id": "bddee1af503f4c1a",
    "title": "Demystifying the data center is necessary for AI innovation",
@@ -199,6 +348,32 @@
    "suppliers": [],
    "cluster_id": "06bee1dc997bfcf5",
    "cluster_title": "No Massive Data Center Ever in Princeton, Not Ever! But . . . Could a Mini-Data Center End Up in Your Backyard?"
+  },
+  {
+   "id": "8ad6b6f794e3169a",
+   "title": "Proposed road annexation tied to data center causes controversy in Lacy Lakeview",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQeHQ2a3ZpNWtoRDg4QXl0clZhNExNcGx4UTUxTHA5Ui1KM0xxNVR1ZjZFNkx5Q1Y3Yy02bzc3TjYzVV9LR28wNlJSdkQtWWN0T0tqV2FCSXpfOTNic2lNZVEyY3p1eW9Zb0M1S1JFZkxkSk03N1l1M0RGdVNlM1BIZlU1dFNLZEJHUnd2OTBaUzVQUFR2SUkwQTU5cUVzMjRKdHR5bG5TSmpkeGZEWTYxbzNBbm0yRTVEeXZwNkI1ajdfLWxRbjhoTFYzMzZIbVMwd1lFcWVrd2NNM2FsdGJpT3BvbFp1aE9uQTBKRHhCOUtfQkE?oc=5",
+   "source": "kcentv.com",
+   "published": "2026-11-25T04:44:12+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8ad6b6f794e3169a",
+   "cluster_title": "Proposed road annexation tied to data center causes controversy in Lacy Lakeview"
   },
   {
    "id": "a1ee08eb9bc57f96",
@@ -403,6 +578,30 @@
    "suppliers": [],
    "cluster_id": "fb01f01d05a90bbb",
    "cluster_title": "Brewer holds informational meeting on proposed data center rules"
+  },
+  {
+   "id": "b82d024b5cee1aec",
+   "title": "Clinton City Council passes data center ordinance",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUUZFcnpZVUFTVlFwVllXdFZwUWpfZGVscnpEMHBVdWw4eXJYRFlRWk1RQ3RQcmQyVElfUUZiU1lRT3o5UGZLWERHSHZCaTdIbXZIYjRMVUctcC1UQWkydExOVXJUdmtmR3dmQXNtckJqZTE5WEJuWnJxbHNwZlVBNmlHdFZ1V3FsMVp5cWctWklzOVlreVZvUzNCTErSAaIBQVVfeXFMT3lWZ1VLTm84Qmg4dkJINDVkMXFxRVZVVDQ1dm5GaWEwaXNLa2FPYVdPZ2diUDZLVWRiOWlJbjZ1WUxnWmJ0aWwwSG9MZ05RdER4eVZwWlJGR2tpUkFKUnhKSDl3UEx3MFJGZlpJckhSeGZIekVBbnRzc2t2eWp0NVN0SW9kUXgwam9NRHFoMG5NMVhKbzViZzc5dVF0T2hHREV3?oc=5",
+   "source": "OurQuadCities",
+   "published": "2026-11-25T03:48:05+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8108b3fb6be77a37",
+   "cluster_title": "Clinton, Iowa City Council adopts data center ordinance"
   },
   {
    "id": "6f4a265b7a41ddd7",
