@@ -39,7 +39,7 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4784,
+ "count": 4786,
  "items": [
   {
    "id": "4d36c52f7ed9cee8",
@@ -65,6 +65,43 @@
    "suppliers": [],
    "cluster_id": "4d36c52f7ed9cee8",
    "cluster_title": "Goldman Sachs Sees U.S. Natural Gas Demand Surging on Data Center Boom"
+  },
+  {
+   "id": "17a950e7ec479b54",
+   "title": "Tacoma data center to sell as part of $35 million portfolio deal",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQzJVVlB2dmkxd05ibDByeTZ5YVh3ZVVXaGJLRUcwaGhCNnF3akpWM3hqTlNZODI1bE9HaXlHUFQ5aUZ3bm5jM2xSRnpxNFlNbVdMS3liaFBSOC1KMUtnd0xHemVJVWpXRHFRejR1MVBzQ1p0ZUFPWlpaTGVULXNlMUptbnZMTGZpbFJRYzZDV1FJdGEzVURWZWVMWDBiSW56?oc=5",
+   "source": "The Business Journals",
+   "published": "2026-11-25T05:58:00+00:00",
+   "feed": "Google News: West",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment"
+   ],
+   "locations": [
+    {
+     "name": "Tacoma, Washington, US",
+     "lat": 47.2529,
+     "lon": -122.4443,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Seattle"
+    }
+   ],
+   "states": [
+    "WA"
+   ],
+   "state": "WA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "investment_usd_b": 0.035,
+   "cluster_id": "17a950e7ec479b54",
+   "cluster_title": "Tacoma data center to sell as part of $35 million portfolio deal"
   },
   {
    "id": "06bee1dc997bfcf5",
@@ -6382,6 +6419,52 @@
    "suppliers": [],
    "cluster_id": "9ce0b59dec142264",
    "cluster_title": "SiTime Targets Data Center Bandwidth Upgrades with Two New Clock Families"
+  },
+  {
+   "id": "cc7ffc15fea6c986",
+   "title": "New Mexico Investigates Lea County Google Data Center Deals",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSUhzRVJxY0xLc0k1UVlmUnNxZ3g4Q0FHcXBPOVVKazNTcS1RRW5tUFFleG5QeWJFQVAyVGttWlFGRHR1T3BIRGVScEt0ZE9XYnM4WGV2Z3MyUHRVSTNKWmRPU2JHLUZqeDdiMkNaNVlLZDFzX2JXSHVlVkVlam9yd0RhMndFOTNkQ1lIRV9yd2dHQkpHODJ0c2p4WUpaUEk?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-24T07:54:32+00:00",
+   "feed": "Google News: West",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Lea County, New Mexico, US",
+     "lat": 32.79,
+     "lon": -103.412,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    },
+    {
+     "name": "New Mexico, US",
+     "lat": 34.4,
+     "lon": -106.1,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NM"
+   ],
+   "state": "NM",
+   "county": "Lea County, New Mexico, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4289e474f1a2d6fd",
+   "cluster_title": "Lea County approves $130B Google data center bonds near Hobbs amid concerns"
   },
   {
    "id": "1c116bfee5bcf300",
