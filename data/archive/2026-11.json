@@ -39,8 +39,215 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4720,
+ "count": 4730,
  "items": [
+  {
+   "id": "1086d17ebfebb3f9",
+   "title": "Grayslake issues permit for second building on T5 data center campus",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaHdTRDBjTHl2bU9wV0E5UGJISGVzMDh3djFtNmxRYXdtdzY2VXpXWEVoRUpKOGtnN29BdmFsVkRmSEFjTXd3anFjbTEwQmFJQWxyUUk1dVRqQXpGR19MbXhRUFY1Rk82MC02aXBxVkZuTWhWazhyOWphT3Y3TDhPUjl1WHN6c0RRbndYYk1wVnlJMmltaHNDVjZrYWlNRkdQdzRiUjRkWGVabW5J?oc=5",
+   "source": "Daily Herald",
+   "published": "2026-11-25T00:00:03+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Grayslake, Illinois, US",
+     "lat": 42.3445,
+     "lon": -88.0417,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Chicago"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "T5"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "1086d17ebfebb3f9",
+   "cluster_title": "Grayslake issues permit for second building on T5 data center campus"
+  },
+  {
+   "id": "7cb2e605c8815d62",
+   "title": "Michigan Community Vows to Fight Back Against Billion Dollar ‘Data Center’",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTk9tVUUwV3ZJNnNhYlBGM0xEUVNGX1l0cUlvd2lnemd1LVh3QUpkeWNxSnZFdXkweHlXcVlsNmVPVTQtRVdYOEpGUFdjckZUX0tYa1phRlIxc2xpX25sZnhKbExzcERaZVFqM3ZvZTFPSF93TDhzOFBOdG01VWdka2pYUDBuOHNqUG5OckhqbFlzaV9Pc09uWmJiN3dhNEhDU3Q5QUhxM3ZKdw?oc=5",
+   "source": "Newsweek",
+   "published": "2026-11-24T23:55:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "7cb2e605c8815d62",
+   "cluster_title": "Michigan Community Vows to Fight Back Against Billion Dollar ‘Data Center’"
+  },
+  {
+   "id": "0468d150a0953213",
+   "title": "Most of AI's water footprint comes from the power plant, not the data center, Enverus says",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYUZ3M0ZoR1hCU1pfTHY1eGZUdlZFX05tTmNCanJSd2RXNVZFblBrcWhUeXNYakw0Ukt3YjBibmE3cTdvQ0E1Q0tzOVNOZmZTZjVielYtX1h2NG9HYzg0cmZCWENWNHVVdXBQbWxSVk1KcUV4c2xCbXdocVI2SWZ2TFNKQk1jbVJRcmhPT0pPeV9va2ZGNzZyancycldVRS0ybjJ1UVhqY1luNUxqZVJMYjZCVjJIMHpBRWNLYnNDMXNCb2c4a0R3M3JR?oc=5",
+   "source": "World Oil",
+   "published": "2026-11-24T23:36:55+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0468d150a0953213",
+   "cluster_title": "Most of AI's water footprint comes from the power plant, not the data center, Enverus says"
+  },
+  {
+   "id": "ab4958169e1a56b4",
+   "title": "Aurora passes ban on tax incentives for data centers",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYXJ5U3l2N19vQWNZVWJCU1psbFF1WGU2ZEJkWm9zV1k1bkc4aU9uZWk4REVncXVTTnF0Mm5mVWNLSm5VVmJnQ2ZIN2ZBcjFVYzBud3BjTjZVRnE0VVhWM1AyTHJmY1p6YWZ0NWxyQ1pUQVQ2SHBNUndXcmM4eUdRTnhnWEJBOVM5U2NQcmZUMHlYdlF6ZXh5WFBR?oc=5",
+   "source": "Denver Gazette",
+   "published": "2026-11-24T23:31:33+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Aurora, Colorado, US",
+     "lat": 39.7294,
+     "lon": -104.8319,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ab4958169e1a56b4",
+   "cluster_title": "Aurora passes ban on tax incentives for data centers"
+  },
+  {
+   "id": "3ca056379f8e5ac2",
+   "title": "Virginia data center deals face transparency tests",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNb0pEaWFwbXBtSEFmalJTczdzREZaczBqZVZwcDhsM2pwb29jNkNWcU1ZM3lTd1E3MDVJb1Z0SERpYmNNalpNalNoc0xBNGNwajE1WFgzVWhxT0JBclFzcDFzb2ZhNWMweDFuemxLcFZNMXVoVTZIbVBlaVc1dHBUSw?oc=5",
+   "source": "WDBJ7",
+   "published": "2026-11-24T23:05:00+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Virginia, US",
+     "lat": 37.5,
+     "lon": -78.9,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3ca056379f8e5ac2",
+   "cluster_title": "Virginia data center deals face transparency tests"
+  },
+  {
+   "id": "8603cea81affceba",
+   "title": "Wyoming Outdoor Council supports data center moratorium letter backed by 100+ organizations",
+   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOeE9GNEZDMm1aWDU3Mk5rMDR5cFl6QTMzOEE3OVJNSUpkaTlPUXRNc2tzQWFiRWJZWS1pcGtuSktyenhyYmM2SmZrZ3RJMkg0UG9FS0RabVN1a3V5dngzaW9TZExmcTFhSkJWTUlWQU83Q3FXQW5GaUVTa3JZR2l6cHM5ajJKSklBaXFlYmZnbnQtX0lubTJrbmp1TWMyR0hHcXlhNC03X2JlNWd5bk4yb1lxanp4R2k1MzN0YlZsNFhBdUZPRzVuWVFyZnJtMmZnQUVyQm5qcGU4ck9VRVNadzNnZDMzR1YwcFJmX3FWX3JpTDE3eVNjOU5acEx6ck9fdjh3aUl3?oc=5",
+   "source": "wyomingnewsnow.tv",
+   "published": "2026-11-24T22:57:00+00:00",
+   "feed": "Google News: West",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "8603cea81affceba",
+   "cluster_title": "Wyoming Outdoor Council supports data center moratorium letter backed by 100+ organizations"
+  },
   {
    "id": "6cdc86897633c585",
    "title": "Hanwha Aerospace Builds 180MW Defense AI Data Center",
@@ -66,6 +273,28 @@
    "capacity_mw": 180,
    "cluster_id": "6cdc86897633c585",
    "cluster_title": "Hanwha Aerospace Builds 180MW Defense AI Data Center"
+  },
+  {
+   "id": "b3c6960660b72dd3",
+   "title": "County data center project delayed until January",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOM1NGV1BzRF8zXzFZaWRTZmR0bEpsVzRxblZtR0FCTGswOHdXSnc2dXZzZVAza1JTQWdsQXM1VTZ4NUpsaW52alphb3FzOUlEMEZvaTZmTC1qaDhIVE5TSEVQU1VHZDlreS1GSERpYTBWTmhfdDlCLUd6Y0RoakY0UklxOW9Fdw?oc=5",
+   "source": "The Rapid City Post",
+   "published": "2026-11-24T22:49:11+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b3c6960660b72dd3",
+   "cluster_title": "County data center project delayed until January"
   },
   {
    "id": "d72f839758987d63",
@@ -325,6 +554,53 @@
    "suppliers": [],
    "cluster_id": "a5ba0fb9e1e500db",
    "cluster_title": "Investors challenge long term sustainability of massive AI data center spending"
+  },
+  {
+   "id": "dac96095a0ba696f",
+   "title": "Data centers demand power, rural residents pay the price",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZV92WmZQRGY2dFBMTkVCM0preTRBTklfRHFVT3NDR1RrRHBFYm02eEpELW9sN1R4WTZtLWZKX1V1ZVRjVk1reEFwWVY5MUt6d1NlYVVMc0czV0UzYlVWRGxhUHpoYVRKX01wbmZITXo2MDJvQU1Fdllta0tRMU12TVdUdkc3RWN0bFBROE5VcHo?oc=5",
+   "source": "AGDAILY",
+   "published": "2026-11-24T21:36:28+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Community"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2615517c29269e2e",
+   "cluster_title": "Data Centers Need Power – Lower Income, Rural Residents Pay the Price"
+  },
+  {
+   "id": "81a4326a53515fa2",
+   "title": "Pennsylvanians want action in Harrisburg on data centers, pollster says",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ01wRHJPaXpMcWlWWUY2M0Q1RE9OdkpMVlpvUmFERlRSRmcwa3puSURpdnJXVkJybUxranNEZmtmUFpsRzJZVjZhcTRZa0NoZUhlYmdlSUNfU1lrZW5LSDBzTTdvd0JhOXRFM1dVR3l1bU55SHVDckMyV1ZDMjgxeXBjVHdqRUF6ZTVVRFBCbUpwZWJ4amRnRnJR0gGfAUFVX3lxTE9lcDVpTFBZdEFaaWRyemRLVHFKYTRjTlljN1JxWjFEc1RUdkZIVURnUlNuc0VVS2N4ZDVYbDVvVlNtWWJpUVg3N0xSY19uR2ZidDM3czEyOVZDaFo5YWcxNmUzTmxqY0hyTDN5cGJwR1hOajVTYWVEWHpiUnU0NV9VMl92Z0o1QmdBUVpXX3ZjOEZsbDRVMUpRLWVaa0VPQQ?oc=5",
+   "source": "The Center Square",
+   "published": "2026-11-24T21:28:00+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "81a4326a53515fa2",
+   "cluster_title": "Pennsylvanians want action in Harrisburg on data centers, pollster says"
   },
   {
    "id": "6383e9cd83845ead",
@@ -869,6 +1145,43 @@
    "suppliers": [],
    "cluster_id": "6461589618c688cc",
    "cluster_title": "Ohio approves two large power plants exclusively for data centers"
+  },
+  {
+   "id": "9bfb691c188cc968",
+   "title": "Lansing approves data center ban, but landowner petition clouds its future",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeHE1S3Y4bC1FWTV1c2oxd0dYNGdDckI3eVgyeVRFZkFpc2NHekN5cFBZN0ZPQlRPRXlwY0JUMGJ2cmw0VUc2VFRqMHh2LTR1SXR2cnhUeHFtQTV3QmMwckh1QTA5Uy1ENG5yaXNINTBVZDNrVVdWSXJkNlppdHhwTFVGWDVTc0RXN1R2eVBXcFlpbS00YXpfc2NGRzh3emNyZ2hvRmRhS2xpaXBfTm1obGlWalZPcjFPMnc?oc=5",
+   "source": "Tompkins Weekly",
+   "published": "2026-11-24T19:50:03+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Lansing, New York, US",
+     "lat": 42.4842,
+     "lon": -76.4799,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NY"
+   ],
+   "state": "NY",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9bfb691c188cc968",
+   "cluster_title": "Lansing approves data center ban, but landowner petition clouds its future"
   },
   {
    "id": "784dfd0d60e78868",
