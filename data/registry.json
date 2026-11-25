@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-25T12:15:48+00:00",
+ "updated": "2026-11-25T13:15:49+00:00",
  "count": 750,
  "visible": 629,
  "records": [
@@ -11941,6 +11941,15 @@
      "published": "2026-03-04T08:00:00+00:00",
      "stage_signal": "Expansion",
      "cluster_id": "c13a46d2960e3342"
+    },
+    {
+     "id": "1facc3fabfbbd9f6",
+     "title": "Could DC BLOX expand its Birmingham data center?",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQS1o4S1BlSVlIaXI5REdHWlFPQUFWWVp5NHpfLVVxRUt0RnptMWxvLThzb2QzVzBWc2Q1aHJ0bGZnbFl0U3EtazJpX2U3WG1Yd0NNaHVOT1ZIckl0QzVlWkRvRmx1Q0RlelRMN2ZBTnU3MHduZmR5bzhOZjJaR1hZV2xNVDQ?oc=5",
+     "source": "WBMA",
+     "published": "2026-11-25T11:44:27+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "1facc3fabfbbd9f6"
     }
    ],
    "first_seen": "2026-03-04T08:00:00+00:00",
@@ -11962,11 +11971,16 @@
      "date": "2026-03-04T08:00:00+00:00",
      "type": "Expansion",
      "headline_id": "c13a46d2960e3342"
+    },
+    {
+     "date": "2026-11-25T11:44:27+00:00",
+     "type": "Expansion",
+     "headline_id": "1facc3fabfbbd9f6"
     }
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-03-04T08:00:00+00:00",
+   "last_news": "2026-11-25T11:44:27+00:00",
    "sources_count": 1,
    "confidence": "medium",
    "hidden": false
