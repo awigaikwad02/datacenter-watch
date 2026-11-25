@@ -39,8 +39,331 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4810,
+ "count": 4824,
  "items": [
+  {
+   "id": "f901e3111e0a9e80",
+   "title": "Exclusive: Abbott paused Texas data center permits. Some kept building anyway.",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUzRNWm9uME1oZ3M3Wk40aHJFWnFQLXJkR3lUSWF1c2U3SHRiMVd1QzlmT0RlWGVETFJtUkRJazB1b3NrbDdCeks4TWlVMGtKZ0YwM2wzOUNqb0hjdmhJQm40LXZ2a0NoR3Vya056MkIyamlXSVhmTTdjRHgyMER4RDlmVVhSeXBJLUNmQ09uRDFJaGFVdmxEUzVuUU0tck4zcEdnMm5EajRWRl9hRVd5ZGx2eEZQY2wwejFtWA?oc=5",
+   "source": "Houston Chronicle",
+   "published": "2026-11-25T12:09:30+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f901e3111e0a9e80",
+   "cluster_title": "Exclusive: Abbott paused Texas data center permits. Some kept building anyway."
+  },
+  {
+   "id": "c700575d7b7bb608",
+   "title": "Applied Digital Polaris Forge 2 Data Center Hall Ready for Service; North Dakota 25 MW Short of Goal",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPcGYxTElXQzhFeEZnR000bGRxREpSN0xSVWl3d0NRSHVIYXdxeUVhODNXZmV3MzhRV05rT2JreGZuRjU1dzdOVkNFMDNNMVRoVm5uM3dRWXdPcS01d3VBeThVWXNRS1djeHJ0SXQ0Skpsb3EwOTJ4VmliaWp5X3Y5TGhBZUE4N2s5aFRVTUlQdDBWWXhXV3pGQ1RNMGthbTJvMHN6bnZkYjc4REZxaWJmTklaZ0RqbGpsUU5rakZzQVItclJWSjhCeUU4cFp3WkZWSlFGckV5NUNpejdiLUo1Zw?oc=5",
+   "source": "Tech Times",
+   "published": "2026-11-25T12:06:13+00:00",
+   "feed": "Google News: West",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "North Dakota, US",
+     "lat": 47.5,
+     "lon": -100.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ND"
+   ],
+   "state": "ND",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Applied Digital"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 25,
+   "cluster_id": "f12dde70c8673eed",
+   "cluster_title": "Applied Digital Begins Initial 25 MW Data Center Operations in North Dakota"
+  },
+  {
+   "id": "9736bf0668dce6dc",
+   "title": "Franklin moves forward with half-mile requirement for new data centers near homes",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU1BvMTJESWdkQXNpSUVDeW9pZWtDcDMwbG9DU09XTWd1QjBKVFZLR19MSTBqRkxxdXEzX1ZySkZGWGE3TDJKeUhBU1d5bDE4MXhsTFgxTFFVdG9pQjNGMmNFWTJURW94TzRval8wdjJSQkdSZ3pTcXVWV1FPWVhKekQzY0Vjc1BvRHNhNmtiZFlpQXpiRjF1THl2bThnam4zaFE0VUpDWFRGWGQ1aGxj?oc=5",
+   "source": "WZTV",
+   "published": "2026-11-25T12:03:44+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Franklin, Tennessee, US",
+     "lat": 35.9251,
+     "lon": -86.8689,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Nashville"
+    }
+   ],
+   "states": [
+    "TN"
+   ],
+   "state": "TN",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9736bf0668dce6dc",
+   "cluster_title": "Franklin moves forward with half-mile requirement for new data centers near homes"
+  },
+  {
+   "id": "05d41ce372629325",
+   "title": "Applied Digital brings online 25MW data hall at Polaris Forge 2 data center in North Dakota",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOR3VkeldSNllRRkpLLV9RY0ltMUVtOHhVWV9MRktFY3VyUG5Pcjlnbl9BWk83MUwxbjYwLVY0dklyeXBIR09qbUJSeVBVQUdjYlk0akNKSDhRT2M1dUhPb3QtX0V0V2I3V2VRUy1ubFdQNmRUa25qWXdmVWtVWE5OYzk0M1Z3aWkzdk1CYzdEeTRlSVZPaVRFeTBqU01qRU1VZ0Y1LVBTLWhPMjgwWl84V2RET1U1LUg4bUZPRWw4Q2RtajJjVk5yWDh3V2pFSk16?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-25T11:58:35+00:00",
+   "feed": "Google News: West",
+   "category": "Operations",
+   "tags": [
+    "Operations",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "North Dakota, US",
+     "lat": 47.5,
+     "lon": -100.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "ND"
+   ],
+   "state": "ND",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Applied Digital"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 25,
+   "cluster_id": "f12dde70c8673eed",
+   "cluster_title": "Applied Digital Begins Initial 25 MW Data Center Operations in North Dakota"
+  },
+  {
+   "id": "f3bfdd52ab513179",
+   "title": "Fluidstack launches modular data center product, Blackbird",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORzNsbGVZSWNvZm9RQzdFeWJEcjdMN1pIeXFzaXdLTFFmak0yUXV5MlF3aFVTV3VnTkxZUnJfdE9JaFJiOTlZdE1QbTEyZWRjaFAzV0tjSXdVQURZZk03UzU2QUlVTzlOblZzSjZaaDB3NTBzMGI2Y3JjN3NoN0pWVWdnQjYtUjBybExVZzBUTUtwaGJwakpObnN0dDRNRFk1UmN3?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-25T11:38:20+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Fluidstack"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5d2ae8c94db0209c",
+   "cluster_title": "Fluidstack Launches Blackbird 400 MW Modular Data Center"
+  },
+  {
+   "id": "3a22bdf560747771",
+   "title": "Affordability, data centers top Minnesota Farmers Union's 2027 priorities",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWHN2T1gxdXFxX0hIUmNHRHRubXpCWnFOYy1ZZEN0NU94RzNVa29fRV8xWTltX2NjaFh1NWJVd01fZnNHSW5mRG5zWi1mSE5oZVB2YVJJV1J5aUI0YVhia0hPNjVMMHNoRGozY2wyLVpOWFJXWnBjTThsYXBaX1RaeEtpa0ZmcnloVVpacUhSWm14WmJtS3RCUXFMaE1ySzg4cHNDYjBJS3d0Zw?oc=5",
+   "source": "Agweek",
+   "published": "2026-11-25T11:31:35+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Community",
+   "tags": [
+    "Community"
+   ],
+   "locations": [
+    {
+     "name": "Minnesota, US",
+     "lat": 46.3,
+     "lon": -94.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MN"
+   ],
+   "state": "MN",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3a22bdf560747771",
+   "cluster_title": "Affordability, data centers top Minnesota Farmers Union's 2027 priorities"
+  },
+  {
+   "id": "edcfe0f647a37f2d",
+   "title": "Harwood Elementary School will see no tax dollars from Applied Digital data center",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObDNlbkxXZHFyYmNadHVNczVpV3RFMGxTWE1XcjhDYXJvNGlCRDlwanBQMDRfRmlNSVBTaUNDc2tLWmVkRWlLVmpoTFJTQUdSYUJDZ3VwSnl6WWF4SjlEalNXRl9GczQ3LVZCX2pKUzRTU1BFa3Bfa1Q3VFRQVFg1YjFLMHRQeDNmT1JRWUp6RDlKckZWSzJmcjNNTHFTY3ZJbFAxR01MVXUtTU5hR3ZZc0JZVWZxdVZlcmlzWm5TMHZpdw?oc=5",
+   "source": "InForum",
+   "published": "2026-11-25T11:23:09+00:00",
+   "feed": "Google News: West",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs"
+   ],
+   "locations": [
+    {
+     "name": "Harwood, Maryland, US",
+     "lat": 39.3208,
+     "lon": -76.6112,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MD"
+   ],
+   "state": "MD",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Applied Digital"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "edcfe0f647a37f2d",
+   "cluster_title": "Harwood Elementary School will see no tax dollars from Applied Digital data center"
+  },
+  {
+   "id": "8a5277916d604b9a",
+   "title": "Digital Realty buys vacant office outside Chicago, plans 156MW data center campus",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT0xrdmV5LXFPVGRIVWhsRkZneFZ0X1MxeFUycGJabl9mdkJxVlJFR1U3Ny1pTTRFLUZHYlZTZnJ1NzBzUk40Rjh6N3ZVWUR0aXk0ZXZVa1J0UlZnZEo2VEh4cWY5VDdHeGpLZnp5c1hPTmFsS3ZrYzJTdmpPQmVwWUM3TXBJUlZnWjU1NXQ2RFZwNHJkNUVTVTBaMDBxM2hsSmNwb3c1b1ZabndsQnJDbzdWNWdlWkVWWlN4dnpBZTU2dw?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-25T11:18:20+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Deals / Investment",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Illinois, US",
+     "lat": 40.0,
+     "lon": -89.2,
+     "level": 2,
+     "precision": "state",
+     "country": "US",
+     "note": "near Chicago"
+    }
+   ],
+   "states": [
+    "IL"
+   ],
+   "state": "IL",
+   "county": null,
+   "location_precision": "state",
+   "location_note": "near Chicago",
+   "companies": [
+    "Digital Realty"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 156,
+   "cluster_id": "8a5277916d604b9a",
+   "cluster_title": "Digital Realty buys vacant office outside Chicago, plans 156MW data center campus"
+  },
+  {
+   "id": "4e4596ee9626451d",
+   "title": "New data centers in Aurora? Thanks, but no. At least not for now, council votes.",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbk1val95LU9Vcm1wc2Mtd21RV1ZqVmx4UmJCYnA2c2stbDUtSlk4ay1HYXVOSWotRUJXVTBVQXZzbjlfX3NCN3lWOUlJT041SFU2RzdfWGNJVjVYZWdIbHk2N19wUXFwT21wRU1YUUFwNXU3Vm1vS3ZvaEYzSGdsR0ZVVzh0SVlGODhhcWtLSQ?oc=5",
+   "source": "The Colorado Sun",
+   "published": "2026-11-25T11:15:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Aurora, Colorado, US",
+     "lat": 39.7294,
+     "lon": -104.8319,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Denver"
+    }
+   ],
+   "states": [
+    "CO"
+   ],
+   "state": "CO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4e4596ee9626451d",
+   "cluster_title": "New data centers in Aurora? Thanks, but no. At least not for now, council votes."
+  },
   {
    "id": "2776ea0fd3b705be",
    "title": "Power, Politics, and the Changing Geography of America’s Data Centers - American Enterprise Institute - AEI",
@@ -239,6 +562,31 @@
    "cluster_title": "Rolling Meadows approves data center tax incentive for development over residents' objections"
   },
   {
+   "id": "537dd35a42aa696d",
+   "title": "Court filing links Marion property to battery storage developer amid data center rumors",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOGFSRHJYSmxTUVItd01aZHRsUGdheERUV1V2UTU1Vk5uOWtlNG15NV9xVjkwM0RWYnBHTFZvSEx2bmpWVDVveE5vaVJIc3ZSRFBDY0ktVW9TYzZmOU8tSVlnNGstb3RERHhfblB5a0RERFhVVHhFZkxRbmN3aUd0ak5XMV9SdGVpTkhaU05qdkUtTjh4TUs2ZGFuV1lUbkxKMC1QX2JhQWY5TTJweE1nQkJhd1REUQ?oc=5",
+   "source": "WCYB",
+   "published": "2026-11-25T10:48:36+00:00",
+   "feed": "Google News: Data center",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "537dd35a42aa696d",
+   "cluster_title": "Court filing links Marion property to battery storage developer amid data center rumors"
+  },
+  {
    "id": "7b4ef079688047ce",
    "title": "MD should debate regulation and local control of data centers",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbXhGRXNrNHZ0aG9INUV6dmZjYlFuazNRazVacnVUTGY0NF8zNUVid0VJSU5XSFNUWTk3YVVqZlljamZuODJEcHNOUm9KNnBVQW5vZ0VpVDhvWW1aTmoyckgyZFhRZWpEb2lab2N0YU9pdmxteXhFSUxlanNQLUVsWVp5VllfSWRLa0RfMjRHUk1fT1M1RWNyWDFNd2lrQ0xJUXc?oc=5",
@@ -321,6 +669,34 @@
    "suppliers": [],
    "cluster_id": "2011aaeeec3fabeb",
    "cluster_title": "Another AI Data Center Impact: Air Cargo Might Top Value Of Ocean Cargo"
+  },
+  {
+   "id": "5d2ae8c94db0209c",
+   "title": "Fluidstack Launches Blackbird 400 MW Modular Data Center",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMW9qVUJGN0hjQ3l1NWJISUdEWDhCeUZpSHptUDcxMHJMS0xhUUtLMV8zN1RJQ2JucF9ldTlKWVkzZVprazRibmZuVkhobGpub0lucjU3bXY2cEVDbk5PMXpaMlpNVGJnenBnTjY1c1VwSFlBNU15SnRFcVdueWpKMklCc25ONno4eXVtbmlmVmhFN3VfUVIwWldhRVhGcXRadmpZemZTbzhwb3g3Q2c?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-25T10:32:52+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Fluidstack"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 400,
+   "cluster_id": "5d2ae8c94db0209c",
+   "cluster_title": "Fluidstack Launches Blackbird 400 MW Modular Data Center"
   },
   {
    "id": "37a5bec18959a56a",
@@ -608,6 +984,54 @@
    "cluster_title": "AOI lands $2.2B data center supply deal with top-tier hyperscale customer"
   },
   {
+   "id": "fe2ded589a002a8e",
+   "title": "GAO: Federal Data Center Requirements Expire With No Agency Fully Meeting All Five Standards",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORm9tcnFlb2VQTjV4QV8zMFNFX2VtdXBBTnNJbTV3a1ZVMXE0VFlHT0U0MWNmdFoxcXdLRmE0YU9tNkRzS25vRUFjNGtka1dHckJMVk5MeFJrVEp3blZvQzdDSVJyaDNoYXNKTHUxOVpGNmhfazJaRVAwVmlrMkgzMFROV0daZGhzVmMybDBWMVRaeG5iX0VfSWhhZXdLVllURF9yR2ZnWTRxUUxVc2Uyc0xtRUVXMEVyclB6U0pTTzc5a1pMSUdzUFVWYVNwRTBmV201N1BDUlV6c0Y5V1U4MnkwQUU0NlhBa29hSmV6c28xQQ?oc=5",
+   "source": "Homeland Security Today",
+   "published": "2026-11-25T07:45:17+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "fe2ded589a002a8e",
+   "cluster_title": "GAO: Federal Data Center Requirements Expire With No Agency Fully Meeting All Five Standards"
+  },
+  {
+   "id": "ab7c033db5582dd4",
+   "title": "BlackRock, IFM Said to Mull Lowering Bid for Stack Data Centers",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeWdWbEpKUnpZNm1tU0t3VTFKSm4wTDNQai15NGNZTTJJVUN2OHRsekowVVlwZG5XUG9jSTdBUUdlRmwtMXZhSWVaX2xJQThrRnZMOW5MYnliZ0dTS21Sa3RYOThHdGx0UGVjTF9rdzFuVll0d3B6Y2s3RmRBazQtNUJhVUdMakZxYkdKanRtS0pWUUlMTkFfbUZJbTNGNW1kSnlRXzFBb0JlNkg3SVdHOEN1MA?oc=5",
+   "source": "Bloomberg",
+   "published": "2026-11-25T07:31:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [
+    "BlackRock"
+   ],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ab7c033db5582dd4",
+   "cluster_title": "BlackRock, IFM Said to Mull Lowering Bid for Stack Data Centers"
+  },
+  {
    "id": "791840865213a8d2",
    "title": "Power plant, data center being eyed for Fayette",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUjB1RkZGeFQ5cDAydFQ0YUI1V2tmWFpLdW5EZ2lkSFFuX0JrdG1hTWpWMGR2dTVlZmJXTGxIMDZSWmtuN2hLd2N3Z3RJeHFJUjNNVFo1RWlhc3A0eERqNXpYcUZRR0k0bXlHNU9QaF9ZTGcxMGJmbmU0Sk0zd0hEZ2xMWFBSMGp3cFZnY2RjUi14TjNoVU5IbUtUcHplenVlWERpcmViektEdGVHVWhKSXpkZnRiR3RK?oc=5",
@@ -693,6 +1117,30 @@
    "investment_usd_b": 0.035,
    "cluster_id": "17a950e7ec479b54",
    "cluster_title": "Tacoma data center to sell as part of $35 million portfolio deal"
+  },
+  {
+   "id": "904e23f2f456aadb",
+   "title": "Raton City Commission Introduce Data Center Ordinance",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOM2FRMlhuNTNVZnM3ZWw5M3ZOR2RaTGkzSjJfeGd2YVZRWTRndk1uS1FaYVo1UzBTanM2Q3FYVHA3bUV0a1B5VzNDbndnU3lycENpTFhnYVJlLVVtRDNuaTd0YUVkWXEwOUZtVFJIcmJ4V1M4NzhiQTAyZGpGQ0lfRkdWWk9KeHJHeU1VMk9jMHo?oc=5",
+   "source": "KRTN",
+   "published": "2026-11-25T05:01:35+00:00",
+   "feed": "Google News: Data center",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "904e23f2f456aadb",
+   "cluster_title": "Raton City Commission Introduce Data Center Ordinance"
   },
   {
    "id": "06bee1dc997bfcf5",
