@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-25T19:19:00+00:00",
+ "updated": "2026-11-25T20:19:00+00:00",
  "count": 750,
- "visible": 629,
+ "visible": 628,
  "records": [
   {
    "id": "amazon-georgia",
@@ -13035,6 +13035,24 @@
      "published": "2025-11-20T08:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7973e2b5bd013649"
+    },
+    {
+     "id": "63b28857ec3674d3",
+     "title": "REX Plans Short Pipe to Feed 800 MW Ashville, OH Data Center Plant",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEZ1amVqbjJCODM4cm1NaXZkUW9QNFQ4TFE3YUx2TXpzTmYwSEdROXVDWmVnclR0b0ZYV2J5cDdNODZUWWJkSDdXZXVyaFdZeUM4Tmc2TFBRdUkzVXhtamFEOFpvQnNKNDNoVlZSOW11Y2RSWnpkZTlwX3czU2NWcGpXN3VTeEJRdm5oR2dReGpMcWxBSnUtNHhaZWhCN0VjX2VvOFc1NA?oc=5",
+     "source": "Marcellus Drilling News",
+     "published": "2026-11-23T11:32:12+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "63b28857ec3674d3"
+    },
+    {
+     "id": "fff54b1f362dffd7",
+     "title": "Ohio regulators approve an 800 MW gas plant that will power only an EdgeConneX data center in Ashville",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONlhZT252a3RBRmlURFNZTDl3ZTY4Q1dDcFF1N2szOEtqa01fc0F1c2ZPbW85VmNwblRvVGs0Q0E3eGhsTDRhbWh5MVhzMWhmemxObVJkem9XRHFVMndnWG9OYjZ6aEZTTkJQckJrOS05QkNGTjUzVGlpYWVKZVVGcXN1bGw4T05OU25TdmN4enRWXzdtX0xNV0Q1MUJSN3hSQS1qY1dkTkhLR2Z2blVWbUZPRTFhYTVNRm5Bbno2c1M?oc=5",
+     "source": "MLQ.ai",
+     "published": "2026-11-25T17:23:24+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "fff54b1f362dffd7"
     }
    ],
    "first_seen": "2025-11-20T08:00:00+00:00",
@@ -13051,12 +13069,18 @@
      "headline_id": "7973e2b5bd013649"
     }
    ],
-   "events": [],
-   "capacity_mw": null,
+   "events": [
+    {
+     "date": "2026-11-25T17:23:24+00:00",
+     "type": "Approval",
+     "headline_id": "fff54b1f362dffd7"
+    }
+   ],
+   "capacity_mw": 800,
    "investment_usd_b": null,
-   "last_news": "2025-11-20T08:00:00+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
+   "last_news": "2026-11-25T17:23:24+00:00",
+   "sources_count": 3,
+   "confidence": "high",
    "hidden": false
   },
   {
@@ -32795,7 +32819,7 @@
   },
   {
    "id": "site-ashville-oh-2026",
-   "name": "Ashville data center (800 MW, proposed 2026)",
+   "name": "Ashville data center (proposed 2026)",
    "company": "",
    "companies": [],
    "location": "Ashville, Ohio, US",
@@ -32808,17 +32832,7 @@
    "curated": false,
    "verified": false,
    "notes": "",
-   "news": [
-    {
-     "id": "63b28857ec3674d3",
-     "title": "REX Plans Short Pipe to Feed 800 MW Ashville, OH Data Center Plant",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEZ1amVqbjJCODM4cm1NaXZkUW9QNFQ4TFE3YUx2TXpzTmYwSEdROXVDWmVnclR0b0ZYV2J5cDdNODZUWWJkSDdXZXVyaFdZeUM4Tmc2TFBRdUkzVXhtamFEOFpvQnNKNDNoVlZSOW11Y2RSWnpkZTlwX3czU2NWcGpXN3VTeEJRdm5oR2dReGpMcWxBSnUtNHhaZWhCN0VjX2VvOFc1NA?oc=5",
-     "source": "Marcellus Drilling News",
-     "published": "2026-11-23T11:32:12+00:00",
-     "stage_signal": "Announced",
-     "cluster_id": "63b28857ec3674d3"
-    }
-   ],
+   "news": [],
    "first_seen": "2026-11-23T11:32:12+00:00",
    "name_hints": [],
    "utilities": [],
@@ -32826,20 +32840,15 @@
    "builders": [],
    "suppliers": [],
    "status": "Announced",
-   "status_history": [
-    {
-     "date": "2026-11-23T11:32:12+00:00",
-     "status": "Announced",
-     "headline_id": "63b28857ec3674d3"
-    }
-   ],
+   "status_history": [],
    "events": [],
-   "capacity_mw": 800,
+   "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-11-23T11:32:12+00:00",
-   "sources_count": 1,
-   "confidence": "medium",
-   "hidden": false
+   "last_news": null,
+   "sources_count": 0,
+   "confidence": "low",
+   "hidden": true,
+   "merged_into": "edgeconnex-ashville-oh-2025"
   },
   {
    "id": "site-atlanta-ga-2024",
