@@ -39,8 +39,194 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 4870,
+ "count": 4880,
  "items": [
+  {
+   "id": "38bbb835b23b5adb",
+   "title": "Texas reopens environmental approval process for data center projects",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeFdRVE5Qdkw1Y0pqRWJFaTVoQmdFWDlZQmYtalNRUE9FNDRvU0R6TkJxUUpaU1lXUWdDWTB1a3djN1RaQ05RRFNMTGJMY2g3SnRfTTFpNk1ZNEdBQXF0Vnd5VGx3U2VZSE94dTYtaEs4aE4tdmVaNVR1MmNfbzFCYTZnYUJwOVl5SUE1M0d6emFtZXlDOUtDM2F0cTV0Mlk?oc=5",
+   "source": "Yahoo",
+   "published": "2026-11-25T17:00:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "38bbb835b23b5adb",
+   "cluster_title": "Texas reopens environmental approval process for data center projects"
+  },
+  {
+   "id": "bf22d8f55970a987",
+   "title": "Loudoun County Launches Data Center Dashboard",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQ1RnWkFQcjg1LURpa0ZVWWZ0OTFNaE52aXhhR2R0TUFtR3ZOZ01HNW82cENPUS1lYVNuNVpoOUNYZDNwWVFQbG1lQW50MjAzalVKYTY1X1hMcDhOZXl0TmRybGtXd2ZnQXA5cElSeE1tajdlcTlFRWZXOUluTWlOeWRHUG10V0tsakgtS0prZXBMQ3BVWV96eEp0cm4zN1EwRm9iaWsxSEhpQXk5c2NaVnQxbUt3aTZvY1FsVzcwVVp3OEVRcXc?oc=5",
+   "source": "LoudounNow.com",
+   "published": "2026-11-25T16:49:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Loudoun County, Virginia, US",
+     "lat": 39.09,
+     "lon": -77.64,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Northern Virginia"
+    }
+   ],
+   "states": [
+    "VA"
+   ],
+   "state": "VA",
+   "county": "Loudoun County, Virginia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "bf22d8f55970a987",
+   "cluster_title": "Loudoun County Launches Data Center Dashboard"
+  },
+  {
+   "id": "fbfb74480b1557e4",
+   "title": "Ohio regulators approve up to 800MW gas plant set to power EdgeConneX data center in Pickaway County",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOd2RFeUdkcThORWdWZWxNbjZiWjhqV2ZyZVk0aFRWeGR3cWtmSkVqWWE4VUp2bFl2OWtHejBZM0ZoMHBoalV1MmhMb0ptZFNnVVJwd1JmRk95dG4zbUlCdGxIaDJZZlJFajBtUXpfcFNQcVdsdmd0VlR1a2syXzBJRkZacE1NVjczV2NqNlhXMlVuTWs4NHpPX1JvaEtPSXhncnNHYV9lMi04bTFLODN6N2cxd3lOZU9ac1Bid3FuSmszOGdDZ1JaRHV6c2xuSk13andsaTN1WFdrRFZt?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-25T16:23:24+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Pickaway County, Ohio, US",
+     "lat": 39.642,
+     "lon": -83.025,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Columbus"
+    },
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": "Pickaway County, Ohio, US",
+   "location_precision": "county",
+   "companies": [
+    "EdgeConneX"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 800,
+   "cluster_id": "fbfb74480b1557e4",
+   "cluster_title": "Ohio regulators approve up to 800MW gas plant set to power EdgeConneX data center in Pickaway County"
+  },
+  {
+   "id": "2fac70a0569c9322",
+   "title": "Bright Horizon utility lands Microsoft data center deals amid Wyoming buildout",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaXhFalFlV0NCd0lvemhFTS1wN2lwYWJhVWpmSlcyQ2U3WDQybWNWc1VXdXJoY05hQzE5OWUtYWlwOFV3WnB6QlpYMDFqVmhJOTJuNVZPc0R1YkxLdjJrdWMteVlIdS1BdGIyeFFpblB4OWxMM2paalVicnZSNjVQSHdBOEhkS0FJVGVjcllSLU1nNHUySzBSNDdvZW9kcVVo?oc=5",
+   "source": "Utility Dive",
+   "published": "2026-11-25T16:23:13+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Construction",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wyoming, US",
+     "lat": 43.0,
+     "lon": -107.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WY"
+   ],
+   "state": "WY",
+   "county": null,
+   "location_precision": "state",
+   "companies": [
+    "Microsoft"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "2fac70a0569c9322",
+   "cluster_title": "Bright Horizon utility lands Microsoft data center deals amid Wyoming buildout"
+  },
+  {
+   "id": "677ae9232b78860b",
+   "title": "Data Center Proposed at Vantage Business Park East of Huron",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVjNiVFM3bzh1RnBuTzVhaTVnRkVsR0V0SlJMZWt4Vll2MmxtaTFYRGVaNmNBb08zVXFFU2tXUGZLb053ZW83UXJuekhNLV9ITmhUZVc1MmFycUxIbVZoTC1HbmpfQXhwYWVodHk0bmRYVTNXUG5idU5xaEpjdWY1VTFLc1NQeDFfbURER3N3RUNmdw?oc=5",
+   "source": "Mitchell Now",
+   "published": "2026-11-25T16:11:27+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [
+    "Vantage"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "677ae9232b78860b",
+   "cluster_title": "Data Center Proposed at Vantage Business Park East of Huron"
+  },
   {
    "id": "c7d058ac52e62efc",
    "title": "Meta data center exemption: what the EPA memo says",
@@ -68,6 +254,30 @@
    "suppliers": [],
    "cluster_id": "c7d058ac52e62efc",
    "cluster_title": "Meta data center exemption: what the EPA memo says"
+  },
+  {
+   "id": "898ef3f3844674f6",
+   "title": "Billions in Data Center Deals Grind to Halt After AI Chip Curbs",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZzNtOUdnTHJCQ2FCUGIyOXp4STRoQ2p4NTduYVNjYzF6eGFTUTE4LUFTRUZUUjlFZ0cyWVV0enBBNDNHazJIWTdiZUs3VHg3ckw3bjhhYndIN1g2Q21vcUh2RkFKcHp1TW1NQmpPS0VfQy1uMnBRZ1FTMzg1akN2UlVZUkVqRnh5OHFfWElYNWVnazFfSXV0WTlPclFNOUdEcU9Dbmg3c2xacldjNHpZZjFJYWM?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-11-25T16:01:00+00:00",
+   "feed": "Google News: Data center",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "898ef3f3844674f6",
+   "cluster_title": "Billions in Data Center Deals Grind to Halt After AI Chip Curbs"
   },
   {
    "id": "ab661884ec8a36ec",
@@ -291,6 +501,28 @@
    "cluster_title": "Google’s Texas data center playbook"
   },
   {
+   "id": "3b45ee54815e4f56",
+   "title": "Pennington County Highlights Proactive Approach to Data Center Development",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN244OEtPOUZMSjhtWmF0THBIWEZKTE5IVTl6a3k5MWlnZU9VWTNpZ2FZU0FKNXdDU0hVUXdSMVlpSjdteHR6eUF6eDVwZm1QS2xsVmZJQWNRV1AxbHV2Uy01eEVkaEhQbEdPaFU5bENRZm1kYW1YSFBiVDVPMzU4c0FoVkxnbFJYQ3A4UmNHUHI3bmViR0ZOSFN2Q0x2NHZteExtV1piYkF6QW5TdmhzMjFn?oc=5",
+   "source": "www.kotaradio.com",
+   "published": "2026-11-25T15:06:29+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "General",
+   "tags": [],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3b45ee54815e4f56",
+   "cluster_title": "Pennington County Highlights Proactive Approach to Data Center Development"
+  },
+  {
    "id": "8cfccc86c6e172e8",
    "title": "Texas data center projects face permit pause pending ERCOT review",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQanFRVEpwQ3kzU0hJRHhmR3U4bEhpNEU4THlBRzc0ckI3Z2hRRXZRZkFCcjlkYVBkSjRla2c0WGFnQUdIc1czQjMtOUQyc2JKZGdOazNlV3NHX1lpQkE1ajhCRzNXdDgyVnRzQWRHS0pqbmdkMWFtMUdMMG5KNkxOMTlWYmpCcUo2?oc=5",
@@ -442,6 +674,32 @@
    "suppliers": [],
    "cluster_id": "b901d227309e0b1a",
    "cluster_title": "Why AI Data Center Power Supplies Should Be Tested More Independently"
+  },
+  {
+   "id": "b60770c81ecd9bf6",
+   "title": "Ambarella Stock Craters 31% as the AI Data Center Boom Starves It of Memory. Here's What Traders Need to Know.",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPdmZSekhtc3k0bXA5enRoX0h6bVh4WGN2YzJuc1IwanNTMmxBalhRLU0yTXF4azJvSGlzTGpyNWI0dWN6dVdSZVhJaVpLbzRHR3doSzljSjM4WUZJYUlqcHY3SWN2YVlESlRVYWhfX051aThXQVItVlpTdnFYaTNXMWNsYmFvdEdhT19oOUFSOVpJSl81Nld3WW9ua1V6czRqblBCU3pKZWtmUkRodEpJaUZPTEl6TDhReDdIZmNkbWdKNzZDeVZKSWZ6a1BIbWt4Nm95MW5yVGIzNXFCQlNCOW5ZdW9zUQ?oc=5",
+   "source": "Barchart.com",
+   "published": "2026-11-25T14:13:40+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "b60770c81ecd9bf6",
+   "cluster_title": "Ambarella Stock Craters 31% as the AI Data Center Boom Starves It of Memory. Here's What Traders Need to Know."
   },
   {
    "id": "b50d02c0c8691fc1",
@@ -9245,6 +9503,45 @@
    "cluster_title": "November 2026 Local Ballot Measures Address Data Center Development"
   },
   {
+   "id": "cb9722a788fd472b",
+   "title": "'At what cost and at what benefit?': De Soto residents, officials weigh data center job promises",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNeE9XbmE4TXljb0F0ZzMyUFhvcE9rTFM2SWY2VXVmMjZENWxES2lCOHEwUi1zUHpEYmtOd3huZEcxRTZQdm4tZjdWQ0lzWDVTYk9aQzhNMWN2TEJ1MlRiZlhRTWUzQmtaWmxpaFlHcXVwVHEtRXpuM3cteTg3M1o4bEFEbEpwZHRhd1VmdFhTdUtCRVNLN05PeEl3TzR2TEQ3d1Yta25QdzJWemNFQW9vX3NIQWVpLWN4Q0xFT3dyVnJMUWZaT2Y5NmJob2x0N0c0R3RxMFBUYmU?oc=5",
+   "source": "KSHB 41 Kansas City",
+   "published": "2026-11-24T05:34:04+00:00",
+   "feed": "Google News: Data center policy",
+   "category": "Economy / Jobs",
+   "tags": [
+    "Economy / Jobs",
+    "Community",
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "De Soto, Kansas, US",
+     "lat": 38.9792,
+     "lon": -94.9686,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "KS"
+   ],
+   "state": "KS",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cb9722a788fd472b",
+   "cluster_title": "'At what cost and at what benefit?': De Soto residents, officials weigh data center job promises"
+  },
+  {
    "id": "8322046399fd5244",
    "title": "Aurora passes partial data center moratorium as Trident data center cancels site plan",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdTkxQ3NqckwxY0Z1akdxeGt1czJ5S05VakVZTWlHQ21rWWhnV3AyZGhMb2Qwb0ZfdmR6dlc2bDE3VFhSTEJZWGV1ZUpSbl9iRXVxakpPWUlMbGZqdTRFZjctSUVHbTZKaVlCM0xENzJpSlgwTjROT1dlUkxmdmwtSm0tYU5acDlLYXVWbGRHTWRRS05COGp4cGc0TzFyaVFza2dSZDZiQTB2b3Q1SUFZ?oc=5",
@@ -11441,6 +11738,45 @@
    "suppliers": [],
    "cluster_id": "34cfc20f173634bf",
    "cluster_title": "AG investigates Google data center approvals in Lea County"
+  },
+  {
+   "id": "95dfd75c51e43e67",
+   "title": "AG opens inquiry into Google’s planned data center in Lea County",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdkxKckdERC1iUm9melBuQUY5LUpuVVE1QTJoMkNqUU50QkhoMXluaDZKUUFBZDNSbnQ5OWpPNm01N3FxdDBmcVdEUlU2UUlfLXJ4dWZVRVdIRWdkdHd5MnRyLVg1MV9ELWF2UXZodkVmenQ3U1BuY3N4Ry11b3pqZ3AyWklrNmJ4RHNHa3VENFBiTVMxdEF4NTl1M19fMWhxYWFPTW9B?oc=5",
+   "source": "Albuquerque Journal",
+   "published": "2026-11-23T23:54:27+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Operations",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Lea County, New Mexico, US",
+     "lat": 32.79,
+     "lon": -103.412,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "NM"
+   ],
+   "state": "NM",
+   "county": "Lea County, New Mexico, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4289e474f1a2d6fd",
+   "cluster_title": "Lea County approves $130B Google data center bonds near Hobbs amid concerns"
   },
   {
    "id": "9b33fef0c62721fe",

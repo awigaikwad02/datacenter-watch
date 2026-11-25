@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-25T16:17:20+00:00",
+ "updated": "2026-11-25T17:17:17+00:00",
  "count": 750,
  "visible": 629,
  "records": [
@@ -13129,6 +13129,15 @@
      "published": "2025-12-30T08:00:00+00:00",
      "stage_signal": "Cancelled / Blocked",
      "cluster_id": "747a7be7571c2edd"
+    },
+    {
+     "id": "fbfb74480b1557e4",
+     "title": "Ohio regulators approve up to 800MW gas plant set to power EdgeConneX data center in Pickaway County",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOd2RFeUdkcThORWdWZWxNbjZiWjhqV2ZyZVk0aFRWeGR3cWtmSkVqWWE4VUp2bFl2OWtHejBZM0ZoMHBoalV1MmhMb0ptZFNnVVJwd1JmRk95dG4zbUlCdGxIaDJZZlJFajBtUXpfcFNQcVdsdmd0VlR1a2syXzBJRkZacE1NVjczV2NqNlhXMlVuTWs4NHpPX1JvaEtPSXhncnNHYV9lMi04bTFLODN6N2cxd3lOZU9ac1Bid3FuSmszOGdDZ1JaRHV6c2xuSk13andsaTN1WFdrRFZt?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-25T16:23:24+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "fbfb74480b1557e4"
     }
    ],
    "first_seen": "2025-11-28T08:00:00+00:00",
@@ -13155,11 +13164,16 @@
      "date": "2025-12-30T08:00:00+00:00",
      "type": "Cancelled",
      "headline_id": "747a7be7571c2edd"
+    },
+    {
+     "date": "2026-11-25T16:23:24+00:00",
+     "type": "Approval",
+     "headline_id": "fbfb74480b1557e4"
     }
    ],
-   "capacity_mw": null,
+   "capacity_mw": 800,
    "investment_usd_b": null,
-   "last_news": "2025-12-30T08:00:00+00:00",
+   "last_news": "2026-11-25T16:23:24+00:00",
    "sources_count": 2,
    "confidence": "high",
    "hidden": false
@@ -16788,6 +16802,15 @@
      "cluster_id": "34cfc20f173634bf"
     },
     {
+     "id": "95dfd75c51e43e67",
+     "title": "AG opens inquiry into Google’s planned data center in Lea County",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdkxKckdERC1iUm9melBuQUY5LUpuVVE1QTJoMkNqUU50QkhoMXluaDZKUUFBZDNSbnQ5OWpPNm01N3FxdDBmcVdEUlU2UUlfLXJ4dWZVRVdIRWdkdHd5MnRyLVg1MV9ELWF2UXZodkVmenQ3U1BuY3N4Ry11b3pqZ3AyWklrNmJ4RHNHa3VENFBiTVMxdEF4NTl1M19fMWhxYWFPTW9B?oc=5",
+     "source": "Albuquerque Journal",
+     "published": "2026-11-23T23:54:27+00:00",
+     "stage_signal": "Operational",
+     "cluster_id": "4289e474f1a2d6fd"
+    },
+    {
      "id": "2e96a3cdb9e004d2",
      "title": "NMDOJ opens investigation into Google data center project in Lea County",
      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPb2V6SHI1WGFqU3BjVU1aa2Y1RGJENFF6T2Q4cDFwT2RsUHp2d19RNno4cnhaV1NzSzFJdDNrUjB0NnNDdi10dVVFeVRkU1FwaEFyRmRWNjBMUklQQmtHWnlOcnpRZWlPdlE4d3B6QVBzbEFIaUlwSWw1aGg1eER4WDRQWmxhUG9nckdnTTJPeFRsaFpuY3hLOEFtX3FKcHFfcllOdDJubVN3dw?oc=5",
@@ -16820,9 +16843,9 @@
      "headline_id": "46863e897bf1a782"
     },
     {
-     "date": "2026-11-24T00:01:58+00:00",
+     "date": "2026-11-23T23:54:27+00:00",
      "status": "Operational",
-     "headline_id": "2e96a3cdb9e004d2"
+     "headline_id": "95dfd75c51e43e67"
     }
    ],
    "events": [
@@ -26576,6 +26599,15 @@
      "published": "2026-06-05T07:00:00+00:00",
      "stage_signal": "Announced",
      "cluster_id": "7b5c1c5bc61e9a9f"
+    },
+    {
+     "id": "2fac70a0569c9322",
+     "title": "Bright Horizon utility lands Microsoft data center deals amid Wyoming buildout",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaXhFalFlV0NCd0lvemhFTS1wN2lwYWJhVWpmSlcyQ2U3WDQybWNWc1VXdXJoY05hQzE5OWUtYWlwOFV3WnB6QlpYMDFqVmhJOTJuNVZPc0R1YkxLdjJrdWMteVlIdS1BdGIyeFFpblB4OWxMM2paalVicnZSNjVQSHdBOEhkS0FJVGVjcllSLU1nNHUySzBSNDdvZW9kcVVo?oc=5",
+     "source": "Utility Dive",
+     "published": "2026-11-25T16:23:13+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "2fac70a0569c9322"
     }
    ],
    "first_seen": "2026-05-28T07:00:00+00:00",
@@ -26601,8 +26633,8 @@
    ],
    "capacity_mw": null,
    "investment_usd_b": null,
-   "last_news": "2026-06-05T07:00:00+00:00",
-   "sources_count": 2,
+   "last_news": "2026-11-25T16:23:13+00:00",
+   "sources_count": 3,
    "confidence": "low",
    "hidden": false
   },
