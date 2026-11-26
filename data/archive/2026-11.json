@@ -39,8 +39,121 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 5034,
+ "count": 5042,
  "items": [
+  {
+   "id": "968017d33ab04144",
+   "title": "Attorney plans to sue Phoenix over a controversial data center project in Ahwatukee",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcWFHZ1RXUFZ3SWhxUzlDRl9pbEVfMjJjWllFZW1FNlpaY2dwZWtXeXJKZ1RFcGhmbHAyRkJCRUR6a0JxS3NDVndJZC1UbmVXOEZmODFaX1VTRlAxdVFGdXlFWnFuTXNSQXFKOHB6YXNHeWRwXzVzdHE0MFVvNUtiQmR0WGhOZU1LSEV6dTJlaEdtQkc0MV9OODF1M01mWF9uZmhQR3dsRWh2eElRZmdQa2ZTSHJnbXlfSW4wS0xhZUVXZw?oc=5",
+   "source": "KJZZ",
+   "published": "2026-11-26T16:15:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Community",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Phoenix, Arizona, US",
+     "lat": 33.45,
+     "lon": -112.07,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Phoenix"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "968017d33ab04144",
+   "cluster_title": "Attorney plans to sue Phoenix over a controversial data center project in Ahwatukee"
+  },
+  {
+   "id": "a8dbea3a1da322fd",
+   "title": "Coweta County data center referendum petition moves to special election after judge's ruling",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM3p2akhqUWV2UDBESWhJUDhRY0Zlc1M4dW44WmpuME1uUFROYmJYd2tuM1pwN1JBQnIwRm14NE1lVTd6RndfeF9HOGpyQ0x4NUxZdVB4UDM3a19aaHlRRHpTREs4SmE1S1Q4MEIzVmhxb29KRE5udThpcnJyU3lSRkJBQXlJN0l6WXVZOXZleC1mUkcxUVdsSzNPQjduTWFESWF2M1VMT0ljRV9nbVhIYml1aVRpaFozaldOWXh1X2s0TTF5YVJLWA?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-26T15:51:15+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Coweta County, Georgia, US",
+     "lat": 33.35,
+     "lon": -84.76,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Coweta County, Georgia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a8dbea3a1da322fd",
+   "cluster_title": "Coweta County data center referendum petition moves to special election after judge's ruling"
+  },
+  {
+   "id": "5d75870d4fe84579",
+   "title": "Judge sets special election date for Coweta County data center vote",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeUF0ZUt1RUhyT2UzTjhFYnZaMnY1UXJsNmlRUXR4RkhNNXpJbl9OOUgyZkJTSG51RHY5d09GeVlvV1k4Z0NCc0xOYWdRNFc0V1JZaDcyZmxieU40djRNSjh4Q3Y0a0RFLXVNck9DeXpRMHluWXZhZGZraTVsNEEzemoxcUdzVzB1NnU3ejVFVTRFSE9JTXkzakh6S1pSdndXRkQwVW84XzFjdw?oc=5",
+   "source": "CBS News",
+   "published": "2026-11-26T15:34:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Politics",
+   "tags": [
+    "Politics",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Coweta County, Georgia, US",
+     "lat": 33.35,
+     "lon": -84.76,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Coweta County, Georgia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5d75870d4fe84579",
+   "cluster_title": "Judge sets special election date for Coweta County data center vote"
+  },
   {
    "id": "b1573dc38d7d45dc",
    "title": "Data Center Developer Wanted to Build Up, Not Out. Kansas City Said No.",
@@ -615,6 +728,33 @@
    "cluster_title": "Bright Horizon's $686 Million Wyoming Grid Expansion Sets Stage for Microsoft Data Center Buildout"
   },
   {
+   "id": "cdd91a3bef616b0c",
+   "title": "Nocera invests $22 million in BitRock AI data center",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxORGc5R2JYWjBfUEd3TFZfTXUyUTNWWklESGhKYkkwRXU2WEZVZmRYRWpyaUl1YTFQeTJiMTl1cTB6VmVVeUpPWGphSmhJYXZnOEZISHhteTB0eFMxdlc5cUc1SFlva0JVMmJiU2tmUnYtLXM2LWVPa0hrRm5wSF9jdXdQSzRTeU53Um1aNENnSHZBUkJkcFlQcl9KOUJGWlV3ZUNDbjh3SlR2SkJsNDhEOGRGdUZ3U0xKZFEyR2NWQmFyMlJ5WG83dE95ejRTMmxaYUMwc2d5MXhOeTU1YkkwT1NHXy1nWm00Nk5Vbi16YjRjWGkyOFUxZTZnbmdQV3hqMjhj0gHTAUFVX3lxTE1faVd6V1NRSnRQOWE3MFRwNng0MTFmSDBsTkFWNXBGTTVGYWlLZTF5QmZmS01SLVc0dktUWjd6YUVKalNCbFNBNm1CbzJzR0NWOXB1cEtWdzJmVEF4Y2VzaHZfa2NlXzlyMzBkQzh2SFFScU5tMUVqWWpGZXMxMGtTdS00NzhlR3VQUGxOWTI4NlNLak5BR2w3VGRUaXVyQzYxRmZmUTc0TUhaQjNMVklLc1dKZzFMOHExNVVOWXBnWmxCcWNveEsxQlJpYS1RYUw4eUE?oc=5",
+   "source": "ET Datacenters",
+   "published": "2026-11-26T09:06:45+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "BitRock AI Data Center",
+   "investment_usd_b": 0.022,
+   "cluster_id": "cdd91a3bef616b0c",
+   "cluster_title": "Nocera invests $22 million in BitRock AI data center"
+  },
+  {
    "id": "3556c0652825e0dd",
    "title": "AI's next data center boom is moving into cities, and into people's homes",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kbmNSRllBNmVDVXR4MUVzU05hRU9PemVRaXJmVmVrTFhDSDVVUjVIUDNKbUdDaVV3SG1XUzlQWmdUeXNXeE5neG1uTGN0OXZnNGM0X0xiS0E2SjBaRzVaSXJuOG9ybmM?oc=5",
@@ -638,6 +778,43 @@
    "suppliers": [],
    "cluster_id": "3556c0652825e0dd",
    "cluster_title": "AI's next data center boom is moving into cities, and into people's homes"
+  },
+  {
+   "id": "3db555cac88159ca",
+   "title": "Skanska Receives Additional Award From Existing Client To Build Data Center In Georgia, USA",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONmlKRFQzVDRjRFJSMmpwU1BkYmt3dHAwb1BpczR3al9Nb2VfVTZ6MjFjSmhrMjlHLXFXLW9ybG1MRjBUSWxVenpsYUxDWE54bkVmVHJhTDlQYVdkNU9RZjZTb29yS2NOc09kVlFIMlNnOXNMYmo2d2xfUDVlNW0wZnpja3ZDYWtTU09nNmVUdmJBTFFvaFlUUURfbXlYZFFGQVNGZFlEQ0RvUWczY3FGUlJXTlJ3czE3d0hKemhnZjRZdUdFSkNSZG9UVEs4VF94dUFuMVl4a0hHQjg?oc=5",
+   "source": "www.marketscreener.com",
+   "published": "2026-11-26T08:07:12+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [
+    "Skanska"
+   ],
+   "suppliers": [],
+   "cluster_id": "3db555cac88159ca",
+   "cluster_title": "Skanska Receives Additional Award From Existing Client To Build Data Center In Georgia, USA"
   },
   {
    "id": "0a57045e66f8d351",
@@ -2004,6 +2181,39 @@
    "cluster_title": "Alabama Power proposes $160M rate cut, cites data center growth"
   },
   {
+   "id": "aa16bcab9866fdfd",
+   "title": "Pennsylvania Data Center Limits Are a Threat to Gas Firms, Trade Group Says",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMHRzSlU3M1E2Skp6QmNUbm9RVjJsNFNseFVSOS12ZDV1OFpCV0RSVzZ4b2p0dlpmY1NEZlhMQUIwdnQwZTVqNHo0TG1pMDd1amtZU1kxMVlMd0NJanBIaVdJYmVYWlItUF9pT1F1N0ZIMTVFeFhNbE53OXVmWFQ0RXdFNkMxOE5uVjkwekhyTFk1MUY3MUZ1ZjU1TnI3dEdQX0hOYzZmaDQ?oc=5",
+   "source": "EnergyNow.com",
+   "published": "2026-11-25T22:31:40+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "General",
+   "tags": [],
+   "locations": [
+    {
+     "name": "Pennsylvania, US",
+     "lat": 40.9,
+     "lon": -77.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "PA"
+   ],
+   "state": "PA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "aa16bcab9866fdfd",
+   "cluster_title": "Pennsylvania Data Center Limits Are a Threat to Gas Firms, Trade Group Says"
+  },
+  {
    "id": "4930fccb1617a065",
    "title": "Compass Delays $380 Million ABS After Data Center Outage",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNak51OWx3VkJ4V2NoMU12QTBXYXIzN0ZXRWEzWHoxY244aEdyUmtUTzFYaGZvUU9icEQtYlNMX2lHYnV6R19JakpnRExkaElFODBGeEpGbWtXcjU1bnVXbTFNSlFMa19KZU9rR1ZHU1JvS0cyMHlzQXNXaXV3MUhUQk9jVUE3YUJPSFJxNk1RelJtTjhHdXV3Rl81enlIXzNxdzZDYjJ0Y3JOUQ?oc=5",
@@ -2096,6 +2306,41 @@
    "suppliers": [],
    "cluster_id": "59dc3cf3a4a61721",
    "cluster_title": "Pennington County data center review continues"
+  },
+  {
+   "id": "631cff88640254e7",
+   "title": "Massachusetts Will Require New Data Centers to Use Clean Energy",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdHN0Y2Q2OUJ2TFNNVWNQZ05vZEMxOVdKaXQ5RjFteXVONGFLcFROSmZuQ1JrRTNRT0FIS19GTm9BaFphRnZRb0VTREpsbG9sUXJvZ29ZamFYVU1iX25PZ2lDSzltY3hWcHdNWW1Gb1lwdzMxMFJRdWRWdGVPT2lwbDFlZF9Db2ZyMi1Mc2llTlplcVVBYy0tQ21B?oc=5",
+   "source": "EnergyNow.com",
+   "published": "2026-11-25T21:55:33+00:00",
+   "feed": "Google News: Mid-Atlantic and Southeast",
+   "category": "Power / Utility",
+   "tags": [
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Massachusetts, US",
+     "lat": 42.3,
+     "lon": -71.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MA"
+   ],
+   "state": "MA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "631cff88640254e7",
+   "cluster_title": "Massachusetts Will Require New Data Centers to Use Clean Energy"
   },
   {
    "id": "3af8d5822504b860",
@@ -8587,6 +8832,42 @@
    "investment_usd_b": 1.7,
    "cluster_id": "8a2a6b59e7b18ea2",
    "cluster_title": "Tennessee Valley Authority filing references $1.7 billion data center deal"
+  },
+  {
+   "id": "121e880b5cb7fd82",
+   "title": "Warrick County Commissioners approve data center ordinance, what happens next?",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXI4dEtieVZ1WnAwcjdUY2VTXzZRVElyd0R0eGtmVzhSbWhwRExfQklsVS1LUm9oZ1ZqX0x3Q1ZqQVNGdF9iZWdlWS1kMWZRbm8xY0lrSGNQZTd1NFhGWmRIQVNDZFBVcE5uRnFiYktYSnlnUmlFVWF6VTRXbVgtWmZfcU5UcmhIT25FclNHZllERlJWdTlMdUp6MDIwWEJhUTZKQllYWnRCZlkzZlNTOUlPLXBCQ2tIRFhITjdLQXpRaGF20gHKAUFVX3lxTFBlWERTMzg1bE5oRmFOV2lNWFdPSHRDRWJ5cjg5U281TXI3VDdMM0JhcTVmUW00RWtTekRVVnFTLV9kakIyOVJ6RlZQNnkyRWtya0E1MlNkSmg5amNJMVNPQmFWOGNna0xuS0VfdWZiSkRwUzlTVlZXcDMydTBmZ3R4bHJiOFlLcUdHaW1LbVhVY0Q1Z0QxVVMzQ1o1WVNUWWM0TUdCUUxxY01tMVJKQm9OLV9QNkc0dVhoSEVKeDFISko3VzE2X1I1c0E?oc=5",
+   "source": "Eyewitness News (WEHT/WTVW)",
+   "published": "2026-11-24T22:10:42+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Warrick County, Indiana, US",
+     "lat": 38.092,
+     "lon": -87.272,
+     "level": 3,
+     "precision": "county",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "IN"
+   ],
+   "state": "IN",
+   "county": "Warrick County, Indiana, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "0635661f7178b490",
+   "cluster_title": "Warrick County commissioners vote on data center ordinance"
   },
   {
    "id": "6a320463082dc8c8",
