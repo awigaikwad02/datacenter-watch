@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 692,
+ "count": 690,
  "items": [
   {
    "id": "13ef16ce9c75d58d",
@@ -21,6 +21,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "source",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "f901e3111e0a9e80",
+   "title": "Exclusive: Abbott paused Texas data center permits. Some kept building anyway.",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUzRNWm9uME1oZ3M3Wk40aHJFWnFQLXJkR3lUSWF1c2U3SHRiMVd1QzlmT0RlWGVETFJtUkRJazB1b3NrbDdCeks4TWlVMGtKZ0YwM2wzOUNqb0hjdmhJQm40LXZ2a0NoR3Vya056MkIyamlXSVhmTTdjRHgyMER4RDlmVVhSeXBJLUNmQ09uRDFJaGFVdmxEUzVuUU0tck4zcEdnMm5EajRWRl9hRVd5ZGx2eEZQY2wwejFtWA?oc=5",
+   "source": "Houston Chronicle",
+   "published": "2026-11-25T22:14:31+00:00",
+   "state": "TX",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "state",
    "reason": "no operator, and only a state"
   },
   {
@@ -47,19 +60,6 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "b50d02c0c8691fc1",
-   "title": "Proposed data center sparks debate in Union",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR1Zna3NpdXJPOTgwUWRjYVY1OGRmZk9KMXNqMVFkMjV3Y1lnLUdrSTlIakdHOE8wb1JIMFROcjlJUk9UT0xvUWpKcG5odEE3ODg5ejlFMmFIci0yZzEydG5CamRjZHpYQ181cWtLQUEzSERGWFd1NGNfYTBCS1VzdWkxN3U0UFRHM0N3LWpRTVpOSVo2OFV3S2h2dzBacXA5YXFYV3BVTUtqcWtSaTVIakxab2x3QnNRRVVuVnBPaWlBT3JtTnF4MF91QjI5alF1SUU2Ql9pODdEQkVJcHc?oc=5",
-   "source": "Dayton Daily News",
-   "published": "2026-11-25T20:06:45+00:00",
-   "state": "OH",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -128,6 +128,19 @@
    "reason": "no operator, and only a state"
   },
   {
+   "id": "b50d02c0c8691fc1",
+   "title": "Proposed data center sparks debate in Union",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOVB3T2hmYmZJZkJ5QzhTQ2dGRm9JVGYzbEpQVFJSN0VKZGtKMXdBcVZaekhuY2djZ25PM1RYWVk5U1NGeHpoR0k2NExQa25kaGh3V1pPUE1HSkswZW5iNzJXeWRkMHVoazdLamVCaXdIYzJJbFRCQ0tJWkJ2WVJQOG5PN1BiQTVxM2ZndHlNQ21vV3Fz?oc=5",
+   "source": "Dayton Daily News",
+   "published": "2026-11-25T14:10:05+00:00",
+   "state": "OH",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
+  },
+  {
    "id": "5b2436bfeb76c9c2",
    "title": "Three data center projects planned around Phoenix, Arizona",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMk1MUGRGekc0UUdleldLc1BmRHJ2eEt4U2oweWliMmpCejRIcGIxaHA5MkZRWHF0TDhGU2dVT2lJNTljZ1gxTWlfX0tWc3hoYVhhQzk2MjJ5dzY1Vm9ZT3pZclpSX3UxYVdsNXlIZ0Z6NWFZY3N2TEY4dTY3bmI4a1JLY18tbjJlaDdqTXlaZlRobEIydHljU2w0NlhDRWxtQXBN?oc=5",
@@ -147,19 +160,6 @@
    "source": "Data Center Dynamics",
    "published": "2026-11-25T12:13:21+00:00",
    "state": "SC",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "f901e3111e0a9e80",
-   "title": "Exclusive: Abbott paused Texas data center permits. Some kept building anyway.",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUzRNWm9uME1oZ3M3Wk40aHJFWnFQLXJkR3lUSWF1c2U3SHRiMVd1QzlmT0RlWGVETFJtUkRJazB1b3NrbDdCeks4TWlVMGtKZ0YwM2wzOUNqb0hjdmhJQm40LXZ2a0NoR3Vya056MkIyamlXSVhmTTdjRHgyMER4RDlmVVhSeXBJLUNmQ09uRDFJaGFVdmxEUzVuUU0tck4zcEdnMm5EajRWRl9hRVd5ZGx2eEZQY2wwejFtWA?oc=5",
-   "source": "Houston Chronicle",
-   "published": "2026-11-25T12:09:30+00:00",
-   "state": "TX",
    "companies": [],
    "builders": [],
    "suppliers": [],
@@ -8985,32 +8985,6 @@
    "suppliers": [],
    "precision": "source",
    "reason": "no operator, and only a state"
-  },
-  {
-   "id": "6d2c64aea29967f5",
-   "title": "Advocates raise concerns over Nevada data center expansion, cite water and energy use",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzVuSkJSY0NCZklST3E3NGt4SXNIRmNYbkx3LUZZYWVYUXNHaURLWk5OdzF3TUV6Z2NjSDBzSWsweXdBTTkzQnZiQlhiSTJhQVNVYXFqbVhZc3dmdGcyYnFzSkNaV3lLSEVFV1FYaW54VHRnbXFyNWhBT0o2eHBLVWlfc3BNLXBJWlZ4bnZCcmNXVHpzYjh6OXpVWURxc3NsRU01cnhWWFp3V3lwRDRDNFJpRDdzQdIBygFBVV95cUxNMERhdU9Lb2UzM0NxWmR2RDZxWEszSEo4SnEydlV2enZvcmxDM1pnc0NqU0R4OC1NSEdzeHgyWVJCOXhOcHlUajExQkNrYmRqU3AtbERqTlRHUkR1Q3FGT0M3VFNHUHg2Y05TQl9HRHdIOVlTdXFUM0FrbHJhdW4wYWYxOXZJNnQ2UW1UbmY4MHF6RzQ2T19LclY0SFJMMFdGQXlmZHdqUGxVWmFqRWk0TkhUa21KdXRwUkc2X2p5MWwxYVE2VU9SZDdn?oc=5",
-   "source": "KOLO | 8 News Now",
-   "published": "2026-10-27T00:09:00+00:00",
-   "state": "NV",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "78e113e41ce4c35c",
-   "title": "Lafayette, CO Approves 18-Month Data Center Moratorium",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ0FCNV9mXy1Fb1E5T3czYmJuWktiUTByUmZPSWh3ZFpHbWZZbTg2UU9CSHRQdTMxb2FXQ0N6elZ5cjMzZ0hZSHM4ckRocElET193S3hZN1VLYzB0NTVQZFVISXhmTVN3TnByVFJzdWVMX3RCQzB2T0xubTdRQXNiSERvSzQ3V0NNNE0zc0dvV1E1dGQ4aEUyd0tQZnhoYTllMGxOeQ?oc=5",
-   "source": "Hoodline",
-   "published": "2026-10-26T23:28:03+00:00",
-   "state": "CO",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "no operator, code name or figure"
   }
  ]
 }
