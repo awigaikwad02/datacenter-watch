@@ -58,7 +58,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-26T09:23:25+00:00",
+ "updated": "2026-11-26T10:23:25+00:00",
  "count": 750,
  "visible": 628,
  "records": [
@@ -26632,6 +26632,15 @@
      "published": "2026-11-25T16:23:13+00:00",
      "stage_signal": "Announced",
      "cluster_id": "2fac70a0569c9322"
+    },
+    {
+     "id": "917ebbffc8fdd315",
+     "title": "Bright Horizon's $686 Million Wyoming Grid Expansion Sets Stage for Microsoft Data Center Buildout",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbmdOb3p4cXpiWkd5c3BVdzN5RHNNeXE1RVNOLVczTXNqUHZoOHVtVW9zUmtFQXkzUkFwTVVSNkxneHBHYnY5NGlUTXJzb0lRRjNRdUtCYTBWVTIxdVBiUVdYSnJmMjROOGVPX25UQVNqQXM1SjlBeXkzcEg4d3puUldPU3lvVURwVUhtbVFVd18zeG1TRE5tZGMzQUhVc0dWcm1BSXEwbFgzdFMxWGFDckNQWUY5ckR3MlpERDBSZkdRd0dNVFRCYjhoQzdSMVk?oc=5",
+     "source": "Construction Review",
+     "published": "2026-11-26T10:09:10+00:00",
+     "stage_signal": "Expansion",
+     "cluster_id": "917ebbffc8fdd315"
     }
    ],
    "first_seen": "2026-05-28T07:00:00+00:00",
@@ -26653,12 +26662,17 @@
      "date": "2026-05-28T07:00:00+00:00",
      "type": "Expansion",
      "headline_id": "1c0bf660adba2813"
+    },
+    {
+     "date": "2026-11-26T10:09:10+00:00",
+     "type": "Expansion",
+     "headline_id": "917ebbffc8fdd315"
     }
    ],
    "capacity_mw": null,
-   "investment_usd_b": null,
-   "last_news": "2026-11-25T16:23:13+00:00",
-   "sources_count": 3,
+   "investment_usd_b": 0.686,
+   "last_news": "2026-11-26T10:09:10+00:00",
+   "sources_count": 4,
    "confidence": "low",
    "hidden": false
   },
