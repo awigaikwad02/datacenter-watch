@@ -11,27 +11,27 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "checked_at": "2026-11-25T21:48:44+00:00",
+ "checked_at": "2026-11-26T08:38:24+00:00",
  "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 3h",
    "status": "pass",
-   "value": "28m ago",
-   "detail": "2026-11-25T21:19:50Z"
+   "value": "15m ago",
+   "detail": "2026-11-26T08:22:30Z"
   },
   {
    "name": "Workflow runs (last 10)",
-   "status": "fail",
-   "value": "7/8 succeeded, 0 superseded, avg 35s",
-   "detail": "failed: pages-build-deployment"
+   "status": "pass",
+   "value": "8/8 succeeded, 0 superseded, avg 25s",
+   "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-11-25T21:18:32+00:00, 11 new"
+   "detail": "run at 2026-11-26T08:21:38+00:00, 8 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -54,19 +54,19 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "2355 KB",
+   "value": "2334 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 3h",
    "status": "pass",
-   "value": "30m ago",
-   "detail": "2026-11-25T21:18:32+00:00"
+   "value": "16m ago",
+   "detail": "2026-11-26T08:21:38+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "4063 items, 0 problems",
+   "value": "4024 items, 0 problems",
    "detail": ""
   },
   {
@@ -84,37 +84,37 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: New Announcement 19.8%",
-   "detail": "New Announcement 804, Policy / Permits 684, Power / Utility 420, Community 385, Deals / Investment 251, General 246, AI Infrastructure 216, Cancelled / Blocked 177, Construction 176, Politics 152, Environment 151, Analysis / Opinion 144, Markets / Earnings 98, Expansion 71, Economy / Jobs 49, Operations 21, Land Acquisition 18"
+   "value": "top: New Announcement 20.0%",
+   "detail": "New Announcement 805, Policy / Permits 681, Power / Utility 420, Community 372, Deals / Investment 257, General 240, AI Infrastructure 213, Cancelled / Blocked 177, Construction 175, Environment 156, Analysis / Opinion 146, Politics 135, Markets / Earnings 89, Expansion 67, Economy / Jobs 51, Operations 22, Land Acquisition 18"
   },
   {
    "name": "General under 10% of headlines",
    "status": "pass",
-   "value": "6.1%",
+   "value": "6.0%",
    "detail": ""
   },
   {
    "name": "Policy / Permits under 20% of headlines",
    "status": "pass",
-   "value": "16.8%",
+   "value": "16.9%",
    "detail": ""
   },
   {
    "name": "At least 55% of headlines located",
    "status": "fail",
-   "value": "2179/4063 (53.6%)",
-   "detail": "with a company: 428"
+   "value": "2160/4024 (53.7%)",
+   "detail": "with a company: 425"
   },
   {
    "name": "No non-U.S. locations in headlines",
    "status": "pass",
-   "value": "0 of 4057 items",
+   "value": "0 of 4018 items",
    "detail": ""
   },
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "26272 ids, 0 in two months",
+   "value": "26343 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -126,7 +126,7 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "28 month(s), 26272 headlines, earliest 2019-11-18",
+   "value": "28 month(s), 26343 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
@@ -306,7 +306,7 @@
   {
    "name": "Tests pass (pytest)",
    "status": "pass",
-   "value": "251 passed in 1.47s",
+   "value": "251 passed in 1.42s",
    "detail": ""
   },
   {
@@ -378,8 +378,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 31m ago",
-   "detail": "expected Updated 31m ago or Updated 30m ago, title \"Data last updated Nov 25, 2026\""
+   "value": "Updated 18m ago",
+   "detail": "expected Updated 18m ago or Updated 17m ago, title \"Data last updated Nov 26, 2026\""
   },
   {
    "name": "Browser: /radar @1280px loads cleanly",
@@ -490,5 +490,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-11-25T21:50:22+00:00"
+ "browser_checked_at": "2026-11-26T08:40:00+00:00"
 }
