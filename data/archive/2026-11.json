@@ -39,8 +39,128 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 5042,
+ "count": 5049,
  "items": [
+  {
+   "id": "3fe2725324f7c553",
+   "title": "500MW data center project planned outside San Diego, California",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQU14c0xUeElxZ1RuMTNyaFE2b3d0Z2szQVRJX19DQXVsQzBzQmtxS0xwSm90dnFhSXdfSmpBRHRFeEx0WmE1dHlTX25oOG5RNVRPYUJEZTdrOWl0Q0d2NDVCZFBxdXBfQ21MZGQxeE9tdDhGaXdpbFNEU1lhVmtPQ080bmJ4TTcweUJJZ2NOR3JBN0RvemF0cnJXSkoxaDZEZEM2d0ZkamNwUQ?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-26T17:09:09+00:00",
+   "feed": "Google News: Data center construction",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "San Diego, California, US",
+     "lat": 32.7157,
+     "lon": -117.1647,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    },
+    {
+     "name": "California, US",
+     "lat": 37.2,
+     "lon": -119.5,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "CA"
+   ],
+   "state": "CA",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "capacity_mw": 500,
+   "cluster_id": "3fe2725324f7c553",
+   "cluster_title": "500MW data center project planned outside San Diego, California"
+  },
+  {
+   "id": "4377b5a094dc833c",
+   "title": "Coweta County voters to decide fate of $17 billion Project Sail data center",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXQ1dDUlVleXJtWUVBcnNYMURmZ2F1Q3BGa1lxMjljUE9jdllpcmN1SXpieVhMVjNCZVJQWG9jYmVSVHdqekktQWl4U1JhcGN6RzdjNUFuLXlrMjk4T3NCZTc0NU8xQ0dNd0tLZGg2cw?oc=5",
+   "source": "Crypto Briefing",
+   "published": "2026-11-26T16:44:53+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Politics"
+   ],
+   "locations": [
+    {
+     "name": "Coweta County, Georgia, US",
+     "lat": 33.35,
+     "lon": -84.76,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Coweta County, Georgia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Sail",
+   "investment_usd_b": 17.0,
+   "cluster_id": "48b431ff964d0354",
+   "cluster_title": "Coweta County voters to decide Jan. 12 on $17 billion data center project"
+  },
+  {
+   "id": "4853f3a231b956ad",
+   "title": "Johnson Creek Weighs Smaller Data Center In Era Of Big Backlash",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYWxzMWxJb3lpVzRqdlFYOTNVYVBJYnRwTFdSWkR0aUZ2Ym94VkFFeGN1STlzS185bEFjVmZ5VmNibVZqdzhrRmF2SUw5UTNEV25nZUg2eTBQS0lBT0t1YXl6VUFSWUZ2WEhJRUxlcEVNWF9DUnRRTHN3RlRGMmp3Z2lKSnZDNXZTSldGbzJjdmtuOHRZQ3paN3BpZ19SZUdORGt2Zw?oc=5",
+   "source": "Urban Milwaukee",
+   "published": "2026-11-26T16:26:00+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Community",
+   "tags": [
+    "Community",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Wisconsin, US",
+     "lat": 44.6,
+     "lon": -89.9,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "WI"
+   ],
+   "state": "WI",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "4853f3a231b956ad",
+   "cluster_title": "Johnson Creek Weighs Smaller Data Center In Era Of Big Backlash"
+  },
   {
    "id": "968017d33ab04144",
    "title": "Attorney plans to sue Phoenix over a controversial data center project in Ahwatukee",
@@ -78,6 +198,43 @@
    "suppliers": [],
    "cluster_id": "968017d33ab04144",
    "cluster_title": "Attorney plans to sue Phoenix over a controversial data center project in Ahwatukee"
+  },
+  {
+   "id": "a7abd7c5c2dabe01",
+   "title": "Kansas City Council Rejects Downtown Data Center Tower",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSERqMnRrTERwWjlJWWRNaGhzSEhROTNiMVY3amRyV1U5cTdUS1VGLXlPMG1yWklKUW9NNThDaXVSZ3dLc3VXTHJCV3BFYXdVbkVLVkkwdGVEZG1jMTNqOF9PWWhaZUlaQXhxUk9rTkozOV9WaDhiM0NxaFVOU3owZlFaN3B4Y1RXVmpMWThsNGVoLVR2bldJWDI0WGx6Q3VyWlNpZ2xEM0NxYVQxN3R2Uw?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-26T16:13:33+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Kansas City, Missouri, US",
+     "lat": 39.1,
+     "lon": -94.58,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "203d9f128ed2b2c7",
+   "cluster_title": "Kansas City council rejects 20-story downtown data center tower"
   },
   {
    "id": "a8dbea3a1da322fd",
@@ -153,6 +310,43 @@
    "suppliers": [],
    "cluster_id": "5d75870d4fe84579",
    "cluster_title": "Judge sets special election date for Coweta County data center vote"
+  },
+  {
+   "id": "203d9f128ed2b2c7",
+   "title": "Kansas City council rejects 20-story downtown data center tower",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBQekFiZjgzc2ZmWW1SUFBBQi1YaTUzYXo1NUVNRGZZVzV6anVhczRPTnBkTzVxY3VGS05vUUhFdVhIZ2JIZU13TVdyRFBETURLMWt6NG9HRVlYNk5WdVp6N3d6aGdTU2VFN0lJMUxkaHlTODVlV0RJ?oc=5",
+   "source": "Crypto Briefing",
+   "published": "2026-11-26T15:18:45+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Kansas City, Missouri, US",
+     "lat": 39.1,
+     "lon": -94.58,
+     "level": 3,
+     "precision": "city",
+     "country": "US",
+     "metro": "Kansas City"
+    }
+   ],
+   "states": [
+    "MO"
+   ],
+   "state": "MO",
+   "county": null,
+   "location_precision": "city",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "203d9f128ed2b2c7",
+   "cluster_title": "Kansas City council rejects 20-story downtown data center tower"
   },
   {
    "id": "b1573dc38d7d45dc",
@@ -659,6 +853,46 @@
    "suppliers": [],
    "cluster_id": "b7dc5df2dafcf10b",
    "cluster_title": "Man dies after suffering burns in fire at Bitcoin mining data center in Georgia"
+  },
+  {
+   "id": "30a970dee231d232",
+   "title": "Skanska wins $275 million award for a 48 MW data center in Georgia",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcUtoMEZUTUp4d2U1Uk9kOE9zN1ZOeWdSOTBKbkgxWjM4Z1paeklmLUYydHlqbFNMMDR5UnMxNkJqVjNZNzhET1lLb3NNYVhPM3g5bFBJUVNkOHVTb3U0djRiZmpSeDMwWEtvQXBnMjkwaDVvN19iTW5hajRvR3ozLWhLcmY3b1RqenhSRXhtcw?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-26T10:39:13+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Power / Utility"
+   ],
+   "locations": [
+    {
+     "name": "Georgia, US",
+     "lat": 32.7,
+     "lon": -83.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [
+    "Skanska"
+   ],
+   "suppliers": [],
+   "capacity_mw": 48,
+   "investment_usd_b": 0.275,
+   "cluster_id": "ce49389d8097cd78",
+   "cluster_title": "Skanska Wins Additional Award for New Georgia Data Center"
   },
   {
    "id": "e0c744b1a9db5b6a",
@@ -14459,6 +14693,30 @@
    "suppliers": [],
    "cluster_id": "e7a4f6dea88205df",
    "cluster_title": "Quincy mayor reveals conversations have happened between landowners and data center companies"
+  },
+  {
+   "id": "95ed295fca9d0dad",
+   "title": "Union County puts moratorium on data centers and Flock cameras",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaHJDVXo0Q3ZXeXc0UzJNRWpVMjZJcXozZjJCeXozc2NaN29KWGNULTZsNnJsQVF1eW5mT3RuSEZ4bVROa1d6Z21oZjcwbDN2Z0NJaUpqWVdrZUpVQ3ZCU19SVkh6LUhOQS1aLXRMcUhsYkt0NjZjVjVOQzd2SjNrR0xXQ09pSVNqRWMtX3M4eG5XZDkzMmQzaXZlLWtoZkpHNFNBemxJcU4xbVcyd2Z5SHcwaFNHdmZQZXpRNl9MUWh5ZGQwVzZrX0Q4NXhNNnl1bTZGLQ?oc=5",
+   "source": "WBIR",
+   "published": "2026-11-24T04:35:00+00:00",
+   "feed": "Google News: Local approvals",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "95ed295fca9d0dad",
+   "cluster_title": "Union County puts moratorium on data centers and Flock cameras"
   },
   {
    "id": "1ea0c99fa44d67cb",

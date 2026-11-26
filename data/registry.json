@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-26T16:24:58+00:00",
- "count": 750,
- "visible": 628,
+ "updated": "2026-11-26T17:24:58+00:00",
+ "count": 751,
+ "visible": 629,
  "records": [
   {
    "id": "amazon-georgia",
@@ -55471,6 +55471,54 @@
    "builders": [],
    "suppliers": [],
    "name_hints": []
+  },
+  {
+   "id": "site-san-diego-ca-2026",
+   "name": "San Diego data center (500 MW, proposed 2026)",
+   "company": "",
+   "companies": [],
+   "location": "San Diego, California, US",
+   "state": "CA",
+   "county": null,
+   "city": "San Diego, California, US",
+   "lat": 32.7157,
+   "lon": -117.1647,
+   "precision": "city",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "3fe2725324f7c553",
+     "title": "500MW data center project planned outside San Diego, California",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQU14c0xUeElxZ1RuMTNyaFE2b3d0Z2szQVRJX19DQXVsQzBzQmtxS0xwSm90dnFhSXdfSmpBRHRFeEx0WmE1dHlTX25oOG5RNVRPYUJEZTdrOWl0Q0d2NDVCZFBxdXBfQ21MZGQxeE9tdDhGaXdpbFNEU1lhVmtPQ080bmJ4TTcweUJJZ2NOR3JBN0RvemF0cnJXSkoxaDZEZEM2d0ZkamNwUQ?oc=5",
+     "source": "Data Center Dynamics",
+     "published": "2026-11-26T17:09:09+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "3fe2725324f7c553"
+    }
+   ],
+   "first_seen": "2026-11-26T17:09:09+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-26T17:09:09+00:00",
+     "status": "Announced",
+     "headline_id": "3fe2725324f7c553"
+    }
+   ],
+   "events": [],
+   "capacity_mw": 500,
+   "investment_usd_b": null,
+   "last_news": "2026-11-26T17:09:09+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "site-san-jose-ca-2024",
