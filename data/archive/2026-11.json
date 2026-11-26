@@ -39,8 +39,139 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 5074,
+ "count": 5082,
  "items": [
+  {
+   "id": "3b6294d5d46edc7d",
+   "title": "Which uses more water: an AI data center or a golf course?",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeHNOVUdCcHFqbTBCN1drT3JINUMxRUVBWWljSEllZ1U1YWdaTHpndnU0dEU0QkstX09sckhWX2lxLVRFZ1NNQmxPclBJYnFlWGg0eG5yREdMems3QVVXQjNONUM2Z2RETWpDeGswcFlGUmRWSFBJTEZUUXd5VTQteGppcldWUVR3UUhoTzM2OHhrUWlrS1loTkR0aE9IQkxBc21RVWFmWUpCTlBNZkxZSFNQYUpDd0VlOUluczBZbWFoQ1NucjVR?oc=5",
+   "source": "Golfweek",
+   "published": "2026-11-26T23:00:00+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "3b6294d5d46edc7d",
+   "cluster_title": "Which uses more water: an AI data center or a golf course?"
+  },
+  {
+   "id": "17fd2d8e344bd9e5",
+   "title": "Coweta County to vote Jan. 12 on the $17 billion Project Sail data center",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQc2RvUVEzYzhVcF84R19mMlotVzAwSHQ5d1RENHU5cFJPU1A4S1NRLTZsUDJOTDFrb1dMbUZJSjNhNnNMQXNuOVRzT0NXUFM1QVllTGpfT25SaDF5SjFCLW5HSkd2NzlsQ2c0TUxndzdLV05FRklXRnRSem9FZ3JId0VuM0JRSzZsNHZUbTlEcm52SVBTdmJV?oc=5",
+   "source": "MLQ.ai",
+   "published": "2026-11-26T22:59:14+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Coweta County, Georgia, US",
+     "lat": 33.35,
+     "lon": -84.76,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Atlanta"
+    }
+   ],
+   "states": [
+    "GA"
+   ],
+   "state": "GA",
+   "county": "Coweta County, Georgia, US",
+   "location_precision": "county",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Project Sail",
+   "investment_usd_b": 17.0,
+   "cluster_id": "48b431ff964d0354",
+   "cluster_title": "Coweta County voters to decide Jan. 12 on $17 billion data center project"
+  },
+  {
+   "id": "9a862479167c2e6d",
+   "title": "Wilmington weighs 20-year water and sewer deal for Amazon data center as residents fight on",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZ3M3M2FOdWVZR254YmVRaGF2UTdQWno3eUItbVZRVTBHWlhtVEdFanB0dXAzS1JxOGgxeTNqRjNvU2N1cUJSRVZEQ2U5QWpFMVBFZFFkX3dNQ1hJLWVlVV9aMXhBd3MtSDh4RnduUEFURFFOTnl5LWRfNjQzX2pJOVZjbmZCRHJpcWhfR21kaGhtT3lKTldoS1Y0OXNDVTVPTU93azdCQU9EdW01R213aHhubmpuaUlvdGlfU1BPOS1KajFCeFRn?oc=5",
+   "source": "WCPO 9 Cincinnati",
+   "published": "2026-11-26T22:55:33+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Community",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wilmington, Ohio, US",
+     "lat": 39.4453,
+     "lon": -83.8285,
+     "level": 3,
+     "precision": "city",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "city",
+   "companies": [
+    "Amazon"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "9a862479167c2e6d",
+   "cluster_title": "Wilmington weighs 20-year water and sewer deal for Amazon data center as residents fight on"
+  },
+  {
+   "id": "f4ba1a60655f52df",
+   "title": "JERA plans AI data centers beside its power plants with Dell and RHAELM",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUTRHSm0wQmRiS1I2VjZCcjVnVkN5RmVRVFFlaVI3d2h0b0dRS21OUWNSdF9KbFZxOFhXNHJ5QUZqSnAxSnZIWXNuMm4zMGtvS0Z2YjdZbXFWWEN2bkdHZ21UNjhEUnJmOGhmcE9STzYwSm9pLVJwdnpIaDloSzdLWlR3?oc=5",
+   "source": "Crypto Briefing",
+   "published": "2026-11-26T22:01:05+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Power / Utility",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [
+    "Dell"
+   ],
+   "cluster_id": "f4ba1a60655f52df",
+   "cluster_title": "JERA plans AI data centers beside its power plants with Dell and RHAELM"
+  },
   {
    "id": "f6bc336d9609a232",
    "title": "Trump administration’s data center power rules face new scrutiny in two states",
@@ -1194,6 +1325,31 @@
    "cluster_title": "Cheyenne Light applies to build transmission infrastructure for three Microsoft data centers in Wyoming"
   },
   {
+   "id": "0a6e576346842dbf",
+   "title": "FCC gives go-ahead to SpaceX for putting a million AI data center Starmind satellites in space",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaXZtT184RDJlNzlFdmxIZm5lZlkyVHFTMFBSeENETklXRnNwbW9NNGlZZHA3RjRmWG84MXZGQ1dpR0hMZHRjTXIyd1ZEMkdHejRoaXFCUFVtaWRXaGJqaWpieUU5aXUtWjJtQXVnSDdMV0c2Wmh4TndKSTFIbUZCYlJOb0paa19TblNxZFBNUmRhUXJOUVkzak5ZR2VpSXk4TDVOVjhn?oc=5",
+   "source": "Starlust.org",
+   "published": "2026-11-26T11:52:40+00:00",
+   "feed": "Google News: AI and hyperscale",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "AI Infrastructure"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dea01ca0822f1bac",
+   "cluster_title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space"
+  },
+  {
    "id": "53abdbff6753ddb3",
    "title": "SpaceX gets approval for deploying a million satellites for data centers in space",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaXZtT184RDJlNzlFdmxIZm5lZlkyVHFTMFBSeENETklXRnNwbW9NNGlZZHA3RjRmWG84MXZGQ1dpR0hMZHRjTXIyd1ZEMkdHejRoaXFCUFVtaWRXaGJqaWpieUU5aXUtWjJtQXVnSDdMV0c2Wmh4TndKSTFIbUZCYlJOb0paa19TblNxZFBNUmRhUXJOUVkzak5ZR2VpSXk4TDVOVjhn?oc=5",
@@ -1940,6 +2096,41 @@
    "suppliers": [],
    "cluster_id": "3fcbe58cc04210b8",
    "cluster_title": "Samsung may increase its NAND production to meet AI data center demand"
+  },
+  {
+   "id": "598b7cb7db143081",
+   "title": "Louisiana Data-Center Moratorium Odds Remain Low Through 2026",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55WnBNb0xPbzZ2WkVOTnpZM2U5bVVIanlwaW1GenVOTWFvWGxibHJYT2dJSl9Rd19BSnhaME1oTmVTdE5pNG9pRldWbkZ4OUN4ZEJTWmM2WThGY28?oc=5",
+   "source": "www.tokenpost.com",
+   "published": "2026-11-26T04:29:00+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Louisiana, US",
+     "lat": 31.1,
+     "lon": -92.0,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "LA"
+   ],
+   "state": "LA",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "598b7cb7db143081",
+   "cluster_title": "Louisiana Data-Center Moratorium Odds Remain Low Through 2026"
   },
   {
    "id": "a9c405673d7d897e",
@@ -5742,6 +5933,42 @@
    "suppliers": [],
    "cluster_id": "2d368543af8f7da1",
    "cluster_title": "AI data centers linked to 650 early deaths in US"
+  },
+  {
+   "id": "a22b6dd6672d03fa",
+   "title": "Texas Pauses Data Center Permits as Builders Continue",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOUhGYVhZb19uclBqMkpZZUQxem91RG1rRXUzcUNjcml0RFRQbTFVa0p4cmY4YVBvSFhnU3JyY0xsNzJnTjcyOW5DMEhQREV3bC1QMkRUS0I4WXRVSmZMWmtRb2pVR2dUVE41QVJkX01BS0RhQnFFa2VVTVpoclNoMGxfaXdENDVKOWJ6Y2IybnpKRFJSeGgxcFB4T2owUWp0ekE?oc=5",
+   "source": "Wisevoter",
+   "published": "2026-11-25T13:22:57+00:00",
+   "feed": "Google News: South and Texas",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "a22b6dd6672d03fa",
+   "cluster_title": "Texas Pauses Data Center Permits as Builders Continue"
   },
   {
    "id": "abfd051548555b6e",
@@ -31271,6 +31498,42 @@
    "name_hint": "New Minneapolis Data Center",
    "cluster_id": "74ceb8a9f7516d98",
    "cluster_title": "New Minneapolis data center deal: Downtown only, size cap, no council vote on each project"
+  },
+  {
+   "id": "5a7d42f148cad860",
+   "title": "Oregon has More Hyperscale Data Centers Than All But One U.S. State, Here's Some of the Impacts",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOM2dzWVNaN1RabFhsNHIyV2lyTFlsNVJnSWhKc1l5RlZWNzVOeUVrSGs5dW5zR3FwaUpQVTZGU0JHY01PSXcwczRpeG5RNFZYQ2REWTFSRWZRaU1GeHlXTnVrNm9zNHZvN2ZjejU4b0FTVDZ2RWEyeVFZLVdxN1dNbXVzT0U2elpqbld6eHdrb25KWlFCLUNlbVhXdkZnbTJmZERiQjI4cGcxYng5UDVoNi12VjJ6eVdqd3RwdmdRZE4?oc=5",
+   "source": "The Corvallis Advocate",
+   "published": "2026-11-21T00:08:56+00:00",
+   "feed": "Google News: West",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [
+    {
+     "name": "Oregon, US",
+     "lat": 43.9,
+     "lon": -120.6,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OR"
+   ],
+   "state": "OR",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "5a7d42f148cad860",
+   "cluster_title": "Oregon has More Hyperscale Data Centers Than All But One U.S. State, Here's Some of the Impacts"
   },
   {
    "id": "4a1e0113d081b857",
