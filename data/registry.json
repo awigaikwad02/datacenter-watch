@@ -58,9 +58,9 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "updated": "2026-11-27T21:34:02+00:00",
- "count": 751,
- "visible": 629,
+ "updated": "2026-11-27T22:34:02+00:00",
+ "count": 752,
+ "visible": 630,
  "records": [
   {
    "id": "amazon-georgia",
@@ -62884,6 +62884,56 @@
    "builders": [],
    "suppliers": [],
    "name_hints": []
+  },
+  {
+   "id": "xai-cochise-county-az-2026",
+   "name": "Colossus (Cochise County)",
+   "company": "xAI",
+   "companies": [
+    "xAI"
+   ],
+   "location": "Cochise County, Arizona, US",
+   "state": "AZ",
+   "county": "Cochise County, Arizona, US",
+   "city": null,
+   "lat": 31.878,
+   "lon": -109.751,
+   "precision": "county",
+   "curated": false,
+   "verified": false,
+   "notes": "",
+   "news": [
+    {
+     "id": "aa081da0edbeb936",
+     "title": "Planned mega data center in Cochise County revealed as SpaceX's Colossus 3",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaV9IbHRydmhQMEZmcVFQWXU4OFEteWVuT2pUV01WVUw3dE04ckVSblRvem1lbFhRZ01WYVZOWFNpYzVBUHNFNjBiV3JMbUFlcWZOemFuVEwteUNmMXRTVzlCMjFWZkxIejJPcHM3d2tLaE9Ba09hdHZaZU9FbS1URU51aWV0cXVhbjhxcVRBTVYzTXRTMWs4ZFJTUFlkVXdtSEd5aHNRNW8wWUJMUmN1VEk2WG8?oc=5",
+     "source": "KJZZ",
+     "published": "2026-11-27T20:56:00+00:00",
+     "stage_signal": "Announced",
+     "cluster_id": "aa081da0edbeb936"
+    }
+   ],
+   "first_seen": "2026-11-27T20:56:00+00:00",
+   "name_hints": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "status": "Announced",
+   "status_history": [
+    {
+     "date": "2026-11-27T20:56:00+00:00",
+     "status": "Announced",
+     "headline_id": "aa081da0edbeb936"
+    }
+   ],
+   "events": [],
+   "capacity_mw": null,
+   "investment_usd_b": null,
+   "last_news": "2026-11-27T20:56:00+00:00",
+   "sources_count": 1,
+   "confidence": "medium",
+   "hidden": false
   },
   {
    "id": "xai-ms-unnamed",
