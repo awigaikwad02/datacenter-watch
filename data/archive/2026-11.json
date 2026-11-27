@@ -39,8 +39,33 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 5103,
+ "count": 5108,
  "items": [
+  {
+   "id": "f84ab1b97f8f9aff",
+   "title": "Questions about the data center proposed for Jay | Letter",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVWdDdklmcm8xMURacnhsNTd5VHhGTVo5SFBpeVI3VThnLVViSDlwTHNrVW05T3FrWXBFZDVkM3ZjbEdBd2hlekI5cVhpRlViM01oUk9LbW9rOGRXaHNYQk5sQmlmTXUtUmVaU2l6ZUxUT2ZQektjU3RWVmw2aWhGd2hCVGp1NVhKVUpzUi1oV3hBNTgydDhkQ1hPdGY?oc=5",
+   "source": "Centralmaine.com",
+   "published": "2026-11-27T09:00:00+00:00",
+   "feed": "Google News: Data center announced",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "f84ab1b97f8f9aff",
+   "cluster_title": "Questions about the data center proposed for Jay | Letter"
+  },
   {
    "id": "09385f190f9be920",
    "title": "The North Dakota Town Where Data Centers Won",
@@ -75,6 +100,32 @@
    "cluster_title": "The North Dakota Town Where Data Centers Won"
   },
   {
+   "id": "0dc712947525c640",
+   "title": "How Akashi Data Center is preparing for the AI era",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdzZXTFVOWk42VFFVNzJXZEZLVWhmMVFtLVd5dksybDgzMGRNUE1fSlNOVUd0WjM4MnBNdGl2aXYxR2lXWmVsZk85d3d0WXdrcUhvVEZLdW44cm9nNHZtZ3ROSWpQbjJPaXBCRWExX0sxcm1fcHdjcllkbEdERmp4WmVTTmd1NU1aMHhsNHdHRHJueHJ5VG03WUtod2FqS1VMZng2VA?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-27T08:04:26+00:00",
+   "feed": "Google News: Data center power",
+   "category": "AI Infrastructure",
+   "tags": [
+    "AI Infrastructure",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "Akashi Data Center",
+   "cluster_id": "0dc712947525c640",
+   "cluster_title": "How Akashi Data Center is preparing for the AI era"
+  },
+  {
    "id": "836b508b037aa423",
    "title": "Data center power strategy: Securing capacity for growth",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaTROYmJTQjBvQ2Zqeng1c24xWU13YlVYVExWVVpZTlJPT1JMdFJUTTdHWGVuazlaaW94MHJOOHRFLWxBV2NOY0ZHMWo3dXZpNU02NHpVM2dmaHhuVlpjeFVwSjVRN25LLXhzQ2xXbmFEUUhUQUdSck8tZUwzaHh0d3pfbjM2YUQ1ejlrb0gzZ2hDMGR0dHNkNk5YWnlGODF4b0dTV1pKOA?oc=5",
@@ -98,6 +149,54 @@
    "suppliers": [],
    "cluster_id": "836b508b037aa423",
    "cluster_title": "Data center power strategy: Securing capacity for growth"
+  },
+  {
+   "id": "634cd67cd2175659",
+   "title": "Wayne County halted work at Google’s planned Michigan data center",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcEdOaVBOOVRkMlhkQnNYMHlqa2t2WU5HWUc0RTBBcU9mZHFwZkNjc21IUXBZcGQ1NmxFdkU1aTF4bWxSdjRIaHZqeC1Fek5jRi1rbWZ4NFBZUndhaXJXZkxNcVctS1J5Rlp6OFRoM3hkUXZVVHFyUGQ4cmo1S2N3Tl9mQ2JpVDF4X1JxYWxncHVOaWVE?oc=5",
+   "source": "NeoTeo",
+   "published": "2026-11-27T07:54:31+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Cancelled / Blocked",
+   "tags": [
+    "Cancelled / Blocked",
+    "New Announcement",
+    "AI Infrastructure"
+   ],
+   "locations": [
+    {
+     "name": "Wayne County, Michigan, US",
+     "lat": 42.281,
+     "lon": -83.282,
+     "level": 3,
+     "precision": "county",
+     "country": "US",
+     "metro": "Detroit"
+    },
+    {
+     "name": "Michigan, US",
+     "lat": 44.3,
+     "lon": -85.4,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "MI"
+   ],
+   "state": "MI",
+   "county": "Wayne County, Michigan, US",
+   "location_precision": "county",
+   "companies": [
+    "Google"
+   ],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "12f179e413a196de",
+   "cluster_title": "Work begins on data center project in this Wayne County community"
   },
   {
    "id": "257e718a6984d0d3",
@@ -244,6 +343,42 @@
    "investment_usd_b": 0.25,
    "cluster_id": "656ae02f34e7c913",
    "cluster_title": "SpaceX Installs $250M+ of Tesla Megapacks at Starbase Data Center - BASENOR - Tesla Accessories"
+  },
+  {
+   "id": "ba14cf0a24748ed5",
+   "title": "Plan to build 'Starmind' data center in space made up of 1M satellites gets approval",
+   "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQSVNoRTBYeUpzamZEd1U1bE1MdmFqSU5CYUhvWV9hazBIWFhlMjVIVms1X1dSSkIyNzNVZWMzam1ybHptamwxQ1lRT2dQT0R2TUtRT2J6YWJXUzNhNHNSck81cmJhRWUtbzJCTUZlZlVKUUNBbmJkLUd6Njg4V05ZU1JDRWZiOWZkelMtU0xsSjhKN21PZ3RleWFkV2RORXI3Nm9hdExTTUtOajd6WW0zWktzaGsyWGVNWjhUbzVrVGdjb2MyeUVnV2dfMXp0X1RjaXpqUkZEYi1MaUFzUndDU3Z6U1U2ZFZONUlOQTctcklJejA1SlZ2SUkzUWdPVUlpNVVVdDBGU05DbDJMSDdTeDgzMzdXNUxTd3ZWWUtCbmo2T01aNzBtNHJjckNZdklGQzBTMHMwdHhwaXNhZkx4c1Jjc2J6Tnc?oc=5",
+   "source": "WKRC",
+   "published": "2026-11-27T01:52:25+00:00",
+   "feed": "Google News: Data center power",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "source",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "source",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "ba14cf0a24748ed5",
+   "cluster_title": "Plan to build 'Starmind' data center in space made up of 1M satellites gets approval"
   },
   {
    "id": "ca34251fbf09c153",
@@ -654,6 +789,31 @@
    "suppliers": [],
    "cluster_id": "b14b8e5ada13bae9",
    "cluster_title": "AI data center energy demand: Why efficiency alone won’t bend the curve"
+  },
+  {
+   "id": "570424268dee2a2b",
+   "title": "Data center power capacity rose nearly 66% as vacancy almost halved in Q3 2026",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQenVxS3MydlpFYk1wU1hBVWpacmpJbk5MenVaOHIybWVVMlhfUUU1NTdUMWlQMDJ4TS1XUXRVZlp0c0pMTnB3eHNSVUc2MWxhY2lDUzU0UlYwS053SzBLNVhXSGgxOUc3UzNJZFRpSFBFSHZ1WWFXTEQtamdhVzNVbW5n?oc=5",
+   "source": "Mezha.net",
+   "published": "2026-11-26T18:47:26+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Markets / Earnings",
+   "tags": [
+    "Markets / Earnings",
+    "Power / Utility"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "570424268dee2a2b",
+   "cluster_title": "Data center power capacity rose nearly 66% as vacancy almost halved in Q3 2026"
   },
   {
    "id": "0435f8ca0c9030f7",
