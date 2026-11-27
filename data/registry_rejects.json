@@ -8,20 +8,20 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 677,
+ "count": 674,
  "items": [
   {
-   "id": "ed6ff91d27110121",
-   "title": "As plans for a Carbon County data center and nuclear reactors advance, residents push to be heard",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNalpzOWE3YU5feUZ3Qk11djlrV09VMkdHamNaOU5mSHcwbS1TRDNFN0xGQnJQaktSdHhtclVYeGcxQkgydWJfTWJkbExOSzlmWnFPNW5Sc284WS1CNzcwbVZ2czVDdGRybWI4SEoyNG5wZFZEMU1sVE5XQTBaZl9xeEN4WjJib1Z6ZDdkLUZNT21tdl9YOW5rMkI2blBjYzNWd0JqYS1CWmowaVVqQ1lHYTNwRktfb3QwSmYtRkdTT295M0tJc3hhZV9BT3lLZw?oc=5",
-   "source": "KSL News",
-   "published": "2026-11-26T21:09:00+00:00",
-   "state": "UT",
+   "id": "8cdabc7a08f7e701",
+   "title": "SpaceX Plans $24 Billion Gas Power Plant, Data Center Project in Texas",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV1pFWDRhWTAxOEwtZjVzbWFMaE4ta2hTWktOWlRLTTJNMko5UEVFalFjenZNc3lRZ0RqM2xMaFhOU0RoeFFFeHFITVhGcXZJNGpkNjcwS0FRamVNUUt1Z1RLek9IZ291T3oyTkRZM1JyVUg0Tm5uTGNOVnVQYjk5YW1QbFo1cnFSZ3h3MXBoQk1iX1VNVlVSd3l6UzN3NkxO?oc=5",
+   "source": "EnergyNow.com",
+   "published": "2026-11-27T01:23:13+00:00",
+   "state": "TX",
    "companies": [],
    "builders": [],
    "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
+   "precision": "state",
+   "reason": "about something other than the data center"
   },
   {
    "id": "49259249b14c6e03",
@@ -173,8 +173,8 @@
   {
    "id": "b210758164318c6e",
    "title": "Soaring data center power demand could derail Illinois' plans to retire gas and oil power plants",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb2VCM1VmXzFUTXRkeFN6aEtCanhOTTJ2VTV4YVZTbWJjQ1hkSDBDMVlXZDd2S085aUxSWG1YMTZubUhQbVV1ZXJYUVlqalV0aXI0dmJZT1J3c2hLVVNPQ05xdXdoZVZFWmhlWHYxNFNTeF9tOHQya3RaRUVheElMNmxn?oc=5",
-   "source": "The Cool Down",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaGtfSS1pelRiVW0wQlViX2EwZzROYzdRdnR5MUx4bEZfYjdzelBaZ25sNDRKMU5XQTJ6WUhSQWh0ZzVscXQ1QjUtS0Y4dEVfWHl2bnVLelZPckUzTjRVeVpWSkZGcVA0YzlKTzJMc1NmblpKbE5zY0thNkFCbDhPWFNXMmRLR1liTi0ycjY3RQ?oc=5",
+   "source": "Yahoo",
    "published": "2026-11-26T01:00:00+00:00",
    "state": "IL",
    "companies": [],
@@ -1744,6 +1744,19 @@
    "suppliers": [],
    "precision": "source",
    "reason": "no operator, and only a state"
+  },
+  {
+   "id": "ed6ff91d27110121",
+   "title": "As plans for a Carbon County data center and nuclear reactors advance, residents push to be heard",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU2E4TnlBRm0xUWVvN1dkdF80NDN6SHd0a21SUzZoU1lPSzl4OUdBb2RhVnU5bXdMUEZJT3VkSFVfYVlUR1RhMkZzb1NkSGdXaE1RTmpBa0pGVjBsQ1JpM1ZDcHBBN3haZ2FzR0stTjZKc2Ffa1lXNllqcV83RmJtMnJWQmoybmdSaXZ4ZWpCd3Y5YXVidkJxTGJDZ3RuTG11XzhwUTNR?oc=5",
+   "source": "Utah News Dispatch",
+   "published": "2026-11-20T23:12:49+00:00",
+   "state": "UT",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "0b37a4812fb64ddf",
@@ -6053,19 +6066,6 @@
    "reason": "a policy story with no operator or project name"
   },
   {
-   "id": "8cdabc7a08f7e701",
-   "title": "SpaceX plans $24 billion gas power plant, data center project in Texas",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZGhRNnpDTGdodFotZVZacFc5cC1NdnhETU5xb19iMFIxUUgySlJiOEYyX1RsdnFwY1h5VkM5RWpoVVVseFVJMFFFQ3ByaGxUOXZxY3R2M2RNSFJGaXhqU3VzSmhndWpmdklTd2RIekc1Nlg2b1FRVGdsdnN0YzVEQVVrZmpqT1JUVG9GamZ1U29EZjdaV0xFZEJTemZxdUZleGlLb055UEo0Slhod1VBU09kNWw0ajZmQnJmQUp3?oc=5",
-   "source": "Reuters",
-   "published": "2026-11-09T22:17:07+00:00",
-   "state": "TX",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "state",
-   "reason": "about something other than the data center"
-  },
-  {
    "id": "b998e6cec9bc965c",
    "title": "Developer revives data center plan for old Maine paper mill",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5EVU44ajItaFBUSlRmR2hzSUtDMlBrZ1l2QzBoWG1BQkowU05nWF9kcTFvQ3dudGFrREJkZjMxcDlYUG1qcjM4bi1mZW43emhMd0RoLTBwYUxENFpCamNSMW9DRlJoTHJGLXc?oc=5",
@@ -8781,45 +8781,6 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
-  },
-  {
-   "id": "8051318f4eff4a29",
-   "title": "‘First devil in line’: Mona residents seek answers over proposed data center",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRERJRXBkM1RXVFdGYWJWQllhUEZtM0JqcnhoczBSdXpWdzBYQzlmcklBQ3JlcjN4OWFkeGU3dU5DbkhBREwyQjRUdGp2ekNNUnJUaXB0eXYxNWpuc1k4aElqemYzTGFfZmM1U1BuYzNKeUYzaXBmQjZzaGI1Y2ctTWoxbnVHLXdHYjNHS0poVlRHd9IBlwFBVV95cUxNbEx1R3d4RHZRZzl3S3JVam9Bb2V4aHhwNGxXU3NfQ2NEZmJBWWNoTEdFNDFiM0RTb0JCY3dHbENMdndCV0JjbUY1bm5Wclp1amNnQkJrYzNrc3Ewa3FFMEt3RnpSNnN2b2x4Wng2dHMwTjNxNHAyVkFiV3ZTWFZCN2xPUGFCc2R0WVdCTlUwSlFnNUstdXNn?oc=5",
-   "source": "ABC4 Utah",
-   "published": "2026-10-28T03:26:44+00:00",
-   "state": "UT",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
-   "reason": "no operator, and only a state"
-  },
-  {
-   "id": "ae8e83828cf32b7e",
-   "title": "Clinton, Iowa City Council approves first reading of data center ordinance",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOd2VFZlRlUmVaSm95T2RkY1RyR0Jsc0k5WEItdVNfbGMtUjhlSlRHbHczcGlRSXBienEyb1pXdElCWkQ3X1ViSEU2bkJFSm9hdk9qaTdqMWZnekYtbEdwbGZ6VURFV0dnVGx5bGUwRGVCbGlON2lHR3E0cHYzNUhWdExjZ1ZZOUFjYi1GU216Vkp3bGVzQ29KY3hQQl9hNGdhRkJ6SWE4dHRCR2MyUXFlWUF6WUNDeENOWC04by1CSVBPZjI5SXRJclZSdW9OWmdOVWNHXw?oc=5",
-   "source": "WQAD",
-   "published": "2026-10-28T03:19:00+00:00",
-   "state": "IA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "a policy story with no operator or project name"
-  },
-  {
-   "id": "efb96d3587f51675",
-   "title": "Grimes City Council approves proactive data center regulations",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbnExcTNCdDl1MXM5QzR2eDdIX3AtNFJLR0RubURxNVEwcU4yVmhoaTJHUnpjelpFNTRKaWNMOUlTSjZBbVlsOUJBb0tEeHRGWUhlclVreFdXWV9SQlZfWGszcm1adVZNSFFVRVFvZG5Gbk5xUjdMaHJpLUdyUVZmcTAzWFVkOF9WTl9zbU1FcGhjNXROemp1TTVRcFJjYUZnaC14WUI4Mi1aZUpnZFhScXJCNEk5b2lKZU1oYkRpaU5nLVRoYmpnQnMxcE1JNDA3MV83bVlwb0tJUkd4bExHMG0yZDY?oc=5",
-   "source": "weareiowa.com",
-   "published": "2026-10-28T03:17:00+00:00",
-   "state": "IA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "a policy story with no operator or project name"
   }
  ]
 }
