@@ -39,8 +39,80 @@
   "docs": "docs/DATA_DICTIONARY.md"
  },
  "month": "2026-11",
- "count": 5146,
+ "count": 5152,
  "items": [
+  {
+   "id": "b3c632e943ce960a",
+   "title": "Mayes asks Arizona county officials to delay vote on planned SpaceX data center",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZk5yNGRVRVBRRmpyRG4yUlZiQUgwSWtZQWI4U0s2STh6QlAxb1Jmb2FUUzF5V0szenA4NlhLYTNtWnZKeWR2MDV6VGtHbl9DbzRSMG5XLWZMS2EtVk9yQmpOMURlU0h5QVYyQktMR0JJYmJIbmg5elVyOUhMOVBRZ1EwVkJKNTZQbm82ZlhnTWttdGp0QWRTX3ZCQ0oyeWpYOGpSWS01TkExeGJSTTRoRWt6Ml9EY0swLTlQa0tYN1oyMUhYLTl0UktiMVdwZkhlQUtaZVNEUl9DWmx0M0djWHM4RmZ5MWxuNmJodW80Tkl2X25q?oc=5",
+   "source": "CaloNews.com",
+   "published": "2026-11-27T15:00:00+00:00",
+   "feed": "Google News: West",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement",
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Arizona, US",
+     "lat": 34.3,
+     "lon": -111.7,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "AZ"
+   ],
+   "state": "AZ",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "name_hint": "SpaceX Data Center",
+   "cluster_id": "7e4ff6d7eae59fe0",
+   "cluster_title": "SpaceX plans $50B data center campus in Cochise County"
+  },
+  {
+   "id": "d242ee4a1994b72d",
+   "title": "Nexus DC files to build two data center buildings at site in Hubbard, Texas",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObVRwNkFlS0NDOFlLQ0ZpQjk1SjJPLV9TM2lyZmVYQVhFLWZPaXUyclVZRXVHaUxhdnowXzV2dm1za2NnOXlOOFlLVTFYVkdfRmxlcUd3SUxVYjNfZHhRcXhuZXByQk1LVUloMGVidUdSeXBCTUZiT0czNFFBSVV6SW1RbF9JZ3NZU2xfNHEtYzFCMHpxaXlCNmNfaHNQWlp1endRRVZPdmJ0cm55OGdNRVFuTkhqX3VNU1E?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-27T14:37:30+00:00",
+   "feed": "Google News: Data center",
+   "category": "New Announcement",
+   "tags": [
+    "New Announcement"
+   ],
+   "locations": [
+    {
+     "name": "Texas, US",
+     "lat": 31.5,
+     "lon": -99.3,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "TX"
+   ],
+   "state": "TX",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "d242ee4a1994b72d",
+   "cluster_title": "Nexus DC files to build two data center buildings at site in Hubbard, Texas"
+  },
   {
    "id": "b455f7376fb62467",
    "title": "SpaceX installs $250m worth of Tesla Megapack batteries at Starbase data center site in Texas - report",
@@ -78,6 +150,30 @@
    "investment_usd_b": 0.25,
    "cluster_id": "b455f7376fb62467",
    "cluster_title": "SpaceX installs $250m worth of Tesla Megapack batteries at Starbase data center site in Texas - report"
+  },
+  {
+   "id": "95574d7bd7cb3d33",
+   "title": "Baker to introduce legislation to strengthen transparency on data center development",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUWxwdm5yaVlxanVZbzZ2Z1NTVFVZN0RpbkgtUnAtMVlYWW80RWNmLXhVNzVLc20yZmEyRU5TYmFaa2dRUkRNZHNoZGp3dUZmSGxrT0M2ZFpJelFhLW9FangyU3dSeWY4VFNnc0pxcGNXcXBES1FzWUJMMjlTc1JRQWptaGxlVm5OdjB1UFFmOTVNcjdQV0VVMUFQa09OV2VlME93b3FNY19zZzNVSDdjUmlxcVBtR2x2UDZmbUZOYWs?oc=5",
+   "source": "Wyoming County Examiner",
+   "published": "2026-11-27T14:00:56+00:00",
+   "feed": "Google News: West",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "cd0044f0f4ea9b6e",
+   "cluster_title": "Baker to Introduce Legislation to Strengthen Transparency and Public Input on Data Center Development"
   },
   {
    "id": "b1a1de0543362058",
@@ -198,6 +294,31 @@
    "suppliers": [],
    "cluster_id": "c9acecc5aeabe955",
    "cluster_title": "Musk reveals name for AI supercomputer in southeast Arizona"
+  },
+  {
+   "id": "91442daccc7feeb3",
+   "title": "FCC approves SpaceX application to deploy one million satellites for data centers in space",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOVFzZjZMeWJnUEU3UFB3QjI0TGx3UlA4OXNBbWxXV3gzTUtBS0JHQU94eEwxcEE5aThBS3B2YU5vVTNwR3Q3cUlXc3Foa2ZHU3B6a0VNRUo4YVdzUWg2RkU1UkJNMjQzZ0VFeENfR1hIOVM4bktjMXp1Y2ZVdGR5emR4UzhMOTJCZ3VlWEV3aGFsZGZLblVPV0Z1dnJjU2tRS1F0TmpubTMtUEJBbVBMandSdnVHa2FZQ2s5QXRNbDNhTm9FbDR1ZmZnOVNvWFU?oc=5",
+   "source": "Data Center Dynamics",
+   "published": "2026-11-27T13:04:31+00:00",
+   "feed": "Google News: Data center",
+   "category": "Deals / Investment",
+   "tags": [
+    "Deals / Investment",
+    "Policy / Permits"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "dea01ca0822f1bac",
+   "cluster_title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space"
   },
   {
    "id": "dc27340d85f38ac6",
@@ -16963,6 +17084,31 @@
    "cluster_title": "Dallas leads North America in low-cost data center building: survey"
   },
   {
+   "id": "c726806266d96345",
+   "title": "New study: Data center pollution spreads far and wide",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWkVVOHJfam4ySnEwY0lIcGFyYXd0NXpYN2FNWk53YzhJZTNINjhSTkVjRGtoRm9mR18tdGZRU3FiWHRGSmRETlYwRnNJWlQzTGJMdHpfMGN3MkFOcTRDRi1lN2Y4aEx2SjM5TGd2bjJUdDh3bFlXWUpuZlFPd1dXUVBmR0VPSzFWdzE2THI0R1Z2V19jNzBwSVVLZjJGSEt1?oc=5",
+   "source": "Environment America",
+   "published": "2026-11-24T08:00:00+00:00",
+   "feed": "Google News: Data center power",
+   "category": "Environment",
+   "tags": [
+    "Environment",
+    "Analysis / Opinion"
+   ],
+   "locations": [],
+   "states": [],
+   "state": null,
+   "county": null,
+   "location_precision": null,
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "c726806266d96345",
+   "cluster_title": "New study: Data center pollution spreads far and wide"
+  },
+  {
    "id": "cc7ffc15fea6c986",
    "title": "New Mexico Investigates Lea County Google Data Center Deals",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSUhzRVJxY0xLc0k1UVlmUnNxZ3g4Q0FHcXBPOVVKazNTcS1RRW5tUFFleG5QeWJFQVAyVGttWlFGRHR1T3BIRGVScEt0ZE9XYnM4WGV2Z3MyUHRVSTNKWmRPU2JHLUZqeDdiMkNaNVlLZDFzX2JXSHVlVkVlam9yd0RhMndFOTNkQ1lIRV9yd2dHQkpHODJ0c2p4WUpaUEk?oc=5",
@@ -24328,6 +24474,41 @@
    "suppliers": [],
    "cluster_id": "9cdfbf06093e9970",
    "cluster_title": "Data Center Power Hunger Puts Oklo (NYSE: OKLO) And NuScale (NYSE: SMR) In The Spotlight, But One Has The Edge"
+  },
+  {
+   "id": "df24b2727033d8c7",
+   "title": "Ohio Legislators Want to End Data Center Tax Breaks",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZFR2bmpkblZYVkN1ejBaVHpqeVVsMTVnajROTXFTdHE2LWVReWlZQWFfQ3JNMHA5aFc4ZHRidWRCRWd6bllMemxxS0pOZXN3VUNuWW1nWldLVnhDeHRNTkdfQXRDOUN6QVNoQWRJRDJ3WlFOS0d3RkI3RG1QUWphbE5fVWNSTUhiUWU0ZTZJTEZ2SEk?oc=5",
+   "source": "Columbus Underground",
+   "published": "2026-11-23T15:49:49+00:00",
+   "feed": "Google News: Midwest",
+   "category": "Policy / Permits",
+   "tags": [
+    "Policy / Permits"
+   ],
+   "locations": [
+    {
+     "name": "Ohio, US",
+     "lat": 40.3,
+     "lon": -82.8,
+     "level": 2,
+     "precision": "state",
+     "country": "US"
+    }
+   ],
+   "states": [
+    "OH"
+   ],
+   "state": "OH",
+   "county": null,
+   "location_precision": "state",
+   "companies": [],
+   "utilities": [],
+   "investors": [],
+   "builders": [],
+   "suppliers": [],
+   "cluster_id": "df24b2727033d8c7",
+   "cluster_title": "Ohio Legislators Want to End Data Center Tax Breaks"
   },
   {
    "id": "ccabf9239525e974",
