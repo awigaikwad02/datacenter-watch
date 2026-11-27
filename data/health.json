@@ -11,27 +11,27 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "checked_at": "2026-11-26T21:41:49+00:00",
+ "checked_at": "2026-11-27T08:45:25+00:00",
  "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 3h",
    "status": "pass",
-   "value": "14m ago",
-   "detail": "2026-11-26T21:26:51Z"
+   "value": "15m ago",
+   "detail": "2026-11-27T08:30:19Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "8/8 succeeded, 0 superseded, avg 28s",
+   "value": "8/8 succeeded, 0 superseded, avg 32s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-11-26T21:25:58+00:00, 9 new"
+   "detail": "run at 2026-11-27T08:28:58+00:00, 7 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -54,19 +54,19 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "2261 KB",
+   "value": "2210 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 3h",
    "status": "pass",
-   "value": "15m ago",
-   "detail": "2026-11-26T21:25:58+00:00"
+   "value": "16m ago",
+   "detail": "2026-11-27T08:28:58+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "3897 items, 0 problems",
+   "value": "3813 items, 0 problems",
    "detail": ""
   },
   {
@@ -84,8 +84,8 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: New Announcement 20.2%",
-   "detail": "New Announcement 788, Policy / Permits 667, Power / Utility 411, Community 352, Deals / Investment 257, General 241, AI Infrastructure 197, Cancelled / Blocked 174, Construction 169, Environment 150, Analysis / Opinion 142, Politics 116, Markets / Earnings 81, Expansion 64, Economy / Jobs 49, Operations 22, Land Acquisition 17"
+   "value": "top: New Announcement 20.3%",
+   "detail": "New Announcement 775, Policy / Permits 659, Power / Utility 409, Community 344, Deals / Investment 253, General 236, AI Infrastructure 188, Cancelled / Blocked 169, Construction 165, Environment 150, Analysis / Opinion 137, Politics 103, Markets / Earnings 76, Expansion 63, Economy / Jobs 49, Operations 21, Land Acquisition 16"
   },
   {
    "name": "General under 10% of headlines",
@@ -96,25 +96,25 @@
   {
    "name": "Policy / Permits under 20% of headlines",
    "status": "pass",
-   "value": "17.1%",
+   "value": "17.3%",
    "detail": ""
   },
   {
    "name": "At least 55% of headlines located",
    "status": "fail",
-   "value": "2117/3897 (54.3%)",
-   "detail": "with a company: 383"
+   "value": "2067/3813 (54.2%)",
+   "detail": "with a company: 361"
   },
   {
    "name": "No non-U.S. locations in headlines",
    "status": "pass",
-   "value": "0 of 3891 items",
+   "value": "0 of 3808 items",
    "detail": ""
   },
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "26420 ids, 0 in two months",
+   "value": "26450 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -126,7 +126,7 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "28 month(s), 26420 headlines, earliest 2019-11-18",
+   "value": "28 month(s), 26450 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
@@ -306,7 +306,7 @@
   {
    "name": "Tests pass (pytest)",
    "status": "pass",
-   "value": "251 passed in 1.66s",
+   "value": "251 passed in 3.24s",
    "detail": ""
   },
   {
@@ -378,8 +378,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 17m ago",
-   "detail": "expected Updated 17m ago or Updated 16m ago, title \"Data last updated Nov 26, 2026\""
+   "value": "Updated 18m ago",
+   "detail": "expected Updated 18m ago or Updated 17m ago, title \"Data last updated Nov 27, 2026\""
   },
   {
    "name": "Browser: /radar @1280px loads cleanly",
@@ -490,5 +490,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-11-26T21:43:29+00:00"
+ "browser_checked_at": "2026-11-27T08:47:09+00:00"
 }
