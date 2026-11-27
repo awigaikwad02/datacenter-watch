@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 671,
+ "count": 670,
  "items": [
   {
    "id": "d5c22a3c79792239",
@@ -35,6 +35,19 @@
    "suppliers": [],
    "precision": "state",
    "reason": "about something other than the data center"
+  },
+  {
+   "id": "ed6ff91d27110121",
+   "title": "As plans for a Carbon County data center and nuclear reactors advance, residents push to be heard",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNalpzOWE3YU5feUZ3Qk11djlrV09VMkdHamNaOU5mSHcwbS1TRDNFN0xGQnJQaktSdHhtclVYeGcxQkgydWJfTWJkbExOSzlmWnFPNW5Sc284WS1CNzcwbVZ2czVDdGRybWI4SEoyNG5wZFZEMU1sVE5XQTBaZl9xeEN4WjJib1Z6ZDdkLUZNT21tdl9YOW5rMkI2blBjYzNWd0JqYS1CWmowaVVqQ1lHYTNwRktfb3QwSmYtRkdTT295M0tJc3hhZV9BT3lLZw?oc=5",
+   "source": "KSL News",
+   "published": "2026-11-26T21:09:00+00:00",
+   "state": "UT",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "county",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "49259249b14c6e03",
@@ -337,6 +350,19 @@
    "builders": [],
    "suppliers": [],
    "precision": "state",
+   "reason": "no operator, and only a state"
+  },
+  {
+   "id": "4140807877e5a9a0",
+   "title": "Proposed data center tabled in Triangle-area town as residents push back",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVzNScEg5RWc3LThMZ2VZVzFHV1FEZU0xcmRvNHhNSmZUMDI2d1RjeXZvaVA2UnR5YzJ1dG53SHo0ZDZaUzl3X2JUemVDZGFTWk0yblI5a28tX01Obmh4REpnekgxakM5OE9EcHdVVGYyenRkS1pNSS1lSVVCMWp6WGtsaDBEbnB5OTNvS0tqRdIBjwFBVV95cUxQU1A1cmNVU0QyVkNnUDdLaVRieVVPbEdLWENfckdVU1J4clhUUERnVm9ZYnJOMWVrMnhqZjF3eVFCQ1VvTzZmWTRvNkRHWGhIQjl6czFZcVk0LU4tUzgtSjlCREJHRWdGc0JWWTEtNllDS3NtVDRoV0VVNDRzSVZBYmMyNF9zYVZockR6SndkQQ?oc=5",
+   "source": "Raleigh News & Observer",
+   "published": "2026-11-25T15:25:00+00:00",
+   "state": "NC",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
    "reason": "no operator, and only a state"
   },
   {
@@ -1757,19 +1783,6 @@
    "suppliers": [],
    "precision": "source",
    "reason": "no operator, and only a state"
-  },
-  {
-   "id": "ed6ff91d27110121",
-   "title": "As plans for a Carbon County data center and nuclear reactors advance, residents push to be heard",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU2E4TnlBRm0xUWVvN1dkdF80NDN6SHd0a21SUzZoU1lPSzl4OUdBb2RhVnU5bXdMUEZJT3VkSFVfYVlUR1RhMkZzb1NkSGdXaE1RTmpBa0pGVjBsQ1JpM1ZDcHBBN3haZ2FzR0stTjZKc2Ffa1lXNllqcV83RmJtMnJWQmoybmdSaXZ4ZWpCd3Y5YXVidkJxTGJDZ3RuTG11XzhwUTNR?oc=5",
-   "source": "Utah News Dispatch",
-   "published": "2026-11-20T23:12:49+00:00",
-   "state": "UT",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
   },
   {
    "id": "0b37a4812fb64ddf",
@@ -8711,32 +8724,6 @@
    "source": "ABC15 Arizona",
    "published": "2026-10-28T05:46:41+00:00",
    "state": "AZ",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "no operator, code name or figure"
-  },
-  {
-   "id": "a7bedb3ec3360cb8",
-   "title": "Mountain Home City Council passes emergency moratorium on data center projects after packed public meeting",
-   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQSWNlZ2l1SUR0QmtWQ1JLdW5IMzkyX1FHVWQ1a1VDZ3J2bk9FOGhyWVd6VGp0ODFIYXZ5cDdaU3oxd3hyOXJyMXV6a0Rtc1FwXzRiQUhXanlvY0pPUkM4bEo4emNOOHBHaU0ydU5KaHJYZnFibXI5eVI3bE11ODFESmU2Tk9heF9mMjd5RnFmcGtTVGVyT3hwRmNab291MU9UMU9aUGtrTEZRazVCUTQtMnZ5MnpIS0FqUHdTOEFEN2dLekw1a1lWdFE4TkRVYWt0NVdnMFlyRzFsT1gtbjBPZVhsWTRpNWZJLVVFUjAzRlBoS2E3d0Rxb2NqUlpLcndnNkZvY3pjd2loUnZa?oc=5",
-   "source": "Idaho News 6",
-   "published": "2026-10-28T05:18:31+00:00",
-   "state": "ID",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "no operator, code name or figure"
-  },
-  {
-   "id": "5ec71588fc8e9dee",
-   "title": "Mountain Home unanimously approves an emergency moratorium on data centers applications and permits",
-   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxONDVOSkRsNlV5aWlBU0hNNVVHZjBTOVRjRVNjT19fWlRYTTZpbXQzRXhFXzFHMDlBSW9meU9yeDVPdDExQUMwREFjUHVjdThfQ3UyQXM3bkEwNzFqZ0JQeXB3M0cyMzdkbkhZS2wyTmtqYTVsUEVLRzNhMUt3VzUtbm9IcUdrUnlFZzh4QTJPUjNOSUl5OGhia1J3dFRhR28yai1LWXNJZlJwTENEZDcyVEpUR1NZTmdldmxrMDJ3QThDQ2Zua1p4ZVZFVHE2bHQ0TXRzdklubmNQb3VxU2V2bWVrQ0tJOC1DR0s3WERmYzczQURsN0hoVU5VSTNEYTYzb2stWVl5UQ?oc=5",
-   "source": "KTVB",
-   "published": "2026-10-28T04:57:00+00:00",
-   "state": "ID",
    "companies": [],
    "builders": [],
    "suppliers": [],
