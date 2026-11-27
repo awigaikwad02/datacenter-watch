@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 667,
+ "count": 668,
  "items": [
   {
    "id": "d242ee4a1994b72d",
@@ -87,6 +87,19 @@
    "suppliers": [],
    "precision": "state",
    "reason": "about something other than the data center"
+  },
+  {
+   "id": "2029e84dd80c6127",
+   "title": "Scottsdale eyes data center rules even as big projects stay away",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObHI2Rzd0UnY1dUpOOVRHMDZNdjNWcHBSUzdCQ0xoRHF4RktzOHpra1gwNGV0SVFnU3VqSU02bnZHTFliS0hpWVJOcjF1dTVjZGVmSlZ1NkpDcWJBNFdYZmNRN1lCdXdEWHVQZ3B6UFFSZERJeXhSYUxzeFQ4NGZvcGZhTU1iajdRTzZWcmVXTFB5M1l1aXQ5LTZSaF9WdFpmc0JIZndSU20tS3lwMmdMSnBQZGsyeWExZURqdGJuZkR1RkZr?oc=5",
+   "source": "ABC15 Arizona",
+   "published": "2026-11-27T00:07:39+00:00",
+   "state": "AZ",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "no operator, code name or figure"
   },
   {
    "id": "ed6ff91d27110121",
@@ -340,19 +353,6 @@
    "reason": "no operator, code name or figure"
   },
   {
-   "id": "b50d02c0c8691fc1",
-   "title": "Proposed data center sparks debate in Union",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOVB3T2hmYmZJZkJ5QzhTQ2dGRm9JVGYzbEpQVFJSN0VKZGtKMXdBcVZaekhuY2djZ25PM1RYWVk5U1NGeHpoR0k2NExQa25kaGh3V1pPUE1HSkswZW5iNzJXeWRkMHVoazdLamVCaXdIYzJJbFRCQ0tJWkJ2WVJQOG5PN1BiQTVxM2ZndHlNQ21vV3Fz?oc=5",
-   "source": "Dayton Daily News",
-   "published": "2026-11-25T20:24:03+00:00",
-   "state": "OH",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "source",
-   "reason": "no operator, and only a state"
-  },
-  {
    "id": "376d12c6b8b54357",
    "title": "Residents challenge plan for 177K-square-foot data center in small North Carolina town",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdGdsZ2dQUzdhOEp5YVY4NG53eDZPeEQyRWREczRGVHR3akw0dXhmNjJwRkYwenBiZXJpLUlkX0wyLVZKQkVQaDJqOWZ3amI1SjhVUHZtZEs4dWRmT1A0ZEI1cDFUUjV1S2xWWUI1YnpKb2pQOVFibW8xYl9EcTV2NVdhZ0taNXpWclVtREM5ZUtCLVp5OTZlUjhaMm1uYUl6MjhGME4wUQ?oc=5",
@@ -442,6 +442,19 @@
    "suppliers": [],
    "precision": "county",
    "reason": "no operator, code name or figure"
+  },
+  {
+   "id": "b50d02c0c8691fc1",
+   "title": "Proposed data center sparks debate in Union",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOVB3T2hmYmZJZkJ5QzhTQ2dGRm9JVGYzbEpQVFJSN0VKZGtKMXdBcVZaekhuY2djZ25PM1RYWVk5U1NGeHpoR0k2NExQa25kaGh3V1pPUE1HSkswZW5iNzJXeWRkMHVoazdLamVCaXdIYzJJbFRCQ0tJWkJ2WVJQOG5PN1BiQTVxM2ZndHlNQ21vV3Fz?oc=5",
+   "source": "Dayton Daily News",
+   "published": "2026-11-25T14:10:05+00:00",
+   "state": "OH",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "source",
+   "reason": "no operator, and only a state"
   },
   {
    "id": "5b2436bfeb76c9c2",
