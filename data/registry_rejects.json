@@ -8,7 +8,7 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "count": 646,
+ "count": 645,
  "items": [
   {
    "id": "0d9b3bdef89680b8",
@@ -730,6 +730,19 @@
    "reason": "no operator, and only a state"
   },
   {
+   "id": "5f1de6d620493bbd",
+   "title": "Sioux City Planning & Zoning Commission advances rules governing future data center projects",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRHFWd1ExOEgzRjBlY0ZtRGIxaXhwOElPODF6ZG5pcGlhQ2hod3R0amtETXA4dUZqWnZIX3RSejJOaU9FcXQwb25uQ1RvU19SblYyT3BLbWlnNl9IbWtWeDlmXzNYZVhPck9Cd2ZYTzBNSWdFMTFOQ0VPZ0VoTTAwQl9CRno5Y2xYYXhKbGp6OHFKcVA0a3llckZqZXFfQ2RxdlNtUXh3ZVZOQjZyakdfV0RoS21nVHlDeUo2aVlpM1dmWkRBMVJNNQ?oc=5",
+   "source": "KTTC | Rochester, MN",
+   "published": "2026-11-25T04:46:00+00:00",
+   "state": "IA",
+   "companies": [],
+   "builders": [],
+   "suppliers": [],
+   "precision": "city",
+   "reason": "a policy story with no operator or project name"
+  },
+  {
    "id": "a1ee08eb9bc57f96",
    "title": "Proposed Colleton County data center raises questions amid moratorium",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTFoybUJfM2ZuVVBubDBucll6Y1hEZFRlYkZEMFlXTm1tMl9wQVhUcUFtOGVMTWlGZm50aUZhbkxLcDNoWHRGWTR4SXZCdXJVYU94WmRLdXV6MEhWcnN1UzJpSS0zUTIxNW9yWWVDdm9tckJiWlNxbkRka2Eza3dHYXFCRnpEdE1nX3ZoZmVLdHA0cTVJWmQyWkVsaEc1Mmx4VlZubWhXdmUyNXPSAb8BQVVfeXFMTjFaRWZwNmt3N2txeHExOXMtcGtqQjk2ZVVJampZd1Jfd3ViTDZQeTFUTjRyU0ItWFRhaUpCMWNzNllVSG1lalcwYjdJcEhGbEZteS1EUkR4OWx4b3E3M0JhUW9PWWZrdWhwclRmZTRvM0xpZGV0azJtRlBNd3BrZWxtVXNleEdCN1JyaF9JaGVWUVNUNmtBMGdiS2RkbVJCdnBOdk9hbTlCT3Z3M1hNRWVYa2RYeUU5RS1DUXVqUHM?oc=5",
@@ -806,19 +819,6 @@
    "suppliers": [],
    "precision": "city",
    "reason": "no operator, code name or figure"
-  },
-  {
-   "id": "5f1de6d620493bbd",
-   "title": "Sioux City Planning & Zoning Commission advances rules governing future data center projects",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMHBuNVlZa1JvbjE3endtd0ZibHRUNnRDaVRXMWRFbUxkUWR6Tm96dFNWM0FyY0U1NnY2QlhKalRsRFo4NGRVVFhQU01jUkdxdTZCNUt2NGsxbzUxeWlyVU9wVDNobjNlQlAtZkc0cmJrVVplOTBrMGtEZ2dQUDZyRzE2OWhSeDVWRFpSR2ZTNUlrZjc2cGxLelJhT2pydk5jMnZPbi10ekJPc3JMemdURzZQNHVodHZOUXQzSS1hcnnSAdQBQVVfeXFMUE12TUhEbGljLVE4bmYzZ21LcTBabzU3SS1PU2NhZWhmTnYwWDZHNEU1TU43eGpPTENYbm0waXVGUDhvVzZ5bnhUZDdLV0pzVUpybWtjNFN3RUFYQ2s1Y1NFV2VEZ0pTMmtZcTN2QWVRa1VWWHBOZkpFZzhZZmZkSjBMY1pucXhERlp3em56dXlQQ2k0NVBmbjl3ODdwSWdXbzZpa20yOEQzUUZNaEhXbDB2YWQ4aXA2U0RUOW5vWDFyOEZ2enNQNUktdGZaMmFqcnBsWFg?oc=5",
-   "source": "KTIV",
-   "published": "2026-11-25T03:14:00+00:00",
-   "state": "IA",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "city",
-   "reason": "a policy story with no operator or project name"
   },
   {
    "id": "b3043af7cb699315",
@@ -8404,19 +8404,6 @@
    "suppliers": [],
    "precision": "source",
    "reason": "no operator, and only a state"
-  },
-  {
-   "id": "2e92745c050ee04b",
-   "title": "DeSoto County data center blocked - again",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN1RaaC1Mei1HLUJSdG9JZGJPLTZWSTlJc0NGQnJYdF9velZSZXQ5dDNlQ0JpZmJ1bXd3SEJ0Q25ZR0FDSEQ2MzF5Snd3Q3lvSkY0RDF3SVR0ekRmTGcwMmNwa2Y0R05pNTFEajEyWTA1SGxnOHZVdFYxMTZiRkV0R1lYMWp2bEhzTXRpU0VuQ3JUWmtaM3BpSVhPOWlfaWd6QTRZbExZWWlPVi1kcHRWalltcHNEYTN1R1NPNGs3TzM2NW9OU0JV?oc=5",
-   "source": "WINK News",
-   "published": "2026-10-29T10:11:00+00:00",
-   "state": "FL",
-   "companies": [],
-   "builders": [],
-   "suppliers": [],
-   "precision": "county",
-   "reason": "no operator, code name or figure"
   }
  ]
 }
