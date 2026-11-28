@@ -11,27 +11,27 @@
   },
   "docs": "docs/DATA_DICTIONARY.md"
  },
- "checked_at": "2026-11-27T21:26:18+00:00",
+ "checked_at": "2026-11-28T08:00:09+00:00",
  "overall": "fail",
  "context": "full",
  "checks": [
   {
    "name": "Last data commit within 3h",
    "status": "pass",
-   "value": "51m ago",
-   "detail": "2026-11-27T20:34:42Z"
+   "value": "22m ago",
+   "detail": "2026-11-28T07:37:57Z"
   },
   {
    "name": "Workflow runs (last 10)",
    "status": "pass",
-   "value": "8/8 succeeded, 0 superseded, avg 25s",
+   "value": "8/8 succeeded, 0 superseded, avg 24s",
    "detail": ""
   },
   {
    "name": "Feeds all returned data (status.json)",
    "status": "pass",
    "value": "12/12",
-   "detail": "run at 2026-11-27T20:33:37+00:00, 8 new"
+   "detail": "run at 2026-11-28T07:36:37+00:00, 6 new"
   },
   {
    "name": "Fetcher runs on sample feed",
@@ -54,19 +54,19 @@
   {
    "name": "news.json under 3 MB",
    "status": "pass",
-   "value": "2246 KB",
+   "value": "2269 KB",
    "detail": ""
   },
   {
    "name": "news.json updated within 3h",
    "status": "pass",
-   "value": "52m ago",
-   "detail": "2026-11-27T20:33:37+00:00"
+   "value": "23m ago",
+   "detail": "2026-11-28T07:36:37+00:00"
   },
   {
    "name": "News items well formed",
    "status": "pass",
-   "value": "3878 items, 0 problems",
+   "value": "3921 items, 0 problems",
    "detail": ""
   },
   {
@@ -84,13 +84,13 @@
   {
    "name": "No category above 30%",
    "status": "pass",
-   "value": "top: New Announcement 20.3%",
-   "detail": "New Announcement 789, Policy / Permits 672, Power / Utility 416, Community 347, Deals / Investment 257, General 244, AI Infrastructure 189, Cancelled / Blocked 173, Construction 165, Environment 153, Analysis / Opinion 140, Politics 105, Markets / Earnings 76, Expansion 65, Economy / Jobs 50, Operations 21, Land Acquisition 16"
+   "value": "top: New Announcement 20.4%",
+   "detail": "New Announcement 798, Policy / Permits 680, Power / Utility 419, Community 348, Deals / Investment 262, General 252, AI Infrastructure 193, Cancelled / Blocked 174, Construction 166, Environment 152, Analysis / Opinion 144, Politics 105, Markets / Earnings 76, Expansion 65, Economy / Jobs 50, Operations 21, Land Acquisition 16"
   },
   {
    "name": "General under 10% of headlines",
    "status": "pass",
-   "value": "6.3%",
+   "value": "6.4%",
    "detail": ""
   },
   {
@@ -102,19 +102,19 @@
   {
    "name": "At least 55% of headlines located",
    "status": "fail",
-   "value": "2092/3878 (53.9%)",
-   "detail": "with a company: 358"
+   "value": "2111/3921 (53.8%)",
+   "detail": "with a company: 362"
   },
   {
    "name": "No non-U.S. locations in headlines",
    "status": "pass",
-   "value": "0 of 3873 items",
+   "value": "0 of 3916 items",
    "detail": ""
   },
   {
    "name": "Archive ids unique across all months",
    "status": "pass",
-   "value": "26548 ids, 0 in two months",
+   "value": "26605 ids, 0 in two months",
    "detail": ""
   },
   {
@@ -126,19 +126,19 @@
   {
    "name": "Archive consistent with news.json",
    "status": "pass",
-   "value": "28 month(s), 26548 headlines, earliest 2019-11-18",
+   "value": "28 month(s), 26605 headlines, earliest 2019-11-18",
    "detail": ""
   },
   {
    "name": "Registry ids unique",
    "status": "pass",
-   "value": "751 records, 629 visible",
+   "value": "752 records, 630 visible",
    "detail": ""
   },
   {
    "name": "No registry record lost since the last commit",
    "status": "pass",
-   "value": "751 -> 751",
+   "value": "752 -> 752",
    "detail": ""
   },
   {
@@ -162,19 +162,19 @@
   {
    "name": "Registry news all in the archive",
    "status": "pass",
-   "value": "2888 attached headlines, 0 missing",
+   "value": "2890 attached headlines, 0 missing",
    "detail": ""
   },
   {
    "name": "Likely duplicate pins under 20%",
    "status": "pass",
-   "value": "5.2% of 425 pins",
+   "value": "5.2% of 426 pins",
    "detail": "records at the same exact point with the same operator, or both anonymous: see docs/RUNBOOK.md, 'Fix a project record'"
   },
   {
    "name": "Pins sharing an exact point under 20%",
    "status": "warn",
-   "value": "41.9% of 425 pins",
+   "value": "42.3% of 426 pins",
    "detail": "different operators in one city share its point (headlines name the city, not the site); the map groups them"
   },
   {
@@ -192,7 +192,7 @@
   {
    "name": "Overview 'announced' excludes Cancelled / Blocked",
    "status": "pass",
-   "value": "15",
+   "value": "16",
    "detail": "2 cancelled or blocked records this month are left out"
   },
   {
@@ -210,13 +210,13 @@
   {
    "name": "Sitemap matches pages",
    "status": "pass",
-   "value": "635 entries (6 site pages + 629 project pages)",
+   "value": "636 entries (6 site pages + 630 project pages)",
    "detail": ""
   },
   {
    "name": "Project pages under 5 MB",
    "status": "pass",
-   "value": "746 pages, 4252 KB",
+   "value": "747 pages, 4257 KB",
    "detail": ""
   },
   {
@@ -276,7 +276,7 @@
   {
    "name": "No secrets in the repo",
    "status": "pass",
-   "value": "0 matches in 859 files",
+   "value": "0 matches in 860 files",
    "detail": ""
   },
   {
@@ -306,7 +306,7 @@
   {
    "name": "Tests pass (pytest)",
    "status": "pass",
-   "value": "251 passed in 2.47s",
+   "value": "251 passed in 1.74s",
    "detail": ""
   },
   {
@@ -366,8 +366,8 @@
   {
    "name": "Browser: Overview 'announced' matches recomputed value",
    "status": "pass",
-   "value": "15",
-   "detail": "Python recomputed 15 (Cancelled / Blocked excluded)"
+   "value": "16",
+   "detail": "Python recomputed 16 (Cancelled / Blocked excluded)"
   },
   {
    "name": "Browser: /newsroom @1280px loads cleanly",
@@ -378,8 +378,8 @@
   {
    "name": "Browser: Freshness badge shows news.json time",
    "status": "pass",
-   "value": "Updated 54m ago",
-   "detail": "expected Updated 54m ago or Updated 53m ago, title \"Data last updated Nov 27, 2026\""
+   "value": "Updated 25m ago",
+   "detail": "expected Updated 25m ago or Updated 24m ago, title \"Data last updated Nov 28, 2026\""
   },
   {
    "name": "Browser: /radar @1280px loads cleanly",
@@ -408,13 +408,13 @@
   {
    "name": "Browser: Rack Radar filters change the list",
    "status": "pass",
-   "value": "1 in view · 334 total -> 9 in view · 9 total (state AL)",
+   "value": "1 in view · 335 total -> 9 in view · 9 total (state AL)",
    "detail": ""
   },
   {
    "name": "Browser: Rack Radar registry filters (cancelled off, low-confidence toggle, Operational only)",
    "status": "pass",
-   "value": "default 334 (0 cancelled: true), with low-confidence 339, Operational only 48",
+   "value": "default 335 (0 cancelled: true), with low-confidence 340, Operational only 48",
    "detail": ""
   },
   {
@@ -480,7 +480,7 @@
   {
    "name": "Browser: Sitemap entries return 200",
    "status": "pass",
-   "value": "635 entries",
+   "value": "636 entries",
    "detail": ""
   },
   {
@@ -490,5 +490,5 @@
    "detail": ""
   }
  ],
- "browser_checked_at": "2026-11-27T21:28:14+00:00"
+ "browser_checked_at": "2026-11-28T08:01:49+00:00"
 }
